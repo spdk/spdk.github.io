@@ -1,5 +1,9 @@
 var NAVTREEINDEX35 =
 {
+"unionspdk__nvme__pmrswtp__register.html#a5a4f1939ae597cc6a92442cdc2b37829":[14,0,242,2],
+"unionspdk__nvme__pmrswtp__register.html#a9ec8b82de66f7dfc6db443db0f48d813":[14,0,242,1],
+"unionspdk__nvme__pmrswtp__register.html#aac012d2a3925b9e925449a656e2181a5":[14,0,242,3],
+"unionspdk__nvme__pmrswtp__register.html#ab100be1b1645a7ff1368ba23fa5595a8":[14,0,242,4],
 "unionspdk__nvme__pmrswtp__register.html#afbad61e9f37916c9ffdcc204d78e2f37":[14,0,242,0],
 "unionspdk__nvme__vs__register.html":[14,0,282],
 "unionspdk__nvme__vs__register.html#a605cba0b2c6abdee150cb3a6babc4bb8":[14,0,282,1],

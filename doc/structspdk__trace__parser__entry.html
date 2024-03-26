@@ -129,20 +129,27 @@ uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__trace__parser__entry.html#a7e7ee46ec4c44c52caebb5ede88395c8">related_type</a></td></tr>
 <tr class="memdesc:a7e7ee46ec4c44c52caebb5ede88395c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Related object type. <br /></td></tr>
 <tr class="separator:a7e7ee46ec4c44c52caebb5ede88395c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:affd627fdb93393642a98b8184337e570"><td class="memItemLeft" ><a id="affd627fdb93393642a98b8184337e570"></a>
-union {</td></tr>
-<tr class="memitem:a429517d5cb3e26c75d6eb54081314bc5"><td class="memItemLeft" >
-&#160;&#160;&#160;uint64_t&#160;&#160;&#160;<b>integer</b></td></tr>
-<tr class="separator:a429517d5cb3e26c75d6eb54081314bc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afe5dd56cf26b026d9a6d1ad6f551655a"><td class="memItemLeft" >
-&#160;&#160;&#160;void *&#160;&#160;&#160;<b>pointer</b></td></tr>
-<tr class="separator:afe5dd56cf26b026d9a6d1ad6f551655a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3a64bc877f6919b87ffa8b327d280848"><td class="memItemLeft" >
-&#160;&#160;&#160;char&#160;&#160;&#160;<b>string</b> [UINT8_MAX+1]</td></tr>
-<tr class="separator:a3a64bc877f6919b87ffa8b327d280848"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:affd627fdb93393642a98b8184337e570"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__trace__parser__entry.html#affd627fdb93393642a98b8184337e570">args</a> [SPDK_TRACE_MAX_ARGS_COUNT]</td></tr>
-<tr class="memdesc:affd627fdb93393642a98b8184337e570"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tracepoint arguments. <br /></td></tr>
-<tr class="separator:affd627fdb93393642a98b8184337e570"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31e80ffadea20358cf7f1a164209df07"><td class="memItemLeft" ><a id="a31e80ffadea20358cf7f1a164209df07"></a>
+struct {</td></tr>
+<tr class="memitem:a98457a6905a09e0a8ddd6ebbff8afe51"><td class="memItemLeft" >
+&#160;&#160;&#160;bool&#160;&#160;&#160;<b>is_related</b></td></tr>
+<tr class="separator:a98457a6905a09e0a8ddd6ebbff8afe51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2730be5d50d43b4f5a51f84012159fb"><td class="memItemLeft" >
+&#160;&#160;&#160;union {</td></tr>
+<tr class="memitem:a71689fe1b3ba6e1d2c091a871d2d415f"><td class="memItemLeft" >
+&#160;&#160;&#160;&#160;&#160;&#160;uint64_t&#160;&#160;&#160;<b>integer</b></td></tr>
+<tr class="separator:a71689fe1b3ba6e1d2c091a871d2d415f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49e4c3498d4bfa58e53959ab3acdfd6d"><td class="memItemLeft" >
+&#160;&#160;&#160;&#160;&#160;&#160;void *&#160;&#160;&#160;<b>pointer</b></td></tr>
+<tr class="separator:a49e4c3498d4bfa58e53959ab3acdfd6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69a29565fb5441deb127e6367438e65d"><td class="memItemLeft" >
+&#160;&#160;&#160;&#160;&#160;&#160;char&#160;&#160;&#160;<b>string</b> [UINT8_MAX+1]</td></tr>
+<tr class="separator:a69a29565fb5441deb127e6367438e65d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2730be5d50d43b4f5a51f84012159fb"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;&#160;&#160;<b>u</b></td></tr>
+<tr class="separator:ad2730be5d50d43b4f5a51f84012159fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31e80ffadea20358cf7f1a164209df07"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__trace__parser__entry.html#a31e80ffadea20358cf7f1a164209df07">args</a> [SPDK_TRACE_MAX_ARGS_COUNT]</td></tr>
+<tr class="memdesc:a31e80ffadea20358cf7f1a164209df07"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tracepoint arguments. <br /></td></tr>
+<tr class="separator:a31e80ffadea20358cf7f1a164209df07"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Describes a parsed trace entry. </p>

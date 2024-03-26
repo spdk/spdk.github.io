@@ -123,6 +123,9 @@ Data Structures</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
+<tr class="memitem:af4187a937cdb517158861507cd05c54a"><td class="memItemLeft" align="right" valign="top"><a id="af4187a937cdb517158861507cd05c54a"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_TRACE_SHM_NAME_BASE</b>&#160;&#160;&#160;&quot;_trace.&quot;</td></tr>
+<tr class="separator:af4187a937cdb517158861507cd05c54a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a26e4becda093930b12939d3860fae701"><td class="memItemLeft" align="right" valign="top"><a id="a26e4becda093930b12939d3860fae701"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_DEFAULT_NUM_TRACE_ENTRIES</b>&#160;&#160;&#160;(32 * 1024)</td></tr>
 <tr class="separator:a26e4becda093930b12939d3860fae701"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -162,6 +165,8 @@ Macros</h2></td></tr>
 <tr class="memitem:a589fccd362899b2c59ce2e5860d2cb30"><td class="memItemLeft" align="right" valign="top"><a id="a589fccd362899b2c59ce2e5860d2cb30"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_TRACE_MAX_LCORE</b>&#160;&#160;&#160;1024</td></tr>
 <tr class="separator:a589fccd362899b2c59ce2e5860d2cb30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aede872eb36929c2d44e6e48476e89f3a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_trace_tpoint_enabled</b>(tpoint_id)</td></tr>
+<tr class="separator:aede872eb36929c2d44e6e48476e89f3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acc4636917de9d3ad99972041a0ca71a6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><b>_spdk_trace_record_tsc</b>(tsc,  tpoint_id,  poller_id,  size,  object_id,  num_args, ...)</td></tr>
 <tr class="separator:acc4636917de9d3ad99972041a0ca71a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8cab6995257437dddf64771b9687822c"><td class="memItemLeft" align="right" valign="top"><a id="a8cab6995257437dddf64771b9687822c"></a>
@@ -343,9 +348,7 @@ struct <a class="el" href="structspdk__trace__file.html">spdk_trace_file</a> *&#
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">        <span class="keywordflow">do</span> {                                                                                    \</div>
 <div class="line">                assert(tpoint_id &lt; SPDK_TRACE_MAX_TPOINT_ID);                                   \</div>
-<div class="line">                if (g_trace_file == NULL ||                                             \</div>
-<div class="line">                    !((1ULL &lt;&lt; (tpoint_id &amp; 0x3F)) &amp;                                            \</div>
-<div class="line">                      g_trace_file-&gt;tpoint_mask[tpoint_id &gt;&gt; 6])) {                     \</div>
+<div class="line">                if (!spdk_trace_tpoint_enabled(tpoint_id)) {                                    \</div>
 <div class="line">                        break;                                                                  \</div>
 <div class="line">                }                                                                               \</div>
 <div class="line">                _spdk_trace_record(tsc, tpoint_id, poller_id, size, object_id,                  \</div>
@@ -524,7 +527,27 @@ struct <a class="el" href="structspdk__trace__file.html">spdk_trace_file</a> *&#
 <div class="line">                spdk_trace_add_register_fn(&amp;reg_ ## fn);        \</div>
 <div class="line">        }                                                       \</div>
 <div class="line">        static <span class="keywordtype">void</span> fn(<span class="keywordtype">void</span>)</div>
-<div class="ttc" id="astructspdk__trace__register__fn_html"><div class="ttname"><a href="structspdk__trace__register__fn.html">spdk_trace_register_fn</a></div><div class="ttdef"><b>Definition:</b> trace.h:411</div></div>
+<div class="ttc" id="astructspdk__trace__register__fn_html"><div class="ttname"><a href="structspdk__trace__register__fn.html">spdk_trace_register_fn</a></div><div class="ttdef"><b>Definition:</b> trace.h:414</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aede872eb36929c2d44e6e48476e89f3a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aede872eb36929c2d44e6e48476e89f3a">&#9670;&nbsp;</a></span>spdk_trace_tpoint_enabled</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define spdk_trace_tpoint_enabled</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">tpoint_id</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">        (g_trace_file != NULL  &amp;&amp; \</div>
+<div class="line">        ((1ULL &lt;&lt; (tpoint_id &amp; 0x3F)) &amp; g_trace_file-&gt;tpoint_mask[tpoint_id &gt;&gt; 6]))</div>
 </div><!-- fragment -->
 </div>
 </div>
