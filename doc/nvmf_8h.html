@@ -276,6 +276,12 @@ Functions</h2></td></tr>
 <tr class="memitem:a8f4f438960707410f3a85258137cf9d3"><td class="memItemLeft" align="right" valign="top">struct spdk_nvmf_subsystem *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#a8f4f438960707410f3a85258137cf9d3">spdk_nvmf_subsystem_get_next</a> (struct spdk_nvmf_subsystem *subsystem)</td></tr>
 <tr class="memdesc:a8f4f438960707410f3a85258137cf9d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Continue iterating over all known subsystems.  <a href="nvmf_8h.html#a8f4f438960707410f3a85258137cf9d3">More...</a><br /></td></tr>
 <tr class="separator:a8f4f438960707410f3a85258137cf9d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7efd2d18b66ecd33afadfacc6d5d6f2c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#a7efd2d18b66ecd33afadfacc6d5d6f2c">spdk_nvmf_ns_add_host</a> (struct spdk_nvmf_subsystem *subsystem, uint32_t nsid, const char *hostnqn, uint32_t flags)</td></tr>
+<tr class="memdesc:a7efd2d18b66ecd33afadfacc6d5d6f2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Make the specified namespace visible to the specified host.  <a href="nvmf_8h.html#a7efd2d18b66ecd33afadfacc6d5d6f2c">More...</a><br /></td></tr>
+<tr class="separator:a7efd2d18b66ecd33afadfacc6d5d6f2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4adca2b5850519d70d7b8295cfc36e8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#af4adca2b5850519d70d7b8295cfc36e8">spdk_nvmf_ns_remove_host</a> (struct spdk_nvmf_subsystem *subsystem, uint32_t nsid, const char *hostnqn, uint32_t flags)</td></tr>
+<tr class="memdesc:af4adca2b5850519d70d7b8295cfc36e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Make the specified namespace not visible to the specified host.  <a href="nvmf_8h.html#af4adca2b5850519d70d7b8295cfc36e8">More...</a><br /></td></tr>
+<tr class="separator:af4adca2b5850519d70d7b8295cfc36e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4082cbddea58f9fc309504a6e8254113"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#a4082cbddea58f9fc309504a6e8254113">spdk_nvmf_subsystem_add_host</a> (struct spdk_nvmf_subsystem *subsystem, const char *hostnqn, const struct <a class="el" href="structspdk__json__val.html">spdk_json_val</a> *params)</td></tr>
 <tr class="memdesc:a4082cbddea58f9fc309504a6e8254113"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allow the given host NQN to connect to the given subsystem.  <a href="nvmf_8h.html#a4082cbddea58f9fc309504a6e8254113">More...</a><br /></td></tr>
 <tr class="separator:a4082cbddea58f9fc309504a6e8254113"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -867,6 +873,59 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a7efd2d18b66ecd33afadfacc6d5d6f2c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7efd2d18b66ecd33afadfacc6d5d6f2c">&#9670;&nbsp;</a></span>spdk_nvmf_ns_add_host()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_nvmf_ns_add_host </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_nvmf_subsystem *&#160;</td>
+          <td class="paramname"><em>subsystem</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>nsid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>hostnqn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>flags</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Make the specified namespace visible to the specified host. </p>
+<p>May only be performed on subsystems in the PAUSED or INACTIVE states.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">subsystem</td><td>Subsystem the namespace belong to. </td></tr>
+    <tr><td class="paramname">nsid</td><td>Namespace ID to be made visible. </td></tr>
+    <tr><td class="paramname">hostnqn</td><td>The NQN for the host. </td></tr>
+    <tr><td class="paramname">flags</td><td>Must be zero (reserved for future use).</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, or negated errno value on failure. </dd></dl>
+
+</div>
+</div>
 <a id="af3575fee4a9db1b3c8bacbac8b605358"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af3575fee4a9db1b3c8bacbac8b605358">&#9670;&nbsp;</a></span>spdk_nvmf_ns_get_bdev()</h2>
 
@@ -999,6 +1058,59 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="af4adca2b5850519d70d7b8295cfc36e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af4adca2b5850519d70d7b8295cfc36e8">&#9670;&nbsp;</a></span>spdk_nvmf_ns_remove_host()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_nvmf_ns_remove_host </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_nvmf_subsystem *&#160;</td>
+          <td class="paramname"><em>subsystem</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>nsid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>hostnqn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>flags</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Make the specified namespace not visible to the specified host. </p>
+<p>May only be performed on subsystems in the PAUSED or INACTIVE states.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">subsystem</td><td>Subsystem the namespace belong to. </td></tr>
+    <tr><td class="paramname">nsid</td><td>Namespace ID to be made not visible. </td></tr>
+    <tr><td class="paramname">hostnqn</td><td>The NQN for the host. </td></tr>
+    <tr><td class="paramname">flags</td><td>Must be zero (reserved for future use).</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, or negated errno value on failure. </dd></dl>
 
 </div>
 </div>

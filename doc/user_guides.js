@@ -329,6 +329,8 @@ var user_guides =
         [ "nvmf_subsystem_get_controllers", "jsonrpc.html#rpc_nvmf_subsystem_get_controllers", null ],
         [ "nvmf_subsystem_get_qpairs", "jsonrpc.html#rpc_nvmf_subsystem_get_qpairs", null ],
         [ "nvmf_subsystem_get_listeners", "jsonrpc.html#rpc_nvmf_subsystem_get_listeners", null ],
+        [ "nvmf_ns_add_host", "jsonrpc.html#rpc_nvmf_ns_add_host", null ],
+        [ "nvmf_ns_remove_host", "jsonrpc.html#rpc_nvmf_ns_remove_host", null ],
         [ "nvmf_set_max_subsystems", "jsonrpc.html#rpc_nvmf_set_max_subsystems", null ],
         [ "nvmf_discovery_add_referral  method", "jsonrpc.html#rpc_nvmf_discovery_add_referral", null ],
         [ "nvmf_discovery_remove_referral  method", "jsonrpc.html#rpc_nvmf_discovery_remove_referral", null ],

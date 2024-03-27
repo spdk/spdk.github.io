@@ -546,8 +546,8 @@ struct <a class="el" href="structspdk__trace__file.html">spdk_trace_file</a> *&#
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">        (g_trace_file != NULL  &amp;&amp; \</div>
-<div class="line">        ((1ULL &lt;&lt; (tpoint_id &amp; 0x3F)) &amp; g_trace_file-&gt;tpoint_mask[tpoint_id &gt;&gt; 6]))</div>
+<b>Value:</b><div class="fragment"><div class="line">        spdk_unlikely((g_trace_file != NULL  &amp;&amp; \</div>
+<div class="line">        ((1ULL &lt;&lt; (tpoint_id &amp; 0x3F)) &amp; g_trace_file-&gt;tpoint_mask[tpoint_id &gt;&gt; 6])))</div>
 </div><!-- fragment -->
 </div>
 </div>

@@ -128,9 +128,12 @@ uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>reserved44</b> [4]
 <tr class="memitem:a9beec8b339d9019140d5e1e4aad8d741"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvmf__ns__opts.html#a9beec8b339d9019140d5e1e4aad8d741">anagrpid</a></td></tr>
 <tr class="memdesc:a9beec8b339d9019140d5e1e4aad8d741"><td class="mdescLeft">&#160;</td><td class="mdescRight">ANA group ID.  <a href="structspdk__nvmf__ns__opts.html#a9beec8b339d9019140d5e1e4aad8d741">More...</a><br /></td></tr>
 <tr class="separator:a9beec8b339d9019140d5e1e4aad8d741"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa297bd466f08ef0bd56b7df2d9b62017"><td class="memItemLeft" align="right" valign="top"><a id="aa297bd466f08ef0bd56b7df2d9b62017"></a>
-uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>reserved60</b> [4]</td></tr>
-<tr class="separator:aa297bd466f08ef0bd56b7df2d9b62017"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:affab031579df75c6a4e1d2c960949140"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvmf__ns__opts.html#affab031579df75c6a4e1d2c960949140">no_auto_visible</a></td></tr>
+<tr class="memdesc:affab031579df75c6a4e1d2c960949140"><td class="mdescLeft">&#160;</td><td class="mdescRight">Do not automatically make namespace visible to controllers.  <a href="structspdk__nvmf__ns__opts.html#affab031579df75c6a4e1d2c960949140">More...</a><br /></td></tr>
+<tr class="separator:affab031579df75c6a4e1d2c960949140"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a022b3271aad1d889aa97756adf680f8d"><td class="memItemLeft" align="right" valign="top"><a id="a022b3271aad1d889aa97756adf680f8d"></a>
+uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>reserved61</b> [3]</td></tr>
+<tr class="separator:a022b3271aad1d889aa97756adf680f8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa251c87024c1e68f8f09e5afa3812ab3"><td class="memItemLeft" align="right" valign="top"><a id="aa251c87024c1e68f8f09e5afa3812ab3"></a>
 const struct <a class="el" href="structspdk__json__val.html">spdk_json_val</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>transport_specific</b></td></tr>
 <tr class="separator:aa251c87024c1e68f8f09e5afa3812ab3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -186,6 +189,23 @@ const struct <a class="el" href="structspdk__json__val.html">spdk_json_val</a> *
 
 <p>Namespace Globally Unique Identifier. </p>
 <p>Fill with 0s if not specified. </p>
+
+</div>
+</div>
+<a id="affab031579df75c6a4e1d2c960949140"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#affab031579df75c6a4e1d2c960949140">&#9670;&nbsp;</a></span>no_auto_visible</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool spdk_nvmf_ns_opts::no_auto_visible</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Do not automatically make namespace visible to controllers. </p>
+<p>False if not specified </p>
 
 </div>
 </div>
