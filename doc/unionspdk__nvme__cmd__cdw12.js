@@ -1,6 +1,6 @@
 var unionspdk__nvme__cmd__cdw12 =
 [
-    [ "copy", "unionspdk__nvme__cmd__cdw12.html#ac16985c2e0a6ad28a10a1fe50257c8e8", null ],
+    [ "copy", "unionspdk__nvme__cmd__cdw12.html#a435b71995786212c252cc7d38e7dd01c", null ],
     [ "deac", "unionspdk__nvme__cmd__cdw12.html#ac28e28c9464abbfdb7d706341bd3f796", null ],
     [ "df", "unionspdk__nvme__cmd__cdw12.html#a2e3d8729dbe124e73a188eca0664bc01", null ],
     [ "dtype", "unionspdk__nvme__cmd__cdw12.html#af00e2575d78e6879ca714c2ab41cbf4b", null ],
@@ -19,5 +19,6 @@ var unionspdk__nvme__cmd__cdw12 =
     [ "reserved2", "unionspdk__nvme__cmd__cdw12.html#a27247d5cbd00a2b44306c436d525b248", null ],
     [ "stc", "unionspdk__nvme__cmd__cdw12.html#ab8364f1b767f8394d87bf53f21d389d0", null ],
     [ "stcw", "unionspdk__nvme__cmd__cdw12.html#ab913ab58ba06742207a1e66ebe8dd3eb", null ],
-    [ "write_zeroes", "unionspdk__nvme__cmd__cdw12.html#a5d49e6bd16f710ed8acf714f8dcf3866", null ]
+    [ "write", "unionspdk__nvme__cmd__cdw12.html#adec05d5945cbbc7936dc67533c00338b", null ],
+    [ "write_zeroes", "unionspdk__nvme__cmd__cdw12.html#a77aac1bb1be2a4fda232b2a7e6f4f9a6", null ]
 ];

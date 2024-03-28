@@ -96,7 +96,7 @@ Collaboration diagram for spdk_nvme_cmd:</div>
 <div class="dyncontent">
 <div class="center"><img src="structspdk__nvme__cmd__coll__graph.png" border="0" usemap="#aspdk__nvme__cmd_coll__map" alt="Collaboration graph"/></div>
 <map name="aspdk__nvme__cmd_coll__map" id="aspdk__nvme__cmd_coll__map">
-<area shape="rect" title=" " alt="" coords="773,707,905,733"/>
+<area shape="rect" title=" " alt="" coords="773,885,905,912"/>
 <area shape="rect" href="unionspdk__nvme__cmd__cdw10.html" title=" " alt="" coords="460,548,641,575"/>
 <area shape="rect" href="unionspdk__nvme__cmd__cdw11.html" title=" " alt="" coords="460,599,641,625"/>
 <area shape="rect" href="unionspdk__nvme__feat__error__recovery.html" title="Data used by Set Features/Get Features SPDK_NVME_FEAT_ERROR_RECOVERY." alt="" coords="31,17,199,58"/>
@@ -119,7 +119,8 @@ Collaboration diagram for spdk_nvme_cmd:</div>
 <area shape="rect" href="unionspdk__nvme__cmd__cdw12.html" title=" " alt="" coords="460,885,641,912"/>
 <area shape="rect" href="unionspdk__nvme__feat__fdp__events__cdw12.html" title="Data used by Set Feature SPDK_NVME_FEAT_FDP_EVENTS." alt="" coords="35,1114,194,1155"/>
 <area shape="rect" href="unionspdk__nvme__feat__fdp__cdw12.html" title="Data used by Set Features/Get Features SPDK_NVME_FEAT_FDP." alt="" coords="35,1179,194,1221"/>
-<area shape="rect" href="structspdk__nvme__sgl__descriptor.html" title=" " alt="" coords="453,936,648,963"/>
+<area shape="rect" href="unionspdk__nvme__cmd__cdw13.html" title=" " alt="" coords="460,936,641,963"/>
+<area shape="rect" href="structspdk__nvme__sgl__descriptor.html" title=" " alt="" coords="453,987,648,1013"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -152,56 +153,63 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>rsvd3</b></td></t
 <tr class="memitem:aa55c5c1c346bf2a3e128a43dde7f5b00"><td class="memItemLeft" align="right" valign="top"><a id="aa55c5c1c346bf2a3e128a43dde7f5b00"></a>
 uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>mptr</b></td></tr>
 <tr class="separator:aa55c5c1c346bf2a3e128a43dde7f5b00"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a625c4ede8a70260b79d4e48ce3eebd53"><td class="memItemLeft" ><a id="a625c4ede8a70260b79d4e48ce3eebd53"></a>
+<tr class="memitem:aa882eb5ec9ecec09da3ceb29e864f60e"><td class="memItemLeft" ><a id="aa882eb5ec9ecec09da3ceb29e864f60e"></a>
 union {</td></tr>
-<tr class="memitem:a2bc399aa7ea3dfd4b13e85f018cffebc"><td class="memItemLeft" >
+<tr class="memitem:a34fba6b7163923efcb5b9f3387318c2e"><td class="memItemLeft" >
 &#160;&#160;&#160;struct {</td></tr>
-<tr class="memitem:a68f67581759bed22671e1de5f5d87d2b"><td class="memItemLeft" >
+<tr class="memitem:a226cb84a669157e6e015aad60b0279f5"><td class="memItemLeft" >
 &#160;&#160;&#160;&#160;&#160;&#160;uint64_t&#160;&#160;&#160;<b>prp1</b></td></tr>
-<tr class="separator:a68f67581759bed22671e1de5f5d87d2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9d465e917cd8858224e16a0b8566694f"><td class="memItemLeft" >
+<tr class="separator:a226cb84a669157e6e015aad60b0279f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7cfc87361db8c9d3cde2106b53051544"><td class="memItemLeft" >
 &#160;&#160;&#160;&#160;&#160;&#160;uint64_t&#160;&#160;&#160;<b>prp2</b></td></tr>
-<tr class="separator:a9d465e917cd8858224e16a0b8566694f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2bc399aa7ea3dfd4b13e85f018cffebc"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;&#160;&#160;<b>prp</b></td></tr>
-<tr class="separator:a2bc399aa7ea3dfd4b13e85f018cffebc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8a0a6013c044203295435d1f9ea6a2e5"><td class="memItemLeft" >
+<tr class="separator:a7cfc87361db8c9d3cde2106b53051544"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34fba6b7163923efcb5b9f3387318c2e"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;&#160;&#160;<b>prp</b></td></tr>
+<tr class="separator:a34fba6b7163923efcb5b9f3387318c2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfeb0e3c2daed936f3540c7a625cf883"><td class="memItemLeft" >
 &#160;&#160;&#160;struct <a class="el" href="structspdk__nvme__sgl__descriptor.html">spdk_nvme_sgl_descriptor</a>&#160;&#160;&#160;<b>sgl1</b></td></tr>
-<tr class="separator:a8a0a6013c044203295435d1f9ea6a2e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a625c4ede8a70260b79d4e48ce3eebd53"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><b>dptr</b></td></tr>
-<tr class="separator:a625c4ede8a70260b79d4e48ce3eebd53"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aacf9bf0e72fa493bdf5b02423925e4df"><td class="memItemLeft" ><a id="aacf9bf0e72fa493bdf5b02423925e4df"></a>
-union {</td></tr>
-<tr class="memitem:aecefdc2e8bb447e6865a994e841643a7"><td class="memItemLeft" >
-&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<b>cdw10</b></td></tr>
-<tr class="separator:aecefdc2e8bb447e6865a994e841643a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a439595aac8f76b2f1e0233ced69a74a9"><td class="memItemLeft" >
-&#160;&#160;&#160;union <a class="el" href="unionspdk__nvme__cmd__cdw10.html">spdk_nvme_cmd_cdw10</a>&#160;&#160;&#160;<b>cdw10_bits</b></td></tr>
-<tr class="separator:a439595aac8f76b2f1e0233ced69a74a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aacf9bf0e72fa493bdf5b02423925e4df"><td class="memItemLeft" valign="top">};&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
-<tr class="separator:aacf9bf0e72fa493bdf5b02423925e4df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:adfeb0e3c2daed936f3540c7a625cf883"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa882eb5ec9ecec09da3ceb29e864f60e"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><b>dptr</b></td></tr>
+<tr class="separator:aa882eb5ec9ecec09da3ceb29e864f60e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abdcd9fee8b4b428b6daf90a7f7db0aa0"><td class="memItemLeft" ><a id="abdcd9fee8b4b428b6daf90a7f7db0aa0"></a>
 union {</td></tr>
-<tr class="memitem:a9d44125ca0085b120014f8e03c35affb"><td class="memItemLeft" >
-&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<b>cdw11</b></td></tr>
-<tr class="separator:a9d44125ca0085b120014f8e03c35affb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a87d369df72ce3cbcd7ba911193354a6a"><td class="memItemLeft" >
-&#160;&#160;&#160;union <a class="el" href="unionspdk__nvme__cmd__cdw11.html">spdk_nvme_cmd_cdw11</a>&#160;&#160;&#160;<b>cdw11_bits</b></td></tr>
-<tr class="separator:a87d369df72ce3cbcd7ba911193354a6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3cc576f58d9fd9a76c3350c8350e3657"><td class="memItemLeft" >
+&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<b>cdw10</b></td></tr>
+<tr class="separator:a3cc576f58d9fd9a76c3350c8350e3657"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc7aceaf80a168000d411e3de70660e8"><td class="memItemLeft" >
+&#160;&#160;&#160;union <a class="el" href="unionspdk__nvme__cmd__cdw10.html">spdk_nvme_cmd_cdw10</a>&#160;&#160;&#160;<b>cdw10_bits</b></td></tr>
+<tr class="separator:acc7aceaf80a168000d411e3de70660e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abdcd9fee8b4b428b6daf90a7f7db0aa0"><td class="memItemLeft" valign="top">};&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
 <tr class="separator:abdcd9fee8b4b428b6daf90a7f7db0aa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a30700e361279df57d83eb6e90413d728"><td class="memItemLeft" ><a id="a30700e361279df57d83eb6e90413d728"></a>
 union {</td></tr>
-<tr class="memitem:a3e979c09f6c4f14650db030faadcb85e"><td class="memItemLeft" >
-&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<b>cdw12</b></td></tr>
-<tr class="separator:a3e979c09f6c4f14650db030faadcb85e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a379de06636c9b92723b4d5fc7020b189"><td class="memItemLeft" >
-&#160;&#160;&#160;union <a class="el" href="unionspdk__nvme__cmd__cdw12.html">spdk_nvme_cmd_cdw12</a>&#160;&#160;&#160;<b>cdw12_bits</b></td></tr>
-<tr class="separator:a379de06636c9b92723b4d5fc7020b189"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f5d30fb7418b8b5ca12e5b9e09ed69f"><td class="memItemLeft" >
+&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<b>cdw11</b></td></tr>
+<tr class="separator:a1f5d30fb7418b8b5ca12e5b9e09ed69f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7e2461993905ebaa7eac468406b7ed9"><td class="memItemLeft" >
+&#160;&#160;&#160;union <a class="el" href="unionspdk__nvme__cmd__cdw11.html">spdk_nvme_cmd_cdw11</a>&#160;&#160;&#160;<b>cdw11_bits</b></td></tr>
+<tr class="separator:af7e2461993905ebaa7eac468406b7ed9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a30700e361279df57d83eb6e90413d728"><td class="memItemLeft" valign="top">};&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
 <tr class="separator:a30700e361279df57d83eb6e90413d728"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7423e4adcaa81e81838f8ad42a9fbb43"><td class="memItemLeft" align="right" valign="top"><a id="a7423e4adcaa81e81838f8ad42a9fbb43"></a>
-uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>cdw13</b></td></tr>
-<tr class="separator:a7423e4adcaa81e81838f8ad42a9fbb43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c724a4897acb83ac86c4ea71afa9785"><td class="memItemLeft" ><a id="a7c724a4897acb83ac86c4ea71afa9785"></a>
+union {</td></tr>
+<tr class="memitem:a35281ee93f09d3ebb458f41e47b6b7a1"><td class="memItemLeft" >
+&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<b>cdw12</b></td></tr>
+<tr class="separator:a35281ee93f09d3ebb458f41e47b6b7a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18687f16b1ba30626fa9d9b617ff0c8c"><td class="memItemLeft" >
+&#160;&#160;&#160;union <a class="el" href="unionspdk__nvme__cmd__cdw12.html">spdk_nvme_cmd_cdw12</a>&#160;&#160;&#160;<b>cdw12_bits</b></td></tr>
+<tr class="separator:a18687f16b1ba30626fa9d9b617ff0c8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c724a4897acb83ac86c4ea71afa9785"><td class="memItemLeft" valign="top">};&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:a7c724a4897acb83ac86c4ea71afa9785"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae72f6949da6b98a60eda22d165bc3c80"><td class="memItemLeft" ><a id="ae72f6949da6b98a60eda22d165bc3c80"></a>
+union {</td></tr>
+<tr class="memitem:ab0238d00f32539fd3dea0bc506c5799b"><td class="memItemLeft" >
+&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<b>cdw13</b></td></tr>
+<tr class="separator:ab0238d00f32539fd3dea0bc506c5799b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5636ab8b2d81697b8aa11378920742c8"><td class="memItemLeft" >
+&#160;&#160;&#160;union <a class="el" href="unionspdk__nvme__cmd__cdw13.html">spdk_nvme_cmd_cdw13</a>&#160;&#160;&#160;<b>cdw13_bits</b></td></tr>
+<tr class="separator:a5636ab8b2d81697b8aa11378920742c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae72f6949da6b98a60eda22d165bc3c80"><td class="memItemLeft" valign="top">};&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:ae72f6949da6b98a60eda22d165bc3c80"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a52074e9fb54722f7363705b8e24842bd"><td class="memItemLeft" align="right" valign="top"><a id="a52074e9fb54722f7363705b8e24842bd"></a>
 uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>cdw14</b></td></tr>
 <tr class="separator:a52074e9fb54722f7363705b8e24842bd"><td class="memSeparator" colspan="2">&#160;</td></tr>

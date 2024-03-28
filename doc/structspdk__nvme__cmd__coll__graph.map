@@ -1,5 +1,5 @@
 <map id="spdk_nvme_cmd" name="spdk_nvme_cmd">
-<area shape="rect" id="node1" title=" " alt="" coords="773,707,905,733"/>
+<area shape="rect" id="node1" title=" " alt="" coords="773,885,905,912"/>
 <area shape="rect" id="node2" href="$unionspdk__nvme__cmd__cdw10.html" title=" " alt="" coords="460,548,641,575"/>
 <area shape="rect" id="node3" href="$unionspdk__nvme__cmd__cdw11.html" title=" " alt="" coords="460,599,641,625"/>
 <area shape="rect" id="node4" href="$unionspdk__nvme__feat__error__recovery.html" title="Data used by Set Features/Get Features SPDK_NVME_FEAT_ERROR_RECOVERY." alt="" coords="31,17,199,58"/>
@@ -22,5 +22,6 @@
 <area shape="rect" id="node21" href="$unionspdk__nvme__cmd__cdw12.html" title=" " alt="" coords="460,885,641,912"/>
 <area shape="rect" id="node22" href="$unionspdk__nvme__feat__fdp__events__cdw12.html" title="Data used by Set Feature SPDK_NVME_FEAT_FDP_EVENTS." alt="" coords="35,1114,194,1155"/>
 <area shape="rect" id="node23" href="$unionspdk__nvme__feat__fdp__cdw12.html" title="Data used by Set Features/Get Features SPDK_NVME_FEAT_FDP." alt="" coords="35,1179,194,1221"/>
-<area shape="rect" id="node24" href="$structspdk__nvme__sgl__descriptor.html" title=" " alt="" coords="453,936,648,963"/>
+<area shape="rect" id="node24" href="$unionspdk__nvme__cmd__cdw13.html" title=" " alt="" coords="460,936,641,963"/>
+<area shape="rect" id="node25" href="$structspdk__nvme__sgl__descriptor.html" title=" " alt="" coords="453,987,648,1013"/>
 </map>
