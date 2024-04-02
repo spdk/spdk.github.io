@@ -14,6 +14,8 @@ toc:
 ---
 
 ## [SPDK on YouTube](https://www.youtube.com/channel/UCBJymdv0AXCcnbLtEw7jvBQ)
+### [SPDK 2022 PRC Virtual Forum](https://www.youtube.com/playlist?list=PL4eJZ5XvN_LSqiqm10K4lD33KtOWl01Yg)
+### [SPDK 2022 US Virtual Forum](https://www.youtube.com/playlist?list=PL4eJZ5XvN_LQUpbB3IPUI1OyfC235StZI)
 ### [SPDK 2021 PRC Virtual Forum](https://www.youtube.com/playlist?list=PL4eJZ5XvN_LT29d-QniJ-j9gMwRiu4qrN)
 ### [SPDK 2021 US Virtual Forum](https://www.youtube.com/playlist?list=PL4eJZ5XvN_LQ91sA7PBXiUEYtbTMEFUy1)
 ### [SPDK 2020 PRC Virtual Forum](https://www.youtube.com/playlist?list=PL4eJZ5XvN_LRmiRqpJh65K7RAWmMNDVaM)
