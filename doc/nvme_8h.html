@@ -274,9 +274,9 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a7055da0cf40672b41d3bf930c6ccfbf4"><td class="memItemLeft" align="right" valign="top"><a id="a7055da0cf40672b41d3bf930c6ccfbf4"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(struct <a class="el" href="structspdk__nvme__ctrlr__opts.html">spdk_nvme_ctrlr_opts</a>)==832, &quot;Incorrect size&quot;)</td></tr>
-<tr class="separator:a7055da0cf40672b41d3bf930c6ccfbf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4fc88d477b62a3cbb2904a4ba4bcc9d8"><td class="memItemLeft" align="right" valign="top"><a id="a4fc88d477b62a3cbb2904a4ba4bcc9d8"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(struct <a class="el" href="structspdk__nvme__ctrlr__opts.html">spdk_nvme_ctrlr_opts</a>)==848, &quot;Incorrect size&quot;)</td></tr>
+<tr class="separator:a4fc88d477b62a3cbb2904a4ba4bcc9d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a39c91e2e6ae899f37b5a89c28a2207cf"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a39c91e2e6ae899f37b5a89c28a2207cf">spdk_nvme_ctrlr_is_discovery</a> (struct spdk_nvme_ctrlr *ctrlr)</td></tr>
 <tr class="memdesc:a39c91e2e6ae899f37b5a89c28a2207cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicate whether a ctrlr handle is associated with a Discovery controller.  <a href="nvme_8h.html#a39c91e2e6ae899f37b5a89c28a2207cf">More...</a><br /></td></tr>
 <tr class="separator:a39c91e2e6ae899f37b5a89c28a2207cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -829,6 +829,18 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_trty
 <tr class="memitem:aebe027f765f35a6cf532c236a90df5b7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#aebe027f765f35a6cf532c236a90df5b7">spdk_nvme_print_completion</a> (uint16_t qid, struct <a class="el" href="structspdk__nvme__cpl.html">spdk_nvme_cpl</a> *cpl)</td></tr>
 <tr class="memdesc:aebe027f765f35a6cf532c236a90df5b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prints (SPDK_NOTICELOG) the contents of an NVMe completion queue entry.  <a href="nvme_8h.html#aebe027f765f35a6cf532c236a90df5b7">More...</a><br /></td></tr>
 <tr class="separator:aebe027f765f35a6cf532c236a90df5b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1e15e8ce30fb87236f45cb5f7ea9c60"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#af1e15e8ce30fb87236f45cb5f7ea9c60">spdk_nvme_dhchap_get_digest_name</a> (int id)</td></tr>
+<tr class="memdesc:af1e15e8ce30fb87236f45cb5f7ea9c60"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the name of a digest.  <a href="nvme_8h.html#af1e15e8ce30fb87236f45cb5f7ea9c60">More...</a><br /></td></tr>
+<tr class="separator:af1e15e8ce30fb87236f45cb5f7ea9c60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6594532f906f2451ba1b785c6db53fe5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a6594532f906f2451ba1b785c6db53fe5">spdk_nvme_dhchap_get_digest_id</a> (const char *name)</td></tr>
+<tr class="memdesc:a6594532f906f2451ba1b785c6db53fe5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the id of a digest.  <a href="nvme_8h.html#a6594532f906f2451ba1b785c6db53fe5">More...</a><br /></td></tr>
+<tr class="separator:a6594532f906f2451ba1b785c6db53fe5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a369ee2cd1bd62bf4c6baa5fd1b11f1a6"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a369ee2cd1bd62bf4c6baa5fd1b11f1a6">spdk_nvme_dhchap_get_dhgroup_name</a> (int id)</td></tr>
+<tr class="memdesc:a369ee2cd1bd62bf4c6baa5fd1b11f1a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the name of a Diffie-Hellman group.  <a href="nvme_8h.html#a369ee2cd1bd62bf4c6baa5fd1b11f1a6">More...</a><br /></td></tr>
+<tr class="separator:a369ee2cd1bd62bf4c6baa5fd1b11f1a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20a1143ad8f4a3f001471476762027e4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a20a1143ad8f4a3f001471476762027e4">spdk_nvme_dhchap_get_dhgroup_id</a> (const char *name)</td></tr>
+<tr class="memdesc:a20a1143ad8f4a3f001471476762027e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the id of a Diffie-Hellman group.  <a href="nvme_8h.html#a20a1143ad8f4a3f001471476762027e4">More...</a><br /></td></tr>
+<tr class="separator:a20a1143ad8f4a3f001471476762027e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a82cdb425c9fad7b94ad0b8f5c27bb8b2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a82cdb425c9fad7b94ad0b8f5c27bb8b2">spdk_nvme_rdma_init_hooks</a> (struct <a class="el" href="structspdk__nvme__rdma__hooks.html">spdk_nvme_rdma_hooks</a> *hooks)</td></tr>
 <tr class="memdesc:a82cdb425c9fad7b94ad0b8f5c27bb8b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the global hooks for the RDMA transport, if necessary.  <a href="nvme_8h.html#a82cdb425c9fad7b94ad0b8f5c27bb8b2">More...</a><br /></td></tr>
 <tr class="separator:a82cdb425c9fad7b94ad0b8f5c27bb8b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -5529,6 +5541,114 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_trty
 <dl class="section return"><dt>Returns</dt><dd>0 if all detachments complete; the context is also freed and no longer valid. </dd>
 <dd>
 -EAGAIN if any detachment is still in progress; users must call <a class="el" href="nvme_8h.html#a19178860f90bdd522eaa329d0ff837fe" title="Poll detachment of multiple controllers until they complete.">spdk_nvme_detach_poll_async()</a> again to continue progress. </dd></dl>
+
+</div>
+</div>
+<a id="a20a1143ad8f4a3f001471476762027e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20a1143ad8f4a3f001471476762027e4">&#9670;&nbsp;</a></span>spdk_nvme_dhchap_get_dhgroup_id()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_nvme_dhchap_get_dhgroup_id </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return the id of a Diffie-Hellman group. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>Name of a Diffie-Hellman group.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Diffie-Hellman group id (see <code>enum spdk_nvmf_dhchap_dhgroup</code>) or negative errno on failure. </dd></dl>
+
+</div>
+</div>
+<a id="a369ee2cd1bd62bf4c6baa5fd1b11f1a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a369ee2cd1bd62bf4c6baa5fd1b11f1a6">&#9670;&nbsp;</a></span>spdk_nvme_dhchap_get_dhgroup_name()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* spdk_nvme_dhchap_get_dhgroup_name </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>id</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return the name of a Diffie-Hellman group. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td>Diffie-Hellman group identifier (see <code>enum spdk_nvmf_dhchap_dhgroup</code>).</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Name of the Diffie-Hellman group. </dd></dl>
+
+</div>
+</div>
+<a id="a6594532f906f2451ba1b785c6db53fe5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6594532f906f2451ba1b785c6db53fe5">&#9670;&nbsp;</a></span>spdk_nvme_dhchap_get_digest_id()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_nvme_dhchap_get_digest_id </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return the id of a digest. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>Name of a digest.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Digest id (see <code>enum spdk_nvmf_dhchap_hash</code>) or negative errno on failure. </dd></dl>
+
+</div>
+</div>
+<a id="af1e15e8ce30fb87236f45cb5f7ea9c60"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1e15e8ce30fb87236f45cb5f7ea9c60">&#9670;&nbsp;</a></span>spdk_nvme_dhchap_get_digest_name()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* spdk_nvme_dhchap_get_digest_name </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>id</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return the name of a digest. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td>Digest identifier (see <code>enum spdk_nvmf_dhchap_hash</code>).</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Name of the digest. </dd></dl>
 
 </div>
 </div>

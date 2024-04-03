@@ -214,6 +214,16 @@ uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>reserved610</b> [7
 struct spdk_key *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__ctrlr__opts.html#a3dbb37bcaf3ffa55d8e53efb054d1995">tls_psk</a></td></tr>
 <tr class="memdesc:a3dbb37bcaf3ffa55d8e53efb054d1995"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pre-shared key for NVMe/TCP's TLS connection. <br /></td></tr>
 <tr class="separator:a3dbb37bcaf3ffa55d8e53efb054d1995"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbca1c6d481b35739d9eae3306a2d0c9"><td class="memItemLeft" align="right" valign="top"><a id="acbca1c6d481b35739d9eae3306a2d0c9"></a>
+struct spdk_key *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__ctrlr__opts.html#acbca1c6d481b35739d9eae3306a2d0c9">dhchap_key</a></td></tr>
+<tr class="memdesc:acbca1c6d481b35739d9eae3306a2d0c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">In-band authentication DH-HMAC-CHAP key. <br /></td></tr>
+<tr class="separator:acbca1c6d481b35739d9eae3306a2d0c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4fa4af9187bc57d8a986c012fd84d507"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__ctrlr__opts.html#a4fa4af9187bc57d8a986c012fd84d507">dhchap_digests</a></td></tr>
+<tr class="memdesc:a4fa4af9187bc57d8a986c012fd84d507"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allowed digests in in-band authentication.  <a href="structspdk__nvme__ctrlr__opts.html#a4fa4af9187bc57d8a986c012fd84d507">More...</a><br /></td></tr>
+<tr class="separator:a4fa4af9187bc57d8a986c012fd84d507"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af35785e295dc19ec0bc59532b75515f0"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__ctrlr__opts.html#af35785e295dc19ec0bc59532b75515f0">dhchap_dhgroups</a></td></tr>
+<tr class="memdesc:af35785e295dc19ec0bc59532b75515f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allowed Diffie-Hellman groups in in-band authentication.  <a href="structspdk__nvme__ctrlr__opts.html#af35785e295dc19ec0bc59532b75515f0">More...</a><br /></td></tr>
+<tr class="separator:af35785e295dc19ec0bc59532b75515f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>NVMe controller initialization options. </p>
@@ -284,6 +294,40 @@ struct spdk_key *&#160;</td><td class="memItemRight" valign="bottom"><a class="e
 
 <p>It is used for TCP transport. </p>
 <p>Set to true, means having data digest for the data in the NVMe/TCP PDU </p>
+
+</div>
+</div>
+<a id="af35785e295dc19ec0bc59532b75515f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af35785e295dc19ec0bc59532b75515f0">&#9670;&nbsp;</a></span>dhchap_dhgroups</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t spdk_nvme_ctrlr_opts::dhchap_dhgroups</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Allowed Diffie-Hellman groups in in-band authentication. </p>
+<p>Each bit corresponds to one of the spdk_nvmf_dhchap_dhgroup values. </p>
+
+</div>
+</div>
+<a id="a4fa4af9187bc57d8a986c012fd84d507"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4fa4af9187bc57d8a986c012fd84d507">&#9670;&nbsp;</a></span>dhchap_digests</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t spdk_nvme_ctrlr_opts::dhchap_digests</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Allowed digests in in-band authentication. </p>
+<p>Each bit corresponds to one of the spdk_nvmf_dhchap_hash values. </p>
 
 </div>
 </div>

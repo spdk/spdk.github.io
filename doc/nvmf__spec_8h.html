@@ -132,6 +132,20 @@ Data Structures</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvmf__discovery__log__page.html">spdk_nvmf_discovery_log_page</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvmf__auth__descriptor.html">spdk_nvmf_auth_descriptor</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvmf__auth__negotiate.html">spdk_nvmf_auth_negotiate</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvmf__dhchap__challenge.html">spdk_nvmf_dhchap_challenge</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvmf__dhchap__reply.html">spdk_nvmf_dhchap_reply</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvmf__dhchap__success1.html">spdk_nvmf_dhchap_success1</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvmf__dhchap__success2.html">spdk_nvmf_dhchap_success2</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvmf__auth__failure.html">spdk_nvmf_auth_failure</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvmf__rdma__request__private__data.html">spdk_nvmf_rdma_request_private_data</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvmf__rdma__accept__private__data.html">spdk_nvmf_rdma_accept_private_data</a></td></tr>
@@ -218,6 +232,14 @@ Macros</h2></td></tr>
 <tr class="memitem:a9f439cc334dabdd6fb8b3839be05b9e1"><td class="memItemLeft" align="right" valign="top"><a id="a9f439cc334dabdd6fb8b3839be05b9e1"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_NVMF_MIN_ADMIN_MAX_SQ_SIZE</b>&#160;&#160;&#160;32</td></tr>
 <tr class="separator:a9f439cc334dabdd6fb8b3839be05b9e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a268b70fbe1e80c00b1ff0116be40e19b"><td class="memItemLeft" align="right" valign="top"><a id="a268b70fbe1e80c00b1ff0116be40e19b"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf__spec_8h.html#a268b70fbe1e80c00b1ff0116be40e19b">SPDK_NVMF_AUTH_SECP_NVME</a>&#160;&#160;&#160;0xe9</td></tr>
+<tr class="memdesc:a268b70fbe1e80c00b1ff0116be40e19b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Security protocol identifier assigned to NVMe. <br /></td></tr>
+<tr class="separator:a268b70fbe1e80c00b1ff0116be40e19b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9128aad835b878156ff889123db5822"><td class="memItemLeft" align="right" valign="top"><a id="ae9128aad835b878156ff889123db5822"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf__spec_8h.html#ae9128aad835b878156ff889123db5822">SPDK_NVMF_AUTH_FAILURE</a>&#160;&#160;&#160;1</td></tr>
+<tr class="memdesc:ae9128aad835b878156ff889123db5822"><td class="mdescLeft">&#160;</td><td class="mdescRight">AUTH_Failure reason codes. <br /></td></tr>
+<tr class="separator:ae9128aad835b878156ff889123db5822"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a87400e526c97625897236a9da16067d8"><td class="memItemLeft" align="right" valign="top"><a id="a87400e526c97625897236a9da16067d8"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_NVME_SGL_SUBTYPE_INVALIDATE_KEY</b>&#160;&#160;&#160;0xF</td></tr>
 <tr class="separator:a87400e526c97625897236a9da16067d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -342,6 +364,61 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:ab472926a11e06a7b78af736228718c02"><td class="mdescLeft">&#160;</td><td class="mdescRight">TCP Secure Socket Type.  <a href="nvmf__spec_8h.html#ab472926a11e06a7b78af736228718c02">More...</a><br /></td></tr>
 <tr class="separator:ab472926a11e06a7b78af736228718c02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ed5ea05a6b7ac80e1a260c69c12d6ab"><td class="memItemLeft" align="right" valign="top"><a id="a7ed5ea05a6b7ac80e1a260c69c12d6ab"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf__spec_8h.html#a7ed5ea05a6b7ac80e1a260c69c12d6ab">spdk_nvmf_auth_type</a> { <b>SPDK_NVMF_AUTH_TYPE_COMMON_MESSAGE</b> = 0x0
+, <b>SPDK_NVMF_AUTH_TYPE_DHCHAP</b> = 0x1
+ }</td></tr>
+<tr class="memdesc:a7ed5ea05a6b7ac80e1a260c69c12d6ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Authentication types. <br /></td></tr>
+<tr class="separator:a7ed5ea05a6b7ac80e1a260c69c12d6ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca936dd8a70d32b1d53d31820ddafeec"><td class="memItemLeft" align="right" valign="top"><a id="aca936dd8a70d32b1d53d31820ddafeec"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf__spec_8h.html#aca936dd8a70d32b1d53d31820ddafeec">spdk_nvmf_auth_id</a> { <br />
+&#160;&#160;<b>SPDK_NVMF_AUTH_ID_NEGOTIATE</b> = 0x00
+, <b>SPDK_NVMF_AUTH_ID_DHCHAP_CHALLENGE</b> = 0x01
+, <b>SPDK_NVMF_AUTH_ID_DHCHAP_REPLY</b> = 0x02
+, <b>SPDK_NVMF_AUTH_ID_DHCHAP_SUCCESS1</b> = 0x03
+, <br />
+&#160;&#160;<b>SPDK_NVMF_AUTH_ID_DHCHAP_SUCCESS2</b> = 0x04
+, <b>SPDK_NVMF_AUTH_ID_FAILURE2</b> = 0xf0
+, <b>SPDK_NVMF_AUTH_ID_FAILURE1</b> = 0xf1
+<br />
+ }</td></tr>
+<tr class="memdesc:aca936dd8a70d32b1d53d31820ddafeec"><td class="mdescLeft">&#160;</td><td class="mdescRight">AUTH message identifiers. <br /></td></tr>
+<tr class="separator:aca936dd8a70d32b1d53d31820ddafeec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0021d43dedfcd44d40c342f82dd4fd4a"><td class="memItemLeft" align="right" valign="top"><a id="a0021d43dedfcd44d40c342f82dd4fd4a"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf__spec_8h.html#a0021d43dedfcd44d40c342f82dd4fd4a">spdk_nvmf_dhchap_hash</a> { <b>SPDK_NVMF_DHCHAP_HASH_NONE</b> = 0x0
+, <b>SPDK_NVMF_DHCHAP_HASH_SHA256</b> = 0x1
+, <b>SPDK_NVMF_DHCHAP_HASH_SHA384</b> = 0x2
+, <b>SPDK_NVMF_DHCHAP_HASH_SHA512</b> = 0x3
+ }</td></tr>
+<tr class="memdesc:a0021d43dedfcd44d40c342f82dd4fd4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hash function identifiers. <br /></td></tr>
+<tr class="separator:a0021d43dedfcd44d40c342f82dd4fd4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a481186fed9a79c095d9325cc375f0c48"><td class="memItemLeft" align="right" valign="top"><a id="a481186fed9a79c095d9325cc375f0c48"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf__spec_8h.html#a481186fed9a79c095d9325cc375f0c48">spdk_nvmf_dhchap_dhgroup</a> { <br />
+&#160;&#160;<b>SPDK_NVMF_DHCHAP_DHGROUP_NULL</b> = 0x0
+, <b>SPDK_NVMF_DHCHAP_DHGROUP_2048</b> = 0x1
+, <b>SPDK_NVMF_DHCHAP_DHGROUP_3072</b> = 0x2
+, <b>SPDK_NVMF_DHCHAP_DHGROUP_4096</b> = 0x3
+, <br />
+&#160;&#160;<b>SPDK_NVMF_DHCHAP_DHGROUP_6144</b> = 0x4
+, <b>SPDK_NVMF_DHCHAP_DHGROUP_8192</b> = 0x5
+<br />
+ }</td></tr>
+<tr class="memdesc:a481186fed9a79c095d9325cc375f0c48"><td class="mdescLeft">&#160;</td><td class="mdescRight">Diffie-Hellman group identifiers. <br /></td></tr>
+<tr class="separator:a481186fed9a79c095d9325cc375f0c48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc2a9d72cda73711e6c264e4de959c07"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf__spec_8h.html#afc2a9d72cda73711e6c264e4de959c07">spdk_nvmf_auth_scc</a> { <a class="el" href="nvmf__spec_8h.html#afc2a9d72cda73711e6c264e4de959c07a9a5b5d12a301a4743ad5824ecc99ab48">SPDK_NVMF_AUTH_SCC_DISABLED</a> = 0
+, <a class="el" href="nvmf__spec_8h.html#afc2a9d72cda73711e6c264e4de959c07ac385195f2474231863f3023bffa9db9b">SPDK_NVMF_AUTH_SCC_TLS</a> = 1
+ }</td></tr>
+<tr class="memdesc:afc2a9d72cda73711e6c264e4de959c07"><td class="mdescLeft">&#160;</td><td class="mdescRight">Secure channel concatenation.  <a href="nvmf__spec_8h.html#afc2a9d72cda73711e6c264e4de959c07">More...</a><br /></td></tr>
+<tr class="separator:afc2a9d72cda73711e6c264e4de959c07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8abd2255241730de7ec42426af27ffa"><td class="memItemLeft" align="right" valign="top"><a id="ae8abd2255241730de7ec42426af27ffa"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf__spec_8h.html#ae8abd2255241730de7ec42426af27ffa">spdk_nvmf_auth_failure_reason</a> { <br />
+&#160;&#160;<b>SPDK_NVMF_AUTH_FAILED</b> = 0x1
+, <b>SPDK_NVMF_AUTH_PROTOCOL_UNUSABLE</b> = 0x2
+, <b>SPDK_NVMF_AUTH_SCC_MISMATCH</b> = 0x3
+, <b>SPDK_NVMF_AUTH_HASH_UNUSABLE</b> = 0x4
+, <br />
+&#160;&#160;<b>SPDK_NVMF_AUTH_DHGROUP_UNUSABLE</b> = 0x5
+, <b>SPDK_NVMF_AUTH_INCORRECT_PAYLOAD</b> = 0x6
+, <b>SPDK_NVMF_AUTH_INCORRECT_PROTOCOL_MESSAGE</b> = 0x7
+<br />
+ }</td></tr>
+<tr class="memdesc:ae8abd2255241730de7ec42426af27ffa"><td class="mdescLeft">&#160;</td><td class="mdescRight">AUTH_Failure reason code explanations. <br /></td></tr>
+<tr class="separator:ae8abd2255241730de7ec42426af27ffa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae7f76294d6aefedd28e4656b263324b8"><td class="memItemLeft" align="right" valign="top"><a id="ae7f76294d6aefedd28e4656b263324b8"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_rdma_transport_error</b> { <br />
 &#160;&#160;<b>SPDK_NVMF_RDMA_ERROR_INVALID_PRIVATE_DATA_LENGTH</b> = 0x1
 , <b>SPDK_NVMF_RDMA_ERROR_INVALID_RECFMT</b> = 0x2
@@ -428,6 +505,27 @@ Functions</h2></td></tr>
 <tr class="memitem:aa5d6f3d0b50748dabe9dc556703776dd"><td class="memItemLeft" align="right" valign="top"><a id="aa5d6f3d0b50748dabe9dc556703776dd"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(struct <a class="el" href="structspdk__nvmf__discovery__log__page.html">spdk_nvmf_discovery_log_page</a>)==1024, &quot;Incorrect size&quot;)</td></tr>
 <tr class="separator:aa5d6f3d0b50748dabe9dc556703776dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8993c6e1c21ed88ad2e776745cdbdee2"><td class="memItemLeft" align="right" valign="top"><a id="a8993c6e1c21ed88ad2e776745cdbdee2"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(struct <a class="el" href="structspdk__nvmf__auth__descriptor.html">spdk_nvmf_auth_descriptor</a>)==64, &quot;Incorrect size&quot;)</td></tr>
+<tr class="separator:a8993c6e1c21ed88ad2e776745cdbdee2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adca907162f348364418bc29d3623a00d"><td class="memItemLeft" align="right" valign="top"><a id="adca907162f348364418bc29d3623a00d"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(struct <a class="el" href="structspdk__nvmf__auth__negotiate.html">spdk_nvmf_auth_negotiate</a>)==8, &quot;Incorrect size&quot;)</td></tr>
+<tr class="separator:adca907162f348364418bc29d3623a00d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a989f755adb862f8ad69a012c19fcc7a6"><td class="memItemLeft" align="right" valign="top"><a id="a989f755adb862f8ad69a012c19fcc7a6"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(struct <a class="el" href="structspdk__nvmf__dhchap__challenge.html">spdk_nvmf_dhchap_challenge</a>)==16, &quot;Incorrect size&quot;)</td></tr>
+<tr class="separator:a989f755adb862f8ad69a012c19fcc7a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37d301f8a2dc71db11553c80d776f421"><td class="memItemLeft" align="right" valign="top"><a id="a37d301f8a2dc71db11553c80d776f421"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(struct <a class="el" href="structspdk__nvmf__dhchap__reply.html">spdk_nvmf_dhchap_reply</a>)==16, &quot;Incorrect size&quot;)</td></tr>
+<tr class="separator:a37d301f8a2dc71db11553c80d776f421"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a200bfdacf7123da2badb2870df6533d5"><td class="memItemLeft" align="right" valign="top"><a id="a200bfdacf7123da2badb2870df6533d5"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(struct <a class="el" href="structspdk__nvmf__dhchap__success1.html">spdk_nvmf_dhchap_success1</a>)==16, &quot;Incorrect size&quot;)</td></tr>
+<tr class="separator:a200bfdacf7123da2badb2870df6533d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4db7afcbfbe3492d7471cae18e3c1c8c"><td class="memItemLeft" align="right" valign="top"><a id="a4db7afcbfbe3492d7471cae18e3c1c8c"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(struct <a class="el" href="structspdk__nvmf__dhchap__success2.html">spdk_nvmf_dhchap_success2</a>)==16, &quot;Incorrect size&quot;)</td></tr>
+<tr class="separator:a4db7afcbfbe3492d7471cae18e3c1c8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a836645f7fefd17d9b48b43561c230bdd"><td class="memItemLeft" align="right" valign="top"><a id="a836645f7fefd17d9b48b43561c230bdd"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(struct <a class="el" href="structspdk__nvmf__auth__failure.html">spdk_nvmf_auth_failure</a>)==8, &quot;Incorrect size&quot;)</td></tr>
+<tr class="separator:a836645f7fefd17d9b48b43561c230bdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af6fd4726e5e9fc85d2e2d2255f33a58a"><td class="memItemLeft" align="right" valign="top"><a id="af6fd4726e5e9fc85d2e2d2255f33a58a"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(struct <a class="el" href="structspdk__nvmf__rdma__request__private__data.html">spdk_nvmf_rdma_request_private_data</a>)==32, &quot;Incorrect size&quot;)</td></tr>
 <tr class="separator:af6fd4726e5e9fc85d2e2d2255f33a58a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -632,6 +730,28 @@ Functions</h2></td></tr>
 <tr><td class="fieldname"><a id="a08f0090d242e2607ab11f148dcd797c6afd21c300bf2e149474def6ae770b2263"></a>SPDK_NVMF_ADRFAM_FC&#160;</td><td class="fielddoc"><p>Fibre Channel address family. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a08f0090d242e2607ab11f148dcd797c6a6398d0b463d2b5b7e0d46aff634dbd0d"></a>SPDK_NVMF_ADRFAM_INTRA_HOST&#160;</td><td class="fielddoc"><p>Intra-host transport (loopback) </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="afc2a9d72cda73711e6c264e4de959c07"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc2a9d72cda73711e6c264e4de959c07">&#9670;&nbsp;</a></span>spdk_nvmf_auth_scc</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="nvmf__spec_8h.html#afc2a9d72cda73711e6c264e4de959c07">spdk_nvmf_auth_scc</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Secure channel concatenation. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="afc2a9d72cda73711e6c264e4de959c07a9a5b5d12a301a4743ad5824ecc99ab48"></a>SPDK_NVMF_AUTH_SCC_DISABLED&#160;</td><td class="fielddoc"><p>No secure channel concatenation. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="afc2a9d72cda73711e6c264e4de959c07ac385195f2474231863f3023bffa9db9b"></a>SPDK_NVMF_AUTH_SCC_TLS&#160;</td><td class="fielddoc"><p>Secure channel concatenation with TLS (TCP) </p>
 </td></tr>
 </table>
 

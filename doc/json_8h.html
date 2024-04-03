@@ -173,8 +173,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_json_decode_objec
 <tr class="memitem:a3fd7603d5b1f769e75b6331be6f7a052"><td class="memItemLeft" align="right" valign="top"><a id="a3fd7603d5b1f769e75b6331be6f7a052"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_json_decode_object_relaxed</b> (const struct <a class="el" href="structspdk__json__val.html">spdk_json_val</a> *values, const struct <a class="el" href="structspdk__json__object__decoder.html">spdk_json_object_decoder</a> *decoders, size_t num_decoders, void *out)</td></tr>
 <tr class="separator:a3fd7603d5b1f769e75b6331be6f7a052"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1ed6b4728ebf6c75087864dd3e2256a6"><td class="memItemLeft" align="right" valign="top"><a id="a1ed6b4728ebf6c75087864dd3e2256a6"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_json_decode_array</b> (const struct <a class="el" href="structspdk__json__val.html">spdk_json_val</a> *values, spdk_json_decode_fn decode_func, void *out, size_t max_size, size_t *out_size, size_t stride)</td></tr>
+<tr class="memitem:a1ed6b4728ebf6c75087864dd3e2256a6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="json_8h.html#a1ed6b4728ebf6c75087864dd3e2256a6">spdk_json_decode_array</a> (const struct <a class="el" href="structspdk__json__val.html">spdk_json_val</a> *values, spdk_json_decode_fn decode_func, void *out, size_t max_size, size_t *out_size, size_t stride)</td></tr>
+<tr class="memdesc:a1ed6b4728ebf6c75087864dd3e2256a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decode a JSON array.  <a href="json_8h.html#a1ed6b4728ebf6c75087864dd3e2256a6">More...</a><br /></td></tr>
 <tr class="separator:a1ed6b4728ebf6c75087864dd3e2256a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a01e5f7c9397f496f580d63c2735d280c"><td class="memItemLeft" align="right" valign="top"><a id="a01e5f7c9397f496f580d63c2735d280c"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_json_decode_bool</b> (const struct <a class="el" href="structspdk__json__val.html">spdk_json_val</a> *val, void *out)</td></tr>
@@ -426,6 +426,72 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_json_write_named_
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Pointer to first JSON value or NULL if array is empty or is not an JSON array. </dd></dl>
+
+</div>
+</div>
+<a id="a1ed6b4728ebf6c75087864dd3e2256a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ed6b4728ebf6c75087864dd3e2256a6">&#9670;&nbsp;</a></span>spdk_json_decode_array()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_json_decode_array </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="structspdk__json__val.html">spdk_json_val</a> *&#160;</td>
+          <td class="paramname"><em>values</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">spdk_json_decode_fn&#160;</td>
+          <td class="paramname"><em>decode_func</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>out</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>max_size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t *&#160;</td>
+          <td class="paramname"><em>out_size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>stride</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Decode a JSON array. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">values</td><td>List of values to decode. </td></tr>
+    <tr><td class="paramname">decode_func</td><td>Function to use to decode each individual value. </td></tr>
+    <tr><td class="paramname">out</td><td>Buffer to store decoded value(s). If <code>stride</code> != 0, this buffer is advanced <code>stride</code> bytes for each decoded value. </td></tr>
+    <tr><td class="paramname">out_size</td><td>Number of decoded values. </td></tr>
+    <tr><td class="paramname">max_size</td><td>Maximum number of array elements to decode. </td></tr>
+    <tr><td class="paramname">stride</td><td>Number of bytes to advance <code>out</code>.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, -1 on failure. </dd></dl>
 
 </div>
 </div>

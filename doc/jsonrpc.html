@@ -3108,7 +3108,11 @@ bdev_nvme_set_options</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">rdma_max_cq_size   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">Set the maximum size of a rdma completion queue. Default: 0 (unlimited)    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">rdma_cm_event_timeout_ms   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">Time to wait for RDMA CM events. Default: 0 (0 means using default value of driver).   </td></tr>
+<td class="markdownTableBodyNone">rdma_cm_event_timeout_ms   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">Time to wait for RDMA CM events. Default: 0 (0 means using default value of driver).    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">dhchap_digests   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">list   </td><td class="markdownTableBodyNone">List of allowed DH-HMAC-CHAP digests.    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">dhchap_dhgroups   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">list   </td><td class="markdownTableBodyNone">List of allowed DH-HMAC-CHAP DH groups.   </td></tr>
 </table>
 <h3>Example</h3>
 <p>Example request:</p>
@@ -3127,6 +3131,14 @@ bdev_nvme_set_options</h2>
 <div class="line">    &quot;action_on_timeout&quot;: &quot;reset&quot;,</div>
 <div class="line">    &quot;io_queue_requests&quot; : 2048,</div>
 <div class="line">    &quot;delay_cmd_submit&quot;: true</div>
+<div class="line">    &quot;dhchap_digests&quot;: [</div>
+<div class="line">      &quot;sha384&quot;,</div>
+<div class="line">      &quot;sha512&quot;</div>
+<div class="line">    ],</div>
+<div class="line">    &quot;dhchap_dhgroups&quot;: [</div>
+<div class="line">      &quot;ffdhe6144&quot;,</div>
+<div class="line">      &quot;ffdhe8192&quot;</div>
+<div class="line">    ]</div>
 <div class="line">  },</div>
 <div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
 <div class="line">  &quot;method&quot;: &quot;bdev_nvme_set_options&quot;,</div>
@@ -3219,7 +3231,9 @@ bdev_nvme_attach_controller</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">psk   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of the pre-shared key to be used for TLS (Enables SSL socket implementation for TCP)    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">max_bdevs   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">The size of the name array for newly created bdevs. Default is 128.   </td></tr>
+<td class="markdownTableBodyNone">max_bdevs   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">The size of the name array for newly created bdevs. Default is 128.    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">dhchap_key   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">DH-HMAC-CHAP key name.   </td></tr>
 </table>
 <h3>Example</h3>
 <p>Example request:</p>

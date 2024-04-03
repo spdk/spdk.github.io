@@ -14,6 +14,13 @@ var nvmf__spec_8h =
     [ "spdk_nvmf_transport_specific_address_subtype", "unionspdk__nvmf__transport__specific__address__subtype.html", "unionspdk__nvmf__transport__specific__address__subtype" ],
     [ "spdk_nvmf_discovery_log_page_entry", "structspdk__nvmf__discovery__log__page__entry.html", "structspdk__nvmf__discovery__log__page__entry" ],
     [ "spdk_nvmf_discovery_log_page", "structspdk__nvmf__discovery__log__page.html", "structspdk__nvmf__discovery__log__page" ],
+    [ "spdk_nvmf_auth_descriptor", "structspdk__nvmf__auth__descriptor.html", "structspdk__nvmf__auth__descriptor" ],
+    [ "spdk_nvmf_auth_negotiate", "structspdk__nvmf__auth__negotiate.html", "structspdk__nvmf__auth__negotiate" ],
+    [ "spdk_nvmf_dhchap_challenge", "structspdk__nvmf__dhchap__challenge.html", "structspdk__nvmf__dhchap__challenge" ],
+    [ "spdk_nvmf_dhchap_reply", "structspdk__nvmf__dhchap__reply.html", "structspdk__nvmf__dhchap__reply" ],
+    [ "spdk_nvmf_dhchap_success1", "structspdk__nvmf__dhchap__success1.html", "structspdk__nvmf__dhchap__success1" ],
+    [ "spdk_nvmf_dhchap_success2", "structspdk__nvmf__dhchap__success2.html", "structspdk__nvmf__dhchap__success2" ],
+    [ "spdk_nvmf_auth_failure", "structspdk__nvmf__auth__failure.html", "structspdk__nvmf__auth__failure" ],
     [ "spdk_nvmf_rdma_request_private_data", "structspdk__nvmf__rdma__request__private__data.html", "structspdk__nvmf__rdma__request__private__data" ],
     [ "spdk_nvmf_rdma_accept_private_data", "structspdk__nvmf__rdma__accept__private__data.html", "structspdk__nvmf__rdma__accept__private__data" ],
     [ "spdk_nvmf_rdma_reject_private_data", "structspdk__nvmf__rdma__reject__private__data.html", "structspdk__nvmf__rdma__reject__private__data" ],
@@ -43,6 +50,8 @@ var nvmf__spec_8h =
     [ "SPDK_NVME_TCP_PDU_PDO_MAX_OFFSET", "nvmf__spec_8h.html#ab8d4456503173c69a460d24b3293b897", null ],
     [ "SPDK_NVME_TCP_TERM_REQ_ERROR_DATA_MAX_SIZE", "nvmf__spec_8h.html#ab94f61f0b21a683850d852df21fcff8b", null ],
     [ "SPDK_NVME_TCP_TERM_REQ_PDU_MAX_SIZE", "nvmf__spec_8h.html#a90e0edaad0f457a5141423717f84f12f", null ],
+    [ "SPDK_NVMF_AUTH_FAILURE", "nvmf__spec_8h.html#ae9128aad835b878156ff889123db5822", null ],
+    [ "SPDK_NVMF_AUTH_SECP_NVME", "nvmf__spec_8h.html#a268b70fbe1e80c00b1ff0116be40e19b", null ],
     [ "SPDK_NVMF_DISCOVERY_LOG_EFLAGS_DUPRETINFO", "nvmf__spec_8h.html#aef83fcee20802e2fbb7e54d9e8ae2dbb", null ],
     [ "SPDK_NVMF_DISCOVERY_LOG_EFLAGS_EPCSD", "nvmf__spec_8h.html#a40c9a9a5927957f589d960c22d3f362e", null ],
     [ "SPDK_NVMF_DISCOVERY_NQN", "nvmf__spec_8h.html#abba72302251df54e24d5cafd8035bb85", null ],
@@ -88,6 +97,46 @@ var nvmf__spec_8h =
       [ "SPDK_NVMF_ADRFAM_IB", "nvmf__spec_8h.html#a08f0090d242e2607ab11f148dcd797c6ab2b018652874e16b9af85d12ce2e0c08", null ],
       [ "SPDK_NVMF_ADRFAM_FC", "nvmf__spec_8h.html#a08f0090d242e2607ab11f148dcd797c6afd21c300bf2e149474def6ae770b2263", null ],
       [ "SPDK_NVMF_ADRFAM_INTRA_HOST", "nvmf__spec_8h.html#a08f0090d242e2607ab11f148dcd797c6a6398d0b463d2b5b7e0d46aff634dbd0d", null ]
+    ] ],
+    [ "spdk_nvmf_auth_failure_reason", "nvmf__spec_8h.html#ae8abd2255241730de7ec42426af27ffa", [
+      [ "SPDK_NVMF_AUTH_FAILED", "nvmf__spec_8h.html#ae8abd2255241730de7ec42426af27ffaa691eac1cc755aa31f8db2fcfe61bc528", null ],
+      [ "SPDK_NVMF_AUTH_PROTOCOL_UNUSABLE", "nvmf__spec_8h.html#ae8abd2255241730de7ec42426af27ffaae45599e7d1fb1c78f66cef5d42ca0a51", null ],
+      [ "SPDK_NVMF_AUTH_SCC_MISMATCH", "nvmf__spec_8h.html#ae8abd2255241730de7ec42426af27ffaab2cf030c62b5764b84d673bbbdf14aa2", null ],
+      [ "SPDK_NVMF_AUTH_HASH_UNUSABLE", "nvmf__spec_8h.html#ae8abd2255241730de7ec42426af27ffaa49c8d749e075bb0b3251754a8f4f7ab2", null ],
+      [ "SPDK_NVMF_AUTH_DHGROUP_UNUSABLE", "nvmf__spec_8h.html#ae8abd2255241730de7ec42426af27ffaa5614ad6cc9d09860e2cbdcdef74c7ae4", null ],
+      [ "SPDK_NVMF_AUTH_INCORRECT_PAYLOAD", "nvmf__spec_8h.html#ae8abd2255241730de7ec42426af27ffaa8007caa487381f032e94145a6851e8d3", null ],
+      [ "SPDK_NVMF_AUTH_INCORRECT_PROTOCOL_MESSAGE", "nvmf__spec_8h.html#ae8abd2255241730de7ec42426af27ffaa3c66a8e444bf43360569c738ab0b856e", null ]
+    ] ],
+    [ "spdk_nvmf_auth_id", "nvmf__spec_8h.html#aca936dd8a70d32b1d53d31820ddafeec", [
+      [ "SPDK_NVMF_AUTH_ID_NEGOTIATE", "nvmf__spec_8h.html#aca936dd8a70d32b1d53d31820ddafeecac4970df7e680a679d87eb0ca386e23af", null ],
+      [ "SPDK_NVMF_AUTH_ID_DHCHAP_CHALLENGE", "nvmf__spec_8h.html#aca936dd8a70d32b1d53d31820ddafeeca4020ca0b6e1eb30bde76843063e8901b", null ],
+      [ "SPDK_NVMF_AUTH_ID_DHCHAP_REPLY", "nvmf__spec_8h.html#aca936dd8a70d32b1d53d31820ddafeeca44d755920d54afdd2be168e9052ce916", null ],
+      [ "SPDK_NVMF_AUTH_ID_DHCHAP_SUCCESS1", "nvmf__spec_8h.html#aca936dd8a70d32b1d53d31820ddafeeca6f736097b708fd418aff4c6daa24fc39", null ],
+      [ "SPDK_NVMF_AUTH_ID_DHCHAP_SUCCESS2", "nvmf__spec_8h.html#aca936dd8a70d32b1d53d31820ddafeecae792f045bd1b0f69924a5bab350a3bde", null ],
+      [ "SPDK_NVMF_AUTH_ID_FAILURE2", "nvmf__spec_8h.html#aca936dd8a70d32b1d53d31820ddafeeca222ede209465f3a622807a51289ed1fd", null ],
+      [ "SPDK_NVMF_AUTH_ID_FAILURE1", "nvmf__spec_8h.html#aca936dd8a70d32b1d53d31820ddafeeca9379e27231ece78a3decb91739ba3ffb", null ]
+    ] ],
+    [ "spdk_nvmf_auth_scc", "nvmf__spec_8h.html#afc2a9d72cda73711e6c264e4de959c07", [
+      [ "SPDK_NVMF_AUTH_SCC_DISABLED", "nvmf__spec_8h.html#afc2a9d72cda73711e6c264e4de959c07a9a5b5d12a301a4743ad5824ecc99ab48", null ],
+      [ "SPDK_NVMF_AUTH_SCC_TLS", "nvmf__spec_8h.html#afc2a9d72cda73711e6c264e4de959c07ac385195f2474231863f3023bffa9db9b", null ]
+    ] ],
+    [ "spdk_nvmf_auth_type", "nvmf__spec_8h.html#a7ed5ea05a6b7ac80e1a260c69c12d6ab", [
+      [ "SPDK_NVMF_AUTH_TYPE_COMMON_MESSAGE", "nvmf__spec_8h.html#a7ed5ea05a6b7ac80e1a260c69c12d6aba713d363a152a637572957b943134ee7c", null ],
+      [ "SPDK_NVMF_AUTH_TYPE_DHCHAP", "nvmf__spec_8h.html#a7ed5ea05a6b7ac80e1a260c69c12d6abad23c1fe87db33854de3e90bd26e33f79", null ]
+    ] ],
+    [ "spdk_nvmf_dhchap_dhgroup", "nvmf__spec_8h.html#a481186fed9a79c095d9325cc375f0c48", [
+      [ "SPDK_NVMF_DHCHAP_DHGROUP_NULL", "nvmf__spec_8h.html#a481186fed9a79c095d9325cc375f0c48a8eecc65dd8ad698da809031434fb23c7", null ],
+      [ "SPDK_NVMF_DHCHAP_DHGROUP_2048", "nvmf__spec_8h.html#a481186fed9a79c095d9325cc375f0c48ab7b67e6624e0f2528c45403f38dcc858", null ],
+      [ "SPDK_NVMF_DHCHAP_DHGROUP_3072", "nvmf__spec_8h.html#a481186fed9a79c095d9325cc375f0c48a806e6e6a11d90f33d9c3f80b47497a98", null ],
+      [ "SPDK_NVMF_DHCHAP_DHGROUP_4096", "nvmf__spec_8h.html#a481186fed9a79c095d9325cc375f0c48a0e6bae6c143f004c0c99e32b4a74da77", null ],
+      [ "SPDK_NVMF_DHCHAP_DHGROUP_6144", "nvmf__spec_8h.html#a481186fed9a79c095d9325cc375f0c48adc905da4cdbd70f22065a584781a71c2", null ],
+      [ "SPDK_NVMF_DHCHAP_DHGROUP_8192", "nvmf__spec_8h.html#a481186fed9a79c095d9325cc375f0c48a8c5d8eb4a53d00164ef993f68081dbd9", null ]
+    ] ],
+    [ "spdk_nvmf_dhchap_hash", "nvmf__spec_8h.html#a0021d43dedfcd44d40c342f82dd4fd4a", [
+      [ "SPDK_NVMF_DHCHAP_HASH_NONE", "nvmf__spec_8h.html#a0021d43dedfcd44d40c342f82dd4fd4aa56f223878fe6404c3aa3bcbccee892cf", null ],
+      [ "SPDK_NVMF_DHCHAP_HASH_SHA256", "nvmf__spec_8h.html#a0021d43dedfcd44d40c342f82dd4fd4aa5940220c610f93449f3e29bf8ab4c145", null ],
+      [ "SPDK_NVMF_DHCHAP_HASH_SHA384", "nvmf__spec_8h.html#a0021d43dedfcd44d40c342f82dd4fd4aa97f440903b3a69cd658ac8330299bc11", null ],
+      [ "SPDK_NVMF_DHCHAP_HASH_SHA512", "nvmf__spec_8h.html#a0021d43dedfcd44d40c342f82dd4fd4aa9dff2bbe2ad008b95fdbd286a52b2b49", null ]
     ] ],
     [ "spdk_nvmf_fabric_cmd_status_code", "nvmf__spec_8h.html#ac62d17c0157d3cc331a12b2881433b06", [
       [ "SPDK_NVMF_FABRIC_SC_INCOMPATIBLE_FORMAT", "nvmf__spec_8h.html#ac62d17c0157d3cc331a12b2881433b06a1bf2dfa50207d67d1bc87ecc83fe1b7e", null ],
@@ -182,7 +231,14 @@ var nvmf__spec_8h =
     [ "SPDK_STATIC_ASSERT", "nvmf__spec_8h.html#a521521478206999e16323f6d53c9e8c6", null ],
     [ "SPDK_STATIC_ASSERT", "nvmf__spec_8h.html#aba1bd970ad50d58747be51c0ba106495", null ],
     [ "SPDK_STATIC_ASSERT", "nvmf__spec_8h.html#aac0071a90eecef68770654b134a3435b", null ],
+    [ "SPDK_STATIC_ASSERT", "nvmf__spec_8h.html#a8993c6e1c21ed88ad2e776745cdbdee2", null ],
+    [ "SPDK_STATIC_ASSERT", "nvmf__spec_8h.html#a836645f7fefd17d9b48b43561c230bdd", null ],
+    [ "SPDK_STATIC_ASSERT", "nvmf__spec_8h.html#adca907162f348364418bc29d3623a00d", null ],
     [ "SPDK_STATIC_ASSERT", "nvmf__spec_8h.html#a0bd2f88774080207222b653147eb6654", null ],
+    [ "SPDK_STATIC_ASSERT", "nvmf__spec_8h.html#a989f755adb862f8ad69a012c19fcc7a6", null ],
+    [ "SPDK_STATIC_ASSERT", "nvmf__spec_8h.html#a37d301f8a2dc71db11553c80d776f421", null ],
+    [ "SPDK_STATIC_ASSERT", "nvmf__spec_8h.html#a200bfdacf7123da2badb2870df6533d5", null ],
+    [ "SPDK_STATIC_ASSERT", "nvmf__spec_8h.html#a4db7afcbfbe3492d7471cae18e3c1c8c", null ],
     [ "SPDK_STATIC_ASSERT", "nvmf__spec_8h.html#aa5d6f3d0b50748dabe9dc556703776dd", null ],
     [ "SPDK_STATIC_ASSERT", "nvmf__spec_8h.html#afbaa48152eb59037efdef5a0fb517ea1", null ],
     [ "SPDK_STATIC_ASSERT", "nvmf__spec_8h.html#a76f2e2c7f8efdc14b407e8e51e5d61b3", null ],

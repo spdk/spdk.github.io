@@ -6,6 +6,7 @@ var util_8h =
     [ "__STDC_WANT_LIB_EXT1__", "util_8h.html#a7a104b2e349617222c6419b36bfd3260", null ],
     [ "SPDK_ALIGN_CEIL", "util_8h.html#a61bd4178f177cf2265279944b0184fcd", null ],
     [ "SPDK_ALIGN_FLOOR", "util_8h.html#a4fe89df2bed54dcdc8b0d33c53a694b6", null ],
+    [ "SPDK_BIT", "util_8h.html#ab22ba76493581094951bb74abb68238d", null ],
     [ "SPDK_CACHE_LINE_SIZE", "util_8h.html#afb0c0f2282517becd79ba3f60768b6c4", null ],
     [ "SPDK_CEIL_DIV", "util_8h.html#a58821926bcb68504a97ffa1545029398", null ],
     [ "SPDK_CLANG_ANALYZER_PREINIT_PTR_ARRAY", "util_8h.html#ac14f2b75522d72317def37370adffca1", null ],
