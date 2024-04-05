@@ -240,6 +240,12 @@ enum <a class="el" href="log_8h.html#a188d351bd05093cba1d8594ee9988efd">spdk_log
 FILE *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__app__opts.html#ac6b0027c42b52343335f5a1e6fb600e4">rpc_log_file</a></td></tr>
 <tr class="memdesc:ac6b0027c42b52343335f5a1e6fb600e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">If non-NULL, a pointer to JSON RPC log file. <br /></td></tr>
 <tr class="separator:ac6b0027c42b52343335f5a1e6fb600e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5408f150f21315afdf5e5d5ca09cddf2"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__app__opts.html#a5408f150f21315afdf5e5d5ca09cddf2">json_data</a></td></tr>
+<tr class="memdesc:a5408f150f21315afdf5e5d5ca09cddf2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Raw JSON configuration data and its size.  <a href="structspdk__app__opts.html#a5408f150f21315afdf5e5d5ca09cddf2">More...</a><br /></td></tr>
+<tr class="separator:a5408f150f21315afdf5e5d5ca09cddf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ae3d13d7698b56a2735f5088922afea"><td class="memItemLeft" align="right" valign="top"><a id="a4ae3d13d7698b56a2735f5088922afea"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><b>json_data_size</b></td></tr>
+<tr class="separator:a4ae3d13d7698b56a2735f5088922afea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Event framework initialization options. </p>
@@ -259,6 +265,23 @@ FILE *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="st
 <p>Disable default signal handlers. </p>
 <p>If set to <code>true</code>, the shutdown process is not started implicitly by process signals, hence the application is responsible for calling <a class="el" href="event_8h.html#a0bbbb23263a8ea9c93c3adf8aa3bce8e" title="Start shutting down the framework.">spdk_app_start_shutdown()</a>.</p>
 <p>Default is <code>false</code>. </p>
+
+</div>
+</div>
+<a id="a5408f150f21315afdf5e5d5ca09cddf2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5408f150f21315afdf5e5d5ca09cddf2">&#9670;&nbsp;</a></span>json_data</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* spdk_app_opts::json_data</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Raw JSON configuration data and its size. </p>
+<p>Cannot be used simultaneously with json_config_file option. </p>
 
 </div>
 </div>

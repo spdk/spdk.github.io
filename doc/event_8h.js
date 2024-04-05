@@ -25,5 +25,5 @@ var event_8h =
     [ "spdk_event_call", "event_8h.html#af17b7963b6a6964e5eb18480193acedb", null ],
     [ "spdk_framework_context_switch_monitor_enabled", "event_8h.html#aa6e70166c6ac9e7e7399d1b140979d29", null ],
     [ "spdk_framework_enable_context_switch_monitor", "event_8h.html#a367fa3d40d7f507cc4f258b27592fb43", null ],
-    [ "SPDK_STATIC_ASSERT", "event_8h.html#a1e06bfff917ac4efea19a244fec4053a", null ]
+    [ "SPDK_STATIC_ASSERT", "event_8h.html#accdf9b72a14aaa69f7b5227b24ecd2a2", null ]
 ];

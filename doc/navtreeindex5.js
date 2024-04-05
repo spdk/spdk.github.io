@@ -1,5 +1,7 @@
 var NAVTREEINDEX5 =
 {
+"idxd__spec_8h.html#a3454642e7f419ae9c5b87c75727a5fd7":[15,0,29,50],
+"idxd__spec_8h.html#a356134d73f1f9cdb8076e1c002dcdda3":[15,0,29,131],
 "idxd__spec_8h.html#a40c57e314817c7af8e535de636466f39":[15,0,29,143],
 "idxd__spec_8h.html#a40f284694ced286715dabdc8f70fd8b9":[15,0,29,76],
 "idxd__spec_8h.html#a4359fa2de8943d5221eee66b56e5341c":[15,0,29,46],
@@ -247,7 +249,5 @@ var NAVTREEINDEX5 =
 "ioat__spec_8h.html#adbebffc23f32661247e5da2228b415ca":[15,0,32,11],
 "ioat__spec_8h.html#ae763c4e8f46ead2c1ab8aa85bb40716f":[15,0,32,45],
 "ioat__spec_8h.html#afc40161ff89b7599a591441bc4699e5d":[15,0,32,30],
-"iscsi.html":[3,4],
-"iscsi.html#iscsi_config_lcore":[3,4,1,0],
-"iscsi.html#iscsi_getting_started":[3,4,0]
+"iscsi.html":[3,4]
 };

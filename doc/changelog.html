@@ -94,6 +94,7 @@ $(document).ready(function(){initNavTree('changelog.html',''); initResizable(); 
 v24.05: (Upcoming Release)</h1>
 <h2>event</h2>
 <p>SPDK applications can now start with <code>--wait-for-rpc</code> and JSON configuration provided at the same time.</p>
+<p>Struct <code><a class="el" href="structspdk__app__opts.html" title="Event framework initialization options.">spdk_app_opts</a></code> was extended by <code>json_data</code> and <code>json_data_size</code> fields allowing user to provide a buffer with JSON config as alternative to providing JSON config file path (these fields are mutually exclusive).</p>
 <h2>init</h2>
 <p>Function <code>spdk_subsystem_init_from_json_config</code> is deprecated and will be removed in 24.09 release. Please use <code>spdk_subsystem_load_config</code> instead.</p>
 <h2>nvme</h2>
