@@ -1,5 +1,6 @@
 var NAVTREEINDEX32 =
 {
+"structspdk__vfu__pci__device.html#a1ad5b051101fe2ee07b5b5dc897b666f":[14,0,427,3],
 "structspdk__vfu__pci__device.html#a1f0a54eba7648d8c6145c45689430f5c":[14,0,427,9],
 "structspdk__vfu__pci__device.html#a20ebb56d42efba8f13739ff8976aa8a3":[14,0,427,15],
 "structspdk__vfu__pci__device.html#a29b0a87d2156236093e1315b062f4806":[14,0,427,8],
@@ -248,6 +249,5 @@ var NAVTREEINDEX32 =
 "trace_8h.html#af4187a937cdb517158861507cd05c54a":[15,0,59,31],
 "trace_8h.html#af83a677d364238be86c05dcaf2648754":[15,0,59,36],
 "trace_8h.html#aff01e55c161b73fd4ce5bfdb6afc4dab":[15,0,59,19],
-"trace__parser_8h.html":[15,0,60],
-"trace__parser_8h.html#a102d5c564cad8f4932f96fe073d94622":[15,0,60,8]
+"trace__parser_8h.html":[15,0,60]
 };

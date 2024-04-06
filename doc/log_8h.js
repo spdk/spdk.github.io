@@ -4,6 +4,7 @@ var log_8h =
     [ "SPDK_DEBUGLOG", "log_8h.html#ae38b49633346c10edf505c9ec5a11af6", null ],
     [ "SPDK_DEBUGLOG_FLAG_ENABLED", "log_8h.html#a708ac484a189572de867c299fcbbe5be", null ],
     [ "SPDK_ERRLOG", "log_8h.html#a6b7bfeecff42b840ca5ebd25ffa84439", null ],
+    [ "SPDK_ERRLOG_RATELIMIT", "log_8h.html#a0528220784db1311204cefb7c10dbc4a", null ],
     [ "SPDK_INFOLOG", "log_8h.html#a1a136fe1debefd25c3d6bb7187574246", null ],
     [ "SPDK_LOG_DEPRECATED", "log_8h.html#ade4d41a3d3b3603f0f1a097272ac800c", null ],
     [ "SPDK_LOG_DEPRECATION_REGISTER", "log_8h.html#a4d88ec475315724fb95eebdbcf9af8be", null ],

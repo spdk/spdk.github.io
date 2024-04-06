@@ -1,5 +1,6 @@
 var NAVTREEINDEX29 =
 {
+"structspdk__nvmf__rdma__request__private__data.html#a183766f5d8261ed37ea4843609fee4fc":[14,0,343,0],
 "structspdk__nvmf__rdma__request__private__data.html#a46e0677b276600cbf7c27a4187e1777e":[14,0,343,5],
 "structspdk__nvmf__rdma__request__private__data.html#a58bc4e90c851c25ad7a44d4063d9b6ff":[14,0,343,1],
 "structspdk__nvmf__rdma__request__private__data.html#a76b70ab22c5a0d873d0b580cabfb46e7":[14,0,343,4],
@@ -248,6 +249,5 @@ var NAVTREEINDEX29 =
 "structspdk__opal__d0__geo__feat.html#a4c1928ebc2517c5e221408da2a488081":[14,0,366,6],
 "structspdk__opal__d0__geo__feat.html#a629d86f59a92c1185606fd7cb67e10cb":[14,0,366,0],
 "structspdk__opal__d0__geo__feat.html#abba515f8b72f3f961fa8c7d631d08b9b":[14,0,366,3],
-"structspdk__opal__d0__geo__feat.html#ad133cb1b569ddd818e28ea0a5b55f7b9":[14,0,366,4],
-"structspdk__opal__d0__geo__feat.html#ae0054ccec4f931e2e5579a478369de32":[14,0,366,5]
+"structspdk__opal__d0__geo__feat.html#ad133cb1b569ddd818e28ea0a5b55f7b9":[14,0,366,4]
 };
