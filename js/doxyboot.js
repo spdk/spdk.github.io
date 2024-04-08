@@ -1,6 +1,6 @@
 $( document ).ready(function() {
     // Set the high level structure of the document
-    $("#side-nav, #doc-content").wrapAll("<div class='row' />");
+    $("#side-nav, #doc-content").wrapAll("<div class='row align-items-start' />");
     $("#side-nav").removeClass().addClass("col-md-3 border-right border-dark");
     $("#doc-content").addClass("col-md-9 py-3 pl-5");
 
