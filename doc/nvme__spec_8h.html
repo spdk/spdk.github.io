@@ -503,13 +503,15 @@ Macros</h2></td></tr>
 <tr class="memitem:a6a5c4c0b0279583d688e44c7769d8e40"><td class="memItemLeft" align="right" valign="top"><a id="a6a5c4c0b0279583d688e44c7769d8e40"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_NVME_IO_FLAGS_FUSE_MASK</b>&#160;&#160;&#160;(<a class="el" href="nvme__spec_8h.html#a221a4156b2e7883c4cb88847cbeaa069a4d70183823094788f80f33943dfc5bf1">SPDK_NVME_CMD_FUSE_MASK</a> &lt;&lt; 0)</td></tr>
 <tr class="separator:a6a5c4c0b0279583d688e44c7769d8e40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ea4b30b16c46e307f971e8c34e00320"><td class="memItemLeft" align="right" valign="top"><a id="a6ea4b30b16c46e307f971e8c34e00320"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__spec_8h.html#a6ea4b30b16c46e307f971e8c34e00320">SPDK_NVME_IO_FLAGS_DIRECTIVE</a>(dtype)&#160;&#160;&#160;(dtype &lt;&lt; 20)</td></tr>
+<tr class="memdesc:a6ea4b30b16c46e307f971e8c34e00320"><td class="mdescLeft">&#160;</td><td class="mdescRight">For enabling directive types on write-oriented commands. <br /></td></tr>
+<tr class="separator:a6ea4b30b16c46e307f971e8c34e00320"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aec316babbf58fdcfdaba900ce4f4eab2"><td class="memItemLeft" align="right" valign="top"><a id="aec316babbf58fdcfdaba900ce4f4eab2"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__spec_8h.html#aec316babbf58fdcfdaba900ce4f4eab2">SPDK_NVME_IO_FLAGS_STREAMS_DIRECTIVE</a>&#160;&#160;&#160;(1U &lt;&lt; 20)</td></tr>
-<tr class="memdesc:aec316babbf58fdcfdaba900ce4f4eab2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable Directive type as streams. <br /></td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_NVME_IO_FLAGS_STREAMS_DIRECTIVE</b>&#160;&#160;&#160;	<a class="el" href="nvme__spec_8h.html#a6ea4b30b16c46e307f971e8c34e00320">SPDK_NVME_IO_FLAGS_DIRECTIVE</a>(SPDK_NVME_DIRECTIVE_TYPE_STREAMS)</td></tr>
 <tr class="separator:aec316babbf58fdcfdaba900ce4f4eab2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a06bec328f0ac84ee37f04395824fa26b"><td class="memItemLeft" align="right" valign="top"><a id="a06bec328f0ac84ee37f04395824fa26b"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__spec_8h.html#a06bec328f0ac84ee37f04395824fa26b">SPDK_NVME_IO_FLAGS_DATA_PLACEMENT_DIRECTIVE</a>&#160;&#160;&#160;(2U &lt;&lt; 20)</td></tr>
-<tr class="memdesc:a06bec328f0ac84ee37f04395824fa26b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable Directive type as data placement. <br /></td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_NVME_IO_FLAGS_DATA_PLACEMENT_DIRECTIVE</b>&#160;&#160;&#160;	<a class="el" href="nvme__spec_8h.html#a6ea4b30b16c46e307f971e8c34e00320">SPDK_NVME_IO_FLAGS_DIRECTIVE</a>(SPDK_NVME_DIRECTIVE_TYPE_DATA_PLACEMENT)</td></tr>
 <tr class="separator:a06bec328f0ac84ee37f04395824fa26b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3cd413ddb31a2a9b2bc253f3dadf6765"><td class="memItemLeft" align="right" valign="top"><a id="a3cd413ddb31a2a9b2bc253f3dadf6765"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__spec_8h.html#a3cd413ddb31a2a9b2bc253f3dadf6765">SPDK_NVME_IO_FLAGS_ZONE_APPEND_PIREMAP</a>&#160;&#160;&#160;(1U &lt;&lt; 25)</td></tr>
