@@ -1,6 +1,5 @@
 var NAVTREEINDEX35 =
 {
-"unionspdk__nvme__feat__interrupt__coalescing.html#a6ddf8bc514b93939ff5a3ad2657ecb3a":[14,0,197,3],
 "unionspdk__nvme__feat__interrupt__coalescing.html#a99bd56ab856ab244849a0ea1194873ea":[14,0,197,0],
 "unionspdk__nvme__feat__interrupt__coalescing.html#aaca01366f4b044fbb450d232a12f1f21":[14,0,197,1],
 "unionspdk__nvme__feat__interrupt__vector__configuration.html":[14,0,198],
@@ -249,5 +248,6 @@ var NAVTREEINDEX35 =
 "vhost.html#vhost_toc":[3,6,0],
 "vhost.html#vhost_vdev_create":[3,6,4,1],
 "vhost_8h.html":[15,0,64],
-"vhost_8h.html#a01b54a11439216fb05196474e3ee20d1":[15,0,64,16]
+"vhost_8h.html#a01b54a11439216fb05196474e3ee20d1":[15,0,64,16],
+"vhost_8h.html#a04d81053d41a72f5df978f7c05dfebd7":[15,0,64,25]
 };

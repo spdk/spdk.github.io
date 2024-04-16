@@ -104,7 +104,7 @@ Data Structures</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__trace__entry__buffer.html">spdk_trace_entry_buffer</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__trace__owner.html">spdk_trace_owner</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__trace__owner__type.html">spdk_trace_owner_type</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__trace__object.html">spdk_trace_object</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -129,9 +129,9 @@ Macros</h2></td></tr>
 <tr class="memitem:a26e4becda093930b12939d3860fae701"><td class="memItemLeft" align="right" valign="top"><a id="a26e4becda093930b12939d3860fae701"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_DEFAULT_NUM_TRACE_ENTRIES</b>&#160;&#160;&#160;(32 * 1024)</td></tr>
 <tr class="separator:a26e4becda093930b12939d3860fae701"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae4b117d97e55f2748e3c87dc21eb8277"><td class="memItemLeft" align="right" valign="top"><a id="ae4b117d97e55f2748e3c87dc21eb8277"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_TRACE_MAX_OWNER</b>&#160;&#160;&#160;(UCHAR_MAX + 1)</td></tr>
-<tr class="separator:ae4b117d97e55f2748e3c87dc21eb8277"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13e608f64fcddc7805901da42d93fd4c"><td class="memItemLeft" align="right" valign="top"><a id="a13e608f64fcddc7805901da42d93fd4c"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_TRACE_MAX_OWNER_TYPE</b>&#160;&#160;&#160;(UCHAR_MAX + 1)</td></tr>
+<tr class="separator:a13e608f64fcddc7805901da42d93fd4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a97958aabb667d95c141acf18f42a5000"><td class="memItemLeft" align="right" valign="top"><a id="a97958aabb667d95c141acf18f42a5000"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_TRACE_MAX_OBJECT</b>&#160;&#160;&#160;(UCHAR_MAX + 1)</td></tr>
 <tr class="separator:a97958aabb667d95c141acf18f42a5000"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -184,9 +184,9 @@ Macros</h2></td></tr>
 <tr class="memitem:a583c35dff93e5c996bd7115c4593a457"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="trace_8h.html#a583c35dff93e5c996bd7115c4593a457">spdk_trace_record</a>(tpoint_id,  poller_id,  size,  object_id, ...)&#160;&#160;&#160;	<a class="el" href="trace_8h.html#a9200d8670cb27a4569440782888087e0">spdk_trace_record_tsc</a>(0, tpoint_id, poller_id, size, object_id, ## __VA_ARGS__)</td></tr>
 <tr class="memdesc:a583c35dff93e5c996bd7115c4593a457"><td class="mdescLeft">&#160;</td><td class="mdescRight">Record the current trace state for tracing tpoints.  <a href="trace_8h.html#a583c35dff93e5c996bd7115c4593a457">More...</a><br /></td></tr>
 <tr class="separator:a583c35dff93e5c996bd7115c4593a457"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4c1e2ffb45a46c4e82664cb8f7218d7f"><td class="memItemLeft" align="right" valign="top"><a id="a4c1e2ffb45a46c4e82664cb8f7218d7f"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>OWNER_NONE</b>&#160;&#160;&#160;0</td></tr>
-<tr class="separator:a4c1e2ffb45a46c4e82664cb8f7218d7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3089f10634ede5499f79dbe5e1b6960c"><td class="memItemLeft" align="right" valign="top"><a id="a3089f10634ede5499f79dbe5e1b6960c"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>OWNER_TYPE_NONE</b>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:a3089f10634ede5499f79dbe5e1b6960c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a62a0a4288067a361d037ea70b25f44ef"><td class="memItemLeft" align="right" valign="top"><a id="a62a0a4288067a361d037ea70b25f44ef"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>OBJECT_NONE</b>&#160;&#160;&#160;0</td></tr>
 <tr class="separator:a62a0a4288067a361d037ea70b25f44ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -241,13 +241,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>_spdk_trace_record</b
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="trace_8h.html#a7cdec16a6ee14c87b0bf5d0666d9a0cb">spdk_trace_cleanup</a> (void)</td></tr>
 <tr class="memdesc:a7cdec16a6ee14c87b0bf5d0666d9a0cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unmap global trace memory structs. <br /></td></tr>
 <tr class="separator:a7cdec16a6ee14c87b0bf5d0666d9a0cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5cab6a78e0ce33319f02ea03ba221fc1"><td class="memItemLeft" align="right" valign="top"><a id="a5cab6a78e0ce33319f02ea03ba221fc1"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="trace_8h.html#a5cab6a78e0ce33319f02ea03ba221fc1">spdk_trace_flags_init</a> (void)</td></tr>
-<tr class="memdesc:a5cab6a78e0ce33319f02ea03ba221fc1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize trace flags. <br /></td></tr>
-<tr class="separator:a5cab6a78e0ce33319f02ea03ba221fc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a00597b31c0f7a67d7dbf306cb628e7fc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="trace_8h.html#a00597b31c0f7a67d7dbf306cb628e7fc">spdk_trace_register_owner</a> (uint8_t type, char id_prefix)</td></tr>
-<tr class="memdesc:a00597b31c0f7a67d7dbf306cb628e7fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register the trace owner.  <a href="trace_8h.html#a00597b31c0f7a67d7dbf306cb628e7fc">More...</a><br /></td></tr>
-<tr class="separator:a00597b31c0f7a67d7dbf306cb628e7fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a403d69c1ccce190970051bc2e69b348a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="trace_8h.html#a403d69c1ccce190970051bc2e69b348a">spdk_trace_register_owner_type</a> (uint8_t type, char id_prefix)</td></tr>
+<tr class="memdesc:a403d69c1ccce190970051bc2e69b348a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register the trace owner type.  <a href="trace_8h.html#a403d69c1ccce190970051bc2e69b348a">More...</a><br /></td></tr>
+<tr class="separator:a403d69c1ccce190970051bc2e69b348a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a78c1e25f823c6e98da3f99c515715ebe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="trace_8h.html#a78c1e25f823c6e98da3f99c515715ebe">spdk_trace_register_object</a> (uint8_t type, char id_prefix)</td></tr>
 <tr class="memdesc:a78c1e25f823c6e98da3f99c515715ebe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register the trace object.  <a href="trace_8h.html#a78c1e25f823c6e98da3f99c515715ebe">More...</a><br /></td></tr>
 <tr class="separator:a78c1e25f823c6e98da3f99c515715ebe"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -527,7 +523,7 @@ struct <a class="el" href="structspdk__trace__file.html">spdk_trace_file</a> *&#
 <div class="line">                spdk_trace_add_register_fn(&amp;reg_ ## fn);        \</div>
 <div class="line">        }                                                       \</div>
 <div class="line">        static <span class="keywordtype">void</span> fn(<span class="keywordtype">void</span>)</div>
-<div class="ttc" id="astructspdk__trace__register__fn_html"><div class="ttname"><a href="structspdk__trace__register__fn.html">spdk_trace_register_fn</a></div><div class="ttdef"><b>Definition:</b> trace.h:414</div></div>
+<div class="ttc" id="astructspdk__trace__register__fn_html"><div class="ttname"><a href="structspdk__trace__register__fn.html">spdk_trace_register_fn</a></div><div class="ttdef"><b>Definition:</b> trace.h:409</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1000,14 +996,14 @@ struct <a class="el" href="structspdk__trace__file.html">spdk_trace_file</a> *&#
 
 </div>
 </div>
-<a id="a00597b31c0f7a67d7dbf306cb628e7fc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a00597b31c0f7a67d7dbf306cb628e7fc">&#9670;&nbsp;</a></span>spdk_trace_register_owner()</h2>
+<a id="a403d69c1ccce190970051bc2e69b348a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a403d69c1ccce190970051bc2e69b348a">&#9670;&nbsp;</a></span>spdk_trace_register_owner_type()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void spdk_trace_register_owner </td>
+          <td class="memname">void spdk_trace_register_owner_type </td>
           <td>(</td>
           <td class="paramtype">uint8_t&#160;</td>
           <td class="paramname"><em>type</em>, </td>
@@ -1026,7 +1022,7 @@ struct <a class="el" href="structspdk__trace__file.html">spdk_trace_file</a> *&#
       </table>
 </div><div class="memdoc">
 
-<p>Register the trace owner. </p>
+<p>Register the trace owner type. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">type</td><td>Type of the trace owner. </td></tr>

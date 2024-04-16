@@ -198,10 +198,10 @@ Adding New Tracepoints</h1>
 <div class="line">{</div>
 <div class="line">        <a class="code" href="trace_8h.html#a78c1e25f823c6e98da3f99c515715ebe">spdk_trace_register_object</a>(OBJECT_NVMF_RDMA_IO, <span class="charliteral">&#39;r&#39;</span>);</div>
 <div class="line">        <a class="code" href="trace_8h.html#a272510f870f932fd0e081481f6e51e58">spdk_trace_register_description</a>(<span class="stringliteral">&quot;RDMA_REQ_NEW&quot;</span>, TRACE_RDMA_REQUEST_STATE_NEW,</div>
-<div class="line">                                        OWNER_NONE, OBJECT_NVMF_RDMA_IO, 1,</div>
+<div class="line">                                        OWNER_TYPE_NONE, OBJECT_NVMF_RDMA_IO, 1,</div>
 <div class="line">                                        SPDK_TRACE_ARG_TYPE_PTR, <span class="stringliteral">&quot;qpair&quot;</span>);</div>
 <div class="line">        <a class="code" href="trace_8h.html#a272510f870f932fd0e081481f6e51e58">spdk_trace_register_description</a>(<span class="stringliteral">&quot;RDMA_REQ_NEED_BUFFER&quot;</span>, TRACE_RDMA_REQUEST_STATE_NEED_BUFFER,</div>
-<div class="line">                                        OWNER_NONE, OBJECT_NVMF_RDMA_IO, 0,</div>
+<div class="line">                                        OWNER_TYPE_NONE, OBJECT_NVMF_RDMA_IO, 0,</div>
 <div class="line">                                        SPDK_TRACE_ARG_TYPE_PTR, <span class="stringliteral">&quot;qpair&quot;</span>);</div>
 <div class="line">        ...</div>
 <div class="line">}</div>
