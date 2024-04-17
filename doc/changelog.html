@@ -107,6 +107,7 @@ v24.05: (Upcoming Release)</h1>
 <p>Merged <code>struct spdk_trace_flags</code> and <code>struct spdk_trace_histories</code> into new <code>struct <a class="el" href="structspdk__trace__file.html">spdk_trace_file</a></code>. Also renamed <code>spdk_get_trace_histories_size()</code> to <code>spdk_get_trace_file_size()</code>.</p>
 <h2>nvmf</h2>
 <p>Added support for namespace masking using new C APIs <code>spdk_nvmf_ns_add_host</code> and <code>spdk_nvmf_ns_remove_host</code> and RPCs <code>nvmf_ns_add_host</code> and <code>nvmf_ns_remove_host</code>. Users must pass new <code>--no-auto-visible</code> parameter to <code>nvmf_subsystem_add_ns</code> RPC to allow namespace masking to be controlled by these new RPCs.</p>
+<p>Added <code>spdk_nvmf_subsystem_get_ana_state</code> API to get current ANA state of a particular ANA group ID.</p>
 <h2>spdk_trace</h2>
 <p><code>spdk_trace</code> has learned how to use the most recent trace file in /dev/shm when the user has specified neither <code>-f</code> nor <code>-s</code> options. This is only available on Linux since FreeBSD does not mount have a /dev/shm mount.</p>
 <h1>v24.01</h1>

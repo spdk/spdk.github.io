@@ -1,5 +1,6 @@
 var NAVTREEINDEX31 =
 {
+"structspdk__scsi__pr__in__read__reservations__data.html#a1d2f6e4d0bbc3b08afe0e5cc5a01a0d8":[14,0,398,3],
 "structspdk__scsi__pr__in__read__reservations__data.html#a699fa37a6c279d775f79ce2b9d6d5183":[14,0,398,0],
 "structspdk__scsi__pr__in__read__reservations__data.html#a88555dc64820e0f7296eab1d6f54903c":[14,0,398,1],
 "structspdk__scsi__pr__in__read__reservations__data.html#a8977e1d54d89556ae2bcf3234c4ec091":[14,0,398,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX31 =
 "structspdk__vfu__endpoint__ops.html#ac6739696eb232d4a07fcabce312cb888":[14,0,426,7],
 "structspdk__vfu__endpoint__ops.html#afe8776dc6275b83229f963591c2f3871":[14,0,426,5],
 "structspdk__vfu__endpoint__ops.html#affb0058441fbe6b1782cf71400006c6c":[14,0,426,9],
-"structspdk__vfu__pci__device.html":[14,0,427],
-"structspdk__vfu__pci__device.html#a17a27b028191166a11827c680e760ec3":[14,0,427,7]
+"structspdk__vfu__pci__device.html":[14,0,427]
 };
