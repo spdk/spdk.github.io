@@ -146,6 +146,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="init
 <tr class="memitem:a4beb9b1736d0ae82c2a5e764e1c5687b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="init_8h.html#a4beb9b1736d0ae82c2a5e764e1c5687b">spdk_subsystem_fini</a> (spdk_subsystem_fini_fn cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:a4beb9b1736d0ae82c2a5e764e1c5687b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tear down all of the subsystems in the correct order.  <a href="init_8h.html#a4beb9b1736d0ae82c2a5e764e1c5687b">More...</a><br /></td></tr>
 <tr class="separator:a4beb9b1736d0ae82c2a5e764e1c5687b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f226f924ed036911f0af0e5456999b5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="init_8h.html#a8f226f924ed036911f0af0e5456999b5">spdk_subsystem_exists</a> (const char *name)</td></tr>
+<tr class="memdesc:a8f226f924ed036911f0af0e5456999b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the specified subsystem exists in the application.  <a href="init_8h.html#a8f226f924ed036911f0af0e5456999b5">More...</a><br /></td></tr>
+<tr class="separator:a8f226f924ed036911f0af0e5456999b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5bd2a5ffa3a9904a6f175afc4ad5fc8f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="init_8h.html#a5bd2a5ffa3a9904a6f175afc4ad5fc8f">spdk_rpc_server_pause</a> (const char *listen_addr)</td></tr>
 <tr class="memdesc:a5bd2a5ffa3a9904a6f175afc4ad5fc8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pause polling RPC server with given address.  <a href="init_8h.html#a5bd2a5ffa3a9904a6f175afc4ad5fc8f">More...</a><br /></td></tr>
 <tr class="separator:a5bd2a5ffa3a9904a6f175afc4ad5fc8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -270,6 +273,33 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="init
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a8f226f924ed036911f0af0e5456999b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f226f924ed036911f0af0e5456999b5">&#9670;&nbsp;</a></span>spdk_subsystem_exists()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool spdk_subsystem_exists </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Check if the specified subsystem exists in the application. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>Name of the subsystem to look for </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if it exists, false if not </dd></dl>
 
 </div>
 </div>

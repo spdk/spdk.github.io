@@ -1,5 +1,6 @@
 var NAVTREEINDEX6 =
 {
+"iscsi.html":[3,4],
 "iscsi.html#iscsi_config_lcore":[3,4,1,0],
 "iscsi.html#iscsi_getting_started":[3,4,0],
 "iscsi.html#iscsi_hotplug":[3,4,4],
@@ -248,6 +249,5 @@ var NAVTREEINDEX6 =
 "jsonrpc.html#rpc_accel_error_inject_error":[3,9,4,9],
 "jsonrpc.html#rpc_accel_get_opc_assignments":[3,9,4,1],
 "jsonrpc.html#rpc_accel_get_stats":[3,9,4,8],
-"jsonrpc.html#rpc_accel_set_driver":[3,9,4,6],
-"jsonrpc.html#rpc_accel_set_options":[3,9,4,7]
+"jsonrpc.html#rpc_accel_set_driver":[3,9,4,6]
 };

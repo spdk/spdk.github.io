@@ -1,5 +1,6 @@
 var NAVTREEINDEX7 =
 {
+"jsonrpc.html#rpc_accel_set_options":[3,9,4,7],
 "jsonrpc.html#rpc_bdev_aio_create":[3,9,5,29],
 "jsonrpc.html#rpc_bdev_aio_delete":[3,9,5,31],
 "jsonrpc.html#rpc_bdev_aio_rescan":[3,9,5,30],
@@ -248,6 +249,5 @@ var NAVTREEINDEX7 =
 "jsonrpc.html#rpc_ublk_start_disk":[3,9,10,2],
 "jsonrpc.html#rpc_vfu_tgt_set_base_path":[3,9,7,25],
 "jsonrpc.html#rpc_vfu_virtio_create_blk_endpoint":[3,9,7,27],
-"jsonrpc.html#rpc_vfu_virtio_create_scsi_endpoint":[3,9,7,30],
-"jsonrpc.html#rpc_vfu_virtio_delete_endpoint":[3,9,7,26]
+"jsonrpc.html#rpc_vfu_virtio_create_scsi_endpoint":[3,9,7,30]
 };
