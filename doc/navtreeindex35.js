@@ -1,5 +1,8 @@
 var NAVTREEINDEX35 =
 {
+"unionspdk__nvme__feat__host__mem__buffer.html#af43cc748ba99dcecb59f3359fd731084":[14,0,196,1],
+"unionspdk__nvme__feat__interrupt__coalescing.html":[14,0,197],
+"unionspdk__nvme__feat__interrupt__coalescing.html#a0a3ddeb18ed4d798712502a972e5474d":[14,0,197,2],
 "unionspdk__nvme__feat__interrupt__coalescing.html#a6aca8c444f46d0ace95f71cbef78e85e":[14,0,197,4],
 "unionspdk__nvme__feat__interrupt__coalescing.html#a6ddf8bc514b93939ff5a3ad2657ecb3a":[14,0,197,3],
 "unionspdk__nvme__feat__interrupt__coalescing.html#a99bd56ab856ab244849a0ea1194873ea":[14,0,197,0],
@@ -246,8 +249,5 @@ var NAVTREEINDEX35 =
 "vhost.html#vhost_multiqueue":[3,6,5,0],
 "vhost.html#vhost_prereqs":[3,6,2],
 "vhost.html#vhost_qemu_config":[3,6,4,2],
-"vhost.html#vhost_start":[3,6,3],
-"vhost.html#vhost_toc":[3,6,0],
-"vhost.html#vhost_vdev_create":[3,6,4,1],
-"vhost_8h.html":[15,0,64]
+"vhost.html#vhost_start":[3,6,3]
 };

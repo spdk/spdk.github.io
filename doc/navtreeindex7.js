@@ -163,8 +163,10 @@ var NAVTREEINDEX7 =
 "jsonrpc.html#rpc_iscsi_delete_initiator_group":[3,9,6,11],
 "jsonrpc.html#rpc_iscsi_delete_portal_group":[3,9,6,23],
 "jsonrpc.html#rpc_iscsi_delete_target_node":[3,9,6,19],
+"jsonrpc.html#rpc_iscsi_enable_histogram":[3,9,6,30],
 "jsonrpc.html#rpc_iscsi_get_auth_groups":[3,9,6,6],
 "jsonrpc.html#rpc_iscsi_get_connections":[3,9,6,25],
+"jsonrpc.html#rpc_iscsi_get_histogram":[3,9,6,31],
 "jsonrpc.html#rpc_iscsi_get_initiator_groups":[3,9,6,9],
 "jsonrpc.html#rpc_iscsi_get_options":[3,9,6,1],
 "jsonrpc.html#rpc_iscsi_get_portal_groups":[3,9,6,20],
@@ -247,7 +249,5 @@ var NAVTREEINDEX7 =
 "jsonrpc.html#rpc_ublk_get_disks":[3,9,10,4],
 "jsonrpc.html#rpc_ublk_recover_disk":[3,9,10,3],
 "jsonrpc.html#rpc_ublk_start_disk":[3,9,10,2],
-"jsonrpc.html#rpc_vfu_tgt_set_base_path":[3,9,7,25],
-"jsonrpc.html#rpc_vfu_virtio_create_blk_endpoint":[3,9,7,27],
-"jsonrpc.html#rpc_vfu_virtio_create_scsi_endpoint":[3,9,7,30]
+"jsonrpc.html#rpc_vfu_tgt_set_base_path":[3,9,7,25]
 };

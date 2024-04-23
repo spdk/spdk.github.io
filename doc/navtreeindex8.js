@@ -1,5 +1,7 @@
 var NAVTREEINDEX8 =
 {
+"jsonrpc.html#rpc_vfu_virtio_create_blk_endpoint":[3,9,7,27],
+"jsonrpc.html#rpc_vfu_virtio_create_scsi_endpoint":[3,9,7,30],
 "jsonrpc.html#rpc_vfu_virtio_delete_endpoint":[3,9,7,26],
 "jsonrpc.html#rpc_vfu_virtio_scsi_add_target":[3,9,7,28],
 "jsonrpc.html#rpc_vfu_virtio_scsi_remove_target":[3,9,7,29],
@@ -247,7 +249,5 @@ var NAVTREEINDEX8 =
 "nvme_8h.html#a0d24c0b2b0b2a22b0c0af2ca2e157e04":[15,0,41,189],
 "nvme_8h.html#a0e1fcb43970ea531567ee00d4ee0675b":[15,0,41,35],
 "nvme_8h.html#a0e7a6bb3ac85f99f936290f679399039":[15,0,41,62],
-"nvme_8h.html#a0f14ec05ce3af11f089a79d47739bd74":[15,0,41,205],
-"nvme_8h.html#a10282695461985f58f54de022911745e":[15,0,41,112],
-"nvme_8h.html#a108d6b722c8837593dec16f30376d182":[15,0,41,147]
+"nvme_8h.html#a0f14ec05ce3af11f089a79d47739bd74":[15,0,41,205]
 };

@@ -307,7 +307,9 @@ var user_guides =
         [ "iscsi_get_stats method", "jsonrpc.html#iscsi_get_stats", null ],
         [ "iscsi_target_node_add_lun method", "jsonrpc.html#rpc_iscsi_target_node_add_lun", null ],
         [ "iscsi_target_node_set_redirect method", "jsonrpc.html#rpc_iscsi_target_node_set_redirect", null ],
-        [ "iscsi_target_node_request_logout method", "jsonrpc.html#rpc_iscsi_target_node_request_logout", null ]
+        [ "iscsi_target_node_request_logout method", "jsonrpc.html#rpc_iscsi_target_node_request_logout", null ],
+        [ "iscsi_enable_histogram", "jsonrpc.html#rpc_iscsi_enable_histogram", null ],
+        [ "iscsi_get_histogram", "jsonrpc.html#rpc_iscsi_get_histogram", null ]
       ] ],
       [ "NVMe-oF Target", "jsonrpc.html#jsonrpc_components_nvmf_tgt", [
         [ "nvmf_create_transport method", "jsonrpc.html#rpc_nvmf_create_transport", null ],

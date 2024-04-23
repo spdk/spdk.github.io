@@ -1,5 +1,8 @@
 var NAVTREEINDEX36 =
 {
+"vhost.html#vhost_toc":[3,6,0],
+"vhost.html#vhost_vdev_create":[3,6,4,1],
+"vhost_8h.html":[15,0,64],
 "vhost_8h.html#a01b54a11439216fb05196474e3ee20d1":[15,0,64,16],
 "vhost_8h.html#a04d81053d41a72f5df978f7c05dfebd7":[15,0,64,25],
 "vhost_8h.html#a0631424062751f68ec295722786370a8":[15,0,64,14],
