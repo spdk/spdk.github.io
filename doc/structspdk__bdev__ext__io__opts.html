@@ -94,6 +94,16 @@ $(document).ready(function(){initNavTree('structspdk__bdev__ext__io__opts.html',
 
 <p>Structure with optional IO request parameters.  
  <a href="structspdk__bdev__ext__io__opts.html#details">More...</a></p>
+<div class="dynheader">
+Collaboration diagram for spdk_bdev_ext_io_opts:</div>
+<div class="dyncontent">
+<div class="center"><img src="structspdk__bdev__ext__io__opts__coll__graph.png" border="0" usemap="#aspdk__bdev__ext__io__opts_coll__map" alt="Collaboration graph"/></div>
+<map name="aspdk__bdev__ext__io__opts_coll__map" id="aspdk__bdev__ext__io__opts_coll__map">
+<area shape="rect" title="Structure with optional IO request parameters." alt="" coords="115,95,289,121"/>
+<area shape="rect" href="unionspdk__bdev__nvme__cdw12.html" title="Union for command dword 12, which by convention matches the NVMe command dword 12 definition." alt="" coords="5,5,191,32"/>
+<area shape="rect" href="unionspdk__bdev__nvme__cdw13.html" title="Union for command dword 13, which by convention matches the NVMe command dword 13 definition." alt="" coords="215,5,400,32"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
@@ -119,6 +129,14 @@ struct spdk_accel_sequence *&#160;</td><td class="memItemRight" valign="bottom">
 <tr class="memitem:a9738b87b65cb41ab417f58a3ac1c5004"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__ext__io__opts.html#a9738b87b65cb41ab417f58a3ac1c5004">dif_check_flags_exclude_mask</a></td></tr>
 <tr class="memdesc:a9738b87b65cb41ab417f58a3ac1c5004"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specify which DIF check flags to exclude on a per-IO basis.  <a href="structspdk__bdev__ext__io__opts.html#a9738b87b65cb41ab417f58a3ac1c5004">More...</a><br /></td></tr>
 <tr class="separator:a9738b87b65cb41ab417f58a3ac1c5004"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad5963baa34634a0bc69775ba98c3986"><td class="memItemLeft" align="right" valign="top"><a id="aad5963baa34634a0bc69775ba98c3986"></a>
+union <a class="el" href="unionspdk__bdev__nvme__cdw12.html">spdk_bdev_nvme_cdw12</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__ext__io__opts.html#aad5963baa34634a0bc69775ba98c3986">nvme_cdw12</a></td></tr>
+<tr class="memdesc:aad5963baa34634a0bc69775ba98c3986"><td class="mdescLeft">&#160;</td><td class="mdescRight">defined by <a class="el" href="unionspdk__bdev__nvme__cdw12.html">spdk_bdev_nvme_cdw12</a> <br /></td></tr>
+<tr class="separator:aad5963baa34634a0bc69775ba98c3986"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a385317432b5165f6727d500ca99767"><td class="memItemLeft" align="right" valign="top"><a id="a9a385317432b5165f6727d500ca99767"></a>
+union <a class="el" href="unionspdk__bdev__nvme__cdw13.html">spdk_bdev_nvme_cdw13</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__ext__io__opts.html#a9a385317432b5165f6727d500ca99767">nvme_cdw13</a></td></tr>
+<tr class="memdesc:a9a385317432b5165f6727d500ca99767"><td class="mdescLeft">&#160;</td><td class="mdescRight">defined by <a class="el" href="unionspdk__bdev__nvme__cdw13.html">spdk_bdev_nvme_cdw13</a> <br /></td></tr>
+<tr class="separator:a9a385317432b5165f6727d500ca99767"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Structure with optional IO request parameters. </p>

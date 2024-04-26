@@ -98,17 +98,18 @@ Collaboration diagram for spdk_bdev:</div>
 <div class="dyncontent">
 <div class="center"><img src="structspdk__bdev__coll__graph.png" border="0" usemap="#aspdk__bdev_coll__map" alt="Collaboration graph"/></div>
 <map name="aspdk__bdev_coll__map" id="aspdk__bdev_coll__map">
-<area shape="rect" title=" " alt="" coords="769,143,861,169"/>
-<area shape="rect" href="structspdk__bdev__name.html" title=" " alt="" coords="988,57,1124,84"/>
-<area shape="rect" href="structspdk__bdev__io.html" title=" " alt="" coords="1001,161,1111,188"/>
-<area shape="rect" href="structspdk__bdev__module.html" title="Block device module." alt="" coords="513,81,661,108"/>
-<area shape="rect" href="structspdk__bdev__module_1_1____bdev__module__internal__fields.html" title="Fields that are used by the internal bdev subsystem." alt="" coords="227,59,408,115"/>
+<area shape="rect" title=" " alt="" coords="796,161,888,188"/>
+<area shape="rect" href="structspdk__bdev__name.html" title=" " alt="" coords="1015,57,1151,84"/>
+<area shape="rect" href="structspdk__bdev__io.html" title=" " alt="" coords="1027,161,1138,188"/>
+<area shape="rect" href="structspdk__bdev__module.html" title="Block device module." alt="" coords="526,72,674,99"/>
+<area shape="rect" href="structspdk__bdev__module_1_1____bdev__module__internal__fields.html" title="Fields that are used by the internal bdev subsystem." alt="" coords="227,57,408,113"/>
 <area shape="rect" href="structspdk__spinlock.html" title="A spinlock augmented with safety checks for use with SPDK." alt="" coords="5,39,120,65"/>
-<area shape="rect" href="structspdk__bdev_1_1____bdev__internal__fields.html" title="Fields that are used internally by the bdev subsystem." alt="" coords="1333,181,1536,222"/>
-<area shape="rect" href="structspdk__uuid.html" title=" " alt="" coords="543,192,631,219"/>
-<area shape="rect" href="structspdk__bdev__io__stat.html" title=" " alt="" coords="985,275,1127,301"/>
-<area shape="rect" href="unionspdk__bdev_1_1____bdev__internal__fields_1_1____bdev__internal__claim.html" title="Which module has claimed this bdev." alt="" coords="947,326,1165,367"/>
-<area shape="rect" href="structspdk__bdev__fn__table.html" title="Function table for a block device backend." alt="" coords="511,141,663,168"/>
+<area shape="rect" href="structspdk__bdev_1_1____bdev__internal__fields.html" title="Fields that are used internally by the bdev subsystem." alt="" coords="1360,181,1563,222"/>
+<area shape="rect" href="structspdk__uuid.html" title=" " alt="" coords="556,173,644,200"/>
+<area shape="rect" href="unionspdk__bdev__nvme__ctratt.html" title="Union for controller attributes field, to list whether bdev supports fdp etc." alt="" coords="511,224,689,251"/>
+<area shape="rect" href="structspdk__bdev__io__stat.html" title=" " alt="" coords="1011,275,1154,301"/>
+<area shape="rect" href="unionspdk__bdev_1_1____bdev__internal__fields_1_1____bdev__internal__claim.html" title="Which module has claimed this bdev." alt="" coords="973,326,1192,367"/>
+<area shape="rect" href="structspdk__bdev__fn__table.html" title="Function table for a block device backend." alt="" coords="524,123,676,149"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -246,6 +247,10 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev.html#acec83a7ec7f21c7a88d644dad2f0a8fe">media_events</a></td></tr>
 <tr class="memdesc:acec83a7ec7f21c7a88d644dad2f0a8fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specifies whether bdev supports media management events. <br /></td></tr>
 <tr class="separator:acec83a7ec7f21c7a88d644dad2f0a8fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaaa43998fc6e305d9ca597a56eb7e99c"><td class="memItemLeft" align="right" valign="top"><a id="aaaa43998fc6e305d9ca597a56eb7e99c"></a>
+union <a class="el" href="unionspdk__bdev__nvme__ctratt.html">spdk_bdev_nvme_ctratt</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev.html#aaaa43998fc6e305d9ca597a56eb7e99c">ctratt</a></td></tr>
+<tr class="memdesc:aaaa43998fc6e305d9ca597a56eb7e99c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specifies the bdev nvme controller attributes. <br /></td></tr>
+<tr class="separator:aaaa43998fc6e305d9ca597a56eb7e99c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a00db663b395d596c633624ed7554a440"><td class="memItemLeft" align="right" valign="top"><a id="a00db663b395d596c633624ed7554a440"></a>
 uint16_t&#160;</td><td class="memItemRight" valign="bottom"><b>reset_io_drain_timeout</b></td></tr>
 <tr class="separator:a00db663b395d596c633624ed7554a440"><td class="memSeparator" colspan="2">&#160;</td></tr>

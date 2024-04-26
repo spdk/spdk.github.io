@@ -3,7 +3,7 @@ var structspdk__ioat__pq__hw__desc =
     [ "bundle", "structspdk__ioat__pq__hw__desc.html#a6271a17e55a8ece957c2dc77fb9e32a0", null ],
     [ "coef", "structspdk__ioat__pq__hw__desc.html#ad7aa93ee607ac2f8b952859333f6dad0", null ],
     [ "completion_update", "structspdk__ioat__pq__hw__desc.html#a5f553e83968498be97d4a5152320a580", null ],
-    [ "control", "structspdk__ioat__pq__hw__desc.html#a686062c24efc02e29cc3a2fde9e0b43e", null ],
+    [ "control", "structspdk__ioat__pq__hw__desc.html#aabbd2a878d55de85d70818df5501754f", null ],
     [ "control_raw", "structspdk__ioat__pq__hw__desc.html#a0eedd2094dba55dde1ae9a98b4dadff7", null ],
     [ "dest_dca", "structspdk__ioat__pq__hw__desc.html#a337c375fb007664358d9dd1a09114180", null ],
     [ "dest_snoop_disable", "structspdk__ioat__pq__hw__desc.html#a0d9624d46dfe5dcc6d6b59df92420d22", null ],
@@ -23,5 +23,5 @@ var structspdk__ioat__pq__hw__desc =
     [ "src_addr3", "structspdk__ioat__pq__hw__desc.html#a62edc806de7b1c510bff5a5459fb123e", null ],
     [ "src_count", "structspdk__ioat__pq__hw__desc.html#a5712769607952ad2a4f5045df3c2049a", null ],
     [ "src_snoop_disable", "structspdk__ioat__pq__hw__desc.html#a60c94d03450403ec46b2318088971f73", null ],
-    [ "u", "structspdk__ioat__pq__hw__desc.html#a0e2b286cbabf92d83f7e99ec8c6e49f7", null ]
+    [ "u", "structspdk__ioat__pq__hw__desc.html#a34af084fabe6ef3bc3a0056f39f4081a", null ]
 ];

@@ -1,5 +1,9 @@
 var NAVTREEINDEX6 =
 {
+"ioat__spec_8h.html#ad6decf15f582db03646116195bf1795f":[15,0,32,16],
+"ioat__spec_8h.html#adbebffc23f32661247e5da2228b415ca":[15,0,32,11],
+"ioat__spec_8h.html#ae763c4e8f46ead2c1ab8aa85bb40716f":[15,0,32,45],
+"ioat__spec_8h.html#afc40161ff89b7599a591441bc4699e5d":[15,0,32,30],
 "iscsi.html":[3,4],
 "iscsi.html#iscsi_config_lcore":[3,4,1,0],
 "iscsi.html#iscsi_getting_started":[3,4,0],
@@ -240,14 +244,10 @@ var NAVTREEINDEX6 =
 "jsonrpc.html#jsonrpc_invalid_params":[3,9,1,1],
 "jsonrpc.html#jsonrpc_overview":[3,9,0],
 "jsonrpc.html#jsonrpc_parser_error":[3,9,1,0],
-"jsonrpc.html#keyring_linux_set_options":[3,9,13,21],
+"jsonrpc.html#keyring_linux_set_options":[3,9,13,22],
 "jsonrpc.html#notify_get_notifications":[3,9,9,35],
 "jsonrpc.html#rpc_accel_assign_opc":[3,9,4,2],
 "jsonrpc.html#rpc_accel_crypto_key_create":[3,9,4,3],
 "jsonrpc.html#rpc_accel_crypto_key_destroy":[3,9,4,4],
-"jsonrpc.html#rpc_accel_crypto_keys_get":[3,9,4,5],
-"jsonrpc.html#rpc_accel_error_inject_error":[3,9,4,9],
-"jsonrpc.html#rpc_accel_get_opc_assignments":[3,9,4,1],
-"jsonrpc.html#rpc_accel_get_stats":[3,9,4,8],
-"jsonrpc.html#rpc_accel_set_driver":[3,9,4,6]
+"jsonrpc.html#rpc_accel_crypto_keys_get":[3,9,4,5]
 };

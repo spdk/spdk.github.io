@@ -92,6 +92,8 @@ $(document).ready(function(){initNavTree('changelog.html',''); initResizable(); 
 <div class="textblock"><p><a class="anchor" id="md_changelog"></a> </p>
 <h1><a class="anchor" id="changelog-v24-05"></a>
 v24.05: (Upcoming Release)</h1>
+<h2>bdev</h2>
+<p>Added <code><a class="el" href="bdev_8h.html#af833943e22885817e6954426b6a11b5f" title="Get controller attributes for the bdev.">spdk_bdev_get_nvme_ctratt()</a></code> API to get controller attributes of bdev.</p>
 <h2>event</h2>
 <p>SPDK applications can now start with <code>--wait-for-rpc</code> and JSON configuration provided at the same time.</p>
 <p>Struct <code><a class="el" href="structspdk__app__opts.html" title="Event framework initialization options.">spdk_app_opts</a></code> was extended by <code>json_data</code> and <code>json_data_size</code> fields allowing user to provide a buffer with JSON config as alternative to providing JSON config file path (these fields are mutually exclusive).</p>

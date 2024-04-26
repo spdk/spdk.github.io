@@ -3,6 +3,9 @@ var bdev_8h =
     [ "spdk_bdev_media_event", "structspdk__bdev__media__event.html", "structspdk__bdev__media__event" ],
     [ "spdk_bdev_io_stat", "structspdk__bdev__io__stat.html", "structspdk__bdev__io__stat" ],
     [ "spdk_bdev_opts", "structspdk__bdev__opts.html", "structspdk__bdev__opts" ],
+    [ "spdk_bdev_nvme_ctratt", "unionspdk__bdev__nvme__ctratt.html", "unionspdk__bdev__nvme__ctratt" ],
+    [ "spdk_bdev_nvme_cdw12", "unionspdk__bdev__nvme__cdw12.html", "unionspdk__bdev__nvme__cdw12" ],
+    [ "spdk_bdev_nvme_cdw13", "unionspdk__bdev__nvme__cdw13.html", "unionspdk__bdev__nvme__cdw13" ],
     [ "spdk_bdev_ext_io_opts", "structspdk__bdev__ext__io__opts.html", "structspdk__bdev__ext__io__opts" ],
     [ "spdk_bdev_open_async_opts", "structspdk__bdev__open__async__opts.html", "structspdk__bdev__open__async__opts" ],
     [ "spdk_bdev_io_wait_entry", "structspdk__bdev__io__wait__entry.html", "structspdk__bdev__io__wait__entry" ],
@@ -105,6 +108,7 @@ var bdev_8h =
     [ "spdk_bdev_get_module_name", "bdev_8h.html#acb85b88dd223598d61c464b026403174", null ],
     [ "spdk_bdev_get_name", "bdev_8h.html#ad97a853dcb945bf004817424b7aa28af", null ],
     [ "spdk_bdev_get_num_blocks", "bdev_8h.html#a86568eca8f0b4d0dc9bc59c5138fc7a5", null ],
+    [ "spdk_bdev_get_nvme_ctratt", "bdev_8h.html#af833943e22885817e6954426b6a11b5f", null ],
     [ "spdk_bdev_get_optimal_io_boundary", "bdev_8h.html#aa79625889e23318204d235da36a4fa02", null ],
     [ "spdk_bdev_get_opts", "bdev_8h.html#ab0c4412ed5d0e1869620965304d36b7f", null ],
     [ "spdk_bdev_get_physical_block_size", "bdev_8h.html#a2c895e82c51c654a5b3f838f7254d690", null ],
@@ -174,7 +178,10 @@ var bdev_8h =
     [ "spdk_bdev_zcopy_start", "bdev_8h.html#a0ae02ac58ed10886d4a00ba3d94af4ce", null ],
     [ "spdk_for_each_bdev", "bdev_8h.html#ac93dda3868b191be70ac7e1517422c1f", null ],
     [ "spdk_for_each_bdev_leaf", "bdev_8h.html#aeb680eb5205197872738e482204ab441", null ],
-    [ "SPDK_STATIC_ASSERT", "bdev_8h.html#a3a91870429bdfa6f80dca0ae4b608e65", null ],
+    [ "SPDK_STATIC_ASSERT", "bdev_8h.html#a6f7f3fafa3bbfd4c48a60ccfbd86fdb3", null ],
     [ "SPDK_STATIC_ASSERT", "bdev_8h.html#a1a0f34e14b9849b25c5b24c2b4941ad0", null ],
-    [ "SPDK_STATIC_ASSERT", "bdev_8h.html#a2a07b56033890913587438d1c77942db", null ]
+    [ "SPDK_STATIC_ASSERT", "bdev_8h.html#a2a07b56033890913587438d1c77942db", null ],
+    [ "SPDK_STATIC_ASSERT", "bdev_8h.html#a1d3b7fbd1ddedfb13e7ac01d9bd484cf", null ],
+    [ "SPDK_STATIC_ASSERT", "bdev_8h.html#a09b682915152042c384a50dea9f4dae3", null ],
+    [ "SPDK_STATIC_ASSERT", "bdev_8h.html#ae807eb713485e9a2158896186f44843f", null ]
 ];

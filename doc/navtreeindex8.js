@@ -1,5 +1,10 @@
 var NAVTREEINDEX8 =
 {
+"jsonrpc.html#rpc_ublk_destroy_target":[3,9,10,1],
+"jsonrpc.html#rpc_ublk_get_disks":[3,9,10,4],
+"jsonrpc.html#rpc_ublk_recover_disk":[3,9,10,3],
+"jsonrpc.html#rpc_ublk_start_disk":[3,9,10,2],
+"jsonrpc.html#rpc_vfu_tgt_set_base_path":[3,9,7,25],
 "jsonrpc.html#rpc_vfu_virtio_create_blk_endpoint":[3,9,7,27],
 "jsonrpc.html#rpc_vfu_virtio_create_scsi_endpoint":[3,9,7,30],
 "jsonrpc.html#rpc_vfu_virtio_delete_endpoint":[3,9,7,26],
@@ -20,8 +25,8 @@ var NAVTREEINDEX8 =
 "jsonrpc.html#rpc_vhost_start_scsi_controller":[3,9,8,2],
 "jsonrpc.html#rpc_virtio_blk_create_transport":[3,9,8,5],
 "jsonrpc.html#rpc_virtio_blk_get_transports":[3,9,8,6],
-"jsonrpc.html#rpc_vmd_remove_device":[3,9,13,5],
-"jsonrpc.html#rpc_vmd_rescan":[3,9,13,6],
+"jsonrpc.html#rpc_vmd_remove_device":[3,9,13,6],
+"jsonrpc.html#rpc_vmd_rescan":[3,9,13,7],
 "jsonrpc.html#spdk_nvmf_admin_passthru_conf":[3,9,7,21,0],
 "jsonrpc_8h.html":[15,0,35],
 "jsonrpc_8h.html#a0eb3dec195e22ff481e317f41b1b0d95":[15,0,35,4],
@@ -244,10 +249,5 @@ var NAVTREEINDEX8 =
 "nvme_8h.html#a07bd04caa1e443e7709540e0dac7d4ee":[15,0,41,128],
 "nvme_8h.html#a084c6ecb53bd810fbb5051100b79bec5":[15,0,41,154],
 "nvme_8h.html#a0893350626b0eff85b931c570876f28a":[15,0,41,32],
-"nvme_8h.html#a08afb91732d92d84a054012cd3d236aa":[15,0,41,159],
-"nvme_8h.html#a0b7c74143a1df7101e6c81a24c9f01a0":[15,0,41,18],
-"nvme_8h.html#a0d24c0b2b0b2a22b0c0af2ca2e157e04":[15,0,41,189],
-"nvme_8h.html#a0e1fcb43970ea531567ee00d4ee0675b":[15,0,41,35],
-"nvme_8h.html#a0e7a6bb3ac85f99f936290f679399039":[15,0,41,62],
-"nvme_8h.html#a0f14ec05ce3af11f089a79d47739bd74":[15,0,41,205]
+"nvme_8h.html#a08afb91732d92d84a054012cd3d236aa":[15,0,41,159]
 };

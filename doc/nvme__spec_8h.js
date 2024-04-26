@@ -64,7 +64,7 @@ var nvme__spec_8h =
     [ "spdk_nvme_cdata_oacs", "structspdk__nvme__cdata__oacs.html", "structspdk__nvme__cdata__oacs" ],
     [ "spdk_nvme_cdata_fuses", "structspdk__nvme__cdata__fuses.html", "structspdk__nvme__cdata__fuses" ],
     [ "spdk_nvme_cdata_oaes", "structspdk__nvme__cdata__oaes.html", "structspdk__nvme__cdata__oaes" ],
-    [ "spdk_nvme_cdata_ctratt", "structspdk__nvme__cdata__ctratt.html", "structspdk__nvme__cdata__ctratt" ],
+    [ "spdk_nvme_cdata_ctratt", "unionspdk__nvme__cdata__ctratt.html", "unionspdk__nvme__cdata__ctratt" ],
     [ "spdk_nvme_ctrlr_data", "structspdk__nvme__ctrlr__data.html", "structspdk__nvme__ctrlr__data" ],
     [ "spdk_nvme_zns_ctrlr_data", "structspdk__nvme__zns__ctrlr__data.html", "structspdk__nvme__zns__ctrlr__data" ],
     [ "spdk_nvme_primary_ctrl_capabilities", "structspdk__nvme__primary__ctrl__capabilities.html", "structspdk__nvme__primary__ctrl__capabilities" ],

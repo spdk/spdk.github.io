@@ -5,6 +5,7 @@ var structspdk__bdev =
     [ "acwu", "structspdk__bdev.html#ab10f57ea24409424fd71a3b53d6fe31e", null ],
     [ "blockcnt", "structspdk__bdev.html#aef65d7444968b8981d46d0c520fd5287", null ],
     [ "blocklen", "structspdk__bdev.html#ac737d9458e1184f313aed88b8af9b862", null ],
+    [ "ctratt", "structspdk__bdev.html#aaaa43998fc6e305d9ca597a56eb7e99c", null ],
     [ "ctxt", "structspdk__bdev.html#a0329aa7395f9784d4dc8c596efc4ac8c", null ],
     [ "dif_check_flags", "structspdk__bdev.html#a1872fa3d723b5bef069c0681ec3bcfd6", null ],
     [ "dif_is_head_of_md", "structspdk__bdev.html#a1a6b7f9bd595b3b800f35cc63efa3aab", null ],

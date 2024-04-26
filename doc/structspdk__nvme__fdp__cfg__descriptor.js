@@ -1,9 +1,9 @@
 var structspdk__nvme__fdp__cfg__descriptor =
 [
-    [ "bits", "structspdk__nvme__fdp__cfg__descriptor.html#af79420bd19ea24ea80ef1456b370cee4", null ],
+    [ "bits", "structspdk__nvme__fdp__cfg__descriptor.html#a06fa42371acee8c76f9be1012a156dd5", null ],
     [ "ds", "structspdk__nvme__fdp__cfg__descriptor.html#a4c9f3bec758e19c871d7fc27dbcd068f", null ],
     [ "erutl", "structspdk__nvme__fdp__cfg__descriptor.html#a2ba3f2418b501f7387843cf9917a20aa", null ],
-    [ "fdpa", "structspdk__nvme__fdp__cfg__descriptor.html#a78e915e31be30c7478a1b6c3a4dea68b", null ],
+    [ "fdpa", "structspdk__nvme__fdp__cfg__descriptor.html#a038ea1655e61fd815dacde37c6f40d79", null ],
     [ "fdpcv", "structspdk__nvme__fdp__cfg__descriptor.html#ac687a2e2cffa22eae8416f0a904382ae", null ],
     [ "fdpvwc", "structspdk__nvme__fdp__cfg__descriptor.html#a7483dc1607192fe26e1e213e91e86620", null ],
     [ "maxpids", "structspdk__nvme__fdp__cfg__descriptor.html#aed30bc5a3b367141266d8bb6ad7d7179", null ],
