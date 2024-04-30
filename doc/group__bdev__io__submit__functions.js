@@ -1,5 +1,6 @@
 var group__bdev__io__submit__functions =
 [
+    [ "spdk_bdev_abort", "group__bdev__io__submit__functions.html#ga841dcef50460f33c8b5e321e187dc3dd", null ],
     [ "spdk_bdev_compare_blocks", "group__bdev__io__submit__functions.html#ga0846ab7b6c938f0f52ac36cd09a75278", null ],
     [ "spdk_bdev_compare_blocks_with_md", "group__bdev__io__submit__functions.html#ga8a69444aaff6f046f7de8524e8c886d8", null ],
     [ "spdk_bdev_comparev_and_writev_blocks", "group__bdev__io__submit__functions.html#gafaa766d5c5ca4bc2979e1f5f9015ef11", null ],

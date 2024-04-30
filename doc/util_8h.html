@@ -157,7 +157,8 @@ Macros</h2></td></tr>
 <tr class="memitem:ab68c3f1a4bdedea57f4deb58a011f251"><td class="memItemLeft" align="right" valign="top"><a id="ab68c3f1a4bdedea57f4deb58a011f251"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_IOVITER_SIZE</b>(count)&#160;&#160;&#160;(sizeof(struct <a class="el" href="structspdk__single__ioviter.html">spdk_single_ioviter</a>) * (count - 2) + sizeof(struct <a class="el" href="structspdk__ioviter.html">spdk_ioviter</a>))</td></tr>
 <tr class="separator:ab68c3f1a4bdedea57f4deb58a011f251"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a123918f967aa539af3a48a83dcf588c9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_IOV_ONE</b>(piov,  piovcnt,  buf,  buflen)</td></tr>
+<tr class="memitem:a123918f967aa539af3a48a83dcf588c9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8h.html#a123918f967aa539af3a48a83dcf588c9">SPDK_IOV_ONE</a>(piov,  piovcnt,  buf,  buflen)</td></tr>
+<tr class="memdesc:a123918f967aa539af3a48a83dcf588c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize an iovec with just the single given buffer.  <a href="util_8h.html#a123918f967aa539af3a48a83dcf588c9">More...</a><br /></td></tr>
 <tr class="separator:a123918f967aa539af3a48a83dcf588c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac14f2b75522d72317def37370adffca1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8h.html#ac14f2b75522d72317def37370adffca1">SPDK_CLANG_ANALYZER_PREINIT_PTR_ARRAY</a>(arr,  arr_size,  buf_size)</td></tr>
 <tr class="memdesc:ac14f2b75522d72317def37370adffca1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scan build is really pessimistic and assumes that mempool functions can dequeue NULL buffers even if they return success.  <a href="util_8h.html#ac14f2b75522d72317def37370adffca1">More...</a><br /></td></tr>
@@ -207,10 +208,6 @@ static uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_divid
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8h.html#a87d0db9f66fa3fc6763dbbe238c3c179">spdk_iov_memset</a> (struct iovec *iovs, int iovcnt, int c)</td></tr>
 <tr class="memdesc:a87d0db9f66fa3fc6763dbbe238c3c179"><td class="mdescLeft">&#160;</td><td class="mdescRight">Operate like memset across an iovec. <br /></td></tr>
 <tr class="separator:a87d0db9f66fa3fc6763dbbe238c3c179"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae5b9fcc21fe47320520c6d43983ad55f"><td class="memItemLeft" align="right" valign="top"><a id="ae5b9fcc21fe47320520c6d43983ad55f"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8h.html#ae5b9fcc21fe47320520c6d43983ad55f">spdk_iov_one</a> (struct iovec *iov, int *iovcnt, void *buf, size_t buflen)</td></tr>
-<tr class="memdesc:ae5b9fcc21fe47320520c6d43983ad55f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize an iovec with just the single given buffer. <br /></td></tr>
-<tr class="separator:ae5b9fcc21fe47320520c6d43983ad55f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4bf38bbd457a764604d5ba26ed3c8565"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8h.html#a4bf38bbd457a764604d5ba26ed3c8565">spdk_iovcpy</a> (struct iovec *siov, size_t siovcnt, struct iovec *diov, size_t diovcnt)</td></tr>
 <tr class="memdesc:a4bf38bbd457a764604d5ba26ed3c8565"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy the data described by the source iovec to the destination iovec.  <a href="util_8h.html#a4bf38bbd457a764604d5ba26ed3c8565">More...</a><br /></td></tr>
 <tr class="separator:a4bf38bbd457a764604d5ba26ed3c8565"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -400,6 +397,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util
 <div class="line">        *(piovcnt) = 1;                                 \</div>
 <div class="line">} <span class="keywordflow">while</span> (0)</div>
 </div><!-- fragment -->
+<p>Initialize an iovec with just the single given buffer. </p>
+
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>

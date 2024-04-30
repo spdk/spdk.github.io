@@ -27,7 +27,6 @@ var util_8h =
     [ "spdk_copy_iovs_to_buf", "util_8h.html#a260b1024edd3144707a2286ebf50839e", null ],
     [ "spdk_divide_round_up", "util_8h.html#a3a1ed8f80bbc8e22d1f778a6615512e7", null ],
     [ "spdk_iov_memset", "util_8h.html#a87d0db9f66fa3fc6763dbbe238c3c179", null ],
-    [ "spdk_iov_one", "util_8h.html#ae5b9fcc21fe47320520c6d43983ad55f", null ],
     [ "spdk_iov_xfer_from_buf", "util_8h.html#aa6ce82e1521dc2592d35403edc48a35c", null ],
     [ "spdk_iov_xfer_init", "util_8h.html#a5761baf18d549561bfeb58990531bbcd", null ],
     [ "spdk_iov_xfer_to_buf", "util_8h.html#a1082d39cc6e9b1fb657f3b31ba430454", null ],

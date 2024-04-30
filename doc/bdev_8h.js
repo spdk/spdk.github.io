@@ -70,7 +70,7 @@ var bdev_8h =
       [ "SPDK_BDEV_STATUS_UNREGISTERING", "bdev_8h.html#ad6c166f5d928c2995df57c96a2977862a5d925fc967dea1f6d58c0acf82d6ef98", null ],
       [ "SPDK_BDEV_STATUS_REMOVING", "bdev_8h.html#ad6c166f5d928c2995df57c96a2977862a82598753017f84c485785b04f9dcf5fa", null ]
     ] ],
-    [ "spdk_bdev_abort", "bdev_8h.html#a841dcef50460f33c8b5e321e187dc3dd", null ],
+    [ "spdk_bdev_abort", "group__bdev__io__submit__functions.html#ga841dcef50460f33c8b5e321e187dc3dd", null ],
     [ "spdk_bdev_channel_get_histogram", "bdev_8h.html#a83092483a9de9f7d736ef4ceaaf0d26c", null ],
     [ "spdk_bdev_close", "bdev_8h.html#aaf5fc830851a2eb0aa34bbb40cf5eac6", null ],
     [ "spdk_bdev_compare_blocks", "group__bdev__io__submit__functions.html#ga0846ab7b6c938f0f52ac36cd09a75278", null ],

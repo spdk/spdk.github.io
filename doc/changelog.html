@@ -201,7 +201,7 @@ v24.05: (Upcoming Release)</h1>
 <p>The <code>spdk_nvmf_request::data</code> field has been removed: instead, clients should set <code>-&gt;iov</code> and <code>-&gt;iovcnt</code> appropriately, as nvmf request APIs now expect any data buffers to be described there. <code>spdk_nvmf_request_get_data()</code> has been removed.</p>
 <p><code>transport</code> field in <code>listen_addresses</code> of <code>nvmf_get_subsystems</code> RPC is deprecated. <code>trtype</code> field should be used instead. <code>transport</code> field will be removed in 24.01 release.</p>
 <p>Added <code><a class="el" href="nvmf_8h.html#a264077cd7633ac2103bd4e293e8a94f5" title="Accept new connections on the address provided.">spdk_nvmf_subsystem_add_listener_ext()</a></code> API for accepting new connections on the provided address, now allowing to specify additional options for the listener.</p>
-<p>Deprecated <code><a class="el" href="nvmf_8h.html#afcb0340cf28f2f072bb3fa26c43870ab" title="Check whether a subsystem allows any listen address or only addresses in the allowed list.">spdk_nvmf_subsytem_any_listener_allowed()</a></code> API (to be removed in 24.01) and replaced with <a class="el" href="nvmf_8h.html#a8f4f76f43797274eaf8b08a0894526f6" title="Check whether a subsystem allows any listen address or only addresses in the allowed list.">spdk_nvmf_subsystem_any_listener_allowed()</a>` API fixing the typo.</p>
+<p>Deprecated <code>spdk_nvmf_subsytem_any_listener_allowed()</code> API (to be removed in 24.01) and replaced with <a class="el" href="nvmf_8h.html#a8f4f76f43797274eaf8b08a0894526f6" title="Check whether a subsystem allows any listen address or only addresses in the allowed list.">spdk_nvmf_subsystem_any_listener_allowed()</a>` API fixing the typo.</p>
 <p>Added <code><a class="el" href="nvmf_8h.html#a0241868432ed4cd5687f5add03e52860" title="Checks whether a given subsystem is a discovery subsystem.">spdk_nvmf_subsystem_is_discovery()</a></code> API to check whether a given susbystem is discovery subsystem.</p>
 <h2>scripts</h2>
 <p><code>setup.sh</code> now supports interactive mode for device selection and hugepage reservation.</p>
@@ -344,7 +344,7 @@ v24.05: (Upcoming Release)</h1>
 <p>Added API <code>spdk_strarray_from_string</code>, <code>spdk_strarray_dup</code> and <code>spdk_strarray_free</code> for handling arrays of strings.</p>
 <p>A new API <code>spdk_strcpy_replace</code> was added to replace all occurrences of the search string with the replacement string.</p>
 <p>New API <code><a class="el" href="util_8h.html#a87d0db9f66fa3fc6763dbbe238c3c179" title="Operate like memset across an iovec.">spdk_iov_memset()</a></code> was added to memset an iovec.</p>
-<p>New API <code><a class="el" href="util_8h.html#ae5b9fcc21fe47320520c6d43983ad55f" title="Initialize an iovec with just the single given buffer.">spdk_iov_one()</a></code> was added to initialize an iovec for a single buffer.</p>
+<p>New API <code>spdk_iov_one()</code> was added to initialize an iovec for a single buffer.</p>
 <h1>v22.09</h1>
 <h2>accel</h2>
 <p>Many names were changed in the accel framework to make them consistent both with themselves and the rest of SPDK. The primary public header file is now named <code><a class="el" href="accel_8h.html" title="Acceleration Framework.">include/spdk/accel.h</a></code>.</p>
@@ -1473,7 +1473,7 @@ v18.07: Raid, Infrastructure Improvements, Bug Fixes</h1>
 <p>Basic support for Open Channel SSDs was added. See <a class="el" href="nvme__ocssd_8h.html" title="NVMe driver public API extension for Open-Channel.">nvme_ocssd.h</a></p>
 <h2>NVMe Over Fabrics</h2>
 <p>The <a class="el" href="nvmf_8h.html#a21638f4d81002e93d410cd0d267f608c" title="Destroy an NVMe-oF target.">spdk_nvmf_tgt_destroy()</a> function is now asynchronous and takes a callback as a parameter.</p>
-<p><a class="el" href="nvmf_8h.html#afa33cb1cf39e04ee533f874ed82e24e5" title="Disconnect an NVMe-oF qpair.">spdk_nvmf_qpair_disconnect()</a> was added to allow the user to disconnect qpairs.</p>
+<p><a class="el" href="nvmf_8h.html#ab5056f8043ae301e8f79cd96172face9" title="Disconnect an NVMe-oF qpair.">spdk_nvmf_qpair_disconnect()</a> was added to allow the user to disconnect qpairs.</p>
 <p><a class="el" href="nvmf_8h.html#a414b91bad7200ab931f14a06585ccc74" title="Get the maximum number of namespaces allowed in a subsystem.">spdk_nvmf_subsystem_get_max_namespaces()</a> was added to query the maximum allowed number of namespaces for a given subsystem.</p>
 <h2>Build System</h2>
 <p>The build system now generates a combined shared library (libspdk.so) that may be used in place of the individual static libraries (libspdk_*.a). The combined library includes all components of SPDK and is intended to make linking against SPDK easier. The static libraries are also still provided for users that prefer to link only the minimal set of components required.</p>

@@ -1,5 +1,6 @@
 var NAVTREEINDEX8 =
 {
+"jsonrpc.html#rpc_ublk_create_target":[3,9,10,0],
 "jsonrpc.html#rpc_ublk_destroy_target":[3,9,10,1],
 "jsonrpc.html#rpc_ublk_get_disks":[3,9,10,4],
 "jsonrpc.html#rpc_ublk_recover_disk":[3,9,10,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX8 =
 "nvme_8h.html#a05f1aa545be57a03bb2dd0c6180172b6":[15,0,41,33],
 "nvme_8h.html#a07bd04caa1e443e7709540e0dac7d4ee":[15,0,41,128],
 "nvme_8h.html#a084c6ecb53bd810fbb5051100b79bec5":[15,0,41,154],
-"nvme_8h.html#a0893350626b0eff85b931c570876f28a":[15,0,41,32],
-"nvme_8h.html#a08afb91732d92d84a054012cd3d236aa":[15,0,41,159]
+"nvme_8h.html#a0893350626b0eff85b931c570876f28a":[15,0,41,32]
 };

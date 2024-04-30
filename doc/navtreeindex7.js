@@ -1,5 +1,6 @@
 var NAVTREEINDEX7 =
 {
+"jsonrpc.html#rpc_accel_crypto_keys_get":[3,9,4,5],
 "jsonrpc.html#rpc_accel_error_inject_error":[3,9,4,9],
 "jsonrpc.html#rpc_accel_get_opc_assignments":[3,9,4,1],
 "jsonrpc.html#rpc_accel_get_stats":[3,9,4,8],
@@ -248,6 +249,5 @@ var NAVTREEINDEX7 =
 "jsonrpc.html#rpc_trace_enable_tpoint_group":[3,9,3,12],
 "jsonrpc.html#rpc_trace_get_info":[3,9,3,17],
 "jsonrpc.html#rpc_trace_get_tpoint_group_mask":[3,9,3,16],
-"jsonrpc.html#rpc_trace_set_tpoint_mask":[3,9,3,14],
-"jsonrpc.html#rpc_ublk_create_target":[3,9,10,0]
+"jsonrpc.html#rpc_trace_set_tpoint_mask":[3,9,3,14]
 };

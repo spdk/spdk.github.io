@@ -237,9 +237,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a37eea41a3c3856e0ea2cd383af20183d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#a37eea41a3c3856e0ea2cd383af20183d">spdk_nvmf_poll_group_add</a> (struct <a class="el" href="structspdk__nvmf__poll__group.html">spdk_nvmf_poll_group</a> *group, struct <a class="el" href="structspdk__nvmf__qpair.html">spdk_nvmf_qpair</a> *qpair)</td></tr>
 <tr class="memdesc:a37eea41a3c3856e0ea2cd383af20183d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add the given qpair to the poll group.  <a href="nvmf_8h.html#a37eea41a3c3856e0ea2cd383af20183d">More...</a><br /></td></tr>
 <tr class="separator:a37eea41a3c3856e0ea2cd383af20183d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afa33cb1cf39e04ee533f874ed82e24e5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#afa33cb1cf39e04ee533f874ed82e24e5">spdk_nvmf_qpair_disconnect</a> (struct <a class="el" href="structspdk__nvmf__qpair.html">spdk_nvmf_qpair</a> *qpair, nvmf_qpair_disconnect_cb cb_fn, void *ctx)</td></tr>
-<tr class="memdesc:afa33cb1cf39e04ee533f874ed82e24e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disconnect an NVMe-oF qpair.  <a href="nvmf_8h.html#afa33cb1cf39e04ee533f874ed82e24e5">More...</a><br /></td></tr>
-<tr class="separator:afa33cb1cf39e04ee533f874ed82e24e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5056f8043ae301e8f79cd96172face9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#ab5056f8043ae301e8f79cd96172face9">spdk_nvmf_qpair_disconnect</a> (struct <a class="el" href="structspdk__nvmf__qpair.html">spdk_nvmf_qpair</a> *qpair)</td></tr>
+<tr class="memdesc:ab5056f8043ae301e8f79cd96172face9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disconnect an NVMe-oF qpair.  <a href="nvmf_8h.html#ab5056f8043ae301e8f79cd96172face9">More...</a><br /></td></tr>
+<tr class="separator:ab5056f8043ae301e8f79cd96172face9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a145a3a2e51799674837dcb1ebf9a13c3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#a145a3a2e51799674837dcb1ebf9a13c3">spdk_nvmf_qpair_get_peer_trid</a> (struct <a class="el" href="structspdk__nvmf__qpair.html">spdk_nvmf_qpair</a> *qpair, struct <a class="el" href="structspdk__nvme__transport__id.html">spdk_nvme_transport_id</a> *trid)</td></tr>
 <tr class="memdesc:a145a3a2e51799674837dcb1ebf9a13c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the peer's transport ID for this queue pair.  <a href="nvmf_8h.html#a145a3a2e51799674837dcb1ebf9a13c3">More...</a><br /></td></tr>
 <tr class="separator:a145a3a2e51799674837dcb1ebf9a13c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -339,9 +339,6 @@ Functions</h2></td></tr>
 <tr class="memitem:ad5747c07b3d4ce75b4825597ecf32fde"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#ad5747c07b3d4ce75b4825597ecf32fde">spdk_nvmf_subsystem_allow_any_listener</a> (struct spdk_nvmf_subsystem *subsystem, bool allow_any_listener)</td></tr>
 <tr class="memdesc:ad5747c07b3d4ce75b4825597ecf32fde"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set whether a subsystem should allow any listen address or only addresses in the allowed list.  <a href="nvmf_8h.html#ad5747c07b3d4ce75b4825597ecf32fde">More...</a><br /></td></tr>
 <tr class="separator:ad5747c07b3d4ce75b4825597ecf32fde"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afcb0340cf28f2f072bb3fa26c43870ab"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#afcb0340cf28f2f072bb3fa26c43870ab">spdk_nvmf_subsytem_any_listener_allowed</a> (struct spdk_nvmf_subsystem *subsystem)</td></tr>
-<tr class="memdesc:afcb0340cf28f2f072bb3fa26c43870ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether a subsystem allows any listen address or only addresses in the allowed list.  <a href="nvmf_8h.html#afcb0340cf28f2f072bb3fa26c43870ab">More...</a><br /></td></tr>
-<tr class="separator:afcb0340cf28f2f072bb3fa26c43870ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8f4f76f43797274eaf8b08a0894526f6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf_8h.html#a8f4f76f43797274eaf8b08a0894526f6">spdk_nvmf_subsystem_any_listener_allowed</a> (struct spdk_nvmf_subsystem *subsystem)</td></tr>
 <tr class="memdesc:a8f4f76f43797274eaf8b08a0894526f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether a subsystem allows any listen address or only addresses in the allowed list.  <a href="nvmf_8h.html#a8f4f76f43797274eaf8b08a0894526f6">More...</a><br /></td></tr>
 <tr class="separator:a8f4f76f43797274eaf8b08a0894526f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1263,8 +1260,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="afa33cb1cf39e04ee533f874ed82e24e5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afa33cb1cf39e04ee533f874ed82e24e5">&#9670;&nbsp;</a></span>spdk_nvmf_qpair_disconnect()</h2>
+<a id="ab5056f8043ae301e8f79cd96172face9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5056f8043ae301e8f79cd96172face9">&#9670;&nbsp;</a></span>spdk_nvmf_qpair_disconnect()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1273,24 +1270,8 @@ Functions</h2></td></tr>
           <td class="memname">int spdk_nvmf_qpair_disconnect </td>
           <td>(</td>
           <td class="paramtype">struct <a class="el" href="structspdk__nvmf__qpair.html">spdk_nvmf_qpair</a> *&#160;</td>
-          <td class="paramname"><em>qpair</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>qpair</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">nvmf_qpair_disconnect_cb&#160;</td>
-          <td class="paramname"><em>cb_fn</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>ctx</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1298,9 +1279,7 @@ Functions</h2></td></tr>
 <p>Disconnect an NVMe-oF qpair. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">qpair</td><td>The NVMe-oF qpair to disconnect. </td></tr>
-    <tr><td class="paramname">cb_fn</td><td>Deprecated, will be removed in v24.05. The function to call upon completion of the disconnect. </td></tr>
-    <tr><td class="paramname">ctx</td><td>Deprecated, will be removed in v24.05. The context to pass to the callback function.</td></tr>
+    <tr><td class="paramname">qpair</td><td>The NVMe-oF qpair to disconnect.</td></tr>
   </table>
   </dd>
 </dl>
@@ -3234,34 +3213,6 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 on success, or negated errno on failure. The callback provided will only be called on success. </dd></dl>
-
-</div>
-</div>
-<a id="afcb0340cf28f2f072bb3fa26c43870ab"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afcb0340cf28f2f072bb3fa26c43870ab">&#9670;&nbsp;</a></span>spdk_nvmf_subsytem_any_listener_allowed()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool spdk_nvmf_subsytem_any_listener_allowed </td>
-          <td>(</td>
-          <td class="paramtype">struct spdk_nvmf_subsystem *&#160;</td>
-          <td class="paramname"><em>subsystem</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Check whether a subsystem allows any listen address or only addresses in the allowed list. </p>
-<p>Deprecated - will be removed in v24.05. Please use <a class="el" href="nvmf_8h.html#a8f4f76f43797274eaf8b08a0894526f6">spdk_nvmf_subsystem_any_listener_allowed</a>.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">subsystem</td><td>Subsystem to query.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>true if this subsystem allows dynamic management of listen address list, or false if only allows addresses in the list configured during subsystem setup. </dd></dl>
 
 </div>
 </div>

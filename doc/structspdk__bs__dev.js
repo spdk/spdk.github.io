@@ -9,6 +9,7 @@ var structspdk__bs__dev =
     [ "flush", "structspdk__bs__dev.html#a0447419a84f9f1b4e883d9111d61e8ec", null ],
     [ "get_base_bdev", "structspdk__bs__dev.html#ab3a4996a37bdfe0ee29f88f2b97543e7", null ],
     [ "is_degraded", "structspdk__bs__dev.html#af8288c853666c52d89e1303ba469a638", null ],
+    [ "is_range_valid", "structspdk__bs__dev.html#aedd31f9bf5e3170e2a9dc1b9704f26e5", null ],
     [ "is_zeroes", "structspdk__bs__dev.html#a3b626710afb0f6b51f03b6ce9310bdf8", null ],
     [ "read", "structspdk__bs__dev.html#a4e782b655106c1d25b543960b7ba2c0f", null ],
     [ "readv", "structspdk__bs__dev.html#a75564a4d0f1815b99c1fe1e1965b3770", null ],

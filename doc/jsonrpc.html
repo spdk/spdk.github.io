@@ -6663,6 +6663,7 @@ nvmf_delete_subsystem method</h2>
 </div><!-- fragment --><h2><a class="anchor" id="rpc_nvmf_subsystem_add_listener"></a>
 nvmf_subsystem_add_listener  method</h2>
 <p>Add a new listen address to an NVMe-oF subsystem.</p>
+<p>This method will fail if listener with given address already exists.</p>
 <h3>Parameters</h3>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -6685,7 +6686,7 @@ listen_address</h3>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">trtype   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Transport type ("RDMA")    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">adrfam   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Address family ("IPv4", "IPv6", "IB", or "FC")    </td></tr>
+<td class="markdownTableBodyNone">adrfam   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Address family ("IPv4", "IPv6", "IB", or "FC")    </td></tr>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">traddr   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Transport address    </td></tr>
 <tr class="markdownTableRowEven">
@@ -8252,16 +8253,14 @@ bdev_lvol_create</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">lvol_name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of logical volume to create    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">size   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">Desired size of logical volume in bytes (Deprecated. Please use size_in_mib instead.)    </td></tr>
+<td class="markdownTableBodyNone">size_in_mib   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">Desired size of logical volume in MiB    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">size_in_mib   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">Desired size of logical volume in MiB    </td></tr>
-<tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">thin_provision   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">True to enable thin provisioning    </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">uuid   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">UUID of logical volume store to create logical volume on    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">lvs_name   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of logical volume store to create logical volume on    </td></tr>
+<td class="markdownTableBodyNone">uuid   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">UUID of logical volume store to create logical volume on    </td></tr>
 <tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">lvs_name   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of logical volume store to create logical volume on    </td></tr>
+<tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">clear_method   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Change default data clusters clear method. Available: none, unmap, write_zeroes   </td></tr>
 </table>
 <p>Size will be rounded up to a multiple of cluster size. Either uuid or lvs_name must be specified, but not both. lvol_name will be used in the alias of the created logical volume.</p>
@@ -8423,9 +8422,7 @@ bdev_lvol_resize</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">UUID or alias of the logical volume to resize    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">size   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">Desired size of the logical volume in bytes (Deprecated. Please use size_in_mib instead.)    </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">size_in_mib   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">Desired size of the logical volume in MiB   </td></tr>
+<td class="markdownTableBodyNone">size_in_mib   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">Desired size of the logical volume in MiB   </td></tr>
 </table>
 <h3>Example</h3>
 <p>Example request:</p>
