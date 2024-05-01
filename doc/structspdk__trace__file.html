@@ -127,32 +127,28 @@ struct <a class="el" href="structspdk__trace__object.html">spdk_trace_object</a>
 <tr class="memitem:ae885cf604a58e90cdfeaf20c95bf4a91"><td class="memItemLeft" align="right" valign="top"><a id="ae885cf604a58e90cdfeaf20c95bf4a91"></a>
 struct <a class="el" href="structspdk__trace__tpoint.html">spdk_trace_tpoint</a>&#160;</td><td class="memItemRight" valign="bottom"><b>tpoint</b> [SPDK_TRACE_MAX_TPOINT_ID]</td></tr>
 <tr class="separator:ae885cf604a58e90cdfeaf20c95bf4a91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4508e9e372351b249a035626ba0abdf8"><td class="memItemLeft" align="right" valign="top"><a id="a4508e9e372351b249a035626ba0abdf8"></a>
+uint16_t&#160;</td><td class="memItemRight" valign="bottom"><b>num_owners</b></td></tr>
+<tr class="separator:a4508e9e372351b249a035626ba0abdf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adec760e69c2950e13f32c803b6dec552"><td class="memItemLeft" align="right" valign="top"><a id="adec760e69c2950e13f32c803b6dec552"></a>
+uint16_t&#160;</td><td class="memItemRight" valign="bottom"><b>owner_description_size</b></td></tr>
+<tr class="separator:adec760e69c2950e13f32c803b6dec552"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc1ec05107d86a3fd6352993748b54e8"><td class="memItemLeft" align="right" valign="top"><a id="acc1ec05107d86a3fd6352993748b54e8"></a>
+uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>reserved</b> [4]</td></tr>
+<tr class="separator:acc1ec05107d86a3fd6352993748b54e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af69b46e3c455ce411bdeb35f9aba08c3"><td class="memItemLeft" align="right" valign="top"><a id="af69b46e3c455ce411bdeb35f9aba08c3"></a>
 uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__trace__file.html#af69b46e3c455ce411bdeb35f9aba08c3">lcore_history_offsets</a> [SPDK_TRACE_MAX_LCORE]</td></tr>
 <tr class="memdesc:af69b46e3c455ce411bdeb35f9aba08c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Offset of each trace_history from the beginning of this data structure. <br /></td></tr>
 <tr class="separator:af69b46e3c455ce411bdeb35f9aba08c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9335d27363558c9f1c84f566329a485e"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__trace__file.html#a9335d27363558c9f1c84f566329a485e">per_lcore_history</a> [0]</td></tr>
-<tr class="memdesc:a9335d27363558c9f1c84f566329a485e"><td class="mdescLeft">&#160;</td><td class="mdescRight">struct <a class="el" href="structspdk__trace__history.html">spdk_trace_history</a> has a dynamic size determined by num_entries in spdk_trace_init.  <a href="structspdk__trace__file.html#a9335d27363558c9f1c84f566329a485e">More...</a><br /></td></tr>
-<tr class="separator:a9335d27363558c9f1c84f566329a485e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab30ded0045e75bf5cbce59a25a3cff38"><td class="memItemLeft" align="right" valign="top"><a id="ab30ded0045e75bf5cbce59a25a3cff38"></a>
+uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__trace__file.html#ab30ded0045e75bf5cbce59a25a3cff38">owner_offset</a></td></tr>
+<tr class="memdesc:ab30ded0045e75bf5cbce59a25a3cff38"><td class="mdescLeft">&#160;</td><td class="mdescRight">Offset of beginning of struct <a class="el" href="structspdk__trace__owner.html">spdk_trace_owner</a> data. <br /></td></tr>
+<tr class="separator:ab30ded0045e75bf5cbce59a25a3cff38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28999274af3087e6f5d8d26781fc64c9"><td class="memItemLeft" align="right" valign="top"><a id="a28999274af3087e6f5d8d26781fc64c9"></a>
+uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__trace__file.html#a28999274af3087e6f5d8d26781fc64c9">data</a> [0]</td></tr>
+<tr class="memdesc:a28999274af3087e6f5d8d26781fc64c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Variable sized data sections are at the end of this data structure, referenced by offsets defined in this structure. <br /></td></tr>
+<tr class="separator:a28999274af3087e6f5d8d26781fc64c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Field Documentation</h2>
-<a id="a9335d27363558c9f1c84f566329a485e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9335d27363558c9f1c84f566329a485e">&#9670;&nbsp;</a></span>per_lcore_history</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint8_t spdk_trace_file::per_lcore_history[0]</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>struct <a class="el" href="structspdk__trace__history.html">spdk_trace_history</a> has a dynamic size determined by num_entries in spdk_trace_init. </p>
-<p>Mark array size of per_lcore_history to be 0 in uint8_t as a reminder that each per_lcore_history pointer should be gotten by proper API, instead of directly referencing by struct element. </p>
-
-</div>
-</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li><a class="el" href="trace_8h.html">trace.h</a></li>
 </ul>

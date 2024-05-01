@@ -15,5 +15,6 @@ var structspdk__nvmf__qpair =
     [ "state", "structspdk__nvmf__qpair.html#a04abd14ea45e52e6b1fef636c034e228", null ],
     [ "state_cb", "structspdk__nvmf__qpair.html#a68b1d54cc3ea7e337043f4dabfa9b859", null ],
     [ "state_cb_arg", "structspdk__nvmf__qpair.html#ad96a9ac0798e15ef97e0890d3aabd591", null ],
+    [ "trace_id", "structspdk__nvmf__qpair.html#a31d7bbbf22e8f4b9aea456cdac07417a", null ],
     [ "transport", "structspdk__nvmf__qpair.html#add3a2107b9b45be02b7319571960e5d4", null ]
 ];

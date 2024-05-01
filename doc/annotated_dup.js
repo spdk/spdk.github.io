@@ -422,6 +422,7 @@ var annotated_dup =
     [ "spdk_trace_file", "structspdk__trace__file.html", "structspdk__trace__file" ],
     [ "spdk_trace_history", "structspdk__trace__history.html", "structspdk__trace__history" ],
     [ "spdk_trace_object", "structspdk__trace__object.html", "structspdk__trace__object" ],
+    [ "spdk_trace_owner", "structspdk__trace__owner.html", "structspdk__trace__owner" ],
     [ "spdk_trace_owner_type", "structspdk__trace__owner__type.html", "structspdk__trace__owner__type" ],
     [ "spdk_trace_parser_entry", "structspdk__trace__parser__entry.html", "structspdk__trace__parser__entry" ],
     [ "spdk_trace_parser_opts", "structspdk__trace__parser__opts.html", "structspdk__trace__parser__opts" ],
