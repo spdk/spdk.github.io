@@ -1,5 +1,6 @@
 var NAVTREEINDEX34 =
 {
+"unionspdk__nvme__bpinfo__register.html#a40db96e0d5277ef07f58aa30ab011a24":[14,0,147,1],
 "unionspdk__nvme__bpinfo__register.html#a4ac3eb736878fd73e62269def291a612":[14,0,147,5],
 "unionspdk__nvme__bpinfo__register.html#a6b1a5e69cd0881e1e81fd4f086e3bf96":[14,0,147,2],
 "unionspdk__nvme__bpinfo__register.html#a87e86e11a255dd8a79dfb3f054cf03c7":[14,0,147,4],
@@ -248,6 +249,5 @@ var NAVTREEINDEX34 =
 "unionspdk__nvme__feat__autonomous__power__state__transition.html":[14,0,191],
 "unionspdk__nvme__feat__autonomous__power__state__transition.html#a022cc1ba5b7ff365a6b69989c663333a":[14,0,191,0],
 "unionspdk__nvme__feat__autonomous__power__state__transition.html#a36867fe7bf800adeacf48b7940f74857":[14,0,191,2],
-"unionspdk__nvme__feat__autonomous__power__state__transition.html#a9311f1d84bfe298c3ea675dc2cfbdcdc":[14,0,191,3],
-"unionspdk__nvme__feat__autonomous__power__state__transition.html#aea6e210ade147e21c04823678da23716":[14,0,191,1]
+"unionspdk__nvme__feat__autonomous__power__state__transition.html#a9311f1d84bfe298c3ea675dc2cfbdcdc":[14,0,191,3]
 };

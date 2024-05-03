@@ -25,6 +25,7 @@ var structspdk__bdev_1_1____bdev__internal__fields =
     [ "stat", "structspdk__bdev_1_1____bdev__internal__fields.html#ab00d3fac1952f8bfec95406f4bb27429", null ],
     [ "status", "structspdk__bdev_1_1____bdev__internal__fields.html#a75eb824f166523af1bb44edc6b209e89", null ],
     [ "temporary_queue_depth", "structspdk__bdev_1_1____bdev__internal__fields.html#afad02fdc83417a632d9ecc7f3c437c47", null ],
+    [ "trace_id", "structspdk__bdev_1_1____bdev__internal__fields.html#a5e903ac3d8ddcf633e269122c8b0775c", null ],
     [ "unregister_cb", "structspdk__bdev_1_1____bdev__internal__fields.html#a19c909b97a282da2b6681fd46a0d9a69", null ],
     [ "unregister_ctx", "structspdk__bdev_1_1____bdev__internal__fields.html#aac5fe7bcf1bbbf3f984874e1c75a580a", null ],
     [ "unregister_td", "structspdk__bdev_1_1____bdev__internal__fields.html#a9ac9b4eff872b0fe8c1558e3f4747884", null ],

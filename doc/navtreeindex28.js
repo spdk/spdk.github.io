@@ -1,5 +1,6 @@
 var NAVTREEINDEX28 =
 {
+"structspdk__nvmf__fabric__connect__rsp.html#ad652a83e35ac9ee8c721b80a4853ebe1":[14,0,309,16],
 "structspdk__nvmf__fabric__connect__rsp.html#ae13292d92189ffac9876ac42bb902fa7":[14,0,309,13],
 "structspdk__nvmf__fabric__prop__get__cmd.html":[14,0,310],
 "structspdk__nvmf__fabric__prop__get__cmd.html#a14d045b339b3ada491677dc98872a439":[14,0,310,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX28 =
 "structspdk__nvmf__rdma__reject__private__data.html#ae6e8c2a91d3107ff5d001f02913a1b60":[14,0,345,0],
 "structspdk__nvmf__rdma__request__private__data.html":[14,0,346],
 "structspdk__nvmf__rdma__request__private__data.html#a183766f5d8261ed37ea4843609fee4fc":[14,0,346,0],
-"structspdk__nvmf__rdma__request__private__data.html#a46e0677b276600cbf7c27a4187e1777e":[14,0,346,5],
-"structspdk__nvmf__rdma__request__private__data.html#a58bc4e90c851c25ad7a44d4063d9b6ff":[14,0,346,1]
+"structspdk__nvmf__rdma__request__private__data.html#a46e0677b276600cbf7c27a4187e1777e":[14,0,346,5]
 };
