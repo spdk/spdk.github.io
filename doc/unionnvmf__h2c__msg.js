@@ -1,5 +1,7 @@
 var unionnvmf__h2c__msg =
 [
+    [ "auth_recv_cmd", "unionnvmf__h2c__msg.html#a59ca792272100907802e05bb0ac4da94", null ],
+    [ "auth_send_cmd", "unionnvmf__h2c__msg.html#a681de56d735c3585266713b96d8d65f4", null ],
     [ "connect_cmd", "unionnvmf__h2c__msg.html#a6e4c12b85dba4cc6a8f2652e4c9c7258", null ],
     [ "nvme_cmd", "unionnvmf__h2c__msg.html#a05f8abfa52370f17fc1a8143e48b62fe", null ],
     [ "nvmf_cmd", "unionnvmf__h2c__msg.html#aa9efc4aa05cd37e25ea6c45dcb99b9e3", null ],

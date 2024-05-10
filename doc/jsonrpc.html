@@ -3233,7 +3233,9 @@ bdev_nvme_attach_controller</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">max_bdevs   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">The size of the name array for newly created bdevs. Default is 128.    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">dhchap_key   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">DH-HMAC-CHAP key name.   </td></tr>
+<td class="markdownTableBodyNone">dhchap_key   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">DH-HMAC-CHAP key name.    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">dhchap_ctrlr_key   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">DH-HMAC-CHAP controller key name.   </td></tr>
 </table>
 <h3>Example</h3>
 <p>Example request:</p>
@@ -3884,7 +3886,7 @@ bdev_nvme_get_transport_statistics</h2>
 <div class="line">        &quot;result&quot;: {</div>
 <div class="line">          &quot;poll_groups&quot;: [</div>
 <div class="line">                {</div>
-<div class="line">                  &quot;thread&quot;: &quot;nvmf_tgt_poll_group_0&quot;,</div>
+<div class="line">                  &quot;thread&quot;: &quot;nvmf_tgt_poll_group_000&quot;,</div>
 <div class="line">                  &quot;transports&quot;: [</div>
 <div class="line">                        {</div>
 <div class="line">                          &quot;trname&quot;: &quot;RDMA&quot;,</div>
@@ -3926,7 +3928,7 @@ bdev_nvme_get_transport_statistics</h2>
 <div class="line">                  ]</div>
 <div class="line">                },</div>
 <div class="line">                {</div>
-<div class="line">                  &quot;thread&quot;: &quot;nvmf_tgt_poll_group_1&quot;,</div>
+<div class="line">                  &quot;thread&quot;: &quot;nvmf_tgt_poll_group_001&quot;,</div>
 <div class="line">                  &quot;transports&quot;: [</div>
 <div class="line">                        {</div>
 <div class="line">                          &quot;trname&quot;: &quot;RDMA&quot;,</div>
@@ -6893,7 +6895,9 @@ nvmf_subsystem_add_host method</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">tgt_name   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Parent NVMe-oF target name.    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">psk   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Path to a file containing PSK for TLS connection   </td></tr>
+<td class="markdownTableBodyNone">psk   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Path to a file containing PSK for TLS connection    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">dhchap_key   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">DH-HMAC-CHAP key name.   </td></tr>
 </table>
 <h3>Example</h3>
 <p>Example request:</p>
@@ -6903,7 +6907,8 @@ nvmf_subsystem_add_host method</h2>
 <div class="line">  &quot;method&quot;: &quot;nvmf_subsystem_add_host&quot;,</div>
 <div class="line">  &quot;params&quot;: {</div>
 <div class="line">    &quot;nqn&quot;: &quot;nqn.2016-06.io.spdk:cnode1&quot;,</div>
-<div class="line">    &quot;host&quot;: &quot;nqn.2016-06.io.spdk:host1&quot;</div>
+<div class="line">    &quot;host&quot;: &quot;nqn.2016-06.io.spdk:host1&quot;,</div>
+<div class="line">    &quot;dhchap_key&quot;: &quot;key0&quot;</div>
 <div class="line">  }</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Example response:</p>
@@ -9298,7 +9303,9 @@ ublk_create_target</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">cpumask   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Cpumask for ublk target   </td></tr>
+<td class="markdownTableBodyNone">cpumask   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Cpumask for ublk target    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">disable-user-copy   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Disable user copy feature   </td></tr>
 </table>
 <h3>Response</h3>
 <p>True if ublk target initialization is successful; False if failed.</p>

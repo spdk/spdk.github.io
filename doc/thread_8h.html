@@ -424,9 +424,9 @@ typedef&#160;</td><td class="memItemRight" valign="bottom"><b>STAILQ_HEAD</b> (,
 <tr class="memitem:ac64427a246442e52b60271127bf363d4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread_8h.html#ac64427a246442e52b60271127bf363d4">spdk_iobuf_set_opts</a> (const struct <a class="el" href="structspdk__iobuf__opts.html">spdk_iobuf_opts</a> *opts)</td></tr>
 <tr class="memdesc:ac64427a246442e52b60271127bf363d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set iobuf options.  <a href="thread_8h.html#ac64427a246442e52b60271127bf363d4">More...</a><br /></td></tr>
 <tr class="separator:ac64427a246442e52b60271127bf363d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1e97f3caeb779908350fd5176c98ba4a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread_8h.html#a1e97f3caeb779908350fd5176c98ba4a">spdk_iobuf_get_opts</a> (struct <a class="el" href="structspdk__iobuf__opts.html">spdk_iobuf_opts</a> *opts)</td></tr>
-<tr class="memdesc:a1e97f3caeb779908350fd5176c98ba4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get iobuf options.  <a href="thread_8h.html#a1e97f3caeb779908350fd5176c98ba4a">More...</a><br /></td></tr>
-<tr class="separator:a1e97f3caeb779908350fd5176c98ba4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6cca13ca3135de8da4cb9590d785312"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread_8h.html#ad6cca13ca3135de8da4cb9590d785312">spdk_iobuf_get_opts</a> (struct <a class="el" href="structspdk__iobuf__opts.html">spdk_iobuf_opts</a> *opts, size_t opts_size)</td></tr>
+<tr class="memdesc:ad6cca13ca3135de8da4cb9590d785312"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get iobuf options.  <a href="thread_8h.html#ad6cca13ca3135de8da4cb9590d785312">More...</a><br /></td></tr>
+<tr class="separator:ad6cca13ca3135de8da4cb9590d785312"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">Name of the module.</h2></td></tr>
 <tr><td class="ititle" colspan="2"><p><a class="anchor" id="amgrp3417a198fca2cd43bb94ea6d9922ff0a"></a>Unregister an iobuf pool user from a module.</p>
@@ -1626,8 +1626,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_iobuf_unregister_
 
 </div>
 </div>
-<a id="a1e97f3caeb779908350fd5176c98ba4a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1e97f3caeb779908350fd5176c98ba4a">&#9670;&nbsp;</a></span>spdk_iobuf_get_opts()</h2>
+<a id="ad6cca13ca3135de8da4cb9590d785312"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6cca13ca3135de8da4cb9590d785312">&#9670;&nbsp;</a></span>spdk_iobuf_get_opts()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1636,8 +1636,18 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_iobuf_unregister_
           <td class="memname">void spdk_iobuf_get_opts </td>
           <td>(</td>
           <td class="paramtype">struct <a class="el" href="structspdk__iobuf__opts.html">spdk_iobuf_opts</a> *&#160;</td>
-          <td class="paramname"><em>opts</em></td><td>)</td>
+          <td class="paramname"><em>opts</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>opts_size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1645,7 +1655,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_iobuf_unregister_
 <p>Get iobuf options. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">opts</td><td>Options to fill in. </td></tr>
+    <tr><td class="paramname">opts</td><td>Output parameter for options. </td></tr>
+    <tr><td class="paramname">opts_size</td><td>sizeof(*opts) </td></tr>
   </table>
   </dd>
 </dl>

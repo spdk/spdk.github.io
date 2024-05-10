@@ -280,9 +280,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ab32f6cbeb2aeee0a64a268c63a951ec9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="accel_8h.html#ab32f6cbeb2aeee0a64a268c63a951ec9">spdk_accel_set_opts</a> (const struct <a class="el" href="structspdk__accel__opts.html">spdk_accel_opts</a> *opts)</td></tr>
 <tr class="memdesc:ab32f6cbeb2aeee0a64a268c63a951ec9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the options for the accel framework.  <a href="accel_8h.html#ab32f6cbeb2aeee0a64a268c63a951ec9">More...</a><br /></td></tr>
 <tr class="separator:ab32f6cbeb2aeee0a64a268c63a951ec9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2c90f127e644795f2d7bcf5ac8b3911a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="accel_8h.html#a2c90f127e644795f2d7bcf5ac8b3911a">spdk_accel_get_opts</a> (struct <a class="el" href="structspdk__accel__opts.html">spdk_accel_opts</a> *opts)</td></tr>
-<tr class="memdesc:a2c90f127e644795f2d7bcf5ac8b3911a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the options for the accel framework.  <a href="accel_8h.html#a2c90f127e644795f2d7bcf5ac8b3911a">More...</a><br /></td></tr>
-<tr class="separator:a2c90f127e644795f2d7bcf5ac8b3911a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5ad905d3b257e5c6ef35d802a48ae2a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="accel_8h.html#ad5ad905d3b257e5c6ef35d802a48ae2a">spdk_accel_get_opts</a> (struct <a class="el" href="structspdk__accel__opts.html">spdk_accel_opts</a> *opts, size_t opts_size)</td></tr>
+<tr class="memdesc:ad5ad905d3b257e5c6ef35d802a48ae2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the options for the accel framework.  <a href="accel_8h.html#ad5ad905d3b257e5c6ef35d802a48ae2a">More...</a><br /></td></tr>
+<tr class="separator:ad5ad905d3b257e5c6ef35d802a48ae2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab26522d2be912c77bf0700a8fafc41e0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="accel_8h.html#ab26522d2be912c77bf0700a8fafc41e0">spdk_accel_get_opcode_stats</a> (struct spdk_io_channel *ch, enum spdk_accel_opcode opcode, struct <a class="el" href="structspdk__accel__opcode__stats.html">spdk_accel_opcode_stats</a> *stats, size_t size)</td></tr>
 <tr class="memdesc:ab26522d2be912c77bf0700a8fafc41e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve opcode statistics for a given IO channel.  <a href="accel_8h.html#ab26522d2be912c77bf0700a8fafc41e0">More...</a><br /></td></tr>
 <tr class="separator:ab26522d2be912c77bf0700a8fafc41e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1433,8 +1433,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a2c90f127e644795f2d7bcf5ac8b3911a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2c90f127e644795f2d7bcf5ac8b3911a">&#9670;&nbsp;</a></span>spdk_accel_get_opts()</h2>
+<a id="ad5ad905d3b257e5c6ef35d802a48ae2a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad5ad905d3b257e5c6ef35d802a48ae2a">&#9670;&nbsp;</a></span>spdk_accel_get_opts()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1443,8 +1443,18 @@ Functions</h2></td></tr>
           <td class="memname">void spdk_accel_get_opts </td>
           <td>(</td>
           <td class="paramtype">struct <a class="el" href="structspdk__accel__opts.html">spdk_accel_opts</a> *&#160;</td>
-          <td class="paramname"><em>opts</em></td><td>)</td>
+          <td class="paramname"><em>opts</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>opts_size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1452,7 +1462,8 @@ Functions</h2></td></tr>
 <p>Get the options for the accel framework. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">opts</td><td>Accel options. </td></tr>
+    <tr><td class="paramname">opts</td><td>Output parameter for options. </td></tr>
+    <tr><td class="paramname">opts_size</td><td>sizeof(*opts) </td></tr>
   </table>
   </dd>
 </dl>

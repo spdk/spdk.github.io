@@ -94,10 +94,9 @@ $(document).ready(function(){initNavTree('structspdk__accel__opts.html',''); ini
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:a965c87b64e08a9f8cf74602d426c978b"><td class="memItemLeft" align="right" valign="top"><a id="a965c87b64e08a9f8cf74602d426c978b"></a>
-size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__accel__opts.html#a965c87b64e08a9f8cf74602d426c978b">size</a></td></tr>
-<tr class="memdesc:a965c87b64e08a9f8cf74602d426c978b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Size of this structure. <br /></td></tr>
-<tr class="separator:a965c87b64e08a9f8cf74602d426c978b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a728337bff608577a563fa2df85ca2b09"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__accel__opts.html#a728337bff608577a563fa2df85ca2b09">opts_size</a></td></tr>
+<tr class="memdesc:a728337bff608577a563fa2df85ca2b09"><td class="mdescLeft">&#160;</td><td class="mdescRight">The size of <a class="el" href="structspdk__accel__opts.html">spdk_accel_opts</a> according to the caller of this library is used for ABI compatibility.  <a href="structspdk__accel__opts.html#a728337bff608577a563fa2df85ca2b09">More...</a><br /></td></tr>
+<tr class="separator:a728337bff608577a563fa2df85ca2b09"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a67f844ba2a615d8a05a8c5b865c0a65c"><td class="memItemLeft" align="right" valign="top"><a id="a67f844ba2a615d8a05a8c5b865c0a65c"></a>
 uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__accel__opts.html#a67f844ba2a615d8a05a8c5b865c0a65c">small_cache_size</a></td></tr>
 <tr class="memdesc:a67f844ba2a615d8a05a8c5b865c0a65c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Size of the small iobuf cache. <br /></td></tr>
@@ -119,6 +118,24 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 <tr class="memdesc:aaec69cff0b0652c19bab73bb13025c82"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum number of accel buffers per IO channel. <br /></td></tr>
 <tr class="separator:aaec69cff0b0652c19bab73bb13025c82"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Field Documentation</h2>
+<a id="a728337bff608577a563fa2df85ca2b09"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a728337bff608577a563fa2df85ca2b09">&#9670;&nbsp;</a></span>opts_size</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t spdk_accel_opts::opts_size</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The size of <a class="el" href="structspdk__accel__opts.html">spdk_accel_opts</a> according to the caller of this library is used for ABI compatibility. </p>
+<p>The library uses this field to know how many fields in this structure are valid. And the library will populate any remaining fields with default values. New added fields should be put at the end of the struct. </p>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li><a class="el" href="accel_8h.html">accel.h</a></li>
 </ul>

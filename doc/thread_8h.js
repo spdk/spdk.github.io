@@ -69,7 +69,7 @@ var thread_8h =
     [ "spdk_iobuf_finish", "thread_8h.html#acf8009c7842c30586bd815eaee9b7a91", null ],
     [ "spdk_iobuf_for_each_entry", "thread_8h.html#aa57f01f992d8ebe9e30c5b6c21edf2a5", null ],
     [ "spdk_iobuf_get", "thread_8h.html#a861f8067dad2dad16aa5a7f11e2221fc", null ],
-    [ "spdk_iobuf_get_opts", "thread_8h.html#a1e97f3caeb779908350fd5176c98ba4a", null ],
+    [ "spdk_iobuf_get_opts", "thread_8h.html#ad6cca13ca3135de8da4cb9590d785312", null ],
     [ "spdk_iobuf_get_stats", "thread_8h.html#a22cb35e6bb7625b1338c4db9de32bc0f", null ],
     [ "spdk_iobuf_initialize", "thread_8h.html#a2c37e9172bb09d20cfa353dbd92b0a95", null ],
     [ "spdk_iobuf_put", "thread_8h.html#aca828f485050a8d77d0a0b4182c632cc", null ],

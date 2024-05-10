@@ -2,6 +2,7 @@ var structspdk__nvmf__qpair =
 [
     [ "TAILQ_ENTRY", "structspdk__nvmf__qpair.html#a088e32a2258aaba2781f42bdb63d74f3", null ],
     [ "TAILQ_HEAD", "structspdk__nvmf__qpair.html#a419c7cb5490055b0eeaca52aeb1baea7", null ],
+    [ "auth", "structspdk__nvmf__qpair.html#af7c922fed1d921f09f5b2e019d96e3fd", null ],
     [ "connect_received", "structspdk__nvmf__qpair.html#a73fbbe9ed27d142ba43055dc6aa809e0", null ],
     [ "connect_req", "structspdk__nvmf__qpair.html#a4c646146a3b9f0dd882bf8fb933467d3", null ],
     [ "ctrlr", "structspdk__nvmf__qpair.html#adedc0164fd1e4a9245cc15752da0cfad", null ],

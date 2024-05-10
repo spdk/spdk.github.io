@@ -110,7 +110,28 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__iobuf__opts.html#af9531f2bb491d72e9accf40e8fd287c7">large_bufsize</a></td></tr>
 <tr class="memdesc:af9531f2bb491d72e9accf40e8fd287c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Size of a single large buffer. <br /></td></tr>
 <tr class="separator:af9531f2bb491d72e9accf40e8fd287c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9a57e04c4e4310fbce9ce00e1c25056"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__iobuf__opts.html#ab9a57e04c4e4310fbce9ce00e1c25056">opts_size</a></td></tr>
+<tr class="memdesc:ab9a57e04c4e4310fbce9ce00e1c25056"><td class="mdescLeft">&#160;</td><td class="mdescRight">The size of <a class="el" href="structspdk__iobuf__opts.html">spdk_iobuf_opts</a> according to the caller of this library is used for ABI compatibility.  <a href="structspdk__iobuf__opts.html#ab9a57e04c4e4310fbce9ce00e1c25056">More...</a><br /></td></tr>
+<tr class="separator:ab9a57e04c4e4310fbce9ce00e1c25056"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Field Documentation</h2>
+<a id="ab9a57e04c4e4310fbce9ce00e1c25056"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9a57e04c4e4310fbce9ce00e1c25056">&#9670;&nbsp;</a></span>opts_size</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t spdk_iobuf_opts::opts_size</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The size of <a class="el" href="structspdk__iobuf__opts.html">spdk_iobuf_opts</a> according to the caller of this library is used for ABI compatibility. </p>
+<p>The library uses this field to know how many fields in this structure are valid. And the library will populate any remaining fields with default values. New added fields should be put at the end of the struct. </p>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li><a class="el" href="thread_8h.html">thread.h</a></li>
 </ul>

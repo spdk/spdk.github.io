@@ -154,6 +154,11 @@ Macros</h2></td></tr>
 <tr class="memitem:ab22ba76493581094951bb74abb68238d"><td class="memItemLeft" align="right" valign="top"><a id="ab22ba76493581094951bb74abb68238d"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_BIT</b>(n)&#160;&#160;&#160;(1ul &lt;&lt; (n))</td></tr>
 <tr class="separator:ab22ba76493581094951bb74abb68238d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af961bfd28ca1daef326d855007546c29"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8h.html#af961bfd28ca1daef326d855007546c29">SPDK_GET_FIELD</a>(obj,  field,  defval, ...)&#160;&#160;&#160;	_SPDK_GET_FIELD(obj, field, defval, ## __VA_ARGS__, (obj)-&gt;size)</td></tr>
+<tr class="memdesc:af961bfd28ca1daef326d855007546c29"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a field from a structure with size tracking.  <a href="util_8h.html#af961bfd28ca1daef326d855007546c29">More...</a><br /></td></tr>
+<tr class="separator:af961bfd28ca1daef326d855007546c29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adcdc75d9ca194fb6be50375167fced65"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><b>_SPDK_GET_FIELD</b>(obj,  field,  defval,  size, ...)</td></tr>
+<tr class="separator:adcdc75d9ca194fb6be50375167fced65"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab68c3f1a4bdedea57f4deb58a011f251"><td class="memItemLeft" align="right" valign="top"><a id="ab68c3f1a4bdedea57f4deb58a011f251"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_IOVITER_SIZE</b>(count)&#160;&#160;&#160;(sizeof(struct <a class="el" href="structspdk__single__ioviter.html">spdk_single_ioviter</a>) * (count - 2) + sizeof(struct <a class="el" href="structspdk__ioviter.html">spdk_ioviter</a>))</td></tr>
 <tr class="separator:ab68c3f1a4bdedea57f4deb58a011f251"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -248,6 +253,54 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>General utility functions. </p>
 </div><h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="adcdc75d9ca194fb6be50375167fced65"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adcdc75d9ca194fb6be50375167fced65">&#9670;&nbsp;</a></span>_SPDK_GET_FIELD</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define _SPDK_GET_FIELD</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">obj, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">field, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">defval, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">size, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">        ((size) &gt;= (offsetof(__typeof__(*(obj)), field) + <span class="keyword">sizeof</span>((obj)-&gt;field)) ? \</div>
+<div class="line">         (obj)-&gt;field : (defval))</div>
+</div><!-- fragment -->
+</div>
+</div>
 <a id="a61bd4178f177cf2265279944b0184fcd"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a61bd4178f177cf2265279944b0184fcd">&#9670;&nbsp;</a></span>SPDK_ALIGN_CEIL</h2>
 
@@ -351,6 +404,49 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util
 </div><!-- fragment -->
 <p>Scan build is really pessimistic and assumes that mempool functions can dequeue NULL buffers even if they return success. </p>
 <p>This is obviously a false positive, but the mempool dequeue can be done in a DPDK inline function that we can't decorate with usual assert(buf != NULL). Instead, we'll preinitialize the dequeued buffer array with some dummy objects. </p>
+
+</div>
+</div>
+<a id="af961bfd28ca1daef326d855007546c29"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af961bfd28ca1daef326d855007546c29">&#9670;&nbsp;</a></span>SPDK_GET_FIELD</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SPDK_GET_FIELD</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">obj, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">field, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">defval, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;	_SPDK_GET_FIELD(obj, field, defval, ## __VA_ARGS__, (obj)-&gt;size)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get a field from a structure with size tracking. </p>
+<p>The fourth parameter is optional and can be used to specify the size of the object. If unset, (obj)-&gt;size will be used by default. </p>
 
 </div>
 </div>

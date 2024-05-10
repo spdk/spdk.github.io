@@ -185,10 +185,15 @@ Enumerations</h2></td></tr>
 <br />
  }</td></tr>
 <tr class="separator:ae58d26ffb4eacadd941c08e8e2615b13"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aae2f46da7cfac38ce46c51446985a286"><td class="memItemLeft" align="right" valign="top"><a id="aae2f46da7cfac38ce46c51446985a286"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_qpair_state</b> { <b>SPDK_NVMF_QPAIR_UNINITIALIZED</b> = 0
-, <b>SPDK_NVMF_QPAIR_ACTIVE</b>
-, <b>SPDK_NVMF_QPAIR_DEACTIVATING</b>
+<tr class="memitem:aae2f46da7cfac38ce46c51446985a286"><td class="memItemLeft" align="right" valign="top"><a id="aae2f46da7cfac38ce46c51446985a286"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_qpair_state</b> { <br />
+&#160;&#160;<b>SPDK_NVMF_QPAIR_UNINITIALIZED</b> = 0
+, <b>SPDK_NVMF_QPAIR_CONNECTING</b>
+, <b>SPDK_NVMF_QPAIR_AUTHENTICATING</b>
+, <b>SPDK_NVMF_QPAIR_ENABLED</b>
+, <br />
+&#160;&#160;<b>SPDK_NVMF_QPAIR_DEACTIVATING</b>
 , <b>SPDK_NVMF_QPAIR_ERROR</b>
+<br />
  }</td></tr>
 <tr class="separator:aae2f46da7cfac38ce46c51446985a286"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -212,6 +217,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_ctrlr_connec
 <tr class="memitem:ae540481943a9be15eacf93e111714db9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvmf__transport_8h.html#ae540481943a9be15eacf93e111714db9">spdk_nvmf_tgt_new_qpair</a> (struct spdk_nvmf_tgt *tgt, struct <a class="el" href="structspdk__nvmf__qpair.html">spdk_nvmf_qpair</a> *qpair)</td></tr>
 <tr class="memdesc:ae540481943a9be15eacf93e111714db9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to be called for each newly discovered qpair.  <a href="nvmf__transport_8h.html#ae540481943a9be15eacf93e111714db9">More...</a><br /></td></tr>
 <tr class="separator:ae540481943a9be15eacf93e111714db9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad140ffadb7947f310df1eae696b5e553"><td class="memItemLeft" align="right" valign="top"><a id="ad140ffadb7947f310df1eae696b5e553"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_qpair_is_active</b> (struct <a class="el" href="structspdk__nvmf__qpair.html">spdk_nvmf_qpair</a> *qpair)</td></tr>
+<tr class="separator:ad140ffadb7947f310df1eae696b5e553"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa14eb17f1cbf2656ab5c1e1ee51c8833"><td class="memItemLeft" align="right" valign="top"><a id="aa14eb17f1cbf2656ab5c1e1ee51c8833"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(struct <a class="el" href="structspdk__nvmf__registers.html">spdk_nvmf_registers</a>)==40, &quot;Incorrect size&quot;)</td></tr>
 <tr class="separator:aa14eb17f1cbf2656ab5c1e1ee51c8833"><td class="memSeparator" colspan="2">&#160;</td></tr>

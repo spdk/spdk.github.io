@@ -92,6 +92,8 @@ $(document).ready(function(){initNavTree('changelog.html',''); initResizable(); 
 <div class="textblock"><p><a class="anchor" id="md_changelog"></a> </p>
 <h1><a class="anchor" id="changelog-v24-05"></a>
 v24.05: (Upcoming Release)</h1>
+<h2>accel</h2>
+<p>spdk_accel_get/set_opts() has changed to act more like <a class="el" href="structspdk__bdev.html">spdk_bdev</a>'s variant.</p>
 <h2>bdev</h2>
 <p>Added <code><a class="el" href="bdev_8h.html#af833943e22885817e6954426b6a11b5f" title="Get controller attributes for the bdev.">spdk_bdev_get_nvme_ctratt()</a></code> API to get controller attributes of bdev.</p>
 <h2>event</h2>
@@ -107,6 +109,8 @@ v24.05: (Upcoming Release)</h1>
 <p>Added <code>iscsi_get_stats</code> RPC method to get stat information about all active connections.</p>
 <p>Added <code>iscsi_enable_histogram</code> RPC method to enable or disable histogram for specified iscsi target.</p>
 <p>Added <code>iscsi_get_histogram</code> RPC method to get histogram for specified iscsi target.</p>
+<h2>thread</h2>
+<p>spdk_iobuf_get/set_opts() has changed to act more like <a class="el" href="structspdk__bdev.html">spdk_bdev</a>'s variant.</p>
 <h2>trace</h2>
 <p>Merged <code>struct spdk_trace_flags</code> and <code>struct spdk_trace_histories</code> into new <code>struct <a class="el" href="structspdk__trace__file.html">spdk_trace_file</a></code>. Also renamed <code>spdk_get_trace_histories_size()</code> to <code>spdk_get_trace_file_size()</code>.</p>
 <h2>nvmf</h2>

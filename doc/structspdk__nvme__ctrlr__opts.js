@@ -6,6 +6,7 @@ var structspdk__nvme__ctrlr__opts =
     [ "arbitration_burst", "structspdk__nvme__ctrlr__opts.html#a76dd1c766edd9572dfddf9584f0e4e48", null ],
     [ "command_set", "structspdk__nvme__ctrlr__opts.html#a62b55ccfff58d8f91952d4c501a4c3ab", null ],
     [ "data_digest", "structspdk__nvme__ctrlr__opts.html#a031524a539fbc57e1ca66c6fef875eea", null ],
+    [ "dhchap_ctrlr_key", "structspdk__nvme__ctrlr__opts.html#a1a9e8eeba74fb3ad2c1b38f18d05f503", null ],
     [ "dhchap_dhgroups", "structspdk__nvme__ctrlr__opts.html#af35785e295dc19ec0bc59532b75515f0", null ],
     [ "dhchap_digests", "structspdk__nvme__ctrlr__opts.html#a4fa4af9187bc57d8a986c012fd84d507", null ],
     [ "dhchap_key", "structspdk__nvme__ctrlr__opts.html#acbca1c6d481b35739d9eae3306a2d0c9", null ],
