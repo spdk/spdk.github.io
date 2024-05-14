@@ -226,6 +226,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_lvol_create_esnap
 <tr class="memitem:a1093dae877481711227c7b2f3aa9d879"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lvol_8h.html#a1093dae877481711227c7b2f3aa9d879">spdk_lvol_is_degraded</a> (const struct spdk_lvol *lvol)</td></tr>
 <tr class="memdesc:a1093dae877481711227c7b2f3aa9d879"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine if an lvol is degraded.  <a href="lvol_8h.html#a1093dae877481711227c7b2f3aa9d879">More...</a><br /></td></tr>
 <tr class="separator:a1093dae877481711227c7b2f3aa9d879"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51cbd535567f9e798ac4d9a1ba51584a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lvol_8h.html#a51cbd535567f9e798ac4d9a1ba51584a">spdk_lvol_shallow_copy</a> (struct spdk_lvol *lvol, struct <a class="el" href="structspdk__bs__dev.html">spdk_bs_dev</a> *ext_dev, <a class="el" href="blob_8h.html#a668cd9f989594d7f4f417495ffa7517d">spdk_blob_shallow_copy_status</a> status_cb_fn, void *status_cb_arg, <a class="el" href="lvol_8h.html#a4d5c96c4fe4512f99dcb3f1e5d5e86be">spdk_lvol_op_complete</a> cb_fn, void *cb_arg)</td></tr>
+<tr class="memdesc:a51cbd535567f9e798ac4d9a1ba51584a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Make a shallow copy of lvol on given bs_dev.  <a href="lvol_8h.html#a51cbd535567f9e798ac4d9a1ba51584a">More...</a><br /></td></tr>
+<tr class="separator:a51cbd535567f9e798ac4d9a1ba51584a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Logical Volume Interface. </p>
@@ -984,6 +987,73 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_lvol_create_esnap
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a51cbd535567f9e798ac4d9a1ba51584a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a51cbd535567f9e798ac4d9a1ba51584a">&#9670;&nbsp;</a></span>spdk_lvol_shallow_copy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_lvol_shallow_copy </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_lvol *&#160;</td>
+          <td class="paramname"><em>lvol</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structspdk__bs__dev.html">spdk_bs_dev</a> *&#160;</td>
+          <td class="paramname"><em>ext_dev</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="blob_8h.html#a668cd9f989594d7f4f417495ffa7517d">spdk_blob_shallow_copy_status</a>&#160;</td>
+          <td class="paramname"><em>status_cb_fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>status_cb_arg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="lvol_8h.html#a4d5c96c4fe4512f99dcb3f1e5d5e86be">spdk_lvol_op_complete</a>&#160;</td>
+          <td class="paramname"><em>cb_fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cb_arg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Make a shallow copy of lvol on given bs_dev. </p>
+<p>Lvol must be read only and lvol size must be less or equal than bs_dev size.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">lvol</td><td>Handle to lvol </td></tr>
+    <tr><td class="paramname">ext_dev</td><td>The bs_dev to copy on. This is created on the given bdev by using <a class="el" href="blob__bdev_8h.html#af2318a373aae926c6ce9300e06e8bb81" title="Create a blobstore block device from a bdev.">spdk_bdev_create_bs_dev_ext()</a> beforehand </td></tr>
+    <tr><td class="paramname">status_cb_fn</td><td>Called repeatedly during operation with status updates </td></tr>
+    <tr><td class="paramname">status_cb_arg</td><td>Argument passed to function status_cb_fn. </td></tr>
+    <tr><td class="paramname">cb_fn</td><td>Completion callback </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>Completion callback custom arguments</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if operation starts correctly, negative errno on failure. </dd></dl>
 
 </div>
 </div>

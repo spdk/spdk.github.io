@@ -385,6 +385,8 @@ var user_guides =
         [ "bdev_lvol_inflate", "jsonrpc.html#rpc_bdev_lvol_inflate", null ],
         [ "bdev_lvol_decouple_parent", "jsonrpc.html#rpc_bdev_lvol_decouple_parent", null ],
         [ "bdev_lvol_get_lvols", "jsonrpc.html#rpc_bdev_lvol_get_lvols", null ],
+        [ "bdev_lvol_start_shallow_copy", "jsonrpc.html#rpc_bdev_lvol_start_shallow_copy", null ],
+        [ "bdev_lvol_check_shallow_copy", "jsonrpc.html#rpc_bdev_lvol_check_shallow_copy", null ],
         [ "bdev_raid_set_options", "jsonrpc.html#rpc_bdev_raid_set_options", null ],
         [ "bdev_raid_get_bdevs", "jsonrpc.html#rpc_bdev_raid_get_bdevs", null ],
         [ "bdev_raid_create", "jsonrpc.html#rpc_bdev_raid_create", null ],

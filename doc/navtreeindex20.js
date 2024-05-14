@@ -1,5 +1,12 @@
 var NAVTREEINDEX20 =
 {
+"structspdk__bdev_1_1____bdev__internal__fields.html#afad02fdc83417a632d9ecc7f3c437c47":[14,0,61,0,24],
+"structspdk__bdev_1_1____bdev__internal__fields_1_1____bdev__internal__claim_1_1____bdev__internal__claim__v1.html":[14,0,61,0,0,0],
+"structspdk__bdev_1_1____bdev__internal__fields_1_1____bdev__internal__claim_1_1____bdev__internal__claim__v1.html#a3db9113976cb41e7b3aca0026aa25a65":[14,0,61,0,0,0,0],
+"structspdk__bdev_1_1____bdev__internal__fields_1_1____bdev__internal__claim_1_1____bdev__internal__claim__v2.html":[14,0,61,0,0,1],
+"structspdk__bdev_1_1____bdev__internal__fields_1_1____bdev__internal__claim_1_1____bdev__internal__claim__v2.html#a1ee6b0f5bf199c39131689615b0b421e":[14,0,61,0,0,1,0],
+"structspdk__bdev_1_1____bdev__internal__fields_1_1____bdev__internal__claim_1_1____bdev__internal__claim__v2.html#a2b0875171cbaa591c529a072e8e31865":[14,0,61,0,0,1,1],
+"structspdk__bdev__alias.html":[14,0,62],
 "structspdk__bdev__alias.html#a2babeecc6b24d65da1a708306cd42db8":[14,0,62,1],
 "structspdk__bdev__alias.html#aede6aa6d7d3ea96f3a36637f972faec6":[14,0,62,0],
 "structspdk__bdev__bs__dev__opts.html":[14,0,63],
@@ -242,12 +249,5 @@ var NAVTREEINDEX20 =
 "structspdk__bs__dev.html#a0ba5e6b593abc0fa5c9be89e51b8d79d":[14,0,88,5],
 "structspdk__bs__dev.html#a20356550a4ade5c4f8954c57e5d679e2":[14,0,88,16],
 "structspdk__bs__dev.html#a2990026fbfdb710cce327beeae33aef9":[14,0,88,17],
-"structspdk__bs__dev.html#a3b626710afb0f6b51f03b6ce9310bdf8":[14,0,88,10],
-"structspdk__bs__dev.html#a4e782b655106c1d25b543960b7ba2c0f":[14,0,88,11],
-"structspdk__bs__dev.html#a528b038c2389cf71b6739ac37ed6e7f6":[14,0,88,18],
-"structspdk__bs__dev.html#a69795838dfaaa45c3d58a5b91f179565":[14,0,88,13],
-"structspdk__bs__dev.html#a6beeab94f487334af1a8c3a0ec330b52":[14,0,88,3],
-"structspdk__bs__dev.html#a6c67b881f2f954ef2eb879796a4dee5a":[14,0,88,0],
-"structspdk__bs__dev.html#a737528549b8f240d5b82df1544ec5dcb":[14,0,88,15],
-"structspdk__bs__dev.html#a75564a4d0f1815b99c1fe1e1965b3770":[14,0,88,12]
+"structspdk__bs__dev.html#a3b626710afb0f6b51f03b6ce9310bdf8":[14,0,88,10]
 };

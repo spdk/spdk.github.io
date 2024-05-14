@@ -160,6 +160,9 @@ typedef uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_blob
 <tr class="memitem:aa9de71c711c86a2fb7b9a7d967ebede4"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blob_8h.html#aa9de71c711c86a2fb7b9a7d967ebede4">spdk_bs_esnap_dev_create</a>) (void *bs_ctx, void *blob_ctx, struct spdk_blob *blob, const void *esnap_id, uint32_t id_size, struct <a class="el" href="structspdk__bs__dev.html">spdk_bs_dev</a> **bs_dev)</td></tr>
 <tr class="memdesc:aa9de71c711c86a2fb7b9a7d967ebede4"><td class="mdescLeft">&#160;</td><td class="mdescRight">External snapshot device open callback.  <a href="blob_8h.html#aa9de71c711c86a2fb7b9a7d967ebede4">More...</a><br /></td></tr>
 <tr class="separator:aa9de71c711c86a2fb7b9a7d967ebede4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a668cd9f989594d7f4f417495ffa7517d"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blob_8h.html#a668cd9f989594d7f4f417495ffa7517d">spdk_blob_shallow_copy_status</a>) (uint64_t copied_clusters, void *cb_arg)</td></tr>
+<tr class="memdesc:a668cd9f989594d7f4f417495ffa7517d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Blob shallow copy status callback.  <a href="blob_8h.html#a668cd9f989594d7f4f417495ffa7517d">More...</a><br /></td></tr>
+<tr class="separator:a668cd9f989594d7f4f417495ffa7517d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae099ff1947cd0f1e8422289222bc1666"><td class="memItemLeft" align="right" valign="top"><a id="ae099ff1947cd0f1e8422289222bc1666"></a>
 typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bs_dump_print_xattr</b>) (FILE *fp, const char *bstype, const char *name, const void *value, size_t value_length)</td></tr>
 <tr class="separator:ae099ff1947cd0f1e8422289222bc1666"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -241,8 +244,11 @@ Functions</h2></td></tr>
 <tr class="memdesc:a9787f698d1f47cca21b3543c0892ab3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of io_units allocated to the blob.  <a href="blob_8h.html#a9787f698d1f47cca21b3543c0892ab3e">More...</a><br /></td></tr>
 <tr class="separator:a9787f698d1f47cca21b3543c0892ab3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2484b76dc748921d2596a4e207b6a5a2"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blob_8h.html#a2484b76dc748921d2596a4e207b6a5a2">spdk_blob_get_num_clusters</a> (struct spdk_blob *blob)</td></tr>
-<tr class="memdesc:a2484b76dc748921d2596a4e207b6a5a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of clusters allocated to the blob.  <a href="blob_8h.html#a2484b76dc748921d2596a4e207b6a5a2">More...</a><br /></td></tr>
+<tr class="memdesc:a2484b76dc748921d2596a4e207b6a5a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of clusters in the blob.  <a href="blob_8h.html#a2484b76dc748921d2596a4e207b6a5a2">More...</a><br /></td></tr>
 <tr class="separator:a2484b76dc748921d2596a4e207b6a5a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45dc0610a2d68a18d2315959f9c487fb"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blob_8h.html#a45dc0610a2d68a18d2315959f9c487fb">spdk_blob_get_num_allocated_clusters</a> (struct spdk_blob *blob)</td></tr>
+<tr class="memdesc:a45dc0610a2d68a18d2315959f9c487fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of allocated clusters to the blob.  <a href="blob_8h.html#a45dc0610a2d68a18d2315959f9c487fb">More...</a><br /></td></tr>
+<tr class="separator:a45dc0610a2d68a18d2315959f9c487fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1f1801ea07e30f5a56ecd043a7b4b55f"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blob_8h.html#a1f1801ea07e30f5a56ecd043a7b4b55f">spdk_blob_get_next_allocated_io_unit</a> (struct spdk_blob *blob, uint64_t offset)</td></tr>
 <tr class="memdesc:a1f1801ea07e30f5a56ecd043a7b4b55f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get next allocated io_unit.  <a href="blob_8h.html#a1f1801ea07e30f5a56ecd043a7b4b55f">More...</a><br /></td></tr>
 <tr class="separator:a1f1801ea07e30f5a56ecd043a7b4b55f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -300,6 +306,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a7dee33b6b9df9b9a3d6b9957c71a779c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blob_8h.html#a7dee33b6b9df9b9a3d6b9957c71a779c">spdk_bs_blob_decouple_parent</a> (struct spdk_blob_store *bs, struct spdk_io_channel *channel, spdk_blob_id blobid, <a class="el" href="blob_8h.html#aca5253109581a768e06dd197429ef9e1">spdk_blob_op_complete</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:a7dee33b6b9df9b9a3d6b9957c71a779c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove dependency on parent blob.  <a href="blob_8h.html#a7dee33b6b9df9b9a3d6b9957c71a779c">More...</a><br /></td></tr>
 <tr class="separator:a7dee33b6b9df9b9a3d6b9957c71a779c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad58a01866afc7755397833a26535ad74"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blob_8h.html#ad58a01866afc7755397833a26535ad74">spdk_bs_blob_shallow_copy</a> (struct spdk_blob_store *bs, struct spdk_io_channel *channel, spdk_blob_id blobid, struct <a class="el" href="structspdk__bs__dev.html">spdk_bs_dev</a> *ext_dev, <a class="el" href="blob_8h.html#a668cd9f989594d7f4f417495ffa7517d">spdk_blob_shallow_copy_status</a> status_cb_fn, void *status_cb_arg, <a class="el" href="blob_8h.html#aca5253109581a768e06dd197429ef9e1">spdk_blob_op_complete</a> cb_fn, void *cb_arg)</td></tr>
+<tr class="memdesc:ad58a01866afc7755397833a26535ad74"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform a shallow copy of a blob to a blobstore device.  <a href="blob_8h.html#ad58a01866afc7755397833a26535ad74">More...</a><br /></td></tr>
+<tr class="separator:ad58a01866afc7755397833a26535ad74"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a24a236d14fc5eea7f6f113b8a94b3af0"><td class="memItemLeft" align="right" valign="top"><a id="a24a236d14fc5eea7f6f113b8a94b3af0"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(struct <a class="el" href="structspdk__blob__open__opts.html">spdk_blob_open_opts</a>)==24, &quot;Incorrect size&quot;)</td></tr>
 <tr class="separator:a24a236d14fc5eea7f6f113b8a94b3af0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -493,6 +502,29 @@ Functions</h2></td></tr>
     <tr><td class="paramname">cb_arg</td><td>Callback argument. </td></tr>
     <tr><td class="paramname">blobid</td><td>Blob ID. </td></tr>
     <tr><td class="paramname">bserrno</td><td>0 if it completed successfully, or negative errno if it failed. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a668cd9f989594d7f4f417495ffa7517d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a668cd9f989594d7f4f417495ffa7517d">&#9670;&nbsp;</a></span>spdk_blob_shallow_copy_status</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(* spdk_blob_shallow_copy_status) (uint64_t copied_clusters, void *cb_arg)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Blob shallow copy status callback. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">copied_clusters</td><td>Actual number of copied clusters by the shallow copy operation </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>Callback argument. </td></tr>
   </table>
   </dd>
 </dl>
@@ -879,6 +911,34 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a45dc0610a2d68a18d2315959f9c487fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45dc0610a2d68a18d2315959f9c487fb">&#9670;&nbsp;</a></span>spdk_blob_get_num_allocated_clusters()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t spdk_blob_get_num_allocated_clusters </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_blob *&#160;</td>
+          <td class="paramname"><em>blob</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the number of allocated clusters to the blob. </p>
+<p>In case of a thin-provisioned blob, this value is less than or equal to the number of clusters in the blob, otherwise they are equal.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">blob</td><td>Blob struct to query.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the number of clusters actually allocated to the blob. </dd></dl>
+
+</div>
+</div>
 <a id="a2484b76dc748921d2596a4e207b6a5a2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2484b76dc748921d2596a4e207b6a5a2">&#9670;&nbsp;</a></span>spdk_blob_get_num_clusters()</h2>
 
@@ -895,7 +955,8 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Get the number of clusters allocated to the blob. </p>
+<p>Get the number of clusters in the blob. </p>
+<p>This value represents the size of the blob in number of clusters.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">blob</td><td>Blob struct to query.</td></tr>
@@ -2284,6 +2345,87 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="ad58a01866afc7755397833a26535ad74"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad58a01866afc7755397833a26535ad74">&#9670;&nbsp;</a></span>spdk_bs_blob_shallow_copy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_bs_blob_shallow_copy </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_blob_store *&#160;</td>
+          <td class="paramname"><em>bs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct spdk_io_channel *&#160;</td>
+          <td class="paramname"><em>channel</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">spdk_blob_id&#160;</td>
+          <td class="paramname"><em>blobid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structspdk__bs__dev.html">spdk_bs_dev</a> *&#160;</td>
+          <td class="paramname"><em>ext_dev</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="blob_8h.html#a668cd9f989594d7f4f417495ffa7517d">spdk_blob_shallow_copy_status</a>&#160;</td>
+          <td class="paramname"><em>status_cb_fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>status_cb_arg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="blob_8h.html#aca5253109581a768e06dd197429ef9e1">spdk_blob_op_complete</a>&#160;</td>
+          <td class="paramname"><em>cb_fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cb_arg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Perform a shallow copy of a blob to a blobstore device. </p>
+<p>This makes a shallow copy from a blob to a blobstore device. Only clusters allocated to the blob will be written on the device. Blob must be read only and blob size must be less or equal than device size. Blobstore block size must be a multiple of device block size.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bs</td><td>Blobstore </td></tr>
+    <tr><td class="paramname">channel</td><td>IO channel used to copy the blob. </td></tr>
+    <tr><td class="paramname">blobid</td><td>The id of the blob. </td></tr>
+    <tr><td class="paramname">ext_dev</td><td>The device to copy on </td></tr>
+    <tr><td class="paramname">status_cb_fn</td><td>Called repeatedly during operation with status updates </td></tr>
+    <tr><td class="paramname">status_cb_arg</td><td>Argument passed to function status_cb_fn. </td></tr>
+    <tr><td class="paramname">cb_fn</td><td>Called when the operation is complete. </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>Argument passed to function cb_fn.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if operation starts correctly, negative errno on failure. </dd></dl>
 
 </div>
 </div>

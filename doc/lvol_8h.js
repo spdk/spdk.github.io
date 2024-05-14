@@ -35,6 +35,7 @@ var lvol_8h =
     [ "spdk_lvol_iter_immediate_clones", "lvol_8h.html#a6d43e92544d79d7e048be0e9ac794271", null ],
     [ "spdk_lvol_open", "lvol_8h.html#a25631f8da88352a540abc55f52c0ef2e", null ],
     [ "spdk_lvol_rename", "lvol_8h.html#a3d5d8be84217db4879d5bf79fa5c23f6", null ],
+    [ "spdk_lvol_shallow_copy", "lvol_8h.html#a51cbd535567f9e798ac4d9a1ba51584a", null ],
     [ "spdk_lvs_destroy", "lvol_8h.html#ac2c5d67c2711ee149784f5e5e5be0b7a", null ],
     [ "spdk_lvs_grow", "lvol_8h.html#a46ad389863de4d9fdf4284a0cd3d5f6c", null ],
     [ "spdk_lvs_grow_live", "lvol_8h.html#ae74ba28ec4717accd5a4362e3a2af9d9", null ],

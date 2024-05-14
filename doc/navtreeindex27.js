@@ -1,5 +1,12 @@
 var NAVTREEINDEX27 =
 {
+"structspdk__nvme__transport__ops.html#ae01bbca0f937eb59be85e3b95339ccc7":[14,0,283,43],
+"structspdk__nvme__transport__ops.html#ae3089561a7434d57145c16c3b751ab12":[14,0,283,36],
+"structspdk__nvme__transport__ops.html#ae5520a930bea2319b55ee5ef9e7af08b":[14,0,283,27],
+"structspdk__nvme__transport__ops.html#af4f407aac18045e28284311c0f912ea0":[14,0,283,37],
+"structspdk__nvme__transport__opts.html":[14,0,284],
+"structspdk__nvme__transport__opts.html#a5f8d05202b603da8e8ee82008ac1bf8e":[14,0,284,0],
+"structspdk__nvme__transport__opts.html#aa462c4ecdc0534781c8ce834462b11c7":[14,0,284,3],
 "structspdk__nvme__transport__opts.html#aafb92cef610d1ba28ef4b6bc3106187b":[14,0,284,4],
 "structspdk__nvme__transport__opts.html#acf09e7849d03cd976d446b1f2769407f":[14,0,284,1],
 "structspdk__nvme__transport__opts.html#af73ccbadbe03ac922c679d8f6f3a959c":[14,0,284,2],
@@ -242,12 +249,5 @@ var NAVTREEINDEX27 =
 "structspdk__nvmf__fabric__connect__data.html#afce7c6a79de1868873a52c795be20a79":[14,0,308,4],
 "structspdk__nvmf__fabric__connect__rsp.html":[14,0,309],
 "structspdk__nvmf__fabric__connect__rsp.html#a0827d76fd8ed0f27bb7ca39597f32ff2":[14,0,309,11],
-"structspdk__nvmf__fabric__connect__rsp.html#a2a039a80b2c6727ae7eec57b0854f378":[14,0,309,2],
-"structspdk__nvmf__fabric__connect__rsp.html#a302bb0cd726d5ee290cd592855c7c253":[14,0,309,12],
-"structspdk__nvmf__fabric__connect__rsp.html#a430014082bfce37c4aa6364aca50561b":[14,0,309,4],
-"structspdk__nvmf__fabric__connect__rsp.html#a5a48e004f5c8fd7eba5b8a8bf51d3985":[14,0,309,7],
-"structspdk__nvmf__fabric__connect__rsp.html#a6d403ab149673ecfffa7c1b1dbe5b6ca":[14,0,309,14],
-"structspdk__nvmf__fabric__connect__rsp.html#a73caa00031308cbc6b29f4fa45c8b06b":[14,0,309,1],
-"structspdk__nvmf__fabric__connect__rsp.html#a848678352cac624d515531579a564b3b":[14,0,309,10],
-"structspdk__nvmf__fabric__connect__rsp.html#a92a43aa49c7941ede56a8d79c80aa309":[14,0,309,3]
+"structspdk__nvmf__fabric__connect__rsp.html#a2a039a80b2c6727ae7eec57b0854f378":[14,0,309,2]
 };

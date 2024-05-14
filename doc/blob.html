@@ -289,6 +289,9 @@ External Snapshots and Esnap Clones</h3>
 <li><b>On disk</b>: the blob metadata has the <code>SPDK_BLOB_EXTERNAL_SNAPSHOT</code> (0x8) bit is set in <code>invalid_flags</code> and an internal XATTR with name <code>BLOB_EXTERNAL_SNAPSHOT_ID</code> ("EXTSNAP") exists.</li>
 <li><b>In memory</b>: The <code>spdk_blob</code> structure contains the metadata read from disk, <code>blob-&gt;parent_id</code> is set to <code>SPDK_BLOBID_EXTERNAL_SNAPSHOT</code>, and <code>blob-&gt;back_bs_dev</code> references a blobstore device which is not a blob in the same blobstore nor a zeroes device.</li>
 </ul>
+<h3><a class="anchor" id="blob_shallow_copy"></a>
+Shallow Copy</h3>
+<p>A read only blob can be copied over a blob store device in a way that only clusters allocated to the blob will be written on the device. This device must have a size equal or greater than blob's size and blob store's block size must be an integer multiple of device's block size. This functionality can be used to recreate the entire snapshot stack of a blob into a different blob store.</p>
 <h3><a class="anchor" id="blob_pg_copy_on_write"></a>
 Copy-on-write</h3>
 <p>A copy-on-write operation is somewhat expensive, with the cost being proportional to the cluster size. Typical copy-on-write involves the following steps:</p>

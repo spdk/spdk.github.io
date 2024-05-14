@@ -13,6 +13,7 @@ var prog_guides =
           [ "Thin Provisioning", "blob.html#blob_pg_thin_provisioning", null ],
           [ "Snapshots and Clones", "blob.html#blob_pg_snapshots", null ],
           [ "External Snapshots and Esnap Clones", "blob.html#blob_pg_esnap_and_esnap_clone", null ],
+          [ "Shallow Copy", "blob.html#blob_shallow_copy", null ],
           [ "Copy-on-write", "blob.html#blob_pg_copy_on_write", null ]
         ] ]
       ] ]

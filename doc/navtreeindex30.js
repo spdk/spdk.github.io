@@ -1,5 +1,12 @@
 var NAVTREEINDEX30 =
 {
+"structspdk__opal__d0__feat__hdr.html#a23ecef12200a5d4acf5f9d0498b2efcd":[14,0,368,2],
+"structspdk__opal__d0__feat__hdr.html#a6397c530e0e2f4a35c264dbd5ffc26e7":[14,0,368,3],
+"structspdk__opal__d0__feat__hdr.html#af9082616911d7b60bdee0b70757a830f":[14,0,368,0],
+"structspdk__opal__d0__features__info.html":[14,0,369],
+"structspdk__opal__d0__features__info.html#a0965faee0b5d3f18b9a0b53064a7f1b7":[14,0,369,4],
+"structspdk__opal__d0__features__info.html#a84a55e9ffae588e6fd0d5de808dbc273":[14,0,369,0],
+"structspdk__opal__d0__features__info.html#a9c92a936c153aa4552d1311c3610a40a":[14,0,369,1],
 "structspdk__opal__d0__features__info.html#aa0550ed501b732c3428311b315a8244d":[14,0,369,2],
 "structspdk__opal__d0__features__info.html#aa53c3f9d18f31aab1b6dafdc79ad5324":[14,0,369,3],
 "structspdk__opal__d0__features__info.html#ac3bdc0eaa1dea42656aca886841e8454":[14,0,369,6],
@@ -242,12 +249,5 @@ var NAVTREEINDEX30 =
 "structspdk__scsi__pr__in__full__status__desc.html#a0686a8d231c34fb07bfe39a533c4c0a5":[14,0,399,3],
 "structspdk__scsi__pr__in__full__status__desc.html#a21adb00ca4baec9638af3af2035afb72":[14,0,399,1],
 "structspdk__scsi__pr__in__full__status__desc.html#a4203ba8e2834a9934505a89cb6e6a0f7":[14,0,399,8],
-"structspdk__scsi__pr__in__full__status__desc.html#a516c7f0bca402c4f1aa5586f30311b5b":[14,0,399,4],
-"structspdk__scsi__pr__in__full__status__desc.html#a5dec3bb2565b6b4e4bd5417a616bf266":[14,0,399,10],
-"structspdk__scsi__pr__in__full__status__desc.html#a789d7ac489335df814320f8e7c2e5147":[14,0,399,7],
-"structspdk__scsi__pr__in__full__status__desc.html#a82e21e2823a46e5d72956d6ddce836ac":[14,0,399,0],
-"structspdk__scsi__pr__in__full__status__desc.html#a8b36db3a8ffa27c906f55e064961a6a6":[14,0,399,5],
-"structspdk__scsi__pr__in__full__status__desc.html#a8ce62fdeeb9492c9ef653c181ef7b59b":[14,0,399,6],
-"structspdk__scsi__pr__in__full__status__desc.html#ad7215f35a82a0b99769deed4193c7ff3":[14,0,399,2],
-"structspdk__scsi__pr__in__full__status__desc.html#aeb5ae5395abfc2f89e2e43021fbbccfa":[14,0,399,9]
+"structspdk__scsi__pr__in__full__status__desc.html#a516c7f0bca402c4f1aa5586f30311b5b":[14,0,399,4]
 };
