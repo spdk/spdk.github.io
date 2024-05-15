@@ -835,6 +835,9 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_trty
 <tr class="memitem:a6594532f906f2451ba1b785c6db53fe5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a6594532f906f2451ba1b785c6db53fe5">spdk_nvme_dhchap_get_digest_id</a> (const char *name)</td></tr>
 <tr class="memdesc:a6594532f906f2451ba1b785c6db53fe5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the id of a digest.  <a href="nvme_8h.html#a6594532f906f2451ba1b785c6db53fe5">More...</a><br /></td></tr>
 <tr class="separator:a6594532f906f2451ba1b785c6db53fe5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4570b728b1ddb612f9744026d8aaa4a7"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a4570b728b1ddb612f9744026d8aaa4a7">spdk_nvme_dhchap_get_digest_length</a> (int id)</td></tr>
+<tr class="memdesc:a4570b728b1ddb612f9744026d8aaa4a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the length of a digest.  <a href="nvme_8h.html#a4570b728b1ddb612f9744026d8aaa4a7">More...</a><br /></td></tr>
+<tr class="separator:a4570b728b1ddb612f9744026d8aaa4a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a369ee2cd1bd62bf4c6baa5fd1b11f1a6"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a369ee2cd1bd62bf4c6baa5fd1b11f1a6">spdk_nvme_dhchap_get_dhgroup_name</a> (int id)</td></tr>
 <tr class="memdesc:a369ee2cd1bd62bf4c6baa5fd1b11f1a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the name of a Diffie-Hellman group.  <a href="nvme_8h.html#a369ee2cd1bd62bf4c6baa5fd1b11f1a6">More...</a><br /></td></tr>
 <tr class="separator:a369ee2cd1bd62bf4c6baa5fd1b11f1a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -5622,6 +5625,33 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_trty
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Digest id (see <code>enum spdk_nvmf_dhchap_hash</code>) or negative errno on failure. </dd></dl>
+
+</div>
+</div>
+<a id="a4570b728b1ddb612f9744026d8aaa4a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4570b728b1ddb612f9744026d8aaa4a7">&#9670;&nbsp;</a></span>spdk_nvme_dhchap_get_digest_length()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t spdk_nvme_dhchap_get_digest_length </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>id</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return the length of a digest. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td>Digest identifier (see <code>enum spdk_nvmf_dhchap_hash</code>).</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Length of a digest or 0 if the id is unknown. </dd></dl>
 
 </div>
 </div>

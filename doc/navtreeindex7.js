@@ -223,9 +223,11 @@ var NAVTREEINDEX7 =
 "jsonrpc.html#rpc_nvmf_namespace":[3,9,7,7,0],
 "jsonrpc.html#rpc_nvmf_ns_add_host":[3,9,7,15],
 "jsonrpc.html#rpc_nvmf_ns_remove_host":[3,9,7,16],
+"jsonrpc.html#rpc_nvmf_publish_mdns_prr":[3,9,13,23],
 "jsonrpc.html#rpc_nvmf_set_config":[3,9,7,21],
 "jsonrpc.html#rpc_nvmf_set_crdt":[3,9,7,24],
 "jsonrpc.html#rpc_nvmf_set_max_subsystems":[3,9,7,17],
+"jsonrpc.html#rpc_nvmf_stop_mdns_prr":[3,9,13,24],
 "jsonrpc.html#rpc_nvmf_subsystem_add_host":[3,9,7,9],
 "jsonrpc.html#rpc_nvmf_subsystem_add_listener":[3,9,7,4],
 "jsonrpc.html#rpc_nvmf_subsystem_add_ns":[3,9,7,7],
@@ -247,7 +249,5 @@ var NAVTREEINDEX7 =
 "jsonrpc.html#rpc_spdk_get_version":[3,9,13,8],
 "jsonrpc.html#rpc_spdk_kill_instance":[3,9,3,0],
 "jsonrpc.html#rpc_thread_get_io_channels":[3,9,3,27],
-"jsonrpc.html#rpc_thread_get_pollers":[3,9,3,26],
-"jsonrpc.html#rpc_thread_get_stats":[3,9,3,10],
-"jsonrpc.html#rpc_thread_set_cpumask":[3,9,3,11]
+"jsonrpc.html#rpc_thread_get_pollers":[3,9,3,26]
 };

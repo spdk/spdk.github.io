@@ -10,6 +10,7 @@ var structspdk__nvmf__qpair =
     [ "first_fused_req", "structspdk__nvmf__qpair.html#a2fd38a526e3d5d07cde1b52cf5fda6d8", null ],
     [ "group", "structspdk__nvmf__qpair.html#a993b86bef0d64d282753f924cdb6de02", null ],
     [ "qid", "structspdk__nvmf__qpair.html#aecc6801664b3940edae8ee58e8438c33", null ],
+    [ "queue_depth", "structspdk__nvmf__qpair.html#ad9d0999e1db95734e8205e21bab3c889", null ],
     [ "rsvd", "structspdk__nvmf__qpair.html#ab4543bec85b894782b50d363b9733588", null ],
     [ "sq_head", "structspdk__nvmf__qpair.html#a598e955b75f6ca4576fdad98c43e6487", null ],
     [ "sq_head_max", "structspdk__nvmf__qpair.html#a0e2e7f8b9bb90bf1d0b0ed9e197cd290", null ],

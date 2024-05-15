@@ -176,6 +176,7 @@ var nvme_8h =
     [ "spdk_nvme_dhchap_get_dhgroup_id", "nvme_8h.html#a20a1143ad8f4a3f001471476762027e4", null ],
     [ "spdk_nvme_dhchap_get_dhgroup_name", "nvme_8h.html#a369ee2cd1bd62bf4c6baa5fd1b11f1a6", null ],
     [ "spdk_nvme_dhchap_get_digest_id", "nvme_8h.html#a6594532f906f2451ba1b785c6db53fe5", null ],
+    [ "spdk_nvme_dhchap_get_digest_length", "nvme_8h.html#a4570b728b1ddb612f9744026d8aaa4a7", null ],
     [ "spdk_nvme_dhchap_get_digest_name", "nvme_8h.html#af1e15e8ce30fb87236f45cb5f7ea9c60", null ],
     [ "spdk_nvme_host_id_parse", "nvme_8h.html#ad068dd50f11160450098712422116785", null ],
     [ "spdk_nvme_ns_cmd_compare", "nvme_8h.html#ad8aa3c9ff510fe73945549077df18436", null ],

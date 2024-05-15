@@ -1,5 +1,7 @@
 var NAVTREEINDEX8 =
 {
+"jsonrpc.html#rpc_thread_get_stats":[3,9,3,10],
+"jsonrpc.html#rpc_thread_set_cpumask":[3,9,3,11],
 "jsonrpc.html#rpc_trace_clear_tpoint_mask":[3,9,3,15],
 "jsonrpc.html#rpc_trace_disable_tpoint_group":[3,9,3,13],
 "jsonrpc.html#rpc_trace_enable_tpoint_group":[3,9,3,12],
@@ -247,7 +249,5 @@ var NAVTREEINDEX8 =
 "nvme_8h.html#a018f3b986b4345ee0c6931be9718c163a91203896ead47bbe22e9f7db8a63c14f":[15,0,41,39,5],
 "nvme_8h.html#a018f3b986b4345ee0c6931be9718c163ad403aafc70c00560a1db768029933400":[15,0,41,39,1],
 "nvme_8h.html#a018f3b986b4345ee0c6931be9718c163afe158b050528f0f3341e5af3129c61a7":[15,0,41,39,4],
-"nvme_8h.html#a018f3b986b4345ee0c6931be9718c163afe42f7e0cdcb93109b55b77cf89efd27":[15,0,41,39,6],
-"nvme_8h.html#a02411bf7ae4827a350711e688316997e":[15,0,41,210],
-"nvme_8h.html#a02b18deae44682a51177e8a4193af602":[15,0,41,90]
+"nvme_8h.html#a018f3b986b4345ee0c6931be9718c163afe42f7e0cdcb93109b55b77cf89efd27":[15,0,41,39,6]
 };

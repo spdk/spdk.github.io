@@ -449,7 +449,9 @@ var user_guides =
         [ "keyring_file_add_key", "jsonrpc.html#rpc_keyring_file_add_key", null ],
         [ "keyring_file_remove_key", "jsonrpc.html#rpc_keyring_file_remove_key", null ],
         [ "keyring_get_keys", "jsonrpc.html#rpc_keyring_get_keys", null ],
-        [ "keyring_linux_set_options", "jsonrpc.html#keyring_linux_set_options", null ]
+        [ "keyring_linux_set_options", "jsonrpc.html#keyring_linux_set_options", null ],
+        [ "nvmf_publish_mdns_prr", "jsonrpc.html#rpc_nvmf_publish_mdns_prr", null ],
+        [ "nvmf_stop_mdns_prr", "jsonrpc.html#rpc_nvmf_stop_mdns_prr", null ]
       ] ]
     ] ],
     [ "JSON-RPC Remote access", "jsonrpc_proxy.html", null ],
