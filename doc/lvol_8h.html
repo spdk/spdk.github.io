@@ -229,6 +229,12 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_lvol_create_esnap
 <tr class="memitem:a51cbd535567f9e798ac4d9a1ba51584a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lvol_8h.html#a51cbd535567f9e798ac4d9a1ba51584a">spdk_lvol_shallow_copy</a> (struct spdk_lvol *lvol, struct <a class="el" href="structspdk__bs__dev.html">spdk_bs_dev</a> *ext_dev, <a class="el" href="blob_8h.html#a668cd9f989594d7f4f417495ffa7517d">spdk_blob_shallow_copy_status</a> status_cb_fn, void *status_cb_arg, <a class="el" href="lvol_8h.html#a4d5c96c4fe4512f99dcb3f1e5d5e86be">spdk_lvol_op_complete</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:a51cbd535567f9e798ac4d9a1ba51584a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Make a shallow copy of lvol on given bs_dev.  <a href="lvol_8h.html#a51cbd535567f9e798ac4d9a1ba51584a">More...</a><br /></td></tr>
 <tr class="separator:a51cbd535567f9e798ac4d9a1ba51584a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac86de32e88143da55f1538e86bac3acf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lvol_8h.html#ac86de32e88143da55f1538e86bac3acf">spdk_lvol_set_parent</a> (struct spdk_lvol *lvol, struct spdk_lvol *snapshot, <a class="el" href="lvol_8h.html#a4d5c96c4fe4512f99dcb3f1e5d5e86be">spdk_lvol_op_complete</a> cb_fn, void *cb_arg)</td></tr>
+<tr class="memdesc:ac86de32e88143da55f1538e86bac3acf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a snapshot as the parent of a lvol.  <a href="lvol_8h.html#ac86de32e88143da55f1538e86bac3acf">More...</a><br /></td></tr>
+<tr class="separator:ac86de32e88143da55f1538e86bac3acf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa40f206290a851f01dc0b399155eb968"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lvol_8h.html#aa40f206290a851f01dc0b399155eb968">spdk_lvol_set_external_parent</a> (struct spdk_lvol *lvol, const void *esnap_id, uint32_t esnap_id_len, <a class="el" href="lvol_8h.html#a4d5c96c4fe4512f99dcb3f1e5d5e86be">spdk_lvol_op_complete</a> cb_fn, void *cb_arg)</td></tr>
+<tr class="memdesc:aa40f206290a851f01dc0b399155eb968"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set an external snapshot as the parent of a lvol.  <a href="lvol_8h.html#aa40f206290a851f01dc0b399155eb968">More...</a><br /></td></tr>
+<tr class="separator:aa40f206290a851f01dc0b399155eb968"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Logical Volume Interface. </p>
@@ -984,6 +990,117 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_lvol_create_esnap
     <tr><td class="paramname">new_name</td><td>new name for lvol. </td></tr>
     <tr><td class="paramname">cb_fn</td><td>Completion callback. </td></tr>
     <tr><td class="paramname">cb_arg</td><td>Completion callback custom arguments. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aa40f206290a851f01dc0b399155eb968"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa40f206290a851f01dc0b399155eb968">&#9670;&nbsp;</a></span>spdk_lvol_set_external_parent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_lvol_set_external_parent </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_lvol *&#160;</td>
+          <td class="paramname"><em>lvol</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>esnap_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>esnap_id_len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="lvol_8h.html#a4d5c96c4fe4512f99dcb3f1e5d5e86be">spdk_lvol_op_complete</a>&#160;</td>
+          <td class="paramname"><em>cb_fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cb_arg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set an external snapshot as the parent of a lvol. </p>
+<p>This call set an external snapshot as the parent of a lvol, making the lvol a clone of this external snapshot. The previous parent of the lvol, if any, can be another external snapshot or a snapshot; if the lvol is not a clone, it must be thin-provisioned. The size of the external snapshot device must be an integer multiple of cluster size of lvol's lvolstore.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">lvol</td><td>Handle to lvol </td></tr>
+    <tr><td class="paramname">esnap_id</td><td>The identifier of the external snapshot. </td></tr>
+    <tr><td class="paramname">esnap_id_len</td><td>The length of esnap_id, in bytes. </td></tr>
+    <tr><td class="paramname">cb_fn</td><td>Completion callback </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>Completion callback custom arguments </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ac86de32e88143da55f1538e86bac3acf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac86de32e88143da55f1538e86bac3acf">&#9670;&nbsp;</a></span>spdk_lvol_set_parent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_lvol_set_parent </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_lvol *&#160;</td>
+          <td class="paramname"><em>lvol</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct spdk_lvol *&#160;</td>
+          <td class="paramname"><em>snapshot</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="lvol_8h.html#a4d5c96c4fe4512f99dcb3f1e5d5e86be">spdk_lvol_op_complete</a>&#160;</td>
+          <td class="paramname"><em>cb_fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cb_arg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set a snapshot as the parent of a lvol. </p>
+<p>This call set a snapshot as the parent of a lvol, making the lvol a clone of this snapshot. The previous parent of the lvol, if any, can be another snapshot or an external snapshot; if the lvol is not a clone, it must be thin-provisioned. Lvol and parent snapshot must have the same size and must belong to the same lvol store.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">lvol</td><td>Handle to lvol </td></tr>
+    <tr><td class="paramname">snapshot</td><td>Handle to the parent snapshot </td></tr>
+    <tr><td class="paramname">cb_fn</td><td>Completion callback </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>Completion callback custom arguments </td></tr>
   </table>
   </dd>
 </dl>

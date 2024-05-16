@@ -1,5 +1,12 @@
 var NAVTREEINDEX24 =
 {
+"structspdk__nvme__ctrlr__data.html#af4a6ea394d50b4a0770b22e725943ea8":[14,0,172,32],
+"structspdk__nvme__ctrlr__data.html#af7340401290ec6691d858522a8932402":[14,0,172,51],
+"structspdk__nvme__ctrlr__data.html#af868b364941ad9648f61aa49a916427f":[14,0,172,98],
+"structspdk__nvme__ctrlr__data.html#afc0c212cde2677a9abe68829af961ae2":[14,0,172,2],
+"structspdk__nvme__ctrlr__data.html#afce5d6ffdde77b95762d96fd4712da5b":[14,0,172,21],
+"structspdk__nvme__ctrlr__list.html":[14,0,173],
+"structspdk__nvme__ctrlr__list.html#a75340f96bc845c8af240d14d6dd7a29e":[14,0,173,1],
 "structspdk__nvme__ctrlr__list.html#aba1c5cfb2855cb4aa4bd978b058d0b60":[14,0,173,0],
 "structspdk__nvme__ctrlr__opts.html":[14,0,174],
 "structspdk__nvme__ctrlr__opts.html#a031524a539fbc57e1ca66c6fef875eea":[14,0,174,5],
@@ -242,12 +249,5 @@ var NAVTREEINDEX24 =
 "structspdk__nvme__intel__temperature__page.html#a70773b5626ea537b1fb1f15c9f73e5e5":[14,0,229,1],
 "structspdk__nvme__intel__temperature__page.html#a78ade1f977aafd2b2fe85672d2d46c5d":[14,0,229,2],
 "structspdk__nvme__intel__temperature__page.html#a7f4bbf3945dbf1a7a97a398019d45c05":[14,0,229,0],
-"structspdk__nvme__intel__temperature__page.html#ab64ba504715b6e017466e98e113d2ddb":[14,0,229,4],
-"structspdk__nvme__intel__temperature__page.html#ac1371c45719883bac0fdd22ab692f10d":[14,0,229,7],
-"structspdk__nvme__intel__temperature__page.html#ac31567dc016fffef64cb48facb521b02":[14,0,229,8],
-"structspdk__nvme__intel__temperature__page.html#acd5b3858d54a5189778bf8bde2d16119":[14,0,229,3],
-"structspdk__nvme__intel__temperature__page.html#af180ca8f9fd6342bf56fe133b511832a":[14,0,229,5],
-"structspdk__nvme__intel__temperature__page.html#af9d0279b72f478d6edef742332267578":[14,0,229,9],
-"structspdk__nvme__io__qpair__opts.html":[14,0,230],
-"structspdk__nvme__io__qpair__opts.html#a07d109dbf64b048e0fe692a970d52c81":[14,0,230,10]
+"structspdk__nvme__intel__temperature__page.html#ab64ba504715b6e017466e98e113d2ddb":[14,0,229,4]
 };

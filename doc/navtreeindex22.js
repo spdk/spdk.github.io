@@ -1,5 +1,12 @@
 var NAVTREEINDEX22 =
 {
+"structspdk__ioat__pq__hw__desc.html#a34af084fabe6ef3bc3a0056f39f4081a":[14,0,111,23],
+"structspdk__ioat__pq__hw__desc.html#a3935826f548fc9f4b555803a1b9477ea":[14,0,111,15],
+"structspdk__ioat__pq__hw__desc.html#a5341c1569e9fa84a400008978e959838":[14,0,111,14],
+"structspdk__ioat__pq__hw__desc.html#a5712769607952ad2a4f5045df3c2049a":[14,0,111,21],
+"structspdk__ioat__pq__hw__desc.html#a5f553e83968498be97d4a5152320a580":[14,0,111,2],
+"structspdk__ioat__pq__hw__desc.html#a60c94d03450403ec46b2318088971f73":[14,0,111,22],
+"structspdk__ioat__pq__hw__desc.html#a6271a17e55a8ece957c2dc77fb9e32a0":[14,0,111,0],
 "structspdk__ioat__pq__hw__desc.html#a62edc806de7b1c510bff5a5459fb123e":[14,0,111,20],
 "structspdk__ioat__pq__hw__desc.html#a96d8f690a46e8eccfaf12b669b6ef245":[14,0,111,19],
 "structspdk__ioat__pq__hw__desc.html#aabbd2a878d55de85d70818df5501754f":[14,0,111,3],
@@ -242,12 +249,5 @@ var NAVTREEINDEX22 =
 "structspdk__nvme__cdata__fuses.html#aa29c0efb33f8961e6006853100cae731":[14,0,152,1],
 "structspdk__nvme__cdata__nvmf__specific.html":[14,0,153],
 "structspdk__nvme__cdata__nvmf__specific.html#a081118199a7c8c9ad3408fb69bb6868f":[14,0,153,2],
-"structspdk__nvme__cdata__nvmf__specific.html#a30dd8499d8d90df19f411be4aba7f10b":[14,0,153,6],
-"structspdk__nvme__cdata__nvmf__specific.html#a4ceb298053dfd204fc5892b60c772996":[14,0,153,8],
-"structspdk__nvme__cdata__nvmf__specific.html#a760ac459f1386e94310809765b5577d8":[14,0,153,4],
-"structspdk__nvme__cdata__nvmf__specific.html#a80557e12aafab3a50037fc7e2feb1326":[14,0,153,1],
-"structspdk__nvme__cdata__nvmf__specific.html#a96b8740e81a02b7bbdbb2904cee0b5fa":[14,0,153,0],
-"structspdk__nvme__cdata__nvmf__specific.html#a9cf4b6ba7d74dd7e6aa6f34eba11fbed":[14,0,153,9],
-"structspdk__nvme__cdata__nvmf__specific.html#ac2ad3d852b70ca6fd78dad1f6fac8fd6":[14,0,153,5],
-"structspdk__nvme__cdata__nvmf__specific.html#ae07d73592397eefff0a54086d11161db":[14,0,153,3]
+"structspdk__nvme__cdata__nvmf__specific.html#a30dd8499d8d90df19f411be4aba7f10b":[14,0,153,6]
 };

@@ -461,6 +461,8 @@ rpc_get_methods</h2>
 <div class="line">    &quot;bdev_lvol_create_lvstore&quot;,</div>
 <div class="line">    &quot;bdev_lvol_start_shallow_copy&quot;,</div>
 <div class="line">    &quot;bdev_lvol_check_shallow_copy&quot;,</div>
+<div class="line">    &quot;bdev_lvol_set_parent&quot;,</div>
+<div class="line">    &quot;bdev_lvol_set_parent_bdev&quot;,</div>
 <div class="line">    &quot;bdev_daos_delete&quot;,</div>
 <div class="line">    &quot;bdev_daos_create&quot;,</div>
 <div class="line">    &quot;bdev_daos_resize&quot;</div>
@@ -8594,6 +8596,64 @@ bdev_lvol_get_lvols</h2>
 <div class="line">    }</div>
 <div class="line">  }</div>
 <div class="line">]</div>
+</div><!-- fragment --><h2><a class="anchor" id="rpc_bdev_lvol_set_parent"></a>
+bdev_lvol_set_parent</h2>
+<p>Set a snapshot as the parent of a lvol, making the lvol a clone of this snapshot. The previous parent of the lvol, if any, can be another snapshot or an external snapshot; if the lvol is not a clone, it must be thin-provisioned. Lvol and parent snapshot must have the same size and must belong to the same lvol store.</p>
+<h3>Parameters</h3>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">lvol_name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">UUID or alias of the lvol to set parent of    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">snapshot_name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">UUID or alias of the snapshot to become parent of lvol   </td></tr>
+</table>
+<h3>Example</h3>
+<p>Example request:</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;method&quot;: &quot;bdev_lvol_set_parent&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;params&quot;: {</div>
+<div class="line">    &quot;lvol_name&quot;: &quot;LVS1/LVOL0&quot;,</div>
+<div class="line">    &quot;snapshot_name&quot;: &quot;LVS1/SNAP0&quot;</div>
+<div class="line">  }</div>
+<div class="line">}</div>
+</div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;result&quot;: true</div>
+<div class="line">}</div>
+</div><!-- fragment --><h2><a class="anchor" id="rpc_bdev_lvol_set_parent_bdev"></a>
+bdev_lvol_set_parent_bdev</h2>
+<p>Set an external snapshot as the parent of a lvol, making the lvol a clone of this external snapshot (see <a class="el" href="jsonrpc.html#rpc_bdev_lvol_clone_bdev">bdev_lvol_clone_bdev</a>). The previous parent of the lvol, if any, can be another external snapshot or a snapshot; if the lvol is not a clone, it must be thin-provisioned. The size of the external snapshot device must be an integer multiple of cluster size of lvol's lvolstore.</p>
+<h3>Parameters</h3>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">lvol_name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">UUID or alias of the lvol to set external parent of    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">esnap_name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">UUID or name of the external snapshot to become parent of lvol   </td></tr>
+</table>
+<h3>Example</h3>
+<p>Example request:</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;method&quot;: &quot;bdev_lvol_set_parent_bdev&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;params&quot;: {</div>
+<div class="line">    &quot;lvol_name&quot;: &quot;LVS1/LVOL0&quot;,</div>
+<div class="line">    &quot;esnap_name&quot;: &quot;e465527b-f412-4f70-a03e-c4a5d608f65e&quot;</div>
+<div class="line">  }</div>
+<div class="line">}</div>
+</div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;result&quot;: true</div>
+<div class="line">}</div>
 </div><!-- fragment --><h2><a class="anchor" id="rpc_bdev_lvol_start_shallow_copy"></a>
 bdev_lvol_start_shallow_copy</h2>
 <p>Start a shallow copy of an lvol over a given bdev. Only clusters allocated to the lvol will be written on the bdev. Must have:</p>

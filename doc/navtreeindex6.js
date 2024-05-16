@@ -1,5 +1,8 @@
 var NAVTREEINDEX6 =
 {
+"ioat__spec_8h.html#abad271de338abd80d0c5a8f0ea7309b6":[15,0,32,22],
+"ioat__spec_8h.html#abbcc20718fe5fe1f4f4d2dde66f43ec8":[15,0,32,14],
+"ioat__spec_8h.html#abe11ac520cafc0ecbfd7389608d01b56":[15,0,32,34],
 "ioat__spec_8h.html#ac127fc883ba5322b4ed702f128e69644":[15,0,32,32],
 "ioat__spec_8h.html#ac20a02f512ee201e0ccfab67e42c4124":[15,0,32,31],
 "ioat__spec_8h.html#ac21b86520103171bb2b8845536b580e4":[15,0,32,38],
@@ -246,8 +249,5 @@ var NAVTREEINDEX6 =
 "jsonrpc.html#jsonrpc_convert":[3,9,2,1],
 "jsonrpc.html#jsonrpc_error_message":[3,9,1],
 "jsonrpc.html#jsonrpc_generate":[3,9,2,0],
-"jsonrpc.html#jsonrpc_invalid_params":[3,9,1,1],
-"jsonrpc.html#jsonrpc_overview":[3,9,0],
-"jsonrpc.html#jsonrpc_parser_error":[3,9,1,0],
-"jsonrpc.html#keyring_linux_set_options":[3,9,13,22]
+"jsonrpc.html#jsonrpc_invalid_params":[3,9,1,1]
 };

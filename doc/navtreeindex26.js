@@ -1,5 +1,12 @@
 var NAVTREEINDEX26 =
 {
+"structspdk__nvme__registered__ctrlr__extended__data.html#a85af9ddf704150ac4bd4eb4ad2e4862a":[14,0,254,0],
+"structspdk__nvme__registered__ctrlr__extended__data.html#aaa5f2a6ea4558e3c775dc634d0cfbb12":[14,0,254,2],
+"structspdk__nvme__registered__ctrlr__extended__data.html#abf60f56db698dd1eecc20916cb265193":[14,0,254,4],
+"structspdk__nvme__registered__ctrlr__extended__data.html#ad9678ca0e420035304202798a22d6963":[14,0,254,7],
+"structspdk__nvme__registered__ctrlr__extended__data.html#af2ab24a5cf334dedeccd38ebc07e6b98":[14,0,254,6],
+"structspdk__nvme__registered__ctrlr__extended__data.html#afe415d33b58f8459045a3e116d1434fb":[14,0,254,3],
+"structspdk__nvme__registers.html":[14,0,255],
 "structspdk__nvme__registers.html#a00aa37d2081ccf2d54670e452d26530a":[14,0,255,6],
 "structspdk__nvme__registers.html#a027051ef09399cfc900e8a2c4b848bae":[14,0,255,23],
 "structspdk__nvme__registers.html#a07abebcdec911856f7abf268932c08cf":[14,0,255,25],
@@ -242,12 +249,5 @@ var NAVTREEINDEX26 =
 "structspdk__nvme__transport__ops.html#aae2f827165c85a9ef8bbd9d36cfccd6c":[14,0,283,26],
 "structspdk__nvme__transport__ops.html#aaf0399ba394a6ccf197f02191eb9859d":[14,0,283,14],
 "structspdk__nvme__transport__ops.html#ab65df816938e10df9c78319454d84b10":[14,0,283,11],
-"structspdk__nvme__transport__ops.html#abba06284c2ce1dd9168ae2022605fd00":[14,0,283,16],
-"structspdk__nvme__transport__ops.html#abdb91b1a46e3a17d588c8fb834e4497a":[14,0,283,12],
-"structspdk__nvme__transport__ops.html#ac37117d2ec9c18a508bdeb4d17f17442":[14,0,283,15],
-"structspdk__nvme__transport__ops.html#ac6dd28d786b8a38bddad48677f5f8c57":[14,0,283,44],
-"structspdk__nvme__transport__ops.html#ac806247ff6aabe8368412ee39ceb6f47":[14,0,283,6],
-"structspdk__nvme__transport__ops.html#ac92b8a574a5647569715cada60d4e19f":[14,0,283,23],
-"structspdk__nvme__transport__ops.html#acc03d0127fc903a705a8b68e8c0d6bfb":[14,0,283,17],
-"structspdk__nvme__transport__ops.html#ad1aba600476558d62c47fecb61b19ed6":[14,0,283,2]
+"structspdk__nvme__transport__ops.html#abba06284c2ce1dd9168ae2022605fd00":[14,0,283,16]
 };

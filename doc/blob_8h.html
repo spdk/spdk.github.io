@@ -309,6 +309,12 @@ Functions</h2></td></tr>
 <tr class="memitem:ad58a01866afc7755397833a26535ad74"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blob_8h.html#ad58a01866afc7755397833a26535ad74">spdk_bs_blob_shallow_copy</a> (struct spdk_blob_store *bs, struct spdk_io_channel *channel, spdk_blob_id blobid, struct <a class="el" href="structspdk__bs__dev.html">spdk_bs_dev</a> *ext_dev, <a class="el" href="blob_8h.html#a668cd9f989594d7f4f417495ffa7517d">spdk_blob_shallow_copy_status</a> status_cb_fn, void *status_cb_arg, <a class="el" href="blob_8h.html#aca5253109581a768e06dd197429ef9e1">spdk_blob_op_complete</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:ad58a01866afc7755397833a26535ad74"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform a shallow copy of a blob to a blobstore device.  <a href="blob_8h.html#ad58a01866afc7755397833a26535ad74">More...</a><br /></td></tr>
 <tr class="separator:ad58a01866afc7755397833a26535ad74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c1c118e86bb394aaa31fe230918c354"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blob_8h.html#a2c1c118e86bb394aaa31fe230918c354">spdk_bs_blob_set_parent</a> (struct spdk_blob_store *bs, spdk_blob_id blob_id, spdk_blob_id snapshot_id, <a class="el" href="blob_8h.html#aca5253109581a768e06dd197429ef9e1">spdk_blob_op_complete</a> cb_fn, void *cb_arg)</td></tr>
+<tr class="memdesc:a2c1c118e86bb394aaa31fe230918c354"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a snapshot as the parent of a blob.  <a href="blob_8h.html#a2c1c118e86bb394aaa31fe230918c354">More...</a><br /></td></tr>
+<tr class="separator:a2c1c118e86bb394aaa31fe230918c354"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3225050f74e3198444a966ba50599326"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blob_8h.html#a3225050f74e3198444a966ba50599326">spdk_bs_blob_set_external_parent</a> (struct spdk_blob_store *bs, spdk_blob_id blob_id, struct <a class="el" href="structspdk__bs__dev.html">spdk_bs_dev</a> *esnap_bs_dev, const void *esnap_id, uint32_t esnap_id_len, <a class="el" href="blob_8h.html#aca5253109581a768e06dd197429ef9e1">spdk_blob_op_complete</a> cb_fn, void *cb_arg)</td></tr>
+<tr class="memdesc:a3225050f74e3198444a966ba50599326"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set an external snapshot as the parent of a blob.  <a href="blob_8h.html#a3225050f74e3198444a966ba50599326">More...</a><br /></td></tr>
+<tr class="separator:a3225050f74e3198444a966ba50599326"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a24a236d14fc5eea7f6f113b8a94b3af0"><td class="memItemLeft" align="right" valign="top"><a id="a24a236d14fc5eea7f6f113b8a94b3af0"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(struct <a class="el" href="structspdk__blob__open__opts.html">spdk_blob_open_opts</a>)==24, &quot;Incorrect size&quot;)</td></tr>
 <tr class="separator:a24a236d14fc5eea7f6f113b8a94b3af0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2340,6 +2346,138 @@ Functions</h2></td></tr>
     <tr><td class="paramname">bs</td><td>blobstore. </td></tr>
     <tr><td class="paramname">channel</td><td>IO channel used to inflate blob. </td></tr>
     <tr><td class="paramname">blobid</td><td>The id of the blob. </td></tr>
+    <tr><td class="paramname">cb_fn</td><td>Called when the operation is complete. </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>Argument passed to function cb_fn. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a3225050f74e3198444a966ba50599326"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3225050f74e3198444a966ba50599326">&#9670;&nbsp;</a></span>spdk_bs_blob_set_external_parent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_bs_blob_set_external_parent </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_blob_store *&#160;</td>
+          <td class="paramname"><em>bs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">spdk_blob_id&#160;</td>
+          <td class="paramname"><em>blob_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structspdk__bs__dev.html">spdk_bs_dev</a> *&#160;</td>
+          <td class="paramname"><em>esnap_bs_dev</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>esnap_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>esnap_id_len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="blob_8h.html#aca5253109581a768e06dd197429ef9e1">spdk_blob_op_complete</a>&#160;</td>
+          <td class="paramname"><em>cb_fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cb_arg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set an external snapshot as the parent of a blob. </p>
+<p>This call set an external snapshot as the parent of a blob, making the blob a clone of this external snapshot. The previous parent of the blob, if any, can be another external snapshot or a snapshot; if the blob is not a clone, it must be thin-provisioned.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bs</td><td>blobstore. </td></tr>
+    <tr><td class="paramname">blob_id</td><td>The id of the blob. </td></tr>
+    <tr><td class="paramname">esnap_bs_dev</td><td>The new blobstore device to use as an external snapshot. </td></tr>
+    <tr><td class="paramname">esnap_id</td><td>The identifier of the external snapshot. </td></tr>
+    <tr><td class="paramname">esnap_id_len</td><td>The length of esnap_id, in bytes. </td></tr>
+    <tr><td class="paramname">cb_fn</td><td>Called when the operation is complete. </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>Argument passed to function cb_fn. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a2c1c118e86bb394aaa31fe230918c354"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c1c118e86bb394aaa31fe230918c354">&#9670;&nbsp;</a></span>spdk_bs_blob_set_parent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_bs_blob_set_parent </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_blob_store *&#160;</td>
+          <td class="paramname"><em>bs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">spdk_blob_id&#160;</td>
+          <td class="paramname"><em>blob_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">spdk_blob_id&#160;</td>
+          <td class="paramname"><em>snapshot_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="blob_8h.html#aca5253109581a768e06dd197429ef9e1">spdk_blob_op_complete</a>&#160;</td>
+          <td class="paramname"><em>cb_fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cb_arg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set a snapshot as the parent of a blob. </p>
+<p>This call set a snapshot as the parent of a blob, making the blob a clone of this snapshot. The previous parent of the blob, if any, can be another snapshot or an external snapshot; if the blob is not a clone, it must be thin-provisioned. Blob and parent snapshot must have the same size.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bs</td><td>blobstore. </td></tr>
+    <tr><td class="paramname">blob_id</td><td>The id of the blob. </td></tr>
+    <tr><td class="paramname">snapshot_id</td><td>The id of the parent snapshot. </td></tr>
     <tr><td class="paramname">cb_fn</td><td>Called when the operation is complete. </td></tr>
     <tr><td class="paramname">cb_arg</td><td>Argument passed to function cb_fn. </td></tr>
   </table>

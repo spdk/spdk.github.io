@@ -71,6 +71,8 @@ var blob_8h =
     [ "spdk_blob_sync_md", "blob_8h.html#a5acc48debefc30773518871e4f84480f", null ],
     [ "spdk_bs_alloc_io_channel", "blob_8h.html#a24d2b11e6038ad7367c796c6917d44b8", null ],
     [ "spdk_bs_blob_decouple_parent", "blob_8h.html#a7dee33b6b9df9b9a3d6b9957c71a779c", null ],
+    [ "spdk_bs_blob_set_external_parent", "blob_8h.html#a3225050f74e3198444a966ba50599326", null ],
+    [ "spdk_bs_blob_set_parent", "blob_8h.html#a2c1c118e86bb394aaa31fe230918c354", null ],
     [ "spdk_bs_blob_shallow_copy", "blob_8h.html#ad58a01866afc7755397833a26535ad74", null ],
     [ "spdk_bs_create_blob", "blob_8h.html#a33263462543c5f2b51f4d507ea26a58d", null ],
     [ "spdk_bs_create_blob_ext", "blob_8h.html#a3c00efe656ca70fc5e8f2f477b8e48ed", null ],

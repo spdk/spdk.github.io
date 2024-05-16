@@ -1,5 +1,12 @@
 var NAVTREEINDEX27 =
 {
+"structspdk__nvme__transport__ops.html#abdb91b1a46e3a17d588c8fb834e4497a":[14,0,283,12],
+"structspdk__nvme__transport__ops.html#ac37117d2ec9c18a508bdeb4d17f17442":[14,0,283,15],
+"structspdk__nvme__transport__ops.html#ac6dd28d786b8a38bddad48677f5f8c57":[14,0,283,44],
+"structspdk__nvme__transport__ops.html#ac806247ff6aabe8368412ee39ceb6f47":[14,0,283,6],
+"structspdk__nvme__transport__ops.html#ac92b8a574a5647569715cada60d4e19f":[14,0,283,23],
+"structspdk__nvme__transport__ops.html#acc03d0127fc903a705a8b68e8c0d6bfb":[14,0,283,17],
+"structspdk__nvme__transport__ops.html#ad1aba600476558d62c47fecb61b19ed6":[14,0,283,2],
 "structspdk__nvme__transport__ops.html#ad8f621f882277d063bc82f51049b0f91":[14,0,283,40],
 "structspdk__nvme__transport__ops.html#ad981b4c48b39dcdaaa9b520ec6586e1d":[14,0,283,28],
 "structspdk__nvme__transport__ops.html#adcb4e210b3b1b31463de8ffe68ea0e54":[14,0,283,21],
@@ -242,12 +249,5 @@ var NAVTREEINDEX27 =
 "structspdk__nvmf__fabric__connect__cmd.html#ab70986379a85910749bb57a492e3cd2a":[14,0,307,11],
 "structspdk__nvmf__fabric__connect__cmd.html#ad50a559d8da03253076c873f38445455":[14,0,307,0],
 "structspdk__nvmf__fabric__connect__cmd.html#adae6499d32240c57c032dc122799f5b8":[14,0,307,6],
-"structspdk__nvmf__fabric__connect__cmd.html#afd8d3d635e857880a5d7940e535bf4c1":[14,0,307,12],
-"structspdk__nvmf__fabric__connect__data.html":[14,0,308],
-"structspdk__nvmf__fabric__connect__data.html#a306ebb005098511f3ed4c23c679895cd":[14,0,308,0],
-"structspdk__nvmf__fabric__connect__data.html#a5dc5b810754c991dbdbc858413fc6d55":[14,0,308,2],
-"structspdk__nvmf__fabric__connect__data.html#a5ed1b7fae823e34162e4a674a9729249":[14,0,308,5],
-"structspdk__nvmf__fabric__connect__data.html#a90eb9dbac7e0731ac2cec1557b5811ae":[14,0,308,1],
-"structspdk__nvmf__fabric__connect__data.html#aeed9729e5ad2074f0378bfa5c5581fd4":[14,0,308,3],
-"structspdk__nvmf__fabric__connect__data.html#afce7c6a79de1868873a52c795be20a79":[14,0,308,4]
+"structspdk__nvmf__fabric__connect__cmd.html#afd8d3d635e857880a5d7940e535bf4c1":[14,0,307,12]
 };
