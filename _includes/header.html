@@ -45,7 +45,7 @@
       {% assign lang_url = "/" | append: page.lang %}
       <a href="{{ baseurl_rel }}{{ page.url | replace_first:lang_url,'' }}" class="nav-link header-link">English</a>
       {% else %}
-      <a href="{{ baseurl_rel }}/cn{{ page.url }}" class="nav-link header-link">中文</a>
+      <a id="cn_lang_btn" href="{{ baseurl_rel }}/cn{{ page.url }}" class="nav-link header-link">中文</a>
       {% endif %}
     </div>
 
