@@ -1,5 +1,7 @@
 var NAVTREEINDEX3 =
 {
+"dma_8h.html#ac0277d9f5317fb5ae789c3394ba933b2":[15,0,18,14],
+"dma_8h.html#ad908aa65943565af3128e340c8c5e285":[15,0,18,13],
 "dma_8h.html#ae4e0567f3920f46cb3644ced997573c7":[15,0,18,21],
 "driver_modules.html":[7],
 "endian_8h.html":[15,0,19],
@@ -247,7 +249,5 @@ var NAVTREEINDEX3 =
 "functions_h.html":[14,2,0,7],
 "functions_i.html":[14,2,0,8],
 "functions_j.html":[14,2,0,9],
-"functions_k.html":[14,2,0,10],
-"functions_l.html":[14,2,0,11],
-"functions_m.html":[14,2,0,12]
+"functions_k.html":[14,2,0,10]
 };

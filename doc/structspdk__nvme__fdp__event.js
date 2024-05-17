@@ -1,9 +1,9 @@
 var structspdk__nvme__fdp__event =
 [
-    [ "bits", "structspdk__nvme__fdp__event.html#aa5dfb198b74786f5ff08136f508dbc8e", null ],
+    [ "bits", "structspdk__nvme__fdp__event.html#a2f020dfb99ea4ea635fee00a14f8bc80", null ],
     [ "etype", "structspdk__nvme__fdp__event.html#aab731e05e532c66ed75c1000371ab460", null ],
     [ "event_type_specific", "structspdk__nvme__fdp__event.html#af3666f09897bef545e53e7c98cc112aa", null ],
-    [ "fdpef", "structspdk__nvme__fdp__event.html#a66aff097b453f75c360c7c620d5d8ec9", null ],
+    [ "fdpef", "structspdk__nvme__fdp__event.html#aede2d80742b48bae678a08708013d2f5", null ],
     [ "lv", "structspdk__nvme__fdp__event.html#ae4362efe3f47bf6cbec687d134ba06dc", null ],
     [ "nsid", "structspdk__nvme__fdp__event.html#a7b2f11e89948aac09e8f7ca6e62cae8a", null ],
     [ "nsidv", "structspdk__nvme__fdp__event.html#a5f53b98cd22ef22f293a97b291717f8c", null ],

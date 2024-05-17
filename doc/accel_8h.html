@@ -150,9 +150,10 @@ Enumerations</h2></td></tr>
 , <b>SPDK_ACCEL_OPC_XOR</b> = 10
 , <b>SPDK_ACCEL_OPC_DIF_VERIFY</b> = 11
 , <br />
-&#160;&#160;<b>SPDK_ACCEL_OPC_DIF_GENERATE</b> = 12
-, <b>SPDK_ACCEL_OPC_DIF_GENERATE_COPY</b> = 13
-, <b>SPDK_ACCEL_OPC_LAST</b> = 14
+&#160;&#160;<b>SPDK_ACCEL_OPC_DIF_VERIFY_COPY</b> = 12
+, <b>SPDK_ACCEL_OPC_DIF_GENERATE</b> = 13
+, <b>SPDK_ACCEL_OPC_DIF_GENERATE_COPY</b> = 14
+, <b>SPDK_ACCEL_OPC_LAST</b> = 15
 <br />
  }</td></tr>
 <tr class="separator:a9b864a9a46bd4d2e0612d55cf682bc71"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -223,6 +224,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a9c58d3dae8d2ffb15a7cb582ac503bac"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="accel_8h.html#a9c58d3dae8d2ffb15a7cb582ac503bac">spdk_accel_submit_dif_verify</a> (struct spdk_io_channel *ch, struct iovec *iovs, size_t iovcnt, uint32_t num_blocks, const struct <a class="el" href="structspdk__dif__ctx.html">spdk_dif_ctx</a> *ctx, struct <a class="el" href="structspdk__dif__error.html">spdk_dif_error</a> *err, <a class="el" href="accel_8h.html#a6ba836b7b128829ba185eadb2c60476a">spdk_accel_completion_cb</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:a9c58d3dae8d2ffb15a7cb582ac503bac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submit a Data Integrity Field (DIF) verify request.  <a href="accel_8h.html#a9c58d3dae8d2ffb15a7cb582ac503bac">More...</a><br /></td></tr>
 <tr class="separator:a9c58d3dae8d2ffb15a7cb582ac503bac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed7eeb394df7c54e37131a5334a31e38"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="accel_8h.html#aed7eeb394df7c54e37131a5334a31e38">spdk_accel_submit_dif_verify_copy</a> (struct spdk_io_channel *ch, struct iovec *dst_iovs, size_t dst_iovcnt, struct iovec *src_iovs, size_t src_iovcnt, uint32_t num_blocks, const struct <a class="el" href="structspdk__dif__ctx.html">spdk_dif_ctx</a> *ctx, struct <a class="el" href="structspdk__dif__error.html">spdk_dif_error</a> *err, <a class="el" href="accel_8h.html#a6ba836b7b128829ba185eadb2c60476a">spdk_accel_completion_cb</a> cb_fn, void *cb_arg)</td></tr>
+<tr class="memdesc:aed7eeb394df7c54e37131a5334a31e38"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submit a Data Integrity Field (DIF) copy and verify request.  <a href="accel_8h.html#aed7eeb394df7c54e37131a5334a31e38">More...</a><br /></td></tr>
+<tr class="separator:aed7eeb394df7c54e37131a5334a31e38"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2d32c08aceebbe4ccb842a33fc3f0e5e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="accel_8h.html#a2d32c08aceebbe4ccb842a33fc3f0e5e">spdk_accel_submit_dif_generate</a> (struct spdk_io_channel *ch, struct iovec *iovs, size_t iovcnt, uint32_t num_blocks, const struct <a class="el" href="structspdk__dif__ctx.html">spdk_dif_ctx</a> *ctx, <a class="el" href="accel_8h.html#a6ba836b7b128829ba185eadb2c60476a">spdk_accel_completion_cb</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:a2d32c08aceebbe4ccb842a33fc3f0e5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submit a Data Integrity Field (DIF) generate request.  <a href="accel_8h.html#a2d32c08aceebbe4ccb842a33fc3f0e5e">More...</a><br /></td></tr>
 <tr class="separator:a2d32c08aceebbe4ccb842a33fc3f0e5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2542,7 +2546,7 @@ Functions</h2></td></tr>
     <tr><td class="paramname">ch</td><td>I/O channel associated with this call. </td></tr>
     <tr><td class="paramname">dst_iovs</td><td>The destination io vector array. The total allocated memory size needs to be at least: num_blocks * block_size (provided to spdk_dif_ctx_init()) </td></tr>
     <tr><td class="paramname">dst_iovcnt</td><td>The size of the destination io vectors array. </td></tr>
-    <tr><td class="paramname">src_iovs</td><td>The source io vector array. The total allocated memory size needs to be at least: num_blocks * block_size_no_md </td></tr>
+    <tr><td class="paramname">src_iovs</td><td>The source io vector array. The total allocated memory size needs to be at least: num_blocks * data_block_size. </td></tr>
     <tr><td class="paramname">src_iovcnt</td><td>The size of the source io vectors array. </td></tr>
     <tr><td class="paramname">num_blocks</td><td>Number of data blocks to process. </td></tr>
     <tr><td class="paramname">ctx</td><td>DIF context. Contains the DIF configuration values, including the reference Application Tag value and initial value of the Reference Tag to insert </td></tr>
@@ -2626,6 +2630,101 @@ Functions</h2></td></tr>
     <tr><td class="paramname">iovcnt</td><td>The size of the io vectors array. </td></tr>
     <tr><td class="paramname">num_blocks</td><td>Number of data blocks to check. </td></tr>
     <tr><td class="paramname">ctx</td><td>DIF context. Contains the DIF configuration values, including the reference Application Tag value and initial value of the Reference Tag to check Note: the user must ensure the validity of this pointer throughout the entire operation because it is not validated along the processing path. </td></tr>
+    <tr><td class="paramname">err</td><td>DIF error detailed information. Note: the user must ensure the validity of this pointer throughout the entire operation because it is not validated along the processing path. </td></tr>
+    <tr><td class="paramname">cb_fn</td><td>Called when this operation completes. </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>Callback argument.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, negative errno on failure. </dd></dl>
+
+</div>
+</div>
+<a id="aed7eeb394df7c54e37131a5334a31e38"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed7eeb394df7c54e37131a5334a31e38">&#9670;&nbsp;</a></span>spdk_accel_submit_dif_verify_copy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_accel_submit_dif_verify_copy </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_io_channel *&#160;</td>
+          <td class="paramname"><em>ch</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct iovec *&#160;</td>
+          <td class="paramname"><em>dst_iovs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>dst_iovcnt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct iovec *&#160;</td>
+          <td class="paramname"><em>src_iovs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>src_iovcnt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>num_blocks</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const struct <a class="el" href="structspdk__dif__ctx.html">spdk_dif_ctx</a> *&#160;</td>
+          <td class="paramname"><em>ctx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structspdk__dif__error.html">spdk_dif_error</a> *&#160;</td>
+          <td class="paramname"><em>err</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="accel_8h.html#a6ba836b7b128829ba185eadb2c60476a">spdk_accel_completion_cb</a>&#160;</td>
+          <td class="paramname"><em>cb_fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cb_arg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Submit a Data Integrity Field (DIF) copy and verify request. </p>
+<p>This operation copies memory from the source to the destination address and removes the DIF data with its verification according to the flags provided in the context.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ch</td><td>I/O channel associated with this call. </td></tr>
+    <tr><td class="paramname">dst_iovs</td><td>The destination I/O vector array. The total allocated memory size needs to be at least: num_blocks * block_size (provided to spdk_dif_ctx_init()) </td></tr>
+    <tr><td class="paramname">dst_iovcnt</td><td>The size of the destination I/O vectors array. </td></tr>
+    <tr><td class="paramname">src_iovs</td><td>The source I/O vector array. The total allocated memory size needs to be at least: num_blocks * data_block_size. </td></tr>
+    <tr><td class="paramname">src_iovcnt</td><td>The size of the source I/O vectors array. </td></tr>
+    <tr><td class="paramname">num_blocks</td><td>Number of data blocks to process. </td></tr>
+    <tr><td class="paramname">ctx</td><td>DIF context. Contains the DIF configuration values, including the reference Application Tag value and initial value of the Reference Tag to insert. </td></tr>
     <tr><td class="paramname">err</td><td>DIF error detailed information. Note: the user must ensure the validity of this pointer throughout the entire operation because it is not validated along the processing path. </td></tr>
     <tr><td class="paramname">cb_fn</td><td>Called when this operation completes. </td></tr>
     <tr><td class="paramname">cb_arg</td><td>Callback argument.</td></tr>

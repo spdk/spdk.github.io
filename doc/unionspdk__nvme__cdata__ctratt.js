@@ -1,6 +1,6 @@
 var unionspdk__nvme__cdata__ctratt =
 [
-    [ "bits", "unionspdk__nvme__cdata__ctratt.html#ab106c6f468abcda54ec07e5e231044ed", null ],
+    [ "bits", "unionspdk__nvme__cdata__ctratt.html#adc02e35359f34f801814c4114040aacc", null ],
     [ "delete_endurance_group", "unionspdk__nvme__cdata__ctratt.html#aedaf0925c052fdaea3d2db05b9a846a2", null ],
     [ "delete_nvm_set", "unionspdk__nvme__cdata__ctratt.html#a5a60b43ce41dc6ce6a87fd6a9a25aa42", null ],
     [ "elbas", "unionspdk__nvme__cdata__ctratt.html#a31b118493ebcdac180dd19f51cf7103b", null ],

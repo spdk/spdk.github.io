@@ -90,41 +90,42 @@ $(document).ready(function(){initNavTree('changelog.html',''); initResizable(); 
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p><a class="anchor" id="md_changelog"></a> </p>
-<h1><a class="anchor" id="changelog-v24-05"></a>
-v24.05: (Upcoming Release)</h1>
+<h1><a class="anchor" id="changelog-v24-09"></a>
+v24.09: (Upcoming Release)</h1>
+<h1>v24.05</h1>
 <h2>accel</h2>
-<p>spdk_accel_get/set_opts() has changed to act more like <a class="el" href="structspdk__bdev.html">spdk_bdev</a>'s variant.</p>
+<p><code>spdk_accel_get/set_opts()</code> has changed to act more like <a class="el" href="structspdk__bdev.html">spdk_bdev</a>'s variant.</p>
 <h2>bdev</h2>
 <p>Added <code><a class="el" href="bdev_8h.html#af833943e22885817e6954426b6a11b5f" title="Get controller attributes for the bdev.">spdk_bdev_get_nvme_ctratt()</a></code> API to get controller attributes of bdev.</p>
-<h2>lvol</h2>
-<p>Added <code>bdev_lvol_start_shallow_copy</code> RPC to start a shallow copy of an lvol over a given bdev and <code>bdev_lvol_check_shallow_copy</code> RPC to get the status of the operation. These RPCs use the new API <code>spdk_lvol_shallow_copy</code>.</p>
-<p>Added <code>bdev_lvol_set_parent</code> and <code>bdev_lvol_set_parent_bdev</code> RPC to change the parent of an existing lvol with the use of the new APIs <code>spdk_lvol_set_parent</code> and <code>spdk_lvol_set_external_parent</code>.</p>
+<h2>bdev_uring</h2>
+<p>Added <code>bdev_uring_rescan</code> RPC to allow rescaning the size of uring bdev.</p>
 <h2>blobstore</h2>
-<p>Added new API <code>spdk_bs_blob_shallow_copy</code> to make a shallow copy from a blob to a blobstore device. Only clusters allocated to the blob will be written on the device.</p>
-<p>Added new APIs <code>spdk_bs_blob_set_parent</code> and <code>spdk_bs_blob_set_external_parent</code> to change the parent of an existing lvol. With these new API a thin provisioned blob can become a clone of an existing snapshot or of an existing external snapshot.</p>
+<p>Added new API <code><a class="el" href="blob_8h.html#ad58a01866afc7755397833a26535ad74" title="Perform a shallow copy of a blob to a blobstore device.">spdk_bs_blob_shallow_copy()</a></code> to make a shallow copy from a blob to a blobstore device. Only clusters allocated to the blob will be written on the device.</p>
+<p>Added new APIs <code><a class="el" href="blob_8h.html#a2c1c118e86bb394aaa31fe230918c354" title="Set a snapshot as the parent of a blob.">spdk_bs_blob_set_parent()</a></code> and <code><a class="el" href="blob_8h.html#a3225050f74e3198444a966ba50599326" title="Set an external snapshot as the parent of a blob.">spdk_bs_blob_set_external_parent()</a></code> to change the parent of an existing lvol. With these new API a thin provisioned blob can become a clone of an existing snapshot or of an existing external snapshot.</p>
 <h2>event</h2>
 <p>SPDK applications can now start with <code>--wait-for-rpc</code> and JSON configuration provided at the same time.</p>
 <p>Struct <code><a class="el" href="structspdk__app__opts.html" title="Event framework initialization options.">spdk_app_opts</a></code> was extended by <code>json_data</code> and <code>json_data_size</code> fields allowing user to provide a buffer with JSON config as alternative to providing JSON config file path (these fields are mutually exclusive).</p>
 <h2>init</h2>
-<p>Function <code>spdk_subsystem_init_from_json_config</code> is deprecated and will be removed in 24.09 release. Please use <code>spdk_subsystem_load_config</code> instead.</p>
-<h2>nvme</h2>
-<p>Added <code>spdk_nvme_ctrlr_get_max_sges</code>.</p>
-<h2>bdev_uring</h2>
-<p>Added <code>bdev_uring_rescan</code> RPC to allow rescaning the size of uring bdev.</p>
+<p>Function <code><a class="el" href="init_8h.html#ab7168c69aeb807fe235c2d1d6900ca72" title="Like spdk_subsystem_init, but additionally configure each subsystem using the provided JSON config fi...">spdk_subsystem_init_from_json_config()</a></code> is deprecated and will be removed in 24.09 release. Please use <code><a class="el" href="init_8h.html#ad851acebf6332da09dd01d52d5146d15" title="Loads RPC configuration from provided JSON for current RPC state.">spdk_subsystem_load_config()</a></code> instead.</p>
 <h2>iscsi</h2>
 <p>Added <code>iscsi_get_stats</code> RPC method to get stat information about all active connections.</p>
-<p>Added <code>iscsi_enable_histogram</code> RPC method to enable or disable histogram for specified iscsi target.</p>
-<p>Added <code>iscsi_get_histogram</code> RPC method to get histogram for specified iscsi target.</p>
-<h2>thread</h2>
-<p>spdk_iobuf_get/set_opts() has changed to act more like <a class="el" href="structspdk__bdev.html">spdk_bdev</a>'s variant.</p>
-<h2>trace</h2>
-<p>Merged <code>struct spdk_trace_flags</code> and <code>struct spdk_trace_histories</code> into new <code>struct <a class="el" href="structspdk__trace__file.html">spdk_trace_file</a></code>. Also renamed <code>spdk_get_trace_histories_size()</code> to <code>spdk_get_trace_file_size()</code>.</p>
+<p>Added <code>iscsi_enable_histogram</code> RPC method to enable or disable histogram for specified iSCSI target.</p>
+<p>Added <code>iscsi_get_histogram</code> RPC method to get histogram for specified iSCSI target.</p>
+<h2>lvol</h2>
+<p>Added <code>bdev_lvol_start_shallow_copy</code> RPC to start a shallow copy of an lvol over a given bdev and <code>bdev_lvol_check_shallow_copy</code> RPC to get the status of the operation. These RPCs use the new API <code><a class="el" href="lvol_8h.html#a51cbd535567f9e798ac4d9a1ba51584a" title="Make a shallow copy of lvol on given bs_dev.">spdk_lvol_shallow_copy()</a></code>.</p>
+<p>Added <code>bdev_lvol_set_parent</code> and <code>bdev_lvol_set_parent_bdev</code> RPC to change the parent of an existing lvol with the use of the new APIs <code><a class="el" href="lvol_8h.html#ac86de32e88143da55f1538e86bac3acf" title="Set a snapshot as the parent of a lvol.">spdk_lvol_set_parent()</a></code> and <code><a class="el" href="lvol_8h.html#aa40f206290a851f01dc0b399155eb968" title="Set an external snapshot as the parent of a lvol.">spdk_lvol_set_external_parent()</a></code>.</p>
+<h2>nvme</h2>
+<p>Added <code><a class="el" href="nvme_8h.html#ab71a63c183172e6b6a3efae41cda00e9" title="Get the maximum number of SGEs per request for the given NVMe controller.">spdk_nvme_ctrlr_get_max_sges()</a></code> API to retrieve maximum number of SGEs per request for the given NVMe controller.</p>
 <h2>nvmf</h2>
-<p>Added support for namespace masking using new C APIs <code>spdk_nvmf_ns_add_host</code> and <code>spdk_nvmf_ns_remove_host</code> and RPCs <code>nvmf_ns_add_host</code> and <code>nvmf_ns_remove_host</code>. Users must pass new <code>--no-auto-visible</code> parameter to <code>nvmf_subsystem_add_ns</code> RPC to allow namespace masking to be controlled by these new RPCs.</p>
-<p>Added <code>spdk_nvmf_subsystem_get_ana_state</code> API to get current ANA state of a particular ANA group ID.</p>
-<p>Added support for enabling mDNS-based discovery of nvmf target for TCP transport with the addition of nvmf_publish_mdns_prr and nvmf_stop_mdns_prr RPCs.</p>
+<p>Added support for namespace masking using new C APIs <code><a class="el" href="nvmf_8h.html#a7efd2d18b66ecd33afadfacc6d5d6f2c" title="Make the specified namespace visible to the specified host.">spdk_nvmf_ns_add_host()</a></code> and <code><a class="el" href="nvmf_8h.html#af4adca2b5850519d70d7b8295cfc36e8" title="Make the specified namespace not visible to the specified host.">spdk_nvmf_ns_remove_host()</a></code> and RPCs <code>nvmf_ns_add_host</code> and <code>nvmf_ns_remove_host</code>. Users must pass new <code>--no-auto-visible</code> parameter to <code>nvmf_subsystem_add_ns</code> RPC to allow namespace masking to be controlled by these new RPCs.</p>
+<p>Added <code><a class="el" href="nvmf_8h.html#aa07cc53c49f75e299aa3987f21aa3cbc" title="Get Asymmetric Namespace Access (ANA) state for the specified ANA group id.">spdk_nvmf_subsystem_get_ana_state()</a></code> API to get current ANA state of a particular ANA group ID.</p>
+<p>Added support for enabling mDNS-based discovery of nvmf target for TCP transport with the addition of <code>nvmf_publish_mdns_prr</code> and <code>nvmf_stop_mdns_prr</code> RPCs.</p>
 <h2>spdk_trace</h2>
 <p><code>spdk_trace</code> has learned how to use the most recent trace file in /dev/shm when the user has specified neither <code>-f</code> nor <code>-s</code> options. This is only available on Linux since FreeBSD does not mount have a /dev/shm mount.</p>
+<h2>thread</h2>
+<p>Changed <code>spdk_iobuf_get/set_opts()</code> API to act more like <a class="el" href="structspdk__bdev.html">spdk_bdev</a>'s variant.</p>
+<h2>trace</h2>
+<p>Merged <code>struct spdk_trace_flags</code> and <code>struct spdk_trace_histories</code> into new <code>struct <a class="el" href="structspdk__trace__file.html">spdk_trace_file</a></code>. Also renamed <code>spdk_get_trace_histories_size()</code> to <code>spdk_get_trace_file_size()</code>.</p>
 <h1>v24.01</h1>
 <h2>accel</h2>
 <p>Added support for new operations for computing Data Integrity Field (DIF), <code><a class="el" href="accel_8h.html#a9c58d3dae8d2ffb15a7cb582ac503bac" title="Submit a Data Integrity Field (DIF) verify request.">spdk_accel_submit_dif_verify()</a></code>, <code><a class="el" href="accel_8h.html#a2d32c08aceebbe4ccb842a33fc3f0e5e" title="Submit a Data Integrity Field (DIF) generate request.">spdk_accel_submit_dif_generate()</a></code> and <code><a class="el" href="accel_8h.html#a2289636004169b418ed4e2a86217e4ff" title="Submit a Data Integrity Field (DIF) copy and generate request.">spdk_accel_submit_dif_generate_copy()</a></code>.</p>

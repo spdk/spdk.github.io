@@ -159,6 +159,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a5bf4736bd1b3e0ecfc19e51894c52bf0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="idxd_8h.html#a5bf4736bd1b3e0ecfc19e51894c52bf0">spdk_idxd_submit_dif_insert</a> (struct spdk_idxd_io_channel *chan, struct iovec *diov, size_t diovcnt, struct iovec *siov, size_t siovcnt, uint32_t num_blocks, const struct <a class="el" href="structspdk__dif__ctx.html">spdk_dif_ctx</a> *ctx, int flags, <a class="el" href="idxd_8h.html#a75c066c5425700c49f077e20484b50c1">spdk_idxd_req_cb</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:a5bf4736bd1b3e0ecfc19e51894c52bf0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Build and submit a DIF insert request.  <a href="idxd_8h.html#a5bf4736bd1b3e0ecfc19e51894c52bf0">More...</a><br /></td></tr>
 <tr class="separator:a5bf4736bd1b3e0ecfc19e51894c52bf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8a6bf85dceb1cee5bd6f91cf1d8e5ba"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="idxd_8h.html#ad8a6bf85dceb1cee5bd6f91cf1d8e5ba">spdk_idxd_submit_dif_strip</a> (struct spdk_idxd_io_channel *chan, struct iovec *diov, size_t diovcnt, struct iovec *siov, size_t siovcnt, uint32_t num_blocks, const struct <a class="el" href="structspdk__dif__ctx.html">spdk_dif_ctx</a> *ctx, int flags, <a class="el" href="idxd_8h.html#a75c066c5425700c49f077e20484b50c1">spdk_idxd_req_cb</a> cb_fn, void *cb_arg)</td></tr>
+<tr class="memdesc:ad8a6bf85dceb1cee5bd6f91cf1d8e5ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Build and submit a DIF strip request.  <a href="idxd_8h.html#ad8a6bf85dceb1cee5bd6f91cf1d8e5ba">More...</a><br /></td></tr>
+<tr class="separator:ad8a6bf85dceb1cee5bd6f91cf1d8e5ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9d3c2666201ade973ac2fe89a6346139"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="idxd_8h.html#a9d3c2666201ade973ac2fe89a6346139">spdk_idxd_submit_raw_desc</a> (struct spdk_idxd_io_channel *chan, struct <a class="el" href="structidxd__hw__desc.html">idxd_hw_desc</a> *desc, <a class="el" href="idxd_8h.html#a75c066c5425700c49f077e20484b50c1">spdk_idxd_req_cb</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:a9d3c2666201ade973ac2fe89a6346139"><td class="mdescLeft">&#160;</td><td class="mdescRight">Build and submit an IDXD raw request.  <a href="idxd_8h.html#a9d3c2666201ade973ac2fe89a6346139">More...</a><br /></td></tr>
 <tr class="separator:a9d3c2666201ade973ac2fe89a6346139"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -365,7 +368,7 @@ Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">cb_ctx</td><td>Opaque value which will be passed back in cb_ctx parameter of the callbacks. </td></tr>
     <tr><td class="paramname">probe_cb</td><td>callback to determine if the device being probe should be attached. </td></tr>
-    <tr><td class="paramname">attach_cb</td><td>will be called for devices for which probe_cb returned true once the IDXD controller has been attached to the userspace driver.</td></tr>
+    <tr><td class="paramname">attach_cb</td><td>will be called for devices for which probe_cb returned true. once the IDXD controller has been attached to the userspace driver.</td></tr>
   </table>
   </dd>
 </dl>
@@ -520,10 +523,10 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">chan</td><td>IDXD channel to submit request. </td></tr>
-    <tr><td class="paramname">siov1</td><td>First source iovec </td></tr>
-    <tr><td class="paramname">siov1cnt</td><td>Number of elements in siov1 </td></tr>
-    <tr><td class="paramname">siov2</td><td>Second source iovec </td></tr>
-    <tr><td class="paramname">siov2cnt</td><td>Number of elements in siov2 </td></tr>
+    <tr><td class="paramname">siov1</td><td>First source iovec. </td></tr>
+    <tr><td class="paramname">siov1cnt</td><td>Number of elements in siov1. </td></tr>
+    <tr><td class="paramname">siov2</td><td>Second source iovec. </td></tr>
+    <tr><td class="paramname">siov2cnt</td><td>Number of elements in siov2. </td></tr>
     <tr><td class="paramname">flags</td><td>Flags, optional flags that can vary per operation. </td></tr>
     <tr><td class="paramname">cb_fn</td><td>Callback function which will be called when the request is complete. </td></tr>
     <tr><td class="paramname">cb_arg</td><td>Opaque value which will be passed back as the arg parameter in the completion callback.</td></tr>
@@ -609,9 +612,9 @@ Functions</h2></td></tr>
     <tr><td class="paramname">chan</td><td>IDXD channel to submit request. </td></tr>
     <tr><td class="paramname">dst</td><td>Destination to write the compressed data to. </td></tr>
     <tr><td class="paramname">nbytes</td><td>Length in bytes. The dst buffer should be large enough to hold the compressed data. </td></tr>
-    <tr><td class="paramname">siov</td><td>Source iovec </td></tr>
-    <tr><td class="paramname">siovcnt</td><td>Number of elements in siov </td></tr>
-    <tr><td class="paramname">output_size</td><td>The size of the compressed data </td></tr>
+    <tr><td class="paramname">siov</td><td>Source iovec. </td></tr>
+    <tr><td class="paramname">siovcnt</td><td>Number of elements in siov. </td></tr>
+    <tr><td class="paramname">output_size</td><td>The size of the compressed data. </td></tr>
     <tr><td class="paramname">flags</td><td>Flags, optional flags that can vary per operation. </td></tr>
     <tr><td class="paramname">cb_fn</td><td>Callback function which will be called when the request is complete. </td></tr>
     <tr><td class="paramname">cb_arg</td><td>Opaque value which will be passed back as the arg parameter in the completion callback.</td></tr>
@@ -689,10 +692,10 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">chan</td><td>IDXD channel to submit request. </td></tr>
-    <tr><td class="paramname">diov</td><td>Destination iovec </td></tr>
-    <tr><td class="paramname">diovcnt</td><td>Number of elements in diov </td></tr>
-    <tr><td class="paramname">siov</td><td>Source iovec </td></tr>
-    <tr><td class="paramname">siovcnt</td><td>Number of elements in siov </td></tr>
+    <tr><td class="paramname">diov</td><td>Destination iovec. </td></tr>
+    <tr><td class="paramname">diovcnt</td><td>Number of elements in diov. </td></tr>
+    <tr><td class="paramname">siov</td><td>Source iovec. </td></tr>
+    <tr><td class="paramname">siovcnt</td><td>Number of elements in siov. </td></tr>
     <tr><td class="paramname">flags</td><td>Flags, optional flags that can vary per operation. </td></tr>
     <tr><td class="paramname">cb_fn</td><td>Callback function which will be called when the request is complete. </td></tr>
     <tr><td class="paramname">cb_arg</td><td>Opaque value which will be passed back as the arg parameter in the completion callback.</td></tr>
@@ -782,10 +785,10 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">chan</td><td>IDXD channel to submit request. </td></tr>
-    <tr><td class="paramname">diov</td><td>Destination iovec </td></tr>
-    <tr><td class="paramname">diovcnt</td><td>Number of elements in diov </td></tr>
-    <tr><td class="paramname">siov</td><td>Source iovec </td></tr>
-    <tr><td class="paramname">siovcnt</td><td>Number of elements in siov </td></tr>
+    <tr><td class="paramname">diov</td><td>Destination iovec. </td></tr>
+    <tr><td class="paramname">diovcnt</td><td>Number of elements in diov. </td></tr>
+    <tr><td class="paramname">siov</td><td>Source iovec. </td></tr>
+    <tr><td class="paramname">siovcnt</td><td>Number of elements in siov. </td></tr>
     <tr><td class="paramname">seed</td><td>Four byte CRC-32C seed value. </td></tr>
     <tr><td class="paramname">crc_dst</td><td>Resulting calculation. </td></tr>
     <tr><td class="paramname">flags</td><td>Flags, optional flags that can vary per operation. </td></tr>
@@ -865,8 +868,8 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">chan</td><td>IDXD channel to submit request. </td></tr>
-    <tr><td class="paramname">siov</td><td>Source iovec </td></tr>
-    <tr><td class="paramname">siovcnt</td><td>Number of elements in siov </td></tr>
+    <tr><td class="paramname">siov</td><td>Source iovec. </td></tr>
+    <tr><td class="paramname">siovcnt</td><td>Number of elements in siov. </td></tr>
     <tr><td class="paramname">seed</td><td>Four byte CRC-32C seed value. </td></tr>
     <tr><td class="paramname">crc_dst</td><td>Resulting calculation. </td></tr>
     <tr><td class="paramname">flags</td><td>Flags, optional flags that can vary per operation. </td></tr>
@@ -948,8 +951,8 @@ Functions</h2></td></tr>
     <tr><td class="paramname">chan</td><td>IDXD channel to submit request. </td></tr>
     <tr><td class="paramname">diov</td><td>Destination iovec. diov with diovcnt must be large enough to hold decompressed data. </td></tr>
     <tr><td class="paramname">diovcnt</td><td>Number of elements in diov for decompress buffer. </td></tr>
-    <tr><td class="paramname">siov</td><td>Source iovec </td></tr>
-    <tr><td class="paramname">siovcnt</td><td>Number of elements in siov </td></tr>
+    <tr><td class="paramname">siov</td><td>Source iovec. </td></tr>
+    <tr><td class="paramname">siovcnt</td><td>Number of elements in siov. </td></tr>
     <tr><td class="paramname">flags</td><td>Flags, optional flags that can vary per operation. </td></tr>
     <tr><td class="paramname">cb_fn</td><td>Callback function which will be called when the request is complete. </td></tr>
     <tr><td class="paramname">cb_arg</td><td>Opaque value which will be passed back as the arg parameter in the completion callback.</td></tr>
@@ -1027,10 +1030,10 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">chan</td><td>IDXD channel to submit request. </td></tr>
-    <tr><td class="paramname">siov</td><td>Source iovec </td></tr>
-    <tr><td class="paramname">siovcnt</td><td>Number of elements in siov </td></tr>
-    <tr><td class="paramname">num_blocks</td><td>Total number of blocks to process </td></tr>
-    <tr><td class="paramname">ctx</td><td>DIF context. Contains the DIF configuration values, including the reference Application Tag value and initial value of the Reference Tag to check </td></tr>
+    <tr><td class="paramname">siov</td><td>Source iovec. </td></tr>
+    <tr><td class="paramname">siovcnt</td><td>Number of elements in siov. </td></tr>
+    <tr><td class="paramname">num_blocks</td><td>Total number of blocks to process. </td></tr>
+    <tr><td class="paramname">ctx</td><td>DIF context. Contains the DIF configuration values, including the reference Application Tag value and initial value of the Reference Tag to check. </td></tr>
     <tr><td class="paramname">flags</td><td>Flags, optional flags that can vary per operation. </td></tr>
     <tr><td class="paramname">cb_fn</td><td>Callback function which will be called when the request is complete. </td></tr>
     <tr><td class="paramname">cb_arg</td><td>Opaque value which will be passed back as the cb_arg parameter in the completion callback.</td></tr>
@@ -1120,12 +1123,107 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">chan</td><td>IDXD channel to submit request. </td></tr>
-    <tr><td class="paramname">diov</td><td>Destination iovec </td></tr>
-    <tr><td class="paramname">diovcnt</td><td>Number of elements in diov </td></tr>
-    <tr><td class="paramname">siov</td><td>Source iovec </td></tr>
-    <tr><td class="paramname">siovcnt</td><td>Number of elements in siov </td></tr>
-    <tr><td class="paramname">num_blocks</td><td>Total number of blocks to process </td></tr>
-    <tr><td class="paramname">ctx</td><td>DIF context. Contains the DIF configuration values, including the reference Application Tag value and initial value of the Reference Tag to insert </td></tr>
+    <tr><td class="paramname">diov</td><td>Destination iovec. </td></tr>
+    <tr><td class="paramname">diovcnt</td><td>Number of elements in diov. </td></tr>
+    <tr><td class="paramname">siov</td><td>Source iovec. </td></tr>
+    <tr><td class="paramname">siovcnt</td><td>Number of elements in siov. </td></tr>
+    <tr><td class="paramname">num_blocks</td><td>Total number of blocks to process. </td></tr>
+    <tr><td class="paramname">ctx</td><td>DIF context. Contains the DIF configuration values, including the reference Application Tag value and initial value of the Reference Tag to insert. </td></tr>
+    <tr><td class="paramname">flags</td><td>Flags, optional flags that can vary per operation. </td></tr>
+    <tr><td class="paramname">cb_fn</td><td>Callback function which will be called when the request is complete. </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>Opaque value which will be passed back as the cb_arg parameter in the completion callback.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, negative errno on failure. </dd></dl>
+
+</div>
+</div>
+<a id="ad8a6bf85dceb1cee5bd6f91cf1d8e5ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8a6bf85dceb1cee5bd6f91cf1d8e5ba">&#9670;&nbsp;</a></span>spdk_idxd_submit_dif_strip()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_idxd_submit_dif_strip </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_idxd_io_channel *&#160;</td>
+          <td class="paramname"><em>chan</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct iovec *&#160;</td>
+          <td class="paramname"><em>diov</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>diovcnt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct iovec *&#160;</td>
+          <td class="paramname"><em>siov</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>siovcnt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>num_blocks</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const struct <a class="el" href="structspdk__dif__ctx.html">spdk_dif_ctx</a> *&#160;</td>
+          <td class="paramname"><em>ctx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>flags</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="idxd_8h.html#a75c066c5425700c49f077e20484b50c1">spdk_idxd_req_cb</a>&#160;</td>
+          <td class="paramname"><em>cb_fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cb_arg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Build and submit a DIF strip request. </p>
+<p>This function will build the DIF strip descriptor and then immediately submit by writing to the proper device portal. The transfer size must be a multiple of the source block size plus metadata for each source block. The number of bytes written to the destination is the transfer size minus metdata for each source block. The source and destination data can be scattered across several different buffers, but each source buffer has to be a multiple of a block size and each destination buffer has to be a multiple of a data block size excluding metadata. Moreover, the length of each element in the source array (siov) must be exactly the same as the corresponding element in the destination array (diov) excluding metadata size.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">chan</td><td>IDXD channel to submit request. </td></tr>
+    <tr><td class="paramname">diov</td><td>Destination iovec. </td></tr>
+    <tr><td class="paramname">diovcnt</td><td>Number of elements in diov. </td></tr>
+    <tr><td class="paramname">siov</td><td>Source iovec. </td></tr>
+    <tr><td class="paramname">siovcnt</td><td>Number of elements in siov. </td></tr>
+    <tr><td class="paramname">num_blocks</td><td>Total number of blocks to process. </td></tr>
+    <tr><td class="paramname">ctx</td><td>DIF context. Contains the DIF configuration values, including the reference Application Tag value and initial value of the Reference Tag. </td></tr>
     <tr><td class="paramname">flags</td><td>Flags, optional flags that can vary per operation. </td></tr>
     <tr><td class="paramname">cb_fn</td><td>Callback function which will be called when the request is complete. </td></tr>
     <tr><td class="paramname">cb_arg</td><td>Opaque value which will be passed back as the cb_arg parameter in the completion callback.</td></tr>
@@ -1278,8 +1376,8 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">chan</td><td>IDXD channel to submit request. </td></tr>
-    <tr><td class="paramname">diov</td><td>Destination iovec </td></tr>
-    <tr><td class="paramname">diovcnt</td><td>Number of elements in diov </td></tr>
+    <tr><td class="paramname">diov</td><td>Destination iovec. </td></tr>
+    <tr><td class="paramname">diovcnt</td><td>Number of elements in diov. </td></tr>
     <tr><td class="paramname">fill_pattern</td><td>Repeating eight-byte pattern to use for memory fill. </td></tr>
     <tr><td class="paramname">flags</td><td>Flags, optional flags that can vary per operation. </td></tr>
     <tr><td class="paramname">cb_fn</td><td>Callback function which will be called when the request is complete. </td></tr>

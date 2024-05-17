@@ -7311,7 +7311,11 @@ nvmf_set_config</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">poll_groups_mask   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Set cpumask for NVMf poll groups    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">discovery_filter   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Set discovery filter, possible values are: <code>match_any</code> (default) or comma separated values: <code>transport</code>, <code>address</code>, <code>svcid</code>   </td></tr>
+<td class="markdownTableBodyNone">discovery_filter   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Set discovery filter, possible values are: <code>match_any</code> (default) or comma separated values: <code>transport</code>, <code>address</code>, <code>svcid</code>    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">dhchap_digests   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">list   </td><td class="markdownTableBodyNone">List of allowed DH-HMAC-CHAP digests.    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">dhchap_dhgroups   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">list   </td><td class="markdownTableBodyNone">List of allowed DH-HMAC-CHAP DH groups.   </td></tr>
 </table>
 <h3><a class="anchor" id="spdk_nvmf_admin_passthru_conf"></a>
 admin_cmd_passthru</h3>

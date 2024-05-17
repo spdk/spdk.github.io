@@ -26,6 +26,7 @@ var accel_8h =
       [ "SPDK_ACCEL_OPC_DECRYPT", "accel_8h.html#a9b864a9a46bd4d2e0612d55cf682bc71a1c0f9c6bb51b84e3765780ee86e8c120", null ],
       [ "SPDK_ACCEL_OPC_XOR", "accel_8h.html#a9b864a9a46bd4d2e0612d55cf682bc71aeff27acdd3e707dfedd951d9c23263fa", null ],
       [ "SPDK_ACCEL_OPC_DIF_VERIFY", "accel_8h.html#a9b864a9a46bd4d2e0612d55cf682bc71a0e8d57850c067c9caa9210c6bd4d8b52", null ],
+      [ "SPDK_ACCEL_OPC_DIF_VERIFY_COPY", "accel_8h.html#a9b864a9a46bd4d2e0612d55cf682bc71a7b6a4621b8b556a06b5ab19e639709a0", null ],
       [ "SPDK_ACCEL_OPC_DIF_GENERATE", "accel_8h.html#a9b864a9a46bd4d2e0612d55cf682bc71a1861895b369cb362edb9351e3dfe953a", null ],
       [ "SPDK_ACCEL_OPC_DIF_GENERATE_COPY", "accel_8h.html#a9b864a9a46bd4d2e0612d55cf682bc71a5f18683efef61522edb8b747c3c8b408", null ],
       [ "SPDK_ACCEL_OPC_LAST", "accel_8h.html#a9b864a9a46bd4d2e0612d55cf682bc71a8efd6d3794dd7d83bb2f70387b69a60e", null ]
@@ -68,6 +69,7 @@ var accel_8h =
     [ "spdk_accel_submit_dif_generate", "accel_8h.html#a2d32c08aceebbe4ccb842a33fc3f0e5e", null ],
     [ "spdk_accel_submit_dif_generate_copy", "accel_8h.html#a2289636004169b418ed4e2a86217e4ff", null ],
     [ "spdk_accel_submit_dif_verify", "accel_8h.html#a9c58d3dae8d2ffb15a7cb582ac503bac", null ],
+    [ "spdk_accel_submit_dif_verify_copy", "accel_8h.html#aed7eeb394df7c54e37131a5334a31e38", null ],
     [ "spdk_accel_submit_dualcast", "accel_8h.html#a402f5ed0f1fac5c37f965a55f0d0bf55", null ],
     [ "spdk_accel_submit_encrypt", "accel_8h.html#ab071bfaad7673954a9bd6a9ca41f1c77", null ],
     [ "spdk_accel_submit_fill", "accel_8h.html#adb62b1e99d9a010c140987eea57f5dc4", null ],
