@@ -6,8 +6,8 @@ jsfiles: js/meetings.js
 toc:
   - title: Slack
     url: "#slack"
-  - title: Trello
-    url: "#trello"
+  - title: Enhancement Requests
+    url: "#enhancements"
   - title: Mailing List
     url: "#mailing_list"
   - title: Community Meetings
@@ -23,10 +23,10 @@ toc:
 
 For real-time discussions, join us on [Slack](https://join.slack.com/t/spdk-team/shared_invite/enQtNzg2NTgxNTgzNzEyLWQ2Y2NmOGFkN2FlYjczMWY1ZDZiMzFjZTI4ZGIyZDc0YTA3ZjE5YWQ3MGVjYzI1MTg0OGYzMjFhZDczZDYwZmY).
 
-<a id="trello"></a>
-# Trello Board
+<a id="enhancements"></a>
+# Enhancement Requests
 
-Find something to work on the backlog in your area of interest, or start/participate in a design discussion on any of the [SPDK Trello Boards](../trello/).
+Find something to work on the backlog in your area of interest, or start/participate in a design discussion on any of the [enhancement requests](https://github.com/spdk/spdk/issues?q=is:issue+is:open+label:enhancement).
 
 <a id="mailing_list"></a>
 # Mailing List
@@ -49,11 +49,9 @@ meeting is held in English, and the following is held in Mandarin for PRC only.
 Please see the bottom of this [page](#holidays) for holidays when regularly
 scheduled community meetings will be cancelled.
 
-Please post proposed topics for community meetings on [Trello](https://trello.com/b/DvM7XayJ)
-prior to the meeting. If you don't have a Trello login, sign up and then ask in Slack
-or on the mailing list to to be added to the board. If we are able to cover
-the posted topics before the end of the meeting we can use the time to discuss
-additional items.
+Please post proposed topics for community meetings on the Community Meeting
+[board](https://github.com/orgs/spdk/projects/1) prior to the meeting. If we are able to cover the
+posted topics before the end of the meeting we can use the time to discuss additional items.
 
 There are also Github issue review meetings that are held in each respective time zone on the
 week where there is no community meeting for that geo. Note that bugs are tracked on the [SPDK GitHub issue tracker](https://github.com/spdk/spdk/issues).

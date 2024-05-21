@@ -39,7 +39,7 @@ toc:
   - title: Continuous Integration
     url: "../ci/"
   - title: Roadmap
-    url: "https://trello.com/b/MN8auadQ/spdk-roadmap"
+    url: "https://github.com/orgs/spdk/projects/5"
   - title: CVE Process and Threat Modeling
     url: "../cve_threat/"
   - title: Debugging Tips
@@ -79,9 +79,6 @@ the [core maintainers](#core) who can be contacted on the mailing list or in Sla
 These general guidelines help ensure that the SPDK development community remains fun, fair, and efficient.
 
 * Developers should strive to be active on Gerrit in order to stay in the loop on upcoming changes.
-* [Trello](https://www.trello.com/spdk/) is where we maintain our backlog and is a great place for design
-material for more complex patches. Once code has been merged, however, the documentation in the repository
-supersedes any materials found on Trello (i.e., collateral found on Trello is not maintained once a feature is merged).
 * Coding and submission guidelines (i.e. being clear and concise in the commit message) should always be respected.
 * Developers do not need to add specific reviewers to patches. Instead, the maintainers and everyone else in the community
 should always be on the lookout for incoming patches. If a developer would like to be added to a review, or would like

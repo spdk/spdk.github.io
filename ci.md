@@ -5,8 +5,6 @@ title: Continuous Integration
 toc:
   - title: SPDK Jenkins Test Pool Status
     url: "https://ci.spdk.io/"
-  - title: SPDK Trello Board
-    url: "https://trello.com/b/P5xBO7UR/things-to-do"
 ---
 
 The SPDK continuous integration (CI) test pool is an ever expanding group of machines dedicated to verifying the functionality of each patch submitted to the SPDK code base. The test pool currently consists of over 90 machines running Fedora Server. All of the systems have hardware NVMe controllers (Intel P4510, P4600 or P4610) installed, and most of them have additional hardware installed, like:
@@ -28,6 +26,6 @@ In case you would like to suggest a change in SPDK's continuous integration envi
   * what is the expected outcome?
   * what are the completion criteria?
 
-Anyone is allowed to contribute patches to the SPDK code base. All patches, after review, will be tested against the SPDK CI test pool. For more information on this process, please see the [development](http://www.spdk.io/development/) page. If you are interested in contributing to the SPDK code base, but do not know where to begin, feel free to check out the [Trello "Things to do" board](https://trello.com/b/P5xBO7UR/things-to-do).
+Anyone is allowed to contribute patches to the SPDK code base. All patches, after review, will be tested against the SPDK CI test pool. For more information on this process, please see the [development](http://www.spdk.io/development/) page.
 
 The SPDK [homepage](http://www.spdk.io/) is also version controlled and has an associated continuous integration test pool. Links to both the SPDK test pool and webpage test pool are included at right.
