@@ -97,6 +97,13 @@ v24.09: (Upcoming Release)</h1>
 <p><code>spdk_accel_get/set_opts()</code> has changed to act more like <a class="el" href="structspdk__bdev.html">spdk_bdev</a>'s variant.</p>
 <h2>bdev</h2>
 <p>Added <code><a class="el" href="bdev_8h.html#af833943e22885817e6954426b6a11b5f" title="Get controller attributes for the bdev.">spdk_bdev_get_nvme_ctratt()</a></code> API to get controller attributes of bdev.</p>
+<h2>bdev_raid</h2>
+<p>Added support for interleaved metadata.</p>
+<p>Added RAID1 I/O error handling.</p>
+<p>Examining a bdev with RAID superblock now searches for other base bdevs that may be present.</p>
+<p>Re-adding a removed base bdev with superblock will now begin rebuild on applicable RAID levels.</p>
+<p>Base bdevs can now be added back if were removed while in configuring state.</p>
+<p>RAID in configuring state will not be removed if the last base bdev is removed.</p>
 <h2>bdev_uring</h2>
 <p>Added <code>bdev_uring_rescan</code> RPC to allow rescaning the size of uring bdev.</p>
 <h2>blobstore</h2>
@@ -111,15 +118,19 @@ v24.09: (Upcoming Release)</h1>
 <p>Added <code>iscsi_get_stats</code> RPC method to get stat information about all active connections.</p>
 <p>Added <code>iscsi_enable_histogram</code> RPC method to enable or disable histogram for specified iSCSI target.</p>
 <p>Added <code>iscsi_get_histogram</code> RPC method to get histogram for specified iSCSI target.</p>
+<h2>keyring</h2>
+<p>Added keyring library. Its purpose is to provide secure access to cryptographic keys from other libraries. Prior to being used, keys need to be attached to the keyring using one of the modules, which are responsible for retrieving keying material in a secure manner. Currently, there are two keyring modules implemented: <code>keyring_file</code> (keys are stored in files on a filesystem) and <code>keyring_linux</code> (based on Linux kernel keyring). The module interface is pluggable, so users can implement their own keyring modules.</p>
 <h2>lvol</h2>
 <p>Added <code>bdev_lvol_start_shallow_copy</code> RPC to start a shallow copy of an lvol over a given bdev and <code>bdev_lvol_check_shallow_copy</code> RPC to get the status of the operation. These RPCs use the new API <code><a class="el" href="lvol_8h.html#a51cbd535567f9e798ac4d9a1ba51584a" title="Make a shallow copy of lvol on given bs_dev.">spdk_lvol_shallow_copy()</a></code>.</p>
 <p>Added <code>bdev_lvol_set_parent</code> and <code>bdev_lvol_set_parent_bdev</code> RPC to change the parent of an existing lvol with the use of the new APIs <code><a class="el" href="lvol_8h.html#ac86de32e88143da55f1538e86bac3acf" title="Set a snapshot as the parent of a lvol.">spdk_lvol_set_parent()</a></code> and <code><a class="el" href="lvol_8h.html#aa40f206290a851f01dc0b399155eb968" title="Set an external snapshot as the parent of a lvol.">spdk_lvol_set_external_parent()</a></code>.</p>
 <h2>nvme</h2>
 <p>Added <code><a class="el" href="nvme_8h.html#ab71a63c183172e6b6a3efae41cda00e9" title="Get the maximum number of SGEs per request for the given NVMe controller.">spdk_nvme_ctrlr_get_max_sges()</a></code> API to retrieve maximum number of SGEs per request for the given NVMe controller.</p>
+<p>The NVMe driver now supports in-band authentication using the DH-HMAC-CHAP protocol. To enable it, users need to specify keys in the <code>bdev_nvme_attach_controller</code> RPC. Additionally, it's possible to limit the allowed digests and Diffie-Hellman groups via <code>bdev_nvme_set_options</code>.</p>
 <h2>nvmf</h2>
 <p>Added support for namespace masking using new C APIs <code><a class="el" href="nvmf_8h.html#a7efd2d18b66ecd33afadfacc6d5d6f2c" title="Make the specified namespace visible to the specified host.">spdk_nvmf_ns_add_host()</a></code> and <code><a class="el" href="nvmf_8h.html#af4adca2b5850519d70d7b8295cfc36e8" title="Make the specified namespace not visible to the specified host.">spdk_nvmf_ns_remove_host()</a></code> and RPCs <code>nvmf_ns_add_host</code> and <code>nvmf_ns_remove_host</code>. Users must pass new <code>--no-auto-visible</code> parameter to <code>nvmf_subsystem_add_ns</code> RPC to allow namespace masking to be controlled by these new RPCs.</p>
 <p>Added <code><a class="el" href="nvmf_8h.html#aa07cc53c49f75e299aa3987f21aa3cbc" title="Get Asymmetric Namespace Access (ANA) state for the specified ANA group id.">spdk_nvmf_subsystem_get_ana_state()</a></code> API to get current ANA state of a particular ANA group ID.</p>
 <p>Added support for enabling mDNS-based discovery of nvmf target for TCP transport with the addition of <code>nvmf_publish_mdns_prr</code> and <code>nvmf_stop_mdns_prr</code> RPCs.</p>
+<p>The NVMe-oF target now supports in-band authentication using the DH-HMAC-CHAP protocol. The target will request hosts to authenticate if they're configured to use DH-HMAC-CHAP keys. The keys can be set in the <code>nvmf_subsystem_add_host</code> RPC. Additionally, it's possible to limit the allowed digests and Diffie-Hellman groups via <code>nvmf_set_config</code>.</p>
 <h2>spdk_trace</h2>
 <p><code>spdk_trace</code> has learned how to use the most recent trace file in /dev/shm when the user has specified neither <code>-f</code> nor <code>-s</code> options. This is only available on Linux since FreeBSD does not mount have a /dev/shm mount.</p>
 <h2>thread</h2>
