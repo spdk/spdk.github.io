@@ -15,7 +15,7 @@ SPDK定义了一个公共[API](https://en.wikipedia.org/wiki/Application_program
 例如，2016年12月发布的版本是16.12。次要版本是为以后发布的bug修复版本预留的，这些版本仍然与原始版本兼容。SPDK并不保证不同版本的发行版之间的API兼容性，尽管会尽一切努力避免破坏API。版本相同但次要版本号不同的版本保证是API兼容的。SPDK目前不保证两个版本之间的[ABI](https://en.wikipedia.org/wiki/Application_binary_interface)兼容性。
 
 SPDK 使用季度发布周期。每个季度的前两个月是一个开放的合并时期。每个季度的最后一个月仅用于 bug 修复和文档修改, 因此, 在维护人员的斟酌判断
-下，可能会延迟包含新功能的请求。下一个版本的[粗略发展规划](https://trello.com/b/MN8auadQ/spdk-roadmap)总是在发布周期伊始发布。路线图可以随时在SPDK邮寄列表中讨论，并且非常欢迎反馈意见。
+下，可能会延迟包含新功能的请求。下一个版本的[A high level roadmap](https://github.com/orgs/spdk/projects/5)总是在发布周期伊始发布。路线图可以随时在SPDK邮寄列表中讨论，并且非常欢迎反馈意见。
 
 错误报告
 -----------
