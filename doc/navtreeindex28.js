@@ -1,5 +1,9 @@
 var NAVTREEINDEX28 =
 {
+"structspdk__nvmf__fabric__connect__cmd.html#a5d7884802bf914c392e9cfea98d77a5a":[14,0,307,3],
+"structspdk__nvmf__fabric__connect__cmd.html#a5dff96d65df3fb2d0f845d940c25d335":[14,0,307,10],
+"structspdk__nvmf__fabric__connect__cmd.html#a658230ebdae66b7140e25723069040e1":[14,0,307,1],
+"structspdk__nvmf__fabric__connect__cmd.html#a6bae3d02c2ea2b66bb2fb59d318bb95f":[14,0,307,2],
 "structspdk__nvmf__fabric__connect__cmd.html#a85f2665a879ac23df282f641341f01c0":[14,0,307,4],
 "structspdk__nvmf__fabric__connect__cmd.html#a8e5688469a4f7cfa586cd872b414fa73":[14,0,307,8],
 "structspdk__nvmf__fabric__connect__cmd.html#aad283d59cae07b39d5471e5f0ed895c7":[14,0,307,5],
@@ -245,9 +249,5 @@ var NAVTREEINDEX28 =
 "structspdk__nvmf__poll__group.html#a49ae0a3dede90b1faacb7541d31d7f62":[14,0,341,3],
 "structspdk__nvmf__poll__group.html#a61e420c31fe45f08dd4efb43237f4884":[14,0,341,2],
 "structspdk__nvmf__poll__group.html#a8252a37d2277d0af535801aaa64adf91":[14,0,341,6],
-"structspdk__nvmf__poll__group.html#a83ac8e14a54372aa17c2c9ac4d12eceb":[14,0,341,5],
-"structspdk__nvmf__poll__group.html#ac59498d3fc905b4fd575454cda8707ff":[14,0,341,10],
-"structspdk__nvmf__poll__group.html#ad1682c942edc972b61450cdb7e775445":[14,0,341,7],
-"structspdk__nvmf__poll__group.html#ad8dd6675b21c245a6790338b7d4b796e":[14,0,341,9],
-"structspdk__nvmf__poll__group.html#aeef7e086f1560a61c196d74660665c10":[14,0,341,1]
+"structspdk__nvmf__poll__group.html#a83ac8e14a54372aa17c2c9ac4d12eceb":[14,0,341,5]
 };

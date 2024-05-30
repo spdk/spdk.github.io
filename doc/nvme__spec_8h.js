@@ -325,6 +325,11 @@ var nvme__spec_8h =
       [ "SPDK_NVME_CSI_KV", "nvme__spec_8h.html#a8d4465980e10527d891eb3654957f6bea5169dc84cc9ad66704b1a02f3e3d29ef", null ],
       [ "SPDK_NVME_CSI_ZNS", "nvme__spec_8h.html#a8d4465980e10527d891eb3654957f6beacda6f340e1616ad06a454e3822c89646", null ]
     ] ],
+    [ "spdk_nvme_ctrlr_type", "nvme__spec_8h.html#a5ba498864f955c329710d21503b69594", [
+      [ "SPDK_NVME_CTRLR_IO", "nvme__spec_8h.html#a5ba498864f955c329710d21503b69594a884bd239fbad122564f3d4c3fb45dd01", null ],
+      [ "SPDK_NVME_CTRLR_DISCOVERY", "nvme__spec_8h.html#a5ba498864f955c329710d21503b69594abf5665daedb172cd89812bc293efed5b", null ],
+      [ "SPDK_NVME_CTRLR_ADMINISTRATIVE", "nvme__spec_8h.html#a5ba498864f955c329710d21503b69594aa42140ccac094514a2edab5c2339643b", null ]
+    ] ],
     [ "spdk_nvme_data_transfer", "nvme__spec_8h.html#adbe38e042bb939183ed8fd5c1685b2fc", [
       [ "SPDK_NVME_DATA_NONE", "nvme__spec_8h.html#adbe38e042bb939183ed8fd5c1685b2fca4d074786dad4f37c0211563ec0376974", null ],
       [ "SPDK_NVME_DATA_HOST_TO_CONTROLLER", "nvme__spec_8h.html#adbe38e042bb939183ed8fd5c1685b2fca7f08188b3c5f57f2f694f6ef13ad0110", null ],

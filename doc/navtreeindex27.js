@@ -1,5 +1,9 @@
 var NAVTREEINDEX27 =
 {
+"structspdk__nvme__transport__ops.html#a8d4c1950af83945c31fc0daa0fbbdf46":[14,0,283,30],
+"structspdk__nvme__transport__ops.html#a92b28113dc0ff6b96d192a4d74875bfa":[14,0,283,34],
+"structspdk__nvme__transport__ops.html#a9463b78cd40875fad675faa4e5c09c69":[14,0,283,18],
+"structspdk__nvme__transport__ops.html#aa2a9b9fd1cce4f91080ef7f5d83b1aab":[14,0,283,24],
 "structspdk__nvme__transport__ops.html#aa2b680e54e16dee664b4dd0fc461271e":[14,0,283,25],
 "structspdk__nvme__transport__ops.html#aa419718b8b580046669c904758b49231":[14,0,283,9],
 "structspdk__nvme__transport__ops.html#aa53e4bd83259554348460405d7afd654":[14,0,283,29],
@@ -245,9 +249,5 @@ var NAVTREEINDEX27 =
 "structspdk__nvmf__fabric__auth__send__cmd.html#ad48220599a0dc202f62dd4efc204f590":[14,0,306,4],
 "structspdk__nvmf__fabric__connect__cmd.html":[14,0,307],
 "structspdk__nvmf__fabric__connect__cmd.html#a0c91d1be26d3ea4626b38caf5041130e":[14,0,307,9],
-"structspdk__nvmf__fabric__connect__cmd.html#a2440e864ecbf3dfbcc3a456dae2036b8":[14,0,307,7],
-"structspdk__nvmf__fabric__connect__cmd.html#a5d7884802bf914c392e9cfea98d77a5a":[14,0,307,3],
-"structspdk__nvmf__fabric__connect__cmd.html#a5dff96d65df3fb2d0f845d940c25d335":[14,0,307,10],
-"structspdk__nvmf__fabric__connect__cmd.html#a658230ebdae66b7140e25723069040e1":[14,0,307,1],
-"structspdk__nvmf__fabric__connect__cmd.html#a6bae3d02c2ea2b66bb2fb59d318bb95f":[14,0,307,2]
+"structspdk__nvmf__fabric__connect__cmd.html#a2440e864ecbf3dfbcc3a456dae2036b8":[14,0,307,7]
 };
