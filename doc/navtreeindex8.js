@@ -1,5 +1,6 @@
 var NAVTREEINDEX8 =
 {
+"jsonrpc.html#rpc_rpc_get_methods":[3,9,3,4],
 "jsonrpc.html#rpc_scsi_get_devices":[3,9,6,2],
 "jsonrpc.html#rpc_sock_get_default_impl":[3,9,13,3],
 "jsonrpc.html#rpc_sock_impl_get_options":[3,9,13,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX8 =
 "nvme.html#nvme_multi_process_configuration":[7,0,6,0],
 "nvme.html#nvme_multi_process_limitations":[7,0,6,1],
 "nvme.html#nvme_perf":[7,0,2,2],
-"nvme.html#nvme_scaling":[7,0,4,0,1],
-"nvme.html#nvme_toc":[7,0,0]
+"nvme.html#nvme_scaling":[7,0,4,0,1]
 };

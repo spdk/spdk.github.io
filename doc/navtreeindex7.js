@@ -1,5 +1,6 @@
 var NAVTREEINDEX7 =
 {
+"jsonrpc.html#jsonrpc_components_vhost_tgt":[3,9,8],
 "jsonrpc.html#jsonrpc_convert":[3,9,2,1],
 "jsonrpc.html#jsonrpc_error_message":[3,9,1],
 "jsonrpc.html#jsonrpc_generate":[3,9,2,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX7 =
 "jsonrpc.html#rpc_nvmf_subsystem_remove_host":[3,9,7,10],
 "jsonrpc.html#rpc_nvmf_subsystem_remove_listener":[3,9,7,5],
 "jsonrpc.html#rpc_nvmf_subsystem_remove_ns":[3,9,7,8],
-"jsonrpc.html#rpc_py":[3,9,2],
-"jsonrpc.html#rpc_rpc_get_methods":[3,9,3,4]
+"jsonrpc.html#rpc_py":[3,9,2]
 };

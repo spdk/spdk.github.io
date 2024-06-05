@@ -1,5 +1,6 @@
 var NAVTREEINDEX4 =
 {
+"functions_k.html":[14,2,0,10],
 "functions_l.html":[14,2,0,11],
 "functions_m.html":[14,2,0,12],
 "functions_n.html":[14,2,0,13],
@@ -51,8 +52,8 @@ var NAVTREEINDEX4 =
 "globals_defs.html":[15,1,5],
 "globals_enum.html":[15,1,3],
 "globals_eval.html":[15,1,4],
-"globals_func.html":[15,1,1],
 "globals_func.html":[15,1,1,0],
+"globals_func.html":[15,1,1],
 "globals_i.html":[15,1,0,1],
 "globals_l.html":[15,1,0,2],
 "globals_s.html":[15,1,0,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX4 =
 "idxd__spec_8h.html#a0967bbfbd6e7bd9eda54b2fa12fbd22f":[15,0,29,149],
 "idxd__spec_8h.html#a0c230046f89d8301328da1152518bd59":[15,0,29,80],
 "idxd__spec_8h.html#a0e35cbc93982b6a74977a87889d52403":[15,0,29,54],
-"idxd__spec_8h.html#a0e4a46bf8c1c3718a1d7d15fa39b59e0":[15,0,29,124],
-"idxd__spec_8h.html#a0e89cf6b9f6cd3125470b1bed2b823df":[15,0,29,97]
+"idxd__spec_8h.html#a0e4a46bf8c1c3718a1d7d15fa39b59e0":[15,0,29,124]
 };
