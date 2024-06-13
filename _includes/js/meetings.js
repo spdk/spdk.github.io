@@ -1,8 +1,5 @@
 var euroDate = new Date(Date.UTC(2018, 3, 3, 15, 0, 0, 0));
 var euroBugDate = new Date(Date.UTC(2018, 3, 10, 15, 0, 0, 0));
-var asiaBugDate = new Date(Date.UTC(2018, 3, 19, 4, 0, 0, 0));
-var asiaDate = new Date(Date.UTC(2022, 10, 3, 4, 0, 0, 0));
-var asiaPRCDate = new Date(Date.UTC(2022, 10, 17, 4, 0, 0, 0));
 
 // Holiday list. Should be of form [date, recurring=true/false]
 var USHolidays = [[ new Date(2018, 11, 24), true ], //Christmas Eve
@@ -20,12 +17,9 @@ var USHolidays = [[ new Date(2018, 11, 24), true ], //Christmas Eve
 
 var EuroHolidays = []
 
-var AsiaHolidays = []
-
 // Time zones for holiday checking.
 var USTimeZone = 'America/Phoenix'
 var EuroTimeZone = 'Europe/Warsaw'
-var AsiaTimeZone = 'Asia/Shanghai'
 
 function compareHoliday(date, holidayList, zone) {
         var overnightStart = 16;
@@ -73,14 +67,6 @@ while (euroDate < currentDate || compareHoliday(euroDate, USHolidays, USTimeZone
         euroDate.setDate(euroDate.getDate() + 14);
 }
 
-while (asiaDate < currentDate || compareHoliday(asiaDate, USHolidays, USTimeZone) || compareHoliday(asiaDate, AsiaHolidays, AsiaTimeZone)) {
-        asiaDate.setDate(asiaDate.getDate() + 28);
-}
-
-while (asiaPRCDate < currentDate || compareHoliday(asiaPRCDate, USHolidays, USTimeZone) || compareHoliday(asiaPRCDate, AsiaHolidays, AsiaTimeZone)) {
-        asiaPRCDate.setDate(asiaPRCDate.getDate() + 28);
-}
-
 while (euroBugDate < currentDate || compareHoliday(euroBugDate, USHolidays, USTimeZone) || compareHoliday(euroBugDate, EuroHolidays, EuroTimeZone)) {
         euroBugDate.setDate(euroBugDate.getDate() + 14);
 }
@@ -88,11 +74,7 @@ while (euroBugDate < currentDate || compareHoliday(euroBugDate, USHolidays, USTi
 // Regenerate the dates here - this makes sure we account for daylight savings adjustments between the starting
 // date at the beginning of this file and the calculated address based on the current date/time.
 euroDate = new Date(Date.UTC(euroDate.getUTCFullYear(), euroDate.getUTCMonth(), euroDate.getUTCDate(), 15, 0, 0, 0));
-asiaDate = new Date(Date.UTC(asiaDate.getUTCFullYear(), asiaDate.getUTCMonth(), asiaDate.getUTCDate(), 4, 0, 0, 0));
-asiaPRCDate = new Date(Date.UTC(asiaPRCDate.getUTCFullYear(), asiaPRCDate.getUTCMonth(), asiaPRCDate.getUTCDate(), 4, 0, 0, 0));
 euroBugDate = new Date(Date.UTC(euroBugDate.getUTCFullYear(), euroBugDate.getUTCMonth(), euroBugDate.getUTCDate(), 15, 0, 0, 0));
 
 document.getElementById("euro-mtg").textContent = formatDate(euroDate);
-document.getElementById("asia-mtg").textContent = formatDate(asiaDate);
-document.getElementById("asia-prc-mtg").textContent = formatDate(asiaPRCDate);
 document.getElementById("euro-bug-mtg").textContent = formatDate(euroBugDate);
