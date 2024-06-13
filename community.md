@@ -42,10 +42,7 @@ SPDK Community meetings are open to everyone and all are encouraged to
 participate. The primary purpose is to cover topics where verbal communication
 is more efficient than email or Slack. The meetings are hosted using Teams.
 
-There is a community meeting each week at alternating time slots selected so
-that one week is a Euro-friendly time and the following week is an
-Asia-friendly time. For Asia-friendly time slots Community meetings, one Community
-meeting is held in English, and the following is held in Mandarin for PRC only.
+There is a bi-weekly community meeting at Euro-friendly time slots.
 Please see the bottom of this [page](#holidays) for holidays when regularly
 scheduled community meetings will be cancelled.
 
@@ -53,8 +50,8 @@ Please post proposed topics for community meetings on the Community Meeting
 [board](https://github.com/orgs/spdk/projects/1) prior to the meeting. If we are able to cover the
 posted topics before the end of the meeting we can use the time to discuss additional items.
 
-There are also Github issue review meetings that are held in each respective time zone on the
-week where there is no community meeting for that geo. Note that bugs are tracked on the [SPDK GitHub issue tracker](https://github.com/spdk/spdk/issues).
+There are also Github issue review meetings that are held on the following week of the community
+meeting. Note that bugs are tracked on the [SPDK GitHub issue tracker](https://github.com/spdk/spdk/issues).
 
 ## Euro-Friendly Conference Information
 
@@ -62,23 +59,11 @@ week where there is no community meeting for that geo. Note that bugs are tracke
 
 Or audio only: +1 916 245 6934 (ID: 809 414 511#)
 
-## Asia-Friendly Conference Information
-
-[Join on your computer or mobile app](https://teams.microsoft.com/l/meetup-join/19%3ameeting_MDQ5NGU2MmQtNjU1NC00YTNlLTkwMGQtZjIzNDU1MWZhNTEy%40thread.v2/0?context=%7b%22Tid%22%3a%2246c98d88-e344-4ed4-8496-4ed7712e255d%22%2c%22Oid%22%3a%22179d2293-79dc-4f8e-8f1f-3f881e309cb5%22%7d)
-
-Or audio only: +1 916 245 6934 (ID: 664 940 190#)
-
-## Next Asia-Friendly Community Meeting (In English)
-<div id="asia-mtg"></div>
-
 ## Next Euro-Friendly Community Meeting
 <div id="euro-mtg"></div>
 
 ## Next Euro-Friendly Github Issue Review Meeting
 <div id="euro-bug-mtg"></div>
-
-## Next PRC Community Meeting (In Mandarin)
-<div id="asia-prc-mtg"></div>
 
 <a id="contributing"></a>
 # Contributing
