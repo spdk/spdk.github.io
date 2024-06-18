@@ -100,6 +100,7 @@ var bdev_8h =
     [ "spdk_bdev_get_io_channel", "bdev_8h.html#ab5bb9e746b030d7c4c89cbcf60076c7e", null ],
     [ "spdk_bdev_get_io_stat", "bdev_8h.html#ab1ba28ba382edd1d792d51a054eb3aa2", null ],
     [ "spdk_bdev_get_io_time", "bdev_8h.html#a8a082eb89d57860b2e57ebf7f5b3caa2", null ],
+    [ "spdk_bdev_get_io_type_name", "bdev_8h.html#ae27a69679f4dafe0f17f784edaaf225e", null ],
     [ "spdk_bdev_get_max_copy", "bdev_8h.html#a8b542430078d502325f37b92fc3d15ca", null ],
     [ "spdk_bdev_get_md_size", "bdev_8h.html#abc3537d0315100b24da6acc95929e849", null ],
     [ "spdk_bdev_get_media_events", "bdev_8h.html#af359a282820d73a253ffbbe127a30b96", null ],

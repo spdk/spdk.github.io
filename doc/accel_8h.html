@@ -293,6 +293,9 @@ Functions</h2></td></tr>
 <tr class="memitem:aaebd6fe37b7af8036e42184adc407ce4"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="accel_8h.html#aaebd6fe37b7af8036e42184adc407ce4">spdk_accel_get_buf_align</a> (enum spdk_accel_opcode opcode, const struct <a class="el" href="structspdk__accel__operation__exec__ctx.html">spdk_accel_operation_exec_ctx</a> *ctx)</td></tr>
 <tr class="memdesc:aaebd6fe37b7af8036e42184adc407ce4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get minimum buffer alignment to execute a given operation.  <a href="accel_8h.html#aaebd6fe37b7af8036e42184adc407ce4">More...</a><br /></td></tr>
 <tr class="separator:aaebd6fe37b7af8036e42184adc407ce4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81ef09bcbb91fa1025984d730f798c09"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="accel_8h.html#a81ef09bcbb91fa1025984d730f798c09">spdk_accel_get_opc_memory_domains</a> (enum spdk_accel_opcode opcode, struct spdk_memory_domain **domains, int array_size)</td></tr>
+<tr class="memdesc:a81ef09bcbb91fa1025984d730f798c09"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return memory domains used by specific opcode.  <a href="accel_8h.html#a81ef09bcbb91fa1025984d730f798c09">More...</a><br /></td></tr>
+<tr class="separator:a81ef09bcbb91fa1025984d730f798c09"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a72b6ffa90024fbdef55aae9a37cc71b0"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="accel_8h.html#a72b6ffa90024fbdef55aae9a37cc71b0">spdk_accel_get_opcode_name</a> (enum spdk_accel_opcode opcode)</td></tr>
 <tr class="memdesc:a72b6ffa90024fbdef55aae9a37cc71b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the name of an operation based on the opcode.  <a href="accel_8h.html#a72b6ffa90024fbdef55aae9a37cc71b0">More...</a><br /></td></tr>
 <tr class="separator:a72b6ffa90024fbdef55aae9a37cc71b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1318,6 +1321,52 @@ Functions</h2></td></tr>
 
 <p>Retrieves accel memory domain. </p>
 <dl class="section return"><dt>Returns</dt><dd>Accel memory domain. </dd></dl>
+
+</div>
+</div>
+<a id="a81ef09bcbb91fa1025984d730f798c09"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a81ef09bcbb91fa1025984d730f798c09">&#9670;&nbsp;</a></span>spdk_accel_get_opc_memory_domains()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_accel_get_opc_memory_domains </td>
+          <td>(</td>
+          <td class="paramtype">enum spdk_accel_opcode&#160;</td>
+          <td class="paramname"><em>opcode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct spdk_memory_domain **&#160;</td>
+          <td class="paramname"><em>domains</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>array_size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return memory domains used by specific opcode. </p>
+<p>The returned memory domains depend on the accel module which is assigned to handle the <b>opcode</b> </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">opcode</td><td>Accel Framework Opcode enum value. </td></tr>
+    <tr><td class="paramname">domains</td><td>Pointer to an array of memory domains to be filled by this function. The user should allocate big enough array to keep all memory domains. </td></tr>
+    <tr><td class="paramname">array_size</td><td>size of <b>domains</b> array </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the number of entries in <b>domains</b> array or negated errno. If returned value is bigger than <b>array_size</b> passed by the user then the user should increase the size of <b>domains</b> array and call this function again. There is no guarantees that the content of <b>domains</b> array is valid in that case. </dd></dl>
 
 </div>
 </div>

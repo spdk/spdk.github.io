@@ -332,6 +332,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_set_opts</b>
 <tr class="memitem:a7cd5dff692dc162459801d5649fe7655"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#a7cd5dff692dc162459801d5649fe7655">spdk_bdev_io_type_supported</a> (struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *bdev, enum <a class="el" href="bdev_8h.html#a633029e24ab5ae4a689bffa2565a519f">spdk_bdev_io_type</a> io_type)</td></tr>
 <tr class="memdesc:a7cd5dff692dc162459801d5649fe7655"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether the block device supports the I/O type.  <a href="bdev_8h.html#a7cd5dff692dc162459801d5649fe7655">More...</a><br /></td></tr>
 <tr class="separator:a7cd5dff692dc162459801d5649fe7655"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae27a69679f4dafe0f17f784edaaf225e"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#ae27a69679f4dafe0f17f784edaaf225e">spdk_bdev_get_io_type_name</a> (enum <a class="el" href="bdev_8h.html#a633029e24ab5ae4a689bffa2565a519f">spdk_bdev_io_type</a> io_type)</td></tr>
+<tr class="memdesc:ae27a69679f4dafe0f17f784edaaf225e"><td class="mdescLeft">&#160;</td><td class="mdescRight">return the name of an IO type based on the io_type.  <a href="bdev_8h.html#ae27a69679f4dafe0f17f784edaaf225e">More...</a><br /></td></tr>
+<tr class="separator:ae27a69679f4dafe0f17f784edaaf225e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3ef2e861ccd2d6135bfe13257f047fb9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bdev_8h.html#a3ef2e861ccd2d6135bfe13257f047fb9">spdk_bdev_dump_info_json</a> (struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *bdev, struct spdk_json_write_ctx *w)</td></tr>
 <tr class="memdesc:a3ef2e861ccd2d6135bfe13257f047fb9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Output driver-specific information to a JSON stream.  <a href="bdev_8h.html#a3ef2e861ccd2d6135bfe13257f047fb9">More...</a><br /></td></tr>
 <tr class="separator:a3ef2e861ccd2d6135bfe13257f047fb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1553,6 +1556,33 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_set_opts</b>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The io time for this device in microseconds. </dd></dl>
+
+</div>
+</div>
+<a id="ae27a69679f4dafe0f17f784edaaf225e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae27a69679f4dafe0f17f784edaaf225e">&#9670;&nbsp;</a></span>spdk_bdev_get_io_type_name()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* spdk_bdev_get_io_type_name </td>
+          <td>(</td>
+          <td class="paramtype">enum <a class="el" href="bdev_8h.html#a633029e24ab5ae4a689bffa2565a519f">spdk_bdev_io_type</a>&#160;</td>
+          <td class="paramname"><em>io_type</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>return the name of an IO type based on the io_type. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">io_type</td><td>The specific I/O type like read, write, flush, unmap. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Name of the IO type as a null-terminated string. </dd></dl>
 
 </div>
 </div>

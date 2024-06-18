@@ -1,5 +1,7 @@
 var NAVTREEINDEX6 =
 {
+"ioat__spec_8h.html#a8d9a351c468542caf76a44004448b65e":[15,0,32,28],
+"ioat__spec_8h.html#a9185a495ef9770684636989038c9f031":[15,0,32,15],
 "ioat__spec_8h.html#a94f12379d3cbe93b4a954857259bfd24":[15,0,32,40],
 "ioat__spec_8h.html#aa6c1838b386eeea922f6bf66670e9f0d":[15,0,32,27],
 "ioat__spec_8h.html#aa915f1f52ef7d82c2f9a576b960596a4":[15,0,32,17],
@@ -247,7 +249,5 @@ var NAVTREEINDEX6 =
 "jsonrpc.html#jsonrpc_components_iscsi_tgt":[3,9,6],
 "jsonrpc.html#jsonrpc_components_lvol":[3,9,9],
 "jsonrpc.html#jsonrpc_components_nbd":[3,9,11],
-"jsonrpc.html#jsonrpc_components_nvmf_tgt":[3,9,7],
-"jsonrpc.html#jsonrpc_components_sock":[3,9,13],
-"jsonrpc.html#jsonrpc_components_ublk":[3,9,10]
+"jsonrpc.html#jsonrpc_components_nvmf_tgt":[3,9,7]
 };

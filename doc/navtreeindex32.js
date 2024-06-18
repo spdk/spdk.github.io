@@ -1,5 +1,7 @@
 var NAVTREEINDEX32 =
 {
+"structspdk__trace__parser__entry.html#a55b2e0aea7cca402a502ad4d043e7293":[14,0,425,8],
+"structspdk__trace__parser__entry.html#a7e7ee46ec4c44c52caebb5ede88395c8":[14,0,425,9],
 "structspdk__trace__parser__entry.html#abb11f8535fab9ee4f9fc4c2adcee5145":[14,0,425,4],
 "structspdk__trace__parser__entry.html#adde1b1e717ac94b423d90f707a872f0a":[14,0,425,11],
 "structspdk__trace__parser__entry.html#aebdc6a2a084c4771e6fb246c2d729c1f":[14,0,425,5],
@@ -247,7 +249,5 @@ var NAVTREEINDEX32 =
 "thread_8h.html#afab3d4339c5bca4dfde209816a9e560f":[15,0,58,25],
 "thread_8h.html#afe409bf16664f461daa516b6a6d1682c":[15,0,58,103],
 "tools.html":[8],
-"trace_8h.html":[15,0,59],
-"trace_8h.html#a00bc7e8ba17d526c39dd5582b1e66395":[15,0,59,43],
-"trace_8h.html#a0428c85707807ebfd031c064eba4a94e":[15,0,59,33]
+"trace_8h.html":[15,0,59]
 };
