@@ -3,6 +3,7 @@ var fd__group_8h =
     [ "SPDK_FD_GROUP_ADD", "fd__group_8h.html#a3913a1d3a2ee5b9bb6b309b020b888f7", null ],
     [ "spdk_fd_fn", "fd__group_8h.html#a743712229809e8ec96fcfc866978a08c", null ],
     [ "spdk_fd_group_add", "fd__group_8h.html#a45e4bfc7b314944bc1b894a80c176e23", null ],
+    [ "spdk_fd_group_add_for_events", "fd__group_8h.html#a9b45cc539e9c2843ec188988b2bf43de", null ],
     [ "spdk_fd_group_create", "fd__group_8h.html#ad89615da09728bed934cd4e74dee0972", null ],
     [ "spdk_fd_group_destroy", "fd__group_8h.html#a5608adf454545d5588a0488291dc3968", null ],
     [ "spdk_fd_group_event_modify", "fd__group_8h.html#aa9202f833c0b499860baf4d1ae6318ab", null ],

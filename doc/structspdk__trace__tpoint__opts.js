@@ -1,6 +1,6 @@
 var structspdk__trace__tpoint__opts =
 [
-    [ "args", "structspdk__trace__tpoint__opts.html#ac15eb4244d9599ea8b10bb94612e5157", null ],
+    [ "args", "structspdk__trace__tpoint__opts.html#a0f2bd71f026edf525be2fd3b0adc4510", null ],
     [ "name", "structspdk__trace__tpoint__opts.html#a79d8cea7d4c0944b42491deb9b996d67", null ],
     [ "new_object", "structspdk__trace__tpoint__opts.html#aa19ee81f6fb6435306408382a038dc37", null ],
     [ "object_type", "structspdk__trace__tpoint__opts.html#ac55948fa9da93d5edac6bc965205572d", null ],

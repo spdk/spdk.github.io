@@ -652,6 +652,9 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_trty
 <tr class="memitem:ab1863b5dccf2bcc49fe92275bc1e5a2a"><td class="memItemLeft" align="right" valign="top">const struct <a class="el" href="structspdk__nvme__ns__data.html">spdk_nvme_ns_data</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#ab1863b5dccf2bcc49fe92275bc1e5a2a">spdk_nvme_ns_get_data</a> (struct spdk_nvme_ns *ns)</td></tr>
 <tr class="memdesc:ab1863b5dccf2bcc49fe92275bc1e5a2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the identify namespace data as defined by the NVMe specification.  <a href="nvme_8h.html#ab1863b5dccf2bcc49fe92275bc1e5a2a">More...</a><br /></td></tr>
 <tr class="separator:ab1863b5dccf2bcc49fe92275bc1e5a2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3eb5500753acb2447a090acb3f9a5526"><td class="memItemLeft" align="right" valign="top">const struct <a class="el" href="structspdk__nvme__nvm__ns__data.html">spdk_nvme_nvm_ns_data</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a3eb5500753acb2447a090acb3f9a5526">spdk_nvme_nvm_ns_get_data</a> (struct spdk_nvme_ns *ns)</td></tr>
+<tr class="memdesc:a3eb5500753acb2447a090acb3f9a5526"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the I/O command set specific identify namespace data for NVM command set as defined by the NVMe specification.  <a href="nvme_8h.html#a3eb5500753acb2447a090acb3f9a5526">More...</a><br /></td></tr>
+<tr class="separator:a3eb5500753acb2447a090acb3f9a5526"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a54052303ef2870d6d1856f79ef6ff88a"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a54052303ef2870d6d1856f79ef6ff88a">spdk_nvme_ns_get_id</a> (struct spdk_nvme_ns *ns)</td></tr>
 <tr class="memdesc:a54052303ef2870d6d1856f79ef6ff88a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the namespace id (index number) from the given namespace handle.  <a href="nvme_8h.html#a54052303ef2870d6d1856f79ef6ff88a">More...</a><br /></td></tr>
 <tr class="separator:a54052303ef2870d6d1856f79ef6ff88a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -679,6 +682,9 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_trty
 <tr class="memitem:a85806a7605a104a705e7f9d3d087e4cb"><td class="memItemLeft" align="right" valign="top">enum spdk_nvme_pi_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a85806a7605a104a705e7f9d3d087e4cb">spdk_nvme_ns_get_pi_type</a> (struct spdk_nvme_ns *ns)</td></tr>
 <tr class="memdesc:a85806a7605a104a705e7f9d3d087e4cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the end-to-end data protection information type of the given namespace.  <a href="nvme_8h.html#a85806a7605a104a705e7f9d3d087e4cb">More...</a><br /></td></tr>
 <tr class="separator:a85806a7605a104a705e7f9d3d087e4cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08fe63f863522c39b9cd493573afdb05"><td class="memItemLeft" align="right" valign="top">enum spdk_nvme_pi_format&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#a08fe63f863522c39b9cd493573afdb05">spdk_nvme_ns_get_pi_format</a> (struct spdk_nvme_ns *ns)</td></tr>
+<tr class="memdesc:a08fe63f863522c39b9cd493573afdb05"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the end-to-end data protection information format of the given namespace.  <a href="nvme_8h.html#a08fe63f863522c39b9cd493573afdb05">More...</a><br /></td></tr>
+<tr class="separator:a08fe63f863522c39b9cd493573afdb05"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab48657f8cb6561b35e1c1b0bc18376d2"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme_8h.html#ab48657f8cb6561b35e1c1b0bc18376d2">spdk_nvme_ns_get_md_size</a> (struct spdk_nvme_ns *ns)</td></tr>
 <tr class="memdesc:ab48657f8cb6561b35e1c1b0bc18376d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the metadata size, in bytes, of the given namespace.  <a href="nvme_8h.html#ab48657f8cb6561b35e1c1b0bc18376d2">More...</a><br /></td></tr>
 <tr class="separator:ab48657f8cb6561b35e1c1b0bc18376d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -8521,6 +8527,34 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_trty
 
 </div>
 </div>
+<a id="a08fe63f863522c39b9cd493573afdb05"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08fe63f863522c39b9cd493573afdb05">&#9670;&nbsp;</a></span>spdk_nvme_ns_get_pi_format()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum spdk_nvme_pi_format spdk_nvme_ns_get_pi_format </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_nvme_ns *&#160;</td>
+          <td class="paramname"><em>ns</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the end-to-end data protection information format of the given namespace. </p>
+<p>This function is thread safe and can be called at any point while the controller is attached to the SPDK NVMe driver.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ns</td><td>Namespace to query.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the end-to-end data protection information format. </dd></dl>
+
+</div>
+</div>
 <a id="a85806a7605a104a705e7f9d3d087e4cb"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a85806a7605a104a705e7f9d3d087e4cb">&#9670;&nbsp;</a></span>spdk_nvme_ns_get_pi_type()</h2>
 
@@ -8714,6 +8748,34 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_trty
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if the namespace can support extended LBA when end-to-end data protection enabled, or false otherwise. </dd></dl>
+
+</div>
+</div>
+<a id="a3eb5500753acb2447a090acb3f9a5526"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3eb5500753acb2447a090acb3f9a5526">&#9670;&nbsp;</a></span>spdk_nvme_nvm_ns_get_data()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const struct <a class="el" href="structspdk__nvme__nvm__ns__data.html">spdk_nvme_nvm_ns_data</a>* spdk_nvme_nvm_ns_get_data </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_nvme_ns *&#160;</td>
+          <td class="paramname"><em>ns</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the I/O command set specific identify namespace data for NVM command set as defined by the NVMe specification. </p>
+<p>This function is thread safe and can be called at any point while the controller is attached to the SPDK NVMe driver.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ns</td><td>Namespace.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a pointer to the identify namespace data. </dd></dl>
 
 </div>
 </div>

@@ -130,8 +130,11 @@ Functions</h2></td></tr>
 <tr class="memdesc:abb306bb67c3bfae868f357fc88fcfbd3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove the nested child from the parent.  <a href="fd__group_8h.html#abb306bb67c3bfae868f357fc88fcfbd3">More...</a><br /></td></tr>
 <tr class="separator:abb306bb67c3bfae868f357fc88fcfbd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a45e4bfc7b314944bc1b894a80c176e23"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fd__group_8h.html#a45e4bfc7b314944bc1b894a80c176e23">spdk_fd_group_add</a> (struct spdk_fd_group *fgrp, int efd, <a class="el" href="fd__group_8h.html#a743712229809e8ec96fcfc866978a08c">spdk_fd_fn</a> fn, void *arg, const char *name)</td></tr>
-<tr class="memdesc:a45e4bfc7b314944bc1b894a80c176e23"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register one event source to specified fgrp.  <a href="fd__group_8h.html#a45e4bfc7b314944bc1b894a80c176e23">More...</a><br /></td></tr>
+<tr class="memdesc:a45e4bfc7b314944bc1b894a80c176e23"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register SPDK_INTERRUPT_EVENT_IN event source to specified fgrp.  <a href="fd__group_8h.html#a45e4bfc7b314944bc1b894a80c176e23">More...</a><br /></td></tr>
 <tr class="separator:a45e4bfc7b314944bc1b894a80c176e23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b45cc539e9c2843ec188988b2bf43de"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fd__group_8h.html#a9b45cc539e9c2843ec188988b2bf43de">spdk_fd_group_add_for_events</a> (struct spdk_fd_group *fgrp, int efd, uint32_t events, <a class="el" href="fd__group_8h.html#a743712229809e8ec96fcfc866978a08c">spdk_fd_fn</a> fn, void *arg, const char *name)</td></tr>
+<tr class="memdesc:a9b45cc539e9c2843ec188988b2bf43de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register one event source to specified fgrp with specific event types.  <a href="fd__group_8h.html#a9b45cc539e9c2843ec188988b2bf43de">More...</a><br /></td></tr>
+<tr class="separator:a9b45cc539e9c2843ec188988b2bf43de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:add1e704767a6e1f5b88f00e477e2b003"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fd__group_8h.html#add1e704767a6e1f5b88f00e477e2b003">spdk_fd_group_remove</a> (struct spdk_fd_group *fgrp, int efd)</td></tr>
 <tr class="memdesc:add1e704767a6e1f5b88f00e477e2b003"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unregister one event source from one fgrp.  <a href="fd__group_8h.html#add1e704767a6e1f5b88f00e477e2b003">More...</a><br /></td></tr>
 <tr class="separator:add1e704767a6e1f5b88f00e477e2b003"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -160,7 +163,7 @@ Functions</h2></td></tr>
 <p>Callback function registered for the event source file descriptor. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">ctx</td><td>Context passed as arg to <a class="el" href="fd__group_8h.html#a45e4bfc7b314944bc1b894a80c176e23" title="Register one event source to specified fgrp.">spdk_fd_group_add()</a>.</td></tr>
+    <tr><td class="paramname">ctx</td><td>Context passed as arg to <a class="el" href="fd__group_8h.html#a45e4bfc7b314944bc1b894a80c176e23" title="Register SPDK_INTERRUPT_EVENT_IN event source to specified fgrp.">spdk_fd_group_add()</a>.</td></tr>
   </table>
   </dd>
 </dl>
@@ -213,11 +216,79 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Register one event source to specified fgrp. </p>
+<p>Register SPDK_INTERRUPT_EVENT_IN event source to specified fgrp. </p>
+<p>Use <a class="el" href="fd__group_8h.html#a9b45cc539e9c2843ec188988b2bf43de" title="Register one event source to specified fgrp with specific event types.">spdk_fd_group_add_for_events()</a> for other event types.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">fgrp</td><td>The fgrp registered to. </td></tr>
     <tr><td class="paramname">efd</td><td>File descriptor of the event source. </td></tr>
+    <tr><td class="paramname">fn</td><td>Called each time there are events in event source. </td></tr>
+    <tr><td class="paramname">arg</td><td>Function argument for fn. </td></tr>
+    <tr><td class="paramname">name</td><td>Name of the event source.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if success or -errno if failed </dd></dl>
+
+</div>
+</div>
+<a id="a9b45cc539e9c2843ec188988b2bf43de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b45cc539e9c2843ec188988b2bf43de">&#9670;&nbsp;</a></span>spdk_fd_group_add_for_events()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_fd_group_add_for_events </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_fd_group *&#160;</td>
+          <td class="paramname"><em>fgrp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>efd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>events</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="fd__group_8h.html#a743712229809e8ec96fcfc866978a08c">spdk_fd_fn</a>&#160;</td>
+          <td class="paramname"><em>fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>arg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Register one event source to specified fgrp with specific event types. </p>
+<p>Event types argument is a bit mask composed by ORing together enum spdk_interrupt_event_types values.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fgrp</td><td>The fgrp registered to. </td></tr>
+    <tr><td class="paramname">efd</td><td>File descriptor of the event source. </td></tr>
+    <tr><td class="paramname">events</td><td>Event notification types. </td></tr>
     <tr><td class="paramname">fn</td><td>Called each time there are events in event source. </td></tr>
     <tr><td class="paramname">arg</td><td>Function argument for fn. </td></tr>
     <tr><td class="paramname">name</td><td>Name of the event source.</td></tr>

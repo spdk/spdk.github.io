@@ -277,6 +277,8 @@ Data Structures</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__ns__data.html">spdk_nvme_ns_data</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__nvm__ns__data.html">spdk_nvme_nvm_ns_data</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__nvm__ctrlr__data.html">spdk_nvme_nvm_ctrlr_data</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__zns__ns__data.html">spdk_nvme_zns_ns_data</a></td></tr>
@@ -984,6 +986,11 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:a3c8c529f3ac77e55d511145044fee588"><td class="mdescLeft">&#160;</td><td class="mdescRight">Identify Controller data vwc.flush_broadcast values.  <a href="nvme__spec_8h.html#a3c8c529f3ac77e55d511145044fee588">More...</a><br /></td></tr>
 <tr class="separator:a3c8c529f3ac77e55d511145044fee588"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a976d60da5e0e3ea26282c00bcabad493"><td class="memItemLeft" align="right" valign="top"><a id="a976d60da5e0e3ea26282c00bcabad493"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_pi_format</b> { <b>SPDK_NVME_16B_GUARD_PI</b> = 0
+, <b>SPDK_NVME_32B_GUARD_PI</b> = 1
+, <b>SPDK_NVME_64B_GUARD_PI</b> = 2
+ }</td></tr>
+<tr class="separator:a976d60da5e0e3ea26282c00bcabad493"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1c06fbd66f7572c43c51e6f106215b8d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nvme__spec_8h.html#a1c06fbd66f7572c43c51e6f106215b8d">spdk_nvme_dealloc_logical_block_read_value</a> { <a class="el" href="nvme__spec_8h.html#a1c06fbd66f7572c43c51e6f106215b8da84e7d1027736744032bc32b5f104eb2f">SPDK_NVME_DEALLOC_NOT_REPORTED</a> = 0
 , <a class="el" href="nvme__spec_8h.html#a1c06fbd66f7572c43c51e6f106215b8da315a35b15cc20a03255f8e8e4d3396ba">SPDK_NVME_DEALLOC_READ_00</a> = 1
 , <a class="el" href="nvme__spec_8h.html#a1c06fbd66f7572c43c51e6f106215b8dad8840e6a2c0c1c75b04e0c23ca829464">SPDK_NVME_DEALLOC_READ_FF</a> = 2
@@ -1565,6 +1572,9 @@ static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_
 <tr class="memitem:a37c4073a8cd606892be4c21da7c2f598"><td class="memItemLeft" align="right" valign="top"><a id="a37c4073a8cd606892be4c21da7c2f598"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(struct <a class="el" href="structspdk__nvme__ns__data.html">spdk_nvme_ns_data</a>)==4096, &quot;Incorrect size&quot;)</td></tr>
 <tr class="separator:a37c4073a8cd606892be4c21da7c2f598"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4220288d5c007470a3fd39960ef9b9cc"><td class="memItemLeft" align="right" valign="top"><a id="a4220288d5c007470a3fd39960ef9b9cc"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(struct <a class="el" href="structspdk__nvme__nvm__ns__data.html">spdk_nvme_nvm_ns_data</a>)==4096, &quot;Incorrect size&quot;)</td></tr>
+<tr class="separator:a4220288d5c007470a3fd39960ef9b9cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa32149324fc3f16e0f37cb659fff8577"><td class="memItemLeft" align="right" valign="top"><a id="aa32149324fc3f16e0f37cb659fff8577"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(struct <a class="el" href="structspdk__nvme__nvm__ctrlr__data.html">spdk_nvme_nvm_ctrlr_data</a>)==4096, &quot;Incorrect size&quot;)</td></tr>
 <tr class="separator:aa32149324fc3f16e0f37cb659fff8577"><td class="memSeparator" colspan="2">&#160;</td></tr>

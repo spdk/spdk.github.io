@@ -71,6 +71,7 @@ var nvme__spec_8h =
     [ "spdk_nvme_secondary_ctrl_entry", "structspdk__nvme__secondary__ctrl__entry.html", "structspdk__nvme__secondary__ctrl__entry" ],
     [ "spdk_nvme_secondary_ctrl_list", "structspdk__nvme__secondary__ctrl__list.html", "structspdk__nvme__secondary__ctrl__list" ],
     [ "spdk_nvme_ns_data", "structspdk__nvme__ns__data.html", "structspdk__nvme__ns__data" ],
+    [ "spdk_nvme_nvm_ns_data", "structspdk__nvme__nvm__ns__data.html", "structspdk__nvme__nvm__ns__data" ],
     [ "spdk_nvme_nvm_ctrlr_data", "structspdk__nvme__nvm__ctrlr__data.html", "structspdk__nvme__nvm__ctrlr__data" ],
     [ "spdk_nvme_zns_ns_data", "structspdk__nvme__zns__ns__data.html", "structspdk__nvme__zns__ns__data" ],
     [ "spdk_nvme_iocs_vector", "structspdk__nvme__iocs__vector.html", "structspdk__nvme__iocs__vector" ],
@@ -596,6 +597,11 @@ var nvme__spec_8h =
       [ "SPDK_NVME_SC_HOST_PATH_ERROR", "nvme__spec_8h.html#a33e755cbe54eafcfbe31e1f713e4d5b2af7245ce64ed7c645d95804712ff4298d", null ],
       [ "SPDK_NVME_SC_ABORTED_BY_HOST", "nvme__spec_8h.html#a33e755cbe54eafcfbe31e1f713e4d5b2a195dac1e9f34199ab92eadb2a927b034", null ]
     ] ],
+    [ "spdk_nvme_pi_format", "nvme__spec_8h.html#a976d60da5e0e3ea26282c00bcabad493", [
+      [ "SPDK_NVME_16B_GUARD_PI", "nvme__spec_8h.html#a976d60da5e0e3ea26282c00bcabad493ace432409a5c10cc53b08fd5ae6546ff9", null ],
+      [ "SPDK_NVME_32B_GUARD_PI", "nvme__spec_8h.html#a976d60da5e0e3ea26282c00bcabad493a2e2dd27740c07404086c39c908dd2d79", null ],
+      [ "SPDK_NVME_64B_GUARD_PI", "nvme__spec_8h.html#a976d60da5e0e3ea26282c00bcabad493a291abb7a2b065c5b07a9e0076d625e09", null ]
+    ] ],
     [ "spdk_nvme_pi_location", "nvme__spec_8h.html#a86964401c50b1fbc0261ae386fb73095", [
       [ "SPDK_NVME_FMT_NVM_PROTECTION_AT_TAIL", "nvme__spec_8h.html#a86964401c50b1fbc0261ae386fb73095a4ca526381d0b4fbc631a99a1ebce75a9", null ],
       [ "SPDK_NVME_FMT_NVM_PROTECTION_AT_HEAD", "nvme__spec_8h.html#a86964401c50b1fbc0261ae386fb73095a9de8fcd48b7d7c88aa986ca1755245cf", null ]
@@ -815,6 +821,7 @@ var nvme__spec_8h =
     [ "SPDK_STATIC_ASSERT", "nvme__spec_8h.html#af0e5de64555a90ef37cd75f70addbe3b", null ],
     [ "SPDK_STATIC_ASSERT", "nvme__spec_8h.html#a7b9b89b206a5004f58936d15f9371d9c", null ],
     [ "SPDK_STATIC_ASSERT", "nvme__spec_8h.html#aa32149324fc3f16e0f37cb659fff8577", null ],
+    [ "SPDK_STATIC_ASSERT", "nvme__spec_8h.html#a4220288d5c007470a3fd39960ef9b9cc", null ],
     [ "SPDK_STATIC_ASSERT", "nvme__spec_8h.html#aaf09d50341e272b0fd0bfff5e48b7302", null ],
     [ "SPDK_STATIC_ASSERT", "nvme__spec_8h.html#a8852d0082322ce91f8e6b01b887fc2e9", null ],
     [ "SPDK_STATIC_ASSERT", "nvme__spec_8h.html#a9c867478eb707af3711596989e487eed", null ],

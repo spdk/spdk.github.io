@@ -1,6 +1,6 @@
 var structspdk__trace__parser__entry =
 [
-    [ "args", "structspdk__trace__parser__entry.html#af519e8677ae5aa6c114fadc80590a84f", null ],
+    [ "args", "structspdk__trace__parser__entry.html#aeed641b5ad82b2b9d1dce4d69709dcda", null ],
     [ "entry", "structspdk__trace__parser__entry.html#a53973ef677f05f6d067c046dc790da78", null ],
     [ "integer", "structspdk__trace__parser__entry.html#aec660173b8f4a348dce6cbca336a7dfc", null ],
     [ "is_related", "structspdk__trace__parser__entry.html#a4009abe46d2ca9754f41195e927d4c55", null ],
@@ -11,5 +11,5 @@ var structspdk__trace__parser__entry =
     [ "related_index", "structspdk__trace__parser__entry.html#a55b2e0aea7cca402a502ad4d043e7293", null ],
     [ "related_type", "structspdk__trace__parser__entry.html#a7e7ee46ec4c44c52caebb5ede88395c8", null ],
     [ "string", "structspdk__trace__parser__entry.html#a3b08d5f669c7f1a6cae0379850a62d11", null ],
-    [ "u", "structspdk__trace__parser__entry.html#adde1b1e717ac94b423d90f707a872f0a", null ]
+    [ "u", "structspdk__trace__parser__entry.html#acc3b3e441e4233c449b9b4bca75df339", null ]
 ];
