@@ -1,20 +1,22 @@
-repo=$(dirname $0)/spdk
-
 check_clone_repo() {
+	local repo=$1
 	if [[ ! -d "$repo" ]]; then
 		git clone --depth 1 https://github.com/spdk/spdk $repo
 	fi
 }
 
 remove_repo() {
-	rm -rf $repo
+	local repo=$1
+	rm -rf "$repo"
 }
 
 regenerate_docs() {
-	doc_header_dir="doc_header"
+	local repo=$1
+	local rootdir="$repo/.."
+	doc_header_dir="$rootdir/doc_header"
 	rm -rf $doc_header_dir
 
-	mkdir -p $doc_header_dir/_layouts
+	mkdir -p "$doc_header_dir/_layouts"
 
 	# _includes/header.html contains jekyll directives for marking menu entries as active.
 	# If we want to have headers to show "DOCUMENTATION" entry as active, we need to have
@@ -23,28 +25,28 @@ regenerate_docs() {
 	echo "---
 layout: doc
 title: Storage Performance Development Kit
----" > $doc_header_dir/doc.md
+---" > "$doc_header_dir/doc.md"
 
-	cp _layouts/doc.html $doc_header_dir/_layouts
-	cp -R _includes $doc_header_dir/_includes
-	cp _config.yml $doc_header_dir
+	cp "$rootdir/_layouts/doc.html" "$doc_header_dir/_layouts"
+	cp -R "$rootdir/_includes" "$doc_header_dir/_includes"
+	cp "$rootdir/_config.yml" "$doc_header_dir"
 	# Use Jekyll to generate a header for docs using _config.yml
-	(cd $doc_header_dir; jekyll build)
+	(cd "$doc_header_dir"; jekyll build)
 
 	# Clean empty and blank lines
-	sed -ri '/^\s*$/d' $doc_header_dir/_site/doc/index.html
+	sed -ri '/^\s*$/d' "$doc_header_dir/_site/doc/index.html"
 
 	# Overwrite header and footer with the spdk.io versions
-	cp $doc_header_dir/_site/doc/index.html $repo/doc/header.html
-	cp _doc_footer.html $repo/doc/footer.html
-	cp css/spdk.css $repo/doc/spdk.css
-	sed -i 's/^HTML_EXTRA_STYLESHEET.*/HTML_EXTRA_STYLESHEET  = spdk.css/' $repo/doc/Doxyfile
+	cp "$doc_header_dir/_site/doc/index.html" "$repo/doc/header.html"
+	cp "$rootdir/_doc_footer.html" "$repo/doc/footer.html"
+	cp "$rootdir/css/spdk.css" "$repo/doc/spdk.css"
+	sed -i 's/^HTML_EXTRA_STYLESHEET.*/HTML_EXTRA_STYLESHEET  = spdk.css/' "$repo/doc/Doxyfile"
 
-	(cd $repo/doc; make clean; make)
-	cp js/navtree.js $repo/doc/output/html
-	cp css/navtree.css $repo/doc/output/html
+	(cd "$repo/doc"; make clean; make)
+	cp "$rootdir/js/navtree.js" "$repo/doc/output/html"
+	cp "$rootdir/css/navtree.css" "$repo/doc/output/html"
 
-	rm -rf doc/*
+	rm -rf $rootdir/doc/*
 	rm -r $doc_header_dir
-	cp -R $repo/doc/output/html/* doc
+	cp -R $repo/doc/output/html/* $rootdir/doc
 }

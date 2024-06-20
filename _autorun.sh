@@ -2,12 +2,13 @@
 
 set -ex
 
-src=$(readlink -f $(dirname $0))
-dst=.
-source $src/common.sh
+rootdir=$(readlink -f $(dirname $0))
+repo="$rootdir/spdk"
+dst="$rootdir/_site"
+source "$rootdir/common.sh"
 
-check_clone_repo
-regenerate_docs
-remove_repo
+check_clone_repo "$repo"
+regenerate_docs "$repo"
+remove_repo "$repo"
 
-jekyll build --source "$src" --destination "$dst"/_site
+jekyll build --source "$rootdir" --destination "$dst"
