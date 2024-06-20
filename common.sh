@@ -10,6 +10,17 @@ remove_repo() {
 	rm -rf "$repo"
 }
 
+adjust_paths() {
+	local config_yml=$1
+	# Documentation headers are placed one level below the directories they reference in top
+	# menu, so add '../' before each path.
+	sed -i -e 's|/releases/|../releases/|g' "$config_yml"
+	sed -i -e 's|/development/|../development/|g' "$config_yml"
+	sed -i -e 's|/community/|../community/|g' "$config_yml"
+	sed -i -e 's|/blog/|../blog/|g' "$config_yml"
+	sed -i -e 's|/news/|../news/|g' "$config_yml"
+}
+
 regenerate_docs() {
 	local repo=$1
 	local rootdir="$repo/.."
@@ -29,7 +40,9 @@ title: Storage Performance Development Kit
 
 	cp "$rootdir/_layouts/doc.html" "$doc_header_dir/_layouts"
 	cp -R "$rootdir/_includes" "$doc_header_dir/_includes"
+	sed -i -e 's|/img/spdk.svg|../img/spdk.svg|g' "$doc_header_dir/_includes/header.html"
 	cp "$rootdir/_config.yml" "$doc_header_dir"
+	adjust_paths "$doc_header_dir/_config.yml"
 	# Use Jekyll to generate a header for docs using _config.yml
 	(cd "$doc_header_dir"; jekyll build)
 
