@@ -9,23 +9,23 @@ repo=$(dirname $0)/spdk
 TEST_MODE=0
 
 for i in "$@"; do
-        case "$i" in
-                --test)
-                        TEST_MODE=1
-                        ;;
-        esac
+	case "$i" in
+		--test)
+			TEST_MODE=1
+			;;
+	esac
 done
 
 if [ -d "$repo" ]; then
-        if [ "$TEST_MODE" -eq 1 ]; then
-                (cd $repo; git clean -x -d -f -f; git checkout master)
-        else
-                rm -rf $repo
-        fi
+	if [ "$TEST_MODE" -eq 1 ]; then
+		(cd $repo; git clean -x -d -f -f; git checkout master)
+	else
+		rm -rf $repo
+	fi
 fi
 
 if [ ! -d "$repo" ]; then
-        git clone --depth 1 https://github.com/spdk/spdk $repo
+	git clone --depth 1 https://github.com/spdk/spdk $repo
 fi
 
 doc_version=$(cd $repo; git rev-parse HEAD)
@@ -43,8 +43,8 @@ cp css/navtree.css $repo/doc/output/html
 rm -rf doc
 cp -R $repo/doc/output/html doc
 if [ "$TEST_MODE" -eq 0 ]; then
-        git add doc
-        rm -rf $repo
+	git add doc
+	rm -rf $repo
 fi
 
 if [ -n "$(git status --porcelain --untracked-files=no)" ]; then
