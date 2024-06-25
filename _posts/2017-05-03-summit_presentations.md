@@ -19,4 +19,3 @@ Please note these are static PDFs, but many of the presentations made extensive 
 9. [Keith Wiles - Transport Layer Development Kit: TCP & UDP at the Speed of DPDK](https://ci.spdk.io/download/events/2017-summit/10_-_Day_2_-_Wiles_-_SPDK_Summit-TLDK_Overview_2017.pdf)
 10. [Jonathan Stern - ISA-L: Performance for Software-Defined Storage](https://ci.spdk.io/download/events/2017-summit/11_-_Day_2_-_Stern_-_ISA-L_Performance_for_Software_Defined.pdf)
 11. [Andrzej Jakowski & Armoun Forghan - Intel Cache Acceleration Software (CAS)](https://ci.spdk.io/download/events/2017-summit/12_-_Day_2_-_Intel_Cache_Acceleration_Software_vFinal.pdf)
-

@@ -11,4 +11,3 @@ You can find the report in the [Documentation section](https://spdk.io/doc/) on 
 Direct link:
 
 - [SPDK 20.10 NVMe-oF RDMA Performance Report](https://ci.spdk.io/download/performance-reports/SPDK_rdma_perf_report_2010.pdf)
-

@@ -29,4 +29,3 @@ The videos are available in our [YouTube channel](https://www.youtube.com/playli
 3. [Is Your Code GPU Offload Ready?](https://ci.spdk.io/download/2021-virtual-forum-us/Topic_4_2021_Performance_Analyzers_Optimization_and_Prototyping_of_Code_with_Intel_Advisor_Cory.pdf)
 4. [Debug Your Threading and Memory Errors](https://ci.spdk.io/download/2021-virtual-forum-us/Topic_5_2021_Performance_Analyzers_Debug_your_Threading_and_Memory_Errors_Kevin.pdf)
 5. [Design and Tune Your Applications for GPU](https://ci.spdk.io/download/2021-virtual-forum-us/Topic_6_2021_Performance_Analyzers_Design_and_Tune_Applications_for_GPU_Workshop_Cory_Jennifer.pdf)
-

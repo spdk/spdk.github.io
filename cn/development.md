@@ -271,7 +271,7 @@ SPDK Core Maintainers通过特定的Gerrit界面来决定哪些代码需要下�
 
 当下一步操作完成（比如问题已经回复，改动更新到最新，或者另外的开发者给了+1），patch的作者可以自行把hashtag去掉。当hashtag去掉后，该改动会马上出现在Core Maintainers需要关注的列表上。
 
-针对一个patch的Hashtags会出现在Gerrit的主界面上，包括这个patch的提交者，reviwer，项目和分支。Hashtags可以通过点击边上的大叉(X)来去掉。
+针对一个patch的Hashtags会出现在Gerrit的主界面上，包括这个patch的提交者，reviewer，项目和分支。Hashtags可以通过点击边上的大叉(X)来去掉。
 
 下面的Hashtags是目前Core Maintainers正在使用的：
 

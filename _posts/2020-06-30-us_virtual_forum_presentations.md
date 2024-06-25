@@ -24,4 +24,3 @@ The videos are available in our [YouTube channel](https://www.youtube.com/playli
 1. [PMDK: State of the Project](https://ci.spdk.io/download/2020-virtual-forum-us/01_PMDK_State_of_the_Project_Andy_Piotr.pdf)
 2. [PMDK: Endurance Benefits with Persistent Memory](https://ci.spdk.io/download/2020-virtual-forum-us/02_PMDK_Endurance_Benefits_with_Persistent_Memory_Sergey.pdf)
 3. [PMDK: Concurrency in Failure Atomic Data Structures on Persistent Memory](https://ci.spdk.io/download/2020-virtual-forum-us/03_PMDK_Concurrency_in_failure_atomic_data_structures_on_peristent_memory_Sergey_Igor.pdf)
-

@@ -26,7 +26,7 @@ to tackle design issues and processes, and to discuss future efforts in an infor
 This year we're excited to welcome developers from the [PMDK](https://pmem.io/pmdk)
 and [VTune](http://vtune.intel.com/) communities to the summit, including
 presentations and demos focused on those projects. The summit will include
-multiple tracks to accomodate the additional talks.
+multiple tracks to accommodate the additional talks.
 
 We hope to see you there!
 

@@ -11,13 +11,13 @@ Meet with key contributors to SPDK, learn details about the latest and upcoming 
 April 19, 2017 - April 20, 2017
 
 ### Location
-Hyatt Regency Santa Clara  
-5101 Great America Parkway  
-Santa Clara, CA  95054  
+Hyatt Regency Santa Clara
+5101 Great America Parkway
+Santa Clara, CA  95054
 
 ### Event Time
-April 19 - 9 am - 6 pm  
-April 20 - 9 am - 3 pm  
+April 19 - 9 am - 6 pm
+April 20 - 9 am - 3 pm
 
 ### Event Website and Agenda
 [Intel Builders Developer Summit](https://builders.intel.com/events2017/developer-summit-santaclara/event)

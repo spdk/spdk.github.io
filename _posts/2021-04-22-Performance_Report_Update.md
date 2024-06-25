@@ -11,4 +11,3 @@ You can find the report in the [Documentation section](https://spdk.io/doc/) on 
 Direct link:
 
 - [SPDK 21.01 NVMe Bdev Performance Report](https://ci.spdk.io/download/performance-reports/SPDK_nvme_bdev_perf_report_2101.pdf)
-

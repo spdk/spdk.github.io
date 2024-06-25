@@ -11,4 +11,3 @@ You can find the report in the [Documentation section](https://spdk.io/doc/) on 
 Direct link:
 
 - [SPDK 21.01 Vhost Performance Report](https://ci.spdk.io/download/performance-reports/SPDK_vhost_perf_report_2101.pdf)
-

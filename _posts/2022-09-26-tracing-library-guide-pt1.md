@@ -252,7 +252,7 @@ The partial output from spdk_trace would look like this:
 This time we can see that traces describing bdev IO start and finish contain additional value
 in parentheses, right after the object IO. In this case this is the ID of TCP request tracepoint
 object that was initialized during TCP request. Another object was later created for bdev IO
-trace events and SPDK bound them together with trace relation mechnism.
+trace events and SPDK bound them together with trace relation mechanism.
 
 Usage of spdk_trace to record and display the traces will be explained later.
 

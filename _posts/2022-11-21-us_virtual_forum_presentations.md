@@ -23,4 +23,3 @@ The videos are available in our [YouTube channel](https://www.youtube.com/playli
 11. [Contributions by NVIDIA in SPDK Project - NVMe Multipath and External Snapshots](https://ci.spdk.io/download/2022-virtual-forum-us/SPDK22-Mike-Gerdts-And-Shuhei-Matsumoto-Contributions+by+NVIDIA+in+SPDK+Project.pdf)
 12. [Performance on SPDK.io and How the Performance Reports are created](https://ci.spdk.io/download/2022-virtual-forum-us/SPDK22-Karol-Latecki-Performance-on-SPDK-IO-and-how-the-performance-reports-are-created.pdf)
 13. [SPDK Tracing – Building a Framework to keep up with those Millions of IOPs](https://ci.spdk.io/download/2022-virtual-forum-us/spdk22-harris-spdk-tracing.pdf)
-

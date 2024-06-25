@@ -45,4 +45,3 @@ There will be video available soon; links will be added in a separate post.
 4. [PMDK: Provisioning PMEM in Linux](https://ci.spdk.io/download/events/2019-summit/12+PMDK+-+Steve+Scargall+-+Intel+-+Provisioning+PMEM+in+Linux.pdf)
 5. [PMDK: Introduction to PMEMKV](https://ci.spdk.io/download/events/2019-summit/15+PMDK+-+RobDickinson-intro-to-pmemkv.pdf)
 6. [PMDK: C++ LIBPMEMOBJ API](https://ci.spdk.io/download/events/2019-summit/21+PMDK+-+C%2B%2B+libpmemobj-cpp-API.pdf)
-

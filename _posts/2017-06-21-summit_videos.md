@@ -55,4 +55,3 @@ __Abstract:__ This video will focus on Intel Cache Acceleration Software, its fe
 __Video 12:__ [SPDK Community Process Roundtable](https://www.youtube.com/watch?v=4uqCCqGgk9I&index=6&list=PLj-81kG3zG5ZIE-4CvqsvlFEHoOoWRIHZ) led by Jonathan Stern and Ben Walker
 
 __Abstract:__ This video will give a brief overview of Intel’s current development process and how we are moving towards a more transparent and accessible process.  We would like to get feedback from the community on our Release process.
-

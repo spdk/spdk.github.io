@@ -30,4 +30,3 @@ Please adhere to the following usage guidelines:
 If you have any questions about using the symbol, please reach out to the SPDK community via the mailing list or Slack.
 
 These rules are available permanently at the [SPDK branding guidance]({{ baseurl_rel }}/branding) page.
-

@@ -6,7 +6,7 @@ categories: news
 ---
 
 SPDK TCP NVMe-oF 24.01 performance report documents have been published.
-Report documents contain results of bechmark tests carried out using
+Report documents contain results of benchmark tests carried out using
 two different NICs:
 
 * Mellanox ConnectX-5 Ex

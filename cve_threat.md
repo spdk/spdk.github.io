@@ -59,7 +59,7 @@ CVE Sub-Team Members:
 <a id="current"></a>
 ## Current CVEs
 
-[Click here for a list of all SPDK CVE entires.](https://cve.mitre.org/cgi-bin/cvekey.cgi?keyword=spdk)
+[Click here for a list of all SPDK CVE entries.](https://cve.mitre.org/cgi-bin/cvekey.cgi?keyword=spdk)
 
 <a id="threat"></a>
 ## Threat Modeling

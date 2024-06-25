@@ -23,4 +23,3 @@ The symbol is available in multiple formats:
 ### Support
 
 If you have any questions about using the symbol, please reach out to the SPDK community via the mailing list or Slack.
-
