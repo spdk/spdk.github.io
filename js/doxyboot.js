@@ -20,7 +20,7 @@ $( document ).ready(function() {
     $("#splitbar").remove();
     $("#nav-sync").remove();
     $("#nav-path").remove();
-    $("#side-nav").append(`<nav id='nav-tree-contents' class='navbar navbar-expand-md navbar-light'></nav>`);
+    $("#side-nav").append(`<nav id='nav-tree-contents' class='navbar navbar-expand-md navbar-light px-2'></nav>`);
 
     // Clean up doc-content
     $("#doc-content").prepend(`
