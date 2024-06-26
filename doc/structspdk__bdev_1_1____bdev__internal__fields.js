@@ -1,14 +1,11 @@
 var structspdk__bdev_1_1____bdev__internal__fields =
 [
     [ "__bdev_internal_claim", "unionspdk__bdev_1_1____bdev__internal__fields_1_1____bdev__internal__claim.html", "unionspdk__bdev_1_1____bdev__internal__fields_1_1____bdev__internal__claim" ],
-    [ "TAILQ_ENTRY", "structspdk__bdev_1_1____bdev__internal__fields.html#a740740056a9b6f061a8d71dd755d54d9", null ],
     [ "TAILQ_HEAD", "structspdk__bdev_1_1____bdev__internal__fields.html#a920a1e86dea170c9234bb24f61b16226", null ],
     [ "bdev_name", "structspdk__bdev_1_1____bdev__internal__fields.html#a04441c7b5f5cd2422a01df4cacf97a7b", null ],
-    [ "claim", "structspdk__bdev_1_1____bdev__internal__fields.html#a22f12101e334a58b395b16ead5bf3b6b", null ],
     [ "claim_type", "structspdk__bdev_1_1____bdev__internal__fields.html#a44a2ea1eb398ba877d738c2ef2d020c6", null ],
     [ "examine_in_progress", "structspdk__bdev_1_1____bdev__internal__fields.html#af31c1f546b2115b5887bc0c3db3418b5", null ],
     [ "histogram_enabled", "structspdk__bdev_1_1____bdev__internal__fields.html#ad010a75a238dd2290faf44545c43109e", null ],
-    [ "histogram_in_progress", "structspdk__bdev_1_1____bdev__internal__fields.html#ad49ebdb41b6e0dc5954ff7a6039e40c5", null ],
     [ "io_time", "structspdk__bdev_1_1____bdev__internal__fields.html#a55d6103a185f6c50c9b5d58976d08508", null ],
     [ "locked_ranges", "structspdk__bdev_1_1____bdev__internal__fields.html#a7bada4fbc5c2a5de7f7fdf7aef9d876f", null ],
     [ "measured_queue_depth", "structspdk__bdev_1_1____bdev__internal__fields.html#a544e45acd435eb8c7269f08166841f41", null ],

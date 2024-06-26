@@ -1,5 +1,8 @@
 <map id="spdk_nvmf_fc_ls_acc_hdr" name="spdk_nvmf_fc_ls_acc_hdr">
-<area shape="rect" id="node1" title=" " alt="" coords="31,184,219,211"/>
-<area shape="rect" id="node2" href="$structspdk__nvmf__fc__lsdesc__rqst.html" title=" " alt="" coords="127,95,321,121"/>
-<area shape="rect" id="node3" href="$structspdk__nvmf__fc__ls__rqst__w0.html" title=" " alt="" coords="5,5,195,32"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="6,199,179,228"/>
+<area shape="rect" id="Node000002" href="$structspdk__nvmf__fc__ls__rqst__w0.html" title=" " alt="" coords="5,5,180,35"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="91,51,87,89,86,132,93,198,88,199,81,132,81,89,85,50"/>
+<area shape="rect" id="Node000003" href="$structspdk__nvmf__fc__lsdesc__rqst.html" title=" " alt="" coords="117,102,295,132"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="123,43,191,100,187,104,119,47"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="179,144,111,200,108,196,176,140"/>
 </map>

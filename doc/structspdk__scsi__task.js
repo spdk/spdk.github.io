@@ -1,29 +1,4 @@
 var structspdk__scsi__task =
 [
-    [ "TAILQ_ENTRY", "structspdk__scsi__task.html#a28ad6cf348a7dba852224daa27e89117", null ],
-    [ "abort_id", "structspdk__scsi__task.html#a35a178efb7ff870fe0039196c3be720d", null ],
-    [ "alloc_len", "structspdk__scsi__task.html#a8c253a9ec980449f385640f86bd0a709", null ],
-    [ "bdev_io", "structspdk__scsi__task.html#a22482d12d534a2eab078068d586b9258", null ],
-    [ "bdev_io_wait", "structspdk__scsi__task.html#a101adf17cdbb1f5e08b2e161533e1b03", null ],
-    [ "caw_iov", "structspdk__scsi__task.html#a6fa360cc8500086552f787c6c22ee30e", null ],
-    [ "cdb", "structspdk__scsi__task.html#a961329926b7efacff65989b4fed4b617", null ],
-    [ "cpl_fn", "structspdk__scsi__task.html#afa26345de5d75d6850560cc6c1bbc5fe", null ],
-    [ "data_transferred", "structspdk__scsi__task.html#aed0de3999a81a9aeb079f0d9e4c4f098", null ],
-    [ "dxfer_dir", "structspdk__scsi__task.html#a9f47315cf388129c3a93aeebee7daa7c", null ],
-    [ "free_fn", "structspdk__scsi__task.html#a6f75af1e2bc0373d9c8eb23d1cc89bec", null ],
-    [ "function", "structspdk__scsi__task.html#a7a550df40ece454c8efea04ef9c56cc2", null ],
-    [ "initiator_port", "structspdk__scsi__task.html#a916eecadaca43b7cc5a824199b628f52", null ],
-    [ "iov", "structspdk__scsi__task.html#ad9943413adf600861730af1fdc4d15a7", null ],
-    [ "iovcnt", "structspdk__scsi__task.html#a9237652843b28a72bd25fbabb0c3ecd9", null ],
-    [ "iovs", "structspdk__scsi__task.html#aba29ae5812c3cee970298f7380118c9c", null ],
-    [ "length", "structspdk__scsi__task.html#a515144ee5e35f8b863d45623c0b9538e", null ],
-    [ "lun", "structspdk__scsi__task.html#a31f83a16a11e3e1e0465bc637b799147", null ],
-    [ "offset", "structspdk__scsi__task.html#acc6e7264981c87c73d1634091130ec97", null ],
-    [ "ref", "structspdk__scsi__task.html#a355593ecb799474a678aacecf4878d31", null ],
-    [ "response", "structspdk__scsi__task.html#a4b21109abfb9acba99a0a20a242aef30", null ],
-    [ "sense_data", "structspdk__scsi__task.html#a7aaabb12bc0db367abb0533bc2b740ad", null ],
-    [ "sense_data_len", "structspdk__scsi__task.html#aeb209bc3f191f792707c7d4e7b1fe4e4", null ],
-    [ "status", "structspdk__scsi__task.html#afc9a5efc76a958e8d228fb6316e4eccb", null ],
-    [ "target_port", "structspdk__scsi__task.html#af64768a06fe99dea3b1c90791d5970b0", null ],
-    [ "transfer_len", "structspdk__scsi__task.html#a7ea23efe570b37963348ab191cedcd97", null ]
+    [ "data_transferred", "structspdk__scsi__task.html#aed0de3999a81a9aeb079f0d9e4c4f098", null ]
 ];

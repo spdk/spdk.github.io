@@ -1,5 +1,7 @@
 <map id="spdk_bdev_module_claim" name="spdk_bdev_module_claim">
-<area shape="rect" id="node1" title=" " alt="" coords="5,213,196,240"/>
-<area shape="rect" id="node2" href="$structspdk__bdev__module.html" title="Block device module." alt="" coords="27,124,175,151"/>
-<area shape="rect" id="node3" href="$structspdk__bdev__module_1_1____bdev__module__internal__fields.html" title="Fields that are used by the internal bdev subsystem." alt="" coords="10,5,191,61"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,237,182,266"/>
+<area shape="rect" id="Node000002" href="$structspdk__bdev__module.html" title="Block device module." alt="" coords="24,140,163,170"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="96,185,96,236,91,236,91,185"/>
+<area shape="rect" id="Node000003" href="$structspdk__bdev__module_1_1____bdev__module__internal__fields.html" title="Fields that are used by the internal bdev subsystem." alt="" coords="8,5,179,73"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="96,88,96,140,91,140,91,88"/>
 </map>

@@ -1,6 +1,7 @@
 <map id="spdk_bdev::__bdev_internal_fields::__bdev_internal_claim" name="spdk_bdev::__bdev_internal_fields::__bdev_internal_claim">
-<area shape="rect" id="node1" title="Which module has claimed this bdev." alt="" coords="567,70,785,111"/>
-<area shape="rect" id="node2" href="$structspdk__bdev_1_1____bdev__internal__fields_1_1____bdev__internal__claim_1_1____bdev__internal__claim__v1.html" title="Claims acquired with spdk_bdev_module_claim_bdev()" alt="" coords="255,5,497,61"/>
-<area shape="rect" id="node3" href="$structspdk__bdev__module.html" title="Block device module." alt="" coords="5,20,153,47"/>
-<area shape="rect" id="node4" href="$structspdk__bdev_1_1____bdev__internal__fields_1_1____bdev__internal__claim_1_1____bdev__internal__claim__v2.html" title="Claims acquired with spdk_bdev_module_claim_bdev_desc()" alt="" coords="255,85,497,141"/>
+<area shape="rect" id="Node000001" title="Which module has claimed this bdev." alt="" coords="292,62,493,110"/>
+<area shape="rect" id="Node000002" href="$structspdk__bdev_1_1____bdev__internal__fields_1_1____bdev__internal__claim_1_1____bdev__internal__claim__v1.html" title="Claims acquired with spdk_bdev_module_claim_bdev()" alt="" coords="5,5,226,73"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="241,58,292,66,291,71,240,63"/>
+<area shape="rect" id="Node000003" href="$structspdk__bdev_1_1____bdev__internal__fields_1_1____bdev__internal__claim_1_1____bdev__internal__claim__v2.html" title="Claims acquired with spdk_bdev_module_claim_bdev_desc()" alt="" coords="5,97,226,165"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="240,108,291,100,292,105,241,113"/>
 </map>

@@ -6,8 +6,5 @@ var structspdk__nvmf__ns__opts =
     [ "no_auto_visible", "structspdk__nvmf__ns__opts.html#affab031579df75c6a4e1d2c960949140", null ],
     [ "nsid", "structspdk__nvmf__ns__opts.html#a66d255ba06755be6be1402d0cf9a459d", null ],
     [ "opts_size", "structspdk__nvmf__ns__opts.html#a1aa679e3c4783a7d6cac6a35b23c17bb", null ],
-    [ "reserved44", "structspdk__nvmf__ns__opts.html#ae6e71f45c0581a42766759d226e66aa3", null ],
-    [ "reserved61", "structspdk__nvmf__ns__opts.html#a022b3271aad1d889aa97756adf680f8d", null ],
-    [ "transport_specific", "structspdk__nvmf__ns__opts.html#aa251c87024c1e68f8f09e5afa3812ab3", null ],
     [ "uuid", "structspdk__nvmf__ns__opts.html#a4da1aada54acc633986ed373fa4a7638", null ]
 ];

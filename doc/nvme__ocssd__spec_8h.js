@@ -4,9 +4,8 @@ var nvme__ocssd__spec_8h =
     [ "spdk_ocssd_geometry_data", "structspdk__ocssd__geometry__data.html", "structspdk__ocssd__geometry__data" ],
     [ "spdk_ocssd_chunk_information_entry", "structspdk__ocssd__chunk__information__entry.html", "structspdk__ocssd__chunk__information__entry" ],
     [ "spdk_ocssd_chunk_notification_entry", "structspdk__ocssd__chunk__notification__entry.html", "structspdk__ocssd__chunk__notification__entry" ],
-    [ "spdk_ocssd_vector_cpl", "structspdk__ocssd__vector__cpl.html", "structspdk__ocssd__vector__cpl" ],
+    [ "spdk_ocssd_vector_cpl", "structspdk__ocssd__vector__cpl.html", null ],
     [ "SPDK_NVME_OCSSD_MAX_LBAL_ENTRIES", "nvme__ocssd__spec_8h.html#a7d96f9d96a27db374c495e271f84d765", null ],
-    [ "SPDK_OCSSD_IO_FLAGS_LIMITED_RETRY", "nvme__ocssd__spec_8h.html#a191404a5f78f1cadcadb5443e874f84f", null ],
     [ "spdk_ocssd_admin_opcode", "nvme__ocssd__spec_8h.html#a42b34558cb1809ea9157f873441c919d", [
       [ "SPDK_OCSSD_OPC_GEOMETRY", "nvme__ocssd__spec_8h.html#a42b34558cb1809ea9157f873441c919da17822237ff045bebf515bedfad16dd8c", null ]
     ] ],
@@ -30,10 +29,5 @@ var nvme__ocssd__spec_8h =
       [ "SPDK_OCSSD_SC_WRITE_FAIL_CHUNK_EARLY_CLOSE", "nvme__ocssd__spec_8h.html#ae66ff1776aa8a6560e7c762726777deaaf5eb09087e3802a8d720aeb006012fcd", null ],
       [ "SPDK_OCSSD_SC_OUT_OF_ORDER_WRITE", "nvme__ocssd__spec_8h.html#ae66ff1776aa8a6560e7c762726777deaa52972575b3058bfd5a4ccd9eb172da26", null ],
       [ "SPDK_OCSSD_SC_READ_HIGH_ECC", "nvme__ocssd__spec_8h.html#ae66ff1776aa8a6560e7c762726777deaa56501d789236d739e033e609d627b2f2", null ]
-    ] ],
-    [ "SPDK_STATIC_ASSERT", "nvme__ocssd__spec_8h.html#ae47104483611b04414d0a421b248d178", null ],
-    [ "SPDK_STATIC_ASSERT", "nvme__ocssd__spec_8h.html#a4b36d556463b5fe4bb924a3da299fca0", null ],
-    [ "SPDK_STATIC_ASSERT", "nvme__ocssd__spec_8h.html#a795ecd2378b97c445193b2cdc1be99bb", null ],
-    [ "SPDK_STATIC_ASSERT", "nvme__ocssd__spec_8h.html#a584df915ebdcf6a753a2370d5cbd784f", null ],
-    [ "SPDK_STATIC_ASSERT", "nvme__ocssd__spec_8h.html#a6e889e465d0062a5325c457c07d39adb", null ]
+    ] ]
 ];

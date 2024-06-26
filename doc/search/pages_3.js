@@ -1,7 +1,13 @@
 var searchData=
 [
-  ['deprecation_6299',['Deprecation',['../deprecation.html',1,'intro']]],
-  ['direct_20memory_20access_20_28dma_29_20from_20user_20space_6300',['Direct Memory Access (DMA) From User Space',['../memory.html',1,'concepts']]],
-  ['distributions_6301',['distributions',['../distributions.html',1,'ci_tools']]],
-  ['driver_20modules_6302',['Driver Modules',['../driver_modules.html',1,'']]]
+  ['changelog_0',['Changelog',['../changelog.html',1,'intro']]],
+  ['ci_20tools_1',['CI Tools',['../ci_tools.html',1,'']]],
+  ['compliance_2',['FIPS Compliance',['../fips.html',1,'general']]],
+  ['compression_20algorithm_3',['SPDK &quot;Reduce&quot; Block Compression Algorithm',['../reduce.html',1,'prog_guides']]],
+  ['concepts_4',['Concepts',['../concepts.html',1,'']]],
+  ['concurrency_5',['Message Passing and Concurrency',['../concurrency.html',1,'concepts']]],
+  ['config_6',['Linking SPDK applications with pkg-config',['../pkgconfig.html',1,'user_guides']]],
+  ['configuration_20user_20guide_7',['System Configuration User Guide',['../system_configuration.html',1,'user_guides']]],
+  ['containers_8',['SPDK and Containers',['../containers.html',1,'misc']]],
+  ['custom_20block_20device_20module_9',['Writing a Custom Block Device Module',['../bdev_module.html',1,'prog_guides']]]
 ];

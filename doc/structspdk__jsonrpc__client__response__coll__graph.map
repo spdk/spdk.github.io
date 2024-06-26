@@ -1,4 +1,5 @@
 <map id="spdk_jsonrpc_client_response" name="spdk_jsonrpc_client_response">
-<area shape="rect" id="node1" title=" " alt="" coords="5,139,156,180"/>
-<area shape="rect" id="node2" href="$structspdk__json__val.html" title=" " alt="" coords="23,5,138,32"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,159,146,208"/>
+<area shape="rect" id="Node000002" href="$structspdk__json__val.html" title=" " alt="" coords="23,5,128,35"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="78,50,78,159,73,159,73,50"/>
 </map>

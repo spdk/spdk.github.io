@@ -1,11 +1,25 @@
 <map id="spdk_opal_d0_features_info" name="spdk_opal_d0_features_info">
-<area shape="rect" id="node1" title=" " alt="" coords="591,173,795,200"/>
-<area shape="rect" id="node2" href="$structspdk__opal__d0__locking__feat.html" title=" " alt="" coords="258,5,457,32"/>
-<area shape="rect" id="node3" href="$structspdk__opal__d0__feat__hdr.html" title=" " alt="" coords="5,173,177,200"/>
-<area shape="rect" id="node4" href="$structspdk__opal__d0__single__user__mode__feat.html" title=" " alt="" coords="279,57,436,98"/>
-<area shape="rect" id="node5" href="$structspdk__opal__d0__v100__feat.html" title=" " alt="" coords="266,123,449,149"/>
-<area shape="rect" id="node6" href="$structspdk__opal__d0__v200__feat.html" title=" " alt="" coords="266,173,449,200"/>
-<area shape="rect" id="node7" href="$structspdk__opal__d0__datastore__feat.html" title=" " alt="" coords="251,224,464,251"/>
-<area shape="rect" id="node8" href="$structspdk__opal__d0__geo__feat.html" title=" " alt="" coords="270,275,445,301"/>
-<area shape="rect" id="node9" href="$structspdk__opal__d0__tper__feat.html" title=" " alt="" coords="269,325,446,352"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="563,184,755,214"/>
+<area shape="rect" id="Node000002" href="$structspdk__opal__d0__tper__feat.html" title=" " alt="" coords="258,5,426,35"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="433,37,488,56,540,83,573,107,603,134,647,182,643,186,599,138,570,112,538,88,485,61,431,42"/>
+<area shape="rect" id="Node000003" href="$structspdk__opal__d0__feat__hdr.html" title=" " alt="" coords="5,184,169,214"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="106,170,161,106,199,72,240,44,267,33,269,38,243,49,202,76,165,109,110,173"/>
+<area shape="rect" id="Node000004" href="$structspdk__opal__d0__locking__feat.html" title=" " alt="" coords="250,59,434,88"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="118,172,174,134,241,98,272,86,273,91,243,103,176,139,121,177"/>
+<area shape="rect" id="Node000005" href="$structspdk__opal__d0__single__user__mode__feat.html" title=" " alt="" coords="269,112,415,161"/>
+<area shape="poly" id="edge6_Node000005_Node000003" title=" " alt="" coords="165,177,268,152,269,157,166,182"/>
+<area shape="rect" id="Node000006" href="$structspdk__opal__d0__geo__feat.html" title=" " alt="" coords="259,184,425,214"/>
+<area shape="poly" id="edge8_Node000006_Node000003" title=" " alt="" coords="184,196,259,196,259,202,184,202"/>
+<area shape="rect" id="Node000007" href="$structspdk__opal__d0__datastore__feat.html" title=" " alt="" coords="242,237,442,267"/>
+<area shape="poly" id="edge10_Node000007_Node000003" title=" " alt="" coords="168,215,193,221,260,234,259,239,192,226,167,220"/>
+<area shape="rect" id="Node000008" href="$structspdk__opal__d0__v100__feat.html" title=" " alt="" coords="256,291,428,320"/>
+<area shape="poly" id="edge12_Node000008_Node000003" title=" " alt="" coords="128,219,181,249,243,276,276,288,275,293,241,281,179,253,125,224"/>
+<area shape="rect" id="Node000009" href="$structspdk__opal__d0__v200__feat.html" title=" " alt="" coords="256,344,428,374"/>
+<area shape="poly" id="edge14_Node000009_Node000003" title=" " alt="" coords="113,223,169,278,204,306,243,330,270,341,268,346,240,335,201,311,165,282,109,227"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="419,90,443,98,540,135,632,181,629,186,538,140,441,103,418,95"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="430,151,540,172,582,181,581,186,538,177,429,156"/>
+<area shape="poly" id="edge7_Node000001_Node000006" title=" " alt="" coords="440,196,562,196,562,202,440,202"/>
+<area shape="poly" id="edge9_Node000001_Node000007" title=" " alt="" coords="457,234,539,221,585,212,586,217,539,226,458,239"/>
+<area shape="poly" id="edge11_Node000001_Node000008" title=" " alt="" coords="442,284,538,257,588,235,631,212,633,216,590,239,540,262,443,289"/>
+<area shape="poly" id="edge13_Node000001_Node000009" title=" " alt="" coords="443,338,491,323,538,302,570,281,599,257,643,212,647,216,603,261,573,286,540,307,493,328,444,343"/>
 </map>

@@ -7,7 +7,5 @@ var structspdk__nvme__cdata__nvmf__specific =
     [ "ioccsz", "structspdk__nvme__cdata__nvmf__specific.html#a760ac459f1386e94310809765b5577d8", null ],
     [ "iorcsz", "structspdk__nvme__cdata__nvmf__specific.html#ac2ad3d852b70ca6fd78dad1f6fac8fd6", null ],
     [ "msdbd", "structspdk__nvme__cdata__nvmf__specific.html#a30dd8499d8d90df19f411be4aba7f10b", null ],
-    [ "ofcs", "structspdk__nvme__cdata__nvmf__specific.html#a7415f73a03e57d7deca14ae8802d2a87", null ],
-    [ "reserved", "structspdk__nvme__cdata__nvmf__specific.html#a4ceb298053dfd204fc5892b60c772996", null ],
-    [ "reserved", "structspdk__nvme__cdata__nvmf__specific.html#a9cf4b6ba7d74dd7e6aa6f34eba11fbed", null ]
+    [ "ofcs", "structspdk__nvme__cdata__nvmf__specific.html#a7415f73a03e57d7deca14ae8802d2a87", null ]
 ];

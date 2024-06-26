@@ -1,7 +1,13 @@
 <map id="spdk_nvmf_transport" name="spdk_nvmf_transport">
-<area shape="rect" id="node1" title=" " alt="" coords="70,184,230,211"/>
-<area shape="rect" id="node2" href="$structspdk__nvmf__transport__ops.html" title=" " alt="" coords="5,392,196,419"/>
-<area shape="rect" id="node3" href="$structspdk__nvmf__transport__poll__group.html" title=" " alt="" coords="70,273,230,315"/>
-<area shape="rect" id="node4" href="$structspdk__nvmf__transport__opts.html" title=" " alt="" coords="53,95,247,121"/>
-<area shape="rect" id="node5" href="$structspdk__json__val.html" title=" " alt="" coords="93,5,207,32"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="66,199,219,228"/>
+<area shape="rect" id="Node000002" href="$structspdk__nvmf__transport__ops.html" title=" " alt="" coords="10,430,190,460"/>
+<area shape="poly" id="edge2_Node000002_Node000001" title=" " alt="" coords="87,237,46,262,29,278,15,297,9,315,10,333,16,352,26,370,54,403,83,428,79,432,51,407,22,373,11,354,4,334,4,314,10,294,25,274,43,257,84,233"/>
+<area shape="rect" id="Node000003" href="$structspdk__nvmf__transport__poll__group.html" title=" " alt="" coords="66,295,219,344"/>
+<area shape="poly" id="edge4_Node000003_Node000001" title=" " alt="" coords="145,244,145,295,140,295,140,244"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="205,424,231,415,246,404,258,384,264,365,265,347,261,328,240,292,208,254,175,231,178,227,211,250,244,289,266,327,270,346,270,366,263,387,250,408,233,420,206,429"/>
+<area shape="poly" id="edge3_Node000002_Node000003" title=" " alt="" coords="109,358,104,369,98,401,100,429,95,430,93,400,98,367,104,356"/>
+<area shape="rect" id="Node000009" href="$structspdk__nvmf__transport__opts.html" title=" " alt="" coords="50,102,235,132"/>
+<area shape="poly" id="edge5_Node000001_Node000009" title=" " alt="" coords="145,147,145,198,140,198,140,147"/>
+<area shape="rect" id="Node000010" href="$structspdk__json__val.html" title=" " alt="" coords="90,5,195,35"/>
+<area shape="poly" id="edge6_Node000009_Node000010" title=" " alt="" coords="145,51,145,102,140,102,140,51"/>
 </map>

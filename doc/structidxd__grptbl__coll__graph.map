@@ -1,5 +1,7 @@
 <map id="idxd_grptbl" name="idxd_grptbl">
-<area shape="rect" id="node1" title=" " alt="" coords="24,184,119,211"/>
-<area shape="rect" id="node2" href="$structidxd__grpcfg.html" title=" " alt="" coords="22,95,121,121"/>
-<area shape="rect" id="node3" href="$unionidxd__group__flags.html" title=" " alt="" coords="5,5,137,32"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="22,199,114,228"/>
+<area shape="rect" id="Node000002" href="$structidxd__grpcfg.html" title=" " alt="" coords="21,102,115,132"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="71,147,71,198,65,198,65,147"/>
+<area shape="rect" id="Node000003" href="$unionidxd__group__flags.html" title=" " alt="" coords="5,5,131,35"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="71,51,71,102,65,102,65,51"/>
 </map>

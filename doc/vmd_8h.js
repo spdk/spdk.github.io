@@ -1,6 +1,5 @@
 var vmd_8h =
 [
-    [ "MAX_VMD_TARGET", "vmd_8h.html#a80d2d2c79a93479422ada31a87d4664d", null ],
     [ "spdk_vmd_led_state", "vmd_8h.html#acbf78271da1326a9e70fe8bb0aeb6a75", [
       [ "SPDK_VMD_LED_STATE_OFF", "vmd_8h.html#acbf78271da1326a9e70fe8bb0aeb6a75a6dc9e7f963285aa701836154079dbd73", null ],
       [ "SPDK_VMD_LED_STATE_IDENTIFY", "vmd_8h.html#acbf78271da1326a9e70fe8bb0aeb6a75aef274f94efbc0c85819a635dd58860a7", null ],

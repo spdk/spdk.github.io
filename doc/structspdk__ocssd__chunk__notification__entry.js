@@ -12,8 +12,6 @@ var structspdk__ocssd__chunk__notification__entry =
     [ "nsid", "structspdk__ocssd__chunk__notification__entry.html#ae73c05a35172bb876aa3860acfbfb9ee", null ],
     [ "pu", "structspdk__ocssd__chunk__notification__entry.html#a4f8a236375b150ce7b9a139f9cac7da5", null ],
     [ "refreshed", "structspdk__ocssd__chunk__notification__entry.html#a018188382405987a8f86d387b26690fd", null ],
-    [ "rsvd", "structspdk__ocssd__chunk__notification__entry.html#af27b51304ef91eb1a5c55d0f01bceca4", null ],
-    [ "rsvd2", "structspdk__ocssd__chunk__notification__entry.html#a3d3a1360c9d0760187dffecfb4995d96", null ],
     [ "state", "structspdk__ocssd__chunk__notification__entry.html#a0c855a37cf077011598fe4662fc8bbbb", null ],
     [ "unrecoverable", "structspdk__ocssd__chunk__notification__entry.html#acf2668e09d087e0294af2b2f42160ad7", null ],
     [ "wit_exceeded", "structspdk__ocssd__chunk__notification__entry.html#a1eade6a5ef1b6fdcdca02938776b5533", null ]

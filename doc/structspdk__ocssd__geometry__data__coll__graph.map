@@ -1,4 +1,5 @@
 <map id="spdk_ocssd_geometry_data" name="spdk_ocssd_geometry_data">
-<area shape="rect" id="node1" title=" " alt="" coords="5,95,208,121"/>
-<area shape="rect" id="node2" href="$structspdk__ocssd__dev__lba__fmt.html" title=" " alt="" coords="14,5,199,32"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,102,197,132"/>
+<area shape="rect" id="Node000002" href="$structspdk__ocssd__dev__lba__fmt.html" title=" " alt="" coords="16,5,186,35"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="104,51,104,102,98,102,98,51"/>
 </map>

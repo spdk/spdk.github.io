@@ -1,13 +1,6 @@
 var structspdk__nvme__zns__zone__desc =
 [
-    [ "bits", "structspdk__nvme__zns__zone__desc.html#ae94fff8a714b2c599dc1aec68a6d77f3", null ],
     [ "fzr", "structspdk__nvme__zns__zone__desc.html#a8d70b1cfa360d12031eb39a0c367ccc8", null ],
-    [ "raw", "structspdk__nvme__zns__zone__desc.html#a7d3e40be87c15b5886df5c12bdd686d2", null ],
-    [ "reserved", "structspdk__nvme__zns__zone__desc.html#a6cac5b7a3197554cafb4e695906cb66c", null ],
-    [ "reserved32", "structspdk__nvme__zns__zone__desc.html#ab82c74a23865a7546bbb4976092aa64a", null ],
-    [ "rsvd0", "structspdk__nvme__zns__zone__desc.html#af1691489a32138132a721cc4a293f27a", null ],
-    [ "rsvd1", "structspdk__nvme__zns__zone__desc.html#aa30059688627734924c38d15a29b7d63", null ],
-    [ "rsvd3", "structspdk__nvme__zns__zone__desc.html#ac7879b95d7a0f07bbd72e1189a923b99", null ],
     [ "rzr", "structspdk__nvme__zns__zone__desc.html#ab606ccfe298d4c20d97a5382f794d255", null ],
     [ "wp", "structspdk__nvme__zns__zone__desc.html#a1f7ee3f826226731b4e7187a2815a699", null ],
     [ "za", "structspdk__nvme__zns__zone__desc.html#abac2cc167394a5a53a297dde8e248b3e", null ],

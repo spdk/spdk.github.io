@@ -1,5 +1,8 @@
 <map id="spdk_scsi_task" name="spdk_scsi_task">
-<area shape="rect" id="node1" title=" " alt="" coords="39,185,159,212"/>
-<area shape="rect" id="node2" href="$structspdk__bdev__io__wait__entry.html" title="Structure to register a callback when an spdk_bdev_io becomes available." alt="" coords="5,95,192,121"/>
-<area shape="rect" id="node3" href="$structspdk__bdev.html" title=" " alt="" coords="53,5,145,32"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="38,203,147,233"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="164,208,173,218,165,227,148,230,147,225,163,222,168,218,161,212"/>
+<area shape="rect" id="Node000002" href="$structspdk__bdev__io__wait__entry.html" title="Structure to register a callback when an spdk_bdev_io becomes available." alt="" coords="5,102,180,132"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="95,147,95,202,90,202,90,147"/>
+<area shape="rect" id="Node000003" href="$structspdk__bdev.html" title=" " alt="" coords="49,5,136,35"/>
+<area shape="poly" id="edge3_Node000002_Node000003" title=" " alt="" coords="95,51,95,102,90,102,90,51"/>
 </map>

@@ -11,6 +11,5 @@ var structspdk__bs__opts =
     [ "max_channel_ops", "structspdk__bs__opts.html#ac5417afa104f5061bab1bfae0769c3a6", null ],
     [ "max_md_ops", "structspdk__bs__opts.html#a63e0b619fedc29159dffd7feca08396b", null ],
     [ "num_md_pages", "structspdk__bs__opts.html#a0c7b15264236f4b044731ca7c0de3014", null ],
-    [ "opts_size", "structspdk__bs__opts.html#ae08542c0960c45bc6acaffc68aaeaaab", null ],
-    [ "reserved36", "structspdk__bs__opts.html#a202ab84658e7073e3651524495450454", null ]
+    [ "opts_size", "structspdk__bs__opts.html#ae08542c0960c45bc6acaffc68aaeaaab", null ]
 ];

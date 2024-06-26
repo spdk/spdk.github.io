@@ -5,7 +5,7 @@ var structspdk__vfu__endpoint__ops =
     [ "detach_device", "structspdk__vfu__endpoint__ops.html#a69ef95e6406e57fac1fe4ca32a95aa20", null ],
     [ "get_device_info", "structspdk__vfu__endpoint__ops.html#a3d0a126f68ccaaaff332d355013450f7", null ],
     [ "get_vendor_capability", "structspdk__vfu__endpoint__ops.html#a7867ffd354b1e31889cd8e865ba588d7", null ],
-    [ "init", "structspdk__vfu__endpoint__ops.html#afe8776dc6275b83229f963591c2f3871", null ],
+    [ "init", "structspdk__vfu__endpoint__ops.html#aec0faf7b087c328eae30dc22732916a9", null ],
     [ "name", "structspdk__vfu__endpoint__ops.html#a72fd2cc7fbb787f9dc785083900de668", null ],
     [ "post_memory_add", "structspdk__vfu__endpoint__ops.html#ac6739696eb232d4a07fcabce312cb888", null ],
     [ "pre_memory_remove", "structspdk__vfu__endpoint__ops.html#a00f7d1fb286931725b14f5f410bbcd33", null ],

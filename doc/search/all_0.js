@@ -1,13 +1,17 @@
 var searchData=
 [
-  ['_5f16bpistm_0',['_16bpistm',['../structspdk__nvme__nvm__ns__data.html#af2f3dd390e6cabd8fabafe6c9cefd955',1,'spdk_nvme_nvm_ns_data']]],
-  ['_5f16bpists_1',['_16bpists',['../structspdk__nvme__nvm__ns__data.html#aa8c14da23793b12b0f8af32fd18634f4',1,'spdk_nvme_nvm_ns_data']]],
-  ['_5f_5fbdev_5finternal_5fclaim_2',['__bdev_internal_claim',['../unionspdk__bdev_1_1____bdev__internal__fields_1_1____bdev__internal__claim.html',1,'spdk_bdev::__bdev_internal_fields']]],
-  ['_5f_5fbdev_5finternal_5fclaim_5fv1_3',['__bdev_internal_claim_v1',['../structspdk__bdev_1_1____bdev__internal__fields_1_1____bdev__internal__claim_1_1____bdev__internal__claim__v1.html',1,'spdk_bdev::__bdev_internal_fields::__bdev_internal_claim']]],
-  ['_5f_5fbdev_5finternal_5fclaim_5fv2_4',['__bdev_internal_claim_v2',['../structspdk__bdev_1_1____bdev__internal__fields_1_1____bdev__internal__claim_1_1____bdev__internal__claim__v2.html',1,'spdk_bdev::__bdev_internal_fields::__bdev_internal_claim']]],
-  ['_5f_5fbdev_5finternal_5ffields_5',['__bdev_internal_fields',['../structspdk__bdev_1_1____bdev__internal__fields.html',1,'spdk_bdev']]],
-  ['_5f_5fbdev_5fio_5finternal_5ffields_6',['__bdev_io_internal_fields',['../structspdk__bdev__io_1_1____bdev__io__internal__fields.html',1,'spdk_bdev_io']]],
-  ['_5f_5fbdev_5fmodule_5finternal_5ffields_7',['__bdev_module_internal_fields',['../structspdk__bdev__module_1_1____bdev__module__internal__fields.html',1,'spdk_bdev_module']]],
-  ['_5f_5fsock_5frequest_5finternal_8',['__sock_request_internal',['../structspdk__sock__request_1_1____sock__request__internal.html',1,'spdk_sock_request']]],
-  ['_5fspdk_5fpci_5fdevice_5finternal_9',['_spdk_pci_device_internal',['../structspdk__pci__device_1_1__spdk__pci__device__internal.html',1,'spdk_pci_device']]]
+  ['01_3a_20blobstore_20thin_20provisioning_0',['v18.01: Blobstore Thin Provisioning',['../changelog.html#changelog-v18-01',1,'']]],
+  ['01_3a_20nvme_20of_20tcp_20ip_20transport_20open_20channel_20ssd_20flash_20translation_20layer_20caching_20bdev_20based_20on_20ocf_20isa_20l_20support_20dif_20dix_20library_1',['v19.01: NVMe-oF TCP/IP Transport, Open Channel SSD Flash Translation Layer, Caching bdev based on OCF, ISA-L Support, DIF/DIX library',['../changelog.html#changelog-v19-01',1,'']]],
+  ['01_3a_20optimized_20thin_20provisioning_20ftl_20bdev_20vmd_20hot_20plug_20fused_20support_2',['v20.01: Optimized thin provisioning, FTL bdev, VMD hot plug, FUSED support',['../changelog.html#changelog-v20-01',1,'']]],
+  ['03_3a_20blobstore_20and_20userspace_20vhost_20scsi_20target_3',['v17.03: Blobstore and userspace vhost-scsi target',['../changelog.html#changelog-v17-03',1,'']]],
+  ['04_3a_20compression_20bdev_20notification_20library_20nvme_20opal_20support_4',['v19.04: Compression bdev, Notification library, NVMe Opal support',['../changelog.html#changelog-v19-04',1,'']]],
+  ['04_3a_20logical_20volume_20snapshot_20clone_20iscsi_20initiator_20bdev_20qos_20vpp_20userspace_20tcp_20ip_5',['v18.04: Logical Volume Snapshot/Clone, iSCSI Initiator, Bdev QoS, VPP Userspace TCP/IP',['../changelog.html#changelog-v18-04',1,'']]],
+  ['04_3a_20spdk_20top_20idxd_20nvme_20qpair_20groups_6',['v20.04: SPDK Top, IDXD, NVMe qpair groups',['../changelog.html#changelog-v20-04',1,'']]],
+  ['06_3a_20nvmf_20userspace_20target_7',['v16.06: NVMf userspace target',['../changelog.html#changelog-v16-06',1,'']]],
+  ['07_3a_20build_20system_20improvements_20userspace_20vhost_20blk_20target_20and_20gpt_20bdev_8',['v17.07: Build system improvements, userspace vhost-blk target, and GPT bdev',['../changelog.html#changelog-v17-07',1,'']]],
+  ['07_3a_20nvme_20of_20fc_20transport_20vmd_20nvme_20of_20persistent_20reservations_20bdev_20i_20o_20with_20separate_20metadata_9',['v19.07: NVMe-oF FC Transport, VMD, NVMe-oF Persistent reservations, Bdev I/O with separate metadata',['../changelog.html#changelog-v19-07',1,'']]],
+  ['07_3a_20raid_20infrastructure_20improvements_20bug_20fixes_10',['v18.07: Raid, Infrastructure Improvements, Bug Fixes',['../changelog.html#changelog-v18-07',1,'']]],
+  ['07_3a_20spdk_20csi_20driver_20new_20accel_5ffw_20commands_20i_20o_20abort_20support_11',['v20.07: SPDK CSI driver, new accel_fw commands, I/O abort support',['../changelog.html#changelog-v20-07',1,'']]],
+  ['08_3a_20iscsi_20target_20nvme_20over_20fabrics_20maturity_12',['v16.08: iSCSI target, NVMe over Fabrics maturity',['../changelog.html#changelog-v16-08',1,'']]],
+  ['09_3a_20upcoming_20release_13',['v24.09: (Upcoming Release)',['../changelog.html#changelog-v24-09',1,'']]]
 ];

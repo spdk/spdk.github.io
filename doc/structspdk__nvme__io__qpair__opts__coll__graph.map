@@ -1,11 +1,19 @@
 <map id="spdk_nvme_io_qpair_opts" name="spdk_nvme_io_qpair_opts">
-<area shape="rect" id="node1" title="NVMe I/O queue pair initialization options." alt="" coords="547,183,737,209"/>
-<area shape="rect" id="node2" href="$structspdk__nvme__cmd.html" title=" " alt="" coords="325,132,457,159"/>
-<area shape="rect" id="node3" href="$unionspdk__nvme__cmd__cdw10.html" title=" " alt="" coords="12,5,193,32"/>
-<area shape="rect" id="node4" href="$unionspdk__nvme__cmd__cdw11.html" title=" " alt="" coords="12,56,193,83"/>
-<area shape="rect" id="node5" href="$unionspdk__nvme__cmd__cdw12.html" title=" " alt="" coords="12,107,193,133"/>
-<area shape="rect" id="node6" href="$unionspdk__nvme__cmd__cdw13.html" title=" " alt="" coords="12,157,193,184"/>
-<area shape="rect" id="node7" href="$structspdk__nvme__sgl__descriptor.html" title=" " alt="" coords="5,208,200,235"/>
-<area shape="rect" id="node8" href="$structspdk__nvme__cpl.html" title="Completion queue entry." alt="" coords="330,208,453,235"/>
-<area shape="rect" id="node9" href="$structspdk__nvme__status.html" title=" " alt="" coords="31,259,175,285"/>
+<area shape="rect" id="Node000001" title="NVMe I/O queue pair initialization options." alt="" coords="519,193,698,223"/>
+<area shape="rect" id="Node000002" href="$structspdk__nvme__cmd.html" title=" " alt="" coords="309,139,432,168"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="448,168,541,190,540,195,447,174"/>
+<area shape="rect" id="Node000003" href="$structspdk__nvme__sgl__descriptor.html" title=" " alt="" coords="5,5,190,35"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="204,37,246,51,286,70,329,103,359,137,356,140,325,107,283,74,244,56,202,42"/>
+<area shape="rect" id="Node000004" href="$unionspdk__nvme__cmd__cdw10.html" title=" " alt="" coords="13,59,182,88"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="198,89,286,112,341,136,339,141,284,117,197,94"/>
+<area shape="rect" id="Node000005" href="$unionspdk__nvme__cmd__cdw11.html" title=" " alt="" coords="13,112,182,142"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="198,134,308,145,308,150,197,139"/>
+<area shape="rect" id="Node000024" href="$unionspdk__nvme__cmd__cdw12.html" title=" " alt="" coords="13,165,182,195"/>
+<area shape="poly" id="edge5_Node000002_Node000024" title=" " alt="" coords="198,174,284,167,308,164,309,169,285,172,198,180"/>
+<area shape="rect" id="Node000027" href="$unionspdk__nvme__cmd__cdw13.html" title=" " alt="" coords="13,219,182,248"/>
+<area shape="poly" id="edge6_Node000002_Node000027" title=" " alt="" coords="197,220,241,211,284,198,316,183,345,167,348,171,319,188,286,203,242,216,198,225"/>
+<area shape="rect" id="Node000028" href="$structspdk__nvme__cpl.html" title="Completion queue entry." alt="" coords="313,219,428,248"/>
+<area shape="poly" id="edge7_Node000001_Node000028" title=" " alt="" coords="443,231,495,227,536,221,537,226,495,232,443,236"/>
+<area shape="rect" id="Node000029" href="$structspdk__nvme__status.html" title=" " alt="" coords="30,272,165,302"/>
+<area shape="poly" id="edge8_Node000028_Node000029" title=" " alt="" coords="180,291,232,289,284,279,318,265,347,247,350,251,321,270,285,284,233,294,180,296"/>
 </map>

@@ -1,7 +1,21 @@
 <map id="spdk_bdev_io::__bdev_io_internal_fields" name="spdk_bdev_io::__bdev_io_internal_fields">
-<area shape="rect" id="node1" title="Fields that are used internally by the bdev subsystem." alt="" coords="181,184,347,225"/>
-<area shape="rect" id="node5" href="$structspdk__bdev__io.html" title=" " alt="" coords="323,319,434,345"/>
-<area shape="rect" id="node2" href="$structspdk__iobuf__entry.html" title="iobuf queue entry" alt="" coords="217,95,351,121"/>
-<area shape="rect" id="node3" href="$structspdk__bdev__io__wait__entry.html" title="Structure to register a callback when an spdk_bdev_io becomes available." alt="" coords="5,95,192,121"/>
-<area shape="rect" id="node4" href="$structspdk__bdev.html" title=" " alt="" coords="230,5,322,32"/>
+<area shape="rect" id="Node000001" title="Fields that are used internally by the bdev subsystem." alt="" coords="75,199,228,247"/>
+<area shape="rect" id="Node000002" href="$structspdk__bdev__io.html" title=" " alt="" coords="224,357,327,386"/>
+<area shape="poly" id="edge7_Node000002_Node000001" title=" " alt="" coords="131,262,121,296,122,312,129,327,148,345,172,357,198,364,224,368,223,373,197,369,170,362,145,349,125,330,117,313,116,295,126,260"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="230,350,207,330,196,315,192,302,181,273,166,249,171,246,186,270,197,300,201,313,210,327,233,346"/>
+<area shape="poly" id="edge3_Node000002_Node000002" title=" " alt="" coords="343,359,351,364,353,372,346,383,328,387,327,382,343,378,348,371,346,367,340,363"/>
+<area shape="rect" id="Node000003" href="$structspdk__bdev.html" title=" " alt="" coords="5,5,92,35"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="46,51,41,112,45,189,53,229,67,266,87,299,115,326,141,341,168,352,224,364,222,369,167,357,138,346,112,330,83,302,62,268,48,230,40,190,36,112,41,50"/>
+<area shape="rect" id="Node000044" href="$structspdk__bdev__io__wait__entry.html" title="Structure to register a callback when an spdk_bdev_io becomes available." alt="" coords="64,102,238,132"/>
+<area shape="poly" id="edge11_Node000044_Node000003" title=" " alt="" coords="77,44,138,100,134,104,73,48"/>
+<area shape="rect" id="Node000015" href="$unionspdk__bdev__nvme__cdw12.html" title="Union for command dword 12, which by convention matches the NVMe command dword 12 definition." alt="" coords="253,208,426,238"/>
+<area shape="poly" id="edge4_Node000002_Node000015" title=" " alt="" coords="337,254,328,291,312,330,291,358,287,354,308,327,323,289,332,253"/>
+<area shape="rect" id="Node000016" href="$unionspdk__bdev__nvme__cdw13.html" title="Union for command dword 13, which by convention matches the NVMe command dword 13 definition." alt="" coords="450,208,623,238"/>
+<area shape="poly" id="edge5_Node000002_Node000016" title=" " alt="" coords="516,251,474,292,419,331,374,350,328,363,327,358,372,345,417,326,470,288,512,248"/>
+<area shape="rect" id="Node000017" href="$structspdk__nvme__cmd.html" title=" " alt="" coords="647,208,770,238"/>
+<area shape="poly" id="edge6_Node000002_Node000017" title=" " alt="" coords="688,251,642,293,613,314,582,331,515,353,446,366,382,372,327,374,327,369,381,367,446,361,514,348,579,326,610,309,639,289,684,247"/>
+<area shape="rect" id="Node000043" href="$structspdk__iobuf__entry.html" title="iobuf queue entry" alt="" coords="263,102,391,132"/>
+<area shape="poly" id="edge8_Node000001_Node000043" title=" " alt="" coords="292,142,234,177,194,200,191,196,231,172,289,138"/>
+<area shape="poly" id="edge9_Node000043_Node000043" title=" " alt="" coords="408,108,418,117,410,125,392,128,391,123,408,120,413,117,405,112"/>
+<area shape="poly" id="edge10_Node000001_Node000044" title=" " alt="" coords="154,147,154,198,149,198,149,147"/>
 </map>

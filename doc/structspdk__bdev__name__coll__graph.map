@@ -1,9 +1,14 @@
 <map id="spdk_bdev_name" name="spdk_bdev_name">
-<area shape="rect" id="node1" title=" " alt="" coords="5,51,141,78"/>
-<area shape="rect" id="node6" href="$structspdk__bdev_1_1____bdev__internal__fields.html" title="Fields that are used internally by the bdev subsystem." alt="" coords="271,5,473,47"/>
-<area shape="rect" id="node2" href="$structspdk__bdev.html" title=" " alt="" coords="579,159,671,186"/>
-<area shape="rect" id="node3" href="$structspdk__bdev__module.html" title="Block device module." alt="" coords="298,134,446,161"/>
-<area shape="rect" id="node4" href="$structspdk__uuid.html" title=" " alt="" coords="328,185,416,211"/>
-<area shape="rect" id="node5" href="$unionspdk__bdev__nvme__ctratt.html" title="Union for controller attributes field, to list whether bdev supports fdp etc." alt="" coords="283,235,461,262"/>
-<area shape="rect" id="node7" href="$structspdk__bdev__fn__table.html" title="Function table for a block device backend." alt="" coords="296,286,448,313"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="108,5,235,35"/>
+<area shape="rect" id="Node000008" href="$structspdk__bdev_1_1____bdev__internal__fields.html" title="Fields that are used internally by the bdev subsystem." alt="" coords="5,102,196,151"/>
+<area shape="poly" id="edge6_Node000008_Node000001" title=" " alt="" coords="155,50,119,103,114,100,151,47"/>
+<area shape="rect" id="Node000002" href="$structspdk__bdev.html" title=" " alt="" coords="299,218,385,247"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="309,210,280,184,253,152,242,127,238,105,233,84,221,61,195,38,199,34,225,57,238,82,243,104,247,125,258,149,283,180,312,206"/>
+<area shape="rect" id="Node000003" href="$structspdk__uuid.html" title=" " alt="" coords="300,112,384,141"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="345,157,345,217,339,217,339,157"/>
+<area shape="rect" id="Node000004" href="$unionspdk__bdev__nvme__ctratt.html" title="Union for controller attributes field, to list whether bdev supports fdp etc." alt="" coords="408,112,574,141"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="460,152,364,219,361,215,457,148"/>
+<area shape="rect" id="Node000005" href="$structspdk__bdev__module.html" title="Block device module." alt="" coords="599,112,738,141"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="612,149,464,196,386,220,384,215,462,191,610,144"/>
+<area shape="poly" id="edge5_Node000002_Node000008" title=" " alt="" coords="133,160,153,177,175,191,206,204,238,214,299,225,298,230,237,219,204,209,172,196,150,181,130,164"/>
 </map>

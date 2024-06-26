@@ -1,4 +1,5 @@
 <map id="spdk_sock_request" name="spdk_sock_request">
-<area shape="rect" id="node1" title="Anywhere this struct is used, an iovec array is assumed to immediately follow the last member in memo..." alt="" coords="21,109,168,136"/>
-<area shape="rect" id="node2" href="$structspdk__sock__request_1_1____sock__request__internal.html" title="These fields are used by the socket layer and should not be modified." alt="" coords="5,5,184,47"/>
+<area shape="rect" id="Node000001" title="Anywhere this struct is used, an iovec array is assumed to immediately follow the last member in memo..." alt="" coords="21,121,158,151"/>
+<area shape="rect" id="Node000002" href="$structspdk__sock__request_1_1____sock__request__internal.html" title="These fields are used by the socket layer and should not be modified." alt="" coords="5,5,174,54"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="92,69,92,120,87,120,87,69"/>
 </map>

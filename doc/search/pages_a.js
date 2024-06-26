@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['message_20passing_20and_20concurrency_6317',['Message Passing and Concurrency',['../concurrency.html',1,'concepts']]],
-  ['miscellaneous_6318',['Miscellaneous',['../misc.html',1,'']]]
+  ['json_20rpc_0',['JSON-RPC',['../jsonrpc.html',1,'user_guides']]],
+  ['json_20rpc_20remote_20access_1',['JSON-RPC Remote access',['../jsonrpc_proxy.html',1,'user_guides']]]
 ];

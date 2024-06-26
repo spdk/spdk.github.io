@@ -1,3 +1,4 @@
 <map id="spdk_iobuf_entry" name="spdk_iobuf_entry">
-<area shape="rect" id="node1" title="iobuf queue entry" alt="" coords="5,5,140,32"/>
+<area shape="rect" id="Node000001" title="iobuf queue entry" alt="" coords="5,5,134,35"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="151,14,160,20,152,26,134,28,134,23,150,21,155,20,148,19"/>
 </map>

@@ -1,5 +1,7 @@
 <map id="spdk_bdev_part_channel" name="spdk_bdev_part_channel">
-<area shape="rect" id="node1" title=" " alt="" coords="5,199,188,225"/>
-<area shape="rect" id="node2" href="$structspdk__bdev__part.html" title=" " alt="" coords="34,109,159,136"/>
-<area shape="rect" id="node3" href="$structspdk__bdev__part_1_1bdev__part__internal__fields.html" title="Fields that are used internally by part.c These fields should only be accessed from a module using an..." alt="" coords="14,5,179,47"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,218,178,247"/>
+<area shape="rect" id="Node000002" href="$structspdk__bdev__part.html" title=" " alt="" coords="32,121,151,151"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="94,166,94,217,89,217,89,166"/>
+<area shape="rect" id="Node000003" href="$structspdk__bdev__part_1_1bdev__part__internal__fields.html" title="Fields that are used internally by part.c These fields should only be accessed from a module using an..." alt="" coords="13,5,170,54"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="94,69,94,120,89,120,89,69"/>
 </map>

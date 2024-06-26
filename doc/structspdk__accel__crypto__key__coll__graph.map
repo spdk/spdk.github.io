@@ -1,5 +1,7 @@
 <map id="spdk_accel_crypto_key" name="spdk_accel_crypto_key">
-<area shape="rect" id="node1" title=" " alt="" coords="101,109,273,136"/>
-<area shape="rect" id="node2" href="$structspdk__accel__crypto__key__create__param.html" title=" " alt="" coords="5,5,177,47"/>
-<area shape="rect" id="node3" href="$structspdk__accel__module__if.html" title=" " alt="" coords="201,13,368,39"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="92,121,251,151"/>
+<area shape="rect" id="Node000002" href="$structspdk__accel__module__if.html" title=" " alt="" coords="5,15,159,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="106,55,161,119,157,123,102,58"/>
+<area shape="rect" id="Node000003" href="$structspdk__accel__crypto__key__create__param.html" title=" " alt="" coords="182,5,342,54"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="236,68,209,99,187,122,183,119,205,95,232,64"/>
 </map>

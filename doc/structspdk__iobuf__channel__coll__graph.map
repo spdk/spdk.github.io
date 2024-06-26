@@ -1,5 +1,7 @@
 <map id="spdk_iobuf_channel" name="spdk_iobuf_channel">
-<area shape="rect" id="node1" title="iobuf channel" alt="" coords="13,199,164,225"/>
-<area shape="rect" id="node2" href="$structspdk__iobuf__pool.html" title=" " alt="" coords="25,95,153,121"/>
-<area shape="rect" id="node3" href="$structspdk__iobuf__pool__stats.html" title=" " alt="" coords="5,5,172,32"/>
+<area shape="rect" id="Node000001" title="iobuf channel" alt="" coords="12,218,155,247"/>
+<area shape="rect" id="Node000002" href="$structspdk__iobuf__pool.html" title=" " alt="" coords="23,102,144,132"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="86,147,86,217,81,217,81,147"/>
+<area shape="rect" id="Node000003" href="$structspdk__iobuf__pool__stats.html" title=" " alt="" coords="5,5,162,35"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="86,51,86,102,81,102,81,51"/>
 </map>

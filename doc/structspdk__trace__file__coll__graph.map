@@ -1,7 +1,11 @@
 <map id="spdk_trace_file" name="spdk_trace_file">
-<area shape="rect" id="node1" title=" " alt="" coords="208,184,328,211"/>
-<area shape="rect" id="node2" href="$structspdk__trace__tpoint.html" title=" " alt="" coords="17,95,156,121"/>
-<area shape="rect" id="node3" href="$structspdk__trace__argument.html" title=" " alt="" coords="5,5,168,32"/>
-<area shape="rect" id="node4" href="$structspdk__trace__owner__type.html" title=" " alt="" coords="180,95,356,121"/>
-<area shape="rect" id="node5" href="$structspdk__trace__object.html" title=" " alt="" coords="381,95,521,121"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="206,199,319,228"/>
+<area shape="rect" id="Node000002" href="$structspdk__trace__owner__type.html" title=" " alt="" coords="5,102,173,132"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="124,138,181,172,230,196,228,201,179,177,121,143"/>
+<area shape="rect" id="Node000003" href="$structspdk__trace__object.html" title=" " alt="" coords="197,102,328,132"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="265,147,265,198,260,198,260,147"/>
+<area shape="rect" id="Node000004" href="$structspdk__trace__tpoint.html" title=" " alt="" coords="352,102,482,132"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="382,142,287,201,284,196,379,138"/>
+<area shape="rect" id="Node000005" href="$structspdk__trace__argument.html" title=" " alt="" coords="340,5,494,35"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="420,51,420,102,414,102,414,51"/>
 </map>

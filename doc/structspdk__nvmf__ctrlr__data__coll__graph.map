@@ -1,8 +1,13 @@
 <map id="spdk_nvmf_ctrlr_data" name="spdk_nvmf_ctrlr_data">
-<area shape="rect" id="node1" title="A subset of struct spdk_nvme_ctrlr_data that are emulated by a fabrics device." alt="" coords="331,123,493,149"/>
-<area shape="rect" id="node2" href="$structspdk__nvme__cdata__sgls.html" title="Identify Controller data SGL support." alt="" coords="10,5,183,32"/>
-<area shape="rect" id="node3" href="$structspdk__nvme__cdata__nvmf__specific.html" title="Identify Controller data NVMe over Fabrics&#45;specific fields." alt="" coords="6,57,187,98"/>
-<area shape="rect" id="node4" href="$structspdk__nvme__cdata__fuses.html" title=" " alt="" coords="5,123,188,149"/>
-<area shape="rect" id="node5" href="$structspdk__nvme__cdata__oncs.html" title="Identify Controller data Optional NVM Command Support." alt="" coords="8,173,185,200"/>
-<area shape="rect" id="node6" href="$structspdk__nvme__cdata__oacs.html" title=" " alt="" coords="8,224,185,251"/>
+<area shape="rect" id="Node000001" title="A subset of struct spdk_nvme_ctrlr_data that are emulated by a fabrics device." alt="" coords="309,112,462,142"/>
+<area shape="rect" id="Node000002" href="$structspdk__nvme__cdata__oacs.html" title=" " alt="" coords="8,5,172,35"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="188,34,237,46,286,63,329,86,365,109,362,114,327,90,284,68,235,51,186,39"/>
+<area shape="rect" id="Node000003" href="$structspdk__nvme__cdata__oncs.html" title="Identify Controller data Optional NVM Command Support." alt="" coords="8,59,172,88"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="188,84,285,100,324,109,323,114,284,105,187,89"/>
+<area shape="rect" id="Node000004" href="$structspdk__nvme__cdata__fuses.html" title=" " alt="" coords="5,112,175,142"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="190,124,308,124,308,130,190,130"/>
+<area shape="rect" id="Node000005" href="$structspdk__nvme__cdata__sgls.html" title="Identify Controller data SGL support." alt="" coords="10,165,170,195"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="184,165,284,149,324,140,325,145,285,154,185,171"/>
+<area shape="rect" id="Node000006" href="$structspdk__nvme__cdata__nvmf__specific.html" title="Identify Controller data NVMe over Fabrics&#45;specific fields." alt="" coords="6,219,174,267"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="188,220,237,207,284,189,327,165,363,140,366,144,330,169,286,194,238,212,190,226"/>
 </map>

@@ -1,6 +1,5 @@
 var structspdk__keyring__module =
 [
-    [ "TAILQ_ENTRY", "structspdk__keyring__module.html#aa960126baae71e680130ac10aa239e70", null ],
     [ "add_key", "structspdk__keyring__module.html#a7754b23aa44359369fb720794ce0b54b", null ],
     [ "cleanup", "structspdk__keyring__module.html#a717f2630958d98c6db2a28de2b9900b4", null ],
     [ "dump_info", "structspdk__keyring__module.html#a6e545fda3e8e3e198a0af0a3801e745c", null ],

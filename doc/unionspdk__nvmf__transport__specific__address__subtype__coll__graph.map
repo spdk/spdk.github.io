@@ -1,5 +1,7 @@
 <map id="spdk_nvmf_transport_specific_address_subtype" name="spdk_nvmf_transport_specific_address_subtype">
-<area shape="rect" id="node1" title="Transport&#45;specific address subtype." alt="" coords="293,39,488,80"/>
-<area shape="rect" id="node2" href="$structspdk__nvmf__rdma__transport__specific__address__subtype.html" title="RDMA transport&#45;specific address subtype." alt="" coords="5,5,207,47"/>
-<area shape="rect" id="node3" href="$structspdk__nvme__tcp__transport__specific__address__subtype.html" title="TCP transport&#45;specific address subtype." alt="" coords="9,71,203,112"/>
+<area shape="rect" id="Node000001" title="Transport&#45;specific address subtype." alt="" coords="279,43,461,91"/>
+<area shape="rect" id="Node000002" href="$structspdk__nvmf__rdma__transport__specific__address__subtype.html" title="RDMA transport&#45;specific address subtype." alt="" coords="5,5,196,54"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="211,42,279,52,278,57,210,48"/>
+<area shape="rect" id="Node000003" href="$structspdk__nvme__tcp__transport__specific__address__subtype.html" title="TCP transport&#45;specific address subtype." alt="" coords="9,79,192,127"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="207,86,278,77,279,82,207,91"/>
 </map>

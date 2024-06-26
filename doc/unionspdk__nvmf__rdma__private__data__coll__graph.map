@@ -1,6 +1,9 @@
 <map id="spdk_nvmf_rdma_private_data" name="spdk_nvmf_rdma_private_data">
-<area shape="rect" id="node1" title=" " alt="" coords="321,78,545,105"/>
-<area shape="rect" id="node2" href="$structspdk__nvmf__rdma__request__private__data.html" title=" " alt="" coords="5,5,196,47"/>
-<area shape="rect" id="node3" href="$structspdk__nvmf__rdma__accept__private__data.html" title=" " alt="" coords="8,71,193,112"/>
-<area shape="rect" id="node4" href="$structspdk__nvmf__rdma__reject__private__data.html" title=" " alt="" coords="11,136,190,177"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="307,88,516,118"/>
+<area shape="rect" id="Node000002" href="$structspdk__nvmf__rdma__request__private__data.html" title=" " alt="" coords="5,5,186,54"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="201,51,345,85,343,90,200,57"/>
+<area shape="rect" id="Node000003" href="$structspdk__nvmf__rdma__accept__private__data.html" title=" " alt="" coords="9,79,182,127"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="197,100,306,100,306,106,197,106"/>
+<area shape="rect" id="Node000004" href="$structspdk__nvmf__rdma__reject__private__data.html" title=" " alt="" coords="12,152,179,201"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="194,151,344,116,345,121,195,156"/>
 </map>
