@@ -135,6 +135,9 @@ Macros</h2></td></tr>
 <tr class="memitem:a912fc4b077bcc17c5499ee524fe506f3" id="r_a912fc4b077bcc17c5499ee524fe506f3"><td class="memItemLeft" align="right" valign="top"><a id="a912fc4b077bcc17c5499ee524fe506f3" name="a912fc4b077bcc17c5499ee524fe506f3"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_TLS_VERSION_1_3</b>&#160;&#160;&#160;13</td></tr>
 <tr class="separator:a912fc4b077bcc17c5499ee524fe506f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b0e0f985811e18b2400631ebd36ae9d" id="r_a5b0e0f985811e18b2400631ebd36ae9d"><td class="memItemLeft" align="right" valign="top"><a id="a5b0e0f985811e18b2400631ebd36ae9d" name="a5b0e0f985811e18b2400631ebd36ae9d"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_SOCK_GROUP_REGISTER_INTERRUPT</b>(sock,  events,  fn,  arg)&#160;&#160;&#160;	<a class="el" href="#a4ff9e3deab53523b235aebf8391674c9">spdk_sock_group_register_interrupt</a>(sock, events, fn, arg, #fn)</td></tr>
+<tr class="separator:a5b0e0f985811e18b2400631ebd36ae9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -261,6 +264,12 @@ Functions</h2></td></tr>
 <tr class="memitem:a255128969e1129a8d9d0c2f2b24697b5" id="r_a255128969e1129a8d9d0c2f2b24697b5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a255128969e1129a8d9d0c2f2b24697b5">spdk_sock_write_config_json</a> (struct spdk_json_write_ctx *w)</td></tr>
 <tr class="memdesc:a255128969e1129a8d9d0c2f2b24697b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write socket subsystem configuration into provided JSON context.  <br /></td></tr>
 <tr class="separator:a255128969e1129a8d9d0c2f2b24697b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ff9e3deab53523b235aebf8391674c9" id="r_a4ff9e3deab53523b235aebf8391674c9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4ff9e3deab53523b235aebf8391674c9">spdk_sock_group_register_interrupt</a> (struct spdk_sock_group *group, uint32_t events, <a class="el" href="thread_8h.html#a61cfdc77d10970d7f3a8631df71e9588">spdk_interrupt_fn</a> fn, void *arg, const char *name)</td></tr>
+<tr class="memdesc:a4ff9e3deab53523b235aebf8391674c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register an spdk_interrupt with specific event types on the current thread for the given socket group.  <br /></td></tr>
+<tr class="separator:a4ff9e3deab53523b235aebf8391674c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1cc881777301103c7acd712ce8f9fb23" id="r_a1cc881777301103c7acd712ce8f9fb23"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1cc881777301103c7acd712ce8f9fb23">spdk_sock_group_unregister_interrupt</a> (struct spdk_sock_group *group)</td></tr>
+<tr class="memdesc:a1cc881777301103c7acd712ce8f9fb23"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unregister an spdk_interrupt for the given socket group from the current thread.  <br /></td></tr>
+<tr class="separator:a1cc881777301103c7acd712ce8f9fb23"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>TCP socket abstraction layer. </p>
@@ -841,6 +850,56 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a4ff9e3deab53523b235aebf8391674c9" name="a4ff9e3deab53523b235aebf8391674c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ff9e3deab53523b235aebf8391674c9">&#9670;&#160;</a></span>spdk_sock_group_register_interrupt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_sock_group_register_interrupt </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_sock_group *</td>          <td class="paramname"><span class="paramname"><em>group</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>events</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="thread_8h.html#a61cfdc77d10970d7f3a8631df71e9588">spdk_interrupt_fn</a></td>          <td class="paramname"><span class="paramname"><em>fn</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *</td>          <td class="paramname"><span class="paramname"><em>arg</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>name</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Register an spdk_interrupt with specific event types on the current thread for the given socket group. </p>
+<p>The provided function will be called any time one of specified event types triggers on the associated file descriptor. Event types argument is a bit mask composed by ORing together enum spdk_interrupt_event_types values.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">group</td><td>Socket group. </td></tr>
+    <tr><td class="paramname">events</td><td>Event notification types. </td></tr>
+    <tr><td class="paramname">fn</td><td>Called each time there are events in spdk_interrupt. </td></tr>
+    <tr><td class="paramname">arg</td><td>Function argument for fn. </td></tr>
+    <tr><td class="paramname">name</td><td>Human readable name for the spdk_interrupt.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success or non-zero on failure. </dd></dl>
+
+</div>
+</div>
 <a id="ad52142b9c60b305a1eaaf869a321c790" name="ad52142b9c60b305a1eaaf869a321c790"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad52142b9c60b305a1eaaf869a321c790">&#9670;&#160;</a></span>spdk_sock_group_remove_sock()</h2>
 
@@ -869,6 +928,31 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 on success, -1 on failure with errno set. </dd></dl>
+
+</div>
+</div>
+<a id="a1cc881777301103c7acd712ce8f9fb23" name="a1cc881777301103c7acd712ce8f9fb23"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1cc881777301103c7acd712ce8f9fb23">&#9670;&#160;</a></span>spdk_sock_group_unregister_interrupt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_sock_group_unregister_interrupt </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_sock_group *</td>          <td class="paramname"><span class="paramname"><em>group</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Unregister an spdk_interrupt for the given socket group from the current thread. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">group</td><td>Socket group. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

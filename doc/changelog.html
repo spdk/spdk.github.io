@@ -99,6 +99,8 @@ $(function(){initNavTree('changelog.html',''); initResizable(); });
 <div class="textblock"><p><a class="anchor" id="md_changelog"></a> </p>
 <h1><a class="anchor" id="changelog-v24-09"></a>
 v24.09: (Upcoming Release)</h1>
+<h2>sock</h2>
+<p>New functions that allows to register interrupt for given socket group: <code><a class="el" href="sock_8h.html#a4ff9e3deab53523b235aebf8391674c9" title="Register an spdk_interrupt with specific event types on the current thread for the given socket group...">spdk_sock_group_register_interrupt()</a></code> <code><a class="el" href="sock_8h.html#a1cc881777301103c7acd712ce8f9fb23" title="Unregister an spdk_interrupt for the given socket group from the current thread.">spdk_sock_group_unregister_interrupt()</a></code> Both uses API exposed by the <a class="el" href="thread_8h.html" title="Thread.">thread.h</a>, see below for details. Support implemented only for the POSIX and SSL sockets.</p>
 <h2>thread</h2>
 <p>New function <code><a class="el" href="thread_8h.html#a18f33a8abb147f5f8bac86e226a990a1" title="Register an spdk_interrupt with specific event types on the current thread.">spdk_interrupt_register_for_events()</a></code> build on top of <code><a class="el" href="fd__group_8h.html#a9b45cc539e9c2843ec188988b2bf43de" title="Register one event source to specified fgrp with specific event types.">spdk_fd_group_add_for_events()</a></code>. See below for details.</p>
 <h2>util</h2>
@@ -109,6 +111,8 @@ v24.09: (Upcoming Release)</h1>
 <p>The <code>framework_get_reactors</code> RPC method supports getting pid and tid.</p>
 <h2>env_dpdk</h2>
 <p><code>spdk_get_tid</code> is added to get the tid of the current thread.</p>
+<h2>scheduler</h2>
+<p>Added <code>framework_get_governor</code> RPC to retrieve the power governor name, power env and the frequencies available, frequency set to the cpu cores.</p>
 <h1>v24.05</h1>
 <h2>accel</h2>
 <p><code>spdk_accel_get/set_opts()</code> has changed to act more like <a class="el" href="structspdk__bdev.html">spdk_bdev</a>'s variant.</p>

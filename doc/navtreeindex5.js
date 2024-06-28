@@ -1,5 +1,6 @@
 var NAVTREEINDEX5 =
 {
+"jsonrpc.html#rpc_notify_get_types":[3,9,9,38],
 "jsonrpc.html#rpc_nvmf_create_subsystem":[3,9,7,2],
 "jsonrpc.html#rpc_nvmf_create_transport":[3,9,7,0],
 "jsonrpc.html#rpc_nvmf_delete_subsystem":[3,9,7,3],
@@ -31,16 +32,16 @@ var NAVTREEINDEX5 =
 "jsonrpc.html#rpc_rpc_get_methods":[3,9,3,4],
 "jsonrpc.html#rpc_scsi_get_devices":[3,9,6,2],
 "jsonrpc.html#rpc_spdk_kill_instance":[3,9,3,0],
-"jsonrpc.html#rpc_thread_get_io_channels":[3,9,3,27],
-"jsonrpc.html#rpc_thread_get_pollers":[3,9,3,26],
-"jsonrpc.html#rpc_thread_get_stats":[3,9,3,10],
-"jsonrpc.html#rpc_thread_set_cpumask":[3,9,3,11],
-"jsonrpc.html#rpc_trace_clear_tpoint_mask":[3,9,3,15],
-"jsonrpc.html#rpc_trace_disable_tpoint_group":[3,9,3,13],
-"jsonrpc.html#rpc_trace_enable_tpoint_group":[3,9,3,12],
-"jsonrpc.html#rpc_trace_get_info":[3,9,3,17],
-"jsonrpc.html#rpc_trace_get_tpoint_group_mask":[3,9,3,16],
-"jsonrpc.html#rpc_trace_set_tpoint_mask":[3,9,3,14],
+"jsonrpc.html#rpc_thread_get_io_channels":[3,9,3,28],
+"jsonrpc.html#rpc_thread_get_pollers":[3,9,3,27],
+"jsonrpc.html#rpc_thread_get_stats":[3,9,3,11],
+"jsonrpc.html#rpc_thread_set_cpumask":[3,9,3,12],
+"jsonrpc.html#rpc_trace_clear_tpoint_mask":[3,9,3,16],
+"jsonrpc.html#rpc_trace_disable_tpoint_group":[3,9,3,14],
+"jsonrpc.html#rpc_trace_enable_tpoint_group":[3,9,3,13],
+"jsonrpc.html#rpc_trace_get_info":[3,9,3,18],
+"jsonrpc.html#rpc_trace_get_tpoint_group_mask":[3,9,3,17],
+"jsonrpc.html#rpc_trace_set_tpoint_mask":[3,9,3,15],
 "jsonrpc.html#rpc_ublk_create_target":[3,9,10,0],
 "jsonrpc.html#rpc_ublk_destroy_target":[3,9,10,1],
 "jsonrpc.html#rpc_ublk_recover_disk":[3,9,10,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX5 =
 "nvme_8h.html#a08afb91732d92d84a054012cd3d236aa":[15,0,0,0,41,148],
 "nvme_8h.html#a08fe63f863522c39b9cd493573afdb05":[15,0,0,0,41,177],
 "nvme_8h.html#a0a1b9a1afd033147823421f063c90758":[15,0,0,0,41,33],
-"nvme_8h.html#a0c182e140bc4fe8e01e82d54d9b68a05":[15,0,0,0,41,166],
-"nvme_8h.html#a0d24c0b2b0b2a22b0c0af2ca2e157e04":[15,0,0,0,41,179]
+"nvme_8h.html#a0c182e140bc4fe8e01e82d54d9b68a05":[15,0,0,0,41,166]
 };

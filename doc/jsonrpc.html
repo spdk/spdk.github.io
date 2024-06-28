@@ -726,6 +726,43 @@ framework_get_scheduler</h2>
 <div class="line">    &quot;governor_name&quot;: &quot;default&quot;</div>
 <div class="line">  }</div>
 <div class="line">}</div>
+</div><!-- fragment --><h2><a class="anchor" id="rpc_framework_get_governor"></a>
+framework_get_governor</h2>
+<p>Retrieve current governor name, power env, frequencies available and frequency set to the cpu cores.</p>
+<h3>Parameters</h3>
+<p>This method has no parameters.</p>
+<h3>Response</h3>
+<p>Displays the current governor name, power env, frequencies available and frequency set to the cpu cores.</p>
+<h3>Example</h3>
+<p>Example request:</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;method&quot;: &quot;framework_get_governor&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">}</div>
+</div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;result&quot;: {</div>
+<div class="line">    &quot;governor_name&quot;: &quot;dpdk_governor&quot;</div>
+<div class="line">    &quot;module_specific&quot;: {</div>
+<div class="line">      &quot;env&quot;: &quot;amd-pstate&quot;</div>
+<div class="line">    }</div>
+<div class="line">    &quot;cores&quot;: [</div>
+<div class="line">      {</div>
+<div class="line">        &quot;lcore_id&quot;: 0,</div>
+<div class="line">        &quot;available_frequencies&quot;: [</div>
+<div class="line">          4951000,</div>
+<div class="line">          4948000,</div>
+<div class="line">          4748000,</div>
+<div class="line">          4744000</div>
+<div class="line">        ],</div>
+<div class="line">        &quot;current_frequency&quot;: 4744000</div>
+<div class="line">      }</div>
+<div class="line">    ]</div>
+<div class="line">  }</div>
+<div class="line">}</div>
 </div><!-- fragment --><h2>framework_enable_cpumask_locks</h2>
 <p>Enable CPU core lock files to block multiple SPDK applications from running on the same cpumask. The CPU core locks are enabled by default, unless user specified <code>--disable-cpumask-locks</code> command line option when launching SPDK.</p>
 <p>This RPC may be called after locks have already been enabled, with no effect and no error response.</p>
@@ -6536,7 +6573,9 @@ nvmf_create_transport method</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">ack_timeout   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">ACK timeout in milliseconds    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">data_wr_pool_size   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">RDMA data WR pool size (RDMA only)   </td></tr>
+<td class="markdownTableBodyNone">data_wr_pool_size   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">RDMA data WR pool size (RDMA only)    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">disable_command_passthru   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Disallow command passthru.   </td></tr>
 </table>
 <h3>Example</h3>
 <p>Example request:</p>
