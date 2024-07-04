@@ -1,5 +1,6 @@
 var NAVTREEINDEX11 =
 {
+"structspdk__bdev__alias.html":[14,0,62],
 "structspdk__bdev__bs__dev__opts.html":[14,0,63],
 "structspdk__bdev__bs__dev__opts.html#a53636696779f8d6550b4aa9854264971":[14,0,63,0],
 "structspdk__bdev__claim__opts.html":[14,0,64],
@@ -248,6 +249,5 @@ var NAVTREEINDEX11 =
 "structspdk__keyring__module.html#ae2b546d306aba1ffb46a14215115c234":[14,0,130,5],
 "structspdk__keyring__module.html#ae476d0df58d273938eb11882f904d734":[14,0,130,4],
 "structspdk__log__flag.html":[14,0,131],
-"structspdk__lvs__opts.html":[14,0,132],
-"structspdk__lvs__opts.html#a441dae8d3badece5ef1c52eca5b55cea":[14,0,132,4]
+"structspdk__lvs__opts.html":[14,0,132]
 };

@@ -20,6 +20,7 @@ var accel_8h =
     [ "spdk_accel_finish", "accel_8h.html#a7a75cbac98c1ed584e82d0172aa0bb81", null ],
     [ "spdk_accel_get_buf", "accel_8h.html#acde5803c2c3fd5f4404ab171d6820b03", null ],
     [ "spdk_accel_get_buf_align", "accel_8h.html#aaebd6fe37b7af8036e42184adc407ce4", null ],
+    [ "spdk_accel_get_driver_name", "accel_8h.html#adaba4697296ae9c4ac846ee033a31a30", null ],
     [ "spdk_accel_get_io_channel", "accel_8h.html#aae3fb96728edfd5208124ea7fcc8b264", null ],
     [ "spdk_accel_get_memory_domain", "accel_8h.html#abfa675dfc93637e2e442b9eb2fdf2a65", null ],
     [ "spdk_accel_get_opc_memory_domains", "accel_8h.html#a81ef09bcbb91fa1025984d730f798c09", null ],

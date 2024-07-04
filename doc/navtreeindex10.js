@@ -1,5 +1,6 @@
 var NAVTREEINDEX10 =
 {
+"scsi_8h.html#ab0fc6066d5a615661c85be595a276ed9":[15,0,0,0,53,44],
 "scsi_8h.html#ab98745bdfde673aca36a6f5e140ec849":[15,0,0,0,53,18],
 "scsi_8h.html#abbacc6adf74a9790630dedda8b97940e":[15,0,0,0,53,7],
 "scsi_8h.html#ac1abbe3abd478575af44ba299f6f62db":[15,0,0,0,53,5],
@@ -248,6 +249,5 @@ var NAVTREEINDEX10 =
 "structspdk__bdev_1_1____bdev__internal__fields_1_1____bdev__internal__claim_1_1____bdev__internal__claim__v1.html":[14,0,61,0,0,0],
 "structspdk__bdev_1_1____bdev__internal__fields_1_1____bdev__internal__claim_1_1____bdev__internal__claim__v2.html":[14,0,61,0,0,1],
 "structspdk__bdev_1_1____bdev__internal__fields_1_1____bdev__internal__claim_1_1____bdev__internal__claim__v2.html#a1ee6b0f5bf199c39131689615b0b421e":[14,0,61,0,0,1,0],
-"structspdk__bdev_1_1____bdev__internal__fields_1_1____bdev__internal__claim_1_1____bdev__internal__claim__v2.html#a2b0875171cbaa591c529a072e8e31865":[14,0,61,0,0,1,1],
-"structspdk__bdev__alias.html":[14,0,62]
+"structspdk__bdev_1_1____bdev__internal__fields_1_1____bdev__internal__claim_1_1____bdev__internal__claim__v2.html#a2b0875171cbaa591c529a072e8e31865":[14,0,61,0,0,1,1]
 };

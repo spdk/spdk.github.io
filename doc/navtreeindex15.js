@@ -1,5 +1,6 @@
 var NAVTREEINDEX15 =
 {
+"structspdk__trace__argument.html":[14,0,418],
 "structspdk__trace__entry.html":[14,0,419],
 "structspdk__trace__entry__buffer.html":[14,0,420],
 "structspdk__trace__file.html":[14,0,421],
@@ -248,6 +249,5 @@ var NAVTREEINDEX15 =
 "unionspdk__nvme__bprsel__register.html#a426cc6f4f6478519c297df3ad92bd4b1":[14,0,148,2],
 "unionspdk__nvme__bprsel__register.html#a615e9f455cb7a36f1820dae8fd9dc3ae":[14,0,148,1],
 "unionspdk__nvme__bprsel__register.html#aec5aa2286f6c15c07cd269ac3ef35613":[14,0,148,0],
-"unionspdk__nvme__cap__register.html":[14,0,149],
-"unionspdk__nvme__cap__register.html#a3c70129c53bf5c82f1151d512075f703":[14,0,149,10]
+"unionspdk__nvme__cap__register.html":[14,0,149]
 };

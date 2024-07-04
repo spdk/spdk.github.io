@@ -1,5 +1,6 @@
 var NAVTREEINDEX14 =
 {
+"structspdk__nvmf__fabric__auth__recv__cmd.html":[14,0,306],
 "structspdk__nvmf__fabric__auth__send__cmd.html":[14,0,307],
 "structspdk__nvmf__fabric__connect__cmd.html":[14,0,308],
 "structspdk__nvmf__fabric__connect__data.html":[14,0,309],
@@ -248,6 +249,5 @@ var NAVTREEINDEX14 =
 "structspdk__sock__request_1_1____sock__request__internal.html":[14,0,415,0],
 "structspdk__sock__request_1_1____sock__request__internal.html#ad56c3598d999da0c179cc50d8689aa7a":[14,0,415,0,0],
 "structspdk__spinlock.html":[14,0,416],
-"structspdk__thread__stats.html":[14,0,417],
-"structspdk__trace__argument.html":[14,0,418]
+"structspdk__thread__stats.html":[14,0,417]
 };
