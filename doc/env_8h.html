@@ -332,6 +332,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_mempool_free</b>
 <tr class="memitem:a8a54ecf72f47decc6e8abc0bafcb578f" id="r_a8a54ecf72f47decc6e8abc0bafcb578f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8a54ecf72f47decc6e8abc0bafcb578f">spdk_env_get_cpuset</a> (struct <a class="el" href="structspdk__cpuset.html">spdk_cpuset</a> *cpuset)</td></tr>
 <tr class="memdesc:a8a54ecf72f47decc6e8abc0bafcb578f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a cpuset with each dedicated core's bit set to true.  <br /></td></tr>
 <tr class="separator:a8a54ecf72f47decc6e8abc0bafcb578f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9fcea62bce244e090acbb109e7cceae5" id="r_a9fcea62bce244e090acbb109e7cceae5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9fcea62bce244e090acbb109e7cceae5">spdk_env_core_get_smt_cpuset</a> (struct <a class="el" href="structspdk__cpuset.html">spdk_cpuset</a> *cpuset, uint32_t core)</td></tr>
+<tr class="memdesc:a9fcea62bce244e090acbb109e7cceae5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a cpuset with each SMT sibling core's bit set to true.  <br /></td></tr>
+<tr class="separator:a9fcea62bce244e090acbb109e7cceae5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4282feec502eca721136e88c824d59cf" id="r_a4282feec502eca721136e88c824d59cf"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4282feec502eca721136e88c824d59cf">spdk_env_thread_launch_pinned</a> (uint32_t core, thread_start_fn fn, void *arg)</td></tr>
 <tr class="memdesc:a4282feec502eca721136e88c824d59cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Launch a thread pinned to the given core.  <br /></td></tr>
 <tr class="separator:a4282feec502eca721136e88c824d59cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1037,6 +1040,41 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_get_tid</b> (void
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>a pointer to the allocated memory buffer. </dd></dl>
+
+</div>
+</div>
+<a id="a9fcea62bce244e090acbb109e7cceae5" name="a9fcea62bce244e090acbb109e7cceae5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9fcea62bce244e090acbb109e7cceae5">&#9670;&#160;</a></span>spdk_env_core_get_smt_cpuset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool spdk_env_core_get_smt_cpuset </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structspdk__cpuset.html">spdk_cpuset</a> *</td>          <td class="paramname"><span class="paramname"><em>cpuset</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>core</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Create a cpuset with each SMT sibling core's bit set to true. </p>
+<p>This function will first zero the cpuset and then set the bit for each SMT sibling core to true.</p>
+<p>If the specified core has no SMT siblings, then only the specified core's bit will be set.</p>
+<p>If the specified core has SMT siblings, then all of the siblings, including the specified core, will be set. Note: this will set bits for all siblings, even ones not part of the application's core mask.</p>
+<p>If the specified core is UINT32_MAX, then bits will be set for all SMT siblings of all cores in the application's core mask.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cpuset</td><td><a class="el" href="structspdk__cpuset.html" title="List of CPUs.">spdk_cpuset</a> for SMT sibling cores </td></tr>
+    <tr><td class="paramname">core</td><td>core to get siblings for (UINT32_MAX for all cores in app core mask) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if environment supports SMT detection, false otherwise (in which case the <a class="el" href="structspdk__cpuset.html" title="List of CPUs.">spdk_cpuset</a> will be invalid) </dd></dl>
 
 </div>
 </div>

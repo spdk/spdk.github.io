@@ -1,5 +1,7 @@
 var NAVTREEINDEX13 =
 {
+"structspdk__nvme__ns__data.html#a400dbb11b610ec40c4061d272b424795":[14,0,233,13],
+"structspdk__nvme__ns__data.html#a40fd3c4f8d853d8835d958ec1b7d2a90":[14,0,233,62],
 "structspdk__nvme__ns__data.html#a4133aa654a2f1e5af881d5293ba965cf":[14,0,233,60],
 "structspdk__nvme__ns__data.html#a459bece07c735fc8a0fbc37bcf0df778":[14,0,233,5],
 "structspdk__nvme__ns__data.html#a49d261a38012333a80670caa873d4e2e":[14,0,233,50],
@@ -247,7 +249,5 @@ var NAVTREEINDEX13 =
 "structspdk__nvmf__discovery__log__page__entry.html#aa64eafd0f0d0dd3820d88ec9a243b8a2":[14,0,305,1],
 "structspdk__nvmf__discovery__log__page__entry.html#ad5cf412899705f398e046fd3f290067d":[14,0,305,2],
 "structspdk__nvmf__discovery__log__page__entry.html#ad5db7a511e5a7b5bf342391e77ecb27d":[14,0,305,11],
-"structspdk__nvmf__discovery__log__page__entry.html#adf9f35d61b31aa0199ae32ef638a3107":[14,0,305,0],
-"structspdk__nvmf__discovery__log__page__entry.html#ae6926468815fd6dbdd5ff136a4905057":[14,0,305,12],
-"structspdk__nvmf__discovery__log__page__entry.html#afe04107ae81316f7e1c189472a881e52":[14,0,305,4]
+"structspdk__nvmf__discovery__log__page__entry.html#adf9f35d61b31aa0199ae32ef638a3107":[14,0,305,0]
 };

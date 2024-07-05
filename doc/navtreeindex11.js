@@ -1,5 +1,7 @@
 var NAVTREEINDEX11 =
 {
+"structspdk__bdev_1_1____bdev__internal__fields_1_1____bdev__internal__claim_1_1____bdev__internal__claim__v2.html#a1ee6b0f5bf199c39131689615b0b421e":[14,0,61,0,0,1,0],
+"structspdk__bdev_1_1____bdev__internal__fields_1_1____bdev__internal__claim_1_1____bdev__internal__claim__v2.html#a2b0875171cbaa591c529a072e8e31865":[14,0,61,0,0,1,1],
 "structspdk__bdev__alias.html":[14,0,62],
 "structspdk__bdev__bs__dev__opts.html":[14,0,63],
 "structspdk__bdev__bs__dev__opts.html#a53636696779f8d6550b4aa9854264971":[14,0,63,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX11 =
 "structspdk__keyring__module.html#a86c3ab1102e89ca6814a12916b89b950":[14,0,130,3],
 "structspdk__keyring__module.html#a8acf9605ef5eb8530344773811372b7f":[14,0,130,8],
 "structspdk__keyring__module.html#ae2b546d306aba1ffb46a14215115c234":[14,0,130,5],
-"structspdk__keyring__module.html#ae476d0df58d273938eb11882f904d734":[14,0,130,4],
-"structspdk__log__flag.html":[14,0,131],
-"structspdk__lvs__opts.html":[14,0,132]
+"structspdk__keyring__module.html#ae476d0df58d273938eb11882f904d734":[14,0,130,4]
 };

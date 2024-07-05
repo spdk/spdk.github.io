@@ -151,6 +151,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a2e99e47041ef7d8bd8dedfa00a8f9e6c" id="r_a2e99e47041ef7d8bd8dedfa00a8f9e6c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2e99e47041ef7d8bd8dedfa00a8f9e6c">spdk_cpuset_get_cpu</a> (const struct <a class="el" href="structspdk__cpuset.html">spdk_cpuset</a> *set, uint32_t cpu)</td></tr>
 <tr class="memdesc:a2e99e47041ef7d8bd8dedfa00a8f9e6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the state of CPU in CPU set.  <br /></td></tr>
 <tr class="separator:a2e99e47041ef7d8bd8dedfa00a8f9e6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e32092397bb9ba810c09e87182b0e11" id="r_a4e32092397bb9ba810c09e87182b0e11"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4e32092397bb9ba810c09e87182b0e11">spdk_cpuset_for_each_cpu</a> (const struct <a class="el" href="structspdk__cpuset.html">spdk_cpuset</a> *set, void(*fn)(void *ctx, uint32_t cpu), void *ctx)</td></tr>
+<tr class="memdesc:a4e32092397bb9ba810c09e87182b0e11"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call the specified function for each set cpu in the specified cpuset.  <br /></td></tr>
+<tr class="separator:a4e32092397bb9ba810c09e87182b0e11"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6fd6dc0a95e6d00a50b34678b7792bab" id="r_a6fd6dc0a95e6d00a50b34678b7792bab"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6fd6dc0a95e6d00a50b34678b7792bab">spdk_cpuset_count</a> (const struct <a class="el" href="structspdk__cpuset.html">spdk_cpuset</a> *set)</td></tr>
 <tr class="memdesc:a6fd6dc0a95e6d00a50b34678b7792bab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of CPUs that are set in CPU set.  <br /></td></tr>
 <tr class="separator:a6fd6dc0a95e6d00a50b34678b7792bab"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -325,6 +328,42 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>a pointer to hexadecimal representation of CPU set. Buffer to store a string is dynamically allocated internally and freed with CPU set object. Memory returned by this function might be changed after subsequent calls to this function so string should be copied by user. </dd></dl>
+
+</div>
+</div>
+<a id="a4e32092397bb9ba810c09e87182b0e11" name="a4e32092397bb9ba810c09e87182b0e11"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e32092397bb9ba810c09e87182b0e11">&#9670;&#160;</a></span>spdk_cpuset_for_each_cpu()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_cpuset_for_each_cpu </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="structspdk__cpuset.html">spdk_cpuset</a> *</td>          <td class="paramname"><span class="paramname"><em>set</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void(*)(void *ctx, uint32_t cpu)</td>          <td class="paramname"><span class="paramname"><em>fn</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *</td>          <td class="paramname"><span class="paramname"><em>ctx</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Call the specified function for each set cpu in the specified cpuset. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">set</td><td>The cpuset to iterate </td></tr>
+    <tr><td class="paramname">fn</td><td>The function to call for each set cpu </td></tr>
+    <tr><td class="paramname">ctx</td><td>Context pointer to pass to fn </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

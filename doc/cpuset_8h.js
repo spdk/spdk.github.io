@@ -7,6 +7,7 @@ var cpuset_8h =
     [ "spdk_cpuset_count", "cpuset_8h.html#a6fd6dc0a95e6d00a50b34678b7792bab", null ],
     [ "spdk_cpuset_equal", "cpuset_8h.html#a891a58740ac52bfbac08ac7e98aa65f6", null ],
     [ "spdk_cpuset_fmt", "cpuset_8h.html#a6d1139e2a59d2bb8dba263ec48dca862", null ],
+    [ "spdk_cpuset_for_each_cpu", "cpuset_8h.html#a4e32092397bb9ba810c09e87182b0e11", null ],
     [ "spdk_cpuset_free", "cpuset_8h.html#a1be5b681ccac1865c26965adca7767a7", null ],
     [ "spdk_cpuset_get_cpu", "cpuset_8h.html#a2e99e47041ef7d8bd8dedfa00a8f9e6c", null ],
     [ "spdk_cpuset_negate", "cpuset_8h.html#a6d0a7edc8e1d37e998c73840ad9ee03f", null ],
