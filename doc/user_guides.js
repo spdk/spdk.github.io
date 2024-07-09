@@ -415,7 +415,47 @@ var user_guides =
         [ "ublk_create_target", "jsonrpc.html#rpc_ublk_create_target", null ],
         [ "ublk_destroy_target", "jsonrpc.html#rpc_ublk_destroy_target", null ],
         [ "ublk_start_disk", "jsonrpc.html#rpc_ublk_start_disk", null ],
-        [ "ublk_recover_disk", "jsonrpc.html#rpc_ublk_recover_disk", null ]
+        [ "ublk_recover_disk", "jsonrpc.html#rpc_ublk_recover_disk", null ],
+        [ "ublk_stop_disk", "jsonrpc.html#rpc_ublk_stop_disk", null ],
+        [ "ublk_get_disks", "jsonrpc.html#rpc_ublk_get_disks", null ]
+      ] ],
+      [ "Linux Network Block Device (NBD)", "jsonrpc.html#jsonrpc_components_nbd", [
+        [ "nbd_start_disk", "jsonrpc.html#rpc_nbd_start_disk", null ],
+        [ "nbd_stop_disk", "jsonrpc.html#rpc_nbd_stop_disk", null ],
+        [ "nbd_get_disks", "jsonrpc.html#rpc_nbd_get_disks", null ]
+      ] ],
+      [ "Blobfs", "jsonrpc.html#jsonrpc_components_blobfs", [
+        [ "blobfs_detect", "jsonrpc.html#rpc_blobfs_detect", null ],
+        [ "blobfs_create", "jsonrpc.html#rpc_blobfs_create", null ],
+        [ "blobfs_mount", "jsonrpc.html#rpc_blobfs_mount", null ],
+        [ "blobfs_set_cache_size", "jsonrpc.html#rpc_blobfs_set_cache_size", null ]
+      ] ],
+      [ "Socket layer", "jsonrpc.html#jsonrpc_components_sock", [
+        [ "sock_impl_get_options", "jsonrpc.html#rpc_sock_impl_get_options", null ],
+        [ "sock_impl_set_options", "jsonrpc.html#rpc_sock_impl_set_options", null ],
+        [ "sock_set_default_impl", "jsonrpc.html#rpc_sock_set_default_impl", null ],
+        [ "sock_get_default_impl", "jsonrpc.html#rpc_sock_get_default_impl", null ],
+        [ "bdev_nvme_send_cmd", "jsonrpc.html#rpc_bdev_nvme_send_cmd", null ],
+        [ "vmd_enable", "jsonrpc.html#rpc_enable_vmd", null ],
+        [ "vmd_remove_device", "jsonrpc.html#rpc_vmd_remove_device", null ],
+        [ "vmd_rescan", "jsonrpc.html#rpc_vmd_rescan", null ],
+        [ "spdk_get_version", "jsonrpc.html#rpc_spdk_get_version", null ],
+        [ "bdev_nvme_add_error_injection", "jsonrpc.html#rpc_bdev_nvme_add_error_injection", null ],
+        [ "bdev_nvme_remove_error_injection", "jsonrpc.html#rpc_bdev_nvme_remove_error_injection", null ],
+        [ "bdev_daos_create", "jsonrpc.html#rpc_bdev_daos_create", null ],
+        [ "bdev_daos_delete", "jsonrpc.html#rpc_bdev_daos_delete", null ],
+        [ "bdev_daos_resize", "jsonrpc.html#rpc_bdev_daos_resize", null ],
+        [ "iobuf_set_options", "jsonrpc.html#rpc_iobuf_set_options", null ],
+        [ "iobuf_get_stats", "jsonrpc.html#rpc_iobuf_get_stats", null ],
+        [ "bdev_nvme_start_mdns_discovery", "jsonrpc.html#rpc_bdev_nvme_start_mdns_discovery", null ],
+        [ "bdev_nvme_stop_mdns_discovery", "jsonrpc.html#rpc_bdev_nvme_stop_mdns_discovery", null ],
+        [ "bdev_nvme_get_mdns_discovery_info", "jsonrpc.html#rpc_bdev_nvme_get_mdns_discovery_info", null ],
+        [ "keyring_file_add_key", "jsonrpc.html#rpc_keyring_file_add_key", null ],
+        [ "keyring_file_remove_key", "jsonrpc.html#rpc_keyring_file_remove_key", null ],
+        [ "keyring_get_keys", "jsonrpc.html#rpc_keyring_get_keys", null ],
+        [ "keyring_linux_set_options", "jsonrpc.html#keyring_linux_set_options", null ],
+        [ "nvmf_publish_mdns_prr", "jsonrpc.html#rpc_nvmf_publish_mdns_prr", null ],
+        [ "nvmf_stop_mdns_prr", "jsonrpc.html#rpc_nvmf_stop_mdns_prr", null ]
       ] ]
     ] ],
     [ "JSON-RPC Remote access", "jsonrpc_proxy.html", null ],
