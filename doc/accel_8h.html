@@ -1460,7 +1460,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Abort a sequence. </p>
-<p>This will execute the completion callbacks of all operations that were added to the sequence and will then free the sequence object.</p>
+<p>This will execute the completion callbacks of all operations that were added to the sequence and will then free the sequence object. This function can only be used before a sequence is executed, i.e. before calling <code><a class="el" href="#ad1f3cacbac00f08f92f094243c17ad04" title="Finish a sequence and execute all its operations.">spdk_accel_sequence_finish()</a></code>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">seq</td><td>Sequence to abort. </td></tr>
