@@ -118,7 +118,7 @@ var user_guides =
       [ "RAID", "bdev.html#bdev_ug_raid", null ],
       [ "Split", "bdev.html#bdev_ug_split", null ],
       [ "Uring", "bdev.html#bdev_ug_uring", null ],
-      [ "xnvme", "bdev.html#bdev_ug_xnvme", null ],
+      [ "xNVMe", "bdev.html#bdev_ug_xnvme", null ],
       [ "Virtio Block", "bdev.html#bdev_config_virtio_blk", null ],
       [ "Virtio SCSI", "bdev.html#bdev_config_virtio_scsi", null ],
       [ "DAOS bdev", "bdev.html#bdev_config_daos", null ]
