@@ -1,5 +1,6 @@
 var NAVTREEINDEX14 =
 {
+"structspdk__nvme__zns__zone__desc.html#a1bd360e8c54b4cf58538e88cedf3c0f7":[14,0,290,4],
 "structspdk__nvme__zns__zone__desc.html#a1c3005e11734a7b2808adc8887f180fc":[14,0,290,7],
 "structspdk__nvme__zns__zone__desc.html#a1f7ee3f826226731b4e7187a2815a699":[14,0,290,2],
 "structspdk__nvme__zns__zone__desc.html#a2e109ed5efdad9303bd515619f353120":[14,0,290,8],
@@ -248,6 +249,5 @@ var NAVTREEINDEX14 =
 "structspdk__scsi__pr__in__full__status__desc.html":[14,0,400],
 "structspdk__scsi__pr__in__read__header.html":[14,0,401],
 "structspdk__scsi__pr__in__read__keys__data.html":[14,0,402],
-"structspdk__scsi__pr__in__read__reservations__data.html":[14,0,403],
-"structspdk__scsi__pr__in__report__capabilities__data.html":[14,0,404]
+"structspdk__scsi__pr__in__read__reservations__data.html":[14,0,403]
 };

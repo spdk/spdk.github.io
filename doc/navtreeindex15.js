@@ -1,5 +1,6 @@
 var NAVTREEINDEX15 =
 {
+"structspdk__scsi__pr__in__report__capabilities__data.html":[14,0,404],
 "structspdk__scsi__pr__out__param__list.html":[14,0,405],
 "structspdk__scsi__pr__out__reg__and__move__param__list.html":[14,0,406],
 "structspdk__scsi__task.html":[14,0,407],
@@ -248,6 +249,5 @@ var NAVTREEINDEX15 =
 "trace__parser_8h.html#a74ebe6fa3d5870d54b4fa91f9b56ad45":[15,0,0,0,60,4],
 "trace__parser_8h.html#a9522b4cadbd78010a5894a580c6fe602":[15,0,0,0,60,7],
 "trace__parser_8h.html#aae729da36784f7e2da4107c77c11926b":[15,0,0,0,60,6],
-"ublk.html":[3,14],
-"ublk.html#ublk_impl":[3,14,3]
+"ublk.html":[3,14]
 };

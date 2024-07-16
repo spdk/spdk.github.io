@@ -1,5 +1,6 @@
 var structspdk__app__opts =
 [
+    [ "disable_cpumask_locks", "structspdk__app__opts.html#aff31f49d7e585527cecd785651ae1d0b", null ],
     [ "disable_signal_handlers", "structspdk__app__opts.html#a6e31b7a77928202250cb12f7e7d2b76b", null ],
     [ "env_context", "structspdk__app__opts.html#a7e520897d6a9e39c3e62cc4259bd2ea3", null ],
     [ "json_data", "structspdk__app__opts.html#a5408f150f21315afdf5e5d5ca09cddf2", null ],

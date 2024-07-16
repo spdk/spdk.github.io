@@ -1,5 +1,6 @@
 var NAVTREEINDEX12 =
 {
+"structspdk__iobuf__opts.html#ab9a57e04c4e4310fbce9ce00e1c25056":[14,0,121,2],
 "structspdk__iobuf__opts.html#ac44e81b77a7886422bc4c4821456cc7b":[14,0,121,1],
 "structspdk__iobuf__opts.html#af9531f2bb491d72e9accf40e8fd287c7":[14,0,121,0],
 "structspdk__iobuf__pool.html":[14,0,122],
@@ -248,6 +249,5 @@ var NAVTREEINDEX12 =
 "structspdk__nvme__intel__marketing__description__page.html":[14,0,225],
 "structspdk__nvme__intel__rw__latency__page.html":[14,0,226],
 "structspdk__nvme__intel__smart__attribute.html":[14,0,227],
-"structspdk__nvme__intel__smart__information__page.html":[14,0,228],
-"structspdk__nvme__intel__temperature__page.html":[14,0,229]
+"structspdk__nvme__intel__smart__information__page.html":[14,0,228]
 };

@@ -1,5 +1,6 @@
 var NAVTREEINDEX16 =
 {
+"ublk.html#ublk_impl":[3,14,3],
 "ublk.html#ublk_internal":[3,14,2],
 "ublk.html#ublk_intro":[3,14,1],
 "ublk.html#ublk_op":[3,14,4],
@@ -248,6 +249,5 @@ var NAVTREEINDEX16 =
 "vhost.html#vhost_intro":[3,6,1],
 "vhost.html#vhost_multiqueue":[3,6,5,0],
 "vhost.html#vhost_prereqs":[3,6,2],
-"vhost.html#vhost_qemu_config":[3,6,4,2],
-"vhost.html#vhost_start":[3,6,3]
+"vhost.html#vhost_qemu_config":[3,6,4,2]
 };

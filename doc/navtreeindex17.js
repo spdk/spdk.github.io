@@ -1,5 +1,6 @@
 var NAVTREEINDEX17 =
 {
+"vhost.html#vhost_start":[3,6,3],
 "vhost.html#vhost_toc":[3,6,0],
 "vhost.html#vhost_vdev_create":[3,6,4,1],
 "vhost_8h.html":[15,0,0,0,64],
