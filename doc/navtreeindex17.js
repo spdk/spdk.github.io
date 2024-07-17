@@ -1,5 +1,12 @@
 var NAVTREEINDEX17 =
 {
+"vhost.html#vhost_config":[3,6,4],
+"vhost.html#vhost_example":[3,6,4,3],
+"vhost.html#vhost_hotattach":[3,6,5,1],
+"vhost.html#vhost_intro":[3,6,1],
+"vhost.html#vhost_multiqueue":[3,6,5,0],
+"vhost.html#vhost_prereqs":[3,6,2],
+"vhost.html#vhost_qemu_config":[3,6,4,2],
 "vhost.html#vhost_start":[3,6,3],
 "vhost.html#vhost_toc":[3,6,0],
 "vhost.html#vhost_vdev_create":[3,6,4,1],

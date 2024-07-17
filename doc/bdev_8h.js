@@ -1,6 +1,7 @@
 var bdev_8h =
 [
     [ "spdk_bdev_media_event", "structspdk__bdev__media__event.html", null ],
+    [ "spdk_bdev_enable_histogram_opts", "structspdk__bdev__enable__histogram__opts.html", "structspdk__bdev__enable__histogram__opts" ],
     [ "spdk_bdev_io_stat", "structspdk__bdev__io__stat.html", null ],
     [ "spdk_bdev_opts", "structspdk__bdev__opts.html", "structspdk__bdev__opts" ],
     [ "spdk_bdev_nvme_ctratt", "unionspdk__bdev__nvme__ctratt.html", null ],
@@ -73,6 +74,7 @@ var bdev_8h =
     [ "spdk_bdev_copy_blocks", "group__bdev__io__submit__functions.html#gaea6141ec0cb4090741c6be7ae6927dae", null ],
     [ "spdk_bdev_desc_get_bdev", "bdev_8h.html#aae05ee98ddd0903932505782191805da", null ],
     [ "spdk_bdev_dump_info_json", "bdev_8h.html#a3ef2e861ccd2d6135bfe13257f047fb9", null ],
+    [ "spdk_bdev_enable_histogram_opts_init", "bdev_8h.html#ae53f51d91eb11e9ee51bca3b8794c0a7", null ],
     [ "spdk_bdev_examine", "bdev_8h.html#ae720ef13c98f9ba40e6562d4a8582427", null ],
     [ "spdk_bdev_finish", "bdev_8h.html#a7263aeb5393b46fa5af8e04760f62ea4", null ],
     [ "spdk_bdev_first", "bdev_8h.html#a0c74a45879dfcea19908e48c1131a071", null ],
@@ -92,6 +94,7 @@ var bdev_8h =
     [ "spdk_bdev_get_io_channel", "bdev_8h.html#ac9992f445e8adf2b9f4fd38ac4978762", null ],
     [ "spdk_bdev_get_io_stat", "bdev_8h.html#ab1ba28ba382edd1d792d51a054eb3aa2", null ],
     [ "spdk_bdev_get_io_time", "bdev_8h.html#a8a082eb89d57860b2e57ebf7f5b3caa2", null ],
+    [ "spdk_bdev_get_io_type", "bdev_8h.html#a1e2969719f29755053795965f75f3382", null ],
     [ "spdk_bdev_get_io_type_name", "bdev_8h.html#a5216be2decc3b5f2d91416debb54ee7c", null ],
     [ "spdk_bdev_get_max_copy", "bdev_8h.html#a8b542430078d502325f37b92fc3d15ca", null ],
     [ "spdk_bdev_get_md_size", "bdev_8h.html#abc3537d0315100b24da6acc95929e849", null ],
@@ -115,6 +118,7 @@ var bdev_8h =
     [ "spdk_bdev_get_write_unit_size", "bdev_8h.html#ab5775a23cadb2eb1d5381dc105577a37", null ],
     [ "spdk_bdev_has_write_cache", "bdev_8h.html#a93f6d6ce09da384501f09a49581caa37", null ],
     [ "spdk_bdev_histogram_enable", "bdev_8h.html#a0b4556cb07c52ae7b5b7e7f10cbdc637", null ],
+    [ "spdk_bdev_histogram_enable_ext", "bdev_8h.html#aa571a45129879c956cec9de008b21048", null ],
     [ "spdk_bdev_histogram_get", "bdev_8h.html#aacf15571883da5a441297b5090e6aaf5", null ],
     [ "spdk_bdev_initialize", "bdev_8h.html#a854eb960c06597051071023a3d70e887", null ],
     [ "spdk_bdev_io_get_aio_status", "bdev_8h.html#a701290c13896ad545b58f5c5fecfbd93", null ],

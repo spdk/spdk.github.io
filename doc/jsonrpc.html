@@ -2099,7 +2099,9 @@ bdev_enable_histogram</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Block device name    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">enable   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Enable or disable histogram on specified device   </td></tr>
+<td class="markdownTableBodyNone">enable   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Enable or disable histogram on specified device    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">opc   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">IO type name   </td></tr>
 </table>
 <h3>Example</h3>
 <p>Example request:</p>
@@ -2110,6 +2112,7 @@ bdev_enable_histogram</h2>
 <div class="line">  &quot;params&quot;: {</div>
 <div class="line">    &quot;name&quot;: &quot;Nvme0n1&quot;</div>
 <div class="line">    &quot;enable&quot;: true</div>
+<div class="line">    &quot;opc&quot;: &quot;read&quot;</div>
 <div class="line">  }</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Example response:</p>

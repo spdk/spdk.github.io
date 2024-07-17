@@ -144,6 +144,12 @@ uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>reserved</b> [4]</
 size_t&#160;</td><td class="memItemRight" valign="bottom"><b>impl_opts_size</b></td></tr>
 <tr class="memdesc:afce30ae74efc5b3b5aaa998e8fc4090d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Size of the impl_opts structure. <br /></td></tr>
 <tr class="separator:afce30ae74efc5b3b5aaa998e8fc4090d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9604bee45305b8775f31ac36ef9bb942" id="r_a9604bee45305b8775f31ac36ef9bb942"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9604bee45305b8775f31ac36ef9bb942">src_addr</a></td></tr>
+<tr class="memdesc:a9604bee45305b8775f31ac36ef9bb942"><td class="mdescLeft">&#160;</td><td class="mdescRight">Source address.  <br /></td></tr>
+<tr class="separator:a9604bee45305b8775f31ac36ef9bb942"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58bd4739aeb7f9918a1f605d11ce6699" id="r_a58bd4739aeb7f9918a1f605d11ce6699"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a58bd4739aeb7f9918a1f605d11ce6699">src_port</a></td></tr>
+<tr class="memdesc:a58bd4739aeb7f9918a1f605d11ce6699"><td class="mdescLeft">&#160;</td><td class="mdescRight">Source port.  <br /></td></tr>
+<tr class="separator:a58bd4739aeb7f9918a1f605d11ce6699"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Spdk socket initialization options. </p>
@@ -180,6 +186,40 @@ size_t&#160;</td><td class="memItemRight" valign="bottom"><b>impl_opts_size</b><
 
 <p>The size of <a class="el" href="structspdk__sock__opts.html" title="Spdk socket initialization options.">spdk_sock_opts</a> according to the caller of this library is used for ABI compatibility. </p>
 <p>The library uses this field to know how many fields in this structure are valid. And the library will populate any remaining fields with default values. </p>
+
+</div>
+</div>
+<a id="a9604bee45305b8775f31ac36ef9bb942" name="a9604bee45305b8775f31ac36ef9bb942"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9604bee45305b8775f31ac36ef9bb942">&#9670;&#160;</a></span>src_addr</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* spdk_sock_opts::src_addr</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Source address. </p>
+<p>If NULL, any available address will be used. Only valid for connect(). </p>
+
+</div>
+</div>
+<a id="a58bd4739aeb7f9918a1f605d11ce6699" name="a58bd4739aeb7f9918a1f605d11ce6699"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58bd4739aeb7f9918a1f605d11ce6699">&#9670;&#160;</a></span>src_port</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t spdk_sock_opts::src_port</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Source port. </p>
+<p>If zero, a random ephemeral port will be used. Only valid for connect(). </p>
 
 </div>
 </div>

@@ -1,5 +1,8 @@
 var NAVTREEINDEX5 =
 {
+"jsonrpc.html#rpc_iscsi_get_histogram":[3,9,6,31],
+"jsonrpc.html#rpc_iscsi_get_initiator_groups":[3,9,6,9],
+"jsonrpc.html#rpc_iscsi_get_options":[3,9,6,1],
 "jsonrpc.html#rpc_iscsi_get_portal_groups":[3,9,6,20],
 "jsonrpc.html#rpc_iscsi_get_target_nodes":[3,9,6,14],
 "jsonrpc.html#rpc_iscsi_initiator_group_add_initiators":[3,9,6,12],
@@ -246,8 +249,5 @@ var NAVTREEINDEX5 =
 "notify.html#notify_register":[4,7,0],
 "notify.html#notify_send":[4,7,3],
 "notify.html#rpc_calls":[4,7,4],
-"nvme.html":[7,0],
-"nvme.html#nvme_cuse":[7,0,8],
-"nvme.html#nvme_design":[7,0,4],
-"nvme.html#nvme_examples":[7,0,2]
+"nvme.html":[7,0]
 };

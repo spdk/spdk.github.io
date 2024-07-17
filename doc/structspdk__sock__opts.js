@@ -5,5 +5,7 @@ var structspdk__sock__opts =
     [ "impl_opts_size", "structspdk__sock__opts.html#afce30ae74efc5b3b5aaa998e8fc4090d", null ],
     [ "opts_size", "structspdk__sock__opts.html#ac8dbf1e759082939e4fc6318122931e7", null ],
     [ "priority", "structspdk__sock__opts.html#a0e826e7a46eadaeb53f38c4926cd3bbf", null ],
+    [ "src_addr", "structspdk__sock__opts.html#a9604bee45305b8775f31ac36ef9bb942", null ],
+    [ "src_port", "structspdk__sock__opts.html#a58bd4739aeb7f9918a1f605d11ce6699", null ],
     [ "zcopy", "structspdk__sock__opts.html#a3cdb293f2ccf10506e7926317e463d91", null ]
 ];

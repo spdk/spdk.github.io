@@ -111,6 +111,9 @@ Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__media__event.html">spdk_bdev_media_event</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Media management event details.  <a href="structspdk__bdev__media__event.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__enable__histogram__opts.html">spdk_bdev_enable_histogram_opts</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure with optional enable histogram parameters.  <a href="structspdk__bdev__enable__histogram__opts.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__io__stat.html">spdk_bdev_io_stat</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__opts.html">spdk_bdev_opts</a></td></tr>
@@ -258,6 +261,9 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a13e0a1aae8f744f746ecb4c2be73f484" id="r_a13e0a1aae8f744f746ecb4c2be73f484"><td class="memItemLeft" align="right" valign="top"><a id="a13e0a1aae8f744f746ecb4c2be73f484" name="a13e0a1aae8f744f746ecb4c2be73f484"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(struct <a class="el" href="structspdk__bdev__enable__histogram__opts.html">spdk_bdev_enable_histogram_opts</a>)==9, &quot;Incorrect size&quot;)</td></tr>
+<tr class="separator:a13e0a1aae8f744f746ecb4c2be73f484"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2a07b56033890913587438d1c77942db" id="r_a2a07b56033890913587438d1c77942db"><td class="memItemLeft" align="right" valign="top"><a id="a2a07b56033890913587438d1c77942db" name="a2a07b56033890913587438d1c77942db"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(struct <a class="el" href="structspdk__bdev__opts.html">spdk_bdev_opts</a>)==32, &quot;Incorrect size&quot;)</td></tr>
 <tr class="separator:a2a07b56033890913587438d1c77942db"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -342,6 +348,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_set_opts</b>
 <tr class="memitem:a5216be2decc3b5f2d91416debb54ee7c" id="r_a5216be2decc3b5f2d91416debb54ee7c"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5216be2decc3b5f2d91416debb54ee7c">spdk_bdev_get_io_type_name</a> (enum <a class="el" href="#a633029e24ab5ae4a689bffa2565a519f">spdk_bdev_io_type</a> io_type)</td></tr>
 <tr class="memdesc:a5216be2decc3b5f2d91416debb54ee7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">return the name of an IO type based on the io_type.  <br /></td></tr>
 <tr class="separator:a5216be2decc3b5f2d91416debb54ee7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e2969719f29755053795965f75f3382" id="r_a1e2969719f29755053795965f75f3382"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1e2969719f29755053795965f75f3382">spdk_bdev_get_io_type</a> (const char *io_type_string)</td></tr>
+<tr class="memdesc:a1e2969719f29755053795965f75f3382"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the io_type based on the io_type_string.  <br /></td></tr>
+<tr class="separator:a1e2969719f29755053795965f75f3382"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3ef2e861ccd2d6135bfe13257f047fb9" id="r_a3ef2e861ccd2d6135bfe13257f047fb9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3ef2e861ccd2d6135bfe13257f047fb9">spdk_bdev_dump_info_json</a> (struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *bdev, struct spdk_json_write_ctx *w)</td></tr>
 <tr class="memdesc:a3ef2e861ccd2d6135bfe13257f047fb9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Output driver-specific information to a JSON stream.  <br /></td></tr>
 <tr class="separator:a3ef2e861ccd2d6135bfe13257f047fb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -582,6 +591,12 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_set_opts</b>
 <tr class="memitem:a0b4556cb07c52ae7b5b7e7f10cbdc637" id="r_a0b4556cb07c52ae7b5b7e7f10cbdc637"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0b4556cb07c52ae7b5b7e7f10cbdc637">spdk_bdev_histogram_enable</a> (struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *bdev, spdk_bdev_histogram_status_cb cb_fn, void *cb_arg, bool enable)</td></tr>
 <tr class="memdesc:a0b4556cb07c52ae7b5b7e7f10cbdc637"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable or disable collecting histogram data on a bdev.  <br /></td></tr>
 <tr class="separator:a0b4556cb07c52ae7b5b7e7f10cbdc637"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa571a45129879c956cec9de008b21048" id="r_aa571a45129879c956cec9de008b21048"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa571a45129879c956cec9de008b21048">spdk_bdev_histogram_enable_ext</a> (struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *bdev, spdk_bdev_histogram_status_cb cb_fn, void *cb_arg, bool enable, struct <a class="el" href="structspdk__bdev__enable__histogram__opts.html">spdk_bdev_enable_histogram_opts</a> *opts)</td></tr>
+<tr class="memdesc:aa571a45129879c956cec9de008b21048"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable or disable collecting histogram data on a bdev.  <br /></td></tr>
+<tr class="separator:aa571a45129879c956cec9de008b21048"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae53f51d91eb11e9ee51bca3b8794c0a7" id="r_ae53f51d91eb11e9ee51bca3b8794c0a7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae53f51d91eb11e9ee51bca3b8794c0a7">spdk_bdev_enable_histogram_opts_init</a> (struct <a class="el" href="structspdk__bdev__enable__histogram__opts.html">spdk_bdev_enable_histogram_opts</a> *opts, size_t size)</td></tr>
+<tr class="memdesc:ae53f51d91eb11e9ee51bca3b8794c0a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize bdev enable histogram options structure.  <br /></td></tr>
+<tr class="separator:ae53f51d91eb11e9ee51bca3b8794c0a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aacf15571883da5a441297b5090e6aaf5" id="r_aacf15571883da5a441297b5090e6aaf5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aacf15571883da5a441297b5090e6aaf5">spdk_bdev_histogram_get</a> (struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *bdev, struct <a class="el" href="structspdk__histogram__data.html">spdk_histogram_data</a> *histogram, spdk_bdev_histogram_data_cb cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:aacf15571883da5a441297b5090e6aaf5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get aggregated histogram data from a bdev.  <br /></td></tr>
 <tr class="separator:aacf15571883da5a441297b5090e6aaf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1006,6 +1021,36 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_set_opts</b>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 on success, negated errno on failure. </dd></dl>
+
+</div>
+</div>
+<a id="ae53f51d91eb11e9ee51bca3b8794c0a7" name="ae53f51d91eb11e9ee51bca3b8794c0a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae53f51d91eb11e9ee51bca3b8794c0a7">&#9670;&#160;</a></span>spdk_bdev_enable_histogram_opts_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_bdev_enable_histogram_opts_init </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structspdk__bdev__enable__histogram__opts.html">spdk_bdev_enable_histogram_opts</a> *</td>          <td class="paramname"><span class="paramname"><em>opts</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>size</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initialize bdev enable histogram options structure. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">opts</td><td>The structure to initialize. </td></tr>
+    <tr><td class="paramname">size</td><td>The size of *opts. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -1494,6 +1539,32 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_set_opts</b>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The io time for this device in microseconds. </dd></dl>
+
+</div>
+</div>
+<a id="a1e2969719f29755053795965f75f3382" name="a1e2969719f29755053795965f75f3382"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e2969719f29755053795965f75f3382">&#9670;&#160;</a></span>spdk_bdev_get_io_type()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_bdev_get_io_type </td>
+          <td>(</td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>io_type_string</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return the io_type based on the io_type_string. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">io_type_string</td><td>Name of the IO type as a null-terminated string. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>io_type The specific I/O type like read, write, flush, unmap etc. This will map to enum spdk_bdev_io_type. </dd></dl>
 
 </div>
 </div>
@@ -2148,6 +2219,55 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_set_opts</b>
     <tr><td class="paramname">cb_fn</td><td>Callback function to be called when histograms are enabled. </td></tr>
     <tr><td class="paramname">cb_arg</td><td>Argument to pass to cb_fn. </td></tr>
     <tr><td class="paramname">enable</td><td>Enable/disable flag </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aa571a45129879c956cec9de008b21048" name="aa571a45129879c956cec9de008b21048"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa571a45129879c956cec9de008b21048">&#9670;&#160;</a></span>spdk_bdev_histogram_enable_ext()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_bdev_histogram_enable_ext </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *</td>          <td class="paramname"><span class="paramname"><em>bdev</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">spdk_bdev_histogram_status_cb</td>          <td class="paramname"><span class="paramname"><em>cb_fn</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *</td>          <td class="paramname"><span class="paramname"><em>cb_arg</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>enable</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structspdk__bdev__enable__histogram__opts.html">spdk_bdev_enable_histogram_opts</a> *</td>          <td class="paramname"><span class="paramname"><em>opts</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Enable or disable collecting histogram data on a bdev. </p>
+<p>This differs from spdk_bdev_histogram_enable by allowing Optional structure with extended enable histogram options.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bdev</td><td>Block device. </td></tr>
+    <tr><td class="paramname">cb_fn</td><td>Callback function to be called when histograms are enabled. </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>Argument to pass to cb_fn. </td></tr>
+    <tr><td class="paramname">enable</td><td>Enable/disable flag </td></tr>
+    <tr><td class="paramname">opts</td><td>Optional structure with extended enable histogram options. <code>size</code> member of this structure is used for ABI compatibility and must be set to sizeof(struct spdk_bdev_enable_histogram_opts). </td></tr>
   </table>
   </dd>
 </dl>
