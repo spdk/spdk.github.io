@@ -1,5 +1,9 @@
 var NAVTREEINDEX12 =
 {
+"structspdk__iobuf__channel.html":[14,0,119],
+"structspdk__iobuf__channel.html#aa42277d0bd373da7535d01880ada3e3d":[14,0,119,0],
+"structspdk__iobuf__channel.html#aa4781cd7364ef4636a4b471de4978a66":[14,0,119,2],
+"structspdk__iobuf__channel.html#ab6881d1141f09e27c3497aafcaff2529":[14,0,119,1],
 "structspdk__iobuf__entry.html":[14,0,120],
 "structspdk__iobuf__module__stats.html":[14,0,121],
 "structspdk__iobuf__opts.html":[14,0,122],
@@ -245,9 +249,5 @@ var NAVTREEINDEX12 =
 "structspdk__nvme__fw__commit.html#a5533adaa1a3efdd7c6f5c02c4f86f6d7":[14,0,216,1],
 "structspdk__nvme__fw__commit.html#adceddb8b4669fb29ec4d5f45cf567dd7":[14,0,216,0],
 "structspdk__nvme__fw__commit.html#af5bbf67aa6f4a82d1fef951e436e34fe":[14,0,216,2],
-"structspdk__nvme__health__information__page.html":[14,0,217],
-"structspdk__nvme__host__behavior.html":[14,0,218],
-"structspdk__nvme__host__id.html":[14,0,219],
-"structspdk__nvme__host__id.html#a2c9f08f41595a1f96b3829ce0b5eb60e":[14,0,219,0],
-"structspdk__nvme__host__id.html#afd61667cc56fde2c163144145d3fa243":[14,0,219,1]
+"structspdk__nvme__health__information__page.html":[14,0,217]
 };

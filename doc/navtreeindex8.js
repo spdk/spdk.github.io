@@ -1,5 +1,8 @@
 var NAVTREEINDEX8 =
 {
+"nvme__spec_8h.html#aa70e5bbfae3ba9ec66a65c78e1966a1da37402e202dfae7a93cafd3d613662be2":[15,0,0,0,45,153,27],
+"nvme__spec_8h.html#aa70e5bbfae3ba9ec66a65c78e1966a1da3c41e9b3edbdeeb77fcdce954518fe8f":[15,0,0,0,45,153,36],
+"nvme__spec_8h.html#aa70e5bbfae3ba9ec66a65c78e1966a1da4447edbe89d29d9850e4710edd23a08a":[15,0,0,0,45,153,15],
 "nvme__spec_8h.html#aa70e5bbfae3ba9ec66a65c78e1966a1da448b1d68b17b69687bb4cb9260f4eb10":[15,0,0,0,45,153,22],
 "nvme__spec_8h.html#aa70e5bbfae3ba9ec66a65c78e1966a1da52503a98559d39d8c0525b62c9801c0a":[15,0,0,0,45,153,31],
 "nvme__spec_8h.html#aa70e5bbfae3ba9ec66a65c78e1966a1da53575a9aa16c93a15bdb5144c70b4d4c":[15,0,0,0,45,153,25],
@@ -246,8 +249,5 @@ var NAVTREEINDEX8 =
 "nvmf.html#nvmf_getting_started":[3,5,0],
 "nvmf.html#nvmf_host":[3,5,5],
 "nvmf.html#nvmf_prereqs":[3,5,1,0],
-"nvmf.html#nvmf_prereqs_rdma_nics":[3,5,1,2],
-"nvmf.html#nvmf_prereqs_verbs":[3,5,1,1],
-"nvmf.html#nvmf_rdma_limitations":[3,5,1,3],
-"nvmf.html#nvmf_rdma_transport":[3,5,1]
+"nvmf.html#nvmf_prereqs_rdma_nics":[3,5,1,2]
 };

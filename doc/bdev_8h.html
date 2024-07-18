@@ -414,6 +414,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_set_opts</b>
 <tr class="memitem:ac94b5900766ec42da5fc3658a5749858" id="r_ac94b5900766ec42da5fc3658a5749858"><td class="memItemLeft" align="right" valign="top">enum spdk_dif_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac94b5900766ec42da5fc3658a5749858">spdk_bdev_get_dif_type</a> (const struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *bdev)</td></tr>
 <tr class="memdesc:ac94b5900766ec42da5fc3658a5749858"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get DIF type of the block device.  <br /></td></tr>
 <tr class="separator:ac94b5900766ec42da5fc3658a5749858"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d78c50514b2b4781bc40515dcaa9545" id="r_a3d78c50514b2b4781bc40515dcaa9545"><td class="memItemLeft" align="right" valign="top">enum spdk_dif_pi_format&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3d78c50514b2b4781bc40515dcaa9545">spdk_bdev_get_dif_pi_format</a> (const struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *bdev)</td></tr>
+<tr class="memdesc:a3d78c50514b2b4781bc40515dcaa9545"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get DIF protection information format of the block device.  <br /></td></tr>
+<tr class="separator:a3d78c50514b2b4781bc40515dcaa9545"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4e43a19692e14e5e46b3315e4cf0bc1d" id="r_a4e43a19692e14e5e46b3315e4cf0bc1d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4e43a19692e14e5e46b3315e4cf0bc1d">spdk_bdev_is_dif_head_of_md</a> (const struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *bdev)</td></tr>
 <tr class="memdesc:a4e43a19692e14e5e46b3315e4cf0bc1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether DIF is set in the first 8/16 bytes or the last 8/16 bytes of metadata.  <br /></td></tr>
 <tr class="separator:a4e43a19692e14e5e46b3315e4cf0bc1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1422,6 +1425,33 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_set_opts</b>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a3d78c50514b2b4781bc40515dcaa9545" name="a3d78c50514b2b4781bc40515dcaa9545"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d78c50514b2b4781bc40515dcaa9545">&#9670;&#160;</a></span>spdk_bdev_get_dif_pi_format()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum spdk_dif_pi_format spdk_bdev_get_dif_pi_format </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *</td>          <td class="paramname"><span class="paramname"><em>bdev</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get DIF protection information format of the block device. </p>
+<p>Note that this function is valid only if DIF type is not SPDK_DIF_DISABLE.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bdev</td><td>Block device to query. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>DIF protection information format of the block device. </dd></dl>
 
 </div>
 </div>

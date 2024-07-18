@@ -110,6 +110,12 @@ Functions</h2></td></tr>
 <tr class="memitem:af9a85265e38782c63f55995ed0f3eba4" id="r_af9a85265e38782c63f55995ed0f3eba4"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af9a85265e38782c63f55995ed0f3eba4">spdk_posix_file_load_from_name</a> (const char *file_name, size_t *size)</td></tr>
 <tr class="memdesc:af9a85265e38782c63f55995ed0f3eba4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load content of a given file name into a data buffer.  <br /></td></tr>
 <tr class="separator:af9a85265e38782c63f55995ed0f3eba4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad68bd9d4b771faee1264402f13628a0" id="r_aad68bd9d4b771faee1264402f13628a0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aad68bd9d4b771faee1264402f13628a0">spdk_read_sysfs_attribute</a> (char **attribute, const char *path_format,...)</td></tr>
+<tr class="memdesc:aad68bd9d4b771faee1264402f13628a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the string value for a given sysfs attribute path.  <br /></td></tr>
+<tr class="separator:aad68bd9d4b771faee1264402f13628a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ce425e7ea1c2bd34feacddaeb914b7c" id="r_a2ce425e7ea1c2bd34feacddaeb914b7c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2ce425e7ea1c2bd34feacddaeb914b7c">spdk_read_sysfs_attribute_uint32</a> (uint32_t *attribute, const char *path_format,...)</td></tr>
+<tr class="memdesc:a2ce425e7ea1c2bd34feacddaeb914b7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the uint32 value for a given sysfs attribute path.  <br /></td></tr>
+<tr class="separator:a2ce425e7ea1c2bd34feacddaeb914b7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>file operation functions </p>
@@ -173,6 +179,79 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>data containing the content on success, NULL on failure. </dd></dl>
+
+</div>
+</div>
+<a id="aad68bd9d4b771faee1264402f13628a0" name="aad68bd9d4b771faee1264402f13628a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad68bd9d4b771faee1264402f13628a0">&#9670;&#160;</a></span>spdk_read_sysfs_attribute()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_read_sysfs_attribute </td>
+          <td>(</td>
+          <td class="paramtype">char **</td>          <td class="paramname"><span class="paramname"><em>attribute</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>path_format</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>...</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the string value for a given sysfs attribute path. </p>
+<p>When successful, the returned string will be null-terminated, without a trailing newline.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">attribute</td><td>output parameter for contents of the attribute; caller must free() the buffer pointed to by attribute at some point after a successful call </td></tr>
+    <tr><td class="paramname">path_format</td><td>format string for constructing patch to sysfs file</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success negative errno if unable to read the attribute </dd></dl>
+
+</div>
+</div>
+<a id="a2ce425e7ea1c2bd34feacddaeb914b7c" name="a2ce425e7ea1c2bd34feacddaeb914b7c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ce425e7ea1c2bd34feacddaeb914b7c">&#9670;&#160;</a></span>spdk_read_sysfs_attribute_uint32()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_read_sysfs_attribute_uint32 </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t *</td>          <td class="paramname"><span class="paramname"><em>attribute</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>path_format</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>...</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the uint32 value for a given sysfs attribute path. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">attribute</td><td>output parameter for contents of the attribute </td></tr>
+    <tr><td class="paramname">path_format</td><td>format string for constructing patch to sysfs file</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success negative errno if unable to read the attribute or it is not a uint32 </dd></dl>
 
 </div>
 </div>

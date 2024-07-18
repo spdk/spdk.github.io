@@ -115,6 +115,8 @@ v24.09: (Upcoming Release)</h1>
 <p><code>spdk_get_tid</code> is added to get the tid of the current thread.</p>
 <h2>scheduler</h2>
 <p>Added <code>framework_get_governor</code> RPC to retrieve the power governor name, power env and the frequencies available, frequency set to the cpu cores.</p>
+<h2>dif</h2>
+<p>Each element in <code>enum spdk_dif_pi_format</code> was subtracted by 1 to match the definition of the Protection Information Format in the NVMe specification. This is necessary change but breaks ABI compatibility. Please recompile your application if you added code using this enum of older SPDK.</p>
 <h1>v24.05</h1>
 <h2>accel</h2>
 <p><code>spdk_accel_get/set_opts()</code> has changed to act more like <a class="el" href="structspdk__bdev.html">spdk_bdev</a>'s variant.</p>

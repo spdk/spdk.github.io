@@ -1,5 +1,9 @@
 var NAVTREEINDEX14 =
 {
+"structspdk__nvme__zns__ns__data.html#a689785f50f2dda21c0a7aa8c1fbb0412":[14,0,290,12],
+"structspdk__nvme__zns__ns__data.html#a6fb4784c3844000a2984206632d4e973":[14,0,290,9],
+"structspdk__nvme__zns__ns__data.html#a7ec3330b0942e8a6a1be857ed3be85e7":[14,0,290,8],
+"structspdk__nvme__zns__ns__data.html#a999ce9ad18611dfca853c60741be3c19":[14,0,290,1],
 "structspdk__nvme__zns__ns__data.html#aa44e20702388419e7b0ac850259cf43f":[14,0,290,2],
 "structspdk__nvme__zns__ns__data.html#abdd0f008b8756f17892579fb42ab57c0":[14,0,290,5],
 "structspdk__nvme__zns__ns__data.html#adca9d47db6e68a38bb6a2e611eadd643":[14,0,290,14],
@@ -245,9 +249,5 @@ var NAVTREEINDEX14 =
 "structspdk__scheduler__core__info.html":[14,0,392],
 "structspdk__scheduler__thread__info.html":[14,0,393],
 "structspdk__scsi__cdb__inquiry.html":[14,0,394],
-"structspdk__scsi__cdb__inquiry__data.html":[14,0,395],
-"structspdk__scsi__desig__desc.html":[14,0,396],
-"structspdk__scsi__iscsi__transport__id.html":[14,0,397],
-"structspdk__scsi__mpage__policy__desc.html":[14,0,398],
-"structspdk__scsi__port__desc.html":[14,0,399]
+"structspdk__scsi__cdb__inquiry__data.html":[14,0,395]
 };

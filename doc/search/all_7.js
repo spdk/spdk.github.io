@@ -47,7 +47,7 @@ var searchData=
   ['dif_20dix_20library_44',['v19.01: NVMe-oF TCP/IP Transport, Open Channel SSD Flash Translation Layer, Caching bdev based on OCF, ISA-L Support, DIF/DIX library',['../changelog.html#changelog-v19-01',1,'']]],
   ['dif_5fcheck_5fflags_45',['dif_check_flags',['../structspdk__bdev.html#a1872fa3d723b5bef069c0681ec3bcfd6',1,'spdk_bdev::dif_check_flags'],['../structspdk__bdev__io.html#a7ab245e4347311548c965ee1dbf335c6',1,'spdk_bdev_io::dif_check_flags']]],
   ['dif_5fcheck_5fflags_5fexclude_5fmask_46',['dif_check_flags_exclude_mask',['../structspdk__bdev__ext__io__opts.html#a9738b87b65cb41ab417f58a3ac1c5004',1,'spdk_bdev_ext_io_opts']]],
-  ['dif_5fpi_5fformat_47',['dif_pi_format',['../structspdk__dif__ctx.html#ad1a89eaf588c33974026520788e5b026',1,'spdk_dif_ctx']]],
+  ['dif_5fpi_5fformat_47',['dif_pi_format',['../structspdk__bdev.html#a677d201121658aa2df21b4de5d21eec4',1,'spdk_bdev::dif_pi_format'],['../structspdk__dif__ctx.html#ad1a89eaf588c33974026520788e5b026',1,'spdk_dif_ctx::dif_pi_format']]],
   ['dif_5ftype_48',['dif_type',['../structspdk__bdev.html#abcf4e6c5be82c271a681db4b9b2fd427',1,'spdk_bdev::dif_type'],['../structspdk__dif__ctx.html#a74a53ae88b8d68eeaaf3dd3f8890aa79',1,'spdk_dif_ctx::dif_type']]],
   ['direct_20memory_20access_20dma_20from_20user_20space_49',['Direct Memory Access (DMA) From User Space',['../memory.html',1,'concepts']]],
   ['directives_50',['directives',['../structspdk__nvme__cdata__oacs.html#a2f870d0e5e779a0ec5c83b96323b0e7e',1,'spdk_nvme_cdata_oacs']]],

@@ -232,6 +232,9 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>md_len</b></td></
 <tr class="memitem:abcf4e6c5be82c271a681db4b9b2fd427" id="r_abcf4e6c5be82c271a681db4b9b2fd427"><td class="memItemLeft" align="right" valign="top">enum spdk_dif_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abcf4e6c5be82c271a681db4b9b2fd427">dif_type</a></td></tr>
 <tr class="memdesc:abcf4e6c5be82c271a681db4b9b2fd427"><td class="mdescLeft">&#160;</td><td class="mdescRight">DIF type for this bdev.  <br /></td></tr>
 <tr class="separator:abcf4e6c5be82c271a681db4b9b2fd427"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a677d201121658aa2df21b4de5d21eec4" id="r_a677d201121658aa2df21b4de5d21eec4"><td class="memItemLeft" align="right" valign="top">enum spdk_dif_pi_format&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a677d201121658aa2df21b4de5d21eec4">dif_pi_format</a></td></tr>
+<tr class="memdesc:a677d201121658aa2df21b4de5d21eec4"><td class="mdescLeft">&#160;</td><td class="mdescRight">DIF protection information format for this bdev.  <br /></td></tr>
+<tr class="separator:a677d201121658aa2df21b4de5d21eec4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1a6b7f9bd595b3b800f35cc63efa3aab" id="r_a1a6b7f9bd595b3b800f35cc63efa3aab"><td class="memItemLeft" align="right" valign="top"><a id="a1a6b7f9bd595b3b800f35cc63efa3aab" name="a1a6b7f9bd595b3b800f35cc63efa3aab"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>dif_is_head_of_md</b></td></tr>
 <tr class="separator:a1a6b7f9bd595b3b800f35cc63efa3aab"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -282,6 +285,23 @@ struct <a class="el" href="structspdk__bdev_1_1____bdev__internal__fields.html">
 <tr class="separator:a027888b234afc8af8282da025bec83fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Field Documentation</h2>
+<a id="a677d201121658aa2df21b4de5d21eec4" name="a677d201121658aa2df21b4de5d21eec4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a677d201121658aa2df21b4de5d21eec4">&#9670;&#160;</a></span>dif_pi_format</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum spdk_dif_pi_format spdk_bdev::dif_pi_format</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>DIF protection information format for this bdev. </p>
+<p>Note that this field is valid only if there is metadata and dif_type is not SPDK_DIF_DISABLE. </p>
+
+</div>
+</div>
 <a id="abcf4e6c5be82c271a681db4b9b2fd427" name="abcf4e6c5be82c271a681db4b9b2fd427"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abcf4e6c5be82c271a681db4b9b2fd427">&#9670;&#160;</a></span>dif_type</h2>
 

@@ -90,6 +90,7 @@ var bdev_8h =
     [ "spdk_bdev_get_by_name", "bdev_8h.html#a04f3638678ead46e86a28c8afd34d1e8", null ],
     [ "spdk_bdev_get_data_block_size", "bdev_8h.html#a84041f3948f91dc0dd0656895970061a", null ],
     [ "spdk_bdev_get_device_stat", "bdev_8h.html#aa478b43fc9e6e41c34438f5b2ef742d5", null ],
+    [ "spdk_bdev_get_dif_pi_format", "bdev_8h.html#a3d78c50514b2b4781bc40515dcaa9545", null ],
     [ "spdk_bdev_get_dif_type", "bdev_8h.html#ac94b5900766ec42da5fc3658a5749858", null ],
     [ "spdk_bdev_get_io_channel", "bdev_8h.html#ac9992f445e8adf2b9f4fd38ac4978762", null ],
     [ "spdk_bdev_get_io_stat", "bdev_8h.html#ab1ba28ba382edd1d792d51a054eb3aa2", null ],
