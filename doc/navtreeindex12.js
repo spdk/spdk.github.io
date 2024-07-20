@@ -1,5 +1,9 @@
 var NAVTREEINDEX12 =
 {
+"structspdk__ioat__registers.html":[14,0,115],
+"structspdk__ioat__xor__ext__hw__desc.html":[14,0,116],
+"structspdk__ioat__xor__hw__desc.html":[14,0,117],
+"structspdk__iobuf__buffer.html":[14,0,118],
 "structspdk__iobuf__channel.html":[14,0,119],
 "structspdk__iobuf__channel.html#aa42277d0bd373da7535d01880ada3e3d":[14,0,119,0],
 "structspdk__iobuf__channel.html#aa4781cd7364ef4636a4b471de4978a66":[14,0,119,2],
@@ -245,9 +249,5 @@ var NAVTREEINDEX12 =
 "structspdk__nvme__firmware__page.html#ac92edf109ba5f2b970b06a31a0434f37":[14,0,214,2],
 "structspdk__nvme__firmware__page.html#acc627dc50a9f88fa3c4697ff8ac99c81":[14,0,214,1],
 "structspdk__nvme__format.html":[14,0,215],
-"structspdk__nvme__fw__commit.html":[14,0,216],
-"structspdk__nvme__fw__commit.html#a5533adaa1a3efdd7c6f5c02c4f86f6d7":[14,0,216,1],
-"structspdk__nvme__fw__commit.html#adceddb8b4669fb29ec4d5f45cf567dd7":[14,0,216,0],
-"structspdk__nvme__fw__commit.html#af5bbf67aa6f4a82d1fef951e436e34fe":[14,0,216,2],
-"structspdk__nvme__health__information__page.html":[14,0,217]
+"structspdk__nvme__fw__commit.html":[14,0,216]
 };

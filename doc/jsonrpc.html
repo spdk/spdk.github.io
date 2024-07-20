@@ -8795,13 +8795,15 @@ bdev_lvol_check_shallow_copy</h2>
 bdev_raid_set_options</h2>
 <p>Set options for bdev raid.</p>
 <p>This RPC can be called at any time, but the new value will only take effect for new raid bdevs.</p>
-<p>The <code>process_window_size_kb</code> parameter defines the size of the "window" (LBA range of the raid bdev) in which a background process like rebuild performs its work. Any positive value is valid, but the value actually used by a raid bdev can be adjusted to the size of the raid bdev or the write unit size.</p>
+<p>The <code>process_window_size_kb</code> parameter defines the size of the "window" (LBA range of the raid bdev) in which a background process like rebuild performs its work. Any positive value is valid, but the value actually used by a raid bdev can be adjusted to the size of the raid bdev or the write unit size. <code>process_max_bandwidth_mb_sec</code> parameter defines the maximum bandwidth used by a background process like rebuild. Any positive value or zero is valid, zero means no bandwidth limitation for background process. It can only limit the process bandwidth but doesn't guarantee it can be reached. Changing this value will not affect existing processes, it will only take effect on new processes generated after the RPC is completed.</p>
 <h3>Parameters</h3>
 <table class="markdownTable">
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">process_window_size_kb   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">Background process (e.g. rebuild) window size in KiB   </td></tr>
+<td class="markdownTableBodyNone">process_window_size_kb   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">Background process (e.g. rebuild) window size in KiB    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">process_max_bandwidth_mb_sec   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">Background process (e.g. rebuild) maximum bandwidth in MiB/Sec   </td></tr>
 </table>
 <h3>Example</h3>
 <p>Example request:</p>
@@ -8811,7 +8813,8 @@ bdev_raid_set_options</h2>
 <div class="line">  &quot;method&quot;: &quot;bdev_raid_set_options&quot;,</div>
 <div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;params&quot;: {</div>
-<div class="line">    &quot;process_window_size_kb&quot;: 512</div>
+<div class="line">    &quot;process_window_size_kb&quot;: 512,</div>
+<div class="line">    &quot;process_max_bandwidth_mb_sec&quot;: 100</div>
 <div class="line">  }</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Example response:</p>

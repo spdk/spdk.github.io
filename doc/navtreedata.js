@@ -76,18 +76,18 @@ var NAVTREEINDEX =
 "env_8h.html#ac2fb32c12cdf8c9fdb977f673fbf8de4",
 "init_8h.html#adbfa73a5f5120e5a80d7b33beb7df862",
 "jsonrpc.html#rpc_iscsi_enable_histogram",
-"notify.html#notify_send",
-"nvme_8h.html#ae87a03c28984a2c0499d50ef5e9d0eceabbda195aa6d0a4ad7b437ed5e9a0d01f",
-"nvme__spec_8h.html#aa70e5bbfae3ba9ec66a65c78e1966a1da37402e202dfae7a93cafd3d613662be2",
-"nvmf.html#nvmf_prereqs_verbs",
-"reduce_8h.html#a593901ae3d44b3315fad40da95108bee",
-"structspdk__bdev.html#aaaa43998fc6e305d9ca597a56eb7e99c",
-"structspdk__iobuf__channel.html",
-"structspdk__nvme__host__behavior.html",
-"structspdk__nvme__zns__ns__data.html#a689785f50f2dda21c0a7aa8c1fbb0412",
-"structspdk__scsi__desig__desc.html",
-"trace__parser_8h.html",
-"vhost.html#vhost_advanced_topics"
+"notify.html",
+"nvme_8h.html#ae87a03c28984a2c0499d50ef5e9d0ecea140f1cb4edf258bddffeb1c7277d93d8",
+"nvme__spec_8h.html#aa70e5bbfae3ba9ec66a65c78e1966a1da1f9576575ae27187ded29631fd57aa7b",
+"nvmf.html#nvmf_getting_started",
+"reduce_8h.html",
+"structspdk__bdev.html#a83ca16e5fee5d658b6ac90433372a076",
+"structspdk__ioat__registers.html",
+"structspdk__nvme__fw__commit.html#a5533adaa1a3efdd7c6f5c02c4f86f6d7",
+"structspdk__nvme__zns__ns__data.html#a252dddace1155cb65073139810cf096c",
+"structspdk__scheduler__core__info.html",
+"trace_8h.html#aa7331d8e039fadc27049efd27c1d49a8",
+"version_8h.html#a724bde57680bbd92b5dd6db6923a34f5"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

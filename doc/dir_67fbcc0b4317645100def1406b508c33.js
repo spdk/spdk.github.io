@@ -41,6 +41,7 @@ var dir_67fbcc0b4317645100def1406b508c33 =
     [ "lvol.h", "lvol_8h.html", "lvol_8h" ],
     [ "mmio.h", "mmio_8h.html", null ],
     [ "nbd.h", "nbd_8h.html", "nbd_8h" ],
+    [ "net.h", "net_8h.html", "net_8h" ],
     [ "nvme.h", "nvme_8h.html", "nvme_8h" ],
     [ "nvme_intel.h", "nvme__intel_8h.html", "nvme__intel_8h" ],
     [ "nvme_ocssd.h", "nvme__ocssd_8h.html", "nvme__ocssd_8h" ],
