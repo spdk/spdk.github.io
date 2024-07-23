@@ -183,6 +183,12 @@ Functions</h2></td></tr>
 <tr class="memitem:a685b050c844ea093a6b3a17ac8992b55" id="r_a685b050c844ea093a6b3a17ac8992b55"><td class="memItemLeft" align="right" valign="top">struct spdk_sock *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a685b050c844ea093a6b3a17ac8992b55">spdk_sock_accept</a> (struct spdk_sock *sock)</td></tr>
 <tr class="memdesc:a685b050c844ea093a6b3a17ac8992b55"><td class="mdescLeft">&#160;</td><td class="mdescRight">Accept a new connection from a client on the specified socket and return a socket structure which holds the connection.  <br /></td></tr>
 <tr class="separator:a685b050c844ea093a6b3a17ac8992b55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3463752f8d6a9cdefc8aafaa8a72f9e4" id="r_a3463752f8d6a9cdefc8aafaa8a72f9e4"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3463752f8d6a9cdefc8aafaa8a72f9e4">spdk_sock_get_interface_name</a> (struct spdk_sock *sock)</td></tr>
+<tr class="memdesc:a3463752f8d6a9cdefc8aafaa8a72f9e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the name of the network interface of the local port for the socket.  <br /></td></tr>
+<tr class="separator:a3463752f8d6a9cdefc8aafaa8a72f9e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a170fc47ea4de175b3dfef9fcccbd65f0" id="r_a170fc47ea4de175b3dfef9fcccbd65f0"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a170fc47ea4de175b3dfef9fcccbd65f0">spdk_sock_get_numa_socket_id</a> (struct spdk_sock *sock)</td></tr>
+<tr class="memdesc:a170fc47ea4de175b3dfef9fcccbd65f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the NUMA socket ID for the network interface of the local port for the TCP socket.  <br /></td></tr>
+<tr class="separator:a170fc47ea4de175b3dfef9fcccbd65f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a407c7aebae3d1a1556109da46a73213e" id="r_a407c7aebae3d1a1556109da46a73213e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a407c7aebae3d1a1556109da46a73213e">spdk_sock_close</a> (struct spdk_sock **sock)</td></tr>
 <tr class="memdesc:a407c7aebae3d1a1556109da46a73213e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Close a socket.  <br /></td></tr>
 <tr class="separator:a407c7aebae3d1a1556109da46a73213e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -527,6 +533,58 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Implementation name of given socket. </dd></dl>
+
+</div>
+</div>
+<a id="a3463752f8d6a9cdefc8aafaa8a72f9e4" name="a3463752f8d6a9cdefc8aafaa8a72f9e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3463752f8d6a9cdefc8aafaa8a72f9e4">&#9670;&#160;</a></span>spdk_sock_get_interface_name()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char * spdk_sock_get_interface_name </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_sock *</td>          <td class="paramname"><span class="paramname"><em>sock</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets the name of the network interface of the local port for the socket. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sock</td><td>socket to find the interface name for</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>null-terminated string containing interface name if found, NULL interface name could not be found </dd></dl>
+
+</div>
+</div>
+<a id="a170fc47ea4de175b3dfef9fcccbd65f0" name="a170fc47ea4de175b3dfef9fcccbd65f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a170fc47ea4de175b3dfef9fcccbd65f0">&#9670;&#160;</a></span>spdk_sock_get_numa_socket_id()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t spdk_sock_get_numa_socket_id </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_sock *</td>          <td class="paramname"><span class="paramname"><em>sock</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets the NUMA socket ID for the network interface of the local port for the TCP socket. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sock</td><td>TCP socket to find the NUMA socket ID for</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>NUMA socket ID, or SPDK_ENV_SOCKET_ID_ANY if the NUMA socket ID is unknown </dd></dl>
 
 </div>
 </div>

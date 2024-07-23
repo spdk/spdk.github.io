@@ -1,5 +1,9 @@
 var NAVTREEINDEX15 =
 {
+"structspdk__scheduler.html#a6cbfa8fdd78ad15bfc12a8b9e9734085":[14,0,391,3],
+"structspdk__scheduler.html#a96b47ed5d54cdd98d89538175aa9e96a":[14,0,391,0],
+"structspdk__scheduler.html#aaf38184e6082cd0840571a8e38665911":[14,0,391,4],
+"structspdk__scheduler.html#acbac668eb963ca9df3a6295d6f639388":[14,0,391,1],
 "structspdk__scheduler__core__info.html":[14,0,392],
 "structspdk__scheduler__thread__info.html":[14,0,393],
 "structspdk__scsi__cdb__inquiry.html":[14,0,394],
@@ -245,9 +249,5 @@ var NAVTREEINDEX15 =
 "trace_8h.html#a5f00b86acc0c5a41bf639c068d197b53":[15,0,0,0,60,17],
 "trace_8h.html#a6f2131f1fc35d495f51552eb2838630b":[15,0,0,0,60,33],
 "trace_8h.html#a78c1e25f823c6e98da3f99c515715ebe":[15,0,0,0,60,28],
-"trace_8h.html#a7cdec16a6ee14c87b0bf5d0666d9a0cb":[15,0,0,0,60,14],
-"trace_8h.html#a7ecb50e2b95e9c75eeddd9884ec0aafe":[15,0,0,0,60,16],
-"trace_8h.html#a8d06cbad5f7d8c4f0cdb8e9a842e8e33":[15,0,0,0,60,35],
-"trace_8h.html#aa0ade5c1286d121c2eafeae8918169db":[15,0,0,0,60,32],
-"trace_8h.html#aa2d823ea98e2e8128d698f32cb7f1472":[15,0,0,0,60,25]
+"trace_8h.html#a7cdec16a6ee14c87b0bf5d0666d9a0cb":[15,0,0,0,60,14]
 };

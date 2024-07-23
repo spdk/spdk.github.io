@@ -187,9 +187,12 @@ struct {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
 <tr class="memitem:a4a1213a3d3d5a83c1654d62449af5bdc" id="r_a4a1213a3d3d5a83c1654d62449af5bdc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4a1213a3d3d5a83c1654d62449af5bdc">async_mode</a></td></tr>
 <tr class="memdesc:a4a1213a3d3d5a83c1654d62449af5bdc"><td class="mdescLeft">&#160;</td><td class="mdescRight">This flag if set to true enables the creation of submission and completion queue asynchronously.  <br /></td></tr>
 <tr class="separator:a4a1213a3d3d5a83c1654d62449af5bdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afa44da854b021a9a818d3be17aaaade8" id="r_afa44da854b021a9a818d3be17aaaade8"><td class="memItemLeft" align="right" valign="top"><a id="afa44da854b021a9a818d3be17aaaade8" name="afa44da854b021a9a818d3be17aaaade8"></a>
-uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>reserved66</b> [6]</td></tr>
-<tr class="separator:afa44da854b021a9a818d3be17aaaade8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace3c0ae8dc18fbf78eb495c6a7bb2aa5" id="r_ace3c0ae8dc18fbf78eb495c6a7bb2aa5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ace3c0ae8dc18fbf78eb495c6a7bb2aa5">disable_pcie_sgl_merge</a></td></tr>
+<tr class="memdesc:ace3c0ae8dc18fbf78eb495c6a7bb2aa5"><td class="mdescLeft">&#160;</td><td class="mdescRight">This flag if set to true disables the merging of physically contiguous SGL elements.  <br /></td></tr>
+<tr class="separator:ace3c0ae8dc18fbf78eb495c6a7bb2aa5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8bef830b51ef7518c65dbbcf7c0be398" id="r_a8bef830b51ef7518c65dbbcf7c0be398"><td class="memItemLeft" align="right" valign="top"><a id="a8bef830b51ef7518c65dbbcf7c0be398" name="a8bef830b51ef7518c65dbbcf7c0be398"></a>
+uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>reserved67</b> [5]</td></tr>
+<tr class="separator:a8bef830b51ef7518c65dbbcf7c0be398"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>NVMe I/O queue pair initialization options. </p>
@@ -247,6 +250,23 @@ uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>reserved66</b> [6]
 
 <p>This flag indicates to the alloc_io_qpair function that it should not perform the connect portion on this qpair. </p>
 <p>This allows the user to add the qpair to a poll group and then connect it later. </p>
+
+</div>
+</div>
+<a id="ace3c0ae8dc18fbf78eb495c6a7bb2aa5" name="ace3c0ae8dc18fbf78eb495c6a7bb2aa5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace3c0ae8dc18fbf78eb495c6a7bb2aa5">&#9670;&#160;</a></span>disable_pcie_sgl_merge</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool spdk_nvme_io_qpair_opts::disable_pcie_sgl_merge</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This flag if set to true disables the merging of physically contiguous SGL elements. </p>
+<p>Default mode is set to false to allow merging of physically contiguous SGL elements. </p>
 
 </div>
 </div>

@@ -162,6 +162,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a240fd573432ccd45433ba70c8bfc2d42" id="r_a240fd573432ccd45433ba70c8bfc2d42"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a240fd573432ccd45433ba70c8bfc2d42">spdk_reduce_vol_print_info</a> (struct spdk_reduce_vol *vol)</td></tr>
 <tr class="memdesc:a240fd573432ccd45433ba70c8bfc2d42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dump out key information for a libreduce compressed volume and its PMEM.  <br /></td></tr>
 <tr class="separator:a240fd573432ccd45433ba70c8bfc2d42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29b47c899b3ebf51501d65c7bf30f4e0" id="r_a29b47c899b3ebf51501d65c7bf30f4e0"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a29b47c899b3ebf51501d65c7bf30f4e0">spdk_reduce_vol_get_pm_path</a> (const struct spdk_reduce_vol *vol)</td></tr>
+<tr class="memdesc:a29b47c899b3ebf51501d65c7bf30f4e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the pm path for a libreduce compressed volume.  <br /></td></tr>
+<tr class="separator:a29b47c899b3ebf51501d65c7bf30f4e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>SPDK block compression. </p>
@@ -251,6 +254,32 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>params structure for the compressed volume. </dd></dl>
+
+</div>
+</div>
+<a id="a29b47c899b3ebf51501d65c7bf30f4e0" name="a29b47c899b3ebf51501d65c7bf30f4e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29b47c899b3ebf51501d65c7bf30f4e0">&#9670;&#160;</a></span>spdk_reduce_vol_get_pm_path()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char * spdk_reduce_vol_get_pm_path </td>
+          <td>(</td>
+          <td class="paramtype">const struct spdk_reduce_vol *</td>          <td class="paramname"><span class="paramname"><em>vol</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the pm path for a libreduce compressed volume. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vol</td><td>Previously loaded or initialized compressed volume. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>pm path for the compressed volume. </dd></dl>
 
 </div>
 </div>

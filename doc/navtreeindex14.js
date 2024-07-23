@@ -1,5 +1,9 @@
 var NAVTREEINDEX14 =
 {
+"structspdk__nvme__zns__ns__data.html#a139b524c935194e69a6f1b7a4b0c82f2":[14,0,290,13],
+"structspdk__nvme__zns__ns__data.html#a1ae9db62fd627695a7c098a23d5b1498":[14,0,290,7],
+"structspdk__nvme__zns__ns__data.html#a1aec112ccca1fbcd111fee012bf8c720":[14,0,290,0],
+"structspdk__nvme__zns__ns__data.html#a1f4d8d01895a4208484c241cc702f92e":[14,0,290,4],
 "structspdk__nvme__zns__ns__data.html#a252dddace1155cb65073139810cf096c":[14,0,290,3],
 "structspdk__nvme__zns__ns__data.html#a2f0f366212fb35e65e3d766eb7c339fb":[14,0,290,10],
 "structspdk__nvme__zns__ns__data.html#a3249d3092c34193b02b6a3705cbea4c8":[14,0,290,11],
@@ -245,9 +249,5 @@ var NAVTREEINDEX14 =
 "structspdk__reduce__vol__params.html#ae4c8834d1e1c76455842b97c4489ce47":[14,0,389,3],
 "structspdk__rpc__opts.html":[14,0,390],
 "structspdk__scheduler.html":[14,0,391],
-"structspdk__scheduler.html#a47ad7f5c1e7105022f2696ba7e1c6846":[14,0,391,2],
-"structspdk__scheduler.html#a6cbfa8fdd78ad15bfc12a8b9e9734085":[14,0,391,3],
-"structspdk__scheduler.html#a96b47ed5d54cdd98d89538175aa9e96a":[14,0,391,0],
-"structspdk__scheduler.html#aaf38184e6082cd0840571a8e38665911":[14,0,391,4],
-"structspdk__scheduler.html#acbac668eb963ca9df3a6295d6f639388":[14,0,391,1]
+"structspdk__scheduler.html#a47ad7f5c1e7105022f2696ba7e1c6846":[14,0,391,2]
 };
