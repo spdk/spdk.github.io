@@ -1,5 +1,6 @@
 var NAVTREEINDEX11 =
 {
+"structspdk__bdev.html#a4e68d5fa768ba5d3c8af32e68e1a992c":[14,0,61,17],
 "structspdk__bdev.html#a5cc1248944325a12c4cadaa3856f573a":[14,0,61,28],
 "structspdk__bdev.html#a677d201121658aa2df21b4de5d21eec4":[14,0,61,8],
 "structspdk__bdev.html#a69c77ed32b1b714060141d1f3cddb6a3":[14,0,61,12],
@@ -248,6 +249,5 @@ var NAVTREEINDEX11 =
 "structspdk__histogram__data.html":[14,0,106],
 "structspdk__ioat__dma__hw__desc.html":[14,0,107],
 "structspdk__ioat__fill__hw__desc.html":[14,0,108],
-"structspdk__ioat__generic__hw__desc.html":[14,0,109],
-"structspdk__ioat__pq__ext__hw__desc.html":[14,0,111]
+"structspdk__ioat__generic__hw__desc.html":[14,0,109]
 };

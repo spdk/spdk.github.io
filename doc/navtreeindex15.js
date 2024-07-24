@@ -1,5 +1,6 @@
 var NAVTREEINDEX15 =
 {
+"structspdk__scheduler.html#a47ad7f5c1e7105022f2696ba7e1c6846":[14,0,391,2],
 "structspdk__scheduler.html#a6cbfa8fdd78ad15bfc12a8b9e9734085":[14,0,391,3],
 "structspdk__scheduler.html#a96b47ed5d54cdd98d89538175aa9e96a":[14,0,391,0],
 "structspdk__scheduler.html#aaf38184e6082cd0840571a8e38665911":[14,0,391,4],
@@ -248,6 +249,5 @@ var NAVTREEINDEX15 =
 "trace_8h.html#a52e26aba092a343df84ddd528efc6daa":[15,0,0,0,60,12],
 "trace_8h.html#a5f00b86acc0c5a41bf639c068d197b53":[15,0,0,0,60,17],
 "trace_8h.html#a6f2131f1fc35d495f51552eb2838630b":[15,0,0,0,60,33],
-"trace_8h.html#a78c1e25f823c6e98da3f99c515715ebe":[15,0,0,0,60,28],
-"trace_8h.html#a7cdec16a6ee14c87b0bf5d0666d9a0cb":[15,0,0,0,60,14]
+"trace_8h.html#a78c1e25f823c6e98da3f99c515715ebe":[15,0,0,0,60,28]
 };

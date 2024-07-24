@@ -1,5 +1,6 @@
 var NAVTREEINDEX16 =
 {
+"trace_8h.html#a7cdec16a6ee14c87b0bf5d0666d9a0cb":[15,0,0,0,60,14],
 "trace_8h.html#a7ecb50e2b95e9c75eeddd9884ec0aafe":[15,0,0,0,60,16],
 "trace_8h.html#a8d06cbad5f7d8c4f0cdb8e9a842e8e33":[15,0,0,0,60,35],
 "trace_8h.html#aa0ade5c1286d121c2eafeae8918169db":[15,0,0,0,60,32],
@@ -248,6 +249,5 @@ var NAVTREEINDEX16 =
 "vagrant.html":[1,2],
 "vagrant.html#vagrant_config":[1,2,1],
 "vagrant.html#vagrant_example":[1,2,2],
-"vagrant.html#vagrant_intro":[1,2,0],
-"version_8h.html":[15,0,0,0,64]
+"vagrant.html#vagrant_intro":[1,2,0]
 };

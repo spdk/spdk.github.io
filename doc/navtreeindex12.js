@@ -1,5 +1,6 @@
 var NAVTREEINDEX12 =
 {
+"structspdk__ioat__pq__ext__hw__desc.html":[14,0,111],
 "structspdk__ioat__pq__hw__desc.html":[14,0,112],
 "structspdk__ioat__pq__update__hw__desc.html":[14,0,113],
 "structspdk__ioat__raw__hw__desc.html":[14,0,114],
@@ -248,6 +249,5 @@ var NAVTREEINDEX12 =
 "structspdk__nvme__fdp__ruhu__log__page.html":[14,0,188],
 "structspdk__nvme__fdp__stats__log__page.html":[14,0,189],
 "structspdk__nvme__firmware__page.html":[14,0,214],
-"structspdk__nvme__firmware__page.html#a4b0118df5ff338d05e9710374aae8c92":[14,0,214,0],
-"structspdk__nvme__firmware__page.html#ac92edf109ba5f2b970b06a31a0434f37":[14,0,214,2]
+"structspdk__nvme__firmware__page.html#a4b0118df5ff338d05e9710374aae8c92":[14,0,214,0]
 };

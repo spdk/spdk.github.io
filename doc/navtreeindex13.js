@@ -1,5 +1,6 @@
 var NAVTREEINDEX13 =
 {
+"structspdk__nvme__firmware__page.html#ac92edf109ba5f2b970b06a31a0434f37":[14,0,214,2],
 "structspdk__nvme__firmware__page.html#acc627dc50a9f88fa3c4697ff8ac99c81":[14,0,214,1],
 "structspdk__nvme__format.html":[14,0,215],
 "structspdk__nvme__fw__commit.html":[14,0,216],
@@ -248,6 +249,5 @@ var NAVTREEINDEX13 =
 "structspdk__nvme__transport__opts.html#af73ccbadbe03ac922c679d8f6f3a959c":[14,0,286,2],
 "structspdk__nvme__transport__poll__group__stat.html":[14,0,287],
 "structspdk__nvme__zns__ctrlr__data.html":[14,0,289],
-"structspdk__nvme__zns__ctrlr__data.html#a81d94268a2a27eef18924ab29d4b56d4":[14,0,289,0],
-"structspdk__nvme__zns__ns__data.html":[14,0,290]
+"structspdk__nvme__zns__ctrlr__data.html#a81d94268a2a27eef18924ab29d4b56d4":[14,0,289,0]
 };

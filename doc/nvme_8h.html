@@ -371,6 +371,9 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_trty
 <tr class="memitem:a053bcfa48d3c4b20ac4a408fa5e61418" id="r_a053bcfa48d3c4b20ac4a408fa5e61418"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a053bcfa48d3c4b20ac4a408fa5e61418">spdk_nvme_detach_poll</a> (struct spdk_nvme_detach_ctx *detach_ctx)</td></tr>
 <tr class="memdesc:a053bcfa48d3c4b20ac4a408fa5e61418"><td class="mdescLeft">&#160;</td><td class="mdescRight">Continue calling <a class="el" href="#a19178860f90bdd522eaa329d0ff837fe" title="Poll detachment of multiple controllers until they complete.">spdk_nvme_detach_poll_async()</a> internally until it returns 0.  <br /></td></tr>
 <tr class="separator:a053bcfa48d3c4b20ac4a408fa5e61418"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb0e98dcf4b18b4cc91b27a03b2b7c89" id="r_adb0e98dcf4b18b4cc91b27a03b2b7c89"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adb0e98dcf4b18b4cc91b27a03b2b7c89">spdk_nvme_scan_attached</a> (const struct <a class="el" href="structspdk__nvme__transport__id.html">spdk_nvme_transport_id</a> *trid)</td></tr>
+<tr class="memdesc:adb0e98dcf4b18b4cc91b27a03b2b7c89"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scan attached controllers for events.  <br /></td></tr>
+<tr class="separator:adb0e98dcf4b18b4cc91b27a03b2b7c89"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6eacd62ee8fbab40e1066bc0a53485f3" id="r_a6eacd62ee8fbab40e1066bc0a53485f3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6eacd62ee8fbab40e1066bc0a53485f3">spdk_nvme_ctrlr_set_trid</a> (struct spdk_nvme_ctrlr *ctrlr, struct <a class="el" href="structspdk__nvme__transport__id.html">spdk_nvme_transport_id</a> *trid)</td></tr>
 <tr class="memdesc:a6eacd62ee8fbab40e1066bc0a53485f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the transport ID for a given controller.  <br /></td></tr>
 <tr class="separator:a6eacd62ee8fbab40e1066bc0a53485f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -8771,6 +8774,33 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_trty
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="adb0e98dcf4b18b4cc91b27a03b2b7c89" name="adb0e98dcf4b18b4cc91b27a03b2b7c89"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb0e98dcf4b18b4cc91b27a03b2b7c89">&#9670;&#160;</a></span>spdk_nvme_scan_attached()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_nvme_scan_attached </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="structspdk__nvme__transport__id.html">spdk_nvme_transport_id</a> *</td>          <td class="paramname"><span class="paramname"><em>trid</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Scan attached controllers for events. </p>
+<p>This function lets user act on events such as hot-remove without a need to enable hotplug explicitly. Only attached devices will be checked.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">trid</td><td>Transport ID.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, negative on failure. </dd></dl>
 
 </div>
 </div>

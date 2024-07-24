@@ -248,6 +248,7 @@ var nvme_8h =
     [ "spdk_nvme_qpair_remove_cmd_error_injection", "nvme_8h.html#ad720b23786450b5a2b2d7d65c6dd6b7c", null ],
     [ "spdk_nvme_qpair_set_abort_dnr", "nvme_8h.html#a0538f261b89d0cdb455638dba52ea4b8", null ],
     [ "spdk_nvme_rdma_init_hooks", "nvme_8h.html#a82cdb425c9fad7b94ad0b8f5c27bb8b2", null ],
+    [ "spdk_nvme_scan_attached", "nvme_8h.html#adb0e98dcf4b18b4cc91b27a03b2b7c89", null ],
     [ "spdk_nvme_transport_available", "nvme_8h.html#ab5735e7600f79c45871b3dc3adb292f2", null ],
     [ "spdk_nvme_transport_available_by_name", "nvme_8h.html#ab4541db53f0daadcb4fc1d4f950b4bb5", null ],
     [ "spdk_nvme_transport_get_opts", "nvme_8h.html#acb9e59ab20d92979f2995646c8191e9a", null ],

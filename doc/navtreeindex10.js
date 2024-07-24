@@ -1,5 +1,6 @@
 var NAVTREEINDEX10 =
 {
+"reduce.html":[4,6],
 "reduce_8h.html":[15,0,0,0,53],
 "reduce_8h.html#a072ca3aef96d536802671dde087e80fa":[15,0,0,0,53,5],
 "reduce_8h.html#a137aea842a5ebd65781d7bcfc735018b":[15,0,0,0,53,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX10 =
 "structspdk__bdev.html#a149453df246d04c8640fb567c58a61f0":[14,0,61,25],
 "structspdk__bdev.html#a1872fa3d723b5bef069c0681ec3bcfd6":[14,0,61,7],
 "structspdk__bdev.html#a19101e574d1a54c9f57f02a5077170b5":[14,0,61,27],
-"structspdk__bdev.html#a1d7dcd12f4c3600eac4dbb202bdb4397":[14,0,61,30],
-"structspdk__bdev.html#a4e68d5fa768ba5d3c8af32e68e1a992c":[14,0,61,17]
+"structspdk__bdev.html#a1d7dcd12f4c3600eac4dbb202bdb4397":[14,0,61,30]
 };
