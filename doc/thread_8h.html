@@ -653,7 +653,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_iobuf_unregister_
 </div><div class="memdoc">
 
 <p>A function that is called each time a new thread is created. </p>
-<p>The implementor of this function should frequently call <a class="el" href="#ad9e3693e8e9e6c9063ea36414294ae91" title="Perform one iteration worth of processing on the thread.">spdk_thread_poll()</a> on the thread provided.</p>
+<p>The implementer of this function should frequently call <a class="el" href="#ad9e3693e8e9e6c9063ea36414294ae91" title="Perform one iteration worth of processing on the thread.">spdk_thread_poll()</a> on the thread provided.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">thread</td><td>The new spdk_thread. </td></tr>
@@ -2752,7 +2752,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_iobuf_unregister_
 <p>Must be called once prior to allocating any threads.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">new_thread_fn</td><td>Called each time a new SPDK thread is created. The implementor is expected to frequently call <a class="el" href="#ad9e3693e8e9e6c9063ea36414294ae91" title="Perform one iteration worth of processing on the thread.">spdk_thread_poll()</a> on the provided thread. </td></tr>
+    <tr><td class="paramname">new_thread_fn</td><td>Called each time a new SPDK thread is created. The implementer is expected to frequently call <a class="el" href="#ad9e3693e8e9e6c9063ea36414294ae91" title="Perform one iteration worth of processing on the thread.">spdk_thread_poll()</a> on the provided thread. </td></tr>
     <tr><td class="paramname">ctx_sz</td><td>For each thread allocated, an additional region of memory of size ctx_size will also be allocated, for use by the thread scheduler. A pointer to this region may be obtained by calling <a class="el" href="#a3df8ceaf923f5d96c5f1b26a53717785" title="Return a pointer to this thread&#39;s context.">spdk_thread_get_ctx()</a>.</td></tr>
   </table>
   </dd>

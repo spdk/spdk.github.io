@@ -462,7 +462,7 @@ static enum <a class="el" href="nvme__spec_8h.html#adbe38e042bb939183ed8fd5c1685
 
 <p>Restore the NVMe-oF controller state and configuration. </p>
 <p>The API is experimental.</p>
-<p>It is allowed to restore the data only when the nvmf subystem is in paused state.</p>
+<p>It is allowed to restore the data only when the nvmf subsystem is in paused state.</p>
 <p>To preserve thread safety this function must be executed on the same thread the NVMe-OF controller was created.</p>
 <p>AERs shall be restored using spdk_nvmf_request_exec after this function is executed.</p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -497,7 +497,7 @@ static enum <a class="el" href="nvme__spec_8h.html#adbe38e042bb939183ed8fd5c1685
 
 <p>Save the NVMe-oF controller state and configuration. </p>
 <p>The API is experimental.</p>
-<p>It is allowed to save the data only when the nvmf subystem is in paused state i.e. there are no outstanding cmds in nvmf layer (other than aer), pending async event completions are getting blocked.</p>
+<p>It is allowed to save the data only when the nvmf subsystem is in paused state i.e. there are no outstanding cmds in nvmf layer (other than aer), pending async event completions are getting blocked.</p>
 <p>To preserve thread safety this function must be executed on the same thread the NVMe-OF controller was created.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">

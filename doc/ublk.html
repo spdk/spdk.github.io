@@ -151,7 +151,7 @@ Operation</h1>
 <p>Build SPDK with SPDK ublk target enabled.</p>
 <div class="fragment"><div class="line">./configure --with-ublk</div>
 <div class="line">make -j</div>
-</div><!-- fragment --><p>SPDK ublk target related libaries will then be linked into SPDK appliation <code>spdk_tgt</code>. Setup some hugepages for the SPDK, and then run the SPDK application <code>spdk_tgt</code>.</p>
+</div><!-- fragment --><p>SPDK ublk target related libraries will then be linked into SPDK application <code>spdk_tgt</code>. Setup some hugepages for the SPDK, and then run the SPDK application <code>spdk_tgt</code>.</p>
 <div class="fragment"><div class="line">scripts/setup.sh</div>
 <div class="line">build/bin/spdk_tgt &amp;</div>
 </div><!-- fragment --><p>Once the <code>spdk_tgt</code> is initialized, user can enable SPDK ublk feature by creating ublk target. However, before creating ublk target, ublk kernel module <code>ublk_drv</code> should be loaded using <code>modprobe</code>.</p>

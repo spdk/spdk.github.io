@@ -159,7 +159,7 @@ Removing backing blob and bdevs relations using inflate call</div></div>
 Decoupling</h2>
 <p>Blobs can be decoupled from their parent blob by copying data from backing devices (e.g. snapshots) for all allocated clusters. Remaining unallocated clusters are kept thin provisioned. Note: When decouple is performed, only single dependency is removed. To remove all dependencies in a chain of blobs depending on each other, multiple calls need to be issued.</p>
 <h1>Configuring Logical Volumes</h1>
-<p>There is no static configuration available for logical volumes. All configuration is done trough RPC. Information about logical volumes is kept on block devices.</p>
+<p>There is no static configuration available for logical volumes. All configuration is done through RPC. Information about logical volumes is kept on block devices.</p>
 <h1><a class="anchor" id="lvol_rpc"></a>
 RPC overview</h1>
 <p>RPC regarding lvolstore:</p>

@@ -134,7 +134,7 @@ cmb_copy: An example P2P Application</h1>
 <h1><a class="anchor" id="p2p_issues"></a>
 Issues with P2P</h1>
 <ul>
-<li>In some systems when performing peer-2-peer DMAs between PCIe EPs that are directly connected to the Root Complex (RC) the DMA may fail or the performance may not be great. Basically your milage may vary. It is recommended that you use a PCIe switch (such as those provided by Broadcom or Microsemi) as that is know to provide good performance.</li>
+<li>In some systems when performing peer-2-peer DMAs between PCIe EPs that are directly connected to the Root Complex (RC) the DMA may fail or the performance may not be great. Basically your mileage may vary. It is recommended that you use a PCIe switch (such as those provided by Broadcom or Microsemi) as that is know to provide good performance.</li>
 <li>Even with a PCIe switch there may be occasions where peer-2-peer DMAs fail to work. This is probably due to PCIe Access Control Services (ACS) being enabled by the BIOS and/or OS. You can disable ACS using setpci or via out of tree kernel patches that can be found on the internet.</li>
 <li>In more complex topologies involving several switches it may be possible to construct multiple paths between EPs. This could lead to TLP ordering problems. If you are working in these environments be careful! </li>
 </ul>

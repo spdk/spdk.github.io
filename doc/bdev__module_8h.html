@@ -425,13 +425,13 @@ typedef&#160;</td><td class="memItemRight" valign="bottom"><b>TAILQ_HEAD</b> (bd
 <tr class="memdesc:a35d1bb3f7b96e2e0d90e42f11f8f402d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Measure and return the queue depth from a bdev.  <br /></td></tr>
 <tr class="separator:a35d1bb3f7b96e2e0d90e42f11f8f402d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac58f4c0adedcb11e532740b5ed339dac" id="r_ac58f4c0adedcb11e532740b5ed339dac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac58f4c0adedcb11e532740b5ed339dac">spdk_bdev_add_io_stat</a> (struct <a class="el" href="structspdk__bdev__io__stat.html">spdk_bdev_io_stat</a> *total, struct <a class="el" href="structspdk__bdev__io__stat.html">spdk_bdev_io_stat</a> *add)</td></tr>
-<tr class="memdesc:ac58f4c0adedcb11e532740b5ed339dac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add I/O statictics.  <br /></td></tr>
+<tr class="memdesc:ac58f4c0adedcb11e532740b5ed339dac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add I/O statistics.  <br /></td></tr>
 <tr class="separator:ac58f4c0adedcb11e532740b5ed339dac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7a5cd65df968e2f5be1b2311af3c69ea" id="r_a7a5cd65df968e2f5be1b2311af3c69ea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7a5cd65df968e2f5be1b2311af3c69ea">spdk_bdev_dump_io_stat_json</a> (struct <a class="el" href="structspdk__bdev__io__stat.html">spdk_bdev_io_stat</a> *stat, struct spdk_json_write_ctx *w)</td></tr>
-<tr class="memdesc:a7a5cd65df968e2f5be1b2311af3c69ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Output bdev I/O statictics information to a JSON stream.  <br /></td></tr>
+<tr class="memdesc:a7a5cd65df968e2f5be1b2311af3c69ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Output bdev I/O statistics information to a JSON stream.  <br /></td></tr>
 <tr class="separator:a7a5cd65df968e2f5be1b2311af3c69ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af7e0a5a50a01fee8785af7d00b4780aa" id="r_af7e0a5a50a01fee8785af7d00b4780aa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af7e0a5a50a01fee8785af7d00b4780aa">spdk_bdev_reset_io_stat</a> (struct <a class="el" href="structspdk__bdev__io__stat.html">spdk_bdev_io_stat</a> *stat, enum spdk_bdev_reset_stat_mode mode)</td></tr>
-<tr class="memdesc:af7e0a5a50a01fee8785af7d00b4780aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset I/O statictics structure.  <br /></td></tr>
+<tr class="memdesc:af7e0a5a50a01fee8785af7d00b4780aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset I/O statistics structure.  <br /></td></tr>
 <tr class="separator:af7e0a5a50a01fee8785af7d00b4780aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a64dd06da79d839bc84c0bc15ed7d0ca2" id="r_a64dd06da79d839bc84c0bc15ed7d0ca2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a64dd06da79d839bc84c0bc15ed7d0ca2">spdk_bdev_quiesce</a> (struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *bdev, struct <a class="el" href="structspdk__bdev__module.html">spdk_bdev_module</a> *module, spdk_bdev_quiesce_cb cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:a64dd06da79d839bc84c0bc15ed7d0ca2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Quiesce a bdev.  <br /></td></tr>
@@ -575,11 +575,11 @@ typedef&#160;</td><td class="memItemRight" valign="bottom"><b>TAILQ_HEAD</b> (bd
       </table>
 </div><div class="memdoc">
 
-<p>Add I/O statictics. </p>
+<p>Add I/O statistics. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">total</td><td>The aggregated I/O statictics. </td></tr>
-    <tr><td class="paramname">add</td><td>The I/O statictics to be added. </td></tr>
+    <tr><td class="paramname">total</td><td>The aggregated I/O statistics. </td></tr>
+    <tr><td class="paramname">add</td><td>The I/O statistics to be added. </td></tr>
   </table>
   </dd>
 </dl>
@@ -791,10 +791,10 @@ typedef&#160;</td><td class="memItemRight" valign="bottom"><b>TAILQ_HEAD</b> (bd
       </table>
 </div><div class="memdoc">
 
-<p>Output bdev I/O statictics information to a JSON stream. </p>
+<p>Output bdev I/O statistics information to a JSON stream. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">stat</td><td>The bdev I/O statictics to output. </td></tr>
+    <tr><td class="paramname">stat</td><td>The bdev I/O statistics to output. </td></tr>
     <tr><td class="paramname">w</td><td>JSON write context. </td></tr>
   </table>
   </dd>
@@ -2465,11 +2465,11 @@ typedef&#160;</td><td class="memItemRight" valign="bottom"><b>TAILQ_HEAD</b> (bd
       </table>
 </div><div class="memdoc">
 
-<p>Reset I/O statictics structure. </p>
+<p>Reset I/O statistics structure. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">stat</td><td>The I/O statictics to reset. </td></tr>
-    <tr><td class="paramname">mode</td><td>The mode to reset I/O statictics. </td></tr>
+    <tr><td class="paramname">stat</td><td>The I/O statistics to reset. </td></tr>
+    <tr><td class="paramname">mode</td><td>The mode to reset I/O statistics. </td></tr>
   </table>
   </dd>
 </dl>
