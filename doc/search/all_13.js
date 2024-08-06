@@ -68,7 +68,7 @@ var searchData=
   ['poll_5fgroup_5fremove_65',['poll_group_remove',['../structspdk__nvmf__transport__ops.html#a09da91b1d08d8e83f900ea18f74824d6',1,'spdk_nvmf_transport_ops']]],
   ['pollers_66',['Pollers',['../event.html#event_component_pollers',1,'']]],
   ['pool_67',['pool',['../structspdk__iobuf__pool.html#a966a2383b03fecd6d523b68f8b3e5b1e',1,'spdk_iobuf_pool']]],
-  ['populate_68',['populate',['../structspdk__bdev__io.html#acb8e8c688f321a1655a7db6caffa060e',1,'spdk_bdev_io']]],
+  ['populate_68',['populate',['../structspdk__bdev__io__block__params.html#a1a8ffdd74ff225cf4bf4c3e993fc2141',1,'spdk_bdev_io_block_params']]],
   ['portid_69',['portid',['../structspdk__nvme__primary__ctrl__capabilities.html#af8c71651dc0bb0fc40917e3bfc55183d',1,'spdk_nvme_primary_ctrl_capabilities::portid'],['../structspdk__nvmf__discovery__log__page__entry.html#afe04107ae81316f7e1c189472a881e52',1,'spdk_nvmf_discovery_log_page_entry::portid']]],
   ['porting_20guide_70',['SPDK Porting Guide',['../porting.html',1,'concepts']]],
   ['post_5fmemory_5fadd_71',['post_memory_add',['../structspdk__vfu__endpoint__ops.html#ac6739696eb232d4a07fcabce312cb888',1,'spdk_vfu_endpoint_ops']]],
@@ -98,9 +98,10 @@ var searchData=
   ['psk_5fkey_95',['psk_key',['../structspdk__sock__impl__opts.html#a484d0f8cdbc1e9766fe1742c16afe4c3',1,'spdk_sock_impl_opts']]],
   ['psk_5fkey_5fsize_96',['psk_key_size',['../structspdk__sock__impl__opts.html#a7353b895d0d7df172bf31b5104bbe378',1,'spdk_sock_impl_opts']]],
   ['ptpls_97',['ptpls',['../structspdk__nvme__reservation__status__data.html#a0def9acff9ca8af6b789224d83821086',1,'spdk_nvme_reservation_status_data']]],
-  ['pu_98',['pu',['../structspdk__ocssd__chunk__notification__entry.html#a4f8a236375b150ce7b9a139f9cac7da5',1,'spdk_ocssd_chunk_notification_entry']]],
-  ['pu_5flen_99',['pu_len',['../structspdk__ocssd__dev__lba__fmt.html#ae20247c5bd5f2576b67957980bf58333',1,'spdk_ocssd_dev_lba_fmt']]],
-  ['public_20interface_100',['Public Interface',['../idxd.html#idxd_interface',1,'Public Interface'],['../ioat.html#ioat_interface',1,'Public Interface'],['../nvme.html#nvme_interface',1,'Public Interface'],['../vmd.html#vmd_interface',1,'Public Interface']]],
-  ['put_5frkey_101',['put_rkey',['../structspdk__nvme__rdma__hooks.html#abf04de4700ca8baf3570b77f92fa68df',1,'spdk_nvme_rdma_hooks']]],
-  ['py_102',['rpc.py',['../jsonrpc.html#rpc_py',1,'']]]
+  ['ptr_98',['ptr',['../structspdk__bdev__io__internal__fields.html#a34a68a43953b41f7a7baf994c5a34f2e',1,'spdk_bdev_io_internal_fields']]],
+  ['pu_99',['pu',['../structspdk__ocssd__chunk__notification__entry.html#a4f8a236375b150ce7b9a139f9cac7da5',1,'spdk_ocssd_chunk_notification_entry']]],
+  ['pu_5flen_100',['pu_len',['../structspdk__ocssd__dev__lba__fmt.html#ae20247c5bd5f2576b67957980bf58333',1,'spdk_ocssd_dev_lba_fmt']]],
+  ['public_20interface_101',['Public Interface',['../idxd.html#idxd_interface',1,'Public Interface'],['../ioat.html#ioat_interface',1,'Public Interface'],['../nvme.html#nvme_interface',1,'Public Interface'],['../vmd.html#vmd_interface',1,'Public Interface']]],
+  ['put_5frkey_102',['put_rkey',['../structspdk__nvme__rdma__hooks.html#abf04de4700ca8baf3570b77f92fa68df',1,'spdk_nvme_rdma_hooks']]],
+  ['py_103',['rpc.py',['../jsonrpc.html#rpc_py',1,'']]]
 ];

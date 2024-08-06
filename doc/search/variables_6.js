@@ -23,8 +23,8 @@ var searchData=
   ['frl3_20',['frl3',['../structspdk__nvme__zns__ns__data.html#a252dddace1155cb65073139810cf096c',1,'spdk_nvme_zns_ns_data']]],
   ['frmw_21',['frmw',['../structspdk__nvme__ctrlr__data.html#ac33e05462103bf9f53aa289293137977',1,'spdk_nvme_ctrlr_data']]],
   ['fs_22',['fs',['../structspdk__nvme__fw__commit.html#af5bbf67aa6f4a82d1fef951e436e34fe',1,'spdk_nvme_fw_commit']]],
-  ['fused_5fiovcnt_23',['fused_iovcnt',['../structspdk__bdev__io.html#aec576e7766af0ee744ced101de905ff5',1,'spdk_bdev_io']]],
-  ['fused_5fiovs_24',['fused_iovs',['../structspdk__bdev__io.html#a2a3448e66dcba2deaccc91d37ad89db1',1,'spdk_bdev_io']]],
+  ['fused_5fiovcnt_23',['fused_iovcnt',['../structspdk__bdev__io__block__params.html#a38cd6a3b353a5ab27cfbf285e0c55d2d',1,'spdk_bdev_io_block_params']]],
+  ['fused_5fiovs_24',['fused_iovs',['../structspdk__bdev__io__block__params.html#ae5eab2663e402715d601dd8ac684a0e9',1,'spdk_bdev_io_block_params']]],
   ['fuses_25',['fuses',['../structspdk__nvme__ctrlr__data.html#af7340401290ec6691d858522a8932402',1,'spdk_nvme_ctrlr_data']]],
   ['fwug_26',['fwug',['../structspdk__nvme__ctrlr__data.html#a9f5dd6335c39603ffb5beff3c6d8a6eb',1,'spdk_nvme_ctrlr_data']]],
   ['fzr_27',['fzr',['../structspdk__nvme__zns__zone__desc.html#a8d70b1cfa360d12031eb39a0c367ccc8',1,'spdk_nvme_zns_zone_desc']]]

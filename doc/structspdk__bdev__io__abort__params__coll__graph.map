@@ -1,0 +1,19 @@
+<map id="spdk_bdev_io_abort_params" name="spdk_bdev_io_abort_params">
+<area shape="rect" id="Node000001" title=" " alt="" coords="36,8,179,57"/>
+<area shape="rect" id="Node000002" href="$structspdk__bdev__io.html" title=" " alt="" coords="356,155,459,185"/>
+<area shape="poly" id="edge5_Node000002_Node000001" title=" " alt="" coords="195,19,265,24,300,33,333,49,360,72,380,101,404,153,399,156,376,103,356,75,330,53,298,38,264,29,195,25"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="379,146,356,126,330,108,272,87,179,57,180,52,274,81,333,103,360,122,383,142"/>
+<area shape="rect" id="Node000047" href="$structspdk__bdev__io__internal__fields.html" title="Fields that are used internally by the bdev subsystem." alt="" coords="603,145,760,194"/>
+<area shape="poly" id="edge9_Node000047_Node000002" title=" " alt="" coords="474,167,602,167,602,172,474,172"/>
+<area shape="rect" id="Node000003" href="$structspdk__bdev.html" title=" " alt="" coords="64,92,151,122"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="166,114,332,147,356,153,355,158,331,152,165,119"/>
+<area shape="rect" id="Node000015" href="$structspdk__bdev__io__block__params.html" title=" " alt="" coords="37,145,178,194"/>
+<area shape="poly" id="edge3_Node000002_Node000015" title=" " alt="" coords="194,167,355,167,355,172,194,172"/>
+<area shape="rect" id="Node000018" href="$structspdk__bdev__io__reset__params.html" title=" " alt="" coords="37,219,178,267"/>
+<area shape="poly" id="edge4_Node000002_Node000018" title=" " alt="" coords="193,224,331,191,361,183,362,188,332,197,194,229"/>
+<area shape="rect" id="Node000019" href="$structspdk__bdev__io__nvme__passthru__params.html" title=" " alt="" coords="5,292,210,341"/>
+<area shape="poly" id="edge6_Node000002_Node000019" title=" " alt="" coords="224,287,278,267,330,241,366,212,392,183,396,187,369,216,333,246,281,272,226,292"/>
+<area shape="rect" id="Node000046" href="$structspdk__bdev__io__zone__mgmt__params.html" title=" " alt="" coords="16,365,199,414"/>
+<area shape="poly" id="edge7_Node000002_Node000046" title=" " alt="" coords="213,367,274,344,303,327,330,308,356,278,376,244,399,184,404,186,381,246,361,281,333,312,306,332,277,348,215,372"/>
+<area shape="poly" id="edge8_Node000002_Node000047" title=" " alt="" coords="588,194,579,195,531,200,483,195,450,188,452,183,483,190,531,194,579,190,587,189"/>
+</map>

@@ -1,8 +1,8 @@
 var searchData=
 [
   ['gen_0',['gen',['../structspdk__nvme__reservation__status__data.html#afba0189f3d11b8e6ae22405d07613c92',1,'spdk_nvme_reservation_status_data']]],
-  ['get_5faux_5fbuf_5fcb_1',['get_aux_buf_cb',['../structspdk__bdev__io_1_1____bdev__io__internal__fields.html#a08e05615305a536b1c1b893a4fe8c693',1,'spdk_bdev_io::__bdev_io_internal_fields']]],
-  ['get_5fbuf_5fcb_2',['get_buf_cb',['../structspdk__bdev__io_1_1____bdev__io__internal__fields.html#a320a717c3bfbfae0a88e37806a4b11cb',1,'spdk_bdev_io::__bdev_io_internal_fields']]],
+  ['get_5faux_5fbuf_5fcb_1',['get_aux_buf_cb',['../structspdk__bdev__io__internal__fields.html#a9400d527dfba2416b4f5c827bd11cc4a',1,'spdk_bdev_io_internal_fields']]],
+  ['get_5fbuf_5fcb_2',['get_buf_cb',['../structspdk__bdev__io__internal__fields.html#a543d82833aa0cbc63c58e82c50b61be2',1,'spdk_bdev_io_internal_fields']]],
   ['get_5fcore_5favail_5ffreqs_3',['get_core_avail_freqs',['../structspdk__governor.html#afd678c0c2737626955581d1d58bb97e0',1,'spdk_governor']]],
   ['get_5fcore_5fcapabilities_4',['get_core_capabilities',['../structspdk__governor.html#a6a5e0dc4307c41ef98793ef9c1d7c5aa',1,'spdk_governor']]],
   ['get_5fcore_5fcurr_5ffreq_5',['get_core_curr_freq',['../structspdk__governor.html#ad6d1a227c03026fd11a1f124b18010a3',1,'spdk_governor']]],

@@ -1,0 +1,15 @@
+<map id="spdk_bdev_io_nvme_passthru_params" name="spdk_bdev_io_nvme_passthru_params">
+<area shape="rect" id="Node000001" title=" " alt="" coords="509,103,713,151"/>
+<area shape="rect" id="Node000002" href="$structspdk__nvme__cmd.html" title=" " alt="" coords="309,112,432,142"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="448,124,509,124,509,130,448,130"/>
+<area shape="rect" id="Node000003" href="$structspdk__nvme__sgl__descriptor.html" title=" " alt="" coords="5,5,190,35"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="204,37,246,49,286,64,323,86,353,109,350,113,320,91,284,69,244,54,203,42"/>
+<area shape="rect" id="Node000004" href="$unionspdk__nvme__cmd__cdw10.html" title=" " alt="" coords="13,59,182,88"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="198,84,285,100,319,109,318,114,284,105,197,89"/>
+<area shape="rect" id="Node000005" href="$unionspdk__nvme__cmd__cdw11.html" title=" " alt="" coords="13,112,182,142"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="198,124,308,124,308,130,198,130"/>
+<area shape="rect" id="Node000024" href="$unionspdk__nvme__cmd__cdw12.html" title=" " alt="" coords="13,165,182,195"/>
+<area shape="poly" id="edge5_Node000002_Node000024" title=" " alt="" coords="197,165,284,149,319,140,320,145,285,154,198,170"/>
+<area shape="rect" id="Node000027" href="$unionspdk__nvme__cmd__cdw13.html" title=" " alt="" coords="13,219,182,248"/>
+<area shape="poly" id="edge6_Node000002_Node000027" title=" " alt="" coords="197,215,241,203,283,186,320,164,351,140,354,144,324,168,286,191,243,208,198,220"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="spdk_bdev_io_block_params" name="spdk_bdev_io_block_params">
+<area shape="rect" id="Node000001" title=" " alt="" coords="120,102,261,151"/>
+<area shape="rect" id="Node000002" href="$unionspdk__bdev__nvme__cdw12.html" title="Union for command dword 12, which by convention matches the NVMe command dword 12 definition." alt="" coords="5,5,179,35"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="118,45,170,100,166,103,114,48"/>
+<area shape="rect" id="Node000003" href="$unionspdk__bdev__nvme__cdw13.html" title="Union for command dword 13, which by convention matches the NVMe command dword 13 definition." alt="" coords="203,5,376,35"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="267,48,215,103,211,100,264,45"/>
+</map>

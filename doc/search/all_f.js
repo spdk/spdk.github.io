@@ -24,7 +24,7 @@ var searchData=
   ['lcore_5fmap_21',['lcore_map',['../structspdk__app__opts.html#a00f6cab501f7ec508a28b73577571f33',1,'spdk_app_opts']]],
   ['led_20management_22',['LED management',['../vmd.html#vmd_led',1,'LED management'],['../nvme.html#nvme_led',1,'NVMe LED management']]],
   ['legacy_20configuration_23',['Converting from legacy configuration',['../jsonrpc.html#jsonrpc_convert',1,'']]],
-  ['len_24',['len',['../structspdk__json__val.html#aa9e7738fac4cf0d68ed86f263bb7bf1f',1,'spdk_json_val::len'],['../structspdk__vfu__sparse__mmap.html#abdf95ae9998d50464d1575f1d4962db9',1,'spdk_vfu_sparse_mmap::len'],['../structspdk__vfu__pci__region.html#a1e0b37ff7c6be0b1ff7e9513c7e17b36',1,'spdk_vfu_pci_region::len']]],
+  ['len_24',['len',['../structspdk__bdev__io__internal__fields.html#aeff5be7bf72d3be6bee2878bec988a6d',1,'spdk_bdev_io_internal_fields::len'],['../structspdk__json__val.html#aa9e7738fac4cf0d68ed86f263bb7bf1f',1,'spdk_json_val::len'],['../structspdk__vfu__sparse__mmap.html#abdf95ae9998d50464d1575f1d4962db9',1,'spdk_vfu_sparse_mmap::len'],['../structspdk__vfu__pci__region.html#a1e0b37ff7c6be0b1ff7e9513c7e17b36',1,'spdk_vfu_pci_region::len']]],
   ['level_20libraries_25',['Acceleration Low Level Libraries',['../accel_fw.html#accel_libs',1,'']]],
   ['lib_26',['lib',['../libraries.html#lib',1,'']]],
   ['libraries_27',['Libraries',['../accel_fw.html#accel_libs',1,'Acceleration Low Level Libraries'],['../overview.html#dir_lib',1,'Libraries'],['../libraries.html',1,'SPDK Libraries']]],
