@@ -1909,6 +1909,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_iobuf_unregister_
 </div><div class="memdoc">
 
 <p>Unregister a poller on the current thread. </p>
+<p>This function will also write NULL to the spdk_poller pointer pointed to by ppoller, to help encourage a poller pointer not getting reused after it has been unregistered.</p>
+<p>It is OK to pass a ppoller parameter that points to NULL, in this case the function is a nop.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">ppoller</td><td>The poller to unregister. </td></tr>
