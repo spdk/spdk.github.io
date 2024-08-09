@@ -85,9 +85,9 @@ var NAVTREEINDEX =
 "structspdk__governor__capabilities.html",
 "structspdk__nvme__fdp__ruh__descriptor.html",
 "structspdk__nvme__transport__opts.html",
-"structspdk__reduce__vol__cb__args.html",
-"trace_8h.html#a3c9eb705c608a7ffb0724dd7520d61ad",
-"uuid_8h.html#a9080d454ffefb2b8e425ca127b72a546"
+"structspdk__reduce__backing__dev.html",
+"trace_8h.html#a361bd259fb7b5bfd6e420a7475a6e9b1",
+"uuid_8h.html#a8cd6b61828b9ff4d0abbae64c81d1262"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

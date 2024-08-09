@@ -1,5 +1,6 @@
 var NAVTREEINDEX15 =
 {
+"structspdk__reduce__backing__dev.html":[14,0,393],
 "structspdk__reduce__vol__cb__args.html":[14,0,394],
 "structspdk__reduce__vol__params.html":[14,0,395],
 "structspdk__reduce__vol__params.html#a33c2c765f8aef22dbd55f80aa71c6ba5":[14,0,395,2],
@@ -89,16 +90,16 @@ var NAVTREEINDEX15 =
 "structspdk__trace__parser__entry.html#a53973ef677f05f6d067c046dc790da78":[14,0,433,1],
 "structspdk__trace__parser__entry.html#a55b2e0aea7cca402a502ad4d043e7293":[14,0,433,5],
 "structspdk__trace__parser__entry.html#a7e7ee46ec4c44c52caebb5ede88395c8":[14,0,433,6],
+"structspdk__trace__parser__entry.html#a97eda44725f9d69ff3f5f389f6c1c8f1":[14,0,433,0],
 "structspdk__trace__parser__entry.html#abb11f8535fab9ee4f9fc4c2adcee5145":[14,0,433,2],
 "structspdk__trace__parser__entry.html#aebdc6a2a084c4771e6fb246c2d729c1f":[14,0,433,3],
-"structspdk__trace__parser__entry.html#aeed641b5ad82b2b9d1dce4d69709dcda":[14,0,433,0],
 "structspdk__trace__parser__opts.html":[14,0,434],
 "structspdk__trace__parser__opts.html#a48ab7e723632da9d892cf486b0402692":[14,0,434,1],
 "structspdk__trace__parser__opts.html#a5da4eafe3f0b20fc1ff113ad5da35cb4":[14,0,434,0],
 "structspdk__trace__parser__opts.html#a8f6336ccbdc83d05b62fda98e88b5f9b":[14,0,434,2],
 "structspdk__trace__register__fn.html":[14,0,435],
 "structspdk__trace__tpoint.html":[14,0,436],
-"structspdk__trace__tpoint.html#a7ca5db3bf810a0bb776b36abfc574d79":[14,0,436,0],
+"structspdk__trace__tpoint.html#a533a3f18a0590bf10af3166cf04d68e3":[14,0,436,0],
 "structspdk__trace__tpoint__opts.html":[14,0,437],
 "structspdk__uuid.html":[14,0,438],
 "structspdk__vfu__endpoint__ops.html":[14,0,439],
@@ -248,6 +249,5 @@ var NAVTREEINDEX15 =
 "trace_8h.html#a272510f870f932fd0e081481f6e51e58":[15,0,0,0,60,26],
 "trace_8h.html#a2f3c2c36cb52730ac3a98e9d33fd9093":[15,0,0,0,60,36],
 "trace_8h.html#a3014ded1a40e39f65b01efe27ec2893c":[15,0,0,0,60,22],
-"trace_8h.html#a346327ec1addd7eeb87963b40cec1821":[15,0,0,0,60,21],
-"trace_8h.html#a361bd259fb7b5bfd6e420a7475a6e9b1":[15,0,0,0,60,11]
+"trace_8h.html#a346327ec1addd7eeb87963b40cec1821":[15,0,0,0,60,21]
 };

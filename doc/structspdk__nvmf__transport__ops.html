@@ -205,6 +205,9 @@ int(*&#160;</td><td class="memItemRight" valign="bottom"><b>req_free</b> )(struc
 <tr class="memitem:a144fd3bb2efe4616a2d9b78f93f969e6" id="r_a144fd3bb2efe4616a2d9b78f93f969e6"><td class="memItemLeft" align="right" valign="top"><a id="a144fd3bb2efe4616a2d9b78f93f969e6" name="a144fd3bb2efe4616a2d9b78f93f969e6"></a>
 int(*&#160;</td><td class="memItemRight" valign="bottom"><b>req_complete</b> )(struct <a class="el" href="structspdk__nvmf__request.html">spdk_nvmf_request</a> *req)</td></tr>
 <tr class="separator:a144fd3bb2efe4616a2d9b78f93f969e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a004ad5e36cc73e563cc53474e2ee4972" id="r_a004ad5e36cc73e563cc53474e2ee4972"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a004ad5e36cc73e563cc53474e2ee4972">req_get_buffers_done</a> )(struct <a class="el" href="structspdk__nvmf__request.html">spdk_nvmf_request</a> *req)</td></tr>
+<tr class="memdesc:a004ad5e36cc73e563cc53474e2ee4972"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback for the iobuf based queuing of requests awaiting free buffers.  <br /></td></tr>
+<tr class="separator:a004ad5e36cc73e563cc53474e2ee4972"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a80d92a65c831659227a81a1e25fa78ab" id="r_a80d92a65c831659227a81a1e25fa78ab"><td class="memItemLeft" align="right" valign="top"><a id="a80d92a65c831659227a81a1e25fa78ab" name="a80d92a65c831659227a81a1e25fa78ab"></a>
 void(*&#160;</td><td class="memItemRight" valign="bottom"><b>qpair_fini</b> )(struct <a class="el" href="structspdk__nvmf__qpair.html">spdk_nvmf_qpair</a> *qpair, spdk_nvmf_transport_qpair_fini_cb cb_fn, void *cb_args)</td></tr>
 <tr class="separator:a80d92a65c831659227a81a1e25fa78ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -283,6 +286,23 @@ void(*&#160;</td><td class="memItemRight" valign="bottom"><b>subsystem_dump_host
 <p>It is a notification that a listener is being associated with the subsystem. </p>
 <p>Most transports will not need to take any action here, as the enforcement of the association is done in the generic code.</p>
 <p>Returns a negated errno code to block the association. 0 to allow. </p>
+
+</div>
+</div>
+<a id="a004ad5e36cc73e563cc53474e2ee4972" name="a004ad5e36cc73e563cc53474e2ee4972"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a004ad5e36cc73e563cc53474e2ee4972">&#9670;&#160;</a></span>req_get_buffers_done</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void(* spdk_nvmf_transport_ops::req_get_buffers_done) (struct <a class="el" href="structspdk__nvmf__request.html">spdk_nvmf_request</a> *req)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Callback for the iobuf based queuing of requests awaiting free buffers. </p>
+<p>Called when all requested buffers are allocated for the given request. Used only if initial <a class="el" href="thread_8h.html#a7576cd70e14c99300d6effb4ddca38f3" title="Get a buffer from the iobuf pool.">spdk_iobuf_get()</a> call didn't allocate all buffers at once and request was queued internally in the iobuf until free buffers become available. This callback is optional and not all transports need to implement it. If not set then transport implementation must queue such requests internally. </p>
 
 </div>
 </div>

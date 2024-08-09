@@ -16,6 +16,7 @@ var structspdk__nvmf__transport__ops =
     [ "poll_group_destroy", "structspdk__nvmf__transport__ops.html#ac32c0c33dd13799e4bbc730325da2bc8", null ],
     [ "poll_group_poll", "structspdk__nvmf__transport__ops.html#a5ef93b45156117554b4707487229e157", null ],
     [ "poll_group_remove", "structspdk__nvmf__transport__ops.html#a09da91b1d08d8e83f900ea18f74824d6", null ],
+    [ "req_get_buffers_done", "structspdk__nvmf__transport__ops.html#a004ad5e36cc73e563cc53474e2ee4972", null ],
     [ "stop_listen", "structspdk__nvmf__transport__ops.html#a79190a46c19b7d92d8929a7470afeb94", null ],
     [ "subsystem_add_ns", "structspdk__nvmf__transport__ops.html#a3cfc9284b5467a989daed1e59692eb5a", null ],
     [ "subsystem_remove_ns", "structspdk__nvmf__transport__ops.html#af0c5a0e08b9fad80e893300411062d61", null ],

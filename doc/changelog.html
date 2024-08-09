@@ -99,6 +99,13 @@ $(function(){initNavTree('changelog.html',''); initResizable(); });
 <div class="textblock"><p><a class="anchor" id="md_changelog"></a> </p>
 <h1><a class="anchor" id="changelog-v24-09"></a>
 v24.09: (Upcoming Release)</h1>
+<h2>nvmf</h2>
+<p>Enable iobuf based queuing for nvmf requests when there is not enough free buffers available. Perspective from the user of the spdk_nvmf_request_get_buffers() API is that whenever all iovecs are allocated immediately then nothing changes compared to the previous implementation. If iobuf does not have enough buffers then there are two flows now:</p>
+<ul>
+<li>if req_get_buffers_done is not set in the <a class="el" href="structspdk__nvmf__transport__ops.html">spdk_nvmf_transport_ops</a> then again, nothing changes. All (if there were any) ioves are released and caller must try again later.</li>
+<li>if callback was set then caller will be notified once all iovecs are allocated.</li>
+</ul>
+<p>As requests waiting for the buffer might get aborted, another API to remove such request from the iobuf queue is also added.</p>
 <h2>sock</h2>
 <p>New functions that allows to register interrupt for given socket group: <code><a class="el" href="sock_8h.html#a4ff9e3deab53523b235aebf8391674c9" title="Register an spdk_interrupt with specific event types on the current thread for the given socket group...">spdk_sock_group_register_interrupt()</a></code> <code><a class="el" href="sock_8h.html#a1cc881777301103c7acd712ce8f9fb23" title="Unregister an spdk_interrupt for the given socket group from the current thread.">spdk_sock_group_unregister_interrupt()</a></code> Both uses API exposed by the <a class="el" href="thread_8h.html" title="Thread.">thread.h</a>, see below for details. Support implemented only for the POSIX and SSL sockets.</p>
 <h2>thread</h2>
