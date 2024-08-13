@@ -7716,6 +7716,49 @@ vfu_virtio_create_scsi_endpoint</h2>
 <div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;result&quot;: true</div>
 <div class="line">}</div>
+</div><!-- fragment --><h2><a class="anchor" id="vfu_virtio_create_fs_endpoint"></a>
+vfu_virtio_create_fs_endpoint</h2>
+<p>Create vfio-user virtio-fs PCI endpoint.</p>
+<h3>Parameters</h3>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Endpoint name    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">fsdev_name   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of an underlying fsdev    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">tag   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Virtio FS tag according to the virtio specification    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">cpumask   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">CPU masks    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">num_queues   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">Number of IO queues    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">qsize   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">Queue size    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">packed_ring   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Enable packed ring   </td></tr>
+</table>
+<h3>Example</h3>
+<p>Example request:</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;params&quot;: {</div>
+<div class="line">    &quot;name&quot;: &quot;vfu.0&quot;,</div>
+<div class="line">    &quot;fsdev_name&quot;: &quot;aio0&quot;,</div>
+<div class="line">    &quot;tag&quot;: &quot;virtiofs0&quot;,</div>
+<div class="line">    &quot;cpumask&quot;: &quot;0x2&quot;,</div>
+<div class="line">    &quot;num_queues&quot;: 4,</div>
+<div class="line">    &quot;qsize&quot;: 256</div>
+<div class="line">  },</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;method&quot;: &quot;vfu_virtio_create_fs_endpoint&quot;,</div>
+<div class="line">  &quot;id&quot;: 1</div>
+<div class="line">}</div>
+</div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;result&quot;: true</div>
+<div class="line">}</div>
 </div><!-- fragment --><h1><a class="anchor" id="jsonrpc_components_vhost_tgt"></a>
 Vhost Target</h1>
 <p>The following common preconditions need to be met in all target types.</p>
@@ -10753,7 +10796,68 @@ nvmf_stop_mdns_prr</h2>
 <div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;result&quot;: true</div>
 <div class="line">}</div>
-</div><!-- fragment --> </div></div><!-- contents -->
+<div class="line"> </div>
+<div class="line">### fsdev_get_opts {#fsdev_get_opts}</div>
+<div class="line"> </div>
+<div class="line">Get fsdev module options.</div>
+<div class="line"> </div>
+<div class="line">#### Parameters</div>
+<div class="line"> </div>
+<div class="line">None</div>
+<div class="line"> </div>
+<div class="line">#### Example</div>
+<div class="line"> </div>
+<div class="line">Example request:</div>
+</div><!-- fragment --><p> json { "jsonrpc": "2.0", "method": "fsdev_get_opts", "id": 1 } </p><div class="fragment"><div class="line">Example response:</div>
+</div><!-- fragment --><p> json { "jsonrpc": "2.0", "id": 1, "result": { "fsdev_io_pool_size": 65535, "fsdev_io_cache_size": 256 } } </p><div class="fragment"><div class="line">### fsdev_set_opts {#fsdev_set_opts}</div>
+<div class="line"> </div>
+<div class="line">Set fsdev module options.</div>
+<div class="line"> </div>
+<div class="line">#### Parameters</div>
+<div class="line"> </div>
+<div class="line">Name                    | Optional | Type        | Description</div>
+<div class="line">----------------------- | -------- | ----------- | -----------</div>
+<div class="line">fsdev_io_pool_size      | Required | int         | Size of fsdev IO objects pool.</div>
+<div class="line">fsdev_io_cache_size     | Required | int         | Size of fsdev IO objects cache per thread.</div>
+<div class="line"> </div>
+<div class="line">#### Example</div>
+<div class="line"> </div>
+<div class="line">Example request:</div>
+</div><!-- fragment --><p> json { "jsonrpc": "2.0", "method": "fsdev_get_opts", "id": 1, "params": { "fsdev_io_pool_size": 65535, "fsdev_io_cache_size": 256 } } </p><div class="fragment"><div class="line">Example response:</div>
+</div><!-- fragment --><p> json { "jsonrpc": "2.0", "id": 1, "result": { "fsdev_io_pool_size": 65535, "fsdev_io_cache_size": 256 } } </p><div class="fragment"><div class="line">### fsdev_aio_create {#fsdev_aio_create}</div>
+<div class="line"> </div>
+<div class="line">Create an AIO fsdev.</div>
+<div class="line"> </div>
+<div class="line">#### Parameters</div>
+<div class="line"> </div>
+<div class="line">Name                    | Optional | Type        | Description</div>
+<div class="line">----------------------- | -------- | ----------- | -----------</div>
+<div class="line">name                    | Required | string      | Name of the AIO fsdev to create.</div>
+<div class="line">root_path               | Required | string      | Path on the system directory to be exposed as an SPDK filesystem</div>
+<div class="line">enable_xattr            | Optional | bool        | true to enable the extended attributes, false otherwise</div>
+<div class="line">enable_writeback_cache  | Optional | bool        | true to enable the writeback cache, false otherwise</div>
+<div class="line">max_write               | Optional | int         | Max write size in bytes</div>
+<div class="line"> </div>
+<div class="line">#### Example</div>
+<div class="line"> </div>
+<div class="line">Example request:</div>
+</div><!-- fragment --><p> json { "jsonrpc": "2.0", "method": "fsdev_aio_create", "id": 8, "params": { "name": "aio0", "root_path": "/tmp/vfio-test", "enable_xattr": false, "enable_writeback_cache": true, "max_write": 65535 } } </p><div class="fragment"><div class="line">Example response:</div>
+</div><!-- fragment --><p> json { "jsonrpc": "2.0", "id": 8, "result": "aio0" } </p><div class="fragment"><div class="line">### fsdev_aio_delete {#fsdev_aio_delete}</div>
+<div class="line"> </div>
+<div class="line">Delete an AIO fsdev.</div>
+<div class="line"> </div>
+<div class="line">#### Parameters</div>
+<div class="line"> </div>
+<div class="line">Name                    | Optional | Type        | Description</div>
+<div class="line">----------------------- | -------- | ----------- | -----------</div>
+<div class="line">name                    | Required | string      | Name of the AIO fsdev to delete.</div>
+<div class="line"> </div>
+<div class="line">#### Example</div>
+<div class="line"> </div>
+<div class="line">Example request:</div>
+</div><!-- fragment --><p> json { "jsonrpc": "2.0", "method": "fsdev_aio_delete", "id": 1, "params": { "name": "aio0" } } </p><div class="fragment"><div class="line">Example response:</div>
+</div><!-- fragment --><p> json { "jsonrpc": "2.0", "id": 1, "result": true } ~~~ </p>
+</div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.8-->

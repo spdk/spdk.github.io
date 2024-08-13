@@ -7,6 +7,7 @@ var util_8h =
     [ "SPDK_ALIGN_FLOOR", "util_8h.html#a4fe89df2bed54dcdc8b0d33c53a694b6", null ],
     [ "SPDK_CLANG_ANALYZER_PREINIT_PTR_ARRAY", "util_8h.html#ac14f2b75522d72317def37370adffca1", null ],
     [ "SPDK_COUNTOF_MEMBER", "util_8h.html#a83209c12813c625453d8bfc934393b20", null ],
+    [ "SPDK_FIELD_VALID", "util_8h.html#a20d2934d5aabcb2ea72ca465f33d6ab7", null ],
     [ "SPDK_GET_FIELD", "util_8h.html#af961bfd28ca1daef326d855007546c29", null ],
     [ "SPDK_IOV_ONE", "util_8h.html#a123918f967aa539af3a48a83dcf588c9", null ],
     [ "SPDK_SIZEOF", "util_8h.html#a42fd1c29c4cbe74363973322468bbd33", null ],

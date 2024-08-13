@@ -23,14 +23,15 @@ var searchData=
   ['write_20',['Copy-on-write',['../blob.html#blob_pg_copy_on_write',1,'']]],
   ['write_5fcache_21',['write_cache',['../structspdk__bdev.html#ac2ccb256340bc2e8b2d6f7793d977c0d',1,'spdk_bdev']]],
   ['write_5fconfig_22',['write_config',['../structspdk__keyring__module.html#a55a99a29c7f57d0222425d7dae0d32e7',1,'spdk_keyring_module']]],
-  ['write_5fconfig_5fjson_23',['write_config_json',['../structspdk__accel__module__if.html#aa935af52f46cb0aee6f15b6bb8c68726',1,'spdk_accel_module_if::write_config_json'],['../structspdk__bdev__fn__table.html#a233c08c7269afc1108c3f734cc545ff4',1,'spdk_bdev_fn_table::write_config_json']]],
+  ['write_5fconfig_5fjson_23',['write_config_json',['../structspdk__accel__module__if.html#aa935af52f46cb0aee6f15b6bb8c68726',1,'spdk_accel_module_if::write_config_json'],['../structspdk__bdev__fn__table.html#a233c08c7269afc1108c3f734cc545ff4',1,'spdk_bdev_fn_table::write_config_json'],['../structspdk__fsdev__fn__table.html#a396854ded5398da6df655c670419910a',1,'spdk_fsdev_fn_table::write_config_json']]],
   ['write_5fexclusive_24',['write_exclusive',['../structspdk__nvme__ns__data.html#a40fd3c4f8d853d8835d958ec1b7d2a90',1,'spdk_nvme_ns_data']]],
   ['write_5fexclusive_5fall_5freg_25',['write_exclusive_all_reg',['../structspdk__nvme__ns__data.html#a10c7b734c09cfd79d88f4fb4c1ffb666',1,'spdk_nvme_ns_data']]],
   ['write_5fexclusive_5freg_5fonly_26',['write_exclusive_reg_only',['../structspdk__nvme__ns__data.html#a5d98f39aff9d34ffb633ffeb773a9554',1,'spdk_nvme_ns_data']]],
   ['write_5fprotected_27',['write_protected',['../structspdk__nvme__ns__data.html#a2d31ce64bc5986f84ea63060f6d410a3',1,'spdk_nvme_ns_data']]],
   ['write_5funit_5fsize_28',['write_unit_size',['../structspdk__bdev.html#a1d7dcd12f4c3600eac4dbb202bdb4397',1,'spdk_bdev']]],
   ['write_5fzero_5fdeallocate_29',['write_zero_deallocate',['../structspdk__nvme__ns__data.html#ae0ed9489f16678899fafd54bec980ccb',1,'spdk_nvme_ns_data']]],
-  ['writing_20a_20custom_20block_20device_20module_30',['Writing a Custom Block Device Module',['../bdev_module.html',1,'prog_guides']]],
-  ['ws_5fmin_31',['ws_min',['../structspdk__ocssd__geometry__data.html#a0f15dc726bcf4cac33752f0fab8a4e36',1,'spdk_ocssd_geometry_data']]],
-  ['ws_5fopt_32',['ws_opt',['../structspdk__ocssd__geometry__data.html#a3d5ae53da075ef580a641bec35889c3d',1,'spdk_ocssd_geometry_data']]]
+  ['writeback_5fcache_5fenabled_30',['writeback_cache_enabled',['../structspdk__fsdev__open__opts.html#aa3c4b123c2f6118ae8c1f2a958bea2c1',1,'spdk_fsdev_open_opts']]],
+  ['writing_20a_20custom_20block_20device_20module_31',['Writing a Custom Block Device Module',['../bdev_module.html',1,'prog_guides']]],
+  ['ws_5fmin_32',['ws_min',['../structspdk__ocssd__geometry__data.html#a0f15dc726bcf4cac33752f0fab8a4e36',1,'spdk_ocssd_geometry_data']]],
+  ['ws_5fopt_33',['ws_opt',['../structspdk__ocssd__geometry__data.html#a3d5ae53da075ef580a641bec35889c3d',1,'spdk_ocssd_geometry_data']]]
 ];

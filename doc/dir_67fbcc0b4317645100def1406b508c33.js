@@ -26,6 +26,8 @@ var dir_67fbcc0b4317645100def1406b508c33 =
     [ "fd.h", "fd_8h.html", "fd_8h" ],
     [ "fd_group.h", "fd__group_8h.html", "fd__group_8h" ],
     [ "file.h", "file_8h.html", "file_8h" ],
+    [ "fsdev.h", "fsdev_8h.html", "fsdev_8h" ],
+    [ "fuse_dispatcher.h", "fuse__dispatcher_8h.html", "fuse__dispatcher_8h" ],
     [ "gpt_spec.h", "gpt__spec_8h.html", "gpt__spec_8h" ],
     [ "histogram_data.h", "histogram__data_8h.html", "histogram__data_8h" ],
     [ "idxd.h", "idxd_8h.html", "idxd_8h" ],

@@ -349,7 +349,8 @@ var user_guides =
         [ "vfu_virtio_create_blk_endpoint", "jsonrpc.html#rpc_vfu_virtio_create_blk_endpoint", null ],
         [ "vfu_virtio_scsi_add_target", "jsonrpc.html#rpc_vfu_virtio_scsi_add_target", null ],
         [ "vfu_virtio_scsi_remove_target", "jsonrpc.html#rpc_vfu_virtio_scsi_remove_target", null ],
-        [ "vfu_virtio_create_scsi_endpoint", "jsonrpc.html#rpc_vfu_virtio_create_scsi_endpoint", null ]
+        [ "vfu_virtio_create_scsi_endpoint", "jsonrpc.html#rpc_vfu_virtio_create_scsi_endpoint", null ],
+        [ "vfu_virtio_create_fs_endpoint", "jsonrpc.html#vfu_virtio_create_fs_endpoint", null ]
       ] ],
       [ "Vhost Target", "jsonrpc.html#jsonrpc_components_vhost_tgt", [
         [ "vhost_controller_set_coalescing", "jsonrpc.html#rpc_vhost_controller_set_coalescing", null ],

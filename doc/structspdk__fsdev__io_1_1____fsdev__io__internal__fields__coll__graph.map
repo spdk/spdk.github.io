@@ -1,0 +1,14 @@
+<map id="spdk_fsdev_io::__fsdev_io_internal_fields" name="spdk_fsdev_io::__fsdev_io_internal_fields">
+<area shape="rect" id="Node000001" title="Fields that are used internally by the fsdev subsystem." alt="" coords="5,5,165,54"/>
+<area shape="rect" id="Node000002" href="$structspdk__fsdev__io.html" title=" " alt="" coords="249,121,356,151"/>
+<area shape="poly" id="edge6_Node000002_Node000001" title=" " alt="" coords="106,66,118,82,133,95,160,109,190,120,249,130,248,135,189,125,158,114,130,99,114,85,102,69"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="258,116,133,57,135,52,260,112"/>
+<area shape="rect" id="Node000003" href="$structspdk__fsdev.html" title=" " alt="" coords="188,15,278,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="253,56,295,119,291,122,249,59"/>
+<area shape="rect" id="Node000010" href="$structspdk__fsdev__file__attr.html" title=" " alt="" coords="301,15,445,45"/>
+<area shape="poly" id="edge3_Node000002_Node000010" title=" " alt="" coords="357,59,314,122,310,119,353,56"/>
+<area shape="rect" id="Node000011" href="$structspdk__fsdev__io__opts.html" title="Structure with optional fsdev IO parameters The content of this structure must be valid until the IO ..." alt="" coords="469,15,608,45"/>
+<area shape="poly" id="edge4_Node000002_Node000011" title=" " alt="" coords="494,53,335,123,333,118,492,48"/>
+<area shape="rect" id="Node000012" href="$structspdk__fsdev__file__statfs.html" title=" " alt="" coords="632,15,786,45"/>
+<area shape="poly" id="edge5_Node000002_Node000012" title=" " alt="" coords="644,52,463,100,357,125,356,120,462,94,643,47"/>
+</map>
