@@ -35,6 +35,7 @@ var NAVTREEINDEX12 =
 "structspdk__bdev__module__claim.html":[14,0,79],
 "structspdk__bdev__name.html":[14,0,80],
 "structspdk__bdev__nvme__ctrlr__opts.html":[14,0,84],
+"structspdk__bdev__nvme__ctrlr__opts.html#a05bd99a4f25d698a2e9f14f5a2a25fef":[14,0,84,0],
 "structspdk__bdev__open__async__opts.html":[14,0,85],
 "structspdk__bdev__opts.html":[14,0,86],
 "structspdk__bdev__opts.html#a8bc8895a73d982fe8c5bc456aeccab49":[14,0,86,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX12 =
 "structspdk__memory__domain__ctx.html#aa1f0f4f3f824623ddcb028df383f4d10":[14,0,155,1],
 "structspdk__memory__domain__rdma__ctx.html":[14,0,156],
 "structspdk__memory__domain__rdma__ctx.html#a654dd3407ba7508102c744552d7267a4":[14,0,156,0],
-"structspdk__memory__domain__rdma__ctx.html#a736eeba37346771009a8cab2d414d489":[14,0,156,1],
-"structspdk__memory__domain__translation__ctx.html":[14,0,157]
+"structspdk__memory__domain__rdma__ctx.html#a736eeba37346771009a8cab2d414d489":[14,0,156,1]
 };

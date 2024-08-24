@@ -707,7 +707,11 @@ framework_get_scheduler</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">scheduler_period   </td><td class="markdownTableBodyNone">Currently set scheduler period in microseconds    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">governor_name   </td><td class="markdownTableBodyNone">Governor name   </td></tr>
+<td class="markdownTableBodyNone">governor_name   </td><td class="markdownTableBodyNone">Governor name    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">scheduling_core   </td><td class="markdownTableBodyNone">Current scheduling core    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">isolated_core_mask   </td><td class="markdownTableBodyNone">Current isolated core mask of scheduler   </td></tr>
 </table>
 <h3>Example</h3>
 <p>Example request:</p>
@@ -723,7 +727,9 @@ framework_get_scheduler</h2>
 <div class="line">  &quot;result&quot;: {</div>
 <div class="line">    &quot;scheduler_name&quot;: &quot;static&quot;,</div>
 <div class="line">    &quot;scheduler_period&quot;: 2800000000,</div>
-<div class="line">    &quot;governor_name&quot;: &quot;default&quot;</div>
+<div class="line">    &quot;governor_name&quot;: &quot;default&quot;,</div>
+<div class="line">    &quot;scheduling_core&quot;: 1,</div>
+<div class="line">    &quot;isolated_core_mask&quot;: &quot;0x4&quot;</div>
 <div class="line">  }</div>
 <div class="line">}</div>
 </div><!-- fragment --><h2><a class="anchor" id="rpc_framework_get_governor"></a>
@@ -762,6 +768,35 @@ framework_get_governor</h2>
 <div class="line">      }</div>
 <div class="line">    ]</div>
 <div class="line">  }</div>
+<div class="line">}</div>
+</div><!-- fragment --><h2>scheduler_set_options</h2>
+<p>Set options for scheduler.</p>
+<p>This RPC may only be called before SPDK subsystems have been initialized. This RPC can be called only once.</p>
+<h3>Parameters</h3>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">scheduling_core   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">Main core of scheduler. Idle threads move to the scheduling core. Can be set only once    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">isolated_core_mask   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Select CPU cores to isolate from scheduling changes. Can be set only once   </td></tr>
+</table>
+<h3>Example</h3>
+<p>Example request:</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;method&quot;: &quot;scheduler_set_options&quot;,</div>
+<div class="line">  &quot;params&quot;: {</div>
+<div class="line">    &quot;scheduling_core&quot;: 1,</div>
+<div class="line">    &quot;isolated_core_mask&quot;: &quot;0x4&quot;</div>
+<div class="line">  }</div>
+<div class="line">}</div>
+</div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;result&quot;: true</div>
 <div class="line">}</div>
 </div><!-- fragment --><h2>framework_enable_cpumask_locks</h2>
 <p>Enable CPU core lock files to block multiple SPDK applications from running on the same cpumask. The CPU core locks are enabled by default, unless user specified <code>--disable-cpumask-locks</code> command line option when launching SPDK.</p>
@@ -3292,7 +3327,9 @@ bdev_nvme_attach_controller</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">dhchap_key   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">DH-HMAC-CHAP key name.    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">dhchap_ctrlr_key   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">DH-HMAC-CHAP controller key name.   </td></tr>
+<td class="markdownTableBodyNone">dhchap_ctrlr_key   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">DH-HMAC-CHAP controller key name.    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">allow_unrecognized_csi   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">bool   </td><td class="markdownTableBodyNone">Allow attaching namespaces with unrecognized command set identifiers. These will only support NVMe passthrough.   </td></tr>
 </table>
 <h3>Example</h3>
 <p>Example request:</p>
@@ -6677,7 +6714,9 @@ nvmf_create_subsystem method</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">max_discard_size_kib   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">Maximum discard size (Kib). Default: 0    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">max_write_zeroes_size_kib   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">Maximum write_zeroes size (Kib). Default: 0   </td></tr>
+<td class="markdownTableBodyNone">max_write_zeroes_size_kib   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">Maximum write_zeroes size (Kib). Default: 0    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">passthrough   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Use NVMe passthrough for I/O commands and namespace-directed admin commands. Default: <code>false</code>.   </td></tr>
 </table>
 <h3>Example</h3>
 <p>Example request:</p>
