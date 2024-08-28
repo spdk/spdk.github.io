@@ -8754,7 +8754,7 @@ bdev_lvol_set_parent</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">lvol_name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">UUID or alias of the lvol to set parent of    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">snapshot_name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">UUID or alias of the snapshot to become parent of lvol   </td></tr>
+<td class="markdownTableBodyNone">parent_name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">UUID or alias of the snapshot to become parent of lvol   </td></tr>
 </table>
 <h3>Example</h3>
 <p>Example request:</p>
@@ -8764,7 +8764,7 @@ bdev_lvol_set_parent</h2>
 <div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;params&quot;: {</div>
 <div class="line">    &quot;lvol_name&quot;: &quot;LVS1/LVOL0&quot;,</div>
-<div class="line">    &quot;snapshot_name&quot;: &quot;LVS1/SNAP0&quot;</div>
+<div class="line">    &quot;parent_name&quot;: &quot;LVS1/SNAP0&quot;</div>
 <div class="line">  }</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Example response:</p>
@@ -8783,7 +8783,7 @@ bdev_lvol_set_parent_bdev</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">lvol_name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">UUID or alias of the lvol to set external parent of    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">esnap_name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">UUID or name of the external snapshot to become parent of lvol   </td></tr>
+<td class="markdownTableBodyNone">parent_name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">UUID or name of the external snapshot to become parent of lvol   </td></tr>
 </table>
 <h3>Example</h3>
 <p>Example request:</p>
@@ -8793,7 +8793,7 @@ bdev_lvol_set_parent_bdev</h2>
 <div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;params&quot;: {</div>
 <div class="line">    &quot;lvol_name&quot;: &quot;LVS1/LVOL0&quot;,</div>
-<div class="line">    &quot;esnap_name&quot;: &quot;e465527b-f412-4f70-a03e-c4a5d608f65e&quot;</div>
+<div class="line">    &quot;parent_name&quot;: &quot;e465527b-f412-4f70-a03e-c4a5d608f65e&quot;</div>
 <div class="line">  }</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Example response:</p>
