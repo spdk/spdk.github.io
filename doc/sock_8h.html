@@ -186,9 +186,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a3463752f8d6a9cdefc8aafaa8a72f9e4" id="r_a3463752f8d6a9cdefc8aafaa8a72f9e4"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3463752f8d6a9cdefc8aafaa8a72f9e4">spdk_sock_get_interface_name</a> (struct spdk_sock *sock)</td></tr>
 <tr class="memdesc:a3463752f8d6a9cdefc8aafaa8a72f9e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the name of the network interface of the local port for the socket.  <br /></td></tr>
 <tr class="separator:a3463752f8d6a9cdefc8aafaa8a72f9e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8794c8ceba03dd4d3b649209dc9b3f9c" id="r_a8794c8ceba03dd4d3b649209dc9b3f9c"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8794c8ceba03dd4d3b649209dc9b3f9c">spdk_sock_get_numa_socket_id</a> (struct spdk_sock *sock)</td></tr>
-<tr class="memdesc:a8794c8ceba03dd4d3b649209dc9b3f9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the NUMA socket ID for the network interface of the local port for the TCP socket.  <br /></td></tr>
-<tr class="separator:a8794c8ceba03dd4d3b649209dc9b3f9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78d0be1a4d5808178cee1119b8b4bf4a" id="r_a78d0be1a4d5808178cee1119b8b4bf4a"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a78d0be1a4d5808178cee1119b8b4bf4a">spdk_sock_get_numa_id</a> (struct spdk_sock *sock)</td></tr>
+<tr class="memdesc:a78d0be1a4d5808178cee1119b8b4bf4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the NUMA node ID for the network interface of the local port for the TCP socket.  <br /></td></tr>
+<tr class="separator:a78d0be1a4d5808178cee1119b8b4bf4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a407c7aebae3d1a1556109da46a73213e" id="r_a407c7aebae3d1a1556109da46a73213e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a407c7aebae3d1a1556109da46a73213e">spdk_sock_close</a> (struct spdk_sock **sock)</td></tr>
 <tr class="memdesc:a407c7aebae3d1a1556109da46a73213e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Close a socket.  <br /></td></tr>
 <tr class="separator:a407c7aebae3d1a1556109da46a73213e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -562,14 +562,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a8794c8ceba03dd4d3b649209dc9b3f9c" name="a8794c8ceba03dd4d3b649209dc9b3f9c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8794c8ceba03dd4d3b649209dc9b3f9c">&#9670;&#160;</a></span>spdk_sock_get_numa_socket_id()</h2>
+<a id="a78d0be1a4d5808178cee1119b8b4bf4a" name="a78d0be1a4d5808178cee1119b8b4bf4a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78d0be1a4d5808178cee1119b8b4bf4a">&#9670;&#160;</a></span>spdk_sock_get_numa_id()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int32_t spdk_sock_get_numa_socket_id </td>
+          <td class="memname">int32_t spdk_sock_get_numa_id </td>
           <td>(</td>
           <td class="paramtype">struct spdk_sock *</td>          <td class="paramname"><span class="paramname"><em>sock</em></span></td><td>)</td>
           <td></td>
@@ -577,14 +577,14 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Gets the NUMA socket ID for the network interface of the local port for the TCP socket. </p>
+<p>Gets the NUMA node ID for the network interface of the local port for the TCP socket. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">sock</td><td>TCP socket to find the NUMA socket ID for</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>NUMA socket ID, or SPDK_ENV_SOCKET_ID_ANY if the NUMA socket ID is unknown </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>NUMA ID, or SPDK_ENV_NUMA_ID_ANY if the NUMA ID is unknown </dd></dl>
 
 </div>
 </div>

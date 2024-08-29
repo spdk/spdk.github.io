@@ -1,5 +1,11 @@
 var NAVTREEINDEX4 =
 {
+"fuse__dispatcher_8h.html#a8ccc943403877645a660d7a0dd2334e6":[15,0,0,0,28,1],
+"fuse__dispatcher_8h.html#aab25db439db8344da20e40e3f50515d6":[15,0,0,0,28,3],
+"fuse__dispatcher_8h.html#ab0387b4c02ea723c5912de7aa8780049":[15,0,0,0,28,6],
+"fuse__dispatcher_8h.html#aca53aea2a717b991134089a4971c1c19":[15,0,0,0,28,4],
+"fuse__dispatcher_8h.html#aca53aea2a717b991134089a4971c1c19a06b2e553f63e40ee6004c6ba6c79ed07":[15,0,0,0,28,4,0],
+"fuse__dispatcher_8h.html#ae3264aa5931a969b4852ca17ec3332d0":[15,0,0,0,28,9],
 "fuse__dispatcher_8h.html#af65d32a0ad6b6eed1bb2037c23928218":[15,0,0,0,28,10],
 "gdb_macros.html":[4,5],
 "general.html":[5],
@@ -243,11 +249,5 @@ var NAVTREEINDEX4 =
 "jsonrpc.html#rpc_bdev_malloc_delete":[3,9,5,25],
 "jsonrpc.html#rpc_bdev_null_create":[3,9,5,26],
 "jsonrpc.html#rpc_bdev_null_delete":[3,9,5,27],
-"jsonrpc.html#rpc_bdev_null_resize":[3,9,5,28],
-"jsonrpc.html#rpc_bdev_nvme_add_error_injection":[3,9,13,9],
-"jsonrpc.html#rpc_bdev_nvme_apply_firmware":[3,9,5,51],
-"jsonrpc.html#rpc_bdev_nvme_attach_controller":[3,9,5,34],
-"jsonrpc.html#rpc_bdev_nvme_cuse_register":[3,9,5,47],
-"jsonrpc.html#rpc_bdev_nvme_cuse_unregister":[3,9,5,48],
-"jsonrpc.html#rpc_bdev_nvme_detach_controller":[3,9,5,36]
+"jsonrpc.html#rpc_bdev_null_resize":[3,9,5,28]
 };

@@ -1,5 +1,12 @@
 var NAVTREEINDEX12 =
 {
+"structspdk__bdev__io__internal__fields.html#ab34b630f4678b751d96bf4aceedfcf7e":[14,0,71,24],
+"structspdk__bdev__io__internal__fields.html#ab8e1a7364a7d64f6ce50b4ffd82ecd48":[14,0,71,20],
+"structspdk__bdev__io__internal__fields.html#ac3b28fbc9c3d5f1589da4aebaa110dc0":[14,0,71,19],
+"structspdk__bdev__io__internal__fields.html#ac44070b20caa1f839087203d53ab2d5d":[14,0,71,27],
+"structspdk__bdev__io__internal__fields.html#ac843d45a7037608572461bfd3428584f":[14,0,71,26],
+"structspdk__bdev__io__internal__fields.html#acc0d5b8b18b28d8abedaf11136ed3214":[14,0,71,14],
+"structspdk__bdev__io__internal__fields.html#ad09428b5c9446ce19b9069ec851631b2":[14,0,71,7],
 "structspdk__bdev__io__internal__fields.html#ad22f0fc2fb0bced80722d41f3c3709ec":[14,0,71,17],
 "structspdk__bdev__io__internal__fields.html#ae50ef48bf6ad217a2de6e28b0449faa5":[14,0,71,12],
 "structspdk__bdev__io__internal__fields.html#ae90c92c1a4e68eb23afda07c2713de53":[14,0,71,2],
@@ -242,12 +249,5 @@ var NAVTREEINDEX12 =
 "structspdk__lvs__opts.html#ad72430d6eb4550837aca4946a3990f8e":[14,0,150,0],
 "structspdk__mbr.html":[14,0,151],
 "structspdk__mbr__chs.html":[14,0,152],
-"structspdk__mbr__partition__entry.html":[14,0,153],
-"structspdk__mem__map__ops.html":[14,0,154],
-"structspdk__memory__domain__ctx.html":[14,0,155],
-"structspdk__memory__domain__ctx.html#a9bcf2ca1a7b61974248616b10fe922a1":[14,0,155,0],
-"structspdk__memory__domain__ctx.html#aa1f0f4f3f824623ddcb028df383f4d10":[14,0,155,1],
-"structspdk__memory__domain__rdma__ctx.html":[14,0,156],
-"structspdk__memory__domain__rdma__ctx.html#a654dd3407ba7508102c744552d7267a4":[14,0,156,0],
-"structspdk__memory__domain__rdma__ctx.html#a736eeba37346771009a8cab2d414d489":[14,0,156,1]
+"structspdk__mbr__partition__entry.html":[14,0,153]
 };

@@ -97,6 +97,7 @@ $(function(){initNavTree('reduce_8h.html',''); initResizable(); });
 <a href="#nested-classes">Data Structures</a> &#124;
 <a href="#define-members">Macros</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
+<a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">reduce.h File Reference</div></div>
 </div><!--header-->
@@ -111,6 +112,8 @@ Data Structures</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Describes the parameters of an spdk_reduce_vol.  <a href="structspdk__reduce__vol__params.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__reduce__vol__cb__args.html">spdk_reduce_vol_cb_args</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__reduce__backing__io.html">spdk_reduce_backing_io</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__reduce__backing__dev.html">spdk_reduce_backing_dev</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -132,6 +135,14 @@ typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_reduce
 <tr class="memitem:a137aea842a5ebd65781d7bcfc735018b" id="r_a137aea842a5ebd65781d7bcfc735018b"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a137aea842a5ebd65781d7bcfc735018b">spdk_reduce_dev_cpl</a>) (void *cb_arg, int reduce_errno)</td></tr>
 <tr class="memdesc:a137aea842a5ebd65781d7bcfc735018b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines function type for callback functions called when backing_dev operations are complete.  <br /></td></tr>
 <tr class="separator:a137aea842a5ebd65781d7bcfc735018b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:a0a94bddaba302e6f1794304173351791" id="r_a0a94bddaba302e6f1794304173351791"><td class="memItemLeft" align="right" valign="top"><a id="a0a94bddaba302e6f1794304173351791" name="a0a94bddaba302e6f1794304173351791"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>spdk_reduce_backing_io_type</b> { <b>SPDK_REDUCE_BACKING_IO_WRITE</b>
+, <b>SPDK_REDUCE_BACKING_IO_READ</b>
+, <b>SPDK_REDUCE_BACKING_IO_UNMAP</b>
+ }</td></tr>
+<tr class="separator:a0a94bddaba302e6f1794304173351791"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>

@@ -101,15 +101,9 @@ $(function(){initNavTree('structspdk__reduce__backing__dev.html',''); initResiza
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:a3bbbe463964804c1289bd3876ff262fe" id="r_a3bbbe463964804c1289bd3876ff262fe"><td class="memItemLeft" align="right" valign="top"><a id="a3bbbe463964804c1289bd3876ff262fe" name="a3bbbe463964804c1289bd3876ff262fe"></a>
-void(*&#160;</td><td class="memItemRight" valign="bottom"><b>readv</b> )(struct <a class="el" href="structspdk__reduce__backing__dev.html">spdk_reduce_backing_dev</a> *dev, struct iovec *iov, int iovcnt, uint64_t lba, uint32_t lba_count, struct <a class="el" href="structspdk__reduce__vol__cb__args.html">spdk_reduce_vol_cb_args</a> *args)</td></tr>
-<tr class="separator:a3bbbe463964804c1289bd3876ff262fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af33de4b96028f7377b857038ff1b19a6" id="r_af33de4b96028f7377b857038ff1b19a6"><td class="memItemLeft" align="right" valign="top"><a id="af33de4b96028f7377b857038ff1b19a6" name="af33de4b96028f7377b857038ff1b19a6"></a>
-void(*&#160;</td><td class="memItemRight" valign="bottom"><b>writev</b> )(struct <a class="el" href="structspdk__reduce__backing__dev.html">spdk_reduce_backing_dev</a> *dev, struct iovec *iov, int iovcnt, uint64_t lba, uint32_t lba_count, struct <a class="el" href="structspdk__reduce__vol__cb__args.html">spdk_reduce_vol_cb_args</a> *args)</td></tr>
-<tr class="separator:af33de4b96028f7377b857038ff1b19a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad23a4e33b6b615acc350eb64aa429465" id="r_ad23a4e33b6b615acc350eb64aa429465"><td class="memItemLeft" align="right" valign="top"><a id="ad23a4e33b6b615acc350eb64aa429465" name="ad23a4e33b6b615acc350eb64aa429465"></a>
-void(*&#160;</td><td class="memItemRight" valign="bottom"><b>unmap</b> )(struct <a class="el" href="structspdk__reduce__backing__dev.html">spdk_reduce_backing_dev</a> *dev, uint64_t lba, uint32_t lba_count, struct <a class="el" href="structspdk__reduce__vol__cb__args.html">spdk_reduce_vol_cb_args</a> *args)</td></tr>
-<tr class="separator:ad23a4e33b6b615acc350eb64aa429465"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21a6d0f37d3ffa0432bd8aaa9cd91d09" id="r_a21a6d0f37d3ffa0432bd8aaa9cd91d09"><td class="memItemLeft" align="right" valign="top"><a id="a21a6d0f37d3ffa0432bd8aaa9cd91d09" name="a21a6d0f37d3ffa0432bd8aaa9cd91d09"></a>
+void(*&#160;</td><td class="memItemRight" valign="bottom"><b>submit_backing_io</b> )(struct <a class="el" href="structspdk__reduce__backing__io.html">spdk_reduce_backing_io</a> *backing_io)</td></tr>
+<tr class="separator:a21a6d0f37d3ffa0432bd8aaa9cd91d09"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac5a48d92ad0a0c27f5b443a641e0f264" id="r_ac5a48d92ad0a0c27f5b443a641e0f264"><td class="memItemLeft" align="right" valign="top"><a id="ac5a48d92ad0a0c27f5b443a641e0f264" name="ac5a48d92ad0a0c27f5b443a641e0f264"></a>
 void(*&#160;</td><td class="memItemRight" valign="bottom"><b>compress</b> )(struct <a class="el" href="structspdk__reduce__backing__dev.html">spdk_reduce_backing_dev</a> *dev, struct iovec *src_iov, int src_iovcnt, struct iovec *dst_iov, int dst_iovcnt, struct <a class="el" href="structspdk__reduce__vol__cb__args.html">spdk_reduce_vol_cb_args</a> *args)</td></tr>
 <tr class="separator:ac5a48d92ad0a0c27f5b443a641e0f264"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -128,6 +122,9 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>sgl_in</b></td></tr>
 <tr class="memitem:ab3638c265ac4eb50955200f2a7b559ba" id="r_ab3638c265ac4eb50955200f2a7b559ba"><td class="memItemLeft" align="right" valign="top"><a id="ab3638c265ac4eb50955200f2a7b559ba" name="ab3638c265ac4eb50955200f2a7b559ba"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>sgl_out</b></td></tr>
 <tr class="separator:ab3638c265ac4eb50955200f2a7b559ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7d37e2309f49522197a922c3344d940" id="r_ae7d37e2309f49522197a922c3344d940"><td class="memItemLeft" align="right" valign="top"><a id="ae7d37e2309f49522197a922c3344d940" name="ae7d37e2309f49522197a922c3344d940"></a>
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>user_ctx_size</b></td></tr>
+<tr class="separator:ae7d37e2309f49522197a922c3344d940"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li><a class="el" href="reduce_8h.html">reduce.h</a></li>

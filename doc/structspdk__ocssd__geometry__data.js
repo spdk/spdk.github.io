@@ -4,7 +4,7 @@ var structspdk__ocssd__geometry__data =
     [ "lbaf", "structspdk__ocssd__geometry__data.html#a4eba476411cda99524796a82761f0823", null ],
     [ "maxoc", "structspdk__ocssd__geometry__data.html#adecc1a99d16f94eace12b674c7b7bbfa", null ],
     [ "maxocpu", "structspdk__ocssd__geometry__data.html#a747b543789ad8efcfca1c54faeb95c52", null ],
-    [ "mccap", "structspdk__ocssd__geometry__data.html#a6187840242027b49b89ca0763d0fbba8", null ],
+    [ "mccap", "structspdk__ocssd__geometry__data.html#aa258eef2a6ad6e397aa66e5af98fbc1f", null ],
     [ "mjr", "structspdk__ocssd__geometry__data.html#a1e42dcab27a59b02df913acc08e129b4", null ],
     [ "mnr", "structspdk__ocssd__geometry__data.html#ae10c2500ca1c893e7d306845d0926960", null ],
     [ "mw_cunits", "structspdk__ocssd__geometry__data.html#af02812ac810e3da324a4ff8029f6d045", null ],

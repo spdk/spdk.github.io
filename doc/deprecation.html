@@ -122,7 +122,10 @@ $(function(){initNavTree('deprecation.html',''); initResizable(); });
 <p>New SPDK partition types should use GUID <code>6527994e-2c5a-4eec-9613-8f5944074e8b</code> which will create a bdev of the correct size.</p>
 <h2>rpc</h2>
 <h3><code>spdk_rpc_listen</code> <code>spdk_rpc_accept</code> <code>spdk_rpc_close</code></h3>
-<p>These functions are deprecated and will be removed in 24.09 release. Please use <code>spdk_rpc_server_listen</code>, <code>spdk_rpc_server_accept</code> and <code>spdk_rpc_server_close</code> instead. </p>
+<p>These functions are deprecated and will be removed in 24.09 release. Please use <code>spdk_rpc_server_listen</code>, <code>spdk_rpc_server_accept</code> and <code>spdk_rpc_server_close</code> instead.</p>
+<h2>env</h2>
+<h3><code>spdk_env_get_socket_id</code>, <code>spdk_pci_device_get_socket_id</code></h3>
+<p>These functions are deprecated and will be removed in 25.05 release. Please use <code>spdk_env_get_numa_id</code> and <code>spdk_pci_device_get_numa_id</code> instead. </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->

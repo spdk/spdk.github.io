@@ -14,7 +14,7 @@ var sock_8h =
     [ "spdk_sock_get_default_opts", "sock_8h.html#a66cae415827aa6aa31adb05c120ba803", null ],
     [ "spdk_sock_get_impl_name", "sock_8h.html#acd33476aae3d3ef12903800cbf0afec3", null ],
     [ "spdk_sock_get_interface_name", "sock_8h.html#a3463752f8d6a9cdefc8aafaa8a72f9e4", null ],
-    [ "spdk_sock_get_numa_socket_id", "sock_8h.html#a8794c8ceba03dd4d3b649209dc9b3f9c", null ],
+    [ "spdk_sock_get_numa_id", "sock_8h.html#a78d0be1a4d5808178cee1119b8b4bf4a", null ],
     [ "spdk_sock_get_optimal_sock_group", "sock_8h.html#ad24c07b476251c95ed574ce3f61a2faa", null ],
     [ "spdk_sock_getaddr", "sock_8h.html#ab596707e3e18b6f3e4ceb365369a3b8f", null ],
     [ "spdk_sock_group_add_sock", "sock_8h.html#aa07f7a676410527883e2f8159ea1bfea", null ],

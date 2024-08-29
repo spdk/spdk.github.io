@@ -434,6 +434,9 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_trty
 <tr class="memitem:a8b8698ce95e1c5946ed4537b92b3a15c" id="r_a8b8698ce95e1c5946ed4537b92b3a15c"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structspdk__pci__device.html">spdk_pci_device</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8b8698ce95e1c5946ed4537b92b3a15c">spdk_nvme_ctrlr_get_pci_device</a> (struct spdk_nvme_ctrlr *ctrlr)</td></tr>
 <tr class="memdesc:a8b8698ce95e1c5946ed4537b92b3a15c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the PCI device of a given NVMe controller.  <br /></td></tr>
 <tr class="separator:a8b8698ce95e1c5946ed4537b92b3a15c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a207bd64adb3f5562349b49a1ce41252d" id="r_a207bd64adb3f5562349b49a1ce41252d"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a207bd64adb3f5562349b49a1ce41252d">spdk_nvme_ctrlr_get_numa_id</a> (struct spdk_nvme_ctrlr *ctrlr)</td></tr>
+<tr class="memdesc:a207bd64adb3f5562349b49a1ce41252d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the NUMA ID for the given NVMe controller.  <br /></td></tr>
+<tr class="separator:a207bd64adb3f5562349b49a1ce41252d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac750410c9b53a0435d0111ae1e98913e" id="r_ac750410c9b53a0435d0111ae1e98913e"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac750410c9b53a0435d0111ae1e98913e">spdk_nvme_ctrlr_get_max_xfer_size</a> (const struct spdk_nvme_ctrlr *ctrlr)</td></tr>
 <tr class="memdesc:ac750410c9b53a0435d0111ae1e98913e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the maximum data transfer size of a given NVMe controller.  <br /></td></tr>
 <tr class="separator:ac750410c9b53a0435d0111ae1e98913e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -3469,6 +3472,33 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_trty
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the number of namespaces. </dd></dl>
+
+</div>
+</div>
+<a id="a207bd64adb3f5562349b49a1ce41252d" name="a207bd64adb3f5562349b49a1ce41252d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a207bd64adb3f5562349b49a1ce41252d">&#9670;&#160;</a></span>spdk_nvme_ctrlr_get_numa_id()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t spdk_nvme_ctrlr_get_numa_id </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_nvme_ctrlr *</td>          <td class="paramname"><span class="paramname"><em>ctrlr</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the NUMA ID for the given NVMe controller. </p>
+<p>For network-based transports, the NUMA ID will be correlated to the network interface.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ctrlr</td><td>Opaque handle to NVMe controller</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>NUMA ID of the NVMe controller, or SPDK_ENV_NUMA_ID_ANY if the NUMA ID is unknown </dd></dl>
 
 </div>
 </div>

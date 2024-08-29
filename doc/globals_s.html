@@ -100,6 +100,10 @@ $(function(){initNavTree('globals_s.html',''); initResizable(); });
 <li>spdk_accel_append_crc32c()&#160;:&#160;<a class="el" href="accel_8h.html#a378b527c7ee062af40c4aef4ea2f4cbc">accel.h</a></li>
 <li>spdk_accel_append_decompress()&#160;:&#160;<a class="el" href="accel_8h.html#a457e6fd3389ec558b3c6a9f0edf812b0">accel.h</a></li>
 <li>spdk_accel_append_decrypt()&#160;:&#160;<a class="el" href="accel_8h.html#ae6d2130a2163442cb17707e053a63569">accel.h</a></li>
+<li>spdk_accel_append_dif_generate()&#160;:&#160;<a class="el" href="accel_8h.html#a31833c957a9efe16fe7aa3a9b5044f8c">accel.h</a></li>
+<li>spdk_accel_append_dif_generate_copy()&#160;:&#160;<a class="el" href="accel_8h.html#a085cd12303520d2da85e97bf69f7592a">accel.h</a></li>
+<li>spdk_accel_append_dif_verify()&#160;:&#160;<a class="el" href="accel_8h.html#a8149545fe823675a6700cb50c74d3fd0">accel.h</a></li>
+<li>spdk_accel_append_dif_verify_copy()&#160;:&#160;<a class="el" href="accel_8h.html#ad85c18302d8309f2bb3fce73b08dadbe">accel.h</a></li>
 <li>spdk_accel_append_encrypt()&#160;:&#160;<a class="el" href="accel_8h.html#a090727b328a74d555ae039b9e4462be5">accel.h</a></li>
 <li>spdk_accel_append_fill()&#160;:&#160;<a class="el" href="accel_8h.html#a1c3400c6ae95c73c4fd78adba4bc492a">accel.h</a></li>
 <li>spdk_accel_assign_opc()&#160;:&#160;<a class="el" href="accel_8h.html#a040958d2cd363147d686e718edc8a305">accel.h</a></li>
@@ -551,10 +555,10 @@ $(function(){initNavTree('globals_s.html',''); initResizable(); });
 <li>SPDK_DMA_DEVICE_VENDOR_SPECIFIC_TYPE_START&#160;:&#160;<a class="el" href="dma_8h.html#a85588b3a6ec5c188ab2dc318c3903586a1201e15e1a81553cb3ac297e7f5648be">dma.h</a></li>
 <li>spdk_dma_free()&#160;:&#160;<a class="el" href="env_8h.html#acd01324e661a5d6deb59bd2bc6230de3">env.h</a></li>
 <li>spdk_dma_malloc()&#160;:&#160;<a class="el" href="env_8h.html#aac45cbd96fe1d3d80ffeb9442d052ae2">env.h</a></li>
-<li>spdk_dma_malloc_socket()&#160;:&#160;<a class="el" href="env_8h.html#a21dddac4e06ae7ff0f4eb7554f879ed1">env.h</a></li>
+<li>spdk_dma_malloc_socket()&#160;:&#160;<a class="el" href="env_8h.html#ab4fe20882e350f079de74a7762269ca9">env.h</a></li>
 <li>spdk_dma_realloc()&#160;:&#160;<a class="el" href="env_8h.html#a28ab3daf87ac0b8edd63ca9990506f22">env.h</a></li>
 <li>spdk_dma_zmalloc()&#160;:&#160;<a class="el" href="env_8h.html#ac2fb32c12cdf8c9fdb977f673fbf8de4">env.h</a></li>
-<li>spdk_dma_zmalloc_socket()&#160;:&#160;<a class="el" href="env_8h.html#a5daaca0e7acc476f10f5f08bc7a492c4">env.h</a></li>
+<li>spdk_dma_zmalloc_socket()&#160;:&#160;<a class="el" href="env_8h.html#a88713378539ddf4d9b3adb9eb20aa2e5">env.h</a></li>
 <li>spdk_env_core_get_smt_cpuset()&#160;:&#160;<a class="el" href="env_8h.html#a9fcea62bce244e090acbb109e7cceae5">env.h</a></li>
 <li>spdk_env_dpdk_dump_mem_stats()&#160;:&#160;<a class="el" href="env__dpdk_8h.html#a0167c4daf5b4cbb4065a988433357caa">env_dpdk.h</a></li>
 <li>spdk_env_dpdk_external_init()&#160;:&#160;<a class="el" href="env__dpdk_8h.html#ae30c265cb90b9920025ee8699b9e9192">env_dpdk.h</a></li>
@@ -568,6 +572,7 @@ $(function(){initNavTree('globals_s.html',''); initResizable(); });
 <li>spdk_env_get_last_core()&#160;:&#160;<a class="el" href="env_8h.html#ad66fc19d0c23cb21ff456581f0385a2b">env.h</a></li>
 <li>spdk_env_get_main_core()&#160;:&#160;<a class="el" href="env_8h.html#aec8cb2ee2493457ecf9d5e4d1cded32f">env.h</a></li>
 <li>spdk_env_get_next_core()&#160;:&#160;<a class="el" href="env_8h.html#ab480f817ecdd801a0e53a4d8494ffc67">env.h</a></li>
+<li>spdk_env_get_numa_id()&#160;:&#160;<a class="el" href="env_8h.html#ae81b644ac17c85fb7980d45adfa11a07">env.h</a></li>
 <li>spdk_env_get_socket_id()&#160;:&#160;<a class="el" href="env_8h.html#ab18052aa1bc0ff634ffc0ce11c577d65">env.h</a></li>
 <li>spdk_env_init()&#160;:&#160;<a class="el" href="env_8h.html#a402ca8ae67be57c2c258a7a2bf22cfec">env.h</a></li>
 <li>spdk_env_opts_init()&#160;:&#160;<a class="el" href="env_8h.html#af3b1a05d3f4dee14ba3f980672c9b3a6">env.h</a></li>
@@ -919,7 +924,7 @@ $(function(){initNavTree('globals_s.html',''); initResizable(); });
 <li>spdk_lvs_opts_init()&#160;:&#160;<a class="el" href="lvol_8h.html#a9ecc81d4bcd4fd9090deb20c1a9e0db8">lvol.h</a></li>
 <li>spdk_lvs_rename()&#160;:&#160;<a class="el" href="lvol_8h.html#af406c5e7b0e7826b270c802b1431b76f">lvol.h</a></li>
 <li>spdk_lvs_unload()&#160;:&#160;<a class="el" href="lvol_8h.html#a9f7032fa38dc1af638910018e07b0dd4">lvol.h</a></li>
-<li>spdk_malloc()&#160;:&#160;<a class="el" href="env_8h.html#a438308ed889e1fec2a6400f150c31898">env.h</a></li>
+<li>spdk_malloc()&#160;:&#160;<a class="el" href="env_8h.html#a1c8b92b52bf42f362c23e7a02056d67e">env.h</a></li>
 <li>SPDK_MALLOC_DMA&#160;:&#160;<a class="el" href="env_8h.html#a7f065a5e897ff548b2dbf0996608929a">env.h</a></li>
 <li>SPDK_MALLOC_SHARE&#160;:&#160;<a class="el" href="env_8h.html#ad1660ffa6731090ef3f480c295a87dba">env.h</a></li>
 <li>spdk_mb&#160;:&#160;<a class="el" href="barrier_8h.html#a745a3ecabbce4b44d1728d08f9bf8623">barrier.h</a></li>
@@ -958,8 +963,8 @@ $(function(){initNavTree('globals_s.html',''); initResizable(); });
 <li>spdk_memory_domain_translate_data()&#160;:&#160;<a class="el" href="dma_8h.html#a05ad1c0fc1a4fa74ede9b48181e044b1">dma.h</a></li>
 <li>spdk_memory_domain_translate_memory_cb&#160;:&#160;<a class="el" href="dma_8h.html#a80080465d2736a76d0ddf95d67c701bb">dma.h</a></li>
 <li>spdk_mempool_count()&#160;:&#160;<a class="el" href="env_8h.html#a434cdf73691c745e717b8b794b2acb52">env.h</a></li>
-<li>spdk_mempool_create()&#160;:&#160;<a class="el" href="env_8h.html#a2bd81b2bc36c926eec94c510fa257561">env.h</a></li>
-<li>spdk_mempool_create_ctor()&#160;:&#160;<a class="el" href="env_8h.html#aceeea5b3c77bad4a661751a4f07f0a88">env.h</a></li>
+<li>spdk_mempool_create()&#160;:&#160;<a class="el" href="env_8h.html#aa49778e7aa649702d93ec00c7de86670">env.h</a></li>
+<li>spdk_mempool_create_ctor()&#160;:&#160;<a class="el" href="env_8h.html#a3e93b7c02bc55e4daa4688387379dd9c">env.h</a></li>
 <li>spdk_mempool_free()&#160;:&#160;<a class="el" href="env_8h.html#ab9d2feacf9f6979db875add06ab06494">env.h</a></li>
 <li>spdk_mempool_get()&#160;:&#160;<a class="el" href="env_8h.html#a478900e4975ccd6e3e4c98f38a65a08b">env.h</a></li>
 <li>spdk_mempool_get_bulk()&#160;:&#160;<a class="el" href="env_8h.html#a5695d9dcc6f53a561f41c932a198853b">env.h</a></li>
@@ -976,8 +981,8 @@ $(function(){initNavTree('globals_s.html',''); initResizable(); });
 <li>spdk_memzone_free()&#160;:&#160;<a class="el" href="env_8h.html#a5c7f9a6391c0e076abd0160b24f2ad81">env.h</a></li>
 <li>spdk_memzone_lookup()&#160;:&#160;<a class="el" href="env_8h.html#ac95f611eb4eeefbad40314c1814d1fc6">env.h</a></li>
 <li>SPDK_MEMZONE_NO_IOVA_CONTIG&#160;:&#160;<a class="el" href="env_8h.html#a723c2f644ec11282b96e1568f3124d07">env.h</a></li>
-<li>spdk_memzone_reserve()&#160;:&#160;<a class="el" href="env_8h.html#aa59e874b708cb02af0d293d42f3095da">env.h</a></li>
-<li>spdk_memzone_reserve_aligned()&#160;:&#160;<a class="el" href="env_8h.html#a1900db7923fd874ba330e6f0112f4191">env.h</a></li>
+<li>spdk_memzone_reserve()&#160;:&#160;<a class="el" href="env_8h.html#a35cbb729d3226236e47d2bde3bfb038c">env.h</a></li>
+<li>spdk_memzone_reserve_aligned()&#160;:&#160;<a class="el" href="env_8h.html#ae00d345239fd85b7f8d7fbbb2ab86844">env.h</a></li>
 <li>spdk_msg_fn&#160;:&#160;<a class="el" href="thread_8h.html#adc0da6b1b784d4f165dcd48b526d12ad">thread.h</a></li>
 <li>SPDK_MSG_MEMPOOL_CACHE_SIZE&#160;:&#160;<a class="el" href="thread_8h.html#a7c73c77029e1c65abe51ed347a762328">thread.h</a></li>
 <li>spdk_nbd_fini()&#160;:&#160;<a class="el" href="nbd_8h.html#a029f02e6d83c1c754d19d0e77ba1987c">nbd.h</a></li>
@@ -1077,6 +1082,7 @@ $(function(){initNavTree('globals_s.html',''); initResizable(); });
 <li>spdk_nvme_ctrlr_get_next_active_ns()&#160;:&#160;<a class="el" href="nvme_8h.html#abcd528b0df0a564c218dc2745c3af159">nvme.h</a></li>
 <li>spdk_nvme_ctrlr_get_ns()&#160;:&#160;<a class="el" href="nvme_8h.html#aa50ff17b33e8029bd7e3f560f6e7ba00">nvme.h</a></li>
 <li>spdk_nvme_ctrlr_get_num_ns()&#160;:&#160;<a class="el" href="nvme_8h.html#a02b18deae44682a51177e8a4193af602">nvme.h</a></li>
+<li>spdk_nvme_ctrlr_get_numa_id()&#160;:&#160;<a class="el" href="nvme_8h.html#a207bd64adb3f5562349b49a1ce41252d">nvme.h</a></li>
 <li>spdk_nvme_ctrlr_get_pci_device()&#160;:&#160;<a class="el" href="nvme_8h.html#a8b8698ce95e1c5946ed4537b92b3a15c">nvme.h</a></li>
 <li>spdk_nvme_ctrlr_get_pmrsz()&#160;:&#160;<a class="el" href="nvme_8h.html#a7642f1fc6eec21b93b5f60e386e3e36c">nvme.h</a></li>
 <li>spdk_nvme_ctrlr_get_registers()&#160;:&#160;<a class="el" href="nvme_8h.html#a3a88e0433495fdf3a53a6c80f547c6c2">nvme.h</a></li>
@@ -1375,8 +1381,8 @@ $(function(){initNavTree('globals_s.html',''); initResizable(); });
 <li>spdk_nvme_sanitize_status_type&#160;:&#160;<a class="el" href="nvme__spec_8h.html#ae89c61a84a87f12156f7046d7e9f78f1">nvme_spec.h</a></li>
 <li>spdk_nvme_scan_attached()&#160;:&#160;<a class="el" href="nvme_8h.html#adb0e98dcf4b18b4cc91b27a03b2b7c89">nvme.h</a></li>
 <li>SPDK_NVME_SGLS_NOT_SUPPORTED&#160;:&#160;<a class="el" href="nvme__spec_8h.html#af3e4102cda177c51a05a6bb02fa62b87a5978d5c7ce04a60c9d86b157037cb2f0">nvme_spec.h</a></li>
-<li>spdk_nvme_sgls_supported&#160;:&#160;<a class="el" href="nvme__spec_8h.html#af3e4102cda177c51a05a6bb02fa62b87">nvme_spec.h</a></li>
 <li>SPDK_NVME_SGLS_SUPPORTED&#160;:&#160;<a class="el" href="nvme__spec_8h.html#af3e4102cda177c51a05a6bb02fa62b87ade9828594ce1d9d11427a38182149d9d">nvme_spec.h</a></li>
+<li>spdk_nvme_sgls_supported&#160;:&#160;<a class="el" href="nvme__spec_8h.html#af3e4102cda177c51a05a6bb02fa62b87">nvme_spec.h</a></li>
 <li>SPDK_NVME_SGLS_SUPPORTED_DWORD_ALIGNED&#160;:&#160;<a class="el" href="nvme__spec_8h.html#af3e4102cda177c51a05a6bb02fa62b87a702868f6b85dd329c4baf00642e99fca">nvme_spec.h</a></li>
 <li>spdk_nvme_status_code_type&#160;:&#160;<a class="el" href="nvme__spec_8h.html#a99fb26e5d5c31f6d3d61397951e44b52">nvme_spec.h</a></li>
 <li>spdk_nvme_tcp_pdu_type&#160;:&#160;<a class="el" href="nvmf__spec_8h.html#ab42a038d2f0a46d2a5d2290cb91fdbfc">nvmf_spec.h</a></li>
@@ -1637,6 +1643,7 @@ $(function(){initNavTree('globals_s.html',''); initResizable(); });
 <li>spdk_pci_device_get_func()&#160;:&#160;<a class="el" href="env_8h.html#a6c4342c5bc69edb7b42a3873e54bd2d7">env.h</a></li>
 <li>spdk_pci_device_get_id()&#160;:&#160;<a class="el" href="env_8h.html#a5c5c2f463bddbce4cc846e04246f6414">env.h</a></li>
 <li>spdk_pci_device_get_interrupt_efd()&#160;:&#160;<a class="el" href="env_8h.html#a6b50d57653132fb21a10a4ff120125c7">env.h</a></li>
+<li>spdk_pci_device_get_numa_id()&#160;:&#160;<a class="el" href="env_8h.html#aeccb5bae4943357ac4c41facc0701b0e">env.h</a></li>
 <li>spdk_pci_device_get_serial_number()&#160;:&#160;<a class="el" href="env_8h.html#a69b979316610b357a35d03500c3059af">env.h</a></li>
 <li>spdk_pci_device_get_socket_id()&#160;:&#160;<a class="el" href="env_8h.html#a235f1c632be6dc00aad1cf8fd0314609">env.h</a></li>
 <li>spdk_pci_device_get_subdevice_id()&#160;:&#160;<a class="el" href="env_8h.html#a6368feb8685db7cc745f14e184a5e3e0">env.h</a></li>
@@ -1704,7 +1711,7 @@ $(function(){initNavTree('globals_s.html',''); initResizable(); });
 <li>spdk_reduce_vol_unload()&#160;:&#160;<a class="el" href="reduce_8h.html#a593901ae3d44b3315fad40da95108bee">reduce.h</a></li>
 <li>spdk_reduce_vol_writev()&#160;:&#160;<a class="el" href="reduce_8h.html#ac5b98c059d57b5fe1acf0062aa3d3e33">reduce.h</a></li>
 <li>spdk_ring_count()&#160;:&#160;<a class="el" href="env_8h.html#a6320a791a777b2d518def6413e543ac8">env.h</a></li>
-<li>spdk_ring_create()&#160;:&#160;<a class="el" href="env_8h.html#a755018de422c4376f339e82e594f14ae">env.h</a></li>
+<li>spdk_ring_create()&#160;:&#160;<a class="el" href="env_8h.html#af0d31e938cc430b730cc4fec473a94f6">env.h</a></li>
 <li>spdk_ring_dequeue()&#160;:&#160;<a class="el" href="env_8h.html#a982e1b212d497dbb209902f56b192afb">env.h</a></li>
 <li>spdk_ring_enqueue()&#160;:&#160;<a class="el" href="env_8h.html#a96a046de83d31127e79a7b16760b4776">env.h</a></li>
 <li>spdk_ring_free()&#160;:&#160;<a class="el" href="env_8h.html#a3f1ec5c3714962d4b01ceb5a50571dca">env.h</a></li>
@@ -1782,7 +1789,7 @@ $(function(){initNavTree('globals_s.html',''); initResizable(); });
 <li>spdk_sock_get_default_opts()&#160;:&#160;<a class="el" href="sock_8h.html#a66cae415827aa6aa31adb05c120ba803">sock.h</a></li>
 <li>spdk_sock_get_impl_name()&#160;:&#160;<a class="el" href="sock_8h.html#acd33476aae3d3ef12903800cbf0afec3">sock.h</a></li>
 <li>spdk_sock_get_interface_name()&#160;:&#160;<a class="el" href="sock_8h.html#a3463752f8d6a9cdefc8aafaa8a72f9e4">sock.h</a></li>
-<li>spdk_sock_get_numa_socket_id()&#160;:&#160;<a class="el" href="sock_8h.html#a8794c8ceba03dd4d3b649209dc9b3f9c">sock.h</a></li>
+<li>spdk_sock_get_numa_id()&#160;:&#160;<a class="el" href="sock_8h.html#a78d0be1a4d5808178cee1119b8b4bf4a">sock.h</a></li>
 <li>spdk_sock_get_optimal_sock_group()&#160;:&#160;<a class="el" href="sock_8h.html#ad24c07b476251c95ed574ce3f61a2faa">sock.h</a></li>
 <li>spdk_sock_getaddr()&#160;:&#160;<a class="el" href="sock_8h.html#ab596707e3e18b6f3e4ceb365369a3b8f">sock.h</a></li>
 <li>spdk_sock_group_add_sock()&#160;:&#160;<a class="el" href="sock_8h.html#aa07f7a676410527883e2f8159ea1bfea">sock.h</a></li>
@@ -1981,7 +1988,7 @@ $(function(){initNavTree('globals_s.html',''); initResizable(); });
 <li>spdk_zipf_create()&#160;:&#160;<a class="el" href="zipf_8h.html#aebb280a8d6fb699e2e57cb3e324424ef">zipf.h</a></li>
 <li>spdk_zipf_free()&#160;:&#160;<a class="el" href="zipf_8h.html#ae5169bdd1cd00263997198f572f14ee7">zipf.h</a></li>
 <li>spdk_zipf_generate()&#160;:&#160;<a class="el" href="zipf_8h.html#a1d0c4163406557239aefa1ab446c2422">zipf.h</a></li>
-<li>spdk_zmalloc()&#160;:&#160;<a class="el" href="env_8h.html#a5b5eae15a8ec36b34a0f50c9daa33d1a">env.h</a></li>
+<li>spdk_zmalloc()&#160;:&#160;<a class="el" href="env_8h.html#a90fe67422742ec001158425f9dfee408">env.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

@@ -2,6 +2,7 @@ var reduce_8h =
 [
     [ "spdk_reduce_vol_params", "structspdk__reduce__vol__params.html", "structspdk__reduce__vol__params" ],
     [ "spdk_reduce_vol_cb_args", "structspdk__reduce__vol__cb__args.html", null ],
+    [ "spdk_reduce_backing_io", "structspdk__reduce__backing__io.html", null ],
     [ "spdk_reduce_backing_dev", "structspdk__reduce__backing__dev.html", null ],
     [ "spdk_reduce_dev_cpl", "reduce_8h.html#a137aea842a5ebd65781d7bcfc735018b", null ],
     [ "spdk_reduce_vol_destroy", "reduce_8h.html#ae0ffc9aa6f6f8ba73f52672abcccddbc", null ],

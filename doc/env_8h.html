@@ -129,6 +129,9 @@ Data Structures</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
+<tr class="memitem:adce6feffe3e5ea53d0166c3030890814" id="r_adce6feffe3e5ea53d0166c3030890814"><td class="memItemLeft" align="right" valign="top"><a id="adce6feffe3e5ea53d0166c3030890814" name="adce6feffe3e5ea53d0166c3030890814"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_ENV_NUMA_ID_ANY</b>&#160;&#160;&#160;(-1)</td></tr>
+<tr class="separator:adce6feffe3e5ea53d0166c3030890814"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3e5247302342025f028c57bc024291b1" id="r_a3e5247302342025f028c57bc024291b1"><td class="memItemLeft" align="right" valign="top"><a id="a3e5247302342025f028c57bc024291b1" name="a3e5247302342025f028c57bc024291b1"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_ENV_SOCKET_ID_ANY</b>&#160;&#160;&#160;(-1)</td></tr>
 <tr class="separator:a3e5247302342025f028c57bc024291b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -220,17 +223,17 @@ Functions</h2></td></tr>
 <tr class="memitem:a6569627ec2e9d21e57800814adb97791" id="r_a6569627ec2e9d21e57800814adb97791"><td class="memItemLeft" align="right" valign="top"><a id="a6569627ec2e9d21e57800814adb97791" name="a6569627ec2e9d21e57800814adb97791"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(struct <a class="el" href="structspdk__env__opts.html">spdk_env_opts</a>)==120, &quot;Incorrect size&quot;)</td></tr>
 <tr class="separator:a6569627ec2e9d21e57800814adb97791"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a438308ed889e1fec2a6400f150c31898" id="r_a438308ed889e1fec2a6400f150c31898"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a438308ed889e1fec2a6400f150c31898">spdk_malloc</a> (size_t size, size_t align, uint64_t *unused, int socket_id, uint32_t flags)</td></tr>
-<tr class="memdesc:a438308ed889e1fec2a6400f150c31898"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate dma/sharable memory based on a given dma_flg.  <br /></td></tr>
-<tr class="separator:a438308ed889e1fec2a6400f150c31898"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5b5eae15a8ec36b34a0f50c9daa33d1a" id="r_a5b5eae15a8ec36b34a0f50c9daa33d1a"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5b5eae15a8ec36b34a0f50c9daa33d1a">spdk_zmalloc</a> (size_t size, size_t align, uint64_t *unused, int socket_id, uint32_t flags)</td></tr>
-<tr class="memdesc:a5b5eae15a8ec36b34a0f50c9daa33d1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate dma/sharable memory based on a given dma_flg.  <br /></td></tr>
-<tr class="separator:a5b5eae15a8ec36b34a0f50c9daa33d1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c8b92b52bf42f362c23e7a02056d67e" id="r_a1c8b92b52bf42f362c23e7a02056d67e"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1c8b92b52bf42f362c23e7a02056d67e">spdk_malloc</a> (size_t size, size_t align, uint64_t *unused, int numa_id, uint32_t flags)</td></tr>
+<tr class="memdesc:a1c8b92b52bf42f362c23e7a02056d67e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate dma/sharable memory based on a given dma_flg.  <br /></td></tr>
+<tr class="separator:a1c8b92b52bf42f362c23e7a02056d67e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90fe67422742ec001158425f9dfee408" id="r_a90fe67422742ec001158425f9dfee408"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a90fe67422742ec001158425f9dfee408">spdk_zmalloc</a> (size_t size, size_t align, uint64_t *unused, int numa_id, uint32_t flags)</td></tr>
+<tr class="memdesc:a90fe67422742ec001158425f9dfee408"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate dma/sharable memory based on a given dma_flg.  <br /></td></tr>
+<tr class="separator:a90fe67422742ec001158425f9dfee408"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3523c3351d578df5057d4db497920b5d" id="r_a3523c3351d578df5057d4db497920b5d"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3523c3351d578df5057d4db497920b5d">spdk_realloc</a> (void *buf, size_t size, size_t align)</td></tr>
 <tr class="memdesc:a3523c3351d578df5057d4db497920b5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resize a dma/sharable memory buffer with the given new size and alignment.  <br /></td></tr>
 <tr class="separator:a3523c3351d578df5057d4db497920b5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a452d670d7188f883224574dfabc39f2c" id="r_a452d670d7188f883224574dfabc39f2c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a452d670d7188f883224574dfabc39f2c">spdk_free</a> (void *buf)</td></tr>
-<tr class="memdesc:a452d670d7188f883224574dfabc39f2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free buffer memory that was previously allocated with <a class="el" href="#a438308ed889e1fec2a6400f150c31898" title="Allocate dma/sharable memory based on a given dma_flg.">spdk_malloc()</a> or <a class="el" href="#a5b5eae15a8ec36b34a0f50c9daa33d1a" title="Allocate dma/sharable memory based on a given dma_flg.">spdk_zmalloc()</a>.  <br /></td></tr>
+<tr class="memdesc:a452d670d7188f883224574dfabc39f2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free buffer memory that was previously allocated with <a class="el" href="#a1c8b92b52bf42f362c23e7a02056d67e" title="Allocate dma/sharable memory based on a given dma_flg.">spdk_malloc()</a> or <a class="el" href="#a90fe67422742ec001158425f9dfee408" title="Allocate dma/sharable memory based on a given dma_flg.">spdk_zmalloc()</a>.  <br /></td></tr>
 <tr class="separator:a452d670d7188f883224574dfabc39f2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af3b1a05d3f4dee14ba3f980672c9b3a6" id="r_af3b1a05d3f4dee14ba3f980672c9b3a6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af3b1a05d3f4dee14ba3f980672c9b3a6">spdk_env_opts_init</a> (struct <a class="el" href="structspdk__env__opts.html">spdk_env_opts</a> *opts)</td></tr>
 <tr class="memdesc:af3b1a05d3f4dee14ba3f980672c9b3a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the default value of opts.  <br /></td></tr>
@@ -244,27 +247,27 @@ Functions</h2></td></tr>
 <tr class="memitem:aac45cbd96fe1d3d80ffeb9442d052ae2" id="r_aac45cbd96fe1d3d80ffeb9442d052ae2"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aac45cbd96fe1d3d80ffeb9442d052ae2">spdk_dma_malloc</a> (size_t size, size_t align, uint64_t *unused)</td></tr>
 <tr class="memdesc:aac45cbd96fe1d3d80ffeb9442d052ae2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate a pinned memory buffer with the given size and alignment.  <br /></td></tr>
 <tr class="separator:aac45cbd96fe1d3d80ffeb9442d052ae2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a21dddac4e06ae7ff0f4eb7554f879ed1" id="r_a21dddac4e06ae7ff0f4eb7554f879ed1"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a21dddac4e06ae7ff0f4eb7554f879ed1">spdk_dma_malloc_socket</a> (size_t size, size_t align, uint64_t *unused, int socket_id)</td></tr>
-<tr class="memdesc:a21dddac4e06ae7ff0f4eb7554f879ed1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate a pinned, memory buffer with the given size, alignment and socket id.  <br /></td></tr>
-<tr class="separator:a21dddac4e06ae7ff0f4eb7554f879ed1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4fe20882e350f079de74a7762269ca9" id="r_ab4fe20882e350f079de74a7762269ca9"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab4fe20882e350f079de74a7762269ca9">spdk_dma_malloc_socket</a> (size_t size, size_t align, uint64_t *unused, int numa_id)</td></tr>
+<tr class="memdesc:ab4fe20882e350f079de74a7762269ca9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate a pinned, memory buffer with the given size, alignment and socket id.  <br /></td></tr>
+<tr class="separator:ab4fe20882e350f079de74a7762269ca9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac2fb32c12cdf8c9fdb977f673fbf8de4" id="r_ac2fb32c12cdf8c9fdb977f673fbf8de4"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac2fb32c12cdf8c9fdb977f673fbf8de4">spdk_dma_zmalloc</a> (size_t size, size_t align, uint64_t *unused)</td></tr>
 <tr class="memdesc:ac2fb32c12cdf8c9fdb977f673fbf8de4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate a pinned memory buffer with the given size and alignment.  <br /></td></tr>
 <tr class="separator:ac2fb32c12cdf8c9fdb977f673fbf8de4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5daaca0e7acc476f10f5f08bc7a492c4" id="r_a5daaca0e7acc476f10f5f08bc7a492c4"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5daaca0e7acc476f10f5f08bc7a492c4">spdk_dma_zmalloc_socket</a> (size_t size, size_t align, uint64_t *unused, int socket_id)</td></tr>
-<tr class="memdesc:a5daaca0e7acc476f10f5f08bc7a492c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate a pinned memory buffer with the given size, alignment and socket id.  <br /></td></tr>
-<tr class="separator:a5daaca0e7acc476f10f5f08bc7a492c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88713378539ddf4d9b3adb9eb20aa2e5" id="r_a88713378539ddf4d9b3adb9eb20aa2e5"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a88713378539ddf4d9b3adb9eb20aa2e5">spdk_dma_zmalloc_socket</a> (size_t size, size_t align, uint64_t *unused, int numa_id)</td></tr>
+<tr class="memdesc:a88713378539ddf4d9b3adb9eb20aa2e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate a pinned memory buffer with the given size, alignment and socket id.  <br /></td></tr>
+<tr class="separator:a88713378539ddf4d9b3adb9eb20aa2e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a28ab3daf87ac0b8edd63ca9990506f22" id="r_a28ab3daf87ac0b8edd63ca9990506f22"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a28ab3daf87ac0b8edd63ca9990506f22">spdk_dma_realloc</a> (void *buf, size_t size, size_t align, uint64_t *unused)</td></tr>
 <tr class="memdesc:a28ab3daf87ac0b8edd63ca9990506f22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resize the allocated and pinned memory buffer with the given new size and alignment.  <br /></td></tr>
 <tr class="separator:a28ab3daf87ac0b8edd63ca9990506f22"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acd01324e661a5d6deb59bd2bc6230de3" id="r_acd01324e661a5d6deb59bd2bc6230de3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acd01324e661a5d6deb59bd2bc6230de3">spdk_dma_free</a> (void *buf)</td></tr>
 <tr class="memdesc:acd01324e661a5d6deb59bd2bc6230de3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free a memory buffer previously allocated, for example from <a class="el" href="#ac2fb32c12cdf8c9fdb977f673fbf8de4" title="Allocate a pinned memory buffer with the given size and alignment.">spdk_dma_zmalloc()</a>.  <br /></td></tr>
 <tr class="separator:acd01324e661a5d6deb59bd2bc6230de3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa59e874b708cb02af0d293d42f3095da" id="r_aa59e874b708cb02af0d293d42f3095da"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa59e874b708cb02af0d293d42f3095da">spdk_memzone_reserve</a> (const char *name, size_t len, int socket_id, unsigned flags)</td></tr>
-<tr class="memdesc:aa59e874b708cb02af0d293d42f3095da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reserve a named, process shared memory zone with the given size, socket_id and flags.  <br /></td></tr>
-<tr class="separator:aa59e874b708cb02af0d293d42f3095da"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1900db7923fd874ba330e6f0112f4191" id="r_a1900db7923fd874ba330e6f0112f4191"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1900db7923fd874ba330e6f0112f4191">spdk_memzone_reserve_aligned</a> (const char *name, size_t len, int socket_id, unsigned flags, unsigned align)</td></tr>
-<tr class="memdesc:a1900db7923fd874ba330e6f0112f4191"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reserve a named, process shared memory zone with the given size, socket_id, flags and alignment.  <br /></td></tr>
-<tr class="separator:a1900db7923fd874ba330e6f0112f4191"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35cbb729d3226236e47d2bde3bfb038c" id="r_a35cbb729d3226236e47d2bde3bfb038c"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a35cbb729d3226236e47d2bde3bfb038c">spdk_memzone_reserve</a> (const char *name, size_t len, int numa_id, unsigned flags)</td></tr>
+<tr class="memdesc:a35cbb729d3226236e47d2bde3bfb038c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reserve a named, process shared memory zone with the given size, numa_id and flags.  <br /></td></tr>
+<tr class="separator:a35cbb729d3226236e47d2bde3bfb038c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae00d345239fd85b7f8d7fbbb2ab86844" id="r_ae00d345239fd85b7f8d7fbbb2ab86844"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae00d345239fd85b7f8d7fbbb2ab86844">spdk_memzone_reserve_aligned</a> (const char *name, size_t len, int numa_id, unsigned flags, unsigned align)</td></tr>
+<tr class="memdesc:ae00d345239fd85b7f8d7fbbb2ab86844"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reserve a named, process shared memory zone with the given size, numa_id, flags and alignment.  <br /></td></tr>
+<tr class="separator:ae00d345239fd85b7f8d7fbbb2ab86844"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac95f611eb4eeefbad40314c1814d1fc6" id="r_ac95f611eb4eeefbad40314c1814d1fc6"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac95f611eb4eeefbad40314c1814d1fc6">spdk_memzone_lookup</a> (const char *name)</td></tr>
 <tr class="memdesc:ac95f611eb4eeefbad40314c1814d1fc6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lookup the memory zone identified by the given name.  <br /></td></tr>
 <tr class="separator:ac95f611eb4eeefbad40314c1814d1fc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -274,12 +277,12 @@ Functions</h2></td></tr>
 <tr class="memitem:a8b47302a948b71f493ae775b53f162e2" id="r_a8b47302a948b71f493ae775b53f162e2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8b47302a948b71f493ae775b53f162e2">spdk_memzone_dump</a> (FILE *f)</td></tr>
 <tr class="memdesc:a8b47302a948b71f493ae775b53f162e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dump debug information about all memzones.  <br /></td></tr>
 <tr class="separator:a8b47302a948b71f493ae775b53f162e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2bd81b2bc36c926eec94c510fa257561" id="r_a2bd81b2bc36c926eec94c510fa257561"><td class="memItemLeft" align="right" valign="top">struct spdk_mempool *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2bd81b2bc36c926eec94c510fa257561">spdk_mempool_create</a> (const char *name, size_t count, size_t ele_size, size_t cache_size, int socket_id)</td></tr>
-<tr class="memdesc:a2bd81b2bc36c926eec94c510fa257561"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a thread-safe memory pool.  <br /></td></tr>
-<tr class="separator:a2bd81b2bc36c926eec94c510fa257561"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aceeea5b3c77bad4a661751a4f07f0a88" id="r_aceeea5b3c77bad4a661751a4f07f0a88"><td class="memItemLeft" align="right" valign="top">struct spdk_mempool *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aceeea5b3c77bad4a661751a4f07f0a88">spdk_mempool_create_ctor</a> (const char *name, size_t count, size_t ele_size, size_t cache_size, int socket_id, <a class="el" href="#a0ea268dadea148a98ee5b99c2795c5b0">spdk_mempool_obj_cb_t</a> *obj_init, void *obj_init_arg)</td></tr>
-<tr class="memdesc:aceeea5b3c77bad4a661751a4f07f0a88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a thread-safe memory pool with user provided initialization function and argument.  <br /></td></tr>
-<tr class="separator:aceeea5b3c77bad4a661751a4f07f0a88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa49778e7aa649702d93ec00c7de86670" id="r_aa49778e7aa649702d93ec00c7de86670"><td class="memItemLeft" align="right" valign="top">struct spdk_mempool *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa49778e7aa649702d93ec00c7de86670">spdk_mempool_create</a> (const char *name, size_t count, size_t ele_size, size_t cache_size, int numa_id)</td></tr>
+<tr class="memdesc:aa49778e7aa649702d93ec00c7de86670"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a thread-safe memory pool.  <br /></td></tr>
+<tr class="separator:aa49778e7aa649702d93ec00c7de86670"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e93b7c02bc55e4daa4688387379dd9c" id="r_a3e93b7c02bc55e4daa4688387379dd9c"><td class="memItemLeft" align="right" valign="top">struct spdk_mempool *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3e93b7c02bc55e4daa4688387379dd9c">spdk_mempool_create_ctor</a> (const char *name, size_t count, size_t ele_size, size_t cache_size, int numa_id, <a class="el" href="#a0ea268dadea148a98ee5b99c2795c5b0">spdk_mempool_obj_cb_t</a> *obj_init, void *obj_init_arg)</td></tr>
+<tr class="memdesc:a3e93b7c02bc55e4daa4688387379dd9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a thread-safe memory pool with user provided initialization function and argument.  <br /></td></tr>
+<tr class="separator:a3e93b7c02bc55e4daa4688387379dd9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a81c2aef00b3a7cf0b9c68fd2590ecd1c" id="r_a81c2aef00b3a7cf0b9c68fd2590ecd1c"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a81c2aef00b3a7cf0b9c68fd2590ecd1c">spdk_mempool_get_name</a> (struct spdk_mempool *mp)</td></tr>
 <tr class="memdesc:a81c2aef00b3a7cf0b9c68fd2590ecd1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the name of a memory pool.  <br /></td></tr>
 <tr class="separator:a81c2aef00b3a7cf0b9c68fd2590ecd1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -329,8 +332,11 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_mempool_free</b>
 <tr class="memitem:ab480f817ecdd801a0e53a4d8494ffc67" id="r_ab480f817ecdd801a0e53a4d8494ffc67"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab480f817ecdd801a0e53a4d8494ffc67">spdk_env_get_next_core</a> (uint32_t prev_core)</td></tr>
 <tr class="memdesc:ab480f817ecdd801a0e53a4d8494ffc67"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the index of the next dedicated CPU core for this application.  <br /></td></tr>
 <tr class="separator:ab480f817ecdd801a0e53a4d8494ffc67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae81b644ac17c85fb7980d45adfa11a07" id="r_ae81b644ac17c85fb7980d45adfa11a07"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae81b644ac17c85fb7980d45adfa11a07">spdk_env_get_numa_id</a> (uint32_t core)</td></tr>
+<tr class="memdesc:ae81b644ac17c85fb7980d45adfa11a07"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the NUMA node ID for the given core.  <br /></td></tr>
+<tr class="separator:ae81b644ac17c85fb7980d45adfa11a07"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab18052aa1bc0ff634ffc0ce11c577d65" id="r_ab18052aa1bc0ff634ffc0ce11c577d65"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab18052aa1bc0ff634ffc0ce11c577d65">spdk_env_get_socket_id</a> (uint32_t core)</td></tr>
-<tr class="memdesc:ab18052aa1bc0ff634ffc0ce11c577d65"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the socket ID for the given core.  <br /></td></tr>
+<tr class="memdesc:ab18052aa1bc0ff634ffc0ce11c577d65"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the NUMA node ID for the given core.  <br /></td></tr>
 <tr class="separator:ab18052aa1bc0ff634ffc0ce11c577d65"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8a54ecf72f47decc6e8abc0bafcb578f" id="r_a8a54ecf72f47decc6e8abc0bafcb578f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8a54ecf72f47decc6e8abc0bafcb578f">spdk_env_get_cpuset</a> (struct <a class="el" href="structspdk__cpuset.html">spdk_cpuset</a> *cpuset)</td></tr>
 <tr class="memdesc:a8a54ecf72f47decc6e8abc0bafcb578f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a cpuset with each dedicated core's bit set to true.  <br /></td></tr>
@@ -361,9 +367,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_env_thread_wait_
 void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_pause</b> (void)</td></tr>
 <tr class="memdesc:a83b4804441c4333e414ebd3d508d91fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pause CPU execution for a short while. <br /></td></tr>
 <tr class="separator:a83b4804441c4333e414ebd3d508d91fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a755018de422c4376f339e82e594f14ae" id="r_a755018de422c4376f339e82e594f14ae"><td class="memItemLeft" align="right" valign="top">struct spdk_ring *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a755018de422c4376f339e82e594f14ae">spdk_ring_create</a> (enum spdk_ring_type type, size_t count, int socket_id)</td></tr>
-<tr class="memdesc:a755018de422c4376f339e82e594f14ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a ring.  <br /></td></tr>
-<tr class="separator:a755018de422c4376f339e82e594f14ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0d31e938cc430b730cc4fec473a94f6" id="r_af0d31e938cc430b730cc4fec473a94f6"><td class="memItemLeft" align="right" valign="top">struct spdk_ring *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af0d31e938cc430b730cc4fec473a94f6">spdk_ring_create</a> (enum spdk_ring_type type, size_t count, int numa_id)</td></tr>
+<tr class="memdesc:af0d31e938cc430b730cc4fec473a94f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a ring.  <br /></td></tr>
+<tr class="separator:af0d31e938cc430b730cc4fec473a94f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3f1ec5c3714962d4b01ceb5a50571dca" id="r_a3f1ec5c3714962d4b01ceb5a50571dca"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3f1ec5c3714962d4b01ceb5a50571dca">spdk_ring_free</a> (struct spdk_ring *ring)</td></tr>
 <tr class="memdesc:a3f1ec5c3714962d4b01ceb5a50571dca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free the ring.  <br /></td></tr>
 <tr class="separator:a3f1ec5c3714962d4b01ceb5a50571dca"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -454,6 +460,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_pci_driver_regis
 <tr class="memitem:a5c5c2f463bddbce4cc846e04246f6414" id="r_a5c5c2f463bddbce4cc846e04246f6414"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structspdk__pci__id.html">spdk_pci_id</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5c5c2f463bddbce4cc846e04246f6414">spdk_pci_device_get_id</a> (struct <a class="el" href="structspdk__pci__device.html">spdk_pci_device</a> *dev)</td></tr>
 <tr class="memdesc:a5c5c2f463bddbce4cc846e04246f6414"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the PCI ID of a PCI device.  <br /></td></tr>
 <tr class="separator:a5c5c2f463bddbce4cc846e04246f6414"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeccb5bae4943357ac4c41facc0701b0e" id="r_aeccb5bae4943357ac4c41facc0701b0e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeccb5bae4943357ac4c41facc0701b0e">spdk_pci_device_get_numa_id</a> (struct <a class="el" href="structspdk__pci__device.html">spdk_pci_device</a> *dev)</td></tr>
+<tr class="memdesc:aeccb5bae4943357ac4c41facc0701b0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the NUMA node the PCI device is on.  <br /></td></tr>
+<tr class="separator:aeccb5bae4943357ac4c41facc0701b0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a235f1c632be6dc00aad1cf8fd0314609" id="r_a235f1c632be6dc00aad1cf8fd0314609"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a235f1c632be6dc00aad1cf8fd0314609">spdk_pci_device_get_socket_id</a> (struct <a class="el" href="structspdk__pci__device.html">spdk_pci_device</a> *dev)</td></tr>
 <tr class="memdesc:a235f1c632be6dc00aad1cf8fd0314609"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the NUMA node the PCI device is on.  <br /></td></tr>
 <tr class="separator:a235f1c632be6dc00aad1cf8fd0314609"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -728,7 +737,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_get_tid</b> (void
 </div><div class="memdoc">
 
 <p>An object callback function for memory pool. </p>
-<p>Used by <a class="el" href="#aceeea5b3c77bad4a661751a4f07f0a88" title="Create a thread-safe memory pool with user provided initialization function and argument.">spdk_mempool_create_ctor()</a>. </p>
+<p>Used by <a class="el" href="#a3e93b7c02bc55e4daa4688387379dd9c" title="Create a thread-safe memory pool with user provided initialization function and argument.">spdk_mempool_create_ctor()</a>. </p>
 
 </div>
 </div>
@@ -877,8 +886,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_get_tid</b> (void
 
 </div>
 </div>
-<a id="a21dddac4e06ae7ff0f4eb7554f879ed1" name="a21dddac4e06ae7ff0f4eb7554f879ed1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a21dddac4e06ae7ff0f4eb7554f879ed1">&#9670;&#160;</a></span>spdk_dma_malloc_socket()</h2>
+<a id="ab4fe20882e350f079de74a7762269ca9" name="ab4fe20882e350f079de74a7762269ca9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4fe20882e350f079de74a7762269ca9">&#9670;&#160;</a></span>spdk_dma_malloc_socket()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -901,7 +910,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_get_tid</b> (void
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>socket_id</em></span>&#160;)</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>numa_id</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -912,7 +921,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_get_tid</b> (void
     <tr><td class="paramname">size</td><td>Size in bytes. </td></tr>
     <tr><td class="paramname">align</td><td>If non-zero, the allocated buffer is aligned to a multiple of align. In this case, it must be a power of two. The returned buffer is always aligned to at least cache line size. </td></tr>
     <tr><td class="paramname">unused</td><td><b>Invalid</b>. If not a NULL, the function will fail and return NULL. </td></tr>
-    <tr><td class="paramname">socket_id</td><td>Socket ID to allocate memory on, or SPDK_ENV_SOCKET_ID_ANY for any socket.</td></tr>
+    <tr><td class="paramname">numa_id</td><td>NUMA node ID to allocate memory on, or SPDK_ENV_NUMA_ID_ANY for any NUMA node.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1002,8 +1011,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_get_tid</b> (void
 
 </div>
 </div>
-<a id="a5daaca0e7acc476f10f5f08bc7a492c4" name="a5daaca0e7acc476f10f5f08bc7a492c4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5daaca0e7acc476f10f5f08bc7a492c4">&#9670;&#160;</a></span>spdk_dma_zmalloc_socket()</h2>
+<a id="a88713378539ddf4d9b3adb9eb20aa2e5" name="a88713378539ddf4d9b3adb9eb20aa2e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88713378539ddf4d9b3adb9eb20aa2e5">&#9670;&#160;</a></span>spdk_dma_zmalloc_socket()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1026,7 +1035,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_get_tid</b> (void
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>socket_id</em></span>&#160;)</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>numa_id</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1038,7 +1047,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_get_tid</b> (void
     <tr><td class="paramname">size</td><td>Size in bytes. </td></tr>
     <tr><td class="paramname">align</td><td>If non-zero, the allocated buffer is aligned to a multiple of align. In this case, it must be a power of two. The returned buffer is always aligned to at least cache line size. </td></tr>
     <tr><td class="paramname">unused</td><td><b>Invalid</b>. If not a NULL, the function will fail and return NULL. </td></tr>
-    <tr><td class="paramname">socket_id</td><td>Socket ID to allocate memory on, or SPDK_ENV_SOCKET_ID_ANY for any socket.</td></tr>
+    <tr><td class="paramname">numa_id</td><td>NUMA node ID to allocate memory on, or SPDK_ENV_NUMA_ID_ANY for any NUMA node.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1255,6 +1264,32 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_get_tid</b> (void
 
 </div>
 </div>
+<a id="ae81b644ac17c85fb7980d45adfa11a07" name="ae81b644ac17c85fb7980d45adfa11a07"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae81b644ac17c85fb7980d45adfa11a07">&#9670;&#160;</a></span>spdk_env_get_numa_id()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t spdk_env_get_numa_id </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>core</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the NUMA node ID for the given core. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">core</td><td>CPU core to query.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the NUMA node ID for the given core. </dd></dl>
+
+</div>
+</div>
 <a id="ab18052aa1bc0ff634ffc0ce11c577d65" name="ab18052aa1bc0ff634ffc0ce11c577d65"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab18052aa1bc0ff634ffc0ce11c577d65">&#9670;&#160;</a></span>spdk_env_get_socket_id()</h2>
 
@@ -1270,14 +1305,15 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_get_tid</b> (void
       </table>
 </div><div class="memdoc">
 
-<p>Get the socket ID for the given core. </p>
+<p>Get the NUMA node ID for the given core. </p>
+<p>Deprecated, use <a class="el" href="#ae81b644ac17c85fb7980d45adfa11a07">spdk_env_get_numa_id()</a> instead.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">core</td><td>CPU core to query.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>the socket ID for the given core. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>the NUMA node ID for the given core. </dd></dl>
 
 </div>
 </div>
@@ -1386,7 +1422,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_get_tid</b> (void
       </table>
 </div><div class="memdoc">
 
-<p>Free buffer memory that was previously allocated with <a class="el" href="#a438308ed889e1fec2a6400f150c31898" title="Allocate dma/sharable memory based on a given dma_flg.">spdk_malloc()</a> or <a class="el" href="#a5b5eae15a8ec36b34a0f50c9daa33d1a" title="Allocate dma/sharable memory based on a given dma_flg.">spdk_zmalloc()</a>. </p>
+<p>Free buffer memory that was previously allocated with <a class="el" href="#a1c8b92b52bf42f362c23e7a02056d67e" title="Allocate dma/sharable memory based on a given dma_flg.">spdk_malloc()</a> or <a class="el" href="#a90fe67422742ec001158425f9dfee408" title="Allocate dma/sharable memory based on a given dma_flg.">spdk_zmalloc()</a>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">buf</td><td>Buffer to free. </td></tr>
@@ -1456,8 +1492,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_get_tid</b> (void
 
 </div>
 </div>
-<a id="a438308ed889e1fec2a6400f150c31898" name="a438308ed889e1fec2a6400f150c31898"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a438308ed889e1fec2a6400f150c31898">&#9670;&#160;</a></span>spdk_malloc()</h2>
+<a id="a1c8b92b52bf42f362c23e7a02056d67e" name="a1c8b92b52bf42f362c23e7a02056d67e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c8b92b52bf42f362c23e7a02056d67e">&#9670;&#160;</a></span>spdk_malloc()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1480,7 +1516,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_get_tid</b> (void
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>socket_id</em>, </span></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>numa_id</em>, </span></td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1497,7 +1533,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_get_tid</b> (void
     <tr><td class="paramname">size</td><td>Size in bytes. </td></tr>
     <tr><td class="paramname">align</td><td>If non-zero, the allocated buffer is aligned to a multiple of align. In this case, it must be a power of two. The returned buffer is always aligned to at least cache line size. </td></tr>
     <tr><td class="paramname">unused</td><td><b>Invalid</b>. If not a NULL, the function will fail and return NULL. </td></tr>
-    <tr><td class="paramname">socket_id</td><td>Socket ID to allocate memory on, or SPDK_ENV_SOCKET_ID_ANY for any socket. </td></tr>
+    <tr><td class="paramname">numa_id</td><td>NUMA node ID to allocate memory on, or SPDK_ENV_NUMA_ID_ANY for any NUMA node. </td></tr>
     <tr><td class="paramname">flags</td><td>Combination of SPDK_MALLOC flags (<a class="el" href="#a7f065a5e897ff548b2dbf0996608929a">SPDK_MALLOC_DMA</a>, <a class="el" href="#ad1660ffa6731090ef3f480c295a87dba">SPDK_MALLOC_SHARE</a>). At least one flag must be specified.</td></tr>
   </table>
   </dd>
@@ -1840,8 +1876,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_get_tid</b> (void
 
 </div>
 </div>
-<a id="a2bd81b2bc36c926eec94c510fa257561" name="a2bd81b2bc36c926eec94c510fa257561"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2bd81b2bc36c926eec94c510fa257561">&#9670;&#160;</a></span>spdk_mempool_create()</h2>
+<a id="aa49778e7aa649702d93ec00c7de86670" name="aa49778e7aa649702d93ec00c7de86670"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa49778e7aa649702d93ec00c7de86670">&#9670;&#160;</a></span>spdk_mempool_create()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1869,7 +1905,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_get_tid</b> (void
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>socket_id</em></span>&#160;)</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>numa_id</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1881,7 +1917,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_get_tid</b> (void
     <tr><td class="paramname">count</td><td>Count of elements. </td></tr>
     <tr><td class="paramname">ele_size</td><td>Element size in bytes. </td></tr>
     <tr><td class="paramname">cache_size</td><td>How many elements may be cached in per-core caches. Use SPDK_MEMPOOL_DEFAULT_CACHE_SIZE for a reasonable default, or 0 for no per-core cache. </td></tr>
-    <tr><td class="paramname">socket_id</td><td>Socket ID to allocate memory on, or SPDK_ENV_SOCKET_ID_ANY for any socket.</td></tr>
+    <tr><td class="paramname">numa_id</td><td>NUMA node ID to allocate memory on, or SPDK_ENV_NUMA_ID_ANY for any NUMA node.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1889,8 +1925,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_get_tid</b> (void
 
 </div>
 </div>
-<a id="aceeea5b3c77bad4a661751a4f07f0a88" name="aceeea5b3c77bad4a661751a4f07f0a88"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aceeea5b3c77bad4a661751a4f07f0a88">&#9670;&#160;</a></span>spdk_mempool_create_ctor()</h2>
+<a id="a3e93b7c02bc55e4daa4688387379dd9c" name="a3e93b7c02bc55e4daa4688387379dd9c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e93b7c02bc55e4daa4688387379dd9c">&#9670;&#160;</a></span>spdk_mempool_create_ctor()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1918,7 +1954,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_get_tid</b> (void
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>socket_id</em>, </span></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>numa_id</em>, </span></td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1940,7 +1976,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_get_tid</b> (void
     <tr><td class="paramname">count</td><td>Count of elements. </td></tr>
     <tr><td class="paramname">ele_size</td><td>Element size in bytes. </td></tr>
     <tr><td class="paramname">cache_size</td><td>How many elements may be cached in per-core caches. Use SPDK_MEMPOOL_DEFAULT_CACHE_SIZE for a reasonable default, or 0 for no per-core cache. </td></tr>
-    <tr><td class="paramname">socket_id</td><td>Socket ID to allocate memory on, or SPDK_ENV_SOCKET_ID_ANY for any socket. </td></tr>
+    <tr><td class="paramname">numa_id</td><td>NUMA node ID to allocate memory on, or SPDK_ENV_NUMA_ID_ANY for any NUMA node. </td></tr>
     <tr><td class="paramname">obj_init</td><td>User provided object callback initialization function. </td></tr>
     <tr><td class="paramname">obj_init_arg</td><td>User provided callback initialization function argument.</td></tr>
   </table>
@@ -2277,8 +2313,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_get_tid</b> (void
 
 </div>
 </div>
-<a id="aa59e874b708cb02af0d293d42f3095da" name="aa59e874b708cb02af0d293d42f3095da"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa59e874b708cb02af0d293d42f3095da">&#9670;&#160;</a></span>spdk_memzone_reserve()</h2>
+<a id="a35cbb729d3226236e47d2bde3bfb038c" name="a35cbb729d3226236e47d2bde3bfb038c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a35cbb729d3226236e47d2bde3bfb038c">&#9670;&#160;</a></span>spdk_memzone_reserve()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2296,7 +2332,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_get_tid</b> (void
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>socket_id</em>, </span></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>numa_id</em>, </span></td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -2306,13 +2342,13 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_get_tid</b> (void
       </table>
 </div><div class="memdoc">
 
-<p>Reserve a named, process shared memory zone with the given size, socket_id and flags. </p>
+<p>Reserve a named, process shared memory zone with the given size, numa_id and flags. </p>
 <p>Unless <code>SPDK_MEMZONE_NO_IOVA_CONTIG</code> flag is provided, the returned memory will be IOVA contiguous.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">name</td><td>Name to set for this memory zone. </td></tr>
     <tr><td class="paramname">len</td><td>Length in bytes. </td></tr>
-    <tr><td class="paramname">socket_id</td><td>Socket ID to allocate memory on, or SPDK_ENV_SOCKET_ID_ANY for any socket. </td></tr>
+    <tr><td class="paramname">numa_id</td><td>NUMA node ID to allocate memory on, or SPDK_ENV_NUMA_ID_ANY for any NUMA node. </td></tr>
     <tr><td class="paramname">flags</td><td>Flags to set for this memory zone.</td></tr>
   </table>
   </dd>
@@ -2321,8 +2357,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_get_tid</b> (void
 
 </div>
 </div>
-<a id="a1900db7923fd874ba330e6f0112f4191" name="a1900db7923fd874ba330e6f0112f4191"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1900db7923fd874ba330e6f0112f4191">&#9670;&#160;</a></span>spdk_memzone_reserve_aligned()</h2>
+<a id="ae00d345239fd85b7f8d7fbbb2ab86844" name="ae00d345239fd85b7f8d7fbbb2ab86844"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae00d345239fd85b7f8d7fbbb2ab86844">&#9670;&#160;</a></span>spdk_memzone_reserve_aligned()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2340,7 +2376,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_get_tid</b> (void
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>socket_id</em>, </span></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>numa_id</em>, </span></td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -2355,13 +2391,13 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_get_tid</b> (void
       </table>
 </div><div class="memdoc">
 
-<p>Reserve a named, process shared memory zone with the given size, socket_id, flags and alignment. </p>
+<p>Reserve a named, process shared memory zone with the given size, numa_id, flags and alignment. </p>
 <p>Unless <code>SPDK_MEMZONE_NO_IOVA_CONTIG</code> flag is provided, the returned memory will be IOVA contiguous.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">name</td><td>Name to set for this memory zone. </td></tr>
     <tr><td class="paramname">len</td><td>Length in bytes. </td></tr>
-    <tr><td class="paramname">socket_id</td><td>Socket ID to allocate memory on, or SPDK_ENV_SOCKET_ID_ANY for any socket. </td></tr>
+    <tr><td class="paramname">numa_id</td><td>NUMA node ID to allocate memory on, or SPDK_ENV_NUMA_ID_ANY for any NUMA node. </td></tr>
     <tr><td class="paramname">flags</td><td>Flags to set for this memory zone. </td></tr>
     <tr><td class="paramname">align</td><td>Alignment for resulting memzone. Must be a power of 2.</td></tr>
   </table>
@@ -3170,6 +3206,32 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_get_tid</b> (void
 
 </div>
 </div>
+<a id="aeccb5bae4943357ac4c41facc0701b0e" name="aeccb5bae4943357ac4c41facc0701b0e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeccb5bae4943357ac4c41facc0701b0e">&#9670;&#160;</a></span>spdk_pci_device_get_numa_id()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_pci_device_get_numa_id </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structspdk__pci__device.html">spdk_pci_device</a> *</td>          <td class="paramname"><span class="paramname"><em>dev</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the NUMA node the PCI device is on. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dev</td><td>PCI device.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>NUMA node index (&gt;= 0). </dd></dl>
+
+</div>
+</div>
 <a id="a69b979316610b357a35d03500c3059af" name="a69b979316610b357a35d03500c3059af"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a69b979316610b357a35d03500c3059af">&#9670;&#160;</a></span>spdk_pci_device_get_serial_number()</h2>
 
@@ -3224,6 +3286,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_get_tid</b> (void
 </div><div class="memdoc">
 
 <p>Get the NUMA node the PCI device is on. </p>
+<p>Deprecated. Use <code>ref <a class="el" href="#aeccb5bae4943357ac4c41facc0701b0e" title="Get the NUMA node the PCI device is on.">spdk_pci_device_get_numa_id()</a></code> instead.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">dev</td><td>PCI device.</td></tr>
@@ -3942,8 +4005,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_get_tid</b> (void
 
 </div>
 </div>
-<a id="a755018de422c4376f339e82e594f14ae" name="a755018de422c4376f339e82e594f14ae"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a755018de422c4376f339e82e594f14ae">&#9670;&#160;</a></span>spdk_ring_create()</h2>
+<a id="af0d31e938cc430b730cc4fec473a94f6" name="af0d31e938cc430b730cc4fec473a94f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af0d31e938cc430b730cc4fec473a94f6">&#9670;&#160;</a></span>spdk_ring_create()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3961,7 +4024,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_get_tid</b> (void
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>socket_id</em></span>&#160;)</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>numa_id</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -3971,7 +4034,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_get_tid</b> (void
   <table class="params">
     <tr><td class="paramname">type</td><td>Type for the ring. (SPDK_RING_TYPE_SP_SC or SPDK_RING_TYPE_MP_SC). </td></tr>
     <tr><td class="paramname">count</td><td>Size of the ring in elements. </td></tr>
-    <tr><td class="paramname">socket_id</td><td>Socket ID to allocate memory on, or SPDK_ENV_SOCKET_ID_ANY for any socket.</td></tr>
+    <tr><td class="paramname">numa_id</td><td>NUMA node ID to allocate memory on, or SPDK_ENV_NUMA_ID_ANY for any NUMA node.</td></tr>
   </table>
   </dd>
 </dl>
@@ -4115,8 +4178,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_get_tid</b> (void
 
 </div>
 </div>
-<a id="a5b5eae15a8ec36b34a0f50c9daa33d1a" name="a5b5eae15a8ec36b34a0f50c9daa33d1a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5b5eae15a8ec36b34a0f50c9daa33d1a">&#9670;&#160;</a></span>spdk_zmalloc()</h2>
+<a id="a90fe67422742ec001158425f9dfee408" name="a90fe67422742ec001158425f9dfee408"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90fe67422742ec001158425f9dfee408">&#9670;&#160;</a></span>spdk_zmalloc()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4139,7 +4202,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_get_tid</b> (void
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>socket_id</em>, </span></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>numa_id</em>, </span></td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -4156,7 +4219,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_get_tid</b> (void
     <tr><td class="paramname">size</td><td>Size in bytes. </td></tr>
     <tr><td class="paramname">align</td><td>If non-zero, the allocated buffer is aligned to a multiple of align. In this case, it must be a power of two. The returned buffer is always aligned to at least cache line size. </td></tr>
     <tr><td class="paramname">unused</td><td><b>Invalid</b>. If not a NULL, the function will fail and return NULL. </td></tr>
-    <tr><td class="paramname">socket_id</td><td>Socket ID to allocate memory on, or SPDK_ENV_SOCKET_ID_ANY for any socket. </td></tr>
+    <tr><td class="paramname">numa_id</td><td>NUMA node ID to allocate memory on, or SPDK_ENV_NUMA_ID_ANY for any NUMA node. </td></tr>
     <tr><td class="paramname">flags</td><td>Combination of SPDK_MALLOC flags (<a class="el" href="#a7f065a5e897ff548b2dbf0996608929a">SPDK_MALLOC_DMA</a>, <a class="el" href="#ad1660ffa6731090ef3f480c295a87dba">SPDK_MALLOC_SHARE</a>).</td></tr>
   </table>
   </dd>

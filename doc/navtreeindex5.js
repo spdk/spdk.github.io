@@ -1,5 +1,11 @@
 var NAVTREEINDEX5 =
 {
+"jsonrpc.html#rpc_bdev_nvme_add_error_injection":[3,9,13,9],
+"jsonrpc.html#rpc_bdev_nvme_apply_firmware":[3,9,5,51],
+"jsonrpc.html#rpc_bdev_nvme_attach_controller":[3,9,5,34],
+"jsonrpc.html#rpc_bdev_nvme_cuse_register":[3,9,5,47],
+"jsonrpc.html#rpc_bdev_nvme_cuse_unregister":[3,9,5,48],
+"jsonrpc.html#rpc_bdev_nvme_detach_controller":[3,9,5,36],
 "jsonrpc.html#rpc_bdev_nvme_disable_controller":[3,9,5,39],
 "jsonrpc.html#rpc_bdev_nvme_enable_controller":[3,9,5,38],
 "jsonrpc.html#rpc_bdev_nvme_get_controller_health_info":[3,9,5,53],
@@ -243,11 +249,5 @@ var NAVTREEINDEX5 =
 "jsonrpc_8h.html#ae7d1dc3ef99ed408859d9a5f6802ad65":[15,0,0,0,38,20],
 "jsonrpc_8h.html#aeeb31df31b1ad5b34713611ce8ca9291":[15,0,0,0,38,21],
 "jsonrpc_8h.html#af340c1cd0f0ce8c00caac2713033f28f":[15,0,0,0,38,10],
-"jsonrpc_8h.html#af3d607f5a980bf9eb793ef2b553f679a":[15,0,0,0,38,16],
-"jsonrpc_proxy.html":[3,10],
-"libraries.html":[3,1],
-"libraries.html#conventions":[3,1,1],
-"libraries.html#env_replacement":[3,1,2,2],
-"libraries.html#headers":[3,1,1,0],
-"libraries.html#lib":[3,1,0,0]
+"jsonrpc_8h.html#af3d607f5a980bf9eb793ef2b553f679a":[15,0,0,0,38,16]
 };

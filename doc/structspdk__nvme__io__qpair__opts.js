@@ -6,5 +6,5 @@ var structspdk__nvme__io__qpair__opts =
     [ "io_queue_requests", "structspdk__nvme__io__qpair__opts.html#a4af594ef7f8b7e590662633c926146b4", null ],
     [ "io_queue_size", "structspdk__nvme__io__qpair__opts.html#adbb8aa3f64bc021ea5e9fddec6796341", null ],
     [ "qprio", "structspdk__nvme__io__qpair__opts.html#a9a9ae75991da44a7fbf06a3c82161a6d", null ],
-    [ "sq", "structspdk__nvme__io__qpair__opts.html#ae6e1c51ab6abcbffc12e82c116e3dc64", null ]
+    [ "sq", "structspdk__nvme__io__qpair__opts.html#a3286c208b5357b21b82e39a80ffe936d", null ]
 ];

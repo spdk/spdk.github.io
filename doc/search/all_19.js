@@ -108,6 +108,6 @@ var searchData=
   ['vqrfap_105',['vqrfap',['../structspdk__nvme__primary__ctrl__capabilities.html#a9d87b4832999b7aed3ef612d1c80669a',1,'spdk_nvme_primary_ctrl_capabilities']]],
   ['vs_106',['vs',['../structspdk__ocssd__geometry__data.html#a4aa677e5f24826c750773b4201cd1ea3',1,'spdk_ocssd_geometry_data::vs'],['../structspdk__nvme__registers.html#a6b09cae2aad064302d6415dbaf8346e2',1,'spdk_nvme_registers::vs']]],
   ['vs_20user_107',['Kernel vs User',['../idxd.html#idxd_configs',1,'']]],
-  ['vwc_108',['vwc',['../structspdk__nvme__ctrlr__data.html#a2429271c856d9f89b22444eedadf89ae',1,'spdk_nvme_ctrlr_data']]],
-  ['vwci_109',['vwci',['../structspdk__nvme__ctrlr__data.html#ab0e3d385bae5e36dec7163779e7badb5',1,'spdk_nvme_ctrlr_data']]]
+  ['vwc_108',['vwc',['../structspdk__nvme__ctrlr__data.html#a3b90f43310001881c358421da3071403',1,'spdk_nvme_ctrlr_data']]],
+  ['vwci_109',['vwci',['../structspdk__nvme__ctrlr__data.html#a52581a7d5478c51e11b5be8993ff4ce0',1,'spdk_nvme_ctrlr_data']]]
 ];
