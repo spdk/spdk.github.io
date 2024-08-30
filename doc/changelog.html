@@ -100,6 +100,7 @@ $(function(){initNavTree('changelog.html',''); initResizable(); });
 <h1><a class="anchor" id="changelog-v24-09"></a>
 v24.09: (Upcoming Release)</h1>
 <h2>nvmf</h2>
+<p>Added support for interrupt mode in the NVMe-of TCP transport.</p>
 <p>Enable iobuf based queuing for nvmf requests when there is not enough free buffers available. Perspective from the user of the spdk_nvmf_request_get_buffers() API is that whenever all iovecs are allocated immediately then nothing changes compared to the previous implementation. If iobuf does not have enough buffers then there are two flows now:</p>
 <ul>
 <li>if req_get_buffers_done is not set in the <a class="el" href="structspdk__nvmf__transport__ops.html">spdk_nvmf_transport_ops</a> then again, nothing changes. All (if there were any) ioves are released and caller must try again later.</li>
@@ -147,7 +148,7 @@ v24.09: (Upcoming Release)</h1>
 <p>SPDK applications can now start with <code>--wait-for-rpc</code> and JSON configuration provided at the same time.</p>
 <p>Struct <code><a class="el" href="structspdk__app__opts.html" title="Event framework initialization options.">spdk_app_opts</a></code> was extended by <code>json_data</code> and <code>json_data_size</code> fields allowing user to provide a buffer with JSON config as alternative to providing JSON config file path (these fields are mutually exclusive).</p>
 <h2>init</h2>
-<p>Function <code><a class="el" href="init_8h.html#ab7168c69aeb807fe235c2d1d6900ca72" title="Like spdk_subsystem_init, but additionally configure each subsystem using the provided JSON config fi...">spdk_subsystem_init_from_json_config()</a></code> is deprecated and will be removed in 24.09 release. Please use <code><a class="el" href="init_8h.html#ad851acebf6332da09dd01d52d5146d15" title="Loads RPC configuration from provided JSON for current RPC state.">spdk_subsystem_load_config()</a></code> instead.</p>
+<p>Function <code>spdk_subsystem_init_from_json_config()</code> is deprecated and will be removed in 24.09 release. Please use <code><a class="el" href="init_8h.html#ad851acebf6332da09dd01d52d5146d15" title="Loads RPC configuration from provided JSON for current RPC state.">spdk_subsystem_load_config()</a></code> instead.</p>
 <h2>iscsi</h2>
 <p>Added <code>iscsi_get_stats</code> RPC method to get stat information about all active connections.</p>
 <p>Added <code>iscsi_enable_histogram</code> RPC method to enable or disable histogram for specified iSCSI target.</p>

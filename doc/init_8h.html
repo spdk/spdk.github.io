@@ -144,9 +144,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_rpc_finish</b> (
 <tr class="memitem:aa0d0a3b14e1b3dbbfdc5868167099ef1" id="r_aa0d0a3b14e1b3dbbfdc5868167099ef1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa0d0a3b14e1b3dbbfdc5868167099ef1">spdk_subsystem_init</a> (spdk_subsystem_init_fn cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:aa0d0a3b14e1b3dbbfdc5868167099ef1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Begin the initialization process for all SPDK subsystems.  <br /></td></tr>
 <tr class="separator:aa0d0a3b14e1b3dbbfdc5868167099ef1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7168c69aeb807fe235c2d1d6900ca72" id="r_ab7168c69aeb807fe235c2d1d6900ca72"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab7168c69aeb807fe235c2d1d6900ca72">spdk_subsystem_init_from_json_config</a> (const char *json_config_file, const char *rpc_addr, spdk_subsystem_init_fn cb_fn, void *cb_arg, bool stop_on_error)</td></tr>
-<tr class="memdesc:ab7168c69aeb807fe235c2d1d6900ca72"><td class="mdescLeft">&#160;</td><td class="mdescRight">Like spdk_subsystem_init, but additionally configure each subsystem using the provided JSON config file.  <br /></td></tr>
-<tr class="separator:ab7168c69aeb807fe235c2d1d6900ca72"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad851acebf6332da09dd01d52d5146d15" id="r_ad851acebf6332da09dd01d52d5146d15"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad851acebf6332da09dd01d52d5146d15">spdk_subsystem_load_config</a> (void *json, ssize_t json_size, spdk_subsystem_init_fn cb_fn, void *cb_arg, bool stop_on_error)</td></tr>
 <tr class="memdesc:ad851acebf6332da09dd01d52d5146d15"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads RPC configuration from provided JSON for current RPC state.  <br /></td></tr>
 <tr class="separator:ad851acebf6332da09dd01d52d5146d15"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -354,56 +351,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_rpc_finish</b> (
   <table class="params">
     <tr><td class="paramname">cb_fn</td><td>Function called when the process is complete. </td></tr>
     <tr><td class="paramname">cb_arg</td><td>User context passed to cb_fn. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="ab7168c69aeb807fe235c2d1d6900ca72" name="ab7168c69aeb807fe235c2d1d6900ca72"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab7168c69aeb807fe235c2d1d6900ca72">&#9670;&#160;</a></span>spdk_subsystem_init_from_json_config()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void spdk_subsystem_init_from_json_config </td>
-          <td>(</td>
-          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>json_config_file</em>, </span></td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>rpc_addr</em>, </span></td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">spdk_subsystem_init_fn</td>          <td class="paramname"><span class="paramname"><em>cb_fn</em>, </span></td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void *</td>          <td class="paramname"><span class="paramname"><em>cb_arg</em>, </span></td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>stop_on_error</em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Like spdk_subsystem_init, but additionally configure each subsystem using the provided JSON config file. </p>
-<p>This will automatically start a JSON RPC server and then stop it.</p>
-<p>Deprecated - will be removed in 24.09 SPDK release. Please use <a class="el" href="#ad851acebf6332da09dd01d52d5146d15">spdk_subsystem_load_config</a>.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">json_config_file</td><td>Path to a JSON config file. </td></tr>
-    <tr><td class="paramname">rpc_addr</td><td>Path to a unix domain socket to send configuration RPCs to. </td></tr>
-    <tr><td class="paramname">cb_fn</td><td>Function called when the process is complete. </td></tr>
-    <tr><td class="paramname">cb_arg</td><td>User context passed to cb_fn. </td></tr>
-    <tr><td class="paramname">stop_on_error</td><td>Whether to stop initialization if one of the JSON RPCs fails. </td></tr>
   </table>
   </dd>
 </dl>

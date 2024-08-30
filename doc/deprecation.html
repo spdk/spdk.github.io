@@ -105,9 +105,6 @@ $(function(){initNavTree('deprecation.html',''); initResizable(); });
 <h2>nvme</h2>
 <h3><code><a class="el" href="structspdk__nvme__ctrlr__opts.html#a30f3fa93d23c91e76afa426fb74a8ece" title="Set PSK and enable SSL socket implementation for NVMe/TCP only.">spdk_nvme_ctrlr_opts.psk</a></code></h3>
 <p>Passing NVMe/TLS pre-shared keys via <code><a class="el" href="structspdk__nvme__ctrlr__opts.html#a30f3fa93d23c91e76afa426fb74a8ece" title="Set PSK and enable SSL socket implementation for NVMe/TCP only.">spdk_nvme_ctrlr_opts.psk</a></code> is deprecated and this field will be removed in the v24.09 release. Instead, a key obtained from the keyring library should be passed in <code><a class="el" href="structspdk__nvme__ctrlr__opts.html#a3dbb37bcaf3ffa55d8e53efb054d1995" title="Pre-shared key for NVMe/TCP&#39;s TLS connection.">spdk_nvme_ctrlr_opts.tls_psk</a></code>.</p>
-<h2>init</h2>
-<h3><code>spdk_subsystem_init_from_json_config</code></h3>
-<p>The function is deprecated and will be removed in 24.09 release. Please use <code>spdk_subsystem_load_config</code> instead.</p>
 <h2>nvmf</h2>
 <h3><code>decode_rpc_listen_address</code></h3>
 <p><code>transport</code> field in <code>listen_addresses</code> decoders is deprecated. <code>trtype</code> field should be used instead. <code>transport</code> field will be removed in 24.09 release.</p>

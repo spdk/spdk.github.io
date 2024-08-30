@@ -9,6 +9,5 @@ var init_8h =
     [ "spdk_subsystem_exists", "init_8h.html#a8f226f924ed036911f0af0e5456999b5", null ],
     [ "spdk_subsystem_fini", "init_8h.html#a4beb9b1736d0ae82c2a5e764e1c5687b", null ],
     [ "spdk_subsystem_init", "init_8h.html#aa0d0a3b14e1b3dbbfdc5868167099ef1", null ],
-    [ "spdk_subsystem_init_from_json_config", "init_8h.html#ab7168c69aeb807fe235c2d1d6900ca72", null ],
     [ "spdk_subsystem_load_config", "init_8h.html#ad851acebf6332da09dd01d52d5146d15", null ]
 ];
