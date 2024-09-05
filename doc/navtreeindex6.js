@@ -1,5 +1,7 @@
 var NAVTREEINDEX6 =
 {
+"jsonrpc_8h.html#af3d607f5a980bf9eb793ef2b553f679a":[15,0,0,0,38,16],
+"jsonrpc_proxy.html":[3,10],
 "libraries.html":[3,1],
 "libraries.html#conventions":[3,1,1],
 "libraries.html#env_replacement":[3,1,2,2],
@@ -247,7 +249,5 @@ var NAVTREEINDEX6 =
 "nvme_8h.html#a7dc6bb842e168a68972ec46cc35591ae":[15,0,0,0,45,98],
 "nvme_8h.html#a8145be511777b2c8dc218b1c1e1e2c89":[15,0,0,0,45,199],
 "nvme_8h.html#a82cdb425c9fad7b94ad0b8f5c27bb8b2":[15,0,0,0,45,215],
-"nvme_8h.html#a8505b00dfaa6123d784c17c293cf3ffc":[15,0,0,0,45,36],
-"nvme_8h.html#a85806a7605a104a705e7f9d3d087e4cb":[15,0,0,0,45,179],
-"nvme_8h.html#a85ec189f50d0f78d73a54413370401f5":[15,0,0,0,45,65]
+"nvme_8h.html#a8505b00dfaa6123d784c17c293cf3ffc":[15,0,0,0,45,36]
 };

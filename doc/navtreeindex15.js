@@ -1,5 +1,7 @@
 var NAVTREEINDEX15 =
 {
+"structspdk__nvmf__fabric__prop__set__cmd.html":[14,0,331],
+"structspdk__nvmf__fc__cmnd__iu.html":[14,0,332],
 "structspdk__nvmf__fc__ersp__iu.html":[14,0,333],
 "structspdk__nvmf__fc__frame__hdr.html":[14,0,334],
 "structspdk__nvmf__fc__ls__acc__hdr.html":[14,0,335],
@@ -247,7 +249,5 @@ var NAVTREEINDEX15 =
 "structspdk__thread__stats.html":[14,0,436],
 "structspdk__trace__argument.html":[14,0,437],
 "structspdk__trace__entry.html":[14,0,438],
-"structspdk__trace__entry__buffer.html":[14,0,439],
-"structspdk__trace__file.html":[14,0,440],
-"structspdk__trace__file.html#a28999274af3087e6f5d8d26781fc64c9":[14,0,440,0]
+"structspdk__trace__entry__buffer.html":[14,0,439]
 };

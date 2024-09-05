@@ -160,7 +160,10 @@ Enumerations</h2></td></tr>
 &#160;&#160;<b>SPDK_ACCEL_OPC_DIF_VERIFY_COPY</b> = 12
 , <b>SPDK_ACCEL_OPC_DIF_GENERATE</b> = 13
 , <b>SPDK_ACCEL_OPC_DIF_GENERATE_COPY</b> = 14
-, <b>SPDK_ACCEL_OPC_LAST</b> = 15
+, <b>SPDK_ACCEL_OPC_DIX_GENERATE</b> = 15
+, <br />
+&#160;&#160;<b>SPDK_ACCEL_OPC_DIX_VERIFY</b> = 16
+, <b>SPDK_ACCEL_OPC_LAST</b> = 17
 <br />
  }</td></tr>
 <tr class="separator:a9b864a9a46bd4d2e0612d55cf682bc71"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -240,6 +243,12 @@ Functions</h2></td></tr>
 <tr class="memitem:a2289636004169b418ed4e2a86217e4ff" id="r_a2289636004169b418ed4e2a86217e4ff"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2289636004169b418ed4e2a86217e4ff">spdk_accel_submit_dif_generate_copy</a> (struct spdk_io_channel *ch, struct iovec *dst_iovs, size_t dst_iovcnt, struct iovec *src_iovs, size_t src_iovcnt, uint32_t num_blocks, const struct <a class="el" href="structspdk__dif__ctx.html">spdk_dif_ctx</a> *ctx, <a class="el" href="#a6ba836b7b128829ba185eadb2c60476a">spdk_accel_completion_cb</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:a2289636004169b418ed4e2a86217e4ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submit a Data Integrity Field (DIF) copy and generate request.  <br /></td></tr>
 <tr class="separator:a2289636004169b418ed4e2a86217e4ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8763792641c617636d907a9b123907c8" id="r_a8763792641c617636d907a9b123907c8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8763792641c617636d907a9b123907c8">spdk_accel_submit_dix_generate</a> (struct spdk_io_channel *ch, struct iovec *iovs, size_t iovcnt, struct iovec *md_iov, uint32_t num_blocks, const struct <a class="el" href="structspdk__dif__ctx.html">spdk_dif_ctx</a> *ctx, <a class="el" href="#a6ba836b7b128829ba185eadb2c60476a">spdk_accel_completion_cb</a> cb_fn, void *cb_arg)</td></tr>
+<tr class="memdesc:a8763792641c617636d907a9b123907c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submit a Data Integrity Extension (DIX) generate operation.  <br /></td></tr>
+<tr class="separator:a8763792641c617636d907a9b123907c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2214b11aec558d8cb29280968c09d0c" id="r_af2214b11aec558d8cb29280968c09d0c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af2214b11aec558d8cb29280968c09d0c">spdk_accel_submit_dix_verify</a> (struct spdk_io_channel *ch, struct iovec *iovs, size_t iovcnt, struct iovec *md_iov, uint32_t num_blocks, const struct <a class="el" href="structspdk__dif__ctx.html">spdk_dif_ctx</a> *ctx, struct <a class="el" href="structspdk__dif__error.html">spdk_dif_error</a> *err, <a class="el" href="#a6ba836b7b128829ba185eadb2c60476a">spdk_accel_completion_cb</a> cb_fn, void *cb_arg)</td></tr>
+<tr class="memdesc:af2214b11aec558d8cb29280968c09d0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submit a Data Integrity Extension (DIX) verify request.  <br /></td></tr>
+<tr class="separator:af2214b11aec558d8cb29280968c09d0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aae669393a2c7c74cdfbd05216d41a086" id="r_aae669393a2c7c74cdfbd05216d41a086"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aae669393a2c7c74cdfbd05216d41a086">spdk_accel_append_copy</a> (struct spdk_accel_sequence **seq, struct spdk_io_channel *ch, struct iovec *dst_iovs, uint32_t dst_iovcnt, struct spdk_memory_domain *dst_domain, void *dst_domain_ctx, struct iovec *src_iovs, uint32_t src_iovcnt, struct spdk_memory_domain *src_domain, void *src_domain_ctx, <a class="el" href="#abaf556b5e1b63b5237faff3952a3bb46">spdk_accel_step_cb</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:aae669393a2c7c74cdfbd05216d41a086"><td class="mdescLeft">&#160;</td><td class="mdescRight">Append a copy operation to a sequence.  <br /></td></tr>
 <tr class="separator:aae669393a2c7c74cdfbd05216d41a086"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2837,6 +2846,148 @@ Functions</h2></td></tr>
     <tr><td class="paramname">num_blocks</td><td>Number of data blocks to process. </td></tr>
     <tr><td class="paramname">ctx</td><td>DIF context. Contains the DIF configuration values, including the reference Application Tag value and initial value of the Reference Tag to insert. </td></tr>
     <tr><td class="paramname">err</td><td>DIF error detailed information. Note: the user must ensure the validity of this pointer throughout the entire operation because it is not validated along the processing path. </td></tr>
+    <tr><td class="paramname">cb_fn</td><td>Called when this operation completes. </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>Callback argument.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, negative errno on failure. </dd></dl>
+
+</div>
+</div>
+<a id="a8763792641c617636d907a9b123907c8" name="a8763792641c617636d907a9b123907c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8763792641c617636d907a9b123907c8">&#9670;&#160;</a></span>spdk_accel_submit_dix_generate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_accel_submit_dix_generate </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_io_channel *</td>          <td class="paramname"><span class="paramname"><em>ch</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct iovec *</td>          <td class="paramname"><span class="paramname"><em>iovs</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>iovcnt</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct iovec *</td>          <td class="paramname"><span class="paramname"><em>md_iov</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>num_blocks</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const struct <a class="el" href="structspdk__dif__ctx.html">spdk_dif_ctx</a> *</td>          <td class="paramname"><span class="paramname"><em>ctx</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="#a6ba836b7b128829ba185eadb2c60476a">spdk_accel_completion_cb</a></td>          <td class="paramname"><span class="paramname"><em>cb_fn</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *</td>          <td class="paramname"><span class="paramname"><em>cb_arg</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Submit a Data Integrity Extension (DIX) generate operation. </p>
+<p>This operation computes Protection Information (DIX) and inserts it into metadata buffer.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ch</td><td>I/O channel associated with this call. </td></tr>
+    <tr><td class="paramname">iovs</td><td>The source io vector array. The total allocated memory size needs to be at least: num_blocks * block_size_no_md </td></tr>
+    <tr><td class="paramname">iovcnt</td><td>The size of the source io vectors array. </td></tr>
+    <tr><td class="paramname">md_iov</td><td>The metadata vector array. The total allocated memory size needs to be at least: num_blocks * md_size (8B or 16B, depending on the PI format) </td></tr>
+    <tr><td class="paramname">num_blocks</td><td>Number of data blocks to process. </td></tr>
+    <tr><td class="paramname">ctx</td><td>DIX context. Contains the DIX configuration values, including the reference Application Tag value and initial value of the Reference Tag to insert </td></tr>
+    <tr><td class="paramname">cb_fn</td><td>Called when this operation completes. </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>Callback argument.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, negative errno on failure. </dd></dl>
+
+</div>
+</div>
+<a id="af2214b11aec558d8cb29280968c09d0c" name="af2214b11aec558d8cb29280968c09d0c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2214b11aec558d8cb29280968c09d0c">&#9670;&#160;</a></span>spdk_accel_submit_dix_verify()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_accel_submit_dix_verify </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_io_channel *</td>          <td class="paramname"><span class="paramname"><em>ch</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct iovec *</td>          <td class="paramname"><span class="paramname"><em>iovs</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>iovcnt</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct iovec *</td>          <td class="paramname"><span class="paramname"><em>md_iov</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>num_blocks</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const struct <a class="el" href="structspdk__dif__ctx.html">spdk_dif_ctx</a> *</td>          <td class="paramname"><span class="paramname"><em>ctx</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structspdk__dif__error.html">spdk_dif_error</a> *</td>          <td class="paramname"><span class="paramname"><em>err</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="#a6ba836b7b128829ba185eadb2c60476a">spdk_accel_completion_cb</a></td>          <td class="paramname"><span class="paramname"><em>cb_fn</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *</td>          <td class="paramname"><span class="paramname"><em>cb_arg</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Submit a Data Integrity Extension (DIX) verify request. </p>
+<p>This operation computes the Protection Information (DIX) on the data and compares it against the DIX contained in the metadata.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ch</td><td>I/O channel associated with this call. </td></tr>
+    <tr><td class="paramname">iovs</td><td>The io vector array. The total allocated memory size needs to be at least: num_blocks * block_size </td></tr>
+    <tr><td class="paramname">iovcnt</td><td>The size of the io vectors array. </td></tr>
+    <tr><td class="paramname">md_iov</td><td>The metadata vector array. The total allocated memory size needs to be at least: num_blocks * md_size (8B or 16B, depending on the PI format) </td></tr>
+    <tr><td class="paramname">num_blocks</td><td>Number of data blocks to check. </td></tr>
+    <tr><td class="paramname">ctx</td><td>DIX context. Contains the DIF configuration values, including the reference Application Tag value and initial value of the Reference Tag to check Note: the user must ensure the validity of this pointer throughout the entire operation because it is not validated along the processing path. </td></tr>
+    <tr><td class="paramname">err</td><td>DIX error detailed information. Note: the user must ensure the validity of this pointer throughout the entire operation because it is not validated along the processing path. </td></tr>
     <tr><td class="paramname">cb_fn</td><td>Called when this operation completes. </td></tr>
     <tr><td class="paramname">cb_arg</td><td>Callback argument.</td></tr>
   </table>

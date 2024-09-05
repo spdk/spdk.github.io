@@ -52,6 +52,8 @@ var accel_8h =
     [ "spdk_accel_submit_dif_generate_copy", "accel_8h.html#a2289636004169b418ed4e2a86217e4ff", null ],
     [ "spdk_accel_submit_dif_verify", "accel_8h.html#a9c58d3dae8d2ffb15a7cb582ac503bac", null ],
     [ "spdk_accel_submit_dif_verify_copy", "accel_8h.html#aed7eeb394df7c54e37131a5334a31e38", null ],
+    [ "spdk_accel_submit_dix_generate", "accel_8h.html#a8763792641c617636d907a9b123907c8", null ],
+    [ "spdk_accel_submit_dix_verify", "accel_8h.html#af2214b11aec558d8cb29280968c09d0c", null ],
     [ "spdk_accel_submit_dualcast", "accel_8h.html#a402f5ed0f1fac5c37f965a55f0d0bf55", null ],
     [ "spdk_accel_submit_encrypt", "accel_8h.html#ab071bfaad7673954a9bd6a9ca41f1c77", null ],
     [ "spdk_accel_submit_fill", "accel_8h.html#adb62b1e99d9a010c140987eea57f5dc4", null ],
