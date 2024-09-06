@@ -71,24 +71,24 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "about.html",
-"bdev_8h.html#ae720ef13c98f9ba40e6562d4a8582427",
-"blobfs_8h.html#a3e2912cd60cd8ec5e7ac97d69c34923e",
-"env_8h.html#ab4fe20882e350f079de74a7762269ca9",
-"fuse__dispatcher_8h.html#a3d32b616b30d7249059ea6577b769653",
-"jsonrpc.html#rpc_bdev_null_resize",
-"jsonrpc_8h.html#af3d607f5a980bf9eb793ef2b553f679a",
-"nvme_8h.html#a85806a7605a104a705e7f9d3d087e4cb",
-"nvme__spec_8h.html#a3d5e453e4d95b0f5b9bb4de04ace78c4a2bbffe1e18289e3eff1e8ceea26d8489",
-"nvme__spec_8h.html#adf6ad5ec9f8c1aa4c7efc45ee9d646b6ac8b3721eb6c714051f08db20938b31af",
-"nvmf__spec_8h.html#a13b10660d96571b325b48583200af544a4777d676c79f2cabab943c369cc225a1",
-"string_8h.html#abb5ce3fff788d26168203840903d6613",
-"structspdk__bdev__io__internal__fields.html#ab281a8c3223eb35b7f0a7b75d67b6025",
-"structspdk__mbr__partition__entry.html",
-"structspdk__nvme__ns__data.html#a62e4d6afbb536bedde34973cc6f1e234",
-"structspdk__nvmf__fabric__prop__set__cmd.html",
-"structspdk__trace__file.html",
-"unionspdk__nvme__cap__register.html#a9930c21595d81e7eefa8cca0e118450a",
-"vmd.html#vmd_app"
+"bdev_8h.html#ae53f51d91eb11e9ee51bca3b8794c0a7",
+"blobfs_8h.html#a39d7f1424fe8921faeb91a012766370e",
+"env_8h.html#ab480f817ecdd801a0e53a4d8494ffc67",
+"fuse__dispatcher_8h.html#a2cd07d28e4f0b6dd3d081ba379fd4997",
+"jsonrpc.html#rpc_bdev_null_delete",
+"jsonrpc_8h.html#af340c1cd0f0ce8c00caac2713033f28f",
+"nvme_8h.html#a8505b00dfaa6123d784c17c293cf3ffc",
+"nvme__spec_8h.html#a3d5e453e4d95b0f5b9bb4de04ace78c4",
+"nvme__spec_8h.html#adf6ad5ec9f8c1aa4c7efc45ee9d646b6a0bae550fd4027110273cc75986809274",
+"nvmf__spec_8h.html#a13b10660d96571b325b48583200af544a395f6beb248e93e30b153e8db0720c72",
+"string_8h.html#ab81c3a52c60c7390e54437dc5856996b",
+"structspdk__bdev__io__internal__fields.html#a9298f0823356843b9f2bac28b0cc19cf",
+"structspdk__lvs__opts.html#ad72430d6eb4550837aca4946a3990f8e",
+"structspdk__nvme__ns__data.html#a55dc985c0da5776763fb5a0c9e682e11",
+"structspdk__nvmf__fabric__connect__rsp.html",
+"structspdk__trace__argument.html",
+"unionspdk__nvme__cap__register.html#a3c70129c53bf5c82f1151d512075f703",
+"virtio.html#virtio_2mb"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

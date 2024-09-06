@@ -276,6 +276,19 @@ union <a class="el" href="unionspdk__bdev__nvme__ctratt.html">spdk_bdev_nvme_ctr
 <tr class="memitem:a00db663b395d596c633624ed7554a440" id="r_a00db663b395d596c633624ed7554a440"><td class="memItemLeft" align="right" valign="top"><a id="a00db663b395d596c633624ed7554a440" name="a00db663b395d596c633624ed7554a440"></a>
 uint16_t&#160;</td><td class="memItemRight" valign="bottom"><b>reset_io_drain_timeout</b></td></tr>
 <tr class="separator:a00db663b395d596c633624ed7554a440"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca0e9dfa5254ba36e468b8043d419904" id="r_aca0e9dfa5254ba36e468b8043d419904"><td class="memItemLeft" ><a id="aca0e9dfa5254ba36e468b8043d419904" name="aca0e9dfa5254ba36e468b8043d419904"></a>
+struct {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2190bab0e69db18d27eed3df5d030407" id="r_a2190bab0e69db18d27eed3df5d030407"><td class="memItemLeft" >
+&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<b>id_valid</b>: 1&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="memdesc:a2190bab0e69db18d27eed3df5d030407"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is numa.id valid? Needed to know whether numa.id == 0 was explicitly set by bdev module or implicitly set when calloc()'ing the structure. <br /></td></tr>
+<tr class="separator:a2190bab0e69db18d27eed3df5d030407"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e9169b27fecf4abdd90178cb50fc3f1" id="r_a2e9169b27fecf4abdd90178cb50fc3f1"><td class="memItemLeft" >
+&#160;&#160;&#160;int32_t&#160;&#160;&#160;<b>id</b>: 31&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="memdesc:a2e9169b27fecf4abdd90178cb50fc3f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">NUMA node ID for the bdev. <br /></td></tr>
+<tr class="separator:a2e9169b27fecf4abdd90178cb50fc3f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca0e9dfa5254ba36e468b8043d419904" id="r_aca0e9dfa5254ba36e468b8043d419904"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><b>numa</b>&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:aca0e9dfa5254ba36e468b8043d419904"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8eee59eb31ccc211bfe99a8109b30dbb" id="r_a8eee59eb31ccc211bfe99a8109b30dbb"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structspdk__bdev__module.html">spdk_bdev_module</a> *const struct <a class="el" href="structspdk__bdev__fn__table.html">spdk_bdev_fn_table</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8eee59eb31ccc211bfe99a8109b30dbb">fn_table</a></td></tr>
 <tr class="memdesc:a8eee59eb31ccc211bfe99a8109b30dbb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to the bdev module that registered this bdev.  <br /></td></tr>
 <tr class="separator:a8eee59eb31ccc211bfe99a8109b30dbb"><td class="memSeparator" colspan="2">&#160;</td></tr>

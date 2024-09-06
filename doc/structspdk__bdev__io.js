@@ -7,5 +7,5 @@ var structspdk__bdev__io =
     [ "iov", "structspdk__bdev__io.html#a0429238075907c6f637249dda31f3235", null ],
     [ "num_retries", "structspdk__bdev__io.html#aeaabc4aee05b2ae4337fe9cb5acda3d1", null ],
     [ "type", "structspdk__bdev__io.html#a4105d5a8419a66a6620d690da5649fcb", null ],
-    [ "u", "structspdk__bdev__io.html#aa1a5764c641edfeed48b8eaea09f9bae", null ]
+    [ "u", "structspdk__bdev__io.html#a295d195269d5715e5f4d6912bb071959", null ]
 ];

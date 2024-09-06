@@ -1,5 +1,8 @@
 var NAVTREEINDEX17 =
 {
+"unionspdk__nvme__cap__register.html#a3c70129c53bf5c82f1151d512075f703":[14,0,167,10],
+"unionspdk__nvme__cap__register.html#a75640e3e0a03f22456503acbebc20f46":[14,0,167,0],
+"unionspdk__nvme__cap__register.html#a7ca23ffbd756451f561b8972160f8281":[14,0,167,8],
 "unionspdk__nvme__cap__register.html#a9930c21595d81e7eefa8cca0e118450a":[14,0,167,7],
 "unionspdk__nvme__cap__register.html#a9bbd0513d0df169766c0f74adfc4dde1":[14,0,167,1],
 "unionspdk__nvme__cap__register.html#ac8d0f8ca7261552f9fa5894b0c637fd5":[14,0,167,9],
@@ -246,8 +249,5 @@ var NAVTREEINDEX17 =
 "vhost_processing.html#vhost_processing_qemu":[2,5,2],
 "vhost_processing.html#vhost_processing_toc":[2,5,0],
 "vhost_processing.html#vhost_spdk_optimizations":[2,5,4,0],
-"virtio.html":[7,3],
-"virtio.html#virtio_2mb":[7,3,1],
-"virtio.html#virtio_intro":[7,3,0],
-"vmd.html":[7,4]
+"virtio.html":[7,3]
 };
