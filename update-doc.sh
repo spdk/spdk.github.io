@@ -3,7 +3,7 @@
 set -x
 set -e
 
-rootdir=$(readlink -f $(dirname $0))
+rootdir=$(readlink -f "$(dirname $0)")
 repo="$rootdir/spdk"
 source "$rootdir/common.sh"
 

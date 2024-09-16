@@ -2,7 +2,7 @@
 
 set -ex
 
-rootdir=$(readlink -f $(dirname $0))
+rootdir=$(readlink -f "$(dirname $0)")
 repo="$rootdir/spdk"
 dst="$rootdir/_site"
 source "$rootdir/common.sh"
