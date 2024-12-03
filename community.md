@@ -8,8 +8,6 @@ toc:
     url: "#slack"
   - title: Enhancement Requests
     url: "#enhancements"
-  - title: Mailing List
-    url: "#mailing_list"
   - title: Community Meetings
     url: "#meetings"
   - title: Become a Contributor
@@ -27,13 +25,6 @@ For real-time discussions, join us on [Slack](https://join.slack.com/t/spdk-team
 # Enhancement Requests
 
 Find something to work on the backlog in your area of interest, or start/participate in a design discussion on any of the [enhancement requests](https://github.com/spdk/spdk/issues?q=is:issue+is:open+label:enhancement).
-
-<a id="mailing_list"></a>
-# Mailing List
-
-The
-[SPDK Mailing List](https://lists.linuxfoundation.org/mailman/listinfo/spdk/) is
-available for usage and development questions as well as design discussions.
 
 <a id="meetings"></a>
 # Community Meetings

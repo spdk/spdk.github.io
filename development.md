@@ -71,7 +71,7 @@ communications channels described on the [Community](/community/) page.
 
 Patch submission is done through Gerrit where patches are voted on by everyone in the community.
 A patch usually requires a minimum of two +2 votes before it will be merged. +2 votes are reserved for
-the [core maintainers](#core) who can be contacted on the mailing list or in Slack.
+the [core maintainers](#core) who can be contacted in Slack.
 
 <a id="guidelines"></a>
 ## Development Guidelines
@@ -240,8 +240,7 @@ with the exception:
 
 * Patches containing [RFC] in the git commit message header are treated specially to spur comments only.  As such, these RFC patches
 are **not** run through the CI system.  While a developer may specify reviewers in Gerrit for these patches, it
-is highly suggested one either sends email to the SPDK mailing list or a message on the Slack to bring
-attention to this type of patch for discussion.
+is highly suggested one either sends a message on Slack to bring attention to this type of patch for discussion.
 
 The SPDK CI system periodically looks at Gerrit, pulls the patches down, and runs them on a pool of multiple machines with
 real NVMe SSDs. The tests are all checked in to the main SPDK repository (follow `autorun.sh` in the root of the repository).
