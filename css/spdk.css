@@ -18,6 +18,27 @@ h6 {
     background-color: #2b497d!important;
 }
 
+.footer {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    height: 60px;
+    padding: 10px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.footer a {
+    text-decoration:none;
+    padding:0px;
+    margin:0px;
+    outline:none;
+    color: rgba(255, 255, 255, 0.65);
+}
+
+.footer a:hover {
+  color:#fff;
+}
+
 .btn-dark, .btn-outline-dark:hover {
     background-color: #2b497d;
 }
