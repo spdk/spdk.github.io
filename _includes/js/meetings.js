@@ -1,5 +1,4 @@
-var euroDate = new Date(Date.UTC(2018, 3, 3, 15, 0, 0, 0));
-var euroBugDate = new Date(Date.UTC(2018, 3, 10, 15, 0, 0, 0));
+var meetingDate = new Date(Date.UTC(2018, 3, 3, 15, 0, 0, 0));
 
 // Holiday list. Should be of form [date, recurring=true/false]
 var USHolidays = [[ new Date(2018, 11, 24), true ], //Christmas Eve
@@ -63,18 +62,12 @@ function formatDate(date) {
 var currentDate = new Date();
 currentDate.setHours(currentDate.getHours() - 1);
 
-while (euroDate < currentDate || compareHoliday(euroDate, USHolidays, USTimeZone) || compareHoliday(euroDate, EuroHolidays, EuroTimeZone)) {
-        euroDate.setDate(euroDate.getDate() + 14);
-}
-
-while (euroBugDate < currentDate || compareHoliday(euroBugDate, USHolidays, USTimeZone) || compareHoliday(euroBugDate, EuroHolidays, EuroTimeZone)) {
-        euroBugDate.setDate(euroBugDate.getDate() + 14);
+while (meetingDate < currentDate || compareHoliday(meetingDate, USHolidays, USTimeZone) || compareHoliday(meetingDate, EuroHolidays, EuroTimeZone)) {
+        meetingDate.setDate(meetingDate.getDate() + 7);
 }
 
 // Regenerate the dates here - this makes sure we account for daylight savings adjustments between the starting
 // date at the beginning of this file and the calculated address based on the current date/time.
-euroDate = new Date(Date.UTC(euroDate.getUTCFullYear(), euroDate.getUTCMonth(), euroDate.getUTCDate(), 15, 0, 0, 0));
-euroBugDate = new Date(Date.UTC(euroBugDate.getUTCFullYear(), euroBugDate.getUTCMonth(), euroBugDate.getUTCDate(), 15, 0, 0, 0));
+meetingDate = new Date(Date.UTC(meetingDate.getUTCFullYear(), meetingDate.getUTCMonth(), meetingDate.getUTCDate(), 15, 0, 0, 0));
 
-document.getElementById("euro-mtg").textContent = formatDate(euroDate);
-document.getElementById("euro-bug-mtg").textContent = formatDate(euroBugDate);
+document.getElementById("community-mtg").textContent = formatDate(meetingDate);
