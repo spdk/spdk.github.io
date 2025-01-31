@@ -47,14 +47,14 @@ all, they should move to the new release.
 
 CVE Sub-Team Members:
 
-* Jim Harris, james.r.harris@intel.com
+* Jim Harris, jim.harris@nvidia.com
 * John Levon, john.levon@nutanix.com
-* Changpeng Liu, changpeng.liu@intel.com
+* Changpeng Liu, changpeliu@tencent.com
 * Alexey Marchuk, alexeymar@nvidia.com
 * Shuhei Matsumoto, smatsumoto@nvidia.com
-* Konrad Sztyber, konrad.sztyber@intel.com
-* Ben Walker, benjamin.walker@intel.com
-* Tomek Zawadzki, tomasz.zawadzki@intel.com
+* Konrad Sztyber, ksztyber@nvidia.com
+* Ben Walker, ben@nvidia.com
+* Tomek Zawadzki, tomasz.zawadzki@nutanix.com
 
 <a id="current"></a>
 ## Current CVEs
