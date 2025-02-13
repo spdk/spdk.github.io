@@ -52,6 +52,39 @@ posted topics before the end of the meeting we can use the time to discuss addit
 
 See the [Development](/development/) page for more information on how to contribute to SPDK.
 
+# Technical Steering Committee (TSC)
+
+As part of joining the Linux Foundation, a Technical Steering Committee (TSC) was established to oversee the project.
+TSC contains representatives from following companies:
+- Arm
+- Dell
+- HPE
+- Nutanix
+- NVIDIA
+- Samsung
+- Solidigm
+- StarWind
+- Tencent
+
+Notes below are a summary of TSC meetings:
+
+<details markdown="1"><summary markdown="span">February 13, 2025</summary>
+
+## Self-Hosted Runners
+Discussion on the current state and plans for self-hosted runners infrastructure for spdk-ci.
+
+- Michael (HPE) is working on adding self-hosted runners.
+- Simon (Samsung) has secured resources for a pool of self-hosted runners in the future.
+- Boris (Dell) has set up access to the OPI lab for SPDK.
+- Ben (Nvidia) confirmed plans to restore CI and move it to a GitHub Actions-based approach.
+- Tomek (Nutanix) will provide a description of the current approach for GitHub workflows and self-hosted runners as a README on the spdk-ci repository.
+
+## spdk-ci Development Process
+Until spdk-ci is operational and voting on patches, a more relaxed approach will be taken on pull requests submitted to that repository.
+This is crucial for restoring the process for merging patches to SPDK proper.
+
+</details>
+
 <a id="holidays"></a>
 # Holidays
 
