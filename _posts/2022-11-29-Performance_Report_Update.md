@@ -13,4 +13,4 @@ You can find all SPDK performance reports [here](https://spdk.io/doc/performance
 
 Direct link to the report:
 
-- [SPDK 22.09 NVMe-oF RDMA Performance Report (Mellanox ConnectX-5)](https://ci.spdk.io/download/performance-reports/SPDK_rdma_mlx_perf_report_2209.pdf)
+- [SPDK 22.09 NVMe-oF RDMA Performance Report (Mellanox ConnectX-5)](https://review.spdk.io/download/performance-reports/SPDK_rdma_mlx_perf_report_2209.pdf)

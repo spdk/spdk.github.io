@@ -11,4 +11,4 @@ You can find all SPDK performance reports [here](https://spdk.io/doc/performance
 
 Direct link to the report:
 
-- [SPDK 21.07 NVMe-oF RDMA Performance Report](https://ci.spdk.io/download/performance-reports/SPDK_rdma_perf_report_2107.pdf)
+- [SPDK 21.07 NVMe-oF RDMA Performance Report](https://review.spdk.io/download/performance-reports/SPDK_rdma_perf_report_2107.pdf)

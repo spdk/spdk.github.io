@@ -16,5 +16,5 @@ You can find all SPDK performance reports [here](https://spdk.io/doc/performance
 
 Direct links to the reports:
 
-- [SPDK 22.09 NVMe-oF TCP Performance Report (Mellanox ConnectX-5)](https://ci.spdk.io/download/performance-reports/SPDK_tcp_mlx_perf_report_2209.pdf)
-- [SPDK 22.09 NVMe-oF TCP Performance Report (Intel E810-CQDA2)](https://ci.spdk.io/download/performance-reports/SPDK_tcp_cvl_perf_report_2209.pdf)
+- [SPDK 22.09 NVMe-oF TCP Performance Report (Mellanox ConnectX-5)](https://review.spdk.io/download/performance-reports/SPDK_tcp_mlx_perf_report_2209.pdf)
+- [SPDK 22.09 NVMe-oF TCP Performance Report (Intel E810-CQDA2)](https://review.spdk.io/download/performance-reports/SPDK_tcp_cvl_perf_report_2209.pdf)

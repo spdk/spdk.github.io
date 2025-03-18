@@ -13,4 +13,4 @@ You can find all SPDK performance reports [here](https://spdk.io/doc/performance
 
 Direct link to the report:
 
-- [SPDK 24.01 NVMe-oF RDMA Performance Report (Intel E810-CQDA2 RoCEv2)](https://ci.spdk.io/download/performance-reports/SPDK_rdma_cvl_roce_perf_report_2401.pdf)
+- [SPDK 24.01 NVMe-oF RDMA Performance Report (Intel E810-CQDA2 RoCEv2)](https://review.spdk.io/download/performance-reports/SPDK_rdma_cvl_roce_perf_report_2401.pdf)

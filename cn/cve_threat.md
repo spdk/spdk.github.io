@@ -51,5 +51,5 @@ CVE小组成员联系方式：
 <a id="usecase"></a>
 ## 威胁建模案例
 
-* [案例: 集成NVMe驱动](https://ci.spdk.io/download/threat_models/NVMe-Threat-Model.pdf)
-* [案例: NVMe-oF Target](https://ci.spdk.io/download/threat_models/NVMe-oF-Target-Threat-Model.pdf)
+* [案例: 集成NVMe驱动](https://review.spdk.io/download/threat_models/NVMe-Threat-Model.pdf)
+* [案例: NVMe-oF Target](https://review.spdk.io/download/threat_models/NVMe-oF-Target-Threat-Model.pdf)

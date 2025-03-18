@@ -13,4 +13,4 @@ You can find all SPDK performance reports [here](https://spdk.io/doc/performance
 
 Direct link to the report:
 
-- [SPDK 23.01 NVMe-oF TCP Performance Report (Intel E810-CQDA2)](https://ci.spdk.io/download/performance-reports/SPDK_tcp_cvl_perf_report_2301.pdf)
+- [SPDK 23.01 NVMe-oF TCP Performance Report (Intel E810-CQDA2)](https://review.spdk.io/download/performance-reports/SPDK_tcp_cvl_perf_report_2301.pdf)

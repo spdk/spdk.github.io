@@ -79,6 +79,6 @@ helping make SPDK more secure.
 <a id="usecase"></a>
 ## Threat Models by Use Case
 
-* [Use Case: Integrate NVMe Driver](https://ci.spdk.io/download/threat_models/NVMe-Threat-Model.pdf)
-* [Use Case: NVMe-oF target](https://ci.spdk.io/download/threat_models/NVMe-oF-Target-Threat-Model.pdf)
-* [Use Case: Vhost integration](https://ci.spdk.io/download/threat_models/VHOST-threat-model.pdf)
+* [Use Case: Integrate NVMe Driver](https://review.spdk.io/download/threat_models/NVMe-Threat-Model.pdf)
+* [Use Case: NVMe-oF target](https://review.spdk.io/download/threat_models/NVMe-oF-Target-Threat-Model.pdf)
+* [Use Case: Vhost integration](https://review.spdk.io/download/threat_models/VHOST-threat-model.pdf)

@@ -11,7 +11,7 @@ You can find all SPDK performance reports [here](https://spdk.io/doc/performance
 
 Direct links:
 
-- [SPDK 21.04 NVMe Bdev Performance Report](https://ci.spdk.io/download/performance-reports/SPDK_nvme_bdev_perf_report_2104.pdf)
-- [SPDK 21.04 NVMe-oF TCP Performance Report](https://ci.spdk.io/download/performance-reports/SPDK_tcp_perf_report_2104.pdf)
-- [SPDK 21.04 NVMe-oF RDMA Performance Report](https://ci.spdk.io/download/performance-reports/SPDK_rdma_perf_report_2104.pdf)
-- [SPDK 21.04 Vhost Performance Report](https://ci.spdk.io/download/performance-reports/SPDK_vhost_perf_report_2104.pdf)
+- [SPDK 21.04 NVMe Bdev Performance Report](https://review.spdk.io/download/performance-reports/SPDK_nvme_bdev_perf_report_2104.pdf)
+- [SPDK 21.04 NVMe-oF TCP Performance Report](https://review.spdk.io/download/performance-reports/SPDK_tcp_perf_report_2104.pdf)
+- [SPDK 21.04 NVMe-oF RDMA Performance Report](https://review.spdk.io/download/performance-reports/SPDK_rdma_perf_report_2104.pdf)
+- [SPDK 21.04 Vhost Performance Report](https://review.spdk.io/download/performance-reports/SPDK_vhost_perf_report_2104.pdf)

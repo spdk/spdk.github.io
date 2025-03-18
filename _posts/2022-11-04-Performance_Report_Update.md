@@ -11,5 +11,5 @@ You can find all SPDK performance reports [here](https://spdk.io/doc/performance
 
 Direct link to the report:
 
-- [SPDK 22.09 Vhost Performance Report](https://ci.spdk.io/download/performance-reports/SPDK_vhost_perf_report_2209.pdf)
-- [SPDK 22.09 NVMe Bdev Performance Report](https://ci.spdk.io/download/performance-reports/SPDK_nvme_bdev_perf_report_2209.pdf)
+- [SPDK 22.09 Vhost Performance Report](https://review.spdk.io/download/performance-reports/SPDK_vhost_perf_report_2209.pdf)
+- [SPDK 22.09 NVMe Bdev Performance Report](https://review.spdk.io/download/performance-reports/SPDK_nvme_bdev_perf_report_2209.pdf)

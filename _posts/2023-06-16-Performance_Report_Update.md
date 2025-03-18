@@ -19,5 +19,5 @@ You can find all SPDK performance reports [here](https://spdk.io/doc/performance
 
 Direct links to the reports:
 
-- [SPDK 23.05 NVMe-oF RDMA Performance Report (Mellanox ConnectX-5)](https://ci.spdk.io/download/performance-reports/SPDK_rdma_mlx_perf_report_2305.pdf)
-- [SPDK 23.05 NVMe-oF RDMA Performance Report (Intel E810-CQDA2 iWARP)](https://ci.spdk.io/download/performance-reports/SPDK_rdma_cvl_iwarp_perf_report_2305.pdf)
+- [SPDK 23.05 NVMe-oF RDMA Performance Report (Mellanox ConnectX-5)](https://review.spdk.io/download/performance-reports/SPDK_rdma_mlx_perf_report_2305.pdf)
+- [SPDK 23.05 NVMe-oF RDMA Performance Report (Intel E810-CQDA2 iWARP)](https://review.spdk.io/download/performance-reports/SPDK_rdma_cvl_iwarp_perf_report_2305.pdf)

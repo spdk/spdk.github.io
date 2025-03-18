@@ -14,4 +14,4 @@ You can find the updated report document [here](https://spdk.io/doc/performance_
 
 Direct link to the report:
 
-- [SPDK 24.01 NVMe-oF TCP Performance Report (Mellanox ConnectX-5)](https://ci.spdk.io/download/performance-reports/SPDK_tcp_mlx_perf_report_2401.pdf)
+- [SPDK 24.01 NVMe-oF TCP Performance Report (Mellanox ConnectX-5)](https://review.spdk.io/download/performance-reports/SPDK_tcp_mlx_perf_report_2401.pdf)
