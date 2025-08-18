@@ -40,5 +40,6 @@ Cambridge, CB2 1GE, United Kingdom
 06/08/2025, 8:00 am - 5:00 pm<br/>
 07/08/2025, 8:00 am - 5:00 pm
 
-![Cambridge](../../../../../img/blog/spdk_devmeetup_2025.jpg "Cambridge")
+<img src="../../../../../img/blog/spdk_devmeetup_2025.jpg" alt="Cambridge" width="100%">
+
 By Jean-Christophe BENOIST - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=39896996
