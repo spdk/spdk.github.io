@@ -524,6 +524,7 @@ The current list of SPDK core maintainers includes:
 
 * Jim Harris
 * Jacek Kalwas
+* Mateusz Kozłowski
 * Changpeng Liu
 * Alexey Marchuk
 * Shuhei Matsumoto
