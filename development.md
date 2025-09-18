@@ -523,6 +523,7 @@ The SPDK core maintainers primary responsibility is to provide technical oversig
 The current list of SPDK core maintainers includes:
 
 * Jim Harris
+* Jacek Kalwas
 * Changpeng Liu
 * Alexey Marchuk
 * Shuhei Matsumoto
