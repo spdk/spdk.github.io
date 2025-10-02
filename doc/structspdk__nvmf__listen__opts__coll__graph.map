@@ -1,5 +1,5 @@
 <map id="spdk_nvmf_listen_opts" name="spdk_nvmf_listen_opts">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,102,166,132"/>
-<area shape="rect" id="Node000002" href="$structspdk__json__val.html" title=" " alt="" coords="33,5,138,35"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="88,51,88,102,83,102,83,51"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,98,177,126"/>
+<area shape="rect" id="Node000002" href="$structspdk__json__val.html" title=" " alt="" coords="34,5,148,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="94,48,94,98,88,98,88,48"/>
 </map>

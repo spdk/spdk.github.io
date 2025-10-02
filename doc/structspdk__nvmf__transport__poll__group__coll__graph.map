@@ -1,19 +1,19 @@
 <map id="spdk_nvmf_transport_poll_group" name="spdk_nvmf_transport_poll_group">
-<area shape="rect" id="Node000001" title=" " alt="" coords="548,117,700,166"/>
-<area shape="rect" id="Node000003" href="$structspdk__nvmf__transport__ops.html" title=" " alt="" coords="898,91,1078,120"/>
-<area shape="poly" id="edge4_Node000003_Node000001" title=" " alt="" coords="716,130,897,112,898,117,716,135"/>
-<area shape="rect" id="Node000002" href="$structspdk__nvmf__transport.html" title=" " alt="" coords="1171,80,1323,110"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1199,119,1143,139,1081,154,978,164,875,165,780,160,701,154,701,148,780,155,875,159,978,158,1080,149,1142,134,1197,114"/>
-<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="1188,117,1147,126,1103,128,1060,124,1060,118,1103,122,1146,121,1187,112"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="1094,97,1105,96,1170,94,1170,99,1105,101,1094,102"/>
-<area shape="rect" id="Node000004" href="$structspdk__nvmf__transport__opts.html" title=" " alt="" coords="895,5,1081,35"/>
-<area shape="poly" id="edge5_Node000002_Node000004" title=" " alt="" coords="1058,37,1193,77,1192,82,1056,42"/>
-<area shape="rect" id="Node000006" href="$structspdk__iobuf__channel.html" title="iobuf channel" alt="" coords="284,99,427,128"/>
-<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="442,120,548,131,547,136,442,125"/>
-<area shape="rect" id="Node000007" href="$structspdk__iobuf__pool.html" title=" " alt="" coords="39,99,160,128"/>
-<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="176,111,284,111,284,116,176,116"/>
-<area shape="rect" id="Node000009" href="$structspdk__nvmf__poll__group.html" title=" " alt="" coords="276,152,435,182"/>
-<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="451,165,524,161,547,157,548,162,524,166,451,171"/>
-<area shape="rect" id="Node000010" href="$structspdk__nvmf__poll__group__stat.html" title=" " alt="" coords="5,152,194,182"/>
-<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="209,164,275,164,275,170,209,170"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="577,116,736,160"/>
+<area shape="rect" id="Node000003" href="$structspdk__nvmf__transport__ops.html" title=" " alt="" coords="944,91,1133,118"/>
+<area shape="poly" id="edge4_Node000003_Node000001" title=" " alt="" coords="752,127,943,110,944,115,752,132"/>
+<area shape="rect" id="Node000002" href="$structspdk__nvmf__transport.html" title=" " alt="" coords="1229,77,1388,105"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1261,114,1202,134,1136,149,1028,160,920,161,819,157,736,150,737,145,820,151,920,156,1028,154,1135,144,1201,129,1259,109"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="1250,112,1205,121,1165,124,1125,122,1125,116,1165,118,1204,116,1249,107"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="1148,94,1160,94,1228,91,1228,96,1160,99,1148,100"/>
+<area shape="rect" id="Node000004" href="$structspdk__nvmf__transport__opts.html" title=" " alt="" coords="941,5,1136,33"/>
+<area shape="poly" id="edge5_Node000002_Node000004" title=" " alt="" coords="1109,35,1254,74,1253,79,1107,40"/>
+<area shape="rect" id="Node000006" href="$structspdk__iobuf__channel.html" title="iobuf channel" alt="" coords="300,97,450,125"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="466,117,577,128,576,133,465,122"/>
+<area shape="rect" id="Node000007" href="$structspdk__iobuf__pool.html" title=" " alt="" coords="42,97,169,125"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="185,109,299,109,299,114,185,114"/>
+<area shape="rect" id="Node000009" href="$structspdk__nvmf__poll__group.html" title=" " alt="" coords="291,149,459,177"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="475,161,553,156,576,153,577,158,553,161,475,167"/>
+<area shape="rect" id="Node000010" href="$structspdk__nvmf__poll__group__stat.html" title=" " alt="" coords="5,149,206,177"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="221,161,290,161,290,166,221,166"/>
 </map>

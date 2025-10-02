@@ -1,5 +1,5 @@
 <map id="spdk_nvme_feat_async_event_configuration" name="spdk_nvme_feat_async_event_configuration">
-<area shape="rect" id="Node000001" title="Data used by Set Features / Get Features SPDK_NVME_FEAT_ASYNC_EVENT_CONFIGURATION." alt="" coords="5,121,168,170"/>
-<area shape="rect" id="Node000002" href="$unionspdk__nvme__critical__warning__state.html" title=" " alt="" coords="18,5,155,54"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="89,70,89,121,84,121,84,70"/>
+<area shape="rect" id="Node000001" title="Data used by Set Features / Get Features SPDK_NVME_FEAT_ASYNC_EVENT_CONFIGURATION." alt="" coords="5,115,180,160"/>
+<area shape="rect" id="Node000002" href="$unionspdk__nvme__critical__warning__state.html" title=" " alt="" coords="19,5,166,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="95,66,95,114,90,114,90,66"/>
 </map>

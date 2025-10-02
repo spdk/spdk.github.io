@@ -1,13 +1,13 @@
 <map id="spdk_nvmf_transport" name="spdk_nvmf_transport">
-<area shape="rect" id="Node000001" title=" " alt="" coords="66,199,219,228"/>
-<area shape="rect" id="Node000002" href="$structspdk__nvmf__transport__ops.html" title=" " alt="" coords="10,430,190,460"/>
-<area shape="poly" id="edge2_Node000002_Node000001" title=" " alt="" coords="87,237,46,262,29,278,15,297,9,315,10,333,16,352,26,370,54,403,83,428,79,432,51,407,22,373,11,354,4,334,4,314,10,294,25,274,43,257,84,233"/>
-<area shape="rect" id="Node000003" href="$structspdk__nvmf__transport__poll__group.html" title=" " alt="" coords="66,295,219,344"/>
-<area shape="poly" id="edge4_Node000003_Node000001" title=" " alt="" coords="145,244,145,295,140,295,140,244"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="205,424,231,415,246,404,258,384,264,365,265,347,261,328,240,292,208,254,175,231,178,227,211,250,244,289,266,327,270,346,270,366,263,387,250,408,233,420,206,429"/>
-<area shape="poly" id="edge3_Node000002_Node000003" title=" " alt="" coords="109,358,104,369,98,401,100,429,95,430,93,400,98,367,104,356"/>
-<area shape="rect" id="Node000009" href="$structspdk__nvmf__transport__opts.html" title=" " alt="" coords="50,102,235,132"/>
-<area shape="poly" id="edge5_Node000001_Node000009" title=" " alt="" coords="145,147,145,198,140,198,140,147"/>
-<area shape="rect" id="Node000010" href="$structspdk__json__val.html" title=" " alt="" coords="90,5,195,35"/>
-<area shape="poly" id="edge6_Node000009_Node000010" title=" " alt="" coords="145,51,145,102,140,102,140,51"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="70,191,229,218"/>
+<area shape="rect" id="Node000002" href="$structspdk__nvmf__transport__ops.html" title=" " alt="" coords="6,410,195,438"/>
+<area shape="poly" id="edge2_Node000002_Node000001" title=" " alt="" coords="89,227,47,250,29,266,15,285,9,302,10,319,16,337,26,354,54,384,83,408,80,412,51,388,22,357,11,339,4,320,4,301,10,282,25,262,44,246,87,222"/>
+<area shape="rect" id="Node000003" href="$structspdk__nvmf__transport__poll__group.html" title=" " alt="" coords="70,283,229,328"/>
+<area shape="poly" id="edge4_Node000003_Node000001" title=" " alt="" coords="152,234,152,283,147,283,147,234"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="209,405,239,396,257,384,268,366,274,348,274,330,269,313,248,279,216,244,181,221,184,217,219,240,252,275,274,311,279,329,279,348,273,368,261,388,241,401,211,410"/>
+<area shape="poly" id="edge3_Node000002_Node000003" title=" " alt="" coords="112,341,104,353,98,382,100,409,95,410,93,382,99,351,107,338"/>
+<area shape="rect" id="Node000009" href="$structspdk__nvmf__transport__opts.html" title=" " alt="" coords="52,98,247,126"/>
+<area shape="poly" id="edge5_Node000001_Node000009" title=" " alt="" coords="152,141,152,190,147,190,147,141"/>
+<area shape="rect" id="Node000010" href="$structspdk__json__val.html" title=" " alt="" coords="93,5,206,33"/>
+<area shape="poly" id="edge6_Node000009_Node000010" title=" " alt="" coords="152,48,152,98,147,98,147,48"/>
 </map>

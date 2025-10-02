@@ -1,5 +1,5 @@
 <map id="spdk_nvme_fdp_cfg_descriptor" name="spdk_nvme_fdp_cfg_descriptor">
-<area shape="rect" id="Node000001" title=" " alt="" coords="7,102,220,132"/>
-<area shape="rect" id="Node000002" href="$structspdk__nvme__fdp__ruh__descriptor.html" title=" " alt="" coords="5,5,222,35"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="116,51,116,102,111,102,111,51"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="6,98,229,126"/>
+<area shape="rect" id="Node000002" href="$structspdk__nvme__fdp__ruh__descriptor.html" title=" " alt="" coords="5,5,230,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="120,48,120,98,115,98,115,48"/>
 </map>

@@ -1,5 +1,5 @@
 <map id="spdk_nvmf_fc_lsdesc_rqst" name="spdk_nvmf_fc_lsdesc_rqst">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,102,184,132"/>
-<area shape="rect" id="Node000002" href="$structspdk__nvmf__fc__ls__rqst__w0.html" title=" " alt="" coords="7,5,182,35"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="97,51,97,102,92,102,92,51"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,98,198,126"/>
+<area shape="rect" id="Node000002" href="$structspdk__nvmf__fc__ls__rqst__w0.html" title=" " alt="" coords="7,5,196,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="104,48,104,98,99,98,99,48"/>
 </map>

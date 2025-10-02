@@ -1,5 +1,5 @@
 <map id="spdk_nvme_tcp_r2t_hdr" name="spdk_nvme_tcp_r2t_hdr">
-<area shape="rect" id="Node000001" title="R2T." alt="" coords="9,121,178,151"/>
-<area shape="rect" id="Node000002" href="$structspdk__nvme__tcp__common__pdu__hdr.html" title="Common NVMe/TCP PDU header." alt="" coords="5,5,182,54"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="96,69,96,120,91,120,91,69"/>
+<area shape="rect" id="Node000001" title="R2T." alt="" coords="11,115,187,143"/>
+<area shape="rect" id="Node000002" href="$structspdk__nvme__tcp__common__pdu__hdr.html" title="Common NVMe/TCP PDU header." alt="" coords="5,5,193,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="102,65,102,115,96,115,96,65"/>
 </map>

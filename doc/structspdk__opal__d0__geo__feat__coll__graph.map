@@ -1,5 +1,5 @@
 <map id="spdk_opal_d0_geo_feat" name="spdk_opal_d0_geo_feat">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,102,171,132"/>
-<area shape="rect" id="Node000002" href="$structspdk__opal__d0__feat__hdr.html" title=" " alt="" coords="6,5,170,35"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="91,51,91,102,85,102,85,51"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,98,180,126"/>
+<area shape="rect" id="Node000002" href="$structspdk__opal__d0__feat__hdr.html" title=" " alt="" coords="7,5,178,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="95,48,95,98,90,98,90,48"/>
 </map>

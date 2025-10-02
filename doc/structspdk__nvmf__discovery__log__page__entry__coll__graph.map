@@ -1,9 +1,9 @@
 <map id="spdk_nvmf_discovery_log_page_entry" name="spdk_nvmf_discovery_log_page_entry">
-<area shape="rect" id="Node000001" title="Discovery Log Page entry." alt="" coords="536,43,689,91"/>
-<area shape="rect" id="Node000002" href="$unionspdk__nvmf__transport__specific__address__subtype.html" title="Transport&#45;specific address subtype." alt="" coords="279,43,461,91"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="477,64,535,64,535,70,477,70"/>
-<area shape="rect" id="Node000003" href="$structspdk__nvmf__rdma__transport__specific__address__subtype.html" title="RDMA transport&#45;specific address subtype." alt="" coords="5,5,196,54"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="211,42,279,52,278,57,210,48"/>
-<area shape="rect" id="Node000004" href="$structspdk__nvme__tcp__transport__specific__address__subtype.html" title="TCP transport&#45;specific address subtype." alt="" coords="9,79,192,127"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="207,86,278,77,279,82,207,91"/>
+<area shape="rect" id="Node000001" title="Discovery Log Page entry." alt="" coords="565,40,728,85"/>
+<area shape="rect" id="Node000002" href="$unionspdk__nvmf__transport__specific__address__subtype.html" title="Transport&#45;specific address subtype." alt="" coords="292,40,486,85"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="502,60,565,60,565,65,502,65"/>
+<area shape="rect" id="Node000003" href="$structspdk__nvmf__rdma__transport__specific__address__subtype.html" title="RDMA transport&#45;specific address subtype." alt="" coords="5,5,206,50"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="222,39,291,48,291,53,221,44"/>
+<area shape="rect" id="Node000004" href="$structspdk__nvme__tcp__transport__specific__address__subtype.html" title="TCP transport&#45;specific address subtype." alt="" coords="8,75,203,119"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="218,81,291,72,292,77,218,86"/>
 </map>

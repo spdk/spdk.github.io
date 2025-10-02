@@ -1,5 +1,5 @@
 <map id="spdk_nvme_sanitize_status_log_page" name="spdk_nvme_sanitize_status_log_page">
-<area shape="rect" id="Node000001" title="Sanitize log page." alt="" coords="5,121,149,170"/>
-<area shape="rect" id="Node000002" href="$structspdk__nvme__sanitize__status__sstat.html" title="Sanitize status sstat field." alt="" coords="5,5,149,54"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="80,70,80,121,74,121,74,70"/>
+<area shape="rect" id="Node000001" title="Sanitize log page." alt="" coords="5,115,160,160"/>
+<area shape="rect" id="Node000002" href="$structspdk__nvme__sanitize__status__sstat.html" title="Sanitize status sstat field." alt="" coords="5,5,160,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="85,66,85,114,80,114,80,66"/>
 </map>

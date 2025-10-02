@@ -1,5 +1,5 @@
 <map id="spdk_nvme_zns_zone_report" name="spdk_nvme_zns_zone_report">
-<area shape="rect" id="Node000001" title=" " alt="" coords="22,102,176,151"/>
-<area shape="rect" id="Node000002" href="$structspdk__nvme__zns__zone__desc.html" title=" " alt="" coords="5,5,193,35"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="102,51,102,101,96,101,96,51"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="24,98,187,143"/>
+<area shape="rect" id="Node000002" href="$structspdk__nvme__zns__zone__desc.html" title=" " alt="" coords="5,5,206,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="108,48,108,97,103,97,103,48"/>
 </map>

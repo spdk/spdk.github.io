@@ -1,5 +1,5 @@
 <map id="spdk_nvme_secondary_ctrl_list" name="spdk_nvme_secondary_ctrl_list">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,121,167,170"/>
-<area shape="rect" id="Node000002" href="$structspdk__nvme__secondary__ctrl__entry.html" title=" " alt="" coords="5,5,167,54"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="89,70,89,121,83,121,83,70"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,115,176,160"/>
+<area shape="rect" id="Node000002" href="$structspdk__nvme__secondary__ctrl__entry.html" title=" " alt="" coords="5,5,176,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="93,66,93,114,88,114,88,66"/>
 </map>

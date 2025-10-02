@@ -1,5 +1,5 @@
 <map id="spdk_nvmf_reservation_info" name="spdk_nvmf_reservation_info">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,102,201,132"/>
-<area shape="rect" id="Node000002" href="$structspdk__nvmf__registrant__info.html" title=" " alt="" coords="11,5,195,35"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="106,51,106,102,100,102,100,51"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,98,212,126"/>
+<area shape="rect" id="Node000002" href="$structspdk__nvmf__registrant__info.html" title=" " alt="" coords="11,5,206,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="111,48,111,98,106,98,106,48"/>
 </map>

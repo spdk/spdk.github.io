@@ -1,5 +1,5 @@
 <map id="spdk_nvme_intel_smart_information_page" name="spdk_nvme_intel_smart_information_page">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,121,172,170"/>
-<area shape="rect" id="Node000002" href="$structspdk__nvme__intel__smart__attribute.html" title=" " alt="" coords="5,5,172,54"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="91,70,91,121,86,121,86,70"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,115,183,160"/>
+<area shape="rect" id="Node000002" href="$structspdk__nvme__intel__smart__attribute.html" title=" " alt="" coords="5,5,183,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="97,66,97,114,91,114,91,66"/>
 </map>

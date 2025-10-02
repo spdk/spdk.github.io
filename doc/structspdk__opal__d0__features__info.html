@@ -1,40 +1,75 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="generator" content="Doxygen 1.10.0" />
-  <title>SPDK: spdk_opal_d0_features_info Struct Reference</title>
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  <script type="text/javascript" src="../js/doxyboot.js"></script>
-  <script type="text/javascript" src="./navtree.js"></script>
-  <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css">
-  <link href="../css/spdk.css" rel="stylesheet" type="text/css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="generator" content="Doxygen 1.10.0" />
+	<title>SPDK: spdk_opal_d0_features_info Struct Reference</title>
+	<script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.8/umd/popper.min.js" integrity="sha512-TPh2Oxlg1zp+kz3nFA0C5vVC6leG/6mm1z9+mA81MI5eaUVqasPLO8Cuk4gMF4gUfP5etR73rgU/8PNMsSesoQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="../js/doxyboot.js"></script>
+	<script type="text/javascript">
+		$( document ).ready(function() {
+			$("#cn_lang_btn").remove();
+		});
+	</script>
+	<script type="text/javascript" src="./navtree.js"></script>
+	<link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Roboto:400,900' type='text/css'>
+	<link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link href="../css/spdk.css" rel="stylesheet" type="text/css">
 </head>
-<body>
-  <nav class="navbar navbar-expand-md navbar-dark bg-dark px-2">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <a class="navbar-brand" href="/" aria-label="SPDK">
-      <img src="/img/spdk.svg"  width="36" height="36" alt="Storage Performance Development Kit" />
-    </a>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <div class="navbar-nav me-auto">
-        <a class="nav-link header-link active" href="../doc/">Documentation</a>
-        <a class="nav-link header-link" href="../development/">Development</a>
-        <a class="nav-link header-link" href="../community/">Community</a>
-        <a class="nav-link header-link" href="../blog/">Blog</a>
-      </div>
-      <div class="navbar-nav ms-auto me-3">
-        <a class="nav-link header-link" href="https://github.com/spdk/spdk">
-          <svg xmlns="http://www.w3.org/2000/svg" class="navbar-nav-svg"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-        </a>
-      </div>
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark px-2">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <a class="navbar-brand" href="/" aria-label="SPDK">
+    <img src="../img/spdk.svg"  width="36" height="36" alt="Storage Performance Development Kit" />
+  </a>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <div class="navbar-nav me-auto">
+      <a class="nav-link header-link"
+      href="../releases/">
+        download
+      </a>
+      <a class="nav-link header-link active text-white"
+      href="/doc/">
+        documentation
+      </a>
+      <a class="nav-link header-link"
+      href="../development/">
+        development
+      </a>
+      <a class="nav-link header-link"
+      href="/ci/">
+        CI status
+      </a>
+      <a class="nav-link header-link"
+      href="../community/">
+        community
+      </a>
+      <a class="nav-link header-link"
+      href="../blog/">
+        Blog
+      </a>
+      <a class="nav-link header-link"
+      href="https://github.com/orgs/spdk/projects/5">
+        Roadmap
+      </a>
+      <a class="nav-link header-link"
+      href="../news/">
+        News
+      </a>
     </div>
-  </nav>
+    <div class="navbar-nav ms-auto me-3">
+      <a class="nav-link header-link" href="https://github.com/spdk/spdk">
+        <svg xmlns="http://www.w3.org/2000/svg" class="navbar-nav-svg"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+      </a>
+      <a id="cn_lang_btn" href="/cn/doc/" class="nav-link header-link">中文</a>
+    </div>
+  </div>
+</nav>
   <div class="container-fluid doc">
       <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
 <!-- Generated by Doxygen 1.10.0 -->
@@ -103,29 +138,29 @@ Collaboration diagram for spdk_opal_d0_features_info:</div>
 <div class="dyncontent">
 <div class="center"><img src="structspdk__opal__d0__features__info__coll__graph.png" border="0" usemap="#aspdk__opal__d0__features__info_coll__map" alt="Collaboration graph"/></div>
 <map name="aspdk__opal__d0__features__info_coll__map" id="aspdk__opal__d0__features__info_coll__map">
-<area shape="rect" title=" " alt="" coords="563,184,755,214"/>
-<area shape="rect" href="structspdk__opal__d0__tper__feat.html" title=" " alt="" coords="258,5,426,35"/>
-<area shape="poly" title=" " alt="" coords="433,37,488,56,540,83,573,107,603,134,647,182,643,186,599,138,570,112,538,88,485,61,431,42"/>
-<area shape="rect" href="structspdk__opal__d0__feat__hdr.html" title=" " alt="" coords="5,184,169,214"/>
-<area shape="poly" title=" " alt="" coords="106,170,161,106,199,72,240,44,267,33,269,38,243,49,202,76,165,109,110,173"/>
-<area shape="rect" href="structspdk__opal__d0__locking__feat.html" title=" " alt="" coords="250,59,434,88"/>
-<area shape="poly" title=" " alt="" coords="118,172,174,134,241,98,272,86,273,91,243,103,176,139,121,177"/>
-<area shape="rect" href="structspdk__opal__d0__single__user__mode__feat.html" title=" " alt="" coords="269,112,415,161"/>
-<area shape="poly" title=" " alt="" coords="165,177,268,152,269,157,166,182"/>
-<area shape="rect" href="structspdk__opal__d0__geo__feat.html" title=" " alt="" coords="259,184,425,214"/>
-<area shape="poly" title=" " alt="" coords="184,196,259,196,259,202,184,202"/>
-<area shape="rect" href="structspdk__opal__d0__datastore__feat.html" title=" " alt="" coords="242,237,442,267"/>
-<area shape="poly" title=" " alt="" coords="168,215,193,221,260,234,259,239,192,226,167,220"/>
-<area shape="rect" href="structspdk__opal__d0__v100__feat.html" title=" " alt="" coords="256,291,428,320"/>
-<area shape="poly" title=" " alt="" coords="128,219,181,249,243,276,276,288,275,293,241,281,179,253,125,224"/>
-<area shape="rect" href="structspdk__opal__d0__v200__feat.html" title=" " alt="" coords="256,344,428,374"/>
-<area shape="poly" title=" " alt="" coords="113,223,169,278,204,306,243,330,270,341,268,346,240,335,201,311,165,282,109,227"/>
-<area shape="poly" title=" " alt="" coords="419,90,443,98,540,135,632,181,629,186,538,140,441,103,418,95"/>
-<area shape="poly" title=" " alt="" coords="430,151,540,172,582,181,581,186,538,177,429,156"/>
-<area shape="poly" title=" " alt="" coords="440,196,562,196,562,202,440,202"/>
-<area shape="poly" title=" " alt="" coords="457,234,539,221,585,212,586,217,539,226,458,239"/>
-<area shape="poly" title=" " alt="" coords="442,284,538,257,588,235,631,212,633,216,590,239,540,262,443,289"/>
-<area shape="poly" title=" " alt="" coords="443,338,491,323,538,302,570,281,599,257,643,212,647,216,603,261,573,286,540,307,493,328,444,343"/>
+<area shape="rect" title=" " alt="" coords="588,177,791,205"/>
+<area shape="rect" href="structspdk__opal__d0__tper__feat.html" title=" " alt="" coords="268,5,444,33"/>
+<area shape="poly" title=" " alt="" coords="450,35,509,53,565,80,599,103,631,129,677,175,674,179,627,133,596,107,563,84,507,58,449,40"/>
+<area shape="rect" href="structspdk__opal__d0__feat__hdr.html" title=" " alt="" coords="5,177,177,205"/>
+<area shape="poly" title=" " alt="" coords="111,163,168,102,206,70,248,43,279,31,281,36,251,48,209,74,172,106,115,167"/>
+<area shape="rect" href="structspdk__opal__d0__locking__feat.html" title=" " alt="" coords="257,57,455,85"/>
+<area shape="poly" title=" " alt="" coords="123,166,180,129,249,94,281,83,283,88,251,99,182,134,126,170"/>
+<area shape="rect" href="structspdk__opal__d0__single__user__mode__feat.html" title=" " alt="" coords="278,109,434,154"/>
+<area shape="poly" title=" " alt="" coords="169,171,277,146,278,151,170,176"/>
+<area shape="rect" href="structspdk__opal__d0__geo__feat.html" title=" " alt="" coords="269,177,443,205"/>
+<area shape="poly" title=" " alt="" coords="192,189,268,189,268,194,192,194"/>
+<area shape="rect" href="structspdk__opal__d0__datastore__feat.html" title=" " alt="" coords="250,229,462,257"/>
+<area shape="poly" title=" " alt="" coords="177,206,201,211,279,226,278,231,200,216,176,211"/>
+<area shape="rect" href="structspdk__opal__d0__v100__feat.html" title=" " alt="" coords="265,281,447,309"/>
+<area shape="poly" title=" " alt="" coords="132,210,187,239,251,266,290,278,288,283,249,271,185,244,129,215"/>
+<area shape="rect" href="structspdk__opal__d0__v200__feat.html" title=" " alt="" coords="265,333,447,361"/>
+<area shape="poly" title=" " alt="" coords="117,214,175,267,212,295,251,318,282,330,280,335,248,323,209,299,172,271,114,218"/>
+<area shape="poly" title=" " alt="" coords="437,87,463,94,565,130,661,174,659,179,563,135,461,99,435,92"/>
+<area shape="poly" title=" " alt="" coords="450,145,564,166,610,174,609,179,564,171,449,150"/>
+<area shape="poly" title=" " alt="" coords="459,189,587,189,587,194,459,194"/>
+<area shape="poly" title=" " alt="" coords="477,224,564,211,610,203,611,208,564,216,478,229"/>
+<area shape="poly" title=" " alt="" coords="453,275,563,246,615,225,660,203,663,208,617,230,565,251,454,280"/>
+<area shape="poly" title=" " alt="" coords="458,327,511,311,563,290,596,270,627,246,673,203,677,207,630,250,599,274,565,295,513,316,460,332"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">

@@ -1,7 +1,7 @@
 <map id="spdk_nvmf_ns_opts" name="spdk_nvmf_ns_opts">
-<area shape="rect" id="Node000001" title="NVMe&#45;oF target namespace creation options." alt="" coords="35,102,176,132"/>
-<area shape="rect" id="Node000002" href="$structspdk__uuid.html" title=" " alt="" coords="5,5,89,35"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="66,47,99,100,95,103,61,50"/>
-<area shape="rect" id="Node000003" href="$structspdk__json__val.html" title=" " alt="" coords="112,5,217,35"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="150,50,117,103,112,100,145,47"/>
+<area shape="rect" id="Node000001" title="NVMe&#45;oF target namespace creation options." alt="" coords="35,98,186,126"/>
+<area shape="rect" id="Node000002" href="$structspdk__uuid.html" title=" " alt="" coords="5,5,93,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="68,44,104,96,99,99,64,47"/>
+<area shape="rect" id="Node000003" href="$structspdk__json__val.html" title=" " alt="" coords="116,5,230,33"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="158,47,121,99,117,96,153,44"/>
 </map>

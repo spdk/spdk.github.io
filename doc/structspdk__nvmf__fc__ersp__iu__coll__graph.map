@@ -1,7 +1,7 @@
 <map id="spdk_nvmf_fc_ersp_iu" name="spdk_nvmf_fc_ersp_iu">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,199,162,228"/>
-<area shape="rect" id="Node000002" href="$structspdk__nvme__cpl.html" title="Completion queue entry." alt="" coords="26,102,141,132"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="86,147,86,198,81,198,81,147"/>
-<area shape="rect" id="Node000003" href="$structspdk__nvme__status.html" title=" " alt="" coords="16,5,151,35"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="86,51,86,102,81,102,81,51"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,191,172,218"/>
+<area shape="rect" id="Node000002" href="$structspdk__nvme__cpl.html" title="Completion queue entry." alt="" coords="27,98,150,126"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="91,141,91,190,86,190,86,141"/>
+<area shape="rect" id="Node000003" href="$structspdk__nvme__status.html" title=" " alt="" coords="17,5,160,33"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="91,48,91,98,86,98,86,48"/>
 </map>

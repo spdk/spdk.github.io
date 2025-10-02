@@ -1,5 +1,5 @@
 <map id="vfio_user_dma_unmap" name="vfio_user_dma_unmap">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,102,166,132"/>
-<area shape="rect" id="Node000002" href="$structvfio__user__bitmap.html" title=" " alt="" coords="22,5,149,35"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="88,51,88,102,83,102,83,51"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,98,174,126"/>
+<area shape="rect" id="Node000002" href="$structvfio__user__bitmap.html" title=" " alt="" coords="23,5,156,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="92,48,92,98,87,98,87,48"/>
 </map>

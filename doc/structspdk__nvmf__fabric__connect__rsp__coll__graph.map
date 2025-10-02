@@ -1,5 +1,5 @@
 <map id="spdk_nvmf_fabric_connect_rsp" name="spdk_nvmf_fabric_connect_rsp">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,102,216,132"/>
-<area shape="rect" id="Node000002" href="$structspdk__nvme__status.html" title=" " alt="" coords="43,5,178,35"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="113,51,113,102,108,102,108,51"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,98,228,126"/>
+<area shape="rect" id="Node000002" href="$structspdk__nvme__status.html" title=" " alt="" coords="45,5,188,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="119,48,119,98,114,98,114,48"/>
 </map>

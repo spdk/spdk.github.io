@@ -1,7 +1,7 @@
 <map id="spdk_vfu_pci_device" name="spdk_vfu_pci_device">
-<area shape="rect" id="Node000001" title="Vfio&#45;user PCI device information." alt="" coords="17,199,162,228"/>
-<area shape="rect" id="Node000002" href="$structspdk__vfu__pci__region.html" title="Vfio&#45;user device PCI region." alt="" coords="17,102,162,132"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="92,147,92,198,87,198,87,147"/>
-<area shape="rect" id="Node000003" href="$structspdk__vfu__sparse__mmap.html" title="Vfio&#45;user PCI device sparse MMAP region." alt="" coords="5,5,174,35"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="92,51,92,102,87,102,87,51"/>
+<area shape="rect" id="Node000001" title="Vfio&#45;user PCI device information." alt="" coords="17,191,173,218"/>
+<area shape="rect" id="Node000002" href="$structspdk__vfu__pci__region.html" title="Vfio&#45;user device PCI region." alt="" coords="18,98,172,126"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="98,141,98,190,92,190,92,141"/>
+<area shape="rect" id="Node000003" href="$structspdk__vfu__sparse__mmap.html" title="Vfio&#45;user PCI device sparse MMAP region." alt="" coords="5,5,185,33"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="98,48,98,98,92,98,92,48"/>
 </map>

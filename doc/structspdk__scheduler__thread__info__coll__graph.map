@@ -1,5 +1,5 @@
 <map id="spdk_scheduler_thread_info" name="spdk_scheduler_thread_info">
-<area shape="rect" id="Node000001" title="Structure representing thread used for scheduling." alt="" coords="5,121,200,151"/>
-<area shape="rect" id="Node000002" href="$structspdk__thread__stats.html" title=" " alt="" coords="36,5,169,35"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="105,50,105,121,100,121,100,50"/>
+<area shape="rect" id="Node000001" title="Structure representing thread used for scheduling." alt="" coords="5,115,209,143"/>
+<area shape="rect" id="Node000002" href="$structspdk__thread__stats.html" title=" " alt="" coords="37,5,177,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="110,48,110,115,104,115,104,48"/>
 </map>

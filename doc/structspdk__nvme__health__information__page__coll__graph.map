@@ -1,5 +1,5 @@
 <map id="spdk_nvme_health_information_page" name="spdk_nvme_health_information_page">
-<area shape="rect" id="Node000001" title="SMART / health information page (SPDK_NVME_LOG_HEALTH_INFORMATION)" alt="" coords="5,121,258,151"/>
-<area shape="rect" id="Node000002" href="$unionspdk__nvme__critical__warning__state.html" title=" " alt="" coords="63,5,200,54"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="134,69,134,120,129,120,129,69"/>
+<area shape="rect" id="Node000001" title="SMART / health information page (SPDK_NVME_LOG_HEALTH_INFORMATION)" alt="" coords="5,115,272,143"/>
+<area shape="rect" id="Node000002" href="$unionspdk__nvme__critical__warning__state.html" title=" " alt="" coords="65,5,212,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="141,65,141,115,136,115,136,65"/>
 </map>

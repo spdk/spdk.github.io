@@ -1,25 +1,25 @@
 <map id="spdk_bdev_io_internal_fields" name="spdk_bdev_io_internal_fields">
-<area shape="rect" id="Node000001" title="Fields that are used internally by the bdev subsystem." alt="" coords="495,135,652,183"/>
-<area shape="rect" id="Node000002" href="$structspdk__bdev__io.html" title=" " alt="" coords="821,259,925,289"/>
-<area shape="poly" id="edge9_Node000002_Node000001" title=" " alt="" coords="666,129,699,126,734,126,767,132,799,145,827,169,848,200,862,232,871,258,865,259,857,234,843,203,823,173,796,149,766,137,733,131,700,131,667,135"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="806,258,698,225,617,186,619,181,700,221,807,253"/>
-<area shape="rect" id="Node000019" href="$structspdk__bdev__io__abort__params.html" title=" " alt="" coords="1054,249,1197,298"/>
-<area shape="poly" id="edge6_Node000019_Node000002" title=" " alt="" coords="940,271,1053,271,1053,276,940,276"/>
-<area shape="rect" id="Node000003" href="$structspdk__bdev.html" title=" " alt="" coords="5,91,92,121"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="106,84,239,48,326,33,420,23,518,21,616,32,664,43,711,58,756,77,799,102,818,118,833,137,855,181,867,224,873,258,868,259,862,225,850,183,829,140,814,122,796,107,754,82,709,63,663,48,615,37,518,27,420,28,326,38,240,54,107,89"/>
-<area shape="rect" id="Node000049" href="$structspdk__bdev__io__wait__entry.html" title="Structure to register a callback when an spdk_bdev_io becomes available." alt="" coords="173,116,347,146"/>
-<area shape="poly" id="edge13_Node000049_Node000003" title=" " alt="" coords="108,113,116,114,173,121,172,126,115,119,107,118"/>
-<area shape="rect" id="Node000015" href="$structspdk__bdev__io__block__params.html" title=" " alt="" coords="503,225,644,274"/>
-<area shape="poly" id="edge3_Node000002_Node000015" title=" " alt="" coords="659,265,700,270,763,273,821,273,821,278,763,279,699,275,659,270"/>
-<area shape="rect" id="Node000018" href="$structspdk__bdev__io__reset__params.html" title=" " alt="" coords="503,299,644,347"/>
-<area shape="poly" id="edge4_Node000002_Node000018" title=" " alt="" coords="659,317,727,310,797,298,834,287,836,292,798,303,728,315,660,322"/>
-<area shape="poly" id="edge5_Node000002_Node000019" title=" " alt="" coords="1039,298,1030,299,989,303,948,299,916,292,917,287,949,294,989,298,1029,294,1038,293"/>
-<area shape="rect" id="Node000020" href="$structspdk__bdev__io__nvme__passthru__params.html" title=" " alt="" coords="471,372,675,421"/>
-<area shape="poly" id="edge7_Node000002_Node000020" title=" " alt="" coords="690,376,744,361,796,338,831,313,857,287,861,291,834,318,799,343,746,366,691,381"/>
-<area shape="rect" id="Node000047" href="$structspdk__bdev__io__zone__mgmt__params.html" title=" " alt="" coords="482,445,664,494"/>
-<area shape="poly" id="edge8_Node000002_Node000047" title=" " alt="" coords="678,451,740,431,769,417,796,399,821,373,840,342,864,288,869,290,845,345,825,376,799,403,772,421,742,436,680,456"/>
-<area shape="rect" id="Node000048" href="$structspdk__iobuf__entry.html" title="iobuf queue entry" alt="" coords="196,214,324,243"/>
-<area shape="poly" id="edge10_Node000001_Node000048" title=" " alt="" coords="339,208,494,174,495,179,340,213"/>
-<area shape="poly" id="edge11_Node000048_Node000048" title=" " alt="" coords="236,196,244,189,260,187,274,189,283,195,286,205,283,214,278,212,281,204,279,199,272,194,260,192,246,194,239,200"/>
-<area shape="poly" id="edge12_Node000001_Node000049" title=" " alt="" coords="362,137,494,149,494,155,362,143"/>
+<area shape="rect" id="Node000001" title="Fields that are used internally by the bdev subsystem." alt="" coords="521,133,688,178"/>
+<area shape="rect" id="Node000002" href="$structspdk__bdev__io.html" title=" " alt="" coords="865,249,976,276"/>
+<area shape="poly" id="edge9_Node000002_Node000001" title=" " alt="" coords="699,127,734,123,771,123,808,129,843,143,871,165,892,194,917,247,912,249,888,196,867,169,840,147,807,134,771,129,735,129,699,133"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="849,247,736,216,653,181,655,176,738,210,851,242"/>
+<area shape="rect" id="Node000019" href="$structspdk__bdev__io__abort__params.html" title=" " alt="" coords="1109,240,1260,285"/>
+<area shape="poly" id="edge6_Node000019_Node000002" title=" " alt="" coords="991,260,1108,260,1108,265,991,265"/>
+<area shape="rect" id="Node000003" href="$structspdk__bdev.html" title=" " alt="" coords="5,90,97,118"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="109,82,248,46,339,30,439,20,543,19,647,30,699,41,749,56,797,76,843,101,861,116,877,134,899,175,913,216,920,248,915,249,908,217,894,177,872,137,858,120,840,106,795,81,747,61,698,46,647,35,543,24,439,25,340,36,249,52,110,87"/>
+<area shape="rect" id="Node000049" href="$structspdk__bdev__io__wait__entry.html" title="Structure to register a callback when an spdk_bdev_io becomes available." alt="" coords="181,115,367,143"/>
+<area shape="poly" id="edge13_Node000049_Node000003" title=" " alt="" coords="113,110,121,111,180,118,180,123,120,117,112,116"/>
+<area shape="rect" id="Node000015" href="$structspdk__bdev__io__block__params.html" title=" " alt="" coords="529,219,681,263"/>
+<area shape="poly" id="edge3_Node000002_Node000015" title=" " alt="" coords="697,254,738,258,865,261,865,266,737,263,696,259"/>
+<area shape="rect" id="Node000018" href="$structspdk__bdev__io__reset__params.html" title=" " alt="" coords="530,288,680,333"/>
+<area shape="poly" id="edge4_Node000002_Node000018" title=" " alt="" coords="695,303,767,297,841,285,879,274,881,279,842,290,767,302,696,309"/>
+<area shape="poly" id="edge5_Node000002_Node000019" title=" " alt="" coords="1093,286,1085,287,1042,291,999,287,964,279,965,274,1000,282,1042,286,1084,282,1093,281"/>
+<area shape="rect" id="Node000020" href="$structspdk__bdev__io__nvme__passthru__params.html" title=" " alt="" coords="496,357,713,402"/>
+<area shape="poly" id="edge7_Node000002_Node000020" title=" " alt="" coords="728,360,785,345,840,324,876,300,904,275,907,279,879,304,843,328,787,350,729,365"/>
+<area shape="rect" id="Node000047" href="$structspdk__bdev__io__zone__mgmt__params.html" title=" " alt="" coords="508,427,702,471"/>
+<area shape="poly" id="edge8_Node000002_Node000047" title=" " alt="" coords="716,433,780,413,811,399,840,381,865,357,886,328,912,276,916,278,890,330,869,360,843,385,814,404,782,418,718,438"/>
+<area shape="rect" id="Node000048" href="$structspdk__iobuf__entry.html" title="iobuf queue entry" alt="" coords="207,209,341,236"/>
+<area shape="poly" id="edge10_Node000001_Node000048" title=" " alt="" coords="355,203,520,170,521,175,356,209"/>
+<area shape="poly" id="edge11_Node000048_Node000048" title=" " alt="" coords="249,191,258,184,274,182,289,184,299,190,302,200,298,209,293,207,296,199,295,194,287,189,274,187,260,189,252,195"/>
+<area shape="poly" id="edge12_Node000001_Node000049" title=" " alt="" coords="383,135,521,146,520,152,382,140"/>
 </map>

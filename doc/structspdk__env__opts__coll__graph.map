@@ -1,5 +1,5 @@
 <map id="spdk_env_opts" name="spdk_env_opts">
-<area shape="rect" id="Node000001" title="Environment initialization options." alt="" coords="5,121,118,151"/>
-<area shape="rect" id="Node000002" href="$structspdk__pci__addr.html" title=" " alt="" coords="7,5,116,35"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="64,50,64,121,59,121,59,50"/>
+<area shape="rect" id="Node000001" title="Environment initialization options." alt="" coords="5,115,124,143"/>
+<area shape="rect" id="Node000002" href="$structspdk__pci__addr.html" title=" " alt="" coords="7,5,122,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="67,48,67,115,62,115,62,48"/>
 </map>

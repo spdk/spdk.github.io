@@ -1,7 +1,7 @@
 <map id="spdk_bdev_module_claim" name="spdk_bdev_module_claim">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,237,182,266"/>
-<area shape="rect" id="Node000002" href="$structspdk__bdev__module.html" title="Block device module." alt="" coords="24,140,163,170"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="96,185,96,236,91,236,91,185"/>
-<area shape="rect" id="Node000003" href="$structspdk__bdev__module_1_1____bdev__module__internal__fields.html" title="Fields that are used by the internal bdev subsystem." alt="" coords="8,5,179,73"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="96,88,96,140,91,140,91,88"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,225,196,252"/>
+<area shape="rect" id="Node000002" href="$structspdk__bdev__module.html" title="Block device module." alt="" coords="27,132,174,160"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="103,175,103,224,98,224,98,175"/>
+<area shape="rect" id="Node000003" href="$structspdk__bdev__module_1_1____bdev__module__internal__fields.html" title="Fields that are used by the internal bdev subsystem." alt="" coords="10,5,191,67"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="103,82,103,131,98,131,98,82"/>
 </map>

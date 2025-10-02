@@ -1,5 +1,5 @@
 <map id="spdk_reduce_vol_params" name="spdk_reduce_vol_params">
-<area shape="rect" id="Node000001" title="Describes the parameters of an spdk_reduce_vol." alt="" coords="5,102,180,132"/>
-<area shape="rect" id="Node000002" href="$structspdk__uuid.html" title=" " alt="" coords="51,5,134,35"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="95,51,95,102,90,102,90,51"/>
+<area shape="rect" id="Node000001" title="Describes the parameters of an spdk_reduce_vol." alt="" coords="5,98,192,126"/>
+<area shape="rect" id="Node000002" href="$structspdk__uuid.html" title=" " alt="" coords="55,5,142,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="101,48,101,98,96,98,96,48"/>
 </map>

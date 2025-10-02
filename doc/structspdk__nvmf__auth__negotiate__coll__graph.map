@@ -1,5 +1,5 @@
 <map id="spdk_nvmf_auth_negotiate" name="spdk_nvmf_auth_negotiate">
-<area shape="rect" id="Node000001" title=" " alt="" coords="7,102,196,132"/>
-<area shape="rect" id="Node000002" href="$structspdk__nvmf__auth__descriptor.html" title=" " alt="" coords="5,5,198,35"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="104,51,104,102,99,102,99,51"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="7,98,205,126"/>
+<area shape="rect" id="Node000002" href="$structspdk__nvmf__auth__descriptor.html" title=" " alt="" coords="5,5,207,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="109,48,109,98,103,98,103,48"/>
 </map>

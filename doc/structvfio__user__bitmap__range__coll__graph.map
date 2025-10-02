@@ -1,5 +1,5 @@
 <map id="vfio_user_bitmap_range" name="vfio_user_bitmap_range">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,102,175,132"/>
-<area shape="rect" id="Node000002" href="$structvfio__user__bitmap.html" title=" " alt="" coords="26,5,154,35"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="93,51,93,102,87,102,87,51"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,98,183,126"/>
+<area shape="rect" id="Node000002" href="$structvfio__user__bitmap.html" title=" " alt="" coords="27,5,161,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="97,48,97,98,91,98,91,48"/>
 </map>

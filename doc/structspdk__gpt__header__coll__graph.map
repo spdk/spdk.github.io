@@ -1,5 +1,5 @@
 <map id="spdk_gpt_header" name="spdk_gpt_header">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,102,134,132"/>
-<area shape="rect" id="Node000002" href="$structspdk__gpt__guid.html" title=" " alt="" coords="14,5,125,35"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="72,51,72,102,67,102,67,51"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,98,138,126"/>
+<area shape="rect" id="Node000002" href="$structspdk__gpt__guid.html" title=" " alt="" coords="14,5,129,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="74,48,74,98,69,98,69,48"/>
 </map>

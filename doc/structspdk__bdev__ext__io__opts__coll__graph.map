@@ -1,7 +1,7 @@
 <map id="spdk_bdev_ext_io_opts" name="spdk_bdev_ext_io_opts">
-<area shape="rect" id="Node000001" title="Structure with optional IO request parameters." alt="" coords="110,102,271,132"/>
-<area shape="rect" id="Node000002" href="$unionspdk__bdev__nvme__cdw12.html" title="Union for command dword 12, which by convention matches the NVMe command dword 12 definition." alt="" coords="5,5,179,35"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="119,44,178,100,174,104,115,47"/>
-<area shape="rect" id="Node000003" href="$unionspdk__bdev__nvme__cdw13.html" title="Union for command dword 13, which by convention matches the NVMe command dword 13 definition." alt="" coords="203,5,376,35"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="271,49,242,80,213,103,209,99,238,76,267,45"/>
+<area shape="rect" id="Node000001" title="Structure with optional IO request parameters." alt="" coords="115,98,288,126"/>
+<area shape="rect" id="Node000002" href="$unionspdk__bdev__nvme__cdw12.html" title="Union for command dword 12, which by convention matches the NVMe command dword 12 definition." alt="" coords="5,5,190,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="125,41,188,95,185,99,122,45"/>
+<area shape="rect" id="Node000003" href="$unionspdk__bdev__nvme__cdw13.html" title="Union for command dword 13, which by convention matches the NVMe command dword 13 definition." alt="" coords="213,5,398,33"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="286,47,257,76,224,100,221,95,253,72,283,43"/>
 </map>

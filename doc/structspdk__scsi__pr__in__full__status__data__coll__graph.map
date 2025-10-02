@@ -1,7 +1,7 @@
 <map id="spdk_scsi_pr_in_full_status_data" name="spdk_scsi_pr_in_full_status_data">
-<area shape="rect" id="Node000001" title=" " alt="" coords="94,121,233,170"/>
-<area shape="rect" id="Node000002" href="$structspdk__scsi__pr__in__read__header.html" title=" " alt="" coords="5,5,154,54"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="108,65,148,119,144,122,104,68"/>
-<area shape="rect" id="Node000003" href="$structspdk__scsi__pr__in__full__status__desc.html" title=" " alt="" coords="178,5,317,54"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="223,68,183,122,179,119,219,65"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="99,115,250,160"/>
+<area shape="rect" id="Node000002" href="$structspdk__scsi__pr__in__read__header.html" title=" " alt="" coords="5,5,165,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="115,61,158,113,154,116,111,64"/>
+<area shape="rect" id="Node000003" href="$structspdk__scsi__pr__in__full__status__desc.html" title=" " alt="" coords="189,5,341,50"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="239,64,195,116,191,113,235,61"/>
 </map>

@@ -1,5 +1,5 @@
 <map id="spdk_fsdev_module" name="spdk_fsdev_module">
-<area shape="rect" id="Node000001" title="Filesystem device module." alt="" coords="21,140,163,170"/>
-<area shape="rect" id="Node000002" href="$structspdk__fsdev__module_1_1____fsdev__module__internal__fields.html" title="Fields that are used by the internal fsdev subsystem." alt="" coords="5,5,179,73"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="95,88,95,140,89,140,89,88"/>
+<area shape="rect" id="Node000001" title="Filesystem device module." alt="" coords="22,132,173,160"/>
+<area shape="rect" id="Node000002" href="$structspdk__fsdev__module_1_1____fsdev__module__internal__fields.html" title="Fields that are used by the internal fsdev subsystem." alt="" coords="5,5,190,67"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="100,82,100,131,95,131,95,82"/>
 </map>

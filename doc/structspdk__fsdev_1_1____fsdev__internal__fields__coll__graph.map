@@ -1,10 +1,10 @@
 <map id="spdk_fsdev::__fsdev_internal_fields" name="spdk_fsdev::__fsdev_internal_fields">
-<area shape="rect" id="Node000001" title="Fields that are used internally by the fsdev subsystem." alt="" coords="26,102,168,151"/>
-<area shape="rect" id="Node000004" href="$structspdk__fsdev.html" title=" " alt="" coords="5,218,95,247"/>
-<area shape="poly" id="edge4_Node000004_Node000001" title=" " alt="" coords="81,166,76,176,58,218,53,216,71,174,76,163"/>
-<area shape="rect" id="Node000002" href="$structspdk__spinlock.html" title="A spinlock augmented with safety checks for use with SPDK." alt="" coords="44,5,149,35"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="99,51,99,101,94,101,94,51"/>
-<area shape="rect" id="Node000003" href="$structspdk__fsdev__name.html" title=" " alt="" coords="32,314,162,344"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="113,300,117,289,130,239,132,209,128,192,122,176,111,152,116,150,127,174,133,190,137,209,135,240,122,291,118,302"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="66,260,92,313,87,315,61,262"/>
+<area shape="rect" id="Node000001" title="Fields that are used internally by the fsdev subsystem." alt="" coords="25,98,177,143"/>
+<area shape="rect" id="Node000004" href="$structspdk__fsdev.html" title=" " alt="" coords="5,208,101,235"/>
+<area shape="poly" id="edge4_Node000004_Node000001" title=" " alt="" coords="84,157,79,168,61,208,56,206,74,166,79,155"/>
+<area shape="rect" id="Node000002" href="$structspdk__spinlock.html" title="A spinlock augmented with safety checks for use with SPDK." alt="" coords="44,5,158,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="104,48,104,97,98,97,98,48"/>
+<area shape="rect" id="Node000003" href="$structspdk__fsdev__name.html" title=" " alt="" coords="31,300,171,328"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="120,286,125,275,140,222,141,195,135,181,128,168,116,144,121,142,133,165,140,179,146,194,145,223,130,277,125,288"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="69,248,96,299,92,301,65,250"/>
 </map>

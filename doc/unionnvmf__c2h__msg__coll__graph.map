@@ -1,13 +1,13 @@
 <map id="nvmf_c2h_msg" name="nvmf_c2h_msg">
-<area shape="rect" id="Node000001" title=" " alt="" coords="170,218,283,247"/>
-<area shape="rect" id="Node000002" href="$structspdk__nvme__cpl.html" title="Completion queue entry." alt="" coords="5,112,120,141"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="96,148,162,191,202,215,199,219,159,196,93,152"/>
-<area shape="rect" id="Node000003" href="$structspdk__nvme__status.html" title=" " alt="" coords="159,5,294,35"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="193,46,86,113,83,109,190,41"/>
-<area shape="rect" id="Node000004" href="$structspdk__nvmf__fabric__prop__get__rsp.html" title=" " alt="" coords="144,102,309,151"/>
-<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="229,51,229,101,224,101,224,51"/>
-<area shape="rect" id="Node000005" href="$structspdk__nvmf__fabric__connect__rsp.html" title=" " alt="" coords="333,112,544,141"/>
-<area shape="poly" id="edge6_Node000005_Node000003" title=" " alt="" coords="270,40,411,109,409,113,267,44"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="229,166,229,217,224,217,224,166"/>
-<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="403,152,318,196,264,220,262,215,316,191,400,147"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="178,208,299,235"/>
+<area shape="rect" id="Node000002" href="$structspdk__nvme__cpl.html" title="Completion queue entry." alt="" coords="5,107,128,134"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="101,141,167,181,212,205,210,209,165,186,98,145"/>
+<area shape="rect" id="Node000003" href="$structspdk__nvme__status.html" title=" " alt="" coords="167,5,310,33"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="204,43,91,108,88,104,201,39"/>
+<area shape="rect" id="Node000004" href="$structspdk__nvmf__fabric__prop__get__rsp.html" title=" " alt="" coords="152,98,325,143"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="241,48,241,97,236,97,236,48"/>
+<area shape="rect" id="Node000005" href="$structspdk__nvmf__fabric__connect__rsp.html" title=" " alt="" coords="349,107,571,134"/>
+<area shape="poly" id="edge6_Node000005_Node000003" title=" " alt="" coords="283,37,431,103,429,108,281,42"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="241,158,241,208,236,208,236,158"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="422,144,333,186,275,210,273,205,331,181,420,139"/>
 </map>

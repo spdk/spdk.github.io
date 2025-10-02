@@ -1,5 +1,5 @@
 <map id="ftl_stats_group" name="ftl_stats_group">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,102,118,132"/>
-<area shape="rect" id="Node000002" href="$structftl__stats__error.html" title=" " alt="" coords="7,5,116,35"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="64,51,64,102,59,102,59,51"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,98,123,126"/>
+<area shape="rect" id="Node000002" href="$structftl__stats__error.html" title=" " alt="" coords="8,5,120,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="67,48,67,98,61,98,61,48"/>
 </map>

@@ -1,40 +1,75 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="generator" content="Doxygen 1.10.0" />
-  <title>SPDK: spdk_nvme_ctrlr_data Struct Reference</title>
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  <script type="text/javascript" src="../js/doxyboot.js"></script>
-  <script type="text/javascript" src="./navtree.js"></script>
-  <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css">
-  <link href="../css/spdk.css" rel="stylesheet" type="text/css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="generator" content="Doxygen 1.10.0" />
+	<title>SPDK: spdk_nvme_ctrlr_data Struct Reference</title>
+	<script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.8/umd/popper.min.js" integrity="sha512-TPh2Oxlg1zp+kz3nFA0C5vVC6leG/6mm1z9+mA81MI5eaUVqasPLO8Cuk4gMF4gUfP5etR73rgU/8PNMsSesoQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="../js/doxyboot.js"></script>
+	<script type="text/javascript">
+		$( document ).ready(function() {
+			$("#cn_lang_btn").remove();
+		});
+	</script>
+	<script type="text/javascript" src="./navtree.js"></script>
+	<link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Roboto:400,900' type='text/css'>
+	<link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link href="../css/spdk.css" rel="stylesheet" type="text/css">
 </head>
-<body>
-  <nav class="navbar navbar-expand-md navbar-dark bg-dark px-2">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <a class="navbar-brand" href="/" aria-label="SPDK">
-      <img src="/img/spdk.svg"  width="36" height="36" alt="Storage Performance Development Kit" />
-    </a>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <div class="navbar-nav me-auto">
-        <a class="nav-link header-link active" href="../doc/">Documentation</a>
-        <a class="nav-link header-link" href="../development/">Development</a>
-        <a class="nav-link header-link" href="../community/">Community</a>
-        <a class="nav-link header-link" href="../blog/">Blog</a>
-      </div>
-      <div class="navbar-nav ms-auto me-3">
-        <a class="nav-link header-link" href="https://github.com/spdk/spdk">
-          <svg xmlns="http://www.w3.org/2000/svg" class="navbar-nav-svg"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-        </a>
-      </div>
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark px-2">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <a class="navbar-brand" href="/" aria-label="SPDK">
+    <img src="../img/spdk.svg"  width="36" height="36" alt="Storage Performance Development Kit" />
+  </a>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <div class="navbar-nav me-auto">
+      <a class="nav-link header-link"
+      href="../releases/">
+        download
+      </a>
+      <a class="nav-link header-link active text-white"
+      href="/doc/">
+        documentation
+      </a>
+      <a class="nav-link header-link"
+      href="../development/">
+        development
+      </a>
+      <a class="nav-link header-link"
+      href="/ci/">
+        CI status
+      </a>
+      <a class="nav-link header-link"
+      href="../community/">
+        community
+      </a>
+      <a class="nav-link header-link"
+      href="../blog/">
+        Blog
+      </a>
+      <a class="nav-link header-link"
+      href="https://github.com/orgs/spdk/projects/5">
+        Roadmap
+      </a>
+      <a class="nav-link header-link"
+      href="../news/">
+        News
+      </a>
     </div>
-  </nav>
+    <div class="navbar-nav ms-auto me-3">
+      <a class="nav-link header-link" href="https://github.com/spdk/spdk">
+        <svg xmlns="http://www.w3.org/2000/svg" class="navbar-nav-svg"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+      </a>
+      <a id="cn_lang_btn" href="/cn/doc/" class="nav-link header-link">中文</a>
+    </div>
+  </div>
+</nav>
   <div class="container-fluid doc">
       <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
 <!-- Generated by Doxygen 1.10.0 -->
@@ -103,25 +138,25 @@ Collaboration diagram for spdk_nvme_ctrlr_data:</div>
 <div class="dyncontent">
 <div class="center"><img src="structspdk__nvme__ctrlr__data__coll__graph.png" border="0" usemap="#aspdk__nvme__ctrlr__data_coll__map" alt="Collaboration graph"/></div>
 <map name="aspdk__nvme__ctrlr__data_coll__map" id="aspdk__nvme__ctrlr__data_coll__map">
-<area shape="rect" title=" " alt="" coords="314,219,470,248"/>
-<area shape="rect" href="unionspdk__nvme__vs__register.html" title=" " alt="" coords="10,5,175,35"/>
-<area shape="poly" title=" " alt="" coords="191,25,243,39,291,65,328,101,356,144,376,185,388,217,383,219,371,187,352,146,324,104,288,69,241,44,190,30"/>
-<area shape="rect" href="structspdk__nvme__cdata__oaes.html" title=" " alt="" coords="10,59,175,88"/>
-<area shape="poly" title=" " alt="" coords="191,84,242,98,291,121,321,143,347,169,383,217,379,220,343,173,317,147,288,125,240,103,190,89"/>
-<area shape="rect" href="unionspdk__nvme__cdata__ctratt.html" title=" " alt="" coords="8,112,177,142"/>
-<area shape="poly" title=" " alt="" coords="193,141,242,153,291,170,335,192,371,216,368,220,332,197,289,175,241,158,192,146"/>
-<area shape="rect" href="structspdk__nvme__cdata__oacs.html" title=" " alt="" coords="11,165,174,195"/>
-<area shape="poly" title=" " alt="" coords="190,190,290,207,330,215,329,221,289,212,189,195"/>
-<area shape="rect" href="structspdk__nvme__cdata__oncs.html" title="Identify Controller data Optional NVM Command Support." alt="" coords="10,219,175,248"/>
-<area shape="poly" title=" " alt="" coords="190,231,313,231,313,236,190,236"/>
-<area shape="rect" href="structspdk__nvme__cdata__fuses.html" title=" " alt="" coords="8,272,177,302"/>
-<area shape="poly" title=" " alt="" coords="192,271,289,255,330,246,331,252,290,260,193,277"/>
-<area shape="rect" href="structspdk__nvme__cdata__sgls.html" title="Identify Controller data SGL support." alt="" coords="13,325,172,355"/>
-<area shape="poly" title=" " alt="" coords="187,324,238,312,289,295,333,272,370,247,373,251,336,276,291,300,240,317,188,330"/>
-<area shape="rect" href="structspdk__nvme__cdata__nvmf__specific.html" title="Identify Controller data NVMe over Fabrics&#45;specific fields." alt="" coords="8,379,177,427"/>
-<area shape="poly" title=" " alt="" coords="191,385,241,369,288,346,318,323,343,296,379,247,384,250,347,300,321,327,291,351,243,374,193,390"/>
-<area shape="rect" href="structspdk__nvme__power__state.html" title=" " alt="" coords="5,451,180,480"/>
-<area shape="poly" title=" " alt="" coords="194,449,243,432,288,406,324,368,352,324,372,281,384,248,389,250,377,283,357,326,329,372,291,411,245,437,196,454"/>
+<area shape="rect" title=" " alt="" coords="331,213,496,241"/>
+<area shape="rect" href="unionspdk__nvme__vs__register.html" title=" " alt="" coords="9,5,185,33"/>
+<area shape="poly" title=" " alt="" coords="200,23,256,37,283,48,308,62,346,98,375,140,397,180,409,212,405,214,392,182,371,142,342,101,305,67,281,53,254,42,199,28"/>
+<area shape="rect" href="structspdk__nvme__cdata__oaes.html" title=" " alt="" coords="8,57,186,85"/>
+<area shape="poly" title=" " alt="" coords="201,81,256,96,308,118,339,140,366,165,404,211,400,215,362,169,335,144,305,123,254,101,200,86"/>
+<area shape="rect" href="unionspdk__nvme__cdata__ctratt.html" title=" " alt="" coords="6,109,188,137"/>
+<area shape="poly" title=" " alt="" coords="204,137,256,149,308,166,354,188,392,211,389,215,351,192,306,171,254,155,202,142"/>
+<area shape="rect" href="structspdk__nvme__cdata__oacs.html" title=" " alt="" coords="9,161,185,189"/>
+<area shape="poly" title=" " alt="" coords="201,185,307,202,349,210,348,215,306,207,201,191"/>
+<area shape="rect" href="structspdk__nvme__cdata__oncs.html" title="Identify Controller data Optional NVM Command Support." alt="" coords="9,213,185,241"/>
+<area shape="poly" title=" " alt="" coords="201,225,330,225,330,230,201,230"/>
+<area shape="rect" href="structspdk__nvme__cdata__fuses.html" title=" " alt="" coords="6,265,188,293"/>
+<area shape="poly" title=" " alt="" coords="203,263,306,247,347,239,348,244,307,252,204,268"/>
+<area shape="rect" href="structspdk__nvme__cdata__sgls.html" title="Identify Controller data SGL support." alt="" coords="11,317,183,345"/>
+<area shape="poly" title=" " alt="" coords="198,314,252,301,306,284,352,263,390,239,393,244,354,267,308,289,253,306,199,319"/>
+<area shape="rect" href="structspdk__nvme__cdata__nvmf__specific.html" title="Identify Controller data NVMe over Fabrics&#45;specific fields." alt="" coords="7,369,187,414"/>
+<area shape="poly" title=" " alt="" coords="201,372,255,356,305,333,335,311,362,286,400,240,404,243,366,289,339,315,308,337,257,361,203,377"/>
+<area shape="rect" href="structspdk__nvme__power__state.html" title=" " alt="" coords="5,437,189,465"/>
+<area shape="poly" title=" " alt="" coords="203,436,256,419,305,393,342,356,371,314,392,272,405,240,410,242,397,274,376,316,346,360,308,397,258,424,205,441"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">

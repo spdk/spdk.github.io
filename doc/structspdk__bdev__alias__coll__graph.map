@@ -1,7 +1,7 @@
 <map id="spdk_bdev_alias" name="spdk_bdev_alias">
-<area shape="rect" id="Node000001" title=" " alt="" coords="10,199,128,228"/>
-<area shape="rect" id="Node000002" href="$structspdk__bdev__name.html" title=" " alt="" coords="5,102,133,132"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="72,147,72,198,66,198,66,147"/>
-<area shape="rect" id="Node000003" href="$structspdk__bdev.html" title=" " alt="" coords="26,5,112,35"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="72,51,72,102,66,102,66,51"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="8,191,138,218"/>
+<area shape="rect" id="Node000002" href="$structspdk__bdev__name.html" title=" " alt="" coords="5,98,141,126"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="76,141,76,190,70,190,70,141"/>
+<area shape="rect" id="Node000003" href="$structspdk__bdev.html" title=" " alt="" coords="27,5,119,33"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="76,48,76,98,70,98,70,48"/>
 </map>

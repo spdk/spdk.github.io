@@ -1,5 +1,5 @@
 <map id="spdk_trace_parser_entry" name="spdk_trace_parser_entry">
-<area shape="rect" id="Node000001" title="Describes a parsed trace entry." alt="" coords="5,102,180,132"/>
-<area shape="rect" id="Node000002" href="$structspdk__trace__entry.html" title=" " alt="" coords="29,5,156,35"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="95,51,95,102,90,102,90,51"/>
+<area shape="rect" id="Node000001" title="Describes a parsed trace entry." alt="" coords="5,98,187,126"/>
+<area shape="rect" id="Node000002" href="$structspdk__trace__entry.html" title=" " alt="" coords="29,5,163,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="99,48,99,98,93,98,93,48"/>
 </map>
