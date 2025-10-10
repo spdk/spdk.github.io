@@ -25,6 +25,8 @@ var util_8h =
     [ "spdk_ioviter_nextv", "util_8h.html#a1c02b473289bbf65b2f8f2cba9f65fcc", null ],
     [ "spdk_iovmove", "util_8h.html#af4c8af78fb85f76425e5472e742921e6", null ],
     [ "spdk_memset_s", "util_8h.html#ad7ddd177340554080af356c7d1e57d00", null ],
+    [ "spdk_rand_xorshift64", "util_8h.html#a81f234059f1e2fa2d11dc3d372be8c27", null ],
+    [ "spdk_rand_xorshift64_seed", "util_8h.html#ab62e1f375a34a65d0f2a66c7e71d548d", null ],
     [ "spdk_sn32_add", "util_8h.html#a9d8a81dd9f89050cdc2de023d10f1d31", null ],
     [ "spdk_sn32_gt", "util_8h.html#a3d7841db36c180f3fcac21e2314e2ef2", null ],
     [ "spdk_sn32_lt", "util_8h.html#a731ba4d3d89bf3d1c31c3e6481fc07b7", null ],

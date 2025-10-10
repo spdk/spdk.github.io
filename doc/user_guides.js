@@ -95,7 +95,6 @@ var user_guides =
       [ "Prerequisites", "bdev.html#bdev_ug_prerequisites", null ],
       [ "Configuring Block Device Modules", "bdev.html#bdev_ug_general_rpcs", null ],
       [ "Ceph RBD", "bdev.html#bdev_config_rbd", null ],
-      [ "Compression Virtual Bdev Module", "bdev.html#bdev_config_compress", null ],
       [ "Crypto Virtual Bdev Module", "bdev.html#bdev_config_crypto", null ],
       [ "Delay Bdev Module", "bdev.html#bdev_config_delay", null ],
       [ "GPT (GUID Partition Table)", "bdev.html#bdev_config_gpt", [
@@ -123,10 +122,6 @@ var user_guides =
       [ "Virtio SCSI", "bdev.html#bdev_config_virtio_scsi", null ],
       [ "DAOS bdev", "bdev.html#bdev_config_daos", null ]
     ] ],
-    [ "BlobFS (Blobstore Filesystem)", "blobfs.html", [
-      [ "BlobFS Getting Started Guide", "blobfs.html#blobfs_getting_started", null ],
-      [ "RocksDB Integration", "blobfs.html#blobfs_rocksdb", null ]
-    ] ],
     [ "JSON-RPC", "jsonrpc.html", [
       [ "Overview", "jsonrpc.html#jsonrpc_overview", null ],
       [ "Error response message", "jsonrpc.html#jsonrpc_error_message", [
@@ -149,6 +144,9 @@ var user_guides =
         [ "framework_set_scheduler", "jsonrpc.html#rpc_framework_set_scheduler", null ],
         [ "framework_get_scheduler", "jsonrpc.html#rpc_framework_get_scheduler", null ],
         [ "framework_get_governor", "jsonrpc.html#rpc_framework_get_governor", null ],
+        [ "scheduler_set_options", "jsonrpc.html#rpc_scheduler_set_options", null ],
+        [ "framework_enable_cpumask_locks", "jsonrpc.html#rpc_framework_enable_cpumask_locks", null ],
+        [ "framework_disable_cpumask_locks", "jsonrpc.html#rpc_framework_disable_cpumask_locks", null ],
         [ "thread_get_stats", "jsonrpc.html#rpc_thread_get_stats", null ],
         [ "thread_set_cpumask", "jsonrpc.html#rpc_thread_set_cpumask", null ],
         [ "trace_enable_tpoint_group", "jsonrpc.html#rpc_trace_enable_tpoint_group", null ],
@@ -170,7 +168,7 @@ var user_guides =
         [ "env_dpdk_get_mem_stats", "jsonrpc.html#rpc_env_dpdk_get_mem_stats", null ]
       ] ],
       [ "Acceleration Framework Layer", "jsonrpc.html#jsonrpc_components_accel_fw", [
-        [ "accel_get_module_info", "jsonrpc.html#accel_get_module_info", null ],
+        [ "accel_get_module_info", "jsonrpc.html#rpc_accel_get_module_info", null ],
         [ "accel_get_opc_assignments", "jsonrpc.html#rpc_accel_get_opc_assignments", null ],
         [ "accel_assign_opc", "jsonrpc.html#rpc_accel_assign_opc", null ],
         [ "accel_crypto_key_create", "jsonrpc.html#rpc_accel_crypto_key_create", null ],
@@ -187,7 +185,8 @@ var user_guides =
         [ "dpdk_cryptodev_scan_accel_module", "jsonrpc.html#rpc_dpdk_cryptodev_scan_accel_module", null ],
         [ "dpdk_cryptodev_set_driver", "jsonrpc.html#rpc_dpdk_cryptodev_set_driver", null ],
         [ "dpdk_cryptodev_get_driver", "jsonrpc.html#rpc_dpdk_cryptodev_get_driver", null ],
-        [ "mlx5_scan_accel_module", "jsonrpc.html#rpc_mlx5_scan_accel_module", null ]
+        [ "mlx5_scan_accel_module", "jsonrpc.html#rpc_mlx5_scan_accel_module", null ],
+        [ "accel_mlx5_dump_stats", "jsonrpc.html#rpc_accel_mlx5_dump_stats", null ]
       ] ],
       [ "Block Device Abstraction Layer", "jsonrpc.html#jsonrpc_components_bdev", [
         [ "bdev_set_options", "jsonrpc.html#rpc_bdev_set_options", null ],
@@ -200,9 +199,6 @@ var user_guides =
         [ "bdev_get_histogram", "jsonrpc.html#rpc_bdev_get_histogram", null ],
         [ "bdev_set_qos_limit", "jsonrpc.html#rpc_bdev_set_qos_limit", null ],
         [ "bdev_set_qd_sampling_period", "jsonrpc.html#rpc_bdev_set_qd_sampling_period", null ],
-        [ "bdev_compress_create", "jsonrpc.html#rpc_bdev_compress_create", null ],
-        [ "bdev_compress_delete", "jsonrpc.html#rpc_bdev_compress_delete", null ],
-        [ "bdev_compress_get_orphans", "jsonrpc.html#rpc_bdev_compress_get_orphans", null ],
         [ "bdev_crypto_create", "jsonrpc.html#rpc_bdev_crypto_create", null ],
         [ "bdev_crypto_delete", "jsonrpc.html#rpc_bdev_crypto_delete", null ],
         [ "bdev_ocf_create", "jsonrpc.html#rpc_bdev_ocf_create", null ],
@@ -239,6 +235,7 @@ var user_guides =
         [ "bdev_nvme_get_path_iostat", "jsonrpc.html#rpc_bdev_nvme_get_path_iostat", null ],
         [ "bdev_nvme_cuse_register", "jsonrpc.html#rpc_bdev_nvme_cuse_register", null ],
         [ "bdev_nvme_cuse_unregister", "jsonrpc.html#rpc_bdev_nvme_cuse_unregister", null ],
+        [ "bdev_nvme_set_keys", "jsonrpc.html#rpc_bdev_nvme_set_keys", null ],
         [ "bdev_zone_block_create", "jsonrpc.html#rpc_bdev_zone_block_create", null ],
         [ "bdev_zone_block_delete", "jsonrpc.html#rpc_bdev_zone_block_delete", null ],
         [ "bdev_nvme_apply_firmware", "jsonrpc.html#rpc_bdev_nvme_apply_firmware", null ],
@@ -277,80 +274,76 @@ var user_guides =
         [ "bdev_virtio_blk_set_hotplug", "jsonrpc.html#rpc_bdev_virtio_blk_set_hotplug", null ]
       ] ],
       [ "iSCSI Target", "jsonrpc.html#jsonrpc_components_iscsi_tgt", [
-        [ "iscsi_set_options method", "jsonrpc.html#rpc_iscsi_set_options", null ],
-        [ "iscsi_get_options method", "jsonrpc.html#rpc_iscsi_get_options", null ],
+        [ "iscsi_set_options", "jsonrpc.html#rpc_iscsi_set_options", null ],
+        [ "iscsi_get_options", "jsonrpc.html#rpc_iscsi_get_options", null ],
         [ "scsi_get_devices", "jsonrpc.html#rpc_scsi_get_devices", null ],
-        [ "iscsi_set_discovery_auth method", "jsonrpc.html#rpc_iscsi_set_discovery_auth", null ],
-        [ "iscsi_create_auth_group method", "jsonrpc.html#rpc_iscsi_create_auth_group", [
-          [ "secret", "jsonrpc.html#rpc_iscsi_create_auth_group_secret", null ]
-        ] ],
-        [ "iscsi_delete_auth_group method", "jsonrpc.html#rpc_iscsi_delete_auth_group", null ],
+        [ "iscsi_set_discovery_auth", "jsonrpc.html#rpc_iscsi_set_discovery_auth", null ],
+        [ "iscsi_create_auth_group", "jsonrpc.html#rpc_iscsi_create_auth_group", null ],
+        [ "iscsi_delete_auth_group", "jsonrpc.html#rpc_iscsi_delete_auth_group", null ],
         [ "iscsi_get_auth_groups", "jsonrpc.html#rpc_iscsi_get_auth_groups", null ],
         [ "iscsi_auth_group_add_secret", "jsonrpc.html#rpc_iscsi_auth_group_add_secret", null ],
         [ "iscsi_auth_group_remove_secret", "jsonrpc.html#rpc_iscsi_auth_group_remove_secret", null ],
-        [ "iscsi_get_initiator_groups method", "jsonrpc.html#rpc_iscsi_get_initiator_groups", null ],
-        [ "iscsi_create_initiator_group method", "jsonrpc.html#rpc_iscsi_create_initiator_group", null ],
-        [ "iscsi_delete_initiator_group method", "jsonrpc.html#rpc_iscsi_delete_initiator_group", null ],
-        [ "iscsi_initiator_group_add_initiators method", "jsonrpc.html#rpc_iscsi_initiator_group_add_initiators", null ],
-        [ "iscsi_initiator_group_remove_initiators method", "jsonrpc.html#rpc_iscsi_initiator_group_remove_initiators", null ],
-        [ "iscsi_get_target_nodes method", "jsonrpc.html#rpc_iscsi_get_target_nodes", null ],
-        [ "iscsi_create_target_node method", "jsonrpc.html#rpc_iscsi_create_target_node", null ],
-        [ "iscsi_target_node_set_auth method", "jsonrpc.html#rpc_iscsi_target_node_set_auth", null ],
-        [ "iscsi_target_node_add_pg_ig_maps method", "jsonrpc.html#rpc_iscsi_target_node_add_pg_ig_maps", null ],
-        [ "iscsi_target_node_remove_pg_ig_maps method", "jsonrpc.html#rpc_iscsi_target_node_remove_pg_ig_maps", null ],
-        [ "iscsi_delete_target_node method", "jsonrpc.html#rpc_iscsi_delete_target_node", null ],
-        [ "iscsi_get_portal_groups method", "jsonrpc.html#rpc_iscsi_get_portal_groups", null ],
-        [ "iscsi_create_portal_group method", "jsonrpc.html#rpc_iscsi_create_portal_group", null ],
-        [ "iscsi_start_portal_group method", "jsonrpc.html#rpc_iscsi_start_portal_group", null ],
-        [ "iscsi_delete_portal_group method", "jsonrpc.html#rpc_iscsi_delete_portal_group", null ],
-        [ "iscsi_portal_group_set_auth method", "jsonrpc.html#rpc_iscsi_portal_group_set_auth", null ],
-        [ "iscsi_get_connections method", "jsonrpc.html#rpc_iscsi_get_connections", null ],
-        [ "iscsi_get_stats method", "jsonrpc.html#iscsi_get_stats", null ],
-        [ "iscsi_target_node_add_lun method", "jsonrpc.html#rpc_iscsi_target_node_add_lun", null ],
-        [ "iscsi_target_node_set_redirect method", "jsonrpc.html#rpc_iscsi_target_node_set_redirect", null ],
-        [ "iscsi_target_node_request_logout method", "jsonrpc.html#rpc_iscsi_target_node_request_logout", null ],
+        [ "iscsi_get_initiator_groups", "jsonrpc.html#rpc_iscsi_get_initiator_groups", null ],
+        [ "iscsi_create_initiator_group", "jsonrpc.html#rpc_iscsi_create_initiator_group", null ],
+        [ "iscsi_delete_initiator_group", "jsonrpc.html#rpc_iscsi_delete_initiator_group", null ],
+        [ "iscsi_initiator_group_add_initiators", "jsonrpc.html#rpc_iscsi_initiator_group_add_initiators", null ],
+        [ "iscsi_initiator_group_remove_initiators", "jsonrpc.html#rpc_iscsi_initiator_group_remove_initiators", null ],
+        [ "iscsi_get_target_nodes", "jsonrpc.html#rpc_iscsi_get_target_nodes", null ],
+        [ "iscsi_create_target_node", "jsonrpc.html#rpc_iscsi_create_target_node", null ],
+        [ "iscsi_target_node_set_auth", "jsonrpc.html#rpc_iscsi_target_node_set_auth", null ],
+        [ "iscsi_target_node_add_pg_ig_maps", "jsonrpc.html#rpc_iscsi_target_node_add_pg_ig_maps", null ],
+        [ "iscsi_target_node_remove_pg_ig_maps", "jsonrpc.html#rpc_iscsi_target_node_remove_pg_ig_maps", null ],
+        [ "iscsi_delete_target_node", "jsonrpc.html#rpc_iscsi_delete_target_node", null ],
+        [ "iscsi_get_portal_groups", "jsonrpc.html#rpc_iscsi_get_portal_groups", null ],
+        [ "iscsi_create_portal_group", "jsonrpc.html#rpc_iscsi_create_portal_group", null ],
+        [ "iscsi_start_portal_group", "jsonrpc.html#rpc_iscsi_start_portal_group", null ],
+        [ "iscsi_delete_portal_group", "jsonrpc.html#rpc_iscsi_delete_portal_group", null ],
+        [ "iscsi_portal_group_set_auth", "jsonrpc.html#rpc_iscsi_portal_group_set_auth", null ],
+        [ "iscsi_get_connections", "jsonrpc.html#rpc_iscsi_get_connections", null ],
+        [ "iscsi_get_stats", "jsonrpc.html#rpc_iscsi_get_stats", null ],
+        [ "iscsi_target_node_add_lun", "jsonrpc.html#rpc_iscsi_target_node_add_lun", null ],
+        [ "iscsi_target_node_set_redirect", "jsonrpc.html#rpc_iscsi_target_node_set_redirect", null ],
+        [ "iscsi_target_node_request_logout", "jsonrpc.html#rpc_iscsi_target_node_request_logout", null ],
         [ "iscsi_enable_histogram", "jsonrpc.html#rpc_iscsi_enable_histogram", null ],
         [ "iscsi_get_histogram", "jsonrpc.html#rpc_iscsi_get_histogram", null ]
       ] ],
       [ "NVMe-oF Target", "jsonrpc.html#jsonrpc_components_nvmf_tgt", [
-        [ "nvmf_create_transport method", "jsonrpc.html#rpc_nvmf_create_transport", null ],
-        [ "nvmf_get_subsystems method", "jsonrpc.html#rpc_nvmf_get_subsystems", null ],
-        [ "nvmf_create_subsystem method", "jsonrpc.html#rpc_nvmf_create_subsystem", null ],
-        [ "nvmf_delete_subsystem method", "jsonrpc.html#rpc_nvmf_delete_subsystem", null ],
-        [ "nvmf_subsystem_add_listener method", "jsonrpc.html#rpc_nvmf_subsystem_add_listener", [
-          [ "listen_address", "jsonrpc.html#rpc_nvmf_listen_address", null ]
-        ] ],
-        [ "nvmf_subsystem_remove_listener method", "jsonrpc.html#rpc_nvmf_subsystem_remove_listener", null ],
-        [ "nvmf_subsystem_listener_set_ana_state method", "jsonrpc.html#rpc_nvmf_subsystem_listener_set_ana_state", null ],
-        [ "nvmf_subsystem_add_ns method", "jsonrpc.html#rpc_nvmf_subsystem_add_ns", [
-          [ "namespace", "jsonrpc.html#rpc_nvmf_namespace", null ]
-        ] ],
-        [ "nvmf_subsystem_remove_ns method", "jsonrpc.html#rpc_nvmf_subsystem_remove_ns", null ],
-        [ "nvmf_subsystem_add_host method", "jsonrpc.html#rpc_nvmf_subsystem_add_host", null ],
-        [ "nvmf_subsystem_remove_host method", "jsonrpc.html#rpc_nvmf_subsystem_remove_host", null ],
-        [ "nvmf_subsystem_allow_any_host method", "jsonrpc.html#rpc_nvmf_subsystem_allow_any_host", null ],
+        [ "nvmf_create_transport", "jsonrpc.html#rpc_nvmf_create_transport", null ],
+        [ "nvmf_get_subsystems", "jsonrpc.html#rpc_nvmf_get_subsystems", null ],
+        [ "nvmf_create_subsystem", "jsonrpc.html#rpc_nvmf_create_subsystem", null ],
+        [ "nvmf_delete_subsystem", "jsonrpc.html#rpc_nvmf_delete_subsystem", null ],
+        [ "nvmf_subsystem_add_listener", "jsonrpc.html#rpc_nvmf_subsystem_add_listener", null ],
+        [ "nvmf_subsystem_remove_listener", "jsonrpc.html#rpc_nvmf_subsystem_remove_listener", null ],
+        [ "nvmf_subsystem_listener_set_ana_state", "jsonrpc.html#rpc_nvmf_subsystem_listener_set_ana_state", null ],
+        [ "nvmf_subsystem_add_ns", "jsonrpc.html#rpc_nvmf_subsystem_add_ns", null ],
+        [ "nvmf_subsystem_remove_ns", "jsonrpc.html#rpc_nvmf_subsystem_remove_ns", null ],
+        [ "nvmf_subsystem_set_ns_ana_group", "jsonrpc.html#rpc_nvmf_subsystem_set_ns_ana_group", null ],
+        [ "nvmf_subsystem_add_host", "jsonrpc.html#rpc_nvmf_subsystem_add_host", null ],
+        [ "nvmf_subsystem_remove_host", "jsonrpc.html#rpc_nvmf_subsystem_remove_host", null ],
+        [ "nvmf_subsystem_allow_any_host", "jsonrpc.html#rpc_nvmf_subsystem_allow_any_host", null ],
+        [ "nvmf_subsystem_set_keys", "jsonrpc.html#rpc_nvmf_subsystem_set_keys", null ],
         [ "nvmf_subsystem_get_controllers", "jsonrpc.html#rpc_nvmf_subsystem_get_controllers", null ],
         [ "nvmf_subsystem_get_qpairs", "jsonrpc.html#rpc_nvmf_subsystem_get_qpairs", null ],
         [ "nvmf_subsystem_get_listeners", "jsonrpc.html#rpc_nvmf_subsystem_get_listeners", null ],
         [ "nvmf_ns_add_host", "jsonrpc.html#rpc_nvmf_ns_add_host", null ],
         [ "nvmf_ns_remove_host", "jsonrpc.html#rpc_nvmf_ns_remove_host", null ],
         [ "nvmf_set_max_subsystems", "jsonrpc.html#rpc_nvmf_set_max_subsystems", null ],
-        [ "nvmf_discovery_add_referral method", "jsonrpc.html#rpc_nvmf_discovery_add_referral", null ],
-        [ "nvmf_discovery_remove_referral method", "jsonrpc.html#rpc_nvmf_discovery_remove_referral", null ],
+        [ "nvmf_discovery_add_referral", "jsonrpc.html#rpc_nvmf_discovery_add_referral", null ],
+        [ "nvmf_discovery_remove_referral", "jsonrpc.html#rpc_nvmf_discovery_remove_referral", null ],
         [ "nvmf_discovery_get_referrals", "jsonrpc.html#rpc_nvmf_discovery_get_referrals", null ],
-        [ "nvmf_set_config", "jsonrpc.html#rpc_nvmf_set_config", [
-          [ "admin_cmd_passthru", "jsonrpc.html#spdk_nvmf_admin_passthru_conf", null ]
-        ] ],
-        [ "nvmf_get_transports method", "jsonrpc.html#rpc_nvmf_get_transports", null ],
-        [ "nvmf_get_stats method", "jsonrpc.html#rpc_nvmf_get_stats", null ],
-        [ "nvmf_set_crdt", "jsonrpc.html#rpc_nvmf_set_crdt", null ],
+        [ "nvmf_set_config", "jsonrpc.html#rpc_nvmf_set_config", null ],
+        [ "nvmf_get_transports", "jsonrpc.html#rpc_nvmf_get_transports", null ],
+        [ "nvmf_get_stats", "jsonrpc.html#rpc_nvmf_get_stats", null ],
+        [ "nvmf_set_crdt", "jsonrpc.html#rpc_nvmf_set_crdt", null ]
+      ] ],
+      [ "Vfio-user Target", "jsonrpc.html#jsonrpc_components_vfu_tgt", [
         [ "vfu_tgt_set_base_path", "jsonrpc.html#rpc_vfu_tgt_set_base_path", null ],
         [ "vfu_virtio_delete_endpoint", "jsonrpc.html#rpc_vfu_virtio_delete_endpoint", null ],
         [ "vfu_virtio_create_blk_endpoint", "jsonrpc.html#rpc_vfu_virtio_create_blk_endpoint", null ],
         [ "vfu_virtio_scsi_add_target", "jsonrpc.html#rpc_vfu_virtio_scsi_add_target", null ],
         [ "vfu_virtio_scsi_remove_target", "jsonrpc.html#rpc_vfu_virtio_scsi_remove_target", null ],
         [ "vfu_virtio_create_scsi_endpoint", "jsonrpc.html#rpc_vfu_virtio_create_scsi_endpoint", null ],
-        [ "vfu_virtio_create_fs_endpoint", "jsonrpc.html#vfu_virtio_create_fs_endpoint", null ]
+        [ "vfu_virtio_create_fs_endpoint", "jsonrpc.html#rpc_vfu_virtio_create_fs_endpoint", null ]
       ] ],
       [ "Vhost Target", "jsonrpc.html#jsonrpc_components_vhost_tgt", [
         [ "vhost_controller_set_coalescing", "jsonrpc.html#rpc_vhost_controller_set_coalescing", null ],
@@ -361,13 +354,7 @@ var user_guides =
         [ "virtio_blk_create_transport", "jsonrpc.html#rpc_virtio_blk_create_transport", null ],
         [ "virtio_blk_get_transports", "jsonrpc.html#rpc_virtio_blk_get_transports", null ],
         [ "vhost_create_blk_controller", "jsonrpc.html#rpc_vhost_create_blk_controller", null ],
-        [ "vhost_get_controllers", "jsonrpc.html#rpc_vhost_get_controllers", [
-          [ "Response", "jsonrpc.html#rpc_vhost_get_controllers_response", null ]
-        ] ],
-        [ "Vhost block", "jsonrpc.html#rpc_vhost_get_controllers_blk", null ],
-        [ "Vhost SCSI", "jsonrpc.html#rpc_vhost_get_controllers_scsi", null ],
-        [ "Vhost SCSI LUN", "jsonrpc.html#rpc_vhost_get_controllers_scsi_luns", null ],
-        [ "Vhost NVMe", "jsonrpc.html#rpc_vhost_get_controllers_nvme", null ],
+        [ "vhost_get_controllers", "jsonrpc.html#rpc_vhost_get_controllers", null ],
         [ "vhost_delete_controller", "jsonrpc.html#rpc_vhost_delete_controller", null ]
       ] ],
       [ "Logical Volume", "jsonrpc.html#jsonrpc_components_lvol", [
@@ -390,27 +377,43 @@ var user_guides =
         [ "bdev_lvol_set_parent", "jsonrpc.html#rpc_bdev_lvol_set_parent", null ],
         [ "bdev_lvol_set_parent_bdev", "jsonrpc.html#rpc_bdev_lvol_set_parent_bdev", null ],
         [ "bdev_lvol_start_shallow_copy", "jsonrpc.html#rpc_bdev_lvol_start_shallow_copy", null ],
-        [ "bdev_lvol_check_shallow_copy", "jsonrpc.html#rpc_bdev_lvol_check_shallow_copy", null ],
+        [ "bdev_lvol_check_shallow_copy", "jsonrpc.html#rpc_bdev_lvol_check_shallow_copy", null ]
+      ] ],
+      [ "RAID", "jsonrpc.html#jsonrpc_components_raid", [
         [ "bdev_raid_set_options", "jsonrpc.html#rpc_bdev_raid_set_options", null ],
         [ "bdev_raid_get_bdevs", "jsonrpc.html#rpc_bdev_raid_get_bdevs", null ],
         [ "bdev_raid_create", "jsonrpc.html#rpc_bdev_raid_create", null ],
         [ "bdev_raid_delete", "jsonrpc.html#rpc_bdev_raid_delete", null ],
         [ "bdev_raid_add_base_bdev", "jsonrpc.html#rpc_bdev_raid_add_base_bdev", null ],
-        [ "bdev_raid_remove_base_bdev", "jsonrpc.html#rpc_bdev_raid_remove_base_bdev", null ],
+        [ "bdev_raid_remove_base_bdev", "jsonrpc.html#rpc_bdev_raid_remove_base_bdev", null ]
+      ] ],
+      [ "SPLIT", "jsonrpc.html#jsonrpc_components_split", [
         [ "bdev_split_create", "jsonrpc.html#rpc_bdev_split_create", null ],
-        [ "bdev_split_delete", "jsonrpc.html#rpc_bdev_split_delete", null ],
+        [ "bdev_split_delete", "jsonrpc.html#rpc_bdev_split_delete", null ]
+      ] ],
+      [ "Uring", "jsonrpc.html#jsonrpc_components_uring", [
         [ "bdev_uring_create", "jsonrpc.html#rpc_bdev_uring_create", null ],
         [ "bdev_uring_rescan", "jsonrpc.html#rpc_bdev_uring_rescan", null ],
-        [ "bdev_uring_delete", "jsonrpc.html#rpc_bdev_uring_delete", null ],
+        [ "bdev_uring_delete", "jsonrpc.html#rpc_bdev_uring_delete", null ]
+      ] ],
+      [ "OPAL", "jsonrpc.html#jsonrpc_components_opal", [
         [ "bdev_nvme_opal_init", "jsonrpc.html#rpc_bdev_nvme_opal_init", null ],
         [ "bdev_nvme_opal_revert", "jsonrpc.html#rpc_bdev_nvme_opal_revert", null ],
         [ "bdev_opal_create", "jsonrpc.html#rpc_bdev_opal_create", null ],
         [ "bdev_opal_get_info", "jsonrpc.html#rpc_bdev_opal_get_info", null ],
         [ "bdev_opal_delete", "jsonrpc.html#rpc_bdev_opal_delete", null ],
         [ "bdev_opal_new_user", "jsonrpc.html#rpc_bdev_opal_new_user", null ],
-        [ "bdev_opal_set_lock_state", "jsonrpc.html#rpc_bdev_opal_set_lock_state", null ],
+        [ "bdev_opal_set_lock_state", "jsonrpc.html#rpc_bdev_opal_set_lock_state", null ]
+      ] ],
+      [ "Notifications", "jsonrpc.html#jsonrpc_components_notify", [
         [ "notify_get_types", "jsonrpc.html#rpc_notify_get_types", null ],
-        [ "notify_get_notifications", "jsonrpc.html#notify_get_notifications", null ]
+        [ "notify_get_notifications", "jsonrpc.html#rpc_notify_get_notifications", null ]
+      ] ],
+      [ "Keyring", "jsonrpc.html#jsonrpc_components_keyring", [
+        [ "keyring_file_add_key", "jsonrpc.html#rpc_keyring_file_add_key", null ],
+        [ "keyring_file_remove_key", "jsonrpc.html#rpc_keyring_file_remove_key", null ],
+        [ "keyring_get_keys", "jsonrpc.html#rpc_keyring_get_keys", null ],
+        [ "keyring_linux_set_options", "jsonrpc.html#rpc_keyring_linux_set_options", null ]
       ] ],
       [ "Linux Userspace Block Device (UBLK)", "jsonrpc.html#jsonrpc_components_ublk", [
         [ "ublk_create_target", "jsonrpc.html#rpc_ublk_create_target", null ],
@@ -425,22 +428,19 @@ var user_guides =
         [ "nbd_stop_disk", "jsonrpc.html#rpc_nbd_stop_disk", null ],
         [ "nbd_get_disks", "jsonrpc.html#rpc_nbd_get_disks", null ]
       ] ],
-      [ "Blobfs", "jsonrpc.html#jsonrpc_components_blobfs", [
-        [ "blobfs_detect", "jsonrpc.html#rpc_blobfs_detect", null ],
-        [ "blobfs_create", "jsonrpc.html#rpc_blobfs_create", null ],
-        [ "blobfs_mount", "jsonrpc.html#rpc_blobfs_mount", null ],
-        [ "blobfs_set_cache_size", "jsonrpc.html#rpc_blobfs_set_cache_size", null ]
-      ] ],
       [ "Socket layer", "jsonrpc.html#jsonrpc_components_sock", [
         [ "sock_impl_get_options", "jsonrpc.html#rpc_sock_impl_get_options", null ],
         [ "sock_impl_set_options", "jsonrpc.html#rpc_sock_impl_set_options", null ],
         [ "sock_set_default_impl", "jsonrpc.html#rpc_sock_set_default_impl", null ],
-        [ "sock_get_default_impl", "jsonrpc.html#rpc_sock_get_default_impl", null ],
+        [ "sock_get_default_impl", "jsonrpc.html#rpc_sock_get_default_impl", null ]
+      ] ],
+      [ "Miscellaneous RPC commands", "jsonrpc.html#jsonrpc_components_misc", [
         [ "bdev_nvme_send_cmd", "jsonrpc.html#rpc_bdev_nvme_send_cmd", null ],
-        [ "vmd_enable", "jsonrpc.html#rpc_enable_vmd", null ],
+        [ "vmd_enable", "jsonrpc.html#rpc_vmd_enable", null ],
         [ "vmd_remove_device", "jsonrpc.html#rpc_vmd_remove_device", null ],
         [ "vmd_rescan", "jsonrpc.html#rpc_vmd_rescan", null ],
         [ "spdk_get_version", "jsonrpc.html#rpc_spdk_get_version", null ],
+        [ "framework_get_pci_devices", "jsonrpc.html#rpc_framework_get_pci_devices", null ],
         [ "bdev_nvme_add_error_injection", "jsonrpc.html#rpc_bdev_nvme_add_error_injection", null ],
         [ "bdev_nvme_remove_error_injection", "jsonrpc.html#rpc_bdev_nvme_remove_error_injection", null ],
         [ "bdev_daos_create", "jsonrpc.html#rpc_bdev_daos_create", null ],
@@ -451,12 +451,14 @@ var user_guides =
         [ "bdev_nvme_start_mdns_discovery", "jsonrpc.html#rpc_bdev_nvme_start_mdns_discovery", null ],
         [ "bdev_nvme_stop_mdns_discovery", "jsonrpc.html#rpc_bdev_nvme_stop_mdns_discovery", null ],
         [ "bdev_nvme_get_mdns_discovery_info", "jsonrpc.html#rpc_bdev_nvme_get_mdns_discovery_info", null ],
-        [ "keyring_file_add_key", "jsonrpc.html#rpc_keyring_file_add_key", null ],
-        [ "keyring_file_remove_key", "jsonrpc.html#rpc_keyring_file_remove_key", null ],
-        [ "keyring_get_keys", "jsonrpc.html#rpc_keyring_get_keys", null ],
-        [ "keyring_linux_set_options", "jsonrpc.html#keyring_linux_set_options", null ],
         [ "nvmf_publish_mdns_prr", "jsonrpc.html#rpc_nvmf_publish_mdns_prr", null ],
         [ "nvmf_stop_mdns_prr", "jsonrpc.html#rpc_nvmf_stop_mdns_prr", null ]
+      ] ],
+      [ "fsdev", "jsonrpc.html#jsonrpc_components_fsdev", [
+        [ "fsdev_get_opts", "jsonrpc.html#rpc_fsdev_get_opts", null ],
+        [ "fsdev_set_opts", "jsonrpc.html#rpc_fsdev_set_opts", null ],
+        [ "fsdev_aio_create", "jsonrpc.html#rpc_fsdev_aio_create", null ],
+        [ "fsdev_aio_delete", "jsonrpc.html#rpc_fsdev_aio_delete", null ]
       ] ]
     ] ],
     [ "JSON-RPC Remote access", "jsonrpc_proxy.html", null ],

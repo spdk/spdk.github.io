@@ -220,6 +220,9 @@ Functions</h2></td></tr>
 <tr class="memitem:gaca574d3e94be6150343823dd2e7ecf46" id="r_gaca574d3e94be6150343823dd2e7ecf46"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaca574d3e94be6150343823dd2e7ecf46">spdk_bdev_reset</a> (struct spdk_bdev_desc *desc, struct spdk_io_channel *ch, <a class="el" href="bdev_8h.html#a0c5602dfd313f90032dd91683b9663e3">spdk_bdev_io_completion_cb</a> cb, void *cb_arg)</td></tr>
 <tr class="memdesc:gaca574d3e94be6150343823dd2e7ecf46"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submit a reset request to the bdev on the given channel.  <br /></td></tr>
 <tr class="separator:gaca574d3e94be6150343823dd2e7ecf46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga802715195c52ede92868b67b7d22752b" id="r_ga802715195c52ede92868b67b7d22752b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga802715195c52ede92868b67b7d22752b">spdk_bdev_nvme_nssr</a> (struct spdk_bdev_desc *desc, struct spdk_io_channel *ch, <a class="el" href="bdev_8h.html#a0c5602dfd313f90032dd91683b9663e3">spdk_bdev_io_completion_cb</a> cb, void *cb_arg)</td></tr>
+<tr class="memdesc:ga802715195c52ede92868b67b7d22752b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submit a NVMe Subsystem Reset request to the bdev on the given channel.  <br /></td></tr>
+<tr class="separator:ga802715195c52ede92868b67b7d22752b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga841dcef50460f33c8b5e321e187dc3dd" id="r_ga841dcef50460f33c8b5e321e187dc3dd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga841dcef50460f33c8b5e321e187dc3dd">spdk_bdev_abort</a> (struct spdk_bdev_desc *desc, struct spdk_io_channel *ch, void *bio_cb_arg, <a class="el" href="bdev_8h.html#a0c5602dfd313f90032dd91683b9663e3">spdk_bdev_io_completion_cb</a> cb, void *cb_arg)</td></tr>
 <tr class="memdesc:ga841dcef50460f33c8b5e321e187dc3dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submit abort requests to abort all I/Os which has bio_cb_arg as its callback context to the bdev on the given channel.  <br /></td></tr>
 <tr class="separator:ga841dcef50460f33c8b5e321e187dc3dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1236,6 +1239,52 @@ Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>0 on success. On success, the callback will always be called (even if the request ultimately failed). Return negated errno on failure, in which case the callback will not be called.<ul>
 <li>-ENOMEM - <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> buffer cannot be allocated</li>
 <li>-EBADF - desc not open for writing </li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a id="ga802715195c52ede92868b67b7d22752b" name="ga802715195c52ede92868b67b7d22752b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga802715195c52ede92868b67b7d22752b">&#9670;&#160;</a></span>spdk_bdev_nvme_nssr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_bdev_nvme_nssr </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_bdev_desc *</td>          <td class="paramname"><span class="paramname"><em>desc</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct spdk_io_channel *</td>          <td class="paramname"><span class="paramname"><em>ch</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="bdev_8h.html#a0c5602dfd313f90032dd91683b9663e3">spdk_bdev_io_completion_cb</a></td>          <td class="paramname"><span class="paramname"><em>cb</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *</td>          <td class="paramname"><span class="paramname"><em>cb_arg</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Submit a NVMe Subsystem Reset request to the bdev on the given channel. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">desc</td><td>Block device descriptor. </td></tr>
+    <tr><td class="paramname">ch</td><td>I/O channel. Obtained by calling <a class="el" href="bdev_8h.html#ac9992f445e8adf2b9f4fd38ac4978762" title="Obtain an I/O channel for the block device opened by the specified descriptor.">spdk_bdev_get_io_channel()</a>. </td></tr>
+    <tr><td class="paramname">cb</td><td>Called when the request is complete. </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>Argument passed to cb.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success. On success, the callback will always be called (even if the request ultimately failed). Return negated errno on failure, in which case the callback will not be called.<ul>
+<li>-ENOMEM - <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> buffer cannot be allocated </li>
 </ul>
 </dd></dl>
 

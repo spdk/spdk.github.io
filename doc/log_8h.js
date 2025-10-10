@@ -1,8 +1,11 @@
 var log_8h =
 [
+    [ "spdk_log_opts", "structspdk__log__opts.html", "structspdk__log__opts" ],
     [ "spdk_log_flag", "structspdk__log__flag.html", null ],
-    [ "logfunc", "log_8h.html#a759e79a44bb8dd5733e81c7d213fd730", null ],
+    [ "spdk_log_cb", "log_8h.html#ae9946dc6bcd854cdb6ea5ae7c77ff704", null ],
+    [ "spdk_log_close_cb", "log_8h.html#a0a3538385d2c67c4c0cf02c61ed27db6", null ],
     [ "spdk_log_for_each_deprecation_fn", "log_8h.html#ac1578d0b093538b785898654350f8f63", null ],
+    [ "spdk_log_open_cb", "log_8h.html#a8c37ad0624df553cc44f518d9a608dfe", null ],
     [ "spdk_log_level", "log_8h.html#a188d351bd05093cba1d8594ee9988efd", [
       [ "SPDK_LOG_DISABLED", "log_8h.html#a188d351bd05093cba1d8594ee9988efdaaaf05c57678e124375f03976b68940eb", null ],
       [ "SPDK_LOG_ERROR", "log_8h.html#a188d351bd05093cba1d8594ee9988efda1832db9861f6452883f70bf647378a36", null ],
@@ -29,7 +32,8 @@ var log_8h =
     [ "spdk_log_get_level", "log_8h.html#af600090b2a4aa95b4e9e4dae27bf6c7e", null ],
     [ "spdk_log_get_next_flag", "log_8h.html#a0fbda560ecd3b8508d939193e306cd83", null ],
     [ "spdk_log_get_print_level", "log_8h.html#a880b1e27d71328429dbf4f65e02ff145", null ],
-    [ "spdk_log_open", "log_8h.html#a07465f114306f6d593ad4d3626b44b05", null ],
+    [ "spdk_log_open", "log_8h.html#a38a770e014d52de0ae768f4a5939c4ce", null ],
+    [ "spdk_log_open_ext", "log_8h.html#a018e2ac216a0e13401e5fea78c664dad", null ],
     [ "spdk_log_register_flag", "log_8h.html#a50fb7357e436ac28171ba7b2f32920a3", null ],
     [ "spdk_log_set_flag", "log_8h.html#aa9419a88ede016c62feaa52fb0fed019", null ],
     [ "spdk_log_set_level", "log_8h.html#a422b7a65819b43157a4771be78f544ee", null ],

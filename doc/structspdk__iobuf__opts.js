@@ -1,5 +1,6 @@
 var structspdk__iobuf__opts =
 [
+    [ "enable_numa", "structspdk__iobuf__opts.html#a1f0a2c2f2ffbd058532de9c9275de2c6", null ],
     [ "large_bufsize", "structspdk__iobuf__opts.html#af9531f2bb491d72e9accf40e8fd287c7", null ],
     [ "large_pool_count", "structspdk__iobuf__opts.html#ac44e81b77a7886422bc4c4821456cc7b", null ],
     [ "opts_size", "structspdk__iobuf__opts.html#ab9a57e04c4e4310fbce9ce00e1c25056", null ],

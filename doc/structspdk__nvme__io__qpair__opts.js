@@ -5,6 +5,7 @@ var structspdk__nvme__io__qpair__opts =
     [ "disable_pcie_sgl_merge", "structspdk__nvme__io__qpair__opts.html#ace3c0ae8dc18fbf78eb495c6a7bb2aa5", null ],
     [ "io_queue_requests", "structspdk__nvme__io__qpair__opts.html#a4af594ef7f8b7e590662633c926146b4", null ],
     [ "io_queue_size", "structspdk__nvme__io__qpair__opts.html#adbb8aa3f64bc021ea5e9fddec6796341", null ],
+    [ "opts_size", "structspdk__nvme__io__qpair__opts.html#aec580676efc2aab7586d78b26819b794", null ],
     [ "qprio", "structspdk__nvme__io__qpair__opts.html#a9a9ae75991da44a7fbf06a3c82161a6d", null ],
-    [ "sq", "structspdk__nvme__io__qpair__opts.html#ab519418e68a8c3eb861bab5d2921d070", null ]
+    [ "sq", "structspdk__nvme__io__qpair__opts.html#a9e4c47efc045e9032423eb5e8ee9df65", null ]
 ];

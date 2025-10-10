@@ -165,6 +165,9 @@ Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__ext__io__opts.html">spdk_bdev_ext_io_opts</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure with optional IO request parameters.  <a href="structspdk__bdev__ext__io__opts.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__open__opts.html">spdk_bdev_open_opts</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure with optional synchronous bdev open parameters.  <a href="structspdk__bdev__open__opts.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__open__async__opts.html">spdk_bdev_open_async_opts</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure with optional asynchronous bdev open parameters.  <a href="structspdk__bdev__open__async__opts.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -277,6 +280,7 @@ Enumerations</h2></td></tr>
 , <b>SPDK_BDEV_IO_TYPE_COPY</b>
 , <br />
 &#160;&#160;<b>SPDK_BDEV_IO_TYPE_NVME_IOV_MD</b>
+, <b>SPDK_BDEV_IO_TYPE_NVME_NSSR</b>
 , <b>SPDK_BDEV_NUM_IO_TYPES</b>
 <br />
  }</td></tr>
@@ -293,12 +297,17 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:aedfbfc44fa2113d7ee219d09a0994d93"><td class="mdescLeft">&#160;</td><td class="mdescRight">bdev QoS rate limit type  <a href="#aedfbfc44fa2113d7ee219d09a0994d93">More...</a><br /></td></tr>
 <tr class="separator:aedfbfc44fa2113d7ee219d09a0994d93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af485be7d8a00412bbfbfc1d2d15d3812" id="r_af485be7d8a00412bbfbfc1d2d15d3812"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af485be7d8a00412bbfbfc1d2d15d3812">spdk_bdev_reset_stat_mode</a> { <a class="el" href="#af485be7d8a00412bbfbfc1d2d15d3812aa8f5f5e965312f35bc4971e4e21d7d93">SPDK_BDEV_RESET_STAT_ALL</a>
+, <a class="el" href="#af485be7d8a00412bbfbfc1d2d15d3812a83b1d834ca132cd2229533f159b470d6">SPDK_BDEV_RESET_STAT_MAXMIN</a>
+, <a class="el" href="#af485be7d8a00412bbfbfc1d2d15d3812a289f700e8214b32a1e35ba3a347c140d">SPDK_BDEV_RESET_STAT_NONE</a>
+ }</td></tr>
+<tr class="separator:af485be7d8a00412bbfbfc1d2d15d3812"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a13e0a1aae8f744f746ecb4c2be73f484" id="r_a13e0a1aae8f744f746ecb4c2be73f484"><td class="memItemLeft" align="right" valign="top"><a id="a13e0a1aae8f744f746ecb4c2be73f484" name="a13e0a1aae8f744f746ecb4c2be73f484"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(struct <a class="el" href="structspdk__bdev__enable__histogram__opts.html">spdk_bdev_enable_histogram_opts</a>)==9, &quot;Incorrect size&quot;)</td></tr>
-<tr class="separator:a13e0a1aae8f744f746ecb4c2be73f484"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a07eba9ef9156e1df0ce8d012e5019c" id="r_a3a07eba9ef9156e1df0ce8d012e5019c"><td class="memItemLeft" align="right" valign="top"><a id="a3a07eba9ef9156e1df0ce8d012e5019c" name="a3a07eba9ef9156e1df0ce8d012e5019c"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(struct <a class="el" href="structspdk__bdev__enable__histogram__opts.html">spdk_bdev_enable_histogram_opts</a>)==26, &quot;Incorrect size&quot;)</td></tr>
+<tr class="separator:a3a07eba9ef9156e1df0ce8d012e5019c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2a07b56033890913587438d1c77942db" id="r_a2a07b56033890913587438d1c77942db"><td class="memItemLeft" align="right" valign="top"><a id="a2a07b56033890913587438d1c77942db" name="a2a07b56033890913587438d1c77942db"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(struct <a class="el" href="structspdk__bdev__opts.html">spdk_bdev_opts</a>)==32, &quot;Incorrect size&quot;)</td></tr>
 <tr class="separator:a2a07b56033890913587438d1c77942db"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -353,9 +362,18 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_set_opts</b>
 <tr class="memitem:a46b18a69f9da6a60e5a977d7e73f3b11" id="r_a46b18a69f9da6a60e5a977d7e73f3b11"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a46b18a69f9da6a60e5a977d7e73f3b11">spdk_bdev_next_leaf</a> (struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *prev)</td></tr>
 <tr class="memdesc:a46b18a69f9da6a60e5a977d7e73f3b11"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the next block device without virtual block devices on top.  <br /></td></tr>
 <tr class="separator:a46b18a69f9da6a60e5a977d7e73f3b11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8dc6c24b5f08cc264b1db365c6b7ff90" id="r_a8dc6c24b5f08cc264b1db365c6b7ff90"><td class="memItemLeft" align="right" valign="top"><a id="a8dc6c24b5f08cc264b1db365c6b7ff90" name="a8dc6c24b5f08cc264b1db365c6b7ff90"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(struct <a class="el" href="structspdk__bdev__open__opts.html">spdk_bdev_open_opts</a>)==16, &quot;Incorrect size&quot;)</td></tr>
+<tr class="separator:a8dc6c24b5f08cc264b1db365c6b7ff90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ed6280fce088014b51cc9714247cba0" id="r_a0ed6280fce088014b51cc9714247cba0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0ed6280fce088014b51cc9714247cba0">spdk_bdev_open_opts_init</a> (struct <a class="el" href="structspdk__bdev__open__opts.html">spdk_bdev_open_opts</a> *opts, size_t opts_size)</td></tr>
+<tr class="memdesc:a0ed6280fce088014b51cc9714247cba0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize bdev open options.  <br /></td></tr>
+<tr class="separator:a0ed6280fce088014b51cc9714247cba0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aca93f44b46f0b877df9b6936ef9e0a9e" id="r_aca93f44b46f0b877df9b6936ef9e0a9e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aca93f44b46f0b877df9b6936ef9e0a9e">spdk_bdev_open_ext</a> (const char *bdev_name, bool write, <a class="el" href="#ab4755b1b0a2a204732c3be266b6e1b08">spdk_bdev_event_cb_t</a> event_cb, void *event_ctx, struct spdk_bdev_desc **desc)</td></tr>
 <tr class="memdesc:aca93f44b46f0b877df9b6936ef9e0a9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Open a block device for I/O operations.  <br /></td></tr>
 <tr class="separator:aca93f44b46f0b877df9b6936ef9e0a9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94c7890fc23800a92d89e38a3b293048" id="r_a94c7890fc23800a92d89e38a3b293048"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a94c7890fc23800a92d89e38a3b293048">spdk_bdev_open_ext_v2</a> (const char *bdev_name, bool write, <a class="el" href="#ab4755b1b0a2a204732c3be266b6e1b08">spdk_bdev_event_cb_t</a> event_cb, void *event_ctx, struct <a class="el" href="structspdk__bdev__open__opts.html">spdk_bdev_open_opts</a> *opts, struct spdk_bdev_desc **desc)</td></tr>
+<tr class="memdesc:a94c7890fc23800a92d89e38a3b293048"><td class="mdescLeft">&#160;</td><td class="mdescRight">Open a block device for I/O operations with options.  <br /></td></tr>
+<tr class="separator:a94c7890fc23800a92d89e38a3b293048"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1a0f34e14b9849b25c5b24c2b4941ad0" id="r_a1a0f34e14b9849b25c5b24c2b4941ad0"><td class="memItemLeft" align="right" valign="top"><a id="a1a0f34e14b9849b25c5b24c2b4941ad0" name="a1a0f34e14b9849b25c5b24c2b4941ad0"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(struct <a class="el" href="structspdk__bdev__open__async__opts.html">spdk_bdev_open_async_opts</a>)==16, &quot;Incorrect size&quot;)</td></tr>
 <tr class="separator:a1a0f34e14b9849b25c5b24c2b4941ad0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -377,6 +395,30 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_set_opts</b>
 <tr class="memitem:aae05ee98ddd0903932505782191805da" id="r_aae05ee98ddd0903932505782191805da"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aae05ee98ddd0903932505782191805da">spdk_bdev_desc_get_bdev</a> (struct spdk_bdev_desc *desc)</td></tr>
 <tr class="memdesc:aae05ee98ddd0903932505782191805da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the bdev associated with a bdev descriptor.  <br /></td></tr>
 <tr class="separator:aae05ee98ddd0903932505782191805da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0340fa7d5703d4a08cf376caf4bcf63b" id="r_a0340fa7d5703d4a08cf376caf4bcf63b"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0340fa7d5703d4a08cf376caf4bcf63b">spdk_bdev_desc_get_block_size</a> (struct spdk_bdev_desc *desc)</td></tr>
+<tr class="memdesc:a0340fa7d5703d4a08cf376caf4bcf63b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get logical block size, specific to a bdev descriptor.  <br /></td></tr>
+<tr class="separator:a0340fa7d5703d4a08cf376caf4bcf63b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aecfc22e07f45a727049b617c36609ca3" id="r_aecfc22e07f45a727049b617c36609ca3"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aecfc22e07f45a727049b617c36609ca3">spdk_bdev_desc_get_md_size</a> (struct spdk_bdev_desc *desc)</td></tr>
+<tr class="memdesc:aecfc22e07f45a727049b617c36609ca3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get metadata size, specific to a bdev descriptor.  <br /></td></tr>
+<tr class="separator:aecfc22e07f45a727049b617c36609ca3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51c3aa0ffee42144cce8a9fc5e8f222d" id="r_a51c3aa0ffee42144cce8a9fc5e8f222d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a51c3aa0ffee42144cce8a9fc5e8f222d">spdk_bdev_desc_is_md_interleaved</a> (struct spdk_bdev_desc *desc)</td></tr>
+<tr class="memdesc:a51c3aa0ffee42144cce8a9fc5e8f222d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Query whether metadata is interleaved with block data or separated with block data, specific to a bdev descriptor.  <br /></td></tr>
+<tr class="separator:a51c3aa0ffee42144cce8a9fc5e8f222d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4aac7a0b03221c4a17b4083441459c3b" id="r_a4aac7a0b03221c4a17b4083441459c3b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4aac7a0b03221c4a17b4083441459c3b">spdk_bdev_desc_is_md_separate</a> (struct spdk_bdev_desc *desc)</td></tr>
+<tr class="memdesc:a4aac7a0b03221c4a17b4083441459c3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Query whether metadata is interleaved with block data or separated from block data, specific to a bdev descriptor.  <br /></td></tr>
+<tr class="separator:a4aac7a0b03221c4a17b4083441459c3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff3fd31ff5d17ab068df76313924ecf6" id="r_aff3fd31ff5d17ab068df76313924ecf6"><td class="memItemLeft" align="right" valign="top">enum spdk_dif_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aff3fd31ff5d17ab068df76313924ecf6">spdk_bdev_desc_get_dif_type</a> (struct spdk_bdev_desc *desc)</td></tr>
+<tr class="memdesc:aff3fd31ff5d17ab068df76313924ecf6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get DIF type, specific to a bdev descriptor.  <br /></td></tr>
+<tr class="separator:aff3fd31ff5d17ab068df76313924ecf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90a4e6bdce910f74a80cef3d1ef90a21" id="r_a90a4e6bdce910f74a80cef3d1ef90a21"><td class="memItemLeft" align="right" valign="top">enum spdk_dif_pi_format&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a90a4e6bdce910f74a80cef3d1ef90a21">spdk_bdev_desc_get_dif_pi_format</a> (struct spdk_bdev_desc *desc)</td></tr>
+<tr class="memdesc:a90a4e6bdce910f74a80cef3d1ef90a21"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get DIF protection information format of the block device, specific to a bdev descriptor.  <br /></td></tr>
+<tr class="separator:a90a4e6bdce910f74a80cef3d1ef90a21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a732ef0ea12ecbfc13de714f83600c80c" id="r_a732ef0ea12ecbfc13de714f83600c80c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a732ef0ea12ecbfc13de714f83600c80c">spdk_bdev_desc_is_dif_head_of_md</a> (struct spdk_bdev_desc *desc)</td></tr>
+<tr class="memdesc:a732ef0ea12ecbfc13de714f83600c80c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether DIF is set in the first 8/16 bytes or the last 8/16 bytes of metadata, specific to a bdev descriptor.  <br /></td></tr>
+<tr class="separator:a732ef0ea12ecbfc13de714f83600c80c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3de5c87275f603b24601bafa80e04907" id="r_a3de5c87275f603b24601bafa80e04907"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3de5c87275f603b24601bafa80e04907">spdk_bdev_desc_is_dif_check_enabled</a> (struct spdk_bdev_desc *desc, enum spdk_dif_check_type check_type)</td></tr>
+<tr class="memdesc:a3de5c87275f603b24601bafa80e04907"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether the DIF check type is enabled, specific to a bdev descriptor.  <br /></td></tr>
+<tr class="separator:a3de5c87275f603b24601bafa80e04907"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af0fc679da6beac3cf9677f1bf97c6974" id="r_af0fc679da6beac3cf9677f1bf97c6974"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af0fc679da6beac3cf9677f1bf97c6974">spdk_bdev_set_timeout</a> (struct spdk_bdev_desc *desc, uint64_t timeout_in_sec, <a class="el" href="#a83db84993554e784cbddf2d217f6ea4f">spdk_bdev_io_timeout_cb</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:af0fc679da6beac3cf9677f1bf97c6974"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a time limit for the timeout IO of the bdev and timeout callback.  <br /></td></tr>
 <tr class="separator:af0fc679da6beac3cf9677f1bf97c6974"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -449,6 +491,21 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_set_opts</b>
 <tr class="memitem:a2c895e82c51c654a5b3f838f7254d690" id="r_a2c895e82c51c654a5b3f838f7254d690"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2c895e82c51c654a5b3f838f7254d690">spdk_bdev_get_physical_block_size</a> (const struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *bdev)</td></tr>
 <tr class="memdesc:a2c895e82c51c654a5b3f838f7254d690"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get block device physical block size.  <br /></td></tr>
 <tr class="separator:a2c895e82c51c654a5b3f838f7254d690"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48bd82b8d0741189bb76d40253d997e9" id="r_a48bd82b8d0741189bb76d40253d997e9"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a48bd82b8d0741189bb76d40253d997e9">spdk_bdev_get_preferred_write_alignment</a> (const struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *bdev)</td></tr>
+<tr class="memdesc:a48bd82b8d0741189bb76d40253d997e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get block device preferred write alignment.  <br /></td></tr>
+<tr class="separator:a48bd82b8d0741189bb76d40253d997e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6371f20ffc3163aaf7f84cf855afcb2" id="r_ae6371f20ffc3163aaf7f84cf855afcb2"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae6371f20ffc3163aaf7f84cf855afcb2">spdk_bdev_get_preferred_write_granularity</a> (const struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *bdev)</td></tr>
+<tr class="memdesc:ae6371f20ffc3163aaf7f84cf855afcb2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get block device preferred write granularity.  <br /></td></tr>
+<tr class="separator:ae6371f20ffc3163aaf7f84cf855afcb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a130baa15c72484a56654d10e75e0d62a" id="r_a130baa15c72484a56654d10e75e0d62a"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a130baa15c72484a56654d10e75e0d62a">spdk_bdev_get_optimal_write_size</a> (const struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *bdev)</td></tr>
+<tr class="memdesc:a130baa15c72484a56654d10e75e0d62a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get block device optimal write size.  <br /></td></tr>
+<tr class="separator:a130baa15c72484a56654d10e75e0d62a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6177388562ad8c2b5a0f78ae5d0fe719" id="r_a6177388562ad8c2b5a0f78ae5d0fe719"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6177388562ad8c2b5a0f78ae5d0fe719">spdk_bdev_get_preferred_unmap_alignment</a> (const struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *bdev)</td></tr>
+<tr class="memdesc:a6177388562ad8c2b5a0f78ae5d0fe719"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get block device preferred unmap alignment.  <br /></td></tr>
+<tr class="separator:a6177388562ad8c2b5a0f78ae5d0fe719"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2a1143fc8cbc6a8a30bf073d9ff5efb" id="r_ac2a1143fc8cbc6a8a30bf073d9ff5efb"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac2a1143fc8cbc6a8a30bf073d9ff5efb">spdk_bdev_get_preferred_unmap_granularity</a> (const struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *bdev)</td></tr>
+<tr class="memdesc:ac2a1143fc8cbc6a8a30bf073d9ff5efb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get block device preferred unmap granularity.  <br /></td></tr>
+<tr class="separator:ac2a1143fc8cbc6a8a30bf073d9ff5efb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac94b5900766ec42da5fc3658a5749858" id="r_ac94b5900766ec42da5fc3658a5749858"><td class="memItemLeft" align="right" valign="top">enum spdk_dif_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac94b5900766ec42da5fc3658a5749858">spdk_bdev_get_dif_type</a> (const struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *bdev)</td></tr>
 <tr class="memdesc:ac94b5900766ec42da5fc3658a5749858"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get DIF type of the block device.  <br /></td></tr>
 <tr class="separator:ac94b5900766ec42da5fc3658a5749858"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -575,6 +632,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_set_opts</b>
 <tr class="memitem:gaca574d3e94be6150343823dd2e7ecf46" id="r_gaca574d3e94be6150343823dd2e7ecf46"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bdev__io__submit__functions.html#gaca574d3e94be6150343823dd2e7ecf46">spdk_bdev_reset</a> (struct spdk_bdev_desc *desc, struct spdk_io_channel *ch, <a class="el" href="#a0c5602dfd313f90032dd91683b9663e3">spdk_bdev_io_completion_cb</a> cb, void *cb_arg)</td></tr>
 <tr class="memdesc:gaca574d3e94be6150343823dd2e7ecf46"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submit a reset request to the bdev on the given channel.  <br /></td></tr>
 <tr class="separator:gaca574d3e94be6150343823dd2e7ecf46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga802715195c52ede92868b67b7d22752b" id="r_ga802715195c52ede92868b67b7d22752b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bdev__io__submit__functions.html#ga802715195c52ede92868b67b7d22752b">spdk_bdev_nvme_nssr</a> (struct spdk_bdev_desc *desc, struct spdk_io_channel *ch, <a class="el" href="#a0c5602dfd313f90032dd91683b9663e3">spdk_bdev_io_completion_cb</a> cb, void *cb_arg)</td></tr>
+<tr class="memdesc:ga802715195c52ede92868b67b7d22752b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submit a NVMe Subsystem Reset request to the bdev on the given channel.  <br /></td></tr>
+<tr class="separator:ga802715195c52ede92868b67b7d22752b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga841dcef50460f33c8b5e321e187dc3dd" id="r_ga841dcef50460f33c8b5e321e187dc3dd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bdev__io__submit__functions.html#ga841dcef50460f33c8b5e321e187dc3dd">spdk_bdev_abort</a> (struct spdk_bdev_desc *desc, struct spdk_io_channel *ch, void *bio_cb_arg, <a class="el" href="#a0c5602dfd313f90032dd91683b9663e3">spdk_bdev_io_completion_cb</a> cb, void *cb_arg)</td></tr>
 <tr class="memdesc:ga841dcef50460f33c8b5e321e187dc3dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submit abort requests to abort all I/Os which has bio_cb_arg as its callback context to the bdev on the given channel.  <br /></td></tr>
 <tr class="separator:ga841dcef50460f33c8b5e321e187dc3dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -599,12 +659,12 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_set_opts</b>
 <tr class="memitem:acc4beee18ded7837fa92bd7c34e7ef2e" id="r_acc4beee18ded7837fa92bd7c34e7ef2e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acc4beee18ded7837fa92bd7c34e7ef2e">spdk_bdev_queue_io_wait</a> (struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *bdev, struct spdk_io_channel *ch, struct <a class="el" href="structspdk__bdev__io__wait__entry.html">spdk_bdev_io_wait_entry</a> *entry)</td></tr>
 <tr class="memdesc:acc4beee18ded7837fa92bd7c34e7ef2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add an entry into the calling thread's queue to be notified when an <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> becomes available.  <br /></td></tr>
 <tr class="separator:acc4beee18ded7837fa92bd7c34e7ef2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab1ba28ba382edd1d792d51a054eb3aa2" id="r_ab1ba28ba382edd1d792d51a054eb3aa2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab1ba28ba382edd1d792d51a054eb3aa2">spdk_bdev_get_io_stat</a> (struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *bdev, struct spdk_io_channel *ch, struct <a class="el" href="structspdk__bdev__io__stat.html">spdk_bdev_io_stat</a> *stat)</td></tr>
-<tr class="memdesc:ab1ba28ba382edd1d792d51a054eb3aa2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return I/O statistics for this channel.  <br /></td></tr>
-<tr class="separator:ab1ba28ba382edd1d792d51a054eb3aa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa478b43fc9e6e41c34438f5b2ef742d5" id="r_aa478b43fc9e6e41c34438f5b2ef742d5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa478b43fc9e6e41c34438f5b2ef742d5">spdk_bdev_get_device_stat</a> (struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *bdev, struct <a class="el" href="structspdk__bdev__io__stat.html">spdk_bdev_io_stat</a> *stat, spdk_bdev_get_device_stat_cb cb, void *cb_arg)</td></tr>
-<tr class="memdesc:aa478b43fc9e6e41c34438f5b2ef742d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return I/O statistics for this bdev.  <br /></td></tr>
-<tr class="separator:aa478b43fc9e6e41c34438f5b2ef742d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4822139d747c7a45dca10b985a5e7e1b" id="r_a4822139d747c7a45dca10b985a5e7e1b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4822139d747c7a45dca10b985a5e7e1b">spdk_bdev_get_io_stat</a> (struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *bdev, struct spdk_io_channel *ch, struct <a class="el" href="structspdk__bdev__io__stat.html">spdk_bdev_io_stat</a> *stat, enum <a class="el" href="#af485be7d8a00412bbfbfc1d2d15d3812">spdk_bdev_reset_stat_mode</a> reset_mode)</td></tr>
+<tr class="memdesc:a4822139d747c7a45dca10b985a5e7e1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return I/O statistics for this channel.  <br /></td></tr>
+<tr class="separator:a4822139d747c7a45dca10b985a5e7e1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14b59ce607cf40a2d08df870bab999dd" id="r_a14b59ce607cf40a2d08df870bab999dd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a14b59ce607cf40a2d08df870bab999dd">spdk_bdev_get_device_stat</a> (struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *bdev, struct <a class="el" href="structspdk__bdev__io__stat.html">spdk_bdev_io_stat</a> *stat, enum <a class="el" href="#af485be7d8a00412bbfbfc1d2d15d3812">spdk_bdev_reset_stat_mode</a> reset_mode, spdk_bdev_get_device_stat_cb cb, void *cb_arg)</td></tr>
+<tr class="memdesc:a14b59ce607cf40a2d08df870bab999dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return I/O statistics for this bdev.  <br /></td></tr>
+<tr class="separator:a14b59ce607cf40a2d08df870bab999dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae7e1bf90f44f042c2b2ad463b8667735" id="r_ae7e1bf90f44f042c2b2ad463b8667735"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae7e1bf90f44f042c2b2ad463b8667735">spdk_bdev_io_get_nvme_status</a> (const struct <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> *bdev_io, uint32_t *cdw0, int *sct, int *sc)</td></tr>
 <tr class="memdesc:ae7e1bf90f44f042c2b2ad463b8667735"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the status of bdev_io as an NVMe status code and command specific completion queue value.  <br /></td></tr>
 <tr class="separator:ae7e1bf90f44f042c2b2ad463b8667735"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -659,6 +719,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_set_opts</b>
 <tr class="memitem:af833943e22885817e6954426b6a11b5f" id="r_af833943e22885817e6954426b6a11b5f"><td class="memItemLeft" align="right" valign="top">union <a class="el" href="unionspdk__bdev__nvme__ctratt.html">spdk_bdev_nvme_ctratt</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af833943e22885817e6954426b6a11b5f">spdk_bdev_get_nvme_ctratt</a> (struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *bdev)</td></tr>
 <tr class="memdesc:af833943e22885817e6954426b6a11b5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get controller attributes for the bdev.  <br /></td></tr>
 <tr class="separator:af833943e22885817e6954426b6a11b5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a664e5ac4a004f361d3e0784564ca0ae9" id="r_a664e5ac4a004f361d3e0784564ca0ae9"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a664e5ac4a004f361d3e0784564ca0ae9">spdk_bdev_get_nvme_nsid</a> (struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *bdev)</td></tr>
+<tr class="memdesc:a664e5ac4a004f361d3e0784564ca0ae9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get NVMe namespace ID for a given bdev (only for NVMe bdevs).  <br /></td></tr>
+<tr class="separator:a664e5ac4a004f361d3e0784564ca0ae9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Block device abstraction layer. </p>
@@ -943,6 +1006,28 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_set_opts</b>
 
 </div>
 </div>
+<a id="af485be7d8a00412bbfbfc1d2d15d3812" name="af485be7d8a00412bbfbfc1d2d15d3812"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af485be7d8a00412bbfbfc1d2d15d3812">&#9670;&#160;</a></span>spdk_bdev_reset_stat_mode</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#af485be7d8a00412bbfbfc1d2d15d3812">spdk_bdev_reset_stat_mode</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="af485be7d8a00412bbfbfc1d2d15d3812aa8f5f5e965312f35bc4971e4e21d7d93" name="af485be7d8a00412bbfbfc1d2d15d3812aa8f5f5e965312f35bc4971e4e21d7d93"></a>SPDK_BDEV_RESET_STAT_ALL&#160;</td><td class="fielddoc"><p>Reset all stats. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="af485be7d8a00412bbfbfc1d2d15d3812a83b1d834ca132cd2229533f159b470d6" name="af485be7d8a00412bbfbfc1d2d15d3812a83b1d834ca132cd2229533f159b470d6"></a>SPDK_BDEV_RESET_STAT_MAXMIN&#160;</td><td class="fielddoc"><p>Reset only max and min stats. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="af485be7d8a00412bbfbfc1d2d15d3812a289f700e8214b32a1e35ba3a347c140d" name="af485be7d8a00412bbfbfc1d2d15d3812a289f700e8214b32a1e35ba3a347c140d"></a>SPDK_BDEV_RESET_STAT_NONE&#160;</td><td class="fielddoc"><p>Do not reset stats at all. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="a83092483a9de9f7d736ef4ceaaf0d26c" name="a83092483a9de9f7d736ef4ceaaf0d26c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a83092483a9de9f7d736ef4ceaaf0d26c">&#9670;&#160;</a></span>spdk_bdev_channel_get_histogram()</h2>
@@ -1030,6 +1115,223 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_set_opts</b>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>bdev associated with the descriptor </dd></dl>
+
+</div>
+</div>
+<a id="a0340fa7d5703d4a08cf376caf4bcf63b" name="a0340fa7d5703d4a08cf376caf4bcf63b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0340fa7d5703d4a08cf376caf4bcf63b">&#9670;&#160;</a></span>spdk_bdev_desc_get_block_size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t spdk_bdev_desc_get_block_size </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_bdev_desc *</td>          <td class="paramname"><span class="paramname"><em>desc</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get logical block size, specific to a bdev descriptor. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">desc</td><td>Open block device descriptor. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Size of logical block for this bdev in bytes. </dd></dl>
+
+</div>
+</div>
+<a id="a90a4e6bdce910f74a80cef3d1ef90a21" name="a90a4e6bdce910f74a80cef3d1ef90a21"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90a4e6bdce910f74a80cef3d1ef90a21">&#9670;&#160;</a></span>spdk_bdev_desc_get_dif_pi_format()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum spdk_dif_pi_format spdk_bdev_desc_get_dif_pi_format </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_bdev_desc *</td>          <td class="paramname"><span class="paramname"><em>desc</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get DIF protection information format of the block device, specific to a bdev descriptor. </p>
+<p>Note that this function is valid only if DIF type is not SPDK_DIF_DISABLE.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">desc</td><td>Open block device descriptor. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>DIF protection information format of the block device. </dd></dl>
+
+</div>
+</div>
+<a id="aff3fd31ff5d17ab068df76313924ecf6" name="aff3fd31ff5d17ab068df76313924ecf6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff3fd31ff5d17ab068df76313924ecf6">&#9670;&#160;</a></span>spdk_bdev_desc_get_dif_type()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum spdk_dif_type spdk_bdev_desc_get_dif_type </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_bdev_desc *</td>          <td class="paramname"><span class="paramname"><em>desc</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get DIF type, specific to a bdev descriptor. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">desc</td><td>Open block device descriptor. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>DIF type of the block device. </dd></dl>
+
+</div>
+</div>
+<a id="aecfc22e07f45a727049b617c36609ca3" name="aecfc22e07f45a727049b617c36609ca3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aecfc22e07f45a727049b617c36609ca3">&#9670;&#160;</a></span>spdk_bdev_desc_get_md_size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t spdk_bdev_desc_get_md_size </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_bdev_desc *</td>          <td class="paramname"><span class="paramname"><em>desc</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get metadata size, specific to a bdev descriptor. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">desc</td><td>Open block device descriptor </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Size of metadata for this bdev in bytes. </dd></dl>
+
+</div>
+</div>
+<a id="a3de5c87275f603b24601bafa80e04907" name="a3de5c87275f603b24601bafa80e04907"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3de5c87275f603b24601bafa80e04907">&#9670;&#160;</a></span>spdk_bdev_desc_is_dif_check_enabled()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool spdk_bdev_desc_is_dif_check_enabled </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_bdev_desc *</td>          <td class="paramname"><span class="paramname"><em>desc</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">enum spdk_dif_check_type</td>          <td class="paramname"><span class="paramname"><em>check_type</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Check whether the DIF check type is enabled, specific to a bdev descriptor. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">desc</td><td>Open block device descriptor. </td></tr>
+    <tr><td class="paramname">check_type</td><td>The specific DIF check type. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if enabled, false otherwise. </dd></dl>
+
+</div>
+</div>
+<a id="a732ef0ea12ecbfc13de714f83600c80c" name="a732ef0ea12ecbfc13de714f83600c80c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a732ef0ea12ecbfc13de714f83600c80c">&#9670;&#160;</a></span>spdk_bdev_desc_is_dif_head_of_md()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool spdk_bdev_desc_is_dif_head_of_md </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_bdev_desc *</td>          <td class="paramname"><span class="paramname"><em>desc</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Check whether DIF is set in the first 8/16 bytes or the last 8/16 bytes of metadata, specific to a bdev descriptor. </p>
+<p>Note that this function is valid only if DIF type is not SPDK_DIF_DISABLE.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">desc</td><td>Open block device descriptor.. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if DIF is set in the first 8/16 bytes of metadata, or false if DIF is set in the last 8/16 bytes of metadata. </dd></dl>
+
+</div>
+</div>
+<a id="a51c3aa0ffee42144cce8a9fc5e8f222d" name="a51c3aa0ffee42144cce8a9fc5e8f222d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a51c3aa0ffee42144cce8a9fc5e8f222d">&#9670;&#160;</a></span>spdk_bdev_desc_is_md_interleaved()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool spdk_bdev_desc_is_md_interleaved </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_bdev_desc *</td>          <td class="paramname"><span class="paramname"><em>desc</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Query whether metadata is interleaved with block data or separated with block data, specific to a bdev descriptor. </p>
+<p>Note this function is valid only if there is metadata.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">desc</td><td>Open block device descriptor. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if metadata is interleaved with block data or false if metadata is separated with block data. </dd></dl>
+
+</div>
+</div>
+<a id="a4aac7a0b03221c4a17b4083441459c3b" name="a4aac7a0b03221c4a17b4083441459c3b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4aac7a0b03221c4a17b4083441459c3b">&#9670;&#160;</a></span>spdk_bdev_desc_is_md_separate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool spdk_bdev_desc_is_md_separate </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_bdev_desc *</td>          <td class="paramname"><span class="paramname"><em>desc</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Query whether metadata is interleaved with block data or separated from block data, specific to a bdev descriptor. </p>
+<p>Note this function is valid only if there is metadata.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">desc</td><td>Open block device descriptor. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if metadata is separated from block data, false otherwise. </dd></dl>
 
 </div>
 </div>
@@ -1423,8 +1725,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_set_opts</b>
 
 </div>
 </div>
-<a id="aa478b43fc9e6e41c34438f5b2ef742d5" name="aa478b43fc9e6e41c34438f5b2ef742d5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa478b43fc9e6e41c34438f5b2ef742d5">&#9670;&#160;</a></span>spdk_bdev_get_device_stat()</h2>
+<a id="a14b59ce607cf40a2d08df870bab999dd" name="a14b59ce607cf40a2d08df870bab999dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a14b59ce607cf40a2d08df870bab999dd">&#9670;&#160;</a></span>spdk_bdev_get_device_stat()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1438,6 +1740,11 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_set_opts</b>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">struct <a class="el" href="structspdk__bdev__io__stat.html">spdk_bdev_io_stat</a> *</td>          <td class="paramname"><span class="paramname"><em>stat</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">enum <a class="el" href="#af485be7d8a00412bbfbfc1d2d15d3812">spdk_bdev_reset_stat_mode</a></td>          <td class="paramname"><span class="paramname"><em>reset_mode</em>, </span></td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1458,6 +1765,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_set_opts</b>
   <table class="params">
     <tr><td class="paramname">bdev</td><td>Block device to query. </td></tr>
     <tr><td class="paramname">stat</td><td>Structure for aggregating collected statistics. Passed as argument to cb. </td></tr>
+    <tr><td class="paramname">reset_mode</td><td>Mode to determine how I/O stat should be reset after obtaining it. </td></tr>
     <tr><td class="paramname">cb</td><td>Called when this operation completes. </td></tr>
     <tr><td class="paramname">cb_arg</td><td>Argument passed to callback function. </td></tr>
   </table>
@@ -1546,8 +1854,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_set_opts</b>
 
 </div>
 </div>
-<a id="ab1ba28ba382edd1d792d51a054eb3aa2" name="ab1ba28ba382edd1d792d51a054eb3aa2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab1ba28ba382edd1d792d51a054eb3aa2">&#9670;&#160;</a></span>spdk_bdev_get_io_stat()</h2>
+<a id="a4822139d747c7a45dca10b985a5e7e1b" name="a4822139d747c7a45dca10b985a5e7e1b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4822139d747c7a45dca10b985a5e7e1b">&#9670;&#160;</a></span>spdk_bdev_get_io_stat()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1565,7 +1873,12 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_set_opts</b>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">struct <a class="el" href="structspdk__bdev__io__stat.html">spdk_bdev_io_stat</a> *</td>          <td class="paramname"><span class="paramname"><em>stat</em></span>&#160;)</td>
+          <td class="paramtype">struct <a class="el" href="structspdk__bdev__io__stat.html">spdk_bdev_io_stat</a> *</td>          <td class="paramname"><span class="paramname"><em>stat</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">enum <a class="el" href="#af485be7d8a00412bbfbfc1d2d15d3812">spdk_bdev_reset_stat_mode</a></td>          <td class="paramname"><span class="paramname"><em>reset_mode</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1576,6 +1889,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_set_opts</b>
     <tr><td class="paramname">bdev</td><td>Block device. </td></tr>
     <tr><td class="paramname">ch</td><td>I/O channel. Obtained by calling <a class="el" href="#ac9992f445e8adf2b9f4fd38ac4978762" title="Obtain an I/O channel for the block device opened by the specified descriptor.">spdk_bdev_get_io_channel()</a>. </td></tr>
     <tr><td class="paramname">stat</td><td>The per-channel statistics. </td></tr>
+    <tr><td class="paramname">reset_mode</td><td>Mode to determine how I/O stat should be reset after obtaining it. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1948,6 +2262,32 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_set_opts</b>
 
 </div>
 </div>
+<a id="a664e5ac4a004f361d3e0784564ca0ae9" name="a664e5ac4a004f361d3e0784564ca0ae9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a664e5ac4a004f361d3e0784564ca0ae9">&#9670;&#160;</a></span>spdk_bdev_get_nvme_nsid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t spdk_bdev_get_nvme_nsid </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *</td>          <td class="paramname"><span class="paramname"><em>bdev</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get NVMe namespace ID for a given bdev (only for NVMe bdevs). </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bdev</td><td>Block device to query.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Namespace ID or 0 if it's not available. </dd></dl>
+
+</div>
+</div>
 <a id="aa79625889e23318204d235da36a4fa02" name="aa79625889e23318204d235da36a4fa02"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa79625889e23318204d235da36a4fa02">&#9670;&#160;</a></span>spdk_bdev_get_optimal_io_boundary()</h2>
 
@@ -1971,6 +2311,32 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_set_opts</b>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Optimal I/O boundary in blocks that should not be crossed for best performance, or 0 if no optimal boundary is reported. </dd></dl>
+
+</div>
+</div>
+<a id="a130baa15c72484a56654d10e75e0d62a" name="a130baa15c72484a56654d10e75e0d62a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a130baa15c72484a56654d10e75e0d62a">&#9670;&#160;</a></span>spdk_bdev_get_optimal_write_size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t spdk_bdev_get_optimal_write_size </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *</td>          <td class="paramname"><span class="paramname"><em>bdev</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get block device optimal write size. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bdev</td><td>Block device to query. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>preferred write size for this bdev in blocks. Value 0 means there is no preferred write size. </dd></dl>
 
 </div>
 </div>
@@ -2027,6 +2393,110 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_set_opts</b>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Size of physical block size for this bdev in bytes. </dd></dl>
+
+</div>
+</div>
+<a id="a6177388562ad8c2b5a0f78ae5d0fe719" name="a6177388562ad8c2b5a0f78ae5d0fe719"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6177388562ad8c2b5a0f78ae5d0fe719">&#9670;&#160;</a></span>spdk_bdev_get_preferred_unmap_alignment()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t spdk_bdev_get_preferred_unmap_alignment </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *</td>          <td class="paramname"><span class="paramname"><em>bdev</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get block device preferred unmap alignment. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bdev</td><td>Block device to query. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>preferred unmap alignment for this bdev in blocks. Value 0 means there is no preferred unmap alignment. </dd></dl>
+
+</div>
+</div>
+<a id="ac2a1143fc8cbc6a8a30bf073d9ff5efb" name="ac2a1143fc8cbc6a8a30bf073d9ff5efb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac2a1143fc8cbc6a8a30bf073d9ff5efb">&#9670;&#160;</a></span>spdk_bdev_get_preferred_unmap_granularity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t spdk_bdev_get_preferred_unmap_granularity </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *</td>          <td class="paramname"><span class="paramname"><em>bdev</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get block device preferred unmap granularity. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bdev</td><td>Block device to query. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>preferred unmap granularity for this bdev in blocks. Value 0 means there is no preferred unmap granularity. </dd></dl>
+
+</div>
+</div>
+<a id="a48bd82b8d0741189bb76d40253d997e9" name="a48bd82b8d0741189bb76d40253d997e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a48bd82b8d0741189bb76d40253d997e9">&#9670;&#160;</a></span>spdk_bdev_get_preferred_write_alignment()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t spdk_bdev_get_preferred_write_alignment </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *</td>          <td class="paramname"><span class="paramname"><em>bdev</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get block device preferred write alignment. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bdev</td><td>Block device to query. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>preferred write alignment for this bdev in blocks. Value 0 means there is no preferred write alignment. </dd></dl>
+
+</div>
+</div>
+<a id="ae6371f20ffc3163aaf7f84cf855afcb2" name="ae6371f20ffc3163aaf7f84cf855afcb2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6371f20ffc3163aaf7f84cf855afcb2">&#9670;&#160;</a></span>spdk_bdev_get_preferred_write_granularity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t spdk_bdev_get_preferred_write_granularity </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *</td>          <td class="paramname"><span class="paramname"><em>bdev</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get block device preferred write granularity. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bdev</td><td>Block device to query. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>preferred write granularity for this bdev in blocks. Value 0 means there is no preferred write granularity. </dd></dl>
 
 </div>
 </div>
@@ -2809,14 +3279,14 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_set_opts</b>
 </div><div class="memdoc">
 
 <p>Check whether DIF is set in the first 8/16 bytes or the last 8/16 bytes of metadata. </p>
+<p>Note that this function is valid only if DIF type is not SPDK_DIF_DISABLE.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">bdev</td><td>Block device to query. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>true if DIF is set in the first 8/16 bytes of metadata, or false if DIF is set in the last 8/16 bytes of metadata.</dd></dl>
-<p>Note that this function is valid only if DIF type is not SPDK_DIF_DISABLE. </p>
+<dl class="section return"><dt>Returns</dt><dd>true if DIF is set in the first 8/16 bytes of metadata, or false if DIF is set in the last 8/16 bytes of metadata. </dd></dl>
 
 </div>
 </div>
@@ -2836,14 +3306,14 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_set_opts</b>
 </div><div class="memdoc">
 
 <p>Query whether metadata is interleaved with block data or separated with block data. </p>
+<p>Note this function is valid only if there is metadata.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">bdev</td><td>Block device to query. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>true if metadata is interleaved with block data or false if metadata is separated with block data.</dd></dl>
-<p>Note this function is valid only if there is metadata. </p>
+<dl class="section return"><dt>Returns</dt><dd>true if metadata is interleaved with block data or false if metadata is separated with block data. </dd></dl>
 
 </div>
 </div>
@@ -2863,14 +3333,14 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_set_opts</b>
 </div><div class="memdoc">
 
 <p>Query whether metadata is interleaved with block data or separated from block data. </p>
+<p>Note this function is valid only if there is metadata.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">bdev</td><td>Block device to query. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>true if metadata is separated from block data, false otherwise.</dd></dl>
-<p>Note this function is valid only if there is metadata. </p>
+<dl class="section return"><dt>Returns</dt><dd>true if metadata is separated from block data, false otherwise. </dd></dl>
 
 </div>
 </div>
@@ -3060,6 +3530,91 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_set_opts</b>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 if operation is successful, suitable errno value otherwise </dd></dl>
+
+</div>
+</div>
+<a id="a94c7890fc23800a92d89e38a3b293048" name="a94c7890fc23800a92d89e38a3b293048"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a94c7890fc23800a92d89e38a3b293048">&#9670;&#160;</a></span>spdk_bdev_open_ext_v2()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_bdev_open_ext_v2 </td>
+          <td>(</td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>bdev_name</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>write</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="#ab4755b1b0a2a204732c3be266b6e1b08">spdk_bdev_event_cb_t</a></td>          <td class="paramname"><span class="paramname"><em>event_cb</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *</td>          <td class="paramname"><span class="paramname"><em>event_ctx</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structspdk__bdev__open__opts.html">spdk_bdev_open_opts</a> *</td>          <td class="paramname"><span class="paramname"><em>opts</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct spdk_bdev_desc **</td>          <td class="paramname"><span class="paramname"><em>desc</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Open a block device for I/O operations with options. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bdev_name</td><td>Block device name to open. </td></tr>
+    <tr><td class="paramname">write</td><td>true is read/write access requested, false if read-only </td></tr>
+    <tr><td class="paramname">event_cb</td><td>notification callback to be called when the bdev triggers asynchronous event such as bdev removal. This will always be called on the same thread that <a class="el" href="#aca93f44b46f0b877df9b6936ef9e0a9e" title="Open a block device for I/O operations.">spdk_bdev_open_ext()</a> was called on. In case of removal event the descriptor will have to be manually closed to make the bdev unregister proceed. </td></tr>
+    <tr><td class="paramname">event_ctx</td><td>param for event_cb. </td></tr>
+    <tr><td class="paramname">opts</td><td>Option for block device open. If NULL, default values are used. </td></tr>
+    <tr><td class="paramname">desc</td><td>output parameter for the descriptor when operation is successful </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if operation is successful, suitable errno value otherwise </dd></dl>
+
+</div>
+</div>
+<a id="a0ed6280fce088014b51cc9714247cba0" name="a0ed6280fce088014b51cc9714247cba0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ed6280fce088014b51cc9714247cba0">&#9670;&#160;</a></span>spdk_bdev_open_opts_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_bdev_open_opts_init </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structspdk__bdev__open__opts.html">spdk_bdev_open_opts</a> *</td>          <td class="paramname"><span class="paramname"><em>opts</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>opts_size</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initialize bdev open options. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">opts</td><td>Bdev open options. </td></tr>
+    <tr><td class="paramname">opts_size</td><td>Must be set to sizeof(struct spdk_bdev_open_opts). </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

@@ -1,7 +1,11 @@
 <map id="spdk_bdev_io_block_params" name="spdk_bdev_io_block_params">
-<area shape="rect" id="Node000001" title=" " alt="" coords="125,98,278,143"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="313,98,466,143"/>
 <area shape="rect" id="Node000002" href="$unionspdk__bdev__nvme__cdw12.html" title="Union for command dword 12, which by convention matches the NVMe command dword 12 definition." alt="" coords="5,5,190,33"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="124,42,181,96,177,99,120,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="146,37,243,71,317,95,315,100,241,77,145,42"/>
 <area shape="rect" id="Node000003" href="$unionspdk__bdev__nvme__cdw13.html" title="Union for command dword 13, which by convention matches the NVMe command dword 13 definition." alt="" coords="213,5,398,33"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="283,45,251,76,226,99,223,96,248,72,280,42"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="328,43,373,96,369,99,324,46"/>
+<area shape="rect" id="Node000004" href="$structspdk__dif__ctx.html" title="DIF context information." alt="" coords="422,5,525,33"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="464,48,446,76,422,99,418,96,442,72,460,45"/>
+<area shape="rect" id="Node000005" href="$structspdk__dif__error.html" title="DIF error information." alt="" coords="550,5,664,33"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="573,43,509,76,452,100,450,95,507,72,571,39"/>
 </map>

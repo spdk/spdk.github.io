@@ -10,6 +10,7 @@ var dma_8h =
     [ "spdk_memory_domain_memzero_cb", "dma_8h.html#a22484d6db47a04c8a41a84e67cdb4613", null ],
     [ "spdk_memory_domain_pull_data_cb", "dma_8h.html#abf5cd879a09a8f23a30b45e94574e893", null ],
     [ "spdk_memory_domain_push_data_cb", "dma_8h.html#a2f4b39300fc63eb3fe95530ca4c87305", null ],
+    [ "spdk_memory_domain_transfer_data_cb", "dma_8h.html#a01b08a0983057edbc19cb1dd6bdea2de", null ],
     [ "spdk_memory_domain_translate_memory_cb", "dma_8h.html#a80080465d2736a76d0ddf95d67c701bb", null ],
     [ "spdk_dma_device_type", "dma_8h.html#a85588b3a6ec5c188ab2dc318c3903586", [
       [ "SPDK_DMA_DEVICE_TYPE_RDMA", "dma_8h.html#a85588b3a6ec5c188ab2dc318c3903586a00353a6b099210ed1c52cb9582f1ae01", null ],
@@ -26,14 +27,17 @@ var dma_8h =
     [ "spdk_memory_domain_get_first", "dma_8h.html#a1ff9796de86f6c6e7fbd60684b2f525b", null ],
     [ "spdk_memory_domain_get_next", "dma_8h.html#ae63b08f5e78f0c9c700978a7c005d17e", null ],
     [ "spdk_memory_domain_get_system_domain", "dma_8h.html#a3bdfcd0ae17fc9e62d759ee03b842df8", null ],
+    [ "spdk_memory_domain_get_user_context", "dma_8h.html#adfac8979ac6f0bb0aef7833db95ee29a", null ],
     [ "spdk_memory_domain_invalidate_data", "dma_8h.html#a98d423f61ff7a187effcb7564f8eb18e", null ],
     [ "spdk_memory_domain_memzero", "dma_8h.html#ae4e0567f3920f46cb3644ced997573c7", null ],
     [ "spdk_memory_domain_pull_data", "dma_8h.html#ab766b91733e0939cdea6d13e77572d40", null ],
     [ "spdk_memory_domain_push_data", "dma_8h.html#a9e494849a34eeab88b96f44e79862eb8", null ],
+    [ "spdk_memory_domain_set_data_transfer", "dma_8h.html#a2d0b55d4e43516904d453242ca04fd24", null ],
     [ "spdk_memory_domain_set_invalidate", "dma_8h.html#a1a73817c22cc0ffd8000480576795cbf", null ],
     [ "spdk_memory_domain_set_memzero", "dma_8h.html#abafa95a5bedcc6c320d09a2ccbbeedfc", null ],
     [ "spdk_memory_domain_set_pull", "dma_8h.html#a6c443f5b67500578f056e9fe9039bf76", null ],
     [ "spdk_memory_domain_set_push", "dma_8h.html#a87db0ff92404fc6cb110e8fa98cce0dd", null ],
     [ "spdk_memory_domain_set_translation", "dma_8h.html#ab4777ac664899af134eaa6c93de05d6d", null ],
+    [ "spdk_memory_domain_transfer_data", "dma_8h.html#a193ea6d6c72cb91f81e66cc5f0f9130e", null ],
     [ "spdk_memory_domain_translate_data", "dma_8h.html#a05ad1c0fc1a4fa74ede9b48181e044b1", null ]
 ];

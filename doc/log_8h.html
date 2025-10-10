@@ -143,6 +143,8 @@ $(function(){initNavTree('log_8h.html',''); initResizable(); });
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Data Structures</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__log__opts.html">spdk_log_opts</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__log__flag.html">spdk_log_flag</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -183,9 +185,15 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:a759e79a44bb8dd5733e81c7d213fd730" id="r_a759e79a44bb8dd5733e81c7d213fd730"><td class="memItemLeft" align="right" valign="top">typedef void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a759e79a44bb8dd5733e81c7d213fd730">logfunc</a>(int level, const char *file, const int line, const char *func, const char *format, va_list args)</td></tr>
-<tr class="memdesc:a759e79a44bb8dd5733e81c7d213fd730"><td class="mdescLeft">&#160;</td><td class="mdescRight">for passing user-provided log call  <br /></td></tr>
-<tr class="separator:a759e79a44bb8dd5733e81c7d213fd730"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9946dc6bcd854cdb6ea5ae7c77ff704" id="r_ae9946dc6bcd854cdb6ea5ae7c77ff704"><td class="memItemLeft" align="right" valign="top">typedef void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae9946dc6bcd854cdb6ea5ae7c77ff704">spdk_log_cb</a>(int level, const char *file, const int line, const char *func, const char *format, va_list args)</td></tr>
+<tr class="memdesc:ae9946dc6bcd854cdb6ea5ae7c77ff704"><td class="mdescLeft">&#160;</td><td class="mdescRight">for passing user-provided log call  <br /></td></tr>
+<tr class="separator:ae9946dc6bcd854cdb6ea5ae7c77ff704"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c37ad0624df553cc44f518d9a608dfe" id="r_a8c37ad0624df553cc44f518d9a608dfe"><td class="memItemLeft" align="right" valign="top">typedef void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8c37ad0624df553cc44f518d9a608dfe">spdk_log_open_cb</a>(void *ctx)</td></tr>
+<tr class="memdesc:a8c37ad0624df553cc44f518d9a608dfe"><td class="mdescLeft">&#160;</td><td class="mdescRight">for opening user-provided logger  <br /></td></tr>
+<tr class="separator:a8c37ad0624df553cc44f518d9a608dfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a3538385d2c67c4c0cf02c61ed27db6" id="r_a0a3538385d2c67c4c0cf02c61ed27db6"><td class="memItemLeft" align="right" valign="top">typedef void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0a3538385d2c67c4c0cf02c61ed27db6">spdk_log_close_cb</a>(void *ctx)</td></tr>
+<tr class="memdesc:a0a3538385d2c67c4c0cf02c61ed27db6"><td class="mdescLeft">&#160;</td><td class="mdescRight">for closing user-provided logger  <br /></td></tr>
+<tr class="separator:a0a3538385d2c67c4c0cf02c61ed27db6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac1578d0b093538b785898654350f8f63" id="r_ac1578d0b093538b785898654350f8f63"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac1578d0b093538b785898654350f8f63">spdk_log_for_each_deprecation_fn</a>) (void *ctx, struct spdk_deprecation *deprecation)</td></tr>
 <tr class="memdesc:ac1578d0b093538b785898654350f8f63"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback function for <a class="el" href="#a00b13eb13638a39aa9e67e51c0b25e0e" title="Iterate over all deprecations, calling a callback on each of them.">spdk_log_for_each_deprecation()</a>.  <br /></td></tr>
 <tr class="separator:ac1578d0b093538b785898654350f8f63"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -206,9 +214,15 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a07465f114306f6d593ad4d3626b44b05" id="r_a07465f114306f6d593ad4d3626b44b05"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a07465f114306f6d593ad4d3626b44b05">spdk_log_open</a> (<a class="el" href="#a759e79a44bb8dd5733e81c7d213fd730">logfunc</a> *logf)</td></tr>
-<tr class="memdesc:a07465f114306f6d593ad4d3626b44b05"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the logging module.  <br /></td></tr>
-<tr class="separator:a07465f114306f6d593ad4d3626b44b05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b8b158e2f0071662bd19f74b5c163ff" id="r_a6b8b158e2f0071662bd19f74b5c163ff"><td class="memItemLeft" align="right" valign="top"><a id="a6b8b158e2f0071662bd19f74b5c163ff" name="a6b8b158e2f0071662bd19f74b5c163ff"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(struct <a class="el" href="structspdk__log__opts.html">spdk_log_opts</a>)==40, &quot;Incorrect size&quot;)</td></tr>
+<tr class="separator:a6b8b158e2f0071662bd19f74b5c163ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38a770e014d52de0ae768f4a5939c4ce" id="r_a38a770e014d52de0ae768f4a5939c4ce"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a38a770e014d52de0ae768f4a5939c4ce">spdk_log_open</a> (<a class="el" href="#ae9946dc6bcd854cdb6ea5ae7c77ff704">spdk_log_cb</a> *log)</td></tr>
+<tr class="memdesc:a38a770e014d52de0ae768f4a5939c4ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the logging module.  <br /></td></tr>
+<tr class="separator:a38a770e014d52de0ae768f4a5939c4ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a018e2ac216a0e13401e5fea78c664dad" id="r_a018e2ac216a0e13401e5fea78c664dad"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a018e2ac216a0e13401e5fea78c664dad">spdk_log_open_ext</a> (struct <a class="el" href="structspdk__log__opts.html">spdk_log_opts</a> *opts)</td></tr>
+<tr class="memdesc:a018e2ac216a0e13401e5fea78c664dad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extended API to initialize the logging module.  <br /></td></tr>
+<tr class="separator:a018e2ac216a0e13401e5fea78c664dad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a41cdc17423a58c475fa785fd491f00e9" id="r_a41cdc17423a58c475fa785fd491f00e9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a41cdc17423a58c475fa785fd491f00e9">spdk_log_close</a> (void)</td></tr>
 <tr class="memdesc:a41cdc17423a58c475fa785fd491f00e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Close the currently active log.  <br /></td></tr>
 <tr class="separator:a41cdc17423a58c475fa785fd491f00e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -351,7 +365,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_log_enable_times
 <div class="line">                        spdk_log(SPDK_LOG_INFO, __FILE__, __LINE__, __func__, __VA_ARGS__);     \</div>
 <div class="line">                }                                                                               \</div>
 <div class="line">        } <span class="keywordflow">while</span> (0)</div>
-<div class="ttc" id="astructspdk__log__flag_html"><div class="ttname"><a href="structspdk__log__flag.html">spdk_log_flag</a></div><div class="ttdef"><b>Definition</b> log.h:228</div></div>
+<div class="ttc" id="astructspdk__log__flag_html"><div class="ttname"><a href="structspdk__log__flag.html">spdk_log_flag</a></div><div class="ttdef"><b>Definition</b> log.h:266</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -421,14 +435,14 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_log_enable_times
 </div>
 </div>
 <h2 class="groupheader">Typedef Documentation</h2>
-<a id="a759e79a44bb8dd5733e81c7d213fd730" name="a759e79a44bb8dd5733e81c7d213fd730"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a759e79a44bb8dd5733e81c7d213fd730">&#9670;&#160;</a></span>logfunc</h2>
+<a id="ae9946dc6bcd854cdb6ea5ae7c77ff704" name="ae9946dc6bcd854cdb6ea5ae7c77ff704"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae9946dc6bcd854cdb6ea5ae7c77ff704">&#9670;&#160;</a></span>spdk_log_cb</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef void logfunc(int level, const char *file, const int line, const char *func, const char *format, va_list args)</td>
+          <td class="memname">typedef void spdk_log_cb(int level, const char *file, const int line, const char *func, const char *format, va_list args)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -442,6 +456,28 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_log_enable_times
     <tr><td class="paramname">func</td><td>Current source function name. </td></tr>
     <tr><td class="paramname">format</td><td>Format string to the message. </td></tr>
     <tr><td class="paramname">args</td><td>Additional arguments for format string. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a0a3538385d2c67c4c0cf02c61ed27db6" name="a0a3538385d2c67c4c0cf02c61ed27db6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a3538385d2c67c4c0cf02c61ed27db6">&#9670;&#160;</a></span>spdk_log_close_cb</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void spdk_log_close_cb(void *ctx)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>for closing user-provided logger </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ctx</td><td>User-defined context for log open/close </td></tr>
   </table>
   </dd>
 </dl>
@@ -469,6 +505,28 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_log_enable_times
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 to continue iteration or non-zero to stop iteration. </dd></dl>
+
+</div>
+</div>
+<a id="a8c37ad0624df553cc44f518d9a608dfe" name="a8c37ad0624df553cc44f518d9a608dfe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c37ad0624df553cc44f518d9a608dfe">&#9670;&#160;</a></span>spdk_log_open_cb</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void spdk_log_open_cb(void *ctx)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>for opening user-provided logger </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ctx</td><td>User-defined context for log open/close </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -1024,8 +1082,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_log_enable_times
 
 </div>
 </div>
-<a id="a07465f114306f6d593ad4d3626b44b05" name="a07465f114306f6d593ad4d3626b44b05"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a07465f114306f6d593ad4d3626b44b05">&#9670;&#160;</a></span>spdk_log_open()</h2>
+<a id="a38a770e014d52de0ae768f4a5939c4ce" name="a38a770e014d52de0ae768f4a5939c4ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38a770e014d52de0ae768f4a5939c4ce">&#9670;&#160;</a></span>spdk_log_open()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1033,7 +1091,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_log_enable_times
         <tr>
           <td class="memname">void spdk_log_open </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="#a759e79a44bb8dd5733e81c7d213fd730">logfunc</a> *</td>          <td class="paramname"><span class="paramname"><em>logf</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="#ae9946dc6bcd854cdb6ea5ae7c77ff704">spdk_log_cb</a> *</td>          <td class="paramname"><span class="paramname"><em>log</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -1041,6 +1099,32 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_log_enable_times
 
 <p>Initialize the logging module. </p>
 <p>Messages prior to this call will be dropped. </p>
+
+</div>
+</div>
+<a id="a018e2ac216a0e13401e5fea78c664dad" name="a018e2ac216a0e13401e5fea78c664dad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a018e2ac216a0e13401e5fea78c664dad">&#9670;&#160;</a></span>spdk_log_open_ext()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_log_open_ext </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structspdk__log__opts.html">spdk_log_opts</a> *</td>          <td class="paramname"><span class="paramname"><em>opts</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Extended API to initialize the logging module. </p>
+<p>Messages prior to this call will be dropped.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">opts</td><td>Options to provide log related functions with user-defined context for open/close </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

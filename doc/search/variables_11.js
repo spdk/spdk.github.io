@@ -6,6 +6,7 @@ var searchData=
   ['qos_3',['qos',['../structspdk__bdev_1_1____bdev__internal__fields.html#ad8ffb00efc69dca7d686f17220027742',1,'spdk_bdev::__bdev_internal_fields']]],
   ['qos_5fmod_5fin_5fprogress_4',['qos_mod_in_progress',['../structspdk__bdev_1_1____bdev__internal__fields.html#add102c5c15292b5d497ed7442a0b30b4',1,'spdk_bdev::__bdev_internal_fields']]],
   ['qprio_5',['qprio',['../structspdk__nvme__io__qpair__opts.html#a9a9ae75991da44a7fbf06a3c82161a6d',1,'spdk_nvme_io_qpair_opts']]],
-  ['queue_6',['queue',['../structspdk__iobuf__pool.html#ae67f45d6d72f5edf074a9579678e52f8',1,'spdk_iobuf_pool']]],
-  ['quiesce_5fdevice_7',['quiesce_device',['../structspdk__vfu__endpoint__ops.html#affb0058441fbe6b1782cf71400006c6c',1,'spdk_vfu_endpoint_ops']]]
+  ['queue_6',['queue',['../structspdk__iobuf__pool__cache.html#a29a5be92ed35c00b8dba5fdfe5ee4061',1,'spdk_iobuf_pool_cache']]],
+  ['queued_5fresets_7',['queued_resets',['../structspdk__bdev_1_1____bdev__internal__fields.html#aabd96e247f41de6bde643bfcb381daa7',1,'spdk_bdev::__bdev_internal_fields']]],
+  ['quiesce_5fdevice_8',['quiesce_device',['../structspdk__vfu__endpoint__ops.html#affb0058441fbe6b1782cf71400006c6c',1,'spdk_vfu_endpoint_ops']]]
 ];

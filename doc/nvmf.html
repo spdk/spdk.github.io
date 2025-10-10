@@ -133,7 +133,7 @@ $(function(){initNavTree('nvmf.html',''); initResizable(); });
 <div class="contents">
 <div class="textblock"><p><a class="anchor" id="md_nvmf"></a> </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="nvme.html#nvme_fabrics_host">NVMe over Fabrics Host Support</a> </dd>
 <dd>
-<a class="el" href="nvmf_tgt_tracepoints.html">NVMe-oF Target Tracepoints</a></dd></dl>
+<a class="el" href="tracepoints.html">Tracing Framework</a></dd></dl>
 <h1><a class="anchor" id="nvmf_getting_started"></a>
 NVMe-oF Target Getting Started Guide</h1>
 <p>The SPDK NVMe over Fabrics target is a user space application that presents block devices over a fabrics such as Ethernet, Infiniband or Fibre Channel. SPDK currently supports RDMA and TCP transports.</p>
@@ -253,7 +253,7 @@ Configuring the Linux NVMe over Fabrics Host</h1>
 </div><!-- fragment --><p>Disconnect: </p><div class="fragment"><div class="line">nvme disconnect -n &quot;nqn.2016-06.io.spdk:cnode1&quot;</div>
 </div><!-- fragment --><h1><a class="anchor" id="nvmf_trace"></a>
 Enabling NVMe-oF target tracepoints for offline analysis and debug</h1>
-<p>SPDK has a tracing framework for capturing low-level event information at runtime. <a class="el" href="nvmf_tgt_tracepoints.html">NVMe-oF Target Tracepoints</a> enable analysis of both performance and application crashes.</p>
+<p>SPDK has a tracing framework for capturing low-level event information at runtime. <a class="el" href="tracepoints.html">Tracing Framework</a> enable analysis of both performance and application crashes.</p>
 <h1>Enabling NVMe-oF Multipath</h1>
 <p>The SPDK NVMe-oF target and initiator support multiple independent paths to the same NVMe-oF subsystem. For step-by-step instructions for configuring and switching between paths, see <a class="el" href="nvmf_multipath_howto.html">NVMe-oF Multipath HOWTO</a> .</p>
 <h1>Enabling NVMe-oF TLS</h1>
@@ -299,16 +299,45 @@ Enabling NVMe-oF target tracepoints for offline analysis and debug</h1>
 <div class="line">    --dhchap-key key1 --dhchap-ctrlr-key ctrlr-key1</div>
 <div class="line">$ scripts/rpc.py nvmf_subsystem_add_host nqn.2024-05.io.spdk:cnode0 nqn.2024-05.io.spdk:host2 \</div>
 <div class="line">    --dhchap-key key2</div>
+</div><!-- fragment --><p>Additionally, it's possible to change the keys while preserving existing connections to a subsystem via <code>nvmf_subsystem_set_keys</code>. After that's done, new connections and reauthentication requests will be required to use the new keys.</p>
+<div class="fragment"><div class="line">$ scripts/rpc.py nvmf_subsystem_add_host nqn.2024-05.io.spdk:cnode0 nqn.2024-05.io.spdk:host0 \</div>
+<div class="line">    --dhchap-key key0 --dhchap-ctrlr-key ctrlr-key0</div>
+<div class="line"># Host nqn.2024-05.io.spdk:host0 connects to subsystem nqn.2024-05.io.spdk:cnode0</div>
+<div class="line">$ scripts/rpc.py nvmf_subsystem_set_keys nqn.2024-05.io.spdk:cnode0 nqn.2024-05.io.spdk:host0 \</div>
+<div class="line">    --dhchap-key key1 --dhchap-ctrlr-key ctrlr-key1</div>
 </div><!-- fragment --><p>On the host side, the keys are specified when attaching controllers, e.g.:</p>
 <div class="fragment"><div class="line">$ scripts/rpc.py bdev_nvme_attach_controller -b nvme0 -t tcp -f ipv4 -a 127.0.0.1 -s 4420 \</div>
 <div class="line">    -n nqn.2024-05.io.spdk:cnode0 -q nqn.2024-05.io.spdk:host0 --dhchap-key key0 \</div>
 <div class="line">    --dhchap-ctrlr-key ctrlr-key0</div>
-</div><!-- fragment --><p>All hash functions/Diffie-Hellman groups defined in the NVMe Base Specification 2.0d are supported and the algorithms used for a given DH-HMAC-CHAP transaction are negotiated at the beginning. The SPDK NVMe-oF target selects the strongest available hash/group depending on its configuration and the capabilities of a peer. Users can limit the allowed hash functions and/or Diffie-Hellman groups via RPCs. For example, the following limits the target (<code>nvmf_set_config</code>) and the driver (<code>bdev_nvme_set_options</code>) to use sha384, sha512 and ffdhe6114, ffdhe8192:</p>
+</div><!-- fragment --><p>All hash functions/Diffie-Hellman groups defined in the NVMe Base Specification 2.0d are supported and the algorithms used for a given DH-HMAC-CHAP transaction are negotiated at the beginning. The SPDK NVMe-oF target selects the strongest available hash/group depending on its configuration and the capabilities of a peer. Users can limit the allowed hash functions and/or Diffie-Hellman groups via RPCs. For example, the following limits the target (<code>nvmf_set_config</code>) and the driver (<code>bdev_nvme_set_options</code>) to use sha384, sha512 and ffdhe6144, ffdhe8192:</p>
 <div class="fragment"><div class="line">$ scripts/rpc.py nvmf_set_config --dhchap-digests sha384,sha512 \</div>
-<div class="line">    --dhchap-dhgroups ffdhe6114,ffdhe8192</div>
+<div class="line">    --dhchap-dhgroups ffdhe6144,ffdhe8192</div>
 <div class="line">$ scripts/rpc.py bdev_nvme_set_options --dhchap-digests sha384,sha512 \</div>
-<div class="line">    --dhchap-dhgroups ffdhe6114,ffdhe8192</div>
-</div><!-- fragment --> </div></div><!-- contents -->
+<div class="line">    --dhchap-dhgroups ffdhe6144,ffdhe8192</div>
+</div><!-- fragment --><p>The NVMe specification describes the method for using in-band authentication in conjunction with establishing a secure channel (e.g. TLS). However, that isn't supported currently, so in order to perform in-band authentication, hosts must connect over regular listeners (i.e. those that weren't created with the <code>--secure-channel</code> option).</p>
+<h1>NVMe Subsystem Reset (NSSR)</h1>
+<p>NVM Subsystem Reset (NSSR) is optionally supported. When an NSSR occurs the entire NVM subsystem is reset including Controller Level Reset (CLR) on each controller in the subsystem and disabling of the Persistent Memory Regions (PMR) associated with those controllers. This feature is currently limited to namespaces (bdevs) with PCIe transport.</p>
+<p>NSSR support is disabled by default and can be enabled during creation of the subsystem. Please see <code>nvmf_create_subsystem</code> RPC's call parameters.</p>
+<p>During an NSSR each namespace (bdev) will additionally be reset. For bdev_nvme-backed namespaces an NSSR will prefer to trigger an NSSR on the underlying controller. If not supported, a CLR will be performed instead. For other bdev types a standard bdev reset operation is performed.</p>
+<p>NSSR resets the PCIe link and so NVMe devices appear to be hot-removed and then hot-inserted. The same configuration steps to support PCIe hotplug of NVMe devices is required to re-discover NVMe devices during an NSSR.</p>
+<p>Those steps might contain:</p>
+<ul>
+<li>Unbinding the NVMe device from kernel's NVMe driver</li>
+<li>Binding it to vfio driver</li>
+<li>Attaching controller to SPDK via <code>bdev_nvme_attach_controller</code> RPC call (unless hotplug is not enabled via <code>bdev_nvme_set_hotplug</code>)</li>
+<li>Adding namespace to the nvmf subsystem</li>
+</ul>
+<p>If bdev has multiple namespaces connected to multiple subsystems - executing NSSR on one namespace affects the other, since the whole bdev would be removed from and added back to the system.</p>
+<p>If a bdev is of type bdev_nvme and this underlying NVMe namespace is part of an NVM subsystem containing multiple namespaces, then all bdevs associated with that underlying subsystem will be destroyed and re-added, even if they are in a separate NVMe-oF subsystem that wasn't being reset. Beware of side effects.</p>
+<h1>NVMe firmware update</h1>
+<p>NVMe firmware update process involves use of two admin commands: firmware download and firmware commit. FW download is used only to get the FW image to the drive, then FW commit is used to tell the drive to:</p>
+<ol type="1">
+<li>store the FW image in particular firmware slot</li>
+<li>store and activate the image after controller reset (or NSSR)</li>
+<li>store and activate immediately without any reset (if NVMe drive supports that)</li>
+</ol>
+<p>Drive is never unregistered from the system after FW commit. User needs to trigger Reset/NSSR separately (in case of second option). Please refer to firmware commit/firmware download admin command section of NVMe spec for further details. </p>
+</div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.8-->

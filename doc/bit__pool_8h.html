@@ -160,6 +160,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a8df700bedc9995ef2e20871232febcb4" id="r_a8df700bedc9995ef2e20871232febcb4"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8df700bedc9995ef2e20871232febcb4">spdk_bit_pool_allocate_bit</a> (struct spdk_bit_pool *pool)</td></tr>
 <tr class="memdesc:a8df700bedc9995ef2e20871232febcb4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate a bit from the bit pool.  <br /></td></tr>
 <tr class="separator:a8df700bedc9995ef2e20871232febcb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae55d50973362ff30ecc55d26fffee3d8" id="r_ae55d50973362ff30ecc55d26fffee3d8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae55d50973362ff30ecc55d26fffee3d8">spdk_bit_pool_set_bit_allocated</a> (struct spdk_bit_pool *pool, uint32_t bit_index)</td></tr>
+<tr class="memdesc:ae55d50973362ff30ecc55d26fffee3d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the specified bit as allocated in the bit pool.  <br /></td></tr>
+<tr class="separator:ae55d50973362ff30ecc55d26fffee3d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac1d6b2ee432c080c03d0072c40f2adf9" id="r_ac1d6b2ee432c080c03d0072c40f2adf9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac1d6b2ee432c080c03d0072c40f2adf9">spdk_bit_pool_free_bit</a> (struct spdk_bit_pool *pool, uint32_t bit_index)</td></tr>
 <tr class="memdesc:ac1d6b2ee432c080c03d0072c40f2adf9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free a bit back to the bit pool.  <br /></td></tr>
 <tr class="separator:ac1d6b2ee432c080c03d0072c40f2adf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -515,6 +518,37 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 on success, negative errno on failure. </dd></dl>
+
+</div>
+</div>
+<a id="ae55d50973362ff30ecc55d26fffee3d8" name="ae55d50973362ff30ecc55d26fffee3d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae55d50973362ff30ecc55d26fffee3d8">&#9670;&#160;</a></span>spdk_bit_pool_set_bit_allocated()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_bit_pool_set_bit_allocated </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_bit_pool *</td>          <td class="paramname"><span class="paramname"><em>pool</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>bit_index</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the specified bit as allocated in the bit pool. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pool</td><td>Bit pool to set the bit in </td></tr>
+    <tr><td class="paramname">bit_index</td><td>Index of the bit to set</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if the bit is set successfully, -EBUSY if the bit was already set, -EINVAL if bit_index is out of range. </dd></dl>
 
 </div>
 </div>

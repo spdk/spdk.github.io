@@ -146,8 +146,8 @@ Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__fsdev__opts.html">spdk_fsdev_opts</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">fsdev library options  <a href="structspdk__fsdev__opts.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__fsdev__open__opts.html">spdk_fsdev_open_opts</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">fsdev device options  <a href="structspdk__fsdev__open__opts.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__fsdev__mount__opts.html">spdk_fsdev_mount_opts</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">fsdev mount options  <a href="structspdk__fsdev__mount__opts.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__fsdev__io__opts.html">spdk_fsdev_io_opts</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure with optional fsdev IO parameters The content of this structure must be valid until the IO is completed.  <a href="structspdk__fsdev__io__opts.html#details">More...</a><br /></td></tr>
@@ -198,6 +198,12 @@ Typedefs</h2></td></tr>
 <tr class="memitem:ab100fbd39944f97ce0f8c7bf88591ff5" id="r_ab100fbd39944f97ce0f8c7bf88591ff5"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab100fbd39944f97ce0f8c7bf88591ff5">spdk_fsdev_fini_cb</a>) (void *cb_arg)</td></tr>
 <tr class="memdesc:ab100fbd39944f97ce0f8c7bf88591ff5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Filesystem device finish callback.  <br /></td></tr>
 <tr class="separator:ab100fbd39944f97ce0f8c7bf88591ff5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ff4c46295508cf6bfc650552e5fd45f" id="r_a6ff4c46295508cf6bfc650552e5fd45f"><td class="memItemLeft" align="right" valign="top">typedef void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6ff4c46295508cf6bfc650552e5fd45f">spdk_fsdev_mount_cpl_cb</a>(void *cb_arg, struct spdk_io_channel *ch, int status, const struct <a class="el" href="structspdk__fsdev__mount__opts.html">spdk_fsdev_mount_opts</a> *opts, struct spdk_fsdev_file_object *root_fobject)</td></tr>
+<tr class="memdesc:a6ff4c46295508cf6bfc650552e5fd45f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mount operation completion callback.  <br /></td></tr>
+<tr class="separator:a6ff4c46295508cf6bfc650552e5fd45f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1dd822a2e8b210aee3ccc7869c5b7b94" id="r_a1dd822a2e8b210aee3ccc7869c5b7b94"><td class="memItemLeft" align="right" valign="top">typedef void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1dd822a2e8b210aee3ccc7869c5b7b94">spdk_fsdev_umount_cpl_cb</a>(void *cb_arg, struct spdk_io_channel *ch)</td></tr>
+<tr class="memdesc:a1dd822a2e8b210aee3ccc7869c5b7b94"><td class="mdescLeft">&#160;</td><td class="mdescRight">Umount operation completion callback.  <br /></td></tr>
+<tr class="separator:a1dd822a2e8b210aee3ccc7869c5b7b94"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afbba08fcf598beb5d98340ba28b617c2" id="r_afbba08fcf598beb5d98340ba28b617c2"><td class="memItemLeft" align="right" valign="top">typedef void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afbba08fcf598beb5d98340ba28b617c2">spdk_fsdev_lookup_cpl_cb</a>(void *cb_arg, struct spdk_io_channel *ch, int status, struct spdk_fsdev_file_object *fobject, const struct <a class="el" href="structspdk__fsdev__file__attr.html">spdk_fsdev_file_attr</a> *attr)</td></tr>
 <tr class="memdesc:afbba08fcf598beb5d98340ba28b617c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lookup file operation completion callback.  <br /></td></tr>
 <tr class="separator:afbba08fcf598beb5d98340ba28b617c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -317,9 +323,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a7547c9310ab8179ffb305fee0f49a191" id="r_a7547c9310ab8179ffb305fee0f49a191"><td class="memItemLeft" align="right" valign="top"><a id="a7547c9310ab8179ffb305fee0f49a191" name="a7547c9310ab8179ffb305fee0f49a191"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(struct <a class="el" href="structspdk__fsdev__opts.html">spdk_fsdev_opts</a>)==12, &quot;Incorrect size&quot;)</td></tr>
 <tr class="separator:a7547c9310ab8179ffb305fee0f49a191"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0976296f07dc9e8c2328fc5eb8d0265a" id="r_a0976296f07dc9e8c2328fc5eb8d0265a"><td class="memItemLeft" align="right" valign="top"><a id="a0976296f07dc9e8c2328fc5eb8d0265a" name="a0976296f07dc9e8c2328fc5eb8d0265a"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(struct <a class="el" href="structspdk__fsdev__open__opts.html">spdk_fsdev_open_opts</a>)==9, &quot;Incorrect size&quot;)</td></tr>
-<tr class="separator:a0976296f07dc9e8c2328fc5eb8d0265a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb686ee82361c2d79e848419551cd586" id="r_aeb686ee82361c2d79e848419551cd586"><td class="memItemLeft" align="right" valign="top"><a id="aeb686ee82361c2d79e848419551cd586" name="aeb686ee82361c2d79e848419551cd586"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(struct <a class="el" href="structspdk__fsdev__mount__opts.html">spdk_fsdev_mount_opts</a>)==9, &quot;Incorrect size&quot;)</td></tr>
+<tr class="separator:aeb686ee82361c2d79e848419551cd586"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad610183967b5153554a57f903291938d" id="r_ad610183967b5153554a57f903291938d"><td class="memItemLeft" align="right" valign="top"><a id="ad610183967b5153554a57f903291938d" name="ad610183967b5153554a57f903291938d"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(struct <a class="el" href="structspdk__fsdev__io__opts.html">spdk_fsdev_io_opts</a>)==24, &quot;Incorrect size&quot;)</td></tr>
 <tr class="separator:ad610183967b5153554a57f903291938d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -335,9 +341,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a485e0c0cea34f8ca3961036564763fa2" id="r_a485e0c0cea34f8ca3961036564763fa2"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a485e0c0cea34f8ca3961036564763fa2">spdk_fsdev_get_module_name</a> (const struct <a class="el" href="structspdk__fsdev.html">spdk_fsdev</a> *fsdev)</td></tr>
 <tr class="memdesc:a485e0c0cea34f8ca3961036564763fa2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get filesystem device module name.  <br /></td></tr>
 <tr class="separator:a485e0c0cea34f8ca3961036564763fa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a70b937aa4d9f9cd617fa715b68f10f63" id="r_a70b937aa4d9f9cd617fa715b68f10f63"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a70b937aa4d9f9cd617fa715b68f10f63">spdk_fsdev_open</a> (const char *fsdev_name, <a class="el" href="#a7f17c8dc7e348a41b50aca23d758eecb">spdk_fsdev_event_cb_t</a> event_cb, void *event_ctx, struct <a class="el" href="structspdk__fsdev__open__opts.html">spdk_fsdev_open_opts</a> *opts, struct spdk_fsdev_desc **desc)</td></tr>
-<tr class="memdesc:a70b937aa4d9f9cd617fa715b68f10f63"><td class="mdescLeft">&#160;</td><td class="mdescRight">Open a filesystem device for I/O operations.  <br /></td></tr>
-<tr class="separator:a70b937aa4d9f9cd617fa715b68f10f63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91d6b80b4d9fd9d65263a74735c878aa" id="r_a91d6b80b4d9fd9d65263a74735c878aa"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a91d6b80b4d9fd9d65263a74735c878aa">spdk_fsdev_open</a> (const char *fsdev_name, <a class="el" href="#a7f17c8dc7e348a41b50aca23d758eecb">spdk_fsdev_event_cb_t</a> event_cb, void *event_ctx, struct spdk_fsdev_desc **desc)</td></tr>
+<tr class="memdesc:a91d6b80b4d9fd9d65263a74735c878aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Open a filesystem device for I/O operations.  <br /></td></tr>
+<tr class="separator:a91d6b80b4d9fd9d65263a74735c878aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a712e671bc4fd1d13a7e5d4acc87c8ecb" id="r_a712e671bc4fd1d13a7e5d4acc87c8ecb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a712e671bc4fd1d13a7e5d4acc87c8ecb">spdk_fsdev_close</a> (struct spdk_fsdev_desc *desc)</td></tr>
 <tr class="memdesc:a712e671bc4fd1d13a7e5d4acc87c8ecb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Close a previously opened filesystem device.  <br /></td></tr>
 <tr class="separator:a712e671bc4fd1d13a7e5d4acc87c8ecb"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -359,6 +365,12 @@ Functions</h2></td></tr>
 <tr class="memitem:a42c8d01fc94e53cc4c63761af4bece45" id="r_a42c8d01fc94e53cc4c63761af4bece45"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a42c8d01fc94e53cc4c63761af4bece45">spdk_fsdev_get_memory_domains</a> (struct <a class="el" href="structspdk__fsdev.html">spdk_fsdev</a> *fsdev, struct spdk_memory_domain **domains, int array_size)</td></tr>
 <tr class="memdesc:a42c8d01fc94e53cc4c63761af4bece45"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get SPDK memory domains used by the given fsdev.  <br /></td></tr>
 <tr class="separator:a42c8d01fc94e53cc4c63761af4bece45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62c82e4f540fce14ac804ba7a7f9183d" id="r_a62c82e4f540fce14ac804ba7a7f9183d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a62c82e4f540fce14ac804ba7a7f9183d">spdk_fsdev_mount</a> (struct spdk_fsdev_desc *desc, struct spdk_io_channel *ch, uint64_t unique, const struct <a class="el" href="structspdk__fsdev__mount__opts.html">spdk_fsdev_mount_opts</a> *opts, <a class="el" href="#a6ff4c46295508cf6bfc650552e5fd45f">spdk_fsdev_mount_cpl_cb</a> cb_fn, void *cb_arg)</td></tr>
+<tr class="memdesc:a62c82e4f540fce14ac804ba7a7f9183d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mount the filesystem.  <br /></td></tr>
+<tr class="separator:a62c82e4f540fce14ac804ba7a7f9183d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6c58ae16732cce840761f7f07eb2c19" id="r_ad6c58ae16732cce840761f7f07eb2c19"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad6c58ae16732cce840761f7f07eb2c19">spdk_fsdev_umount</a> (struct spdk_fsdev_desc *desc, struct spdk_io_channel *ch, uint64_t unique, <a class="el" href="#a1dd822a2e8b210aee3ccc7869c5b7b94">spdk_fsdev_umount_cpl_cb</a> cb_fn, void *cb_arg)</td></tr>
+<tr class="memdesc:ad6c58ae16732cce840761f7f07eb2c19"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unmount the filesystem.  <br /></td></tr>
+<tr class="separator:ad6c58ae16732cce840761f7f07eb2c19"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac2f54649c163ca6ea4f70a4ef870fdce" id="r_ac2f54649c163ca6ea4f70a4ef870fdce"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac2f54649c163ca6ea4f70a4ef870fdce">spdk_fsdev_lookup</a> (struct spdk_fsdev_desc *desc, struct spdk_io_channel *ch, uint64_t unique, struct spdk_fsdev_file_object *parent_fobject, const char *name, <a class="el" href="#afbba08fcf598beb5d98340ba28b617c2">spdk_fsdev_lookup_cpl_cb</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:ac2f54649c163ca6ea4f70a4ef870fdce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Look up a directory entry by name and get its attributes.  <br /></td></tr>
 <tr class="separator:ac2f54649c163ca6ea4f70a4ef870fdce"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -953,6 +965,32 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a6ff4c46295508cf6bfc650552e5fd45f" name="a6ff4c46295508cf6bfc650552e5fd45f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ff4c46295508cf6bfc650552e5fd45f">&#9670;&#160;</a></span>spdk_fsdev_mount_cpl_cb</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void spdk_fsdev_mount_cpl_cb(void *cb_arg, struct spdk_io_channel *ch, int status, const struct <a class="el" href="structspdk__fsdev__mount__opts.html">spdk_fsdev_mount_opts</a> *opts, struct spdk_fsdev_file_object *root_fobject)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Mount operation completion callback. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cb_arg</td><td>Context passed to the corresponding spdk_fsdev_ API </td></tr>
+    <tr><td class="paramname">ch</td><td>I/O channel. </td></tr>
+    <tr><td class="paramname">status</td><td>Operation status, 0 on success or error code otherwise. </td></tr>
+    <tr><td class="paramname">opts</td><td>Result options. </td></tr>
+    <tr><td class="paramname">root_fobject</td><td>Root file object </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="ab71c1a2d51d70ba1034ec232658fa635" name="ab71c1a2d51d70ba1034ec232658fa635"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab71c1a2d51d70ba1034ec232658fa635">&#9670;&#160;</a></span>spdk_fsdev_opendir_cpl_cb</h2>
 
@@ -1300,6 +1338,29 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a1dd822a2e8b210aee3ccc7869c5b7b94" name="a1dd822a2e8b210aee3ccc7869c5b7b94"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1dd822a2e8b210aee3ccc7869c5b7b94">&#9670;&#160;</a></span>spdk_fsdev_umount_cpl_cb</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void spdk_fsdev_umount_cpl_cb(void *cb_arg, struct spdk_io_channel *ch)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Umount operation completion callback. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cb_arg</td><td>Context passed to the corresponding spdk_fsdev_ API </td></tr>
+    <tr><td class="paramname">ch</td><td>I/O channel. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a437ddf6056312ce3d8db8c2772b77595" name="a437ddf6056312ce3d8db8c2772b77595"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a437ddf6056312ce3d8db8c2772b77595">&#9670;&#160;</a></span>spdk_fsdev_unlink_cpl_cb</h2>
 
@@ -1415,7 +1476,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Close a previously opened filesystem device. </p>
-<p>Must be called on the same thread that the <a class="el" href="#a70b937aa4d9f9cd617fa715b68f10f63" title="Open a filesystem device for I/O operations.">spdk_fsdev_open()</a> was performed on.</p>
+<p>Must be called on the same thread that the <a class="el" href="#a91d6b80b4d9fd9d65263a74735c878aa" title="Open a filesystem device for I/O operations.">spdk_fsdev_open()</a> was performed on.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">desc</td><td>Filesystem device descriptor to close. </td></tr>
@@ -2803,8 +2864,64 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a70b937aa4d9f9cd617fa715b68f10f63" name="a70b937aa4d9f9cd617fa715b68f10f63"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a70b937aa4d9f9cd617fa715b68f10f63">&#9670;&#160;</a></span>spdk_fsdev_open()</h2>
+<a id="a62c82e4f540fce14ac804ba7a7f9183d" name="a62c82e4f540fce14ac804ba7a7f9183d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a62c82e4f540fce14ac804ba7a7f9183d">&#9670;&#160;</a></span>spdk_fsdev_mount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_fsdev_mount </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_fsdev_desc *</td>          <td class="paramname"><span class="paramname"><em>desc</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct spdk_io_channel *</td>          <td class="paramname"><span class="paramname"><em>ch</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t</td>          <td class="paramname"><span class="paramname"><em>unique</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const struct <a class="el" href="structspdk__fsdev__mount__opts.html">spdk_fsdev_mount_opts</a> *</td>          <td class="paramname"><span class="paramname"><em>opts</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="#a6ff4c46295508cf6bfc650552e5fd45f">spdk_fsdev_mount_cpl_cb</a></td>          <td class="paramname"><span class="paramname"><em>cb_fn</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *</td>          <td class="paramname"><span class="paramname"><em>cb_arg</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Mount the filesystem. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">desc</td><td>Filesystem device descriptor. </td></tr>
+    <tr><td class="paramname">ch</td><td>I/O channel. </td></tr>
+    <tr><td class="paramname">unique</td><td>Unique I/O id. </td></tr>
+    <tr><td class="paramname">opts</td><td>Requested options. </td></tr>
+    <tr><td class="paramname">cb_fn</td><td>Completion callback. </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>Context to be passed to the completion callback.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success. On success, the callback will always be called (even if the request ultimately failed). Return negated errno on failure, in which case the callback will not be called.</dd></dl>
+<p>Note: the <code>opts</code> are the subject of negotiation. An API user provides a desired <code>opts</code> here and gets a result <code>opts</code> in the <code>cb_fn</code>. The result <code>opts</code> are filled by the underlying fsdev module which may agree or reduce (but not expand) the desired features set. </p>
+
+</div>
+</div>
+<a id="a91d6b80b4d9fd9d65263a74735c878aa" name="a91d6b80b4d9fd9d65263a74735c878aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a91d6b80b4d9fd9d65263a74735c878aa">&#9670;&#160;</a></span>spdk_fsdev_open()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2827,11 +2944,6 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">struct <a class="el" href="structspdk__fsdev__open__opts.html">spdk_fsdev_open_opts</a> *</td>          <td class="paramname"><span class="paramname"><em>opts</em>, </span></td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype">struct spdk_fsdev_desc **</td>          <td class="paramname"><span class="paramname"><em>desc</em></span>&#160;)</td>
         </tr>
       </table>
@@ -2841,9 +2953,8 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">fsdev_name</td><td>Filesystem device name to open. </td></tr>
-    <tr><td class="paramname">event_cb</td><td>notification callback to be called when the fsdev triggers asynchronous event such as fsdev removal. This will always be called on the same thread that <a class="el" href="#a70b937aa4d9f9cd617fa715b68f10f63" title="Open a filesystem device for I/O operations.">spdk_fsdev_open()</a> was called on. In case of removal event the descriptor will have to be manually closed to make the fsdev unregister proceed. </td></tr>
+    <tr><td class="paramname">event_cb</td><td>notification callback to be called when the fsdev triggers asynchronous event such as fsdev removal. This will always be called on the same thread that <a class="el" href="#a91d6b80b4d9fd9d65263a74735c878aa" title="Open a filesystem device for I/O operations.">spdk_fsdev_open()</a> was called on. In case of removal event the descriptor will have to be manually closed to make the fsdev unregister proceed. </td></tr>
     <tr><td class="paramname">event_ctx</td><td>param for event_cb. </td></tr>
-    <tr><td class="paramname">opts</td><td>optional open opts. </td></tr>
     <tr><td class="paramname">desc</td><td>output parameter for the descriptor when operation is successful </td></tr>
   </table>
   </dd>
@@ -3797,6 +3908,56 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 on success. On success, the callback will always be called (even if the request ultimately failed). Return negated errno on failure, in which case the callback will not be called. -ENOBUFS - operation cannot be initiated due to a lack of the internal IO objects -ENOMEM - operation cannot be initiated as there is not enough memory available </dd></dl>
+
+</div>
+</div>
+<a id="ad6c58ae16732cce840761f7f07eb2c19" name="ad6c58ae16732cce840761f7f07eb2c19"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6c58ae16732cce840761f7f07eb2c19">&#9670;&#160;</a></span>spdk_fsdev_umount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_fsdev_umount </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_fsdev_desc *</td>          <td class="paramname"><span class="paramname"><em>desc</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct spdk_io_channel *</td>          <td class="paramname"><span class="paramname"><em>ch</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t</td>          <td class="paramname"><span class="paramname"><em>unique</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="#a1dd822a2e8b210aee3ccc7869c5b7b94">spdk_fsdev_umount_cpl_cb</a></td>          <td class="paramname"><span class="paramname"><em>cb_fn</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *</td>          <td class="paramname"><span class="paramname"><em>cb_arg</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Unmount the filesystem. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">desc</td><td>Filesystem device descriptor. </td></tr>
+    <tr><td class="paramname">ch</td><td>I/O channel. </td></tr>
+    <tr><td class="paramname">unique</td><td>Unique I/O id. </td></tr>
+    <tr><td class="paramname">cb_fn</td><td>Completion callback. </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>Context to be passed to the completion callback.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success. On success, the callback will always be called (even if the request ultimately failed). Return negated errno on failure, in which case the callback will not be called.</dd></dl>
+<p>NOTE: on unmount the lookup count for all fobjects implicitly drops to zero. </p>
 
 </div>
 </div>

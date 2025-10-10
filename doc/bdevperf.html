@@ -193,9 +193,82 @@ $(function(){initNavTree('bdevperf.html',''); initResizable(); });
 <li>write_zeroes</li>
 <li>flush</li>
 <li>rw</li>
-<li>randrw </li>
+<li>randrw</li>
 </ul>
-</div></div><!-- contents -->
+<h1>JSON Output</h1>
+<p><code>bdevperf</code> supports delivering test results in JSON format via the <code>bdevperf.py perform_tests</code> RPC command. This feature allows users to programmatically parse and analyze test results.</p>
+<h2>Enabling JSON Output</h2>
+<p>To enable JSON output, use the <code>bdevperf.py perform_tests</code> RPC command. The JSON response includes detailed test results for each job and a summary of the test execution. Below is an example of how to trigger a test and retrieve results in JSON format:</p>
+<div class="fragment"><div class="line">sudo ./build/examples/bdevperf -c ./test/bdev/bdevperf/conf.json -m 0xFF -z</div>
+<div class="line">sudo PYTHONPATH=python ./examples/bdev/bdevperf/bdevperf.py perform_tests -q 16 -o 4096 -t 5 -w write</div>
+</div><!-- fragment --><h2>Example JSON Output</h2>
+<p>The JSON response consists of two main sections:</p>
+<ol type="1">
+<li><b>Results</b>: An array of objects, each representing a test job. Each object contains the following fields:</li>
+</ol>
+<ul>
+<li><code>job</code>: The name of the job (e.g., <code>Malloc0</code>).</li>
+<li><code>core_mask</code>: The CPU core mask used for the job.</li>
+<li><code>workload</code>: The type of workload (e.g., <code>write</code>).</li>
+<li><code>status</code>: The status of the test.<ul>
+<li><code>finished</code> - the test completed successfully.</li>
+<li><code>failed</code> - the test encountered an error.</li>
+<li><code>terminated</code> - the test was interrupted (e.g., via <code>SIGINT</code> or <code>Ctrl-C</code>).</li>
+</ul>
+</li>
+<li><code>queue_depth</code>: The queue depth used for the test.</li>
+<li><code>io_size</code>: The I/O size in bytes.</li>
+<li><code>runtime</code>: The test runtime in seconds.</li>
+<li><code>iops</code>: The I/O operations per second achieved.</li>
+<li><code>mibps</code>: The throughput in MiB/s.</li>
+<li><code>io_failed</code>: The number of failed I/O operations.</li>
+<li><code>io_timeout</code>: The number of timed-out I/O operations.</li>
+<li><code>avg_latency_us</code>: The average latency in microseconds.</li>
+<li><code>min_latency_us</code>: The minimum latency in microseconds.</li>
+<li><code>max_latency_us</code>: The maximum latency in microseconds.</li>
+</ul>
+<ol type="1">
+<li><b>Core Count</b>: The actual number of CPUs used during the test (note that <code>bdevperf</code> was run with <code>0xFF</code> mask, but only 2 cores were used).</li>
+</ol>
+<h3>Example</h3>
+<div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;results&quot;: [</div>
+<div class="line">    {</div>
+<div class="line">      &quot;job&quot;: &quot;Malloc0&quot;,</div>
+<div class="line">      &quot;core_mask&quot;: &quot;0x1&quot;,</div>
+<div class="line">      &quot;workload&quot;: &quot;write&quot;,</div>
+<div class="line">      &quot;status&quot;: &quot;finished&quot;,</div>
+<div class="line">      &quot;queue_depth&quot;: 16,</div>
+<div class="line">      &quot;io_size&quot;: 4096,</div>
+<div class="line">      &quot;runtime&quot;: 5.000048,</div>
+<div class="line">      &quot;iops&quot;: 1200455.675625514,</div>
+<div class="line">      &quot;mibps&quot;: 4689.279982912164,</div>
+<div class="line">      &quot;io_failed&quot;: 0,</div>
+<div class="line">      &quot;io_timeout&quot;: 0,</div>
+<div class="line">      &quot;avg_latency_us&quot;: 13.252784244696382,</div>
+<div class="line">      &quot;min_latency_us&quot;: 11.130434782608695,</div>
+<div class="line">      &quot;max_latency_us&quot;: 222.6086956521739</div>
+<div class="line">    },</div>
+<div class="line">    {</div>
+<div class="line">      &quot;job&quot;: &quot;Malloc1&quot;,</div>
+<div class="line">      &quot;core_mask&quot;: &quot;0x2&quot;,</div>
+<div class="line">      &quot;workload&quot;: &quot;write&quot;,</div>
+<div class="line">      &quot;status&quot;: &quot;finished&quot;,</div>
+<div class="line">      &quot;queue_depth&quot;: 16,</div>
+<div class="line">      &quot;io_size&quot;: 4096,</div>
+<div class="line">      &quot;runtime&quot;: 5.000024,</div>
+<div class="line">      &quot;iops&quot;: 1216432.5611237066,</div>
+<div class="line">      &quot;mibps&quot;: 4751.689691889479,</div>
+<div class="line">      &quot;io_failed&quot;: 0,</div>
+<div class="line">      &quot;io_timeout&quot;: 0,</div>
+<div class="line">      &quot;avg_latency_us&quot;: 13.082916284986958,</div>
+<div class="line">      &quot;min_latency_us&quot;: 5.7043478260869565,</div>
+<div class="line">      &quot;max_latency_us&quot;: 90.82434782608695</div>
+<div class="line">    }</div>
+<div class="line">  ],</div>
+<div class="line">  &quot;core_count&quot;: 2</div>
+<div class="line">}</div>
+</div><!-- fragment --> </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.8-->

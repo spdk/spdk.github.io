@@ -159,7 +159,9 @@ Data Structures</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__iobuf__buffer.html">spdk_iobuf_buffer</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__iobuf__pool.html">spdk_iobuf_pool</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__iobuf__pool__cache.html">spdk_iobuf_pool_cache</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__iobuf__node__cache.html">spdk_iobuf_node_cache</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__iobuf__channel.html">spdk_iobuf_channel</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">iobuf channel  <a href="structspdk__iobuf__channel.html#details">More...</a><br /></td></tr>
@@ -186,6 +188,12 @@ Macros</h2></td></tr>
 <tr class="memitem:ad1bf9a3cbfe4b4a628e370495a1fb0bf" id="r_ad1bf9a3cbfe4b4a628e370495a1fb0bf"><td class="memItemLeft" align="right" valign="top"><a id="ad1bf9a3cbfe4b4a628e370495a1fb0bf" name="ad1bf9a3cbfe4b4a628e370495a1fb0bf"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_INTERRUPT_REGISTER_FOR_EVENTS</b>(efd,  events,  fn,  arg)&#160;&#160;&#160;	<a class="el" href="#a18f33a8abb147f5f8bac86e226a990a1">spdk_interrupt_register_for_events</a>(efd, events, fn, arg, #fn)</td></tr>
 <tr class="separator:ad1bf9a3cbfe4b4a628e370495a1fb0bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68e304ae56c7cf4ede936060c5767385" id="r_a68e304ae56c7cf4ede936060c5767385"><td class="memItemLeft" align="right" valign="top"><a id="a68e304ae56c7cf4ede936060c5767385" name="a68e304ae56c7cf4ede936060c5767385"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_INTERRUPT_REGISTER_EXT</b>(efd,  fn,  arg,  opts)&#160;&#160;&#160;	<a class="el" href="#a812ae539315375ce3fd4abe912a641d0">spdk_interrupt_register_ext</a>(efd, fn, arg, #fn, opts)</td></tr>
+<tr class="separator:a68e304ae56c7cf4ede936060c5767385"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45f8cc84ae24aadfdc5953795ab67926" id="r_a45f8cc84ae24aadfdc5953795ab67926"><td class="memItemLeft" align="right" valign="top"><a id="a45f8cc84ae24aadfdc5953795ab67926" name="a45f8cc84ae24aadfdc5953795ab67926"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_CONFIG_MAX_NUMA_NODES</b>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:a45f8cc84ae24aadfdc5953795ab67926"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -364,6 +372,9 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_thread_get_c
 <tr class="memitem:a5c98f015b55188cabb829aaf83a797c6" id="r_a5c98f015b55188cabb829aaf83a797c6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5c98f015b55188cabb829aaf83a797c6">spdk_thread_set_interrupt_mode</a> (bool enable_interrupt)</td></tr>
 <tr class="memdesc:a5c98f015b55188cabb829aaf83a797c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set current spdk_thread into interrupt mode or back to poll mode.  <br /></td></tr>
 <tr class="separator:a5c98f015b55188cabb829aaf83a797c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ddd693f2a059067f9422605708dce81" id="r_a9ddd693f2a059067f9422605708dce81"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9ddd693f2a059067f9422605708dce81">spdk_thread_get_trace_id</a> (struct spdk_thread *thread)</td></tr>
+<tr class="memdesc:a9ddd693f2a059067f9422605708dce81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get trace id.  <br /></td></tr>
+<tr class="separator:a9ddd693f2a059067f9422605708dce81"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0bd43b72b6257c37bbc0507c328e2e3f" id="r_a0bd43b72b6257c37bbc0507c328e2e3f"><td class="memItemLeft" align="right" valign="top">struct spdk_poller *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0bd43b72b6257c37bbc0507c328e2e3f">spdk_poller_register</a> (<a class="el" href="#a35c421accdc2a0a61bb7be916106293b">spdk_poller_fn</a> fn, void *arg, uint64_t period_microseconds)</td></tr>
 <tr class="memdesc:a0bd43b72b6257c37bbc0507c328e2e3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a poller on the current thread.  <br /></td></tr>
 <tr class="separator:a0bd43b72b6257c37bbc0507c328e2e3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -391,6 +402,9 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_thread_get_c
 <tr class="memitem:a717571a5011db0cdd730498146f25f9a" id="r_a717571a5011db0cdd730498146f25f9a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a717571a5011db0cdd730498146f25f9a">spdk_put_io_channel</a> (struct spdk_io_channel *ch)</td></tr>
 <tr class="memdesc:a717571a5011db0cdd730498146f25f9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Release a reference to an I/O channel.  <br /></td></tr>
 <tr class="separator:a717571a5011db0cdd730498146f25f9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9985dda3d8239f1701b46375f8c93f3b" id="r_a9985dda3d8239f1701b46375f8c93f3b"><td class="memItemLeft" align="right" valign="top">struct spdk_io_channel *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9985dda3d8239f1701b46375f8c93f3b">spdk_io_channel_ref</a> (struct spdk_io_channel *ch)</td></tr>
+<tr class="memdesc:a9985dda3d8239f1701b46375f8c93f3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Take a reference to an existing I/O channel.  <br /></td></tr>
+<tr class="separator:a9985dda3d8239f1701b46375f8c93f3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a516b9dea532ea890924aa30eca30bad7" id="r_a516b9dea532ea890924aa30eca30bad7"><td class="memItemLeft" align="right" valign="top">static void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a516b9dea532ea890924aa30eca30bad7">spdk_io_channel_get_ctx</a> (struct spdk_io_channel *ch)</td></tr>
 <tr class="memdesc:a516b9dea532ea890924aa30eca30bad7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the context buffer associated with an I/O channel.  <br /></td></tr>
 <tr class="separator:a516b9dea532ea890924aa30eca30bad7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -424,6 +438,12 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_thread_get_c
 <tr class="memitem:a18f33a8abb147f5f8bac86e226a990a1" id="r_a18f33a8abb147f5f8bac86e226a990a1"><td class="memItemLeft" align="right" valign="top">struct spdk_interrupt *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a18f33a8abb147f5f8bac86e226a990a1">spdk_interrupt_register_for_events</a> (int efd, uint32_t events, <a class="el" href="#a61cfdc77d10970d7f3a8631df71e9588">spdk_interrupt_fn</a> fn, void *arg, const char *name)</td></tr>
 <tr class="memdesc:a18f33a8abb147f5f8bac86e226a990a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register an spdk_interrupt with specific event types on the current thread.  <br /></td></tr>
 <tr class="separator:a18f33a8abb147f5f8bac86e226a990a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a812ae539315375ce3fd4abe912a641d0" id="r_a812ae539315375ce3fd4abe912a641d0"><td class="memItemLeft" align="right" valign="top">struct spdk_interrupt *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a812ae539315375ce3fd4abe912a641d0">spdk_interrupt_register_ext</a> (int efd, <a class="el" href="#a61cfdc77d10970d7f3a8631df71e9588">spdk_interrupt_fn</a> fn, void *arg, const char *name, struct <a class="el" href="structspdk__event__handler__opts.html">spdk_event_handler_opts</a> *opts)</td></tr>
+<tr class="memdesc:a812ae539315375ce3fd4abe912a641d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register an spdk_interrupt with specific event type stated in <a class="el" href="structspdk__event__handler__opts.html">spdk_event_handler_opts</a> argument on the current thread.  <br /></td></tr>
+<tr class="separator:a812ae539315375ce3fd4abe912a641d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1216d82cc9b40da9092c0c26312cab31" id="r_a1216d82cc9b40da9092c0c26312cab31"><td class="memItemLeft" align="right" valign="top">struct spdk_interrupt *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1216d82cc9b40da9092c0c26312cab31">spdk_interrupt_register_fd_group</a> (struct spdk_fd_group *fgrp, const char *name)</td></tr>
+<tr class="memdesc:a1216d82cc9b40da9092c0c26312cab31"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register an interrupt listening for all events associated with an fd_group on current thread.  <br /></td></tr>
+<tr class="separator:a1216d82cc9b40da9092c0c26312cab31"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a45f3647a26ba93931beeb1782d39e56e" id="r_a45f3647a26ba93931beeb1782d39e56e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a45f3647a26ba93931beeb1782d39e56e">spdk_interrupt_unregister</a> (struct spdk_interrupt **pintr)</td></tr>
 <tr class="memdesc:a45f3647a26ba93931beeb1782d39e56e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unregister an spdk_interrupt on the current thread.  <br /></td></tr>
 <tr class="separator:a45f3647a26ba93931beeb1782d39e56e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -486,6 +506,9 @@ typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_iobuf_f
 <tr class="memitem:a995886b544503417d914052e56a75b4b" id="r_a995886b544503417d914052e56a75b4b"><td class="memItemLeft" align="right" valign="top"><a id="a995886b544503417d914052e56a75b4b" name="a995886b544503417d914052e56a75b4b"></a>
 typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_iobuf_get_stats_cb</b>) (struct <a class="el" href="structspdk__iobuf__module__stats.html">spdk_iobuf_module_stats</a> *modules, uint32_t num_modules, void *cb_arg)</td></tr>
 <tr class="separator:a995886b544503417d914052e56a75b4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09900a8132827bbf9763d6c3818ce7d2" id="r_a09900a8132827bbf9763d6c3818ce7d2"><td class="memItemLeft" align="right" valign="top"><a id="a09900a8132827bbf9763d6c3818ce7d2" name="a09900a8132827bbf9763d6c3818ce7d2"></a>
+typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_post_poller_fn</b>) (void *fn_arg)</td></tr>
+<tr class="separator:a09900a8132827bbf9763d6c3818ce7d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a18be1edc45d00e45964e5d34ee7f776b" id="r_a18be1edc45d00e45964e5d34ee7f776b"><td class="memItemLeft" align="right" valign="top"><a id="a18be1edc45d00e45964e5d34ee7f776b" name="a18be1edc45d00e45964e5d34ee7f776b"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_iobuf_register_module</b> (const char *name)</td></tr>
 <tr class="separator:a18be1edc45d00e45964e5d34ee7f776b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -498,9 +521,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_iobuf_unregister_
 <tr class="memitem:a3a69dd994350e50395605e9b394b02fe" id="r_a3a69dd994350e50395605e9b394b02fe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3a69dd994350e50395605e9b394b02fe">spdk_iobuf_channel_fini</a> (struct <a class="el" href="structspdk__iobuf__channel.html">spdk_iobuf_channel</a> *ch)</td></tr>
 <tr class="memdesc:a3a69dd994350e50395605e9b394b02fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Release resources tied to an iobuf channel.  <br /></td></tr>
 <tr class="separator:a3a69dd994350e50395605e9b394b02fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa57f01f992d8ebe9e30c5b6c21edf2a5" id="r_aa57f01f992d8ebe9e30c5b6c21edf2a5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa57f01f992d8ebe9e30c5b6c21edf2a5">spdk_iobuf_for_each_entry</a> (struct <a class="el" href="structspdk__iobuf__channel.html">spdk_iobuf_channel</a> *ch, struct <a class="el" href="structspdk__iobuf__pool.html">spdk_iobuf_pool</a> *pool, spdk_iobuf_for_each_entry_fn cb_fn, void *cb_ctx)</td></tr>
-<tr class="memdesc:aa57f01f992d8ebe9e30c5b6c21edf2a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Iterate over all entries on a given queue and execute a callback on those that were requested using <code>ch</code>.  <br /></td></tr>
-<tr class="separator:aa57f01f992d8ebe9e30c5b6c21edf2a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abfde0bbbf232cb03300d98b24a3bdddb" id="r_abfde0bbbf232cb03300d98b24a3bdddb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abfde0bbbf232cb03300d98b24a3bdddb">spdk_iobuf_for_each_entry</a> (struct <a class="el" href="structspdk__iobuf__channel.html">spdk_iobuf_channel</a> *ch, spdk_iobuf_for_each_entry_fn cb_fn, void *cb_ctx)</td></tr>
+<tr class="memdesc:abfde0bbbf232cb03300d98b24a3bdddb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Iterate over all entries on a given channel and execute a callback on those that were requested.  <br /></td></tr>
+<tr class="separator:abfde0bbbf232cb03300d98b24a3bdddb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad192ca271f84d76cca2a2ff6403b534a" id="r_ad192ca271f84d76cca2a2ff6403b534a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad192ca271f84d76cca2a2ff6403b534a">spdk_iobuf_entry_abort</a> (struct <a class="el" href="structspdk__iobuf__channel.html">spdk_iobuf_channel</a> *ch, struct <a class="el" href="structspdk__iobuf__entry.html">spdk_iobuf_entry</a> *entry, uint64_t len)</td></tr>
 <tr class="memdesc:ad192ca271f84d76cca2a2ff6403b534a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Abort an outstanding request waiting for a buffer.  <br /></td></tr>
 <tr class="separator:ad192ca271f84d76cca2a2ff6403b534a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -513,6 +536,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_iobuf_unregister_
 <tr class="memitem:a22cb35e6bb7625b1338c4db9de32bc0f" id="r_a22cb35e6bb7625b1338c4db9de32bc0f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a22cb35e6bb7625b1338c4db9de32bc0f">spdk_iobuf_get_stats</a> (spdk_iobuf_get_stats_cb cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:a22cb35e6bb7625b1338c4db9de32bc0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get iobuf statistics.  <br /></td></tr>
 <tr class="separator:a22cb35e6bb7625b1338c4db9de32bc0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc4e22aad3967f4a67dc1ceb33d03326" id="r_acc4e22aad3967f4a67dc1ceb33d03326"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acc4e22aad3967f4a67dc1ceb33d03326">spdk_thread_register_post_poller_handler</a> (spdk_post_poller_fn fn, void *fn_arg)</td></tr>
+<tr class="memdesc:acc4e22aad3967f4a67dc1ceb33d03326"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a function to be called after the current SPDK poller has completed.  <br /></td></tr>
+<tr class="separator:acc4e22aad3967f4a67dc1ceb33d03326"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Thread. </p>
@@ -1013,6 +1039,87 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_iobuf_unregister_
 
 </div>
 </div>
+<a id="a812ae539315375ce3fd4abe912a641d0" name="a812ae539315375ce3fd4abe912a641d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a812ae539315375ce3fd4abe912a641d0">&#9670;&#160;</a></span>spdk_interrupt_register_ext()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct spdk_interrupt * spdk_interrupt_register_ext </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>efd</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="#a61cfdc77d10970d7f3a8631df71e9588">spdk_interrupt_fn</a></td>          <td class="paramname"><span class="paramname"><em>fn</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *</td>          <td class="paramname"><span class="paramname"><em>arg</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>name</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structspdk__event__handler__opts.html">spdk_event_handler_opts</a> *</td>          <td class="paramname"><span class="paramname"><em>opts</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Register an spdk_interrupt with specific event type stated in <a class="el" href="structspdk__event__handler__opts.html">spdk_event_handler_opts</a> argument on the current thread. </p>
+<p>The provided function will be called any time one of specified event types from <a class="el" href="structspdk__event__handler__opts.html">spdk_event_handler_opts</a> argument triggers on the associated file descriptor. Event types argument in <a class="el" href="structspdk__event__handler__opts.html">spdk_event_handler_opts</a> is a bit mask composed by ORing together enum spdk_interrupt_event_types values.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">efd</td><td>File descriptor of the spdk_interrupt. </td></tr>
+    <tr><td class="paramname">fn</td><td>Called each time there are events in spdk_interrupt. </td></tr>
+    <tr><td class="paramname">arg</td><td>Function argument for fn. </td></tr>
+    <tr><td class="paramname">name</td><td>Human readable name for the spdk_interrupt. Pointer of the spdk_interrupt name is set if NULL. </td></tr>
+    <tr><td class="paramname">opts</td><td>Extended event handler option.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a pointer to the spdk_interrupt registered on the current thread on success or NULL on failure. </dd></dl>
+
+</div>
+</div>
+<a id="a1216d82cc9b40da9092c0c26312cab31" name="a1216d82cc9b40da9092c0c26312cab31"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1216d82cc9b40da9092c0c26312cab31">&#9670;&#160;</a></span>spdk_interrupt_register_fd_group()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct spdk_interrupt * spdk_interrupt_register_fd_group </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_fd_group *</td>          <td class="paramname"><span class="paramname"><em>fgrp</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>name</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Register an interrupt listening for all events associated with an fd_group on current thread. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fgrp</td><td>fd_group describing the events to listen for. </td></tr>
+    <tr><td class="paramname">name</td><td>Name of the interrupt.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>return Pointer to spdk_interrupt or NULL in case of failure. </p>
+
+</div>
+</div>
 <a id="a18f33a8abb147f5f8bac86e226a990a1" name="a18f33a8abb147f5f8bac86e226a990a1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a18f33a8abb147f5f8bac86e226a990a1">&#9670;&#160;</a></span>spdk_interrupt_register_for_events()</h2>
 
@@ -1310,6 +1417,33 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_iobuf_unregister_
 
 </div>
 </div>
+<a id="a9985dda3d8239f1701b46375f8c93f3b" name="a9985dda3d8239f1701b46375f8c93f3b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9985dda3d8239f1701b46375f8c93f3b">&#9670;&#160;</a></span>spdk_io_channel_ref()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct spdk_io_channel * spdk_io_channel_ref </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_io_channel *</td>          <td class="paramname"><span class="paramname"><em>ch</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Take a reference to an existing I/O channel. </p>
+<p>This can be called on an existing io_channel that was previously returned from <a class="el" href="#ab85750b21f0e1cf95223e3e1f7e8f046" title="Get an I/O channel for the specified io_device to be used by the calling thread.">spdk_get_io_channel()</a>. This must be called on the same thread that called <a class="el" href="#ab85750b21f0e1cf95223e3e1f7e8f046" title="Get an I/O channel for the specified io_device to be used by the calling thread.">spdk_get_io_channel()</a> for the specified I/O channel. <a class="el" href="#a717571a5011db0cdd730498146f25f9a" title="Release a reference to an I/O channel.">spdk_put_io_channel()</a> must be called to release the reference when it is no longer needed.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ch</td><td>The existing I/O channel to reference.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The same I/O channel pointer that was passed in. </dd></dl>
+
+</div>
+</div>
 <a id="a75f5c71056d8c39ff05a6610d55edcf5" name="a75f5c71056d8c39ff05a6610d55edcf5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a75f5c71056d8c39ff05a6610d55edcf5">&#9670;&#160;</a></span>spdk_io_device_register()</h2>
 
@@ -1524,8 +1658,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_iobuf_unregister_
 
 </div>
 </div>
-<a id="aa57f01f992d8ebe9e30c5b6c21edf2a5" name="aa57f01f992d8ebe9e30c5b6c21edf2a5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa57f01f992d8ebe9e30c5b6c21edf2a5">&#9670;&#160;</a></span>spdk_iobuf_for_each_entry()</h2>
+<a id="abfde0bbbf232cb03300d98b24a3bdddb" name="abfde0bbbf232cb03300d98b24a3bdddb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abfde0bbbf232cb03300d98b24a3bdddb">&#9670;&#160;</a></span>spdk_iobuf_for_each_entry()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1534,11 +1668,6 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_iobuf_unregister_
           <td class="memname">int spdk_iobuf_for_each_entry </td>
           <td>(</td>
           <td class="paramtype">struct <a class="el" href="structspdk__iobuf__channel.html">spdk_iobuf_channel</a> *</td>          <td class="paramname"><span class="paramname"><em>ch</em>, </span></td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">struct <a class="el" href="structspdk__iobuf__pool.html">spdk_iobuf_pool</a> *</td>          <td class="paramname"><span class="paramname"><em>pool</em>, </span></td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1553,13 +1682,12 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_iobuf_unregister_
       </table>
 </div><div class="memdoc">
 
-<p>Iterate over all entries on a given queue and execute a callback on those that were requested using <code>ch</code>. </p>
+<p>Iterate over all entries on a given channel and execute a callback on those that were requested. </p>
 <p>The iteration is stopped if the callback returns non-zero status.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">ch</td><td>iobuf channel to iterate over. </td></tr>
-    <tr><td class="paramname">pool</td><td>Pool to iterate over (<code>small</code> or <code>large</code>). </td></tr>
-    <tr><td class="paramname">cb_fn</td><td>Callback to execute on each entry on the queue that was requested using <code>ch</code>. </td></tr>
+    <tr><td class="paramname">cb_fn</td><td>Callback to execute on each entry on the channel that was requested. </td></tr>
     <tr><td class="paramname">cb_ctx</td><td>Argument passed to <code>cb_fn</code>.</td></tr>
   </table>
   </dd>
@@ -1847,6 +1975,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_iobuf_unregister_
 
 <p>Mark that the poller is capable of entering interrupt mode. </p>
 <p>When registering the poller set interrupt callback, the callback will get executed immediately if its spdk_thread is in the interrupt mode.</p>
+<p>Callers may pass NULL for the cb_fn, signifying that no callback is necessary when the interrupt mode changes.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">poller</td><td>The poller to register callback function. </td></tr>
@@ -2582,6 +2711,32 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_iobuf_unregister_
 
 </div>
 </div>
+<a id="a9ddd693f2a059067f9422605708dce81" name="a9ddd693f2a059067f9422605708dce81"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ddd693f2a059067f9422605708dce81">&#9670;&#160;</a></span>spdk_thread_get_trace_id()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t spdk_thread_get_trace_id </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_thread *</td>          <td class="paramname"><span class="paramname"><em>thread</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get trace id. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">thread</td><td>Thread to get trace_id from.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Trace id of the specified thread. </dd></dl>
+
+</div>
+</div>
 <a id="a5a143ecbc5ce7edcd57e76cffd74bde5" name="a5a143ecbc5ce7edcd57e76cffd74bde5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5a143ecbc5ce7edcd57e76cffd74bde5">&#9670;&#160;</a></span>spdk_thread_has_active_pollers()</h2>
 
@@ -2905,6 +3060,37 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_iobuf_unregister_
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>1 if work was done. 0 if no work was done. </dd></dl>
+
+</div>
+</div>
+<a id="acc4e22aad3967f4a67dc1ceb33d03326" name="acc4e22aad3967f4a67dc1ceb33d03326"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc4e22aad3967f4a67dc1ceb33d03326">&#9670;&#160;</a></span>spdk_thread_register_post_poller_handler()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_thread_register_post_poller_handler </td>
+          <td>(</td>
+          <td class="paramtype">spdk_post_poller_fn</td>          <td class="paramname"><span class="paramname"><em>fn</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *</td>          <td class="paramname"><span class="paramname"><em>fn_arg</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Register a function to be called after the current SPDK poller has completed. </p>
+<p>Once called, this function is de-registered and won't called until the next registration call.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fn</td><td>Function to call </td></tr>
+    <tr><td class="paramname">fn_arg</td><td>Function argument </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

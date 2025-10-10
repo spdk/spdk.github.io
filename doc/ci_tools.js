@@ -10,7 +10,6 @@ var ci_tools =
     [ "distributions", "distributions.html", [
       [ "In this document", "distributions.html#distros_toc", null ],
       [ "Overview", "distributions.html#distros_overview", null ],
-      [ "Linux distributions", "distributions.html#linux_list", null ],
-      [ "FreeBSD distributions", "distributions.html#freebsd_list", null ]
+      [ "Linux distributions", "distributions.html#linux_list", null ]
     ] ]
 ];

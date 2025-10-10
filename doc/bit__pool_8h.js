@@ -12,5 +12,6 @@ var bit__pool_8h =
     [ "spdk_bit_pool_is_allocated", "bit__pool_8h.html#a3ad1edd29295115b3e0948c7c184e241", null ],
     [ "spdk_bit_pool_load_mask", "bit__pool_8h.html#a4b52667b11f147606e2f2d0f4496682f", null ],
     [ "spdk_bit_pool_resize", "bit__pool_8h.html#a194a0360b6bbaa3448a77c7b9454c282", null ],
+    [ "spdk_bit_pool_set_bit_allocated", "bit__pool_8h.html#ae55d50973362ff30ecc55d26fffee3d8", null ],
     [ "spdk_bit_pool_store_mask", "bit__pool_8h.html#ac616ba25bac4a3cf81cfc906ae3d1d64", null ]
 ];

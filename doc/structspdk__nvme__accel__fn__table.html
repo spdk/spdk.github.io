@@ -144,10 +144,9 @@ Data Fields</h2></td></tr>
 <tr class="memitem:a249f5c8d94337ebecefd008bf2e0edc1" id="r_a249f5c8d94337ebecefd008bf2e0edc1"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a249f5c8d94337ebecefd008bf2e0edc1">table_size</a></td></tr>
 <tr class="memdesc:a249f5c8d94337ebecefd008bf2e0edc1"><td class="mdescLeft">&#160;</td><td class="mdescRight">The size of spdk_nvme_accel_fun_table according to the caller of this library is used for ABI compatibility.  <br /></td></tr>
 <tr class="separator:a249f5c8d94337ebecefd008bf2e0edc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa20b162bd3721e3773bb022523b0dc01" id="r_aa20b162bd3721e3773bb022523b0dc01"><td class="memItemLeft" align="right" valign="top"><a id="aa20b162bd3721e3773bb022523b0dc01" name="aa20b162bd3721e3773bb022523b0dc01"></a>
-void(*&#160;</td><td class="memItemRight" valign="bottom"><b>submit_accel_crc32c</b> )(void *ctx, uint32_t *dst, struct iovec *iov, uint32_t iov_cnt, uint32_t seed, <a class="el" href="nvme_8h.html#afff8aaa490f2db1119b20e36253196b7">spdk_nvme_accel_completion_cb</a> cb_fn, void *cb_arg)</td></tr>
-<tr class="memdesc:aa20b162bd3721e3773bb022523b0dc01"><td class="mdescLeft">&#160;</td><td class="mdescRight">The accelerated crc32c function. <br /></td></tr>
-<tr class="separator:aa20b162bd3721e3773bb022523b0dc01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4407939b58ca4248bf4bebd551f19311" id="r_a4407939b58ca4248bf4bebd551f19311"><td class="memItemLeft" align="right" valign="top"><a id="a4407939b58ca4248bf4bebd551f19311" name="a4407939b58ca4248bf4bebd551f19311"></a>
+uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>reserved8</b> [8]</td></tr>
+<tr class="separator:a4407939b58ca4248bf4bebd551f19311"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acf901173bda0ccd0fc2fbc65ba374ef4" id="r_acf901173bda0ccd0fc2fbc65ba374ef4"><td class="memItemLeft" align="right" valign="top"><a id="acf901173bda0ccd0fc2fbc65ba374ef4" name="acf901173bda0ccd0fc2fbc65ba374ef4"></a>
 void(*&#160;</td><td class="memItemRight" valign="bottom"><b>finish_sequence</b> )(void *seq, <a class="el" href="nvme_8h.html#afff8aaa490f2db1119b20e36253196b7">spdk_nvme_accel_completion_cb</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:acf901173bda0ccd0fc2fbc65ba374ef4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finish an accel sequence. <br /></td></tr>
@@ -164,6 +163,10 @@ void(*&#160;</td><td class="memItemRight" valign="bottom"><b>abort_sequence</b> 
 int(*&#160;</td><td class="memItemRight" valign="bottom"><b>append_crc32c</b> )(void *ctx, void **seq, uint32_t *dst, struct iovec *iovs, uint32_t iovcnt, struct spdk_memory_domain *memory_domain, void *domain_ctx, uint32_t seed, <a class="el" href="nvme_8h.html#a23b4ebb6bfd9f12c07b1ae91a2c98ad8">spdk_nvme_accel_step_cb</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:afb7a00b4f43e9ec2bc8a249763f628ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Append a crc32c operation to a sequence. <br /></td></tr>
 <tr class="separator:afb7a00b4f43e9ec2bc8a249763f628ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adde1841d6971016f23ae88bc7e9eace9" id="r_adde1841d6971016f23ae88bc7e9eace9"><td class="memItemLeft" align="right" valign="top"><a id="adde1841d6971016f23ae88bc7e9eace9" name="adde1841d6971016f23ae88bc7e9eace9"></a>
+int(*&#160;</td><td class="memItemRight" valign="bottom"><b>append_copy</b> )(void *ctx, void **seq, struct iovec *dst_iovs, uint32_t dst_iovcnt, struct spdk_memory_domain *dst_domain, void *dst_domain_ctx, struct iovec *src_iovs, uint32_t src_iovcnt, struct spdk_memory_domain *src_domain, void *src_domain_ctx, <a class="el" href="nvme_8h.html#a23b4ebb6bfd9f12c07b1ae91a2c98ad8">spdk_nvme_accel_step_cb</a> cb_fn, void *cb_arg)</td></tr>
+<tr class="memdesc:adde1841d6971016f23ae88bc7e9eace9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Append a copy operation to a sequence. <br /></td></tr>
+<tr class="separator:adde1841d6971016f23ae88bc7e9eace9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Function table for the NVMe accelerator device. </p>

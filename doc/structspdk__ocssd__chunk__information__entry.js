@@ -2,8 +2,8 @@ var structspdk__ocssd__chunk__information__entry =
 [
     [ "closed", "structspdk__ocssd__chunk__information__entry.html#a1fc2a46fc77b068996c02c36e1b740a3", null ],
     [ "cnlb", "structspdk__ocssd__chunk__information__entry.html#aa6f484b4b7d394a7dfb18f215cd2972f", null ],
-    [ "cs", "structspdk__ocssd__chunk__information__entry.html#a076b799417c2226e022ead1c0af8a268", null ],
-    [ "ct", "structspdk__ocssd__chunk__information__entry.html#a1d2ef91fe5467b65036d463478fc1742", null ],
+    [ "cs", "structspdk__ocssd__chunk__information__entry.html#ace5e59f2a8362984b9a8484ec4340026", null ],
+    [ "ct", "structspdk__ocssd__chunk__information__entry.html#a7a5592023594cc639a106b657e0ef40c", null ],
     [ "free", "structspdk__ocssd__chunk__information__entry.html#a8754f5436078bb51613dfa9531af3333", null ],
     [ "offline", "structspdk__ocssd__chunk__information__entry.html#a2df5f77549b5dd37fd7b2a1f65be5b45", null ],
     [ "open", "structspdk__ocssd__chunk__information__entry.html#a7343730f4dc45a9041b3c866134766d5", null ],

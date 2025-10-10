@@ -132,36 +132,163 @@ $(function(){initNavTree('changelog.html',''); initResizable(); });
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p><a class="anchor" id="md_changelog"></a> </p>
-<h1><a class="anchor" id="changelog-v24-09"></a>
-v24.09: (Upcoming Release)</h1>
+<h1><a class="anchor" id="changelog-v26-01"></a>
+v26.01: (Upcoming Release)</h1>
+<h1>v25.09</h1>
+<h2>bdev</h2>
+<p><code>spdk_bdev_get_preferred_write_alignment</code>, <code>spdk_bdev_get_preferred_write_granularity</code>, <code>spdk_bdev_get_optimal_write_size</code>, <code>spdk_bdev_get_preferred_unmap_alignment</code> and <code>spdk_bdev_get_preferred_unmap_granularity</code> APIs were added.</p>
+<h2>bdev_compress</h2>
+<p>The deprecated bdev_compress module was removed.</p>
+<h2>bdev_null</h2>
+<p>Support was added to set the bdev's preferred write alignment, preferred write granularity, optimal write size, preferred unmap alignment and preferred unmap granularity. These can be set by users using new parameters to the <code>bdev_null_create</code> RPC.</p>
+<h2>bdev_nvme</h2>
+<p>Add NVMe flush support to the bdev_nvme module. This support is optional and can be enabled using the new <code>enable_flush</code> parameter to the <code>bdev_nvme_set_options</code> RPC. The flush command is only sent to the namespace if the namespace reported that it had a volatile write cache.</p>
+<p>Support was added to set the bdev's preferred write alignment, preferred write granularity, optimal write size, preferred unmap alignment and preferred unmap granularity, if the NVMe namespace reports the associated values in its IDENTIFY data.</p>
+<h2>bdev_rbd</h2>
+<p>Support was added for read-only RBD bdevs. Users can make an RBD bdev read-only by using the <code>-r</code> or <code>--readonly</code> flag with the <code>bdev_rbd_create</code> RPC.</p>
+<h2>blobfs</h2>
+<p>The deprecated blobfs library was removed.</p>
+<h2>env_dpdk</h2>
+<p>The DPDK submodule was updated to DPDK 25.07.</p>
+<p>Support was added for memory registration at a 4KB granularity.</p>
+<p>The deprecated <code>spdk_env_get_socket_id()</code> and <code>spdk_pci_device_get_socket_id()</code> APIs were removed. Users should use <code><a class="el" href="env_8h.html#ae81b644ac17c85fb7980d45adfa11a07" title="Get the NUMA node ID for the given core.">spdk_env_get_numa_id()</a></code> and <code><a class="el" href="env_8h.html#aeccb5bae4943357ac4c41facc0701b0e" title="Get the NUMA node the PCI device is on.">spdk_pci_device_get_numa_id()</a></code> instead.</p>
+<h2>nvme</h2>
+<p>Logging was significantly enhanced as part of this release. Transport address is now shown for fabrics controllers. QP related log messages now include information about the QP and its controller.</p>
+<h2>nvmf</h2>
+<p>(CVE-2025-57275) Fixed (8981ddb1) an array-out-of-bounds access during update of registrants for a namespace when PTPL (Persist through power loss) was enabled. If number of registrants exceeded 16 (SPDK_NVMF_MAX_NUM_REGISTRANTS) memory after the array ended could have been written with data provided in Reservation Register command by the initiator. PTPL needed to be enabled explicitly, as it is disabled by default. Affected NVMe-oF transports include TCP and RDMA NVMe-oF in SPDK NVMe-oF target.</p>
+<p>Add NSSR support (NVMe Subsytem Reset) to NVMe-oF target. Once NSSR is issued - it is passed to all underlying namespaces (bdevs). Currenly only bdevs with PCIe transport would handle NSSR. See the NVMe Subsystem Reset (NSSR) section of nvmf.md for more information.</p>
+<p>Passthrough handlers for vendor-specific admin commands were added to the NVMe-oF target. They can be enabled using the optional <code>vendor_specific</code> parameter to the <code>nvmf_set_config</code> RPC.</p>
+<p>Vfio-user migration code was removed. This code was in a non-working state, and upstream libvfio-user has moved to a new v2-style interface which is significantly different. QEMU 10.1 has no live migration support currently, and when it does it will be v2-style based. This allows SPDK to use latest vfio-user and its vfio-user migration support is planned to be re-added at a later time.</p>
+<p>A namespace's IDENTIFY data is now populated with the preferred write alignment, preferred write granularity, optimal write size, preferred unmap alignment and preferred unmap granularity if they were specified by the underlying bdev.</p>
+<p>The nvmf target now reports support for NVMe version 1.4. To enable this upgrade, improved NSID and log page offset validation was added to the target.</p>
+<h2>python</h2>
+<p>Moved all cli code inside the python package for easier generation and packaging. Split large rpc python file into modules.</p>
+<p>Deprecate python.spdk.rpc modules and use JSONRPCClient object directly.</p>
+<h2>reduce</h2>
+<p>The deprecated reduce library was removed.</p>
+<h2>rocksdb</h2>
+<p>The deprecated RocksDB plugin was removed.</p>
+<h2>sock</h2>
+<p>Simplified spdk_sock_[listen|connect] impl_name handling. Previously, if NULL was provided and the connection or listen operation failed the code would continue checking other sock implementations. This behavior is no longer necessary, as VPP sock module was removed. The remaining uring and posix implementations both rely on network kernel stack and upcoming XLIO support shares the same addressing. This legacy behavior complicates the implementation of asynchronous connect, particularly when the socket object is returned immediately. Now, when NULL is provided, the default implementation is selected and terminates on failure without iterating over other sock implementations.</p>
+<p>Changed the return behavior of <code>spdk_sock_flush</code>. The function now returns 0 on success, as relying on the number of bytes returned was not recommended.</p>
+<p>Added <code>spdk_sock_connect_async</code> to enable asynchronous connect operations.</p>
+<h2>thread</h2>
+<p>The <code>spdk_io_channel_ref</code> API was added to more efficiently take a reference to an existing and known I/O channel.</p>
+<h2>util</h2>
+<p>The <code>spdk_bit_pool_set_bit_allocated</code> API was added to enable setting an <code>spdk_bit_pool</code> to a previously known state.</p>
+<h1>v25.05</h1>
+<h2>accel_mlx5</h2>
+<p>Added mlx5 platform driver capable of executing sequences of RDMA + crypto operations in one go. It utilizes UMR (User Memory Region) registration, which allows changing properties of memory keys, which are then used by the NIC to perform the offload (e.g. encrypt/decrypt) while doing RDMA_READ/RDMA_WRITE operations.</p>
+<h2>bdev</h2>
+<p>Added capability to insert/strip DIF from IOs in the bdev layer. This allows users to to rely on the bdev layer to generate and verify the integrity of the data.</p>
+<p>Added support for inserting or overwriting metadata buffers depending on the NVMe PRACT bits set in <code><a class="el" href="structspdk__bdev__ext__io__opts.html" title="Structure with optional IO request parameters.">spdk_bdev_ext_io_opts</a></code>.</p>
+<p>Added <code><a class="el" href="bdev_8h.html#a94c7890fc23800a92d89e38a3b293048" title="Open a block device for I/O operations with options.">spdk_bdev_open_ext_v2()</a></code> API allowing for more flexible additions of per-open options.</p>
+<p>Added APIs to retrieve metadata configuration depending on the <code>hide_metadata</code> option.</p>
+<p>Added option to reset stats in <code>bdev_get_iostat</code> RPC.</p>
+<p>Added option to specify the granularity and min/max values when enabling histogram for a bdev. It allows users to reduce the size of the histogram.</p>
+<h2>bdev_compress</h2>
+<p>Added support for UNMAP.</p>
+<h2>bdev_nvme</h2>
+<p>Added controller configuration consistency check, so all controllers created with the same name will be forced to have consistent setting, either multipath or failover. No mixing of different <code>-x</code> options will be allowed.</p>
+<p>Changed default mode: if no <code>-x</code> option is specified in <code>bdev_nvme_attach_controller</code> RPC call, the multipath mode will be assigned as a default.</p>
+<p>Changed <code>spdk_bdev_nvme_create</code> API function, the <code>multipath</code> parameter was removed as it is redundant to <code>multipath</code> field in <code><a class="el" href="structspdk__bdev__nvme__ctrlr__opts.html">spdk_bdev_nvme_ctrlr_opts</a></code> structure passed as a parameter to this function. To enable multipath, <code>bdev_opts.multipath</code> must be set to <code>true</code>. When <code>bdev_opts.multipath</code> is set to <code>false</code>, failover mode is enabled.</p>
+<p>Added public APIs <code>spdk_bdev_nvme_get_opts</code> and <code>spdk_bdev_nvme_set_opts</code> to get default bdev nvme options and set them respectively.</p>
+<p>Added public API <code>spdk_bdev_nvme_delete</code> to delete the specified NVMe controller or one of its paths.</p>
+<h2>blobstore</h2>
+<p>Added support for variable metadata page size.</p>
+<h2>env</h2>
+<p>Added 3 APIs to handle multiple interrupts for PCI device <code><a class="el" href="env_8h.html#a6e9bb07d56576ea0939d5cdead0dc894" title="Enable PCI device interrupts, only if VFIO MSI-X is supported.">spdk_pci_device_enable_interrupts()</a></code>, <code><a class="el" href="env_8h.html#aa271ceb4c83ff52d3c38d443de8d9ebd" title="Disable PCI device interrupts.">spdk_pci_device_disable_interrupts()</a></code>, and <code><a class="el" href="env_8h.html#a65f7a63f96d0f7cc1b1bf4be92887da3" title="Get an event file descriptor associated with a PCI device, for a particular MSI-X index.">spdk_pci_device_get_interrupt_efd_by_index()</a></code>.</p>
+<p>Added <code><a class="el" href="env_8h.html#a74f6410f63774eacec50e95473807d96" title="Get the NUMA node ID for the specified memory buffer.">spdk_mem_get_numa_id()</a></code> API returning the NUMA node ID for the specified memory buffer.</p>
+<h2>fsdev</h2>
+<p>Added <code><a class="el" href="fsdev_8h.html#a62c82e4f540fce14ac804ba7a7f9183d" title="Mount the filesystem.">spdk_fsdev_mount()</a></code> and <code><a class="el" href="fsdev_8h.html#ad6c58ae16732cce840761f7f07eb2c19" title="Unmount the filesystem.">spdk_fsdev_umount()</a></code> APIs, fsdev's equivalent of <code>FUSE_INIT</code> and <code>FUSE_DESTROY</code>. Removed <code>open_opts</code> parameter from <code><a class="el" href="fsdev_8h.html#a91d6b80b4d9fd9d65263a74735c878aa" title="Open a filesystem device for I/O operations.">spdk_fsdev_open()</a></code>, as these options are part of <code><a class="el" href="structspdk__fsdev__mount__opts.html" title="fsdev mount options">spdk_fsdev_mount_opts</a></code>.</p>
+<h2>fsdev_aio</h2>
+<p>Added option to skip read/write operations. When enabled, <code>fsdev_aio</code> works similarly to <code>bdev_null</code> and immediately completes IOs without actually executing them. This option only changes the behavior of READ and WRITE operations.</p>
+<h2>log</h2>
+<p>Added <code>spdk_log_open_ext</code> API allowing users to set custom open and close callbacks.</p>
+<h2>nvme</h2>
+<p>Added <code>enable_interrupts</code> option to <code><a class="el" href="structspdk__nvme__ctrlr__opts.html" title="NVMe controller initialization options.">spdk_nvme_ctrlr_opts</a></code>. If set to true then interrupts may be enabled during initialization. Make sure to check the resulting value after the attach step to check for success. This mode is currently only supported for PCIe transport. This is only supported within a primary SPDK process, and if enabled SPDK will not support secondary processes.</p>
+<p>Added APIs <code><a class="el" href="nvme_8h.html#a501933bf8b332e8a26aa1c9c1b4b44cc" title="Get file descriptor for an I/O queue pair.">spdk_nvme_qpair_get_fd()</a></code> and <code><a class="el" href="nvme_8h.html#a634e46879faa2f2b415c3fd78fcf995c" title="Get file descriptor for the admin queue pair of a controller.">spdk_nvme_ctrlr_get_admin_qp_fd()</a></code> to retrieve the file descriptor for an I/O and the admin queue pair of a given NVMe controller respectively. These APIs accept <code><a class="el" href="structspdk__event__handler__opts.html">spdk_event_handler_opts</a></code> structure, and if specified the transport layer will fill it out which can be used by the application to register interrupts on the queue pairs.</p>
+<p>Added <code>opts_size</code> in <code><a class="el" href="structspdk__nvme__io__qpair__opts.html" title="NVMe I/O queue pair initialization options.">spdk_nvme_io_qpair_opts</a></code> structure to align it with other opts structures.</p>
+<p><code><a class="el" href="nvme_8h.html#ac311beee998eeccd7e0044a050698e9e" title="Create a new poll group.">spdk_nvme_poll_group_create()</a></code> now creates a fd group to manage interrupt events.</p>
+<p>Two new APIs have been added to manage interrupt events in poll group.</p>
+<p><code><a class="el" href="nvme_8h.html#afe257e1b4f36909e5fee3e5f6f49bc59" title="Return the internal epoll file descriptor of this poll group.">spdk_nvme_poll_group_get_fd()</a></code> retrieves the internal epoll file descriptor of the poll group.</p>
+<p><code><a class="el" href="nvme_8h.html#aeb9611951b464382bb0013b3b7b7734b" title="Wait for interrupt events on file descriptors of all the qpairs in this poll group.">spdk_nvme_poll_group_wait()</a></code> waits for interrupt events on all the I/O queue pair file descriptors in a poll group. When an interrupt event gets generated, it processes any outstanding completions on the I/O queue pair with interrupts. These interrupt events are registered at the time of I/O queue pair creation.</p>
+<p>Added <code>spdk_nvme_ctrlr_get_id</code> function returning the ID of the NVMe controller.</p>
+<p>Added <code><a class="el" href="nvme_8h.html#a8fbe32b18a0c1ee8d43ff5504c1c75ed" title="Return the fd_group associated with this poll group.">spdk_nvme_poll_group_get_fd_group()</a></code> API returning <code>fd_group</code> associated with an NVMe poll group.</p>
+<p>Added <code><a class="el" href="nvme_8h.html#af668c8b9b321c7acaa30ba4ea851615a" title="Register a callback to notify that a poll group needs to be polled when in interrupt mode.">spdk_nvme_poll_group_set_interrupt_callback()</a></code> API allowing users to register a callback to be executed to handle events associated with qpair connection status.</p>
+<h2>nvmf</h2>
+<p>Added public API <code>spdk_nvmf_send_discovery_log_notice</code> to send discovery log page change notice to client.</p>
+<p>Added <code>kas</code> in <code><a class="el" href="structspdk__nvmf__transport__opts.html">spdk_nvmf_transport_opts</a></code> struct. This field indicates the granularity of the KATO (Keep Alive Timeout) in 100 millisecond units, and this field cannot be set to 0 to disable the Keep Alive Timer feature.</p>
+<p>Added <code>min_kato</code> in <code><a class="el" href="structspdk__nvmf__transport__opts.html">spdk_nvmf_transport_opts</a></code> struct to set the minimum keep alive timeout value in milliseconds.</p>
+<p>Added <code>hide_metadata</code> option to <code>nvmf_subsystem_add_ns</code> RPC controlling the corresponding bdev's <code>hide_metadata</code> option.</p>
+<h2>python</h2>
+<p>Renamed python binaries with <code>-</code> instead of <code>_</code> spdk-rpc, spdk-sma and spdk-cli to be more platform independent for Linux/Windows according to PyPI and hatch suggestions.</p>
+<h2>reduce</h2>
+<p>Added <code><a class="el" href="reduce_8h.html#a72762fccd5b8ee30c90c576d89dcc51b" title="Get the information for a libreduce compressed volume.">spdk_reduce_vol_get_info()</a></code> to get the information for the compressed volume.</p>
+<h2>sock</h2>
+<p>A new internal field was added to <code><a class="el" href="structspdk__sock__request.html" title="Anywhere this struct is used, an iovec array is assumed to immediately follow the last member in memo...">spdk_sock_request</a></code>, increasing its size and moving <code>iovcnt</code> and user provided <code>iov[]</code> offsets by 8 bytes, which breaks ABI.</p>
+<h2>thread</h2>
+<p>Added <code><a class="el" href="thread_8h.html#a812ae539315375ce3fd4abe912a641d0" title="Register an spdk_interrupt with specific event type stated in spdk_event_handler_opts argument on the...">spdk_interrupt_register_ext()</a></code> API which can receive <code><a class="el" href="structspdk__event__handler__opts.html">spdk_event_handler_opts</a></code> structure. This is to prevent any further expansion of <code><a class="el" href="thread_8h.html#a291a88c32dfa515cf372c3ff5066f27f" title="Register an spdk_interrupt on the current thread.">spdk_interrupt_register()</a></code> API.</p>
+<p>Added <code><a class="el" href="thread_8h.html#acc4e22aad3967f4a67dc1ceb33d03326" title="Register a function to be called after the current SPDK poller has completed.">spdk_thread_register_post_poller_handler()</a></code> API to register a post poller handler. It aims at improving doorbell management by ensuring that a doorbell is rang after submitting all requests, without waiting for the next poll cycle.</p>
+<p>Added support for <code>fd_group</code>-based interrupts. <code><a class="el" href="thread_8h.html#a1216d82cc9b40da9092c0c26312cab31" title="Register an interrupt listening for all events associated with an fd_group on current thread.">spdk_interrupt_register_fd_group()</a></code> can be used to register an interrupt listening on events from an <code>fd_group</code>.</p>
+<h2>util</h2>
+<p>Added <code><a class="el" href="fd__group_8h.html#a5d5b7e04536875cc68133ddf8f5cd993" title="Register one event type stated in spdk_event_handler_opts agrument to the specified fgrp.">spdk_fd_group_add_ext()</a></code> API which can receive <code><a class="el" href="structspdk__event__handler__opts.html">spdk_event_handler_opts</a></code> structure. This is to prevent any further expansion of <code><a class="el" href="fd__group_8h.html#a45e4bfc7b314944bc1b894a80c176e23" title="Register SPDK_INTERRUPT_EVENT_IN event source to specified fgrp.">spdk_fd_group_add()</a></code> API.</p>
+<p>Added <code><a class="el" href="fd__group_8h.html#a175427496bda23852b704e128712f66b" title="Set a wrapper function to be called when an epoll(7) event is received.">spdk_fd_group_set_wrapper()</a></code> API allowing users to set a callback to be executed when an event is triggered prior to executing a callback associated with that event.</p>
+<h1>v24.09</h1>
+<h2>accel</h2>
+<p>Added <code><a class="el" href="accel_8h.html#a9310f07a5bbfd8729397578bea5adeec" title="Build and submit a memory compress request using the specified algorithm.">spdk_accel_submit_compress_ext()</a></code> and <code><a class="el" href="accel_8h.html#adcca73dba1dde658e4bae30e603b257b" title="Build and submit a memory decompress request using the specified algorithm.">spdk_accel_submit_decompress_ext()</a></code> API. They differ from the non-ext variants in that these functions allow users to specify a compression algorithm and compression level.</p>
+<p>Added <code><a class="el" href="accel_8h.html#ac19ab657b1642d41a54e512c0502ec6c" title="Gets the level range of the specified algorithm.">spdk_accel_get_compress_level_range()</a></code> to get the valid level range of a given compression algorithm.</p>
+<p>Added API to generate and verify DIX.</p>
+<p>Added append version of <code>dif_verify</code>, <code>dif_verify_copy</code>, <code>dif_generate</code>, and <code>dif_generate_copy</code>.</p>
+<p>Added support for lz4 compression.</p>
+<h2>bdev</h2>
+<p><code>spdk_bdev_io_get_aux_buf</code> and <code>spdk_bdev_io_put_aux_buf</code> are deprecated and will be removed in the 25.01 release. We do not believe these are in use currently.</p>
+<h2>bdev_compress</h2>
+<p>Added support for specifying compression algorithm and level.</p>
+<h2>bdev_nvme</h2>
+<p>Introduced new header file /module/bdev/nvme.h and added public APIs <code>spdk_bdev_nvme_create</code>, <code>spdk_bdev_nvme_set_multipath_policy</code> and <code>spdk_bdev_nvme_get_default_ctrlr_opts</code> to get connectivity and multipathing capabilities of <code>bdev_nvme</code>.</p>
+<p>Added <code>bdev_nvme_set_keys</code> RPC to change DH-HMAC-CHAP keys and force reauthentication of all qpairs of a controller.</p>
+<h2>dif</h2>
+<p>Each element in <code>enum spdk_dif_pi_format</code> was subtracted by 1 to match the definition of the Protection Information Format in the NVMe specification. This is necessary change but breaks ABI compatibility. Please recompile your application if you added code using this enum of older SPDK.</p>
+<h2>dma</h2>
+<p>Added <code><a class="el" href="dma_8h.html#a193ea6d6c72cb91f81e66cc5f0f9130e" title="Asynchronously transfer data from the source memory domain to the destination memory domain.">spdk_memory_domain_transfer_data()</a></code> function to transfer data between two memory domains.</p>
+<h2>env</h2>
+<p>Added <code><a class="el" href="env_8h.html#a9fcea62bce244e090acbb109e7cceae5" title="Create a cpuset with each SMT sibling core&#39;s bit set to true.">spdk_env_core_get_smt_cpuset()</a></code> API to get the list of SMT sibling cores for a given core ID.</p>
+<p>Added <code><a class="el" href="env_8h.html#aeccb5bae4943357ac4c41facc0701b0e" title="Get the NUMA node the PCI device is on.">spdk_pci_device_get_numa_id()</a></code>, <code><a class="el" href="env_8h.html#ae81b644ac17c85fb7980d45adfa11a07" title="Get the NUMA node ID for the given core.">spdk_env_get_numa_id()</a></code>, and <code>SPDK_ENV_NUMA_ID_ANY</code> to replace <code>socket_id</code> with <code>numa_id</code> when referring to a NUMA node.</p>
+<p>Added <code><a class="el" href="env_8h.html#a2c723dd9e8bc0ee5441028b3c73b549e" title="Get the ID of the first NUMA node on this system.">spdk_env_get_first_numa_id()</a></code>, <code><a class="el" href="env_8h.html#adb7e999294fe77667c2be43ea93e9460" title="Get the ID of the last NUMA node on this system.">spdk_env_get_last_numa_id()</a></code>, <code><a class="el" href="env_8h.html#ab5e6dd00cc25d82c4ed33c4a3084b8a6" title="Get the index of the next NUMA node on this system.">spdk_env_get_next_numa_id()</a></code>, and <code>SPDK_ENV_FOREACH_NUMA_ID()</code> API to iterate over available NUMA nodes in a system.</p>
+<p>Added <code>enforce_numa</code> option to <code><a class="el" href="structspdk__env__opts.html" title="Environment initialization options.">spdk_env_opts</a></code>. This option forces all hugepage memory allocations to allocate memory only from the specified NUMA node without trying to fallback to other NUMA nodes if it fails.</p>
+<h2>env_dpdk</h2>
+<p><code>spdk_get_tid</code> is added to get the tid of the current thread.</p>
+<h2>event</h2>
+<p>The <code>framework_get_reactors</code> RPC method supports getting pid and tid.</p>
+<h2>fsdev</h2>
+<p>Added the fsdev library providing a filesystem abstraction.</p>
+<h2>fuse_dispatcher</h2>
+<p>Added the <code>fuse_dispatcher</code> library that manages fsdevs and implements FUSE &lt;-&gt; fsdev API translation.</p>
+<h2>idxd</h2>
+<p>Added <code><a class="el" href="idxd_8h.html#a2d0c0ec396abab3134c0cf50d5d1b524" title="Build and submit DIX Generate request.">spdk_idxd_submit_dix_generate()</a></code> function to generate DIX using DSA.</p>
+<h2>nvme</h2>
+<p>Added <code><a class="el" href="nvme_8h.html#aebff39f19e92c6dabb8ead3a6626cf8c" title="Set keys for a given NVMe controller.">spdk_nvme_ctrlr_set_keys()</a></code>, <code><a class="el" href="nvme_8h.html#a869bc26135f448a15bc04dc5374d9f59" title="Force authentication on the admin qpair of a controller.">spdk_nvme_ctrlr_authenticate()</a></code>, and <code><a class="el" href="nvme_8h.html#ae0dd54fa6933478247caa2183faf8b77" title="Force a qpair to authenticate.">spdk_nvme_qpair_authenticate()</a></code> API to change the DH-HMAC-CHAP keys of a given controller and force reauthentication on its qpairs.</p>
 <h2>nvmf</h2>
 <p>Added support for interrupt mode in the NVMe-of TCP transport.</p>
-<p>Enable iobuf based queuing for nvmf requests when there is not enough free buffers available. Perspective from the user of the spdk_nvmf_request_get_buffers() API is that whenever all iovecs are allocated immediately then nothing changes compared to the previous implementation. If iobuf does not have enough buffers then there are two flows now:</p>
+<p>Enable iobuf based queuing for nvmf requests when there is not enough free buffers available. Perspective from the user of the <code>spdk_nvmf_request_get_buffers()</code> API is that whenever all iovecs are allocated immediately then nothing changes compared to the previous implementation. If iobuf does not have enough buffers then there are two flows now:</p>
 <ul>
-<li>if req_get_buffers_done is not set in the <a class="el" href="structspdk__nvmf__transport__ops.html">spdk_nvmf_transport_ops</a> then again, nothing changes. All (if there were any) ioves are released and caller must try again later.</li>
+<li>if <code>req_get_buffers_done</code> is not set in the <code><a class="el" href="structspdk__nvmf__transport__ops.html">spdk_nvmf_transport_ops</a></code> then again, nothing changes. All (if there were any) ioves are released and caller must try again later.</li>
 <li>if callback was set then caller will be notified once all iovecs are allocated.</li>
 </ul>
 <p>As requests waiting for the buffer might get aborted, another API to remove such request from the iobuf queue is also added.</p>
+<p>Added public API <code><a class="el" href="nvmf_8h.html#a0707ae94a9fd707e2619a938bbfb5bf7" title="Sets the controller ID range for a subsystem.">spdk_nvmf_subsystem_set_cntlid_range()</a></code> to set controller ID range for a subsystem.</p>
+<p>Added <code>nvmf_subsystem_set_keys</code> RPC to change DH-HMAC-CHAP keys for a given subsystem/host pair without having to remove and readd a host.</p>
+<p>Added <code><a class="el" href="nvmf_8h.html#a1e9bf71b64ecfd7130c7824ea84180f9" title="Change ANA group ID of a namespace of a subsystem.">spdk_nvmf_subsystem_set_ns_ana_group()</a></code> function to change ANA group ID of an active namespace of a subsystem.</p>
+<h2>scheduler</h2>
+<p>Added <code>framework_get_governor</code> RPC to retrieve the power governor name, power env and the frequencies available, frequency set to the cpu cores.</p>
 <h2>sock</h2>
-<p>New functions that allows to register interrupt for given socket group: <code><a class="el" href="sock_8h.html#a4ff9e3deab53523b235aebf8391674c9" title="Register an spdk_interrupt with specific event types on the current thread for the given socket group...">spdk_sock_group_register_interrupt()</a></code> <code><a class="el" href="sock_8h.html#a1cc881777301103c7acd712ce8f9fb23" title="Unregister an spdk_interrupt for the given socket group from the current thread.">spdk_sock_group_unregister_interrupt()</a></code> Both uses API exposed by the <a class="el" href="thread_8h.html" title="Thread.">thread.h</a>, see below for details. Support implemented only for the POSIX and SSL sockets.</p>
+<p>New functions that allows to register interrupt for given socket group: <code><a class="el" href="sock_8h.html#a4ff9e3deab53523b235aebf8391674c9" title="Register an spdk_interrupt with specific event types on the current thread for the given socket group...">spdk_sock_group_register_interrupt()</a></code> and <code><a class="el" href="sock_8h.html#a1cc881777301103c7acd712ce8f9fb23" title="Unregister an spdk_interrupt for the given socket group from the current thread.">spdk_sock_group_unregister_interrupt()</a></code>. Both uses API exposed by the <a class="el" href="thread_8h.html" title="Thread.">thread.h</a>, see below for details. Support implemented only for the POSIX and SSL sockets.</p>
 <h2>thread</h2>
 <p>New function <code><a class="el" href="thread_8h.html#a18f33a8abb147f5f8bac86e226a990a1" title="Register an spdk_interrupt with specific event types on the current thread.">spdk_interrupt_register_for_events()</a></code> build on top of <code><a class="el" href="fd__group_8h.html#a9b45cc539e9c2843ec188988b2bf43de" title="Register one event source to specified fgrp with specific event types.">spdk_fd_group_add_for_events()</a></code>. See below for details.</p>
 <h2>util</h2>
-<p>New function <code><a class="el" href="fd__group_8h.html#a9b45cc539e9c2843ec188988b2bf43de" title="Register one event source to specified fgrp with specific event types.">spdk_fd_group_add_for_events()</a></code> was added alongside the existing <code><a class="el" href="fd__group_8h.html#a45e4bfc7b314944bc1b894a80c176e23" title="Register SPDK_INTERRUPT_EVENT_IN event source to specified fgrp.">spdk_fd_group_add()</a></code>. Difference is that new API allows for specifying a set of events to be monitored instead of default SPDK_INTERRUPT_EVENT_IN.</p>
-<h2>env</h2>
-<p>Added <code><a class="el" href="env_8h.html#a9fcea62bce244e090acbb109e7cceae5" title="Create a cpuset with each SMT sibling core&#39;s bit set to true.">spdk_env_core_get_smt_cpuset()</a></code> API to get the list of SMT sibling cores for a given core ID.</p>
-<h2>nvmf</h2>
-<p>Added public API 'spdk_nvmf_subsystem_set_cntlid_range' to set controller ID range for a subsystem.</p>
-<h2>event</h2>
-<p>The <code>framework_get_reactors</code> RPC method supports getting pid and tid.</p>
-<h2>env_dpdk</h2>
-<p><code>spdk_get_tid</code> is added to get the tid of the current thread.</p>
-<h2>scheduler</h2>
-<p>Added <code>framework_get_governor</code> RPC to retrieve the power governor name, power env and the frequencies available, frequency set to the cpu cores.</p>
-<h2>bdev_nvme</h2>
-<p>Introduced new header file /module/bdev/nvme.h and added public APIs <code>spdk_bdev_nvme_create</code>, <code>spdk_bdev_nvme_set_multipath_policy</code> and <code>spdk_bdev_nvme_get_default_ctrlr_opts</code> to get connectivity and multipathing capabilities of bdev_nvme.</p>
-<h2>dif</h2>
-<p>Each element in <code>enum spdk_dif_pi_format</code> was subtracted by 1 to match the definition of the Protection Information Format in the NVMe specification. This is necessary change but breaks ABI compatibility. Please recompile your application if you added code using this enum of older SPDK.</p>
+<p>New function <code><a class="el" href="fd__group_8h.html#a9b45cc539e9c2843ec188988b2bf43de" title="Register one event source to specified fgrp with specific event types.">spdk_fd_group_add_for_events()</a></code> was added alongside the existing <code><a class="el" href="fd__group_8h.html#a45e4bfc7b314944bc1b894a80c176e23" title="Register SPDK_INTERRUPT_EVENT_IN event source to specified fgrp.">spdk_fd_group_add()</a></code>. Difference is that new API allows for specifying a set of events to be monitored instead of default <code>SPDK_INTERRUPT_EVENT_IN</code>.</p>
+<p>Added API to calculate md5 hash.</p>
 <h1>v24.05</h1>
 <h2>accel</h2>
 <p><code>spdk_accel_get/set_opts()</code> has changed to act more like <a class="el" href="structspdk__bdev.html">spdk_bdev</a>'s variant.</p>
@@ -293,7 +420,7 @@ v24.09: (Upcoming Release)</h1>
 <h2>nvmf</h2>
 <p>The <code>spdk_nvmf_request::data</code> field has been removed: instead, clients should set <code>-&gt;iov</code> and <code>-&gt;iovcnt</code> appropriately, as nvmf request APIs now expect any data buffers to be described there. <code>spdk_nvmf_request_get_data()</code> has been removed.</p>
 <p><code>transport</code> field in <code>listen_addresses</code> of <code>nvmf_get_subsystems</code> RPC is deprecated. <code>trtype</code> field should be used instead. <code>transport</code> field will be removed in 24.01 release.</p>
-<p>Added <code><a class="el" href="nvmf_8h.html#a264077cd7633ac2103bd4e293e8a94f5" title="Accept new connections on the address provided.">spdk_nvmf_subsystem_add_listener_ext()</a></code> API for accepting new connections on the provided address, now allowing to specify additional options for the listener.</p>
+<p>Added <code><a class="el" href="nvmf_8h.html#a67c9bd5e2579b306e6e8ff19dfc864a9" title="Accept new connections on the address provided.">spdk_nvmf_subsystem_add_listener_ext()</a></code> API for accepting new connections on the provided address, now allowing to specify additional options for the listener.</p>
 <p>Deprecated <code><a class="el" href="nvmf_8h.html#a8f4f76f43797274eaf8b08a0894526f6" title="Check whether a subsystem allows any listen address or only addresses in the allowed list.">spdk_nvmf_subsystem_any_listener_allowed()</a></code> API (to be removed in 24.01) and replaced with <a class="el" href="nvmf_8h.html#a8f4f76f43797274eaf8b08a0894526f6" title="Check whether a subsystem allows any listen address or only addresses in the allowed list.">spdk_nvmf_subsystem_any_listener_allowed()</a>` API fixing the typo.</p>
 <p>Added <code><a class="el" href="nvmf_8h.html#a0241868432ed4cd5687f5add03e52860" title="Checks whether a given subsystem is a discovery subsystem.">spdk_nvmf_subsystem_is_discovery()</a></code> API to check whether a given susbystem is discovery subsystem.</p>
 <h2>scripts</h2>
@@ -1116,7 +1243,7 @@ v20.01: Optimized thin provisioning, FTL bdev, VMD hot plug, FUSED support</h1>
 <p>Add SockPriority option in [Transport] section, this can be used for NVMe-oF target on TCP transport to set sock priority for the incoming TCP connections.</p>
 <p>The NVMe-oF target now supports plugging out of tree NVMe-oF transports. In order to facilitate this feature, several small API changes have been made:</p>
 <p>The <code><a class="el" href="structspdk__nvme__transport__id.html" title="NVMe transport identifier.">spdk_nvme_transport_id</a></code> struct now contains a trstring member used to identify the transport. <code>spdk_nvmf_tgt_get_transport</code>, <code>spdk_nvmf_transport_opts_init</code>, and <code>spdk_nvmf_transport_create</code> all have been modified to take a string. A function table, <code><a class="el" href="structspdk__nvmf__transport__ops.html">spdk_nvmf_transport_ops</a></code>, and macro, <code>SPDK_NVMF_TRANSPORT_REGISTER</code>, have been added which enable registering out of tree transports.</p>
-<p>Add <code><a class="el" href="nvmf_8h.html#ac796e8f25381f344119ef0f44c2a017c" title="Stop accepting new connections at the provided address.">spdk_nvmf_tgt_stop_listen()</a></code> that can be used to stop listening for incoming connections for specified target and trid. Listener is not stopped implicitly upon destruction of a subsystem any more.</p>
+<p>Add <code><a class="el" href="nvmf_8h.html#af627038e10b4c1dc960971190cf86c5b" title="Stop accepting new connections at the provided address.">spdk_nvmf_tgt_stop_listen()</a></code> that can be used to stop listening for incoming connections for specified target and trid. Listener is not stopped implicitly upon destruction of a subsystem any more.</p>
 <p>A custom NVMe admin command handler has been added which allows the user to use the real drive attributes from one of the target NVMe drives when reporting drive attributes to the initiator. This handler can be enabled via the <code>nvmf_set_config</code> RPC. Note: In a future version of SPDK, this handler will be enabled by default.</p>
 <p>The SPDK target and initiator both now include compare-and-write functionality with one caveat. If using the RDMA transport, the target expects the initiator to send both the compare command and write command either with, or without inline data. The SPDK initiator currently respects this requirement, but this note is included as a flag for other initiators attempting compatibility with this version of SPDK.</p>
 <p>The <code><a class="el" href="structspdk__nvme__ctrlr__opts.html" title="NVMe controller initialization options.">spdk_nvme_ctrlr_opts</a></code> struct has been extended with new field <code>transport_ack_timeout</code> which allows to configure transport ACK timeout. Applicable for RDMA transport only.</p>
@@ -1156,7 +1283,7 @@ v19.10: Zoned bdev API, Opal bdev, NVMe character devices</h1>
 <p>Added <code>blobfs_create</code> RPC method to build blobfs on given bdev.</p>
 <p>Added <code>blobfs_mount</code> RPC method to mount blobfs on given bdev to a host path by FUSE. Then on the host path, user can directly do some file operations which will be mapped to blobfs.</p>
 <h2>bdev</h2>
-<p>Added new parameter <code>cdw0</code> to <code><a class="el" href="bdev__module_8h.html#a3341d564a521b3e7874f72fc1390f043" title="Complete a bdev_io with an NVMe status code and DW0 completion queue entry.">spdk_bdev_io_complete_nvme_status()</a></code> and <code><a class="el" href="bdev_8h.html#ae7e1bf90f44f042c2b2ad463b8667735" title="Get the status of bdev_io as an NVMe status code and command specific completion queue value.">spdk_bdev_io_get_nvme_status()</a></code> that allows setting/getting the NVMe completion queue DW0 entry. This allows vendor specific IO commands to return command specific completion info back to the initiator.</p>
+<p>Added new parameter <code>cdw0</code> to <code><a class="el" href="bdev__module_8h.html#a3341d564a521b3e7874f72fc1390f043" title="Set and complete a bdev_io with an NVMe status code and DW0 completion queue entry.">spdk_bdev_io_complete_nvme_status()</a></code> and <code><a class="el" href="bdev_8h.html#ae7e1bf90f44f042c2b2ad463b8667735" title="Get the status of bdev_io as an NVMe status code and command specific completion queue value.">spdk_bdev_io_get_nvme_status()</a></code> that allows setting/getting the NVMe completion queue DW0 entry. This allows vendor specific IO commands to return command specific completion info back to the initiator.</p>
 <p>Added <code><a class="el" href="bdev_8h.html#ab5775a23cadb2eb1d5381dc105577a37" title="Get the write unit size for this bdev.">spdk_bdev_get_write_unit_size()</a></code> function for retrieving required number of logical blocks for write operation.</p>
 <p>New zone-related fields were added to the result of the <code>get_bdevs</code> RPC call:</p>
 <ul>
@@ -1529,7 +1656,7 @@ v18.10: Dynamic memory allocation, Crypto Virtual Bdev, jsonrpc-client, SPDKCLI 
 </ul>
 <p>The <code>construct_virtio_*</code> ones were replaced with a single <code>construct_virtio_dev</code> command that can create any type of Virtio bdev(s). <code>remove_virtio_scsi_bdev</code> was replaced with <code>remove_virtio_bdev</code> that can delete both Virtio Block and SCSI devices.</p>
 <h2>Blobfs</h2>
-<p><a class="el" href="blobfs_8h.html#a816f18c23723f7211b0a5a277904b202" title="Get the unique ID for the file.">spdk_file_get_id()</a> returning unique ID for the file was added.</p>
+<p>spdk_file_get_id() returning unique ID for the file was added.</p>
 <h2>JSON</h2>
 <p>Added jsonrpc-client C library intended for issuing RPC commands from applications.</p>
 <p>Added API enabling iteration over JSON object:</p>
@@ -1551,7 +1678,7 @@ v18.07: Raid, Infrastructure Improvements, Bug Fixes</h1>
 <p>A new public header file <a class="el" href="bdev__module_8h.html" title="Block Device Module Interface.">bdev_module.h</a> has been introduced to facilitate the development of new bdev modules. This header includes an interface for the <a class="el" href="structspdk__bdev__part.html">spdk_bdev_part</a> and spdk_bdev_part_base objects to enable the creation of multiple virtual bdevs on top of a single base bdev and should act as the primary API for module authors.</p>
 <p><a class="el" href="bdev_8h.html#ab0c4412ed5d0e1869620965304d36b7f" title="Get the options for the bdev module.">spdk_bdev_get_opts()</a> and spdk_bdev_set_opts() were added to set bdev-wide options.</p>
 <p>A mechanism for handling out of memory condition errors (ENOMEM) returned from I/O submission requests at the bdev layer has been added. See <a class="el" href="bdev_8h.html#acc4beee18ded7837fa92bd7c34e7ef2e" title="Add an entry into the calling thread&#39;s queue to be notified when an spdk_bdev_io becomes available.">spdk_bdev_queue_io_wait()</a>.</p>
-<p>The <a class="el" href="bdev_8h.html#ab1ba28ba382edd1d792d51a054eb3aa2" title="Return I/O statistics for this channel.">spdk_bdev_get_io_stat()</a> function now returns cumulative totals instead of resetting on each call. This allows multiple callers to query I/O statistics without conflicting with each other. Existing users will need to adjust their code to record the previous I/O statistics to calculate the delta between calls.</p>
+<p>The <a class="el" href="bdev_8h.html#a4822139d747c7a45dca10b985a5e7e1b" title="Return I/O statistics for this channel.">spdk_bdev_get_io_stat()</a> function now returns cumulative totals instead of resetting on each call. This allows multiple callers to query I/O statistics without conflicting with each other. Existing users will need to adjust their code to record the previous I/O statistics to calculate the delta between calls.</p>
 <p>I/O queue depth tracking and samples options have been added. See <a class="el" href="bdev_8h.html#a471f32e8948203f7aaf320396a1ae7c9" title="Get the most recently measured queue depth from a bdev.">spdk_bdev_get_qd()</a>, <a class="el" href="bdev_8h.html#adab852ac707702316bf869a3d7dfdc85" title="Get the queue depth polling period.">spdk_bdev_get_qd_sampling_period()</a>, and <a class="el" href="bdev_8h.html#a9d37ad1d4da0bcb51ada76dbe4f4ce15" title="Enable or disable queue depth sampling for this bdev.">spdk_bdev_set_qd_sampling_period()</a>.</p>
 <h2>RAID module</h2>
 <p>A new bdev module called "raid" has been added as experimental module which aggregates underlying NVMe bdevs and exposes a single raid bdev. Please note that vhost will not work with this module because it does not yet have support for multi-element io vectors.</p>
@@ -1561,7 +1688,7 @@ v18.07: Raid, Infrastructure Improvements, Bug Fixes</h1>
 <p>A new function, <a class="el" href="blob_8h.html#aa75072ce1a5a9559fe2db0da30363ad4" title="Dump a blobstore&#39;s metadata to a given FILE in human-readable format.">spdk_bs_dump()</a>, has been added that dumps all of the contents of a blobstore to a file pointer. This includes the metadata and is very useful for debugging.</p>
 <p>Two new operations have been added for thin-provisioned blobs. <a class="el" href="blob_8h.html#a3d1f1b56d9782997ef3e338879a2fa28" title="Allocate all clusters in this blob.">spdk_bs_inflate_blob()</a> will allocate clusters for all thinly provisioned regions of the blob and populate them with the correct data by reading from the backing blob(s). <a class="el" href="blob_8h.html#a7dee33b6b9df9b9a3d6b9957c71a779c" title="Remove dependency on parent blob.">spdk_bs_blob_decouple_parent()</a> works similarly, but will only allocate clusters that correspond to data in the blob's immediate parent. Clusters allocated to grandparents or that aren't allocated at all will remain thin-provisioned.</p>
 <h2>BlobFS</h2>
-<p>Changed the return type of <a class="el" href="blobfs_8h.html#ada4d09ddb42d39ba04b437193dc33d69" title="Truncate the file.">spdk_file_truncate()</a> from void to int to allow the propagation of <code>ENOMEM</code> errors.</p>
+<p>Changed the return type of spdk_file_truncate() from void to int to allow the propagation of <code>ENOMEM</code> errors.</p>
 <h2>NVMe Driver</h2>
 <p>The new API functions <a class="el" href="nvme_8h.html#acf6188764b8c71b2f64a74077d6bfabf" title="Inject an error for the next request with a given opcode.">spdk_nvme_qpair_add_cmd_error_injection()</a> and <a class="el" href="nvme_8h.html#ad720b23786450b5a2b2d7d65c6dd6b7c" title="Clear the specified NVMe command with error status.">spdk_nvme_qpair_remove_cmd_error_injection()</a> have been added for NVMe error emulation. Users can set a specified command to fail with a particular error status.</p>
 <p>Changed the name <code>timeout_sec</code> parameter to <code>timeout_us</code> in <a class="el" href="nvme_8h.html#ae2957853179526e6176cf7623b19552b" title="Register for timeout callback on a controller.">spdk_nvme_ctrlr_register_timeout_callback()</a>, and also changed the type from uint32_t to uint64_t. This will give users more fine-grained control over the timeout period.</p>

@@ -36,14 +36,14 @@ var NAVTREE =
     [ "Tools", "tools.html", "tools" ],
     [ "CI Tools", "ci_tools.html", "ci_tools" ],
     [ "Performance Reports", "performance_reports.html", null ],
-    [ "NVMe-oF Target Tracepoints", "nvmf_tgt_tracepoints.html", [
-      [ "Introduction", "nvmf_tgt_tracepoints.html#tracepoints_intro", null ],
-      [ "Enabling Tracepoints", "nvmf_tgt_tracepoints.html#enable_tracepoints", null ],
-      [ "Capturing a snapshot of events", "nvmf_tgt_tracepoints.html#capture_tracepoints", null ],
-      [ "Capturing sufficient trace events", "nvmf_tgt_tracepoints.html#capture_trace_events", null ],
-      [ "Adding New Tracepoints", "nvmf_tgt_tracepoints.html#add_tracepoints", null ]
-    ] ],
     [ "NVMe-oF Multipath HOWTO", "nvmf_multipath_howto.html", null ],
+    [ "Tracing Framework", "tracepoints.html", [
+      [ "Introduction", "tracepoints.html#tracepoints_intro", null ],
+      [ "Enabling Tracepoints", "tracepoints.html#enable_tracepoints", null ],
+      [ "Capturing a snapshot of events", "tracepoints.html#capture_tracepoints", null ],
+      [ "Capturing sufficient trace events", "tracepoints.html#capture_trace_events", null ],
+      [ "Adding New Tracepoints", "tracepoints.html#add_tracepoints", null ]
+    ] ],
     [ "Topics", "topics.html", "topics" ],
     [ "Data Structures", "annotated.html", [
       [ "Data Structures", "annotated.html", "annotated_dup" ],
@@ -61,7 +61,7 @@ var NAVTREE =
         [ "Functions", "globals_func.html", "globals_func" ],
         [ "Typedefs", "globals_type.html", null ],
         [ "Enumerations", "globals_enum.html", null ],
-        [ "Enumerator", "globals_eval.html", null ],
+        [ "Enumerator", "globals_eval.html", "globals_eval" ],
         [ "Macros", "globals_defs.html", null ]
       ] ]
     ] ]
@@ -71,24 +71,24 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "about.html",
-"bdev_8h.html#ae53f51d91eb11e9ee51bca3b8794c0a7",
-"blobfs_8h.html#a39d7f1424fe8921faeb91a012766370e",
-"env_8h.html#ab480f817ecdd801a0e53a4d8494ffc67",
-"fuse__dispatcher_8h.html#a2cd07d28e4f0b6dd3d081ba379fd4997",
-"jsonrpc.html#rpc_bdev_null_delete",
-"jsonrpc_8h.html#af340c1cd0f0ce8c00caac2713033f28f",
-"nvme_8h.html#a8505b00dfaa6123d784c17c293cf3ffc",
-"nvme__spec_8h.html#a3d5e453e4d95b0f5b9bb4de04ace78c4",
-"nvme__spec_8h.html#adf6ad5ec9f8c1aa4c7efc45ee9d646b6a0bae550fd4027110273cc75986809274",
-"nvmf__spec_8h.html#a13b10660d96571b325b48583200af544a395f6beb248e93e30b153e8db0720c72",
-"string_8h.html#ab81c3a52c60c7390e54437dc5856996b",
-"structspdk__bdev__io__internal__fields.html#a9298f0823356843b9f2bac28b0cc19cf",
-"structspdk__lvs__opts.html#ad72430d6eb4550837aca4946a3990f8e",
-"structspdk__nvme__ns__data.html#a55dc985c0da5776763fb5a0c9e682e11",
-"structspdk__nvmf__fabric__connect__rsp.html",
-"structspdk__trace__argument.html",
-"unionspdk__nvme__cap__register.html#a3c70129c53bf5c82f1151d512075f703",
-"virtio.html#virtio_2mb"
+"bdev_8h.html#abc3537d0315100b24da6acc95929e849",
+"blob_8h.html#ab9b3d20a4be55b2c2ba046a2ccfe7233",
+"env_8h.html#ad3b9b2980b2bf4be6e1b75024d676cd1",
+"getting_started.html#getting_started_prerequisites",
+"jsonrpc.html#rpc_bdev_nvme_get_controller_health_info",
+"libraries.html#module",
+"nvme_8h.html#a828f57f0f465f4fb87bcdefce61b8ec8",
+"nvme__spec_8h.html#a3711b38213aaa9ff7a2aa7d1efe8e2f1a364f577e8060e2006727124050c6fcfb",
+"nvme__spec_8h.html#acb8784fad6a53be95d4c718ad3cf852eaf7ea61c88fa572a6354fd961cc188d58",
+"nvmf__spec_8h.html#a0021d43dedfcd44d40c342f82dd4fd4aa56f223878fe6404c3aa3bcbccee892cf",
+"string_8h.html#a204f9062adca879642296b993293fd04",
+"structspdk__bdev__io__block__params.html#ab5853cacb76d6da0124ba5082aca7016",
+"structspdk__iobuf__pool__cache.html#afe560bcd63d7733e31c9908a804180b4",
+"structspdk__nvme__intel__temperature__page.html",
+"structspdk__nvme__zns__ns__data.html#ad4781de060fa39d2924d6ec93b924a51",
+"structspdk__scheduler.html#aaf38184e6082cd0840571a8e38665911",
+"trace_8h.html#a5f00b86acc0c5a41bf639c068d197b53",
+"uuid_8h.html#a397f151075d3a0a5651221bd74c13c66"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

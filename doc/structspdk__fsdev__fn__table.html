@@ -153,9 +153,6 @@ void(*&#160;</td><td class="memItemRight" valign="bottom"><b>submit_request</b> 
 struct spdk_io_channel *(*&#160;</td><td class="memItemRight" valign="bottom"><b>get_io_channel</b> )(void *ctx)</td></tr>
 <tr class="memdesc:a82ec742ee9b4d9aa1f2089bbd13aa4a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get an I/O channel for the specific fsdev for the calling thread. <br /></td></tr>
 <tr class="separator:a82ec742ee9b4d9aa1f2089bbd13aa4a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af5509ae1654e6d3b3486158f0ab10af3" id="r_af5509ae1654e6d3b3486158f0ab10af3"><td class="memItemLeft" align="right" valign="top">int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af5509ae1654e6d3b3486158f0ab10af3">negotiate_opts</a> )(void *ctx, struct <a class="el" href="structspdk__fsdev__open__opts.html">spdk_fsdev_open_opts</a> *opts)</td></tr>
-<tr class="memdesc:af5509ae1654e6d3b3486158f0ab10af3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Negotiate fsdev device options.  <br /></td></tr>
-<tr class="separator:af5509ae1654e6d3b3486158f0ab10af3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a396854ded5398da6df655c670419910a" id="r_a396854ded5398da6df655c670419910a"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a396854ded5398da6df655c670419910a">write_config_json</a> )(struct <a class="el" href="structspdk__fsdev.html">spdk_fsdev</a> *fsdev, struct spdk_json_write_ctx *w)</td></tr>
 <tr class="memdesc:a396854ded5398da6df655c670419910a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Output fsdev-specific RPC configuration to a JSON stream.  <br /></td></tr>
 <tr class="separator:a396854ded5398da6df655c670419910a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -181,24 +178,6 @@ struct spdk_io_channel *(*&#160;</td><td class="memItemRight" valign="bottom"><b
 
 <p>Get memory domains used by fsdev. </p>
 <p>Optional - may be NULL. Vfsdev module implementation should call <a class="el" href="fsdev_8h.html#a42c8d01fc94e53cc4c63761af4bece45">spdk_fsdev_get_memory_domains</a> for underlying fsdev. Vfsdev module must inspect types of memory domains returned by base fsdev and report only those memory domains that it can work with. </p>
-
-</div>
-</div>
-<a id="af5509ae1654e6d3b3486158f0ab10af3" name="af5509ae1654e6d3b3486158f0ab10af3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af5509ae1654e6d3b3486158f0ab10af3">&#9670;&#160;</a></span>negotiate_opts</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int(* spdk_fsdev_fn_table::negotiate_opts) (void *ctx, struct <a class="el" href="structspdk__fsdev__open__opts.html">spdk_fsdev_open_opts</a> *opts)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Negotiate fsdev device options. </p>
-<p>The function validates the desired options and adjust them to reflect it own capabilities. The module can only reduce the requested cababilities.</p>
-<dl class="section return"><dt>Returns</dt><dd>0 on success or Fsdev specific negative error code. </dd></dl>
 
 </div>
 </div>

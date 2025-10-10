@@ -6,8 +6,8 @@
 <area shape="poly" id="edge4_Node000003_Node000001" title=" " alt="" coords="152,234,152,283,147,283,147,234"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="209,405,239,396,257,384,268,366,274,348,274,330,269,313,248,279,216,244,181,221,184,217,219,240,252,275,274,311,279,329,279,348,273,368,261,388,241,401,211,410"/>
 <area shape="poly" id="edge3_Node000002_Node000003" title=" " alt="" coords="112,341,104,353,98,382,100,409,95,410,93,382,99,351,107,338"/>
-<area shape="rect" id="Node000009" href="$structspdk__nvmf__transport__opts.html" title=" " alt="" coords="52,98,247,126"/>
-<area shape="poly" id="edge5_Node000001_Node000009" title=" " alt="" coords="152,141,152,190,147,190,147,141"/>
-<area shape="rect" id="Node000010" href="$structspdk__json__val.html" title=" " alt="" coords="93,5,206,33"/>
-<area shape="poly" id="edge6_Node000009_Node000010" title=" " alt="" coords="152,48,152,98,147,98,147,48"/>
+<area shape="rect" id="Node000010" href="$structspdk__nvmf__transport__opts.html" title=" " alt="" coords="52,98,247,126"/>
+<area shape="poly" id="edge5_Node000001_Node000010" title=" " alt="" coords="152,141,152,190,147,190,147,141"/>
+<area shape="rect" id="Node000011" href="$structspdk__json__val.html" title=" " alt="" coords="93,5,206,33"/>
+<area shape="poly" id="edge6_Node000010_Node000011" title=" " alt="" coords="152,48,152,98,147,98,147,48"/>
 </map>

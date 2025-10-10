@@ -147,23 +147,23 @@ Data Structures</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a53978d25ccf67cafe65aeb24aa576ac9" id="r_a53978d25ccf67cafe65aeb24aa576ac9"><td class="memItemLeft" align="right" valign="top"><a id="a53978d25ccf67cafe65aeb24aa576ac9" name="a53978d25ccf67cafe65aeb24aa576ac9"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_HISTOGRAM_BUCKET_SHIFT_DEFAULT</b>&#160;&#160;&#160;7</td></tr>
-<tr class="separator:a53978d25ccf67cafe65aeb24aa576ac9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1cf0bd341c3d0b5fdbb3b9208cf9f91d" id="r_a1cf0bd341c3d0b5fdbb3b9208cf9f91d"><td class="memItemLeft" align="right" valign="top"><a id="a1cf0bd341c3d0b5fdbb3b9208cf9f91d" name="a1cf0bd341c3d0b5fdbb3b9208cf9f91d"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_HISTOGRAM_BUCKET_SHIFT</b>(h)&#160;&#160;&#160;h-&gt;bucket_shift</td></tr>
-<tr class="separator:a1cf0bd341c3d0b5fdbb3b9208cf9f91d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14cdc51d18e89b09f26be3bd58254eb9" id="r_a14cdc51d18e89b09f26be3bd58254eb9"><td class="memItemLeft" align="right" valign="top"><a id="a14cdc51d18e89b09f26be3bd58254eb9" name="a14cdc51d18e89b09f26be3bd58254eb9"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_HISTOGRAM_GRANULARITY_DEFAULT</b>&#160;&#160;&#160;7</td></tr>
+<tr class="separator:a14cdc51d18e89b09f26be3bd58254eb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ede20f64b1178db1b20271aa543e650" id="r_a4ede20f64b1178db1b20271aa543e650"><td class="memItemLeft" align="right" valign="top"><a id="a4ede20f64b1178db1b20271aa543e650" name="a4ede20f64b1178db1b20271aa543e650"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_HISTOGRAM_GRANULARITY</b>(h)&#160;&#160;&#160;h-&gt;granularity</td></tr>
+<tr class="separator:a4ede20f64b1178db1b20271aa543e650"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a50c5ad9ec20c4a23edb11d246c5a5942" id="r_a50c5ad9ec20c4a23edb11d246c5a5942"><td class="memItemLeft" align="right" valign="top"><a id="a50c5ad9ec20c4a23edb11d246c5a5942" name="a50c5ad9ec20c4a23edb11d246c5a5942"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_HISTOGRAM_BUCKET_LSB</b>(h)&#160;&#160;&#160;(64 - SPDK_HISTOGRAM_BUCKET_SHIFT(h))</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_HISTOGRAM_BUCKET_LSB</b>(h)&#160;&#160;&#160;(64 - SPDK_HISTOGRAM_GRANULARITY(h))</td></tr>
 <tr class="separator:a50c5ad9ec20c4a23edb11d246c5a5942"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6d4941b5e55b7ba2dbd58fec419e6f73" id="r_a6d4941b5e55b7ba2dbd58fec419e6f73"><td class="memItemLeft" align="right" valign="top"><a id="a6d4941b5e55b7ba2dbd58fec419e6f73" name="a6d4941b5e55b7ba2dbd58fec419e6f73"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_HISTOGRAM_NUM_BUCKETS_PER_RANGE</b>(h)&#160;&#160;&#160;(1ULL &lt;&lt; SPDK_HISTOGRAM_BUCKET_SHIFT(h))</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_HISTOGRAM_NUM_BUCKETS_PER_RANGE</b>(h)&#160;&#160;&#160;(1ULL &lt;&lt; SPDK_HISTOGRAM_GRANULARITY(h))</td></tr>
 <tr class="separator:a6d4941b5e55b7ba2dbd58fec419e6f73"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5ed4b39b3c152d4d92b34d6f40cd3229" id="r_a5ed4b39b3c152d4d92b34d6f40cd3229"><td class="memItemLeft" align="right" valign="top"><a id="a5ed4b39b3c152d4d92b34d6f40cd3229" name="a5ed4b39b3c152d4d92b34d6f40cd3229"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_HISTOGRAM_BUCKET_MASK</b>(h)&#160;&#160;&#160;(SPDK_HISTOGRAM_NUM_BUCKETS_PER_RANGE(h) - 1)</td></tr>
 <tr class="separator:a5ed4b39b3c152d4d92b34d6f40cd3229"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a873e5e5fe2c61b1724fa588df020d66a" id="r_a873e5e5fe2c61b1724fa588df020d66a"><td class="memItemLeft" align="right" valign="top"><a id="a873e5e5fe2c61b1724fa588df020d66a" name="a873e5e5fe2c61b1724fa588df020d66a"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_HISTOGRAM_NUM_BUCKET_RANGES</b>(h)&#160;&#160;&#160;(SPDK_HISTOGRAM_BUCKET_LSB(h) + 1)</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_HISTOGRAM_NUM_BUCKET_RANGES</b>(h)&#160;&#160;&#160;(h-&gt;max_range - h-&gt;min_range + 1)</td></tr>
 <tr class="separator:a873e5e5fe2c61b1724fa588df020d66a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a10fc233bee56181eae0dfb21c46123e1" id="r_a10fc233bee56181eae0dfb21c46123e1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a10fc233bee56181eae0dfb21c46123e1">SPDK_HISTOGRAM_NUM_BUCKETS</a>(h)</td></tr>
 <tr class="separator:a10fc233bee56181eae0dfb21c46123e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -206,9 +206,12 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_histogram
 <tr class="memitem:a59df7c39b727f782f06c8d42dfb4aeda" id="r_a59df7c39b727f782f06c8d42dfb4aeda"><td class="memItemLeft" align="right" valign="top"><a id="a59df7c39b727f782f06c8d42dfb4aeda" name="a59df7c39b727f782f06c8d42dfb4aeda"></a>
 static int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_histogram_data_merge</b> (const struct <a class="el" href="structspdk__histogram__data.html">spdk_histogram_data</a> *dst, const struct <a class="el" href="structspdk__histogram__data.html">spdk_histogram_data</a> *src)</td></tr>
 <tr class="separator:a59df7c39b727f782f06c8d42dfb4aeda"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3d2579b0a3618c15f594a33e07bd2df5" id="r_a3d2579b0a3618c15f594a33e07bd2df5"><td class="memItemLeft" align="right" valign="top"><a id="a3d2579b0a3618c15f594a33e07bd2df5" name="a3d2579b0a3618c15f594a33e07bd2df5"></a>
-static struct <a class="el" href="structspdk__histogram__data.html">spdk_histogram_data</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_histogram_data_alloc_sized</b> (uint32_t bucket_shift)</td></tr>
-<tr class="separator:a3d2579b0a3618c15f594a33e07bd2df5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72cdf8a5ad7b401a979bb15d99b03c41" id="r_a72cdf8a5ad7b401a979bb15d99b03c41"><td class="memItemLeft" align="right" valign="top">static struct <a class="el" href="structspdk__histogram__data.html">spdk_histogram_data</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a72cdf8a5ad7b401a979bb15d99b03c41">spdk_histogram_data_alloc_sized_ext</a> (uint32_t granularity, uint64_t min_val, uint64_t max_val)</td></tr>
+<tr class="memdesc:a72cdf8a5ad7b401a979bb15d99b03c41"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate a histogram data structure with specified granularity.  <br /></td></tr>
+<tr class="separator:a72cdf8a5ad7b401a979bb15d99b03c41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56489b66845a22cad04c59c445febe8e" id="r_a56489b66845a22cad04c59c445febe8e"><td class="memItemLeft" align="right" valign="top"><a id="a56489b66845a22cad04c59c445febe8e" name="a56489b66845a22cad04c59c445febe8e"></a>
+static struct <a class="el" href="structspdk__histogram__data.html">spdk_histogram_data</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_histogram_data_alloc_sized</b> (uint32_t granularity)</td></tr>
+<tr class="separator:a56489b66845a22cad04c59c445febe8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaf68942ecaa0d37b2ea8c9bdd1443cb8" id="r_aaf68942ecaa0d37b2ea8c9bdd1443cb8"><td class="memItemLeft" align="right" valign="top"><a id="aaf68942ecaa0d37b2ea8c9bdd1443cb8" name="aaf68942ecaa0d37b2ea8c9bdd1443cb8"></a>
 static struct <a class="el" href="structspdk__histogram__data.html">spdk_histogram_data</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_histogram_data_alloc</b> (void)</td></tr>
 <tr class="separator:aaf68942ecaa0d37b2ea8c9bdd1443cb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -236,6 +239,53 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_histogram
 <b>Value:</b><div class="fragment"><div class="line">                                                 (SPDK_HISTOGRAM_NUM_BUCKETS_PER_RANGE(h) * \</div>
 <div class="line">                                                 SPDK_HISTOGRAM_NUM_BUCKET_RANGES(h))</div>
 </div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="a72cdf8a5ad7b401a979bb15d99b03c41" name="a72cdf8a5ad7b401a979bb15d99b03c41"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a72cdf8a5ad7b401a979bb15d99b03c41">&#9670;&#160;</a></span>spdk_histogram_data_alloc_sized_ext()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static struct <a class="el" href="structspdk__histogram__data.html">spdk_histogram_data</a> * spdk_histogram_data_alloc_sized_ext </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>granularity</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t</td>          <td class="paramname"><span class="paramname"><em>min_val</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t</td>          <td class="paramname"><span class="paramname"><em>max_val</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Allocate a histogram data structure with specified granularity. </p>
+<p>It tracks datapoints from min_val (inclusive) to max_val (exclusive).</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">granularity</td><td>Granularity of the histogram buckets. Each power-of-2 range is split into (1 &lt;&lt; granularity) buckets. </td></tr>
+    <tr><td class="paramname">min_val</td><td>The minimum value to be tracked, inclusive. </td></tr>
+    <tr><td class="paramname">max_val</td><td>The maximum value to be tracked, exclusive.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A histogram data structure. </dd></dl>
+
 </div>
 </div>
 </div><!-- contents -->

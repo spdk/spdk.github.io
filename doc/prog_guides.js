@@ -41,7 +41,6 @@ var prog_guides =
       [ "FTL bdev stack", "ftl.html#ftl_bdev_stack", null ]
     ] ],
     [ "GDB Macros User Guide", "gdb_macros.html", null ],
-    [ "SPDK \"Reduce\" Block Compression Algorithm", "reduce.html", null ],
     [ "Notify library", "notify.html", [
       [ "Register event types", "notify.html#notify_register", null ],
       [ "Get info about events", "notify.html#notify_get_info", null ],

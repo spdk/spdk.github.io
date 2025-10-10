@@ -53,12 +53,5 @@ var searchData=
   ['spdk_5ft10dif_5fcrc16_5fpolynomial_50',['SPDK_T10DIF_CRC16_POLYNOMIAL',['../crc16_8h.html#a4c5c6b44eafbb4bb09df424150da7508',1,'crc16.h']]],
   ['spdk_5ftrace_5frecord_51',['spdk_trace_record',['../trace_8h.html#a361bd259fb7b5bfd6e420a7475a6e9b1',1,'trace.h']]],
   ['spdk_5ftrace_5frecord_5ftsc_52',['spdk_trace_record_tsc',['../trace_8h.html#a52e26aba092a343df84ddd528efc6daa',1,'trace.h']]],
-  ['spdk_5fversion_53',['SPDK_VERSION',['../version_8h.html#af45ea3cba76c12cc449b6556c1982038',1,'version.h']]],
-  ['spdk_5fversion_5fmajor_54',['SPDK_VERSION_MAJOR',['../version_8h.html#a724bde57680bbd92b5dd6db6923a34f5',1,'version.h']]],
-  ['spdk_5fversion_5fminor_55',['SPDK_VERSION_MINOR',['../version_8h.html#a3b5a59a1e949124decfd9cbe207966ad',1,'version.h']]],
-  ['spdk_5fversion_5fnum_56',['SPDK_VERSION_NUM',['../version_8h.html#a63c2baa152ee5c3dad52c898b141b5d2',1,'version.h']]],
-  ['spdk_5fversion_5fpatch_57',['SPDK_VERSION_PATCH',['../version_8h.html#a89ca2b430a03f2a8b8a5f2a31c1ae647',1,'version.h']]],
-  ['spdk_5fversion_5fstring_58',['SPDK_VERSION_STRING',['../version_8h.html#a044fb88313d084d910632cea5a06c620',1,'version.h']]],
-  ['spdk_5fversion_5fsuffix_59',['SPDK_VERSION_SUFFIX',['../version_8h.html#a1636e53b1038906ece3a9addb0473bf0',1,'version.h']]],
-  ['spdk_5fwmb_60',['spdk_wmb',['../barrier_8h.html#a8966b18613dfe857da8310ec43356684',1,'barrier.h']]]
+  ['spdk_5fwmb_53',['spdk_wmb',['../barrier_8h.html#a8966b18613dfe857da8310ec43356684',1,'barrier.h']]]
 ];

@@ -142,20 +142,7 @@ $(function(){initNavTree('structspdk__bdev__io__wait__entry.html',''); initResiz
 <div class="dynheader">
 Collaboration diagram for spdk_bdev_io_wait_entry:</div>
 <div class="dyncontent">
-<div class="center"><img src="structspdk__bdev__io__wait__entry__coll__graph.png" border="0" usemap="#aspdk__bdev__io__wait__entry_coll__map" alt="Collaboration graph"/></div>
-<map name="aspdk__bdev__io__wait__entry_coll__map" id="aspdk__bdev__io__wait__entry_coll__map">
-<area shape="rect" title="Structure to register a callback when an spdk_bdev_io becomes available." alt="" coords="205,208,392,235"/>
-<area shape="rect" href="structspdk__bdev.html" title=" " alt="" coords="253,115,344,143"/>
-<area shape="poly" title=" " alt="" coords="301,158,301,207,296,207,296,158"/>
-<area shape="rect" href="structspdk__uuid.html" title=" " alt="" coords="5,14,93,42"/>
-<area shape="poly" title=" " alt="" coords="97,45,266,112,264,117,95,50"/>
-<area shape="rect" href="unionspdk__bdev__nvme__ctratt.html" title="Union for controller attributes field, to list whether bdev supports fdp etc." alt="" coords="116,14,294,42"/>
-<area shape="poly" title=" " alt="" coords="230,51,288,113,284,117,226,55"/>
-<area shape="rect" href="structspdk__bdev__module.html" title="Block device module." alt="" coords="318,14,465,42"/>
-<area shape="poly" title=" " alt="" coords="371,55,312,117,308,113,367,51"/>
-<area shape="rect" href="structspdk__bdev_1_1____bdev__internal__fields.html" title="Fields that are used internally by the bdev subsystem." alt="" coords="490,5,691,50"/>
-<area shape="poly" title=" " alt="" coords="516,58,413,94,341,117,339,112,411,88,514,53"/>
-</map>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="structspdk__bdev__io__wait__entry__coll__graph.svg" width="100%" height="481"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -175,10 +162,34 @@ struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *&#160;</td><td 
 <tr class="memitem:af8641865b29dc9491adc0ae31b0815c8" id="r_af8641865b29dc9491adc0ae31b0815c8"><td class="memItemLeft" align="right" valign="top"><a id="af8641865b29dc9491adc0ae31b0815c8" name="af8641865b29dc9491adc0ae31b0815c8"></a>
 void *&#160;</td><td class="memItemRight" valign="bottom"><b>cb_arg</b></td></tr>
 <tr class="separator:af8641865b29dc9491adc0ae31b0815c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b2d3690674a9e99755421c60026435c" id="r_a1b2d3690674a9e99755421c60026435c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1b2d3690674a9e99755421c60026435c">dep_unblock</a></td></tr>
+<tr class="memdesc:a1b2d3690674a9e99755421c60026435c"><td class="mdescLeft">&#160;</td><td class="mdescRight">When true, this I/O is critical to unblock other I/Os that holding resource and depend on the completion of this IO.  <br /></td></tr>
+<tr class="separator:a1b2d3690674a9e99755421c60026435c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f86132f3718c3a2ebae8f8e54764eb7" id="r_a8f86132f3718c3a2ebae8f8e54764eb7"><td class="memItemLeft" align="right" valign="top"><a id="a8f86132f3718c3a2ebae8f8e54764eb7" name="a8f86132f3718c3a2ebae8f8e54764eb7"></a>
+uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>pad</b> [7]</td></tr>
+<tr class="separator:a8f86132f3718c3a2ebae8f8e54764eb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Structure to register a callback when an <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> becomes available. </p>
-</div><hr/>The documentation for this struct was generated from the following file:<ul>
+</div><h2 class="groupheader">Field Documentation</h2>
+<a id="a1b2d3690674a9e99755421c60026435c" name="a1b2d3690674a9e99755421c60026435c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b2d3690674a9e99755421c60026435c">&#9670;&#160;</a></span>dep_unblock</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool spdk_bdev_io_wait_entry::dep_unblock</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>When true, this I/O is critical to unblock other I/Os that holding resource and depend on the completion of this IO. </p>
+<p>If resource allocation fails such as ENOMEM, this entry should be queued at the head to avoid deadlock. </p>
+
+</div>
+</div>
+<hr/>The documentation for this struct was generated from the following file:<ul>
 <li><a class="el" href="bdev_8h.html">bdev.h</a></li>
 </ul>
 </div><!-- contents -->

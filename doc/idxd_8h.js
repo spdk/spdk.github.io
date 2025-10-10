@@ -19,6 +19,7 @@ var idxd_8h =
     [ "spdk_idxd_submit_dif_check", "idxd_8h.html#a100dd0931609fd0604282bd0ba0d88cd", null ],
     [ "spdk_idxd_submit_dif_insert", "idxd_8h.html#a5bf4736bd1b3e0ecfc19e51894c52bf0", null ],
     [ "spdk_idxd_submit_dif_strip", "idxd_8h.html#ad8a6bf85dceb1cee5bd6f91cf1d8e5ba", null ],
+    [ "spdk_idxd_submit_dix_generate", "idxd_8h.html#a2d0c0ec396abab3134c0cf50d5d1b524", null ],
     [ "spdk_idxd_submit_dualcast", "idxd_8h.html#ac18651e41ad36f5c0805959d11698b5e", null ],
     [ "spdk_idxd_submit_fill", "idxd_8h.html#a31ff86efdf40d3af8c4b0362caa519b5", null ],
     [ "spdk_idxd_submit_raw_desc", "idxd_8h.html#a9d3c2666201ade973ac2fe89a6346139", null ]

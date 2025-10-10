@@ -137,44 +137,32 @@ In this document</h1>
 <ul>
 <li><a class="el" href="#distros_overview">Overview</a></li>
 <li><a class="el" href="#linux_list">Linux distributions</a></li>
-<li><a class="el" href="#freebsd_list">FreeBSD distributions</a></li>
 </ul>
 <h1><a class="anchor" id="distros_overview"></a>
 Overview</h1>
-<p>CI pool uses different flavors of <code>Linux</code> and <code>FreeBSD</code> distributions which are used as a base for all the tests run against submitted patches. Below is the listing which covers all currently supported versions and the related CI jobs (see <a href="https://ci.spdk.io">status</a> as a reference).</p>
+<p>CI pool uses Fedora Linux as primary OS distribution to run SPDK tests. Below is the listing which covers all currently supported versions and the related CI jobs.</p>
+<p>See <a href="https://github.com/spdk/spdk-ci">spdk/spdk-ci</a> for the most up-to-date reference for SPDK CI configuration.</p>
 <h1><a class="anchor" id="linux_list"></a>
 Linux distributions</h1>
 <h2>Fedora</h2>
-<p>Trying to follow new release as per the release cycle whenever possible.</p>
-<div class="fragment"><div class="line">- autobuild-vg-autotest</div>
-<div class="line">- clang-vg-autotest</div>
-<div class="line">- iscsi*-vg-autotest</div>
-<div class="line">- nvme-vg-autotest</div>
-<div class="line">- nvmf*-vg-autotest</div>
-<div class="line">- scanbuild-vg-autotest</div>
-<div class="line">- unittest-vg-autotest</div>
-<div class="line">- vhost-initiator-vg-autotest</div>
-</div><!-- fragment --><p>Jobs listed below are run on bare-metal systems where version of Fedora may vary. In the future these will be aligned with the <code>vg</code> jobs.</p>
-<div class="fragment"><div class="line">- BlobFS-autotest</div>
-<div class="line">- crypto-autotest</div>
-<div class="line">- nvme-phy-autotest</div>
-<div class="line">- nvmf*-phy-autotest</div>
-<div class="line">- vhost-autotest</div>
-</div><!-- fragment --><h2>Ubuntu</h2>
-<p>Last two LTS releases. Currently <code>20.04</code> and <code>22.04</code>.</p>
-<div class="fragment"><div class="line">- ubuntu20-vg-autotest</div>
-<div class="line">- ubuntu22-vg-autotest</div>
-</div><!-- fragment --><h2>CentOS</h2>
-<p>Maintained releases. Currently <code>7.9</code>.</p>
-<div class="fragment"><div class="line">- centos7-vg-autotest</div>
-</div><!-- fragment --><h2>Rocky Linux</h2>
-<p>Last release. Currently <code>8.6</code>. CentOS 8 replacement.</p>
-<div class="fragment"><div class="line">- rocky8-vg-autotest</div>
-</div><!-- fragment --><h1><a class="anchor" id="freebsd_list"></a>
-FreeBSD distributions</h1>
-<h2>FreeBSD</h2>
-<p>Production release. Currently <code>12.2</code></p>
-<div class="fragment"><div class="line">- freebsd-vg-autotest</div>
+<h1>Fedora 40</h1>
+<p>Fedora 40 is used to run virtualized and containerized tests in Github Actions workflows.</p>
+<p>Tests run using Fedora 40 in virtualized environment: </p><div class="fragment"><div class="line">- bdev-vm-autotest</div>
+<div class="line">- ftl-vm-autotest</div>
+<div class="line">- nvme-vm-autotest</div>
+<div class="line">- nvmf-tcp-uring-vm-autotest</div>
+<div class="line">- nvmf-tcp-vm-autotest</div>
+<div class="line">- raid-vm-autotest</div>
+</div><!-- fragment --><p>Tests run using Fedora 40 in containerized environment: </p><div class="fragment"><div class="line">- build-files-container-autotest</div>
+<div class="line">- check-format-container-autotest</div>
+<div class="line">- check-so-deps-container-autotest</div>
+<div class="line">- doc-container-autotest</div>
+<div class="line">- release-build-gcc-container-autotest</div>
+<div class="line">- scan-build-container-autotest</div>
+<div class="line">- unittest-gcc-container-autotest</div>
+</div><!-- fragment --><h1>Fedora 39</h1>
+<p>Fedora 39 is used to run tests in virtualized environment, but using actual, physical hardware passed into virtual machines.</p>
+<p>Tests run using Fedora 39: </p><div class="fragment"><div class="line">- hpe-nvmf-rdma</div>
 </div><!-- fragment --> </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->

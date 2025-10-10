@@ -156,6 +156,16 @@ uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>reserved4</b> [4]<
 <tr class="memitem:acf09e7849d03cd976d446b1f2769407f" id="r_acf09e7849d03cd976d446b1f2769407f"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acf09e7849d03cd976d446b1f2769407f">rdma_cm_event_timeout_ms</a></td></tr>
 <tr class="memdesc:acf09e7849d03cd976d446b1f2769407f"><td class="mdescLeft">&#160;</td><td class="mdescRight">It is used for RDMA transport.  <br /></td></tr>
 <tr class="separator:acf09e7849d03cd976d446b1f2769407f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc7196f5aab5b3c52bb461c6d382d9f0" id="r_adc7196f5aab5b3c52bb461c6d382d9f0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adc7196f5aab5b3c52bb461c6d382d9f0">rdma_umr_per_io</a></td></tr>
+<tr class="memdesc:adc7196f5aab5b3c52bb461c6d382d9f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">It is used for RDMA transport.  <br /></td></tr>
+<tr class="separator:adc7196f5aab5b3c52bb461c6d382d9f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca0e674cd6bdc92969443ff4a405db39" id="r_aca0e674cd6bdc92969443ff4a405db39"><td class="memItemLeft" align="right" valign="top"><a id="aca0e674cd6bdc92969443ff4a405db39" name="aca0e674cd6bdc92969443ff4a405db39"></a>
+uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>reserved23</b></td></tr>
+<tr class="separator:aca0e674cd6bdc92969443ff4a405db39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a844b0c4f75430fcdb8c769d91e2954e8" id="r_a844b0c4f75430fcdb8c769d91e2954e8"><td class="memItemLeft" align="right" valign="top"><a id="a844b0c4f75430fcdb8c769d91e2954e8" name="a844b0c4f75430fcdb8c769d91e2954e8"></a>
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>tcp_connect_timeout_ms</b></td></tr>
+<tr class="memdesc:a844b0c4f75430fcdb8c769d91e2954e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Time in msec to wait until connection is done (0 = no timeout). <br /></td></tr>
+<tr class="separator:a844b0c4f75430fcdb8c769d91e2954e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>NVMe transport options. </p>
@@ -225,6 +235,23 @@ uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>reserved4</b> [4]<
 
 <p>It is used for RDMA transport. </p>
 <p>The queue depth of a shared rdma receive queue. </p>
+
+</div>
+</div>
+<a id="adc7196f5aab5b3c52bb461c6d382d9f0" name="adc7196f5aab5b3c52bb461c6d382d9f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc7196f5aab5b3c52bb461c6d382d9f0">&#9670;&#160;</a></span>rdma_umr_per_io</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool spdk_nvme_transport_opts::rdma_umr_per_io</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>It is used for RDMA transport. </p>
+<p>Configure UMR per IO request if supported by the system </p>
 
 </div>
 </div>

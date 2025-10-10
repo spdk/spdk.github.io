@@ -176,6 +176,10 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
+<tr class="memitem:add86de7db24a4eb2fcde349ce9093f84" id="r_add86de7db24a4eb2fcde349ce9093f84"><td class="memItemLeft" align="right" valign="top"><a id="add86de7db24a4eb2fcde349ce9093f84" name="add86de7db24a4eb2fcde349ce9093f84"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>spdk_accel_comp_algo</b> { <b>SPDK_ACCEL_COMP_ALGO_DEFLATE</b> = 0
+, <b>SPDK_ACCEL_COMP_ALGO_LZ4</b>
+ }</td></tr>
+<tr class="separator:add86de7db24a4eb2fcde349ce9093f84"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9b864a9a46bd4d2e0612d55cf682bc71" id="r_a9b864a9a46bd4d2e0612d55cf682bc71"><td class="memItemLeft" align="right" valign="top"><a id="a9b864a9a46bd4d2e0612d55cf682bc71" name="a9b864a9a46bd4d2e0612d55cf682bc71"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>spdk_accel_opcode</b> { <br />
 &#160;&#160;<b>SPDK_ACCEL_OPC_COPY</b> = 0
 , <b>SPDK_ACCEL_OPC_FILL</b> = 1
@@ -252,11 +256,20 @@ Functions</h2></td></tr>
 <tr class="memdesc:a40acd298d88d5f41eae9676699b4538f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submit a chained copy + CRC-32C calculation request.  <br /></td></tr>
 <tr class="separator:a40acd298d88d5f41eae9676699b4538f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a48a72c6a367435bb1a8b079653a61e32" id="r_a48a72c6a367435bb1a8b079653a61e32"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a48a72c6a367435bb1a8b079653a61e32">spdk_accel_submit_compress</a> (struct spdk_io_channel *ch, void *dst, uint64_t nbytes, struct iovec *src_iovs, size_t src_iovcnt, uint32_t *output_size, <a class="el" href="#a6ba836b7b128829ba185eadb2c60476a">spdk_accel_completion_cb</a> cb_fn, void *cb_arg)</td></tr>
-<tr class="memdesc:a48a72c6a367435bb1a8b079653a61e32"><td class="mdescLeft">&#160;</td><td class="mdescRight">Build and submit a memory compress request.  <br /></td></tr>
+<tr class="memdesc:a48a72c6a367435bb1a8b079653a61e32"><td class="mdescLeft">&#160;</td><td class="mdescRight">Build and submit a memory compress request using the deflate algorithm.  <br /></td></tr>
 <tr class="separator:a48a72c6a367435bb1a8b079653a61e32"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae569d84a8960a6e0dc7ed0e0b33102f8" id="r_ae569d84a8960a6e0dc7ed0e0b33102f8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae569d84a8960a6e0dc7ed0e0b33102f8">spdk_accel_submit_decompress</a> (struct spdk_io_channel *ch, struct iovec *dst_iovs, size_t dst_iovcnt, struct iovec *src_iovs, size_t src_iovcnt, uint32_t *output_size, <a class="el" href="#a6ba836b7b128829ba185eadb2c60476a">spdk_accel_completion_cb</a> cb_fn, void *cb_arg)</td></tr>
-<tr class="memdesc:ae569d84a8960a6e0dc7ed0e0b33102f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Build and submit a memory decompress request.  <br /></td></tr>
+<tr class="memdesc:ae569d84a8960a6e0dc7ed0e0b33102f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Build and submit a memory decompress request using the deflate algorithm.  <br /></td></tr>
 <tr class="separator:ae569d84a8960a6e0dc7ed0e0b33102f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9310f07a5bbfd8729397578bea5adeec" id="r_a9310f07a5bbfd8729397578bea5adeec"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9310f07a5bbfd8729397578bea5adeec">spdk_accel_submit_compress_ext</a> (struct spdk_io_channel *ch, void *dst, uint64_t nbytes, struct iovec *src_iovs, size_t src_iovcnt, enum spdk_accel_comp_algo comp_algo, uint32_t comp_level, uint32_t *output_size, <a class="el" href="#a6ba836b7b128829ba185eadb2c60476a">spdk_accel_completion_cb</a> cb_fn, void *cb_arg)</td></tr>
+<tr class="memdesc:a9310f07a5bbfd8729397578bea5adeec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Build and submit a memory compress request using the specified algorithm.  <br /></td></tr>
+<tr class="separator:a9310f07a5bbfd8729397578bea5adeec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adcca73dba1dde658e4bae30e603b257b" id="r_adcca73dba1dde658e4bae30e603b257b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adcca73dba1dde658e4bae30e603b257b">spdk_accel_submit_decompress_ext</a> (struct spdk_io_channel *ch, struct iovec *dst_iovs, size_t dst_iovcnt, struct iovec *src_iovs, size_t src_iovcnt, enum spdk_accel_comp_algo decomp_algo, uint32_t *output_size, <a class="el" href="#a6ba836b7b128829ba185eadb2c60476a">spdk_accel_completion_cb</a> cb_fn, void *cb_arg)</td></tr>
+<tr class="memdesc:adcca73dba1dde658e4bae30e603b257b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Build and submit a memory decompress request using the specified algorithm.  <br /></td></tr>
+<tr class="separator:adcca73dba1dde658e4bae30e603b257b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac19ab657b1642d41a54e512c0502ec6c" id="r_ac19ab657b1642d41a54e512c0502ec6c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac19ab657b1642d41a54e512c0502ec6c">spdk_accel_get_compress_level_range</a> (enum spdk_accel_comp_algo comp_algo, uint32_t *min_level, uint32_t *max_level)</td></tr>
+<tr class="memdesc:ac19ab657b1642d41a54e512c0502ec6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the level range of the specified algorithm.  <br /></td></tr>
+<tr class="separator:ac19ab657b1642d41a54e512c0502ec6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aed96871d0496c7f6e3549999bbb6ea84" id="r_aed96871d0496c7f6e3549999bbb6ea84"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aed96871d0496c7f6e3549999bbb6ea84">spdk_accel_submit_xor</a> (struct spdk_io_channel *ch, void *dst, void **sources, uint32_t nsrcs, uint64_t nbytes, <a class="el" href="#a6ba836b7b128829ba185eadb2c60476a">spdk_accel_completion_cb</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:aed96871d0496c7f6e3549999bbb6ea84"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submit an xor request.  <br /></td></tr>
 <tr class="separator:aed96871d0496c7f6e3549999bbb6ea84"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -290,8 +303,11 @@ Functions</h2></td></tr>
 <tr class="memitem:a1c3400c6ae95c73c4fd78adba4bc492a" id="r_a1c3400c6ae95c73c4fd78adba4bc492a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1c3400c6ae95c73c4fd78adba4bc492a">spdk_accel_append_fill</a> (struct spdk_accel_sequence **seq, struct spdk_io_channel *ch, void *buf, uint64_t len, struct spdk_memory_domain *domain, void *domain_ctx, uint8_t pattern, <a class="el" href="#abaf556b5e1b63b5237faff3952a3bb46">spdk_accel_step_cb</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:a1c3400c6ae95c73c4fd78adba4bc492a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Append a fill operation to a sequence.  <br /></td></tr>
 <tr class="separator:a1c3400c6ae95c73c4fd78adba4bc492a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5f7d1a8f36eaed607ff00f3a3d3f8a1" id="r_ab5f7d1a8f36eaed607ff00f3a3d3f8a1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab5f7d1a8f36eaed607ff00f3a3d3f8a1">spdk_accel_append_decompress_ext</a> (struct spdk_accel_sequence **pseq, struct spdk_io_channel *ch, struct iovec *dst_iovs, size_t dst_iovcnt, struct spdk_memory_domain *dst_domain, void *dst_domain_ctx, struct iovec *src_iovs, size_t src_iovcnt, struct spdk_memory_domain *src_domain, void *src_domain_ctx, enum spdk_accel_comp_algo decomp_algo, <a class="el" href="#abaf556b5e1b63b5237faff3952a3bb46">spdk_accel_step_cb</a> cb_fn, void *cb_arg)</td></tr>
+<tr class="memdesc:ab5f7d1a8f36eaed607ff00f3a3d3f8a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Append a decompression operation using the specified algorithm to a sequence.  <br /></td></tr>
+<tr class="separator:ab5f7d1a8f36eaed607ff00f3a3d3f8a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a457e6fd3389ec558b3c6a9f0edf812b0" id="r_a457e6fd3389ec558b3c6a9f0edf812b0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a457e6fd3389ec558b3c6a9f0edf812b0">spdk_accel_append_decompress</a> (struct spdk_accel_sequence **seq, struct spdk_io_channel *ch, struct iovec *dst_iovs, size_t dst_iovcnt, struct spdk_memory_domain *dst_domain, void *dst_domain_ctx, struct iovec *src_iovs, size_t src_iovcnt, struct spdk_memory_domain *src_domain, void *src_domain_ctx, <a class="el" href="#abaf556b5e1b63b5237faff3952a3bb46">spdk_accel_step_cb</a> cb_fn, void *cb_arg)</td></tr>
-<tr class="memdesc:a457e6fd3389ec558b3c6a9f0edf812b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Append a decompress operation to a sequence.  <br /></td></tr>
+<tr class="memdesc:a457e6fd3389ec558b3c6a9f0edf812b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Append a decompression operation using the deflate algorithm to a sequence.  <br /></td></tr>
 <tr class="separator:a457e6fd3389ec558b3c6a9f0edf812b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a090727b328a74d555ae039b9e4462be5" id="r_a090727b328a74d555ae039b9e4462be5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a090727b328a74d555ae039b9e4462be5">spdk_accel_append_encrypt</a> (struct spdk_accel_sequence **seq, struct spdk_io_channel *ch, struct <a class="el" href="structspdk__accel__crypto__key.html">spdk_accel_crypto_key</a> *key, struct iovec *dst_iovs, uint32_t dst_iovcnt, struct spdk_memory_domain *dst_domain, void *dst_domain_ctx, struct iovec *src_iovs, uint32_t src_iovcnt, struct spdk_memory_domain *src_domain, void *src_domain_ctx, uint64_t iv, uint32_t block_size, <a class="el" href="#abaf556b5e1b63b5237faff3952a3bb46">spdk_accel_step_cb</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:a090727b328a74d555ae039b9e4462be5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Append an encrypt operation to a sequence.  <br /></td></tr>
@@ -314,6 +330,12 @@ Functions</h2></td></tr>
 <tr class="memitem:a085cd12303520d2da85e97bf69f7592a" id="r_a085cd12303520d2da85e97bf69f7592a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a085cd12303520d2da85e97bf69f7592a">spdk_accel_append_dif_generate_copy</a> (struct spdk_accel_sequence **seq, struct spdk_io_channel *ch, struct iovec *dst_iovs, size_t dst_iovcnt, struct spdk_memory_domain *dst_domain, void *dst_domain_ctx, struct iovec *src_iovs, size_t src_iovcnt, struct spdk_memory_domain *src_domain, void *src_domain_ctx, uint32_t num_blocks, const struct <a class="el" href="structspdk__dif__ctx.html">spdk_dif_ctx</a> *ctx, <a class="el" href="#abaf556b5e1b63b5237faff3952a3bb46">spdk_accel_step_cb</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:a085cd12303520d2da85e97bf69f7592a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submit a Data Integrity Field (DIF) copy and generate request.  <br /></td></tr>
 <tr class="separator:a085cd12303520d2da85e97bf69f7592a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee3eee406b3007332657b3e39c54977c" id="r_aee3eee406b3007332657b3e39c54977c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aee3eee406b3007332657b3e39c54977c">spdk_accel_append_dix_generate</a> (struct spdk_accel_sequence **seq, struct spdk_io_channel *ch, struct iovec *iovs, size_t iovcnt, struct spdk_memory_domain *domain, void *domain_ctx, struct iovec *md_iov, struct spdk_memory_domain *md_domain, void *md_domain_ctx, uint32_t num_blocks, const struct <a class="el" href="structspdk__dif__ctx.html">spdk_dif_ctx</a> *ctx, <a class="el" href="#abaf556b5e1b63b5237faff3952a3bb46">spdk_accel_step_cb</a> cb_fn, void *cb_arg)</td></tr>
+<tr class="memdesc:aee3eee406b3007332657b3e39c54977c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Append DIX generate operation to a sequence.  <br /></td></tr>
+<tr class="separator:aee3eee406b3007332657b3e39c54977c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75a13803c68a77a938c1748e31d02a82" id="r_a75a13803c68a77a938c1748e31d02a82"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a75a13803c68a77a938c1748e31d02a82">spdk_accel_append_dix_verify</a> (struct spdk_accel_sequence **seq, struct spdk_io_channel *ch, struct iovec *iovs, size_t iovcnt, struct spdk_memory_domain *domain, void *domain_ctx, struct iovec *md_iov, struct spdk_memory_domain *md_domain, void *md_domain_ctx, uint32_t num_blocks, const struct <a class="el" href="structspdk__dif__ctx.html">spdk_dif_ctx</a> *ctx, struct <a class="el" href="structspdk__dif__error.html">spdk_dif_error</a> *err, <a class="el" href="#abaf556b5e1b63b5237faff3952a3bb46">spdk_accel_step_cb</a> cb_fn, void *cb_arg)</td></tr>
+<tr class="memdesc:a75a13803c68a77a938c1748e31d02a82"><td class="mdescLeft">&#160;</td><td class="mdescRight">Append DIX verify operation to a sequence.  <br /></td></tr>
+<tr class="separator:a75a13803c68a77a938c1748e31d02a82"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad1f3cacbac00f08f92f094243c17ad04" id="r_ad1f3cacbac00f08f92f094243c17ad04"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad1f3cacbac00f08f92f094243c17ad04">spdk_accel_sequence_finish</a> (struct spdk_accel_sequence *seq, <a class="el" href="#a6ba836b7b128829ba185eadb2c60476a">spdk_accel_completion_cb</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:ad1f3cacbac00f08f92f094243c17ad04"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finish a sequence and execute all its operations.  <br /></td></tr>
 <tr class="separator:ad1f3cacbac00f08f92f094243c17ad04"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -672,7 +694,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Append a decompress operation to a sequence. </p>
+<p>Append a decompression operation using the deflate algorithm to a sequence. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">seq</td><td>Sequence object. If NULL, a new sequence object will be created. </td></tr>
@@ -685,6 +707,103 @@ Functions</h2></td></tr>
     <tr><td class="paramname">src_iovcnt</td><td>Size of the <code>src_iovs</code> array. </td></tr>
     <tr><td class="paramname">src_domain</td><td>Memory domain to which the source buffers belong. </td></tr>
     <tr><td class="paramname">src_domain_ctx</td><td>Source buffer domain context. </td></tr>
+    <tr><td class="paramname">cb_fn</td><td>Callback to be executed once this operation is completed. </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>Argument to be passed to <code>cb_fn</code>.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if operation was successfully added to the sequence, negative errno otherwise. </dd></dl>
+
+</div>
+</div>
+<a id="ab5f7d1a8f36eaed607ff00f3a3d3f8a1" name="ab5f7d1a8f36eaed607ff00f3a3d3f8a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5f7d1a8f36eaed607ff00f3a3d3f8a1">&#9670;&#160;</a></span>spdk_accel_append_decompress_ext()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_accel_append_decompress_ext </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_accel_sequence **</td>          <td class="paramname"><span class="paramname"><em>pseq</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct spdk_io_channel *</td>          <td class="paramname"><span class="paramname"><em>ch</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct iovec *</td>          <td class="paramname"><span class="paramname"><em>dst_iovs</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>dst_iovcnt</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct spdk_memory_domain *</td>          <td class="paramname"><span class="paramname"><em>dst_domain</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *</td>          <td class="paramname"><span class="paramname"><em>dst_domain_ctx</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct iovec *</td>          <td class="paramname"><span class="paramname"><em>src_iovs</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>src_iovcnt</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct spdk_memory_domain *</td>          <td class="paramname"><span class="paramname"><em>src_domain</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *</td>          <td class="paramname"><span class="paramname"><em>src_domain_ctx</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">enum spdk_accel_comp_algo</td>          <td class="paramname"><span class="paramname"><em>decomp_algo</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="#abaf556b5e1b63b5237faff3952a3bb46">spdk_accel_step_cb</a></td>          <td class="paramname"><span class="paramname"><em>cb_fn</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *</td>          <td class="paramname"><span class="paramname"><em>cb_arg</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Append a decompression operation using the specified algorithm to a sequence. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pseq</td><td>Sequence object. If NULL, a new sequence object will be created. </td></tr>
+    <tr><td class="paramname">ch</td><td>I/O channel. </td></tr>
+    <tr><td class="paramname">dst_iovs</td><td>Destination I/O vector array. </td></tr>
+    <tr><td class="paramname">dst_iovcnt</td><td>Size of the <code>dst_iovs</code> array. </td></tr>
+    <tr><td class="paramname">dst_domain</td><td>Memory domain to which the destination buffers belong. </td></tr>
+    <tr><td class="paramname">dst_domain_ctx</td><td>Destination buffer domain context. </td></tr>
+    <tr><td class="paramname">src_iovs</td><td>Source I/O vector array. </td></tr>
+    <tr><td class="paramname">src_iovcnt</td><td>Size of the <code>src_iovs</code> array. </td></tr>
+    <tr><td class="paramname">src_domain</td><td>Memory domain to which the source buffers belong. </td></tr>
+    <tr><td class="paramname">src_domain_ctx</td><td>Source buffer domain context. </td></tr>
+    <tr><td class="paramname">decomp_algo</td><td>The decompression algorithm, enum spdk_accel_comp_algo value. </td></tr>
     <tr><td class="paramname">cb_fn</td><td>Callback to be executed once this operation is completed. </td></tr>
     <tr><td class="paramname">cb_arg</td><td>Argument to be passed to <code>cb_fn</code>.</td></tr>
   </table>
@@ -1164,17 +1283,217 @@ Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">seq</td><td>Sequence object. If NULL, a new sequence object will be created. </td></tr>
     <tr><td class="paramname">ch</td><td>I/O channel. </td></tr>
-    <tr><td class="paramname">dst_iovs</td><td>The destination I/O vector array. The total allocated memory size needs to be at least: num_blocks * block_size (provided to spdk_dif_ctx_init()) </td></tr>
+    <tr><td class="paramname">dst_iovs</td><td>The destination I/O vector array. The total allocated memory size needs to be at least: num_blocks * data_block_size </td></tr>
     <tr><td class="paramname">dst_iovcnt</td><td>The size of the destination I/O vectors array. </td></tr>
     <tr><td class="paramname">dst_domain</td><td>Memory domain to which the destination buffers belong. </td></tr>
     <tr><td class="paramname">dst_domain_ctx</td><td>Destination buffer domain context. </td></tr>
-    <tr><td class="paramname">src_iovs</td><td>The source I/O vector array. The total allocated memory size needs to be at least: num_blocks * data_block_size. </td></tr>
+    <tr><td class="paramname">src_iovs</td><td>The source I/O vector array. The total allocated memory size needs to be at least: num_blocks * block_size (including metadata) </td></tr>
     <tr><td class="paramname">src_iovcnt</td><td>The size of the source I/O vectors array. </td></tr>
     <tr><td class="paramname">src_domain</td><td>Memory domain to which the source buffers belong. </td></tr>
     <tr><td class="paramname">src_domain_ctx</td><td>Source buffer domain context. </td></tr>
     <tr><td class="paramname">num_blocks</td><td>Number of data blocks to process. </td></tr>
     <tr><td class="paramname">ctx</td><td>DIF context. Contains the DIF configuration values, including the reference Application Tag value and initial value of the Reference Tag to insert. </td></tr>
     <tr><td class="paramname">err</td><td>DIF error detailed information. Note: the user must ensure the validity of this pointer throughout the entire operation because it is not validated along the processing path. </td></tr>
+    <tr><td class="paramname">cb_fn</td><td>Called when this operation completes. </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>Callback argument.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, negative errno on failure. </dd></dl>
+
+</div>
+</div>
+<a id="aee3eee406b3007332657b3e39c54977c" name="aee3eee406b3007332657b3e39c54977c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee3eee406b3007332657b3e39c54977c">&#9670;&#160;</a></span>spdk_accel_append_dix_generate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_accel_append_dix_generate </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_accel_sequence **</td>          <td class="paramname"><span class="paramname"><em>seq</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct spdk_io_channel *</td>          <td class="paramname"><span class="paramname"><em>ch</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct iovec *</td>          <td class="paramname"><span class="paramname"><em>iovs</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>iovcnt</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct spdk_memory_domain *</td>          <td class="paramname"><span class="paramname"><em>domain</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *</td>          <td class="paramname"><span class="paramname"><em>domain_ctx</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct iovec *</td>          <td class="paramname"><span class="paramname"><em>md_iov</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct spdk_memory_domain *</td>          <td class="paramname"><span class="paramname"><em>md_domain</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *</td>          <td class="paramname"><span class="paramname"><em>md_domain_ctx</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>num_blocks</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const struct <a class="el" href="structspdk__dif__ctx.html">spdk_dif_ctx</a> *</td>          <td class="paramname"><span class="paramname"><em>ctx</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="#abaf556b5e1b63b5237faff3952a3bb46">spdk_accel_step_cb</a></td>          <td class="paramname"><span class="paramname"><em>cb_fn</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *</td>          <td class="paramname"><span class="paramname"><em>cb_arg</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Append DIX generate operation to a sequence. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">seq</td><td>Sequence object. If NULL, a new sequence object will be created. </td></tr>
+    <tr><td class="paramname">ch</td><td>I/O channel. </td></tr>
+    <tr><td class="paramname">iovs</td><td>Source I/O vector array. The total allocated memory size needs to be at least: num_blocks * block_size_no_md. </td></tr>
+    <tr><td class="paramname">iovcnt</td><td>Size of the source I/O vectors' array. </td></tr>
+    <tr><td class="paramname">domain</td><td>Memory domain to which the source buffers belong. </td></tr>
+    <tr><td class="paramname">domain_ctx</td><td>Source buffer domain context. </td></tr>
+    <tr><td class="paramname">md_iov</td><td>Metadata iovec. The total allocated memory size needs to be at least: num_blocks * md_size (8B or 16B, depending on the PI format). </td></tr>
+    <tr><td class="paramname">md_domain</td><td>Memory domain to which the metadata buffers belongs. </td></tr>
+    <tr><td class="paramname">md_domain_ctx</td><td>Metadata buffer domain context. </td></tr>
+    <tr><td class="paramname">num_blocks</td><td>Number of data blocks to process. </td></tr>
+    <tr><td class="paramname">ctx</td><td>DIX context. Contains the DIX configuration values, including the reference Application Tag value and initial value of the Reference Tag to insert. </td></tr>
+    <tr><td class="paramname">cb_fn</td><td>Called when this operation completes. </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>Callback argument.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, negative errno on failure. </dd></dl>
+
+</div>
+</div>
+<a id="a75a13803c68a77a938c1748e31d02a82" name="a75a13803c68a77a938c1748e31d02a82"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a75a13803c68a77a938c1748e31d02a82">&#9670;&#160;</a></span>spdk_accel_append_dix_verify()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_accel_append_dix_verify </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_accel_sequence **</td>          <td class="paramname"><span class="paramname"><em>seq</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct spdk_io_channel *</td>          <td class="paramname"><span class="paramname"><em>ch</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct iovec *</td>          <td class="paramname"><span class="paramname"><em>iovs</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>iovcnt</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct spdk_memory_domain *</td>          <td class="paramname"><span class="paramname"><em>domain</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *</td>          <td class="paramname"><span class="paramname"><em>domain_ctx</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct iovec *</td>          <td class="paramname"><span class="paramname"><em>md_iov</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct spdk_memory_domain *</td>          <td class="paramname"><span class="paramname"><em>md_domain</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *</td>          <td class="paramname"><span class="paramname"><em>md_domain_ctx</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>num_blocks</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const struct <a class="el" href="structspdk__dif__ctx.html">spdk_dif_ctx</a> *</td>          <td class="paramname"><span class="paramname"><em>ctx</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structspdk__dif__error.html">spdk_dif_error</a> *</td>          <td class="paramname"><span class="paramname"><em>err</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="#abaf556b5e1b63b5237faff3952a3bb46">spdk_accel_step_cb</a></td>          <td class="paramname"><span class="paramname"><em>cb_fn</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *</td>          <td class="paramname"><span class="paramname"><em>cb_arg</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Append DIX verify operation to a sequence. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">seq</td><td>Sequence object. If NULL, a new sequence object will be created. </td></tr>
+    <tr><td class="paramname">ch</td><td>I/O channel. </td></tr>
+    <tr><td class="paramname">iovs</td><td>Source I/O vector array. The total allocated memory size needs to be at least: num_blocks * block_size_no_md. </td></tr>
+    <tr><td class="paramname">iovcnt</td><td>Size of the source I/O vectors' array. </td></tr>
+    <tr><td class="paramname">domain</td><td>Memory domain to which the source buffers belong. </td></tr>
+    <tr><td class="paramname">domain_ctx</td><td>Source buffer domain context. </td></tr>
+    <tr><td class="paramname">md_iov</td><td>Metadata iovec. The total allocated memory size needs to be at least: num_blocks * md_size (8B or 16B, depending on the PI format). </td></tr>
+    <tr><td class="paramname">md_domain</td><td>Memory domain to which the metadata buffers belongs. </td></tr>
+    <tr><td class="paramname">md_domain_ctx</td><td>Metadata buffer domain context. </td></tr>
+    <tr><td class="paramname">num_blocks</td><td>Number of data blocks to process. </td></tr>
+    <tr><td class="paramname">ctx</td><td>DIX context. Contains the DIX configuration values, including the reference Application Tag value and initial value of the Reference Tag to insert. </td></tr>
+    <tr><td class="paramname">err</td><td>DIX error detailed information. Note: the user must ensure the validity of this pointer throughout the entire operation because it is not validated along the processing path. </td></tr>
     <tr><td class="paramname">cb_fn</td><td>Called when this operation completes. </td></tr>
     <tr><td class="paramname">cb_arg</td><td>Callback argument.</td></tr>
   </table>
@@ -1590,6 +1909,43 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="ac19ab657b1642d41a54e512c0502ec6c" name="ac19ab657b1642d41a54e512c0502ec6c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac19ab657b1642d41a54e512c0502ec6c">&#9670;&#160;</a></span>spdk_accel_get_compress_level_range()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_accel_get_compress_level_range </td>
+          <td>(</td>
+          <td class="paramtype">enum spdk_accel_comp_algo</td>          <td class="paramname"><span class="paramname"><em>comp_algo</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t *</td>          <td class="paramname"><span class="paramname"><em>min_level</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t *</td>          <td class="paramname"><span class="paramname"><em>max_level</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets the level range of the specified algorithm. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">comp_algo</td><td>The compression algorithm. </td></tr>
+    <tr><td class="paramname">min_level</td><td>The lowest level supported by the compression algorithm. </td></tr>
+    <tr><td class="paramname">max_level</td><td>The highest level supported by the compression algorithm.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, negative errno on failure. </dd></dl>
+
+</div>
+</div>
 <a id="adaba4697296ae9c4ac846ee033a31a30" name="adaba4697296ae9c4ac846ee033a31a30"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#adaba4697296ae9c4ac846ee033a31a30">&#9670;&#160;</a></span>spdk_accel_get_driver_name()</h2>
 
@@ -1986,7 +2342,7 @@ Functions</h2></td></tr>
 <p>Select platform driver to execute operation chains. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">name</td><td>Name of the driver.</td></tr>
+    <tr><td class="paramname">name</td><td>Name of the driver. If NULL or empty string, this function will clear the driver that was previously assigned.</td></tr>
   </table>
   </dd>
 </dl>
@@ -2124,7 +2480,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Build and submit a memory compress request. </p>
+<p>Build and submit a memory compress request using the deflate algorithm. </p>
 <p>This function will build the compress descriptor and submit it.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -2133,6 +2489,86 @@ Functions</h2></td></tr>
     <tr><td class="paramname">nbytes</td><td>Length in bytes. </td></tr>
     <tr><td class="paramname">src_iovs</td><td>The io vector array which stores the src data and len. </td></tr>
     <tr><td class="paramname">src_iovcnt</td><td>The size of the src io vectors. </td></tr>
+    <tr><td class="paramname">output_size</td><td>The size of the compressed data (may be NULL if not desired) </td></tr>
+    <tr><td class="paramname">cb_fn</td><td>Callback function which will be called when the request is complete. </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>Opaque value which will be passed back as the arg parameter in the completion callback.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, negative errno on failure. </dd></dl>
+
+</div>
+</div>
+<a id="a9310f07a5bbfd8729397578bea5adeec" name="a9310f07a5bbfd8729397578bea5adeec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9310f07a5bbfd8729397578bea5adeec">&#9670;&#160;</a></span>spdk_accel_submit_compress_ext()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_accel_submit_compress_ext </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_io_channel *</td>          <td class="paramname"><span class="paramname"><em>ch</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *</td>          <td class="paramname"><span class="paramname"><em>dst</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t</td>          <td class="paramname"><span class="paramname"><em>nbytes</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct iovec *</td>          <td class="paramname"><span class="paramname"><em>src_iovs</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>src_iovcnt</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">enum spdk_accel_comp_algo</td>          <td class="paramname"><span class="paramname"><em>comp_algo</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>comp_level</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t *</td>          <td class="paramname"><span class="paramname"><em>output_size</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="#a6ba836b7b128829ba185eadb2c60476a">spdk_accel_completion_cb</a></td>          <td class="paramname"><span class="paramname"><em>cb_fn</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *</td>          <td class="paramname"><span class="paramname"><em>cb_arg</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Build and submit a memory compress request using the specified algorithm. </p>
+<p>This function will build the compress descriptor and submit it.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ch</td><td>I/O channel associated with this call </td></tr>
+    <tr><td class="paramname">dst</td><td>Destination to write the data to. </td></tr>
+    <tr><td class="paramname">nbytes</td><td>Length in bytes. </td></tr>
+    <tr><td class="paramname">src_iovs</td><td>The io vector array which stores the src data and len. </td></tr>
+    <tr><td class="paramname">src_iovcnt</td><td>The size of the src io vectors. </td></tr>
+    <tr><td class="paramname">comp_algo</td><td>The compression algorithm, enum spdk_accel_comp_algo value. </td></tr>
+    <tr><td class="paramname">comp_level</td><td>The compression algorithm level. </td></tr>
     <tr><td class="paramname">output_size</td><td>The size of the compressed data (may be NULL if not desired) </td></tr>
     <tr><td class="paramname">cb_fn</td><td>Callback function which will be called when the request is complete. </td></tr>
     <tr><td class="paramname">cb_arg</td><td>Opaque value which will be passed back as the arg parameter in the completion callback.</td></tr>
@@ -2507,7 +2943,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Build and submit a memory decompress request. </p>
+<p>Build and submit a memory decompress request using the deflate algorithm. </p>
 <p>This function will build the decompress descriptor and submit it.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -2516,6 +2952,80 @@ Functions</h2></td></tr>
     <tr><td class="paramname">dst_iovcnt</td><td>The size of the dst io vectors. </td></tr>
     <tr><td class="paramname">src_iovs</td><td>The io vector array which stores the src data and len. </td></tr>
     <tr><td class="paramname">src_iovcnt</td><td>The size of the src io vectors. </td></tr>
+    <tr><td class="paramname">output_size</td><td>The size of the compressed data (may be NULL if not desired) </td></tr>
+    <tr><td class="paramname">cb_fn</td><td>Callback function which will be called when the request is complete. </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>Opaque value which will be passed back as the arg parameter in the completion callback.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, negative errno on failure. </dd></dl>
+
+</div>
+</div>
+<a id="adcca73dba1dde658e4bae30e603b257b" name="adcca73dba1dde658e4bae30e603b257b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adcca73dba1dde658e4bae30e603b257b">&#9670;&#160;</a></span>spdk_accel_submit_decompress_ext()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_accel_submit_decompress_ext </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_io_channel *</td>          <td class="paramname"><span class="paramname"><em>ch</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct iovec *</td>          <td class="paramname"><span class="paramname"><em>dst_iovs</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>dst_iovcnt</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct iovec *</td>          <td class="paramname"><span class="paramname"><em>src_iovs</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>src_iovcnt</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">enum spdk_accel_comp_algo</td>          <td class="paramname"><span class="paramname"><em>decomp_algo</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t *</td>          <td class="paramname"><span class="paramname"><em>output_size</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="#a6ba836b7b128829ba185eadb2c60476a">spdk_accel_completion_cb</a></td>          <td class="paramname"><span class="paramname"><em>cb_fn</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *</td>          <td class="paramname"><span class="paramname"><em>cb_arg</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Build and submit a memory decompress request using the specified algorithm. </p>
+<p>This function will build the decompress descriptor and submit it.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ch</td><td>I/O channel associated with this call </td></tr>
+    <tr><td class="paramname">dst_iovs</td><td>The io vector array which stores the dst data and len. </td></tr>
+    <tr><td class="paramname">dst_iovcnt</td><td>The size of the dst io vectors. </td></tr>
+    <tr><td class="paramname">src_iovs</td><td>The io vector array which stores the src data and len. </td></tr>
+    <tr><td class="paramname">src_iovcnt</td><td>The size of the src io vectors. </td></tr>
+    <tr><td class="paramname">decomp_algo</td><td>The decompression algorithm, enum spdk_accel_comp_algo value. </td></tr>
     <tr><td class="paramname">output_size</td><td>The size of the compressed data (may be NULL if not desired) </td></tr>
     <tr><td class="paramname">cb_fn</td><td>Callback function which will be called when the request is complete. </td></tr>
     <tr><td class="paramname">cb_arg</td><td>Opaque value which will be passed back as the arg parameter in the completion callback.</td></tr>
@@ -2874,9 +3384,9 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">ch</td><td>I/O channel associated with this call. </td></tr>
-    <tr><td class="paramname">dst_iovs</td><td>The destination I/O vector array. The total allocated memory size needs to be at least: num_blocks * block_size (provided to spdk_dif_ctx_init()) </td></tr>
+    <tr><td class="paramname">dst_iovs</td><td>The destination I/O vector array. The total allocated memory size needs to be at least: num_blocks * data_block_size. </td></tr>
     <tr><td class="paramname">dst_iovcnt</td><td>The size of the destination I/O vectors array. </td></tr>
-    <tr><td class="paramname">src_iovs</td><td>The source I/O vector array. The total allocated memory size needs to be at least: num_blocks * data_block_size. </td></tr>
+    <tr><td class="paramname">src_iovs</td><td>The source I/O vector array. The total allocated memory size needs to be at least: num_blocks * block_size (including metadata) </td></tr>
     <tr><td class="paramname">src_iovcnt</td><td>The size of the source I/O vectors array. </td></tr>
     <tr><td class="paramname">num_blocks</td><td>Number of data blocks to process. </td></tr>
     <tr><td class="paramname">ctx</td><td>DIF context. Contains the DIF configuration values, including the reference Application Tag value and initial value of the Reference Tag to insert. </td></tr>

@@ -136,14 +136,7 @@ $(function(){initNavTree('structspdk__bdev__io__block__params.html',''); initRes
 <div class="dynheader">
 Collaboration diagram for spdk_bdev_io_block_params:</div>
 <div class="dyncontent">
-<div class="center"><img src="structspdk__bdev__io__block__params__coll__graph.png" border="0" usemap="#aspdk__bdev__io__block__params_coll__map" alt="Collaboration graph"/></div>
-<map name="aspdk__bdev__io__block__params_coll__map" id="aspdk__bdev__io__block__params_coll__map">
-<area shape="rect" title=" " alt="" coords="125,98,278,143"/>
-<area shape="rect" href="unionspdk__bdev__nvme__cdw12.html" title="Union for command dword 12, which by convention matches the NVMe command dword 12 definition." alt="" coords="5,5,190,33"/>
-<area shape="poly" title=" " alt="" coords="124,42,181,96,177,99,120,46"/>
-<area shape="rect" href="unionspdk__bdev__nvme__cdw13.html" title="Union for command dword 13, which by convention matches the NVMe command dword 13 definition." alt="" coords="213,5,398,33"/>
-<area shape="poly" title=" " alt="" coords="283,45,251,76,226,99,223,96,248,72,280,42"/>
-</map>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="structspdk__bdev__io__block__params__coll__graph.svg" width="100%" height="411"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
@@ -197,48 +190,56 @@ union <a class="el" href="unionspdk__bdev__nvme__cdw12.html">spdk_bdev_nvme_cdw1
 union <a class="el" href="unionspdk__bdev__nvme__cdw13.html">spdk_bdev_nvme_cdw13</a>&#160;</td><td class="memItemRight" valign="bottom"><b>nvme_cdw13</b></td></tr>
 <tr class="memdesc:a36c7a050366856be41cdf09f03dae966"><td class="mdescLeft">&#160;</td><td class="mdescRight">defined by <a class="el" href="unionspdk__bdev__nvme__cdw13.html">spdk_bdev_nvme_cdw13</a> <br /></td></tr>
 <tr class="separator:a36c7a050366856be41cdf09f03dae966"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6a03d44537ab5270439dd5b1ea077a7c" id="r_a6a03d44537ab5270439dd5b1ea077a7c"><td class="memItemLeft" ><a id="a6a03d44537ab5270439dd5b1ea077a7c" name="a6a03d44537ab5270439dd5b1ea077a7c"></a>
+<tr class="memitem:a25e0581bb4255c3f88dbb5476274a4f1" id="r_a25e0581bb4255c3f88dbb5476274a4f1"><td class="memItemLeft" ><a id="a25e0581bb4255c3f88dbb5476274a4f1" name="a25e0581bb4255c3f88dbb5476274a4f1"></a>
 struct {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a541c316cc205dc8c4f8be6ceb02361f8" id="r_a541c316cc205dc8c4f8be6ceb02361f8"><td class="memItemLeft" >
+<tr class="memitem:a9bd53303799827faee5543e997b263b8" id="r_a9bd53303799827faee5543e997b263b8"><td class="memItemLeft" >
 &#160;&#160;&#160;uint8_t&#160;&#160;&#160;<b>populate</b>: 1&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
-<tr class="memdesc:a541c316cc205dc8c4f8be6ceb02361f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the buffer should be populated with the real data. <br /></td></tr>
-<tr class="separator:a541c316cc205dc8c4f8be6ceb02361f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a66983992699e21bc6f25613d90357981" id="r_a66983992699e21bc6f25613d90357981"><td class="memItemLeft" >
+<tr class="memdesc:a9bd53303799827faee5543e997b263b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the buffer should be populated with the real data. <br /></td></tr>
+<tr class="separator:a9bd53303799827faee5543e997b263b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a725b034f5a83c6f073cde1f5e6b63951" id="r_a725b034f5a83c6f073cde1f5e6b63951"><td class="memItemLeft" >
 &#160;&#160;&#160;uint8_t&#160;&#160;&#160;<b>commit</b>: 1&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
-<tr class="memdesc:a66983992699e21bc6f25613d90357981"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the buffer should be committed back to disk. <br /></td></tr>
-<tr class="separator:a66983992699e21bc6f25613d90357981"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a352dcae1e55e32d7c3d9715e888a5d5b" id="r_a352dcae1e55e32d7c3d9715e888a5d5b"><td class="memItemLeft" >&#160;&#160;&#160;uint8_t&#160;&#160;&#160;<a class="el" href="#a37cdc018ccd185ae8778e8289200a34e">start</a>: 1&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
-<tr class="memdesc:a352dcae1e55e32d7c3d9715e888a5d5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">True if this request is in the 'start' phase of zcopy.  <a href="#a37cdc018ccd185ae8778e8289200a34e">More...</a><br /></td></tr>
-<tr class="separator:a352dcae1e55e32d7c3d9715e888a5d5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6a03d44537ab5270439dd5b1ea077a7c" id="r_a6a03d44537ab5270439dd5b1ea077a7c"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><b>zcopy</b>&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
-<tr class="separator:a6a03d44537ab5270439dd5b1ea077a7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a00dfae5f85600d683b6644a1aec68e62" id="r_a00dfae5f85600d683b6644a1aec68e62"><td class="memItemLeft" ><a id="a00dfae5f85600d683b6644a1aec68e62" name="a00dfae5f85600d683b6644a1aec68e62"></a>
+<tr class="memdesc:a725b034f5a83c6f073cde1f5e6b63951"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the buffer should be committed back to disk. <br /></td></tr>
+<tr class="separator:a725b034f5a83c6f073cde1f5e6b63951"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af22a75de0ffd602b0b9eabc2f6e4f35f" id="r_af22a75de0ffd602b0b9eabc2f6e4f35f"><td class="memItemLeft" >&#160;&#160;&#160;uint8_t&#160;&#160;&#160;<a class="el" href="#a37cdc018ccd185ae8778e8289200a34e">start</a>: 1&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="memdesc:af22a75de0ffd602b0b9eabc2f6e4f35f"><td class="mdescLeft">&#160;</td><td class="mdescRight">True if this request is in the 'start' phase of zcopy.  <a href="#a37cdc018ccd185ae8778e8289200a34e">More...</a><br /></td></tr>
+<tr class="separator:af22a75de0ffd602b0b9eabc2f6e4f35f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25e0581bb4255c3f88dbb5476274a4f1" id="r_a25e0581bb4255c3f88dbb5476274a4f1"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><b>zcopy</b>&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:a25e0581bb4255c3f88dbb5476274a4f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e13369e3130e866b5ca1a91bb615fad" id="r_a0e13369e3130e866b5ca1a91bb615fad"><td class="memItemLeft" ><a id="a0e13369e3130e866b5ca1a91bb615fad" name="a0e13369e3130e866b5ca1a91bb615fad"></a>
 struct {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2341136a02a9bd911b118e5db3ee3ab1" id="r_a2341136a02a9bd911b118e5db3ee3ab1"><td class="memItemLeft" >
+<tr class="memitem:a49d17fa565d2d747d8a4374f5f300e73" id="r_a49d17fa565d2d747d8a4374f5f300e73"><td class="memItemLeft" >
 &#160;&#160;&#160;void *&#160;&#160;&#160;<b>bio_cb_arg</b>&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
-<tr class="memdesc:a2341136a02a9bd911b118e5db3ee3ab1"><td class="mdescLeft">&#160;</td><td class="mdescRight">The callback argument for the outstanding request which this abort attempts to cancel. <br /></td></tr>
-<tr class="separator:a2341136a02a9bd911b118e5db3ee3ab1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a00dfae5f85600d683b6644a1aec68e62" id="r_a00dfae5f85600d683b6644a1aec68e62"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><b>abort</b>&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
-<tr class="separator:a00dfae5f85600d683b6644a1aec68e62"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a822be2fbeb401043a4381a56e2aa8b6c" id="r_a822be2fbeb401043a4381a56e2aa8b6c"><td class="memItemLeft" ><a id="a822be2fbeb401043a4381a56e2aa8b6c" name="a822be2fbeb401043a4381a56e2aa8b6c"></a>
+<tr class="memdesc:a49d17fa565d2d747d8a4374f5f300e73"><td class="mdescLeft">&#160;</td><td class="mdescRight">The callback argument for the outstanding request which this abort attempts to cancel. <br /></td></tr>
+<tr class="separator:a49d17fa565d2d747d8a4374f5f300e73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e13369e3130e866b5ca1a91bb615fad" id="r_a0e13369e3130e866b5ca1a91bb615fad"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><b>abort</b>&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:a0e13369e3130e866b5ca1a91bb615fad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a236bc9078fbb3859900c2c067dbd970e" id="r_a236bc9078fbb3859900c2c067dbd970e"><td class="memItemLeft" ><a id="a236bc9078fbb3859900c2c067dbd970e" name="a236bc9078fbb3859900c2c067dbd970e"></a>
 struct {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aece726d6143dc19218556d7c7d934fa3" id="r_aece726d6143dc19218556d7c7d934fa3"><td class="memItemLeft" >&#160;&#160;&#160;uint64_t&#160;&#160;&#160;<a class="el" href="#ad7f5cc0170d1b857bf2fa8b4efe87976">offset</a>&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
-<tr class="memdesc:aece726d6143dc19218556d7c7d934fa3"><td class="mdescLeft">&#160;</td><td class="mdescRight">The offset of next data/hole.  <a href="#ad7f5cc0170d1b857bf2fa8b4efe87976">More...</a><br /></td></tr>
-<tr class="separator:aece726d6143dc19218556d7c7d934fa3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a822be2fbeb401043a4381a56e2aa8b6c" id="r_a822be2fbeb401043a4381a56e2aa8b6c"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><b>seek</b>&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
-<tr class="separator:a822be2fbeb401043a4381a56e2aa8b6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6c4a87fad1b5112df2df71a4034887e5" id="r_a6c4a87fad1b5112df2df71a4034887e5"><td class="memItemLeft" ><a id="a6c4a87fad1b5112df2df71a4034887e5" name="a6c4a87fad1b5112df2df71a4034887e5"></a>
+<tr class="memitem:a1faed926f313b194b85aab73cca05008" id="r_a1faed926f313b194b85aab73cca05008"><td class="memItemLeft" >&#160;&#160;&#160;uint64_t&#160;&#160;&#160;<a class="el" href="#ad7f5cc0170d1b857bf2fa8b4efe87976">offset</a>&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="memdesc:a1faed926f313b194b85aab73cca05008"><td class="mdescLeft">&#160;</td><td class="mdescRight">The offset of next data/hole.  <a href="#ad7f5cc0170d1b857bf2fa8b4efe87976">More...</a><br /></td></tr>
+<tr class="separator:a1faed926f313b194b85aab73cca05008"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a236bc9078fbb3859900c2c067dbd970e" id="r_a236bc9078fbb3859900c2c067dbd970e"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><b>seek</b>&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:a236bc9078fbb3859900c2c067dbd970e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac25e8fe430a6f46346cbe0282bc6b9ea" id="r_ac25e8fe430a6f46346cbe0282bc6b9ea"><td class="memItemLeft" ><a id="ac25e8fe430a6f46346cbe0282bc6b9ea" name="ac25e8fe430a6f46346cbe0282bc6b9ea"></a>
 struct {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a034d660dc66631553438e44b5851dbcd" id="r_a034d660dc66631553438e44b5851dbcd"><td class="memItemLeft" >
+<tr class="memitem:a04adc7b055ed510f022d352091b6274e" id="r_a04adc7b055ed510f022d352091b6274e"><td class="memItemLeft" >
 &#160;&#160;&#160;uint64_t&#160;&#160;&#160;<b>src_offset_blocks</b>&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
-<tr class="memdesc:a034d660dc66631553438e44b5851dbcd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starting source offset (in blocks) of the bdev for copy I/O. <br /></td></tr>
-<tr class="separator:a034d660dc66631553438e44b5851dbcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6c4a87fad1b5112df2df71a4034887e5" id="r_a6c4a87fad1b5112df2df71a4034887e5"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><b>copy</b>&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
-<tr class="separator:a6c4a87fad1b5112df2df71a4034887e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memdesc:a04adc7b055ed510f022d352091b6274e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starting source offset (in blocks) of the bdev for copy I/O. <br /></td></tr>
+<tr class="separator:a04adc7b055ed510f022d352091b6274e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac25e8fe430a6f46346cbe0282bc6b9ea" id="r_ac25e8fe430a6f46346cbe0282bc6b9ea"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><b>copy</b>&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:ac25e8fe430a6f46346cbe0282bc6b9ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ee14e58f401e9ca3d60c6fb20ef0ae8" id="r_a6ee14e58f401e9ca3d60c6fb20ef0ae8"><td class="memItemLeft" align="right" valign="top"><a id="a6ee14e58f401e9ca3d60c6fb20ef0ae8" name="a6ee14e58f401e9ca3d60c6fb20ef0ae8"></a>
+struct <a class="el" href="structspdk__dif__ctx.html">spdk_dif_ctx</a>&#160;</td><td class="memItemRight" valign="bottom"><b>dif_ctx</b></td></tr>
+<tr class="memdesc:a6ee14e58f401e9ca3d60c6fb20ef0ae8"><td class="mdescLeft">&#160;</td><td class="mdescRight">DIF context. <br /></td></tr>
+<tr class="separator:a6ee14e58f401e9ca3d60c6fb20ef0ae8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbd72ee6d2da7625768720bb12693644" id="r_acbd72ee6d2da7625768720bb12693644"><td class="memItemLeft" align="right" valign="top"><a id="acbd72ee6d2da7625768720bb12693644" name="acbd72ee6d2da7625768720bb12693644"></a>
+struct <a class="el" href="structspdk__dif__error.html">spdk_dif_error</a>&#160;</td><td class="memItemRight" valign="bottom"><b>dif_err</b></td></tr>
+<tr class="memdesc:acbd72ee6d2da7625768720bb12693644"><td class="mdescLeft">&#160;</td><td class="mdescRight">DIF error information. <br /></td></tr>
+<tr class="separator:acbd72ee6d2da7625768720bb12693644"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Field Documentation</h2>
 <a id="ad7f5cc0170d1b857bf2fa8b4efe87976" name="ad7f5cc0170d1b857bf2fa8b4efe87976"></a>

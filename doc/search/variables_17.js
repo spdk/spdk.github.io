@@ -19,7 +19,7 @@ var searchData=
   ['write_5fprotected_16',['write_protected',['../structspdk__nvme__ns__data.html#a2d31ce64bc5986f84ea63060f6d410a3',1,'spdk_nvme_ns_data']]],
   ['write_5funit_5fsize_17',['write_unit_size',['../structspdk__bdev.html#a1d7dcd12f4c3600eac4dbb202bdb4397',1,'spdk_bdev']]],
   ['write_5fzero_5fdeallocate_18',['write_zero_deallocate',['../structspdk__nvme__ns__data.html#ae0ed9489f16678899fafd54bec980ccb',1,'spdk_nvme_ns_data']]],
-  ['writeback_5fcache_5fenabled_19',['writeback_cache_enabled',['../structspdk__fsdev__open__opts.html#aa3c4b123c2f6118ae8c1f2a958bea2c1',1,'spdk_fsdev_open_opts']]],
+  ['writeback_5fcache_5fenabled_19',['writeback_cache_enabled',['../structspdk__fsdev__mount__opts.html#aaad9fc3f53160dea59b3cdce3bf0e8fb',1,'spdk_fsdev_mount_opts']]],
   ['ws_5fmin_20',['ws_min',['../structspdk__ocssd__geometry__data.html#a0f15dc726bcf4cac33752f0fab8a4e36',1,'spdk_ocssd_geometry_data']]],
   ['ws_5fopt_21',['ws_opt',['../structspdk__ocssd__geometry__data.html#a3d5ae53da075ef580a641bec35889c3d',1,'spdk_ocssd_geometry_data']]]
 ];

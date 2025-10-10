@@ -141,7 +141,7 @@ lib</h2>
 <ul>
 <li>Utility Libraries: These libraries contain basic, commonly used functions that make more complex libraries easier to implement. For example, <code>spdk_log</code> contains macro definitions that provide a consistent logging paradigm and <code>spdk_json</code> is a general purpose JSON parsing library.</li>
 <li>Protocol Libraries: These libraries contain the building blocks for a specific service. For example, <code>spdk_nvmf</code> and <code>spdk_vhost</code> each define the storage protocols after which they are named.</li>
-<li>Storage Service Libraries: These libraries provide a specific abstraction that can be mapped to somewhere between the physical drive and the filesystem level of your typical storage stack. For example <code><a class="el" href="structspdk__bdev.html">spdk_bdev</a></code> provides a general block device abstraction layer, <code>spdk_lvol</code> provides a logical volume abstraction, <code>spdk_blobfs</code> provides a filesystem abstraction, and <code>spdk_ftl</code> provides a flash translation layer abstraction.</li>
+<li>Storage Service Libraries: These libraries provide a specific abstraction that can be mapped to somewhere between the physical drive and the filesystem level of your typical storage stack. For example <code><a class="el" href="structspdk__bdev.html">spdk_bdev</a></code> provides a general block device abstraction layer, <code>spdk_lvol</code> provides a logical volume abstraction and <code>spdk_ftl</code> provides a flash translation layer abstraction.</li>
 <li>System Libraries: These libraries provide system level services such as a JSON based RPC service (see <code>spdk_jsonrpc</code>) and thread abstractions (see <code>spdk_thread</code>). The most notable library in this category is the <code>spdk_env_dpdk</code> library which provides a shim for the underlying Data Plane Development Kit (DPDK) environment and provides services like memory management.</li>
 </ul>
 <p>The one library in the <code>lib</code> directory that doesn't fit into the above classification is the <code>spdk_event</code> library. This library defines a framework used by the applications contained in the <code>app</code> and <code>example</code> directories. Much care has been taken to keep the SPDK libraries independent from this framework. The libraries in <code>lib</code> are engineered to allow plugging directly into independent application frameworks such as Seastar or libuv with minimal effort.</p>
@@ -167,7 +167,7 @@ module</h2>
 <td class="markdownTableBodyNone">module/sock   </td><td class="markdownTableBodyNone">spdk_sock   </td><td class="markdownTableBodyNone">no   </td></tr>
 </table>
 </center><ul>
-<li>Free libraries: These libraries are highly dependent upon a library in the <code>lib</code> directory but are not explicitly registered to that library via a constructor. The libraries in the <code>blob</code>, <code>blobfs</code>, and <code>env_dpdk</code> directories fall into this category. None of the libraries in this category depend explicitly on the <code>spdk_event</code> library.</li>
+<li>Free libraries: These libraries are highly dependent upon a library in the <code>lib</code> directory but are not explicitly registered to that library via a constructor. The libraries in the <code>blob</code> and <code>env_dpdk</code> directories fall into this category. None of the libraries in this category depend explicitly on the <code>spdk_event</code> library.</li>
 </ul>
 <h1><a class="anchor" id="conventions"></a>
 Library Conventions</h1>

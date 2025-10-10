@@ -1,20 +1,20 @@
 <map id="spdk_fsdev_io" name="spdk_fsdev_io">
-<area shape="rect" id="Node000001" title=" " alt="" coords="535,136,649,164"/>
-<area shape="rect" id="Node000012" href="$structspdk__fsdev__io_1_1____fsdev__io__internal__fields.html" title="Fields that are used internally by the fsdev subsystem." alt="" coords="751,128,924,172"/>
-<area shape="poly" id="edge9_Node000012_Node000001" title=" " alt="" coords="665,147,751,147,751,153,665,153"/>
-<area shape="rect" id="Node000002" href="$structspdk__fsdev.html" title=" " alt="" coords="315,57,411,85"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="426,84,512,110,564,133,562,138,510,115,425,89"/>
-<area shape="rect" id="Node000003" href="$structspdk__fsdev__module.html" title="Filesystem device module." alt="" coords="14,5,166,33"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="182,32,256,46,315,58,314,63,255,51,181,37"/>
-<area shape="rect" id="Node000005" href="$structspdk__fsdev__open__opts.html" title="fsdev device options" alt="" coords="5,57,175,85"/>
-<area shape="poly" id="edge3_Node000002_Node000005" title=" " alt="" coords="190,69,315,69,315,74,190,74"/>
-<area shape="rect" id="Node000006" href="$structspdk__fsdev_1_1____fsdev__internal__fields.html" title="Fields that are used internally by the fsdev subsystem." alt="" coords="14,109,166,154"/>
-<area shape="poly" id="edge4_Node000002_Node000006" title=" " alt="" coords="181,109,314,79,315,84,182,114"/>
-<area shape="rect" id="Node000009" href="$structspdk__fsdev__file__attr.html" title=" " alt="" coords="287,109,439,137"/>
-<area shape="poly" id="edge5_Node000001_Node000009" title=" " alt="" coords="455,131,535,141,534,146,455,136"/>
-<area shape="rect" id="Node000010" href="$structspdk__fsdev__io__opts.html" title="Structure with optional fsdev IO parameters The content of this structure must be valid until the IO ..." alt="" coords="288,161,438,189"/>
-<area shape="poly" id="edge6_Node000001_Node000010" title=" " alt="" coords="453,172,511,167,538,162,539,167,511,172,453,177"/>
-<area shape="rect" id="Node000011" href="$structspdk__fsdev__file__statfs.html" title=" " alt="" coords="280,213,446,241"/>
-<area shape="poly" id="edge7_Node000001_Node000011" title=" " alt="" coords="460,208,510,192,568,162,571,167,512,197,462,213"/>
-<area shape="poly" id="edge8_Node000001_Node000012" title=" " alt="" coords="736,175,704,177,673,175,636,167,638,162,674,170,704,171,736,170"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="531,139,645,166"/>
+<area shape="rect" id="Node000012" href="$structspdk__fsdev__io_1_1____fsdev__io__internal__fields.html" title="Fields that are used internally by the fsdev subsystem." alt="" coords="747,130,920,175"/>
+<area shape="poly" id="edge9_Node000012_Node000001" title=" " alt="" coords="661,150,747,150,747,155,661,155"/>
+<area shape="rect" id="Node000002" href="$structspdk__fsdev.html" title=" " alt="" coords="305,35,400,62"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="416,62,462,77,508,97,569,136,566,140,506,102,460,82,414,67"/>
+<area shape="rect" id="Node000003" href="$structspdk__fsdev__module.html" title="Filesystem device module." alt="" coords="6,5,157,33"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="173,26,304,41,304,46,172,32"/>
+<area shape="rect" id="Node000005" href="$structspdk__fsdev_1_1____fsdev__internal__fields.html" title="Fields that are used internally by the fsdev subsystem." alt="" coords="5,57,158,102"/>
+<area shape="poly" id="edge3_Node000002_Node000005" title=" " alt="" coords="173,66,304,51,305,56,174,71"/>
+<area shape="rect" id="Node000008" href="$structspdk__fsdev__mount__opts.html" title="fsdev mount options" alt="" coords="263,87,442,114"/>
+<area shape="poly" id="edge4_Node000001_Node000008" title=" " alt="" coords="452,115,508,127,539,135,538,141,506,132,451,120"/>
+<area shape="rect" id="Node000009" href="$structspdk__fsdev__io__opts.html" title="Structure with optional fsdev IO parameters The content of this structure must be valid until the IO ..." alt="" coords="278,139,427,166"/>
+<area shape="poly" id="edge5_Node000001_Node000009" title=" " alt="" coords="443,150,531,150,531,155,443,155"/>
+<area shape="rect" id="Node000010" href="$structspdk__fsdev__file__attr.html" title=" " alt="" coords="276,191,429,218"/>
+<area shape="poly" id="edge6_Node000001_Node000010" title=" " alt="" coords="443,186,506,172,537,164,538,170,508,177,444,191"/>
+<area shape="rect" id="Node000011" href="$structspdk__fsdev__file__statfs.html" title=" " alt="" coords="269,243,436,270"/>
+<area shape="poly" id="edge7_Node000001_Node000011" title=" " alt="" coords="424,235,465,221,506,203,566,165,569,169,508,208,467,226,426,240"/>
+<area shape="poly" id="edge8_Node000001_Node000012" title=" " alt="" coords="732,178,700,179,669,177,632,170,634,164,670,172,700,174,732,172"/>
 </map>

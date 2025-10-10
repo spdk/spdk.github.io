@@ -153,9 +153,12 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>use_cmb_sqs</b></td><
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>no_shn_notification</b></td></tr>
 <tr class="memdesc:a4ca76bf8a2554d9a0c13cbd0ac0b30e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Don't initiate shutdown processing. <br /></td></tr>
 <tr class="separator:a4ca76bf8a2554d9a0c13cbd0ac0b30e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a803d55d95a744660a2615a00c859d2aa" id="r_a803d55d95a744660a2615a00c859d2aa"><td class="memItemLeft" align="right" valign="top"><a id="a803d55d95a744660a2615a00c859d2aa" name="a803d55d95a744660a2615a00c859d2aa"></a>
-uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>reserved6</b> [2]</td></tr>
-<tr class="separator:a803d55d95a744660a2615a00c859d2aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3db00b3281bdc8e9f85ec25fe9cb2220" id="r_a3db00b3281bdc8e9f85ec25fe9cb2220"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3db00b3281bdc8e9f85ec25fe9cb2220">enable_interrupts</a></td></tr>
+<tr class="memdesc:a3db00b3281bdc8e9f85ec25fe9cb2220"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable interrupts for completion notification.  <br /></td></tr>
+<tr class="separator:a3db00b3281bdc8e9f85ec25fe9cb2220"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74e7178fe6d7be51e68f8aa6d73a954c" id="r_a74e7178fe6d7be51e68f8aa6d73a954c"><td class="memItemLeft" align="right" valign="top"><a id="a74e7178fe6d7be51e68f8aa6d73a954c" name="a74e7178fe6d7be51e68f8aa6d73a954c"></a>
+uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>reserved7</b></td></tr>
+<tr class="separator:a74e7178fe6d7be51e68f8aa6d73a954c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a183d97c9bda86a9ca47442bcbc69c444" id="r_a183d97c9bda86a9ca47442bcbc69c444"><td class="memItemLeft" align="right" valign="top"><a id="a183d97c9bda86a9ca47442bcbc69c444" name="a183d97c9bda86a9ca47442bcbc69c444"></a>
 enum <a class="el" href="nvme__spec_8h.html#a7e72566466cae734d999e755524f7b20">spdk_nvme_cc_ams</a>&#160;</td><td class="memItemRight" valign="bottom"><b>arb_mechanism</b></td></tr>
 <tr class="memdesc:a183d97c9bda86a9ca47442bcbc69c444"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of arbitration mechanism. <br /></td></tr>
@@ -248,9 +251,9 @@ uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>reserved610</b> [7
 <tr class="memitem:a2650095ea8d90e28b98900846a45efa2" id="r_a2650095ea8d90e28b98900846a45efa2"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2650095ea8d90e28b98900846a45efa2">disable_read_changed_ns_list_log_page</a></td></tr>
 <tr class="memdesc:a2650095ea8d90e28b98900846a45efa2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disable reading CHANGED_NS_LIST log page in response to an NS_ATTR_CHANGED AEN The upper layer should reading CHANGED_NS_LIST log page instead if set to true.  <br /></td></tr>
 <tr class="separator:a2650095ea8d90e28b98900846a45efa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a30f3fa93d23c91e76afa426fb74a8ece" id="r_a30f3fa93d23c91e76afa426fb74a8ece"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a30f3fa93d23c91e76afa426fb74a8ece">psk</a> [200]</td></tr>
-<tr class="memdesc:a30f3fa93d23c91e76afa426fb74a8ece"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set PSK and enable SSL socket implementation for NVMe/TCP only.  <br /></td></tr>
-<tr class="separator:a30f3fa93d23c91e76afa426fb74a8ece"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf05fcdf75d2a2ee411cecbd122cdc3d" id="r_acf05fcdf75d2a2ee411cecbd122cdc3d"><td class="memItemLeft" align="right" valign="top"><a id="acf05fcdf75d2a2ee411cecbd122cdc3d" name="acf05fcdf75d2a2ee411cecbd122cdc3d"></a>
+uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>reserved617</b> [200]</td></tr>
+<tr class="separator:acf05fcdf75d2a2ee411cecbd122cdc3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a52f59742178dd13a98b2db3fdbd5c482" id="r_a52f59742178dd13a98b2db3fdbd5c482"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a52f59742178dd13a98b2db3fdbd5c482">transport_tos</a></td></tr>
 <tr class="memdesc:a52f59742178dd13a98b2db3fdbd5c482"><td class="mdescLeft">&#160;</td><td class="mdescRight">It is used for RDMA transport.  <br /></td></tr>
 <tr class="separator:a52f59742178dd13a98b2db3fdbd5c482"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -431,6 +434,23 @@ struct spdk_key *&#160;</td><td class="memItemRight" valign="bottom"><b>dhchap_c
 
 </div>
 </div>
+<a id="a3db00b3281bdc8e9f85ec25fe9cb2220" name="a3db00b3281bdc8e9f85ec25fe9cb2220"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3db00b3281bdc8e9f85ec25fe9cb2220">&#9670;&#160;</a></span>enable_interrupts</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool spdk_nvme_ctrlr_opts::enable_interrupts</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Enable interrupts for completion notification. </p>
+<p>This is only supported within a primary SPDK process, and if enabled SPDK will not support secondary processes. </p>
+
+</div>
+</div>
 <a id="afa9c5708ea859200abb5406b59faaede" name="afa9c5708ea859200abb5406b59faaede"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afa9c5708ea859200abb5406b59faaede">&#9670;&#160;</a></span>extended_host_id</h2>
 
@@ -599,23 +619,6 @@ struct spdk_key *&#160;</td><td class="memItemRight" valign="bottom"><b>dhchap_c
 
 <p>The size of <a class="el" href="structspdk__nvme__ctrlr__opts.html" title="NVMe controller initialization options.">spdk_nvme_ctrlr_opts</a> according to the caller of this library is used for ABI compatibility. </p>
 <p>The library uses this field to know how many fields in this structure are valid. And the library will populate any remaining fields with default values. </p>
-
-</div>
-</div>
-<a id="a30f3fa93d23c91e76afa426fb74a8ece" name="a30f3fa93d23c91e76afa426fb74a8ece"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a30f3fa93d23c91e76afa426fb74a8ece">&#9670;&#160;</a></span>psk</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">char spdk_nvme_ctrlr_opts::psk[200]</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Set PSK and enable SSL socket implementation for NVMe/TCP only. </p>
-<p>If empty, a default socket implementation will be used. The TLS PSK interchange format is: NVMeTLSkey-1:xx:[Base64 encoded string]: 12B (header) + 2B (hash) + 176B (base64 for 1024b + crc32) + 3B (colons) + 1B (NULL) + 6B (extra space for future) </p>
 
 </div>
 </div>

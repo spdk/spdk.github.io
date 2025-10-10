@@ -220,6 +220,9 @@ Typedefs</h2></td></tr>
 <tr class="memitem:aaf30cdcd20a84d898099dd35bbfa3590" id="r_aaf30cdcd20a84d898099dd35bbfa3590"><td class="memItemLeft" align="right" valign="top"><a id="aaf30cdcd20a84d898099dd35bbfa3590" name="aaf30cdcd20a84d898099dd35bbfa3590"></a>
 typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_unregister_cb</b>) (void *cb_arg, int rc)</td></tr>
 <tr class="separator:aaf30cdcd20a84d898099dd35bbfa3590"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a836e872eec9456bd00f5ae859b11e30d" id="r_a836e872eec9456bd00f5ae859b11e30d"><td class="memItemLeft" align="right" valign="top"><a id="a836e872eec9456bd00f5ae859b11e30d" name="a836e872eec9456bd00f5ae859b11e30d"></a>
+typedef enum <a class="el" href="#aa35cc1485b6ba4351c2fb4fbd7125c93">spdk_bdev_io_status</a>&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_io_status_t</b></td></tr>
+<tr class="separator:a836e872eec9456bd00f5ae859b11e30d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2562fbcad733a35efaca67e9fb53a382" id="r_a2562fbcad733a35efaca67e9fb53a382"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2562fbcad733a35efaca67e9fb53a382">spdk_bdev_io_get_buf_cb</a>) (struct spdk_io_channel *ch, struct <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> *bdev_io, bool success)</td></tr>
 <tr class="memdesc:a2562fbcad733a35efaca67e9fb53a382"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback when buffer is allocated for the bdev I/O.  <br /></td></tr>
 <tr class="separator:a2562fbcad733a35efaca67e9fb53a382"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -273,10 +276,6 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:aa35cc1485b6ba4351c2fb4fbd7125c93"><td class="mdescLeft">&#160;</td><td class="mdescRight">bdev I/O completion status <br /></td></tr>
 <tr class="separator:aa35cc1485b6ba4351c2fb4fbd7125c93"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af485be7d8a00412bbfbfc1d2d15d3812" id="r_af485be7d8a00412bbfbfc1d2d15d3812"><td class="memItemLeft" align="right" valign="top"><a id="af485be7d8a00412bbfbfc1d2d15d3812" name="af485be7d8a00412bbfbfc1d2d15d3812"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_reset_stat_mode</b> { <b>SPDK_BDEV_RESET_STAT_ALL</b>
-, <b>SPDK_BDEV_RESET_STAT_MAXMIN</b>
- }</td></tr>
-<tr class="separator:af485be7d8a00412bbfbfc1d2d15d3812"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
@@ -307,6 +306,9 @@ typedef&#160;</td><td class="memItemRight" valign="bottom"><b>STAILQ_HEAD</b> (,
 <tr class="memitem:a400db1b2562970d33d8a9ef9ba8d04ff" id="r_a400db1b2562970d33d8a9ef9ba8d04ff"><td class="memItemLeft" align="right" valign="top"><a id="a400db1b2562970d33d8a9ef9ba8d04ff" name="a400db1b2562970d33d8a9ef9ba8d04ff"></a>
 typedef&#160;</td><td class="memItemRight" valign="bottom"><b>TAILQ_HEAD</b> (, lba_range) lba_range_tailq_t</td></tr>
 <tr class="separator:a400db1b2562970d33d8a9ef9ba8d04ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ac96ce0a2aba981aba362b80f6fde2c" id="r_a2ac96ce0a2aba981aba362b80f6fde2c"><td class="memItemLeft" align="right" valign="top"><a id="a2ac96ce0a2aba981aba362b80f6fde2c" name="a2ac96ce0a2aba981aba362b80f6fde2c"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (offsetof(struct <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a>, driver_ctx) % SPDK_CACHE_LINE_SIZE==0, &quot;driver_ctx not cache line aligned&quot;)</td></tr>
+<tr class="separator:a2ac96ce0a2aba981aba362b80f6fde2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5fef71f7761986298bb4aaf345736bb3" id="r_a5fef71f7761986298bb4aaf345736bb3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5fef71f7761986298bb4aaf345736bb3">spdk_bdev_register</a> (struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *bdev)</td></tr>
 <tr class="memdesc:a5fef71f7761986298bb4aaf345736bb3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a new bdev.  <br /></td></tr>
 <tr class="separator:a5fef71f7761986298bb4aaf345736bb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -361,15 +363,27 @@ typedef&#160;</td><td class="memItemRight" valign="bottom"><b>TAILQ_HEAD</b> (, 
 <tr class="memitem:a3247574caabc2b31796861a10b2c9cab" id="r_a3247574caabc2b31796861a10b2c9cab"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3247574caabc2b31796861a10b2c9cab">spdk_bdev_io_complete</a> (struct <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> *bdev_io, enum <a class="el" href="#aa35cc1485b6ba4351c2fb4fbd7125c93">spdk_bdev_io_status</a> status)</td></tr>
 <tr class="memdesc:a3247574caabc2b31796861a10b2c9cab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Complete a bdev_io.  <br /></td></tr>
 <tr class="separator:a3247574caabc2b31796861a10b2c9cab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6db517e8062f4b5ae5f37e820e6a3093" id="r_a6db517e8062f4b5ae5f37e820e6a3093"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="#aa35cc1485b6ba4351c2fb4fbd7125c93">spdk_bdev_io_status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6db517e8062f4b5ae5f37e820e6a3093">spdk_bdev_io_set_nvme_status</a> (struct <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> *bdev_io, uint32_t cdw0, int sct, int sc)</td></tr>
+<tr class="memdesc:a6db517e8062f4b5ae5f37e820e6a3093"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a bdev_io with an NVMe status code and DW0 completion queue entry.  <br /></td></tr>
+<tr class="separator:a6db517e8062f4b5ae5f37e820e6a3093"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3341d564a521b3e7874f72fc1390f043" id="r_a3341d564a521b3e7874f72fc1390f043"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3341d564a521b3e7874f72fc1390f043">spdk_bdev_io_complete_nvme_status</a> (struct <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> *bdev_io, uint32_t cdw0, int sct, int sc)</td></tr>
-<tr class="memdesc:a3341d564a521b3e7874f72fc1390f043"><td class="mdescLeft">&#160;</td><td class="mdescRight">Complete a bdev_io with an NVMe status code and DW0 completion queue entry.  <br /></td></tr>
+<tr class="memdesc:a3341d564a521b3e7874f72fc1390f043"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set and complete a bdev_io with an NVMe status code and DW0 completion queue entry.  <br /></td></tr>
 <tr class="separator:a3341d564a521b3e7874f72fc1390f043"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae671a7119f8e24fb54b9c70f1edcf7c7" id="r_ae671a7119f8e24fb54b9c70f1edcf7c7"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="#aa35cc1485b6ba4351c2fb4fbd7125c93">spdk_bdev_io_status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae671a7119f8e24fb54b9c70f1edcf7c7">spdk_bdev_io_set_scsi_status</a> (struct <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> *bdev_io, enum spdk_scsi_status sc, enum spdk_scsi_sense sk, uint8_t asc, uint8_t ascq)</td></tr>
+<tr class="memdesc:ae671a7119f8e24fb54b9c70f1edcf7c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a bdev_io with a SCSI status code.  <br /></td></tr>
+<tr class="separator:ae671a7119f8e24fb54b9c70f1edcf7c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4271696fa055f456bedb6bdebce25dbd" id="r_a4271696fa055f456bedb6bdebce25dbd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4271696fa055f456bedb6bdebce25dbd">spdk_bdev_io_complete_scsi_status</a> (struct <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> *bdev_io, enum spdk_scsi_status sc, enum spdk_scsi_sense sk, uint8_t asc, uint8_t ascq)</td></tr>
-<tr class="memdesc:a4271696fa055f456bedb6bdebce25dbd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Complete a bdev_io with a SCSI status code.  <br /></td></tr>
+<tr class="memdesc:a4271696fa055f456bedb6bdebce25dbd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set and complete a bdev_io with a SCSI status code.  <br /></td></tr>
 <tr class="separator:a4271696fa055f456bedb6bdebce25dbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4957d80f70c84d4a6d38f6a5b61f4da6" id="r_a4957d80f70c84d4a6d38f6a5b61f4da6"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="#aa35cc1485b6ba4351c2fb4fbd7125c93">spdk_bdev_io_status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4957d80f70c84d4a6d38f6a5b61f4da6">spdk_bdev_io_set_aio_status</a> (struct <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> *bdev_io, int aio_result)</td></tr>
+<tr class="memdesc:a4957d80f70c84d4a6d38f6a5b61f4da6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a bdev_io with AIO errno.  <br /></td></tr>
+<tr class="separator:a4957d80f70c84d4a6d38f6a5b61f4da6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afa76c6d38a121270bbe464117d1044ac" id="r_afa76c6d38a121270bbe464117d1044ac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afa76c6d38a121270bbe464117d1044ac">spdk_bdev_io_complete_aio_status</a> (struct <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> *bdev_io, int aio_result)</td></tr>
-<tr class="memdesc:afa76c6d38a121270bbe464117d1044ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Complete a bdev_io with AIO errno.  <br /></td></tr>
+<tr class="memdesc:afa76c6d38a121270bbe464117d1044ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set and complete a bdev_io with AIO errno.  <br /></td></tr>
 <tr class="separator:afa76c6d38a121270bbe464117d1044ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0e7f36fcb5abd67c79f0713b8077f7c" id="r_ab0e7f36fcb5abd67c79f0713b8077f7c"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="#aa35cc1485b6ba4351c2fb4fbd7125c93">spdk_bdev_io_status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab0e7f36fcb5abd67c79f0713b8077f7c">spdk_bdev_io_set_base_io_status</a> (struct <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> *bdev_io, const struct <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> *base_io)</td></tr>
+<tr class="memdesc:ab0e7f36fcb5abd67c79f0713b8077f7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy a bdev_io status from another bdev_io.  <br /></td></tr>
+<tr class="separator:ab0e7f36fcb5abd67c79f0713b8077f7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a20a04f6676f1275ac30e68b514fdd588" id="r_a20a04f6676f1275ac30e68b514fdd588"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a20a04f6676f1275ac30e68b514fdd588">spdk_bdev_io_complete_base_io_status</a> (struct <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> *bdev_io, const struct <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> *base_io)</td></tr>
 <tr class="memdesc:a20a04f6676f1275ac30e68b514fdd588"><td class="mdescLeft">&#160;</td><td class="mdescRight">Complete a bdev_io copying a status from another bdev_io.  <br /></td></tr>
 <tr class="separator:a20a04f6676f1275ac30e68b514fdd588"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -382,6 +396,9 @@ typedef&#160;</td><td class="memItemRight" valign="bottom"><b>TAILQ_HEAD</b> (, 
 <tr class="memitem:aa1338f8303e09792634142f63be39b93" id="r_aa1338f8303e09792634142f63be39b93"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa1338f8303e09792634142f63be39b93">spdk_bdev_io_get_submit_tsc</a> (struct <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> *bdev_io)</td></tr>
 <tr class="memdesc:aa1338f8303e09792634142f63be39b93"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the submit_tsc of a bdev I/O.  <br /></td></tr>
 <tr class="separator:aa1338f8303e09792634142f63be39b93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a213d7545338576b34e8de535881e44ac" id="r_a213d7545338576b34e8de535881e44ac"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a213d7545338576b34e8de535881e44ac">spdk_bdev_io_hide_metadata</a> (struct <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> *bdev_io)</td></tr>
+<tr class="memdesc:a213d7545338576b34e8de535881e44ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Query if metadata is hidden from the bdev I/O.  <br /></td></tr>
+<tr class="separator:a213d7545338576b34e8de535881e44ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7f2edd5a040a818752112d2cc709efca" id="r_a7f2edd5a040a818752112d2cc709efca"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7f2edd5a040a818752112d2cc709efca">spdk_bdev_notify_blockcnt_change</a> (struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *bdev, uint64_t size)</td></tr>
 <tr class="memdesc:a7f2edd5a040a818752112d2cc709efca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resize for a bdev.  <br /></td></tr>
 <tr class="separator:a7f2edd5a040a818752112d2cc709efca"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -475,7 +492,7 @@ typedef&#160;</td><td class="memItemRight" valign="bottom"><b>TAILQ_HEAD</b> (bd
 <tr class="memitem:a7a5cd65df968e2f5be1b2311af3c69ea" id="r_a7a5cd65df968e2f5be1b2311af3c69ea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7a5cd65df968e2f5be1b2311af3c69ea">spdk_bdev_dump_io_stat_json</a> (struct <a class="el" href="structspdk__bdev__io__stat.html">spdk_bdev_io_stat</a> *stat, struct spdk_json_write_ctx *w)</td></tr>
 <tr class="memdesc:a7a5cd65df968e2f5be1b2311af3c69ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Output bdev I/O statistics information to a JSON stream.  <br /></td></tr>
 <tr class="separator:a7a5cd65df968e2f5be1b2311af3c69ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af7e0a5a50a01fee8785af7d00b4780aa" id="r_af7e0a5a50a01fee8785af7d00b4780aa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af7e0a5a50a01fee8785af7d00b4780aa">spdk_bdev_reset_io_stat</a> (struct <a class="el" href="structspdk__bdev__io__stat.html">spdk_bdev_io_stat</a> *stat, enum spdk_bdev_reset_stat_mode mode)</td></tr>
+<tr class="memitem:af7e0a5a50a01fee8785af7d00b4780aa" id="r_af7e0a5a50a01fee8785af7d00b4780aa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af7e0a5a50a01fee8785af7d00b4780aa">spdk_bdev_reset_io_stat</a> (struct <a class="el" href="structspdk__bdev__io__stat.html">spdk_bdev_io_stat</a> *stat, enum <a class="el" href="bdev_8h.html#af485be7d8a00412bbfbfc1d2d15d3812">spdk_bdev_reset_stat_mode</a> mode)</td></tr>
 <tr class="memdesc:af7e0a5a50a01fee8785af7d00b4780aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset I/O statistics structure.  <br /></td></tr>
 <tr class="separator:af7e0a5a50a01fee8785af7d00b4780aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a64dd06da79d839bc84c0bc15ed7d0ca2" id="r_a64dd06da79d839bc84c0bc15ed7d0ca2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a64dd06da79d839bc84c0bc15ed7d0ca2">spdk_bdev_quiesce</a> (struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *bdev, struct <a class="el" href="structspdk__bdev__module.html">spdk_bdev_module</a> *module, spdk_bdev_quiesce_cb cb_fn, void *cb_arg)</td></tr>
@@ -743,9 +760,7 @@ typedef&#160;</td><td class="memItemRight" valign="bottom"><b>TAILQ_HEAD</b> (bd
 </div><div class="memdoc">
 
 <p>Retrieve the name of the bdev module claim type. </p>
-<p>The mapping between claim types and their names is:</p>
-<p>SPDK_BDEV_CLAIM_NONE "not_claimed" SPDK_BDEV_CLAIM_EXCL_WRITE "exclusive_write" SPDK_BDEV_CLAIM_READ_MANY_WRITE_ONE "read_many_write_one" SPDK_BDEV_CLAIM_READ_MANY_WRITE_NONE "read_many_write_none" SPDK_BDEV_CLAIM_READ_MANY_WRITE_SHARED "read_many_write_shared"</p>
-<p>Any other value will return "invalid_claim".</p>
+<p>See function definition for mapping claims types to name.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">claim_type</td><td>The claim type. </td></tr>
@@ -1002,7 +1017,7 @@ typedef&#160;</td><td class="memItemRight" valign="bottom"><b>TAILQ_HEAD</b> (bd
       </table>
 </div><div class="memdoc">
 
-<p>Complete a bdev_io with AIO errno. </p>
+<p>Set and complete a bdev_io with AIO errno. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">bdev_io</td><td>I/O to complete. </td></tr>
@@ -1072,7 +1087,7 @@ typedef&#160;</td><td class="memItemRight" valign="bottom"><b>TAILQ_HEAD</b> (bd
       </table>
 </div><div class="memdoc">
 
-<p>Complete a bdev_io with an NVMe status code and DW0 completion queue entry. </p>
+<p>Set and complete a bdev_io with an NVMe status code and DW0 completion queue entry. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">bdev_io</td><td>I/O to complete. </td></tr>
@@ -1119,7 +1134,7 @@ typedef&#160;</td><td class="memItemRight" valign="bottom"><b>TAILQ_HEAD</b> (bd
       </table>
 </div><div class="memdoc">
 
-<p>Complete a bdev_io with a SCSI status code. </p>
+<p>Set and complete a bdev_io with a SCSI status code. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">bdev_io</td><td>I/O to complete. </td></tr>
@@ -1279,6 +1294,32 @@ typedef&#160;</td><td class="memItemRight" valign="bottom"><b>TAILQ_HEAD</b> (bd
 
 </div>
 </div>
+<a id="a213d7545338576b34e8de535881e44ac" name="a213d7545338576b34e8de535881e44ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a213d7545338576b34e8de535881e44ac">&#9670;&#160;</a></span>spdk_bdev_io_hide_metadata()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool spdk_bdev_io_hide_metadata </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> *</td>          <td class="paramname"><span class="paramname"><em>bdev_io</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Query if metadata is hidden from the bdev I/O. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bdev_io</td><td>The bdev I/O to query.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if metadata is hidden from the bdev I/O, or false otherwise. </dd></dl>
+
+</div>
+</div>
 <a id="ac3d88717b98b64a59816c8f03fc4b21d" name="ac3d88717b98b64a59816c8f03fc4b21d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac3d88717b98b64a59816c8f03fc4b21d">&#9670;&#160;</a></span>spdk_bdev_io_put_aux_buf()</h2>
 
@@ -1306,6 +1347,68 @@ typedef&#160;</td><td class="memItemRight" valign="bottom"><b>TAILQ_HEAD</b> (bd
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a4957d80f70c84d4a6d38f6a5b61f4da6" name="a4957d80f70c84d4a6d38f6a5b61f4da6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4957d80f70c84d4a6d38f6a5b61f4da6">&#9670;&#160;</a></span>spdk_bdev_io_set_aio_status()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#aa35cc1485b6ba4351c2fb4fbd7125c93">spdk_bdev_io_status</a> spdk_bdev_io_set_aio_status </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> *</td>          <td class="paramname"><span class="paramname"><em>bdev_io</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>aio_result</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set a bdev_io with AIO errno. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bdev_io</td><td>I/O to set status. </td></tr>
+    <tr><td class="paramname">aio_result</td><td>Negative errno returned from AIO. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>IO status corresponding to the AIO result </dd></dl>
+
+</div>
+</div>
+<a id="ab0e7f36fcb5abd67c79f0713b8077f7c" name="ab0e7f36fcb5abd67c79f0713b8077f7c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0e7f36fcb5abd67c79f0713b8077f7c">&#9670;&#160;</a></span>spdk_bdev_io_set_base_io_status()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#aa35cc1485b6ba4351c2fb4fbd7125c93">spdk_bdev_io_status</a> spdk_bdev_io_set_base_io_status </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> *</td>          <td class="paramname"><span class="paramname"><em>bdev_io</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const struct <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> *</td>          <td class="paramname"><span class="paramname"><em>base_io</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Copy a bdev_io status from another bdev_io. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bdev_io</td><td>I/O to set status. </td></tr>
+    <tr><td class="paramname">base_io</td><td>I/O from which to copy the status. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>IO status corresponding to the base_io status </dd></dl>
 
 </div>
 </div>
@@ -1379,6 +1482,98 @@ typedef&#160;</td><td class="memItemRight" valign="bottom"><b>TAILQ_HEAD</b> (bd
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a6db517e8062f4b5ae5f37e820e6a3093" name="a6db517e8062f4b5ae5f37e820e6a3093"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6db517e8062f4b5ae5f37e820e6a3093">&#9670;&#160;</a></span>spdk_bdev_io_set_nvme_status()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#aa35cc1485b6ba4351c2fb4fbd7125c93">spdk_bdev_io_status</a> spdk_bdev_io_set_nvme_status </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> *</td>          <td class="paramname"><span class="paramname"><em>bdev_io</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>cdw0</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>sct</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>sc</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set a bdev_io with an NVMe status code and DW0 completion queue entry. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bdev_io</td><td>I/O to set status. </td></tr>
+    <tr><td class="paramname">cdw0</td><td>NVMe Completion Queue DW0 value (set to 0 if not applicable) </td></tr>
+    <tr><td class="paramname">sct</td><td>NVMe Status Code Type. </td></tr>
+    <tr><td class="paramname">sc</td><td>NVMe Status Code. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>IO status corresponding to the NVMe status </dd></dl>
+
+</div>
+</div>
+<a id="ae671a7119f8e24fb54b9c70f1edcf7c7" name="ae671a7119f8e24fb54b9c70f1edcf7c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae671a7119f8e24fb54b9c70f1edcf7c7">&#9670;&#160;</a></span>spdk_bdev_io_set_scsi_status()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#aa35cc1485b6ba4351c2fb4fbd7125c93">spdk_bdev_io_status</a> spdk_bdev_io_set_scsi_status </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> *</td>          <td class="paramname"><span class="paramname"><em>bdev_io</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">enum spdk_scsi_status</td>          <td class="paramname"><span class="paramname"><em>sc</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">enum spdk_scsi_sense</td>          <td class="paramname"><span class="paramname"><em>sk</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>asc</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>ascq</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set a bdev_io with a SCSI status code. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bdev_io</td><td>I/O to set status. </td></tr>
+    <tr><td class="paramname">sc</td><td>SCSI Status Code. </td></tr>
+    <tr><td class="paramname">sk</td><td>SCSI Sense Key. </td></tr>
+    <tr><td class="paramname">asc</td><td>SCSI Additional Sense Code. </td></tr>
+    <tr><td class="paramname">ascq</td><td>SCSI Additional Sense Code Qualifier. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>IO status corresponding to the SCSI status </dd></dl>
 
 </div>
 </div>
@@ -2505,7 +2700,7 @@ typedef&#160;</td><td class="memItemRight" valign="bottom"><b>TAILQ_HEAD</b> (bd
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">enum spdk_bdev_reset_stat_mode</td>          <td class="paramname"><span class="paramname"><em>mode</em></span>&#160;)</td>
+          <td class="paramtype">enum <a class="el" href="bdev_8h.html#af485be7d8a00412bbfbfc1d2d15d3812">spdk_bdev_reset_stat_mode</a></td>          <td class="paramname"><span class="paramname"><em>mode</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">

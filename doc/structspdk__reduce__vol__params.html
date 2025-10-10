@@ -141,12 +141,7 @@ $(function(){initNavTree('structspdk__reduce__vol__params.html',''); initResizab
 <div class="dynheader">
 Collaboration diagram for spdk_reduce_vol_params:</div>
 <div class="dyncontent">
-<div class="center"><img src="structspdk__reduce__vol__params__coll__graph.png" border="0" usemap="#aspdk__reduce__vol__params_coll__map" alt="Collaboration graph"/></div>
-<map name="aspdk__reduce__vol__params_coll__map" id="aspdk__reduce__vol__params_coll__map">
-<area shape="rect" title="Describes the parameters of an spdk_reduce_vol." alt="" coords="5,98,192,126"/>
-<area shape="rect" href="structspdk__uuid.html" title=" " alt="" coords="55,5,142,33"/>
-<area shape="poly" title=" " alt="" coords="101,48,101,98,96,98,96,48"/>
-</map>
+<div class="center"><iframe scrolling="no" frameborder="0" src="structspdk__reduce__vol__params__coll__graph.svg" width="198" height="131"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
@@ -166,6 +161,17 @@ struct <a class="el" href="structspdk__uuid.html">spdk_uuid</a>&#160;</td><td cl
 <tr class="memitem:ae4c8834d1e1c76455842b97c4489ce47" id="r_ae4c8834d1e1c76455842b97c4489ce47"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae4c8834d1e1c76455842b97c4489ce47">vol_size</a></td></tr>
 <tr class="memdesc:ae4c8834d1e1c76455842b97c4489ce47"><td class="mdescLeft">&#160;</td><td class="mdescRight">Total size in bytes of the compressed volume.  <br /></td></tr>
 <tr class="separator:ae4c8834d1e1c76455842b97c4489ce47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a996b94edc4e42029141d585ab6de1b80" id="r_a996b94edc4e42029141d585ab6de1b80"><td class="memItemLeft" align="right" valign="top"><a id="a996b94edc4e42029141d585ab6de1b80" name="a996b94edc4e42029141d585ab6de1b80"></a>
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>comp_level</b></td></tr>
+<tr class="memdesc:a996b94edc4e42029141d585ab6de1b80"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compression algorithm, when creating initialization, it is specified by the user. <br /></td></tr>
+<tr class="separator:a996b94edc4e42029141d585ab6de1b80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4545d082f357f766546f82512cf26b27" id="r_a4545d082f357f766546f82512cf26b27"><td class="memItemLeft" align="right" valign="top"><a id="a4545d082f357f766546f82512cf26b27" name="a4545d082f357f766546f82512cf26b27"></a>
+uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>comp_algo</b></td></tr>
+<tr class="memdesc:a4545d082f357f766546f82512cf26b27"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compression algorithm, when creating initialization, it is specified by the user. <br /></td></tr>
+<tr class="separator:a4545d082f357f766546f82512cf26b27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a356dc649a8a086c185d2e204b3adb7a6" id="r_a356dc649a8a086c185d2e204b3adb7a6"><td class="memItemLeft" align="right" valign="top"><a id="a356dc649a8a086c185d2e204b3adb7a6" name="a356dc649a8a086c185d2e204b3adb7a6"></a>
+uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>reserved</b> [3]</td></tr>
+<tr class="separator:a356dc649a8a086c185d2e204b3adb7a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Describes the parameters of an spdk_reduce_vol. </p>

@@ -6,7 +6,6 @@ var searchData=
   ['nvme_20driver_3',['NVMe Driver',['../nvme.html',1,'driver_modules']]],
   ['nvme_20multipath_4',['NVMe Multipath',['../nvme_multipath.html',1,'user_guides']]],
   ['nvme_20of_20multipath_20howto_5',['NVMe-oF Multipath HOWTO',['../nvmf_multipath_howto.html',1,'']]],
-  ['nvme_20of_20target_20tracepoints_6',['NVMe-oF Target Tracepoints',['../nvmf_tgt_tracepoints.html',1,'']]],
-  ['nvme_20over_20fabrics_20target_7',['NVMe over Fabrics Target',['../nvmf.html',1,'user_guides']]],
-  ['nvme_20over_20fabrics_20target_20programming_20guide_8',['NVMe over Fabrics Target Programming Guide',['../nvmf_tgt_pg.html',1,'prog_guides']]]
+  ['nvme_20over_20fabrics_20target_6',['NVMe over Fabrics Target',['../nvmf.html',1,'user_guides']]],
+  ['nvme_20over_20fabrics_20target_20programming_20guide_7',['NVMe over Fabrics Target Programming Guide',['../nvmf_tgt_pg.html',1,'prog_guides']]]
 ];

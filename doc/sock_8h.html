@@ -147,7 +147,6 @@ Data Structures</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Anywhere this struct is used, an iovec array is assumed to immediately follow the last member in memory, without any padding.  <a href="structspdk__sock__request.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__sock__request_1_1____sock__request__internal.html">spdk_sock_request::__sock_request_internal</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">These fields are used by the socket layer and should not be modified.  <a href="structspdk__sock__request_1_1____sock__request__internal.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__sock__impl__opts.html">spdk_sock_impl_opts</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">SPDK socket implementation options.  <a href="structspdk__sock__impl__opts.html#details">More...</a><br /></td></tr>
@@ -176,6 +175,9 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
+<tr class="memitem:a25c432be84090e20e914f0773ce896e9" id="r_a25c432be84090e20e914f0773ce896e9"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a25c432be84090e20e914f0773ce896e9">spdk_sock_connect_cb_fn</a>) (void *cb_arg, int status)</td></tr>
+<tr class="memdesc:a25c432be84090e20e914f0773ce896e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Signature for callback function invoked when a connection is completed.  <br /></td></tr>
+<tr class="separator:a25c432be84090e20e914f0773ce896e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae297ae75e566b35635d20b959daa7741" id="r_ae297ae75e566b35635d20b959daa7741"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae297ae75e566b35635d20b959daa7741">spdk_sock_cb</a>) (void *arg, struct spdk_sock_group *group, struct spdk_sock *sock)</td></tr>
 <tr class="memdesc:ae297ae75e566b35635d20b959daa7741"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback function for <a class="el" href="#aa07f7a676410527883e2f8159ea1bfea" title="Add a socket to the group.">spdk_sock_group_add_sock()</a>.  <br /></td></tr>
 <tr class="separator:ae297ae75e566b35635d20b959daa7741"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -191,6 +193,9 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a4d1813d16c3bde629859f2baf804d338" id="r_a4d1813d16c3bde629859f2baf804d338"><td class="memItemLeft" align="right" valign="top"><a id="a4d1813d16c3bde629859f2baf804d338" name="a4d1813d16c3bde629859f2baf804d338"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(struct <a class="el" href="structspdk__sock__request.html">spdk_sock_request</a>)==64, &quot;Incorrect size.&quot;)</td></tr>
+<tr class="separator:a4d1813d16c3bde629859f2baf804d338"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aee22843a1ef042be9f7cf5b9caa31d58" id="r_aee22843a1ef042be9f7cf5b9caa31d58"><td class="memItemLeft" align="right" valign="top"><a id="aee22843a1ef042be9f7cf5b9caa31d58" name="aee22843a1ef042be9f7cf5b9caa31d58"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(struct <a class="el" href="structspdk__sock__opts.html">spdk_sock_opts</a>)==56, &quot;Incorrect size&quot;)</td></tr>
 <tr class="separator:aee22843a1ef042be9f7cf5b9caa31d58"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -209,6 +214,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ac8330bac94c3724bff9809f9f01841ea" id="r_ac8330bac94c3724bff9809f9f01841ea"><td class="memItemLeft" align="right" valign="top">struct spdk_sock *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac8330bac94c3724bff9809f9f01841ea">spdk_sock_connect_ext</a> (const char *ip, int port, const char *impl_name, struct <a class="el" href="structspdk__sock__opts.html">spdk_sock_opts</a> *opts)</td></tr>
 <tr class="memdesc:ac8330bac94c3724bff9809f9f01841ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a socket using the specific sock implementation, connect the socket to the specified address and port (of the server), and then return the socket.  <br /></td></tr>
 <tr class="separator:ac8330bac94c3724bff9809f9f01841ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a534bb5f0a4f57691c712d090122dd5f9" id="r_a534bb5f0a4f57691c712d090122dd5f9"><td class="memItemLeft" align="right" valign="top">struct spdk_sock *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a534bb5f0a4f57691c712d090122dd5f9">spdk_sock_connect_async</a> (const char *ip, int port, const char *impl_name, struct <a class="el" href="structspdk__sock__opts.html">spdk_sock_opts</a> *opts, <a class="el" href="#a25c432be84090e20e914f0773ce896e9">spdk_sock_connect_cb_fn</a> cb_fn, void *cb_arg)</td></tr>
+<tr class="memdesc:a534bb5f0a4f57691c712d090122dd5f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a socket using the specific sock implementation, initiate the socket connection to the specified address and port (of the server), and then return the socket.  <br /></td></tr>
+<tr class="separator:a534bb5f0a4f57691c712d090122dd5f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7d36ffb4eb0177f001a5a325093bb5e7" id="r_a7d36ffb4eb0177f001a5a325093bb5e7"><td class="memItemLeft" align="right" valign="top">struct spdk_sock *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7d36ffb4eb0177f001a5a325093bb5e7">spdk_sock_listen</a> (const char *ip, int port, const char *impl_name)</td></tr>
 <tr class="memdesc:a7d36ffb4eb0177f001a5a325093bb5e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a socket using the specific sock implementation, bind the socket to the specified address and port and listen on the socket, and then return the socket.  <br /></td></tr>
 <tr class="separator:a7d36ffb4eb0177f001a5a325093bb5e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -339,6 +347,29 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a25c432be84090e20e914f0773ce896e9" name="a25c432be84090e20e914f0773ce896e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a25c432be84090e20e914f0773ce896e9">&#9670;&#160;</a></span>spdk_sock_connect_cb_fn</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(* spdk_sock_connect_cb_fn) (void *cb_arg, int status)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Signature for callback function invoked when a connection is completed. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cb_arg</td><td>Context specified by <a class="el" href="#a534bb5f0a4f57691c712d090122dd5f9">spdk_sock_connect_async</a>. </td></tr>
+    <tr><td class="paramname">status</td><td>0 on success, negative errno value on failure. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="a685b050c844ea093a6b3a17ac8992b55" name="a685b050c844ea093a6b3a17ac8992b55"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a685b050c844ea093a6b3a17ac8992b55">&#9670;&#160;</a></span>spdk_sock_accept()</h2>
@@ -382,6 +413,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Close a socket. </p>
+<p>Returning -1 and setting errno is deprecated and will be changed in the 26.01 release. This function will return negative errno values instead.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">sock</td><td>Socket to close.</td></tr>
@@ -422,11 +454,69 @@ Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">ip</td><td>IP address of the server. </td></tr>
     <tr><td class="paramname">port</td><td>Port number of the server. </td></tr>
-    <tr><td class="paramname">impl_name</td><td>The sock_implementation to use, such as "posix". If impl_name is specified, it will <em>only</em> try to connect on that impl. If it is NULL, it will try all the sock implementations in order and uses the first sock implementation which can connect.</td></tr>
+    <tr><td class="paramname">impl_name</td><td>The sock implementation to use, such as "posix", or NULL for default.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>a pointer to the connected socket on success, or NULL on failure. </dd></dl>
+
+</div>
+</div>
+<a id="a534bb5f0a4f57691c712d090122dd5f9" name="a534bb5f0a4f57691c712d090122dd5f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a534bb5f0a4f57691c712d090122dd5f9">&#9670;&#160;</a></span>spdk_sock_connect_async()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct spdk_sock * spdk_sock_connect_async </td>
+          <td>(</td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>ip</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>port</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>impl_name</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structspdk__sock__opts.html">spdk_sock_opts</a> *</td>          <td class="paramname"><span class="paramname"><em>opts</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="#a25c432be84090e20e914f0773ce896e9">spdk_sock_connect_cb_fn</a></td>          <td class="paramname"><span class="paramname"><em>cb_fn</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *</td>          <td class="paramname"><span class="paramname"><em>cb_arg</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Create a socket using the specific sock implementation, initiate the socket connection to the specified address and port (of the server), and then return the socket. </p>
+<p>This function is used by client.</p>
+<p>Not every function with sock object on the interface is allowed if the conncection is not established. In order to determine connection status use <code>cb_fn</code>. Functions taking sock object as an input may return EAGAIN to indicate connection is in progress or other errno values if connection failed.</p>
+<p>Callback function <code>cb_fn</code> is invoked only if this function returns a non-NULL value. If async connect is not supported by the <code>impl_name</code> specified then NULL is returned.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ip</td><td>IP address of the server. </td></tr>
+    <tr><td class="paramname">port</td><td>Port number of the server. </td></tr>
+    <tr><td class="paramname">impl_name</td><td>The sock implementation to use, such as "posix", or NULL for default. </td></tr>
+    <tr><td class="paramname">opts</td><td>The sock option pointer provided by the user which should not be NULL pointer. </td></tr>
+    <tr><td class="paramname">cb_fn</td><td>Callback function invoked when the connection attempt is completed. (optional) </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>Argument passed to callback function. (optional)</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a pointer to the socket on success, or NULL on failure. </dd></dl>
 
 </div>
 </div>
@@ -465,7 +555,7 @@ Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">ip</td><td>IP address of the server. </td></tr>
     <tr><td class="paramname">port</td><td>Port number of the server. </td></tr>
-    <tr><td class="paramname">impl_name</td><td>The sock_implementation to use, such as "posix". If impl_name is specified, it will <em>only</em> try to connect on that impl. If it is NULL, it will try all the sock implementations in order and uses the first sock implementation which can connect. </td></tr>
+    <tr><td class="paramname">impl_name</td><td>The sock implementation to use, such as "posix", or NULL for default. </td></tr>
     <tr><td class="paramname">opts</td><td>The sock option pointer provided by the user which should not be NULL pointer.</td></tr>
   </table>
   </dd>
@@ -490,13 +580,15 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Flush a socket from data gathered in previous writev_async calls. </p>
+<p>On failure check errno matching EAGAIN to determine failure is retryable.</p>
+<p>Returning -1 and setting errno is deprecated and will be changed in the 26.01 release. This function will return negative errno values instead.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">sock</td><td>Socket to flush.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>number of bytes sent on success, -1 (with errno set) on failure </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, -1 on failure with errno set. </dd></dl>
 
 </div>
 </div>
@@ -648,6 +740,8 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Get the optimal sock group for this sock. </p>
+<p>This function is allowed only when connection is established.</p>
+<p>Returning -1 and setting errno is deprecated and will be changed in the 26.01 release. This function will return negative errno values instead.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">sock</td><td>The socket </td></tr>
@@ -705,6 +799,8 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Get client and server addresses of the given socket. </p>
+<p>This function is allowed only when connection is established.</p>
+<p>Returning -1 and setting errno is deprecated and will be changed in the 26.01 release. This function will return negative errno values instead.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">sock</td><td>Socket to get address. </td></tr>
@@ -717,7 +813,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>0 on success, -1 on failure. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, -1 on failure with errno set. </dd></dl>
 
 </div>
 </div>
@@ -751,6 +847,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Add a socket to the group. </p>
+<p>Returning -1 and setting errno is deprecated and will be changed in the 26.01 release. This function will return negative errno values instead.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">group</td><td>Socket group. </td></tr>
@@ -780,6 +877,8 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Close all registered sockets of the group and then remove the group. </p>
+<p>Returning -1 and setting errno is deprecated and will be changed in the 26.01 release. This function will return negative errno values instead.</p>
+<p>If any sockets were added to the group by <a class="el" href="#aa07f7a676410527883e2f8159ea1bfea">spdk_sock_group_add_sock</a> these must be removed first by using <a class="el" href="#ad52142b9c60b305a1eaaf869a321c790">spdk_sock_group_remove_sock</a>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">group</td><td>Group to close.</td></tr>
@@ -888,6 +987,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Poll incoming events up to max_events for each registered socket. </p>
+<p>Returning -1 and setting errno is deprecated and will be changed in the 26.01 release. This function will return negative errno values instead.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">group</td><td>Group to poll. </td></tr>
@@ -930,6 +1030,7 @@ Functions</h2></td></tr>
 
 <p>Provides a buffer to the group to be used in its receive pool. </p>
 <p>See <a class="el" href="#adceecd0c5622abd26a1c760d81c5ba79" title="Receive the next portion of the stream from the socket.">spdk_sock_recv_next()</a> for more details.</p>
+<p>Returning -1 and setting errno is deprecated and will be changed in the 26.01 release. This function will return negative errno values instead.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">group</td><td>Socket group. </td></tr>
@@ -978,6 +1079,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Register an spdk_interrupt with specific event types on the current thread for the given socket group. </p>
+<p>Returning non-zero is deprecated and will be changed in the 26.01 release. This function will return negative errno values instead.</p>
 <p>The provided function will be called any time one of specified event types triggers on the associated file descriptor. Event types argument is a bit mask composed by ORing together enum spdk_interrupt_event_types values.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1074,6 +1176,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Get current socket implementation options. </p>
+<p>Returning -1 and setting errno is deprecated and will be changed in the 26.01 release. This function will return negative errno values instead.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">impl_name</td><td>The socket implementation to use, such as "posix". </td></tr>
@@ -1111,6 +1214,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Set socket implementation options. </p>
+<p>Returning -1 and setting errno is deprecated and will be changed in the 26.01 release. This function will return negative errno values instead.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">impl_name</td><td>The socket implementation to use, such as "posix". </td></tr>
@@ -1165,6 +1269,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Check whether the address of socket is ipv4. </p>
+<p>This function is allowed only when connection is established.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">sock</td><td>Socket to check.</td></tr>
@@ -1191,6 +1296,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Check whether the address of socket is ipv6. </p>
+<p>This function is allowed only when connection is established.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">sock</td><td>Socket to check.</td></tr>
@@ -1231,7 +1337,7 @@ Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">ip</td><td>IP address to listen on. </td></tr>
     <tr><td class="paramname">port</td><td>Port number. </td></tr>
-    <tr><td class="paramname">impl_name</td><td>The sock_implementation to use, such as "posix". If impl_name is specified, it will <em>only</em> try to listen on that impl. If it is NULL, it will try all the sock implementations in order and uses the first sock implementation which can listen.</td></tr>
+    <tr><td class="paramname">impl_name</td><td>The sock implementation to use, such as "posix", or NULL for default.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1274,7 +1380,7 @@ Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">ip</td><td>IP address to listen on. </td></tr>
     <tr><td class="paramname">port</td><td>Port number. </td></tr>
-    <tr><td class="paramname">impl_name</td><td>The sock_implementation to use, such as "posix". If impl_name is specified, it will <em>only</em> try to listen on that impl. If it is NULL, it will try all the sock implementations in order and uses the first sock implementation which can listen. </td></tr>
+    <tr><td class="paramname">impl_name</td><td>The sock implementation to use, such as "posix", or NULL for default. </td></tr>
     <tr><td class="paramname">opts</td><td>The sock option pointer provided by the user, which should not be NULL pointer.</td></tr>
   </table>
   </dd>
@@ -1308,6 +1414,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Read message from the given socket to the I/O vector array. </p>
+<p>Returning -1 and setting errno is deprecated and will be changed in the 26.01 release. This function will return negative errno values instead.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">sock</td><td>Socket to receive message. </td></tr>
@@ -1345,6 +1452,8 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Receive a message from the given socket. </p>
+<p>On failure check errno matching EAGAIN to determine failure is retryable.</p>
+<p>Returning -1 and setting errno is deprecated and will be changed in the 26.01 release. This function will return negative errno values instead.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">sock</td><td>Socket to receive message. </td></tr>
@@ -1353,7 +1462,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>the length of the received message on success, -1 on failure. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>the length of the received message on success, -1 on failure with errno set. </dd></dl>
 
 </div>
 </div>
@@ -1385,6 +1494,8 @@ Functions</h2></td></tr>
 <p>A buffer provided to this socket's group's pool using <a class="el" href="#a41bf8ae4fc3ac1bbc5e2b097a864db79" title="Provides a buffer to the group to be used in its receive pool.">spdk_sock_group_provide_buf()</a> will contain the data and be returned in *buf.</p>
 <p>Note that the amount of data in buf is determined entirely by the sock layer. You cannot request to receive only a limited amount here. You simply get whatever the next portion of the stream is, as determined by the sock module. You can place an upper limit on the size of the buffer since these buffers are originally provided to the group through <a class="el" href="#a41bf8ae4fc3ac1bbc5e2b097a864db79" title="Provides a buffer to the group to be used in its receive pool.">spdk_sock_group_provide_buf()</a>.</p>
 <p>This code path will only work if the recvbuf is disabled. To disable the recvbuf, call spdk_sock_set_recvbuf with a size of 0.</p>
+<p>On failure check errno matching EAGAIN to determine failure is retryable.</p>
+<p>Returning -1 and setting errno is deprecated and will be changed in the 26.01 release. This function will return negative errno values instead.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">sock</td><td>Socket to receive from. </td></tr>
@@ -1444,6 +1555,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Set receive buffer size for the given socket. </p>
+<p>Returning -1 and setting errno is deprecated and will be changed in the 26.01 release. This function will return negative errno values instead.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">sock</td><td>Socket to set buffer size for. </td></tr>
@@ -1451,7 +1563,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>0 on success, -1 on failure. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, -1 on failure with errno set. </dd></dl>
 
 </div>
 </div>
@@ -1475,6 +1587,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Set the value used to specify the low water mark (in bytes) for this socket. </p>
+<p>Returning -1 and setting errno is deprecated and will be changed in the 26.01 release. This function will return negative errno values instead.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">sock</td><td>Socket to set for. </td></tr>
@@ -1482,7 +1595,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>0 on success, -1 on failure. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, -1 on failure with errno set. </dd></dl>
 
 </div>
 </div>
@@ -1506,6 +1619,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Set send buffer size for the given socket. </p>
+<p>Returning -1 and setting errno is deprecated and will be changed in the 26.01 release. This function will return negative errno values instead.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">sock</td><td>Socket to set buffer size for. </td></tr>
@@ -1513,7 +1627,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>0 on success, -1 on failure. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, -1 on failure with errno set. </dd></dl>
 
 </div>
 </div>
@@ -1567,6 +1681,8 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Write message to the given socket from the I/O vector array. </p>
+<p>On failure check errno matching EAGAIN to determine failure is retryable.</p>
+<p>Returning -1 and setting errno is deprecated and will be changed in the 26.01 release. This function will return negative errno values instead.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">sock</td><td>Socket to write to. </td></tr>
@@ -1575,7 +1691,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>the length of written message on success, -1 on failure. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>the length of written message on success, -1 on failure with errno set. </dd></dl>
 
 </div>
 </div>

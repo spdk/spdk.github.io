@@ -144,6 +144,8 @@ $(function(){initNavTree('module_2bdev_2nvme_8h.html',''); initResizable(); });
 Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__nvme__ctrlr__opts.html">spdk_bdev_nvme_ctrlr_opts</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__nvme__opts.html">spdk_bdev_nvme_opts</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -153,6 +155,9 @@ typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_n
 <tr class="memitem:a14af7e0a40178009473ac65e5a3fbb8c" id="r_a14af7e0a40178009473ac65e5a3fbb8c"><td class="memItemLeft" align="right" valign="top"><a id="a14af7e0a40178009473ac65e5a3fbb8c" name="a14af7e0a40178009473ac65e5a3fbb8c"></a>
 typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_nvme_set_multipath_policy_cb</b>) (void *cb_arg, int rc)</td></tr>
 <tr class="separator:a14af7e0a40178009473ac65e5a3fbb8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9ae3ada76cbb8d96d4df087eccb771c" id="r_ac9ae3ada76cbb8d96d4df087eccb771c"><td class="memItemLeft" align="right" valign="top"><a id="ac9ae3ada76cbb8d96d4df087eccb771c" name="ac9ae3ada76cbb8d96d4df087eccb771c"></a>
+typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_nvme_delete_cb</b>) (void *ctx, int rc)</td></tr>
+<tr class="separator:ac9ae3ada76cbb8d96d4df087eccb771c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
@@ -164,24 +169,41 @@ Enumerations</h2></td></tr>
 , <b>BDEV_NVME_MP_SELECTOR_QUEUE_DEPTH</b>
  }</td></tr>
 <tr class="separator:aec64cc89dc6f08865b1241e258b4f8ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec0e8d496f17ca68f66c86a25302f822" id="r_aec0e8d496f17ca68f66c86a25302f822"><td class="memItemLeft" align="right" valign="top"><a id="aec0e8d496f17ca68f66c86a25302f822" name="aec0e8d496f17ca68f66c86a25302f822"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_timeout_action</b> { <b>SPDK_BDEV_NVME_TIMEOUT_ACTION_NONE</b> = 0
+, <b>SPDK_BDEV_NVME_TIMEOUT_ACTION_RESET</b>
+, <b>SPDK_BDEV_NVME_TIMEOUT_ACTION_ABORT</b>
+ }</td></tr>
+<tr class="separator:aec0e8d496f17ca68f66c86a25302f822"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:aba481376da94a398abe5825b884edfc8" id="r_aba481376da94a398abe5825b884edfc8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aba481376da94a398abe5825b884edfc8">spdk_bdev_nvme_create</a> (struct <a class="el" href="structspdk__nvme__transport__id.html">spdk_nvme_transport_id</a> *trid, const char *base_name, const char **names, uint32_t count, spdk_bdev_nvme_create_cb cb_fn, void *cb_ctx, struct <a class="el" href="structspdk__nvme__ctrlr__opts.html">spdk_nvme_ctrlr_opts</a> *drv_opts, struct <a class="el" href="structspdk__bdev__nvme__ctrlr__opts.html">spdk_bdev_nvme_ctrlr_opts</a> *bdev_opts, bool multipath)</td></tr>
-<tr class="memdesc:aba481376da94a398abe5825b884edfc8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Connect to the NVMe controller and populate namespaces as bdevs.  <br /></td></tr>
-<tr class="separator:aba481376da94a398abe5825b884edfc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3194d1afd21089c8fc34653c04f30b0f" id="r_a3194d1afd21089c8fc34653c04f30b0f"><td class="memItemLeft" align="right" valign="top"><a id="a3194d1afd21089c8fc34653c04f30b0f" name="a3194d1afd21089c8fc34653c04f30b0f"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(struct <a class="el" href="structspdk__bdev__nvme__opts.html">spdk_bdev_nvme_opts</a>)==136, &quot;Incorrect size&quot;)</td></tr>
+<tr class="separator:a3194d1afd21089c8fc34653c04f30b0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8785bb4880bfed734f409d4788e61897" id="r_a8785bb4880bfed734f409d4788e61897"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8785bb4880bfed734f409d4788e61897">spdk_bdev_nvme_create</a> (struct <a class="el" href="structspdk__nvme__transport__id.html">spdk_nvme_transport_id</a> *trid, const char *base_name, const char **names, uint32_t count, spdk_bdev_nvme_create_cb cb_fn, void *cb_ctx, struct <a class="el" href="structspdk__nvme__ctrlr__opts.html">spdk_nvme_ctrlr_opts</a> *drv_opts, struct <a class="el" href="structspdk__bdev__nvme__ctrlr__opts.html">spdk_bdev_nvme_ctrlr_opts</a> *bdev_opts)</td></tr>
+<tr class="memdesc:a8785bb4880bfed734f409d4788e61897"><td class="mdescLeft">&#160;</td><td class="mdescRight">Connect to the NVMe controller and populate namespaces as bdevs.  <br /></td></tr>
+<tr class="separator:a8785bb4880bfed734f409d4788e61897"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a495fef50f6e44f60f9789cec93b55982" id="r_a495fef50f6e44f60f9789cec93b55982"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a495fef50f6e44f60f9789cec93b55982">spdk_bdev_nvme_delete</a> (const char *name, const struct spdk_nvme_path_id *path_id, spdk_bdev_nvme_delete_cb delete_cb, void *cb_ctx)</td></tr>
+<tr class="memdesc:a495fef50f6e44f60f9789cec93b55982"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete the specified NVMe controller, or one of its paths.  <br /></td></tr>
+<tr class="separator:a495fef50f6e44f60f9789cec93b55982"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1d06d518232c3c8c24449dda23dd66e5" id="r_a1d06d518232c3c8c24449dda23dd66e5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1d06d518232c3c8c24449dda23dd66e5">spdk_bdev_nvme_set_multipath_policy</a> (const char *name, enum spdk_bdev_nvme_multipath_policy policy, enum spdk_bdev_nvme_multipath_selector selector, uint32_t rr_min_io, spdk_bdev_nvme_set_multipath_policy_cb cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:a1d06d518232c3c8c24449dda23dd66e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set multipath policy of the NVMe bdev.  <br /></td></tr>
 <tr class="separator:a1d06d518232c3c8c24449dda23dd66e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1380985e2270e3d671fb4f458e4a9e2d" id="r_a1380985e2270e3d671fb4f458e4a9e2d"><td class="memItemLeft" align="right" valign="top"><a id="a1380985e2270e3d671fb4f458e4a9e2d" name="a1380985e2270e3d671fb4f458e4a9e2d"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_nvme_get_default_ctrlr_opts</b> (struct <a class="el" href="structspdk__bdev__nvme__ctrlr__opts.html">spdk_bdev_nvme_ctrlr_opts</a> *opts)</td></tr>
 <tr class="separator:a1380985e2270e3d671fb4f458e4a9e2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa94646ad0ab2add9a208c4d1cb12cc78" id="r_aa94646ad0ab2add9a208c4d1cb12cc78"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa94646ad0ab2add9a208c4d1cb12cc78">spdk_bdev_nvme_get_opts</a> (struct <a class="el" href="structspdk__bdev__nvme__opts.html">spdk_bdev_nvme_opts</a> *opts, size_t opts_size)</td></tr>
+<tr class="memdesc:aa94646ad0ab2add9a208c4d1cb12cc78"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the default value for bdev nvme options.  <br /></td></tr>
+<tr class="separator:aa94646ad0ab2add9a208c4d1cb12cc78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa505c687a146bb84fe77178052dc9e0" id="r_afa505c687a146bb84fe77178052dc9e0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afa505c687a146bb84fe77178052dc9e0">spdk_bdev_nvme_set_opts</a> (const struct <a class="el" href="structspdk__bdev__nvme__opts.html">spdk_bdev_nvme_opts</a> *opts)</td></tr>
+<tr class="memdesc:afa505c687a146bb84fe77178052dc9e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the bdev nvme options.  <br /></td></tr>
+<tr class="separator:afa505c687a146bb84fe77178052dc9e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Nvme block device abstraction layer. </p>
 </div><h2 class="groupheader">Function Documentation</h2>
-<a id="aba481376da94a398abe5825b884edfc8" name="aba481376da94a398abe5825b884edfc8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aba481376da94a398abe5825b884edfc8">&#9670;&#160;</a></span>spdk_bdev_nvme_create()</h2>
+<a id="a8785bb4880bfed734f409d4788e61897" name="a8785bb4880bfed734f409d4788e61897"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8785bb4880bfed734f409d4788e61897">&#9670;&#160;</a></span>spdk_bdev_nvme_create()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -224,12 +246,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_nvme_get_de
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">struct <a class="el" href="structspdk__bdev__nvme__ctrlr__opts.html">spdk_bdev_nvme_ctrlr_opts</a> *</td>          <td class="paramname"><span class="paramname"><em>bdev_opts</em>, </span></td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>multipath</em></span>&#160;)</td>
+          <td class="paramtype">struct <a class="el" href="structspdk__bdev__nvme__ctrlr__opts.html">spdk_bdev_nvme_ctrlr_opts</a> *</td>          <td class="paramname"><span class="paramname"><em>bdev_opts</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -245,11 +262,84 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_nvme_get_de
     <tr><td class="paramname">cb_ctx</td><td>Context to pass to cb_fn. </td></tr>
     <tr><td class="paramname">drv_opts</td><td>NVMe driver options. </td></tr>
     <tr><td class="paramname">bdev_opts</td><td>NVMe bdev options. </td></tr>
-    <tr><td class="paramname">multipath</td><td>Whether to enable multipathing (if true) else failover mode. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 on success, negative errno on failure. </dd></dl>
+
+</div>
+</div>
+<a id="a495fef50f6e44f60f9789cec93b55982" name="a495fef50f6e44f60f9789cec93b55982"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a495fef50f6e44f60f9789cec93b55982">&#9670;&#160;</a></span>spdk_bdev_nvme_delete()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_bdev_nvme_delete </td>
+          <td>(</td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>name</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const struct spdk_nvme_path_id *</td>          <td class="paramname"><span class="paramname"><em>path_id</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">spdk_bdev_nvme_delete_cb</td>          <td class="paramname"><span class="paramname"><em>delete_cb</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *</td>          <td class="paramname"><span class="paramname"><em>cb_ctx</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Delete the specified NVMe controller, or one of its paths. </p>
+<p>NOTE: When path_id is specified and it is the only path_id associated with NVMe controller the path is removed and the NVMe controller gets deleted. (Optional) callback function gets executed on delete complete in caller's thread. When the (optional) callback is not provided, the control is returned back at the time delete is initiated, not when it is completed. When NVMe controller deletion is already in progress state, this function returns success.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>NVMe controller name. </td></tr>
+    <tr><td class="paramname">path_id</td><td>The specified path to remove (optional). </td></tr>
+    <tr><td class="paramname">delete_cb</td><td>Callback function on delete complete (optional). </td></tr>
+    <tr><td class="paramname">cb_ctx</td><td>Context passed to callback (optional). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>zero on success, -EINVAL on wrong parameters or -ENODEV if controller is not found or -ENOMEM on no memory </dd></dl>
+
+</div>
+</div>
+<a id="aa94646ad0ab2add9a208c4d1cb12cc78" name="aa94646ad0ab2add9a208c4d1cb12cc78"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa94646ad0ab2add9a208c4d1cb12cc78">&#9670;&#160;</a></span>spdk_bdev_nvme_get_opts()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_bdev_nvme_get_opts </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structspdk__bdev__nvme__opts.html">spdk_bdev_nvme_opts</a> *</td>          <td class="paramname"><span class="paramname"><em>opts</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>opts_size</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the default value for bdev nvme options. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">opts</td><td>Bdev nvme options object to be filled with default values. </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">opts_size</td><td>Must be set to sizeof(struct spdk_bdev_nvme_opts). </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -304,6 +394,32 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_nvme_get_de
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="afa505c687a146bb84fe77178052dc9e0" name="afa505c687a146bb84fe77178052dc9e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa505c687a146bb84fe77178052dc9e0">&#9670;&#160;</a></span>spdk_bdev_nvme_set_opts()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_bdev_nvme_set_opts </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="structspdk__bdev__nvme__opts.html">spdk_bdev_nvme_opts</a> *</td>          <td class="paramname"><span class="paramname"><em>opts</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the bdev nvme options. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">opts</td><td>New value of bdev nvme options to be set. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, negative errno on failure. </dd></dl>
 
 </div>
 </div>

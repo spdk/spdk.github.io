@@ -143,6 +143,9 @@ $(function(){initNavTree('reduce_8h.html',''); initResizable(); });
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Data Structures</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__reduce__vol__info.html">spdk_reduce_vol_info</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Describes the information of spdk_reduce_vol.  <a href="structspdk__reduce__vol__info.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__reduce__vol__params.html">spdk_reduce_vol_params</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Describes the parameters of an spdk_reduce_vol.  <a href="structspdk__reduce__vol__params.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -202,6 +205,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ac5b98c059d57b5fe1acf0062aa3d3e33" id="r_ac5b98c059d57b5fe1acf0062aa3d3e33"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac5b98c059d57b5fe1acf0062aa3d3e33">spdk_reduce_vol_writev</a> (struct spdk_reduce_vol *vol, struct iovec *iov, int iovcnt, uint64_t offset, uint64_t length, spdk_reduce_vol_op_complete cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:ac5b98c059d57b5fe1acf0062aa3d3e33"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write data to a libreduce compressed volume.  <br /></td></tr>
 <tr class="separator:ac5b98c059d57b5fe1acf0062aa3d3e33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e881398c464c24b004b21827471d7b0" id="r_a1e881398c464c24b004b21827471d7b0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1e881398c464c24b004b21827471d7b0">spdk_reduce_vol_unmap</a> (struct spdk_reduce_vol *vol, uint64_t offset, uint64_t length, spdk_reduce_vol_op_complete cb_fn, void *cb_arg)</td></tr>
+<tr class="memdesc:a1e881398c464c24b004b21827471d7b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unmap extent to a libreduce compressed volume.  <br /></td></tr>
+<tr class="separator:a1e881398c464c24b004b21827471d7b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a072ca3aef96d536802671dde087e80fa" id="r_a072ca3aef96d536802671dde087e80fa"><td class="memItemLeft" align="right" valign="top">const struct <a class="el" href="structspdk__reduce__vol__params.html">spdk_reduce_vol_params</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a072ca3aef96d536802671dde087e80fa">spdk_reduce_vol_get_params</a> (struct spdk_reduce_vol *vol)</td></tr>
 <tr class="memdesc:a072ca3aef96d536802671dde087e80fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the params structure for a libreduce compressed volume.  <br /></td></tr>
 <tr class="separator:a072ca3aef96d536802671dde087e80fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -211,6 +217,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a29b47c899b3ebf51501d65c7bf30f4e0" id="r_a29b47c899b3ebf51501d65c7bf30f4e0"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a29b47c899b3ebf51501d65c7bf30f4e0">spdk_reduce_vol_get_pm_path</a> (const struct spdk_reduce_vol *vol)</td></tr>
 <tr class="memdesc:a29b47c899b3ebf51501d65c7bf30f4e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the pm path for a libreduce compressed volume.  <br /></td></tr>
 <tr class="separator:a29b47c899b3ebf51501d65c7bf30f4e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72762fccd5b8ee30c90c576d89dcc51b" id="r_a72762fccd5b8ee30c90c576d89dcc51b"><td class="memItemLeft" align="right" valign="top">const struct <a class="el" href="structspdk__reduce__vol__info.html">spdk_reduce_vol_info</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a72762fccd5b8ee30c90c576d89dcc51b">spdk_reduce_vol_get_info</a> (const struct spdk_reduce_vol *vol)</td></tr>
+<tr class="memdesc:a72762fccd5b8ee30c90c576d89dcc51b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the information for a libreduce compressed volume.  <br /></td></tr>
+<tr class="separator:a72762fccd5b8ee30c90c576d89dcc51b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>SPDK block compression. </p>
@@ -273,6 +282,32 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a72762fccd5b8ee30c90c576d89dcc51b" name="a72762fccd5b8ee30c90c576d89dcc51b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a72762fccd5b8ee30c90c576d89dcc51b">&#9670;&#160;</a></span>spdk_reduce_vol_get_info()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const struct <a class="el" href="structspdk__reduce__vol__info.html">spdk_reduce_vol_info</a> * spdk_reduce_vol_get_info </td>
+          <td>(</td>
+          <td class="paramtype">const struct spdk_reduce_vol *</td>          <td class="paramname"><span class="paramname"><em>vol</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the information for a libreduce compressed volume. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vol</td><td>Previously loaded or initialized compressed volume. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="structspdk__reduce__vol__info.html" title="Describes the information of spdk_reduce_vol.">spdk_reduce_vol_info</a> structure for the compressed volume. </dd></dl>
 
 </div>
 </div>
@@ -555,6 +590,55 @@ Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">vol</td><td>Volume to unload. </td></tr>
     <tr><td class="paramname">cb_fn</td><td>Callback function to signal completion of the unload process. </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>Argument to pass to the callback function. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a1e881398c464c24b004b21827471d7b0" name="a1e881398c464c24b004b21827471d7b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e881398c464c24b004b21827471d7b0">&#9670;&#160;</a></span>spdk_reduce_vol_unmap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_reduce_vol_unmap </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_reduce_vol *</td>          <td class="paramname"><span class="paramname"><em>vol</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t</td>          <td class="paramname"><span class="paramname"><em>offset</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t</td>          <td class="paramname"><span class="paramname"><em>length</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">spdk_reduce_vol_op_complete</td>          <td class="paramname"><span class="paramname"><em>cb_fn</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *</td>          <td class="paramname"><span class="paramname"><em>cb_arg</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Unmap extent to a libreduce compressed volume. </p>
+<p>This function will clear the mapping info by full chunk or write zero to nonfull chunk.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vol</td><td>Volume to unmap. </td></tr>
+    <tr><td class="paramname">offset</td><td>Offset (in logical blocks) of the extent to unmap on the compressed volume </td></tr>
+    <tr><td class="paramname">length</td><td>Length (in logical blocks) of the extent to unmap on the compressed volume </td></tr>
+    <tr><td class="paramname">cb_fn</td><td>Callback function to signal completion of the unmap operation. </td></tr>
     <tr><td class="paramname">cb_arg</td><td>Argument to pass to the callback function. </td></tr>
   </table>
   </dd>

@@ -191,6 +191,9 @@ Macros</h2></td></tr>
 <tr class="memitem:ac1fbd59e0e9f73e71f416385d606cc52" id="r_ac1fbd59e0e9f73e71f416385d606cc52"><td class="memItemLeft" align="right" valign="top"><a id="ac1fbd59e0e9f73e71f416385d606cc52" name="ac1fbd59e0e9f73e71f416385d606cc52"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_SEC_TO_NSEC</b>&#160;&#160;&#160;1000000000ULL</td></tr>
 <tr class="separator:ac1fbd59e0e9f73e71f416385d606cc52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a563dbf631f68603d957619304e0ceac4" id="r_a563dbf631f68603d957619304e0ceac4"><td class="memItemLeft" align="right" valign="top"><a id="a563dbf631f68603d957619304e0ceac4" name="a563dbf631f68603d957619304e0ceac4"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_MSEC_TO_USEC</b>&#160;&#160;&#160;1000ULL</td></tr>
+<tr class="separator:a563dbf631f68603d957619304e0ceac4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a58821926bcb68504a97ffa1545029398" id="r_a58821926bcb68504a97ffa1545029398"><td class="memItemLeft" align="right" valign="top"><a id="a58821926bcb68504a97ffa1545029398" name="a58821926bcb68504a97ffa1545029398"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_CEIL_DIV</b>(x,  y)&#160;&#160;&#160;(((x)+(y)-1)/(y))</td></tr>
 <tr class="separator:a58821926bcb68504a97ffa1545029398"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -233,6 +236,12 @@ Functions</h2></td></tr>
 <tr class="memitem:a5212715fed856a30641ba319bad995a7" id="r_a5212715fed856a30641ba319bad995a7"><td class="memItemLeft" align="right" valign="top"><a id="a5212715fed856a30641ba319bad995a7" name="a5212715fed856a30641ba319bad995a7"></a>
 uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_u32log2</b> (uint32_t x)</td></tr>
 <tr class="separator:a5212715fed856a30641ba319bad995a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81f234059f1e2fa2d11dc3d372be8c27" id="r_a81f234059f1e2fa2d11dc3d372be8c27"><td class="memItemLeft" align="right" valign="top">static uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a81f234059f1e2fa2d11dc3d372be8c27">spdk_rand_xorshift64</a> (uint64_t *state)</td></tr>
+<tr class="memdesc:a81f234059f1e2fa2d11dc3d372be8c27"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a 64-bit pseudo-random number using xorshift algorithm.  <br /></td></tr>
+<tr class="separator:a81f234059f1e2fa2d11dc3d372be8c27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab62e1f375a34a65d0f2a66c7e71d548d" id="r_ab62e1f375a34a65d0f2a66c7e71d548d"><td class="memItemLeft" align="right" valign="top">static uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab62e1f375a34a65d0f2a66c7e71d548d">spdk_rand_xorshift64_seed</a> (void)</td></tr>
+<tr class="memdesc:ab62e1f375a34a65d0f2a66c7e71d548d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a non-zero initial seed for xorshift64.  <br /></td></tr>
+<tr class="separator:ab62e1f375a34a65d0f2a66c7e71d548d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a22383e04171a98834c5f21f0c460e322" id="r_a22383e04171a98834c5f21f0c460e322"><td class="memItemLeft" align="right" valign="top"><a id="a22383e04171a98834c5f21f0c460e322" name="a22383e04171a98834c5f21f0c460e322"></a>
 static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_align32pow2</b> (uint32_t x)</td></tr>
 <tr class="separator:a22383e04171a98834c5f21f0c460e322"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -253,6 +262,9 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_u64_is_po
 <tr class="memitem:a3a1ed8f80bbc8e22d1f778a6615512e7" id="r_a3a1ed8f80bbc8e22d1f778a6615512e7"><td class="memItemLeft" align="right" valign="top"><a id="a3a1ed8f80bbc8e22d1f778a6615512e7" name="a3a1ed8f80bbc8e22d1f778a6615512e7"></a>
 static uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_divide_round_up</b> (uint64_t num, uint64_t divisor)</td></tr>
 <tr class="separator:a3a1ed8f80bbc8e22d1f778a6615512e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82c3cdd14add82c18ea916e504675f2e" id="r_a82c3cdd14add82c18ea916e504675f2e"><td class="memItemLeft" align="right" valign="top"><a id="a82c3cdd14add82c18ea916e504675f2e" name="a82c3cdd14add82c18ea916e504675f2e"></a>
+static uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_round_up</b> (uint64_t num, uint64_t divisor)</td></tr>
+<tr class="separator:a82c3cdd14add82c18ea916e504675f2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac49e02ee794f8dc5048934504023d6d5" id="r_ac49e02ee794f8dc5048934504023d6d5"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac49e02ee794f8dc5048934504023d6d5">spdk_ioviter_first</a> (struct <a class="el" href="structspdk__ioviter.html">spdk_ioviter</a> *iter, struct iovec *siov, size_t siovcnt, struct iovec *diov, size_t diovcnt, void **src, void **dst)</td></tr>
 <tr class="memdesc:ac49e02ee794f8dc5048934504023d6d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize and move to the first common segment of the two given iovecs.  <br /></td></tr>
 <tr class="separator:ac49e02ee794f8dc5048934504023d6d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -809,6 +821,68 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_copy_buf_to_iovs
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a81f234059f1e2fa2d11dc3d372be8c27" name="a81f234059f1e2fa2d11dc3d372be8c27"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a81f234059f1e2fa2d11dc3d372be8c27">&#9670;&#160;</a></span>spdk_rand_xorshift64()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static uint64_t spdk_rand_xorshift64 </td>
+          <td>(</td>
+          <td class="paramtype">uint64_t *</td>          <td class="paramname"><span class="paramname"><em>state</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Generate a 64-bit pseudo-random number using xorshift algorithm. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">state</td><td>the current seed value. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a new pseudo-random 64-bit number. </dd></dl>
+
+</div>
+</div>
+<a id="ab62e1f375a34a65d0f2a66c7e71d548d" name="ab62e1f375a34a65d0f2a66c7e71d548d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab62e1f375a34a65d0f2a66c7e71d548d">&#9670;&#160;</a></span>spdk_rand_xorshift64_seed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static uint64_t spdk_rand_xorshift64_seed </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Generate a non-zero initial seed for xorshift64. </p>
+<dl class="section return"><dt>Returns</dt><dd>a random 64-bit seed value(non-zero). </dd></dl>
 
 </div>
 </div>

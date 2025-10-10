@@ -12,10 +12,11 @@ var searchData=
   ['key2_5fsize_9',['key2_size',['../structspdk__accel__crypto__key.html#affba315845451014fd15be510fba4ce9',1,'spdk_accel_crypto_key']]],
   ['key_5fname_10',['key_name',['../structspdk__accel__crypto__key__create__param.html#a250d2edeb39219a9e092b38b1141e2c0',1,'spdk_accel_crypto_key_create_param']]],
   ['key_5fsize_11',['key_size',['../structspdk__accel__crypto__key.html#acc60f9372db9f122c9639b41717b61da',1,'spdk_accel_crypto_key']]],
-  ['keyring_5ffile_5fadd_5fkey_12',['keyring_file_add_key',['../jsonrpc.html#rpc_keyring_file_add_key',1,'']]],
-  ['keyring_5ffile_5fremove_5fkey_13',['keyring_file_remove_key',['../jsonrpc.html#rpc_keyring_file_remove_key',1,'']]],
-  ['keyring_5fget_5fkeys_14',['keyring_get_keys',['../jsonrpc.html#rpc_keyring_get_keys',1,'']]],
-  ['keyring_5flinux_5fset_5foptions_15',['keyring_linux_set_options',['../jsonrpc.html#keyring_linux_set_options',1,'']]],
-  ['kit_16',['Storage Performance Development Kit',['../index.html',1,'']]],
-  ['known_20bugs_20and_20limitations_17',['Known bugs and limitations',['../vhost.html#vhost_bugs',1,'']]]
+  ['keyring_12',['Keyring',['../jsonrpc.html#jsonrpc_components_keyring',1,'']]],
+  ['keyring_5ffile_5fadd_5fkey_13',['keyring_file_add_key',['../jsonrpc.html#rpc_keyring_file_add_key',1,'']]],
+  ['keyring_5ffile_5fremove_5fkey_14',['keyring_file_remove_key',['../jsonrpc.html#rpc_keyring_file_remove_key',1,'']]],
+  ['keyring_5fget_5fkeys_15',['keyring_get_keys',['../jsonrpc.html#rpc_keyring_get_keys',1,'']]],
+  ['keyring_5flinux_5fset_5foptions_16',['keyring_linux_set_options',['../jsonrpc.html#rpc_keyring_linux_set_options',1,'']]],
+  ['kit_17',['Storage Performance Development Kit',['../index.html',1,'']]],
+  ['known_20bugs_20and_20limitations_18',['Known bugs and limitations',['../vhost.html#vhost_bugs',1,'']]]
 ];

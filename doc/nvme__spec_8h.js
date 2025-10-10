@@ -83,6 +83,8 @@ var nvme__spec_8h =
     [ "spdk_nvme_reservation_register_data", "structspdk__nvme__reservation__register__data.html", "structspdk__nvme__reservation__register__data" ],
     [ "spdk_nvme_reservation_key_data", "structspdk__nvme__reservation__key__data.html", "structspdk__nvme__reservation__key__data" ],
     [ "spdk_nvme_reservation_notification_log", "structspdk__nvme__reservation__notification__log.html", "structspdk__nvme__reservation__notification__log" ],
+    [ "spdk_nvme_supported_log_pages", "structspdk__nvme__supported__log__pages.html", null ],
+    [ "spdk_nvme_feature_ids_effects_log_page", "structspdk__nvme__feature__ids__effects__log__page.html", null ],
     [ "spdk_nvme_error_information_entry", "structspdk__nvme__error__information__entry.html", null ],
     [ "spdk_nvme_health_information_page", "structspdk__nvme__health__information__page.html", null ],
     [ "spdk_nvme_cmds_and_effect_entry", "structspdk__nvme__cmds__and__effect__entry.html", "structspdk__nvme__cmds__and__effect__entry" ],
@@ -160,7 +162,8 @@ var nvme__spec_8h =
       [ "SPDK_NVME_OPC_SECURITY_SEND", "nvme__spec_8h.html#a3d96f5eb214b3cb58675276f19855bf5ae323d3f4c46aefce391780b3c2bc4b99", null ],
       [ "SPDK_NVME_OPC_SECURITY_RECEIVE", "nvme__spec_8h.html#a3d96f5eb214b3cb58675276f19855bf5af8537d7238e24c821a7f513742a9b6e1", null ],
       [ "SPDK_NVME_OPC_SANITIZE", "nvme__spec_8h.html#a3d96f5eb214b3cb58675276f19855bf5aa96d7caa91b75a376de46f5f363819ea", null ],
-      [ "SPDK_NVME_OPC_GET_LBA_STATUS", "nvme__spec_8h.html#a3d96f5eb214b3cb58675276f19855bf5a93ebd2386957cd522c9edff8a01d8b75", null ]
+      [ "SPDK_NVME_OPC_GET_LBA_STATUS", "nvme__spec_8h.html#a3d96f5eb214b3cb58675276f19855bf5a93ebd2386957cd522c9edff8a01d8b75", null ],
+      [ "SPDK_NVME_OPC_VENDOR_SPECIFIC_START", "nvme__spec_8h.html#a3d96f5eb214b3cb58675276f19855bf5a662fd7716bb8179cc860461b1f144ca2", null ]
     ] ],
     [ "spdk_nvme_async_event_info_error", "nvme__spec_8h.html#a87a370c671a1dcad0106afc888af8d04", [
       [ "SPDK_NVME_ASYNC_EVENT_WRITE_INVALID_DB", "nvme__spec_8h.html#a87a370c671a1dcad0106afc888af8d04ae6f0b9779ac53824d2a1089641d415a3", null ],
@@ -419,6 +422,7 @@ var nvme__spec_8h =
       [ "SPDK_NVME_IDENTIFY_CTRLR_LIST", "nvme__spec_8h.html#a1491a0118eccaa91ff5cb9fb5d02c2c6aeb2ab6a252ff942ca407e965a43069d8", null ],
       [ "SPDK_NVME_IDENTIFY_PRIMARY_CTRLR_CAP", "nvme__spec_8h.html#a1491a0118eccaa91ff5cb9fb5d02c2c6a529c0f24ec3362cef551610db7d9642a", null ],
       [ "SPDK_NVME_IDENTIFY_SECONDARY_CTRLR_LIST", "nvme__spec_8h.html#a1491a0118eccaa91ff5cb9fb5d02c2c6acf0506a0b05a13ae3cd613dc3caf365b", null ],
+      [ "SPDK_NVME_IDENTIFY_UUID_LIST", "nvme__spec_8h.html#a1491a0118eccaa91ff5cb9fb5d02c2c6a52515952f724e66def5a52e82870d263", null ],
       [ "SPDK_NVME_IDENTIFY_ALLOCATED_NS_LIST_IOCS", "nvme__spec_8h.html#a1491a0118eccaa91ff5cb9fb5d02c2c6a7ae6f5b09916be6e6700fbb390158f3f", null ],
       [ "SPDK_NVME_IDENTIFY_NS_ALLOCATED_IOCS", "nvme__spec_8h.html#a1491a0118eccaa91ff5cb9fb5d02c2c6a66d04e1f160339dce30882e93d028509", null ],
       [ "SPDK_NVME_IDENTIFY_IOCS", "nvme__spec_8h.html#a1491a0118eccaa91ff5cb9fb5d02c2c6a582e9130c3c901df918090c27c485615", null ]

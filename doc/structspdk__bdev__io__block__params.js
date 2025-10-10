@@ -3,6 +3,8 @@ var structspdk__bdev__io__block__params =
     [ "bio_cb_arg", "structspdk__bdev__io__block__params.html#a92919a1ff17da3ca0e5aaba86e109868", null ],
     [ "commit", "structspdk__bdev__io__block__params.html#ac691a6d7965239ac713f1a34ac90f009", null ],
     [ "dif_check_flags", "structspdk__bdev__io__block__params.html#a4a34ba61dbe4a948c1712ccc30fbfa2e", null ],
+    [ "dif_ctx", "structspdk__bdev__io__block__params.html#a6ee14e58f401e9ca3d60c6fb20ef0ae8", null ],
+    [ "dif_err", "structspdk__bdev__io__block__params.html#acbd72ee6d2da7625768720bb12693644", null ],
     [ "fused_iovcnt", "structspdk__bdev__io__block__params.html#a38cd6a3b353a5ab27cfbf285e0c55d2d", null ],
     [ "fused_iovs", "structspdk__bdev__io__block__params.html#ae5eab2663e402715d601dd8ac684a0e9", null ],
     [ "iovcnt", "structspdk__bdev__io__block__params.html#abeaa8011bae8dcdc7f1fd59582daf384", null ],

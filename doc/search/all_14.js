@@ -9,7 +9,8 @@ var searchData=
   ['qos_5fmod_5fin_5fprogress_6',['qos_mod_in_progress',['../structspdk__bdev_1_1____bdev__internal__fields.html#add102c5c15292b5d497ed7442a0b30b4',1,'spdk_bdev::__bdev_internal_fields']]],
   ['qpair_20groups_7',['v20.04: SPDK Top, IDXD, NVMe qpair groups',['../changelog.html#changelog-v20-04',1,'']]],
   ['qprio_8',['qprio',['../structspdk__nvme__io__qpair__opts.html#a9a9ae75991da44a7fbf06a3c82161a6d',1,'spdk_nvme_io_qpair_opts']]],
-  ['queue_9',['queue',['../structspdk__iobuf__pool.html#ae67f45d6d72f5edf074a9579678e52f8',1,'spdk_iobuf_pool']]],
+  ['queue_9',['queue',['../structspdk__iobuf__pool__cache.html#a29a5be92ed35c00b8dba5fdfe5ee4061',1,'spdk_iobuf_pool_cache']]],
   ['queue_20block_20layer_20blk_20mq_10',['Multi-Queue Block Layer (blk-mq)',['../vhost.html#vhost_multiqueue',1,'']]],
-  ['quiesce_5fdevice_11',['quiesce_device',['../structspdk__vfu__endpoint__ops.html#affb0058441fbe6b1782cf71400006c6c',1,'spdk_vfu_endpoint_ops']]]
+  ['queued_5fresets_11',['queued_resets',['../structspdk__bdev_1_1____bdev__internal__fields.html#aabd96e247f41de6bde643bfcb381daa7',1,'spdk_bdev::__bdev_internal_fields']]],
+  ['quiesce_5fdevice_12',['quiesce_device',['../structspdk__vfu__endpoint__ops.html#affb0058441fbe6b1782cf71400006c6c',1,'spdk_vfu_endpoint_ops']]]
 ];

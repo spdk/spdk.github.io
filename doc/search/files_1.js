@@ -8,7 +8,5 @@ var searchData=
   ['bit_5farray_2eh_5',['bit_array.h',['../bit__array_8h.html',1,'']]],
   ['bit_5fpool_2eh_6',['bit_pool.h',['../bit__pool_8h.html',1,'']]],
   ['blob_2eh_7',['blob.h',['../blob_8h.html',1,'']]],
-  ['blob_5fbdev_2eh_8',['blob_bdev.h',['../blob__bdev_8h.html',1,'']]],
-  ['blobfs_2eh_9',['blobfs.h',['../blobfs_8h.html',1,'']]],
-  ['blobfs_5fbdev_2eh_10',['blobfs_bdev.h',['../blobfs__bdev_8h.html',1,'']]]
+  ['blob_5fbdev_2eh_8',['blob_bdev.h',['../blob__bdev_8h.html',1,'']]]
 ];

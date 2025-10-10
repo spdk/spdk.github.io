@@ -204,6 +204,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ad8a6bf85dceb1cee5bd6f91cf1d8e5ba" id="r_ad8a6bf85dceb1cee5bd6f91cf1d8e5ba"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad8a6bf85dceb1cee5bd6f91cf1d8e5ba">spdk_idxd_submit_dif_strip</a> (struct spdk_idxd_io_channel *chan, struct iovec *diov, size_t diovcnt, struct iovec *siov, size_t siovcnt, uint32_t num_blocks, const struct <a class="el" href="structspdk__dif__ctx.html">spdk_dif_ctx</a> *ctx, int flags, <a class="el" href="#a75c066c5425700c49f077e20484b50c1">spdk_idxd_req_cb</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:ad8a6bf85dceb1cee5bd6f91cf1d8e5ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Build and submit a DIF strip request.  <br /></td></tr>
 <tr class="separator:ad8a6bf85dceb1cee5bd6f91cf1d8e5ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d0c0ec396abab3134c0cf50d5d1b524" id="r_a2d0c0ec396abab3134c0cf50d5d1b524"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2d0c0ec396abab3134c0cf50d5d1b524">spdk_idxd_submit_dix_generate</a> (struct spdk_idxd_io_channel *chan, struct iovec *siov, size_t siovcnt, struct iovec *mdiov, uint32_t num_blocks, const struct <a class="el" href="structspdk__dif__ctx.html">spdk_dif_ctx</a> *ctx, int flags, <a class="el" href="#a75c066c5425700c49f077e20484b50c1">spdk_idxd_req_cb</a> cb_fn, void *cb_arg)</td></tr>
+<tr class="memdesc:a2d0c0ec396abab3134c0cf50d5d1b524"><td class="mdescLeft">&#160;</td><td class="mdescRight">Build and submit DIX Generate request.  <br /></td></tr>
+<tr class="separator:a2d0c0ec396abab3134c0cf50d5d1b524"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9d3c2666201ade973ac2fe89a6346139" id="r_a9d3c2666201ade973ac2fe89a6346139"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9d3c2666201ade973ac2fe89a6346139">spdk_idxd_submit_raw_desc</a> (struct spdk_idxd_io_channel *chan, struct <a class="el" href="structidxd__hw__desc.html">idxd_hw_desc</a> *desc, <a class="el" href="#a75c066c5425700c49f077e20484b50c1">spdk_idxd_req_cb</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:a9d3c2666201ade973ac2fe89a6346139"><td class="mdescLeft">&#160;</td><td class="mdescRight">Build and submit an IDXD raw request.  <br /></td></tr>
 <tr class="separator:a9d3c2666201ade973ac2fe89a6346139"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1131,6 +1134,80 @@ Functions</h2></td></tr>
     <tr><td class="paramname">flags</td><td>Flags, optional flags that can vary per operation. </td></tr>
     <tr><td class="paramname">cb_fn</td><td>Callback function which will be called when the request is complete. </td></tr>
     <tr><td class="paramname">cb_arg</td><td>Opaque value which will be passed back as the cb_arg parameter in the completion callback.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, negative errno on failure. </dd></dl>
+
+</div>
+</div>
+<a id="a2d0c0ec396abab3134c0cf50d5d1b524" name="a2d0c0ec396abab3134c0cf50d5d1b524"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d0c0ec396abab3134c0cf50d5d1b524">&#9670;&#160;</a></span>spdk_idxd_submit_dix_generate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_idxd_submit_dix_generate </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_idxd_io_channel *</td>          <td class="paramname"><span class="paramname"><em>chan</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct iovec *</td>          <td class="paramname"><span class="paramname"><em>siov</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>siovcnt</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct iovec *</td>          <td class="paramname"><span class="paramname"><em>mdiov</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>num_blocks</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const struct <a class="el" href="structspdk__dif__ctx.html">spdk_dif_ctx</a> *</td>          <td class="paramname"><span class="paramname"><em>ctx</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>flags</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="#a75c066c5425700c49f077e20484b50c1">spdk_idxd_req_cb</a></td>          <td class="paramname"><span class="paramname"><em>cb_fn</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *</td>          <td class="paramname"><span class="paramname"><em>cb_arg</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Build and submit DIX Generate request. </p>
+<p>This function will build DIX Generate descriptor and then immediately submit by writing to the proper device portal.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">chan</td><td>IDXD channel to submit the request. </td></tr>
+    <tr><td class="paramname">siov</td><td>Source iovecs. </td></tr>
+    <tr><td class="paramname">siovcnt</td><td>Number of elements in siov. </td></tr>
+    <tr><td class="paramname">mdiov</td><td>Metadata iovec for generated protection information. </td></tr>
+    <tr><td class="paramname">num_blocks</td><td>Number of data blocks to process. </td></tr>
+    <tr><td class="paramname">ctx</td><td>DIX context. Contains the DIX configuration values, including the reference Application Tag and initial value of the Reference Tag to insert. </td></tr>
+    <tr><td class="paramname">flags</td><td>Flags, optional flags that can vary per operation. </td></tr>
+    <tr><td class="paramname">cb_fn</td><td>Callback function which will be called upon request completion. </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>Opaque value which will be passed as a parameter to the cb_fn.</td></tr>
   </table>
   </dd>
 </dl>

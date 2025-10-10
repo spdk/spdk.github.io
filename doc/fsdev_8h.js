@@ -1,7 +1,7 @@
 var fsdev_8h =
 [
     [ "spdk_fsdev_opts", "structspdk__fsdev__opts.html", "structspdk__fsdev__opts" ],
-    [ "spdk_fsdev_open_opts", "structspdk__fsdev__open__opts.html", "structspdk__fsdev__open__opts" ],
+    [ "spdk_fsdev_mount_opts", "structspdk__fsdev__mount__opts.html", "structspdk__fsdev__mount__opts" ],
     [ "spdk_fsdev_io_opts", "structspdk__fsdev__io__opts.html", "structspdk__fsdev__io__opts" ],
     [ "spdk_fsdev_file_attr", "structspdk__fsdev__file__attr.html", null ],
     [ "spdk_fsdev_file_statfs", "structspdk__fsdev__file__statfs.html", null ],
@@ -25,6 +25,7 @@ var fsdev_8h =
     [ "spdk_fsdev_lookup_cpl_cb", "fsdev_8h.html#afbba08fcf598beb5d98340ba28b617c2", null ],
     [ "spdk_fsdev_mkdir_cpl_cb", "fsdev_8h.html#ac6a07bfc8d04a00846b7496bb1dbeeaa", null ],
     [ "spdk_fsdev_mknod_cpl_cb", "fsdev_8h.html#adc350530e00392a380a912d1199c088d", null ],
+    [ "spdk_fsdev_mount_cpl_cb", "fsdev_8h.html#a6ff4c46295508cf6bfc650552e5fd45f", null ],
     [ "spdk_fsdev_opendir_cpl_cb", "fsdev_8h.html#ab71c1a2d51d70ba1034ec232658fa635", null ],
     [ "spdk_fsdev_read_cpl_cb", "fsdev_8h.html#afe88dee7a3cd449bb8aca4396eed032c", null ],
     [ "spdk_fsdev_readdir_cpl_cb", "fsdev_8h.html#aef775cb309379a2065e4e317841bd1a7", null ],
@@ -39,6 +40,7 @@ var fsdev_8h =
     [ "spdk_fsdev_setxattr_cpl_cb", "fsdev_8h.html#a6435227d65f41b7e5b91594d9bba4fb0", null ],
     [ "spdk_fsdev_statfs_cpl_cb", "fsdev_8h.html#a2ecb3929bb231f19ce2b2d839677cd16", null ],
     [ "spdk_fsdev_symlink_cpl_cb", "fsdev_8h.html#aebf65b6f5edbe0f4ecc9e67f4f83d55e", null ],
+    [ "spdk_fsdev_umount_cpl_cb", "fsdev_8h.html#a1dd822a2e8b210aee3ccc7869c5b7b94", null ],
     [ "spdk_fsdev_unlink_cpl_cb", "fsdev_8h.html#a437ddf6056312ce3d8db8c2772b77595", null ],
     [ "spdk_fsdev_write_cpl_cb", "fsdev_8h.html#ac8f367b7c67799b1d2ddd7a2342006bb", null ],
     [ "spdk_fsdev_event_type", "fsdev_8h.html#aaa2135c0f733ac3657a8d593f0668574", [
@@ -76,7 +78,8 @@ var fsdev_8h =
     [ "spdk_fsdev_lookup", "fsdev_8h.html#ac2f54649c163ca6ea4f70a4ef870fdce", null ],
     [ "spdk_fsdev_mkdir", "fsdev_8h.html#abcae8afd51d4274fb113dd21e0e41d7c", null ],
     [ "spdk_fsdev_mknod", "fsdev_8h.html#abc09b676f62ff9388cf00b9516f43479", null ],
-    [ "spdk_fsdev_open", "fsdev_8h.html#a70b937aa4d9f9cd617fa715b68f10f63", null ],
+    [ "spdk_fsdev_mount", "fsdev_8h.html#a62c82e4f540fce14ac804ba7a7f9183d", null ],
+    [ "spdk_fsdev_open", "fsdev_8h.html#a91d6b80b4d9fd9d65263a74735c878aa", null ],
     [ "spdk_fsdev_opendir", "fsdev_8h.html#a9da97eca8509134bc35673ec720d8704", null ],
     [ "spdk_fsdev_read", "fsdev_8h.html#a26b90c2bb0862efbcf6105b220414bc4", null ],
     [ "spdk_fsdev_readdir", "fsdev_8h.html#a82dbcbb61f2f5c7c172363bea7a07726", null ],
@@ -92,6 +95,7 @@ var fsdev_8h =
     [ "spdk_fsdev_statfs", "fsdev_8h.html#a59dd0d6871a5a114bbb9383fb537a5a4", null ],
     [ "spdk_fsdev_subsystem_config_json", "fsdev_8h.html#a3f51fbafc195f38628dcef020b6dfe3b", null ],
     [ "spdk_fsdev_symlink", "fsdev_8h.html#a3920d9f40ce3ab669b3a51fede001a28", null ],
+    [ "spdk_fsdev_umount", "fsdev_8h.html#ad6c58ae16732cce840761f7f07eb2c19", null ],
     [ "spdk_fsdev_unlink", "fsdev_8h.html#a870e94773227fd79e069b3011b61a0af", null ],
     [ "spdk_fsdev_write", "fsdev_8h.html#a0da55f1fb613157da8341d94f806dca7", null ]
 ];

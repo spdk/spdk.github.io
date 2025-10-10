@@ -141,12 +141,7 @@ $(function(){initNavTree('structspdk__app__opts.html',''); initResizable(); });
 <div class="dynheader">
 Collaboration diagram for spdk_app_opts:</div>
 <div class="dyncontent">
-<div class="center"><img src="structspdk__app__opts__coll__graph.png" border="0" usemap="#aspdk__app__opts_coll__map" alt="Collaboration graph"/></div>
-<map name="aspdk__app__opts_coll__map" id="aspdk__app__opts_coll__map">
-<area shape="rect" title="Event framework initialization options." alt="" coords="5,115,124,143"/>
-<area shape="rect" href="structspdk__pci__addr.html" title=" " alt="" coords="7,5,122,33"/>
-<area shape="poly" title=" " alt="" coords="67,48,67,115,62,115,62,48"/>
-</map>
+<div class="center"><iframe scrolling="no" frameborder="0" src="structspdk__app__opts__coll__graph.svg" width="151" height="148"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
@@ -245,10 +240,10 @@ uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>num_entries</b></
 void *&#160;</td><td class="memItemRight" valign="bottom"><b>env_context</b></td></tr>
 <tr class="memdesc:a7e520897d6a9e39c3e62cc4259bd2ea3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Opaque context for use of the env implementation. <br /></td></tr>
 <tr class="separator:a7e520897d6a9e39c3e62cc4259bd2ea3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4de9f5097a5cdc69c3b45b64db56eea0" id="r_a4de9f5097a5cdc69c3b45b64db56eea0"><td class="memItemLeft" align="right" valign="top"><a id="a4de9f5097a5cdc69c3b45b64db56eea0" name="a4de9f5097a5cdc69c3b45b64db56eea0"></a>
-<a class="el" href="log_8h.html#a759e79a44bb8dd5733e81c7d213fd730">logfunc</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>log</b></td></tr>
-<tr class="memdesc:a4de9f5097a5cdc69c3b45b64db56eea0"><td class="mdescLeft">&#160;</td><td class="mdescRight">for passing user-provided log call <br /></td></tr>
-<tr class="separator:a4de9f5097a5cdc69c3b45b64db56eea0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b0f85cf7dda3cc9048965c54bd09102" id="r_a6b0f85cf7dda3cc9048965c54bd09102"><td class="memItemLeft" align="right" valign="top"><a id="a6b0f85cf7dda3cc9048965c54bd09102" name="a6b0f85cf7dda3cc9048965c54bd09102"></a>
+<a class="el" href="log_8h.html#ae9946dc6bcd854cdb6ea5ae7c77ff704">spdk_log_cb</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>log</b></td></tr>
+<tr class="memdesc:a6b0f85cf7dda3cc9048965c54bd09102"><td class="mdescLeft">&#160;</td><td class="mdescRight">for passing user-provided log call <br /></td></tr>
+<tr class="separator:a6b0f85cf7dda3cc9048965c54bd09102"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a74c03a91caa15961c35374bf2465a279" id="r_a74c03a91caa15961c35374bf2465a279"><td class="memItemLeft" align="right" valign="top"><a id="a74c03a91caa15961c35374bf2465a279" name="a74c03a91caa15961c35374bf2465a279"></a>
 uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>base_virtaddr</b></td></tr>
 <tr class="separator:a74c03a91caa15961c35374bf2465a279"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -261,9 +256,12 @@ uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>base_virtaddr</b>
 <tr class="memitem:a891ac585c9045176496ef28d435ea18d" id="r_a891ac585c9045176496ef28d435ea18d"><td class="memItemLeft" align="right" valign="top"><a id="a891ac585c9045176496ef28d435ea18d" name="a891ac585c9045176496ef28d435ea18d"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>interrupt_mode</b></td></tr>
 <tr class="separator:a891ac585c9045176496ef28d435ea18d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:add81fbe0985d19b880f4590ad1ff35b4" id="r_add81fbe0985d19b880f4590ad1ff35b4"><td class="memItemLeft" align="right" valign="top"><a id="add81fbe0985d19b880f4590ad1ff35b4" name="add81fbe0985d19b880f4590ad1ff35b4"></a>
-uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>reserved186</b> [6]</td></tr>
-<tr class="separator:add81fbe0985d19b880f4590ad1ff35b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac6bc3442878c3909e4b2f2871e9fe4c" id="r_aac6bc3442878c3909e4b2f2871e9fe4c"><td class="memItemLeft" align="right" valign="top"><a id="aac6bc3442878c3909e4b2f2871e9fe4c" name="aac6bc3442878c3909e4b2f2871e9fe4c"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>enforce_numa</b></td></tr>
+<tr class="separator:aac6bc3442878c3909e4b2f2871e9fe4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75b72d050822bc6b46996d224199b5ea" id="r_a75b72d050822bc6b46996d224199b5ea"><td class="memItemLeft" align="right" valign="top"><a id="a75b72d050822bc6b46996d224199b5ea" name="a75b72d050822bc6b46996d224199b5ea"></a>
+uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>reserved187</b> [5]</td></tr>
+<tr class="separator:a75b72d050822bc6b46996d224199b5ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a35bc2b8bc80d206be6565e7690f5ddbe" id="r_a35bc2b8bc80d206be6565e7690f5ddbe"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a35bc2b8bc80d206be6565e7690f5ddbe">msg_mempool_size</a></td></tr>
 <tr class="memdesc:a35bc2b8bc80d206be6565e7690f5ddbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">The allocated size for the message pool used by the threading library.  <br /></td></tr>
 <tr class="separator:a35bc2b8bc80d206be6565e7690f5ddbe"><td class="memSeparator" colspan="2">&#160;</td></tr>

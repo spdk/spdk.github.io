@@ -195,6 +195,8 @@ Macros</h2></td></tr>
 <tr class="separator:aba1856012938db5f1c0beba921ee5a7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a42d08df976f75c1e47ce174ebc446f95" id="r_a42d08df976f75c1e47ce174ebc446f95"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a42d08df976f75c1e47ce174ebc446f95">SPDK_ENV_FOREACH_CORE</a>(i)</td></tr>
 <tr class="separator:a42d08df976f75c1e47ce174ebc446f95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e60140f0a816e01a42259f157bbd8f4" id="r_a9e60140f0a816e01a42259f157bbd8f4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9e60140f0a816e01a42259f157bbd8f4">SPDK_ENV_FOREACH_NUMA_ID</a>(i)</td></tr>
+<tr class="separator:a9e60140f0a816e01a42259f157bbd8f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a26eb4a0e044f1a5e9515b8c2f96078a4" id="r_a26eb4a0e044f1a5e9515b8c2f96078a4"><td class="memItemLeft" align="right" valign="top"><a id="a26eb4a0e044f1a5e9515b8c2f96078a4" name="a26eb4a0e044f1a5e9515b8c2f96078a4"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_VTOPHYS_ERROR</b>&#160;&#160;&#160;(0xFFFFFFFFFFFFFFFFULL)</td></tr>
 <tr class="separator:a26eb4a0e044f1a5e9515b8c2f96078a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -255,9 +257,9 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a6569627ec2e9d21e57800814adb97791" id="r_a6569627ec2e9d21e57800814adb97791"><td class="memItemLeft" align="right" valign="top"><a id="a6569627ec2e9d21e57800814adb97791" name="a6569627ec2e9d21e57800814adb97791"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(struct <a class="el" href="structspdk__env__opts.html">spdk_env_opts</a>)==120, &quot;Incorrect size&quot;)</td></tr>
-<tr class="separator:a6569627ec2e9d21e57800814adb97791"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3df173ea95776857c94c800404f70d9c" id="r_a3df173ea95776857c94c800404f70d9c"><td class="memItemLeft" align="right" valign="top"><a id="a3df173ea95776857c94c800404f70d9c" name="a3df173ea95776857c94c800404f70d9c"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(struct <a class="el" href="structspdk__env__opts.html">spdk_env_opts</a>)==128, &quot;Incorrect size&quot;)</td></tr>
+<tr class="separator:a3df173ea95776857c94c800404f70d9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1c8b92b52bf42f362c23e7a02056d67e" id="r_a1c8b92b52bf42f362c23e7a02056d67e"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1c8b92b52bf42f362c23e7a02056d67e">spdk_malloc</a> (size_t size, size_t align, uint64_t *unused, int numa_id, uint32_t flags)</td></tr>
 <tr class="memdesc:a1c8b92b52bf42f362c23e7a02056d67e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate dma/sharable memory based on a given dma_flg.  <br /></td></tr>
 <tr class="separator:a1c8b92b52bf42f362c23e7a02056d67e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -370,9 +372,15 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_mempool_free</b>
 <tr class="memitem:ae81b644ac17c85fb7980d45adfa11a07" id="r_ae81b644ac17c85fb7980d45adfa11a07"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae81b644ac17c85fb7980d45adfa11a07">spdk_env_get_numa_id</a> (uint32_t core)</td></tr>
 <tr class="memdesc:ae81b644ac17c85fb7980d45adfa11a07"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the NUMA node ID for the given core.  <br /></td></tr>
 <tr class="separator:ae81b644ac17c85fb7980d45adfa11a07"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab18052aa1bc0ff634ffc0ce11c577d65" id="r_ab18052aa1bc0ff634ffc0ce11c577d65"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab18052aa1bc0ff634ffc0ce11c577d65">spdk_env_get_socket_id</a> (uint32_t core)</td></tr>
-<tr class="memdesc:ab18052aa1bc0ff634ffc0ce11c577d65"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the NUMA node ID for the given core.  <br /></td></tr>
-<tr class="separator:ab18052aa1bc0ff634ffc0ce11c577d65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c723dd9e8bc0ee5441028b3c73b549e" id="r_a2c723dd9e8bc0ee5441028b3c73b549e"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2c723dd9e8bc0ee5441028b3c73b549e">spdk_env_get_first_numa_id</a> (void)</td></tr>
+<tr class="memdesc:a2c723dd9e8bc0ee5441028b3c73b549e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the ID of the first NUMA node on this system.  <br /></td></tr>
+<tr class="separator:a2c723dd9e8bc0ee5441028b3c73b549e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb7e999294fe77667c2be43ea93e9460" id="r_adb7e999294fe77667c2be43ea93e9460"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adb7e999294fe77667c2be43ea93e9460">spdk_env_get_last_numa_id</a> (void)</td></tr>
+<tr class="memdesc:adb7e999294fe77667c2be43ea93e9460"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the ID of the last NUMA node on this system.  <br /></td></tr>
+<tr class="separator:adb7e999294fe77667c2be43ea93e9460"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5e6dd00cc25d82c4ed33c4a3084b8a6" id="r_ab5e6dd00cc25d82c4ed33c4a3084b8a6"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab5e6dd00cc25d82c4ed33c4a3084b8a6">spdk_env_get_next_numa_id</a> (int32_t prev_numa_id)</td></tr>
+<tr class="memdesc:ab5e6dd00cc25d82c4ed33c4a3084b8a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the index of the next NUMA node on this system.  <br /></td></tr>
+<tr class="separator:ab5e6dd00cc25d82c4ed33c4a3084b8a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8a54ecf72f47decc6e8abc0bafcb578f" id="r_a8a54ecf72f47decc6e8abc0bafcb578f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8a54ecf72f47decc6e8abc0bafcb578f">spdk_env_get_cpuset</a> (struct <a class="el" href="structspdk__cpuset.html">spdk_cpuset</a> *cpuset)</td></tr>
 <tr class="memdesc:a8a54ecf72f47decc6e8abc0bafcb578f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a cpuset with each dedicated core's bit set to true.  <br /></td></tr>
 <tr class="separator:a8a54ecf72f47decc6e8abc0bafcb578f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -465,6 +473,15 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_pci_driver_regis
 <tr class="memitem:a6b50d57653132fb21a10a4ff120125c7" id="r_a6b50d57653132fb21a10a4ff120125c7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6b50d57653132fb21a10a4ff120125c7">spdk_pci_device_get_interrupt_efd</a> (struct <a class="el" href="structspdk__pci__device.html">spdk_pci_device</a> *dev)</td></tr>
 <tr class="memdesc:a6b50d57653132fb21a10a4ff120125c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get an event file descriptor associated with a PCI device interrupt.  <br /></td></tr>
 <tr class="separator:a6b50d57653132fb21a10a4ff120125c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e9bb07d56576ea0939d5cdead0dc894" id="r_a6e9bb07d56576ea0939d5cdead0dc894"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6e9bb07d56576ea0939d5cdead0dc894">spdk_pci_device_enable_interrupts</a> (struct <a class="el" href="structspdk__pci__device.html">spdk_pci_device</a> *dev, uint32_t efd_count)</td></tr>
+<tr class="memdesc:a6e9bb07d56576ea0939d5cdead0dc894"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable PCI device interrupts, only if VFIO MSI-X is supported.  <br /></td></tr>
+<tr class="separator:a6e9bb07d56576ea0939d5cdead0dc894"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa271ceb4c83ff52d3c38d443de8d9ebd" id="r_aa271ceb4c83ff52d3c38d443de8d9ebd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa271ceb4c83ff52d3c38d443de8d9ebd">spdk_pci_device_disable_interrupts</a> (struct <a class="el" href="structspdk__pci__device.html">spdk_pci_device</a> *dev)</td></tr>
+<tr class="memdesc:aa271ceb4c83ff52d3c38d443de8d9ebd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disable PCI device interrupts.  <br /></td></tr>
+<tr class="separator:aa271ceb4c83ff52d3c38d443de8d9ebd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65f7a63f96d0f7cc1b1bf4be92887da3" id="r_a65f7a63f96d0f7cc1b1bf4be92887da3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a65f7a63f96d0f7cc1b1bf4be92887da3">spdk_pci_device_get_interrupt_efd_by_index</a> (struct <a class="el" href="structspdk__pci__device.html">spdk_pci_device</a> *dev, uint32_t index)</td></tr>
+<tr class="memdesc:a65f7a63f96d0f7cc1b1bf4be92887da3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get an event file descriptor associated with a PCI device, for a particular MSI-X index.  <br /></td></tr>
+<tr class="separator:a65f7a63f96d0f7cc1b1bf4be92887da3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a10b6650e48ccffaea6ca59fe0b875da5" id="r_a10b6650e48ccffaea6ca59fe0b875da5"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a10b6650e48ccffaea6ca59fe0b875da5">spdk_pci_device_get_domain</a> (struct <a class="el" href="structspdk__pci__device.html">spdk_pci_device</a> *dev)</td></tr>
 <tr class="memdesc:a10b6650e48ccffaea6ca59fe0b875da5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the domain of a PCI device.  <br /></td></tr>
 <tr class="separator:a10b6650e48ccffaea6ca59fe0b875da5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -498,9 +515,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_pci_driver_regis
 <tr class="memitem:aeccb5bae4943357ac4c41facc0701b0e" id="r_aeccb5bae4943357ac4c41facc0701b0e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeccb5bae4943357ac4c41facc0701b0e">spdk_pci_device_get_numa_id</a> (struct <a class="el" href="structspdk__pci__device.html">spdk_pci_device</a> *dev)</td></tr>
 <tr class="memdesc:aeccb5bae4943357ac4c41facc0701b0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the NUMA node the PCI device is on.  <br /></td></tr>
 <tr class="separator:aeccb5bae4943357ac4c41facc0701b0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a235f1c632be6dc00aad1cf8fd0314609" id="r_a235f1c632be6dc00aad1cf8fd0314609"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a235f1c632be6dc00aad1cf8fd0314609">spdk_pci_device_get_socket_id</a> (struct <a class="el" href="structspdk__pci__device.html">spdk_pci_device</a> *dev)</td></tr>
-<tr class="memdesc:a235f1c632be6dc00aad1cf8fd0314609"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the NUMA node the PCI device is on.  <br /></td></tr>
-<tr class="separator:a235f1c632be6dc00aad1cf8fd0314609"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a69b979316610b357a35d03500c3059af" id="r_a69b979316610b357a35d03500c3059af"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a69b979316610b357a35d03500c3059af">spdk_pci_device_get_serial_number</a> (struct <a class="el" href="structspdk__pci__device.html">spdk_pci_device</a> *dev, char *sn, size_t len)</td></tr>
 <tr class="memdesc:a69b979316610b357a35d03500c3059af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serialize the PCIe Device Serial Number into the provided buffer.  <br /></td></tr>
 <tr class="separator:a69b979316610b357a35d03500c3059af"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -598,6 +612,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_unaffinitize_thr
 <tr class="memitem:a981ce6d12bb1d9eeb828c6c7bd2ab585" id="r_a981ce6d12bb1d9eeb828c6c7bd2ab585"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a981ce6d12bb1d9eeb828c6c7bd2ab585">spdk_mem_reserve</a> (void *vaddr, size_t len)</td></tr>
 <tr class="memdesc:a981ce6d12bb1d9eeb828c6c7bd2ab585"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reserve the address space specified in all memory maps.  <br /></td></tr>
 <tr class="separator:a981ce6d12bb1d9eeb828c6c7bd2ab585"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74f6410f63774eacec50e95473807d96" id="r_a74f6410f63774eacec50e95473807d96"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a74f6410f63774eacec50e95473807d96">spdk_mem_get_numa_id</a> (const void *buf, uint64_t *size)</td></tr>
+<tr class="memdesc:a74f6410f63774eacec50e95473807d96"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the NUMA node ID for the specified memory buffer.  <br /></td></tr>
+<tr class="separator:a74f6410f63774eacec50e95473807d96"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab44e2bc97e1b87f737d664c047f6c3f2" id="r_ab44e2bc97e1b87f737d664c047f6c3f2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab44e2bc97e1b87f737d664c047f6c3f2">spdk_mem_get_fd_and_offset</a> (void *vaddr, uint64_t *offset)</td></tr>
 <tr class="memdesc:ab44e2bc97e1b87f737d664c047f6c3f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the address's file descriptor and offset, it works with spdk memory allocation APIs.  <br /></td></tr>
 <tr class="separator:ab44e2bc97e1b87f737d664c047f6c3f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -640,6 +657,28 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_get_tid</b> (void
 <div class="line">             i = <a class="code hl_function" href="#ab480f817ecdd801a0e53a4d8494ffc67">spdk_env_get_next_core</a>(i))</div>
 <div class="ttc" id="aenv_8h_html_a2127ecc88ceb8e4b1242c316634de50e"><div class="ttname"><a href="#a2127ecc88ceb8e4b1242c316634de50e">spdk_env_get_first_core</a></div><div class="ttdeci">uint32_t spdk_env_get_first_core(void)</div><div class="ttdoc">Get the index of the first dedicated CPU core for this application.</div></div>
 <div class="ttc" id="aenv_8h_html_ab480f817ecdd801a0e53a4d8494ffc67"><div class="ttname"><a href="#ab480f817ecdd801a0e53a4d8494ffc67">spdk_env_get_next_core</a></div><div class="ttdeci">uint32_t spdk_env_get_next_core(uint32_t prev_core)</div><div class="ttdoc">Get the index of the next dedicated CPU core for this application.</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a9e60140f0a816e01a42259f157bbd8f4" name="a9e60140f0a816e01a42259f157bbd8f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e60140f0a816e01a42259f157bbd8f4">&#9670;&#160;</a></span>SPDK_ENV_FOREACH_NUMA_ID</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SPDK_ENV_FOREACH_NUMA_ID</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname">i</span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">        <span class="keywordflow">for</span> (i = <a class="code hl_function" href="#a2c723dd9e8bc0ee5441028b3c73b549e">spdk_env_get_first_numa_id</a>();          \</div>
+<div class="line">             i &lt; INT32_MAX;                             \</div>
+<div class="line">             i = <a class="code hl_function" href="#ab5e6dd00cc25d82c4ed33c4a3084b8a6">spdk_env_get_next_numa_id</a>(i))</div>
+<div class="ttc" id="aenv_8h_html_a2c723dd9e8bc0ee5441028b3c73b549e"><div class="ttname"><a href="#a2c723dd9e8bc0ee5441028b3c73b549e">spdk_env_get_first_numa_id</a></div><div class="ttdeci">int32_t spdk_env_get_first_numa_id(void)</div><div class="ttdoc">Get the ID of the first NUMA node on this system.</div></div>
+<div class="ttc" id="aenv_8h_html_ab5e6dd00cc25d82c4ed33c4a3084b8a6"><div class="ttname"><a href="#ab5e6dd00cc25d82c4ed33c4a3084b8a6">spdk_env_get_next_numa_id</a></div><div class="ttdeci">int32_t spdk_env_get_next_numa_id(int32_t prev_numa_id)</div><div class="ttdoc">Get the index of the next NUMA node on this system.</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1232,6 +1271,26 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_get_tid</b> (void
 
 </div>
 </div>
+<a id="a2c723dd9e8bc0ee5441028b3c73b549e" name="a2c723dd9e8bc0ee5441028b3c73b549e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c723dd9e8bc0ee5441028b3c73b549e">&#9670;&#160;</a></span>spdk_env_get_first_numa_id()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t spdk_env_get_first_numa_id </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the ID of the first NUMA node on this system. </p>
+<dl class="section return"><dt>Returns</dt><dd>the ID of the first NUMA node </dd></dl>
+
+</div>
+</div>
 <a id="ad66fc19d0c23cb21ff456581f0385a2b" name="ad66fc19d0c23cb21ff456581f0385a2b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad66fc19d0c23cb21ff456581f0385a2b">&#9670;&#160;</a></span>spdk_env_get_last_core()</h2>
 
@@ -1249,6 +1308,26 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_get_tid</b> (void
 
 <p>Get the index of the last dedicated CPU core for this application. </p>
 <dl class="section return"><dt>Returns</dt><dd>the index of the last dedicated CPU core. </dd></dl>
+
+</div>
+</div>
+<a id="adb7e999294fe77667c2be43ea93e9460" name="adb7e999294fe77667c2be43ea93e9460"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb7e999294fe77667c2be43ea93e9460">&#9670;&#160;</a></span>spdk_env_get_last_numa_id()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t spdk_env_get_last_numa_id </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the ID of the last NUMA node on this system. </p>
+<dl class="section return"><dt>Returns</dt><dd>the ID of the last NUMA node </dd></dl>
 
 </div>
 </div>
@@ -1299,6 +1378,33 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_get_tid</b> (void
 
 </div>
 </div>
+<a id="ab5e6dd00cc25d82c4ed33c4a3084b8a6" name="ab5e6dd00cc25d82c4ed33c4a3084b8a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5e6dd00cc25d82c4ed33c4a3084b8a6">&#9670;&#160;</a></span>spdk_env_get_next_numa_id()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t spdk_env_get_next_numa_id </td>
+          <td>(</td>
+          <td class="paramtype">int32_t</td>          <td class="paramname"><span class="paramname"><em>prev_numa_id</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the index of the next NUMA node on this system. </p>
+<p>If there is no next NUMA ID, or the passed prev_numa_id is not a valid NUMA ID, return INT32_MAX.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">prev_numa_id</td><td>Index of previous NUMA ID.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the index of the next NUMA ID, or INT32_MAX if there is no next one </dd></dl>
+
+</div>
+</div>
 <a id="ae81b644ac17c85fb7980d45adfa11a07" name="ae81b644ac17c85fb7980d45adfa11a07"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae81b644ac17c85fb7980d45adfa11a07">&#9670;&#160;</a></span>spdk_env_get_numa_id()</h2>
 
@@ -1315,33 +1421,6 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_get_tid</b> (void
 </div><div class="memdoc">
 
 <p>Get the NUMA node ID for the given core. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">core</td><td>CPU core to query.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>the NUMA node ID for the given core. </dd></dl>
-
-</div>
-</div>
-<a id="ab18052aa1bc0ff634ffc0ce11c577d65" name="ab18052aa1bc0ff634ffc0ce11c577d65"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab18052aa1bc0ff634ffc0ce11c577d65">&#9670;&#160;</a></span>spdk_env_get_socket_id()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint32_t spdk_env_get_socket_id </td>
-          <td>(</td>
-          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>core</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Get the NUMA node ID for the given core. </p>
-<p>Deprecated, use <a class="el" href="#ae81b644ac17c85fb7980d45adfa11a07">spdk_env_get_numa_id()</a> instead.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">core</td><td>CPU core to query.</td></tr>
@@ -1605,6 +1684,38 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_get_tid</b> (void
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>negative errno on failure, otherwise return the file descriptor </dd></dl>
+
+</div>
+</div>
+<a id="a74f6410f63774eacec50e95473807d96" name="a74f6410f63774eacec50e95473807d96"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a74f6410f63774eacec50e95473807d96">&#9670;&#160;</a></span>spdk_mem_get_numa_id()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t spdk_mem_get_numa_id </td>
+          <td>(</td>
+          <td class="paramtype">const void *</td>          <td class="paramname"><span class="paramname"><em>buf</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t *</td>          <td class="paramname"><span class="paramname"><em>size</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the NUMA node ID for the specified memory buffer. </p>
+<p>Note: this only works for memory allocated via the environment layer.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">buf</td><td>A pointer to a buffer. </td></tr>
+    <tr><td class="paramname">size</td><td>Contains the size of the memory region pointed to by vaddr. If vaddr is successfully translated, then this is updated with the size of the memory region for which the translation is valid.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>NUMA ID of the buffer if known, SPDK_ENV_NUMA_ID_ANY otherwise </dd></dl>
 
 </div>
 </div>
@@ -3005,6 +3116,33 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_get_tid</b> (void
 
 </div>
 </div>
+<a id="aa271ceb4c83ff52d3c38d443de8d9ebd" name="aa271ceb4c83ff52d3c38d443de8d9ebd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa271ceb4c83ff52d3c38d443de8d9ebd">&#9670;&#160;</a></span>spdk_pci_device_disable_interrupts()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_pci_device_disable_interrupts </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structspdk__pci__device.html">spdk_pci_device</a> *</td>          <td class="paramname"><span class="paramname"><em>dev</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Disable PCI device interrupts. </p>
+<p>This disables the MSI-X interrupts for all the created event file descriptors and frees them.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dev</td><td>PCI device.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, negative value on error. </dd></dl>
+
+</div>
+</div>
 <a id="a3ca80b3a77dfc8b35e65dc281737019d" name="a3ca80b3a77dfc8b35e65dc281737019d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3ca80b3a77dfc8b35e65dc281737019d">&#9670;&#160;</a></span>spdk_pci_device_enable_interrupt()</h2>
 
@@ -3025,6 +3163,38 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_get_tid</b> (void
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">dev</td><td>PCI device.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, negative value on error. </dd></dl>
+
+</div>
+</div>
+<a id="a6e9bb07d56576ea0939d5cdead0dc894" name="a6e9bb07d56576ea0939d5cdead0dc894"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e9bb07d56576ea0939d5cdead0dc894">&#9670;&#160;</a></span>spdk_pci_device_enable_interrupts()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_pci_device_enable_interrupts </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structspdk__pci__device.html">spdk_pci_device</a> *</td>          <td class="paramname"><span class="paramname"><em>dev</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>efd_count</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Enable PCI device interrupts, only if VFIO MSI-X is supported. </p>
+<p>This creates a bunch of event file descriptors, for which VFIO IRQ are set, which then can be used to enable interrupts.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dev</td><td>PCI device. </td></tr>
+    <tr><td class="paramname">efd_count</td><td>Number of event fds to create.</td></tr>
   </table>
   </dd>
 </dl>
@@ -3241,6 +3411,37 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_get_tid</b> (void
 
 </div>
 </div>
+<a id="a65f7a63f96d0f7cc1b1bf4be92887da3" name="a65f7a63f96d0f7cc1b1bf4be92887da3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a65f7a63f96d0f7cc1b1bf4be92887da3">&#9670;&#160;</a></span>spdk_pci_device_get_interrupt_efd_by_index()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_pci_device_get_interrupt_efd_by_index </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structspdk__pci__device.html">spdk_pci_device</a> *</td>          <td class="paramname"><span class="paramname"><em>dev</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>index</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get an event file descriptor associated with a PCI device, for a particular MSI-X index. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dev</td><td>PCI device. </td></tr>
+    <tr><td class="paramname">index</td><td>event file descriptor index.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Event file descriptor on success, negative value on error. </dd></dl>
+
+</div>
+</div>
 <a id="aeccb5bae4943357ac4c41facc0701b0e" name="aeccb5bae4943357ac4c41facc0701b0e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aeccb5bae4943357ac4c41facc0701b0e">&#9670;&#160;</a></span>spdk_pci_device_get_numa_id()</h2>
 
@@ -3302,33 +3503,6 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_get_tid</b> (void
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 on success, -1 on failure. </dd></dl>
-
-</div>
-</div>
-<a id="a235f1c632be6dc00aad1cf8fd0314609" name="a235f1c632be6dc00aad1cf8fd0314609"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a235f1c632be6dc00aad1cf8fd0314609">&#9670;&#160;</a></span>spdk_pci_device_get_socket_id()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int spdk_pci_device_get_socket_id </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structspdk__pci__device.html">spdk_pci_device</a> *</td>          <td class="paramname"><span class="paramname"><em>dev</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Get the NUMA node the PCI device is on. </p>
-<p>Deprecated. Use <code>ref <a class="el" href="#aeccb5bae4943357ac4c41facc0701b0e" title="Get the NUMA node the PCI device is on.">spdk_pci_device_get_numa_id()</a></code> instead.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">dev</td><td>PCI device.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>NUMA node index (&gt;= 0). </dd></dl>
 
 </div>
 </div>
@@ -4110,7 +4284,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_get_tid</b> (void
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>the number of objects dequeued which is less than 'count'. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>the number of objects dequeued, which is less than or equal to count. </dd></dl>
 
 </div>
 </div>
