@@ -37,8 +37,8 @@ Cambridge, CB2 1GE, United Kingdom
 
 #### Dates:
 
-06/11/2025, 8:00 am - 5:00 pm<br/>
-07/11/2025, 8:00 am - 5:00 pm
+06/11/2025, 8:30 am - 5:00 pm<br/>
+07/11/2025, 8:30 am - 5:00 pm
 
 <img src="../../../../../img/blog/spdk_devmeetup_2025.jpg" alt="Cambridge" width="100%">
 
