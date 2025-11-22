@@ -1,5 +1,8 @@
 var NAVTREEINDEX5 =
 {
+"jsonrpc.html#rpc_bdev_nvme_detach_controller":[3,8,5,33],
+"jsonrpc.html#rpc_bdev_nvme_disable_controller":[3,8,5,36],
+"jsonrpc.html#rpc_bdev_nvme_enable_controller":[3,8,5,35],
 "jsonrpc.html#rpc_bdev_nvme_get_controller_health_info":[3,8,5,51],
 "jsonrpc.html#rpc_bdev_nvme_get_controllers":[3,8,5,32],
 "jsonrpc.html#rpc_bdev_nvme_get_discovery_info":[3,8,5,39],
@@ -68,9 +71,10 @@ var NAVTREEINDEX5 =
 "jsonrpc.html#rpc_bdev_zone_block_create":[3,8,5,47],
 "jsonrpc.html#rpc_bdev_zone_block_delete":[3,8,5,48],
 "jsonrpc.html#rpc_compressdev_scan_accel_module":[3,8,4,10],
-"jsonrpc.html#rpc_dpdk_cryptodev_get_driver":[3,8,4,16],
-"jsonrpc.html#rpc_dpdk_cryptodev_scan_accel_module":[3,8,4,14],
-"jsonrpc.html#rpc_dpdk_cryptodev_set_driver":[3,8,4,15],
+"jsonrpc.html#rpc_cuda_scan_accel_module":[3,8,4,14],
+"jsonrpc.html#rpc_dpdk_cryptodev_get_driver":[3,8,4,17],
+"jsonrpc.html#rpc_dpdk_cryptodev_scan_accel_module":[3,8,4,15],
+"jsonrpc.html#rpc_dpdk_cryptodev_set_driver":[3,8,4,16],
 "jsonrpc.html#rpc_dsa_scan_accel_module":[3,8,4,11],
 "jsonrpc.html#rpc_env_dpdk_get_mem_stats":[3,8,3,32],
 "jsonrpc.html#rpc_framework_disable_cpumask_locks":[3,8,3,13],
@@ -136,7 +140,7 @@ var NAVTREEINDEX5 =
 "jsonrpc.html#rpc_log_set_flag":[3,8,3,26],
 "jsonrpc.html#rpc_log_set_level":[3,8,3,24],
 "jsonrpc.html#rpc_log_set_print_level":[3,8,3,22],
-"jsonrpc.html#rpc_mlx5_scan_accel_module":[3,8,4,17],
+"jsonrpc.html#rpc_mlx5_scan_accel_module":[3,8,4,18],
 "jsonrpc.html#rpc_nbd_get_disks":[3,8,18,2],
 "jsonrpc.html#rpc_nbd_start_disk":[3,8,18,0],
 "jsonrpc.html#rpc_nbd_stop_disk":[3,8,18,1],
@@ -245,9 +249,5 @@ var NAVTREEINDEX5 =
 "jsonrpc_8h.html#af3d607f5a980bf9eb793ef2b553f679a":[15,0,0,0,35,16],
 "jsonrpc_proxy.html":[3,9],
 "libraries.html":[3,1],
-"libraries.html#conventions":[3,1,1],
-"libraries.html#env_replacement":[3,1,2,2],
-"libraries.html#headers":[3,1,1,0],
-"libraries.html#lib":[3,1,0,0],
-"libraries.html#map":[3,1,1,2]
+"libraries.html#conventions":[3,1,1]
 };

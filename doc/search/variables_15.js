@@ -13,5 +13,6 @@ var searchData=
   ['user_5fctx_5fsize_10',['user_ctx_size',['../structspdk__memory__domain__ctx.html#a882860ba10185f189fabcbacb41bef4d',1,'spdk_memory_domain_ctx']]],
   ['usr_5fcb_5farg_11',['usr_cb_arg',['../structspdk__fsdev__io_1_1____fsdev__io__internal__fields.html#a5fe84ca0302aaaa422904772b9b9e74d',1,'spdk_fsdev_io::__fsdev_io_internal_fields']]],
   ['usr_5fcb_5ffn_12',['usr_cb_fn',['../structspdk__fsdev__io_1_1____fsdev__io__internal__fields.html#aefa32b2d3534c79c5fb22b6b27e3decb',1,'spdk_fsdev_io::__fsdev_io_internal_fields']]],
-  ['uuid_13',['uuid',['../structspdk__bdev.html#a5cc1248944325a12c4cadaa3856f573a',1,'spdk_bdev::uuid'],['../structspdk__bdev__part__construct__opts.html#a59e74d0099eebc55205f73676478d44d',1,'spdk_bdev_part_construct_opts::uuid'],['../structspdk__nvmf__ns__opts.html#a4da1aada54acc633986ed373fa4a7638',1,'spdk_nvmf_ns_opts::uuid']]]
+  ['uss_13',['uss',['../structspdk__nvme__cmds__and__effect__entry.html#ab345499e17ec155e0c38ebbca812a138',1,'spdk_nvme_cmds_and_effect_entry']]],
+  ['uuid_14',['uuid',['../structspdk__bdev.html#a5cc1248944325a12c4cadaa3856f573a',1,'spdk_bdev::uuid'],['../structspdk__bdev__part__construct__opts.html#a59e74d0099eebc55205f73676478d44d',1,'spdk_bdev_part_construct_opts::uuid'],['../structspdk__nvmf__ns__opts.html#a4da1aada54acc633986ed373fa4a7638',1,'spdk_nvmf_ns_opts::uuid']]]
 ];

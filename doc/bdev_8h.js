@@ -199,5 +199,6 @@ var bdev_8h =
     [ "spdk_bdev_zcopy_end", "bdev_8h.html#ac432e059187b2dee62418354664e87c2", null ],
     [ "spdk_bdev_zcopy_start", "bdev_8h.html#a0ae02ac58ed10886d4a00ba3d94af4ce", null ],
     [ "spdk_for_each_bdev", "bdev_8h.html#ac93dda3868b191be70ac7e1517422c1f", null ],
+    [ "spdk_for_each_bdev_by_name", "bdev_8h.html#add54d968a243a8530f21d19ccb802118", null ],
     [ "spdk_for_each_bdev_leaf", "bdev_8h.html#aeb680eb5205197872738e482204ab441", null ]
 ];

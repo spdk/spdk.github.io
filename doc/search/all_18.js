@@ -46,7 +46,8 @@ var searchData=
   ['using_20spdk_20vhost_20target_20to_20provide_20volume_20service_20to_20kata_20containers_20and_20docker_43',['Using SPDK vhost target to provide volume service to Kata Containers and Docker',['../containers.html#kata_containers_with_spdk_vhost',1,'']]],
   ['usr_5fcb_5farg_44',['usr_cb_arg',['../structspdk__fsdev__io_1_1____fsdev__io__internal__fields.html#a5fe84ca0302aaaa422904772b9b9e74d',1,'spdk_fsdev_io::__fsdev_io_internal_fields']]],
   ['usr_5fcb_5ffn_45',['usr_cb_fn',['../structspdk__fsdev__io_1_1____fsdev__io__internal__fields.html#aefa32b2d3534c79c5fb22b6b27e3decb',1,'spdk_fsdev_io::__fsdev_io_internal_fields']]],
-  ['util_2eh_46',['util.h',['../util_8h.html',1,'']]],
-  ['uuid_47',['uuid',['../structspdk__bdev.html#a5cc1248944325a12c4cadaa3856f573a',1,'spdk_bdev::uuid'],['../structspdk__bdev__part__construct__opts.html#a59e74d0099eebc55205f73676478d44d',1,'spdk_bdev_part_construct_opts::uuid'],['../structspdk__nvmf__ns__opts.html#a4da1aada54acc633986ed373fa4a7638',1,'spdk_nvmf_ns_opts::uuid']]],
-  ['uuid_2eh_48',['uuid.h',['../uuid_8h.html',1,'']]]
+  ['uss_46',['uss',['../structspdk__nvme__cmds__and__effect__entry.html#ab345499e17ec155e0c38ebbca812a138',1,'spdk_nvme_cmds_and_effect_entry']]],
+  ['util_2eh_47',['util.h',['../util_8h.html',1,'']]],
+  ['uuid_48',['uuid',['../structspdk__bdev.html#a5cc1248944325a12c4cadaa3856f573a',1,'spdk_bdev::uuid'],['../structspdk__bdev__part__construct__opts.html#a59e74d0099eebc55205f73676478d44d',1,'spdk_bdev_part_construct_opts::uuid'],['../structspdk__nvmf__ns__opts.html#a4da1aada54acc633986ed373fa4a7638',1,'spdk_nvmf_ns_opts::uuid']]],
+  ['uuid_2eh_49',['uuid.h',['../uuid_8h.html',1,'']]]
 ];

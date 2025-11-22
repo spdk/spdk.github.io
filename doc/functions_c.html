@@ -150,6 +150,7 @@ $(function(){initNavTree('functions_c.html',''); initResizable(); });
 <li>cdata_init&#160;:&#160;<a class="el" href="structspdk__nvmf__transport__ops.html#ad85e8fada80fc3301d5adc2ba909e312">spdk_nvmf_transport_ops</a></li>
 <li>cdw0&#160;:&#160;<a class="el" href="structspdk__bdev__io__internal__fields.html#a1b779f1a723424d22b01a259c088cd3f">spdk_bdev_io_internal_fields</a></li>
 <li>cdw13&#160;:&#160;<a class="el" href="structspdk__nvme__ns__cmd__ext__io__opts.html#ae31ae2c30569dc7fb9c8e308ed20c761">spdk_nvme_ns_cmd_ext_io_opts</a></li>
+<li>cfls&#160;:&#160;<a class="el" href="structspdk__nvme__cdata__oacs.html#ad07fad98bc08bd1a8feab14933451241">spdk_nvme_cdata_oacs</a></li>
 <li>cfs&#160;:&#160;<a class="el" href="unionspdk__nvme__csts__register.html#a9eadb3919064e4e1999d0a820de107f1">spdk_nvme_csts_register</a></li>
 <li>ch&#160;:&#160;<a class="el" href="structspdk__bdev__io__internal__fields.html#aee2316442c70e448a73f30713313f047">spdk_bdev_io_internal_fields</a>, <a class="el" href="structspdk__fsdev__io_1_1____fsdev__io__internal__fields.html#ac41d8d778ed0593c57c5ea13d90d699d">spdk_fsdev_io::__fsdev_io_internal_fields</a></li>
 <li>ch_ref&#160;:&#160;<a class="el" href="structspdk__bdev__io__reset__params.html#a12771a8900d60bfc335bc782ebc049f9">spdk_bdev_io_reset_params</a></li>
@@ -171,13 +172,12 @@ $(function(){initNavTree('functions_c.html',''); initResizable(); });
 <li>cmbs&#160;:&#160;<a class="el" href="unionspdk__nvme__cap__register.html#aff8f920530a2bd1870c9c302b3106a32">spdk_nvme_cap_register</a></li>
 <li>cmbsts&#160;:&#160;<a class="el" href="structspdk__nvme__registers.html#a25fb56bcf90b65102afccd4c33a2bbdc">spdk_nvme_registers</a></li>
 <li>cmbsz&#160;:&#160;<a class="el" href="structspdk__nvme__registers.html#a4d9a1bd35de790accaf112507cd89565">spdk_nvme_registers</a></li>
-<li>cmic&#160;:&#160;<a class="el" href="structspdk__nvme__ctrlr__data.html#a5956072926b0630e4bae9d2a62987976">spdk_nvme_ctrlr_data</a></li>
+<li>cmic&#160;:&#160;<a class="el" href="structspdk__nvme__ctrlr__data.html#aa598047b3248f6a462c9731bf3732fa6">spdk_nvme_ctrlr_data</a></li>
 <li>cmse&#160;:&#160;<a class="el" href="unionspdk__nvme__cmbmsc__register.html#a35d113e3fbcfff431074dea3765cbe7e">spdk_nvme_cmbmsc_register</a>, <a class="el" href="unionspdk__nvme__pmrmscl__register.html#a89f1db67901ee6e82b024e61385ce1ea">spdk_nvme_pmrmscl_register</a></li>
 <li>cmss&#160;:&#160;<a class="el" href="unionspdk__nvme__pmrcap__register.html#aa002a22b7fad765c6bca158c1957377c">spdk_nvme_pmrcap_register</a></li>
 <li>cnlb&#160;:&#160;<a class="el" href="structspdk__ocssd__chunk__information__entry.html#aa6f484b4b7d394a7dfb18f215cd2972f">spdk_ocssd_chunk_information_entry</a></li>
 <li>cntlid&#160;:&#160;<a class="el" href="structspdk__nvme__ctrlr__data.html#a2cbc55b8da6325356bea1a41b45ea76a">spdk_nvme_ctrlr_data</a>, <a class="el" href="structspdk__nvme__primary__ctrl__capabilities.html#a9d7bd410ed4ccef3060a9cd36530896e">spdk_nvme_primary_ctrl_capabilities</a>, <a class="el" href="structspdk__nvme__registered__ctrlr__data.html#a2e894687fc82c9126c09b6e0140f9741">spdk_nvme_registered_ctrlr_data</a>, <a class="el" href="structspdk__nvme__registered__ctrlr__extended__data.html#a85af9ddf704150ac4bd4eb4ad2e4862a">spdk_nvme_registered_ctrlr_extended_data</a>, <a class="el" href="structspdk__nvmf__discovery__log__page__entry.html#ad5cf412899705f398e046fd3f290067d">spdk_nvmf_discovery_log_page_entry</a></li>
 <li>cntrltype&#160;:&#160;<a class="el" href="structspdk__nvme__ctrlr__data.html#a2cff3cb892daf25fc48a4b35ec2a75da">spdk_nvme_ctrlr_data</a></li>
-<li>command_feature_lockdown&#160;:&#160;<a class="el" href="structspdk__nvme__cdata__oacs.html#aebe67ff44f6ef341119d8c4f67575b38">spdk_nvme_cdata_oacs</a></li>
 <li>command_set&#160;:&#160;<a class="el" href="structspdk__nvme__ctrlr__opts.html#a62b55ccfff58d8f91952d4c501a4c3ab">spdk_nvme_ctrlr_opts</a></li>
 <li>commit&#160;:&#160;<a class="el" href="structspdk__bdev__io__block__params.html#ac691a6d7965239ac713f1a34ac90f009">spdk_bdev_io_block_params</a></li>
 <li>comp_algo&#160;:&#160;<a class="el" href="structspdk__reduce__vol__params.html#a4545d082f357f766546f82512cf26b27">spdk_reduce_vol_params</a></li>
@@ -188,7 +188,7 @@ $(function(){initNavTree('functions_c.html',''); initResizable(); });
 <li>core_freq_down&#160;:&#160;<a class="el" href="structspdk__governor.html#a3900a88f2e9be2fdcd64ca932dd4c7bb">spdk_governor</a></li>
 <li>core_freq_up&#160;:&#160;<a class="el" href="structspdk__governor.html#aae00baa13e1cafec438b3078c899de12">spdk_governor</a></li>
 <li>cpda&#160;:&#160;<a class="el" href="structspdk__nvme__tcp__ic__resp.html#aaf69d394b0b1130b31493381e7eb8553">spdk_nvme_tcp_ic_resp</a></li>
-<li>cqes&#160;:&#160;<a class="el" href="structspdk__nvme__ctrlr__data.html#a608636f6eb52177fda2676c23d99bb1f">spdk_nvme_ctrlr_data</a></li>
+<li>cqes&#160;:&#160;<a class="el" href="structspdk__nvme__ctrlr__data.html#a8c5577274d9b39266edfb805745550b9">spdk_nvme_ctrlr_data</a></li>
 <li>cqr&#160;:&#160;<a class="el" href="unionspdk__nvme__cap__register.html#ad8004bf4870d89a73f8d4d95db5d746d">spdk_nvme_cap_register</a></li>
 <li>cqs&#160;:&#160;<a class="el" href="unionspdk__nvme__cmbsz__register.html#af1ceb7a8fd105d746f14edf48a672d08">spdk_nvme_cmbsz_register</a></li>
 <li>crdt&#160;:&#160;<a class="el" href="structspdk__nvme__ctrlr__data.html#af4a6ea394d50b4a0770b22e725943ea8">spdk_nvme_ctrlr_data</a></li>
@@ -196,12 +196,13 @@ $(function(){initNavTree('functions_c.html',''); initResizable(); });
 <li>create&#160;:&#160;<a class="el" href="structspdk__nvmf__transport__ops.html#a7acaa3e4c569adc4faad31e5b1e6f8c3">spdk_nvmf_transport_ops</a></li>
 <li>create_only&#160;:&#160;<a class="el" href="structspdk__nvme__io__qpair__opts.html#a9de651bfea3d4f53d80c124530062ca5">spdk_nvme_io_qpair_opts</a></li>
 <li>crkey&#160;:&#160;<a class="el" href="structspdk__nvme__reservation__acquire__data.html#a101b03779e92b8965db452d68cf5a193">spdk_nvme_reservation_acquire_data</a>, <a class="el" href="structspdk__nvme__reservation__key__data.html#afbf08aee526e9ab913acc265576933a3">spdk_nvme_reservation_key_data</a>, <a class="el" href="structspdk__nvme__reservation__register__data.html#a3d7c7c2bdf9cb826c607345c9ff16f2d">spdk_nvme_reservation_register_data</a></li>
-<li>crt&#160;:&#160;<a class="el" href="structspdk__nvme__primary__ctrl__capabilities.html#a80e8519985d7ca7f0fb3d4decc54f4d0">spdk_nvme_primary_ctrl_capabilities</a></li>
+<li>crt&#160;:&#160;<a class="el" href="structspdk__nvme__primary__ctrl__capabilities.html#a1da9ed0944c9e8bcaeb125056c2af9d5">spdk_nvme_primary_ctrl_capabilities</a></li>
 <li>crypto_key_deinit&#160;:&#160;<a class="el" href="structspdk__accel__module__if.html#a78368381e6a26d59ddfc2b363de581fc">spdk_accel_module_if</a></li>
 <li>crypto_key_init&#160;:&#160;<a class="el" href="structspdk__accel__module__if.html#a05ac29ef44c9ad2dd81840d8e1a031f7">spdk_accel_module_if</a></li>
 <li>crypto_supports_cipher&#160;:&#160;<a class="el" href="structspdk__accel__module__if.html#ae6dfa91acb521f8605575ba431e5adb0">spdk_accel_module_if</a></li>
 <li>crypto_supports_tweak_mode&#160;:&#160;<a class="el" href="structspdk__accel__module__if.html#aa773f55e3f32077e98932f6f67fca1f3">spdk_accel_module_if</a></li>
 <li>cs&#160;:&#160;<a class="el" href="structspdk__ocssd__chunk__information__entry.html#ace5e59f2a8362984b9a8484ec4340026">spdk_ocssd_chunk_information_entry</a></li>
+<li>cscpe&#160;:&#160;<a class="el" href="structspdk__nvme__cmds__and__effect__entry.html#a9702c6a2a5f5674633852ad58722d8a6">spdk_nvme_cmds_and_effect_entry</a></li>
 <li>css&#160;:&#160;<a class="el" href="unionspdk__nvme__cap__register.html#afd09628d065cb825bc58e1d4eaa938a1">spdk_nvme_cap_register</a>, <a class="el" href="unionspdk__nvme__cc__register.html#a1f03038a3d6fd2b7f2df15b15a887ce6">spdk_nvme_cc_register</a></li>
 <li>csupp&#160;:&#160;<a class="el" href="structspdk__nvme__cmds__and__effect__entry.html#aefd1a8a22605caa0a4c0cd91a6075a11">spdk_nvme_cmds_and_effect_entry</a></li>
 <li>ct&#160;:&#160;<a class="el" href="structspdk__ocssd__chunk__information__entry.html#a7a5592023594cc639a106b657e0ef40c">spdk_ocssd_chunk_information_entry</a></li>

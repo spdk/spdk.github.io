@@ -2385,6 +2385,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_iobuf_unregister_
 
 <p>Run the msg callback on the given thread. </p>
 <p>If this happens to be the current thread, the callback is executed immediately; otherwise a message is sent to the thread, and it's run asynchronously.</p>
+<p>Errors are handled internally and are fatal. Calling code can skip checking the return value as it has been left only for compatibility.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">thread</td><td>The target thread. </td></tr>
@@ -2393,11 +2394,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_iobuf_unregister_
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>0 on success </dd>
-<dd>
--ENOMEM if the message could not be allocated </dd>
-<dd>
--EIO if the message could not be sent to the destination thread </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>0 left for API compatibility </dd></dl>
 
 </div>
 </div>
@@ -3116,6 +3113,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_iobuf_unregister_
 <p>Send a message to the given thread. </p>
 <p>Only one critical message can be outstanding at the same time. It's intended to use this function in any cases that might interrupt the execution of the application, such as signal handlers.</p>
 <p>The message will be sent asynchronously - i.e. spdk_thread_send_critical_msg will always return prior to <code>fn</code> being called.</p>
+<p>Errors are handled internally and are fatal. Calling code can skip checking the return value as it has been left only for compatibility.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">thread</td><td>The target thread. </td></tr>
@@ -3123,9 +3121,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_iobuf_unregister_
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>0 on success </dd>
-<dd>
--EIO if the message could not be sent to the destination thread, due to an already outstanding critical message </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>0 left for API compatibility </dd></dl>
 
 </div>
 </div>
@@ -3155,6 +3151,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_iobuf_unregister_
 
 <p>Send a message to the given thread. </p>
 <p>The message will be sent asynchronously - i.e. spdk_thread_send_msg will always return prior to <code>fn</code> being called.</p>
+<p>Errors are handled internally and are fatal. Calling code can skip checking the return value as it has been left only for compatibility.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">thread</td><td>The target thread. </td></tr>
@@ -3163,11 +3160,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_iobuf_unregister_
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>0 on success </dd>
-<dd>
--ENOMEM if the message could not be allocated </dd>
-<dd>
--EIO if the message could not be sent to the destination thread </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>0 left for API compatibility </dd></dl>
 
 </div>
 </div>

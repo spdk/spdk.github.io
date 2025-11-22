@@ -392,6 +392,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_set_opts</b>
 <tr class="memitem:aeb680eb5205197872738e482204ab441" id="r_aeb680eb5205197872738e482204ab441"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeb680eb5205197872738e482204ab441">spdk_for_each_bdev_leaf</a> (void *ctx, <a class="el" href="#a4163854db79e0e3b211dd72ca031fbb0">spdk_for_each_bdev_fn</a> fn)</td></tr>
 <tr class="memdesc:aeb680eb5205197872738e482204ab441"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call the provided callback function for every block device without virtual block devices on top.  <br /></td></tr>
 <tr class="separator:aeb680eb5205197872738e482204ab441"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add54d968a243a8530f21d19ccb802118" id="r_add54d968a243a8530f21d19ccb802118"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#add54d968a243a8530f21d19ccb802118">spdk_for_each_bdev_by_name</a> (void *ctx, <a class="el" href="#a4163854db79e0e3b211dd72ca031fbb0">spdk_for_each_bdev_fn</a> fn, const char **names, size_t count)</td></tr>
+<tr class="memdesc:add54d968a243a8530f21d19ccb802118"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call the provided callback function on block devices with provided names.  <br /></td></tr>
+<tr class="separator:add54d968a243a8530f21d19ccb802118"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aae05ee98ddd0903932505782191805da" id="r_aae05ee98ddd0903932505782191805da"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aae05ee98ddd0903932505782191805da">spdk_bdev_desc_get_bdev</a> (struct spdk_bdev_desc *desc)</td></tr>
 <tr class="memdesc:aae05ee98ddd0903932505782191805da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the bdev associated with a bdev descriptor.  <br /></td></tr>
 <tr class="separator:aae05ee98ddd0903932505782191805da"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -3980,6 +3983,50 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_set_opts</b>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 if operation is successful, or suitable errno value one of the callback returned otherwise. </dd></dl>
+
+</div>
+</div>
+<a id="add54d968a243a8530f21d19ccb802118" name="add54d968a243a8530f21d19ccb802118"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add54d968a243a8530f21d19ccb802118">&#9670;&#160;</a></span>spdk_for_each_bdev_by_name()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_for_each_bdev_by_name </td>
+          <td>(</td>
+          <td class="paramtype">void *</td>          <td class="paramname"><span class="paramname"><em>ctx</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="#a4163854db79e0e3b211dd72ca031fbb0">spdk_for_each_bdev_fn</a></td>          <td class="paramname"><span class="paramname"><em>fn</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char **</td>          <td class="paramname"><span class="paramname"><em>names</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>count</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Call the provided callback function on block devices with provided names. </p>
+<p><a class="el" href="#add54d968a243a8530f21d19ccb802118" title="Call the provided callback function on block devices with provided names.">spdk_for_each_bdev_by_name()</a> stops iteration if bdev with one of provided names does not exist, or if fn returns negated errno.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ctx</td><td>Context passed to the callback function. </td></tr>
+    <tr><td class="paramname">fn</td><td>Callback function for each block device. </td></tr>
+    <tr><td class="paramname">names</td><td>Array of bdev names to iterate, all of them should exist to finish iteration successfully. </td></tr>
+    <tr><td class="paramname">count</td><td>Count of bdevs to iterate.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if operation is successful, or suitable errno value one of the callback returned or -ENODEV if bdev with passed name is not present. </dd></dl>
 
 </div>
 </div>

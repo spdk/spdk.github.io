@@ -1,5 +1,9 @@
 var NAVTREEINDEX6 =
 {
+"libraries.html#env_replacement":[3,1,2,2],
+"libraries.html#headers":[3,1,1,0],
+"libraries.html#lib":[3,1,0,0],
+"libraries.html#map":[3,1,1,2],
 "libraries.html#module":[3,1,0,1],
 "libraries.html#naming":[3,1,1,1],
 "libraries.html#shared_objects":[3,1,2],
@@ -245,9 +249,5 @@ var NAVTREEINDEX6 =
 "nvme_8h.html#a7708f291658bf471e399354d1247fabf":[15,0,0,0,42,62],
 "nvme_8h.html#a7938b258a7614073065be4f6a35bd0e2":[15,0,0,0,42,125],
 "nvme_8h.html#a7a3ac9bb888c2b660191f94d208caaf1":[15,0,0,0,42,115],
-"nvme_8h.html#a7c522609f730db26f66e7f5b6b3501e0":[15,0,0,0,42,183],
-"nvme_8h.html#a7c62e2d4555a5ebc3a3b6f9632c51e1a":[15,0,0,0,42,59],
-"nvme_8h.html#a7c98eff7f5474a7044112202fbbf77bb":[15,0,0,0,42,168],
-"nvme_8h.html#a7dc6bb842e168a68972ec46cc35591ae":[15,0,0,0,42,103],
-"nvme_8h.html#a8145be511777b2c8dc218b1c1e1e2c89":[15,0,0,0,42,210]
+"nvme_8h.html#a7c522609f730db26f66e7f5b6b3501e0":[15,0,0,0,42,183]
 };

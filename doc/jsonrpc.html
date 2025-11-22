@@ -455,6 +455,7 @@ rpc_get_methods</h2>
 <div class="line">    &quot;accel_error_inject_error&quot;,</div>
 <div class="line">    &quot;ioat_scan_accel_module&quot;,</div>
 <div class="line">    &quot;dsa_scan_accel_module&quot;,</div>
+<div class="line">    &quot;cuda_scan_accel_module&quot;,</div>
 <div class="line">    &quot;dpdk_cryptodev_scan_accel_module&quot;,</div>
 <div class="line">    &quot;dpdk_cryptodev_set_driver&quot;,</div>
 <div class="line">    &quot;dpdk_cryptodev_get_driver&quot;,</div>
@@ -1799,7 +1800,7 @@ dsa_scan_accel_module</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">config_kernel_mode   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">Boolean   </td><td class="markdownTableBodyNone">If set, will use kernel idxd driver.   </td></tr>
+<td class="markdownTableBodyNone">config_kernel_mode   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">If set, will use kernel idxd driver.   </td></tr>
 </table>
 <h3>Example</h3>
 <p>Example request:</p>
@@ -1845,6 +1846,24 @@ ioat_scan_accel_module</h2>
 <div class="fragment"><div class="line">{</div>
 <div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
 <div class="line">  &quot;method&quot;: &quot;ioat_scan_accel_module&quot;,</div>
+<div class="line">  &quot;id&quot;: 1</div>
+<div class="line">}</div>
+</div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;result&quot;: true</div>
+<div class="line">}</div>
+</div><!-- fragment --><h2><a class="anchor" id="rpc_cuda_scan_accel_module"></a>
+cuda_scan_accel_module</h2>
+<p>Enable cuda accel module offload.</p>
+<h3>Parameters</h3>
+<p>This method has no parameters.</p>
+<h3>Example</h3>
+<p>Example request:</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;method&quot;: &quot;cuda_scan_accel_module&quot;,</div>
 <div class="line">  &quot;id&quot;: 1</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Example response:</p>
@@ -2145,8 +2164,10 @@ bdev_get_iostat</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Block device name    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">per_channel   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">bool   </td><td class="markdownTableBodyNone">Display per channel data for specified block device.    </td></tr>
+<td class="markdownTableBodyNone">names   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">array   </td><td class="markdownTableBodyNone">Array of block device names to obtain statistics from    </td></tr>
 <tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">per_channel   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Display per channel data for specified block device.    </td></tr>
+<tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">reset_mode   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Mode to reset I/O statistics after obtaining it: all, maxmin, none (default: none)   </td></tr>
 </table>
 <h3>Response</h3>
@@ -2158,7 +2179,7 @@ bdev_get_iostat</h2>
 <div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;method&quot;: &quot;bdev_get_iostat&quot;,</div>
 <div class="line">  &quot;params&quot;: {</div>
-<div class="line">    &quot;name&quot;: &quot;Nvme0n1&quot;,</div>
+<div class="line">    &quot;names&quot;: [&quot;Nvme0n1&quot;, &quot;Nvme0n2&quot;],</div>
 <div class="line">    &quot;per_channel&quot;: false</div>
 <div class="line">  }</div>
 <div class="line">}</div>
@@ -2171,6 +2192,22 @@ bdev_get_iostat</h2>
 <div class="line">    &quot;bdevs&quot;: [</div>
 <div class="line">      {</div>
 <div class="line">        &quot;name&quot;: &quot;Nvme0n1&quot;,</div>
+<div class="line">        &quot;bytes_read&quot;: 36864,</div>
+<div class="line">        &quot;num_read_ops&quot;: 2,</div>
+<div class="line">        &quot;bytes_written&quot;: 0,</div>
+<div class="line">        &quot;num_write_ops&quot;: 0,</div>
+<div class="line">        &quot;bytes_unmapped&quot;: 0,</div>
+<div class="line">        &quot;num_unmap_ops&quot;: 0,</div>
+<div class="line">        &quot;read_latency_ticks&quot;: 178904,</div>
+<div class="line">        &quot;write_latency_ticks&quot;: 0,</div>
+<div class="line">        &quot;unmap_latency_ticks&quot;: 0,</div>
+<div class="line">        &quot;queue_depth_polling_period&quot;: 2,</div>
+<div class="line">        &quot;queue_depth&quot;: 0,</div>
+<div class="line">        &quot;io_time&quot;: 0,</div>
+<div class="line">        &quot;weighted_io_time&quot;: 0</div>
+<div class="line">      },</div>
+<div class="line">      {</div>
+<div class="line">        &quot;name&quot;: &quot;Nvme0n2&quot;,</div>
 <div class="line">        &quot;bytes_read&quot;: 36864,</div>
 <div class="line">        &quot;num_read_ops&quot;: 2,</div>
 <div class="line">        &quot;bytes_written&quot;: 0,</div>
@@ -3308,7 +3345,7 @@ bdev_nvme_set_hotplug</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">enable   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">True to enable, false to disable    </td></tr>
+<td class="markdownTableBodyNone">enable   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">True to enable, false to disable    </td></tr>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">period_us   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">How often to poll for hot-insert and hot-remove events. Values: 0 - reset/use default or 1 to 10000000.   </td></tr>
 </table>
@@ -3358,13 +3395,13 @@ bdev_nvme_attach_controller</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">hostsvcid   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">NVMe-oF host trsvcid: port number    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">prchk_reftag   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">bool   </td><td class="markdownTableBodyNone">Enable checking of PI reference tag for I/O processing    </td></tr>
+<td class="markdownTableBodyNone">prchk_reftag   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Enable checking of PI reference tag for I/O processing    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">prchk_guard   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">bool   </td><td class="markdownTableBodyNone">Enable checking of PI guard for I/O processing    </td></tr>
+<td class="markdownTableBodyNone">prchk_guard   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Enable checking of PI guard for I/O processing    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">hdgst   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">bool   </td><td class="markdownTableBodyNone">Enable TCP header digest    </td></tr>
+<td class="markdownTableBodyNone">hdgst   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Enable TCP header digest    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">ddgst   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">bool   </td><td class="markdownTableBodyNone">Enable TCP data digest    </td></tr>
+<td class="markdownTableBodyNone">ddgst   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Enable TCP data digest    </td></tr>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">fabrics_connect_timeout_us   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">Timeout for fabrics connect (in microseconds)    </td></tr>
 <tr class="markdownTableRowEven">
@@ -3386,7 +3423,7 @@ bdev_nvme_attach_controller</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">dhchap_ctrlr_key   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">DH-HMAC-CHAP controller key name.    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">allow_unrecognized_csi   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">bool   </td><td class="markdownTableBodyNone">Allow attaching namespaces with unrecognized command set identifiers. These will only support NVMe passthrough.   </td></tr>
+<td class="markdownTableBodyNone">allow_unrecognized_csi   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Allow attaching namespaces with unrecognized command set identifiers. These will only support NVMe passthrough.   </td></tr>
 </table>
 <h3>Response</h3>
 <p>Array of names of newly created bdevs.</p>
@@ -3602,7 +3639,7 @@ bdev_nvme_start_discovery</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">hostnqn   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">NVMe-oF target hostnqn    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">wait_for_attach   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">bool   </td><td class="markdownTableBodyNone">Wait to complete until all discovered NVM subsystems are attached    </td></tr>
+<td class="markdownTableBodyNone">wait_for_attach   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Wait to complete until all discovered NVM subsystems are attached    </td></tr>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">attach_timeout_ms   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">Time to wait until the discovery and all discovered NVM subsystems are attached    </td></tr>
 <tr class="markdownTableRowOdd">
@@ -4746,7 +4783,7 @@ bdev_ftl_create</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">overprovisioning   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">Percentage of base device used for relocation, 20% by default    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">fast_shutdown   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">bool   </td><td class="markdownTableBodyNone">When set FTL will minimize persisted data on target application shutdown and rely on shared memory during next load    </td></tr>
+<td class="markdownTableBodyNone">fast_shutdown   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">When set FTL will minimize persisted data on target application shutdown and rely on shared memory during next load    </td></tr>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">l2p_dram_limit   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">DRAM limit for most recent L2P addresses (default 2048 MiB)   </td></tr>
 </table>
@@ -4797,7 +4834,7 @@ bdev_ftl_load</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">overprovisioning   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">Percentage of base device used for relocation, 20% by default    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">fast_shutdown   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">bool   </td><td class="markdownTableBodyNone">When set FTL will minimize persisted data on target application shutdown and rely on shared memory during next load    </td></tr>
+<td class="markdownTableBodyNone">fast_shutdown   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">When set FTL will minimize persisted data on target application shutdown and rely on shared memory during next load    </td></tr>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">l2p_dram_limit   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">DRAM limit for most recent L2P addresses (default 2048 MiB)   </td></tr>
 </table>
@@ -4838,7 +4875,7 @@ bdev_ftl_delete</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Bdev name    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">fast_shutdown   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">bool   </td><td class="markdownTableBodyNone">When set FTL will minimize persisted data during deletion and rely on shared memory during next load   </td></tr>
+<td class="markdownTableBodyNone">fast_shutdown   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">When set FTL will minimize persisted data during deletion and rely on shared memory during next load   </td></tr>
 </table>
 <h3>Example</h3>
 <p>Example request:</p>
@@ -4867,7 +4904,7 @@ bdev_ftl_unload</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Bdev name    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">fast_shutdown   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">bool   </td><td class="markdownTableBodyNone">When set FTL will minimize persisted data during deletion and rely on shared memory during next load   </td></tr>
+<td class="markdownTableBodyNone">fast_shutdown   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">When set FTL will minimize persisted data during deletion and rely on shared memory during next load   </td></tr>
 </table>
 <h3>Example</h3>
 <p>Example request:</p>
@@ -5395,9 +5432,9 @@ bdev_virtio_blk_set_hotplug</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">enable   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">bool   </td><td class="markdownTableBodyNone">Enable or disable the virtio blk hotplug monitor    </td></tr>
+<td class="markdownTableBodyNone">enable   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Enable or disable the virtio blk hotplug monitor    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">period-us   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">The period time of the monitor   </td></tr>
+<td class="markdownTableBodyNone">period_us   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">The period time of the monitor   </td></tr>
 </table>
 <h3>Response</h3>
 <p>True the rpc is successful otherwise false</p>
@@ -6717,42 +6754,44 @@ nvmf_create_transport</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">buf_cache_size   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">The number of shared buffers to reserve for each poll group    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">num_cqe   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">The number of CQ entries. Only used when no_srq=true (RDMA only)    </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">max_srq_depth   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">The number of elements in a per-thread shared receive queue (RDMA only)    </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">no_srq   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Disable shared receive queue even for devices that support it. (RDMA only)    </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">c2h_success   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Disable C2H success optimization (TCP only)    </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">dif_insert_or_strip   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Enable DIF insert for write I/O and DIF strip for read I/O DIF    </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">sock_priority   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">The socket priority of the connection owned by this transport (TCP only)    </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">acceptor_backlog   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">The number of pending connections allowed in backlog before failing new connection attempts (RDMA only)    </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">abort_timeout_sec   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">Abort execution timeout value, in seconds    </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">no_wr_batching   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Disable work requests batching (RDMA only)    </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">control_msg_num   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">The number of control messages per poll group (TCP only)    </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">disable_mappable_bar0   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">disable client mmap() of BAR0 (VFIO-USER only)    </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">disable_adaptive_irq   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Disable adaptive interrupt feature (VFIO-USER only)    </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">disable_shadow_doorbells   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">disable shadow doorbell support (VFIO-USER only)    </td></tr>
-<tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">zcopy   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Use zero-copy operations if the underlying bdev supports them    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">num_cqe   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">The number of CQ entries. Only used when no_srq=true (RDMA only)    </td></tr>
 <tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">max_srq_depth   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">The number of elements in a per-thread shared receive queue (RDMA only)    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">no_srq   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Disable shared receive queue even for devices that support it. (RDMA only)    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">c2h_success   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Disable C2H success optimization (TCP only)    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">dif_insert_or_strip   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Enable DIF insert for write I/O and DIF strip for read I/O DIF    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">sock_priority   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">The socket priority of the connection owned by this transport (TCP only)    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">acceptor_backlog   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">The number of pending connections allowed in backlog before failing new connection attempts (RDMA only)    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">abort_timeout_sec   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">Abort execution timeout value, in seconds    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">no_wr_batching   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Disable work requests batching (RDMA only)    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">control_msg_num   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">The number of control messages per poll group (TCP only)    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">disable_mappable_bar0   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">disable client mmap() of BAR0 (VFIO-USER only)    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">disable_adaptive_irq   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Disable adaptive interrupt feature (VFIO-USER only)    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">disable_shadow_doorbells   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">disable shadow doorbell support (VFIO-USER only)    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">acceptor_poll_rate   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">Polling interval of the acceptor for incoming connections (microseconds)    </td></tr>
+<tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">ack_timeout   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">ACK timeout in milliseconds    </td></tr>
-<tr class="markdownTableRowEven">
+<tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">data_wr_pool_size   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">RDMA data WR pool size (RDMA only)    </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">disable_command_passthru   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Disallow command passthru.    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">kas   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">The granularity of the KATO (Keep Alive Timeout) in 100 millisecond units    </td></tr>
+<td class="markdownTableBodyNone">disable_command_passthru   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Disallow command passthru.    </td></tr>
 <tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">kas   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">The granularity of the KATO (Keep Alive Timeout) in 100 millisecond units    </td></tr>
+<tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">min_kato   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">The minimum Keep Alive Timeout value in milliseconds   </td></tr>
 </table>
 <h3>Example</h3>
@@ -6929,7 +6968,7 @@ nvmf_subsystem_add_listener</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">listen_address   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">object   </td><td class="markdownTableBodyNone"><a class="el" href="#rpc_nvmf_listen_address">listen_address</a> object    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">secure_channel   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">bool   </td><td class="markdownTableBodyNone">Whether all connections immediately attempt to establish a secure channel    </td></tr>
+<td class="markdownTableBodyNone">secure_channel   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Whether all connections immediately attempt to establish a secure channel    </td></tr>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">sock_impl   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">The socket implementation to use for the listener   </td></tr>
 </table>
@@ -7061,7 +7100,7 @@ nvmf_subsystem_add_ns</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">tgt_name   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Parent NVMe-oF target name.    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">no_auto_visible   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">bool   </td><td class="markdownTableBodyNone">Namespace is not automatically visible to controllers (default: false)   </td></tr>
+<td class="markdownTableBodyNone">no_auto_visible   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Namespace is not automatically visible to controllers (default: false)   </td></tr>
 </table>
 <h4><a class="anchor" id="rpc_nvmf_namespace"></a>
 namespace</h4>
@@ -7083,7 +7122,7 @@ namespace</h4>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">anagrpid   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">ANA group ID. Default: Namespace ID.    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">hide_metadata   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">bool   </td><td class="markdownTableBodyNone">Enable hide_metadata option to the bdev. Default: false   </td></tr>
+<td class="markdownTableBodyNone">hide_metadata   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Enable hide_metadata option to the bdev. Default: false   </td></tr>
 </table>
 <h3>Example</h3>
 <p>Example request:</p>
@@ -7534,7 +7573,7 @@ nvmf_discovery_add_referral</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">address   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">object   </td><td class="markdownTableBodyNone"><a class="el" href="#rpc_nvmf_listen_address">listen_address</a> object    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">secure_channel   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">bool   </td><td class="markdownTableBodyNone">The connection to that discovery subsystem requires a secure channel   </td></tr>
+<td class="markdownTableBodyNone">secure_channel   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">The connection to that discovery subsystem requires a secure channel   </td></tr>
 </table>
 <h3>Example</h3>
 <p>Example request:</p>
@@ -7629,16 +7668,14 @@ nvmf_set_config</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">acceptor_poll_rate   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">Polling interval of the acceptor for incoming connections (microseconds)    </td></tr>
-<tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">admin_cmd_passthru   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">object   </td><td class="markdownTableBodyNone">Admin command passthru configuration    </td></tr>
-<tr class="markdownTableRowOdd">
+<tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">poll_groups_mask   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Set cpumask for NVMf poll groups    </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">discovery_filter   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Set discovery filter, possible values are: <code>match_any</code> (default) or comma separated values: <code>transport</code>, <code>address</code>, <code>svcid</code>    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">dhchap_digests   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">list   </td><td class="markdownTableBodyNone">List of allowed DH-HMAC-CHAP digests.    </td></tr>
+<td class="markdownTableBodyNone">discovery_filter   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Set discovery filter, possible values are: <code>match_any</code> (default) or comma separated values: <code>transport</code>, <code>address</code>, <code>svcid</code>    </td></tr>
 <tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">dhchap_digests   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">list   </td><td class="markdownTableBodyNone">List of allowed DH-HMAC-CHAP digests.    </td></tr>
+<tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">dhchap_dhgroups   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">list   </td><td class="markdownTableBodyNone">List of allowed DH-HMAC-CHAP DH groups.   </td></tr>
 </table>
 <h4><a class="anchor" id="spdk_nvmf_admin_passthru_conf"></a>
@@ -7647,23 +7684,23 @@ admin_cmd_passthru</h4>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">identify_ctrlr   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">bool   </td><td class="markdownTableBodyNone">If true, enables custom identify handler that reports some identify attributes from the underlying NVMe drive    </td></tr>
+<td class="markdownTableBodyNone">identify_ctrlr   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">If true, enables custom identify handler that reports some identify attributes from the underlying NVMe drive    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">identify_uuid_list   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">bool   </td><td class="markdownTableBodyNone">If true, enables passthru identify UUID list (0x17 CNS) admin cmds for underlying NVMe device    </td></tr>
+<td class="markdownTableBodyNone">identify_uuid_list   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">If true, enables passthru identify UUID list (0x17 CNS) admin cmds for underlying NVMe device    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">get_log_page   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">bool   </td><td class="markdownTableBodyNone">If true, enables passthru get log page command handlers for underlying NVMe drive (for non-fabrics related log pages)    </td></tr>
+<td class="markdownTableBodyNone">get_log_page   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">If true, enables passthru get log page command handlers for underlying NVMe drive (for non-fabrics related log pages)    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">get_set_features   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">bool   </td><td class="markdownTableBodyNone">If true, enables passthru get/set_feature OPC handlers for underlying NVMe drive    </td></tr>
+<td class="markdownTableBodyNone">get_set_features   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">If true, enables passthru get/set_feature OPC handlers for underlying NVMe drive    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">sanitize   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">bool   </td><td class="markdownTableBodyNone">If true, enables passthru sanitize OPC handlers for underlying NVMe drive    </td></tr>
+<td class="markdownTableBodyNone">sanitize   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">If true, enables passthru sanitize OPC handlers for underlying NVMe drive    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">security_send_recv   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">bool   </td><td class="markdownTableBodyNone">If true, enables passthru security send/recieve OPC handlers for underlying NVMe drive    </td></tr>
+<td class="markdownTableBodyNone">security_send_recv   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">If true, enables passthru security send/recieve OPC handlers for underlying NVMe drive    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">fw_update   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">bool   </td><td class="markdownTableBodyNone">If true, enables passthru firmware download/commit OPC handlers for underlying NVMe drive    </td></tr>
+<td class="markdownTableBodyNone">fw_update   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">If true, enables passthru firmware download/commit OPC handlers for underlying NVMe drive    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">nvme_mi   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">bool   </td><td class="markdownTableBodyNone">If true, enables passthru NVMe-MI send/recieve OPC handlers for underlying NVMe drive    </td></tr>
+<td class="markdownTableBodyNone">nvme_mi   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">If true, enables passthru NVMe-MI send/recieve OPC handlers for underlying NVMe drive    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">vendor_specific   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">bool   </td><td class="markdownTableBodyNone">If true, enables passthru command handlers for underlying NVMe drive for vendor specific cmds (OPCs: 0xC0-0xFF)   </td></tr>
+<td class="markdownTableBodyNone">vendor_specific   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">If true, enables passthru command handlers for underlying NVMe drive for vendor specific cmds (OPCs: 0xC0-0xFF)   </td></tr>
 </table>
 <h3>Example</h3>
 <p>Example request:</p>
@@ -8261,7 +8298,7 @@ vhost_create_blk_controller</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">ctrlr   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Controller name    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">bdev_name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of bdev to expose block device    </td></tr>
+<td class="markdownTableBodyNone">dev_name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of bdev to expose block device    </td></tr>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">readonly   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">If true, this target will be read only (default: false)    </td></tr>
 <tr class="markdownTableRowEven">
@@ -8318,48 +8355,48 @@ Vhost block</h4>
 <p><code>backend_specific</code> contains one <code>block</code> object of type:</p>
 <table class="markdownTable">
 <tr class="markdownTableHead">
-<th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
+<th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">bdev   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Backing bdev name or Null if bdev is hot-removed    </td></tr>
+<td class="markdownTableBodyNone">bdev   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Backing bdev name or Null if bdev is hot-removed    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">readonly   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">True if controllers is readonly, false otherwise   </td></tr>
+<td class="markdownTableBodyNone">readonly   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">True if controllers is readonly, false otherwise   </td></tr>
 </table>
 <h4><a class="anchor" id="rpc_vhost_get_controllers_scsi"></a>
 Vhost SCSI</h4>
 <p><code>backend_specific</code> contains <code>scsi</code> array of following objects:</p>
 <table class="markdownTable">
 <tr class="markdownTableHead">
-<th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
+<th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">target_name   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of this SCSI target    </td></tr>
+<td class="markdownTableBodyNone">target_name   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of this SCSI target    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">id   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">Unique SPDK global SCSI target ID    </td></tr>
+<td class="markdownTableBodyNone">id   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">Unique SPDK global SCSI target ID    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">scsi_dev_num   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">SCSI target ID initiator will see when scanning this controller    </td></tr>
+<td class="markdownTableBodyNone">scsi_dev_num   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">SCSI target ID initiator will see when scanning this controller    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">luns   </td><td class="markdownTableBodyNone">array   </td><td class="markdownTableBodyNone">array of objects describing <a class="el" href="#rpc_vhost_get_controllers_scsi_luns">Vhost SCSI LUN</a>   </td></tr>
+<td class="markdownTableBodyNone">luns   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">array   </td><td class="markdownTableBodyNone">array of objects describing <a class="el" href="#rpc_vhost_get_controllers_scsi_luns">Vhost SCSI LUN</a>   </td></tr>
 </table>
 <h4><a class="anchor" id="rpc_vhost_get_controllers_scsi_luns"></a>
 Vhost SCSI LUN</h4>
 <p>Object of type:</p>
 <table class="markdownTable">
 <tr class="markdownTableHead">
-<th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
+<th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">id   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">SCSI LUN ID    </td></tr>
+<td class="markdownTableBodyNone">id   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">SCSI LUN ID    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">bdev_name   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Backing bdev name   </td></tr>
+<td class="markdownTableBodyNone">bdev_name   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Backing bdev name   </td></tr>
 </table>
 <h4><a class="anchor" id="rpc_vhost_get_controllers_nvme"></a>
 Vhost NVMe</h4>
 <p><code>backend_specific</code> contains <code>namespaces</code> array of following objects:</p>
 <table class="markdownTable">
 <tr class="markdownTableHead">
-<th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
+<th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">nsid   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">Namespace ID    </td></tr>
+<td class="markdownTableBodyNone">nsid   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">Namespace ID    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">bdev   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Backing bdev name   </td></tr>
+<td class="markdownTableBodyNone">bdev   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Backing bdev name   </td></tr>
 </table>
 <h3>Example</h3>
 <p>Example request:</p>
@@ -8477,7 +8514,7 @@ Logical Volume</h1>
 bdev_lvol_create_lvstore</h2>
 <p>Construct a logical volume store.</p>
 <h3>Parameters</h3>
-<p>The num_md_pages_per_cluster_ratio defines the amount of metadata to allocate when the logical volume store is created. The default value is '100', which translates to 1 4KiB per cluster. For the default 4MiB cluster size, this equates to about 0.1% of the underlying block device allocated for metadata. Logical volume stores can be grown, if the size of the underlying block device grows in the future, but only if enough metadata pages were allocated to support the growth. So num_md_pages_per_cluster_ratio should be set to a higher value if wanting to support future growth. For example, num_md_pages_per_cluster_ratio = 200 would support future 2x growth of the logical volume store, and would result in 0.2% of the underlying block device allocated for metadata (with a default 4MiB cluster size).</p>
+<p>The num_md_pages_per_cluster_ratio defines the amount of metadata to allocate when the logical volume store is created. The default value is '100', which translates to 1 4KiB per cluster. For the default 4MiB cluster size, this equates to about 0.1% of the underlying block device allocated for metadata. Logical volume stores can be grown, if the size of the underlying block device grows in the future, but only if enough metadata pages were allocated to support the growth. So num_md_pages_per_cluster_ratio should be set to a higher value if wanting to support future growth. For example, num_md_pages_per_cluster_ratio = 200 would support future 2x growth of the logical volume store, and would result in 0.2% of the underlying block device allocated for metadata (with a default 4MiB cluster size). The amount of future growth can be determined with the <code>max_growable_size</code> parameter from the bdev_lvol_get_lvstores RPC.</p>
 <table class="markdownTable">
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
@@ -8579,8 +8616,9 @@ bdev_lvol_get_lvstores</h2>
 <div class="line">      &quot;cluster_size&quot;: 4194304,</div>
 <div class="line">      &quot;total_data_clusters&quot;: 31,</div>
 <div class="line">      &quot;block_size&quot;: 4096,</div>
-<div class="line">      &quot;name&quot;: &quot;LVS0&quot;</div>
-<div class="line">    }</div>
+<div class="line">      &quot;name&quot;: &quot;LVS0&quot;,</div>
+<div class="line">      &quot;max_growable_size&quot;: 137271181312</div>
+<div class="line">   }</div>
 <div class="line">  ]</div>
 <div class="line">}</div>
 </div><!-- fragment --><h2><a class="anchor" id="rpc_bdev_lvol_rename_lvstore"></a>
@@ -8615,6 +8653,8 @@ bdev_lvol_rename_lvstore</h2>
 </div><!-- fragment --><h2><a class="anchor" id="rpc_bdev_lvol_grow_lvstore"></a>
 bdev_lvol_grow_lvstore</h2>
 <p>Grow the logical volume store to fill the underlying bdev</p>
+<p>Growth is limited by the number of metadata pages allocated when the lvstore was created, and its specific max size can be found using the <code>max_growable_size</code> parameter from the bdev_lvol_get_lvstores RPC.</p>
+<p>This RPC can be called to grow an lvolstore when the underlying bdev has increased in size.</p>
 <h3>Parameters</h3>
 <p>Either uuid or lvs_name must be specified, but not both.</p>
 <table class="markdownTable">
@@ -11094,13 +11134,13 @@ fsdev_aio_create</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">root_path   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Path on the system directory to be exposed as an SPDK filesystem    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">enable_xattr   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">bool   </td><td class="markdownTableBodyNone">true to enable the extended attributes, false otherwise    </td></tr>
+<td class="markdownTableBodyNone">enable_xattr   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">true to enable the extended attributes, false otherwise    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">enable_writeback_cache   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">bool   </td><td class="markdownTableBodyNone">true to enable the writeback cache, false otherwise    </td></tr>
+<td class="markdownTableBodyNone">enable_writeback_cache   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">true to enable the writeback cache, false otherwise    </td></tr>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">max_write   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">Max write size in bytes    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">skip_rw   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">bool   </td><td class="markdownTableBodyNone">Skip processing read and write requests and complete them successfully immediately. This is useful for benchmarking.   </td></tr>
+<td class="markdownTableBodyNone">skip_rw   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Skip processing read and write requests and complete them successfully immediately. This is useful for benchmarking.   </td></tr>
 </table>
 <h3>Example</h3>
 <p>Example request:</p>

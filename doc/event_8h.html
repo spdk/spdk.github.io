@@ -225,6 +225,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_app_fini</b> (vo
 <tr class="memitem:aa6e70166c6ac9e7e7399d1b140979d29" id="r_aa6e70166c6ac9e7e7399d1b140979d29"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa6e70166c6ac9e7e7399d1b140979d29">spdk_framework_context_switch_monitor_enabled</a> (void)</td></tr>
 <tr class="memdesc:aa6e70166c6ac9e7e7399d1b140979d29"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether context switch monitoring is enabled.  <br /></td></tr>
 <tr class="separator:aa6e70166c6ac9e7e7399d1b140979d29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0bacd19103e80a4227b89fb0d08f4c0" id="r_af0bacd19103e80a4227b89fb0d08f4c0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af0bacd19103e80a4227b89fb0d08f4c0">spdk_app_setup_trace</a> (struct <a class="el" href="structspdk__app__opts.html">spdk_app_opts</a> *opts)</td></tr>
+<tr class="memdesc:af0bacd19103e80a4227b89fb0d08f4c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set up SPDK tracing for the application.  <br /></td></tr>
+<tr class="separator:af0bacd19103e80a4227b89fb0d08f4c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Event framework public API. </p>
@@ -431,6 +434,33 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_app_fini</b> (vo
   <table class="params">
     <tr><td class="paramname">mask</td><td>String containing a CPU core mask. </td></tr>
     <tr><td class="paramname">cpumask</td><td>Bitmask of CPU cores.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, -1 on failure. </dd></dl>
+
+</div>
+</div>
+<a id="af0bacd19103e80a4227b89fb0d08f4c0" name="af0bacd19103e80a4227b89fb0d08f4c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af0bacd19103e80a4227b89fb0d08f4c0">&#9670;&#160;</a></span>spdk_app_setup_trace()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_app_setup_trace </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structspdk__app__opts.html">spdk_app_opts</a> *</td>          <td class="paramname"><span class="paramname"><em>opts</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set up SPDK tracing for the application. </p>
+<p>Initializes the trace shared memory region and enables tracepoint groups or individual tracepoints as specified in the <a class="el" href="structspdk__app__opts.html" title="Event framework initialization options.">spdk_app_opts</a> structure.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">opts</td><td>Application options structure, must be initialized. </td></tr>
   </table>
   </dd>
 </dl>

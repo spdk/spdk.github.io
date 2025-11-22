@@ -267,6 +267,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a06cf3bf4280b524e95358fc2d3282b9a" id="r_a06cf3bf4280b524e95358fc2d3282b9a"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a06cf3bf4280b524e95358fc2d3282b9a">spdk_bs_get_page_size</a> (struct spdk_blob_store *bs)</td></tr>
 <tr class="memdesc:a06cf3bf4280b524e95358fc2d3282b9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the metadata page size in bytes.  <br /></td></tr>
 <tr class="separator:a06cf3bf4280b524e95358fc2d3282b9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe7bd6b472148ef94333e58f92386fa8" id="r_abe7bd6b472148ef94333e58f92386fa8"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abe7bd6b472148ef94333e58f92386fa8">spdk_bs_get_max_growable_size</a> (struct spdk_blob_store *bs)</td></tr>
+<tr class="memdesc:abe7bd6b472148ef94333e58f92386fa8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the maximum growable size of blobstore, in bytes.  <br /></td></tr>
+<tr class="separator:abe7bd6b472148ef94333e58f92386fa8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0800bfbaa7284454f7ba80275868b7ac" id="r_a0800bfbaa7284454f7ba80275868b7ac"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0800bfbaa7284454f7ba80275868b7ac">spdk_bs_get_io_unit_size</a> (struct spdk_blob_store *bs)</td></tr>
 <tr class="memdesc:a0800bfbaa7284454f7ba80275868b7ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the io unit size in bytes.  <br /></td></tr>
 <tr class="separator:a0800bfbaa7284454f7ba80275868b7ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2735,6 +2738,32 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>io unit size. </dd></dl>
+
+</div>
+</div>
+<a id="abe7bd6b472148ef94333e58f92386fa8" name="abe7bd6b472148ef94333e58f92386fa8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe7bd6b472148ef94333e58f92386fa8">&#9670;&#160;</a></span>spdk_bs_get_max_growable_size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t spdk_bs_get_max_growable_size </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_blob_store *</td>          <td class="paramname"><span class="paramname"><em>bs</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the maximum growable size of blobstore, in bytes. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bs</td><td>blobstore to query.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the maximum growable size in bytes </dd></dl>
 
 </div>
 </div>
