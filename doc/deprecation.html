@@ -140,6 +140,27 @@ $(function(){initNavTree('deprecation.html',''); initResizable(); });
 <h2>bdev</h2>
 <h3><code>bdev_get_iostat</code></h3>
 <p><code>--name</code> option will be removed in the 26.05 release. <code>--names</code> option should be used instead, it allows providing array of devices names to obtain statistics from.</p>
+<h2>python/cli</h2>
+<h3><code>framework_monitor_context_switch</code></h3>
+<p>deprecate <code>--enable</code> and <code>--disable</code> in favor of single <code>--monitor/--no-monitor</code> option</p>
+<h3><code>bdev_set_options</code></h3>
+<p>deprecate <code>--enable-auto-examine</code> and <code>--disable-auto-examine</code> in favor of single <code>--auto-examine/--no-auto-examine</code> option deprecate <code>--enable-rdma-umr-per-io</code> and <code>--disable-rdma-umr-per-io</code> in favor of single <code>--rdma-umr-per-io/--no-rdma-umr-per-io</code> option</p>
+<h3><code>bdev_nvme_set_hotplug</code></h3>
+<p>deprecate <code>--enable</code> and <code>--disable</code> in favor of single <code>--hotplug/--no-hotplug</code> option</p>
+<h3><code>bdev_enable_histogram</code></h3>
+<p>deprecate <code>--enable</code> and <code>--disable</code> in favor of single <code>--histogram/--no-histogram</code> option</p>
+<h3><code>fsdev_aio_create</code></h3>
+<p>deprecate <code>--enable-xattr</code> and <code>--disable-xattr</code> in favor of single <code>--xattr/--no-xattr</code> option deprecate <code>--enable-writeback-cache</code> and <code>--disable-writeback-cache</code> in favor of single <code>--writeback-cache/--no-writeback-cache</code> option</p>
+<h3><code>iscsi_enable_histogram</code></h3>
+<p>deprecate <code>--enable</code> and <code>--disable</code> in favor of single <code>--histogram/--no-histogram</code> option</p>
+<h3><code>log_enable_timestamps</code></h3>
+<p>deprecate <code>--enable</code> and <code>--disable</code> in favor of single <code>--timestamps/--no-timestamps</code> option</p>
+<h3><code>nvmf_subsystem_allow_any_host</code></h3>
+<p>deprecate <code>--enable</code> and <code>--disable</code> in favor of single <code>--allow-any-host/--no-allow-any-host</code> option</p>
+<h3><code>sock_impl_set_options</code></h3>
+<p>deprecate <code>--enable-recv-pipe</code> and <code>--disable-recv-pipe</code> in favor of single <code>--recv-pipe/--no-recv-pipe</code> option deprecate <code>--enable-quickack</code> and <code>--disable-quickack</code> in favor of single <code>--quickack/--no-quickack</code> option deprecate <code>--enable-zerocopy-send-server</code> and <code>--disable-zerocopy-send-server</code> in favor of single <code>--zerocopy-send-server/--no-zerocopy-send-server</code> option deprecate <code>--enable-zerocopy-send-client</code> and <code>--disable-zerocopy-send-client</code> in favor of single <code>--zerocopy-send-client/--no-zerocopy-send-client</code> option deprecate <code>--enable-ktls</code> and <code>--disable-ktls</code> in favor of single <code>--ktls/--no-ktls</code> option</p>
+<h3><code>bdev_virtio_blk_set_hotplug</code></h3>
+<p>deprecate <code>--enable</code> and <code>--disable</code> in favor of single <code>--hotplug/--no-hotplug</code> option</p>
 <h2>util/net</h2>
 <h3><code>spdk_net_getaddr</code></h3>
 <p>Returning -1 and setting errno on this function is deprecated and will be changed in the 26.01 release. This function will return negative errno values instead.</p>
