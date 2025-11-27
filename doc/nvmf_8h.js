@@ -21,7 +21,8 @@ var nvmf_8h =
       [ "SPDK_NVMF_TGT_DISCOVERY_MATCH_ANY", "nvmf_8h.html#adad870498ded3fa2168a2f3f663881f3ababebed136f083311d77a55d9182aa85", null ],
       [ "SPDK_NVMF_TGT_DISCOVERY_MATCH_TRANSPORT_TYPE", "nvmf_8h.html#adad870498ded3fa2168a2f3f663881f3ace922fc963e9598bb4e7569b145a3629", null ],
       [ "SPDK_NVMF_TGT_DISCOVERY_MATCH_TRANSPORT_ADDRESS", "nvmf_8h.html#adad870498ded3fa2168a2f3f663881f3a7805f8d4d557f754e3725eb7b7c60605", null ],
-      [ "SPDK_NVMF_TGT_DISCOVERY_MATCH_TRANSPORT_SVCID", "nvmf_8h.html#adad870498ded3fa2168a2f3f663881f3a2980fd83e5e8eb239cc1c8dd6d4dc12d", null ]
+      [ "SPDK_NVMF_TGT_DISCOVERY_MATCH_TRANSPORT_SVCID", "nvmf_8h.html#adad870498ded3fa2168a2f3f663881f3a2980fd83e5e8eb239cc1c8dd6d4dc12d", null ],
+      [ "SPDK_NVMF_TGT_DISCOVERY_MATCH_CUSTOM", "nvmf_8h.html#adad870498ded3fa2168a2f3f663881f3a35ffdd527ec55cf7242de6bf90f8e4c6", null ]
     ] ],
     [ "spdk_nvmf_get_first_tgt", "nvmf_8h.html#a9fa7d5eab3564dff746939fa5bdb6a54", null ],
     [ "spdk_nvmf_get_next_tgt", "nvmf_8h.html#ad1bd844f45b587531b7da7b9412cbe05", null ],
@@ -48,6 +49,7 @@ var nvmf_8h =
     [ "spdk_nvmf_qpair_get_peer_trid", "nvmf_8h.html#a145a3a2e51799674837dcb1ebf9a13c3", null ],
     [ "spdk_nvmf_rdma_init_hooks", "nvmf_8h.html#a9ae1cb4c373e0dd8146b81b5ba57ff0b", null ],
     [ "spdk_nvmf_send_discovery_log_notice", "nvmf_8h.html#a3ab3800863df715f74bb7adcd0c9fdc6", null ],
+    [ "spdk_nvmf_set_custom_discovery_filter", "nvmf_8h.html#adf01b08ee843d7009fd0e8f367a41dd3", null ],
     [ "spdk_nvmf_set_custom_ns_reservation_ops", "nvmf_8h.html#ae365f2d881a64ca5adcfe9a179a84597", null ],
     [ "spdk_nvmf_subsystem_add_host", "nvmf_8h.html#a4082cbddea58f9fc309504a6e8254113", null ],
     [ "spdk_nvmf_subsystem_add_host_ext", "nvmf_8h.html#a27ac57c01bd72c15d94ce6dc8ca14a0c", null ],

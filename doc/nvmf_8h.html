@@ -183,6 +183,9 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
+<tr class="memitem:a145641ff637808c2f7ed0ff35d9124fb" id="r_a145641ff637808c2f7ed0ff35d9124fb"><td class="memItemLeft" align="right" valign="top"><a id="a145641ff637808c2f7ed0ff35d9124fb" name="a145641ff637808c2f7ed0ff35d9124fb"></a>
+typedef bool(*&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_custom_discovery_filter</b>) (const struct <a class="el" href="structspdk__nvme__transport__id.html">spdk_nvme_transport_id</a> *listener_trid, const struct <a class="el" href="structspdk__nvme__transport__id.html">spdk_nvme_transport_id</a> *discovery_cmd_source_trid)</td></tr>
+<tr class="separator:a145641ff637808c2f7ed0ff35d9124fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aad52ac090dcb26b03da0e689ea71df89" id="r_aad52ac090dcb26b03da0e689ea71df89"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aad52ac090dcb26b03da0e689ea71df89">spdk_nvmf_tgt_subsystem_listen_done_fn</a>) (void *ctx, int status)</td></tr>
 <tr class="memdesc:aad52ac090dcb26b03da0e689ea71df89"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to be called once asynchronous listen add and remove operations are completed.  <br /></td></tr>
 <tr class="separator:aad52ac090dcb26b03da0e689ea71df89"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -219,10 +222,14 @@ typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_t
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:adad870498ded3fa2168a2f3f663881f3" id="r_adad870498ded3fa2168a2f3f663881f3"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adad870498ded3fa2168a2f3f663881f3">spdk_nvmf_tgt_discovery_filter</a> { <a class="el" href="#adad870498ded3fa2168a2f3f663881f3ababebed136f083311d77a55d9182aa85">SPDK_NVMF_TGT_DISCOVERY_MATCH_ANY</a> = 0
+<tr class="memitem:adad870498ded3fa2168a2f3f663881f3" id="r_adad870498ded3fa2168a2f3f663881f3"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adad870498ded3fa2168a2f3f663881f3">spdk_nvmf_tgt_discovery_filter</a> { <br />
+&#160;&#160;<a class="el" href="#adad870498ded3fa2168a2f3f663881f3ababebed136f083311d77a55d9182aa85">SPDK_NVMF_TGT_DISCOVERY_MATCH_ANY</a> = 0
 , <a class="el" href="#adad870498ded3fa2168a2f3f663881f3ace922fc963e9598bb4e7569b145a3629">SPDK_NVMF_TGT_DISCOVERY_MATCH_TRANSPORT_TYPE</a> = 1u &lt;&lt; 0u
 , <a class="el" href="#adad870498ded3fa2168a2f3f663881f3a7805f8d4d557f754e3725eb7b7c60605">SPDK_NVMF_TGT_DISCOVERY_MATCH_TRANSPORT_ADDRESS</a> = 1u &lt;&lt; 1u
 , <a class="el" href="#adad870498ded3fa2168a2f3f663881f3a2980fd83e5e8eb239cc1c8dd6d4dc12d">SPDK_NVMF_TGT_DISCOVERY_MATCH_TRANSPORT_SVCID</a> = 1u &lt;&lt; 2u
+, <br />
+&#160;&#160;<a class="el" href="#adad870498ded3fa2168a2f3f663881f3a35ffdd527ec55cf7242de6bf90f8e4c6">SPDK_NVMF_TGT_DISCOVERY_MATCH_CUSTOM</a> = 1u &lt;&lt; 3u
+<br />
  }</td></tr>
 <tr class="memdesc:adad870498ded3fa2168a2f3f663881f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specify filter rules which are applied during discovery log generation.  <a href="#adad870498ded3fa2168a2f3f663881f3">More...</a><br /></td></tr>
 <tr class="separator:adad870498ded3fa2168a2f3f663881f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -244,6 +251,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a28824d5f18a5ddf04007906f012199be" id="r_a28824d5f18a5ddf04007906f012199be"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a28824d5f18a5ddf04007906f012199be">spdk_nvmf_tgt_remove_referral</a> (struct spdk_nvmf_tgt *tgt, const struct <a class="el" href="structspdk__nvmf__referral__opts.html">spdk_nvmf_referral_opts</a> *opts)</td></tr>
 <tr class="memdesc:a28824d5f18a5ddf04007906f012199be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove a discovery service referral from an NVMeoF target.  <br /></td></tr>
 <tr class="separator:a28824d5f18a5ddf04007906f012199be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf01b08ee843d7009fd0e8f367a41dd3" id="r_adf01b08ee843d7009fd0e8f367a41dd3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adf01b08ee843d7009fd0e8f367a41dd3">spdk_nvmf_set_custom_discovery_filter</a> (spdk_nvmf_custom_discovery_filter filter)</td></tr>
+<tr class="memdesc:adf01b08ee843d7009fd0e8f367a41dd3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a custom discovery filter.  <br /></td></tr>
+<tr class="separator:adf01b08ee843d7009fd0e8f367a41dd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0c5d2cb5cc403b1451279e8438340115" id="r_a0c5d2cb5cc403b1451279e8438340115"><td class="memItemLeft" align="right" valign="top">struct spdk_nvmf_tgt *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0c5d2cb5cc403b1451279e8438340115">spdk_nvmf_tgt_create</a> (struct <a class="el" href="structspdk__nvmf__target__opts.html">spdk_nvmf_target_opts</a> *opts)</td></tr>
 <tr class="memdesc:a0c5d2cb5cc403b1451279e8438340115"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct an NVMe-oF target.  <br /></td></tr>
 <tr class="separator:a0c5d2cb5cc403b1451279e8438340115"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -678,6 +688,8 @@ Functions</h2></td></tr>
 <tr><td class="fieldname"><a id="adad870498ded3fa2168a2f3f663881f3a7805f8d4d557f754e3725eb7b7c60605" name="adad870498ded3fa2168a2f3f663881f3a7805f8d4d557f754e3725eb7b7c60605"></a>SPDK_NVMF_TGT_DISCOVERY_MATCH_TRANSPORT_ADDRESS&#160;</td><td class="fielddoc"><p>Only log listeners with the same transport address on which the DISCOVERY command was received. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="adad870498ded3fa2168a2f3f663881f3a2980fd83e5e8eb239cc1c8dd6d4dc12d" name="adad870498ded3fa2168a2f3f663881f3a2980fd83e5e8eb239cc1c8dd6d4dc12d"></a>SPDK_NVMF_TGT_DISCOVERY_MATCH_TRANSPORT_SVCID&#160;</td><td class="fielddoc"><p>Only log listeners with the same transport svcid on which the DISCOVERY command was received. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="adad870498ded3fa2168a2f3f663881f3a35ffdd527ec55cf7242de6bf90f8e4c6" name="adad870498ded3fa2168a2f3f663881f3a35ffdd527ec55cf7242de6bf90f8e4c6"></a>SPDK_NVMF_TGT_DISCOVERY_MATCH_CUSTOM&#160;</td><td class="fielddoc"><p>Check with custom discovery filter. </p>
 </td></tr>
 </table>
 
@@ -1432,6 +1444,32 @@ Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">tgt</td><td>The target for which discovery log page change notice is to be sent. </td></tr>
     <tr><td class="paramname">hostnqn</td><td>The hostnqn to which the notice will be sent. If NULL, all the controllers associated with discovery subsystem will have the discovery log page change notice. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="adf01b08ee843d7009fd0e8f367a41dd3" name="adf01b08ee843d7009fd0e8f367a41dd3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf01b08ee843d7009fd0e8f367a41dd3">&#9670;&#160;</a></span>spdk_nvmf_set_custom_discovery_filter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_nvmf_set_custom_discovery_filter </td>
+          <td>(</td>
+          <td class="paramtype">spdk_nvmf_custom_discovery_filter</td>          <td class="paramname"><span class="paramname"><em>filter</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set a custom discovery filter. </p>
+<p>For this to take effect, the target must be created with the SPDK_NVMF_TGT_DISCOVERY_MATCH_CUSTOM flag set in the discovery_filter field.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filter</td><td>The custom discovery filter to set. </td></tr>
   </table>
   </dd>
 </dl>
