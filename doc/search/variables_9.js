@@ -18,7 +18,7 @@ var searchData=
   ['io_5fqueue_5frequests_15',['io_queue_requests',['../structspdk__nvme__ctrlr__opts.html#a552e09920f8e8a21243dee31ab05f581',1,'spdk_nvme_ctrlr_opts::io_queue_requests'],['../structspdk__nvme__io__qpair__opts.html#a4af594ef7f8b7e590662633c926146b4',1,'spdk_nvme_io_qpair_opts::io_queue_requests']]],
   ['io_5fqueue_5fsize_16',['io_queue_size',['../structspdk__nvme__ctrlr__opts.html#a1c91126df78ac91d651dfcdc5236332b',1,'spdk_nvme_ctrlr_opts::io_queue_size'],['../structspdk__nvme__io__qpair__opts.html#adbb8aa3f64bc021ea5e9fddec6796341',1,'spdk_nvme_io_qpair_opts::io_queue_size']]],
   ['io_5ftime_17',['io_time',['../structspdk__bdev_1_1____bdev__internal__fields.html#a55d6103a185f6c50c9b5d58976d08508',1,'spdk_bdev::__bdev_internal_fields']]],
-  ['io_5ftype_5fsupported_18',['io_type_supported',['../structspdk__bdev__fn__table.html#a20ec74cad9e56c5ac8ee9db239d8f46e',1,'spdk_bdev_fn_table']]],
+  ['io_5ftype_5fsupported_18',['io_type_supported',['../structspdk__bdev__fn__table.html#a20ec74cad9e56c5ac8ee9db239d8f46e',1,'spdk_bdev_fn_table::io_type_supported'],['../structspdk__bdev.html#a1a5a293bd18675fa3757ed86093cd6cd',1,'spdk_bdev::io_type_supported']]],
   ['iobuf_19',['iobuf',['../structspdk__bdev__io__internal__fields.html#a14b0a56e2b8060a4c038385a6bbaea50',1,'spdk_bdev_io_internal_fields']]],
   ['ioccsz_20',['ioccsz',['../structspdk__nvme__cdata__nvmf__specific.html#a760ac459f1386e94310809765b5577d8',1,'spdk_nvme_cdata_nvmf_specific']]],
   ['iocqes_21',['iocqes',['../unionspdk__nvme__cc__register.html#a6be5f13e66cd6fd34c1463147cdfb106',1,'spdk_nvme_cc_register']]],

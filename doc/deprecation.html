@@ -140,6 +140,8 @@ $(function(){initNavTree('deprecation.html',''); initResizable(); });
 <h2>bdev</h2>
 <h3><code>bdev_get_iostat</code></h3>
 <p><code>--name</code> option will be removed in the 26.05 release. <code>--names</code> option should be used instead, it allows providing array of devices names to obtain statistics from.</p>
+<h3><code>spdk_bdev_initialize</code>, <code>spdk_bdev_finish</code>, <code>spdk_bdev_unregister</code>, <code>spdk_bdev_unregister_by_name</code></h3>
+<p>Calling these functions from any thread is deprecated and will be disallowed in v26.05. These functions should be called from the SPDK app thread.</p>
 <h2>python/cli</h2>
 <h3><code>framework_monitor_context_switch</code></h3>
 <p>deprecate <code>--enable</code> and <code>--disable</code> in favor of single <code>--monitor/--no-monitor</code> option</p>

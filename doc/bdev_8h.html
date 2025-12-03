@@ -1447,6 +1447,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_set_opts</b>
 </div><div class="memdoc">
 
 <p>Perform cleanup work to remove the registered block device modules. </p>
+<p>Calling this function from any thread is deprecated and will be disallowed in the 26.05 release. This function should be called from the SPDK app thread.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">cb_fn</td><td>Called when the removal is complete. </td></tr>
@@ -2904,6 +2905,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_set_opts</b>
 </div><div class="memdoc">
 
 <p>Initialize block device modules. </p>
+<p>Calling this function from any thread is deprecated and will be disallowed in the 26.05 release. This function should be called from the SPDK app thread.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">cb_fn</td><td>Called when the initialization is complete. </td></tr>

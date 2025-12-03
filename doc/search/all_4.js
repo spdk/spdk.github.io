@@ -24,7 +24,7 @@ var searchData=
   ['accel_5fget_5fstats_21',['accel_get_stats',['../jsonrpc.html#rpc_accel_get_stats',1,'']]],
   ['accel_5fmlx5_5fdump_5fstats_22',['accel_mlx5_dump_stats',['../jsonrpc.html#rpc_accel_mlx5_dump_stats',1,'']]],
   ['accel_5fsequence_23',['accel_sequence',['../structspdk__bdev__ext__io__opts.html#aa8f54343920dd881ed5f8ce23f86e680',1,'spdk_bdev_ext_io_opts::accel_sequence'],['../structspdk__nvme__ns__cmd__ext__io__opts.html#a8d31e6b9a5698572d7f4ba42b3df14de',1,'spdk_nvme_ns_cmd_ext_io_opts::accel_sequence']]],
-  ['accel_5fsequence_5fsupported_24',['accel_sequence_supported',['../structspdk__bdev__fn__table.html#a5bf6b6bd1f4c91a1b462182a23a79f2a',1,'spdk_bdev_fn_table']]],
+  ['accel_5fsequence_5fsupported_24',['accel_sequence_supported',['../structspdk__bdev__fn__table.html#a5bf6b6bd1f4c91a1b462182a23a79f2a',1,'spdk_bdev_fn_table::accel_sequence_supported'],['../structspdk__bdev.html#a2ca5531b4a1198ce407fc9dcfd698969',1,'spdk_bdev::accel_sequence_supported']]],
   ['accel_5fset_5fdriver_25',['accel_set_driver',['../jsonrpc.html#rpc_accel_set_driver',1,'']]],
   ['accel_5fset_5foptions_26',['accel_set_options',['../jsonrpc.html#rpc_accel_set_options',1,'']]],
   ['acceleration_20framework_27',['Acceleration Framework',['../accel_fw.html',1,'general']]],

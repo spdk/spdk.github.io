@@ -1,6 +1,7 @@
 var jsonrpc_8h =
 [
     [ "spdk_jsonrpc_client_response", "structspdk__jsonrpc__client__response.html", null ],
+    [ "SPDK_JSONRPC_ERROR_PARSE_ERROR", "jsonrpc_8h.html#ac5daba7e52db2743cc95dba00534ecd1", null ],
     [ "spdk_jsonrpc_client_response_parser", "jsonrpc_8h.html#a5160e9c0a3230584ca653ffd2ea64487", null ],
     [ "spdk_jsonrpc_handle_request_fn", "jsonrpc_8h.html#a74afccd199dde8aaebd020ac513cf819", null ],
     [ "spdk_jsonrpc_begin_request", "jsonrpc_8h.html#a2ce0cf522ddb54ec40c34462b08b0251", null ],

@@ -2,6 +2,7 @@ var structspdk__bdev =
 [
     [ "__bdev_internal_fields", "structspdk__bdev_1_1____bdev__internal__fields.html", "structspdk__bdev_1_1____bdev__internal__fields" ],
     [ "TAILQ_HEAD", "structspdk__bdev.html#ad6af2c003c0428ec514d45fade176d22", null ],
+    [ "accel_sequence_supported", "structspdk__bdev.html#a2ca5531b4a1198ce407fc9dcfd698969", null ],
     [ "acwu", "structspdk__bdev.html#ab10f57ea24409424fd71a3b53d6fe31e", null ],
     [ "blockcnt", "structspdk__bdev.html#aef65d7444968b8981d46d0c520fd5287", null ],
     [ "blocklen", "structspdk__bdev.html#ac737d9458e1184f313aed88b8af9b862", null ],
@@ -13,6 +14,7 @@ var structspdk__bdev =
     [ "fn_table", "structspdk__bdev.html#a8eee59eb31ccc211bfe99a8109b30dbb", null ],
     [ "id", "structspdk__bdev.html#a092721a1c76f792c0261b8b4c161a299", null ],
     [ "id_valid", "structspdk__bdev.html#a5e98607921e9b37f58f658e183f0e412", null ],
+    [ "io_type_supported", "structspdk__bdev.html#a1a5a293bd18675fa3757ed86093cd6cd", null ],
     [ "max_active_zones", "structspdk__bdev.html#accb598558c9e263c57cde4cf3c919bbb", null ],
     [ "max_copy", "structspdk__bdev.html#a69c77ed32b1b714060141d1f3cddb6a3", null ],
     [ "max_open_zones", "structspdk__bdev.html#a9766b9a39169827156c768f78b940977", null ],
