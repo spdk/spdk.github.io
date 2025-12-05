@@ -216,44 +216,13 @@ Generate JSON-RPC methods for current configuration</h2>
 <div class="fragment"><div class="line"><span class="keyword">from</span> spdk.rpc.client <span class="keyword">import</span> print_json</div>
 <div class="line"> </div>
 <div class="line"> </div>
-<div class="line"><span class="keyword">def </span>example_create(client, num_blocks, block_size, name=None, uuid=None):</div>
-<div class="line">    <span class="stringliteral">&quot;&quot;&quot;Construct an example block device.</span></div>
-<div class="line"><span class="stringliteral"></span> </div>
-<div class="line"><span class="stringliteral">    Args:</span></div>
-<div class="line"><span class="stringliteral">        num_blocks: size of block device in blocks</span></div>
-<div class="line"><span class="stringliteral">        block_size: block size of device; must be a power of 2 and at least 512</span></div>
-<div class="line"><span class="stringliteral">        name: name of block device (optional)</span></div>
-<div class="line"><span class="stringliteral">        uuid: UUID of block device (optional)</span></div>
-<div class="line"><span class="stringliteral"></span> </div>
-<div class="line"><span class="stringliteral">    Returns:</span></div>
-<div class="line"><span class="stringliteral">        Name of created block device.</span></div>
-<div class="line"><span class="stringliteral">    &quot;&quot;&quot;</span></div>
-<div class="line">    params = {<span class="stringliteral">&#39;num_blocks&#39;</span>: num_blocks, <span class="stringliteral">&#39;block_size&#39;</span>: block_size}</div>
-<div class="line">    <span class="keywordflow">if</span> name:</div>
-<div class="line">        params[<span class="stringliteral">&#39;name&#39;</span>] = name</div>
-<div class="line">    <span class="keywordflow">if</span> uuid:</div>
-<div class="line">        params[<span class="stringliteral">&#39;uuid&#39;</span>] = uuid</div>
-<div class="line">    <span class="keywordflow">return</span> client.call(<span class="stringliteral">&#39;bdev_example_create&#39;</span>, params)</div>
-<div class="line"> </div>
-<div class="line"> </div>
-<div class="line"><span class="keyword">def </span>example_delete(client, name):</div>
-<div class="line">    <span class="stringliteral">&quot;&quot;&quot;Delete example block device.</span></div>
-<div class="line"><span class="stringliteral"></span> </div>
-<div class="line"><span class="stringliteral">    Args:</span></div>
-<div class="line"><span class="stringliteral">        bdev_name: name of bdev to delete</span></div>
-<div class="line"><span class="stringliteral">    &quot;&quot;&quot;</span></div>
-<div class="line">    params = {<span class="stringliteral">&#39;name&#39;</span>: name}</div>
-<div class="line">    <span class="keywordflow">return</span> client.call(<span class="stringliteral">&#39;bdev_example_delete&#39;</span>, params)</div>
-<div class="line"> </div>
-<div class="line"> </div>
 <div class="line"><span class="keyword">def </span>spdk_rpc_plugin_initialize(subparsers):</div>
 <div class="line">    <span class="keyword">def </span>bdev_example_create(args):</div>
 <div class="line">        num_blocks = (args.total_size * 1024 * 1024) // args.block_size</div>
-<div class="line">        print_json(example_create(args.client,</div>
-<div class="line">                                  num_blocks=int(num_blocks),</div>
-<div class="line">                                  block_size=args.block_size,</div>
-<div class="line">                                  name=args.name,</div>
-<div class="line">                                  uuid=args.uuid))</div>
+<div class="line">        print_json(args.client.bdev_example_create(num_blocks=int(num_blocks),</div>
+<div class="line">                                                   block_size=args.block_size,</div>
+<div class="line">                                                   name=args.name,</div>
+<div class="line">                                                   uuid=args.uuid))</div>
 <div class="line"> </div>
 <div class="line">    p = subparsers.add_parser(<span class="stringliteral">&#39;bdev_example_create&#39;</span>,</div>
 <div class="line">                              help=<span class="stringliteral">&#39;Create an example bdev&#39;</span>)</div>
@@ -265,8 +234,7 @@ Generate JSON-RPC methods for current configuration</h2>
 <div class="line">    p.set_defaults(func=bdev_example_create)</div>
 <div class="line"> </div>
 <div class="line">    <span class="keyword">def </span>bdev_example_delete(args):</div>
-<div class="line">        example_delete(args.client,</div>
-<div class="line">                      name=args.name)</div>
+<div class="line">        args.client.bdev_example_delete(name=args.name)</div>
 <div class="line"> </div>
 <div class="line">    p = subparsers.add_parser(<span class="stringliteral">&#39;bdev_example_delete&#39;</span>,</div>
 <div class="line">                              help=<span class="stringliteral">&#39;Delete an example disk&#39;</span>)</div>

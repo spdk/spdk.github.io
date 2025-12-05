@@ -18,5 +18,8 @@ var searchData=
   ['keyring_5fget_5fkeys_15',['keyring_get_keys',['../jsonrpc.html#rpc_keyring_get_keys',1,'']]],
   ['keyring_5flinux_5fset_5foptions_16',['keyring_linux_set_options',['../jsonrpc.html#rpc_keyring_linux_set_options',1,'']]],
   ['kit_17',['Storage Performance Development Kit',['../index.html',1,'']]],
-  ['known_20bugs_20and_20limitations_18',['Known bugs and limitations',['../vhost.html#vhost_bugs',1,'']]]
+  ['known_20bugs_20and_20limitations_18',['Known bugs and limitations',['../vhost.html#vhost_bugs',1,'']]],
+  ['kpioens_19',['kpioens',['../structspdk__nvme__ns__iocs__independent__data.html#a9f95563c036b419223f3c222096f69db',1,'spdk_nvme_ns_iocs_independent_data']]],
+  ['kpios_20',['kpios',['../structspdk__nvme__ns__iocs__independent__data.html#abb230339b700de2c21302c7a39b4d6b0',1,'spdk_nvme_ns_iocs_independent_data']]],
+  ['kpiosns_21',['kpiosns',['../structspdk__nvme__ns__iocs__independent__data.html#a670a944a4aad489ce977bb5924887100',1,'spdk_nvme_ns_iocs_independent_data']]]
 ];

@@ -7,5 +7,8 @@ var searchData=
   ['key2_4',['key2',['../structspdk__accel__crypto__key.html#a5cb430285008edf86de712110f672a45',1,'spdk_accel_crypto_key']]],
   ['key2_5fsize_5',['key2_size',['../structspdk__accel__crypto__key.html#affba315845451014fd15be510fba4ce9',1,'spdk_accel_crypto_key']]],
   ['key_5fname_6',['key_name',['../structspdk__accel__crypto__key__create__param.html#a250d2edeb39219a9e092b38b1141e2c0',1,'spdk_accel_crypto_key_create_param']]],
-  ['key_5fsize_7',['key_size',['../structspdk__accel__crypto__key.html#acc60f9372db9f122c9639b41717b61da',1,'spdk_accel_crypto_key']]]
+  ['key_5fsize_7',['key_size',['../structspdk__accel__crypto__key.html#acc60f9372db9f122c9639b41717b61da',1,'spdk_accel_crypto_key']]],
+  ['kpioens_8',['kpioens',['../structspdk__nvme__ns__iocs__independent__data.html#a9f95563c036b419223f3c222096f69db',1,'spdk_nvme_ns_iocs_independent_data']]],
+  ['kpios_9',['kpios',['../structspdk__nvme__ns__iocs__independent__data.html#abb230339b700de2c21302c7a39b4d6b0',1,'spdk_nvme_ns_iocs_independent_data']]],
+  ['kpiosns_10',['kpiosns',['../structspdk__nvme__ns__iocs__independent__data.html#a670a944a4aad489ce977bb5924887100',1,'spdk_nvme_ns_iocs_independent_data']]]
 ];

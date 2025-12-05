@@ -4,12 +4,15 @@ var unionspdk__nvme__cap__register =
     [ "bps", "unionspdk__nvme__cap__register.html#a9bbd0513d0df169766c0f74adfc4dde1", null ],
     [ "cmbs", "unionspdk__nvme__cap__register.html#aff8f920530a2bd1870c9c302b3106a32", null ],
     [ "cqr", "unionspdk__nvme__cap__register.html#ad8004bf4870d89a73f8d4d95db5d746d", null ],
+    [ "crims", "unionspdk__nvme__cap__register.html#a6b40ef20c5f91804b99857025e001929", null ],
+    [ "crwms", "unionspdk__nvme__cap__register.html#a1ead8f77d61c3f5be2c6a0847378d1fc", null ],
     [ "css", "unionspdk__nvme__cap__register.html#afd09628d065cb825bc58e1d4eaa938a1", null ],
     [ "dstrd", "unionspdk__nvme__cap__register.html#af726e8465f09c36be0185475ec67fbce", null ],
     [ "mpsmax", "unionspdk__nvme__cap__register.html#ad4b6659be786f840893818e951fc1f3d", null ],
     [ "mpsmin", "unionspdk__nvme__cap__register.html#a9930c21595d81e7eefa8cca0e118450a", null ],
     [ "mqes", "unionspdk__nvme__cap__register.html#a7ca23ffbd756451f561b8972160f8281", null ],
     [ "nssrs", "unionspdk__nvme__cap__register.html#ac8d0f8ca7261552f9fa5894b0c637fd5", null ],
+    [ "nsss", "unionspdk__nvme__cap__register.html#a560aaee42d54bea41cb377450686004d", null ],
     [ "pmrs", "unionspdk__nvme__cap__register.html#a3c70129c53bf5c82f1151d512075f703", null ],
     [ "to", "unionspdk__nvme__cap__register.html#adae67761c7519837503eef9e72c3250f", null ]
 ];

@@ -206,9 +206,25 @@ union <a class="el" href="unionspdk__nvme__cmbmsc__register.html">spdk_nvme_cmbm
 union <a class="el" href="unionspdk__nvme__cmbsts__register.html">spdk_nvme_cmbsts_register</a>&#160;</td><td class="memItemRight" valign="bottom"><b>cmbsts</b></td></tr>
 <tr class="memdesc:a25fb56bcf90b65102afccd4c33a2bbdc"><td class="mdescLeft">&#160;</td><td class="mdescRight">controller memory buffer status <br /></td></tr>
 <tr class="separator:a25fb56bcf90b65102afccd4c33a2bbdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a51e7bef9cb02ef7ed721edcece04ddcc" id="r_a51e7bef9cb02ef7ed721edcece04ddcc"><td class="memItemLeft" align="right" valign="top"><a id="a51e7bef9cb02ef7ed721edcece04ddcc" name="a51e7bef9cb02ef7ed721edcece04ddcc"></a>
-uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>reserved2</b> [0x369]</td></tr>
-<tr class="separator:a51e7bef9cb02ef7ed721edcece04ddcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8848fc76a7044643daa7c18408f78309" id="r_a8848fc76a7044643daa7c18408f78309"><td class="memItemLeft" align="right" valign="top"><a id="a8848fc76a7044643daa7c18408f78309" name="a8848fc76a7044643daa7c18408f78309"></a>
+union <a class="el" href="unionspdk__nvme__cmbebs__register.html">spdk_nvme_cmbebs_register</a>&#160;</td><td class="memItemRight" valign="bottom"><b>cmbebs</b></td></tr>
+<tr class="memdesc:a8848fc76a7044643daa7c18408f78309"><td class="mdescLeft">&#160;</td><td class="mdescRight">controller memory buffer elasticity buffer size <br /></td></tr>
+<tr class="separator:a8848fc76a7044643daa7c18408f78309"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a676fc3750161a0a8ca1dd4d6eb2934ce" id="r_a676fc3750161a0a8ca1dd4d6eb2934ce"><td class="memItemLeft" align="right" valign="top"><a id="a676fc3750161a0a8ca1dd4d6eb2934ce" name="a676fc3750161a0a8ca1dd4d6eb2934ce"></a>
+union <a class="el" href="unionspdk__nvme__cmbswtp__register.html">spdk_nvme_cmbswtp_register</a>&#160;</td><td class="memItemRight" valign="bottom"><b>cmbswtp</b></td></tr>
+<tr class="memdesc:a676fc3750161a0a8ca1dd4d6eb2934ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">controller memory buffer sustained write throughput <br /></td></tr>
+<tr class="separator:a676fc3750161a0a8ca1dd4d6eb2934ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab01bce392f6c28420923d563a8af8280" id="r_ab01bce392f6c28420923d563a8af8280"><td class="memItemLeft" align="right" valign="top"><a id="ab01bce392f6c28420923d563a8af8280" name="ab01bce392f6c28420923d563a8af8280"></a>
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>nssd</b></td></tr>
+<tr class="memdesc:ab01bce392f6c28420923d563a8af8280"><td class="mdescLeft">&#160;</td><td class="mdescRight">NVM subsystem shutdown. <br /></td></tr>
+<tr class="separator:ab01bce392f6c28420923d563a8af8280"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff39003e777e6562b7085484846007c6" id="r_aff39003e777e6562b7085484846007c6"><td class="memItemLeft" align="right" valign="top"><a id="aff39003e777e6562b7085484846007c6" name="aff39003e777e6562b7085484846007c6"></a>
+union <a class="el" href="unionspdk__nvme__crto__register.html">spdk_nvme_crto_register</a>&#160;</td><td class="memItemRight" valign="bottom"><b>crto</b></td></tr>
+<tr class="memdesc:aff39003e777e6562b7085484846007c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">controller ready timeouts <br /></td></tr>
+<tr class="separator:aff39003e777e6562b7085484846007c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e30105a5ebd0c63053bfc9b0b9101f2" id="r_a3e30105a5ebd0c63053bfc9b0b9101f2"><td class="memItemLeft" align="right" valign="top"><a id="a3e30105a5ebd0c63053bfc9b0b9101f2" name="a3e30105a5ebd0c63053bfc9b0b9101f2"></a>
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>reserved2</b> [0x365]</td></tr>
+<tr class="separator:a3e30105a5ebd0c63053bfc9b0b9101f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae207dfbb0bd8ed46fcf2b0fa3033257e" id="r_ae207dfbb0bd8ed46fcf2b0fa3033257e"><td class="memItemLeft" align="right" valign="top"><a id="ae207dfbb0bd8ed46fcf2b0fa3033257e" name="ae207dfbb0bd8ed46fcf2b0fa3033257e"></a>
 union <a class="el" href="unionspdk__nvme__pmrcap__register.html">spdk_nvme_pmrcap_register</a>&#160;</td><td class="memItemRight" valign="bottom"><b>pmrcap</b></td></tr>
 <tr class="memdesc:ae207dfbb0bd8ed46fcf2b0fa3033257e"><td class="mdescLeft">&#160;</td><td class="mdescRight">persistent memory region capabilities <br /></td></tr>
@@ -239,17 +255,17 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>pmrmscu</b></td><
 <tr class="memitem:ac0f31a6543ca9f254e46771d8c09e5f7" id="r_ac0f31a6543ca9f254e46771d8c09e5f7"><td class="memItemLeft" align="right" valign="top"><a id="ac0f31a6543ca9f254e46771d8c09e5f7" name="ac0f31a6543ca9f254e46771d8c09e5f7"></a>
 uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>reserved3</b> [0x79]</td></tr>
 <tr class="separator:ac0f31a6543ca9f254e46771d8c09e5f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9d8ff43a2b32f18827b067dc0df20eb5" id="r_a9d8ff43a2b32f18827b067dc0df20eb5"><td class="memItemLeft" ><a id="a9d8ff43a2b32f18827b067dc0df20eb5" name="a9d8ff43a2b32f18827b067dc0df20eb5"></a>
+<tr class="memitem:a0253fb9bc6a586a54c11072e00ba0875" id="r_a0253fb9bc6a586a54c11072e00ba0875"><td class="memItemLeft" ><a id="a0253fb9bc6a586a54c11072e00ba0875" name="a0253fb9bc6a586a54c11072e00ba0875"></a>
 struct {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aea47fa89ed4da1fbbb218e6ab7ac596e" id="r_aea47fa89ed4da1fbbb218e6ab7ac596e"><td class="memItemLeft" >
+<tr class="memitem:ab0ba8a9ad73ea0478651bc0721cf483c" id="r_ab0ba8a9ad73ea0478651bc0721cf483c"><td class="memItemLeft" >
 &#160;&#160;&#160;uint32_t&#160;&#160;&#160;<b>sq_tdbl</b>&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
-<tr class="separator:aea47fa89ed4da1fbbb218e6ab7ac596e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af583cc550038b626e10b45d43da1458a" id="r_af583cc550038b626e10b45d43da1458a"><td class="memItemLeft" >
+<tr class="separator:ab0ba8a9ad73ea0478651bc0721cf483c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b7482d4900032352b37efc0fb010630" id="r_a9b7482d4900032352b37efc0fb010630"><td class="memItemLeft" >
 &#160;&#160;&#160;uint32_t&#160;&#160;&#160;<b>cq_hdbl</b>&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
-<tr class="separator:af583cc550038b626e10b45d43da1458a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9d8ff43a2b32f18827b067dc0df20eb5" id="r_a9d8ff43a2b32f18827b067dc0df20eb5"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><b>doorbell</b> [1]&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
-<tr class="separator:a9d8ff43a2b32f18827b067dc0df20eb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a9b7482d4900032352b37efc0fb010630"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0253fb9bc6a586a54c11072e00ba0875" id="r_a0253fb9bc6a586a54c11072e00ba0875"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><b>doorbell</b> [1]&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:a0253fb9bc6a586a54c11072e00ba0875"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li><a class="el" href="nvme__spec_8h.html">nvme_spec.h</a></li>

@@ -1,39 +1,45 @@
 <map id="spdk_nvme_transport_ops" name="spdk_nvme_transport_ops">
-<area shape="rect" id="Node000001" title=" " alt="" coords="662,421,854,449"/>
-<area shape="rect" id="Node000002" href="$structspdk__nvme__registers.html" title=" " alt="" coords="332,421,492,449"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="508,433,661,433,661,438,508,438"/>
-<area shape="rect" id="Node000003" href="$unionspdk__nvme__cap__register.html" title=" " alt="" coords="22,5,206,33"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="222,20,268,35,290,46,310,61,329,90,347,131,378,237,399,346,411,420,406,421,394,346,372,239,342,133,325,92,306,65,287,51,266,39,220,26"/>
-<area shape="rect" id="Node000004" href="$unionspdk__nvme__vs__register.html" title=" " alt="" coords="26,57,202,85"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="218,75,266,90,289,102,309,117,340,153,364,194,383,238,395,283,409,365,413,421,408,421,404,365,390,284,378,240,360,197,336,156,306,121,286,106,264,95,216,80"/>
-<area shape="rect" id="Node000005" href="$unionspdk__nvme__cc__register.html" title=" " alt="" coords="27,109,201,137"/>
-<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="217,130,266,146,289,159,309,175,335,204,357,237,387,308,404,374,412,421,406,421,399,375,382,310,352,239,331,207,306,178,286,163,264,151,215,135"/>
-<area shape="rect" id="Node000006" href="$unionspdk__nvme__csts__register.html" title=" " alt="" coords="21,161,207,189"/>
-<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="223,188,269,205,309,232,331,254,349,279,379,333,398,383,410,420,404,422,393,385,374,335,345,282,327,257,306,236,266,210,221,193"/>
-<area shape="rect" id="Node000007" href="$unionspdk__nvme__aqa__register.html" title=" " alt="" coords="22,213,206,241"/>
-<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="221,243,267,260,309,286,343,319,371,357,406,420,402,422,366,360,339,323,306,291,264,265,219,248"/>
-<area shape="rect" id="Node000008" href="$unionspdk__nvme__cmbloc__register.html" title=" " alt="" coords="10,265,218,293"/>
-<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="208,295,260,312,309,337,362,379,400,419,397,423,359,383,306,341,258,317,206,300"/>
-<area shape="rect" id="Node000009" href="$unionspdk__nvme__cmbsz__register.html" title=" " alt="" coords="13,317,215,345"/>
-<area shape="poly" id="edge8_Node000002_Node000009" title=" " alt="" coords="205,347,257,360,309,378,352,398,388,418,386,423,349,403,307,383,255,365,203,352"/>
-<area shape="rect" id="Node000010" href="$unionspdk__nvme__bpinfo__register.html" title="Boot partition information." alt="" coords="13,369,215,397"/>
-<area shape="poly" id="edge9_Node000002_Node000010" title=" " alt="" coords="230,397,308,410,349,418,348,423,307,415,229,402"/>
-<area shape="rect" id="Node000011" href="$unionspdk__nvme__bprsel__register.html" title="Boot partition read select." alt="" coords="14,421,214,449"/>
-<area shape="poly" id="edge10_Node000002_Node000011" title=" " alt="" coords="229,433,331,433,331,438,229,438"/>
-<area shape="rect" id="Node000012" href="$unionspdk__nvme__cmbmsc__register.html" title=" " alt="" coords="6,473,222,501"/>
-<area shape="poly" id="edge11_Node000002_Node000012" title=" " alt="" coords="231,468,307,455,346,447,348,452,308,460,232,473"/>
-<area shape="rect" id="Node000013" href="$unionspdk__nvme__cmbsts__register.html" title=" " alt="" coords="10,525,218,553"/>
-<area shape="poly" id="edge12_Node000002_Node000013" title=" " alt="" coords="205,519,256,505,307,488,350,468,387,447,389,452,352,473,309,493,258,511,207,524"/>
-<area shape="rect" id="Node000014" href="$unionspdk__nvme__pmrcap__register.html" title=" " alt="" coords="9,577,219,605"/>
-<area shape="poly" id="edge13_Node000002_Node000014" title=" " alt="" coords="209,570,259,554,306,530,359,488,397,448,401,451,362,492,309,534,261,559,210,575"/>
-<area shape="rect" id="Node000015" href="$unionspdk__nvme__pmrctl__register.html" title=" " alt="" coords="13,629,215,657"/>
-<area shape="poly" id="edge14_Node000002_Node000015" title=" " alt="" coords="221,622,265,605,306,581,339,548,367,511,402,448,406,451,371,514,343,552,309,585,268,610,223,627"/>
-<area shape="rect" id="Node000016" href="$unionspdk__nvme__pmrsts__register.html" title=" " alt="" coords="11,681,217,709"/>
-<area shape="poly" id="edge15_Node000002_Node000016" title=" " alt="" coords="231,675,271,659,306,635,327,614,345,589,374,536,394,485,405,448,410,450,399,487,379,538,350,592,331,617,309,640,273,664,233,680"/>
-<area shape="rect" id="Node000017" href="$unionspdk__nvme__pmrebs__register.html" title=" " alt="" coords="9,733,219,761"/>
-<area shape="poly" id="edge16_Node000002_Node000017" title=" " alt="" coords="233,731,272,716,306,693,331,664,352,632,369,597,382,562,399,496,407,449,412,450,404,497,387,563,374,599,357,635,336,668,309,697,274,721,235,736"/>
-<area shape="rect" id="Node000018" href="$unionspdk__nvme__pmrswtp__register.html" title=" " alt="" coords="5,785,223,813"/>
-<area shape="poly" id="edge17_Node000002_Node000018" title=" " alt="" coords="237,786,274,772,306,750,336,715,360,675,378,631,391,587,404,505,408,449,413,450,410,506,396,588,383,633,365,677,341,718,309,754,276,777,239,791"/>
-<area shape="rect" id="Node000019" href="$unionspdk__nvme__pmrmscl__register.html" title=" " alt="" coords="5,837,223,865"/>
-<area shape="poly" id="edge18_Node000002_Node000019" title=" " alt="" coords="237,842,274,828,306,806,325,779,343,738,373,632,394,524,406,449,411,450,399,525,378,633,348,740,330,782,310,810,276,833,239,847"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="666,500,858,528"/>
+<area shape="rect" id="Node000002" href="$structspdk__nvme__registers.html" title=" " alt="" coords="336,500,496,528"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="512,511,665,511,665,517,512,517"/>
+<area shape="rect" id="Node000003" href="$unionspdk__nvme__cap__register.html" title=" " alt="" coords="23,5,207,33"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="222,16,271,29,294,40,314,56,337,91,357,143,374,207,388,276,407,410,416,499,411,500,402,410,382,277,369,208,352,145,332,94,310,60,291,45,269,34,221,21"/>
+<area shape="rect" id="Node000004" href="$unionspdk__nvme__vs__register.html" title=" " alt="" coords="27,57,203,85"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="219,69,269,83,293,95,314,111,335,141,354,187,384,302,405,419,416,499,410,500,399,420,379,303,348,188,330,144,310,114,290,99,267,88,217,74"/>
+<area shape="rect" id="Node000005" href="$unionspdk__nvme__cc__register.html" title=" " alt="" coords="28,109,202,137"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="218,124,269,138,292,151,314,167,347,206,372,251,391,300,403,349,416,438,418,499,412,500,410,439,398,350,386,301,367,253,342,209,310,170,290,155,267,143,217,129"/>
+<area shape="rect" id="Node000006" href="$unionspdk__nvme__csts__register.html" title=" " alt="" coords="22,161,208,189"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="224,180,272,196,294,207,313,223,342,255,365,292,383,332,396,373,411,448,417,500,411,500,406,449,391,374,378,334,361,295,338,258,310,226,291,212,269,201,223,185"/>
+<area shape="rect" id="Node000007" href="$unionspdk__nvme__aqa__register.html" title=" " alt="" coords="23,213,207,241"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="223,236,271,252,313,280,337,306,358,335,388,398,406,456,415,499,410,500,401,458,383,400,353,337,333,309,310,284,269,257,221,241"/>
+<area shape="rect" id="Node000008" href="$unionspdk__nvme__cmbloc__register.html" title=" " alt="" coords="11,265,219,293"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="232,295,275,312,313,337,350,377,379,423,400,466,412,498,407,500,395,468,374,425,346,380,310,341,272,317,230,300"/>
+<area shape="rect" id="Node000009" href="$unionspdk__nvme__cmbsz__register.html" title=" " alt="" coords="14,317,216,345"/>
+<area shape="poly" id="edge8_Node000002_Node000009" title=" " alt="" coords="218,347,267,365,313,390,344,417,371,446,408,498,404,501,367,450,340,420,310,395,265,369,216,352"/>
+<area shape="rect" id="Node000010" href="$unionspdk__nvme__bpinfo__register.html" title="Boot partition information." alt="" coords="14,369,216,397"/>
+<area shape="poly" id="edge9_Node000002_Node000010" title=" " alt="" coords="205,399,259,415,313,438,361,468,399,497,396,502,358,473,310,443,258,420,204,404"/>
+<area shape="rect" id="Node000011" href="$unionspdk__nvme__bprsel__register.html" title="Boot partition read select." alt="" coords="15,421,215,449"/>
+<area shape="poly" id="edge10_Node000002_Node000011" title=" " alt="" coords="208,450,312,475,378,497,376,502,311,480,207,455"/>
+<area shape="rect" id="Node000012" href="$unionspdk__nvme__cmbmsc__register.html" title=" " alt="" coords="7,473,223,501"/>
+<area shape="poly" id="edge11_Node000002_Node000012" title=" " alt="" coords="238,495,335,504,335,509,238,501"/>
+<area shape="rect" id="Node000013" href="$unionspdk__nvme__cmbsts__register.html" title=" " alt="" coords="11,525,219,553"/>
+<area shape="poly" id="edge12_Node000002_Node000013" title=" " alt="" coords="234,536,311,531,347,526,348,531,312,536,234,541"/>
+<area shape="rect" id="Node000014" href="$unionspdk__nvme__cmbebs__register.html" title=" " alt="" coords="9,577,221,605"/>
+<area shape="poly" id="edge13_Node000002_Node000014" title=" " alt="" coords="236,576,311,559,352,543,388,526,390,531,354,548,312,564,237,581"/>
+<area shape="rect" id="Node000015" href="$unionspdk__nvme__cmbswtp__register.html" title=" " alt="" coords="5,629,225,657"/>
+<area shape="poly" id="edge14_Node000002_Node000015" title=" " alt="" coords="235,623,274,611,310,596,337,581,362,562,400,526,403,530,365,566,340,585,313,601,276,617,237,628"/>
+<area shape="rect" id="Node000016" href="$unionspdk__nvme__crto__register.html" title=" " alt="" coords="22,681,208,709"/>
+<area shape="poly" id="edge15_Node000002_Node000016" title=" " alt="" coords="222,678,268,664,310,642,342,615,369,583,405,527,410,529,374,586,346,619,313,646,270,669,224,683"/>
+<area shape="rect" id="Node000017" href="$unionspdk__nvme__pmrcap__register.html" title=" " alt="" coords="10,733,220,761"/>
+<area shape="poly" id="edge16_Node000002_Node000017" title=" " alt="" coords="234,729,274,715,310,693,348,653,376,606,396,561,408,527,413,529,401,563,381,608,352,656,313,697,276,719,236,734"/>
+<area shape="rect" id="Node000018" href="$unionspdk__nvme__pmrctl__register.html" title=" " alt="" coords="14,785,216,813"/>
+<area shape="poly" id="edge17_Node000002_Node000018" title=" " alt="" coords="230,786,273,772,310,749,334,724,355,695,384,631,402,571,410,528,415,529,407,572,389,633,359,698,338,727,313,753,275,777,232,791"/>
+<area shape="rect" id="Node000019" href="$unionspdk__nvme__pmrsts__register.html" title=" " alt="" coords="12,837,218,865"/>
+<area shape="poly" id="edge18_Node000002_Node000019" title=" " alt="" coords="232,842,274,828,310,805,339,773,361,736,379,696,392,656,407,580,411,528,417,528,412,581,397,657,384,698,366,739,343,776,313,809,276,833,234,847"/>
+<area shape="rect" id="Node000020" href="$unionspdk__nvme__pmrebs__register.html" title=" " alt="" coords="10,889,220,917"/>
+<area shape="poly" id="edge19_Node000002_Node000020" title=" " alt="" coords="234,897,275,884,310,861,343,822,368,777,387,729,399,680,411,589,412,528,418,528,416,590,405,681,392,731,373,780,348,825,313,865,277,888,236,902"/>
+<area shape="rect" id="Node000021" href="$unionspdk__nvme__pmrswtp__register.html" title=" " alt="" coords="6,941,224,969"/>
+<area shape="poly" id="edge20_Node000002_Node000021" title=" " alt="" coords="238,951,277,939,310,917,330,887,349,843,365,787,379,727,400,609,410,528,416,529,405,609,384,728,370,789,354,844,335,890,314,921,279,944,240,956"/>
+<area shape="rect" id="Node000022" href="$unionspdk__nvme__pmrmscl__register.html" title=" " alt="" coords="6,993,224,1021"/>
+<area shape="poly" id="edge21_Node000002_Node000022" title=" " alt="" coords="238,1006,277,993,310,972,333,938,353,886,369,823,383,753,402,618,411,528,416,528,407,619,388,754,374,824,358,888,337,940,314,975,279,998,240,1011"/>
 </map>
