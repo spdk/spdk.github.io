@@ -1,5 +1,14 @@
 var NAVTREEINDEX13 =
 {
+"structspdk__iobuf__entry.html":[14,0,138],
+"structspdk__iobuf__module__stats.html":[14,0,139],
+"structspdk__iobuf__node__cache.html":[14,0,140],
+"structspdk__iobuf__node__cache.html#a06cf2e4c783eae360eb92c3a969edc0a":[14,0,140,0],
+"structspdk__iobuf__node__cache.html#aa37e7961e0769216e91f4be7d4c62b99":[14,0,140,1],
+"structspdk__iobuf__opts.html":[14,0,141],
+"structspdk__iobuf__opts.html#a1f0a2c2f2ffbd058532de9c9275de2c6":[14,0,141,0],
+"structspdk__iobuf__opts.html#a39b2021609eb9604d6ecd2ec05b64f9b":[14,0,141,5],
+"structspdk__iobuf__opts.html#a92be3feb3fdd0def48266dd6b3110f41":[14,0,141,4],
 "structspdk__iobuf__opts.html#ab9a57e04c4e4310fbce9ce00e1c25056":[14,0,141,3],
 "structspdk__iobuf__opts.html#ac44e81b77a7886422bc4c4821456cc7b":[14,0,141,2],
 "structspdk__iobuf__opts.html#af9531f2bb491d72e9accf40e8fd287c7":[14,0,141,1],
@@ -240,14 +249,5 @@ var NAVTREEINDEX13 =
 "structspdk__nvme__dsm__range.html#a85b10586b5cb2d6cbe0e4e8d92f913ef":[14,0,201,2],
 "structspdk__nvme__dsm__range.html#af15a5e24c688c5d15575d98d064b65bd":[14,0,201,4],
 "structspdk__nvme__error__information__entry.html":[14,0,202],
-"structspdk__nvme__fdp__cfg__descriptor.html":[14,0,203],
-"structspdk__nvme__fdp__cfg__log__page.html":[14,0,204],
-"structspdk__nvme__fdp__event.html":[14,0,205],
-"structspdk__nvme__fdp__event__desc.html":[14,0,206],
-"structspdk__nvme__fdp__event__media__reallocated.html":[14,0,207],
-"structspdk__nvme__fdp__events__log__page.html":[14,0,208],
-"structspdk__nvme__fdp__ruh__descriptor.html":[14,0,209],
-"structspdk__nvme__fdp__ruhs.html":[14,0,210],
-"structspdk__nvme__fdp__ruhs__desc.html":[14,0,211],
-"structspdk__nvme__fdp__ruhu__descriptor.html":[14,0,212]
+"structspdk__nvme__fdp__cfg__descriptor.html":[14,0,203]
 };

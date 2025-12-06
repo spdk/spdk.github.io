@@ -1,5 +1,15 @@
 var NAVTREEINDEX17 =
 {
+"thread_8h.html#a9c26cbd781063f5ee627d6aba2c73fe3":[15,0,0,0,59,65],
+"thread_8h.html#a9ddd693f2a059067f9422605708dce81":[15,0,0,0,59,90],
+"thread_8h.html#a9df2d253885de944794d6810ff98fc4e":[15,0,0,0,59,25],
+"thread_8h.html#a9df2d253885de944794d6810ff98fc4ea0008a2defd401c21f63973cacdddd73f":[15,0,0,0,59,25,1],
+"thread_8h.html#a9df2d253885de944794d6810ff98fc4ea8ad008a1b922191348b72f1b0a0223d0":[15,0,0,0,59,25,0],
+"thread_8h.html#a9f0ad3a2bcbb6d304401b579ab63aeba":[15,0,0,0,59,21],
+"thread_8h.html#a9f877dd192ccdd30572941aa4e453c48":[15,0,0,0,59,92],
+"thread_8h.html#aa0d064c5b2e0268ad751a682fa8ed6a6":[15,0,0,0,59,24],
+"thread_8h.html#aa0d064c5b2e0268ad751a682fa8ed6a6a37f413cce870e5539efe6fe4607c543e":[15,0,0,0,59,24,0],
+"thread_8h.html#aa0d064c5b2e0268ad751a682fa8ed6a6aa758368d3b8b5b8724b9baa3692aa0d7":[15,0,0,0,59,24,1],
 "thread_8h.html#aa10141eac8fc06771e6203fd7d83926a":[15,0,0,0,59,74],
 "thread_8h.html#aa7a2ca9bd0497544e852c65fd5263cd1":[15,0,0,0,59,26],
 "thread_8h.html#aa99d7f3862b314d4b30865fde9f66691":[15,0,0,0,59,63],
@@ -239,15 +249,5 @@ var NAVTREEINDEX17 =
 "unionspdk__nvme__intel__feat__latency__tracking.html":[14,0,247],
 "unionspdk__nvme__intel__feat__latency__tracking.html#a3f7d5e23bb986ab742716254101bfe30":[14,0,247,0],
 "unionspdk__nvme__intel__feat__led__pattern.html":[14,0,248],
-"unionspdk__nvme__intel__feat__power__governor.html":[14,0,249],
-"unionspdk__nvme__intel__feat__power__governor.html#aa25780c209e8e7d18133e16396cb235e":[14,0,249,0],
-"unionspdk__nvme__intel__feat__reset__timed__workload__counters.html":[14,0,250],
-"unionspdk__nvme__intel__feat__reset__timed__workload__counters.html#a74b5ac6a6ea150d582cc269f6987757b":[14,0,250,0],
-"unionspdk__nvme__intel__feat__smbus__address.html":[14,0,251],
-"unionspdk__nvme__pmrcap__register.html":[14,0,273],
-"unionspdk__nvme__pmrcap__register.html#a3421780de67cc18841423fd384e9a3c8":[14,0,273,3],
-"unionspdk__nvme__pmrcap__register.html#a4a39e0a760b85de01ffbb754755af19c":[14,0,273,6],
-"unionspdk__nvme__pmrcap__register.html#a5448a57d5748172881ec13bb34e78cdc":[14,0,273,2],
-"unionspdk__nvme__pmrcap__register.html#a5952dbba6c196cbe8baf13af625b1750":[14,0,273,4],
-"unionspdk__nvme__pmrcap__register.html#a985844b66ae2dda4d4de9e332a165916":[14,0,273,5]
+"unionspdk__nvme__intel__feat__power__governor.html":[14,0,249]
 };

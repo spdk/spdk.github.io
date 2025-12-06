@@ -251,6 +251,36 @@ Functions</h2></td></tr>
 <tr class="memitem:a28824d5f18a5ddf04007906f012199be" id="r_a28824d5f18a5ddf04007906f012199be"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a28824d5f18a5ddf04007906f012199be">spdk_nvmf_tgt_remove_referral</a> (struct spdk_nvmf_tgt *tgt, const struct <a class="el" href="structspdk__nvmf__referral__opts.html">spdk_nvmf_referral_opts</a> *opts)</td></tr>
 <tr class="memdesc:a28824d5f18a5ddf04007906f012199be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove a discovery service referral from an NVMeoF target.  <br /></td></tr>
 <tr class="separator:a28824d5f18a5ddf04007906f012199be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c7ab9c8c55ea1f9d883b0b306782919" id="r_a3c7ab9c8c55ea1f9d883b0b306782919"><td class="memItemLeft" align="right" valign="top">struct spdk_nvmf_referral *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3c7ab9c8c55ea1f9d883b0b306782919">spdk_nvmf_tgt_get_first_referral</a> (struct spdk_nvmf_tgt *tgt)</td></tr>
+<tr class="memdesc:a3c7ab9c8c55ea1f9d883b0b306782919"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the first referral in a target.  <br /></td></tr>
+<tr class="separator:a3c7ab9c8c55ea1f9d883b0b306782919"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2f88a161075096f4df1a85f0f100ba0" id="r_ae2f88a161075096f4df1a85f0f100ba0"><td class="memItemLeft" align="right" valign="top">struct spdk_nvmf_referral *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae2f88a161075096f4df1a85f0f100ba0">spdk_nvmf_tgt_referral_get_next</a> (struct spdk_nvmf_tgt *tgt, struct spdk_nvmf_referral *prev_referral)</td></tr>
+<tr class="memdesc:ae2f88a161075096f4df1a85f0f100ba0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the next referral in a target.  <br /></td></tr>
+<tr class="separator:ae2f88a161075096f4df1a85f0f100ba0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afea60ea46e73e2b9c0b5a7e0f4a2df6e" id="r_afea60ea46e73e2b9c0b5a7e0f4a2df6e"><td class="memItemLeft" align="right" valign="top"><a id="afea60ea46e73e2b9c0b5a7e0f4a2df6e" name="afea60ea46e73e2b9c0b5a7e0f4a2df6e"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_referral_add_host</b> (struct spdk_nvmf_referral *referral, const char *hostnqn)</td></tr>
+<tr class="separator:afea60ea46e73e2b9c0b5a7e0f4a2df6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49bd57de50d53df7e1eb205c4008d8f9" id="r_a49bd57de50d53df7e1eb205c4008d8f9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a49bd57de50d53df7e1eb205c4008d8f9">spdk_nvmf_referral_remove_host</a> (struct spdk_nvmf_referral *referral, const char *hostnqn)</td></tr>
+<tr class="memdesc:a49bd57de50d53df7e1eb205c4008d8f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove a host from a discovery service referral.  <br /></td></tr>
+<tr class="separator:a49bd57de50d53df7e1eb205c4008d8f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a21bc0cf718b84cb957cb78cbef51a4" id="r_a9a21bc0cf718b84cb957cb78cbef51a4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9a21bc0cf718b84cb957cb78cbef51a4">spdk_nvmf_referral_set_allow_any_host</a> (struct spdk_nvmf_referral *referral, bool allow_any_host)</td></tr>
+<tr class="memdesc:a9a21bc0cf718b84cb957cb78cbef51a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set whether a referral should allow any host or only hosts in the allowed list.  <br /></td></tr>
+<tr class="separator:a9a21bc0cf718b84cb957cb78cbef51a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac22668cef8a0377e5d02d0cdf6a2596" id="r_aac22668cef8a0377e5d02d0cdf6a2596"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aac22668cef8a0377e5d02d0cdf6a2596">spdk_nvmf_referral_get_allow_any_host</a> (struct spdk_nvmf_referral *referral)</td></tr>
+<tr class="memdesc:aac22668cef8a0377e5d02d0cdf6a2596"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get whether a referral allows any host or only hosts in the allowed list.  <br /></td></tr>
+<tr class="separator:aac22668cef8a0377e5d02d0cdf6a2596"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5dccc507c542cec6c06b0e696ae8fd8" id="r_ad5dccc507c542cec6c06b0e696ae8fd8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad5dccc507c542cec6c06b0e696ae8fd8">spdk_nvmf_referral_host_allowed</a> (struct spdk_nvmf_referral *referral, const char *hostnqn)</td></tr>
+<tr class="memdesc:ad5dccc507c542cec6c06b0e696ae8fd8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether a host is allowed to see a referral.  <br /></td></tr>
+<tr class="separator:ad5dccc507c542cec6c06b0e696ae8fd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a865384b97050d905af931dbce44c79ae" id="r_a865384b97050d905af931dbce44c79ae"><td class="memItemLeft" align="right" valign="top">struct spdk_nvmf_host *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a865384b97050d905af931dbce44c79ae">spdk_nvmf_referral_get_first_host</a> (struct spdk_nvmf_referral *referral)</td></tr>
+<tr class="memdesc:a865384b97050d905af931dbce44c79ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the first allowed host in a referral.  <br /></td></tr>
+<tr class="separator:a865384b97050d905af931dbce44c79ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a821ea620a120380d8f549135f027ed9c" id="r_a821ea620a120380d8f549135f027ed9c"><td class="memItemLeft" align="right" valign="top">struct spdk_nvmf_host *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a821ea620a120380d8f549135f027ed9c">spdk_nvmf_referral_get_next_host</a> (struct spdk_nvmf_referral *referral, struct spdk_nvmf_host *prev_host)</td></tr>
+<tr class="memdesc:a821ea620a120380d8f549135f027ed9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the next allowed host in a referral.  <br /></td></tr>
+<tr class="separator:a821ea620a120380d8f549135f027ed9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57dcf4ddb46503fe2e513359401fdbff" id="r_a57dcf4ddb46503fe2e513359401fdbff"><td class="memItemLeft" align="right" valign="top">const struct <a class="el" href="structspdk__nvme__transport__id.html">spdk_nvme_transport_id</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a57dcf4ddb46503fe2e513359401fdbff">spdk_nvmf_referral_get_trid</a> (struct spdk_nvmf_referral *referral)</td></tr>
+<tr class="memdesc:a57dcf4ddb46503fe2e513359401fdbff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the transport ID of a referral.  <br /></td></tr>
+<tr class="separator:a57dcf4ddb46503fe2e513359401fdbff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adf01b08ee843d7009fd0e8f367a41dd3" id="r_adf01b08ee843d7009fd0e8f367a41dd3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adf01b08ee843d7009fd0e8f367a41dd3">spdk_nvmf_set_custom_discovery_filter</a> (spdk_nvmf_custom_discovery_filter filter)</td></tr>
 <tr class="memdesc:adf01b08ee843d7009fd0e8f367a41dd3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a custom discovery filter.  <br /></td></tr>
 <tr class="separator:adf01b08ee843d7009fd0e8f367a41dd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1416,6 +1446,208 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="aac22668cef8a0377e5d02d0cdf6a2596" name="aac22668cef8a0377e5d02d0cdf6a2596"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac22668cef8a0377e5d02d0cdf6a2596">&#9670;&#160;</a></span>spdk_nvmf_referral_get_allow_any_host()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool spdk_nvmf_referral_get_allow_any_host </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_nvmf_referral *</td>          <td class="paramname"><span class="paramname"><em>referral</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get whether a referral allows any host or only hosts in the allowed list. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">referral</td><td>Referral to query.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if any host is allowed, false if only hosts in the allowed list are allowed. </dd></dl>
+
+</div>
+</div>
+<a id="a865384b97050d905af931dbce44c79ae" name="a865384b97050d905af931dbce44c79ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a865384b97050d905af931dbce44c79ae">&#9670;&#160;</a></span>spdk_nvmf_referral_get_first_host()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct spdk_nvmf_host * spdk_nvmf_referral_get_first_host </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_nvmf_referral *</td>          <td class="paramname"><span class="paramname"><em>referral</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the first allowed host in a referral. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">referral</td><td>Referral to query</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>First allowed host in this referral, or NULL if none allowed </dd></dl>
+
+</div>
+</div>
+<a id="a821ea620a120380d8f549135f027ed9c" name="a821ea620a120380d8f549135f027ed9c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a821ea620a120380d8f549135f027ed9c">&#9670;&#160;</a></span>spdk_nvmf_referral_get_next_host()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct spdk_nvmf_host * spdk_nvmf_referral_get_next_host </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_nvmf_referral *</td>          <td class="paramname"><span class="paramname"><em>referral</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct spdk_nvmf_host *</td>          <td class="paramname"><span class="paramname"><em>prev_host</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the next allowed host in a referral. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">referral</td><td>Referral to query </td></tr>
+    <tr><td class="paramname">prev_host</td><td>Previous host returned from this function</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>next allowed host in this referral, or NULL if prev_host was the last host </dd></dl>
+
+</div>
+</div>
+<a id="a57dcf4ddb46503fe2e513359401fdbff" name="a57dcf4ddb46503fe2e513359401fdbff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a57dcf4ddb46503fe2e513359401fdbff">&#9670;&#160;</a></span>spdk_nvmf_referral_get_trid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const struct <a class="el" href="structspdk__nvme__transport__id.html">spdk_nvme_transport_id</a> * spdk_nvmf_referral_get_trid </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_nvmf_referral *</td>          <td class="paramname"><span class="paramname"><em>referral</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the transport ID of a referral. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">referral</td><td>Referral to query</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Transport ID of the referral </dd></dl>
+
+</div>
+</div>
+<a id="ad5dccc507c542cec6c06b0e696ae8fd8" name="ad5dccc507c542cec6c06b0e696ae8fd8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad5dccc507c542cec6c06b0e696ae8fd8">&#9670;&#160;</a></span>spdk_nvmf_referral_host_allowed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool spdk_nvmf_referral_host_allowed </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_nvmf_referral *</td>          <td class="paramname"><span class="paramname"><em>referral</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>hostnqn</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Check whether a host is allowed to see a referral. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">referral</td><td>Referral to query. </td></tr>
+    <tr><td class="paramname">hostnqn</td><td>NQN of the host to check.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the host is allowed, false if not. </dd></dl>
+
+</div>
+</div>
+<a id="a49bd57de50d53df7e1eb205c4008d8f9" name="a49bd57de50d53df7e1eb205c4008d8f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a49bd57de50d53df7e1eb205c4008d8f9">&#9670;&#160;</a></span>spdk_nvmf_referral_remove_host()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_nvmf_referral_remove_host </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_nvmf_referral *</td>          <td class="paramname"><span class="paramname"><em>referral</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>hostnqn</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Remove a host from a discovery service referral. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">referral</td><td>The referral from which host is to be removed </td></tr>
+    <tr><td class="paramname">hostnqn</td><td>NQN of the host which is to be removed</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success or a negated errno on failure </dd></dl>
+
+</div>
+</div>
+<a id="a9a21bc0cf718b84cb957cb78cbef51a4" name="a9a21bc0cf718b84cb957cb78cbef51a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a21bc0cf718b84cb957cb78cbef51a4">&#9670;&#160;</a></span>spdk_nvmf_referral_set_allow_any_host()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_nvmf_referral_set_allow_any_host </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_nvmf_referral *</td>          <td class="paramname"><span class="paramname"><em>referral</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>allow_any_host</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set whether a referral should allow any host or only hosts in the allowed list. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">referral</td><td>Referral to modify. </td></tr>
+    <tr><td class="paramname">allow_any_host</td><td>true to allow any host to see this referral in discovery log, or false to enforce the list configured with spdk_nvmf_referral_add_host().</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, or negated errno value on failure. </dd></dl>
 
 </div>
 </div>
@@ -3173,6 +3405,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Add a discovery service referral to an NVMe-oF target. </p>
+<p>This function must be called from the app thread.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">tgt</td><td>The target to which the referral will be added </td></tr>
@@ -3319,6 +3552,32 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a3c7ab9c8c55ea1f9d883b0b306782919" name="a3c7ab9c8c55ea1f9d883b0b306782919"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c7ab9c8c55ea1f9d883b0b306782919">&#9670;&#160;</a></span>spdk_nvmf_tgt_get_first_referral()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct spdk_nvmf_referral * spdk_nvmf_tgt_get_first_referral </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_nvmf_tgt *</td>          <td class="paramname"><span class="paramname"><em>tgt</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the first referral in a target. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tgt</td><td>Target to query</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>First referral in this target, or NULL if none exist </dd></dl>
+
+</div>
+</div>
 <a id="a6710270c6c14a135c59274f33b07d024" name="a6710270c6c14a135c59274f33b07d024"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6710270c6c14a135c59274f33b07d024">&#9670;&#160;</a></span>spdk_nvmf_tgt_get_name()</h2>
 
@@ -3451,6 +3710,37 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="ae2f88a161075096f4df1a85f0f100ba0" name="ae2f88a161075096f4df1a85f0f100ba0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2f88a161075096f4df1a85f0f100ba0">&#9670;&#160;</a></span>spdk_nvmf_tgt_referral_get_next()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct spdk_nvmf_referral * spdk_nvmf_tgt_referral_get_next </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_nvmf_tgt *</td>          <td class="paramname"><span class="paramname"><em>tgt</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct spdk_nvmf_referral *</td>          <td class="paramname"><span class="paramname"><em>prev_referral</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the next referral in a target. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tgt</td><td>Target to query </td></tr>
+    <tr><td class="paramname">prev_referral</td><td>Previous referral returned from this function</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>next referral in this target, or NULL if prev_referral was the last referral </dd></dl>
+
+</div>
+</div>
 <a id="a28824d5f18a5ddf04007906f012199be" name="a28824d5f18a5ddf04007906f012199be"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a28824d5f18a5ddf04007906f012199be">&#9670;&#160;</a></span>spdk_nvmf_tgt_remove_referral()</h2>
 
@@ -3471,6 +3761,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Remove a discovery service referral from an NVMeoF target. </p>
+<p>This function must be called from the app thread.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">tgt</td><td>The target from which the referral will be removed </td></tr>
