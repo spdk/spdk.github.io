@@ -213,7 +213,7 @@ Generate JSON-RPC methods for current configuration</h2>
 <p>If PYTHONPATH doesn't include the location of the external RPC python script, it should be updated:</p>
 <div class="fragment"><div class="line">export PYTHONPATH=/home/user/plugin_example/</div>
 </div><!-- fragment --><p>In provided location, create python module file (e.g. rpc_plugin.py) with new RPC methods. The file should contain spdk_rpc_plugin_initialize() method that will be called when the plugin is loaded to define new parsers for provided subparsers argument that adds new RPC calls (subparsers.add_parser()). The new parsers should use the client.call() method to call RPC functions registered within the external module using the SPDK_RPC_REGISTER() macro. Example:</p>
-<div class="fragment"><div class="line"><span class="keyword">from</span> spdk.rpc.client <span class="keyword">import</span> print_json</div>
+<div class="fragment"><div class="line"><span class="keyword">from</span> spdk.rpc.cmd_parser <span class="keyword">import</span> print_json</div>
 <div class="line"> </div>
 <div class="line"> </div>
 <div class="line"><span class="keyword">def </span>spdk_rpc_plugin_initialize(subparsers):</div>
