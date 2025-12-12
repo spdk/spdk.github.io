@@ -154,7 +154,9 @@ $(function(){initNavTree('jsonrpc_proxy.html',''); initResizable(); });
 <p>Error 400 - wrong JSON syntax or incorrect JSON method</p>
 <p>Status 200 with resultant JSON object included on success.</p>
 <h1>Client side</h1>
-<p>Below is a sample python script acting as a client side. It sends <code>bdev_get_bdevs</code> method with optional <code>name</code> parameter and prints JSON object returned from remote_rpc script.</p>
+<p>Simple curl one-liner example:</p>
+<div class="fragment"><div class="line">$ curl --fail -k --user &quot;user:password&quot; -H &quot;Content-Type: application/json&quot; --data &quot;{\&quot;id\&quot;: 1, \&quot;method\&quot;: \&quot;bdev_get_bdevs\&quot;, \&quot;params\&quot;: {\&quot;name\&quot;: \&quot;Malloc0\&quot;}}&quot; http://192.168.0.2:8000/</div>
+</div><!-- fragment --><p>Below is a sample python script acting as a client side. It sends <code>bdev_get_bdevs</code> method with optional <code>name</code> parameter and prints JSON object returned from remote_rpc script.</p>
 <div class="fragment"><div class="line"><span class="keyword">import</span> json</div>
 <div class="line"><span class="keyword">import</span> requests</div>
 <div class="line"> </div>

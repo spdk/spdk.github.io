@@ -193,7 +193,10 @@ Generate JSON-RPC methods for current configuration</h2>
 <p>An initial configuration can be specified for an SPDK application via the '-c' command line parameter. The configuration file is a JSON file containing all of the JSON-RPC method invocations necessary for the desired configuration. Writing these files by hand is extremely tedious however, so 'rpc.py' provides a mechanism to generate a JSON-RPC file based on the current configuration.</p>
 <div class="fragment"><div class="line">scripts/rpc.py save_config &gt; config.json</div>
 </div><!-- fragment --><p>'config.json' can then be passed to a new SPDK application using the '-c' command line parameter to reproduce the same configuration.</p>
-<h2>JSON-RPC batching</h2>
+<h2>JSON-RPC Remote access</h2>
+<p>Visit this <a href="https://spdk.io/doc/jsonrpc_proxy.html">link</a> for detailed information. Usage example:</p>
+<div class="fragment"><div class="line">spdk/scripts/rpc_http_proxy.py 192.168.0.2 8000 user password</div>
+</div><!-- fragment --><h2>JSON-RPC batching</h2>
 <p>'rpc.py' also supports batching of multiple JSON-RPC methods with one invocation. So instead of calling 'rpc.py' once for each JSON-RPC method, such as:</p>
 <div class="fragment"><div class="line">scripts/rpc.py bdev_malloc_create -b malloc0 64 512</div>
 <div class="line">scripts/rpc.py nvmf_create_subsystem nqn.2016-06.io.spdk:cnode1 -a</div>
