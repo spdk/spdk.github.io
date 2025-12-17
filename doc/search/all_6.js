@@ -172,5 +172,6 @@ var searchData=
   ['current_20configuration_169',['Generate JSON-RPC methods for current configuration',['../jsonrpc.html#jsonrpc_generate',1,'']]],
   ['current_5foffset_5fblocks_170',['current_offset_blocks',['../structspdk__bdev__io__internal__fields.html#a01450cfa85081214adbaa74c25a9cfaf',1,'spdk_bdev_io_internal_fields']]],
   ['custom_20block_20device_20module_171',['Writing a Custom Block Device Module',['../bdev_module.html',1,'prog_guides']]],
-  ['custom_20shutdown_20callback_172',['Custom shutdown callback',['../event.html#event_component_shutdown',1,'']]]
+  ['custom_20shutdown_20callback_172',['Custom shutdown callback',['../event.html#event_component_shutdown',1,'']]],
+  ['cwp_173',['cwp',['../structspdk__nvme__nsattr.html#a62ccf57ee4e29e375a51b115fc581069',1,'spdk_nvme_nsattr']]]
 ];

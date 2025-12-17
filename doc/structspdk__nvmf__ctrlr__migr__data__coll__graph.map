@@ -1,39 +1,41 @@
 <map id="spdk_nvmf_ctrlr_migr_data" name="spdk_nvmf_ctrlr_migr_data">
-<area shape="rect" id="Node000001" title=" " alt="" coords="784,538,983,565"/>
-<area shape="rect" id="Node000002" href="$structspdk__nvmf__registers.html" title="A subset of struct spdk_nvme_registers that are emulated by a fabrics device." alt="" coords="472,141,629,168"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="575,178,872,536,868,539,571,182"/>
-<area shape="rect" id="Node000003" href="$unionspdk__nvme__cap__register.html" title=" " alt="" coords="16,10,199,38"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="215,18,323,28,380,40,435,59,467,76,496,97,538,138,535,142,492,101,464,80,433,63,379,45,323,34,215,24"/>
-<area shape="rect" id="Node000004" href="$unionspdk__nvme__vs__register.html" title=" " alt="" coords="20,62,195,90"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="211,79,319,90,434,110,516,137,514,142,433,116,318,95,210,84"/>
-<area shape="rect" id="Node000005" href="$unionspdk__nvme__cc__register.html" title=" " alt="" coords="20,114,195,142"/>
-<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="210,131,471,147,471,152,210,136"/>
-<area shape="rect" id="Node000006" href="$unionspdk__nvme__csts__register.html" title=" " alt="" coords="14,166,201,194"/>
-<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="216,179,322,178,433,171,474,166,474,171,434,177,322,183,216,185"/>
-<area shape="rect" id="Node000007" href="$unionspdk__nvme__aqa__register.html" title=" " alt="" coords="15,218,200,246"/>
-<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="215,229,321,221,378,214,433,202,481,186,522,166,524,171,483,191,434,207,379,219,322,227,215,234"/>
-<area shape="rect" id="Node000008" href="$structspdk__nvmf__ctrlr__feat.html" title=" " alt="" coords="471,538,630,565"/>
-<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="645,549,783,549,783,554,645,554"/>
-<area shape="rect" id="Node000009" href="$unionspdk__nvme__feat__arbitration.html" title="Data used by Set Features/Get Features SPDK_NVME_FEAT_ARBITRATION." alt="" coords="5,270,210,297"/>
-<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="226,270,278,272,333,280,386,297,435,323,462,346,484,373,518,435,539,494,549,537,544,538,534,495,513,437,480,376,458,350,432,327,384,302,332,286,277,278,225,276"/>
-<area shape="rect" id="Node000010" href="$unionspdk__nvme__feat__power__management.html" title="Data used by Set Features/Get Features SPDK_NVME_FEAT_POWER_MANAGEMENT." alt="" coords="19,321,196,366"/>
-<area shape="poly" id="edge9_Node000008_Node000010" title=" " alt="" coords="211,342,265,348,323,359,381,377,435,403,474,434,505,471,529,508,545,536,540,539,525,510,501,474,470,437,432,407,379,382,322,364,265,353,211,347"/>
-<area shape="rect" id="Node000011" href="$unionspdk__nvme__feat__error__recovery.html" title="Data used by Set Features/Get Features SPDK_NVME_FEAT_ERROR_RECOVERY." alt="" coords="24,391,191,435"/>
-<area shape="poly" id="edge10_Node000008_Node000011" title=" " alt="" coords="207,421,318,441,377,456,435,476,490,505,533,535,529,539,487,509,433,481,376,461,317,446,206,426"/>
-<area shape="rect" id="Node000012" href="$unionspdk__nvme__feat__volatile__write__cache.html" title="Data used by Set Features/Get Features SPDK_NVME_FEAT_VOLATILE_WRITE_CACHE." alt="" coords="15,460,200,505"/>
-<area shape="poly" id="edge11_Node000008_Node000012" title=" " alt="" coords="216,494,434,526,479,535,478,540,433,532,215,499"/>
-<area shape="rect" id="Node000013" href="$unionspdk__nvme__feat__number__of__queues.html" title="Data used by Set Features/Get Features SPDK_NVME_FEAT_NUMBER_OF_QUEUES." alt="" coords="14,529,201,574"/>
-<area shape="poly" id="edge12_Node000008_Node000013" title=" " alt="" coords="216,549,470,549,470,554,216,554"/>
-<area shape="rect" id="Node000014" href="$unionspdk__nvme__feat__interrupt__coalescing.html" title="Data used by Set Features/Get Features SPDK_NVME_FEAT_INTERRUPT_COALESCING." alt="" coords="11,599,204,643"/>
-<area shape="poly" id="edge13_Node000008_Node000014" title=" " alt="" coords="219,604,433,571,477,564,478,569,434,577,220,609"/>
-<area shape="rect" id="Node000015" href="$unionspdk__nvme__feat__interrupt__vector__configuration.html" title="Data used by Set Features/Get Features SPDK_NVME_FEAT_INTERRUPT_VECTOR_CONFIGURATION." alt="" coords="11,668,204,713"/>
-<area shape="poly" id="edge14_Node000008_Node000015" title=" " alt="" coords="219,689,273,683,328,671,383,652,432,623,440,612,443,600,446,588,456,575,474,564,477,568,459,579,451,590,448,602,445,614,435,627,385,657,330,676,273,688,220,694"/>
-<area shape="rect" id="Node000016" href="$unionspdk__nvme__feat__write__atomicity.html" title="Data used by Set Features/Get Features SPDK_NVME_FEAT_WRITE_ATOMICITY." alt="" coords="23,737,192,782"/>
-<area shape="poly" id="edge15_Node000008_Node000016" title=" " alt="" coords="208,770,265,770,325,762,383,743,409,728,432,709,443,694,447,679,444,645,440,611,444,593,456,575,470,564,473,568,460,579,449,595,445,611,449,645,453,679,448,696,436,713,412,733,385,748,326,767,265,776,208,776"/>
-<area shape="rect" id="Node000017" href="$unionspdk__nvme__feat__async__event__configuration.html" title="Data used by Set Features / Get Features SPDK_NVME_FEAT_ASYNC_EVENT_CONFIGURATION." alt="" coords="20,807,195,851"/>
-<area shape="poly" id="edge16_Node000008_Node000017" title=" " alt="" coords="210,846,267,849,327,844,384,826,409,812,432,794,441,777,445,752,444,687,443,622,446,595,456,575,469,564,472,568,460,579,452,596,448,622,449,687,450,752,446,778,436,797,412,816,386,831,328,849,268,854,210,851"/>
-<area shape="rect" id="Node000019" href="$unionspdk__nvme__feat__keep__alive__timer.html" title="Data used by Set Features/Get Features SPDK_NVME_FEAT_KEEP_ALIVE_TIMER." alt="" coords="24,876,191,921"/>
-<area shape="poly" id="edge17_Node000008_Node000019" title=" " alt="" coords="207,918,265,923,325,920,355,913,383,904,409,890,432,871,444,848,449,814,445,727,440,638,444,602,456,575,468,564,472,568,460,579,449,603,445,638,450,726,454,814,449,849,436,874,412,894,385,908,356,919,326,925,265,928,207,923"/>
-<area shape="rect" id="Node000020" href="$unionspdk__nvme__async__event__completion.html" title="Asynchronous Event Request Completion." alt="" coords="458,589,643,634"/>
-<area shape="poly" id="edge18_Node000001_Node000020" title=" " alt="" coords="658,590,760,571,803,563,804,569,760,577,659,595"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="784,595,983,623"/>
+<area shape="rect" id="Node000002" href="$structspdk__nvmf__registers.html" title="A subset of struct spdk_nvme_registers that are emulated by a fabrics device." alt="" coords="472,171,629,199"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="574,209,873,593,869,596,570,213"/>
+<area shape="rect" id="Node000003" href="$unionspdk__nvme__cap__register.html" title=" " alt="" coords="16,15,199,43"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="215,19,268,20,324,27,381,39,435,60,471,84,502,114,543,169,539,173,498,118,468,88,432,65,379,44,323,32,267,26,215,24"/>
+<area shape="rect" id="Node000004" href="$unionspdk__nvme__vs__register.html" title=" " alt="" coords="20,67,195,95"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="211,80,320,91,378,102,435,117,488,141,531,168,528,173,485,146,433,122,377,107,319,96,211,85"/>
+<area shape="rect" id="Node000005" href="$unionspdk__nvme__cc__register.html" title=" " alt="" coords="20,119,195,147"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="211,137,318,146,434,160,482,168,481,173,433,165,318,151,210,142"/>
+<area shape="rect" id="Node000006" href="$unionspdk__nvme__csts__register.html" title=" " alt="" coords="14,171,201,199"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="216,182,471,182,471,188,216,188"/>
+<area shape="rect" id="Node000007" href="$unionspdk__nvme__aqa__register.html" title=" " alt="" coords="15,223,200,251"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="215,227,321,218,433,205,480,197,481,202,434,210,321,223,215,233"/>
+<area shape="rect" id="Node000008" href="$unionspdk__nvme__crto__register.html" title=" " alt="" coords="15,275,200,303"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="215,285,322,274,378,264,433,249,486,224,528,197,531,202,488,229,435,254,380,269,323,279,216,290"/>
+<area shape="rect" id="Node000009" href="$structspdk__nvmf__ctrlr__feat.html" title=" " alt="" coords="471,595,630,623"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="645,606,783,606,783,612,645,612"/>
+<area shape="rect" id="Node000010" href="$unionspdk__nvme__feat__arbitration.html" title="Data used by Set Features/Get Features SPDK_NVME_FEAT_ARBITRATION." alt="" coords="5,327,210,355"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="226,328,278,330,333,338,386,354,435,380,462,403,484,431,518,492,539,551,549,594,544,595,534,553,513,494,480,434,458,407,432,385,384,359,332,343,277,335,225,333"/>
+<area shape="rect" id="Node000011" href="$unionspdk__nvme__feat__power__management.html" title="Data used by Set Features/Get Features SPDK_NVME_FEAT_POWER_MANAGEMENT." alt="" coords="19,379,196,423"/>
+<area shape="poly" id="edge10_Node000009_Node000011" title=" " alt="" coords="211,399,265,405,323,416,381,434,435,460,474,491,505,528,529,565,545,594,540,596,525,568,501,532,470,495,432,465,379,439,322,421,265,410,211,405"/>
+<area shape="rect" id="Node000012" href="$unionspdk__nvme__feat__error__recovery.html" title="Data used by Set Features/Get Features SPDK_NVME_FEAT_ERROR_RECOVERY." alt="" coords="24,448,191,493"/>
+<area shape="poly" id="edge11_Node000009_Node000012" title=" " alt="" coords="207,478,318,498,377,513,435,533,490,562,533,592,529,597,487,567,433,538,376,518,317,503,206,483"/>
+<area shape="rect" id="Node000013" href="$unionspdk__nvme__feat__volatile__write__cache.html" title="Data used by Set Features/Get Features SPDK_NVME_FEAT_VOLATILE_WRITE_CACHE." alt="" coords="15,517,200,562"/>
+<area shape="poly" id="edge12_Node000009_Node000013" title=" " alt="" coords="216,551,434,584,479,592,478,597,433,589,215,556"/>
+<area shape="rect" id="Node000014" href="$unionspdk__nvme__feat__number__of__queues.html" title="Data used by Set Features/Get Features SPDK_NVME_FEAT_NUMBER_OF_QUEUES." alt="" coords="14,587,201,631"/>
+<area shape="poly" id="edge13_Node000009_Node000014" title=" " alt="" coords="216,606,470,606,470,612,216,612"/>
+<area shape="rect" id="Node000015" href="$unionspdk__nvme__feat__interrupt__coalescing.html" title="Data used by Set Features/Get Features SPDK_NVME_FEAT_INTERRUPT_COALESCING." alt="" coords="11,656,204,701"/>
+<area shape="poly" id="edge14_Node000009_Node000015" title=" " alt="" coords="219,661,433,629,477,621,478,626,434,634,220,666"/>
+<area shape="rect" id="Node000016" href="$unionspdk__nvme__feat__interrupt__vector__configuration.html" title="Data used by Set Features/Get Features SPDK_NVME_FEAT_INTERRUPT_VECTOR_CONFIGURATION." alt="" coords="11,725,204,770"/>
+<area shape="poly" id="edge15_Node000009_Node000016" title=" " alt="" coords="219,746,273,740,328,729,383,709,432,680,440,669,443,658,446,645,456,632,474,621,477,626,459,636,451,647,448,659,445,672,435,684,385,714,330,734,273,746,220,752"/>
+<area shape="rect" id="Node000017" href="$unionspdk__nvme__feat__write__atomicity.html" title="Data used by Set Features/Get Features SPDK_NVME_FEAT_WRITE_ATOMICITY." alt="" coords="23,795,192,839"/>
+<area shape="poly" id="edge16_Node000009_Node000017" title=" " alt="" coords="208,828,265,828,325,820,383,800,409,786,432,767,443,751,447,736,444,703,440,668,444,650,456,633,470,621,473,625,460,636,449,652,445,668,449,702,453,736,448,754,436,771,412,790,385,805,326,825,265,833,208,833"/>
+<area shape="rect" id="Node000018" href="$unionspdk__nvme__feat__async__event__configuration.html" title="Data used by Set Features / Get Features SPDK_NVME_FEAT_ASYNC_EVENT_CONFIGURATION." alt="" coords="20,864,195,909"/>
+<area shape="poly" id="edge17_Node000009_Node000018" title=" " alt="" coords="210,903,267,906,327,901,384,884,409,869,432,851,441,834,445,809,444,745,443,679,446,652,456,633,469,621,472,626,460,636,452,654,448,679,449,744,450,809,446,836,436,854,412,874,386,889,328,906,268,912,210,909"/>
+<area shape="rect" id="Node000020" href="$unionspdk__nvme__feat__keep__alive__timer.html" title="Data used by Set Features/Get Features SPDK_NVME_FEAT_KEEP_ALIVE_TIMER." alt="" coords="24,933,191,978"/>
+<area shape="poly" id="edge18_Node000009_Node000020" title=" " alt="" coords="207,975,265,980,325,977,355,971,383,961,409,947,432,928,444,905,449,871,445,784,440,695,444,659,456,633,468,621,472,625,460,636,449,660,445,695,450,784,454,871,449,907,436,932,412,951,385,966,356,976,326,982,265,986,207,981"/>
+<area shape="rect" id="Node000021" href="$unionspdk__nvme__async__event__completion.html" title="Asynchronous Event Request Completion." alt="" coords="458,647,643,691"/>
+<area shape="poly" id="edge19_Node000001_Node000021" title=" " alt="" coords="658,647,760,629,803,621,804,626,760,634,659,652"/>
 </map>

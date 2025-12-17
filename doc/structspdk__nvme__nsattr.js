@@ -1,4 +1,5 @@
 var structspdk__nvme__nsattr =
 [
-    [ "write_protected", "structspdk__nvme__nsattr.html#a95231eaec2d5de70411d976f3c30f5e6", null ]
+    [ "cwp", "structspdk__nvme__nsattr.html#a62ccf57ee4e29e375a51b115fc581069", null ],
+    [ "rsvd", "structspdk__nvme__nsattr.html#ad8ec7a24a25608a2c8ef6862a46144a5", null ]
 ];

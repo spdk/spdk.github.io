@@ -136,13 +136,36 @@ $(function(){initNavTree('structspdk__nvme__nsattr.html',''); initResizable(); }
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:a95231eaec2d5de70411d976f3c30f5e6" id="r_a95231eaec2d5de70411d976f3c30f5e6"><td class="memItemLeft" align="right" valign="top"><a id="a95231eaec2d5de70411d976f3c30f5e6" name="a95231eaec2d5de70411d976f3c30f5e6"></a>
-uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>write_protected</b>: 1</td></tr>
-<tr class="memdesc:a95231eaec2d5de70411d976f3c30f5e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Namespace write protected. <br /></td></tr>
-<tr class="separator:a95231eaec2d5de70411d976f3c30f5e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7ccf0fb606a2ada4fcf43fc332663bf6" id="r_a7ccf0fb606a2ada4fcf43fc332663bf6"><td class="memItemLeft" align="right" valign="top"><a id="a7ccf0fb606a2ada4fcf43fc332663bf6" name="a7ccf0fb606a2ada4fcf43fc332663bf6"></a>
-uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>reserved</b>: 7</td></tr>
-<tr class="separator:a7ccf0fb606a2ada4fcf43fc332663bf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7808b118882d30a277069aed5f628066" id="r_a7808b118882d30a277069aed5f628066"><td class="memItemLeft" ><a id="a7808b118882d30a277069aed5f628066" name="a7808b118882d30a277069aed5f628066"></a>
+union {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0adab277c049d3b421dbf77cff579cb3" id="r_a0adab277c049d3b421dbf77cff579cb3"><td class="memItemLeft" ><a id="a0adab277c049d3b421dbf77cff579cb3" name="a0adab277c049d3b421dbf77cff579cb3"></a>
+&#160;&#160;&#160;struct {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa1472ef6b0354e0f9cb858af43c99b3" id="r_afa1472ef6b0354e0f9cb858af43c99b3"><td class="memItemLeft" >
+&#160;&#160;&#160;&#160;&#160;&#160;uint8_t&#160;&#160;&#160;<b>cwp</b>: 1&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="memdesc:afa1472ef6b0354e0f9cb858af43c99b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Currently Write Protected. <br /></td></tr>
+<tr class="separator:afa1472ef6b0354e0f9cb858af43c99b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7af4bdeff1adaeb6e92fb5f547122d30" id="r_a7af4bdeff1adaeb6e92fb5f547122d30"><td class="memItemLeft" >
+&#160;&#160;&#160;&#160;&#160;&#160;uint8_t&#160;&#160;&#160;<b>rsvd</b>: 7&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="memdesc:a7af4bdeff1adaeb6e92fb5f547122d30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reserved. <br /></td></tr>
+<tr class="separator:a7af4bdeff1adaeb6e92fb5f547122d30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0adab277c049d3b421dbf77cff579cb3" id="r_a0adab277c049d3b421dbf77cff579cb3"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;</td><td class="memItemRight" valign="bottom">&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:a0adab277c049d3b421dbf77cff579cb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a74e2e8fde95deaabd2e56eac673a87" id="r_a8a74e2e8fde95deaabd2e56eac673a87"><td class="memItemLeft" ><a id="a8a74e2e8fde95deaabd2e56eac673a87" name="a8a74e2e8fde95deaabd2e56eac673a87"></a>
+&#160;&#160;&#160;struct {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a197fbc3b603e573c2d5878c0ca3aeef2" id="r_a197fbc3b603e573c2d5878c0ca3aeef2"><td class="memItemLeft" >
+&#160;&#160;&#160;&#160;&#160;&#160;uint8_t&#160;&#160;&#160;<b>write_protected</b>: 1&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:a197fbc3b603e573c2d5878c0ca3aeef2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a575fdfa62875ae565d4f6dfcdbb96db0" id="r_a575fdfa62875ae565d4f6dfcdbb96db0"><td class="memItemLeft" >
+&#160;&#160;&#160;&#160;&#160;&#160;uint8_t&#160;&#160;&#160;<b>reserved</b>: 7&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:a575fdfa62875ae565d4f6dfcdbb96db0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a74e2e8fde95deaabd2e56eac673a87" id="r_a8a74e2e8fde95deaabd2e56eac673a87"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;</td><td class="memItemRight" valign="bottom">&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="memdesc:a8a74e2e8fde95deaabd2e56eac673a87"><td class="mdescLeft">&#160;</td><td class="mdescRight">Old bit naming is deprecated and will be removed in 26.05 release. <br /></td></tr>
+<tr class="separator:a8a74e2e8fde95deaabd2e56eac673a87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7808b118882d30a277069aed5f628066" id="r_a7808b118882d30a277069aed5f628066"><td class="memItemLeft" valign="top">};&#160;</td><td class="memItemRight" valign="bottom">&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:a7808b118882d30a277069aed5f628066"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li><a class="el" href="nvme__spec_8h.html">nvme_spec.h</a></li>

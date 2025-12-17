@@ -71,5 +71,5 @@ var searchData=
   ['overview_68',['Overview',['../distributions.html#distros_overview',1,'Overview'],['../jsonrpc.html#jsonrpc_overview',1,'Overview'],['../overview.html#dir_overview',1,'Overview'],['../peer_2_peer.html#p2p_overview',1,'Overview'],['../shfmt.html#shfmt_overview',1,'Overview'],['../logical_volumes.html#lvol_rpc',1,'RPC overview'],['../overview.html',1,'SPDK Structural Overview']]],
   ['overview_20of_20spdk_20applications_69',['An Overview of SPDK Applications',['../app_overview.html',1,'user_guides']]],
   ['owner_5foffset_70',['owner_offset',['../structspdk__trace__file.html#ab30ded0045e75bf5cbce59a25a3cff38',1,'spdk_trace_file']]],
-  ['ozcs_71',['ozcs',['../structspdk__nvme__zns__ns__data.html#af727ad997a37f8a30afded1513fd436f',1,'spdk_nvme_zns_ns_data']]]
+  ['ozcs_71',['ozcs',['../structspdk__nvme__zns__ns__data.html#a1caddaea356c758f7f5d29f06785286d',1,'spdk_nvme_zns_ns_data']]]
 ];
