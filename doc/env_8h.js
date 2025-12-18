@@ -78,6 +78,7 @@ var env_8h =
     [ "spdk_pci_addr_compare", "env_8h.html#a7f3decf485d6b797775bc4dd2215eb52", null ],
     [ "spdk_pci_addr_fmt", "env_8h.html#a492c0520e80d8be841891e4d1bd7a446", null ],
     [ "spdk_pci_addr_parse", "env_8h.html#a96187c4c0c5a302669f684e487ebaa0d", null ],
+    [ "spdk_pci_ae4dma_get_driver", "env_8h.html#a27bb481a149e093b3abfda9df5abf525", null ],
     [ "spdk_pci_device_allow", "env_8h.html#a8fa85cff9c8d5bed6ba0eac58631e871", null ],
     [ "spdk_pci_device_attach", "env_8h.html#ac6aa2606617cc3913fd5d6b7d218eba4", null ],
     [ "spdk_pci_device_cfg_read", "env_8h.html#a1767ff2d8e3bc7788de264d3077905b7", null ],

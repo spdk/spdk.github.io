@@ -144,6 +144,15 @@ v26.01: (Upcoming Release)</h1>
 <p>Introduced the API 'spdk_nvmf_set_custom_discovery_filter' to set up custom discovery filter.</p>
 <p>Add support for preempt-and-abort mode of persistent reservations acquire command.</p>
 <p>Added support for adding and deleting hosts from a discovery referral.</p>
+<h2>AE4DMA</h2>
+<p>This release adds a user-space driver with support for the AE4DMA (AMD EPYC 4th Generation Direct Memory Access) offload engine.</p>
+<p>AE4DMA</p>
+<ul>
+<li>The AE4DMA user-space driver offloads memory copies to the DMA engine in AMD Embedded EPYC processors.</li>
+<li>Added a new AE4DMA module to the Accel Framework. To use the AE4DMA module, use the new RPC ae4dma_scan_accel_module.</li>
+</ul>
+<h2>rpc</h2>
+<p>A new RPC ae4dma_scan_accel_module has been added to the accel framework to enable the AE4DMA module.</p>
 <h1>v25.09</h1>
 <h2>bdev</h2>
 <p><code>spdk_bdev_get_preferred_write_alignment</code>, <code>spdk_bdev_get_preferred_write_granularity</code>, <code>spdk_bdev_get_optimal_write_size</code>, <code>spdk_bdev_get_preferred_unmap_alignment</code> and <code>spdk_bdev_get_preferred_unmap_granularity</code> APIs were added.</p>

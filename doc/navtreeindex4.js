@@ -1,5 +1,7 @@
 var NAVTREEINDEX4 =
 {
+"gdb_macros.html":[4,5],
+"general.html":[5],
 "getting_started.html":[1,1],
 "getting_started.html#getting_started_building":[1,1,2],
 "getting_started.html#getting_started_examples":[1,1,4],
@@ -187,9 +189,10 @@ var NAVTREEINDEX4 =
 "jsonrpc.html#rpc_accel_get_module_info":[3,8,4,0],
 "jsonrpc.html#rpc_accel_get_opc_assignments":[3,8,4,1],
 "jsonrpc.html#rpc_accel_get_stats":[3,8,4,8],
-"jsonrpc.html#rpc_accel_mlx5_dump_stats":[3,8,4,19],
+"jsonrpc.html#rpc_accel_mlx5_dump_stats":[3,8,4,20],
 "jsonrpc.html#rpc_accel_set_driver":[3,8,4,6],
 "jsonrpc.html#rpc_accel_set_options":[3,8,4,7],
+"jsonrpc.html#rpc_ae4dma_scan_accel_module":[3,8,4,14],
 "jsonrpc.html#rpc_bdev_aio_create":[3,8,5,26],
 "jsonrpc.html#rpc_bdev_aio_delete":[3,8,5,28],
 "jsonrpc.html#rpc_bdev_aio_rescan":[3,8,5,27],
@@ -246,8 +249,5 @@ var NAVTREEINDEX4 =
 "jsonrpc.html#rpc_bdev_null_delete":[3,8,5,24],
 "jsonrpc.html#rpc_bdev_null_resize":[3,8,5,25],
 "jsonrpc.html#rpc_bdev_nvme_add_error_injection":[3,8,20,6],
-"jsonrpc.html#rpc_bdev_nvme_apply_firmware":[3,8,5,49],
-"jsonrpc.html#rpc_bdev_nvme_attach_controller":[3,8,5,31],
-"jsonrpc.html#rpc_bdev_nvme_cuse_register":[3,8,5,44],
-"jsonrpc.html#rpc_bdev_nvme_cuse_unregister":[3,8,5,45]
+"jsonrpc.html#rpc_bdev_nvme_apply_firmware":[3,8,5,49]
 };

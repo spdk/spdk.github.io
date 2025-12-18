@@ -182,6 +182,7 @@ var user_guides =
         [ "dsa_scan_accel_module", "jsonrpc.html#rpc_dsa_scan_accel_module", null ],
         [ "iaa_scan_accel_module", "jsonrpc.html#rpc_iaa_scan_accel_module", null ],
         [ "ioat_scan_accel_module", "jsonrpc.html#rpc_ioat_scan_accel_module", null ],
+        [ "ae4dma_scan_accel_module", "jsonrpc.html#rpc_ae4dma_scan_accel_module", null ],
         [ "cuda_scan_accel_module", "jsonrpc.html#rpc_cuda_scan_accel_module", null ],
         [ "dpdk_cryptodev_scan_accel_module", "jsonrpc.html#rpc_dpdk_cryptodev_scan_accel_module", null ],
         [ "dpdk_cryptodev_set_driver", "jsonrpc.html#rpc_dpdk_cryptodev_set_driver", null ],

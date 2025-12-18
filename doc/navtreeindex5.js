@@ -1,5 +1,8 @@
 var NAVTREEINDEX5 =
 {
+"jsonrpc.html#rpc_bdev_nvme_attach_controller":[3,8,5,31],
+"jsonrpc.html#rpc_bdev_nvme_cuse_register":[3,8,5,44],
+"jsonrpc.html#rpc_bdev_nvme_cuse_unregister":[3,8,5,45],
 "jsonrpc.html#rpc_bdev_nvme_detach_controller":[3,8,5,33],
 "jsonrpc.html#rpc_bdev_nvme_disable_controller":[3,8,5,36],
 "jsonrpc.html#rpc_bdev_nvme_enable_controller":[3,8,5,35],
@@ -71,10 +74,10 @@ var NAVTREEINDEX5 =
 "jsonrpc.html#rpc_bdev_zone_block_create":[3,8,5,47],
 "jsonrpc.html#rpc_bdev_zone_block_delete":[3,8,5,48],
 "jsonrpc.html#rpc_compressdev_scan_accel_module":[3,8,4,10],
-"jsonrpc.html#rpc_cuda_scan_accel_module":[3,8,4,14],
-"jsonrpc.html#rpc_dpdk_cryptodev_get_driver":[3,8,4,17],
-"jsonrpc.html#rpc_dpdk_cryptodev_scan_accel_module":[3,8,4,15],
-"jsonrpc.html#rpc_dpdk_cryptodev_set_driver":[3,8,4,16],
+"jsonrpc.html#rpc_cuda_scan_accel_module":[3,8,4,15],
+"jsonrpc.html#rpc_dpdk_cryptodev_get_driver":[3,8,4,18],
+"jsonrpc.html#rpc_dpdk_cryptodev_scan_accel_module":[3,8,4,16],
+"jsonrpc.html#rpc_dpdk_cryptodev_set_driver":[3,8,4,17],
 "jsonrpc.html#rpc_dsa_scan_accel_module":[3,8,4,11],
 "jsonrpc.html#rpc_env_dpdk_get_mem_stats":[3,8,3,32],
 "jsonrpc.html#rpc_framework_disable_cpumask_locks":[3,8,3,13],
@@ -140,7 +143,7 @@ var NAVTREEINDEX5 =
 "jsonrpc.html#rpc_log_set_flag":[3,8,3,26],
 "jsonrpc.html#rpc_log_set_level":[3,8,3,24],
 "jsonrpc.html#rpc_log_set_print_level":[3,8,3,22],
-"jsonrpc.html#rpc_mlx5_scan_accel_module":[3,8,4,18],
+"jsonrpc.html#rpc_mlx5_scan_accel_module":[3,8,4,19],
 "jsonrpc.html#rpc_nbd_get_disks":[3,8,18,2],
 "jsonrpc.html#rpc_nbd_start_disk":[3,8,18,0],
 "jsonrpc.html#rpc_nbd_stop_disk":[3,8,18,1],
@@ -246,8 +249,5 @@ var NAVTREEINDEX5 =
 "jsonrpc_8h.html#ad5f5cca3e578e6eb3c0069e9662a1b79":[15,0,0,0,35,6],
 "jsonrpc_8h.html#ae7d1dc3ef99ed408859d9a5f6802ad65":[15,0,0,0,35,21],
 "jsonrpc_8h.html#aeeb31df31b1ad5b34713611ce8ca9291":[15,0,0,0,35,22],
-"jsonrpc_8h.html#af340c1cd0f0ce8c00caac2713033f28f":[15,0,0,0,35,11],
-"jsonrpc_8h.html#af3d607f5a980bf9eb793ef2b553f679a":[15,0,0,0,35,17],
-"jsonrpc_proxy.html":[3,9],
-"libraries.html":[3,1]
+"jsonrpc_8h.html#af340c1cd0f0ce8c00caac2713033f28f":[15,0,0,0,35,11]
 };

@@ -71,24 +71,24 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "about.html",
-"bdev_8h.html#abc3537d0315100b24da6acc95929e849",
-"blob_8h.html#aab6d19ccc3c952877c355030e2a286c1",
-"env_8h.html#acd01324e661a5d6deb59bd2bc6230de3",
-"getting_started.html",
-"jsonrpc.html#rpc_bdev_nvme_detach_controller",
-"libraries.html#conventions",
-"nvme_8h.html#a7c522609f730db26f66e7f5b6b3501e0",
-"nvme__spec_8h.html#a36f8ec174eebd9dc8dcd78fbc9ef635aa1df61da70dc619b7f330c7c917c4fb40",
-"nvme__spec_8h.html#acb8784fad6a53be95d4c718ad3cf852eae0d57b06f29260afc5bf41e027b7c037",
-"nvmf_8h.html#ae2f88a161075096f4df1a85f0f100ba0",
-"sock_8h.html#ad24c07b476251c95ed574ce3f61a2faa",
-"structspdk__bdev__io.html#a45db95ac034d583c5af678c7368f2134",
-"structspdk__iobuf__entry.html",
-"structspdk__nvme__fdp__cfg__log__page.html",
-"structspdk__nvme__secondary__ctrl__entry.html#a1058df7181e33bc60bfd6d9782afd673",
-"structspdk__ocssd__geometry__data.html#a0f15dc726bcf4cac33752f0fab8a4e36",
-"thread_8h.html#a91a7e9d44c2a332dfcea5e23df471c8d",
-"unionspdk__nvme__feat__write__atomicity.html"
+"bdev_8h.html#ab5775a23cadb2eb1d5381dc105577a37",
+"blob_8h.html#aa9de71c711c86a2fb7b9a7d967ebede4",
+"env_8h.html#ac95f611eb4eeefbad40314c1814d1fc6",
+"gdb_macros.html",
+"jsonrpc.html#rpc_bdev_nvme_attach_controller",
+"jsonrpc_8h.html#af3d607f5a980bf9eb793ef2b553f679a",
+"nvme_8h.html#a7708f291658bf471e399354d1247fabf",
+"nvme__spec_8h.html#a3589e34c8732d64e6c6e60d10592acc9a938285d13302be71199b98e9acac637a",
+"nvme__spec_8h.html#acb8784fad6a53be95d4c718ad3cf852ead6be90d650be8f24c4753c1cbf491c74",
+"nvmf_8h.html#adf01b08ee843d7009fd0e8f367a41dd3",
+"sock_8h.html#acd33476aae3d3ef12903800cbf0afec3",
+"structspdk__bdev__io.html#a0429238075907c6f637249dda31f3235",
+"structspdk__iobuf__buffer.html",
+"structspdk__nvme__dsm__range.html#af15a5e24c688c5d15575d98d064b65bd",
+"structspdk__nvme__sanitize__status__sstat.html",
+"structspdk__ocssd__dev__lba__fmt.html#a8b5ed3a8b5a46f41a1f6e6d389b8bbce",
+"thread_8h.html#a812ae539315375ce3fd4abe912a641d0",
+"unionspdk__nvme__feat__temperature__threshold.html#ad0c1659bef91e533c0ffe784e39871de"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

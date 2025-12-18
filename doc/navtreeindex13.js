@@ -1,5 +1,8 @@
 var NAVTREEINDEX13 =
 {
+"structspdk__iobuf__buffer.html":[14,0,136],
+"structspdk__iobuf__channel.html":[14,0,137],
+"structspdk__iobuf__channel.html#ab6881d1141f09e27c3497aafcaff2529":[14,0,137,0],
 "structspdk__iobuf__entry.html":[14,0,138],
 "structspdk__iobuf__module__stats.html":[14,0,139],
 "structspdk__iobuf__node__cache.html":[14,0,140],
@@ -246,8 +249,5 @@ var NAVTREEINDEX13 =
 "structspdk__nvme__dsm__range.html#a3654dba7338b5afe24b7b176c7236fba":[14,0,201,3],
 "structspdk__nvme__dsm__range.html#a3caca88fc730017972f9c9ae066e1a2f":[14,0,201,0],
 "structspdk__nvme__dsm__range.html#a6e648e08821852c591c327949c128528":[14,0,201,5],
-"structspdk__nvme__dsm__range.html#a85b10586b5cb2d6cbe0e4e8d92f913ef":[14,0,201,2],
-"structspdk__nvme__dsm__range.html#af15a5e24c688c5d15575d98d064b65bd":[14,0,201,4],
-"structspdk__nvme__error__information__entry.html":[14,0,202],
-"structspdk__nvme__fdp__cfg__descriptor.html":[14,0,203]
+"structspdk__nvme__dsm__range.html#a85b10586b5cb2d6cbe0e4e8d92f913ef":[14,0,201,2]
 };

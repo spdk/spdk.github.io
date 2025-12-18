@@ -32,6 +32,7 @@ var general =
         [ "DSA Module", "accel_fw.html#accel_dsa", [
           [ "How to use kernel idxd driver", "accel_fw.html#accel_idxd_kernel", null ]
         ] ],
+        [ "AE4DMA Module", "accel_fw.html#accel_ae4dma", null ],
         [ "Software Module", "accel_fw.html#accel_sw", null ],
         [ "dpdk_cryptodev", "accel_fw.html#accel_dpdk_cryptodev", null ],
         [ "Module to Operation Code Assignment", "accel_fw.html#accel_assignments", null ]

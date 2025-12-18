@@ -388,6 +388,7 @@ rpc_get_methods</h2>
 <div class="line">    &quot;accel_mlx5_dump_stats&quot;,</div>
 <div class="line">    &quot;accel_set_driver&quot;,</div>
 <div class="line">    &quot;accel_set_options&quot;,</div>
+<div class="line">    &quot;ae4dma_scan_accel_module&quot;,</div>
 <div class="line">    &quot;bdev_aio_create&quot;,</div>
 <div class="line">    &quot;bdev_aio_delete&quot;,</div>
 <div class="line">    &quot;bdev_aio_rescan&quot;,</div>
@@ -2005,6 +2006,24 @@ ioat_scan_accel_module</h2>
 <div class="fragment"><div class="line">{</div>
 <div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
 <div class="line">  &quot;method&quot;: &quot;ioat_scan_accel_module&quot;,</div>
+<div class="line">  &quot;id&quot;: 1</div>
+<div class="line">}</div>
+</div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;result&quot;: true</div>
+<div class="line">}</div>
+</div><!-- fragment --><h2><a class="anchor" id="rpc_ae4dma_scan_accel_module"></a>
+ae4dma_scan_accel_module</h2>
+<p>Enable ae4dma accel module offload.</p>
+<h3>Parameters</h3>
+<p>This method has no parameters.</p>
+<h3>Example</h3>
+<p>Example request:</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;method&quot;: &quot;ae4dma_scan_accel_module&quot;,</div>
 <div class="line">  &quot;id&quot;: 1</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Example response:</p>
