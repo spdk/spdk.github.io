@@ -84,11 +84,11 @@ var NAVTREEINDEX =
 "sock_8h.html#acd33476aae3d3ef12903800cbf0afec3",
 "structspdk__bdev__io.html#a0429238075907c6f637249dda31f3235",
 "structspdk__iobuf__buffer.html",
-"structspdk__nvme__dsm__range.html#af15a5e24c688c5d15575d98d064b65bd",
-"structspdk__nvme__sanitize__status__sstat.html",
-"structspdk__ocssd__dev__lba__fmt.html#a8b5ed3a8b5a46f41a1f6e6d389b8bbce",
-"thread_8h.html#a812ae539315375ce3fd4abe912a641d0",
-"unionspdk__nvme__feat__temperature__threshold.html#ad0c1659bef91e533c0ffe784e39871de"
+"structspdk__nvme__ctrlr__opts.html#af35785e295dc19ec0bc59532b75515f0",
+"structspdk__nvme__reservation__register__data.html#a3d7c7c2bdf9cb826c607345c9ff16f2d",
+"structspdk__ocssd__chunk__notification__entry.html#a99356830ad1d8aae77c4bf5726af51ec",
+"thread_8h.html#a6695466847e7a751b768ab4b8bcd53d0",
+"unionspdk__nvme__feat__power__management.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

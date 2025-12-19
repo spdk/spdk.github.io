@@ -1,5 +1,15 @@
 var NAVTREEINDEX18 =
 {
+"unionspdk__nvme__feat__power__management.html":[14,0,232],
+"unionspdk__nvme__feat__power__management.html#a77632a40e3f55b8de36ca61c7d0a8b74":[14,0,232,1],
+"unionspdk__nvme__feat__power__management.html#af68e833134cda1b00b750992bdd91342":[14,0,232,0],
+"unionspdk__nvme__feat__reservation__notification__mask.html":[14,0,233],
+"unionspdk__nvme__feat__reservation__persistence.html":[14,0,234],
+"unionspdk__nvme__feat__software__progress__marker.html":[14,0,235],
+"unionspdk__nvme__feat__software__progress__marker.html#a068b7aa9ea34b8e38dfcf7b8f7d25f70":[14,0,235,0],
+"unionspdk__nvme__feat__temperature__threshold.html":[14,0,236],
+"unionspdk__nvme__feat__temperature__threshold.html#a384b25c620ca81031b6260f6b0e16142":[14,0,236,0],
+"unionspdk__nvme__feat__temperature__threshold.html#a611a74458d69f25c9151ec7ae81a6b73":[14,0,236,1],
 "unionspdk__nvme__feat__temperature__threshold.html#ad0c1659bef91e533c0ffe784e39871de":[14,0,236,2],
 "unionspdk__nvme__feat__volatile__write__cache.html":[14,0,237],
 "unionspdk__nvme__feat__volatile__write__cache.html#a910973ce5eb628dd9b06ab0c72a1cd33":[14,0,237,0],

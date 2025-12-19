@@ -30,14 +30,15 @@ var searchData=
   ['transport_5ftos_27',['transport_tos',['../structspdk__nvme__ctrlr__opts.html#a52f59742178dd13a98b2db3fdbd5c482',1,'spdk_nvme_ctrlr_opts']]],
   ['trdm_28',['trdm',['../structspdk__ocssd__geometry__data.html#a4126ac6e1846920ef940648bba63dd98',1,'spdk_ocssd_geometry_data']]],
   ['trdt_29',['trdt',['../structspdk__ocssd__geometry__data.html#a4ab0d6368b89242e78483d6e44d931a7',1,'spdk_ocssd_geometry_data']]],
-  ['treq_30',['treq',['../structspdk__nvmf__discovery__log__page__entry.html#aa54f7292737834e2b9cc61c504fe3d83',1,'spdk_nvmf_discovery_log_page_entry']]],
+  ['treq_30',['treq',['../structspdk__nvmf__discovery__log__page__entry.html#a552622210f7e69b33ae70734b6d53e2f',1,'spdk_nvmf_discovery_log_page_entry']]],
   ['trid_31',['trid',['../structspdk__nvmf__referral__opts.html#ae86b9198264c8c70941252c353f0ba57',1,'spdk_nvmf_referral_opts']]],
   ['trstring_32',['trstring',['../structspdk__nvme__transport__id.html#a0c4b884c3e6c6fd90c11421bccad2ecd',1,'spdk_nvme_transport_id']]],
   ['trsvcid_33',['trsvcid',['../structspdk__nvme__transport__id.html#a1d77d6f4fb1d3245f03a2e64a63ce64a',1,'spdk_nvme_transport_id::trsvcid'],['../structspdk__nvmf__discovery__log__page__entry.html#a4b3b3ff4bd5f94e6ffe8a11b90b08caa',1,'spdk_nvmf_discovery_log_page_entry::trsvcid']]],
   ['trtype_34',['trtype',['../structspdk__nvme__transport__id.html#a9817e079d0324db582be6655ebe1d2d6',1,'spdk_nvme_transport_id::trtype'],['../structspdk__nvmf__discovery__log__page__entry.html#ad5db7a511e5a7b5bf342391e77ecb27d',1,'spdk_nvmf_discovery_log_page_entry::trtype']]],
   ['tsas_35',['tsas',['../structspdk__nvmf__discovery__log__page__entry.html#ae6926468815fd6dbdd5ff136a4905057',1,'spdk_nvmf_discovery_log_page_entry']]],
-  ['tweak_5fmode_36',['tweak_mode',['../structspdk__accel__crypto__key__create__param.html#a199f2f7bd5cf9f12ddf19a0eb6371705',1,'spdk_accel_crypto_key_create_param']]],
-  ['twrm_37',['twrm',['../structspdk__ocssd__geometry__data.html#a48998a2ff49cafa400bed7cc639db747',1,'spdk_ocssd_geometry_data']]],
-  ['twrt_38',['twrt',['../structspdk__ocssd__geometry__data.html#ac37ab8c7d75446d554d10384030bad30',1,'spdk_ocssd_geometry_data']]],
-  ['type_39',['type',['../structspdk__bdev__io.html#a4105d5a8419a66a6620d690da5649fcb',1,'spdk_bdev_io::type'],['../structspdk__fsdev__io.html#a93a49dabe63606eaa054f6f40473a14d',1,'spdk_fsdev_io::type'],['../structspdk__fsdev__io_1_1____fsdev__io__internal__fields.html#af724248c78b274e08743c67ad8992b39',1,'spdk_fsdev_io::__fsdev_io_internal_fields::type'],['../structspdk__json__val.html#a709cbbd71ebb3cdc9bb8daf5f2a19364',1,'spdk_json_val::type'],['../structspdk__nvme__reservation__notification__log.html#ac3ec3beaa7aec5a7c2bc5dad10932d48',1,'spdk_nvme_reservation_notification_log::type'],['../structspdk__nvmf__transport__ops.html#a22ddd0d23a055a17e6bd10fe4927a4db',1,'spdk_nvmf_transport_ops::type']]]
+  ['tss_36',['tss',['../structspdk__nvme__cdata__oncs.html#a653eaf9013f5b1fc10dd9eb36f2d4c4f',1,'spdk_nvme_cdata_oncs']]],
+  ['tweak_5fmode_37',['tweak_mode',['../structspdk__accel__crypto__key__create__param.html#a199f2f7bd5cf9f12ddf19a0eb6371705',1,'spdk_accel_crypto_key_create_param']]],
+  ['twrm_38',['twrm',['../structspdk__ocssd__geometry__data.html#a48998a2ff49cafa400bed7cc639db747',1,'spdk_ocssd_geometry_data']]],
+  ['twrt_39',['twrt',['../structspdk__ocssd__geometry__data.html#ac37ab8c7d75446d554d10384030bad30',1,'spdk_ocssd_geometry_data']]],
+  ['type_40',['type',['../structspdk__bdev__io.html#a4105d5a8419a66a6620d690da5649fcb',1,'spdk_bdev_io::type'],['../structspdk__fsdev__io.html#a93a49dabe63606eaa054f6f40473a14d',1,'spdk_fsdev_io::type'],['../structspdk__fsdev__io_1_1____fsdev__io__internal__fields.html#af724248c78b274e08743c67ad8992b39',1,'spdk_fsdev_io::__fsdev_io_internal_fields::type'],['../structspdk__json__val.html#a709cbbd71ebb3cdc9bb8daf5f2a19364',1,'spdk_json_val::type'],['../structspdk__nvme__reservation__notification__log.html#ac3ec3beaa7aec5a7c2bc5dad10932d48',1,'spdk_nvme_reservation_notification_log::type'],['../structspdk__nvmf__transport__ops.html#a22ddd0d23a055a17e6bd10fe4927a4db',1,'spdk_nvmf_transport_ops::type']]]
 ];
