@@ -1736,7 +1736,7 @@ accel_crypto_key_destroy</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">The key name   </td></tr>
+<td class="markdownTableBodyNone">key_name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">The key name   </td></tr>
 </table>
 <h3>Example</h3>
 <p>Example request:</p>
@@ -5353,7 +5353,7 @@ bdev_ftl_set_property</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Bdev name    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">property   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of the property to modify    </td></tr>
+<td class="markdownTableBodyNone">ftl_property   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of the property to modify    </td></tr>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">value   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">New value of the property to be set   </td></tr>
 </table>
@@ -7276,9 +7276,7 @@ nvmf_subsystem_add_ns</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">namespace   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">object   </td><td class="markdownTableBodyNone"><a class="el" href="#rpc_nvmf_namespace">namespace</a> object    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">tgt_name   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Parent NVMe-oF target name.    </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">no_auto_visible   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Namespace is not automatically visible to controllers (default: false)   </td></tr>
+<td class="markdownTableBodyNone">tgt_name   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Parent NVMe-oF target name.   </td></tr>
 </table>
 <h4><a class="anchor" id="rpc_nvmf_namespace"></a>
 namespace</h4>
