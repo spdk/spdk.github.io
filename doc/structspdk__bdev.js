@@ -21,9 +21,9 @@ var structspdk__bdev =
     [ "max_rw_size", "structspdk__bdev.html#a1460c2101971e41eede56118a99f695c", null ],
     [ "max_segment_size", "structspdk__bdev.html#af33e3553f5bb1f626d137859c6933c64", null ],
     [ "max_zone_append_size", "structspdk__bdev.html#a83ca16e5fee5d658b6ac90433372a076", null ],
-    [ "md_interleave", "structspdk__bdev.html#a4e68d5fa768ba5d3c8af32e68e1a992c", null ],
+    [ "md_interleave", "structspdk__bdev.html#ad056ca056fc13279a82811742d08b670", null ],
     [ "md_len", "structspdk__bdev.html#ab53361e758d7ebe3edec7598f86fa576", null ],
-    [ "media_events", "structspdk__bdev.html#acec83a7ec7f21c7a88d644dad2f0a8fe", null ],
+    [ "media_events", "structspdk__bdev.html#a4cc64d77c0bcf1333bb1d7e85bc414b6", null ],
     [ "name", "structspdk__bdev.html#ab17e7679c64536f704ed4fe41555a70a", null ],
     [ "nsid", "structspdk__bdev.html#ace7a1aa186a2495bc75e644c0f1f2169", null ],
     [ "optimal_io_boundary", "structspdk__bdev.html#af2dcdd94b1bbfd2709c6040f861819fb", null ],
@@ -36,11 +36,11 @@ var structspdk__bdev =
     [ "preferred_write_granularity", "structspdk__bdev.html#a707c436f8d3536202e51c19bc773da43", null ],
     [ "product_name", "structspdk__bdev.html#ad3abe8a06500954332614d8657eaf1d9", null ],
     [ "required_alignment", "structspdk__bdev.html#a149453df246d04c8640fb567c58a61f0", null ],
-    [ "split_on_optimal_io_boundary", "structspdk__bdev.html#a85a794d02620e3e8730bb11791c0c592", null ],
-    [ "split_on_write_unit", "structspdk__bdev.html#a19101e574d1a54c9f57f02a5077170b5", null ],
+    [ "split_on_optimal_io_boundary", "structspdk__bdev.html#a6dddfe2c4f020ee0807843da2c6ec922", null ],
+    [ "split_on_write_unit", "structspdk__bdev.html#a7720b606d1919877022024e66238c33f", null ],
     [ "uuid", "structspdk__bdev.html#a5cc1248944325a12c4cadaa3856f573a", null ],
     [ "write_cache", "structspdk__bdev.html#ac2ccb256340bc2e8b2d6f7793d977c0d", null ],
     [ "write_unit_size", "structspdk__bdev.html#a1d7dcd12f4c3600eac4dbb202bdb4397", null ],
     [ "zone_size", "structspdk__bdev.html#a054323b9bb1299a58497ca668d52b5a5", null ],
-    [ "zoned", "structspdk__bdev.html#aba3b4d21418e7f36047040c43d3e5976", null ]
+    [ "zoned", "structspdk__bdev.html#adb7aef0b943faa701246fa9d3a9e7c01", null ]
 ];

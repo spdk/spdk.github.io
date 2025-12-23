@@ -105,6 +105,7 @@ var annotated_dup =
     [ "spdk_dif_ctx", "structspdk__dif__ctx.html", "structspdk__dif__ctx" ],
     [ "spdk_dif_ctx_init_ext_opts", "structspdk__dif__ctx__init__ext__opts.html", "structspdk__dif__ctx__init__ext__opts" ],
     [ "spdk_dif_error", "structspdk__dif__error.html", "structspdk__dif__error" ],
+    [ "spdk_env_dpdk_mem_stats", "structspdk__env__dpdk__mem__stats.html", "structspdk__env__dpdk__mem__stats" ],
     [ "spdk_env_opts", "structspdk__env__opts.html", "structspdk__env__opts" ],
     [ "spdk_event_handler_opts", "structspdk__event__handler__opts.html", "structspdk__event__handler__opts" ],
     [ "spdk_fsdev", "structspdk__fsdev.html", "structspdk__fsdev" ],

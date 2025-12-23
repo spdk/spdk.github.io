@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta name="generator" content="Doxygen 1.10.0" />
-	<title>SPDK: spdk_nvme_feat_autonomous_power_state_transition Union Reference</title>
+	<title>SPDK: spdk_env_dpdk_mem_stats Struct Reference</title>
 	<script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.8/umd/popper.min.js" integrity="sha512-TPh2Oxlg1zp+kz3nFA0C5vVC6leG/6mm1z9+mA81MI5eaUVqasPLO8Cuk4gMF4gUfP5etR73rgU/8PNMsSesoQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
@@ -102,7 +102,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(function(){initNavTree('unionspdk__nvme__feat__autonomous__power__state__transition.html',''); initResizable(); });
+$(function(){initNavTree('structspdk__env__dpdk__mem__stats.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -130,37 +130,46 @@ $(function(){initNavTree('unionspdk__nvme__feat__autonomous__power__state__trans
 <div class="header">
   <div class="summary">
 <a href="#pub-attribs">Data Fields</a>  </div>
-  <div class="headertitle"><div class="title">spdk_nvme_feat_autonomous_power_state_transition Union Reference</div></div>
+  <div class="headertitle"><div class="title">spdk_env_dpdk_mem_stats Struct Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>Data used by Set Features/Get Features <a class="el" href="nvme__spec_8h.html#aeae5c5fb9df2c7a39215c71f9d9b4c25aa45652a8b1211d399b83e33d6cf990f0">SPDK_NVME_FEAT_AUTONOMOUS_POWER_STATE_TRANSITION</a>.  
+<p>Memory allocation statistics.  
  <a href="#details">More...</a></p>
 
-<p><code>#include &lt;nvme_spec.h&gt;</code></p>
+<p><code>#include &lt;env_dpdk.h&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:a36867fe7bf800adeacf48b7940f74857" id="r_a36867fe7bf800adeacf48b7940f74857"><td class="memItemLeft" align="right" valign="top"><a id="a36867fe7bf800adeacf48b7940f74857" name="a36867fe7bf800adeacf48b7940f74857"></a>
-uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>raw</b></td></tr>
-<tr class="separator:a36867fe7bf800adeacf48b7940f74857"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2ed65196ffae221cd0ec65322c10f875" id="r_a2ed65196ffae221cd0ec65322c10f875"><td class="memItemLeft" ><a id="a2ed65196ffae221cd0ec65322c10f875" name="a2ed65196ffae221cd0ec65322c10f875"></a>
-struct {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a84f3f8234c111f46488431d846ccd4fe" id="r_a84f3f8234c111f46488431d846ccd4fe"><td class="memItemLeft" >
-&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<b>apste</b>: 1&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
-<tr class="memdesc:a84f3f8234c111f46488431d846ccd4fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Autonomous Power State Transition Enable. <br /></td></tr>
-<tr class="separator:a84f3f8234c111f46488431d846ccd4fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2d8eb71c235a2362113f36e6d550b393" id="r_a2d8eb71c235a2362113f36e6d550b393"><td class="memItemLeft" >
-&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<b>reserved</b>: 31&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
-<tr class="separator:a2d8eb71c235a2362113f36e6d550b393"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2ed65196ffae221cd0ec65322c10f875" id="r_a2ed65196ffae221cd0ec65322c10f875"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><b>bits</b>&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
-<tr class="separator:a2ed65196ffae221cd0ec65322c10f875"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a627b0f86e86b5c713fe5cf35391b2b" id="r_a5a627b0f86e86b5c713fe5cf35391b2b"><td class="memItemLeft" align="right" valign="top"><a id="a5a627b0f86e86b5c713fe5cf35391b2b" name="a5a627b0f86e86b5c713fe5cf35391b2b"></a>
+uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>heap_totalsz_bytes</b></td></tr>
+<tr class="memdesc:a5a627b0f86e86b5c713fe5cf35391b2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Total bytes on heap. <br /></td></tr>
+<tr class="separator:a5a627b0f86e86b5c713fe5cf35391b2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a4ad28a684b08018ac8f581839aee3b" id="r_a2a4ad28a684b08018ac8f581839aee3b"><td class="memItemLeft" align="right" valign="top"><a id="a2a4ad28a684b08018ac8f581839aee3b" name="a2a4ad28a684b08018ac8f581839aee3b"></a>
+uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>heap_freesz_bytes</b></td></tr>
+<tr class="memdesc:a2a4ad28a684b08018ac8f581839aee3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Total free bytes on heap. <br /></td></tr>
+<tr class="separator:a2a4ad28a684b08018ac8f581839aee3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfd2362f623f27957ed96f2b1bf5db80" id="r_adfd2362f623f27957ed96f2b1bf5db80"><td class="memItemLeft" align="right" valign="top"><a id="adfd2362f623f27957ed96f2b1bf5db80" name="adfd2362f623f27957ed96f2b1bf5db80"></a>
+uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>greatest_free_size</b></td></tr>
+<tr class="memdesc:adfd2362f623f27957ed96f2b1bf5db80"><td class="mdescLeft">&#160;</td><td class="mdescRight">Size in bytes of largest free block. <br /></td></tr>
+<tr class="separator:adfd2362f623f27957ed96f2b1bf5db80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d01f80285736bc0f413539f561e32b7" id="r_a2d01f80285736bc0f413539f561e32b7"><td class="memItemLeft" align="right" valign="top"><a id="a2d01f80285736bc0f413539f561e32b7" name="a2d01f80285736bc0f413539f561e32b7"></a>
+uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>heap_allocsz_bytes</b></td></tr>
+<tr class="memdesc:a2d01f80285736bc0f413539f561e32b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Total allocated bytes on heap. <br /></td></tr>
+<tr class="separator:a2d01f80285736bc0f413539f561e32b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab07681e17167bb3fe1e268f0ecadc0bc" id="r_ab07681e17167bb3fe1e268f0ecadc0bc"><td class="memItemLeft" align="right" valign="top"><a id="ab07681e17167bb3fe1e268f0ecadc0bc" name="ab07681e17167bb3fe1e268f0ecadc0bc"></a>
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>free_count</b></td></tr>
+<tr class="memdesc:ab07681e17167bb3fe1e268f0ecadc0bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of free elements on heap. <br /></td></tr>
+<tr class="separator:ab07681e17167bb3fe1e268f0ecadc0bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34e2a03c2ee7a6dcfe334feae81bd0d3" id="r_a34e2a03c2ee7a6dcfe334feae81bd0d3"><td class="memItemLeft" align="right" valign="top"><a id="a34e2a03c2ee7a6dcfe334feae81bd0d3" name="a34e2a03c2ee7a6dcfe334feae81bd0d3"></a>
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>alloc_count</b></td></tr>
+<tr class="memdesc:a34e2a03c2ee7a6dcfe334feae81bd0d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of allocated elements on heap. <br /></td></tr>
+<tr class="separator:a34e2a03c2ee7a6dcfe334feae81bd0d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Data used by Set Features/Get Features <a class="el" href="nvme__spec_8h.html#aeae5c5fb9df2c7a39215c71f9d9b4c25aa45652a8b1211d399b83e33d6cf990f0">SPDK_NVME_FEAT_AUTONOMOUS_POWER_STATE_TRANSITION</a>. </p>
-</div><hr/>The documentation for this union was generated from the following file:<ul>
-<li><a class="el" href="nvme__spec_8h.html">nvme_spec.h</a></li>
+<div class="textblock"><p>Memory allocation statistics. </p>
+</div><hr/>The documentation for this struct was generated from the following file:<ul>
+<li><a class="el" href="env__dpdk_8h.html">env_dpdk.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

@@ -37,13 +37,14 @@ var searchData=
   ['gpt_20partition_20table_34',['SPDK GPT partition table',['../bdev.html#bdev_ug_gpt',1,'']]],
   ['gpt_20partition_20table_20using_20nbd_35',['Creating a GPT partition table using NBD',['../bdev.html#bdev_ug_gpt_create_part',1,'']]],
   ['gpt_5fspec_2eh_36',['gpt_spec.h',['../gpt__spec_8h.html',1,'']]],
-  ['group_20mask_37',['Tracepoint group mask',['../app_overview.html#cmd_arg_limit_tpoint_group_mask',1,'']]],
-  ['groups_38',['v20.04: SPDK Top, IDXD, NVMe qpair groups',['../changelog.html#changelog-v20-04',1,'']]],
-  ['grp_5flen_39',['grp_len',['../structspdk__ocssd__dev__lba__fmt.html#a8b5ed3a8b5a46f41a1f6e6d389b8bbce',1,'spdk_ocssd_dev_lba_fmt']]],
-  ['guard_5finterval_40',['guard_interval',['../structspdk__dif__ctx.html#a593aef5de5694c4abd05554ed4ac92a7',1,'spdk_dif_ctx']]],
-  ['guard_5fvalue_41',['guard_value',['../structspdk__nvme__ns__data.html#a058bfec34018c099918420fbc79fab27',1,'spdk_nvme_ns_data']]],
-  ['guid_20partition_20table_42',['GPT (GUID Partition Table)',['../bdev.html#bdev_config_gpt',1,'']]],
-  ['guid_5fnever_5freused_43',['guid_never_reused',['../structspdk__nvme__ns__data.html#a1d90d25be4a3d74fcc8097cdd437da25',1,'spdk_nvme_ns_data']]],
-  ['guide_44',['Guide',['../blob.html',1,'Blobstore Programmer&apos;s Guide'],['../bdev_pg.html',1,'Block Device Layer Programming Guide'],['../bdev.html',1,'Block Device User Guide'],['../gdb_macros.html',1,'GDB Macros User Guide'],['../iscsi.html#iscsi_getting_started',1,'iSCSI Target Getting Started Guide'],['../nvmf_tgt_pg.html',1,'NVMe over Fabrics Target Programming Guide'],['../nvmf.html#nvmf_getting_started',1,'NVMe-oF Target Getting Started Guide'],['../porting.html',1,'SPDK Porting Guide'],['../system_configuration.html',1,'System Configuration User Guide']]],
-  ['guides_45',['Guides',['../prog_guides.html',1,'Programmer Guides'],['../user_guides.html',1,'User Guides']]]
+  ['greatest_5ffree_5fsize_37',['greatest_free_size',['../structspdk__env__dpdk__mem__stats.html#adfd2362f623f27957ed96f2b1bf5db80',1,'spdk_env_dpdk_mem_stats']]],
+  ['group_20mask_38',['Tracepoint group mask',['../app_overview.html#cmd_arg_limit_tpoint_group_mask',1,'']]],
+  ['groups_39',['v20.04: SPDK Top, IDXD, NVMe qpair groups',['../changelog.html#changelog-v20-04',1,'']]],
+  ['grp_5flen_40',['grp_len',['../structspdk__ocssd__dev__lba__fmt.html#a8b5ed3a8b5a46f41a1f6e6d389b8bbce',1,'spdk_ocssd_dev_lba_fmt']]],
+  ['guard_5finterval_41',['guard_interval',['../structspdk__dif__ctx.html#a593aef5de5694c4abd05554ed4ac92a7',1,'spdk_dif_ctx']]],
+  ['guard_5fvalue_42',['guard_value',['../structspdk__nvme__ns__data.html#a058bfec34018c099918420fbc79fab27',1,'spdk_nvme_ns_data']]],
+  ['guid_20partition_20table_43',['GPT (GUID Partition Table)',['../bdev.html#bdev_config_gpt',1,'']]],
+  ['guid_5fnever_5freused_44',['guid_never_reused',['../structspdk__nvme__ns__data.html#a1d90d25be4a3d74fcc8097cdd437da25',1,'spdk_nvme_ns_data']]],
+  ['guide_45',['Guide',['../blob.html',1,'Blobstore Programmer&apos;s Guide'],['../bdev_pg.html',1,'Block Device Layer Programming Guide'],['../bdev.html',1,'Block Device User Guide'],['../gdb_macros.html',1,'GDB Macros User Guide'],['../iscsi.html#iscsi_getting_started',1,'iSCSI Target Getting Started Guide'],['../nvmf_tgt_pg.html',1,'NVMe over Fabrics Target Programming Guide'],['../nvmf.html#nvmf_getting_started',1,'NVMe-oF Target Getting Started Guide'],['../porting.html',1,'SPDK Porting Guide'],['../system_configuration.html',1,'System Configuration User Guide']]],
+  ['guides_46',['Guides',['../prog_guides.html',1,'Programmer Guides'],['../user_guides.html',1,'User Guides']]]
 ];

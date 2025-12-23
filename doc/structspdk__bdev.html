@@ -188,9 +188,37 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>io_type_supported
 uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>blockcnt</b></td></tr>
 <tr class="memdesc:aef65d7444968b8981d46d0c520fd5287"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of blocks. <br /></td></tr>
 <tr class="separator:aef65d7444968b8981d46d0c520fd5287"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a19101e574d1a54c9f57f02a5077170b5" id="r_a19101e574d1a54c9f57f02a5077170b5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a19101e574d1a54c9f57f02a5077170b5">split_on_write_unit</a></td></tr>
-<tr class="memdesc:a19101e574d1a54c9f57f02a5077170b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specifies whether the write_unit_size is mandatory or only advisory.  <br /></td></tr>
-<tr class="separator:a19101e574d1a54c9f57f02a5077170b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2334d3414e81d37733f5cd69b081a194" id="r_a2334d3414e81d37733f5cd69b081a194"><td class="memItemLeft" ><a id="a2334d3414e81d37733f5cd69b081a194" name="a2334d3414e81d37733f5cd69b081a194"></a>
+struct {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeea3726b955c3498ff0545cc79598619" id="r_aeea3726b955c3498ff0545cc79598619"><td class="memItemLeft" >&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<a class="el" href="#a7720b606d1919877022024e66238c33f">split_on_write_unit</a>: 1&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="memdesc:aeea3726b955c3498ff0545cc79598619"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specifies whether the write_unit_size is mandatory or only advisory.  <a href="#a7720b606d1919877022024e66238c33f">More...</a><br /></td></tr>
+<tr class="separator:aeea3726b955c3498ff0545cc79598619"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f8fce100c424140cbbe1491eb9b6976" id="r_a8f8fce100c424140cbbe1491eb9b6976"><td class="memItemLeft" >&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<a class="el" href="#a6dddfe2c4f020ee0807843da2c6ec922">split_on_optimal_io_boundary</a>: 1&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="memdesc:a8f8fce100c424140cbbe1491eb9b6976"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specifies whether the optimal_io_boundary is mandatory or only advisory.  <a href="#a6dddfe2c4f020ee0807843da2c6ec922">More...</a><br /></td></tr>
+<tr class="separator:a8f8fce100c424140cbbe1491eb9b6976"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0fddc981512b8ab0e686e22ee03be90" id="r_ac0fddc981512b8ab0e686e22ee03be90"><td class="memItemLeft" >&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<a class="el" href="#ad056ca056fc13279a82811742d08b670">md_interleave</a>: 1&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="memdesc:ac0fddc981512b8ab0e686e22ee03be90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specify metadata location and set to true if metadata is interleaved with block data or false if metadata is separated with block data.  <a href="#ad056ca056fc13279a82811742d08b670">More...</a><br /></td></tr>
+<tr class="separator:ac0fddc981512b8ab0e686e22ee03be90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1f24aafd4400c5d5bf53dcace7d50f5" id="r_ac1f24aafd4400c5d5bf53dcace7d50f5"><td class="memItemLeft" >
+&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<b>dif_is_head_of_md</b>: 1&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:ac1f24aafd4400c5d5bf53dcace7d50f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8099f44d99158ec1979dbf6bb0eb7c5" id="r_aa8099f44d99158ec1979dbf6bb0eb7c5"><td class="memItemLeft" >
+&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<b>zoned</b>: 1&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="memdesc:aa8099f44d99158ec1979dbf6bb0eb7c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specify whether bdev is zoned device. <br /></td></tr>
+<tr class="separator:aa8099f44d99158ec1979dbf6bb0eb7c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afca702f635fb29f04916feaa6ab1b7b7" id="r_afca702f635fb29f04916feaa6ab1b7b7"><td class="memItemLeft" >
+&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<b>media_events</b>: 1&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="memdesc:afca702f635fb29f04916feaa6ab1b7b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specifies whether bdev supports media management events. <br /></td></tr>
+<tr class="separator:afca702f635fb29f04916feaa6ab1b7b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01400eb5faa03a4773e2a44f2c6c915f" id="r_a01400eb5faa03a4773e2a44f2c6c915f"><td class="memItemLeft" >
+&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<b>memory_domains_supported</b>: 1&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:a01400eb5faa03a4773e2a44f2c6c915f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adcdcc4a2c142c5f02314bd2117c65d21" id="r_adcdcc4a2c142c5f02314bd2117c65d21"><td class="memItemLeft" >
+&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<b>reserved</b>: 25&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:adcdcc4a2c142c5f02314bd2117c65d21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2334d3414e81d37733f5cd69b081a194" id="r_a2334d3414e81d37733f5cd69b081a194"><td class="memItemLeft" valign="top">};&#160;</td><td class="memItemRight" valign="bottom">&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:a2334d3414e81d37733f5cd69b081a194"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1d7dcd12f4c3600eac4dbb202bdb4397" id="r_a1d7dcd12f4c3600eac4dbb202bdb4397"><td class="memItemLeft" align="right" valign="top"><a id="a1d7dcd12f4c3600eac4dbb202bdb4397" name="a1d7dcd12f4c3600eac4dbb202bdb4397"></a>
 uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>write_unit_size</b></td></tr>
 <tr class="memdesc:a1d7dcd12f4c3600eac4dbb202bdb4397"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of blocks required for write. <br /></td></tr>
@@ -202,9 +230,9 @@ uint16_t&#160;</td><td class="memItemRight" valign="bottom"><b>acwu</b></td></tr
 <tr class="memitem:a149453df246d04c8640fb567c58a61f0" id="r_a149453df246d04c8640fb567c58a61f0"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a149453df246d04c8640fb567c58a61f0">required_alignment</a></td></tr>
 <tr class="memdesc:a149453df246d04c8640fb567c58a61f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specifies an alignment requirement for data buffers associated with an <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a>.  <br /></td></tr>
 <tr class="separator:a149453df246d04c8640fb567c58a61f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a85a794d02620e3e8730bb11791c0c592" id="r_a85a794d02620e3e8730bb11791c0c592"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a85a794d02620e3e8730bb11791c0c592">split_on_optimal_io_boundary</a></td></tr>
-<tr class="memdesc:a85a794d02620e3e8730bb11791c0c592"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specifies whether the optimal_io_boundary is mandatory or only advisory.  <br /></td></tr>
-<tr class="separator:a85a794d02620e3e8730bb11791c0c592"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abfe574ace6a40a031e671d18345125ec" id="r_abfe574ace6a40a031e671d18345125ec"><td class="memItemLeft" align="right" valign="top"><a id="abfe574ace6a40a031e671d18345125ec" name="abfe574ace6a40a031e671d18345125ec"></a>
+uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>reserved1</b></td></tr>
+<tr class="separator:abfe574ace6a40a031e671d18345125ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af2dcdd94b1bbfd2709c6040f861819fb" id="r_af2dcdd94b1bbfd2709c6040f861819fb"><td class="memItemLeft" align="right" valign="top"><a id="af2dcdd94b1bbfd2709c6040f861819fb" name="af2dcdd94b1bbfd2709c6040f861819fb"></a>
 uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>optimal_io_boundary</b></td></tr>
 <tr class="memdesc:af2dcdd94b1bbfd2709c6040f861819fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Optimal I/O boundary in blocks, or 0 for no value reported. <br /></td></tr>
@@ -258,26 +286,25 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>max_copy</b></td>
 uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>md_len</b></td></tr>
 <tr class="memdesc:ab53361e758d7ebe3edec7598f86fa576"><td class="mdescLeft">&#160;</td><td class="mdescRight">Size in bytes of a metadata for the backend. <br /></td></tr>
 <tr class="separator:ab53361e758d7ebe3edec7598f86fa576"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4e68d5fa768ba5d3c8af32e68e1a992c" id="r_a4e68d5fa768ba5d3c8af32e68e1a992c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4e68d5fa768ba5d3c8af32e68e1a992c">md_interleave</a></td></tr>
-<tr class="memdesc:a4e68d5fa768ba5d3c8af32e68e1a992c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specify metadata location and set to true if metadata is interleaved with block data or false if metadata is separated with block data.  <br /></td></tr>
-<tr class="separator:a4e68d5fa768ba5d3c8af32e68e1a992c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbe80b8300d52f9ed2571697f9769efa" id="r_abbe80b8300d52f9ed2571697f9769efa"><td class="memItemLeft" align="right" valign="top"><a id="abbe80b8300d52f9ed2571697f9769efa" name="abbe80b8300d52f9ed2571697f9769efa"></a>
+uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>reserved2</b> [4]</td></tr>
+<tr class="separator:abbe80b8300d52f9ed2571697f9769efa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abcf4e6c5be82c271a681db4b9b2fd427" id="r_abcf4e6c5be82c271a681db4b9b2fd427"><td class="memItemLeft" align="right" valign="top">enum spdk_dif_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abcf4e6c5be82c271a681db4b9b2fd427">dif_type</a></td></tr>
 <tr class="memdesc:abcf4e6c5be82c271a681db4b9b2fd427"><td class="mdescLeft">&#160;</td><td class="mdescRight">DIF type for this bdev.  <br /></td></tr>
 <tr class="separator:abcf4e6c5be82c271a681db4b9b2fd427"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a677d201121658aa2df21b4de5d21eec4" id="r_a677d201121658aa2df21b4de5d21eec4"><td class="memItemLeft" align="right" valign="top">enum spdk_dif_pi_format&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a677d201121658aa2df21b4de5d21eec4">dif_pi_format</a></td></tr>
 <tr class="memdesc:a677d201121658aa2df21b4de5d21eec4"><td class="mdescLeft">&#160;</td><td class="mdescRight">DIF protection information format for this bdev.  <br /></td></tr>
 <tr class="separator:a677d201121658aa2df21b4de5d21eec4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1a6b7f9bd595b3b800f35cc63efa3aab" id="r_a1a6b7f9bd595b3b800f35cc63efa3aab"><td class="memItemLeft" align="right" valign="top"><a id="a1a6b7f9bd595b3b800f35cc63efa3aab" name="a1a6b7f9bd595b3b800f35cc63efa3aab"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>dif_is_head_of_md</b></td></tr>
-<tr class="separator:a1a6b7f9bd595b3b800f35cc63efa3aab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4afee0480a74c930c06cc96439cb7a8" id="r_ae4afee0480a74c930c06cc96439cb7a8"><td class="memItemLeft" align="right" valign="top"><a id="ae4afee0480a74c930c06cc96439cb7a8" name="ae4afee0480a74c930c06cc96439cb7a8"></a>
+uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>reserved3</b> [4]</td></tr>
+<tr class="separator:ae4afee0480a74c930c06cc96439cb7a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1872fa3d723b5bef069c0681ec3bcfd6" id="r_a1872fa3d723b5bef069c0681ec3bcfd6"><td class="memItemLeft" align="right" valign="top"><a id="a1872fa3d723b5bef069c0681ec3bcfd6" name="a1872fa3d723b5bef069c0681ec3bcfd6"></a>
 uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>dif_check_flags</b></td></tr>
 <tr class="memdesc:a1872fa3d723b5bef069c0681ec3bcfd6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specify whether each DIF check type is enabled. <br /></td></tr>
 <tr class="separator:a1872fa3d723b5bef069c0681ec3bcfd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aba3b4d21418e7f36047040c43d3e5976" id="r_aba3b4d21418e7f36047040c43d3e5976"><td class="memItemLeft" align="right" valign="top"><a id="aba3b4d21418e7f36047040c43d3e5976" name="aba3b4d21418e7f36047040c43d3e5976"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>zoned</b></td></tr>
-<tr class="memdesc:aba3b4d21418e7f36047040c43d3e5976"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specify whether bdev is zoned device. <br /></td></tr>
-<tr class="separator:aba3b4d21418e7f36047040c43d3e5976"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2596a8ba562c04e107df3acaa6a7391" id="r_af2596a8ba562c04e107df3acaa6a7391"><td class="memItemLeft" align="right" valign="top"><a id="af2596a8ba562c04e107df3acaa6a7391" name="af2596a8ba562c04e107df3acaa6a7391"></a>
+uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>reserved4</b> [8]</td></tr>
+<tr class="separator:af2596a8ba562c04e107df3acaa6a7391"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a054323b9bb1299a58497ca668d52b5a5" id="r_a054323b9bb1299a58497ca668d52b5a5"><td class="memItemLeft" align="right" valign="top"><a id="a054323b9bb1299a58497ca668d52b5a5" name="a054323b9bb1299a58497ca668d52b5a5"></a>
 uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>zone_size</b></td></tr>
 <tr class="memdesc:a054323b9bb1299a58497ca668d52b5a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default size of each zone (in blocks). <br /></td></tr>
@@ -298,10 +325,9 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>max_active_zones<
 uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>optimal_open_zones</b></td></tr>
 <tr class="memdesc:a11b4b1020556bd812c39731b057559f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Optimal number of open zones. <br /></td></tr>
 <tr class="separator:a11b4b1020556bd812c39731b057559f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acec83a7ec7f21c7a88d644dad2f0a8fe" id="r_acec83a7ec7f21c7a88d644dad2f0a8fe"><td class="memItemLeft" align="right" valign="top"><a id="acec83a7ec7f21c7a88d644dad2f0a8fe" name="acec83a7ec7f21c7a88d644dad2f0a8fe"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>media_events</b></td></tr>
-<tr class="memdesc:acec83a7ec7f21c7a88d644dad2f0a8fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specifies whether bdev supports media management events. <br /></td></tr>
-<tr class="separator:acec83a7ec7f21c7a88d644dad2f0a8fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeefcbd64a4a943c633fdd52066be06f9" id="r_aeefcbd64a4a943c633fdd52066be06f9"><td class="memItemLeft" align="right" valign="top"><a id="aeefcbd64a4a943c633fdd52066be06f9" name="aeefcbd64a4a943c633fdd52066be06f9"></a>
+uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>reserved6</b> [4]</td></tr>
+<tr class="separator:aeefcbd64a4a943c633fdd52066be06f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaaa43998fc6e305d9ca597a56eb7e99c" id="r_aaaa43998fc6e305d9ca597a56eb7e99c"><td class="memItemLeft" align="right" valign="top"><a id="aaaa43998fc6e305d9ca597a56eb7e99c" name="aaaa43998fc6e305d9ca597a56eb7e99c"></a>
 union <a class="el" href="unionspdk__bdev__nvme__ctratt.html">spdk_bdev_nvme_ctratt</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ctratt</b></td></tr>
 <tr class="memdesc:aaaa43998fc6e305d9ca597a56eb7e99c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specifies the bdev nvme controller attributes. <br /></td></tr>
@@ -313,19 +339,22 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>nsid</b></td></tr
 <tr class="memitem:a00db663b395d596c633624ed7554a440" id="r_a00db663b395d596c633624ed7554a440"><td class="memItemLeft" align="right" valign="top"><a id="a00db663b395d596c633624ed7554a440" name="a00db663b395d596c633624ed7554a440"></a>
 uint16_t&#160;</td><td class="memItemRight" valign="bottom"><b>reset_io_drain_timeout</b></td></tr>
 <tr class="separator:a00db663b395d596c633624ed7554a440"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac8d0e47d2f9cd4c041d9181718ea46c0" id="r_ac8d0e47d2f9cd4c041d9181718ea46c0"><td class="memItemLeft" ><a id="ac8d0e47d2f9cd4c041d9181718ea46c0" name="ac8d0e47d2f9cd4c041d9181718ea46c0"></a>
+<tr class="memitem:a95640376806953ce39ecb51753a554b4" id="r_a95640376806953ce39ecb51753a554b4"><td class="memItemLeft" align="right" valign="top"><a id="a95640376806953ce39ecb51753a554b4" name="a95640376806953ce39ecb51753a554b4"></a>
+uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>reserved7</b> [2]</td></tr>
+<tr class="separator:a95640376806953ce39ecb51753a554b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a462d6e58477b2406b6632da4a2a7f164" id="r_a462d6e58477b2406b6632da4a2a7f164"><td class="memItemLeft" ><a id="a462d6e58477b2406b6632da4a2a7f164" name="a462d6e58477b2406b6632da4a2a7f164"></a>
 struct {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af5454ef212b353c7db05521bb3bbec77" id="r_af5454ef212b353c7db05521bb3bbec77"><td class="memItemLeft" >
+<tr class="memitem:a6d1ad653a28b0ab2488ff654aba4caec" id="r_a6d1ad653a28b0ab2488ff654aba4caec"><td class="memItemLeft" >
 &#160;&#160;&#160;uint32_t&#160;&#160;&#160;<b>id_valid</b>: 1&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
-<tr class="memdesc:af5454ef212b353c7db05521bb3bbec77"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is numa.id valid? Needed to know whether numa.id == 0 was explicitly set by bdev module or implicitly set when calloc()'ing the structure. <br /></td></tr>
-<tr class="separator:af5454ef212b353c7db05521bb3bbec77"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afb0dd86009dcdec21396b8c1d3b81175" id="r_afb0dd86009dcdec21396b8c1d3b81175"><td class="memItemLeft" >
+<tr class="memdesc:a6d1ad653a28b0ab2488ff654aba4caec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is numa.id valid? Needed to know whether numa.id == 0 was explicitly set by bdev module or implicitly set when calloc()'ing the structure. <br /></td></tr>
+<tr class="separator:a6d1ad653a28b0ab2488ff654aba4caec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79f10c8c1d2af634ef581b3a1f50649e" id="r_a79f10c8c1d2af634ef581b3a1f50649e"><td class="memItemLeft" >
 &#160;&#160;&#160;int32_t&#160;&#160;&#160;<b>id</b>: 31&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
-<tr class="memdesc:afb0dd86009dcdec21396b8c1d3b81175"><td class="mdescLeft">&#160;</td><td class="mdescRight">NUMA node ID for the bdev. <br /></td></tr>
-<tr class="separator:afb0dd86009dcdec21396b8c1d3b81175"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac8d0e47d2f9cd4c041d9181718ea46c0" id="r_ac8d0e47d2f9cd4c041d9181718ea46c0"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><b>numa</b>&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
-<tr class="separator:ac8d0e47d2f9cd4c041d9181718ea46c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memdesc:a79f10c8c1d2af634ef581b3a1f50649e"><td class="mdescLeft">&#160;</td><td class="mdescRight">NUMA node ID for the bdev. <br /></td></tr>
+<tr class="separator:a79f10c8c1d2af634ef581b3a1f50649e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a462d6e58477b2406b6632da4a2a7f164" id="r_a462d6e58477b2406b6632da4a2a7f164"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><b>numa</b>&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:a462d6e58477b2406b6632da4a2a7f164"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2ca5531b4a1198ce407fc9dcfd698969" id="r_a2ca5531b4a1198ce407fc9dcfd698969"><td class="memItemLeft" align="right" valign="top"><a id="a2ca5531b4a1198ce407fc9dcfd698969" name="a2ca5531b4a1198ce407fc9dcfd698969"></a>
 uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>accel_sequence_supported</b></td></tr>
 <tr class="memdesc:a2ca5531b4a1198ce407fc9dcfd698969"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bitmap of supported io types. <br /></td></tr>
@@ -423,14 +452,14 @@ struct <a class="el" href="structspdk__bdev_1_1____bdev__internal__fields.html">
 
 </div>
 </div>
-<a id="a4e68d5fa768ba5d3c8af32e68e1a992c" name="a4e68d5fa768ba5d3c8af32e68e1a992c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4e68d5fa768ba5d3c8af32e68e1a992c">&#9670;&#160;</a></span>md_interleave</h2>
+<a id="ad056ca056fc13279a82811742d08b670" name="ad056ca056fc13279a82811742d08b670"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad056ca056fc13279a82811742d08b670">&#9670;&#160;</a></span>md_interleave</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool spdk_bdev::md_interleave</td>
+          <td class="memname">uint32_t spdk_bdev::md_interleave</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -457,14 +486,14 @@ struct <a class="el" href="structspdk__bdev_1_1____bdev__internal__fields.html">
 
 </div>
 </div>
-<a id="a85a794d02620e3e8730bb11791c0c592" name="a85a794d02620e3e8730bb11791c0c592"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a85a794d02620e3e8730bb11791c0c592">&#9670;&#160;</a></span>split_on_optimal_io_boundary</h2>
+<a id="a6dddfe2c4f020ee0807843da2c6ec922" name="a6dddfe2c4f020ee0807843da2c6ec922"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6dddfe2c4f020ee0807843da2c6ec922">&#9670;&#160;</a></span>split_on_optimal_io_boundary</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool spdk_bdev::split_on_optimal_io_boundary</td>
+          <td class="memname">uint32_t spdk_bdev::split_on_optimal_io_boundary</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -475,14 +504,14 @@ struct <a class="el" href="structspdk__bdev_1_1____bdev__internal__fields.html">
 
 </div>
 </div>
-<a id="a19101e574d1a54c9f57f02a5077170b5" name="a19101e574d1a54c9f57f02a5077170b5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a19101e574d1a54c9f57f02a5077170b5">&#9670;&#160;</a></span>split_on_write_unit</h2>
+<a id="a7720b606d1919877022024e66238c33f" name="a7720b606d1919877022024e66238c33f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7720b606d1919877022024e66238c33f">&#9670;&#160;</a></span>split_on_write_unit</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool spdk_bdev::split_on_write_unit</td>
+          <td class="memname">uint32_t spdk_bdev::split_on_write_unit</td>
         </tr>
       </table>
 </div><div class="memdoc">

@@ -20,7 +20,7 @@ var searchData=
   ['vqrfa_17',['vqrfa',['../structspdk__nvme__primary__ctrl__capabilities.html#aeab109efd1eae5f155c06105e8d097ed',1,'spdk_nvme_primary_ctrl_capabilities']]],
   ['vqrfap_18',['vqrfap',['../structspdk__nvme__primary__ctrl__capabilities.html#a9d87b4832999b7aed3ef612d1c80669a',1,'spdk_nvme_primary_ctrl_capabilities']]],
   ['vs_19',['vs',['../structspdk__ocssd__geometry__data.html#a4aa677e5f24826c750773b4201cd1ea3',1,'spdk_ocssd_geometry_data::vs'],['../structspdk__nvme__registers.html#a6b09cae2aad064302d6415dbaf8346e2',1,'spdk_nvme_registers::vs']]],
-  ['vwc_20',['vwc',['../structspdk__nvme__ctrlr__data.html#a11cc3391a856b3c7005feffccc342023',1,'spdk_nvme_ctrlr_data']]],
-  ['vwci_21',['vwci',['../structspdk__nvme__ctrlr__data.html#aa850f53c37424e34fb0198f3b611df45',1,'spdk_nvme_ctrlr_data']]],
+  ['vwc_20',['vwc',['../structspdk__nvme__ctrlr__data.html#a1658811a52c382f655132a190db43977',1,'spdk_nvme_ctrlr_data']]],
+  ['vwci_21',['vwci',['../structspdk__nvme__ctrlr__data.html#afcd2b7e77caec732b19389be49707cd8',1,'spdk_nvme_ctrlr_data']]],
   ['vwcnp_22',['vwcnp',['../structspdk__nvme__ns__iocs__independent__data.html#a35075c797a126987d7fce8e83b1692f7',1,'spdk_nvme_ns_iocs_independent_data']]]
 ];
