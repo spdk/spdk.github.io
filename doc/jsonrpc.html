@@ -2122,7 +2122,13 @@ mlx5_scan_accel_module</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">qp_size   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">qpair size    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">num_requests   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">Size of the shared requests pool   </td></tr>
+<td class="markdownTableBodyNone">num_requests   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">Size of the shared requests pool    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">allowed_devs   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Comma separated list of allowed device names, e.g. mlx5_0,mlx5_1    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">crypto_split_blocks   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">Number of data blocks to be processed in 1 crypto UMR. [0-65535], 0 means no limit    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">enable_driver   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Enable mlx5 platform driver. Note: the driver supports reduced scope of operations, enable with care   </td></tr>
 </table>
 <h3>Example</h3>
 <p>Example request:</p>
@@ -3148,7 +3154,9 @@ bdev_malloc_create</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">dif_is_head_of_md   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Protection information is in the first 8 bytes of metadata. Default=false.    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">physical_block_size   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">Physical block size of device; must be a power of 2 and at least 512   </td></tr>
+<td class="markdownTableBodyNone">physical_block_size   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">Physical block size of device; must be a power of 2 and at least 512    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">dif_pi_format   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">protection information format   </td></tr>
 </table>
 <h3>Response</h3>
 <p>Name of newly created bdev.</p>
@@ -3214,9 +3222,13 @@ bdev_null_create</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">uuid   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">UUID of new bdev    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">md_size   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">Metadata size for this bdev. Default=0.    </td></tr>
+<td class="markdownTableBodyNone">physical_block_size   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">Physical block size for this bdev.    </td></tr>
 <tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">md_size   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">Metadata size for this bdev. Default=0.    </td></tr>
+<tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">dif_type   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">Protection information type. Parameter &ndash;md-size needs to be set along &ndash;dif-type. Default=0 - no protection.    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">dif_pi_format   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">protection information format    </td></tr>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">dif_is_head_of_md   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Protection information is in the first 8 bytes of metadata. Default=false.    </td></tr>
 <tr class="markdownTableRowEven">
@@ -6622,12 +6634,14 @@ iscsi_portal_group_set_auth</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">tag   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">Portal group tag (unique, integer &gt; 0)    </td></tr>
+<tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">disable_chap   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">CHAP for discovery session should be disabled (default: <code>false</code>)    </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">require_chap   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">CHAP for discovery session should be required (default: <code>false</code>)    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">mutual_chap   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">CHAP for discovery session should be unidirectional (<code>false</code>) or bidirectional (<code>true</code>) (default: <code>false</code>)    </td></tr>
+<td class="markdownTableBodyNone">require_chap   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">CHAP for discovery session should be required (default: <code>false</code>)    </td></tr>
 <tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">mutual_chap   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">CHAP for discovery session should be unidirectional (<code>false</code>) or bidirectional (<code>true</code>) (default: <code>false</code>)    </td></tr>
+<tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">chap_group   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">CHAP group ID for discovery session (default: 0)   </td></tr>
 </table>
 <h3>Example</h3>
@@ -6996,6 +7010,8 @@ nvmf_get_subsystems</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">nqn   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Subsystem NQN (optional)    </td></tr>
+<tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">tgt_name   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Parent NVMe-oF target name.   </td></tr>
 </table>
 <h3>Example</h3>
@@ -7148,6 +7164,8 @@ nvmf_subsystem_add_listener</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">secure_channel   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Whether all connections immediately attempt to establish a secure channel    </td></tr>
 <tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">ana_state   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">ANA state to set: optimized, non_optimized, or inaccessible    </td></tr>
+<tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">sock_impl   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">The socket implementation to use for the listener   </td></tr>
 </table>
 <h4><a class="anchor" id="rpc_nvmf_listen_address"></a>
@@ -7658,7 +7676,9 @@ nvmf_ns_add_host</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">nsid   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">Namespace ID    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">host   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Host NQN   </td></tr>
+<td class="markdownTableBodyNone">host   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Host NQN    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">tgt_name   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">The name of the parent NVMe-oF target (optional)   </td></tr>
 </table>
 <h3>Example</h3>
 <p>Example request:</p>
@@ -7691,7 +7711,9 @@ nvmf_ns_remove_host</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">nsid   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">Namespace ID    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">host   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Host NQN   </td></tr>
+<td class="markdownTableBodyNone">host   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Host NQN    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">tgt_name   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">The name of the parent NVMe-oF target (optional)   </td></tr>
 </table>
 <h3>Example</h3>
 <p>Example request:</p>
@@ -7749,7 +7771,9 @@ nvmf_discovery_add_referral</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">address   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">object   </td><td class="markdownTableBodyNone"><a class="el" href="#rpc_nvmf_listen_address">listen_address</a> object    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">secure_channel   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">The connection to that discovery subsystem requires a secure channel   </td></tr>
+<td class="markdownTableBodyNone">secure_channel   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">The connection to that discovery subsystem requires a secure channel    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">subnqn   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Subsystem NQN   </td></tr>
 </table>
 <h3>Example</h3>
 <p>Example request:</p>
@@ -7782,7 +7806,9 @@ nvmf_discovery_remove_referral</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">tgt_name   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Parent NVMe-oF target name.    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">address   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">object   </td><td class="markdownTableBodyNone"><a class="el" href="#rpc_nvmf_listen_address">listen_address</a> object   </td></tr>
+<td class="markdownTableBodyNone">address   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">object   </td><td class="markdownTableBodyNone"><a class="el" href="#rpc_nvmf_listen_address">listen_address</a> object    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">subnqn   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Subsystem NQN   </td></tr>
 </table>
 <h3>Example</h3>
 <p>Example request:</p>
