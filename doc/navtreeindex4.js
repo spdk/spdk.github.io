@@ -1,7 +1,5 @@
 var NAVTREEINDEX4 =
 {
-"functions_z.html":[14,2,0,24],
-"gdb_macros.html":[4,5],
 "general.html":[5],
 "getting_started.html":[1,1],
 "getting_started.html#getting_started_building":[1,1,2],
@@ -249,5 +247,7 @@ var NAVTREEINDEX4 =
 "jsonrpc.html#rpc_bdev_null_create":[3,8,5,23],
 "jsonrpc.html#rpc_bdev_null_delete":[3,8,5,24],
 "jsonrpc.html#rpc_bdev_null_resize":[3,8,5,25],
-"jsonrpc.html#rpc_bdev_nvme_add_error_injection":[3,8,20,6]
+"jsonrpc.html#rpc_bdev_nvme_add_error_injection":[3,8,20,6],
+"jsonrpc.html#rpc_bdev_nvme_apply_firmware":[3,8,5,49],
+"jsonrpc.html#rpc_bdev_nvme_attach_controller":[3,8,5,31]
 };

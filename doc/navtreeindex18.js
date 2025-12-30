@@ -1,8 +1,5 @@
 var NAVTREEINDEX18 =
 {
-"unionspdk__nvme__feat__keep__alive__timer.html#a1295377c1ebb2b62c58d29e43047827e":[14,0,229,0],
-"unionspdk__nvme__feat__lba__range__type.html":[14,0,230],
-"unionspdk__nvme__feat__lba__range__type.html#a9fcf5c790767d292adf15b5f05ab40cf":[14,0,230,0],
 "unionspdk__nvme__feat__non__operational__power__state__config.html":[14,0,231],
 "unionspdk__nvme__feat__non__operational__power__state__config.html#a8f512d6ffa8611e38141e169898efb4b":[14,0,231,0],
 "unionspdk__nvme__feat__number__of__queues.html":[14,0,232],

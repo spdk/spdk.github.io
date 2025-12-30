@@ -348,12 +348,6 @@ typedef&#160;</td><td class="memItemRight" valign="bottom"><b>TAILQ_HEAD</b> (, 
 <tr class="memitem:a934c7e96e8bdc0aea6cbcc0f414c71ba" id="r_a934c7e96e8bdc0aea6cbcc0f414c71ba"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a934c7e96e8bdc0aea6cbcc0f414c71ba">spdk_bdev_io_get_buf</a> (struct <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> *bdev_io, <a class="el" href="#a2562fbcad733a35efaca67e9fb53a382">spdk_bdev_io_get_buf_cb</a> cb, uint64_t len)</td></tr>
 <tr class="memdesc:a934c7e96e8bdc0aea6cbcc0f414c71ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate a buffer for given bdev_io.  <br /></td></tr>
 <tr class="separator:a934c7e96e8bdc0aea6cbcc0f414c71ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2bfea82499197ef270f7a3f6204ccea8" id="r_a2bfea82499197ef270f7a3f6204ccea8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2bfea82499197ef270f7a3f6204ccea8">spdk_bdev_io_get_aux_buf</a> (struct <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> *bdev_io, <a class="el" href="#a78a004a98b02f2d1b2346b6b25e1c945">spdk_bdev_io_get_aux_buf_cb</a> cb)</td></tr>
-<tr class="memdesc:a2bfea82499197ef270f7a3f6204ccea8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate an auxiliary buffer for given bdev_io.  <br /></td></tr>
-<tr class="separator:a2bfea82499197ef270f7a3f6204ccea8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac3d88717b98b64a59816c8f03fc4b21d" id="r_ac3d88717b98b64a59816c8f03fc4b21d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac3d88717b98b64a59816c8f03fc4b21d">spdk_bdev_io_put_aux_buf</a> (struct <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> *bdev_io, void *aux_buf)</td></tr>
-<tr class="memdesc:ac3d88717b98b64a59816c8f03fc4b21d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free an auxiliary buffer previously allocated by <code><a class="el" href="#a2bfea82499197ef270f7a3f6204ccea8" title="Allocate an auxiliary buffer for given bdev_io.">spdk_bdev_io_get_aux_buf()</a></code>.  <br /></td></tr>
-<tr class="separator:ac3d88717b98b64a59816c8f03fc4b21d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5db22de2bf8ceb0f640e05b92188bff5" id="r_a5db22de2bf8ceb0f640e05b92188bff5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5db22de2bf8ceb0f640e05b92188bff5">spdk_bdev_io_set_buf</a> (struct <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> *bdev_io, void *buf, size_t len)</td></tr>
 <tr class="memdesc:a5db22de2bf8ceb0f640e05b92188bff5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the given buffer as the data buffer described by this bdev_io.  <br /></td></tr>
 <tr class="separator:a5db22de2bf8ceb0f640e05b92188bff5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1148,37 +1142,6 @@ typedef&#160;</td><td class="memItemRight" valign="bottom"><b>TAILQ_HEAD</b> (bd
 
 </div>
 </div>
-<a id="a2bfea82499197ef270f7a3f6204ccea8" name="a2bfea82499197ef270f7a3f6204ccea8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2bfea82499197ef270f7a3f6204ccea8">&#9670;&#160;</a></span>spdk_bdev_io_get_aux_buf()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void spdk_bdev_io_get_aux_buf </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> *</td>          <td class="paramname"><span class="paramname"><em>bdev_io</em>, </span></td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="#a78a004a98b02f2d1b2346b6b25e1c945">spdk_bdev_io_get_aux_buf_cb</a></td>          <td class="paramname"><span class="paramname"><em>cb</em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Allocate an auxiliary buffer for given bdev_io. </p>
-<p>The length of the buffer will be the same size as the bdev_io primary buffer. The buffer must be freed using <code><a class="el" href="#ac3d88717b98b64a59816c8f03fc4b21d" title="Free an auxiliary buffer previously allocated by spdk_bdev_io_get_aux_buf().">spdk_bdev_io_put_aux_buf()</a></code> before completing the associated bdev_io. This call will never fail. In case of lack of memory given callback <code>cb</code> will be deferred until enough memory is freed.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">bdev_io</td><td>I/O to allocate buffer for. </td></tr>
-    <tr><td class="paramname">cb</td><td>callback to be called when the buffer is allocated </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <a id="a934c7e96e8bdc0aea6cbcc0f414c71ba" name="a934c7e96e8bdc0aea6cbcc0f414c71ba"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a934c7e96e8bdc0aea6cbcc0f414c71ba">&#9670;&#160;</a></span>spdk_bdev_io_get_buf()</h2>
 
@@ -1317,36 +1280,6 @@ typedef&#160;</td><td class="memItemRight" valign="bottom"><b>TAILQ_HEAD</b> (bd
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if metadata is hidden from the bdev I/O, or false otherwise. </dd></dl>
-
-</div>
-</div>
-<a id="ac3d88717b98b64a59816c8f03fc4b21d" name="ac3d88717b98b64a59816c8f03fc4b21d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac3d88717b98b64a59816c8f03fc4b21d">&#9670;&#160;</a></span>spdk_bdev_io_put_aux_buf()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void spdk_bdev_io_put_aux_buf </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> *</td>          <td class="paramname"><span class="paramname"><em>bdev_io</em>, </span></td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void *</td>          <td class="paramname"><span class="paramname"><em>aux_buf</em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Free an auxiliary buffer previously allocated by <code><a class="el" href="#a2bfea82499197ef270f7a3f6204ccea8" title="Allocate an auxiliary buffer for given bdev_io.">spdk_bdev_io_get_aux_buf()</a></code>. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">bdev_io</td><td>bdev_io specified when the aux_buf was allocated. </td></tr>
-    <tr><td class="paramname">aux_buf</td><td>auxiliary buffer to free </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>

@@ -3344,7 +3344,9 @@ bdev_aio_create</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">fallocate   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Enable UNMAP and WRITE ZEROES support. Intended only for testing purposes due to synchronous syscall.    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">uuid   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">UUID of new bdev   </td></tr>
+<td class="markdownTableBodyNone">uuid   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">UUID of new bdev    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">nowait   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Enable the RWF_NOWAIT flag for block devices. If the flag is not defined, or if the specified device is not a block device, creation will fail. Note that this feature is not advertised by the kernel to userspace. Use with caution, and only if the device is known to work correctly with your kernel.   </td></tr>
 </table>
 <h3>Response</h3>
 <p>Name of newly created bdev.</p>
