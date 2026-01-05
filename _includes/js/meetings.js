@@ -13,7 +13,7 @@ var USHolidays = [[ new Date(2018, 11, 24), true ], //Christmas Eve
         [ new Date(2019, 8, 2), false ], //Labor Day
         [ new Date(2019, 10, 28), false ], //Thanksgiving
         [ new Date(2019, 10, 29), false ], //Thanksgiving Recovery Day :)
-        [ new Date(2025, 1, 6), false ]] //Epiphany
+        [ new Date(2026, 1, 6), false ]] //Epiphany
 
 var EuroHolidays = []
 
