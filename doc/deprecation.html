@@ -137,6 +137,8 @@ $(function(){initNavTree('deprecation.html',''); initResizable(); });
 <p>API and ABI deprecation notices shall be posted in the next section. Each entry must describe what will be removed and can suggest the future use or alternative. Specific future SPDK release for the removal must be provided. ABI cannot be removed without providing deprecation notice for at least single SPDK release.</p>
 <p>Deprecated code paths must be registered with <code>SPDK_LOG_DEPRECATION_REGISTER()</code> and logged with <code>SPDK_LOG_DEPRECATED()</code>. The tag used with these macros will appear in the SPDK log at the warn level when <code>SPDK_LOG_DEPRECATED()</code> is called, subject to rate limits. The tags can be matched with the level 4 headers below.</p>
 <h1>Deprecation Notices</h1>
+<h2>ftl</h2>
+<p>bdev_ftl_load is depreacted and will be removed in the 26.05 release. use bdev_ftl_create instead bdev_ftl_unload is depreacted and will be removed in the 26.05 release. use bdev_ftl_delete instead</p>
 <h2>bdev</h2>
 <h3><code>bdev_get_iostat</code></h3>
 <p><code>--name</code> option will be removed in the 26.05 release. <code>--names</code> option should be used instead, it allows providing array of devices names to obtain statistics from.</p>
