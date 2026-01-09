@@ -832,7 +832,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_iobuf_unregister_
     <tr><td class="paramname">io_device</td><td>'fn' will be called on each channel associated with this io_device. </td></tr>
     <tr><td class="paramname">fn</td><td>Called on the appropriate thread for each channel associated with io_device. </td></tr>
     <tr><td class="paramname">ctx</td><td>Context buffer registered to spdk_io_channel_iter that can be obtained form the function <a class="el" href="#a1dbfdf5d3d16af7d19904514e1e60d22" title="Get context buffer from the I/O channel iterator.">spdk_io_channel_iter_get_ctx()</a>. </td></tr>
-    <tr><td class="paramname">cpl</td><td>Called on the thread that spdk_for_each_channel was initially called from when 'fn' has been called on each channel. </td></tr>
+    <tr><td class="paramname">cpl</td><td>Called on the thread that spdk_for_each_channel was initially called from when 'fn' has been called on each channel. Optional - may be NULL. </td></tr>
   </table>
   </dd>
 </dl>
@@ -899,7 +899,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_iobuf_unregister_
   <table class="params">
     <tr><td class="paramname">fn</td><td>This is the function that will be called on each thread. </td></tr>
     <tr><td class="paramname">ctx</td><td>This context will be passed to fn when called. </td></tr>
-    <tr><td class="paramname">cpl</td><td>This will be called on the originating thread after <code>fn</code> has been called on each thread. </td></tr>
+    <tr><td class="paramname">cpl</td><td>This will be called on the originating thread after <code>fn</code> has been called on each thread. Optional - may be NULL. </td></tr>
   </table>
   </dd>
 </dl>
