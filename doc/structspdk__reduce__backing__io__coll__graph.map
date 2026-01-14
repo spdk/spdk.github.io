@@ -1,7 +1,0 @@
-<map id="spdk_reduce_backing_io" name="spdk_reduce_backing_io">
-<area shape="rect" id="Node000001" title=" " alt="" coords="118,98,298,126"/>
-<area shape="rect" id="Node000002" href="$structspdk__reduce__backing__dev.html" title=" " alt="" coords="5,5,198,33"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="130,41,194,95,191,99,127,45"/>
-<area shape="rect" id="Node000003" href="$structspdk__reduce__vol__cb__args.html" title=" " alt="" coords="221,5,409,33"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="290,45,225,99,222,95,286,41"/>
-</map>

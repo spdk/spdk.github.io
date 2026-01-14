@@ -445,6 +445,7 @@ $(function(){initNavTree('globals_s.html',''); initResizable(); });
 <li>spdk_bdev_write()&#160;:&#160;<a class="el" href="group__bdev__io__submit__functions.html#gaa740a114ef34d6a2f126d4e3a9dd9e9b">bdev.h</a></li>
 <li>spdk_bdev_write_blocks()&#160;:&#160;<a class="el" href="group__bdev__io__submit__functions.html#ga12da8917f525a6e11cbf22b2b7652c89">bdev.h</a></li>
 <li>spdk_bdev_write_blocks_with_md()&#160;:&#160;<a class="el" href="group__bdev__io__submit__functions.html#ga01380182ca77b43e2a854aa59058fe12">bdev.h</a></li>
+<li>spdk_bdev_write_uncorrectable_blocks()&#160;:&#160;<a class="el" href="group__bdev__io__submit__functions.html#ga36acd28f4f317a1157d0fe381996c91f">bdev.h</a></li>
 <li>spdk_bdev_write_zeroes()&#160;:&#160;<a class="el" href="group__bdev__io__submit__functions.html#gadc50b78fec7f69190d9139aff29a9043">bdev.h</a></li>
 <li>spdk_bdev_write_zeroes_blocks()&#160;:&#160;<a class="el" href="group__bdev__io__submit__functions.html#ga047f8a9f8d0a3d1d7bfcdf0a9838b261">bdev.h</a></li>
 <li>spdk_bdev_writev()&#160;:&#160;<a class="el" href="group__bdev__io__submit__functions.html#ga9a508a1c301a1321faf0680a8f31f59a">bdev.h</a></li>
@@ -1375,6 +1376,7 @@ $(function(){initNavTree('globals_s.html',''); initResizable(); });
 <li>SPDK_NVME_NS_RESERVATION_SUPPORTED&#160;:&#160;<a class="el" href="nvme_8h.html#a018f3b986b4345ee0c6931be9718c163a60edfdee88fbe811250e2f8ff63597d0">nvme.h</a></li>
 <li>spdk_nvme_ns_supports_compare()&#160;:&#160;<a class="el" href="nvme_8h.html#aacb2087b31ac4b4807a77b9b97d55b2c">nvme.h</a></li>
 <li>spdk_nvme_ns_supports_extended_lba()&#160;:&#160;<a class="el" href="nvme_8h.html#aad367fec5a8963f5d930dfae485de6b3">nvme.h</a></li>
+<li>spdk_nvme_ns_supports_write_uncorrectable()&#160;:&#160;<a class="el" href="nvme_8h.html#a8b665b82095d9416d72bf8a1850f09b6">nvme.h</a></li>
 <li>SPDK_NVME_NS_WRITE_UNCORRECTABLE_SUPPORTED&#160;:&#160;<a class="el" href="nvme_8h.html#a018f3b986b4345ee0c6931be9718c163afe42f7e0cdcb93109b55b77cf89efd27">nvme.h</a></li>
 <li>SPDK_NVME_NS_WRITE_ZEROES_SUPPORTED&#160;:&#160;<a class="el" href="nvme_8h.html#a018f3b986b4345ee0c6931be9718c163a4e691401f3709b7cd66bd32c28ae109b">nvme.h</a></li>
 <li>SPDK_NVME_NSSR_VALUE&#160;:&#160;<a class="el" href="nvme__spec_8h.html#ad3ef13320c82eaf4abdef6aa56e8b5ba">nvme_spec.h</a></li>
@@ -1443,8 +1445,8 @@ $(function(){initNavTree('globals_s.html',''); initResizable(); });
 <li>spdk_nvme_sanitize_status_type&#160;:&#160;<a class="el" href="nvme__spec_8h.html#ae89c61a84a87f12156f7046d7e9f78f1">nvme_spec.h</a></li>
 <li>spdk_nvme_scan_attached()&#160;:&#160;<a class="el" href="nvme_8h.html#adb0e98dcf4b18b4cc91b27a03b2b7c89">nvme.h</a></li>
 <li>SPDK_NVME_SGLS_NOT_SUPPORTED&#160;:&#160;<a class="el" href="nvme__spec_8h.html#af3e4102cda177c51a05a6bb02fa62b87a5978d5c7ce04a60c9d86b157037cb2f0">nvme_spec.h</a></li>
-<li>spdk_nvme_sgls_supported&#160;:&#160;<a class="el" href="nvme__spec_8h.html#af3e4102cda177c51a05a6bb02fa62b87">nvme_spec.h</a></li>
 <li>SPDK_NVME_SGLS_SUPPORTED&#160;:&#160;<a class="el" href="nvme__spec_8h.html#af3e4102cda177c51a05a6bb02fa62b87ade9828594ce1d9d11427a38182149d9d">nvme_spec.h</a></li>
+<li>spdk_nvme_sgls_supported&#160;:&#160;<a class="el" href="nvme__spec_8h.html#af3e4102cda177c51a05a6bb02fa62b87">nvme_spec.h</a></li>
 <li>SPDK_NVME_SGLS_SUPPORTED_DWORD_ALIGNED&#160;:&#160;<a class="el" href="nvme__spec_8h.html#af3e4102cda177c51a05a6bb02fa62b87a702868f6b85dd329c4baf00642e99fca">nvme_spec.h</a></li>
 <li>spdk_nvme_status_code_type&#160;:&#160;<a class="el" href="nvme__spec_8h.html#a99fb26e5d5c31f6d3d61397951e44b52">nvme_spec.h</a></li>
 <li>spdk_nvme_tcp_pdu_type&#160;:&#160;<a class="el" href="nvmf__spec_8h.html#ab42a038d2f0a46d2a5d2290cb91fdbfc">nvmf_spec.h</a></li>
@@ -1780,19 +1782,6 @@ $(function(){initNavTree('globals_s.html',''); initResizable(); });
 <li>spdk_read_sysfs_attribute()&#160;:&#160;<a class="el" href="file_8h.html#aad68bd9d4b771faee1264402f13628a0">file.h</a></li>
 <li>spdk_read_sysfs_attribute_uint32()&#160;:&#160;<a class="el" href="file_8h.html#a2ce425e7ea1c2bd34feacddaeb914b7c">file.h</a></li>
 <li>spdk_realloc()&#160;:&#160;<a class="el" href="env_8h.html#a3523c3351d578df5057d4db497920b5d">env.h</a></li>
-<li>spdk_reduce_dev_cpl&#160;:&#160;<a class="el" href="reduce_8h.html#a137aea842a5ebd65781d7bcfc735018b">reduce.h</a></li>
-<li>spdk_reduce_vol_destroy()&#160;:&#160;<a class="el" href="reduce_8h.html#ae0ffc9aa6f6f8ba73f52672abcccddbc">reduce.h</a></li>
-<li>spdk_reduce_vol_get_info()&#160;:&#160;<a class="el" href="reduce_8h.html#a72762fccd5b8ee30c90c576d89dcc51b">reduce.h</a></li>
-<li>spdk_reduce_vol_get_params()&#160;:&#160;<a class="el" href="reduce_8h.html#a072ca3aef96d536802671dde087e80fa">reduce.h</a></li>
-<li>spdk_reduce_vol_get_pm_path()&#160;:&#160;<a class="el" href="reduce_8h.html#a29b47c899b3ebf51501d65c7bf30f4e0">reduce.h</a></li>
-<li>spdk_reduce_vol_get_uuid()&#160;:&#160;<a class="el" href="reduce_8h.html#afde0a4960f6c32489cb106b59647048b">reduce.h</a></li>
-<li>spdk_reduce_vol_init()&#160;:&#160;<a class="el" href="reduce_8h.html#a62753f16686f807748719567d57f15b8">reduce.h</a></li>
-<li>spdk_reduce_vol_load()&#160;:&#160;<a class="el" href="reduce_8h.html#a910dd92b2a78d08fdb1cd6fa9e4c7a9e">reduce.h</a></li>
-<li>spdk_reduce_vol_print_info()&#160;:&#160;<a class="el" href="reduce_8h.html#a240fd573432ccd45433ba70c8bfc2d42">reduce.h</a></li>
-<li>spdk_reduce_vol_readv()&#160;:&#160;<a class="el" href="reduce_8h.html#a9bfdcd7f50cc33b4b69011f239aa7498">reduce.h</a></li>
-<li>spdk_reduce_vol_unload()&#160;:&#160;<a class="el" href="reduce_8h.html#a593901ae3d44b3315fad40da95108bee">reduce.h</a></li>
-<li>spdk_reduce_vol_unmap()&#160;:&#160;<a class="el" href="reduce_8h.html#a1e881398c464c24b004b21827471d7b0">reduce.h</a></li>
-<li>spdk_reduce_vol_writev()&#160;:&#160;<a class="el" href="reduce_8h.html#ac5b98c059d57b5fe1acf0062aa3d3e33">reduce.h</a></li>
 <li>spdk_ring_count()&#160;:&#160;<a class="el" href="env_8h.html#a6320a791a777b2d518def6413e543ac8">env.h</a></li>
 <li>spdk_ring_create()&#160;:&#160;<a class="el" href="env_8h.html#af0d31e938cc430b730cc4fec473a94f6">env.h</a></li>
 <li>spdk_ring_dequeue()&#160;:&#160;<a class="el" href="env_8h.html#a982e1b212d497dbb209902f56b192afb">env.h</a></li>

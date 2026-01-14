@@ -226,6 +226,7 @@ var nvme_8h =
     [ "spdk_nvme_ns_is_active", "nvme_8h.html#af755eb3e5a5f767a5bdc544d85667898", null ],
     [ "spdk_nvme_ns_supports_compare", "nvme_8h.html#aacb2087b31ac4b4807a77b9b97d55b2c", null ],
     [ "spdk_nvme_ns_supports_extended_lba", "nvme_8h.html#aad367fec5a8963f5d930dfae485de6b3", null ],
+    [ "spdk_nvme_ns_supports_write_uncorrectable", "nvme_8h.html#a8b665b82095d9416d72bf8a1850f09b6", null ],
     [ "spdk_nvme_nvm_ns_get_data", "nvme_8h.html#a6bed6ef82de45dc360c4867ff1cc9520", null ],
     [ "spdk_nvme_pcie_set_hotplug_filter", "nvme_8h.html#a976b90cbbc1aa8a4117837758f65e6c7", null ],
     [ "spdk_nvme_poll_group_add", "nvme_8h.html#ade4eafe3d6b7b4a0a1c317a49b3ba1e5", null ],

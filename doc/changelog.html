@@ -245,7 +245,7 @@ v26.01: (Upcoming Release)</h1>
 <h2>python</h2>
 <p>Renamed python binaries with <code>-</code> instead of <code>_</code> spdk-rpc, spdk-sma and spdk-cli to be more platform independent for Linux/Windows according to PyPI and hatch suggestions.</p>
 <h2>reduce</h2>
-<p>Added <code><a class="el" href="reduce_8h.html#a72762fccd5b8ee30c90c576d89dcc51b" title="Get the information for a libreduce compressed volume.">spdk_reduce_vol_get_info()</a></code> to get the information for the compressed volume.</p>
+<p>Added <code>spdk_reduce_vol_get_info()</code> to get the information for the compressed volume.</p>
 <h2>sock</h2>
 <p>A new internal field was added to <code><a class="el" href="structspdk__sock__request.html" title="Anywhere this struct is used, an iovec array is assumed to immediately follow the last member in memo...">spdk_sock_request</a></code>, increasing its size and moving <code>iovcnt</code> and user provided <code>iov[]</code> offsets by 8 bytes, which breaks ABI.</p>
 <h2>thread</h2>

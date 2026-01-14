@@ -53,7 +53,6 @@ var dir_67fbcc0b4317645100def1406b508c33 =
     [ "nvmf_transport.h", "nvmf__transport_8h.html", "nvmf__transport_8h" ],
     [ "pci_ids.h", "pci__ids_8h.html", "pci__ids_8h" ],
     [ "pipe.h", "pipe_8h.html", "pipe_8h" ],
-    [ "reduce.h", "reduce_8h.html", "reduce_8h" ],
     [ "scsi.h", "scsi_8h.html", "scsi_8h" ],
     [ "scsi_spec.h", "scsi__spec_8h.html", "scsi__spec_8h" ],
     [ "sock.h", "sock_8h.html", "sock_8h" ],

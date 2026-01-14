@@ -281,6 +281,7 @@ Enumerations</h2></td></tr>
 , <br />
 &#160;&#160;<b>SPDK_BDEV_IO_TYPE_NVME_IOV_MD</b>
 , <b>SPDK_BDEV_IO_TYPE_NVME_NSSR</b>
+, <b>SPDK_BDEV_IO_TYPE_WRITE_UNCORRECTABLE</b>
 , <b>SPDK_BDEV_NUM_IO_TYPES</b>
 <br />
  }</td></tr>
@@ -620,6 +621,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_set_opts</b>
 <tr class="memitem:ga047f8a9f8d0a3d1d7bfcdf0a9838b261" id="r_ga047f8a9f8d0a3d1d7bfcdf0a9838b261"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bdev__io__submit__functions.html#ga047f8a9f8d0a3d1d7bfcdf0a9838b261">spdk_bdev_write_zeroes_blocks</a> (struct spdk_bdev_desc *desc, struct spdk_io_channel *ch, uint64_t offset_blocks, uint64_t num_blocks, <a class="el" href="#a0c5602dfd313f90032dd91683b9663e3">spdk_bdev_io_completion_cb</a> cb, void *cb_arg)</td></tr>
 <tr class="memdesc:ga047f8a9f8d0a3d1d7bfcdf0a9838b261"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submit a write zeroes request to the bdev on the given channel.  <br /></td></tr>
 <tr class="separator:ga047f8a9f8d0a3d1d7bfcdf0a9838b261"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga36acd28f4f317a1157d0fe381996c91f" id="r_ga36acd28f4f317a1157d0fe381996c91f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bdev__io__submit__functions.html#ga36acd28f4f317a1157d0fe381996c91f">spdk_bdev_write_uncorrectable_blocks</a> (struct spdk_bdev_desc *desc, struct spdk_io_channel *ch, uint64_t offset_blocks, uint64_t num_blocks, <a class="el" href="#a0c5602dfd313f90032dd91683b9663e3">spdk_bdev_io_completion_cb</a> cb, void *cb_arg)</td></tr>
+<tr class="memdesc:ga36acd28f4f317a1157d0fe381996c91f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submit a write uncorrectable request to the bdev on the given channel.  <br /></td></tr>
+<tr class="separator:ga36acd28f4f317a1157d0fe381996c91f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga680c9c302998f7b003e2476e35d9ae4b" id="r_ga680c9c302998f7b003e2476e35d9ae4b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bdev__io__submit__functions.html#ga680c9c302998f7b003e2476e35d9ae4b">spdk_bdev_unmap</a> (struct spdk_bdev_desc *desc, struct spdk_io_channel *ch, uint64_t offset, uint64_t nbytes, <a class="el" href="#a0c5602dfd313f90032dd91683b9663e3">spdk_bdev_io_completion_cb</a> cb, void *cb_arg)</td></tr>
 <tr class="memdesc:ga680c9c302998f7b003e2476e35d9ae4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submit an unmap request to the block device.  <br /></td></tr>
 <tr class="separator:ga680c9c302998f7b003e2476e35d9ae4b"><td class="memSeparator" colspan="2">&#160;</td></tr>

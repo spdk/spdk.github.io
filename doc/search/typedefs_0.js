@@ -123,14 +123,13 @@ var searchData=
   ['spdk_5fpci_5fenum_5fcb_120',['spdk_pci_enum_cb',['../env_8h.html#a0083aec1c2ac9ae023b744a80160af79',1,'env.h']]],
   ['spdk_5fpoller_5ffn_121',['spdk_poller_fn',['../thread_8h.html#a35c421accdc2a0a61bb7be916106293b',1,'thread.h']]],
   ['spdk_5fpoller_5fset_5finterrupt_5fmode_5fcb_122',['spdk_poller_set_interrupt_mode_cb',['../thread_8h.html#aaa00024ffe78012bf1b7ade9aee0ab1a',1,'thread.h']]],
-  ['spdk_5freduce_5fdev_5fcpl_123',['spdk_reduce_dev_cpl',['../reduce_8h.html#a137aea842a5ebd65781d7bcfc735018b',1,'reduce.h']]],
-  ['spdk_5fsighandler_5ft_124',['spdk_sighandler_t',['../event_8h.html#a6371e3e4903529f9c94e25d224580a44',1,'event.h']]],
-  ['spdk_5fsock_5fcb_125',['spdk_sock_cb',['../sock_8h.html#ae297ae75e566b35635d20b959daa7741',1,'sock.h']]],
-  ['spdk_5fsock_5fconnect_5fcb_5ffn_126',['spdk_sock_connect_cb_fn',['../sock_8h.html#a25c432be84090e20e914f0773ce896e9',1,'sock.h']]],
-  ['spdk_5fthread_5fop_5ffn_127',['spdk_thread_op_fn',['../thread_8h.html#a9f0ad3a2bcbb6d304401b579ab63aeba',1,'thread.h']]],
-  ['spdk_5fthread_5fop_5fsupported_5ffn_128',['spdk_thread_op_supported_fn',['../thread_8h.html#af791c24e496b96c886fe8bad088eb0cb',1,'thread.h']]],
-  ['spdk_5fthread_5fpass_5fmsg_129',['spdk_thread_pass_msg',['../thread_8h.html#a4a0e155fc3fa0150aa4a505dd1801e91',1,'thread.h']]],
-  ['spdk_5fvhost_5fevent_5ffn_130',['spdk_vhost_event_fn',['../vhost_8h.html#ac2c4b62eaf6503e5f5e520394f9f9fe1',1,'vhost.h']]],
-  ['spdk_5fvhost_5ffini_5fcb_131',['spdk_vhost_fini_cb',['../vhost_8h.html#a8b37106ad173f20d05da87f89714700b',1,'vhost.h']]],
-  ['spdk_5fvhost_5finit_5fcb_132',['spdk_vhost_init_cb',['../vhost_8h.html#aed34ffbfc5835716ba35a9ee050e1e74',1,'vhost.h']]]
+  ['spdk_5fsighandler_5ft_123',['spdk_sighandler_t',['../event_8h.html#a6371e3e4903529f9c94e25d224580a44',1,'event.h']]],
+  ['spdk_5fsock_5fcb_124',['spdk_sock_cb',['../sock_8h.html#ae297ae75e566b35635d20b959daa7741',1,'sock.h']]],
+  ['spdk_5fsock_5fconnect_5fcb_5ffn_125',['spdk_sock_connect_cb_fn',['../sock_8h.html#a25c432be84090e20e914f0773ce896e9',1,'sock.h']]],
+  ['spdk_5fthread_5fop_5ffn_126',['spdk_thread_op_fn',['../thread_8h.html#a9f0ad3a2bcbb6d304401b579ab63aeba',1,'thread.h']]],
+  ['spdk_5fthread_5fop_5fsupported_5ffn_127',['spdk_thread_op_supported_fn',['../thread_8h.html#af791c24e496b96c886fe8bad088eb0cb',1,'thread.h']]],
+  ['spdk_5fthread_5fpass_5fmsg_128',['spdk_thread_pass_msg',['../thread_8h.html#a4a0e155fc3fa0150aa4a505dd1801e91',1,'thread.h']]],
+  ['spdk_5fvhost_5fevent_5ffn_129',['spdk_vhost_event_fn',['../vhost_8h.html#ac2c4b62eaf6503e5f5e520394f9f9fe1',1,'vhost.h']]],
+  ['spdk_5fvhost_5ffini_5fcb_130',['spdk_vhost_fini_cb',['../vhost_8h.html#a8b37106ad173f20d05da87f89714700b',1,'vhost.h']]],
+  ['spdk_5fvhost_5finit_5fcb_131',['spdk_vhost_init_cb',['../vhost_8h.html#aed34ffbfc5835716ba35a9ee050e1e74',1,'vhost.h']]]
 ];

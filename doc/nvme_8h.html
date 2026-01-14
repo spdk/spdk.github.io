@@ -792,6 +792,9 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_trty
 <tr class="memitem:aad367fec5a8963f5d930dfae485de6b3" id="r_aad367fec5a8963f5d930dfae485de6b3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aad367fec5a8963f5d930dfae485de6b3">spdk_nvme_ns_supports_extended_lba</a> (struct spdk_nvme_ns *ns)</td></tr>
 <tr class="memdesc:aad367fec5a8963f5d930dfae485de6b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether if the namespace can support extended LBA when end-to-end data protection enabled.  <br /></td></tr>
 <tr class="separator:aad367fec5a8963f5d930dfae485de6b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b665b82095d9416d72bf8a1850f09b6" id="r_a8b665b82095d9416d72bf8a1850f09b6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8b665b82095d9416d72bf8a1850f09b6">spdk_nvme_ns_supports_write_uncorrectable</a> (struct spdk_nvme_ns *ns)</td></tr>
+<tr class="memdesc:a8b665b82095d9416d72bf8a1850f09b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether if the namespace supports write uncorrectable operation.  <br /></td></tr>
+<tr class="separator:a8b665b82095d9416d72bf8a1850f09b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aacb2087b31ac4b4807a77b9b97d55b2c" id="r_aacb2087b31ac4b4807a77b9b97d55b2c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aacb2087b31ac4b4807a77b9b97d55b2c">spdk_nvme_ns_supports_compare</a> (struct spdk_nvme_ns *ns)</td></tr>
 <tr class="memdesc:aacb2087b31ac4b4807a77b9b97d55b2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether if the namespace supports compare operation.  <br /></td></tr>
 <tr class="separator:aacb2087b31ac4b4807a77b9b97d55b2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -8100,6 +8103,33 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_trty
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if the namespace can support extended LBA when end-to-end data protection enabled, or false otherwise. </dd></dl>
+
+</div>
+</div>
+<a id="a8b665b82095d9416d72bf8a1850f09b6" name="a8b665b82095d9416d72bf8a1850f09b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b665b82095d9416d72bf8a1850f09b6">&#9670;&#160;</a></span>spdk_nvme_ns_supports_write_uncorrectable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool spdk_nvme_ns_supports_write_uncorrectable </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_nvme_ns *</td>          <td class="paramname"><span class="paramname"><em>ns</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Check whether if the namespace supports write uncorrectable operation. </p>
+<p>This function is thread safe and can be called at any point while the controller is attached to the SPDK NVMe driver.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ns</td><td>Namespace to query.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the namespace supports write uncorrectable operation, or false otherwise. </dd></dl>
 
 </div>
 </div>

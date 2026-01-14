@@ -72,13 +72,12 @@ var searchData=
   ['logical_20volumes_69',['Logical Volumes',['../logical_volumes.html',1,'general']]],
   ['logical_20volumes_70',['Logical volumes',['../bdev.html#bdev_ug_logical_volumes',1,'']]],
   ['logical_20volumes_71',['v17.10: Logical Volumes',['../changelog.html#changelog-v17-10',1,'']]],
-  ['logical_5fblock_5fsize_72',['logical_block_size',['../structspdk__reduce__vol__params.html#a33c2c765f8aef22dbd55f80aa71c6ba5',1,'spdk_reduce_vol_params']]],
-  ['login_20redirection_73',['iSCSI Login Redirection',['../iscsi.html#iscsi_login_redirection',1,'']]],
-  ['low_20level_20libraries_74',['Acceleration Low Level Libraries',['../accel_fw.html#accel_libs',1,'']]],
-  ['low_5fpriority_5fweight_75',['low_priority_weight',['../structspdk__nvme__ctrlr__opts.html#a5098ae82e7bfecd254dd31cf629ccf05',1,'spdk_nvme_ctrlr_opts']]],
-  ['lpa_76',['lpa',['../structspdk__nvme__ctrlr__data.html#ac31ef6365b57bfee12f615a8d9834584',1,'spdk_nvme_ctrlr_data']]],
-  ['lpw_77',['lpw',['../unionspdk__nvme__feat__arbitration.html#a0eb3434752c3b8ea38f37556fa9fd116',1,'spdk_nvme_feat_arbitration']]],
-  ['lun_78',['Vhost SCSI LUN',['../jsonrpc.html#rpc_vhost_get_controllers_scsi_luns',1,'']]],
-  ['lvol_2eh_79',['lvol.h',['../lvol_8h.html',1,'']]],
-  ['lvols_80',['Lvols',['../bdev.html#bdev_ug_lvols',1,'']]]
+  ['login_20redirection_72',['iSCSI Login Redirection',['../iscsi.html#iscsi_login_redirection',1,'']]],
+  ['low_20level_20libraries_73',['Acceleration Low Level Libraries',['../accel_fw.html#accel_libs',1,'']]],
+  ['low_5fpriority_5fweight_74',['low_priority_weight',['../structspdk__nvme__ctrlr__opts.html#a5098ae82e7bfecd254dd31cf629ccf05',1,'spdk_nvme_ctrlr_opts']]],
+  ['lpa_75',['lpa',['../structspdk__nvme__ctrlr__data.html#ac31ef6365b57bfee12f615a8d9834584',1,'spdk_nvme_ctrlr_data']]],
+  ['lpw_76',['lpw',['../unionspdk__nvme__feat__arbitration.html#a0eb3434752c3b8ea38f37556fa9fd116',1,'spdk_nvme_feat_arbitration']]],
+  ['lun_77',['Vhost SCSI LUN',['../jsonrpc.html#rpc_vhost_get_controllers_scsi_luns',1,'']]],
+  ['lvol_2eh_78',['lvol.h',['../lvol_8h.html',1,'']]],
+  ['lvols_79',['Lvols',['../bdev.html#bdev_ug_lvols',1,'']]]
 ];
