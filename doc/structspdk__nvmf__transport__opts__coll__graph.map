@@ -1,5 +1,9 @@
 <map id="spdk_nvmf_transport_opts" name="spdk_nvmf_transport_opts">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,98,200,126"/>
-<area shape="rect" id="Node000002" href="$structspdk__json__val.html" title=" " alt="" coords="46,5,159,33"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="105,48,105,98,100,98,100,48"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="134,98,329,126"/>
+<area shape="rect" id="Node000002" href="$structspdk__json__val.html" title=" " alt="" coords="5,5,119,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="80,44,109,72,134,85,161,95,160,100,132,90,105,76,76,48"/>
+<area shape="rect" id="Node000003" href="$structspdk__nvme__cdata__oncs.html" title="Identify Controller data Optional NVM Command Support." alt="" coords="143,5,320,33"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="234,48,234,98,229,98,229,48"/>
+<area shape="rect" id="Node000004" href="$structspdk__nvme__cdata__fuses.html" title=" " alt="" coords="343,5,525,33"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="392,42,262,100,260,95,390,37"/>
 </map>
