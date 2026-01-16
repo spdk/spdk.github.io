@@ -708,9 +708,6 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_trty
 <tr class="memitem:ac311beee998eeccd7e0044a050698e9e" id="r_ac311beee998eeccd7e0044a050698e9e"><td class="memItemLeft" align="right" valign="top">struct spdk_nvme_poll_group *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac311beee998eeccd7e0044a050698e9e">spdk_nvme_poll_group_create</a> (void *ctx, struct <a class="el" href="structspdk__nvme__accel__fn__table.html">spdk_nvme_accel_fn_table</a> *table)</td></tr>
 <tr class="memdesc:ac311beee998eeccd7e0044a050698e9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new poll group.  <br /></td></tr>
 <tr class="separator:ac311beee998eeccd7e0044a050698e9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa3fe0e0ba0023b2ca4955fa82471c9ea" id="r_aa3fe0e0ba0023b2ca4955fa82471c9ea"><td class="memItemLeft" align="right" valign="top">struct spdk_nvme_poll_group *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa3fe0e0ba0023b2ca4955fa82471c9ea">spdk_nvme_qpair_get_optimal_poll_group</a> (struct spdk_nvme_qpair *qpair)</td></tr>
-<tr class="memdesc:aa3fe0e0ba0023b2ca4955fa82471c9ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a optimal poll group.  <br /></td></tr>
-<tr class="separator:aa3fe0e0ba0023b2ca4955fa82471c9ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ade4eafe3d6b7b4a0a1c317a49b3ba1e5" id="r_ade4eafe3d6b7b4a0a1c317a49b3ba1e5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ade4eafe3d6b7b4a0a1c317a49b3ba1e5">spdk_nvme_poll_group_add</a> (struct spdk_nvme_poll_group *group, struct spdk_nvme_qpair *qpair)</td></tr>
 <tr class="memdesc:ade4eafe3d6b7b4a0a1c317a49b3ba1e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add an spdk_nvme_qpair to a poll group.  <br /></td></tr>
 <tr class="separator:ade4eafe3d6b7b4a0a1c317a49b3ba1e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -720,9 +717,6 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_trty
 <tr class="memitem:aeb9611951b464382bb0013b3b7b7734b" id="r_aeb9611951b464382bb0013b3b7b7734b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeb9611951b464382bb0013b3b7b7734b">spdk_nvme_poll_group_wait</a> (struct spdk_nvme_poll_group *group, <a class="el" href="#add892b5eaa7208ca3b08382431713390">spdk_nvme_disconnected_qpair_cb</a> disconnected_qpair_cb)</td></tr>
 <tr class="memdesc:aeb9611951b464382bb0013b3b7b7734b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wait for interrupt events on file descriptors of all the qpairs in this poll group.  <br /></td></tr>
 <tr class="separator:aeb9611951b464382bb0013b3b7b7734b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afe257e1b4f36909e5fee3e5f6f49bc59" id="r_afe257e1b4f36909e5fee3e5f6f49bc59"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afe257e1b4f36909e5fee3e5f6f49bc59">spdk_nvme_poll_group_get_fd</a> (struct spdk_nvme_poll_group *group)</td></tr>
-<tr class="memdesc:afe257e1b4f36909e5fee3e5f6f49bc59"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the internal epoll file descriptor of this poll group.  <br /></td></tr>
-<tr class="separator:afe257e1b4f36909e5fee3e5f6f49bc59"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8fbe32b18a0c1ee8d43ff5504c1c75ed" id="r_a8fbe32b18a0c1ee8d43ff5504c1c75ed"><td class="memItemLeft" align="right" valign="top">struct spdk_fd_group *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8fbe32b18a0c1ee8d43ff5504c1c75ed">spdk_nvme_poll_group_get_fd_group</a> (struct spdk_nvme_poll_group *group)</td></tr>
 <tr class="memdesc:a8fbe32b18a0c1ee8d43ff5504c1c75ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the fd_group associated with this poll group.  <br /></td></tr>
 <tr class="separator:a8fbe32b18a0c1ee8d43ff5504c1c75ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -8360,32 +8354,6 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_trty
 
 </div>
 </div>
-<a id="afe257e1b4f36909e5fee3e5f6f49bc59" name="afe257e1b4f36909e5fee3e5f6f49bc59"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afe257e1b4f36909e5fee3e5f6f49bc59">&#9670;&#160;</a></span>spdk_nvme_poll_group_get_fd()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int spdk_nvme_poll_group_get_fd </td>
-          <td>(</td>
-          <td class="paramtype">struct spdk_nvme_poll_group *</td>          <td class="paramname"><span class="paramname"><em>group</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Return the internal epoll file descriptor of this poll group. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">group</td><td>The poll group for which epoll fd is requested.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>epoll fd for the poll group, -EINVAL if there is no fd group for this poll group. </dd></dl>
-
-</div>
-</div>
 <a id="a8fbe32b18a0c1ee8d43ff5504c1c75ed" name="a8fbe32b18a0c1ee8d43ff5504c1c75ed"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8fbe32b18a0c1ee8d43ff5504c1c75ed">&#9670;&#160;</a></span>spdk_nvme_poll_group_get_fd_group()</h2>
 
@@ -9163,32 +9131,6 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_trty
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>number of outstanding requests for the specified qpair. </dd></dl>
-
-</div>
-</div>
-<a id="aa3fe0e0ba0023b2ca4955fa82471c9ea" name="aa3fe0e0ba0023b2ca4955fa82471c9ea"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa3fe0e0ba0023b2ca4955fa82471c9ea">&#9670;&#160;</a></span>spdk_nvme_qpair_get_optimal_poll_group()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">struct spdk_nvme_poll_group * spdk_nvme_qpair_get_optimal_poll_group </td>
-          <td>(</td>
-          <td class="paramtype">struct spdk_nvme_qpair *</td>          <td class="paramname"><span class="paramname"><em>qpair</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Get a optimal poll group. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">qpair</td><td>The qpair to get the optimal poll group.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Pointer to the optimal poll group, or NULL if not found. </dd></dl>
 
 </div>
 </div>

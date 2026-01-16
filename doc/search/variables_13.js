@@ -3,7 +3,7 @@ var searchData=
   ['sanicap_0',['sanicap',['../structspdk__nvme__ctrlr__data.html#a6061af5bac4a14c84134e0e12cde20ed',1,'spdk_nvme_ctrlr_data']]],
   ['sc_1',['sc',['../structspdk__bdev__io__internal__fields.html#a2aa1be46b681de53a34562b114aa0bda',1,'spdk_bdev_io_internal_fields']]],
   ['scid_2',['scid',['../structspdk__nvme__secondary__ctrl__entry.html#aceeb0796ff8bc1cf8e84a3fec5c553c9',1,'spdk_nvme_secondary_ctrl_entry']]],
-  ['scs_3',['scs',['../structspdk__nvme__secondary__ctrl__entry.html#aca29172324e739b1ddf195a29cca9a1f',1,'spdk_nvme_secondary_ctrl_entry']]],
+  ['scs_3',['scs',['../structspdk__nvme__secondary__ctrl__entry.html#a065e4a9e6e84b8233c7ba91849c1487a',1,'spdk_nvme_secondary_ctrl_entry']]],
   ['scsi_4',['scsi',['../structspdk__bdev__io__internal__fields.html#a8af330fde1e9592a661673f8a670c0fb',1,'spdk_bdev_io_internal_fields']]],
   ['sct_5',['sct',['../structspdk__bdev__io__internal__fields.html#a77f2cd808df208e2f10efb6dffc248fd',1,'spdk_bdev_io_internal_fields']]],
   ['sectype_6',['sectype',['../structspdk__nvme__tcp__transport__specific__address__subtype.html#aadd698f60438b09c6a29de7c72b3e400',1,'spdk_nvme_tcp_transport_specific_address_subtype']]],

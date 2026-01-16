@@ -142,6 +142,8 @@ v26.01: (Upcoming Release)</h1>
 <p>Added new public API: <code><a class="el" href="event_8h.html#af0bacd19103e80a4227b89fb0d08f4c0" title="Set up SPDK tracing for the application.">spdk_app_setup_trace()</a></code> to set up SPDK tracing for applications.</p>
 <h2>python</h2>
 <p>Deprecate some boolean python cli arguments to use new modern argparse format instead.</p>
+<h2>nvme</h2>
+<p>Removed the spdk_nvme_qpair_get_optimal_poll_group API. It was unused. Removed the spdk_nvme_poll_group_get_fd API. It was unused. An fd can still be obtained by calling <a class="el" href="nvme_8h.html#a8fbe32b18a0c1ee8d43ff5504c1c75ed" title="Return the fd_group associated with this poll group.">spdk_nvme_poll_group_get_fd_group()</a> and then asking the fd_group for its fd.</p>
 <h2>nvmf</h2>
 <p>Introduced the API 'spdk_nvmf_set_custom_discovery_filter' to set up custom discovery filter.</p>
 <p>Add support for preempt-and-abort mode of persistent reservations acquire command.</p>
@@ -155,6 +157,8 @@ v26.01: (Upcoming Release)</h1>
 </ul>
 <h2>rpc</h2>
 <p>A new RPC ae4dma_scan_accel_module has been added to the accel framework to enable the AE4DMA module.</p>
+<h2>sock</h2>
+<p>Introduced <code>spdk_sock_initialize</code>, which may optionally be called before any use of the sock API. It is automatically called by the SPDK app framework. <code>spdk_sock_initialize</code> is not thread safe and should be called only once. Subsequent calls with the same options will succeed, but with different options will return -EALREADY.</p>
 <h1>v25.09</h1>
 <h2>bdev</h2>
 <p><code>spdk_bdev_get_preferred_write_alignment</code>, <code>spdk_bdev_get_preferred_write_granularity</code>, <code>spdk_bdev_get_optimal_write_size</code>, <code>spdk_bdev_get_preferred_unmap_alignment</code> and <code>spdk_bdev_get_preferred_unmap_granularity</code> APIs were added.</p>
@@ -232,7 +236,7 @@ v26.01: (Upcoming Release)</h1>
 <p>Added <code>opts_size</code> in <code><a class="el" href="structspdk__nvme__io__qpair__opts.html" title="NVMe I/O queue pair initialization options.">spdk_nvme_io_qpair_opts</a></code> structure to align it with other opts structures.</p>
 <p><code><a class="el" href="nvme_8h.html#ac311beee998eeccd7e0044a050698e9e" title="Create a new poll group.">spdk_nvme_poll_group_create()</a></code> now creates a fd group to manage interrupt events.</p>
 <p>Two new APIs have been added to manage interrupt events in poll group.</p>
-<p><code><a class="el" href="nvme_8h.html#afe257e1b4f36909e5fee3e5f6f49bc59" title="Return the internal epoll file descriptor of this poll group.">spdk_nvme_poll_group_get_fd()</a></code> retrieves the internal epoll file descriptor of the poll group.</p>
+<p><code>spdk_nvme_poll_group_get_fd()</code> retrieves the internal epoll file descriptor of the poll group.</p>
 <p><code><a class="el" href="nvme_8h.html#aeb9611951b464382bb0013b3b7b7734b" title="Wait for interrupt events on file descriptors of all the qpairs in this poll group.">spdk_nvme_poll_group_wait()</a></code> waits for interrupt events on all the I/O queue pair file descriptors in a poll group. When an interrupt event gets generated, it processes any outstanding completions on the I/O queue pair with interrupts. These interrupt events are registered at the time of I/O queue pair creation.</p>
 <p>Added <code>spdk_nvme_ctrlr_get_id</code> function returning the ID of the NVMe controller.</p>
 <p>Added <code><a class="el" href="nvme_8h.html#a8fbe32b18a0c1ee8d43ff5504c1c75ed" title="Return the fd_group associated with this poll group.">spdk_nvme_poll_group_get_fd_group()</a></code> API returning <code>fd_group</code> associated with an NVMe poll group.</p>
@@ -304,7 +308,7 @@ v26.01: (Upcoming Release)</h1>
 <h2>scheduler</h2>
 <p>Added <code>framework_get_governor</code> RPC to retrieve the power governor name, power env and the frequencies available, frequency set to the cpu cores.</p>
 <h2>sock</h2>
-<p>New functions that allows to register interrupt for given socket group: <code><a class="el" href="sock_8h.html#a4ff9e3deab53523b235aebf8391674c9" title="Register an spdk_interrupt with specific event types on the current thread for the given socket group...">spdk_sock_group_register_interrupt()</a></code> and <code><a class="el" href="sock_8h.html#a1cc881777301103c7acd712ce8f9fb23" title="Unregister an spdk_interrupt for the given socket group from the current thread.">spdk_sock_group_unregister_interrupt()</a></code>. Both uses API exposed by the <a class="el" href="thread_8h.html" title="Thread.">thread.h</a>, see below for details. Support implemented only for the POSIX and SSL sockets.</p>
+<p>New functions that allows to register interrupt for given socket group: <code>spdk_sock_group_register_interrupt()</code> and <code>spdk_sock_group_unregister_interrupt()</code>. Both uses API exposed by the <a class="el" href="thread_8h.html" title="Thread.">thread.h</a>, see below for details. Support implemented only for the POSIX and SSL sockets.</p>
 <h2>thread</h2>
 <p>New function <code><a class="el" href="thread_8h.html#a18f33a8abb147f5f8bac86e226a990a1" title="Register an spdk_interrupt with specific event types on the current thread.">spdk_interrupt_register_for_events()</a></code> build on top of <code><a class="el" href="fd__group_8h.html#a9b45cc539e9c2843ec188988b2bf43de" title="Register one event source to specified fgrp with specific event types.">spdk_fd_group_add_for_events()</a></code>. See below for details.</p>
 <h2>util</h2>

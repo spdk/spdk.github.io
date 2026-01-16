@@ -1399,7 +1399,6 @@ $(function(){initNavTree('globals_s.html',''); initResizable(); });
 <li>spdk_nvme_poll_group_destroy()&#160;:&#160;<a class="el" href="nvme_8h.html#ac4cea1ea33592903a9478d75f809ded6">nvme.h</a></li>
 <li>spdk_nvme_poll_group_free_stats()&#160;:&#160;<a class="el" href="nvme_8h.html#ae2448353b0d3024bb3b05d7b45eb8285">nvme.h</a></li>
 <li>spdk_nvme_poll_group_get_ctx()&#160;:&#160;<a class="el" href="nvme_8h.html#ab729acdc7ef5216194192a1809e364b0">nvme.h</a></li>
-<li>spdk_nvme_poll_group_get_fd()&#160;:&#160;<a class="el" href="nvme_8h.html#afe257e1b4f36909e5fee3e5f6f49bc59">nvme.h</a></li>
 <li>spdk_nvme_poll_group_get_fd_group()&#160;:&#160;<a class="el" href="nvme_8h.html#a8fbe32b18a0c1ee8d43ff5504c1c75ed">nvme.h</a></li>
 <li>spdk_nvme_poll_group_get_stats()&#160;:&#160;<a class="el" href="nvme_8h.html#a18820817137a7fca589be8c08feedcc0">nvme.h</a></li>
 <li>spdk_nvme_poll_group_process_completions()&#160;:&#160;<a class="el" href="nvme_8h.html#ac89c07198e8be3384ee6a0adc8439621">nvme.h</a></li>
@@ -1423,7 +1422,6 @@ $(function(){initNavTree('globals_s.html',''); initResizable(); });
 <li>spdk_nvme_qpair_get_fd()&#160;:&#160;<a class="el" href="nvme_8h.html#a501933bf8b332e8a26aa1c9c1b4b44cc">nvme.h</a></li>
 <li>spdk_nvme_qpair_get_id()&#160;:&#160;<a class="el" href="nvme_8h.html#add6ae73013499c8fc3c197f47231b8d2">nvme.h</a></li>
 <li>spdk_nvme_qpair_get_num_outstanding_reqs()&#160;:&#160;<a class="el" href="nvme_8h.html#a54fff8d7ba08d00a5e4f322dd1b6af2d">nvme.h</a></li>
-<li>spdk_nvme_qpair_get_optimal_poll_group()&#160;:&#160;<a class="el" href="nvme_8h.html#aa3fe0e0ba0023b2ca4955fa82471c9ea">nvme.h</a></li>
 <li>spdk_nvme_qpair_is_connected()&#160;:&#160;<a class="el" href="nvme_8h.html#a935eb1d9b76305022e0d88e3594c38c1">nvme.h</a></li>
 <li>spdk_nvme_qpair_print_command()&#160;:&#160;<a class="el" href="nvme_8h.html#ac06275147a2cbb800440686b8ba9a73b">nvme.h</a></li>
 <li>spdk_nvme_qpair_print_completion()&#160;:&#160;<a class="el" href="nvme_8h.html#ad4b2335194f9c4c24a5e2c15a9432f4a">nvme.h</a></li>
@@ -1860,6 +1858,7 @@ $(function(){initNavTree('globals_s.html',''); initResizable(); });
 <li>spdk_sock_connect_ext()&#160;:&#160;<a class="el" href="sock_8h.html#ac8330bac94c3724bff9809f9f01841ea">sock.h</a></li>
 <li>spdk_sock_flush()&#160;:&#160;<a class="el" href="sock_8h.html#a1501ed80f4cbac9912d10f4e1900905d">sock.h</a></li>
 <li>spdk_sock_get_default_impl()&#160;:&#160;<a class="el" href="sock_8h.html#af71742efb3431cd81bc1456805b5589d">sock.h</a></li>
+<li>spdk_sock_get_default_initialize_opts()&#160;:&#160;<a class="el" href="sock_8h.html#abec0937f8ecf2c51e99bed4fddc7f6e0">sock.h</a></li>
 <li>spdk_sock_get_default_opts()&#160;:&#160;<a class="el" href="sock_8h.html#a66cae415827aa6aa31adb05c120ba803">sock.h</a></li>
 <li>spdk_sock_get_impl_name()&#160;:&#160;<a class="el" href="sock_8h.html#acd33476aae3d3ef12903800cbf0afec3">sock.h</a></li>
 <li>spdk_sock_get_interface_name()&#160;:&#160;<a class="el" href="sock_8h.html#a3463752f8d6a9cdefc8aafaa8a72f9e4">sock.h</a></li>
@@ -1870,14 +1869,14 @@ $(function(){initNavTree('globals_s.html',''); initResizable(); });
 <li>spdk_sock_group_close()&#160;:&#160;<a class="el" href="sock_8h.html#ad75fdb315be08263dd42aa20e1ca5df9">sock.h</a></li>
 <li>spdk_sock_group_create()&#160;:&#160;<a class="el" href="sock_8h.html#a5fb0eb39a4bc28e8ceed5f86abe7c549">sock.h</a></li>
 <li>spdk_sock_group_get_ctx()&#160;:&#160;<a class="el" href="sock_8h.html#af89eb396eb872372f46a048b00c22ae8">sock.h</a></li>
+<li>spdk_sock_group_get_interruptfd()&#160;:&#160;<a class="el" href="sock_8h.html#a74bf719c4ef609c6e35384691433e4be">sock.h</a></li>
 <li>spdk_sock_group_poll()&#160;:&#160;<a class="el" href="sock_8h.html#aca9341be3f9ec5bd7e571f328e749328">sock.h</a></li>
 <li>spdk_sock_group_poll_count()&#160;:&#160;<a class="el" href="sock_8h.html#a73c5abe4d97ecc3521c37b345f7fbfd4">sock.h</a></li>
 <li>spdk_sock_group_provide_buf()&#160;:&#160;<a class="el" href="sock_8h.html#a41bf8ae4fc3ac1bbc5e2b097a864db79">sock.h</a></li>
-<li>spdk_sock_group_register_interrupt()&#160;:&#160;<a class="el" href="sock_8h.html#a4ff9e3deab53523b235aebf8391674c9">sock.h</a></li>
 <li>spdk_sock_group_remove_sock()&#160;:&#160;<a class="el" href="sock_8h.html#ad52142b9c60b305a1eaaf869a321c790">sock.h</a></li>
-<li>spdk_sock_group_unregister_interrupt()&#160;:&#160;<a class="el" href="sock_8h.html#a1cc881777301103c7acd712ce8f9fb23">sock.h</a></li>
 <li>spdk_sock_impl_get_opts()&#160;:&#160;<a class="el" href="sock_8h.html#ab6cbdc2532b80f5c9404af222ee03d23">sock.h</a></li>
 <li>spdk_sock_impl_set_opts()&#160;:&#160;<a class="el" href="sock_8h.html#a81541bb1b8ae42b952c82988c482e99d">sock.h</a></li>
+<li>spdk_sock_initialize()&#160;:&#160;<a class="el" href="sock_8h.html#acd1812e9201309473e48dbb4f4f01c38">sock.h</a></li>
 <li>spdk_sock_is_connected()&#160;:&#160;<a class="el" href="sock_8h.html#a60886d0bbf4dc4e6722e6300e7b3e10f">sock.h</a></li>
 <li>spdk_sock_is_ipv4()&#160;:&#160;<a class="el" href="sock_8h.html#a73c174585e034587164b1a56d6e8a115">sock.h</a></li>
 <li>spdk_sock_is_ipv6()&#160;:&#160;<a class="el" href="sock_8h.html#ae2fc8fd68b9988e2ec771a82914dcc80">sock.h</a></li>

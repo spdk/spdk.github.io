@@ -1,7 +1,7 @@
 var structspdk__nvme__primary__ctrl__capabilities =
 [
     [ "cntlid", "structspdk__nvme__primary__ctrl__capabilities.html#a9d7bd410ed4ccef3060a9cd36530896e", null ],
-    [ "crt", "structspdk__nvme__primary__ctrl__capabilities.html#af04c4669722e98dd8ae690a0b020ad17", null ],
+    [ "crt", "structspdk__nvme__primary__ctrl__capabilities.html#ac1b41e91b26c2821120fa411df3823ca", null ],
     [ "portid", "structspdk__nvme__primary__ctrl__capabilities.html#af8c71651dc0bb0fc40917e3bfc55183d", null ],
     [ "vifrsm", "structspdk__nvme__primary__ctrl__capabilities.html#a188fc422eddd794a1af2d164a29942a7", null ],
     [ "vifrt", "structspdk__nvme__primary__ctrl__capabilities.html#a931c061c11e9c31b6f33f09d5bc251dc", null ],
