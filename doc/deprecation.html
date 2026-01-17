@@ -167,13 +167,6 @@ $(function(){initNavTree('deprecation.html',''); initResizable(); });
 <p>deprecate <code>--enable-recv-pipe</code> and <code>--disable-recv-pipe</code> in favor of single <code>--recv-pipe/--no-recv-pipe</code> option deprecate <code>--enable-quickack</code> and <code>--disable-quickack</code> in favor of single <code>--quickack/--no-quickack</code> option deprecate <code>--enable-zerocopy-send-server</code> and <code>--disable-zerocopy-send-server</code> in favor of single <code>--zerocopy-send-server/--no-zerocopy-send-server</code> option deprecate <code>--enable-zerocopy-send-client</code> and <code>--disable-zerocopy-send-client</code> in favor of single <code>--zerocopy-send-client/--no-zerocopy-send-client</code> option deprecate <code>--enable-ktls</code> and <code>--disable-ktls</code> in favor of single <code>--ktls/--no-ktls</code> option</p>
 <h3><code>bdev_virtio_blk_set_hotplug</code></h3>
 <p>deprecate <code>--enable</code> and <code>--disable</code> in favor of single <code>--hotplug/--no-hotplug</code> option</p>
-<h2>util/net</h2>
-<h3><code>spdk_net_getaddr</code></h3>
-<p>Returning -1 and setting errno on this function is deprecated and will be changed in the 26.01 release. This function will return negative errno values instead.</p>
-<h2>sock</h2>
-<h3><code>spdk_sock_\*</code></h3>
-<p><code>spdk_sock_getaddr</code>, <code>spdk_sock_close</code>, <code>spdk_sock_flush</code>, <code>spdk_sock_recv</code>, <code>spdk_sock_writev</code>, <code>spdk_sock_readv</code>, <code>spdk_sock_recv_next</code>, <code>spdk_sock_set_recvlowat</code>, <code>spdk_sock_set_recvbuf</code>, <code>spdk_sock_set_sendbuf</code>, <code>spdk_sock_group_add_sock</code>, <code>spdk_sock_group_remove_sock</code>, <code>spdk_sock_group_provide_buf</code>, <code>spdk_sock_group_poll</code>, <code>spdk_sock_group_poll_count</code>, <code>spdk_sock_group_close</code>, <code>spdk_sock_impl_get_opts</code>, <code>spdk_sock_impl_set_opts</code>, <code>spdk_sock_set_default_impl</code>, <code>spdk_sock_group_register_interrupt</code></p>
-<p>Returning -1 and setting errno on these functions is deprecated and will be changed in the 26.01 release. These functions will return negative errno values instead.</p>
 <h2>gpt</h2>
 <h3><code>old_gpt_guid</code></h3>
 <p>Deprecated the SPDK partition type GUID <code>7c5222bd-8f5d-4087-9c00-bf9843c7b58c</code>. Partitions of this type have bdevs created that are one block less than the actual size of the partition. Existing partitions using the deprecated GUID can continue to use that GUID; support for the deprecated GUID will remain in SPDK indefinitely, and will continue to exhibit the off-by-one bug so that on-disk metadata layouts based on the incorrect size are not affected.</p>

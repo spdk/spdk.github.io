@@ -582,15 +582,14 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Flush a socket from data gathered in previous writev_async calls. </p>
-<p>On failure check errno matching EAGAIN to determine failure is retryable.</p>
-<p>Returning -1 and setting errno is deprecated and will be changed in the 26.01 release. This function will return negative errno values instead.</p>
+<p>On failure check rc matching -EAGAIN to determine failure is retryable.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">sock</td><td>Socket to flush.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>0 on success, -1 on failure with errno set. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, negative errno value on failure. </dd></dl>
 
 </div>
 </div>
@@ -773,7 +772,6 @@ Functions</h2></td></tr>
 
 <p>Get the optimal sock group for this sock. </p>
 <p>This function is allowed only when connection is established.</p>
-<p>Returning -1 and setting errno is deprecated and will be changed in the 26.01 release. This function will return negative errno values instead.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">sock</td><td>The socket </td></tr>
@@ -782,7 +780,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>0 on success. Negated errno on failure. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, negative errno value on failure. </dd></dl>
 
 </div>
 </div>
@@ -878,7 +876,6 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Add a socket to the group. </p>
-<p>Returning -1 and setting errno is deprecated and will be changed in the 26.01 release. This function will return negative errno values instead.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">group</td><td>Socket group. </td></tr>
@@ -888,7 +885,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>0 on success, -1 on failure with errno set. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, negative errno value on failure. </dd></dl>
 
 </div>
 </div>
@@ -908,7 +905,6 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Close all registered sockets of the group and then remove the group. </p>
-<p>Returning -1 and setting errno is deprecated and will be changed in the 26.01 release. This function will return negative errno values instead.</p>
 <p>If any sockets were added to the group by <a class="el" href="#aa07f7a676410527883e2f8159ea1bfea">spdk_sock_group_add_sock</a> these must be removed first by using <a class="el" href="#ad52142b9c60b305a1eaaf869a321c790">spdk_sock_group_remove_sock</a>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -916,7 +912,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>0 on success, -1 on failure. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, negative errno value on failure. </dd></dl>
 
 </div>
 </div>
@@ -1021,7 +1017,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>the number of events on success, -1 on failure. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>the number of events on success, negative errno value on failure. </dd></dl>
 
 </div>
 </div>
@@ -1045,7 +1041,6 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Poll incoming events up to max_events for each registered socket. </p>
-<p>Returning -1 and setting errno is deprecated and will be changed in the 26.01 release. This function will return negative errno values instead.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">group</td><td>Group to poll. </td></tr>
@@ -1053,7 +1048,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>the number of events on success, -1 on failure. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>the number of events on success, negative errno value on failure. </dd></dl>
 
 </div>
 </div>
@@ -1088,7 +1083,6 @@ Functions</h2></td></tr>
 
 <p>Provides a buffer to the group to be used in its receive pool. </p>
 <p>See <a class="el" href="#adceecd0c5622abd26a1c760d81c5ba79" title="Receive the next portion of the stream from the socket.">spdk_sock_recv_next()</a> for more details.</p>
-<p>Returning -1 and setting errno is deprecated and will be changed in the 26.01 release. This function will return negative errno values instead.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">group</td><td>Socket group. </td></tr>
@@ -1098,7 +1092,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>0 on success, -1 on failure. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, negative errno value on failure. </dd></dl>
 
 </div>
 </div>
@@ -1129,7 +1123,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>0 on success, -1 on failure with errno set. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, negative errno value on failure. </dd></dl>
 
 </div>
 </div>
@@ -1158,7 +1152,6 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Get current socket implementation options. </p>
-<p>Returning -1 and setting errno is deprecated and will be changed in the 26.01 release. This function will return negative errno values instead.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">impl_name</td><td>The socket implementation to use, such as "posix". </td></tr>
@@ -1167,7 +1160,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>0 on success, -1 on failure. errno is set to indicate the reason of failure. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, negative errno value on failure. </dd></dl>
 
 </div>
 </div>
@@ -1196,7 +1189,6 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Set socket implementation options. </p>
-<p>Returning -1 and setting errno is deprecated and will be changed in the 26.01 release. This function will return negative errno values instead.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">impl_name</td><td>The socket implementation to use, such as "posix". </td></tr>
@@ -1205,7 +1197,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>0 on success, -1 on failure. errno is set to indicate the reason of failure. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, negative errno value on failure. </dd></dl>
 
 </div>
 </div>
@@ -1425,7 +1417,6 @@ Functions</h2></td></tr>
 
 <p>Read message from the given socket to the I/O vector array. </p>
 <p>On failure check errno matching EAGAIN to determine failure is retryable.</p>
-<p>Returning -1 and setting errno is deprecated and will be changed in the 26.01 release. This function will return negative errno values instead.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">sock</td><td>Socket to receive message. </td></tr>
@@ -1434,7 +1425,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>the length of the received message on success, -1 on failure. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>the length of the received message on success, negative errno value on failure. </dd></dl>
 
 </div>
 </div>
@@ -1463,8 +1454,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Receive a message from the given socket. </p>
-<p>On failure check errno matching EAGAIN to determine failure is retryable.</p>
-<p>Returning -1 and setting errno is deprecated and will be changed in the 26.01 release. This function will return negative errno values instead.</p>
+<p>On failure check rc matching -EAGAIN to determine failure is retryable.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">sock</td><td>Socket to receive message. </td></tr>
@@ -1473,7 +1463,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>the length of the received message on success, -1 on failure with errno set. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>the length of the received message on success, negative errno value on failure. </dd></dl>
 
 </div>
 </div>
@@ -1505,8 +1495,7 @@ Functions</h2></td></tr>
 <p>A buffer provided to this socket's group's pool using <a class="el" href="#a41bf8ae4fc3ac1bbc5e2b097a864db79" title="Provides a buffer to the group to be used in its receive pool.">spdk_sock_group_provide_buf()</a> will contain the data and be returned in *buf.</p>
 <p>Note that the amount of data in buf is determined entirely by the sock layer. You cannot request to receive only a limited amount here. You simply get whatever the next portion of the stream is, as determined by the sock module. You can place an upper limit on the size of the buffer since these buffers are originally provided to the group through <a class="el" href="#a41bf8ae4fc3ac1bbc5e2b097a864db79" title="Provides a buffer to the group to be used in its receive pool.">spdk_sock_group_provide_buf()</a>.</p>
 <p>This code path will only work if the recvbuf is disabled. To disable the recvbuf, call spdk_sock_set_recvbuf with a size of 0.</p>
-<p>On failure check errno matching EAGAIN to determine failure is retryable.</p>
-<p>Returning -1 and setting errno is deprecated and will be changed in the 26.01 release. This function will return negative errno values instead.</p>
+<p>On failure check rc matching -EAGAIN to determine failure is retryable.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">sock</td><td>Socket to receive from. </td></tr>
@@ -1515,7 +1504,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>On success, the length of the buffer placed into buf, On failure, -1 with errno set. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>On success, the length of the buffer placed into buf, negative errno value on failure. </dd></dl>
 
 </div>
 </div>
@@ -1542,7 +1531,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>0 on success, -1 on failure. errno is set to indicate the reason of failure. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, negative errno value on failure. </dd></dl>
 
 </div>
 </div>
@@ -1566,7 +1555,6 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Set receive buffer size for the given socket. </p>
-<p>Returning -1 and setting errno is deprecated and will be changed in the 26.01 release. This function will return negative errno values instead.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">sock</td><td>Socket to set buffer size for. </td></tr>
@@ -1574,7 +1562,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>0 on success, -1 on failure with errno set. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, negative errno value on failure. </dd></dl>
 
 </div>
 </div>
@@ -1598,7 +1586,6 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Set the value used to specify the low water mark (in bytes) for this socket. </p>
-<p>Returning -1 and setting errno is deprecated and will be changed in the 26.01 release. This function will return negative errno values instead.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">sock</td><td>Socket to set for. </td></tr>
@@ -1606,7 +1593,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>0 on success, -1 on failure with errno set. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, negative errno value on failure. </dd></dl>
 
 </div>
 </div>
@@ -1630,7 +1617,6 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Set send buffer size for the given socket. </p>
-<p>Returning -1 and setting errno is deprecated and will be changed in the 26.01 release. This function will return negative errno values instead.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">sock</td><td>Socket to set buffer size for. </td></tr>
@@ -1638,7 +1624,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>0 on success, -1 on failure with errno set. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, negative errno value on failure. </dd></dl>
 
 </div>
 </div>
@@ -1692,8 +1678,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Write message to the given socket from the I/O vector array. </p>
-<p>On failure check errno matching EAGAIN to determine failure is retryable.</p>
-<p>Returning -1 and setting errno is deprecated and will be changed in the 26.01 release. This function will return negative errno values instead.</p>
+<p>On failure check rc matching -EAGAIN to determine failure is retryable.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">sock</td><td>Socket to write to. </td></tr>
@@ -1702,7 +1687,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>the length of written message on success, -1 on failure with errno set. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>the length of written message on success, negative errno value on failure. </dd></dl>
 
 </div>
 </div>
