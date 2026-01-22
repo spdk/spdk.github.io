@@ -10,7 +10,7 @@ var searchData=
   ['deinit_7',['deinit',['../structspdk__governor.html#a68f4d3cf970e99e055f042e5e65745bc',1,'spdk_governor::deinit'],['../structspdk__scheduler.html#acbac668eb963ca9df3a6295d6f639388',1,'spdk_scheduler::deinit']]],
   ['dep_5funblock_8',['dep_unblock',['../structspdk__bdev__io__wait__entry.html#a1b2d3690674a9e99755421c60026435c',1,'spdk_bdev_io_wait_entry']]],
   ['desc_9',['desc',['../structspdk__bdev__io__internal__fields.html#aac2261a1e54462036e4e6bd471199865',1,'spdk_bdev_io_internal_fields::desc'],['../structspdk__fsdev__io_1_1____fsdev__io__internal__fields.html#a3b8401839f96a6658ee7df525c3685c8',1,'spdk_fsdev_io::__fsdev_io_internal_fields::desc']]],
-  ['destroy_10',['destroy',['../structspdk__nvmf__transport__ops.html#add528f11c2846f57ced92a3da9457bd5',1,'spdk_nvmf_transport_ops']]],
+  ['destroy_10',['destroy',['../structspdk__nvmf__transport__ops.html#aa707f254fd1a74d98da0c87792d2d71a',1,'spdk_nvmf_transport_ops']]],
   ['destruct_11',['destruct',['../structspdk__bdev__fn__table.html#a8a76c50a2b20205ec9fffe4afb9e3a15',1,'spdk_bdev_fn_table::destruct'],['../structspdk__fsdev__fn__table.html#a21a95503384efdec379fcb89f7333ccc',1,'spdk_fsdev_fn_table::destruct'],['../structspdk__vfu__endpoint__ops.html#ab3b853dbe1e51763b880e73f43ba560f',1,'spdk_vfu_endpoint_ops::destruct']]],
   ['detach_5fcb_12',['detach_cb',['../structspdk__pci__device__provider.html#a1e6db45ddbdcb5a05d188c9f5642fb46',1,'spdk_pci_device_provider']]],
   ['detach_5fdevice_13',['detach_device',['../structspdk__vfu__endpoint__ops.html#a69ef95e6406e57fac1fe4ca32a95aa20',1,'spdk_vfu_endpoint_ops']]],

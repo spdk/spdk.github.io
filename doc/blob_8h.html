@@ -3371,7 +3371,8 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Unload the blobstore. </p>
-<p>It will flush all volatile data to disk.</p>
+<p>It will flush all volatile data to disk and clean up the blobstore from memory. When disk is no longer present the volatile data will not be persisted.</p>
+<p>On success or -EIO the blobstore pointer is no longer valid.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">bs</td><td>blobstore to unload. </td></tr>

@@ -163,10 +163,10 @@ int(*&#160;</td><td class="memItemRight" valign="bottom"><b>create_async</b> )(s
 void(*&#160;</td><td class="memItemRight" valign="bottom"><b>dump_opts</b> )(struct <a class="el" href="structspdk__nvmf__transport.html">spdk_nvmf_transport</a> *transport, struct spdk_json_write_ctx *w)</td></tr>
 <tr class="memdesc:a1d7d193990382233f3c4296d4456ef09"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dump transport-specific opts into JSON. <br /></td></tr>
 <tr class="separator:a1d7d193990382233f3c4296d4456ef09"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:add528f11c2846f57ced92a3da9457bd5" id="r_add528f11c2846f57ced92a3da9457bd5"><td class="memItemLeft" align="right" valign="top"><a id="add528f11c2846f57ced92a3da9457bd5" name="add528f11c2846f57ced92a3da9457bd5"></a>
-int(*&#160;</td><td class="memItemRight" valign="bottom"><b>destroy</b> )(struct <a class="el" href="structspdk__nvmf__transport.html">spdk_nvmf_transport</a> *transport, spdk_nvmf_transport_destroy_done_cb cb_fn, void *cb_arg)</td></tr>
-<tr class="memdesc:add528f11c2846f57ced92a3da9457bd5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy the transport. <br /></td></tr>
-<tr class="separator:add528f11c2846f57ced92a3da9457bd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa707f254fd1a74d98da0c87792d2d71a" id="r_aa707f254fd1a74d98da0c87792d2d71a"><td class="memItemLeft" align="right" valign="top"><a id="aa707f254fd1a74d98da0c87792d2d71a" name="aa707f254fd1a74d98da0c87792d2d71a"></a>
+void(*&#160;</td><td class="memItemRight" valign="bottom"><b>destroy</b> )(struct <a class="el" href="structspdk__nvmf__transport.html">spdk_nvmf_transport</a> *transport, spdk_nvmf_transport_destroy_done_cb cb_fn, void *cb_arg)</td></tr>
+<tr class="memdesc:aa707f254fd1a74d98da0c87792d2d71a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy the transport. <br /></td></tr>
+<tr class="separator:aa707f254fd1a74d98da0c87792d2d71a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4f1a858ec5f255a3479941b0d511bb48" id="r_a4f1a858ec5f255a3479941b0d511bb48"><td class="memItemLeft" align="right" valign="top">int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4f1a858ec5f255a3479941b0d511bb48">listen</a> )(struct <a class="el" href="structspdk__nvmf__transport.html">spdk_nvmf_transport</a> *transport, const struct <a class="el" href="structspdk__nvme__transport__id.html">spdk_nvme_transport_id</a> *trid, struct <a class="el" href="structspdk__nvmf__listen__opts.html">spdk_nvmf_listen_opts</a> *opts)</td></tr>
 <tr class="memdesc:a4f1a858ec5f255a3479941b0d511bb48"><td class="mdescLeft">&#160;</td><td class="mdescRight">Instruct the transport to accept new connections at the address provided.  <br /></td></tr>
 <tr class="separator:a4f1a858ec5f255a3479941b0d511bb48"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -219,12 +219,12 @@ int(*&#160;</td><td class="memItemRight" valign="bottom"><b>poll_group_remove</b
 int(*&#160;</td><td class="memItemRight" valign="bottom"><b>poll_group_poll</b> )(struct <a class="el" href="structspdk__nvmf__transport__poll__group.html">spdk_nvmf_transport_poll_group</a> *group)</td></tr>
 <tr class="memdesc:a5ef93b45156117554b4707487229e157"><td class="mdescLeft">&#160;</td><td class="mdescRight">Poll the group to process I/O. <br /></td></tr>
 <tr class="separator:a5ef93b45156117554b4707487229e157"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a36202727719ed813d03da75bc70e4868" id="r_a36202727719ed813d03da75bc70e4868"><td class="memItemLeft" align="right" valign="top"><a id="a36202727719ed813d03da75bc70e4868" name="a36202727719ed813d03da75bc70e4868"></a>
-int(*&#160;</td><td class="memItemRight" valign="bottom"><b>req_free</b> )(struct <a class="el" href="structspdk__nvmf__request.html">spdk_nvmf_request</a> *req)</td></tr>
-<tr class="separator:a36202727719ed813d03da75bc70e4868"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a144fd3bb2efe4616a2d9b78f93f969e6" id="r_a144fd3bb2efe4616a2d9b78f93f969e6"><td class="memItemLeft" align="right" valign="top"><a id="a144fd3bb2efe4616a2d9b78f93f969e6" name="a144fd3bb2efe4616a2d9b78f93f969e6"></a>
-int(*&#160;</td><td class="memItemRight" valign="bottom"><b>req_complete</b> )(struct <a class="el" href="structspdk__nvmf__request.html">spdk_nvmf_request</a> *req)</td></tr>
-<tr class="separator:a144fd3bb2efe4616a2d9b78f93f969e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfb73256165736784b8e8c42b0a2122b" id="r_adfb73256165736784b8e8c42b0a2122b"><td class="memItemLeft" align="right" valign="top"><a id="adfb73256165736784b8e8c42b0a2122b" name="adfb73256165736784b8e8c42b0a2122b"></a>
+void(*&#160;</td><td class="memItemRight" valign="bottom"><b>req_free</b> )(struct <a class="el" href="structspdk__nvmf__request.html">spdk_nvmf_request</a> *req)</td></tr>
+<tr class="separator:adfb73256165736784b8e8c42b0a2122b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6ac9d7c2a48ea777b3ee50269b62bf8" id="r_ae6ac9d7c2a48ea777b3ee50269b62bf8"><td class="memItemLeft" align="right" valign="top"><a id="ae6ac9d7c2a48ea777b3ee50269b62bf8" name="ae6ac9d7c2a48ea777b3ee50269b62bf8"></a>
+void(*&#160;</td><td class="memItemRight" valign="bottom"><b>req_complete</b> )(struct <a class="el" href="structspdk__nvmf__request.html">spdk_nvmf_request</a> *req)</td></tr>
+<tr class="separator:ae6ac9d7c2a48ea777b3ee50269b62bf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a004ad5e36cc73e563cc53474e2ee4972" id="r_a004ad5e36cc73e563cc53474e2ee4972"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a004ad5e36cc73e563cc53474e2ee4972">req_get_buffers_done</a> )(struct <a class="el" href="structspdk__nvmf__request.html">spdk_nvmf_request</a> *req)</td></tr>
 <tr class="memdesc:a004ad5e36cc73e563cc53474e2ee4972"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback for the iobuf based queuing of requests awaiting free buffers.  <br /></td></tr>
 <tr class="separator:a004ad5e36cc73e563cc53474e2ee4972"><td class="memSeparator" colspan="2">&#160;</td></tr>

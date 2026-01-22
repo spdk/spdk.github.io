@@ -300,6 +300,7 @@ Enumerations</h2></td></tr>
 <tr class="separator:aedfbfc44fa2113d7ee219d09a0994d93"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af485be7d8a00412bbfbfc1d2d15d3812" id="r_af485be7d8a00412bbfbfc1d2d15d3812"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af485be7d8a00412bbfbfc1d2d15d3812">spdk_bdev_reset_stat_mode</a> { <a class="el" href="#af485be7d8a00412bbfbfc1d2d15d3812aa8f5f5e965312f35bc4971e4e21d7d93">SPDK_BDEV_RESET_STAT_ALL</a>
 , <a class="el" href="#af485be7d8a00412bbfbfc1d2d15d3812a83b1d834ca132cd2229533f159b470d6">SPDK_BDEV_RESET_STAT_MAXMIN</a>
+, <a class="el" href="#af485be7d8a00412bbfbfc1d2d15d3812a72f028445a567bcb25a34e7d2dffcde0">SPDK_BDEV_RESET_STAT_ERROR</a>
 , <a class="el" href="#af485be7d8a00412bbfbfc1d2d15d3812a289f700e8214b32a1e35ba3a347c140d">SPDK_BDEV_RESET_STAT_NONE</a>
  }</td></tr>
 <tr class="separator:af485be7d8a00412bbfbfc1d2d15d3812"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1028,6 +1029,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_set_opts</b>
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="af485be7d8a00412bbfbfc1d2d15d3812aa8f5f5e965312f35bc4971e4e21d7d93" name="af485be7d8a00412bbfbfc1d2d15d3812aa8f5f5e965312f35bc4971e4e21d7d93"></a>SPDK_BDEV_RESET_STAT_ALL&#160;</td><td class="fielddoc"><p>Reset all stats. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="af485be7d8a00412bbfbfc1d2d15d3812a83b1d834ca132cd2229533f159b470d6" name="af485be7d8a00412bbfbfc1d2d15d3812a83b1d834ca132cd2229533f159b470d6"></a>SPDK_BDEV_RESET_STAT_MAXMIN&#160;</td><td class="fielddoc"><p>Reset only max and min stats. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="af485be7d8a00412bbfbfc1d2d15d3812a72f028445a567bcb25a34e7d2dffcde0" name="af485be7d8a00412bbfbfc1d2d15d3812a72f028445a567bcb25a34e7d2dffcde0"></a>SPDK_BDEV_RESET_STAT_ERROR&#160;</td><td class="fielddoc"><p>Reset i/o error stats. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="af485be7d8a00412bbfbfc1d2d15d3812a289f700e8214b32a1e35ba3a347c140d" name="af485be7d8a00412bbfbfc1d2d15d3812a289f700e8214b32a1e35ba3a347c140d"></a>SPDK_BDEV_RESET_STAT_NONE&#160;</td><td class="fielddoc"><p>Do not reset stats at all. </p>
 </td></tr>

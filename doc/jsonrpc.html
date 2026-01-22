@@ -2356,7 +2356,7 @@ bdev_get_iostat</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">per_channel   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Display per channel data for specified block device.    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">reset_mode   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Mode to reset I/O statistics after obtaining it: all, maxmin, none (default: none)   </td></tr>
+<td class="markdownTableBodyNone">reset_mode   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Mode to reset I/O statistics after obtaining it: all, maxmin, error, none (default: none)   </td></tr>
 </table>
 <h3>Response</h3>
 <p>The response is an array of objects containing I/O statistics of the requested block devices.</p>
@@ -2424,7 +2424,7 @@ bdev_reset_iostat</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Block device name    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">mode   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Mode to reset I/O statistics: all, maxmin, none (default: all)   </td></tr>
+<td class="markdownTableBodyNone">mode   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Mode to reset I/O statistics: all, maxmin, error, none (default: all)   </td></tr>
 </table>
 <h3>Example</h3>
 <p>Example request:</p>

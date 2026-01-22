@@ -39,7 +39,8 @@ var NAVTREEINDEX1 =
 "bdev_8h.html#af359a282820d73a253ffbbe127a30b96":[15,0,0,0,5,71],
 "bdev_8h.html#af3e829afdd5236f5e979b0c3663a8067":[15,0,0,0,5,93],
 "bdev_8h.html#af485be7d8a00412bbfbfc1d2d15d3812":[15,0,0,0,5,25],
-"bdev_8h.html#af485be7d8a00412bbfbfc1d2d15d3812a289f700e8214b32a1e35ba3a347c140d":[15,0,0,0,5,25,2],
+"bdev_8h.html#af485be7d8a00412bbfbfc1d2d15d3812a289f700e8214b32a1e35ba3a347c140d":[15,0,0,0,5,25,3],
+"bdev_8h.html#af485be7d8a00412bbfbfc1d2d15d3812a72f028445a567bcb25a34e7d2dffcde0":[15,0,0,0,5,25,2],
 "bdev_8h.html#af485be7d8a00412bbfbfc1d2d15d3812a83b1d834ca132cd2229533f159b470d6":[15,0,0,0,5,25,1],
 "bdev_8h.html#af485be7d8a00412bbfbfc1d2d15d3812aa8f5f5e965312f35bc4971e4e21d7d93":[15,0,0,0,5,25,0],
 "bdev_8h.html#af833943e22885817e6954426b6a11b5f":[15,0,0,0,5,78],
@@ -248,6 +249,5 @@ var NAVTREEINDEX1 =
 "blob_8h.html#aa1133bfe5ef2517860e51e1a58220848":[15,0,0,0,10,20],
 "blob_8h.html#aa75072ce1a5a9559fe2db0da30363ad4":[15,0,0,0,10,63],
 "blob_8h.html#aa98e6633723afb306a763b9f571f2cc1":[15,0,0,0,10,85],
-"blob_8h.html#aa9b434a45e67bcebb2fcb79965bd56e5":[15,0,0,0,10,82],
-"blob_8h.html#aa9de71c711c86a2fb7b9a7d967ebede4":[15,0,0,0,10,14]
+"blob_8h.html#aa9b434a45e67bcebb2fcb79965bd56e5":[15,0,0,0,10,82]
 };

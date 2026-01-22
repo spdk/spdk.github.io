@@ -63,6 +63,7 @@ var bdev_8h =
     [ "spdk_bdev_reset_stat_mode", "bdev_8h.html#af485be7d8a00412bbfbfc1d2d15d3812", [
       [ "SPDK_BDEV_RESET_STAT_ALL", "bdev_8h.html#af485be7d8a00412bbfbfc1d2d15d3812aa8f5f5e965312f35bc4971e4e21d7d93", null ],
       [ "SPDK_BDEV_RESET_STAT_MAXMIN", "bdev_8h.html#af485be7d8a00412bbfbfc1d2d15d3812a83b1d834ca132cd2229533f159b470d6", null ],
+      [ "SPDK_BDEV_RESET_STAT_ERROR", "bdev_8h.html#af485be7d8a00412bbfbfc1d2d15d3812a72f028445a567bcb25a34e7d2dffcde0", null ],
       [ "SPDK_BDEV_RESET_STAT_NONE", "bdev_8h.html#af485be7d8a00412bbfbfc1d2d15d3812a289f700e8214b32a1e35ba3a347c140d", null ]
     ] ],
     [ "spdk_bdev_status", "bdev_8h.html#ad6c166f5d928c2995df57c96a2977862", [
