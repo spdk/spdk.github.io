@@ -3160,7 +3160,9 @@ bdev_malloc_create</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">physical_block_size   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">Physical block size of device; must be a power of 2 and at least 512    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">dif_pi_format   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">protection information format   </td></tr>
+<td class="markdownTableBodyNone">dif_pi_format   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">protection information format    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">numa_id   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">NUMA node ID where memory is allocated, if -1 then any NUMA node ID can be used. Default is -1.   </td></tr>
 </table>
 <h3>Response</h3>
 <p>Name of newly created bdev.</p>
@@ -3487,9 +3489,9 @@ bdev_nvme_set_options</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">rdma_cm_event_timeout_ms   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">Time to wait for RDMA CM events. Default: 0 (0 means using default value of driver).    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">dhchap_digests   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">list   </td><td class="markdownTableBodyNone">List of allowed DH-HMAC-CHAP digests.    </td></tr>
+<td class="markdownTableBodyNone">dhchap_digests   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">array   </td><td class="markdownTableBodyNone">List of allowed DH-HMAC-CHAP digests.    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">dhchap_dhgroups   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">list   </td><td class="markdownTableBodyNone">List of allowed DH-HMAC-CHAP DH groups.    </td></tr>
+<td class="markdownTableBodyNone">dhchap_dhgroups   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">array   </td><td class="markdownTableBodyNone">List of allowed DH-HMAC-CHAP DH groups.    </td></tr>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">rdma_umr_per_io   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Enable/disable scatter-gather UMR per IO in RDMA transport if supported by system    </td></tr>
 <tr class="markdownTableRowOdd">
@@ -4452,7 +4454,7 @@ bdev_rbd_register_cluster</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">user_id   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Ceph ID (i.e. admin, not client.admin)    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">config_param   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string map   </td><td class="markdownTableBodyNone">Explicit librados configuration    </td></tr>
+<td class="markdownTableBodyNone">config_param   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Explicit librados configuration    </td></tr>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">config_file   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">File path of librados configuration file    </td></tr>
 <tr class="markdownTableRowOdd">
@@ -4558,7 +4560,7 @@ bdev_rbd_create</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">block_size   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">Block size    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">config   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string map   </td><td class="markdownTableBodyNone">Explicit librados configuration    </td></tr>
+<td class="markdownTableBodyNone">config   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Explicit librados configuration    </td></tr>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">cluster_name   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Rados cluster object name created in this module.    </td></tr>
 <tr class="markdownTableRowEven">
@@ -6992,9 +6994,9 @@ nvmf_create_transport</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">min_kato   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">The minimum Keep Alive Timeout value in milliseconds    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">masked_oncs   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">list   </td><td class="markdownTableBodyNone">List of ONCS features to mask (disable)    </td></tr>
+<td class="markdownTableBodyNone">masked_oncs   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">array   </td><td class="markdownTableBodyNone">List of ONCS features to mask (disable)    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">masked_fuses   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">list   </td><td class="markdownTableBodyNone">List of FUSES features to mask (disable)   </td></tr>
+<td class="markdownTableBodyNone">masked_fuses   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">array   </td><td class="markdownTableBodyNone">List of FUSES features to mask (disable)   </td></tr>
 </table>
 <h3>Example</h3>
 <p>Example request:</p>
@@ -7882,15 +7884,15 @@ nvmf_set_config</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">admin_cmd_passthru   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">object   </td><td class="markdownTableBodyNone">Admin command passthru configuration    </td></tr>
+<td class="markdownTableBodyNone">admin_cmd_passthru   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">array   </td><td class="markdownTableBodyNone">Admin command passthru configuration    </td></tr>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">poll_groups_mask   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Set cpumask for NVMf poll groups    </td></tr>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">discovery_filter   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Set discovery filter, possible values are: <code>match_any</code> (default) or comma separated values: <code>transport</code>, <code>address</code>, <code>svcid</code>    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">dhchap_digests   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">list   </td><td class="markdownTableBodyNone">List of allowed DH-HMAC-CHAP digests.    </td></tr>
+<td class="markdownTableBodyNone">dhchap_digests   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">array   </td><td class="markdownTableBodyNone">List of allowed DH-HMAC-CHAP digests.    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">dhchap_dhgroups   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">list   </td><td class="markdownTableBodyNone">List of allowed DH-HMAC-CHAP DH groups.   </td></tr>
+<td class="markdownTableBodyNone">dhchap_dhgroups   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">array   </td><td class="markdownTableBodyNone">List of allowed DH-HMAC-CHAP DH groups.   </td></tr>
 </table>
 <h4><a class="anchor" id="spdk_nvmf_admin_passthru_conf"></a>
 admin_cmd_passthru</h4>
