@@ -19,7 +19,7 @@ var searchData=
   ['unregister_5fctx_16',['unregister_ctx',['../structspdk__bdev_1_1____bdev__internal__fields.html#aac5fe7bcf1bbbf3f984874e1c75a580a',1,'spdk_bdev::__bdev_internal_fields::unregister_ctx'],['../structspdk__fsdev_1_1____fsdev__internal__fields.html#afa9f307871d700b0cae17261d8d7fcd7',1,'spdk_fsdev::__fsdev_internal_fields::unregister_ctx']]],
   ['unregister_5ftd_17',['unregister_td',['../structspdk__bdev_1_1____bdev__internal__fields.html#a9ac9b4eff872b0fe8c1558e3f4747884',1,'spdk_bdev::__bdev_internal_fields']]],
   ['unvmcap_18',['unvmcap',['../structspdk__nvme__ctrlr__data.html#aef21c15160a4556da6b2c2dbfee5749f',1,'spdk_nvme_ctrlr_data']]],
-  ['upcoming_20release_19',['v26.01: (Upcoming Release)',['../changelog.html#changelog-v26-01',1,'']]],
+  ['upcoming_20release_19',['v26.05: (Upcoming Release)',['../changelog.html#changelog-v26-05',1,'']]],
   ['updating_20submodules_20',['Updating submodules',['../backporting.html#updating_submodules',1,'']]],
   ['uring_21',['Uring',['../bdev.html#bdev_ug_uring',1,'Uring'],['../jsonrpc.html#jsonrpc_components_uring',1,'Uring']]],
   ['usage_22',['Usage',['../nvme.html#nvme_memory_usage',1,'NVMe Driver Internal Memory Usage'],['../ftl.html#ftl_usage',1,'Usage'],['../shfmt.html#shfmt_usage',1,'Usage']]],

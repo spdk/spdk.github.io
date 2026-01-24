@@ -32,7 +32,7 @@ var searchData=
   ['related_5findex_29',['related_index',['../structspdk__trace__parser__entry.html#a55b2e0aea7cca402a502ad4d043e7293',1,'spdk_trace_parser_entry']]],
   ['related_5fobjects_30',['related_objects',['../structspdk__trace__tpoint.html#a7884105d3b12e3b42ba5f8df3df95298',1,'spdk_trace_tpoint']]],
   ['related_5ftype_31',['related_type',['../structspdk__trace__parser__entry.html#a7e7ee46ec4c44c52caebb5ede88395c8',1,'spdk_trace_parser_entry']]],
-  ['release_32',['v26.01: (Upcoming Release)',['../changelog.html#changelog-v26-01',1,'']]],
+  ['release_32',['v26.05: (Upcoming Release)',['../changelog.html#changelog-v26-05',1,'']]],
   ['relocation_33',['Garbage collection and relocation',['../ftl.html#ftl_reloc',1,'']]],
   ['remaining_5fnum_5fblocks_34',['remaining_num_blocks',['../structspdk__bdev__io__internal__fields.html#ac843d45a7037608572461bfd3428584f',1,'spdk_bdev_io_internal_fields']]],
   ['remote_20access_35',['JSON-RPC Remote access',['../jsonrpc_proxy.html',1,'user_guides']]],

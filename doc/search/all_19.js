@@ -17,7 +17,7 @@ var searchData=
   ['v20_2001_3a_20optimized_20thin_20provisioning_20ftl_20bdev_20vmd_20hot_20plug_20fused_20support_14',['v20.01: Optimized thin provisioning, FTL bdev, VMD hot plug, FUSED support',['../changelog.html#changelog-v20-01',1,'']]],
   ['v20_2004_3a_20spdk_20top_20idxd_20nvme_20qpair_20groups_15',['v20.04: SPDK Top, IDXD, NVMe qpair groups',['../changelog.html#changelog-v20-04',1,'']]],
   ['v20_2007_3a_20spdk_20csi_20driver_20new_20accel_5ffw_20commands_20i_20o_20abort_20support_16',['v20.07: SPDK CSI driver, new accel_fw commands, I/O abort support',['../changelog.html#changelog-v20-07',1,'']]],
-  ['v26_2001_3a_20upcoming_20release_17',['v26.01: (Upcoming Release)',['../changelog.html#changelog-v26-01',1,'']]],
+  ['v26_2005_3a_20upcoming_20release_17',['v26.05: (Upcoming Release)',['../changelog.html#changelog-v26-05',1,'']]],
   ['vagrant_20development_20environment_18',['Vagrant Development Environment',['../vagrant.html',1,'intro']]],
   ['vendor_5fid_19',['vendor_id',['../structspdk__pci__id.html#ae1f6dd7e42b4203d397b154fe1af2ed8',1,'spdk_pci_id']]],
   ['ver_20',['ver',['../structspdk__nvme__ctrlr__data.html#a72c56d5a31899269b4f615905f501b72',1,'spdk_nvme_ctrlr_data']]],

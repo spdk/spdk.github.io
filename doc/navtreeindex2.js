@@ -45,7 +45,7 @@ var NAVTREEINDEX2 =
 "changelog.html#changelog-v20-01":[1,3,3],
 "changelog.html#changelog-v20-04":[1,3,2],
 "changelog.html#changelog-v20-07":[1,3,1],
-"changelog.html#changelog-v26-01":[1,3,0],
+"changelog.html#changelog-v26-05":[1,3,0],
 "ci_tools.html":[9],
 "classes.html":[14,1],
 "concepts.html":[2],
