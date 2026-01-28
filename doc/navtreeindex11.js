@@ -1,7 +1,5 @@
 var NAVTREEINDEX11 =
 {
-"sock_8h.html#af71742efb3431cd81bc1456805b5589d":[15,0,0,0,55,13],
-"sock_8h.html#af89eb396eb872372f46a048b00c22ae8":[15,0,0,0,55,24],
 "spdk_top.html":[8,2],
 "spdkcli.html":[8,0],
 "ssd_internals.html":[2,3],
@@ -249,5 +247,7 @@ var NAVTREEINDEX11 =
 "structspdk__bdev__io__abort__params.html":[14,0,69],
 "structspdk__bdev__io__abort__params.html#ac39e53bac1756aecbe51e1a31840234a":[14,0,69,0],
 "structspdk__bdev__io__block__params.html":[14,0,70],
-"structspdk__bdev__io__block__params.html#a1a8ffdd74ff225cf4bf4c3e993fc2141":[14,0,70,15]
+"structspdk__bdev__io__block__params.html#a1a8ffdd74ff225cf4bf4c3e993fc2141":[14,0,70,15],
+"structspdk__bdev__io__block__params.html#a338f22c0fdbee7da11f767c275375280":[14,0,70,9],
+"structspdk__bdev__io__block__params.html#a36c7a050366856be41cdf09f03dae966":[14,0,70,12]
 };

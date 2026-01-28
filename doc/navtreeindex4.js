@@ -212,13 +212,11 @@ var NAVTREEINDEX4 =
 "jsonrpc.html#rpc_bdev_error_inject_error":[3,8,5,63],
 "jsonrpc.html#rpc_bdev_examine":[3,8,5,2],
 "jsonrpc.html#rpc_bdev_ftl_create":[3,8,5,67],
-"jsonrpc.html#rpc_bdev_ftl_delete":[3,8,5,69],
-"jsonrpc.html#rpc_bdev_ftl_get_properties":[3,8,5,73],
-"jsonrpc.html#rpc_bdev_ftl_get_stats":[3,8,5,72],
-"jsonrpc.html#rpc_bdev_ftl_load":[3,8,5,68],
-"jsonrpc.html#rpc_bdev_ftl_set_property":[3,8,5,74],
-"jsonrpc.html#rpc_bdev_ftl_unload":[3,8,5,70],
-"jsonrpc.html#rpc_bdev_ftl_unmap":[3,8,5,71],
+"jsonrpc.html#rpc_bdev_ftl_delete":[3,8,5,68],
+"jsonrpc.html#rpc_bdev_ftl_get_properties":[3,8,5,71],
+"jsonrpc.html#rpc_bdev_ftl_get_stats":[3,8,5,70],
+"jsonrpc.html#rpc_bdev_ftl_set_property":[3,8,5,72],
+"jsonrpc.html#rpc_bdev_ftl_unmap":[3,8,5,69],
 "jsonrpc.html#rpc_bdev_get_bdevs":[3,8,5,1],
 "jsonrpc.html#rpc_bdev_get_histogram":[3,8,5,7],
 "jsonrpc.html#rpc_bdev_get_iostat":[3,8,5,4],
@@ -249,5 +247,7 @@ var NAVTREEINDEX4 =
 "jsonrpc.html#rpc_bdev_malloc_delete":[3,8,5,22],
 "jsonrpc.html#rpc_bdev_null_create":[3,8,5,23],
 "jsonrpc.html#rpc_bdev_null_delete":[3,8,5,24],
-"jsonrpc.html#rpc_bdev_null_resize":[3,8,5,25]
+"jsonrpc.html#rpc_bdev_null_resize":[3,8,5,25],
+"jsonrpc.html#rpc_bdev_nvme_add_error_injection":[3,8,20,6],
+"jsonrpc.html#rpc_bdev_nvme_apply_firmware":[3,8,5,49]
 };

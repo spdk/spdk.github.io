@@ -411,9 +411,7 @@ rpc_get_methods</h2>
 <div class="line">    &quot;bdev_ftl_delete&quot;,</div>
 <div class="line">    &quot;bdev_ftl_get_properties&quot;,</div>
 <div class="line">    &quot;bdev_ftl_get_stats&quot;,</div>
-<div class="line">    &quot;bdev_ftl_load&quot;,</div>
 <div class="line">    &quot;bdev_ftl_set_property&quot;,</div>
-<div class="line">    &quot;bdev_ftl_unload&quot;,</div>
 <div class="line">    &quot;bdev_ftl_unmap&quot;,</div>
 <div class="line">    &quot;bdev_get_bdevs&quot;,</div>
 <div class="line">    &quot;bdev_get_histogram&quot;,</div>
@@ -5011,57 +5009,6 @@ bdev_ftl_create</h2>
 <div class="line">    &quot;uuid&quot;: &quot;4a7481ce-786f-41a0-9b86-8f7465c8f4d3&quot;</div>
 <div class="line">  }</div>
 <div class="line">}</div>
-</div><!-- fragment --><h2><a class="anchor" id="rpc_bdev_ftl_load"></a>
-bdev_ftl_load</h2>
-<p>Loads FTL bdev.</p>
-<p>This RPC is deprecated.</p>
-<h3>Parameters</h3>
-<table class="markdownTable">
-<tr class="markdownTableHead">
-<th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Bdev name    </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">base_bdev   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of the base device    </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">cache   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of the cache device    </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">uuid   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">UUID of restored bdev    </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">core_mask   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">CPU core(s) possible for placement of the ftl core thread, application main thread by default    </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">overprovisioning   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">Percentage of base device used for relocation, 20% by default    </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">fast_shutdown   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">When set FTL will minimize persisted data on target application shutdown and rely on shared memory during next load    </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">l2p_dram_limit   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">DRAM limit for most recent L2P addresses (default 2048 MiB)   </td></tr>
-</table>
-<h3>Response</h3>
-<p>Name of loaded bdev.</p>
-<h3>Example</h3>
-<p>Example request:</p>
-<div class="fragment"><div class="line">{</div>
-<div class="line">  &quot;params&quot;: {</div>
-<div class="line">    &quot;name&quot;: &quot;ftl0&quot;,</div>
-<div class="line">    &quot;base_bdev&quot;: &quot;nvme0n1&quot;,</div>
-<div class="line">    &quot;cache&quot;: &quot;nvme1n1&quot;,</div>
-<div class="line">    &quot;uuid&quot;: &quot;4a7481ce-786f-41a0-9b86-8f7465c8f4d3&quot;,</div>
-<div class="line">    &quot;core_mask&quot;: &quot;[0]&quot;,</div>
-<div class="line">    &quot;overprovisioning&quot;: 10</div>
-<div class="line">  },</div>
-<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
-<div class="line">  &quot;method&quot;: &quot;bdev_ftl_load&quot;,</div>
-<div class="line">  &quot;id&quot;: 1</div>
-<div class="line">}</div>
-</div><!-- fragment --><p>Example response:</p>
-<div class="fragment"><div class="line">{</div>
-<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
-<div class="line">  &quot;id&quot;: 1,</div>
-<div class="line">  &quot;result&quot;: {</div>
-<div class="line">    &quot;name&quot;: &quot;ftl0&quot;,</div>
-<div class="line">    &quot;uuid&quot;: &quot;4a7481ce-786f-41a0-9b86-8f7465c8f4d3&quot;</div>
-<div class="line">  }</div>
-<div class="line">}</div>
 </div><!-- fragment --><h2><a class="anchor" id="rpc_bdev_ftl_delete"></a>
 bdev_ftl_delete</h2>
 <p>Delete FTL bdev.</p>
@@ -5083,35 +5030,6 @@ bdev_ftl_delete</h2>
 <div class="line">  },</div>
 <div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
 <div class="line">  &quot;method&quot;: &quot;bdev_ftl_delete&quot;,</div>
-<div class="line">  &quot;id&quot;: 1</div>
-<div class="line">}</div>
-</div><!-- fragment --><p>Example response:</p>
-<div class="fragment"><div class="line">{</div>
-<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
-<div class="line">  &quot;id&quot;: 1,</div>
-<div class="line">  &quot;result&quot;: true</div>
-<div class="line">}</div>
-</div><!-- fragment --><h2><a class="anchor" id="rpc_bdev_ftl_unload"></a>
-bdev_ftl_unload</h2>
-<p>Unloads FTL bdev.</p>
-<p>This RPC is deprecated.</p>
-<h3>Parameters</h3>
-<table class="markdownTable">
-<tr class="markdownTableHead">
-<th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Bdev name    </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">fast_shutdown   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">When set FTL will minimize persisted data during deletion and rely on shared memory during next load   </td></tr>
-</table>
-<h3>Example</h3>
-<p>Example request:</p>
-<div class="fragment"><div class="line">{</div>
-<div class="line">  &quot;params&quot;: {</div>
-<div class="line">    &quot;name&quot;: &quot;ftl0&quot;</div>
-<div class="line">  },</div>
-<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
-<div class="line">  &quot;method&quot;: &quot;bdev_ftl_unload&quot;,</div>
 <div class="line">  &quot;id&quot;: 1</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Example response:</p>

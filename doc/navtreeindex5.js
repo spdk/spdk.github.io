@@ -1,7 +1,5 @@
 var NAVTREEINDEX5 =
 {
-"jsonrpc.html#rpc_bdev_nvme_add_error_injection":[3,8,20,6],
-"jsonrpc.html#rpc_bdev_nvme_apply_firmware":[3,8,5,49],
 "jsonrpc.html#rpc_bdev_nvme_attach_controller":[3,8,5,31],
 "jsonrpc.html#rpc_bdev_nvme_cuse_register":[3,8,5,44],
 "jsonrpc.html#rpc_bdev_nvme_cuse_unregister":[3,8,5,45],
@@ -43,8 +41,8 @@ var NAVTREEINDEX5 =
 "jsonrpc.html#rpc_bdev_opal_get_info":[3,8,14,3],
 "jsonrpc.html#rpc_bdev_opal_new_user":[3,8,14,5],
 "jsonrpc.html#rpc_bdev_opal_set_lock_state":[3,8,14,6],
-"jsonrpc.html#rpc_bdev_passthru_create":[3,8,5,75],
-"jsonrpc.html#rpc_bdev_passthru_delete":[3,8,5,76],
+"jsonrpc.html#rpc_bdev_passthru_create":[3,8,5,73],
+"jsonrpc.html#rpc_bdev_passthru_delete":[3,8,5,74],
 "jsonrpc.html#rpc_bdev_raid_add_base_bdev":[3,8,11,4],
 "jsonrpc.html#rpc_bdev_raid_create":[3,8,11,2],
 "jsonrpc.html#rpc_bdev_raid_delete":[3,8,11,3],
@@ -66,13 +64,13 @@ var NAVTREEINDEX5 =
 "jsonrpc.html#rpc_bdev_uring_create":[3,8,13,0],
 "jsonrpc.html#rpc_bdev_uring_delete":[3,8,13,2],
 "jsonrpc.html#rpc_bdev_uring_rescan":[3,8,13,1],
-"jsonrpc.html#rpc_bdev_virtio_attach_controller":[3,8,5,79],
-"jsonrpc.html#rpc_bdev_virtio_blk_set_hotplug":[3,8,5,82],
-"jsonrpc.html#rpc_bdev_virtio_detach_controller":[3,8,5,81],
-"jsonrpc.html#rpc_bdev_virtio_scsi_get_devices":[3,8,5,80],
+"jsonrpc.html#rpc_bdev_virtio_attach_controller":[3,8,5,77],
+"jsonrpc.html#rpc_bdev_virtio_blk_set_hotplug":[3,8,5,80],
+"jsonrpc.html#rpc_bdev_virtio_detach_controller":[3,8,5,79],
+"jsonrpc.html#rpc_bdev_virtio_scsi_get_devices":[3,8,5,78],
 "jsonrpc.html#rpc_bdev_wait_for_examine":[3,8,5,3],
-"jsonrpc.html#rpc_bdev_xnvme_create":[3,8,5,77],
-"jsonrpc.html#rpc_bdev_xnvme_delete":[3,8,5,78],
+"jsonrpc.html#rpc_bdev_xnvme_create":[3,8,5,75],
+"jsonrpc.html#rpc_bdev_xnvme_delete":[3,8,5,76],
 "jsonrpc.html#rpc_bdev_zone_block_create":[3,8,5,47],
 "jsonrpc.html#rpc_bdev_zone_block_delete":[3,8,5,48],
 "jsonrpc.html#rpc_compressdev_scan_accel_module":[3,8,4,10],
@@ -249,5 +247,7 @@ var NAVTREEINDEX5 =
 "jsonrpc_8h.html#ac5daba7e52db2743cc95dba00534ecd1":[15,0,0,0,35,1],
 "jsonrpc_8h.html#acdbb193a4b8ca1c57c2b43223165dfa6":[15,0,0,0,35,10],
 "jsonrpc_8h.html#ad5f5cca3e578e6eb3c0069e9662a1b79":[15,0,0,0,35,6],
-"jsonrpc_8h.html#ae7d1dc3ef99ed408859d9a5f6802ad65":[15,0,0,0,35,21]
+"jsonrpc_8h.html#ae7d1dc3ef99ed408859d9a5f6802ad65":[15,0,0,0,35,21],
+"jsonrpc_8h.html#aeeb31df31b1ad5b34713611ce8ca9291":[15,0,0,0,35,22],
+"jsonrpc_8h.html#af340c1cd0f0ce8c00caac2713033f28f":[15,0,0,0,35,11]
 };
