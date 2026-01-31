@@ -33,6 +33,8 @@ var dir_67fbcc0b4317645100def1406b508c33 =
     [ "init.h", "init_8h.html", "init_8h" ],
     [ "ioat.h", "ioat_8h.html", "ioat_8h" ],
     [ "ioat_spec.h", "ioat__spec_8h.html", "ioat__spec_8h" ],
+    [ "isa-l-crypto.h", "isa-l-crypto_8h.html", null ],
+    [ "isa-l.h", "isa-l_8h.html", null ],
     [ "iscsi_spec.h", "iscsi__spec_8h.html", "iscsi__spec_8h" ],
     [ "json.h", "json_8h.html", "json_8h" ],
     [ "jsonrpc.h", "jsonrpc_8h.html", "jsonrpc_8h" ],
