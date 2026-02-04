@@ -61,6 +61,7 @@ TSC contains representatives from following companies:
 - HPE
 - Nutanix
 - NVIDIA
+- Oracle
 - Samsung
 - Solidigm
 - StarWind
