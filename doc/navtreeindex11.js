@@ -1,5 +1,6 @@
 var NAVTREEINDEX11 =
 {
+"sock_8h.html#aec93142cc59937fe35f5e2ddf025ad13":[15,0,0,0,57,41],
 "sock_8h.html#af71742efb3431cd81bc1456805b5589d":[15,0,0,0,57,13],
 "sock_8h.html#af89eb396eb872372f46a048b00c22ae8":[15,0,0,0,57,24],
 "spdk_top.html":[8,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX11 =
 "structspdk__bdev__io.html#aee95823803c9e44111b128f39ab731c5":[14,0,68,3],
 "structspdk__bdev__io__abort__params.html":[14,0,69],
 "structspdk__bdev__io__abort__params.html#ac39e53bac1756aecbe51e1a31840234a":[14,0,69,0],
-"structspdk__bdev__io__block__params.html":[14,0,70],
-"structspdk__bdev__io__block__params.html#a1a8ffdd74ff225cf4bf4c3e993fc2141":[14,0,70,15]
+"structspdk__bdev__io__block__params.html":[14,0,70]
 };

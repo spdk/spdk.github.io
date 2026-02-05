@@ -6,6 +6,7 @@ var json_8h =
     [ "SPDK_JSON_PARSE_FLAG_DECODE_IN_PLACE", "json_8h.html#a282fefd919b6a7df96d06d182621b7ae", null ],
     [ "SPDK_JSON_PARSE_INCOMPLETE", "json_8h.html#acc79dce318c094983d4a6e94cd49684f", null ],
     [ "SPDK_JSON_PARSE_INVALID", "json_8h.html#a91c8e2bb9f0a1af4824d5708b8afbf26", null ],
+    [ "spdk_json_array_count", "json_8h.html#ad851874ca2322afe2e70352b74ec9ea1", null ],
     [ "spdk_json_array_first", "json_8h.html#a8bd11daecbee3d99cc139e607d1b4217", null ],
     [ "spdk_json_decode_array", "json_8h.html#a1ed6b4728ebf6c75087864dd3e2256a6", null ],
     [ "spdk_json_find", "json_8h.html#a5fc65c7d1961c23a747b3e2aa2169f4a", null ],

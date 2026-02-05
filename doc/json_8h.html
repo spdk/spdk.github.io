@@ -248,6 +248,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_json_free_object
 <tr class="memitem:a4d5aa0b66aa2cb7af428a03249b55c20" id="r_a4d5aa0b66aa2cb7af428a03249b55c20"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4d5aa0b66aa2cb7af428a03249b55c20">spdk_json_val_len</a> (const struct <a class="el" href="structspdk__json__val.html">spdk_json_val</a> *val)</td></tr>
 <tr class="memdesc:a4d5aa0b66aa2cb7af428a03249b55c20"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get length of a value in number of values.  <br /></td></tr>
 <tr class="separator:a4d5aa0b66aa2cb7af428a03249b55c20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad851874ca2322afe2e70352b74ec9ea1" id="r_ad851874ca2322afe2e70352b74ec9ea1"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad851874ca2322afe2e70352b74ec9ea1">spdk_json_array_count</a> (const struct <a class="el" href="structspdk__json__val.html">spdk_json_val</a> *val)</td></tr>
+<tr class="memdesc:ad851874ca2322afe2e70352b74ec9ea1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Count the number of immediate elements in a JSON array.  <br /></td></tr>
+<tr class="separator:ad851874ca2322afe2e70352b74ec9ea1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1eef0cdf2426dc5fc8f860b94e26453f" id="r_a1eef0cdf2426dc5fc8f860b94e26453f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1eef0cdf2426dc5fc8f860b94e26453f">spdk_json_strequal</a> (const struct <a class="el" href="structspdk__json__val.html">spdk_json_val</a> *val, const char *str)</td></tr>
 <tr class="memdesc:a1eef0cdf2426dc5fc8f860b94e26453f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compare JSON string with null terminated C string.  <br /></td></tr>
 <tr class="separator:a1eef0cdf2426dc5fc8f860b94e26453f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -447,6 +450,32 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_json_write_named_
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="ad851874ca2322afe2e70352b74ec9ea1" name="ad851874ca2322afe2e70352b74ec9ea1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad851874ca2322afe2e70352b74ec9ea1">&#9670;&#160;</a></span>spdk_json_array_count()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t spdk_json_array_count </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="structspdk__json__val.html">spdk_json_val</a> *</td>          <td class="paramname"><span class="paramname"><em>val</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Count the number of immediate elements in a JSON array. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">val</td><td>Pointer to a JSON value of type SPDK_JSON_VAL_ARRAY_BEGIN.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Number of elements in the array, or 0 if val is NULL or not an array. </dd></dl>
+
+</div>
+</div>
 <a id="a8bd11daecbee3d99cc139e607d1b4217" name="a8bd11daecbee3d99cc139e607d1b4217"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8bd11daecbee3d99cc139e607d1b4217">&#9670;&#160;</a></span>spdk_json_array_first()</h2>
 
