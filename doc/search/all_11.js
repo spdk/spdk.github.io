@@ -95,7 +95,7 @@ var searchData=
   ['nvmcmps_92',['nvmcmps',['../structspdk__nvme__cdata__oncs.html#a1614f2be9e0a4d6b10e7c68b7f3a2660',1,'spdk_nvme_cdata_oncs']]],
   ['nvmcpys_93',['nvmcpys',['../structspdk__nvme__cdata__oncs.html#a101319552eb1a75f33235e3b72edc005',1,'spdk_nvme_cdata_oncs']]],
   ['nvmdsmsv_94',['nvmdsmsv',['../structspdk__nvme__cdata__oncs.html#a90bedcd52139673da99bfaf19eda29f7',1,'spdk_nvme_cdata_oncs']]],
-  ['nvme_95',['NVMe',['../peer_2_peer.html#p2p_nvme_api',1,'The P2P API for NVMe'],['../jsonrpc.html#rpc_vhost_get_controllers_nvme',1,'Vhost NVMe']]],
+  ['nvme_95',['The P2P API for NVMe',['../peer_2_peer.html#p2p_nvme_api',1,'']]],
   ['nvme_20bdev_96',['NVMe bdev',['../bdev.html#bdev_config_nvme',1,'']]],
   ['nvme_20bdev_20character_20device_97',['NVMe bdev character device',['../bdev.html#bdev_config_nvme_cuse',1,'']]],
   ['nvme_20character_20devices_98',['NVMe Character Devices',['../nvme.html#nvme_cuse',1,'']]],

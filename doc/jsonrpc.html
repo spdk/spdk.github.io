@@ -8523,17 +8523,6 @@ Vhost SCSI LUN</h4>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">bdev_name   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Backing bdev name   </td></tr>
 </table>
-<h4><a class="anchor" id="rpc_vhost_get_controllers_nvme"></a>
-Vhost NVMe</h4>
-<p><code>backend_specific</code> contains <code>namespaces</code> array of following objects:</p>
-<table class="markdownTable">
-<tr class="markdownTableHead">
-<th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">nsid   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">Namespace ID    </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">bdev   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Backing bdev name   </td></tr>
-</table>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -8588,24 +8577,6 @@ Vhost NVMe</h4>
 <div class="line">      },</div>
 <div class="line">      &quot;iops_threshold&quot;: 60000,</div>
 <div class="line">      &quot;ctrlr&quot;: &quot;VhostScsi0&quot;,</div>
-<div class="line">      &quot;delay_base_us&quot;: 0</div>
-<div class="line">    },</div>
-<div class="line">    {</div>
-<div class="line">      &quot;cpumask&quot;: &quot;0x2&quot;,</div>
-<div class="line">      &quot;backend_specific&quot;: {</div>
-<div class="line">        &quot;namespaces&quot;: [</div>
-<div class="line">          {</div>
-<div class="line">            &quot;bdev&quot;: &quot;Malloc3&quot;,</div>
-<div class="line">            &quot;nsid&quot;: 1</div>
-<div class="line">          },</div>
-<div class="line">          {</div>
-<div class="line">            &quot;bdev&quot;: &quot;Malloc4&quot;,</div>
-<div class="line">            &quot;nsid&quot;: 2</div>
-<div class="line">          }</div>
-<div class="line">        ]</div>
-<div class="line">      },</div>
-<div class="line">      &quot;iops_threshold&quot;: 60000,</div>
-<div class="line">      &quot;ctrlr&quot;: &quot;VhostNvme0&quot;,</div>
 <div class="line">      &quot;delay_base_us&quot;: 0</div>
 <div class="line">    }</div>
 <div class="line">  ]</div>
