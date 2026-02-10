@@ -134,6 +134,8 @@ $(function(){initNavTree('changelog.html',''); initResizable(); });
 <div class="textblock"><p><a class="anchor" id="md_changelog"></a> </p>
 <h1><a class="anchor" id="changelog-v26-05"></a>
 v26.05: (Upcoming Release)</h1>
+<h2>nvmf</h2>
+<p>Deprecated API spdk_nvmf_ctrlr_connect() was removed.</p>
 <h1>v26.01</h1>
 <h2>accel_ae4dma</h2>
 <p>Added a user-space driver with support for the AE4DMA (AMD EPYC 4th Generation Direct Memory Access) offload engine. The AE4DMA user-space driver offloads memory copies to the DMA engine in AMD Embedded EPYC processors. Added a new AE4DMA module to the Accel Framework. To use the AE4DMA module, use the new RPC <code>ae4dma_scan_accel_module</code>.</p>
