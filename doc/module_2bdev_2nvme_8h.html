@@ -383,6 +383,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_nvme_get_de
 </div><div class="memdoc">
 
 <p>Set multipath policy of the NVMe bdev. </p>
+<p>Subsequent calls for the same bdev must wait until the current execution finishes.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">name</td><td>NVMe bdev name. </td></tr>
