@@ -153,9 +153,6 @@ $(function(){initNavTree('deprecation.html',''); initResizable(); });
 <p>LPA, OACS, CMIC bits are updated to NVMe 2.2 definitions. The old bit names will be removed in 26.05 release.</p>
 <p><code><a class="el" href="structspdk__nvme__ns__data.html">spdk_nvme_ns_data</a></code></p>
 <p>NMIC, RESCAP, FPI and NSATTR bits are updated to NVMe 2.2 definitions. The old bit names will be removed in 26.05 release.</p>
-<h2>nvmf</h2>
-<h3><code>disable_compare</code></h3>
-<p><code>vfio_user</code> transport specific option is deprecated and will be removed in v26.05. Use <code>masked_oncs</code> option on <code>nvmf_create_transport</code> RPC, or <code>oncs</code> on <code><a class="el" href="structspdk__nvmf__transport__opts.html">spdk_nvmf_transport_opts</a></code> C API instead.</p>
 <h2>app/spdk_nvme_perf</h2>
 <h3>perf_g_option</h3>
 <p>The <code>-G</code> command line option is deprecated and will be removed in the v26.05 release. Use <code>--log-level debug -T nvme</code> instead. </p>
