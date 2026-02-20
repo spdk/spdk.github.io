@@ -71,24 +71,24 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "about.html",
-"bdev_8h.html#ab4d238484b372a77ba130fbb70f83519",
-"blob_8h.html#aa9de71c711c86a2fb7b9a7d967ebede4",
-"env_8h.html#ac95f611eb4eeefbad40314c1814d1fc6",
-"functions_z.html",
-"jsonrpc.html#rpc_bdev_null_resize",
-"jsonrpc_8h.html#ae7d1dc3ef99ed408859d9a5f6802ad65",
-"nvme_8h.html#a724ed20a1a5adaf30c48db8c28d29677",
-"nvme__spec_8h.html#a3589e34c8732d64e6c6e60d10592acc9",
-"nvme__spec_8h.html#acb8784fad6a53be95d4c718ad3cf852eacb1e61297475f2c56bcc2b6820f0d359",
-"nvmf_8h.html#add30a7c425fdb3e986f7bfdcfd1c9a5d",
-"sock_8h.html#aec93142cc59937fe35f5e2ddf025ad13",
-"structspdk__bdev__io__block__params.html#a1a8ffdd74ff225cf4bf4c3e993fc2141",
-"structspdk__iobuf__node__cache.html",
-"structspdk__nvme__dsm__range.html#a1ae2cac2417c24137dcb3e160eb3836c",
-"structspdk__nvme__reservation__status__data.html#a7a6eb178600646d375c2b8401eab63ad",
-"structspdk__ocssd__chunk__notification__entry.html#ade200ad1cc6c49d14c555876e54af0b9",
-"thread_8h.html#a93addf7b571a81371ad9bc8f8c4e1441",
-"unionspdk__nvme__feat__write__atomicity.html#a4a67a4f708c90c0316820b707bb398fd"
+"bdev_8h.html#ab4755b1b0a2a204732c3be266b6e1b08",
+"blob_8h.html#aa9b434a45e67bcebb2fcb79965bd56e5",
+"env_8h.html#ac6cda84fe7f3ca98ee13683207ffeca5",
+"functions_w.html",
+"jsonrpc.html#rpc_bdev_null_delete",
+"jsonrpc_8h.html#acdbb193a4b8ca1c57c2b43223165dfa6",
+"nvme_8h.html#a6bed6ef82de45dc360c4867ff1cc9520",
+"nvme__spec_8h.html#a33e755cbe54eafcfbe31e1f713e4d5b2abe35152f93fb01ba27ee8fb74649d11b",
+"nvme__spec_8h.html#acb8784fad6a53be95d4c718ad3cf852eab85a681110e2e8ac50c394f0269c80e3",
+"nvmf_8h.html#adad870498ded3fa2168a2f3f663881f3a7805f8d4d557f754e3725eb7b7c60605",
+"sock_8h.html#ae2fc8fd68b9988e2ec771a82914dcc80",
+"structspdk__bdev__io__abort__params.html#ac39e53bac1756aecbe51e1a31840234a",
+"structspdk__iobuf__entry.html",
+"structspdk__nvme__ctrlr__opts.html#aff1b2c63ae9c862d3d372c49b5fd8b8c",
+"structspdk__nvme__reservation__status__data.html#a0def9acff9ca8af6b789224d83821086",
+"structspdk__ocssd__chunk__notification__entry.html#acf2668e09d087e0294af2b2f42160ad7",
+"thread_8h.html#a9158ad3743857aabfbd24a804297f96a",
+"unionspdk__nvme__feat__volatile__write__cache.html#a910973ce5eb628dd9b06ab0c72a1cd33"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

@@ -17,7 +17,7 @@ var searchData=
   ['objects_14',['Objects',['../libraries.html#so_linking',1,'Linking to Shared Objects'],['../libraries.html#shared_objects',1,'SPDK Shared Objects'],['../libraries.html#static_objects',1,'SPDK Static Objects']]],
   ['ocf_20isa_20l_20support_20dif_20dix_20library_15',['v19.01: NVMe-oF TCP/IP Transport, Open Channel SSD Flash Translation Layer, Caching bdev based on OCF, ISA-L Support, DIF/DIX library',['../changelog.html#changelog-v19-01',1,'']]],
   ['ocf_20virtual_20bdev_16',['OCF Virtual bdev',['../bdev.html#bdev_config_cas',1,'']]],
-  ['ocfs_17',['ocfs',['../structspdk__nvme__ctrlr__data.html#ac01ada746eafff58a70ef47b1088dbbf',1,'spdk_nvme_ctrlr_data']]],
+  ['ocfs_17',['ocfs',['../structspdk__nvme__ctrlr__data.html#aab15524cca70f1778812b011ad8db642',1,'spdk_nvme_ctrlr_data']]],
   ['of_20a_20blob_18',['Change the parent of a blob',['../blob.html#blob_reparent',1,'']]],
   ['of_20contents_19',['Of Contents',['../ublk.html#ublk_toc',1,'Table of Contents'],['../vhost.html#vhost_toc',1,'Table of Contents'],['../vhost_processing.html#vhost_processing_toc',1,'Table of Contents']]],
   ['of_20events_20',['Capturing a snapshot of events',['../tracepoints.html#capture_tracepoints',1,'']]],
@@ -71,5 +71,5 @@ var searchData=
   ['overview_68',['Overview',['../distributions.html#distros_overview',1,'Overview'],['../jsonrpc.html#jsonrpc_overview',1,'Overview'],['../overview.html#dir_overview',1,'Overview'],['../peer_2_peer.html#p2p_overview',1,'Overview'],['../shfmt.html#shfmt_overview',1,'Overview'],['../logical_volumes.html#lvol_rpc',1,'RPC overview'],['../overview.html',1,'SPDK Structural Overview']]],
   ['overview_20of_20spdk_20applications_69',['An Overview of SPDK Applications',['../app_overview.html',1,'user_guides']]],
   ['owner_5foffset_70',['owner_offset',['../structspdk__trace__file.html#ab30ded0045e75bf5cbce59a25a3cff38',1,'spdk_trace_file']]],
-  ['ozcs_71',['ozcs',['../structspdk__nvme__zns__ns__data.html#acaba58a50d6377767231d0f5cff94ab5',1,'spdk_nvme_zns_ns_data']]]
+  ['ozcs_71',['ozcs',['../structspdk__nvme__zns__ns__data.html#add8aae02a980138464a856d3c9577b16',1,'spdk_nvme_zns_ns_data']]]
 ];

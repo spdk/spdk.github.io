@@ -140,19 +140,11 @@ $(function(){initNavTree('deprecation.html',''); initResizable(); });
 <h2>bdev</h2>
 <h3><code>bdev_get_iostat</code></h3>
 <p><code>--name</code> option will be removed in the 26.05 release. <code>--names</code> option should be used instead, it allows providing array of devices names to obtain statistics from.</p>
-<h3><code>spdk_bdev_initialize</code>, <code>spdk_bdev_finish</code>, <code>spdk_bdev_unregister</code>, <code>spdk_bdev_unregister_by_name</code></h3>
-<p>Calling these functions from any thread is deprecated and will be disallowed in v26.05. These functions should be called from the SPDK app thread.</p>
 <h2>gpt</h2>
 <h3><code>old_gpt_guid</code></h3>
 <p>Deprecated the SPDK partition type GUID <code>7c5222bd-8f5d-4087-9c00-bf9843c7b58c</code>. Partitions of this type have bdevs created that are one block less than the actual size of the partition. Existing partitions using the deprecated GUID can continue to use that GUID; support for the deprecated GUID will remain in SPDK indefinitely, and will continue to exhibit the off-by-one bug so that on-disk metadata layouts based on the incorrect size are not affected.</p>
 <p>See GitHub issue <a href="https://github.com/spdk/spdk/issues/2801">2801</a> for additional details on the bug.</p>
 <p>New SPDK partition types should use GUID <code>6527994e-2c5a-4eec-9613-8f5944074e8b</code> which will create a bdev of the correct size.</p>
-<h2>nvme</h2>
-<h3><a class="el" href="nvme__spec_8h.html" title="NVMe specification definitions.">nvme_spec.h</a></h3>
-<p><code><a class="el" href="structspdk__nvme__ctrlr__data.html">spdk_nvme_ctrlr_data</a></code>, <code><a class="el" href="structspdk__nvme__cdata__oacs.html">spdk_nvme_cdata_oacs</a></code></p>
-<p>LPA, OACS, CMIC bits are updated to NVMe 2.2 definitions. The old bit names will be removed in 26.05 release.</p>
-<p><code><a class="el" href="structspdk__nvme__ns__data.html">spdk_nvme_ns_data</a></code></p>
-<p>NMIC, RESCAP, FPI and NSATTR bits are updated to NVMe 2.2 definitions. The old bit names will be removed in 26.05 release.</p>
 <h2>app/spdk_nvme_perf</h2>
 <h3>perf_g_option</h3>
 <p>The <code>-G</code> command line option is deprecated and will be removed in the v26.05 release. Use <code>--log-level debug -T nvme</code> instead. </p>

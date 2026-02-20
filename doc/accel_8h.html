@@ -300,6 +300,9 @@ Functions</h2></td></tr>
 <tr class="memitem:aae669393a2c7c74cdfbd05216d41a086" id="r_aae669393a2c7c74cdfbd05216d41a086"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aae669393a2c7c74cdfbd05216d41a086">spdk_accel_append_copy</a> (struct spdk_accel_sequence **seq, struct spdk_io_channel *ch, struct iovec *dst_iovs, uint32_t dst_iovcnt, struct spdk_memory_domain *dst_domain, void *dst_domain_ctx, struct iovec *src_iovs, uint32_t src_iovcnt, struct spdk_memory_domain *src_domain, void *src_domain_ctx, <a class="el" href="#abaf556b5e1b63b5237faff3952a3bb46">spdk_accel_step_cb</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:aae669393a2c7c74cdfbd05216d41a086"><td class="mdescLeft">&#160;</td><td class="mdescRight">Append a copy operation to a sequence.  <br /></td></tr>
 <tr class="separator:aae669393a2c7c74cdfbd05216d41a086"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5aa3233c0b22d373f1c956cd0849f45c" id="r_a5aa3233c0b22d373f1c956cd0849f45c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5aa3233c0b22d373f1c956cd0849f45c">spdk_accel_append_compare</a> (struct spdk_accel_sequence **pseq, struct spdk_io_channel *ch, struct iovec *src1_iovs, uint32_t src1_iovcnt, struct spdk_memory_domain *src1_domain, void *src1_domain_ctx, struct iovec *src2_iovs, uint32_t src2_iovcnt, struct spdk_memory_domain *src2_domain, void *src2_domain_ctx, <a class="el" href="#abaf556b5e1b63b5237faff3952a3bb46">spdk_accel_step_cb</a> cb_fn, void *cb_arg)</td></tr>
+<tr class="memdesc:a5aa3233c0b22d373f1c956cd0849f45c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Append a compare operation to a sequence.  <br /></td></tr>
+<tr class="separator:a5aa3233c0b22d373f1c956cd0849f45c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1c3400c6ae95c73c4fd78adba4bc492a" id="r_a1c3400c6ae95c73c4fd78adba4bc492a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1c3400c6ae95c73c4fd78adba4bc492a">spdk_accel_append_fill</a> (struct spdk_accel_sequence **seq, struct spdk_io_channel *ch, void *buf, uint64_t len, struct spdk_memory_domain *domain, void *domain_ctx, uint8_t pattern, <a class="el" href="#abaf556b5e1b63b5237faff3952a3bb46">spdk_accel_step_cb</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:a1c3400c6ae95c73c4fd78adba4bc492a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Append a fill operation to a sequence.  <br /></td></tr>
 <tr class="separator:a1c3400c6ae95c73c4fd78adba4bc492a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -454,6 +457,98 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="a5aa3233c0b22d373f1c956cd0849f45c" name="a5aa3233c0b22d373f1c956cd0849f45c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5aa3233c0b22d373f1c956cd0849f45c">&#9670;&#160;</a></span>spdk_accel_append_compare()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_accel_append_compare </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_accel_sequence **</td>          <td class="paramname"><span class="paramname"><em>pseq</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct spdk_io_channel *</td>          <td class="paramname"><span class="paramname"><em>ch</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct iovec *</td>          <td class="paramname"><span class="paramname"><em>src1_iovs</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>src1_iovcnt</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct spdk_memory_domain *</td>          <td class="paramname"><span class="paramname"><em>src1_domain</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *</td>          <td class="paramname"><span class="paramname"><em>src1_domain_ctx</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct iovec *</td>          <td class="paramname"><span class="paramname"><em>src2_iovs</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>src2_iovcnt</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct spdk_memory_domain *</td>          <td class="paramname"><span class="paramname"><em>src2_domain</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *</td>          <td class="paramname"><span class="paramname"><em>src2_domain_ctx</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="#abaf556b5e1b63b5237faff3952a3bb46">spdk_accel_step_cb</a></td>          <td class="paramname"><span class="paramname"><em>cb_fn</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *</td>          <td class="paramname"><span class="paramname"><em>cb_arg</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Append a compare operation to a sequence. </p>
+<p>This operation compares data from two source buffers to verify they are identical. If a mismatch is found, the operation will typically complete with a failure status.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pseq</td><td>Sequence object. If NULL, a new sequence object will be created. </td></tr>
+    <tr><td class="paramname">ch</td><td>I/O channel. </td></tr>
+    <tr><td class="paramname">src1_iovs</td><td>First source I/O vector array. </td></tr>
+    <tr><td class="paramname">src1_iovcnt</td><td>Size of the <code>src1_iovs</code> array. </td></tr>
+    <tr><td class="paramname">src1_domain</td><td>Memory domain to which the first source buffers belong. </td></tr>
+    <tr><td class="paramname">src1_domain_ctx</td><td>First source buffer domain context. </td></tr>
+    <tr><td class="paramname">src2_iovs</td><td>Second source I/O vector array. </td></tr>
+    <tr><td class="paramname">src2_iovcnt</td><td>Size of the <code>src2_iovs</code> array. </td></tr>
+    <tr><td class="paramname">src2_domain</td><td>Memory domain to which the second source buffers belong. </td></tr>
+    <tr><td class="paramname">src2_domain_ctx</td><td>Second source buffer domain context. </td></tr>
+    <tr><td class="paramname">cb_fn</td><td>Callback to be executed once this operation is completed. </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>Argument to be passed to <code>cb_fn</code>.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if operation was successfully added to the sequence, negative errno otherwise. </dd></dl>
+
+</div>
+</div>
 <a id="aae669393a2c7c74cdfbd05216d41a086" name="aae669393a2c7c74cdfbd05216d41a086"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aae669393a2c7c74cdfbd05216d41a086">&#9670;&#160;</a></span>spdk_accel_append_copy()</h2>
 

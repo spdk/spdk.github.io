@@ -380,9 +380,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_referral_add
 <tr class="memitem:a604e8b722bacf37b0687ce5f29867594" id="r_a604e8b722bacf37b0687ce5f29867594"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a604e8b722bacf37b0687ce5f29867594">spdk_nvmf_subsystem_set_keys</a> (struct spdk_nvmf_subsystem *subsystem, const char *hostnqn, struct <a class="el" href="structspdk__nvmf__subsystem__key__opts.html">spdk_nvmf_subsystem_key_opts</a> *opts)</td></tr>
 <tr class="memdesc:a604e8b722bacf37b0687ce5f29867594"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set keys required for a host to connect to a given subsystem.  <br /></td></tr>
 <tr class="separator:a604e8b722bacf37b0687ce5f29867594"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a18b4cfdef8236b13193ad8e69be247fe" id="r_a18b4cfdef8236b13193ad8e69be247fe"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a18b4cfdef8236b13193ad8e69be247fe">spdk_nvmf_subsystem_disconnect_host</a> (struct spdk_nvmf_subsystem *subsystem, const char *hostnqn, <a class="el" href="#aad52ac090dcb26b03da0e689ea71df89">spdk_nvmf_tgt_subsystem_listen_done_fn</a> cb_fn, void *cb_arg)</td></tr>
-<tr class="memdesc:a18b4cfdef8236b13193ad8e69be247fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disconnect all connections originating from the provided hostnqn.  <br /></td></tr>
-<tr class="separator:a18b4cfdef8236b13193ad8e69be247fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86ed55efaed8dcf01442204415ed8eda" id="r_a86ed55efaed8dcf01442204415ed8eda"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a86ed55efaed8dcf01442204415ed8eda">spdk_nvmf_subsystem_disconnect_host</a> (struct spdk_nvmf_subsystem *subsystem, const char *hostnqn, <a class="el" href="#aad52ac090dcb26b03da0e689ea71df89">spdk_nvmf_tgt_subsystem_listen_done_fn</a> cb_fn, void *cb_arg, uint64_t timeout_ms)</td></tr>
+<tr class="memdesc:a86ed55efaed8dcf01442204415ed8eda"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disconnect all connections originating from the provided hostnqn.  <br /></td></tr>
+<tr class="separator:a86ed55efaed8dcf01442204415ed8eda"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad6453b746f3c470e00e23fa4a194cfbd" id="r_ad6453b746f3c470e00e23fa4a194cfbd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad6453b746f3c470e00e23fa4a194cfbd">spdk_nvmf_subsystem_set_allow_any_host</a> (struct spdk_nvmf_subsystem *subsystem, bool allow_any_host)</td></tr>
 <tr class="memdesc:ad6453b746f3c470e00e23fa4a194cfbd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set whether a subsystem should allow any host or only hosts in the allowed list.  <br /></td></tr>
 <tr class="separator:ad6453b746f3c470e00e23fa4a194cfbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2100,8 +2100,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_referral_add
 
 </div>
 </div>
-<a id="a18b4cfdef8236b13193ad8e69be247fe" name="a18b4cfdef8236b13193ad8e69be247fe"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a18b4cfdef8236b13193ad8e69be247fe">&#9670;&#160;</a></span>spdk_nvmf_subsystem_disconnect_host()</h2>
+<a id="a86ed55efaed8dcf01442204415ed8eda" name="a86ed55efaed8dcf01442204415ed8eda"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86ed55efaed8dcf01442204415ed8eda">&#9670;&#160;</a></span>spdk_nvmf_subsystem_disconnect_host()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2124,19 +2124,25 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_referral_add
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">void *</td>          <td class="paramname"><span class="paramname"><em>cb_arg</em></span>&#160;)</td>
+          <td class="paramtype">void *</td>          <td class="paramname"><span class="paramname"><em>cb_arg</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t</td>          <td class="paramname"><span class="paramname"><em>timeout_ms</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Disconnect all connections originating from the provided hostnqn. </p>
-<p>To disconnect and block all new connections from a host, first call <a class="el" href="#a028b2b8739dfdd896414b5c2fb84faf6" title="Remove the given host NQN from the list of allowed hosts.">spdk_nvmf_subsystem_remove_host()</a> to remove it from the list of allowed hosts, then call <a class="el" href="#a18b4cfdef8236b13193ad8e69be247fe" title="Disconnect all connections originating from the provided hostnqn.">spdk_nvmf_subsystem_disconnect_host()</a> to close any remaining connections.</p>
+<p>To disconnect and block all new connections from a host, first call <a class="el" href="#a028b2b8739dfdd896414b5c2fb84faf6" title="Remove the given host NQN from the list of allowed hosts.">spdk_nvmf_subsystem_remove_host()</a> to remove it from the list of allowed hosts, then call <a class="el" href="#a86ed55efaed8dcf01442204415ed8eda" title="Disconnect all connections originating from the provided hostnqn.">spdk_nvmf_subsystem_disconnect_host()</a> to close any remaining connections.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">subsystem</td><td>Subsystem to operate on </td></tr>
     <tr><td class="paramname">hostnqn</td><td>The NQN for the host </td></tr>
     <tr><td class="paramname">cb_fn</td><td>The function to call on completion. </td></tr>
-    <tr><td class="paramname">cb_arg</td><td>The argument to pass to the cb_fn.</td></tr>
+    <tr><td class="paramname">cb_arg</td><td>The argument to pass to the cb_fn. </td></tr>
+    <tr><td class="paramname">timeout_ms</td><td>The time in milliseconds to wait for the asynchronous operations to complete, or 0 for default value derived from the controller CAP.TO.</td></tr>
   </table>
   </dd>
 </dl>

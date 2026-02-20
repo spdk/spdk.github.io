@@ -1,5 +1,6 @@
 var NAVTREEINDEX4 =
 {
+"functions_w.html":[14,2,0,23],
 "functions_z.html":[14,2,0,24],
 "gdb_macros.html":[4,5],
 "general.html":[5],
@@ -248,6 +249,5 @@ var NAVTREEINDEX4 =
 "jsonrpc.html#rpc_bdev_lvol_start_shallow_copy":[3,8,10,18],
 "jsonrpc.html#rpc_bdev_malloc_create":[3,8,5,21],
 "jsonrpc.html#rpc_bdev_malloc_delete":[3,8,5,22],
-"jsonrpc.html#rpc_bdev_null_create":[3,8,5,23],
-"jsonrpc.html#rpc_bdev_null_delete":[3,8,5,24]
+"jsonrpc.html#rpc_bdev_null_create":[3,8,5,23]
 };

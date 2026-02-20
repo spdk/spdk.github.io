@@ -7,6 +7,7 @@ var accel_8h =
     [ "spdk_accel_completion_cb", "accel_8h.html#a6ba836b7b128829ba185eadb2c60476a", null ],
     [ "spdk_accel_fini_cb", "accel_8h.html#a545ea1cc4167924acee2803aed824877", null ],
     [ "spdk_accel_step_cb", "accel_8h.html#abaf556b5e1b63b5237faff3952a3bb46", null ],
+    [ "spdk_accel_append_compare", "accel_8h.html#a5aa3233c0b22d373f1c956cd0849f45c", null ],
     [ "spdk_accel_append_copy", "accel_8h.html#aae669393a2c7c74cdfbd05216d41a086", null ],
     [ "spdk_accel_append_crc32c", "accel_8h.html#a378b527c7ee062af40c4aef4ea2f4cbc", null ],
     [ "spdk_accel_append_decompress", "accel_8h.html#a457e6fd3389ec558b3c6a9f0edf812b0", null ],

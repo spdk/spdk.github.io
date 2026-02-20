@@ -7386,7 +7386,9 @@ nvmf_subsystem_remove_host</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">host   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Host NQN to remove from the list of allowed host NQNs    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">tgt_name   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Parent NVMe-oF target name.   </td></tr>
+<td class="markdownTableBodyNone">tgt_name   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Parent NVMe-oF target name.    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">timeout_ms   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint64   </td><td class="markdownTableBodyNone">Timeout in ms to wait for I/Os to complete (optional). Default value is derived from the controller CAP.TO.   </td></tr>
 </table>
 <h3>Example</h3>
 <p>Example request:</p>

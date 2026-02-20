@@ -26,6 +26,5 @@ var structspdk__bdev_1_1____bdev__internal__fields =
     [ "trace_id", "structspdk__bdev_1_1____bdev__internal__fields.html#a5e903ac3d8ddcf633e269122c8b0775c", null ],
     [ "unregister_cb", "structspdk__bdev_1_1____bdev__internal__fields.html#a19c909b97a282da2b6681fd46a0d9a69", null ],
     [ "unregister_ctx", "structspdk__bdev_1_1____bdev__internal__fields.html#aac5fe7bcf1bbbf3f984874e1c75a580a", null ],
-    [ "unregister_td", "structspdk__bdev_1_1____bdev__internal__fields.html#a9ac9b4eff872b0fe8c1558e3f4747884", null ],
     [ "weighted_io_time", "structspdk__bdev_1_1____bdev__internal__fields.html#a1ca4aa351052992223be9801674d8da8", null ]
 ];
