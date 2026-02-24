@@ -170,8 +170,13 @@ Data Structures</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__ctrlr__key__opts.html">spdk_nvme_ctrlr_key_opts</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__qpair__io__stats.html">spdk_nvme_qpair_io_stats</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Statistics for an NVMe I/O qpair.  <a href="structspdk__nvme__qpair__io__stats.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__io__qpair__opts.html">spdk_nvme_io_qpair_opts</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">NVMe I/O queue pair initialization options.  <a href="structspdk__nvme__io__qpair__opts.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__qpair__stats.html">spdk_nvme_qpair_stats</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__rdma__hooks.html">spdk_nvme_rdma_hooks</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">RDMA Transport Hooks.  <a href="structspdk__nvme__rdma__hooks.html#details">More...</a><br /></td></tr>
@@ -522,6 +527,9 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_trty
 <tr class="memitem:a7708f291658bf471e399354d1247fabf" id="r_a7708f291658bf471e399354d1247fabf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7708f291658bf471e399354d1247fabf">spdk_nvme_ctrlr_disable_read_changed_ns_list_log_page</a> (struct spdk_nvme_ctrlr *ctrlr)</td></tr>
 <tr class="memdesc:a7708f291658bf471e399354d1247fabf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disable reading the CHANGED_NS_LIST log page for the specified controller.  <br /></td></tr>
 <tr class="separator:a7708f291658bf471e399354d1247fabf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64514318f650e1935143874dcafcecbf" id="r_a64514318f650e1935143874dcafcecbf"><td class="memItemLeft" align="right" valign="top"><a id="a64514318f650e1935143874dcafcecbf" name="a64514318f650e1935143874dcafcecbf"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_qpair_io_stats_update</b> (struct <a class="el" href="structspdk__nvme__qpair__io__stats.html">spdk_nvme_qpair_io_stats</a> *st, const struct <a class="el" href="structspdk__nvme__cmd.html">spdk_nvme_cmd</a> *cmd, size_t length)</td></tr>
+<tr class="separator:a64514318f650e1935143874dcafcecbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae2957853179526e6176cf7623b19552b" id="r_ae2957853179526e6176cf7623b19552b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae2957853179526e6176cf7623b19552b">spdk_nvme_ctrlr_register_timeout_callback</a> (struct spdk_nvme_ctrlr *ctrlr, uint64_t timeout_io_us, uint64_t timeout_admin_us, <a class="el" href="#a53fe1c01a447be8fcd29821a668227a0">spdk_nvme_timeout_cb</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:ae2957853179526e6176cf7623b19552b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register for timeout callback on a controller.  <br /></td></tr>
 <tr class="separator:ae2957853179526e6176cf7623b19552b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -546,6 +554,24 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_trty
 <tr class="memitem:a1e04d50b1f27f6cd163a4ea2024a6fbb" id="r_a1e04d50b1f27f6cd163a4ea2024a6fbb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1e04d50b1f27f6cd163a4ea2024a6fbb">spdk_nvme_ctrlr_reconnect_io_qpair</a> (struct spdk_nvme_qpair *qpair)</td></tr>
 <tr class="memdesc:a1e04d50b1f27f6cd163a4ea2024a6fbb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attempt to reconnect the given qpair.  <br /></td></tr>
 <tr class="separator:a1e04d50b1f27f6cd163a4ea2024a6fbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adca79380f168d5fccddca7afe6bd27f7" id="r_adca79380f168d5fccddca7afe6bd27f7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adca79380f168d5fccddca7afe6bd27f7">spdk_nvme_qpair_get_stats</a> (const struct spdk_nvme_qpair *qpair, struct <a class="el" href="structspdk__nvme__qpair__stats.html">spdk_nvme_qpair_stats</a> *stats)</td></tr>
+<tr class="memdesc:adca79380f168d5fccddca7afe6bd27f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve the statistics for a specific NVMe I/O qpair.  <br /></td></tr>
+<tr class="separator:adca79380f168d5fccddca7afe6bd27f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae431a90efc264b6ff87b1b9bf53ea3ff" id="r_ae431a90efc264b6ff87b1b9bf53ea3ff"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae431a90efc264b6ff87b1b9bf53ea3ff">spdk_nvme_qpair_reset_stats</a> (struct spdk_nvme_qpair *qpair)</td></tr>
+<tr class="memdesc:ae431a90efc264b6ff87b1b9bf53ea3ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear IO statistics counters of specified NVMe I/O qpair.  <br /></td></tr>
+<tr class="separator:ae431a90efc264b6ff87b1b9bf53ea3ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16638fe40cf3a9c6c7879110202cdc0f" id="r_a16638fe40cf3a9c6c7879110202cdc0f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a16638fe40cf3a9c6c7879110202cdc0f">spdk_nvme_qpair_enable_stats</a> (struct spdk_nvme_qpair *qpair)</td></tr>
+<tr class="memdesc:a16638fe40cf3a9c6c7879110202cdc0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable I/O statistics collection for the specified NVMe I/O qpair.  <br /></td></tr>
+<tr class="separator:a16638fe40cf3a9c6c7879110202cdc0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3cad51c100c941936a92e63d5775c946" id="r_a3cad51c100c941936a92e63d5775c946"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3cad51c100c941936a92e63d5775c946">spdk_nvme_qpair_disable_stats</a> (struct spdk_nvme_qpair *qpair)</td></tr>
+<tr class="memdesc:a3cad51c100c941936a92e63d5775c946"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disable I/O statistics collection for the specified NVMe I/O qpair.  <br /></td></tr>
+<tr class="separator:a3cad51c100c941936a92e63d5775c946"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43085dc276cd41dfc85810a3e078f8d3" id="r_a43085dc276cd41dfc85810a3e078f8d3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a43085dc276cd41dfc85810a3e078f8d3">spdk_nvme_qpair_is_admin_queue</a> (struct spdk_nvme_qpair *qpair)</td></tr>
+<tr class="memdesc:a43085dc276cd41dfc85810a3e078f8d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine whether qpair is admin qpair.  <br /></td></tr>
+<tr class="separator:a43085dc276cd41dfc85810a3e078f8d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a451e150be218212491e3ca3dccb95a6b" id="r_a451e150be218212491e3ca3dccb95a6b"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a451e150be218212491e3ca3dccb95a6b">spdk_nvme_qpair_get_queue_depth</a> (struct spdk_nvme_qpair *qpair)</td></tr>
+<tr class="memdesc:a451e150be218212491e3ca3dccb95a6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get queue_depth of given qpair.  <br /></td></tr>
+<tr class="separator:a451e150be218212491e3ca3dccb95a6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a634e46879faa2f2b415c3fd78fcf995c" id="r_a634e46879faa2f2b415c3fd78fcf995c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a634e46879faa2f2b415c3fd78fcf995c">spdk_nvme_ctrlr_get_admin_qp_fd</a> (struct spdk_nvme_ctrlr *ctrlr, struct <a class="el" href="structspdk__event__handler__opts.html">spdk_event_handler_opts</a> *opts)</td></tr>
 <tr class="memdesc:a634e46879faa2f2b415c3fd78fcf995c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get file descriptor for the admin queue pair of a controller.  <br /></td></tr>
 <tr class="separator:a634e46879faa2f2b415c3fd78fcf995c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -9022,6 +9048,57 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_trty
 
 </div>
 </div>
+<a id="a3cad51c100c941936a92e63d5775c946" name="a3cad51c100c941936a92e63d5775c946"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3cad51c100c941936a92e63d5775c946">&#9670;&#160;</a></span>spdk_nvme_qpair_disable_stats()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_nvme_qpair_disable_stats </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_nvme_qpair *</td>          <td class="paramname"><span class="paramname"><em>qpair</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Disable I/O statistics collection for the specified NVMe I/O qpair. </p>
+<p>This does not clear any previously collected statistics.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">qpair</td><td>The NVMe qpair. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a16638fe40cf3a9c6c7879110202cdc0f" name="a16638fe40cf3a9c6c7879110202cdc0f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16638fe40cf3a9c6c7879110202cdc0f">&#9670;&#160;</a></span>spdk_nvme_qpair_enable_stats()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_nvme_qpair_enable_stats </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_nvme_qpair *</td>          <td class="paramname"><span class="paramname"><em>qpair</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Enable I/O statistics collection for the specified NVMe I/O qpair. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">qpair</td><td>The NVMe qpair. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="ae2015f3c7dd76113e89a732eabe400ff" name="ae2015f3c7dd76113e89a732eabe400ff"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae2015f3c7dd76113e89a732eabe400ff">&#9670;&#160;</a></span>spdk_nvme_qpair_get_failure_reason()</h2>
 
@@ -9131,6 +9208,88 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_trty
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>number of outstanding requests for the specified qpair. </dd></dl>
+
+</div>
+</div>
+<a id="a451e150be218212491e3ca3dccb95a6b" name="a451e150be218212491e3ca3dccb95a6b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a451e150be218212491e3ca3dccb95a6b">&#9670;&#160;</a></span>spdk_nvme_qpair_get_queue_depth()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t spdk_nvme_qpair_get_queue_depth </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_nvme_qpair *</td>          <td class="paramname"><span class="paramname"><em>qpair</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get queue_depth of given qpair. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">qpair</td><td>The NVMe qpair.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>value of queue_depth field. </dd></dl>
+
+</div>
+</div>
+<a id="adca79380f168d5fccddca7afe6bd27f7" name="adca79380f168d5fccddca7afe6bd27f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adca79380f168d5fccddca7afe6bd27f7">&#9670;&#160;</a></span>spdk_nvme_qpair_get_stats()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_nvme_qpair_get_stats </td>
+          <td>(</td>
+          <td class="paramtype">const struct spdk_nvme_qpair *</td>          <td class="paramname"><span class="paramname"><em>qpair</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structspdk__nvme__qpair__stats.html">spdk_nvme_qpair_stats</a> *</td>          <td class="paramname"><span class="paramname"><em>stats</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Retrieve the statistics for a specific NVMe I/O qpair. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">qpair</td><td>The NVMe qpair. </td></tr>
+    <tr><td class="paramname">stats</td><td>Output parameter for the statistics. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a43085dc276cd41dfc85810a3e078f8d3" name="a43085dc276cd41dfc85810a3e078f8d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43085dc276cd41dfc85810a3e078f8d3">&#9670;&#160;</a></span>spdk_nvme_qpair_is_admin_queue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool spdk_nvme_qpair_is_admin_queue </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_nvme_qpair *</td>          <td class="paramname"><span class="paramname"><em>qpair</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Determine whether qpair is admin qpair. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">qpair</td><td>The NVMe qpair.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the qpair is an admin queue, or false otherwise. </dd></dl>
 
 </div>
 </div>
@@ -9290,6 +9449,31 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_trty
   </dd>
 </dl>
 <p>The function will remove specified command in the error list. </p>
+
+</div>
+</div>
+<a id="ae431a90efc264b6ff87b1b9bf53ea3ff" name="ae431a90efc264b6ff87b1b9bf53ea3ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae431a90efc264b6ff87b1b9bf53ea3ff">&#9670;&#160;</a></span>spdk_nvme_qpair_reset_stats()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_nvme_qpair_reset_stats </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_nvme_qpair *</td>          <td class="paramname"><span class="paramname"><em>qpair</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Clear IO statistics counters of specified NVMe I/O qpair. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">qpair</td><td>The NVMe qpair. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

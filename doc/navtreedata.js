@@ -77,18 +77,18 @@ var NAVTREEINDEX =
 "functions_w.html",
 "jsonrpc.html#rpc_bdev_null_delete",
 "jsonrpc_8h.html#acdbb193a4b8ca1c57c2b43223165dfa6",
-"nvme_8h.html#a6bed6ef82de45dc360c4867ff1cc9520",
-"nvme__spec_8h.html#a33e755cbe54eafcfbe31e1f713e4d5b2abe35152f93fb01ba27ee8fb74649d11b",
-"nvme__spec_8h.html#acb8784fad6a53be95d4c718ad3cf852eab85a681110e2e8ac50c394f0269c80e3",
-"nvmf_8h.html#adad870498ded3fa2168a2f3f663881f3a7805f8d4d557f754e3725eb7b7c60605",
-"sock_8h.html#ae2fc8fd68b9988e2ec771a82914dcc80",
-"structspdk__bdev__io__abort__params.html#ac39e53bac1756aecbe51e1a31840234a",
-"structspdk__iobuf__entry.html",
-"structspdk__nvme__ctrlr__opts.html#aff1b2c63ae9c862d3d372c49b5fd8b8c",
-"structspdk__nvme__reservation__status__data.html#a0def9acff9ca8af6b789224d83821086",
-"structspdk__ocssd__chunk__notification__entry.html#acf2668e09d087e0294af2b2f42160ad7",
-"thread_8h.html#a9158ad3743857aabfbd24a804297f96a",
-"unionspdk__nvme__feat__volatile__write__cache.html#a910973ce5eb628dd9b06ab0c72a1cd33"
+"nvme_8h.html#a6943191f9c88c3cec504f87672b9acf8",
+"nvme__spec_8h.html#a31ff3cbe0e2664095e3abc096a9ea81f",
+"nvme__spec_8h.html#acb8784fad6a53be95d4c718ad3cf852ea95d392a88c07b6383d7e0d77e575ead4",
+"nvmf_8h.html#ad5dccc507c542cec6c06b0e696ae8fd8",
+"sock_8h.html#ad140a9619b6db6a997f318c262c95142",
+"structspdk__bdev__io.html#a4105d5a8419a66a6620d690da5649fcb",
+"structspdk__ioat__registers.html",
+"structspdk__nvme__ctrlr__opts.html#acbca1c6d481b35739d9eae3306a2d0c9",
+"structspdk__nvme__reservation__notification__log.html",
+"structspdk__ocssd__chunk__notification__entry.html#a2d96d597c27edd7e457218d85c01915d",
+"thread_8h.html#a7219c832e5483b4318d2533cb45ff22e",
+"unionspdk__nvme__feat__reservation__persistence.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
