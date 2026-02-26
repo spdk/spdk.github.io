@@ -140,7 +140,7 @@ Introduction</h1>
 <p>The SPDK block device layer, often simply called <em>bdev</em>, is a C library intended to be equivalent to the operating system block storage layer that often sits immediately above the device drivers in a traditional kernel storage stack. Specifically, this library provides the following functionality:</p>
 <ul>
 <li>A pluggable module API for implementing block devices that interface with different types of block storage devices.</li>
-<li>Driver modules for NVMe, malloc (ramdisk), Linux AIO, virtio-scsi, Ceph RBD, Pmem and Vhost-SCSI Initiator and more.</li>
+<li>Driver modules for NVMe, malloc (ramdisk), Linux AIO, virtio-scsi, Ceph RBD and Vhost-SCSI Initiator and more.</li>
 <li>An application API for enumerating and claiming SPDK block devices and then performing operations (read, write, unmap, etc.) on those devices.</li>
 <li>Facilities to stack block devices to create complex I/O pipelines, including logical volume management (lvol) and partition support (GPT).</li>
 <li>Configuration of block devices via JSON-RPC.</li>
