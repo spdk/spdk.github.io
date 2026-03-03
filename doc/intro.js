@@ -8,6 +8,23 @@ var intro =
       [ "Running the Unit Tests", "getting_started.html#getting_started_unittests", null ],
       [ "Running the Example Applications", "getting_started.html#getting_started_examples", null ]
     ] ],
+    [ "SPDK Releases", "releases.html", [
+      [ "Cadence", "releases.html#cadence", null ],
+      [ "Version format", "releases.html#version_format", null ],
+      [ "Bug reports and backporting", "releases.html#bug_reports", null ],
+      [ "Patch releases", "releases.html#patch_releases", null ],
+      [ "Changes throughout the release", "releases.html#changes_during_release", [
+        [ "Tracking", "releases.html#tracking", null ],
+        [ "Submodules", "releases.html#submodules", null ]
+      ] ],
+      [ "Schedule", "releases.html#schedule", [
+        [ "1+ month before release", "releases.html#month_before", null ],
+        [ "1 week before release", "releases.html#week_before", null ],
+        [ "Week of the release", "releases.html#week_of_release", null ],
+        [ "Day of the release", "releases.html#day_of_release", null ],
+        [ "Until End of Life", "releases.html#EOL", null ]
+      ] ]
+    ] ],
     [ "Vagrant Development Environment", "vagrant.html", [
       [ "Introduction", "vagrant.html#vagrant_intro", null ],
       [ "VM Configuration", "vagrant.html#vagrant_config", null ],

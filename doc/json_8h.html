@@ -174,6 +174,9 @@ Macros</h2></td></tr>
 <tr class="memitem:ad5f14ea888abfa32c979c7a3684d0a91" id="r_ad5f14ea888abfa32c979c7a3684d0a91"><td class="memItemLeft" align="right" valign="top"><a id="ad5f14ea888abfa32c979c7a3684d0a91" name="ad5f14ea888abfa32c979c7a3684d0a91"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_JSON_WRITE_FLAG_FORMATTED</b>&#160;&#160;&#160;0x00000001</td></tr>
 <tr class="separator:ad5f14ea888abfa32c979c7a3684d0a91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad782cffad00fc03da0f0ab2761e3b894" id="r_ad782cffad00fc03da0f0ab2761e3b894"><td class="memItemLeft" align="right" valign="top"><a id="ad782cffad00fc03da0f0ab2761e3b894" name="ad782cffad00fc03da0f0ab2761e3b894"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_JSON_WRITE_FLAG_FLATTEN_BATCHES</b>&#160;&#160;&#160;0x00000002</td></tr>
+<tr class="separator:ad782cffad00fc03da0f0ab2761e3b894"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -341,6 +344,12 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_json_write_array_
 <tr class="memitem:a034afae7d0bbb43e6b75f91402cdbcdb" id="r_a034afae7d0bbb43e6b75f91402cdbcdb"><td class="memItemLeft" align="right" valign="top"><a id="a034afae7d0bbb43e6b75f91402cdbcdb" name="a034afae7d0bbb43e6b75f91402cdbcdb"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_json_write_array_end</b> (struct spdk_json_write_ctx *w)</td></tr>
 <tr class="separator:a034afae7d0bbb43e6b75f91402cdbcdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17bfb9a5ec2326dcf3abc1674ed918b8" id="r_a17bfb9a5ec2326dcf3abc1674ed918b8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a17bfb9a5ec2326dcf3abc1674ed918b8">spdk_json_write_batch_begin</a> (struct spdk_json_write_ctx *w)</td></tr>
+<tr class="memdesc:a17bfb9a5ec2326dcf3abc1674ed918b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Begin a batch array.  <br /></td></tr>
+<tr class="separator:a17bfb9a5ec2326dcf3abc1674ed918b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4cd64d0716106f2e76b50efe5ffad126" id="r_a4cd64d0716106f2e76b50efe5ffad126"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4cd64d0716106f2e76b50efe5ffad126">spdk_json_write_batch_end</a> (struct spdk_json_write_ctx *w)</td></tr>
+<tr class="memdesc:a4cd64d0716106f2e76b50efe5ffad126"><td class="mdescLeft">&#160;</td><td class="mdescRight">End a batch array.  <br /></td></tr>
+<tr class="separator:a4cd64d0716106f2e76b50efe5ffad126"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a43134cf7b4e2eb1ed0ec9003f1aaaad0" id="r_a43134cf7b4e2eb1ed0ec9003f1aaaad0"><td class="memItemLeft" align="right" valign="top"><a id="a43134cf7b4e2eb1ed0ec9003f1aaaad0" name="a43134cf7b4e2eb1ed0ec9003f1aaaad0"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_json_write_object_begin</b> (struct spdk_json_write_ctx *w)</td></tr>
 <tr class="separator:a43134cf7b4e2eb1ed0ec9003f1aaaad0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -810,6 +819,60 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_json_write_named_
 <p>This can be used to skip over a value while interpreting parse results.</p>
 <p>For SPDK_JSON_VAL_ARRAY_BEGIN and SPDK_JSON_VAL_OBJECT_BEGIN, this returns the number of values contained within this value, plus the _BEGIN and _END values.</p>
 <p>For all other values, this returns 1. </p>
+
+</div>
+</div>
+<a id="a17bfb9a5ec2326dcf3abc1674ed918b8" name="a17bfb9a5ec2326dcf3abc1674ed918b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a17bfb9a5ec2326dcf3abc1674ed918b8">&#9670;&#160;</a></span>spdk_json_write_batch_begin()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_json_write_batch_begin </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_json_write_ctx *</td>          <td class="paramname"><span class="paramname"><em>w</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Begin a batch array. </p>
+<p>This is similar to spdk_json_write_array_begin(), but respects the SPDK_JSON_WRITE_FLAG_FLATTEN_BATCHES flag if it is set on the write context. If that flag is set, this function is a no-op (no '[' is emitted), allowing batch arrays to be flattened into the parent array.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">w</td><td>JSON write context. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success or negative on failure. </dd></dl>
+
+</div>
+</div>
+<a id="a4cd64d0716106f2e76b50efe5ffad126" name="a4cd64d0716106f2e76b50efe5ffad126"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4cd64d0716106f2e76b50efe5ffad126">&#9670;&#160;</a></span>spdk_json_write_batch_end()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_json_write_batch_end </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_json_write_ctx *</td>          <td class="paramname"><span class="paramname"><em>w</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>End a batch array. </p>
+<p>This is similar to spdk_json_write_array_end(), but respects the SPDK_JSON_WRITE_FLAG_FLATTEN_BATCHES flag if it is set on the write context. If that flag is set, this function is a no-op (no ']' is emitted).</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">w</td><td>JSON write context. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success or negative on failure. </dd></dl>
 
 </div>
 </div>
