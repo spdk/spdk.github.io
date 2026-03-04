@@ -149,6 +149,8 @@ Data Structures</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvmf__listen__opts.html">spdk_nvmf_listen_opts</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvmf__subsystem__opts.html">spdk_nvmf_subsystem_opts</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvmf__poll__group__stat.html">spdk_nvmf_poll_group_stat</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvmf__referral__opts.html">spdk_nvmf_referral_opts</a></td></tr>
@@ -245,6 +247,12 @@ Functions</h2></td></tr>
 <tr class="memitem:a1b2405fb75a31157942621df179c7426" id="r_a1b2405fb75a31157942621df179c7426"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1b2405fb75a31157942621df179c7426">spdk_nvmf_listen_opts_init</a> (struct <a class="el" href="structspdk__nvmf__listen__opts.html">spdk_nvmf_listen_opts</a> *opts, size_t opts_size)</td></tr>
 <tr class="memdesc:a1b2405fb75a31157942621df179c7426"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize listen options.  <br /></td></tr>
 <tr class="separator:a1b2405fb75a31157942621df179c7426"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af51b783d7cf02490ea97b80a0649cf3c" id="r_af51b783d7cf02490ea97b80a0649cf3c"><td class="memItemLeft" align="right" valign="top"><a id="af51b783d7cf02490ea97b80a0649cf3c" name="af51b783d7cf02490ea97b80a0649cf3c"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(struct <a class="el" href="structspdk__nvmf__subsystem__opts.html">spdk_nvmf_subsystem_opts</a>)==86, &quot;Incorrect size&quot;)</td></tr>
+<tr class="separator:af51b783d7cf02490ea97b80a0649cf3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a517b8c29a5a9ea01e2b90f74b48228a4" id="r_a517b8c29a5a9ea01e2b90f74b48228a4"><td class="memItemLeft" align="right" valign="top"><a id="a517b8c29a5a9ea01e2b90f74b48228a4" name="a517b8c29a5a9ea01e2b90f74b48228a4"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_subsystem_opts_init</b> (enum <a class="el" href="nvmf__spec_8h.html#a808272f050cc373f3a90871c1528afd4">spdk_nvmf_subtype</a> type, struct <a class="el" href="structspdk__nvmf__subsystem__opts.html">spdk_nvmf_subsystem_opts</a> *opts, size_t opts_size)</td></tr>
+<tr class="separator:a517b8c29a5a9ea01e2b90f74b48228a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa9a1143157acef6330d8c8c71362793c" id="r_aa9a1143157acef6330d8c8c71362793c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa9a1143157acef6330d8c8c71362793c">spdk_nvmf_tgt_add_referral</a> (struct spdk_nvmf_tgt *tgt, const struct <a class="el" href="structspdk__nvmf__referral__opts.html">spdk_nvmf_referral_opts</a> *opts)</td></tr>
 <tr class="memdesc:aa9a1143157acef6330d8c8c71362793c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a discovery service referral to an NVMe-oF target.  <br /></td></tr>
 <tr class="separator:aa9a1143157acef6330d8c8c71362793c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -338,6 +346,12 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_referral_add
 <tr class="memitem:a8a593cd20d82a159e7bc6cdfe233242e" id="r_a8a593cd20d82a159e7bc6cdfe233242e"><td class="memItemLeft" align="right" valign="top">struct spdk_nvmf_subsystem *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8a593cd20d82a159e7bc6cdfe233242e">spdk_nvmf_subsystem_create</a> (struct spdk_nvmf_tgt *tgt, const char *nqn, enum <a class="el" href="nvmf__spec_8h.html#a808272f050cc373f3a90871c1528afd4">spdk_nvmf_subtype</a> type, uint32_t num_ns)</td></tr>
 <tr class="memdesc:a8a593cd20d82a159e7bc6cdfe233242e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an NVMe-oF subsystem.  <br /></td></tr>
 <tr class="separator:a8a593cd20d82a159e7bc6cdfe233242e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b3b572e7ba523dad549bf7d1aa9d45a" id="r_a8b3b572e7ba523dad549bf7d1aa9d45a"><td class="memItemLeft" align="right" valign="top">struct spdk_nvmf_subsystem *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8b3b572e7ba523dad549bf7d1aa9d45a">spdk_nvmf_subsystem_create_ext</a> (struct spdk_nvmf_tgt *tgt, const char *nqn, enum <a class="el" href="nvmf__spec_8h.html#a808272f050cc373f3a90871c1528afd4">spdk_nvmf_subtype</a> type, const struct <a class="el" href="structspdk__nvmf__subsystem__opts.html">spdk_nvmf_subsystem_opts</a> *opts)</td></tr>
+<tr class="memdesc:a8b3b572e7ba523dad549bf7d1aa9d45a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an NVMe-oF subsystem.  <br /></td></tr>
+<tr class="separator:a8b3b572e7ba523dad549bf7d1aa9d45a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a901526fe28710bcc2b5af94e1bc5f874" id="r_a901526fe28710bcc2b5af94e1bc5f874"><td class="memItemLeft" align="right" valign="top">const struct <a class="el" href="structspdk__nvmf__subsystem__opts.html">spdk_nvmf_subsystem_opts</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a901526fe28710bcc2b5af94e1bc5f874">spdk_nvmf_subsystem_get_opts</a> (const struct spdk_nvmf_subsystem *subsystem)</td></tr>
+<tr class="memdesc:a901526fe28710bcc2b5af94e1bc5f874"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the options specified for a NVMe-oF subsystem.  <br /></td></tr>
+<tr class="separator:a901526fe28710bcc2b5af94e1bc5f874"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3fec6c155a532a9a6e4c786930f507a2" id="r_a3fec6c155a532a9a6e4c786930f507a2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3fec6c155a532a9a6e4c786930f507a2">spdk_nvmf_subsystem_destroy</a> (struct spdk_nvmf_subsystem *subsystem, nvmf_subsystem_destroy_cb cpl_cb, void *cpl_cb_arg)</td></tr>
 <tr class="memdesc:a3fec6c155a532a9a6e4c786930f507a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy an NVMe-oF subsystem.  <br /></td></tr>
 <tr class="separator:a3fec6c155a532a9a6e4c786930f507a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2053,6 +2067,50 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_referral_add
 
 </div>
 </div>
+<a id="a8b3b572e7ba523dad549bf7d1aa9d45a" name="a8b3b572e7ba523dad549bf7d1aa9d45a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b3b572e7ba523dad549bf7d1aa9d45a">&#9670;&#160;</a></span>spdk_nvmf_subsystem_create_ext()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct spdk_nvmf_subsystem * spdk_nvmf_subsystem_create_ext </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_nvmf_tgt *</td>          <td class="paramname"><span class="paramname"><em>tgt</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>nqn</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">enum <a class="el" href="nvmf__spec_8h.html#a808272f050cc373f3a90871c1528afd4">spdk_nvmf_subtype</a></td>          <td class="paramname"><span class="paramname"><em>type</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const struct <a class="el" href="structspdk__nvmf__subsystem__opts.html">spdk_nvmf_subsystem_opts</a> *</td>          <td class="paramname"><span class="paramname"><em>opts</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Create an NVMe-oF subsystem. </p>
+<p>Subsystems are in one of three states: Inactive, Active, Paused. This state affects which operations may be performed on the subsystem. Upon creation, the subsystem will be in the Inactive state and may be activated by calling <a class="el" href="#a0584bea11782561b13355b89de25b6c0" title="Transition an NVMe-oF subsystem from Inactive to Active state.">spdk_nvmf_subsystem_start()</a>. No I/O will be processed in the Inactive or Paused states, but changes to the state of the subsystem may be made.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tgt</td><td>The NVMe-oF target that will own this subsystem. </td></tr>
+    <tr><td class="paramname">nqn</td><td>The NVMe qualified name of this subsystem. </td></tr>
+    <tr><td class="paramname">type</td><td>Whether this subsystem is an I/O subsystem or a Discovery subsystem. </td></tr>
+    <tr><td class="paramname">opts</td><td>Subsystem options.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a pointer to a NVMe-oF subsystem on success, or NULL on failure. </dd></dl>
+
+</div>
+</div>
 <a id="a3fec6c155a532a9a6e4c786930f507a2" name="a3fec6c155a532a9a6e4c786930f507a2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3fec6c155a532a9a6e4c786930f507a2">&#9670;&#160;</a></span>spdk_nvmf_subsystem_destroy()</h2>
 
@@ -2654,6 +2712,32 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_referral_add
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>namespace matching nsid, or NULL if nsid was not found. </dd></dl>
+
+</div>
+</div>
+<a id="a901526fe28710bcc2b5af94e1bc5f874" name="a901526fe28710bcc2b5af94e1bc5f874"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a901526fe28710bcc2b5af94e1bc5f874">&#9670;&#160;</a></span>spdk_nvmf_subsystem_get_opts()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const struct <a class="el" href="structspdk__nvmf__subsystem__opts.html">spdk_nvmf_subsystem_opts</a> * spdk_nvmf_subsystem_get_opts </td>
+          <td>(</td>
+          <td class="paramtype">const struct spdk_nvmf_subsystem *</td>          <td class="paramname"><span class="paramname"><em>subsystem</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the options specified for a NVMe-oF subsystem. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">subsystem</td><td>NVMe-oF subsystem from which to retrieve options.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the NVMe-oF subsystem options. </dd></dl>
 
 </div>
 </div>

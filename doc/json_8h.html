@@ -284,6 +284,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_json_write_end</b
 <tr class="memitem:a87825bb7a2d52a6881e03a3ca7ccf353" id="r_a87825bb7a2d52a6881e03a3ca7ccf353"><td class="memItemLeft" align="right" valign="top"><a id="a87825bb7a2d52a6881e03a3ca7ccf353" name="a87825bb7a2d52a6881e03a3ca7ccf353"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_json_write_reset</b> (struct spdk_json_write_ctx *w)</td></tr>
 <tr class="separator:a87825bb7a2d52a6881e03a3ca7ccf353"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99b9b836bb35a015981a68dc6dbc2c3b" id="r_a99b9b836bb35a015981a68dc6dbc2c3b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a99b9b836bb35a015981a68dc6dbc2c3b">spdk_json_write_add_flags</a> (struct spdk_json_write_ctx *w, uint32_t flags)</td></tr>
+<tr class="memdesc:a99b9b836bb35a015981a68dc6dbc2c3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set additional flags on a JSON write context.  <br /></td></tr>
+<tr class="separator:a99b9b836bb35a015981a68dc6dbc2c3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afb39ef20750d537d2ceb7deb88a2d860" id="r_afb39ef20750d537d2ceb7deb88a2d860"><td class="memItemLeft" align="right" valign="top"><a id="afb39ef20750d537d2ceb7deb88a2d860" name="afb39ef20750d537d2ceb7deb88a2d860"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_json_write_null</b> (struct spdk_json_write_ctx *w)</td></tr>
 <tr class="separator:afb39ef20750d537d2ceb7deb88a2d860"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -819,6 +822,37 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_json_write_named_
 <p>This can be used to skip over a value while interpreting parse results.</p>
 <p>For SPDK_JSON_VAL_ARRAY_BEGIN and SPDK_JSON_VAL_OBJECT_BEGIN, this returns the number of values contained within this value, plus the _BEGIN and _END values.</p>
 <p>For all other values, this returns 1. </p>
+
+</div>
+</div>
+<a id="a99b9b836bb35a015981a68dc6dbc2c3b" name="a99b9b836bb35a015981a68dc6dbc2c3b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a99b9b836bb35a015981a68dc6dbc2c3b">&#9670;&#160;</a></span>spdk_json_write_add_flags()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_json_write_add_flags </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_json_write_ctx *</td>          <td class="paramname"><span class="paramname"><em>w</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>flags</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set additional flags on a JSON write context. </p>
+<p>The provided flags are OR'd into the existing flags.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">w</td><td>JSON write context. </td></tr>
+    <tr><td class="paramname">flags</td><td>Flags to add </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

@@ -393,6 +393,7 @@ var annotated_dup =
     [ "spdk_nvmf_reservation_info", "structspdk__nvmf__reservation__info.html", null ],
     [ "spdk_nvmf_stripped_data", "structspdk__nvmf__stripped__data.html", null ],
     [ "spdk_nvmf_subsystem_key_opts", "structspdk__nvmf__subsystem__key__opts.html", "structspdk__nvmf__subsystem__key__opts" ],
+    [ "spdk_nvmf_subsystem_opts", "structspdk__nvmf__subsystem__opts.html", "structspdk__nvmf__subsystem__opts" ],
     [ "spdk_nvmf_target_opts", "structspdk__nvmf__target__opts.html", null ],
     [ "spdk_nvmf_transport", "structspdk__nvmf__transport.html", null ],
     [ "spdk_nvmf_transport_ops", "structspdk__nvmf__transport__ops.html", "structspdk__nvmf__transport__ops" ],

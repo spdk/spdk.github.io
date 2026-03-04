@@ -145,6 +145,9 @@ $(function(){initNavTree('deprecation.html',''); initResizable(); });
 <p>Deprecated the SPDK partition type GUID <code>7c5222bd-8f5d-4087-9c00-bf9843c7b58c</code>. Partitions of this type have bdevs created that are one block less than the actual size of the partition. Existing partitions using the deprecated GUID can continue to use that GUID; support for the deprecated GUID will remain in SPDK indefinitely, and will continue to exhibit the off-by-one bug so that on-disk metadata layouts based on the incorrect size are not affected.</p>
 <p>See GitHub issue <a href="https://github.com/spdk/spdk/issues/2801">2801</a> for additional details on the bug.</p>
 <p>New SPDK partition types should use GUID <code>6527994e-2c5a-4eec-9613-8f5944074e8b</code> which will create a bdev of the correct size.</p>
+<h2>nvmf</h2>
+<p><code>spdk_nvmf_subsystem_create</code>, <code>spdk_nvmf_subsystem_set_sn</code>, <code>spdk_nvmf_subsystem_set_mn</code>, <code>spdk_nvmf_subsystem_set_ana_reporting</code> are deprecated and will be removed in v26.09. Use <code>spdk_nvmf_subsystem_create_ext</code> with subsystem options instead.</p>
+<p><code>spdk_nvmf_subsystem_get_sn</code>, <code>spdk_nvmf_subsystem_get_mn</code>, <code>spdk_nvmf_subsystem_get_max_nsid</code>, <code>spdk_nvmf_subsystem_get_max_namespaces</code>, <code>spdk_nvmf_subsystem_get_ana_reporting</code>, <code>spdk_nvmf_subsystem_get_type</code> are deprecated and will be removed in v26.09. Use <code>spdk_nvmf_subsystem_get_opts</code> instead.</p>
 <h2>app/spdk_nvme_perf</h2>
 <h3>perf_g_option</h3>
 <p>The <code>-G</code> command line option is deprecated and will be removed in the v26.05 release. Use <code>--log-level debug -T nvme</code> instead. </p>

@@ -17,6 +17,7 @@ var json_8h =
     [ "spdk_json_strdup", "json_8h.html#a7fdc86d6037df00a5a48271a77afb4ec", null ],
     [ "spdk_json_strequal", "json_8h.html#a1eef0cdf2426dc5fc8f860b94e26453f", null ],
     [ "spdk_json_val_len", "json_8h.html#a4d5aa0b66aa2cb7af428a03249b55c20", null ],
+    [ "spdk_json_write_add_flags", "json_8h.html#a99b9b836bb35a015981a68dc6dbc2c3b", null ],
     [ "spdk_json_write_batch_begin", "json_8h.html#a17bfb9a5ec2326dcf3abc1674ed918b8", null ],
     [ "spdk_json_write_batch_end", "json_8h.html#a4cd64d0716106f2e76b50efe5ffad126", null ],
     [ "spdk_json_write_string_utf16le", "json_8h.html#a6f0f7b255a750c26d300957894c0a093", null ],
