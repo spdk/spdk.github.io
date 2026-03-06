@@ -1,5 +1,7 @@
 var NAVTREEINDEX16 =
 {
+"structspdk__nvmf__transport__ops.html#af0c5a0e08b9fad80e893300411062d61":[14,0,396,19],
+"structspdk__nvmf__transport__ops.html#afa8e71018c357d6f6ea2293e178fe295":[14,0,396,10],
 "structspdk__nvmf__transport__opts.html":[14,0,397],
 "structspdk__nvmf__transport__opts.html#ac720992d2cf8950149ab6db89257c98e":[14,0,397,0],
 "structspdk__nvmf__transport__poll__group.html":[14,0,398],
@@ -247,7 +249,5 @@ var NAVTREEINDEX16 =
 "thread_8h.html#a2c37e9172bb09d20cfa353dbd92b0a95":[15,0,0,0,60,57],
 "thread_8h.html#a2dd91f3094f8b4cf60f460e3f88bbf0c":[15,0,0,0,60,12],
 "thread_8h.html#a35c421accdc2a0a61bb7be916106293b":[15,0,0,0,60,19],
-"thread_8h.html#a3a69dd994350e50395605e9b394b02fe":[15,0,0,0,60,49],
-"thread_8h.html#a3df8ceaf923f5d96c5f1b26a53717785":[15,0,0,0,60,82],
-"thread_8h.html#a44c27f304a333a80bbdb48f1df12721f":[15,0,0,0,60,106]
+"thread_8h.html#a3a69dd994350e50395605e9b394b02fe":[15,0,0,0,60,49]
 };

@@ -753,7 +753,7 @@ framework_get_config</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">SPDK subsystem name    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">batch_mode   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">If true, include batch arrays in output. If false (default), flatten batch arrays into individual entries.   </td></tr>
+<td class="markdownTableBodyNone">with_batches   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">If true, include batch arrays in output. If false (default), flatten batch arrays into individual entries.   </td></tr>
 </table>
 <h3>Response</h3>
 <p>The response is current configuration of the specified SPDK subsystem. Null is returned if it is not retrievable by the framework_get_config method and empty array is returned if it is empty.</p>

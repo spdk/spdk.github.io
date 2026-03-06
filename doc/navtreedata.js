@@ -78,17 +78,17 @@ var NAVTREEINDEX =
 "jsonrpc.html#rpc_bdev_malloc_create",
 "jsonrpc_8h.html#ab3bbeff8c3dd1d8f4e48aa33036eb215",
 "nvme_8h.html#a6647280570446fbde28b92332be1108d",
-"nvme__spec_8h.html#a2b71fb615deb505826eaeddd093e06bc",
-"nvme__spec_8h.html#acb8784fad6a53be95d4c718ad3cf852ea949102c08b8136559a787d523051e038",
-"nvmf_8h.html#abc793839e2268a097f97962e79e4a1ef",
-"sock_8h.html#a685b050c844ea093a6b3a17ac8992b55",
-"structspdk__bdev__ext__io__opts.html#aad5963baa34634a0bc69775ba98c3986",
-"structspdk__governor.html#a68f4d3cf970e99e055f042e5e65745bc",
-"structspdk__nvme__ctrlr__opts.html#a39d3f0640a4c302aa3ff11544aa6a428",
-"structspdk__nvme__registers.html#ab01bce392f6c28420923d563a8af8280",
-"structspdk__nvmf__transport__opts.html",
-"thread_8h.html#a45e87333be98b696d587641356155a42",
-"unionspdk__nvme__feat__host__mem__buffer.html#a68c28c2479533b01ab8edd60cdfed6a0"
+"nvme__spec_8h.html#a24df614b7b914804dfa719dc03dfbc4fa90039361172e89a8bf5ddc59061eded3",
+"nvme__spec_8h.html#acb8784fad6a53be95d4c718ad3cf852ea922011123d3f2aa2adf3ef4c02eaaba5",
+"nvmf_8h.html#aba3584185c147f5b10cf8c2e2b3fa181",
+"sock_8h.html#a60886d0bbf4dc4e6722e6300e7b3e10f",
+"structspdk__bdev__ext__io__opts.html#aa4271dfcb5fb8f49bbfeada4218dc406",
+"structspdk__governor.html#a27e640ebd964988d4384080f250b8de4",
+"structspdk__nvme__ctrlr__opts.html#a27a08a6255c8bd76a4476e08e1ed1816",
+"structspdk__nvme__registers.html#a92e20b1c798c1873b4e3e27f72e4bf07",
+"structspdk__nvmf__transport__ops.html#af0c5a0e08b9fad80e893300411062d61",
+"thread_8h.html#a3df8ceaf923f5d96c5f1b26a53717785",
+"unionspdk__nvme__feat__host__identifier.html#abe582ebd57c5130773da6ec66e49007c"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
