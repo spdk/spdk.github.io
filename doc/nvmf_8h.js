@@ -111,6 +111,7 @@ var nvmf_8h =
     [ "spdk_nvmf_subsystem_set_sn", "nvmf_8h.html#abb053c9573460d29898b184957ce05fd", null ],
     [ "spdk_nvmf_subsystem_start", "nvmf_8h.html#a0584bea11782561b13355b89de25b6c0", null ],
     [ "spdk_nvmf_subsystem_stop", "nvmf_8h.html#af438291b914963a6c582aad500ded6ef", null ],
+    [ "spdk_nvmf_subsystem_stop_for_destroy", "nvmf_8h.html#ace4bc9339933d35afc15e10954efe81f", null ],
     [ "spdk_nvmf_tgt_add_referral", "nvmf_8h.html#aa9a1143157acef6330d8c8c71362793c", null ],
     [ "spdk_nvmf_tgt_add_transport", "nvmf_8h.html#aac996bda413ddfc830c6f46aab4fd181", null ],
     [ "spdk_nvmf_tgt_create", "nvmf_8h.html#a0c5d2cb5cc403b1451279e8438340115", null ],

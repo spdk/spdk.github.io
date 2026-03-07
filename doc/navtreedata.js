@@ -36,7 +36,6 @@ var NAVTREE =
     [ "Tools", "tools.html", "tools" ],
     [ "CI Tools", "ci_tools.html", "ci_tools" ],
     [ "Performance Reports", "performance_reports.html", null ],
-    [ "NVMe-oF Multipath HOWTO", "nvmf_multipath_howto.html", null ],
     [ "Tracing Framework", "tracepoints.html", [
       [ "Introduction", "tracepoints.html#tracepoints_intro", null ],
       [ "Enabling Tracepoints", "tracepoints.html#enable_tracepoints", null ],
@@ -81,14 +80,14 @@ var NAVTREEINDEX =
 "nvme__spec_8h.html#a24df614b7b914804dfa719dc03dfbc4fa90039361172e89a8bf5ddc59061eded3",
 "nvme__spec_8h.html#acb8784fad6a53be95d4c718ad3cf852ea922011123d3f2aa2adf3ef4c02eaaba5",
 "nvmf_8h.html#aba3584185c147f5b10cf8c2e2b3fa181",
-"sock_8h.html#a60886d0bbf4dc4e6722e6300e7b3e10f",
-"structspdk__bdev__ext__io__opts.html#aa4271dfcb5fb8f49bbfeada4218dc406",
-"structspdk__governor.html#a27e640ebd964988d4384080f250b8de4",
-"structspdk__nvme__ctrlr__opts.html#a27a08a6255c8bd76a4476e08e1ed1816",
-"structspdk__nvme__registers.html#a92e20b1c798c1873b4e3e27f72e4bf07",
-"structspdk__nvmf__transport__ops.html#af0c5a0e08b9fad80e893300411062d61",
-"thread_8h.html#a3df8ceaf923f5d96c5f1b26a53717785",
-"unionspdk__nvme__feat__host__identifier.html#abe582ebd57c5130773da6ec66e49007c"
+"sock_8h.html#a5fb0eb39a4bc28e8ceed5f86abe7c549",
+"structspdk__bdev__ext__io__opts.html#a9a385317432b5165f6727d500ca99767",
+"structspdk__governor.html#a1f1bff4ef2b9c70552d90b42fa14d2fe",
+"structspdk__nvme__ctrlr__opts.html#a2650095ea8d90e28b98900846a45efa2",
+"structspdk__nvme__registers.html#a8ebdc43df8106c398be6746904bbed9f",
+"structspdk__nvmf__transport__ops.html#ae291f6b1041d0b4a65d3f82fc2184f81",
+"thread_8h.html#a3a69dd994350e50395605e9b394b02fe",
+"unionspdk__nvme__feat__host__identifier.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

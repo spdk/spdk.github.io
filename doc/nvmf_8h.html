@@ -361,6 +361,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_referral_add
 <tr class="memitem:af438291b914963a6c582aad500ded6ef" id="r_af438291b914963a6c582aad500ded6ef"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af438291b914963a6c582aad500ded6ef">spdk_nvmf_subsystem_stop</a> (struct spdk_nvmf_subsystem *subsystem, <a class="el" href="#aec7dc3c1e2f740c1cbffa028ad5c5bff">spdk_nvmf_subsystem_state_change_done</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:af438291b914963a6c582aad500ded6ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transition an NVMe-oF subsystem from Active to Inactive state.  <br /></td></tr>
 <tr class="separator:af438291b914963a6c582aad500ded6ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace4bc9339933d35afc15e10954efe81f" id="r_ace4bc9339933d35afc15e10954efe81f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ace4bc9339933d35afc15e10954efe81f">spdk_nvmf_subsystem_stop_for_destroy</a> (struct spdk_nvmf_subsystem *subsystem, <a class="el" href="#aec7dc3c1e2f740c1cbffa028ad5c5bff">spdk_nvmf_subsystem_state_change_done</a> cb_fn, void *cb_arg)</td></tr>
+<tr class="memdesc:ace4bc9339933d35afc15e10954efe81f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transition an NVMe-oF subsystem from Active to Inactive state, preparing for destruction.  <br /></td></tr>
+<tr class="separator:ace4bc9339933d35afc15e10954efe81f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7be3b7421b631e48f9a0178ed8db8842" id="r_a7be3b7421b631e48f9a0178ed8db8842"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7be3b7421b631e48f9a0178ed8db8842">spdk_nvmf_subsystem_pause</a> (struct spdk_nvmf_subsystem *subsystem, uint32_t nsid, <a class="el" href="#aec7dc3c1e2f740c1cbffa028ad5c5bff">spdk_nvmf_subsystem_state_change_done</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:a7be3b7421b631e48f9a0178ed8db8842"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transition an NVMe-oF subsystem from Active to Paused state.  <br /></td></tr>
 <tr class="separator:a7be3b7421b631e48f9a0178ed8db8842"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -3472,6 +3475,44 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_referral_add
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 on success, or negated errno on failure. The callback provided will only be called on success. </dd></dl>
+
+</div>
+</div>
+<a id="ace4bc9339933d35afc15e10954efe81f" name="ace4bc9339933d35afc15e10954efe81f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace4bc9339933d35afc15e10954efe81f">&#9670;&#160;</a></span>spdk_nvmf_subsystem_stop_for_destroy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_nvmf_subsystem_stop_for_destroy </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_nvmf_subsystem *</td>          <td class="paramname"><span class="paramname"><em>subsystem</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="#aec7dc3c1e2f740c1cbffa028ad5c5bff">spdk_nvmf_subsystem_state_change_done</a></td>          <td class="paramname"><span class="paramname"><em>cb_fn</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *</td>          <td class="paramname"><span class="paramname"><em>cb_arg</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Transition an NVMe-oF subsystem from Active to Inactive state, preparing for destruction. </p>
+<p>This prevents any further state changes on the subsystem.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">subsystem</td><td>The NVMe-oF subsystem. </td></tr>
+    <tr><td class="paramname">cb_fn</td><td>A function that will be called once the subsystem has changed state. </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>Argument passed to cb_fn.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, -ENODEV if already being destroyed, or negated errno on failure. </dd></dl>
 
 </div>
 </div>

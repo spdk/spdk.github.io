@@ -95,7 +95,7 @@ var searchData=
   ['multi_20process_20mode_92',['Multi process mode',['../app_overview.html#cmd_arg_multi_process',1,'']]],
   ['multi_20queue_20block_20layer_20blk_20mq_93',['Multi-Queue Block Layer (blk-mq)',['../vhost.html#vhost_multiqueue',1,'']]],
   ['multipath_94',['NVMe Multipath',['../nvme_multipath.html',1,'user_guides']]],
-  ['multipath_20howto_95',['NVMe-oF Multipath HOWTO',['../nvmf_multipath_howto.html',1,'']]],
+  ['multipath_20howto_95',['NVMe-oF Multipath HOWTO',['../nvmf_multipath_howto.html',1,'user_guides']]],
   ['mw_5fcunits_96',['mw_cunits',['../structspdk__ocssd__geometry__data.html#af02812ac810e3da324a4ff8029f6d045',1,'spdk_ocssd_geometry_data']]],
   ['mxtmt_97',['mxtmt',['../structspdk__nvme__ctrlr__data.html#a25cabf290433b1b9b13a1a604ca12f58',1,'spdk_nvme_ctrlr_data']]]
 ];

@@ -8,5 +8,5 @@ var searchData=
   ['module_5',['Writing a Custom Block Device Module',['../bdev_module.html',1,'prog_guides']]],
   ['modules_6',['Driver Modules',['../driver_modules.html',1,'']]],
   ['multipath_7',['NVMe Multipath',['../nvme_multipath.html',1,'user_guides']]],
-  ['multipath_20howto_8',['NVMe-oF Multipath HOWTO',['../nvmf_multipath_howto.html',1,'']]]
+  ['multipath_20howto_8',['NVMe-oF Multipath HOWTO',['../nvmf_multipath_howto.html',1,'user_guides']]]
 ];

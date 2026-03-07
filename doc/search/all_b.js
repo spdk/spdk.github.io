@@ -39,7 +39,7 @@ var searchData=
   ['hotplug_20and_20multi_20process_36',['v16.12: NVMe over Fabrics host, hotplug, and multi-process',['../changelog.html#changelog-v16-12',1,'']]],
   ['how_20to_20backport_20to_20other_20spdk_20maintained_20branches_37',['How to backport to other SPDK maintained branches',['../backporting.html#backporting_other_branches',1,'']]],
   ['how_20to_20use_20kernel_20idxd_20driver_38',['How to use kernel idxd driver',['../accel_fw.html#accel_idxd_kernel',1,'']]],
-  ['howto_39',['NVMe-oF Multipath HOWTO',['../nvmf_multipath_howto.html',1,'']]],
+  ['howto_39',['NVMe-oF Multipath HOWTO',['../nvmf_multipath_howto.html',1,'user_guides']]],
   ['hpda_40',['hpda',['../structspdk__nvme__tcp__ic__req.html#aea8720aea84fe5966c45b4479b57b086',1,'spdk_nvme_tcp_ic_req']]],
   ['hpw_41',['hpw',['../unionspdk__nvme__feat__arbitration.html#a1c72624e805ff324a05c6e9e592cd11a',1,'spdk_nvme_feat_arbitration']]],
   ['hsts_42',['hsts',['../unionspdk__nvme__pmrsts__register.html#a2ac9243fdbda9750578b4dcd8fa32225',1,'spdk_nvme_pmrsts_register']]],

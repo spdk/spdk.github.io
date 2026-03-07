@@ -110,7 +110,7 @@ var searchData=
   ['nvme_20multi_20process_107',['NVMe Multi Process',['../nvme.html#nvme_multi_process',1,'']]],
   ['nvme_20multipath_108',['NVMe Multipath',['../nvme_multipath.html',1,'user_guides']]],
   ['nvme_20of_20fc_20transport_20vmd_20nvme_20of_20persistent_20reservations_20bdev_20i_20o_20with_20separate_20metadata_109',['v19.07: NVMe-oF FC Transport, VMD, NVMe-oF Persistent reservations, Bdev I/O with separate metadata',['../changelog.html#changelog-v19-07',1,'']]],
-  ['nvme_20of_20multipath_20howto_110',['NVMe-oF Multipath HOWTO',['../nvmf_multipath_howto.html',1,'']]],
+  ['nvme_20of_20multipath_20howto_110',['NVMe-oF Multipath HOWTO',['../nvmf_multipath_howto.html',1,'user_guides']]],
   ['nvme_20of_20support_111',['v18.10: Dynamic memory allocation, Crypto Virtual Bdev, jsonrpc-client, SPDKCLI iSCSI and NVMe-oF support',['../changelog.html#changelog-v18-10',1,'']]],
   ['nvme_20of_20target_112',['NVMe-oF Target',['../jsonrpc.html#jsonrpc_components_nvmf_tgt',1,'']]],
   ['nvme_20of_20target_20getting_20started_20guide_113',['NVMe-oF Target Getting Started Guide',['../nvmf.html#nvmf_getting_started',1,'']]],

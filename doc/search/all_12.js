@@ -23,7 +23,7 @@ var searchData=
   ['of_20events_20',['Capturing a snapshot of events',['../tracepoints.html#capture_tracepoints',1,'']]],
   ['of_20fc_20transport_20vmd_20nvme_20of_20persistent_20reservations_20bdev_20i_20o_20with_20separate_20metadata_21',['v19.07: NVMe-oF FC Transport, VMD, NVMe-oF Persistent reservations, Bdev I/O with separate metadata',['../changelog.html#changelog-v19-07',1,'']]],
   ['of_20life_22',['Until End of Life',['../releases.html#EOL',1,'']]],
-  ['of_20multipath_20howto_23',['NVMe-oF Multipath HOWTO',['../nvmf_multipath_howto.html',1,'']]],
+  ['of_20multipath_20howto_23',['NVMe-oF Multipath HOWTO',['../nvmf_multipath_howto.html',1,'user_guides']]],
   ['of_20operation_24',['Theory of Operation',['../blob.html#blob_pg_theory',1,'']]],
   ['of_20spdk_20applications_25',['An Overview of SPDK Applications',['../app_overview.html',1,'user_guides']]],
   ['of_20support_26',['v18.10: Dynamic memory allocation, Crypto Virtual Bdev, jsonrpc-client, SPDKCLI iSCSI and NVMe-oF support',['../changelog.html#changelog-v18-10',1,'']]],
