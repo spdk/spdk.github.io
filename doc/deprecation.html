@@ -148,6 +148,10 @@ $(function(){initNavTree('deprecation.html',''); initResizable(); });
 <h2>nvmf</h2>
 <p><code>spdk_nvmf_subsystem_create</code>, <code>spdk_nvmf_subsystem_set_sn</code>, <code>spdk_nvmf_subsystem_set_mn</code>, <code>spdk_nvmf_subsystem_set_ana_reporting</code> are deprecated and will be removed in v26.09. Use <code>spdk_nvmf_subsystem_create_ext</code> with subsystem options instead.</p>
 <p><code>spdk_nvmf_subsystem_get_sn</code>, <code>spdk_nvmf_subsystem_get_mn</code>, <code>spdk_nvmf_subsystem_get_max_nsid</code>, <code>spdk_nvmf_subsystem_get_max_namespaces</code>, <code>spdk_nvmf_subsystem_get_ana_reporting</code>, <code>spdk_nvmf_subsystem_get_type</code> are deprecated and will be removed in v26.09. Use <code>spdk_nvmf_subsystem_get_opts</code> instead.</p>
+<h3><code>nvmf_create_subsystem_max_discard_size_kib</code></h3>
+<p>The <code>max_discard_size_kib</code> parameter of <code>nvmf_create_subsystem</code> RPC is deprecated and will be removed in v26.09. Use <code>dmrsl</code> instead.</p>
+<h3><code>nvmf_create_subsystem_max_write_zeroes_size_kib</code></h3>
+<p>The <code>max_write_zeroes_size_kib</code> parameter of <code>nvmf_create_subsystem</code> RPC is deprecated and will be removed in v26.09. Use <code>wzsl</code> instead.</p>
 <h2>app/spdk_nvme_perf</h2>
 <h3>perf_g_option</h3>
 <p>The <code>-G</code> command line option is deprecated and will be removed in the v26.05 release. Use <code>--log-level debug -T nvme</code> instead. </p>

@@ -7028,6 +7028,10 @@ nvmf_create_subsystem</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">max_write_zeroes_size_kib   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint64   </td><td class="markdownTableBodyNone">Maximum write_zeroes size (Kib). Default: 0    </td></tr>
 <tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">dmrsl   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">Dataset Management Range Size Limit in logical block units. Default: 2097152 (1 GiB). Mutually exclusive with max_discard_size_kib.    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">wzsl   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint8   </td><td class="markdownTableBodyNone">Write Zeroes Size Limit as a power of two (2^wzsl) in units of minimum memory page size. Default: 12 (16 MiB). Mutually exclusive with max_write_zeroes_size_kib.    </td></tr>
+<tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">passthrough   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Use NVMe passthrough for I/O commands and namespace-directed admin commands. Default: <code>false</code>    </td></tr>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">enable_nssr   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Enable NSSR (NVMe subsystem reset). Default: <code>false</code>   </td></tr>
