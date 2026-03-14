@@ -144,6 +144,8 @@ $(function(){initNavTree('histogram__data_8h.html',''); initResizable(); });
 Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__histogram__data.html">spdk_histogram_data</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__histogram__borders.html">spdk_histogram_borders</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
@@ -218,6 +220,18 @@ static struct <a class="el" href="structspdk__histogram__data.html">spdk_histogr
 <tr class="memitem:a7c5c54cda6180b629e3fd58338a4cc05" id="r_a7c5c54cda6180b629e3fd58338a4cc05"><td class="memItemLeft" align="right" valign="top"><a id="a7c5c54cda6180b629e3fd58338a4cc05" name="a7c5c54cda6180b629e3fd58338a4cc05"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_histogram_data_free</b> (struct <a class="el" href="structspdk__histogram__data.html">spdk_histogram_data</a> *h)</td></tr>
 <tr class="separator:a7c5c54cda6180b629e3fd58338a4cc05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e1ca878d7cb9bc00bcc9099effb8442" id="r_a2e1ca878d7cb9bc00bcc9099effb8442"><td class="memItemLeft" align="right" valign="top"><a id="a2e1ca878d7cb9bc00bcc9099effb8442" name="a2e1ca878d7cb9bc00bcc9099effb8442"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>__spdk_histogram_get_borders_count_cb</b> (void *_ctx, uint64_t start, uint64_t end, uint64_t count, uint64_t total, uint64_t so_far)</td></tr>
+<tr class="separator:a2e1ca878d7cb9bc00bcc9099effb8442"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f5a81699eca47e746760a6f41bb25be" id="r_a8f5a81699eca47e746760a6f41bb25be"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8f5a81699eca47e746760a6f41bb25be">spdk_histogram_get_borders_count</a> (struct <a class="el" href="structspdk__histogram__data.html">spdk_histogram_data</a> *h, struct <a class="el" href="structspdk__histogram__borders.html">spdk_histogram_borders</a> *ctx)</td></tr>
+<tr class="memdesc:a8f5a81699eca47e746760a6f41bb25be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dump histogram buckets for specified borders.  <br /></td></tr>
+<tr class="separator:a8f5a81699eca47e746760a6f41bb25be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82fcb8c61c8bf14140b56f3702ae4b9c" id="r_a82fcb8c61c8bf14140b56f3702ae4b9c"><td class="memItemLeft" align="right" valign="top">static struct <a class="el" href="structspdk__histogram__borders.html">spdk_histogram_borders</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a82fcb8c61c8bf14140b56f3702ae4b9c">spdk_histogram_get_borders_count_alloc_ctx</a> (uint64_t *borders, size_t num_borders)</td></tr>
+<tr class="memdesc:a82fcb8c61c8bf14140b56f3702ae4b9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate a context to dump histogram buckets for specified borders.  <br /></td></tr>
+<tr class="separator:a82fcb8c61c8bf14140b56f3702ae4b9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0720fd470e800f87703891e42eec6db0" id="r_a0720fd470e800f87703891e42eec6db0"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0720fd470e800f87703891e42eec6db0">spdk_histogram_get_borders_count_free_ctx</a> (struct <a class="el" href="structspdk__histogram__borders.html">spdk_histogram_borders</a> *ctx)</td></tr>
+<tr class="memdesc:a0720fd470e800f87703891e42eec6db0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free the context allocated by <a class="el" href="#a82fcb8c61c8bf14140b56f3702ae4b9c" title="Allocate a context to dump histogram buckets for specified borders.">spdk_histogram_get_borders_count_alloc_ctx()</a>.  <br /></td></tr>
+<tr class="separator:a0720fd470e800f87703891e42eec6db0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Generic histogram library. </p>
@@ -285,6 +299,118 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_histogram
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A histogram data structure. </dd></dl>
+
+</div>
+</div>
+<a id="a8f5a81699eca47e746760a6f41bb25be" name="a8f5a81699eca47e746760a6f41bb25be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f5a81699eca47e746760a6f41bb25be">&#9670;&#160;</a></span>spdk_histogram_get_borders_count()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void spdk_histogram_get_borders_count </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structspdk__histogram__data.html">spdk_histogram_data</a> *</td>          <td class="paramname"><span class="paramname"><em>h</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structspdk__histogram__borders.html">spdk_histogram_borders</a> *</td>          <td class="paramname"><span class="paramname"><em>ctx</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Dump histogram buckets for specified borders. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">h</td><td>The histogram data to dump. </td></tr>
+    <tr><td class="paramname">ctx</td><td>The context to dump histogram buckets for specified borders, allocated by <a class="el" href="#a82fcb8c61c8bf14140b56f3702ae4b9c" title="Allocate a context to dump histogram buckets for specified borders.">spdk_histogram_get_borders_count_alloc_ctx()</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a82fcb8c61c8bf14140b56f3702ae4b9c" name="a82fcb8c61c8bf14140b56f3702ae4b9c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82fcb8c61c8bf14140b56f3702ae4b9c">&#9670;&#160;</a></span>spdk_histogram_get_borders_count_alloc_ctx()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static struct <a class="el" href="structspdk__histogram__borders.html">spdk_histogram_borders</a> * spdk_histogram_get_borders_count_alloc_ctx </td>
+          <td>(</td>
+          <td class="paramtype">uint64_t *</td>          <td class="paramname"><span class="paramname"><em>borders</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>num_borders</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Allocate a context to dump histogram buckets for specified borders. </p>
+<p>The borders array must be sorted in ascending order, each border represents a value which is an upper bound of a bucket. border_count will contain the count of all values that are less or equal to its border value. Reported border_count will contain one more element than the borders array, the last element will represent total count of all elements in the histogram.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">borders</td><td>An array of border values, must be sorted in ascending order. </td></tr>
+    <tr><td class="paramname">num_borders</td><td>The number of borders in the borders array.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A context to dump histogram buckets for specified borders. </dd></dl>
+<p>+1 for bucket containing values from last border to +Inf</p>
+
+</div>
+</div>
+<a id="a0720fd470e800f87703891e42eec6db0" name="a0720fd470e800f87703891e42eec6db0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0720fd470e800f87703891e42eec6db0">&#9670;&#160;</a></span>spdk_histogram_get_borders_count_free_ctx()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void spdk_histogram_get_borders_count_free_ctx </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structspdk__histogram__borders.html">spdk_histogram_borders</a> *</td>          <td class="paramname"><span class="paramname"><em>ctx</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Free the context allocated by <a class="el" href="#a82fcb8c61c8bf14140b56f3702ae4b9c" title="Allocate a context to dump histogram buckets for specified borders.">spdk_histogram_get_borders_count_alloc_ctx()</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ctx</td><td>The context to free. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

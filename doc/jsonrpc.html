@@ -415,6 +415,7 @@ rpc_get_methods</h2>
 <div class="line">    &quot;bdev_ftl_unmap&quot;,</div>
 <div class="line">    &quot;bdev_get_bdevs&quot;,</div>
 <div class="line">    &quot;bdev_get_histogram&quot;,</div>
+<div class="line">    &quot;bdev_get_histogram_borders&quot;,</div>
 <div class="line">    &quot;bdev_get_iostat&quot;,</div>
 <div class="line">    &quot;bdev_iscsi_create&quot;,</div>
 <div class="line">    &quot;bdev_iscsi_delete&quot;,</div>
@@ -2529,6 +2530,58 @@ bdev_get_histogram</h2>
 <div class="line">    &quot;min_range&quot;: 5,</div>
 <div class="line">    &quot;max_range&quot;: 25,</div>
 <div class="line">    &quot;tsc_rate&quot;: 2300000000</div>
+<div class="line">  }</div>
+<div class="line">}</div>
+</div><!-- fragment --><h2><a class="anchor" id="rpc_bdev_get_histogram_borders"></a>
+bdev_get_histogram_borders</h2>
+<p>Dump latency histogram for specified bdev into user-provided borders.</p>
+<h3>Parameters</h3>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Block device name    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">borders   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">array   </td><td class="markdownTableBodyNone">Array of buckets in microseconds to dump histogram into   </td></tr>
+</table>
+<h3>Response</h3>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">borders_count   </td><td class="markdownTableBodyNone">array   </td><td class="markdownTableBodyNone">Number of requests whose latency was less than given border   </td></tr>
+</table>
+<h3>Example</h3>
+<p>Note that last value represents total number of elements in histogram (i.e. +Inf border).</p>
+<p>Example request:</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;method&quot;: &quot;bdev_get_histogram_borders&quot;,</div>
+<div class="line">  &quot;params&quot;: {</div>
+<div class="line">    &quot;name&quot;: &quot;Nvme0n1&quot;,</div>
+<div class="line">    &quot;borders&quot;: [</div>
+<div class="line">      100,</div>
+<div class="line">      200,</div>
+<div class="line">      1000,</div>
+<div class="line">      5000,</div>
+<div class="line">      100000</div>
+<div class="line">    ]</div>
+<div class="line">  }</div>
+<div class="line">}</div>
+</div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;result&quot;: {</div>
+<div class="line">    &quot;borders_count&quot;: [</div>
+<div class="line">      42,</div>
+<div class="line">      42,</div>
+<div class="line">      133,</div>
+<div class="line">      1024,</div>
+<div class="line">      2002,</div>
+<div class="line">      2018</div>
+<div class="line">    ]</div>
 <div class="line">  }</div>
 <div class="line">}</div>
 </div><!-- fragment --><h2><a class="anchor" id="rpc_bdev_set_qos_limit"></a>

@@ -125,6 +125,7 @@ var annotated_dup =
     [ "spdk_gpt_guid", "structspdk__gpt__guid.html", null ],
     [ "spdk_gpt_header", "structspdk__gpt__header.html", null ],
     [ "spdk_gpt_partition_entry", "structspdk__gpt__partition__entry.html", null ],
+    [ "spdk_histogram_borders", "structspdk__histogram__borders.html", null ],
     [ "spdk_histogram_data", "structspdk__histogram__data.html", null ],
     [ "spdk_ioat_dma_hw_desc", "structspdk__ioat__dma__hw__desc.html", null ],
     [ "spdk_ioat_fill_hw_desc", "structspdk__ioat__fill__hw__desc.html", null ],

@@ -199,6 +199,7 @@ var user_guides =
         [ "bdev_reset_iostat", "jsonrpc.html#rpc_bdev_reset_iostat", null ],
         [ "bdev_enable_histogram", "jsonrpc.html#rpc_bdev_enable_histogram", null ],
         [ "bdev_get_histogram", "jsonrpc.html#rpc_bdev_get_histogram", null ],
+        [ "bdev_get_histogram_borders", "jsonrpc.html#rpc_bdev_get_histogram_borders", null ],
         [ "bdev_set_qos_limit", "jsonrpc.html#rpc_bdev_set_qos_limit", null ],
         [ "bdev_set_qd_sampling_period", "jsonrpc.html#rpc_bdev_set_qd_sampling_period", null ],
         [ "bdev_crypto_create", "jsonrpc.html#rpc_bdev_crypto_create", null ],
