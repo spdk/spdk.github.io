@@ -171,6 +171,10 @@ uint16_t&#160;</td><td class="memItemRight" valign="bottom"><b>owner_description
 <tr class="memitem:acc1ec05107d86a3fd6352993748b54e8" id="r_acc1ec05107d86a3fd6352993748b54e8"><td class="memItemLeft" align="right" valign="top"><a id="acc1ec05107d86a3fd6352993748b54e8" name="acc1ec05107d86a3fd6352993748b54e8"></a>
 uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>reserved</b> [4]</td></tr>
 <tr class="separator:acc1ec05107d86a3fd6352993748b54e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5f305265f920763055a9b607aa9c642" id="r_ab5f305265f920763055a9b607aa9c642"><td class="memItemLeft" align="right" valign="top"><a id="ab5f305265f920763055a9b607aa9c642" name="ab5f305265f920763055a9b607aa9c642"></a>
+uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>clear_tsc</b></td></tr>
+<tr class="memdesc:ab5f305265f920763055a9b607aa9c642"><td class="mdescLeft">&#160;</td><td class="mdescRight">TSC value set by <a class="el" href="trace_8h.html#af5e117307d87f31498302ac9b0df8265" title="Record the current TSC as a clear point.">spdk_trace_clear()</a>; the parser ignores entries older than this. <br /></td></tr>
+<tr class="separator:ab5f305265f920763055a9b607aa9c642"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af69b46e3c455ce411bdeb35f9aba08c3" id="r_af69b46e3c455ce411bdeb35f9aba08c3"><td class="memItemLeft" align="right" valign="top"><a id="af69b46e3c455ce411bdeb35f9aba08c3" name="af69b46e3c455ce411bdeb35f9aba08c3"></a>
 uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>lcore_history_offsets</b> [SPDK_TRACE_MAX_LCORE]</td></tr>
 <tr class="memdesc:af69b46e3c455ce411bdeb35f9aba08c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Offset of each trace_history from the beginning of this data structure. <br /></td></tr>

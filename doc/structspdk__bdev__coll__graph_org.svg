@@ -77,7 +77,7 @@
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="unionspdk__bdev__nvme__ctratt.html" target="_top" xlink:title="Union for controller attributes field, to list whether bdev supports fdp etc.">
+<g id="a_Node000003"><a xlink:href="unionspdk__bdev__nvme__ctratt.html" target="_top" xlink:title="Controller attributes indicating optional bdev capabilities (e.g.">
 <polygon fill="white" stroke="#666666" points="509.25,-149.75 376.25,-149.75 376.25,-129 509.25,-129 509.25,-149.75"/>
 <text text-anchor="middle" x="442.75" y="-136.25" font-family="Helvetica,sans-Serif" font-size="10.00">spdk_bdev_nvme_ctratt</text>
 </a>

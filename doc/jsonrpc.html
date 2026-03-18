@@ -638,6 +638,7 @@ rpc_get_methods</h2>
 <div class="line">    &quot;thread_get_pollers&quot;,</div>
 <div class="line">    &quot;thread_get_stats&quot;,</div>
 <div class="line">    &quot;thread_set_cpumask&quot;,</div>
+<div class="line">    &quot;trace_clear&quot;,</div>
 <div class="line">    &quot;trace_clear_tpoint_mask&quot;,</div>
 <div class="line">    &quot;trace_disable_tpoint_group&quot;,</div>
 <div class="line">    &quot;trace_enable_tpoint_group&quot;,</div>
@@ -1239,25 +1240,53 @@ trace_get_tpoint_group_mask</h2>
 <div class="line">    &quot;tpoint_group_mask&quot;: &quot;0x0&quot;,</div>
 <div class="line">    &quot;iscsi_conn&quot;: {</div>
 <div class="line">      &quot;enabled&quot;: false,</div>
-<div class="line">      &quot;mask&quot;: &quot;0x2&quot;</div>
+<div class="line">      &quot;mask&quot;: &quot;0x2&quot;,</div>
+<div class="line">      &quot;tpoint_mask&quot;: &quot;0x0&quot;,</div>
+<div class="line">      &quot;tpoints&quot;: []</div>
 <div class="line">    },</div>
 <div class="line">    &quot;scsi&quot;: {</div>
 <div class="line">      &quot;enabled&quot;: false,</div>
-<div class="line">      &quot;mask&quot;: &quot;0x4&quot;</div>
+<div class="line">      &quot;mask&quot;: &quot;0x4&quot;,</div>
+<div class="line">      &quot;tpoint_mask&quot;: &quot;0x0&quot;,</div>
+<div class="line">      &quot;tpoints&quot;: []</div>
 <div class="line">    },</div>
 <div class="line">    &quot;bdev&quot;: {</div>
 <div class="line">      &quot;enabled&quot;: false,</div>
-<div class="line">      &quot;mask&quot;: &quot;0x8&quot;</div>
+<div class="line">      &quot;mask&quot;: &quot;0x8&quot;,</div>
+<div class="line">      &quot;tpoint_mask&quot;: &quot;0x0&quot;,</div>
+<div class="line">      &quot;tpoints&quot;: []</div>
 <div class="line">    },</div>
 <div class="line">    &quot;nvmf_tcp&quot;: {</div>
 <div class="line">      &quot;enabled&quot;: false,</div>
-<div class="line">      &quot;mask&quot;: &quot;0x20&quot;</div>
+<div class="line">      &quot;mask&quot;: &quot;0x20&quot;,</div>
+<div class="line">      &quot;tpoint_mask&quot;: &quot;0x0&quot;,</div>
+<div class="line">      &quot;tpoints&quot;: []</div>
 <div class="line">    },</div>
 <div class="line">    &quot;ftl&quot;: {</div>
 <div class="line">      &quot;enabled&quot;: false,</div>
-<div class="line">      &quot;mask&quot;: &quot;0x40&quot;</div>
+<div class="line">      &quot;mask&quot;: &quot;0x40&quot;,</div>
+<div class="line">      &quot;tpoint_mask&quot;: &quot;0x0&quot;,</div>
+<div class="line">      &quot;tpoints&quot;: []</div>
 <div class="line">    }</div>
 <div class="line">  }</div>
+<div class="line">}</div>
+</div><!-- fragment --><h2><a class="anchor" id="rpc_trace_clear"></a>
+trace_clear</h2>
+<p>Clear trace history. All entries recorded before this call will be hidden from subsequent reads by external trace tools such as spdk_trace. This does not disable tracing; new entries continue to be recorded.</p>
+<h3>Parameters</h3>
+<p>This method has no parameters.</p>
+<h3>Example</h3>
+<p>Example request:</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;method&quot;: &quot;trace_clear&quot;,</div>
+<div class="line">  &quot;id&quot;: 1</div>
+<div class="line">}</div>
+</div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;result&quot;: true</div>
 <div class="line">}</div>
 </div><!-- fragment --><h2><a class="anchor" id="rpc_trace_get_info"></a>
 trace_get_info</h2>

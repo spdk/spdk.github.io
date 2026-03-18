@@ -154,6 +154,7 @@ var user_guides =
         [ "trace_set_tpoint_mask", "jsonrpc.html#rpc_trace_set_tpoint_mask", null ],
         [ "trace_clear_tpoint_mask", "jsonrpc.html#rpc_trace_clear_tpoint_mask", null ],
         [ "trace_get_tpoint_group_mask", "jsonrpc.html#rpc_trace_get_tpoint_group_mask", null ],
+        [ "trace_clear", "jsonrpc.html#rpc_trace_clear", null ],
         [ "trace_get_info", "jsonrpc.html#rpc_trace_get_info", null ],
         [ "log_set_print_level", "jsonrpc.html#rpc_log_set_print_level", null ],
         [ "log_get_print_level", "jsonrpc.html#rpc_log_get_print_level", null ],

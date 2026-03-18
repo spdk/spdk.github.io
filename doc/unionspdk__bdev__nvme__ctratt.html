@@ -134,7 +134,7 @@ $(function(){initNavTree('unionspdk__bdev__nvme__ctratt.html',''); initResizable
 </div><!--header-->
 <div class="contents">
 
-<p>Union for controller attributes field, to list whether bdev supports fdp etc.  
+<p>Controller attributes indicating optional bdev capabilities (e.g.  
  <a href="#details">More...</a></p>
 
 <p><code>#include &lt;bdev.h&gt;</code></p>
@@ -148,8 +148,14 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>raw</b></td></tr>
 struct {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a95df601720af05d9c904e702c189eb78" id="r_a95df601720af05d9c904e702c189eb78"><td class="memItemLeft" >
-&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<b>reserved</b>: 19&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<b>reserved</b>: 16&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
 <tr class="separator:a95df601720af05d9c904e702c189eb78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a310160c19608fbb1a96daa700e44020e" id="r_a310160c19608fbb1a96daa700e44020e"><td class="memItemLeft" >
+&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<b>mem</b>: 1&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:a310160c19608fbb1a96daa700e44020e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4339f751d901aab5acb2fa66ac302acc" id="r_a4339f751d901aab5acb2fa66ac302acc"><td class="memItemLeft" >
+&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<b>reserved1</b>: 2&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:a4339f751d901aab5acb2fa66ac302acc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2a0864c239bb99be7106c1010fb610a9" id="r_a2a0864c239bb99be7106c1010fb610a9"><td class="memItemLeft" >
 &#160;&#160;&#160;uint32_t&#160;&#160;&#160;<b>fdps</b>: 1&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
 <tr class="separator:a2a0864c239bb99be7106c1010fb610a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -160,8 +166,8 @@ struct {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
 <tr class="separator:ac417e12b522b0e1c8450128c88be425b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Union for controller attributes field, to list whether bdev supports fdp etc. </p>
-<p>By convention we match the NVMe definition, allowing other bdevs to use this feature </p>
+<div class="textblock"><p>Controller attributes indicating optional bdev capabilities (e.g. </p>
+<p>Flexible Data Placement). The layout follows the NVMe controller attributes definition so that non-NVMe bdevs can advertise the same features through a common interface. </p>
 </div><hr/>The documentation for this union was generated from the following file:<ul>
 <li><a class="el" href="bdev_8h.html">bdev.h</a></li>
 </ul>

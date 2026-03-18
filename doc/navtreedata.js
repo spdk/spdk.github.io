@@ -41,6 +41,8 @@ var NAVTREE =
       [ "Enabling Tracepoints", "tracepoints.html#enable_tracepoints", null ],
       [ "Capturing a snapshot of events", "tracepoints.html#capture_tracepoints", null ],
       [ "Capturing sufficient trace events", "tracepoints.html#capture_trace_events", null ],
+      [ "Clearing Trace History", "tracepoints.html#clear_trace_history", null ],
+      [ "Querying Tracepoint Status", "tracepoints.html#query_tpoint_status", null ],
       [ "Adding New Tracepoints", "tracepoints.html#add_tracepoints", null ]
     ] ],
     [ "Topics", "topics.html", "topics" ],
@@ -75,19 +77,19 @@ var NAVTREEINDEX =
 "env_8h.html#ac6cda84fe7f3ca98ee13683207ffeca5",
 "functions_w.html",
 "jsonrpc.html#rpc_bdev_lvol_set_parent_bdev",
-"jsonrpc_8h.html#a905edc750ec7e584cd283b808ef65062",
-"nvme_8h.html#a63df8c9fb7f0325e241b3eba4694c0ed",
-"nvme__spec_8h.html#a24df614b7b914804dfa719dc03dfbc4f",
-"nvme__spec_8h.html#acb8784fad6a53be95d4c718ad3cf852ea7e3b07c57d293497d8efcb81f6a2d63d",
-"nvmf_8h.html#aac22668cef8a0377e5d02d0cdf6a2596",
-"sock_8h.html#a407c7aebae3d1a1556109da46a73213e",
-"structspdk__bdev__ext__io__opts.html",
-"structspdk__fsdev__opts.html#ac3b5abd7d65722492792cf8838072ffa",
-"structspdk__nvme__ctrlr__opts.html#a070ee4322069e538ed3d3565c0f6c467",
-"structspdk__nvme__registers.html#a6aed4a0f7535a4efad2ee2af44e2d6c1",
-"structspdk__nvmf__transport__ops.html#a79190a46c19b7d92d8929a7470afeb94",
-"thread_8h.html#a27c5071ccccec1afec8025098490ccd2",
-"unionspdk__nvme__feat__fdp__events__cdw11.html"
+"jsonrpc_8h.html#a7753ed9529587b69fe66253469d272fa",
+"nvme_8h.html#a634e46879faa2f2b415c3fd78fcf995c",
+"nvme__spec_8h.html#a221a4156b2e7883c4cb88847cbeaa069a5bc4ba22076a7b42f51c1ed6d76ceaf7",
+"nvme__spec_8h.html#acb8784fad6a53be95d4c718ad3cf852ea2a09b56d50d5e229708676543f9e6a96",
+"nvmf_8h.html#a9778ef2894d69144defb4f1547bfec15",
+"scsi__spec_8h.html",
+"structspdk__bdev_1_1____bdev__internal__fields_1_1____bdev__internal__claim_1_1____bdev__internal__claim__v1.html",
+"structspdk__fsdev__module.html#a0b9e0d84af0984e31f01828478ddbbf1",
+"structspdk__nvme__ctrlr__data.html#ade4949c34f56a6700801a503af6c1ec9",
+"structspdk__nvme__rdma__hooks.html#ab20f458fc7c024017bf09979a85037d8",
+"structspdk__nvmf__subsystem__key__opts.html",
+"structvfio__user__region__access.html",
+"unionspdk__nvme__cmd__cdw11.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

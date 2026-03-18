@@ -189,7 +189,7 @@ Macros</h2></td></tr>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_TRACE_MAX_TPOINT_ID</b>&#160;&#160;&#160;(SPDK_TRACE_MAX_GROUP_ID * 64)</td></tr>
 <tr class="separator:a6e4ac750b250bebb9fdca7fdb8733c6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4a0cd434921adc03a501f9e133aa45b6" id="r_a4a0cd434921adc03a501f9e133aa45b6"><td class="memItemLeft" align="right" valign="top"><a id="a4a0cd434921adc03a501f9e133aa45b6" name="a4a0cd434921adc03a501f9e133aa45b6"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_TPOINT_ID</b>(group,  tpoint)&#160;&#160;&#160;((group * 64) + tpoint)</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_TPOINT_ID</b>(group,  tpoint)&#160;&#160;&#160;(((group) * 64) + (tpoint))</td></tr>
 <tr class="separator:a4a0cd434921adc03a501f9e133aa45b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a27e155bb110177b48dd7e3b20b754021" id="r_a27e155bb110177b48dd7e3b20b754021"><td class="memItemLeft" align="right" valign="top"><a id="a27e155bb110177b48dd7e3b20b754021" name="a27e155bb110177b48dd7e3b20b754021"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_TRACE_ARG_TYPE_INT</b>&#160;&#160;&#160;0</td></tr>
@@ -228,6 +228,9 @@ Macros</h2></td></tr>
 <tr class="memitem:a361bd259fb7b5bfd6e420a7475a6e9b1" id="r_a361bd259fb7b5bfd6e420a7475a6e9b1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a361bd259fb7b5bfd6e420a7475a6e9b1">spdk_trace_record</a>(tpoint_id,  owner_id,  size,  object_id, ...)&#160;&#160;&#160;	<a class="el" href="#a52e26aba092a343df84ddd528efc6daa">spdk_trace_record_tsc</a>(0, tpoint_id, owner_id, size, object_id, ## __VA_ARGS__)</td></tr>
 <tr class="memdesc:a361bd259fb7b5bfd6e420a7475a6e9b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Record the current trace state for tracing tpoints.  <br /></td></tr>
 <tr class="separator:a361bd259fb7b5bfd6e420a7475a6e9b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a103aa00eb466277bafc9fa4bde2985c5" id="r_a103aa00eb466277bafc9fa4bde2985c5"><td class="memItemLeft" align="right" valign="top"><a id="a103aa00eb466277bafc9fa4bde2985c5" name="a103aa00eb466277bafc9fa4bde2985c5"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>OWNER_ID_NONE</b>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:a103aa00eb466277bafc9fa4bde2985c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3089f10634ede5499f79dbe5e1b6960c" id="r_a3089f10634ede5499f79dbe5e1b6960c"><td class="memItemLeft" align="right" valign="top"><a id="a3089f10634ede5499f79dbe5e1b6960c" name="a3089f10634ede5499f79dbe5e1b6960c"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>OWNER_TYPE_NONE</b>&#160;&#160;&#160;0</td></tr>
 <tr class="separator:a3089f10634ede5499f79dbe5e1b6960c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -288,6 +291,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>_spdk_trace_record</b
 void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_trace_cleanup</b> (void)</td></tr>
 <tr class="memdesc:a7cdec16a6ee14c87b0bf5d0666d9a0cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unmap global trace memory structs. <br /></td></tr>
 <tr class="separator:a7cdec16a6ee14c87b0bf5d0666d9a0cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5e117307d87f31498302ac9b0df8265" id="r_af5e117307d87f31498302ac9b0df8265"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af5e117307d87f31498302ac9b0df8265">spdk_trace_clear</a> (void)</td></tr>
+<tr class="memdesc:af5e117307d87f31498302ac9b0df8265"><td class="mdescLeft">&#160;</td><td class="mdescRight">Record the current TSC as a clear point.  <br /></td></tr>
+<tr class="separator:af5e117307d87f31498302ac9b0df8265"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a403d69c1ccce190970051bc2e69b348a" id="r_a403d69c1ccce190970051bc2e69b348a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a403d69c1ccce190970051bc2e69b348a">spdk_trace_register_owner_type</a> (uint8_t type, char id_prefix)</td></tr>
 <tr class="memdesc:a403d69c1ccce190970051bc2e69b348a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register the trace owner type.  <br /></td></tr>
 <tr class="separator:a403d69c1ccce190970051bc2e69b348a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -333,6 +339,9 @@ struct <a class="el" href="structspdk__trace__register__fn.html">spdk_trace_regi
 <tr class="memitem:a5f00b86acc0c5a41bf639c068d197b53" id="r_a5f00b86acc0c5a41bf639c068d197b53"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5f00b86acc0c5a41bf639c068d197b53">spdk_trace_create_tpoint_group_mask</a> (const char *group_name)</td></tr>
 <tr class="memdesc:a5f00b86acc0c5a41bf639c068d197b53"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a tracepoint group mask from tracepoint group name.  <br /></td></tr>
 <tr class="separator:a5f00b86acc0c5a41bf639c068d197b53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76270234daccdaf9f4af0d988b4b7e4c" id="r_a76270234daccdaf9f4af0d988b4b7e4c"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a76270234daccdaf9f4af0d988b4b7e4c">spdk_trace_create_tpoint_mask</a> (uint32_t group_id, const char *tpoint_name)</td></tr>
+<tr class="memdesc:a76270234daccdaf9f4af0d988b4b7e4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a tracepoint mask from a tracepoint name within a group.  <br /></td></tr>
+<tr class="separator:a76270234daccdaf9f4af0d988b4b7e4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa87447ad261172809a5394ee37f601df" id="r_aa87447ad261172809a5394ee37f601df"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa87447ad261172809a5394ee37f601df">spdk_trace_add_register_fn</a> (struct <a class="el" href="structspdk__trace__register__fn.html">spdk_trace_register_fn</a> *reg_fn)</td></tr>
 <tr class="memdesc:aa87447ad261172809a5394ee37f601df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add new trace register function.  <br /></td></tr>
 <tr class="separator:aa87447ad261172809a5394ee37f601df"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -540,7 +549,7 @@ struct <a class="el" href="structspdk__trace__file.html">spdk_trace_file</a> *&#
 <div class="line">        {                                                       \</div>
 <div class="line">                spdk_trace_add_register_fn(&amp;reg_ ## fn);        \</div>
 <div class="line">        }</div>
-<div class="ttc" id="astructspdk__trace__register__fn_html"><div class="ttname"><a href="structspdk__trace__register__fn.html">spdk_trace_register_fn</a></div><div class="ttdef"><b>Definition</b> trace.h:475</div></div>
+<div class="ttc" id="astructspdk__trace__register__fn_html"><div class="ttname"><a href="structspdk__trace__register__fn.html">spdk_trace_register_fn</a></div><div class="ttdef"><b>Definition</b> trace.h:494</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -586,6 +595,26 @@ struct <a class="el" href="structspdk__trace__file.html">spdk_trace_file</a> *&#
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="af5e117307d87f31498302ac9b0df8265" name="af5e117307d87f31498302ac9b0df8265"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5e117307d87f31498302ac9b0df8265">&#9670;&#160;</a></span>spdk_trace_clear()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_trace_clear </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Record the current TSC as a clear point. </p>
+<p>Subsequent reads by the trace parser will skip all entries recorded before this point. </p>
 
 </div>
 </div>
@@ -667,6 +696,37 @@ struct <a class="el" href="structspdk__trace__file.html">spdk_trace_file</a> *&#
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>tpoint group mask on success, 0 on failure </dd></dl>
+
+</div>
+</div>
+<a id="a76270234daccdaf9f4af0d988b4b7e4c" name="a76270234daccdaf9f4af0d988b4b7e4c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a76270234daccdaf9f4af0d988b4b7e4c">&#9670;&#160;</a></span>spdk_trace_create_tpoint_mask()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t spdk_trace_create_tpoint_mask </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>group_id</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>tpoint_name</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Create a tracepoint mask from a tracepoint name within a group. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">group_id</td><td>tracepoint group id </td></tr>
+    <tr><td class="paramname">tpoint_name</td><td>tracepoint name string (case-insensitive) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>tpoint mask (single bit) on success, 0 on failure </dd></dl>
 
 </div>
 </div>

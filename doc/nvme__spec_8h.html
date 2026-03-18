@@ -317,6 +317,8 @@ Data Structures</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__zns__ctrlr__data.html">spdk_nvme_zns_ctrlr_data</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__kv__ctrlr__data.html">spdk_nvme_kv_ctrlr_data</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__primary__ctrl__capabilities.html">spdk_nvme_primary_ctrl_capabilities</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__secondary__ctrl__entry.html">spdk_nvme_secondary_ctrl_entry</a></td></tr>
@@ -338,6 +340,8 @@ Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__nvm__ctrlr__data.html">spdk_nvme_nvm_ctrlr_data</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__zns__ns__data.html">spdk_nvme_zns_ns_data</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__kv__ns__data.html">spdk_nvme_kv_ns_data</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__ns__iocs__independent__data.html">spdk_nvme_ns_iocs_independent_data</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Identify – I/O Command Set Independent Identify Namespace Data Structure (CNS 08h)  <a href="structspdk__nvme__ns__iocs__independent__data.html#details">More...</a><br /></td></tr>
@@ -939,6 +943,27 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:a5fdd2e185bd903ad4505e996a6096505"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zoned Namespace command set opcodes.  <a href="#a5fdd2e185bd903ad4505e996a6096505">More...</a><br /></td></tr>
 <tr class="separator:a5fdd2e185bd903ad4505e996a6096505"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92db7f007a2167386778330bf7bf985a" id="r_a92db7f007a2167386778330bf7bf985a"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a92db7f007a2167386778330bf7bf985a">spdk_nvme_kv_opcode</a> { <br />
+&#160;&#160;<b>SPDK_NVME_OPC_KV_STORE</b> = 0x01
+, <b>SPDK_NVME_OPC_KV_RETRIEVE</b> = 0x02
+, <b>SPDK_NVME_OPC_KV_LIST</b> = 0x06
+, <b>SPDK_NVME_OPC_KV_DELETE</b> = 0x10
+, <br />
+&#160;&#160;<b>SPDK_NVME_OPC_KV_EXIST</b> = 0x14
+<br />
+ }</td></tr>
+<tr class="memdesc:a92db7f007a2167386778330bf7bf985a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Key-Value command set opcodes.  <a href="#a92db7f007a2167386778330bf7bf985a">More...</a><br /></td></tr>
+<tr class="separator:a92db7f007a2167386778330bf7bf985a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f664c4522d7711ee7bae80ff6381367" id="r_a6f664c4522d7711ee7bae80ff6381367"><td class="memItemLeft" align="right" valign="top"><a id="a6f664c4522d7711ee7bae80ff6381367" name="a6f664c4522d7711ee7bae80ff6381367"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6f664c4522d7711ee7bae80ff6381367">spdk_nvme_kv_store_option</a> { <b>SPDK_NVME_KV_STORE_OPT_DONT_STORE_IF_KEY_NOT_EXISTS</b> = 1 &lt;&lt; 0
+, <b>SPDK_NVME_KV_STORE_OPT_DONT_STORE_IF_KEY_EXISTS</b> = 1 &lt;&lt; 1
+, <b>SPDK_NVME_KV_STORE_OPT_COMPRESS</b> = 1 &lt;&lt; 2
+ }</td></tr>
+<tr class="memdesc:a6f664c4522d7711ee7bae80ff6381367"><td class="mdescLeft">&#160;</td><td class="mdescRight">Key-Value Store command request options. <br /></td></tr>
+<tr class="separator:a6f664c4522d7711ee7bae80ff6381367"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa5e0fec8311d84c3d87c5e12fa56aa5" id="r_aaa5e0fec8311d84c3d87c5e12fa56aa5"><td class="memItemLeft" align="right" valign="top"><a id="aaa5e0fec8311d84c3d87c5e12fa56aa5" name="aaa5e0fec8311d84c3d87c5e12fa56aa5"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaa5e0fec8311d84c3d87c5e12fa56aa5">spdk_nvme_kv_retrieve_option</a> { <b>SPDK_NVME_KV_RETRIEVE_OPT_RETRIEVE_RAW</b> = 1 &lt;&lt; 0
+ }</td></tr>
+<tr class="memdesc:aaa5e0fec8311d84c3d87c5e12fa56aa5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Key-Value Retrieve command request options. <br /></td></tr>
+<tr class="separator:aaa5e0fec8311d84c3d87c5e12fa56aa5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adbe38e042bb939183ed8fd5c1685b2fc" id="r_adbe38e042bb939183ed8fd5c1685b2fc"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adbe38e042bb939183ed8fd5c1685b2fc">spdk_nvme_data_transfer</a> { <a class="el" href="#adbe38e042bb939183ed8fd5c1685b2fca4d074786dad4f37c0211563ec0376974">SPDK_NVME_DATA_NONE</a> = 0
 , <a class="el" href="#adbe38e042bb939183ed8fd5c1685b2fca7f08188b3c5f57f2f694f6ef13ad0110">SPDK_NVME_DATA_HOST_TO_CONTROLLER</a> = 1
 , <a class="el" href="#adbe38e042bb939183ed8fd5c1685b2fca0de3a8ad0600034555094591e706fb50">SPDK_NVME_DATA_CONTROLLER_TO_HOST</a> = 2
@@ -1651,6 +1676,9 @@ static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_
 <tr class="memitem:aaa08ec6ede83eee24c80c0a03789f6b9" id="r_aaa08ec6ede83eee24c80c0a03789f6b9"><td class="memItemLeft" align="right" valign="top"><a id="aaa08ec6ede83eee24c80c0a03789f6b9" name="aaa08ec6ede83eee24c80c0a03789f6b9"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(struct <a class="el" href="structspdk__nvme__zns__ctrlr__data.html">spdk_nvme_zns_ctrlr_data</a>)==4096, &quot;Incorrect size&quot;)</td></tr>
 <tr class="separator:aaa08ec6ede83eee24c80c0a03789f6b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1cfcd51eeaf4945f63397ccf31702b7" id="r_af1cfcd51eeaf4945f63397ccf31702b7"><td class="memItemLeft" align="right" valign="top"><a id="af1cfcd51eeaf4945f63397ccf31702b7" name="af1cfcd51eeaf4945f63397ccf31702b7"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(struct <a class="el" href="structspdk__nvme__kv__ctrlr__data.html">spdk_nvme_kv_ctrlr_data</a>)==4096, &quot;Incorrect size&quot;)</td></tr>
+<tr class="separator:af1cfcd51eeaf4945f63397ccf31702b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8852d0082322ce91f8e6b01b887fc2e9" id="r_a8852d0082322ce91f8e6b01b887fc2e9"><td class="memItemLeft" align="right" valign="top"><a id="a8852d0082322ce91f8e6b01b887fc2e9" name="a8852d0082322ce91f8e6b01b887fc2e9"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(struct <a class="el" href="structspdk__nvme__primary__ctrl__capabilities.html">spdk_nvme_primary_ctrl_capabilities</a>)==4096, &quot;Incorrect size&quot;)</td></tr>
 <tr class="separator:a8852d0082322ce91f8e6b01b887fc2e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1684,6 +1712,9 @@ static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_
 <tr class="memitem:a8cdea3a039aabe59ef8f847582ea6ead" id="r_a8cdea3a039aabe59ef8f847582ea6ead"><td class="memItemLeft" align="right" valign="top"><a id="a8cdea3a039aabe59ef8f847582ea6ead" name="a8cdea3a039aabe59ef8f847582ea6ead"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(struct <a class="el" href="structspdk__nvme__zns__ns__data.html">spdk_nvme_zns_ns_data</a>)==4096, &quot;Incorrect size&quot;)</td></tr>
 <tr class="separator:a8cdea3a039aabe59ef8f847582ea6ead"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99b3c68aaccca909b6b254925b7aad80" id="r_a99b3c68aaccca909b6b254925b7aad80"><td class="memItemLeft" align="right" valign="top"><a id="a99b3c68aaccca909b6b254925b7aad80" name="a99b3c68aaccca909b6b254925b7aad80"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(struct <a class="el" href="structspdk__nvme__kv__ns__data.html">spdk_nvme_kv_ns_data</a>)==4096, &quot;Incorrect size&quot;)</td></tr>
+<tr class="separator:a99b3c68aaccca909b6b254925b7aad80"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9a6d545fc3bd20cbc58773f28c66d5ee" id="r_a9a6d545fc3bd20cbc58773f28c66d5ee"><td class="memItemLeft" align="right" valign="top"><a id="a9a6d545fc3bd20cbc58773f28c66d5ee" name="a9a6d545fc3bd20cbc58773f28c66d5ee"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(struct <a class="el" href="structspdk__nvme__ns__iocs__independent__data.html">spdk_nvme_ns_iocs_independent_data</a>)==4096, &quot;Incorrect size&quot;)</td></tr>
 <tr class="separator:a9a6d545fc3bd20cbc58773f28c66d5ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2286,6 +2317,23 @@ static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_
 <tr><td class="fieldname"><a id="a1491a0118eccaa91ff5cb9fb5d02c2c6a582e9130c3c901df918090c27c485615" name="a1491a0118eccaa91ff5cb9fb5d02c2c6a582e9130c3c901df918090c27c485615"></a>SPDK_NVME_IDENTIFY_IOCS&#160;</td><td class="fielddoc"><p>Identify I/O Command Sets. </p>
 </td></tr>
 </table>
+
+</div>
+</div>
+<a id="a92db7f007a2167386778330bf7bf985a" name="a92db7f007a2167386778330bf7bf985a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a92db7f007a2167386778330bf7bf985a">&#9670;&#160;</a></span>spdk_nvme_kv_opcode</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#a92db7f007a2167386778330bf7bf985a">spdk_nvme_kv_opcode</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Key-Value command set opcodes. </p>
+<p>The Key-Value command set supports the following opcodes. </p>
 
 </div>
 </div>

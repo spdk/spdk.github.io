@@ -144,13 +144,14 @@ Enabling Tracepoints</h1>
 </div><!-- fragment --><p>To enable the instrumentation of just the <code>NVMe-oF RDMA</code> tracepoints in an SPDK target application, start the target with the <code>-e</code> parameter set to <code>nvmf_rdma</code>:</p>
 <div class="fragment"><div class="line">build/bin/nvmf_tgt -e nvmf_rdma</div>
 </div><!-- fragment --><h2>Enabling Individual Tracepoints</h2>
-<p>To enable individual tracepoints inside a group:</p>
-<div class="fragment"><div class="line">build/bin/nvmf_tgt -e nvmf_rdma:B</div>
-</div><!-- fragment --><p>where <code>:</code> is a separator and <code>B</code> is the tracepoint mask. This will enable only the first, second and fourth (binary: 1011) tracepoint inside <code>NVMe-oF RDMA</code> group.</p>
+<p>Individual tracepoints can be enabled by name within a group. Use <code>:</code> to separate the group name from the tracepoint names, and <code>+</code> to combine multiple tracepoints:</p>
+<div class="fragment"><div class="line">build/bin/nvmf_tgt -e nvmf_tcp:TCP_REQ_EXECUTED</div>
+<div class="line">build/bin/nvmf_tgt -e nvmf_tcp:TCP_REQ_EXECUTED+TCP_REQ_NEW</div>
+</div><!-- fragment --><p>Tracepoint names are case-insensitive. The available tracepoint names for each group can be queried at runtime using the <code>trace_get_tpoint_group_mask</code> RPC (see below).</p>
 <h2>Combining Tracepoint Masks</h2>
-<p>It is also possible to combine enabling whole groups of tpoints and individual ones:</p>
-<div class="fragment"><div class="line">build/bin/nvmf_tgt -e nvmf_rdma:2,thread</div>
-</div><!-- fragment --><p>This will enable the second tracepoint inside <code>NVMe-oF RDMA</code> group (0x10) and all of the tracepoints defined by the <code>thread</code> group (0x400).</p>
+<p>It is also possible to combine enabling whole groups of tpoints and individual ones, using commas to separate groups:</p>
+<div class="fragment"><div class="line">build/bin/nvmf_tgt -e nvmf_tcp:TCP_REQ_EXECUTED,thread</div>
+</div><!-- fragment --><p>This enables the <code>TCP_REQ_EXECUTED</code> tracepoint from the <code>nvmf_tcp</code> group and all tracepoints defined by the <code>thread</code> group.</p>
 <h2>Tracepoint Group Names</h2>
 <p>The best way to get the current list of group names is from an application's help message. The list of available tracepoint group's for that application will be shown next to the <code>-e</code> option.</p>
 <h2>Starting the SPDK Target</h2>
@@ -224,7 +225,17 @@ Capturing sufficient trace events</h1>
 <div class="fragment"><div class="line">spdk_nvme_perf -q 128 -o 4096 -w randread -t 600 -r &#39;trtype:RDMA adrfam:IPv4 traddr:192.168.100.2 trsvcid:4420&#39;</div>
 </div><!-- fragment --><p>After the completion of perf example, shut down spdk_trace_record by signal SIGINT (Ctrl + C). To analyze the tracepoints output file from spdk_trace_record, simply run spdk_trace program by:</p>
 <div class="fragment"><div class="line">build/bin/spdk_trace -f /tmp/spdk_nvmf_record.trace</div>
-</div><!-- fragment --><h1><a class="anchor" id="add_tracepoints"></a>
+</div><!-- fragment --><h1><a class="anchor" id="clear_trace_history"></a>
+Clearing Trace History</h1>
+<p>The <code>trace_clear</code> RPC marks a point in time after which trace entries are considered valid. All entries recorded before the clear call are hidden from subsequent reads by external trace tools such as <code>spdk_trace</code>. Tracing itself is not disabled &ndash; new entries continue to be recorded.</p>
+<div class="fragment"><div class="line">scripts/rpc.py trace_clear</div>
+</div><!-- fragment --><p>This is useful when you want to isolate trace data for a specific test or workload without restarting the application.</p>
+<h1><a class="anchor" id="query_tpoint_status"></a>
+Querying Tracepoint Status</h1>
+<p>The <code>trace_get_tpoint_group_mask</code> RPC returns the current tracepoint enablement state. In addition to the group-level mask, it includes per-tracepoint detail for each group: the tracepoint name, its ID within the group, and whether it is currently enabled.</p>
+<div class="fragment"><div class="line">scripts/rpc.py trace_get_tpoint_group_mask</div>
+</div><!-- fragment --><p>This can be used to discover available tracepoint names for use with the <code>-e</code> option's name-based syntax.</p>
+<h1><a class="anchor" id="add_tracepoints"></a>
 Adding New Tracepoints</h1>
 <p>SPDK applications and libraries provide several trace points. You can add new tracepoints to the existing trace groups. For example, to add a new tracepoints to the SPDK RDMA library (lib/nvmf/rdma.c) trace group TRACE_GROUP_NVMF_RDMA, define the tracepoints and assigning them a unique ID using the SPDK_TPOINT_ID macro:</p>
 <div class="fragment"><div class="line"><span class="preprocessor">#define TRACE_GROUP_NVMF_RDMA   0x4</span></div>
@@ -261,7 +272,7 @@ Adding New Tracepoints</h1>
 <div class="line">        <a class="code hl_define" href="trace_8h.html#a361bd259fb7b5bfd6e420a7475a6e9b1">spdk_trace_record</a>(RDMA_REQUEST_STATE_DATA_TRANSFER_TO_CONTROLLER_PENDING, 0, 0,</div>
 <div class="line">                (uintptr_t)rdma_req, (uintptr_t)rqpair);</div>
 <div class="line">        ...</div>
-<div class="ttc" id="atrace_8h_html_a361bd259fb7b5bfd6e420a7475a6e9b1"><div class="ttname"><a href="trace_8h.html#a361bd259fb7b5bfd6e420a7475a6e9b1">spdk_trace_record</a></div><div class="ttdeci">#define spdk_trace_record(tpoint_id, owner_id, size, object_id,...)</div><div class="ttdoc">Record the current trace state for tracing tpoints.</div><div class="ttdef"><b>Definition</b> trace.h:246</div></div>
+<div class="ttc" id="atrace_8h_html_a361bd259fb7b5bfd6e420a7475a6e9b1"><div class="ttname"><a href="trace_8h.html#a361bd259fb7b5bfd6e420a7475a6e9b1">spdk_trace_record</a></div><div class="ttdeci">#define spdk_trace_record(tpoint_id, owner_id, size, object_id,...)</div><div class="ttdoc">Record the current trace state for tracing tpoints.</div><div class="ttdef"><b>Definition</b> trace.h:249</div></div>
 </div><!-- fragment --><p>All the tracing functions are documented in the <a href="https://spdk.io/doc/trace_8h.html">Tracepoint library documentation</a> </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->

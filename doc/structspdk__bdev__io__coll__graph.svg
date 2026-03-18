@@ -185,7 +185,7 @@ var sectionId = 'dynsection-0';
 <!-- Node4 -->
 <g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_Node000004"><a xlink:href="unionspdk__bdev__nvme__ctratt.html" target="_top" xlink:title="Union for controller attributes field, to list whether bdev supports fdp etc.">
+<g id="a_Node000004"><a xlink:href="unionspdk__bdev__nvme__ctratt.html" target="_top" xlink:title="Controller attributes indicating optional bdev capabilities (e.g.">
 <polygon fill="white" stroke="#666666" points="868.75,-188.97 735.75,-188.97 735.75,-168.22 868.75,-168.22 868.75,-188.97"/>
 <text text-anchor="middle" x="802.25" y="-175.47" font-family="Helvetica,sans-Serif" font-size="10.00">spdk_bdev_nvme_ctratt</text>
 </a>

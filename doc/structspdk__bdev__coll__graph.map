@@ -6,7 +6,7 @@
 <area shape="poly" id="edge13_Node000051_Node000001" title=" " alt="" coords="897,129,1006,127,1007,132,897,134"/>
 <area shape="rect" id="Node000002" href="$structspdk__uuid.html" title=" " alt="" coords="552,179,639,207"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="654,183,709,173,766,159,804,145,806,150,767,165,710,179,655,188"/>
-<area shape="rect" id="Node000003" href="$unionspdk__bdev__nvme__ctratt.html" title="Union for controller attributes field, to list whether bdev supports fdp etc." alt="" coords="507,127,684,155"/>
+<area shape="rect" id="Node000003" href="$unionspdk__bdev__nvme__ctratt.html" title="Controller attributes indicating optional bdev capabilities (e.g." alt="" coords="507,127,684,155"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="700,136,766,134,790,133,790,138,766,139,700,141"/>
 <area shape="rect" id="Node000004" href="$structspdk__bdev__module.html" title="Block device module." alt="" coords="522,75,669,103"/>
 <area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="686,102,767,117,790,122,789,127,766,122,685,107"/>

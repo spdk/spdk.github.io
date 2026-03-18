@@ -464,6 +464,9 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_trty
 <tr class="memitem:a1d2b38a50ba07f3ebffc22da13f4270c" id="r_a1d2b38a50ba07f3ebffc22da13f4270c"><td class="memItemLeft" align="right" valign="top">const struct <a class="el" href="structspdk__nvme__ctrlr__data.html">spdk_nvme_ctrlr_data</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1d2b38a50ba07f3ebffc22da13f4270c">spdk_nvme_ctrlr_get_data</a> (struct spdk_nvme_ctrlr *ctrlr)</td></tr>
 <tr class="memdesc:a1d2b38a50ba07f3ebffc22da13f4270c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the identify controller data as defined by the NVMe specification.  <br /></td></tr>
 <tr class="separator:a1d2b38a50ba07f3ebffc22da13f4270c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a773a8181bc727b67310656e51bdaede6" id="r_a773a8181bc727b67310656e51bdaede6"><td class="memItemLeft" align="right" valign="top">const struct <a class="el" href="structspdk__nvme__nvm__ctrlr__data.html">spdk_nvme_nvm_ctrlr_data</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a773a8181bc727b67310656e51bdaede6">spdk_nvme_nvm_ctrlr_get_data</a> (struct spdk_nvme_ctrlr *ctrlr)</td></tr>
+<tr class="memdesc:a773a8181bc727b67310656e51bdaede6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the NVM I/O Command Set Specific Identify Controller data as defined by the NVMe specification.  <br /></td></tr>
+<tr class="separator:a773a8181bc727b67310656e51bdaede6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a46348531c83fd61acad1a55236d7d576" id="r_a46348531c83fd61acad1a55236d7d576"><td class="memItemLeft" align="right" valign="top">union <a class="el" href="unionspdk__nvme__csts__register.html">spdk_nvme_csts_register</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a46348531c83fd61acad1a55236d7d576">spdk_nvme_ctrlr_get_regs_csts</a> (struct spdk_nvme_ctrlr *ctrlr)</td></tr>
 <tr class="memdesc:a46348531c83fd61acad1a55236d7d576"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the NVMe controller CSTS (Status) register.  <br /></td></tr>
 <tr class="separator:a46348531c83fd61acad1a55236d7d576"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -8304,6 +8307,33 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_qpai
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if the namespace supports write uncorrectable operation, or false otherwise. </dd></dl>
+
+</div>
+</div>
+<a id="a773a8181bc727b67310656e51bdaede6" name="a773a8181bc727b67310656e51bdaede6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a773a8181bc727b67310656e51bdaede6">&#9670;&#160;</a></span>spdk_nvme_nvm_ctrlr_get_data()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const struct <a class="el" href="structspdk__nvme__nvm__ctrlr__data.html">spdk_nvme_nvm_ctrlr_data</a> * spdk_nvme_nvm_ctrlr_get_data </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_nvme_ctrlr *</td>          <td class="paramname"><span class="paramname"><em>ctrlr</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the NVM I/O Command Set Specific Identify Controller data as defined by the NVMe specification. </p>
+<p>This function is thread safe and can be called at any point while the controller is attached to the SPDK NVMe driver.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ctrlr</td><td>Opaque handle to NVMe controller.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>pointer to the controller data, or NULL if the controller does not support the NVM Command Set. </dd></dl>
 
 </div>
 </div>
