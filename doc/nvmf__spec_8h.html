@@ -378,12 +378,13 @@ Enumerations</h2></td></tr>
 <tr class="memdesc:a239e424a2438a066c30a288c592cba1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">NVMe over Fabrics transport types.  <a href="#a239e424a2438a066c30a288c592cba1b">More...</a><br /></td></tr>
 <tr class="separator:a239e424a2438a066c30a288c592cba1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a08f0090d242e2607ab11f148dcd797c6" id="r_a08f0090d242e2607ab11f148dcd797c6"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a08f0090d242e2607ab11f148dcd797c6">spdk_nvmf_adrfam</a> { <br />
-&#160;&#160;<a class="el" href="#a08f0090d242e2607ab11f148dcd797c6a3fbcece55f7c375e0a4f1e4a62f0eb00">SPDK_NVMF_ADRFAM_IPV4</a> = 0x1
+&#160;&#160;<a class="el" href="#a08f0090d242e2607ab11f148dcd797c6a6bdb4347e88561de1e2827b9dc151468">SPDK_NVMF_ADRFAM_NOT_SPECIFIED</a> = 0x0
+, <a class="el" href="#a08f0090d242e2607ab11f148dcd797c6a3fbcece55f7c375e0a4f1e4a62f0eb00">SPDK_NVMF_ADRFAM_IPV4</a> = 0x1
 , <a class="el" href="#a08f0090d242e2607ab11f148dcd797c6a67a7b7b64f228fc424de6ec9d1c93fd4">SPDK_NVMF_ADRFAM_IPV6</a> = 0x2
 , <a class="el" href="#a08f0090d242e2607ab11f148dcd797c6ab2b018652874e16b9af85d12ce2e0c08">SPDK_NVMF_ADRFAM_IB</a> = 0x3
-, <a class="el" href="#a08f0090d242e2607ab11f148dcd797c6afd21c300bf2e149474def6ae770b2263">SPDK_NVMF_ADRFAM_FC</a> = 0x4
 , <br />
-&#160;&#160;<a class="el" href="#a08f0090d242e2607ab11f148dcd797c6a6398d0b463d2b5b7e0d46aff634dbd0d">SPDK_NVMF_ADRFAM_INTRA_HOST</a> = 0xfe
+&#160;&#160;<a class="el" href="#a08f0090d242e2607ab11f148dcd797c6afd21c300bf2e149474def6ae770b2263">SPDK_NVMF_ADRFAM_FC</a> = 0x4
+, <a class="el" href="#a08f0090d242e2607ab11f148dcd797c6a6398d0b463d2b5b7e0d46aff634dbd0d">SPDK_NVMF_ADRFAM_INTRA_HOST</a> = 0xfe
 <br />
  }</td></tr>
 <tr class="memdesc:a08f0090d242e2607ab11f148dcd797c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Address family types.  <a href="#a08f0090d242e2607ab11f148dcd797c6">More...</a><br /></td></tr>
@@ -763,7 +764,9 @@ Functions</h2></td></tr>
 
 <p>Address family types. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a08f0090d242e2607ab11f148dcd797c6a3fbcece55f7c375e0a4f1e4a62f0eb00" name="a08f0090d242e2607ab11f148dcd797c6a3fbcece55f7c375e0a4f1e4a62f0eb00"></a>SPDK_NVMF_ADRFAM_IPV4&#160;</td><td class="fielddoc"><p>IPv4 (AF_INET) </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a08f0090d242e2607ab11f148dcd797c6a6bdb4347e88561de1e2827b9dc151468" name="a08f0090d242e2607ab11f148dcd797c6a6bdb4347e88561de1e2827b9dc151468"></a>SPDK_NVMF_ADRFAM_NOT_SPECIFIED&#160;</td><td class="fielddoc"><p>Address family not specified. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a08f0090d242e2607ab11f148dcd797c6a3fbcece55f7c375e0a4f1e4a62f0eb00" name="a08f0090d242e2607ab11f148dcd797c6a3fbcece55f7c375e0a4f1e4a62f0eb00"></a>SPDK_NVMF_ADRFAM_IPV4&#160;</td><td class="fielddoc"><p>IPv4 (AF_INET) </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a08f0090d242e2607ab11f148dcd797c6a67a7b7b64f228fc424de6ec9d1c93fd4" name="a08f0090d242e2607ab11f148dcd797c6a67a7b7b64f228fc424de6ec9d1c93fd4"></a>SPDK_NVMF_ADRFAM_IPV6&#160;</td><td class="fielddoc"><p>IPv6 (AF_INET6) </p>
 </td></tr>

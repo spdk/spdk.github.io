@@ -1,5 +1,7 @@
 var NAVTREEINDEX16 =
 {
+"structspdk__nvmf__reservation__info.html":[13,0,393],
+"structspdk__nvmf__stripped__data.html":[13,0,394],
 "structspdk__nvmf__subsystem__key__opts.html":[13,0,395],
 "structspdk__nvmf__subsystem__key__opts.html#a1dbc18d58cb7abeb9c579dc0d233fa4a":[13,0,395,1],
 "structspdk__nvmf__subsystem__key__opts.html#a452d7817c392e580315dafcc148b376a":[13,0,395,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX16 =
 "structvfio__user__device__info.html":[13,0,477],
 "structvfio__user__dma__map.html":[13,0,478],
 "structvfio__user__dma__region__access.html":[13,0,479],
-"structvfio__user__dma__unmap.html":[13,0,480],
-"structvfio__user__header.html":[13,0,481],
-"structvfio__user__irq__info.html":[13,0,482]
+"structvfio__user__dma__unmap.html":[13,0,480]
 };

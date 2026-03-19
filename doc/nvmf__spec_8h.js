@@ -53,6 +53,7 @@ var nvmf__spec_8h =
       [ "SPDK_NVME_TCP_SECURITY_TLS_1_3", "nvmf__spec_8h.html#ab472926a11e06a7b78af736228718c02a9851d865e271bed5ea7bbeaf20719c59", null ]
     ] ],
     [ "spdk_nvmf_adrfam", "nvmf__spec_8h.html#a08f0090d242e2607ab11f148dcd797c6", [
+      [ "SPDK_NVMF_ADRFAM_NOT_SPECIFIED", "nvmf__spec_8h.html#a08f0090d242e2607ab11f148dcd797c6a6bdb4347e88561de1e2827b9dc151468", null ],
       [ "SPDK_NVMF_ADRFAM_IPV4", "nvmf__spec_8h.html#a08f0090d242e2607ab11f148dcd797c6a3fbcece55f7c375e0a4f1e4a62f0eb00", null ],
       [ "SPDK_NVMF_ADRFAM_IPV6", "nvmf__spec_8h.html#a08f0090d242e2607ab11f148dcd797c6a67a7b7b64f228fc424de6ec9d1c93fd4", null ],
       [ "SPDK_NVMF_ADRFAM_IB", "nvmf__spec_8h.html#a08f0090d242e2607ab11f148dcd797c6ab2b018652874e16b9af85d12ce2e0c08", null ],

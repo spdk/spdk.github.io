@@ -1,5 +1,7 @@
 var NAVTREEINDEX11 =
 {
+"scsi_8h.html#afd1875e82a001234373a36cd936849ea":[14,0,0,0,55,47],
+"scsi_8h.html#afecbfa80c61a820eea16b1fb9d40ddcf":[14,0,0,0,55,46],
 "scsi__spec_8h.html":[14,0,0,0,56],
 "shfmt.html":[9,0],
 "shfmt.html#shfmt_examples":[9,0,4],
@@ -247,7 +249,5 @@ var NAVTREEINDEX11 =
 "structspdk__bdev_1_1____bdev__internal__fields.html#ad8ffb00efc69dca7d686f17220027742":[13,0,61,0,15],
 "structspdk__bdev_1_1____bdev__internal__fields.html#add102c5c15292b5d497ed7442a0b30b4":[13,0,61,0,16],
 "structspdk__bdev_1_1____bdev__internal__fields.html#adf206491fff12a3f57474bab98d07ef2":[13,0,61,0,19],
-"structspdk__bdev_1_1____bdev__internal__fields.html#ae3603bee677af4d8eaafffce32e0deea":[13,0,61,0,18],
-"structspdk__bdev_1_1____bdev__internal__fields.html#af31c1f546b2115b5887bc0c3db3418b5":[13,0,61,0,4],
-"structspdk__bdev_1_1____bdev__internal__fields.html#afad02fdc83417a632d9ecc7f3c437c47":[13,0,61,0,22]
+"structspdk__bdev_1_1____bdev__internal__fields.html#ae3603bee677af4d8eaafffce32e0deea":[13,0,61,0,18]
 };

@@ -1,5 +1,7 @@
 var NAVTREEINDEX15 =
 {
+"structspdk__nvme__rdma__device__stat.html":[13,0,289],
+"structspdk__nvme__rdma__hooks.html":[13,0,290],
 "structspdk__nvme__rdma__hooks.html#ab20f458fc7c024017bf09979a85037d8":[13,0,290,1],
 "structspdk__nvme__rdma__hooks.html#abf04de4700ca8baf3570b77f92fa68df":[13,0,290,2],
 "structspdk__nvme__rdma__hooks.html#ac68b7fe751e999b5e6c0665380bbdf41":[13,0,290,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX15 =
 "structspdk__nvmf__referral__opts.html#aeb4ac8f12a6a08dce419daabad37d70d":[13,0,389,2],
 "structspdk__nvmf__registers.html":[13,0,390],
 "structspdk__nvmf__registrant__info.html":[13,0,391],
-"structspdk__nvmf__request.html":[13,0,392],
-"structspdk__nvmf__reservation__info.html":[13,0,393],
-"structspdk__nvmf__stripped__data.html":[13,0,394]
+"structspdk__nvmf__request.html":[13,0,392]
 };
