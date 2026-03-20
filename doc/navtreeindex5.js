@@ -1,5 +1,7 @@
 var NAVTREEINDEX5 =
 {
+"jsonrpc.html#rpc_bdev_lvol_resize":[3,8,10,10],
+"jsonrpc.html#rpc_bdev_lvol_set_parent":[3,8,10,16],
 "jsonrpc.html#rpc_bdev_lvol_set_parent_bdev":[3,8,10,17],
 "jsonrpc.html#rpc_bdev_lvol_set_read_only":[3,8,10,11],
 "jsonrpc.html#rpc_bdev_lvol_snapshot":[3,8,10,6],
@@ -247,7 +249,5 @@ var NAVTREEINDEX5 =
 "jsonrpc_8h.html#a4839d55c5da4ce5929a08a5d2f35e4bf":[14,0,0,0,37,27],
 "jsonrpc_8h.html#a506661cfdfda6f549c69a6f4a988a026":[14,0,0,0,37,22],
 "jsonrpc_8h.html#a5160e9c0a3230584ca653ffd2ea64487":[14,0,0,0,37,2],
-"jsonrpc_8h.html#a6fb341f7a6ea07000d47b6fc2c302905":[14,0,0,0,37,9],
-"jsonrpc_8h.html#a7246f2742a3bebe9494defa7d305de84":[14,0,0,0,37,15],
-"jsonrpc_8h.html#a74afccd199dde8aaebd020ac513cf819":[14,0,0,0,37,3]
+"jsonrpc_8h.html#a6fb341f7a6ea07000d47b6fc2c302905":[14,0,0,0,37,9]
 };

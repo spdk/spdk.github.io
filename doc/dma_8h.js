@@ -19,6 +19,7 @@ var dma_8h =
       [ "SPDK_DMA_DEVICE_VENDOR_SPECIFIC_TYPE_START", "dma_8h.html#a85588b3a6ec5c188ab2dc318c3903586a1201e15e1a81553cb3ac297e7f5648be", null ],
       [ "SPDK_DMA_DEVICE_VENDOR_SPECIFIC_TYPE_END", "dma_8h.html#a85588b3a6ec5c188ab2dc318c3903586a51d3c59fcd56fc712b1943b5a08dead2", null ]
     ] ],
+    [ "spdk_dma_device_type_get_name", "dma_8h.html#a6d24ef1a9ed9f36b98225e167ce07b1d", null ],
     [ "spdk_memory_domain_create", "dma_8h.html#a6ddda62cbca17c587a2c6d201b4e6dff", null ],
     [ "spdk_memory_domain_destroy", "dma_8h.html#ad908aa65943565af3128e340c8c5e285", null ],
     [ "spdk_memory_domain_get_context", "dma_8h.html#ab76ad75ffcdb2c3344872367eb113067", null ],

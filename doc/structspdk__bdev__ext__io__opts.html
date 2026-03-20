@@ -210,7 +210,7 @@ union <a class="el" href="unionspdk__bdev__nvme__cdw13.html">spdk_bdev_nvme_cdw1
 </div><div class="memdoc">
 
 <p>Memory domain which describes payload in this IO request. </p>
-<p>bdev must support DMA device type that can access this memory domain, refer to <a class="el" href="bdev_8h.html#a2643db603c5c9762d839036c1658bf1b">spdk_bdev_get_memory_domains</a> and <a class="el" href="dma_8h.html#aa2dd7b82d1f0afe434c0ca92fce6fc66">spdk_memory_domain_get_dma_device_type</a> If set, that means that data buffers can't be accessed directly and the memory domain must be used to fetch data to local buffers or to translate data to another memory domain </p>
+<p>bdev must support DMA device type that can access this memory domain, refer to <a class="el" href="bdev_8h.html#a8ceb3c9b0cc1e626fbbbffd0407d6231">spdk_bdev_get_memory_domain_types</a> If set, that means that data buffers can't be accessed directly and the memory domain must be used to fetch data to local buffers or to translate data to another memory domain </p>
 
 </div>
 </div>

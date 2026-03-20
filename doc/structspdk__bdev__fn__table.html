@@ -172,6 +172,9 @@ void *(*&#160;</td><td class="memItemRight" valign="bottom"><b>get_module_ctx</b
 <tr class="memitem:af73c1ef741a4751a64354eeb0532396c" id="r_af73c1ef741a4751a64354eeb0532396c"><td class="memItemLeft" align="right" valign="top">int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af73c1ef741a4751a64354eeb0532396c">get_memory_domains</a> )(void *ctx, struct spdk_memory_domain **domains, int array_size)</td></tr>
 <tr class="memdesc:af73c1ef741a4751a64354eeb0532396c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get memory domains used by bdev.  <br /></td></tr>
 <tr class="separator:af73c1ef741a4751a64354eeb0532396c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c88b2c01035df67699d4e3d5325e7f4" id="r_a5c88b2c01035df67699d4e3d5325e7f4"><td class="memItemLeft" align="right" valign="top">int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5c88b2c01035df67699d4e3d5325e7f4">get_memory_domain_types</a> )(void *ctx, enum <a class="el" href="dma_8h.html#a85588b3a6ec5c188ab2dc318c3903586">spdk_dma_device_type</a> *types, uint32_t array_size)</td></tr>
+<tr class="memdesc:a5c88b2c01035df67699d4e3d5325e7f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get memory domain types used by bdev.  <br /></td></tr>
+<tr class="separator:a5c88b2c01035df67699d4e3d5325e7f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aed2c3f1df868458ed707508e950c7701" id="r_aed2c3f1df868458ed707508e950c7701"><td class="memItemLeft" align="right" valign="top"><a id="aed2c3f1df868458ed707508e950c7701" name="aed2c3f1df868458ed707508e950c7701"></a>
 void(*&#160;</td><td class="memItemRight" valign="bottom"><b>reset_device_stat</b> )(void *ctx)</td></tr>
 <tr class="memdesc:aed2c3f1df868458ed707508e950c7701"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset I/O statistics specific for this bdev context. <br /></td></tr>
@@ -224,6 +227,23 @@ bool(*&#160;</td><td class="memItemRight" valign="bottom"><b>accel_sequence_supp
 
 </div>
 </div>
+<a id="a5c88b2c01035df67699d4e3d5325e7f4" name="a5c88b2c01035df67699d4e3d5325e7f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c88b2c01035df67699d4e3d5325e7f4">&#9670;&#160;</a></span>get_memory_domain_types</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int(* spdk_bdev_fn_table::get_memory_domain_types) (void *ctx, enum <a class="el" href="dma_8h.html#a85588b3a6ec5c188ab2dc318c3903586">spdk_dma_device_type</a> *types, uint32_t array_size)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get memory domain types used by bdev. </p>
+<p>Optional - may be NULL. Vbdev module implementation should call <a class="el" href="bdev_8h.html#a8ceb3c9b0cc1e626fbbbffd0407d6231">spdk_bdev_get_memory_domain_types</a> for underlying bdev. Vbdev module must inspect types of memory domains returned by base bdev and report only those types that it can work with. </p>
+
+</div>
+</div>
 <a id="af73c1ef741a4751a64354eeb0532396c" name="af73c1ef741a4751a64354eeb0532396c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af73c1ef741a4751a64354eeb0532396c">&#9670;&#160;</a></span>get_memory_domains</h2>
 
@@ -237,7 +257,7 @@ bool(*&#160;</td><td class="memItemRight" valign="bottom"><b>accel_sequence_supp
 </div><div class="memdoc">
 
 <p>Get memory domains used by bdev. </p>
-<p>Optional - may be NULL. Vbdev module implementation should call <a class="el" href="bdev_8h.html#a2643db603c5c9762d839036c1658bf1b">spdk_bdev_get_memory_domains</a> for underlying bdev. Vbdev module must inspect types of memory domains returned by base bdev and report only those memory domains that it can work with. </p>
+<p>Optional - may be NULL. Deprecated: use get_memory_domain_types instead. Will be removed in v26.09. Vbdev module implementation should call <a class="el" href="bdev_8h.html#a2643db603c5c9762d839036c1658bf1b">spdk_bdev_get_memory_domains</a> for underlying bdev. Vbdev module must inspect types of memory domains returned by base bdev and report only those memory domains that it can work with. </p>
 
 </div>
 </div>

@@ -138,6 +138,8 @@ $(function(){initNavTree('deprecation.html',''); initResizable(); });
 <p>Deprecated code paths must be registered with <code>SPDK_LOG_DEPRECATION_REGISTER()</code> and logged with <code>SPDK_LOG_DEPRECATED()</code>. The tag used with these macros will appear in the SPDK log at the warn level when <code>SPDK_LOG_DEPRECATED()</code> is called, subject to rate limits. The tags can be matched with the level 4 headers below.</p>
 <h1>Deprecation Notices</h1>
 <h2>bdev</h2>
+<h3><code>bdev_get_memory_domains</code></h3>
+<p><code>spdk_bdev_get_memory_domains</code> and the <code>get_memory_domains</code> fn_table entry are deprecated. Use <code>spdk_bdev_get_memory_domain_types</code> and <code>get_memory_domain_types</code> instead. Will be removed in the v26.09 release.</p>
 <h3><code>bdev_get_iostat</code></h3>
 <p><code>--name</code> option will be removed in the 26.05 release. <code>--names</code> option should be used instead, it allows providing array of devices names to obtain statistics from.</p>
 <h2>gpt</h2>

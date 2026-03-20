@@ -718,6 +718,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_set_opts</b>
 <tr class="memitem:a2643db603c5c9762d839036c1658bf1b" id="r_a2643db603c5c9762d839036c1658bf1b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2643db603c5c9762d839036c1658bf1b">spdk_bdev_get_memory_domains</a> (struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *bdev, struct spdk_memory_domain **domains, int array_size)</td></tr>
 <tr class="memdesc:a2643db603c5c9762d839036c1658bf1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get SPDK memory domains used by the given bdev.  <br /></td></tr>
 <tr class="separator:a2643db603c5c9762d839036c1658bf1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ceb3c9b0cc1e626fbbbffd0407d6231" id="r_a8ceb3c9b0cc1e626fbbbffd0407d6231"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8ceb3c9b0cc1e626fbbbffd0407d6231">spdk_bdev_get_memory_domain_types</a> (struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *bdev, enum <a class="el" href="dma_8h.html#a85588b3a6ec5c188ab2dc318c3903586">spdk_dma_device_type</a> *types, uint32_t array_size)</td></tr>
+<tr class="memdesc:a8ceb3c9b0cc1e626fbbbffd0407d6231"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get SPDK memory domain types used by the given bdev.  <br /></td></tr>
+<tr class="separator:a8ceb3c9b0cc1e626fbbbffd0407d6231"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a576acbae728d3d4ecc83ea5603cdd3f9" id="r_a576acbae728d3d4ecc83ea5603cdd3f9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a576acbae728d3d4ecc83ea5603cdd3f9">spdk_bdev_for_each_channel_continue</a> (struct spdk_bdev_channel_iter *i, int status)</td></tr>
 <tr class="memdesc:a576acbae728d3d4ecc83ea5603cdd3f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper function to iterate the next channel for <a class="el" href="#a1b51dde3495e6b37f172e172cca3cfd2" title="Call &#39;fn&#39; on each channel associated with the given bdev.">spdk_bdev_for_each_channel()</a>.  <br /></td></tr>
 <tr class="separator:a576acbae728d3d4ecc83ea5603cdd3f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2077,6 +2080,45 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_set_opts</b>
 
 </div>
 </div>
+<a id="a8ceb3c9b0cc1e626fbbbffd0407d6231" name="a8ceb3c9b0cc1e626fbbbffd0407d6231"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ceb3c9b0cc1e626fbbbffd0407d6231">&#9670;&#160;</a></span>spdk_bdev_get_memory_domain_types()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_bdev_get_memory_domain_types </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *</td>          <td class="paramname"><span class="paramname"><em>bdev</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">enum <a class="el" href="dma_8h.html#a85588b3a6ec5c188ab2dc318c3903586">spdk_dma_device_type</a> *</td>          <td class="paramname"><span class="paramname"><em>types</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>array_size</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get SPDK memory domain types used by the given bdev. </p>
+<p>If bdev reports that it uses memory domains that means that it can work with data buffers located in those memory domains.</p>
+<p>The user can call this function with <b>types</b> set to NULL and <b>array_size</b> set to 0 to get the number of memory domain types used by bdev</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bdev</td><td>Block device </td></tr>
+    <tr><td class="paramname">types</td><td>Pointer to an array of memory domain types to be filled by this function. The user should allocate big enough array to keep all memory domain types used by bdev and all underlying bdevs </td></tr>
+    <tr><td class="paramname">array_size</td><td>size of <b>types</b> array </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the number of entries in <b>types</b> array or negated errno. If returned value is bigger than <b>array_size</b> passed by the user, the first <b>array_size</b> entries in the array are valid but the list is not complete. The user should increase the size of the array and call this function again to get the full list. -EINVAL if input parameters were invalid </dd></dl>
+
+</div>
+</div>
 <a id="a2643db603c5c9762d839036c1658bf1b" name="a2643db603c5c9762d839036c1658bf1b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2643db603c5c9762d839036c1658bf1b">&#9670;&#160;</a></span>spdk_bdev_get_memory_domains()</h2>
 
@@ -2103,6 +2145,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_set_opts</b>
 
 <p>Get SPDK memory domains used by the given bdev. </p>
 <p>If bdev reports that it uses memory domains that means that it can work with data buffers located in those memory domains.</p>
+<p>Deprecated: use <a class="el" href="#a8ceb3c9b0cc1e626fbbbffd0407d6231">spdk_bdev_get_memory_domain_types</a> instead. Will be removed in v26.09.</p>
 <p>The user can call this function with <b>domains</b> set to NULL and <b>array_size</b> set to 0 to get the number of memory domains used by bdev</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">

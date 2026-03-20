@@ -154,6 +154,9 @@ v26.05: (Upcoming Release)</h1>
 <p>Added <code>names</code> field to <code>bdev_get_iostat</code> RPC to allow obtaining statistics from multiple bdevs at once.</p>
 <p>Added <code>SPDK_BDEV_RESET_STAT_ERROR</code> mode to <code>spdk_bdev_reset_stat_mode</code> enum. In this mode, only the I/O error stats are reset, leaving the rest of the stats unchanged.</p>
 <p>Removed the deprecated <code>spdk_bdev_io_get_aux_buf()</code> and <code>spdk_bdev_io_put_aux_buf()</code> APIs.</p>
+<p>Added new API <code>spdk_bdev_get_memory_domain_types</code> and corresponding <code>get_memory_domain_types</code> fn_table entry. These return DMA device types supported by a bdev rather than memory domain pointers. Deprecated <code>spdk_bdev_get_memory_domains</code> and the <code>get_memory_domains</code> fn_table entry, which will be removed in v26.09.</p>
+<h2>dma</h2>
+<p>Added <code><a class="el" href="dma_8h.html#a6d24ef1a9ed9f36b98225e167ce07b1d" title="Get a name string for a given DMA device type.">spdk_dma_device_type_get_name()</a></code> to return a human-readable name for a DMA device type.</p>
 <h2>bdev_aio</h2>
 <p>Disabled <code>RWF_NOWAIT</code> default flag usage - user needs to explicitly request to enable it using <code>--no-wait</code> (nowait) option.</p>
 <h2>blobstore</h2>

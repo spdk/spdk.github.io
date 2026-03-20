@@ -5,6 +5,7 @@ var structspdk__bdev__fn__table =
     [ "dump_device_stat_json", "structspdk__bdev__fn__table.html#af9c6d1b0e881b2715a9dba41a9776bb4", null ],
     [ "dump_info_json", "structspdk__bdev__fn__table.html#a417860f5598560a20b7bd4b5e8b4c3b0", null ],
     [ "get_io_channel", "structspdk__bdev__fn__table.html#aa4b0bd7f2a363d71050999a36c4cee92", null ],
+    [ "get_memory_domain_types", "structspdk__bdev__fn__table.html#a5c88b2c01035df67699d4e3d5325e7f4", null ],
     [ "get_memory_domains", "structspdk__bdev__fn__table.html#af73c1ef741a4751a64354eeb0532396c", null ],
     [ "get_module_ctx", "structspdk__bdev__fn__table.html#acb33ace4c653ed07120eb1275d698962", null ],
     [ "get_spin_time", "structspdk__bdev__fn__table.html#aafc336b4a42290b7e944fa0e73558a62", null ],

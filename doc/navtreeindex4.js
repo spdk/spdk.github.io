@@ -1,5 +1,7 @@
 var NAVTREEINDEX4 =
 {
+"functions_vars_w.html":[13,2,2,23],
+"functions_vars_z.html":[13,2,2,24],
 "functions_w.html":[13,2,0,23],
 "functions_z.html":[13,2,0,24],
 "gdb_macros.html":[4,5],
@@ -247,7 +249,5 @@ var NAVTREEINDEX4 =
 "jsonrpc.html#rpc_bdev_lvol_grow_lvstore":[3,8,10,4],
 "jsonrpc.html#rpc_bdev_lvol_inflate":[3,8,10,13],
 "jsonrpc.html#rpc_bdev_lvol_rename":[3,8,10,9],
-"jsonrpc.html#rpc_bdev_lvol_rename_lvstore":[3,8,10,3],
-"jsonrpc.html#rpc_bdev_lvol_resize":[3,8,10,10],
-"jsonrpc.html#rpc_bdev_lvol_set_parent":[3,8,10,16]
+"jsonrpc.html#rpc_bdev_lvol_rename_lvstore":[3,8,10,3]
 };

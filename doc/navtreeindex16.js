@@ -1,5 +1,8 @@
 var NAVTREEINDEX16 =
 {
+"structspdk__nvmf__registers.html":[13,0,390],
+"structspdk__nvmf__registrant__info.html":[13,0,391],
+"structspdk__nvmf__request.html":[13,0,392],
 "structspdk__nvmf__reservation__info.html":[13,0,393],
 "structspdk__nvmf__stripped__data.html":[13,0,394],
 "structspdk__nvmf__subsystem__key__opts.html":[13,0,395],
@@ -246,8 +249,5 @@ var NAVTREEINDEX16 =
 "structspdk__vfu__sparse__mmap.html#abdf95ae9998d50464d1575f1d4962db9":[13,0,474,0],
 "structvfio__user__bitmap.html":[13,0,475],
 "structvfio__user__bitmap__range.html":[13,0,476],
-"structvfio__user__device__info.html":[13,0,477],
-"structvfio__user__dma__map.html":[13,0,478],
-"structvfio__user__dma__region__access.html":[13,0,479],
-"structvfio__user__dma__unmap.html":[13,0,480]
+"structvfio__user__device__info.html":[13,0,477]
 };

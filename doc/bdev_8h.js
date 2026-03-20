@@ -117,6 +117,7 @@ var bdev_8h =
     [ "spdk_bdev_get_max_copy", "bdev_8h.html#a8b542430078d502325f37b92fc3d15ca", null ],
     [ "spdk_bdev_get_md_size", "bdev_8h.html#abc3537d0315100b24da6acc95929e849", null ],
     [ "spdk_bdev_get_media_events", "bdev_8h.html#af359a282820d73a253ffbbe127a30b96", null ],
+    [ "spdk_bdev_get_memory_domain_types", "bdev_8h.html#a8ceb3c9b0cc1e626fbbbffd0407d6231", null ],
     [ "spdk_bdev_get_memory_domains", "bdev_8h.html#a2643db603c5c9762d839036c1658bf1b", null ],
     [ "spdk_bdev_get_module_ctx", "bdev_8h.html#a5b596b58de9767fcd2030e5e07ddad41", null ],
     [ "spdk_bdev_get_module_name", "bdev_8h.html#a665b7764a3bf00c5a53c59e5f201cafb", null ],
