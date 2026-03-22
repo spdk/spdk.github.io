@@ -200,8 +200,9 @@ var NAVTREEINDEX16 =
 "structspdk__trace__history.html":[13,0,461],
 "structspdk__trace__history.html#a09f645e9d5c19fb4e4fe71b4faaa3951":[13,0,461,0],
 "structspdk__trace__history.html#a57438d2b62e8bef76601a2b881345463":[13,0,461,3],
-"structspdk__trace__history.html#a5d36fc5a17dddc7e14b32aa1598a7ee8":[13,0,461,4],
+"structspdk__trace__history.html#a5d36fc5a17dddc7e14b32aa1598a7ee8":[13,0,461,5],
 "structspdk__trace__history.html#ab6aed08b66a3c7f1bf46a1fb4b5d6419":[13,0,461,2],
+"structspdk__trace__history.html#abbe4657a63c03054c695b8fb2a35797f":[13,0,461,4],
 "structspdk__trace__history.html#afc00e204c28b550c0dd2f8140a08e566":[13,0,461,1],
 "structspdk__trace__object.html":[13,0,462],
 "structspdk__trace__owner.html":[13,0,463],
@@ -211,6 +212,7 @@ var NAVTREEINDEX16 =
 "structspdk__trace__parser__entry.html#a1b35d6aa4ee5f3d43668182899f4ce81":[13,0,465,0],
 "structspdk__trace__parser__entry.html#a53973ef677f05f6d067c046dc790da78":[13,0,465,1],
 "structspdk__trace__parser__entry.html#a55b2e0aea7cca402a502ad4d043e7293":[13,0,465,5],
+"structspdk__trace__parser__entry.html#a5a27165e037a2015b9e930453f35d1d6":[13,0,465,7],
 "structspdk__trace__parser__entry.html#a7e7ee46ec4c44c52caebb5ede88395c8":[13,0,465,6],
 "structspdk__trace__parser__entry.html#abb11f8535fab9ee4f9fc4c2adcee5145":[13,0,465,2],
 "structspdk__trace__parser__entry.html#aebdc6a2a084c4771e6fb246c2d729c1f":[13,0,465,3],
@@ -247,7 +249,5 @@ var NAVTREEINDEX16 =
 "structspdk__vfu__sparse__mmap.html":[13,0,474],
 "structspdk__vfu__sparse__mmap.html#a2f51edca2abef39eed92274031fb04ce":[13,0,474,1],
 "structspdk__vfu__sparse__mmap.html#abdf95ae9998d50464d1575f1d4962db9":[13,0,474,0],
-"structvfio__user__bitmap.html":[13,0,475],
-"structvfio__user__bitmap__range.html":[13,0,476],
-"structvfio__user__device__info.html":[13,0,477]
+"structvfio__user__bitmap.html":[13,0,475]
 };
