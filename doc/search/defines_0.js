@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['iscsi_5ftext_5fmax_5fsimple_5fval_5flen_0',['ISCSI_TEXT_MAX_SIMPLE_VAL_LEN',['../iscsi__spec_8h.html#a986978914c003f3149c8b418ad7cab55',1,'iscsi_spec.h']]],
-  ['iscsi_5ftext_5fmax_5fval_5flen_1',['ISCSI_TEXT_MAX_VAL_LEN',['../iscsi__spec_8h.html#a507069bdb66a86eb825aa8a38c51886b',1,'iscsi_spec.h']]],
-  ['iscsi_5fversion_2',['ISCSI_VERSION',['../iscsi__spec_8h.html#a64aadc6f469d1fccc4bffd83790f8f18',1,'iscsi_spec.h']]]
+  ['bdev_5fnvme_5fmp_5fpolicy_5factive_5fpassive_0',['BDEV_NVME_MP_POLICY_ACTIVE_PASSIVE',['../module_2bdev_2nvme_8h.html#afea4be31a3e8fb89d97ffb453e9c4764',1,'nvme.h']]]
 ];

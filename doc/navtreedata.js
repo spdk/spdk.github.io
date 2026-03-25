@@ -45,6 +45,7 @@ var NAVTREE =
       [ "Querying Tracepoint Status", "tracepoints.html#query_tpoint_status", null ],
       [ "Adding New Tracepoints", "tracepoints.html#add_tracepoints", null ]
     ] ],
+    [ "Deprecated List", "deprecated.html", null ],
     [ "Topics", "topics.html", "topics" ],
     [ "Data Structures", "annotated.html", [
       [ "Data Structures", "annotated.html", "annotated_dup" ],
@@ -74,22 +75,23 @@ var NAVTREEINDEX =
 "about.html",
 "bdev_8h.html#ab103cc993070d39a73c48d7087dc47a8",
 "blob_8h.html#aa98e6633723afb306a763b9f571f2cc1",
-"env_8h.html#ac2fb32c12cdf8c9fdb977f673fbf8de4",
-"functions_vars_w.html",
-"jsonrpc.html#rpc_bdev_lvol_resize",
-"jsonrpc_8h.html#a7246f2742a3bebe9494defa7d305de84",
-"nvme_8h.html#a5d0eb5d0f2e974c4d85fa251796486a3",
-"nvme__spec_8h.html#a221a4156b2e7883c4cb88847cbeaa069",
-"nvme__spec_8h.html#acb8784fad6a53be95d4c718ad3cf852ea1f1492360d1710140a84ed49f4f5362c",
-"nvmf_8h.html#a901526fe28710bcc2b5af94e1bc5f874",
-"scsi_8h.html#af5ed1a133f6f137402c0eb7742077f17",
-"structspdk__bdev_1_1____bdev__internal__fields.html#adf206491fff12a3f57474bab98d07ef2",
-"structspdk__fsdev__io__opts.html",
-"structspdk__nvme__ctrlr__data.html#acbf277bda70785f22e70aae2196c2e92",
-"structspdk__nvme__protection__info.html",
-"structspdk__nvmf__registers.html",
-"structvfio__user__bitmap__range.html",
-"unionspdk__nvme__cmbsz__register.html#a3481600cf80fa69860ba5dbb445afc5f"
+"env_8h.html#ac0a1b068221b7d1f1a1e2981ec3ba4d4",
+"functions_vars_v.html",
+"jsonrpc.html#rpc_bdev_lvol_rename",
+"jsonrpc_8h.html#a5160e9c0a3230584ca653ffd2ea64487",
+"nvme_8h.html#a59e69f39c7cb8a9e1c3e00af7804c8bd",
+"nvme__spec_8h.html#a1c06fbd66f7572c43c51e6f106215b8da315a35b15cc20a03255f8e8e4d3396ba",
+"nvme__spec_8h.html#acb8784fad6a53be95d4c718ad3cf852ea0dfb030eaf53c4ea99ff3118a1fde5ea",
+"nvmf_8h.html#a8e8e8b2a3f7a8d4b8ab52e1beef87ab0",
+"scsi_8h.html#ae2a96b70c616896d33f6904ead1b7e5b",
+"structspdk__bdev_1_1____bdev__internal__fields.html#ad010a75a238dd2290faf44545c43109e",
+"structspdk__fsdev__io_1_1____fsdev__io__internal__fields.html#ac41d8d778ed0593c57c5ea13d90d699d",
+"structspdk__nvme__ctrlr__data.html#ab17bb2db481244eae5a23e9fd9949ae6",
+"structspdk__nvme__primary__ctrl__capabilities.html#aeab109efd1eae5f155c06105e8d097ed",
+"structspdk__nvmf__referral__opts.html#ac030df8778d5942b705e1f2b14c6396c",
+"structspdk__vfu__sparse__mmap.html#a2f51edca2abef39eed92274031fb04ce",
+"unionspdk__nvme__cmbswtp__register.html#a82beb10e022b4e8cac06d1d666ad6b0e",
+"zipf_8h.html#aebb280a8d6fb699e2e57cb3e324424ef"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
