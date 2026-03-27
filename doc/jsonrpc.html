@@ -7207,7 +7207,9 @@ nvmf_subsystem_add_listener</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">ana_state   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">ANA state to set: optimized, non_optimized, or inaccessible    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">sock_impl   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">The socket implementation to use for the listener   </td></tr>
+<td class="markdownTableBodyNone">sock_impl   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">The socket implementation to use for the listener    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">numa_id   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">int32   </td><td class="markdownTableBodyNone">Required NUMA node ID for all namespaces, if -1 then any namespace can be used. Default is -1. Relevant only for VFIOUSER transport.   </td></tr>
 </table>
 <h4><a class="anchor" id="rpc_nvmf_listen_address"></a>
 listen_address</h4>
