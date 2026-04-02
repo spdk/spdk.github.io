@@ -33,7 +33,7 @@ var searchData=
   ['clba_30',['clba',['../structspdk__ocssd__geometry__data.html#a277515978925f74508441bce44027a4c',1,'spdk_ocssd_geometry_data']]],
   ['cleanup_31',['cleanup',['../structspdk__keyring__module.html#a717f2630958d98c6db2a28de2b9900b4',1,'spdk_keyring_module']]],
   ['clear_5fmethod_32',['clear_method',['../structspdk__bs__opts.html#a51903fecf7741006c5d14a6dc0cc9c67',1,'spdk_bs_opts::clear_method'],['../structspdk__lvs__opts.html#ad72430d6eb4550837aca4946a3990f8e',1,'spdk_lvs_opts::clear_method']]],
-  ['clear_5ftsc_33',['clear_tsc',['../structspdk__trace__file.html#ab5f305265f920763055a9b607aa9c642',1,'spdk_trace_file']]],
+  ['clear_5ftsc_33',['clear_tsc',['../structspdk__trace__section__main.html#abf7c8ac11be1e384a47694ec99a975b1',1,'spdk_trace_section_main']]],
   ['closed_34',['closed',['../structspdk__ocssd__chunk__information__entry.html#a1fc2a46fc77b068996c02c36e1b740a3',1,'spdk_ocssd_chunk_information_entry']]],
   ['cluster_5fsz_35',['cluster_sz',['../structspdk__bs__opts.html#aa9f80152a5720e25bc52ab4a89113cdf',1,'spdk_bs_opts::cluster_sz'],['../structspdk__lvs__opts.html#a7de65fde2acf310c0d7ba4479d368f46',1,'spdk_lvs_opts::cluster_sz']]],
   ['cmbebs_36',['cmbebs',['../structspdk__nvme__registers.html#a8848fc76a7044643daa7c18408f78309',1,'spdk_nvme_registers']]],

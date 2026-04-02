@@ -1,0 +1,7 @@
+<map id="spdk_trace_section_tpoint" name="spdk_trace_section_tpoint">
+<area shape="rect" id="Node000001" title=" " alt="" coords="13,191,160,235"/>
+<area shape="rect" id="Node000002" href="$structspdk__trace__tpoint.html" title=" " alt="" coords="18,98,155,126"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="89,141,89,190,84,190,84,141"/>
+<area shape="rect" id="Node000003" href="$structspdk__trace__argument.html" title=" " alt="" coords="5,5,168,33"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="89,48,89,98,84,98,84,48"/>
+</map>

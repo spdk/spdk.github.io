@@ -50,7 +50,7 @@ var searchData=
   ['clba_47',['clba',['../structspdk__ocssd__geometry__data.html#a277515978925f74508441bce44027a4c',1,'spdk_ocssd_geometry_data']]],
   ['cleanup_48',['cleanup',['../structspdk__keyring__module.html#a717f2630958d98c6db2a28de2b9900b4',1,'spdk_keyring_module']]],
   ['clear_5fmethod_49',['clear_method',['../structspdk__bs__opts.html#a51903fecf7741006c5d14a6dc0cc9c67',1,'spdk_bs_opts::clear_method'],['../structspdk__lvs__opts.html#ad72430d6eb4550837aca4946a3990f8e',1,'spdk_lvs_opts::clear_method']]],
-  ['clear_5ftsc_50',['clear_tsc',['../structspdk__trace__file.html#ab5f305265f920763055a9b607aa9c642',1,'spdk_trace_file']]],
+  ['clear_5ftsc_50',['clear_tsc',['../structspdk__trace__section__main.html#abf7c8ac11be1e384a47694ec99a975b1',1,'spdk_trace_section_main']]],
   ['clearing_20trace_20history_51',['Clearing Trace History',['../tracepoints.html#clear_trace_history',1,'']]],
   ['client_20spdkcli_20iscsi_20and_20nvme_20of_20support_52',['v18.10: Dynamic memory allocation, Crypto Virtual Bdev, jsonrpc-client, SPDKCLI iSCSI and NVMe-oF support',['../changelog.html#changelog-v18-10',1,'']]],
   ['clone_53',['Snapshots and clone',['../logical_volumes.html#lvol_snapshots',1,'']]],

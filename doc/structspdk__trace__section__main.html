@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta name="generator" content="Doxygen 1.10.0" />
-	<title>SPDK: spdk_trace_history Struct Reference</title>
+	<title>SPDK: spdk_trace_section_main Struct Reference</title>
 	<script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.8/umd/popper.min.js" integrity="sha512-TPh2Oxlg1zp+kz3nFA0C5vVC6leG/6mm1z9+mA81MI5eaUVqasPLO8Cuk4gMF4gUfP5etR73rgU/8PNMsSesoQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
@@ -102,7 +102,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(function(){initNavTree('structspdk__trace__history.html',''); initResizable(); });
+$(function(){initNavTree('structspdk__trace__section__main.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -130,35 +130,22 @@ $(function(){initNavTree('structspdk__trace__history.html',''); initResizable();
 <div class="header">
   <div class="summary">
 <a href="#pub-attribs">Data Fields</a>  </div>
-  <div class="headertitle"><div class="title">spdk_trace_history Struct Reference</div></div>
+  <div class="headertitle"><div class="title">spdk_trace_section_main Struct Reference</div></div>
 </div><!--header-->
 <div class="contents">
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:afc00e204c28b550c0dd2f8140a08e566" id="r_afc00e204c28b550c0dd2f8140a08e566"><td class="memItemLeft" align="right" valign="top"><a id="afc00e204c28b550c0dd2f8140a08e566" name="afc00e204c28b550c0dd2f8140a08e566"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>lcore</b></td></tr>
-<tr class="memdesc:afc00e204c28b550c0dd2f8140a08e566"><td class="mdescLeft">&#160;</td><td class="mdescRight">Logical core number associated with this structure instance. <br /></td></tr>
-<tr class="separator:afc00e204c28b550c0dd2f8140a08e566"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abbe4657a63c03054c695b8fb2a35797f" id="r_abbe4657a63c03054c695b8fb2a35797f"><td class="memItemLeft" align="right" valign="top"><a id="abbe4657a63c03054c695b8fb2a35797f" name="abbe4657a63c03054c695b8fb2a35797f"></a>
-char&#160;</td><td class="memItemRight" valign="bottom"><b>tname</b> [SPDK_TRACE_THREAD_NAME_LEN]</td></tr>
-<tr class="memdesc:abbe4657a63c03054c695b8fb2a35797f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Thread name associated with this lcore. <br /></td></tr>
-<tr class="separator:abbe4657a63c03054c695b8fb2a35797f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a57438d2b62e8bef76601a2b881345463" id="r_a57438d2b62e8bef76601a2b881345463"><td class="memItemLeft" align="right" valign="top"><a id="a57438d2b62e8bef76601a2b881345463" name="a57438d2b62e8bef76601a2b881345463"></a>
-uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>num_entries</b></td></tr>
-<tr class="memdesc:a57438d2b62e8bef76601a2b881345463"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of trace_entries contained in each trace_history. <br /></td></tr>
-<tr class="separator:a57438d2b62e8bef76601a2b881345463"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abf23bb37a270ab385bb4597cb507b066" id="r_abf23bb37a270ab385bb4597cb507b066"><td class="memItemLeft" align="right" valign="top"><a id="abf23bb37a270ab385bb4597cb507b066" name="abf23bb37a270ab385bb4597cb507b066"></a>
-uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>num_tpoint_ids</b></td></tr>
-<tr class="memdesc:abf23bb37a270ab385bb4597cb507b066"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of tracepoint IDs for the tpoint_count array. <br /></td></tr>
-<tr class="separator:abf23bb37a270ab385bb4597cb507b066"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab6aed08b66a3c7f1bf46a1fb4b5d6419" id="r_ab6aed08b66a3c7f1bf46a1fb4b5d6419"><td class="memItemLeft" align="right" valign="top"><a id="ab6aed08b66a3c7f1bf46a1fb4b5d6419" name="ab6aed08b66a3c7f1bf46a1fb4b5d6419"></a>
-uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>next_entry</b></td></tr>
-<tr class="memdesc:ab6aed08b66a3c7f1bf46a1fb4b5d6419"><td class="mdescLeft">&#160;</td><td class="mdescRight">Index to next <a class="el" href="structspdk__trace__entry.html">spdk_trace_entry</a> to fill. <br /></td></tr>
-<tr class="separator:ab6aed08b66a3c7f1bf46a1fb4b5d6419"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a58faff0aa75f4ca08865a9f0d10f0f9b" id="r_a58faff0aa75f4ca08865a9f0d10f0f9b"><td class="memItemLeft" align="right" valign="top"><a id="a58faff0aa75f4ca08865a9f0d10f0f9b" name="a58faff0aa75f4ca08865a9f0d10f0f9b"></a>
-uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>data</b> [0]</td></tr>
-<tr class="separator:a58faff0aa75f4ca08865a9f0d10f0f9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a446119c8e57da808f32427f783c195" id="r_a6a446119c8e57da808f32427f783c195"><td class="memItemLeft" align="right" valign="top"><a id="a6a446119c8e57da808f32427f783c195" name="a6a446119c8e57da808f32427f783c195"></a>
+uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>tsc_rate</b></td></tr>
+<tr class="separator:a6a446119c8e57da808f32427f783c195"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf7c8ac11be1e384a47694ec99a975b1" id="r_abf7c8ac11be1e384a47694ec99a975b1"><td class="memItemLeft" align="right" valign="top"><a id="abf7c8ac11be1e384a47694ec99a975b1" name="abf7c8ac11be1e384a47694ec99a975b1"></a>
+uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>clear_tsc</b></td></tr>
+<tr class="memdesc:abf7c8ac11be1e384a47694ec99a975b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">TSC value set by <a class="el" href="trace_8h.html#af5e117307d87f31498302ac9b0df8265" title="Record the current TSC as a clear point.">spdk_trace_clear()</a>; the parser ignores entries older than this. <br /></td></tr>
+<tr class="separator:abf7c8ac11be1e384a47694ec99a975b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adde090c985989a2a2d9c9d92418d948c" id="r_adde090c985989a2a2d9c9d92418d948c"><td class="memItemLeft" align="right" valign="top"><a id="adde090c985989a2a2d9c9d92418d948c" name="adde090c985989a2a2d9c9d92418d948c"></a>
+uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>reserved</b> [496]</td></tr>
+<tr class="separator:adde090c985989a2a2d9c9d92418d948c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li><a class="el" href="trace_8h.html">trace.h</a></li>

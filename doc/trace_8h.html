@@ -131,6 +131,7 @@ $(function(){initNavTree('trace_8h.html',''); initResizable(); });
   <div class="summary">
 <a href="#nested-classes">Data Structures</a> &#124;
 <a href="#define-members">Macros</a> &#124;
+<a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">trace.h File Reference</div></div>
@@ -157,6 +158,20 @@ Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__trace__tpoint.html">spdk_trace_tpoint</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__trace__history.html">spdk_trace_history</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__trace__section__main.html">spdk_trace_section_main</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__trace__section__owner.html">spdk_trace_section_owner</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__trace__section__tpoint__mask.html">spdk_trace_section_tpoint_mask</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__trace__section__owner__type.html">spdk_trace_section_owner_type</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__trace__section__object.html">spdk_trace_section_object</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__trace__section__tpoint.html">spdk_trace_section_tpoint</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__trace__section__lcore__offsets.html">spdk_trace_section_lcore_offsets</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__trace__file.html">spdk_trace_file</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -209,6 +224,27 @@ Macros</h2></td></tr>
 <tr class="memitem:a589fccd362899b2c59ce2e5860d2cb30" id="r_a589fccd362899b2c59ce2e5860d2cb30"><td class="memItemLeft" align="right" valign="top"><a id="a589fccd362899b2c59ce2e5860d2cb30" name="a589fccd362899b2c59ce2e5860d2cb30"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_TRACE_MAX_LCORE</b>&#160;&#160;&#160;1024</td></tr>
 <tr class="separator:a589fccd362899b2c59ce2e5860d2cb30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c11f30ef683b19cce77a3fc04232de5" id="r_a9c11f30ef683b19cce77a3fc04232de5"><td class="memItemLeft" align="right" valign="top"><a id="a9c11f30ef683b19cce77a3fc04232de5" name="a9c11f30ef683b19cce77a3fc04232de5"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_trace_get_main_section</b>(f)&#160;&#160;&#160;	((struct <a class="el" href="structspdk__trace__section__main.html">spdk_trace_section_main</a> *)spdk_trace_get_section(f, SPDK_TRACE_SECTION_MAIN))</td></tr>
+<tr class="separator:a9c11f30ef683b19cce77a3fc04232de5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33a5f3af8038cc0f4a894bb5c76606cc" id="r_a33a5f3af8038cc0f4a894bb5c76606cc"><td class="memItemLeft" align="right" valign="top"><a id="a33a5f3af8038cc0f4a894bb5c76606cc" name="a33a5f3af8038cc0f4a894bb5c76606cc"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_trace_get_tpoint_mask_section</b>(f)&#160;&#160;&#160;	((struct <a class="el" href="structspdk__trace__section__tpoint__mask.html">spdk_trace_section_tpoint_mask</a> *)spdk_trace_get_section(f, SPDK_TRACE_SECTION_TPOINT_MASK))</td></tr>
+<tr class="separator:a33a5f3af8038cc0f4a894bb5c76606cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c97d8d3ab56463fd087e3190d199e04" id="r_a3c97d8d3ab56463fd087e3190d199e04"><td class="memItemLeft" align="right" valign="top"><a id="a3c97d8d3ab56463fd087e3190d199e04" name="a3c97d8d3ab56463fd087e3190d199e04"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_trace_get_owner_type_section</b>(f)&#160;&#160;&#160;	((struct <a class="el" href="structspdk__trace__section__owner__type.html">spdk_trace_section_owner_type</a> *)spdk_trace_get_section(f, SPDK_TRACE_SECTION_OWNER_TYPE))</td></tr>
+<tr class="separator:a3c97d8d3ab56463fd087e3190d199e04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac11d20eac101f74d94d89c7658ccf3ad" id="r_ac11d20eac101f74d94d89c7658ccf3ad"><td class="memItemLeft" align="right" valign="top"><a id="ac11d20eac101f74d94d89c7658ccf3ad" name="ac11d20eac101f74d94d89c7658ccf3ad"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_trace_get_object_section</b>(f)&#160;&#160;&#160;	((struct <a class="el" href="structspdk__trace__section__object.html">spdk_trace_section_object</a> *)spdk_trace_get_section(f, SPDK_TRACE_SECTION_OBJECT))</td></tr>
+<tr class="separator:ac11d20eac101f74d94d89c7658ccf3ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ecf3da840699a9a15c636f03566210e" id="r_a3ecf3da840699a9a15c636f03566210e"><td class="memItemLeft" align="right" valign="top"><a id="a3ecf3da840699a9a15c636f03566210e" name="a3ecf3da840699a9a15c636f03566210e"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_trace_get_tpoint_section</b>(f)&#160;&#160;&#160;	((struct <a class="el" href="structspdk__trace__section__tpoint.html">spdk_trace_section_tpoint</a> *)spdk_trace_get_section(f, SPDK_TRACE_SECTION_TPOINT))</td></tr>
+<tr class="separator:a3ecf3da840699a9a15c636f03566210e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a981155dbabf45a45eab8eadd74f4fac1" id="r_a981155dbabf45a45eab8eadd74f4fac1"><td class="memItemLeft" align="right" valign="top"><a id="a981155dbabf45a45eab8eadd74f4fac1" name="a981155dbabf45a45eab8eadd74f4fac1"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_trace_get_lcore_offsets_section</b>(f)&#160;&#160;&#160;	((struct <a class="el" href="structspdk__trace__section__lcore__offsets.html">spdk_trace_section_lcore_offsets</a> *)spdk_trace_get_section(f, SPDK_TRACE_SECTION_LCORE_OFFSETS))</td></tr>
+<tr class="separator:a981155dbabf45a45eab8eadd74f4fac1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a189b923cb3b8805145e594e605a10df2" id="r_a189b923cb3b8805145e594e605a10df2"><td class="memItemLeft" align="right" valign="top"><a id="a189b923cb3b8805145e594e605a10df2" name="a189b923cb3b8805145e594e605a10df2"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_trace_get_owner_section</b>(f)&#160;&#160;&#160;	((struct <a class="el" href="structspdk__trace__section__owner.html">spdk_trace_section_owner</a> *)spdk_trace_get_section(f, SPDK_TRACE_SECTION_OWNER))</td></tr>
+<tr class="separator:a189b923cb3b8805145e594e605a10df2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aede872eb36929c2d44e6e48476e89f3a" id="r_aede872eb36929c2d44e6e48476e89f3a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aede872eb36929c2d44e6e48476e89f3a">spdk_trace_tpoint_enabled</a>(tpoint_id)</td></tr>
 <tr class="separator:aede872eb36929c2d44e6e48476e89f3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9bb0e89890edaeda9f36af139615732a" id="r_a9bb0e89890edaeda9f36af139615732a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9bb0e89890edaeda9f36af139615732a">_spdk_trace_record_tsc</a>(tsc,  tpoint_id,  owner_id,  size,  object_id,  num_args, ...)</td></tr>
@@ -240,17 +276,66 @@ Macros</h2></td></tr>
 <tr class="memitem:a4cdbdade1f743930b4b2ff0fd75d22d4" id="r_a4cdbdade1f743930b4b2ff0fd75d22d4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4cdbdade1f743930b4b2ff0fd75d22d4">SPDK_TRACE_REGISTER_FN</a>(fn,  name_str,  _tgroup_id)</td></tr>
 <tr class="separator:a4cdbdade1f743930b4b2ff0fd75d22d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:a25d09f066cb6f21db50bacadaf82969d" id="r_a25d09f066cb6f21db50bacadaf82969d"><td class="memItemLeft" align="right" valign="top"><a id="a25d09f066cb6f21db50bacadaf82969d" name="a25d09f066cb6f21db50bacadaf82969d"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>spdk_trace_section_type</b> { <br />
+&#160;&#160;<b>SPDK_TRACE_SECTION_MAIN</b> = 0
+, <b>SPDK_TRACE_SECTION_OWNER</b> = 1
+, <b>SPDK_TRACE_SECTION_TPOINT_MASK</b> = 2
+, <b>SPDK_TRACE_SECTION_OWNER_TYPE</b> = 3
+, <br />
+&#160;&#160;<b>SPDK_TRACE_SECTION_OBJECT</b> = 4
+, <b>SPDK_TRACE_SECTION_TPOINT</b> = 5
+, <b>SPDK_TRACE_SECTION_LCORE_OFFSETS</b> = 6
+, <b>SPDK_TRACE_NUM_SECTIONS</b>
+<br />
+ }</td></tr>
+<tr class="separator:a25d09f066cb6f21db50bacadaf82969d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a6117e9c017b65f62029a58f4dadf8cad" id="r_a6117e9c017b65f62029a58f4dadf8cad"><td class="memItemLeft" align="right" valign="top"><a id="a6117e9c017b65f62029a58f4dadf8cad" name="a6117e9c017b65f62029a58f4dadf8cad"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(struct <a class="el" href="structspdk__trace__entry__buffer.html">spdk_trace_entry_buffer</a>)==sizeof(struct <a class="el" href="structspdk__trace__entry.html">spdk_trace_entry</a>), &quot;Invalid size of trace entry buffer&quot;)</td></tr>
 <tr class="separator:a6117e9c017b65f62029a58f4dadf8cad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a31bfd9fba3352fdc899b3b5033481b27" id="r_a31bfd9fba3352fdc899b3b5033481b27"><td class="memItemLeft" align="right" valign="top"><a id="a31bfd9fba3352fdc899b3b5033481b27" name="a31bfd9fba3352fdc899b3b5033481b27"></a>
-static uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_get_trace_history_size</b> (uint64_t num_entries)</td></tr>
-<tr class="separator:a31bfd9fba3352fdc899b3b5033481b27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae8996e4c1951d47ed072cede0bd03a6" id="r_aae8996e4c1951d47ed072cede0bd03a6"><td class="memItemLeft" align="right" valign="top"><a id="aae8996e4c1951d47ed072cede0bd03a6" name="aae8996e4c1951d47ed072cede0bd03a6"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(struct <a class="el" href="structspdk__trace__section__main.html">spdk_trace_section_main</a>)==512, &quot;incorrect size&quot;)</td></tr>
+<tr class="separator:aae8996e4c1951d47ed072cede0bd03a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7fcf954fdd48c24a4c7675ee74d43939" id="r_a7fcf954fdd48c24a4c7675ee74d43939"><td class="memItemLeft" align="right" valign="top"><a id="a7fcf954fdd48c24a4c7675ee74d43939" name="a7fcf954fdd48c24a4c7675ee74d43939"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(struct <a class="el" href="structspdk__trace__section__owner.html">spdk_trace_section_owner</a>)==128, &quot;incorrect size&quot;)</td></tr>
+<tr class="separator:a7fcf954fdd48c24a4c7675ee74d43939"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9a60308606336f758b6c178efd796e0" id="r_ac9a60308606336f758b6c178efd796e0"><td class="memItemLeft" align="right" valign="top"><a id="ac9a60308606336f758b6c178efd796e0" name="ac9a60308606336f758b6c178efd796e0"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(struct <a class="el" href="structspdk__trace__section__tpoint__mask.html">spdk_trace_section_tpoint_mask</a>)==128, &quot;incorrect size&quot;)</td></tr>
+<tr class="separator:ac9a60308606336f758b6c178efd796e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71ecdd43ee9575c0e1ea2e462052bc60" id="r_a71ecdd43ee9575c0e1ea2e462052bc60"><td class="memItemLeft" align="right" valign="top"><a id="a71ecdd43ee9575c0e1ea2e462052bc60" name="a71ecdd43ee9575c0e1ea2e462052bc60"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(struct <a class="el" href="structspdk__trace__section__owner__type.html">spdk_trace_section_owner_type</a>)==128, &quot;incorrect size&quot;)</td></tr>
+<tr class="separator:a71ecdd43ee9575c0e1ea2e462052bc60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada202f8a8b3da32599e27ad9a91dfead" id="r_ada202f8a8b3da32599e27ad9a91dfead"><td class="memItemLeft" align="right" valign="top"><a id="ada202f8a8b3da32599e27ad9a91dfead" name="ada202f8a8b3da32599e27ad9a91dfead"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(struct <a class="el" href="structspdk__trace__section__object.html">spdk_trace_section_object</a>)==128, &quot;incorrect size&quot;)</td></tr>
+<tr class="separator:ada202f8a8b3da32599e27ad9a91dfead"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40d0c25427467dca402159975d6abe30" id="r_a40d0c25427467dca402159975d6abe30"><td class="memItemLeft" align="right" valign="top"><a id="a40d0c25427467dca402159975d6abe30" name="a40d0c25427467dca402159975d6abe30"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(struct <a class="el" href="structspdk__trace__section__tpoint.html">spdk_trace_section_tpoint</a>)==128, &quot;incorrect size&quot;)</td></tr>
+<tr class="separator:a40d0c25427467dca402159975d6abe30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c0df91c4ef9df1b5251a5fcf0227351" id="r_a1c0df91c4ef9df1b5251a5fcf0227351"><td class="memItemLeft" align="right" valign="top"><a id="a1c0df91c4ef9df1b5251a5fcf0227351" name="a1c0df91c4ef9df1b5251a5fcf0227351"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(struct <a class="el" href="structspdk__trace__section__lcore__offsets.html">spdk_trace_section_lcore_offsets</a>)==128, &quot;incorrect size&quot;)</td></tr>
+<tr class="separator:a1c0df91c4ef9df1b5251a5fcf0227351"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a012b5601d8facfb42abd84a11391907d" id="r_a012b5601d8facfb42abd84a11391907d"><td class="memItemLeft" align="right" valign="top"><a id="a012b5601d8facfb42abd84a11391907d" name="a012b5601d8facfb42abd84a11391907d"></a>
+static struct <a class="el" href="structspdk__trace__entry.html">spdk_trace_entry</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_trace_history_get_entry</b> (struct <a class="el" href="structspdk__trace__history.html">spdk_trace_history</a> *history, uint64_t offset)</td></tr>
+<tr class="separator:a012b5601d8facfb42abd84a11391907d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41a0bc15619253edf602414fe9930a34" id="r_a41a0bc15619253edf602414fe9930a34"><td class="memItemLeft" align="right" valign="top"><a id="a41a0bc15619253edf602414fe9930a34" name="a41a0bc15619253edf602414fe9930a34"></a>
+static uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_get_trace_history_size</b> (uint64_t num_entries, uint64_t num_tpoint_ids)</td></tr>
+<tr class="separator:a41a0bc15619253edf602414fe9930a34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a302d5aa79369820fc73e53183abb9846" id="r_a302d5aa79369820fc73e53183abb9846"><td class="memItemLeft" align="right" valign="top"><a id="a302d5aa79369820fc73e53183abb9846" name="a302d5aa79369820fc73e53183abb9846"></a>
+static void *&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_trace_get_section</b> (const struct <a class="el" href="structspdk__trace__file.html">spdk_trace_file</a> *f, enum spdk_trace_section_type type)</td></tr>
+<tr class="separator:a302d5aa79369820fc73e53183abb9846"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3df24bd355828fbae832ea3f8c402658" id="r_a3df24bd355828fbae832ea3f8c402658"><td class="memItemLeft" align="right" valign="top"><a id="a3df24bd355828fbae832ea3f8c402658" name="a3df24bd355828fbae832ea3f8c402658"></a>
+static uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_trace_get_tsc_rate</b> (const struct <a class="el" href="structspdk__trace__file.html">spdk_trace_file</a> *trace_file)</td></tr>
+<tr class="separator:a3df24bd355828fbae832ea3f8c402658"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af83a677d364238be86c05dcaf2648754" id="r_af83a677d364238be86c05dcaf2648754"><td class="memItemLeft" align="right" valign="top"><a id="af83a677d364238be86c05dcaf2648754" name="af83a677d364238be86c05dcaf2648754"></a>
 static uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_get_trace_file_size</b> (struct <a class="el" href="structspdk__trace__file.html">spdk_trace_file</a> *trace_file)</td></tr>
 <tr class="separator:af83a677d364238be86c05dcaf2648754"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acdc223cc358cd883825948a106dad9e2" id="r_acdc223cc358cd883825948a106dad9e2"><td class="memItemLeft" align="right" valign="top"><a id="acdc223cc358cd883825948a106dad9e2" name="acdc223cc358cd883825948a106dad9e2"></a>
+static uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_trace_file_get_sections_size</b> (const struct <a class="el" href="structspdk__trace__file.html">spdk_trace_file</a> *f)</td></tr>
+<tr class="separator:acdc223cc358cd883825948a106dad9e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab36a8f17ed7e506aa5534006e9a5c42a" id="r_ab36a8f17ed7e506aa5534006e9a5c42a"><td class="memItemLeft" align="right" valign="top"><a id="ab36a8f17ed7e506aa5534006e9a5c42a" name="ab36a8f17ed7e506aa5534006e9a5c42a"></a>
 static struct <a class="el" href="structspdk__trace__history.html">spdk_trace_history</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_get_per_lcore_history</b> (struct <a class="el" href="structspdk__trace__file.html">spdk_trace_file</a> *trace_file, unsigned lcore)</td></tr>
 <tr class="separator:ab36a8f17ed7e506aa5534006e9a5c42a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -549,7 +634,7 @@ struct <a class="el" href="structspdk__trace__file.html">spdk_trace_file</a> *&#
 <div class="line">        {                                                       \</div>
 <div class="line">                spdk_trace_add_register_fn(&amp;reg_ ## fn);        \</div>
 <div class="line">        }</div>
-<div class="ttc" id="astructspdk__trace__register__fn_html"><div class="ttname"><a href="structspdk__trace__register__fn.html">spdk_trace_register_fn</a></div><div class="ttdef"><b>Definition</b> trace.h:496</div></div>
+<div class="ttc" id="astructspdk__trace__register__fn_html"><div class="ttname"><a href="structspdk__trace__register__fn.html">spdk_trace_register_fn</a></div><div class="ttdef"><b>Definition</b> trace.h:610</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -568,7 +653,8 @@ struct <a class="el" href="structspdk__trace__file.html">spdk_trace_file</a> *&#
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">        spdk_unlikely((g_trace_file != NULL  &amp;&amp; \</div>
-<div class="line">        ((1ULL &lt;&lt; (tpoint_id &amp; 0x3F)) &amp; g_trace_file-&gt;tpoint_mask[tpoint_id &gt;&gt; 6])))</div>
+<div class="line">        ((1ULL &lt;&lt; (tpoint_id &amp; 0x3F)) &amp; \</div>
+<div class="line">         spdk_trace_get_tpoint_mask_section(g_trace_file)-&gt;tpoint_mask[tpoint_id &gt;&gt; 6])))</div>
 </div><!-- fragment -->
 </div>
 </div>
