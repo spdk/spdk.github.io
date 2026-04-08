@@ -1,5 +1,6 @@
 var NAVTREEINDEX18 =
 {
+"unionspdk__nvme__cmbsts__register.html":[14,0,185],
 "unionspdk__nvme__cmbsts__register.html#a5998dda138a19e69602822179d4547be":[14,0,185,0],
 "unionspdk__nvme__cmbswtp__register.html":[14,0,186],
 "unionspdk__nvme__cmbswtp__register.html#a0d2236d9422b0c831f5b6822bb1851a3":[14,0,186,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX18 =
 "vmd_8h.html#acbf78271da1326a9e70fe8bb0aeb6a75ad898705795b34aeb83a172297709c1a9":[15,0,0,0,66,0,3],
 "vmd_8h.html#acbf78271da1326a9e70fe8bb0aeb6a75aef274f94efbc0c85819a635dd58860a7":[15,0,0,0,66,0,1],
 "xor_8h.html":[15,0,0,0,67],
-"xor_8h.html#a714307c955fae9782a0cf6f7bf2632c5":[15,0,0,0,67,1],
-"xor_8h.html#aa889762f3d7ce0f9bb8b91c5c3add079":[15,0,0,0,67,0]
+"xor_8h.html#a714307c955fae9782a0cf6f7bf2632c5":[15,0,0,0,67,1]
 };

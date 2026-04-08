@@ -1,7 +1,7 @@
 var searchData=
 [
   ['s_20guide_0',['Blobstore Programmer&apos;s Guide',['../blob.html',1,'prog_guides']]],
-  ['sanicap_1',['sanicap',['../structspdk__nvme__ctrlr__data.html#af424c95861f59be22037f4f4f343c498',1,'spdk_nvme_ctrlr_data']]],
+  ['sanicap_1',['sanicap',['../structspdk__nvme__ctrlr__data.html#aeafe239cd158f01bd03f7e7fd64ed428',1,'spdk_nvme_ctrlr_data']]],
   ['sc_2',['sc',['../structspdk__bdev__io__internal__fields.html#a2aa1be46b681de53a34562b114aa0bda',1,'spdk_bdev_io_internal_fields']]],
   ['scaling_20performance_3',['Scaling Performance',['../nvme.html#nvme_scaling',1,'']]],
   ['schedule_4',['Schedule',['../releases.html#schedule',1,'']]],
@@ -10,7 +10,7 @@ var searchData=
   ['scid_7',['scid',['../structspdk__nvme__secondary__ctrl__entry.html#aceeb0796ff8bc1cf8e84a3fec5c553c9',1,'spdk_nvme_secondary_ctrl_entry']]],
   ['script_8',['Backporting script',['../backporting.html#backporting_script',1,'']]],
   ['scripts_9',['Scripts',['../overview.html#dir_scripts',1,'']]],
-  ['scs_10',['scs',['../structspdk__nvme__secondary__ctrl__entry.html#a1f4044c9977935eb03ac400d965550f2',1,'spdk_nvme_secondary_ctrl_entry']]],
+  ['scs_10',['scs',['../structspdk__nvme__secondary__ctrl__entry.html#acd836b40c500366cdfce522aa065e6ce',1,'spdk_nvme_secondary_ctrl_entry']]],
   ['scsi_11',['scsi',['../structspdk__bdev__io__internal__fields.html#a8af330fde1e9592a661673f8a670c0fb',1,'spdk_bdev_io_internal_fields']]],
   ['scsi_12',['SCSI',['../jsonrpc.html#rpc_vhost_get_controllers_scsi',1,'Vhost SCSI'],['../bdev.html#bdev_config_virtio_scsi',1,'Virtio SCSI']]],
   ['scsi_20lun_13',['Vhost SCSI LUN',['../jsonrpc.html#rpc_vhost_get_controllers_scsi_luns',1,'']]],
@@ -2496,7 +2496,7 @@ var searchData=
   ['split_5fon_5foptimal_5fio_5fboundary_2493',['split_on_optimal_io_boundary',['../structspdk__bdev.html#a6dddfe2c4f020ee0807843da2c6ec922',1,'spdk_bdev']]],
   ['split_5fon_5fwrite_5funit_2494',['split_on_write_unit',['../structspdk__bdev.html#a7720b606d1919877022024e66238c33f',1,'spdk_bdev']]],
   ['sq_2495',['sq',['../structspdk__nvme__io__qpair__opts.html#a68b231bae4968846173e8ff1ba24b5bd',1,'spdk_nvme_io_qpair_opts']]],
-  ['sqes_2496',['sqes',['../structspdk__nvme__ctrlr__data.html#a7ac565d11499fc40b3117e13206006de',1,'spdk_nvme_ctrlr_data']]],
+  ['sqes_2496',['sqes',['../structspdk__nvme__ctrlr__data.html#ad31b88f651877418075852f0f396d951',1,'spdk_nvme_ctrlr_data']]],
   ['sqs_2497',['sqs',['../unionspdk__nvme__cmbsz__register.html#a3481600cf80fa69860ba5dbb445afc5f',1,'spdk_nvme_cmbsz_register']]],
   ['sr_2498',['sr',['../structspdk__nvme__dsm__range.html#a3654dba7338b5afe24b7b176c7236fba',1,'spdk_nvme_dsm_range']]],
   ['src_5faddr_2499',['src_addr',['../structspdk__nvme__ctrlr__opts.html#a42263f93ea1058c24c9c6113c0196f29',1,'spdk_nvme_ctrlr_opts::src_addr'],['../structspdk__sock__opts.html#a9604bee45305b8775f31ac36ef9bb942',1,'spdk_sock_opts::src_addr']]],

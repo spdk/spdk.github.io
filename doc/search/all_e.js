@@ -21,6 +21,6 @@ var searchData=
   ['kit_18',['Storage Performance Development Kit',['../index.html',1,'']]],
   ['known_20bugs_20and_20limitations_19',['Known bugs and limitations',['../vhost.html#vhost_bugs',1,'']]],
   ['kpioens_20',['kpioens',['../structspdk__nvme__ns__iocs__independent__data.html#a9f95563c036b419223f3c222096f69db',1,'spdk_nvme_ns_iocs_independent_data']]],
-  ['kpios_21',['kpios',['../structspdk__nvme__ns__iocs__independent__data.html#abb230339b700de2c21302c7a39b4d6b0',1,'spdk_nvme_ns_iocs_independent_data']]],
+  ['kpios_21',['kpios',['../structspdk__nvme__ns__iocs__independent__data.html#a3b417839559d9fa3e7c8659df470688e',1,'spdk_nvme_ns_iocs_independent_data']]],
   ['kpiosns_22',['kpiosns',['../structspdk__nvme__ns__iocs__independent__data.html#a670a944a4aad489ce977bb5924887100',1,'spdk_nvme_ns_iocs_independent_data']]]
 ];
