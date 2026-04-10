@@ -190,6 +190,7 @@ var NAVTREEINDEX10 =
 "pkgconfig.html":[3,2],
 "porting.html":[2,7],
 "prog_guides.html":[4],
+"raid_8h.html":[15,0,0,0,0,0,1],
 "releases.html":[1,2],
 "releases.html#EOL":[1,2,5,4],
 "releases.html#bug_reports":[1,2,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX10 =
 "scsi_8h.html#ac1abbe3abd478575af44ba299f6f62db":[15,0,0,0,55,5],
 "scsi_8h.html#aca186192492124e0c2c585e2ba44df48":[15,0,0,0,55,26],
 "scsi_8h.html#ad404af2cd30c7188df318595805c608c":[15,0,0,0,55,14],
-"scsi_8h.html#ad660916c8c06b8c3eed3245618d6c59f":[15,0,0,0,55,31],
-"scsi_8h.html#adcb85e0b480823862b87cfddf71b53b9":[15,0,0,0,55,25]
+"scsi_8h.html#ad660916c8c06b8c3eed3245618d6c59f":[15,0,0,0,55,31]
 };

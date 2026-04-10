@@ -1,5 +1,6 @@
 var NAVTREEINDEX17 =
 {
+"structspdk__vfu__pci__region.html#a8814cf37d9161e27ed0635407fc369ed":[14,0,480,1],
 "structspdk__vfu__pci__region.html#ac0a4668b63d854a8ec9d21bc9f773223":[14,0,480,6],
 "structspdk__vfu__pci__region.html#aff0cdbe5e697f88db633c5a611b6dc4b":[14,0,480,0],
 "structspdk__vfu__sparse__mmap.html":[14,0,481],
@@ -248,6 +249,5 @@ var NAVTREEINDEX17 =
 "unionspdk__nvme__cmbloc__register.html#a7a72b6bb85d7c446b0ad55f74d91e13a":[14,0,183,0],
 "unionspdk__nvme__cmbmsc__register.html":[14,0,184],
 "unionspdk__nvme__cmbmsc__register.html#a0d4b702117909083913930c6a97061b0":[14,0,184,0],
-"unionspdk__nvme__cmbmsc__register.html#a20979a149aa874591735832c1c8bc7ee":[14,0,184,2],
-"unionspdk__nvme__cmbmsc__register.html#a35d113e3fbcfff431074dea3765cbe7e":[14,0,184,1]
+"unionspdk__nvme__cmbmsc__register.html#a20979a149aa874591735832c1c8bc7ee":[14,0,184,2]
 };

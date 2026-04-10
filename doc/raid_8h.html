@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta name="generator" content="Doxygen 1.10.0" />
-	<title>SPDK: bdev Directory Reference</title>
+	<title>SPDK: raid.h File Reference</title>
 	<script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.8/umd/popper.min.js" integrity="sha512-TPh2Oxlg1zp+kz3nFA0C5vVC6leG/6mm1z9+mA81MI5eaUVqasPLO8Cuk4gMF4gUfP5etR73rgU/8PNMsSesoQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
@@ -102,7 +102,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(function(){initNavTree('dir_b2240a13c1e524a1d2cafd2caafdd445.html',''); initResizable(); });
+$(function(){initNavTree('raid_8h.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -128,20 +128,31 @@ $(function(){initNavTree('dir_b2240a13c1e524a1d2cafd2caafdd445.html',''); initRe
 </div>
 
 <div class="header">
-  <div class="headertitle"><div class="title">bdev Directory Reference</div></div>
+  <div class="summary">
+<a href="#enum-members">Enumerations</a>  </div>
+  <div class="headertitle"><div class="title">raid.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Raid block device abstraction layer.  
+<a href="#details">More...</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="files" name="files"></a>
-Files</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><span class="icondoc"></span>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="module_2bdev_2nvme_8h.html">nvme.h</a></td></tr>
-<tr class="memdesc:module_2bdev_2nvme_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">Nvme block device abstraction layer. <br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><span class="icondoc"></span>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="raid_8h.html">raid.h</a></td></tr>
-<tr class="memdesc:raid_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">Raid block device abstraction layer. <br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:ae88b1f9870c3cf5d37156c1a0bb0ae9a" id="r_ae88b1f9870c3cf5d37156c1a0bb0ae9a"><td class="memItemLeft" align="right" valign="top"><a id="ae88b1f9870c3cf5d37156c1a0bb0ae9a" name="ae88b1f9870c3cf5d37156c1a0bb0ae9a"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_raid_level</b> { <br />
+&#160;&#160;<b>SPDK_BDEV_RAID_LEVEL_INVALID</b> = -1
+, <b>SPDK_BDEV_RAID_LEVEL_RAID0</b> = 0
+, <b>SPDK_BDEV_RAID_LEVEL_RAID1</b> = 1
+, <b>SPDK_BDEV_RAID_LEVEL_RAID5F</b> = 95
+, <br />
+&#160;&#160;<b>SPDK_BDEV_RAID_LEVEL_CONCAT</b> = 99
+<br />
+ }</td></tr>
+<tr class="separator:ae88b1f9870c3cf5d37156c1a0bb0ae9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-</div><!-- contents -->
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Raid block device abstraction layer. </p>
+</div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->

@@ -1,5 +1,6 @@
 var NAVTREEINDEX16 =
 {
+"structspdk__nvmf__referral__opts.html#a651e449b22720c4a2ce37ce52683c99e":[14,0,389,1],
 "structspdk__nvmf__referral__opts.html#ac030df8778d5942b705e1f2b14c6396c":[14,0,389,0],
 "structspdk__nvmf__referral__opts.html#ae86b9198264c8c70941252c353f0ba57":[14,0,389,3],
 "structspdk__nvmf__referral__opts.html#aeb4ac8f12a6a08dce419daabad37d70d":[14,0,389,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX16 =
 "structspdk__vfu__pci__region.html#a07001584256cfe729af064978e793262":[14,0,480,4],
 "structspdk__vfu__pci__region.html#a1e0b37ff7c6be0b1ff7e9513c7e17b36":[14,0,480,3],
 "structspdk__vfu__pci__region.html#a400872926032b1f7eb3178fe3f3a5e85":[14,0,480,2],
-"structspdk__vfu__pci__region.html#a7e410323f459faf6a4174bc5e9f14917":[14,0,480,5],
-"structspdk__vfu__pci__region.html#a8814cf37d9161e27ed0635407fc369ed":[14,0,480,1]
+"structspdk__vfu__pci__region.html#a7e410323f459faf6a4174bc5e9f14917":[14,0,480,5]
 };
