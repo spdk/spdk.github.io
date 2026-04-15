@@ -160,6 +160,8 @@ $(function(){initNavTree('deprecation.html',''); initResizable(); });
 <p>The <code>max_discard_size_kib</code> parameter of <code>nvmf_create_subsystem</code> RPC is deprecated and will be removed in v26.09. Use <code>dmrsl</code> instead.</p>
 <h3><code>nvmf_create_subsystem_max_write_zeroes_size_kib</code></h3>
 <p>The <code>max_write_zeroes_size_kib</code> parameter of <code>nvmf_create_subsystem</code> RPC is deprecated and will be removed in v26.09. Use <code>wzsl</code> instead.</p>
+<h2>scripts</h2>
+<p>The <code>autorun_post.py</code> symlink in the repository root is deprecated. The script has been moved to <code>scripts/autorun_post.py</code>. The symlink will be removed in the v26.09 release.</p>
 <h2>app/spdk_nvme_perf</h2>
 <h3>perf_g_option</h3>
 <p>The <code>-G</code> command line option is deprecated and will be removed in the v26.05 release. Use <code>--log-level debug -T nvme</code> instead. </p>
