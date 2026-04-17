@@ -1,6 +1,6 @@
 var structspdk__trace__parser__entry =
 [
-    [ "args", "structspdk__trace__parser__entry.html#a268b10deda630c7b0fac75d836f46ab4", null ],
+    [ "args", "structspdk__trace__parser__entry.html#a56d2aead58de167139f7c6e6e3b8dcb0", null ],
     [ "entry", "structspdk__trace__parser__entry.html#a53973ef677f05f6d067c046dc790da78", null ],
     [ "lcore", "structspdk__trace__parser__entry.html#abb11f8535fab9ee4f9fc4c2adcee5145", null ],
     [ "object_index", "structspdk__trace__parser__entry.html#aebdc6a2a084c4771e6fb246c2d729c1f", null ],

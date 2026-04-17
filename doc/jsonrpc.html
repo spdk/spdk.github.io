@@ -6979,6 +6979,10 @@ nvmf_create_transport</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">buf_cache_size   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">The number of shared buffers to reserve for each poll group    </td></tr>
 <tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">iobuf_small_cache_size   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">The number of shared buffers from a small iobuf pool to reserve for each poll group    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">iobuf_large_cache_size   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">The number of shared buffers from a large iobuf pool to reserve for each poll group    </td></tr>
+<tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">zcopy   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Use zero-copy operations if the underlying bdev supports them    </td></tr>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">num_cqe   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">int32   </td><td class="markdownTableBodyNone">The number of CQ entries. Only used when no_srq=true (RDMA only)    </td></tr>
