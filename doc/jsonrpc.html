@@ -597,13 +597,16 @@ rpc_get_methods</h2>
 <div class="line">    &quot;notify_get_notifications&quot;,</div>
 <div class="line">    &quot;notify_get_types&quot;,</div>
 <div class="line">    &quot;nvmf_create_subsystem&quot;,</div>
+<div class="line">    &quot;nvmf_create_target&quot;,</div>
 <div class="line">    &quot;nvmf_create_transport&quot;,</div>
 <div class="line">    &quot;nvmf_delete_subsystem&quot;,</div>
+<div class="line">    &quot;nvmf_delete_target&quot;,</div>
 <div class="line">    &quot;nvmf_discovery_add_referral&quot;,</div>
 <div class="line">    &quot;nvmf_discovery_get_referrals&quot;,</div>
 <div class="line">    &quot;nvmf_discovery_remove_referral&quot;,</div>
 <div class="line">    &quot;nvmf_get_stats&quot;,</div>
 <div class="line">    &quot;nvmf_get_subsystems&quot;,</div>
+<div class="line">    &quot;nvmf_get_targets&quot;,</div>
 <div class="line">    &quot;nvmf_get_transports&quot;,</div>
 <div class="line">    &quot;nvmf_ns_add_host&quot;,</div>
 <div class="line">    &quot;nvmf_ns_remove_host&quot;,</div>
@@ -3540,7 +3543,7 @@ bdev_nvme_set_options</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">action_on_timeout   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Action to take on command time out: none, reset or abort    </td></tr>
+<td class="markdownTableBodyNone">action_on_timeout   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">enum   </td><td class="markdownTableBodyNone">Action to take on command time out: none, reset or abort    </td></tr>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">timeout_us   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint64   </td><td class="markdownTableBodyNone">Timeout for each command, in microseconds. If 0, don't track timeouts    </td></tr>
 <tr class="markdownTableRowOdd">
