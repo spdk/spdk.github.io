@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta name="generator" content="Doxygen 1.10.0" />
-	<title>SPDK: spdk_nvmf_transport Struct Reference</title>
+	<title>SPDK: spdk_subsystem Struct Reference</title>
 	<script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.8/umd/popper.min.js" integrity="sha512-TPh2Oxlg1zp+kz3nFA0C5vVC6leG/6mm1z9+mA81MI5eaUVqasPLO8Cuk4gMF4gUfP5etR73rgU/8PNMsSesoQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
@@ -102,7 +102,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(function(){initNavTree('structspdk__nvmf__transport.html',''); initResizable(); });
+$(function(){initNavTree('structspdk__subsystem.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -131,50 +131,91 @@ $(function(){initNavTree('structspdk__nvmf__transport.html',''); initResizable()
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Data Fields</a>  </div>
-  <div class="headertitle"><div class="title">spdk_nvmf_transport Struct Reference</div></div>
+  <div class="headertitle"><div class="title">spdk_subsystem Struct Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="dynheader">
-Collaboration diagram for spdk_nvmf_transport:</div>
-<div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="structspdk__nvmf__transport__coll__graph.svg" width="100%" height="412"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
-<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a1dbbd9db3cabac4f7c78703608f23d64" id="r_a1dbbd9db3cabac4f7c78703608f23d64"><td class="memItemLeft" align="right" valign="top"><a id="a1dbbd9db3cabac4f7c78703608f23d64" name="a1dbbd9db3cabac4f7c78703608f23d64"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>TAILQ_HEAD</b> (, <a class="el" href="structspdk__nvmf__listener.html">spdk_nvmf_listener</a>) listeners</td></tr>
-<tr class="separator:a1dbbd9db3cabac4f7c78703608f23d64"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaf9721a4bfd8a24c33598476180eef7d" id="r_aaf9721a4bfd8a24c33598476180eef7d"><td class="memItemLeft" align="right" valign="top"><a id="aaf9721a4bfd8a24c33598476180eef7d" name="aaf9721a4bfd8a24c33598476180eef7d"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>TAILQ_ENTRY</b> (<a class="el" href="structspdk__nvmf__transport.html">spdk_nvmf_transport</a>) link</td></tr>
-<tr class="separator:aaf9721a4bfd8a24c33598476180eef7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af89c72036855af6ca1ae902ed6fb73e9" id="r_af89c72036855af6ca1ae902ed6fb73e9"><td class="memItemLeft" align="right" valign="top"><a id="af89c72036855af6ca1ae902ed6fb73e9" name="af89c72036855af6ca1ae902ed6fb73e9"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>TAILQ_ENTRY</b> (<a class="el" href="structspdk__subsystem.html">spdk_subsystem</a>) tailq</td></tr>
+<tr class="separator:af89c72036855af6ca1ae902ed6fb73e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:a7ee1e67fd03961434f809b76fe05e3eb" id="r_a7ee1e67fd03961434f809b76fe05e3eb"><td class="memItemLeft" align="right" valign="top"><a id="a7ee1e67fd03961434f809b76fe05e3eb" name="a7ee1e67fd03961434f809b76fe05e3eb"></a>
-struct spdk_nvmf_tgt *&#160;</td><td class="memItemRight" valign="bottom"><b>tgt</b></td></tr>
-<tr class="separator:a7ee1e67fd03961434f809b76fe05e3eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab593541387a9b89a3cdac44970cf2dad" id="r_ab593541387a9b89a3cdac44970cf2dad"><td class="memItemLeft" align="right" valign="top"><a id="ab593541387a9b89a3cdac44970cf2dad" name="ab593541387a9b89a3cdac44970cf2dad"></a>
-const struct <a class="el" href="structspdk__nvmf__transport__ops.html">spdk_nvmf_transport_ops</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>ops</b></td></tr>
-<tr class="separator:ab593541387a9b89a3cdac44970cf2dad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9857ccea6350d1acfbc6fcf6670c7e83" id="r_a9857ccea6350d1acfbc6fcf6670c7e83"><td class="memItemLeft" align="right" valign="top"><a id="a9857ccea6350d1acfbc6fcf6670c7e83" name="a9857ccea6350d1acfbc6fcf6670c7e83"></a>
-struct <a class="el" href="structspdk__nvmf__transport__opts.html">spdk_nvmf_transport_opts</a>&#160;</td><td class="memItemRight" valign="bottom"><b>opts</b></td></tr>
-<tr class="separator:a9857ccea6350d1acfbc6fcf6670c7e83"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9c696dc29fecdd3056c9134792579498" id="r_a9c696dc29fecdd3056c9134792579498"><td class="memItemLeft" align="right" valign="top"><a id="a9c696dc29fecdd3056c9134792579498" name="a9c696dc29fecdd3056c9134792579498"></a>
-uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>large_bufsize</b></td></tr>
-<tr class="separator:a9c696dc29fecdd3056c9134792579498"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a63857a8ed0133660680d37cd0bf0fdcd" id="r_a63857a8ed0133660680d37cd0bf0fdcd"><td class="memItemLeft" align="right" valign="top"><a id="a63857a8ed0133660680d37cd0bf0fdcd" name="a63857a8ed0133660680d37cd0bf0fdcd"></a>
-uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>small_bufsize</b></td></tr>
-<tr class="separator:a63857a8ed0133660680d37cd0bf0fdcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a40d65ea5d5f29f8ca122b9e02e7f78ea" id="r_a40d65ea5d5f29f8ca122b9e02e7f78ea"><td class="memItemLeft" align="right" valign="top"><a id="a40d65ea5d5f29f8ca122b9e02e7f78ea" name="a40d65ea5d5f29f8ca122b9e02e7f78ea"></a>
-char&#160;</td><td class="memItemRight" valign="bottom"><b>iobuf_name</b> [MAX_MEMPOOL_NAME_LENGTH]</td></tr>
-<tr class="separator:a40d65ea5d5f29f8ca122b9e02e7f78ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2f6a8507f244fb31b65630bb83aab7b0" id="r_a2f6a8507f244fb31b65630bb83aab7b0"><td class="memItemLeft" align="right" valign="top"><a id="a2f6a8507f244fb31b65630bb83aab7b0" name="a2f6a8507f244fb31b65630bb83aab7b0"></a>
-pthread_mutex_t&#160;</td><td class="memItemRight" valign="bottom"><b>mutex</b></td></tr>
-<tr class="separator:a2f6a8507f244fb31b65630bb83aab7b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f78dbe1f08aa21441f9d8b3bc25a799" id="r_a6f78dbe1f08aa21441f9d8b3bc25a799"><td class="memItemLeft" align="right" valign="top"><a id="a6f78dbe1f08aa21441f9d8b3bc25a799" name="a6f78dbe1f08aa21441f9d8b3bc25a799"></a>
+const char *&#160;</td><td class="memItemRight" valign="bottom"><b>name</b></td></tr>
+<tr class="separator:a6f78dbe1f08aa21441f9d8b3bc25a799"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1da854a284ea06130573142069942c29" id="r_a1da854a284ea06130573142069942c29"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1da854a284ea06130573142069942c29">init</a> )(void)</td></tr>
+<tr class="memdesc:a1da854a284ea06130573142069942c29"><td class="mdescLeft">&#160;</td><td class="mdescRight">Optional.  <br /></td></tr>
+<tr class="separator:a1da854a284ea06130573142069942c29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee08272bb1e40074d620f3eb27c22189" id="r_aee08272bb1e40074d620f3eb27c22189"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aee08272bb1e40074d620f3eb27c22189">fini</a> )(void)</td></tr>
+<tr class="memdesc:aee08272bb1e40074d620f3eb27c22189"><td class="mdescLeft">&#160;</td><td class="mdescRight">Optional.  <br /></td></tr>
+<tr class="separator:aee08272bb1e40074d620f3eb27c22189"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03298370ac9f7c1bb2eef9fb2c922f81" id="r_a03298370ac9f7c1bb2eef9fb2c922f81"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a03298370ac9f7c1bb2eef9fb2c922f81">write_config_json</a> )(struct spdk_json_write_ctx *w)</td></tr>
+<tr class="memdesc:a03298370ac9f7c1bb2eef9fb2c922f81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Optional.  <br /></td></tr>
+<tr class="separator:a03298370ac9f7c1bb2eef9fb2c922f81"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Field Documentation</h2>
+<a id="aee08272bb1e40074d620f3eb27c22189" name="aee08272bb1e40074d620f3eb27c22189"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee08272bb1e40074d620f3eb27c22189">&#9670;&#160;</a></span>fini</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void(* spdk_subsystem::fini) (void)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Optional. </p>
+<p>Tear down the subsystem. When complete, the subsystem must call <a class="el" href="init_8h.html#a1afdfe512a6f0c9ade3eabc434f16cd0" title="Called by a subsystem&#39;s fini callback to signal that teardown is complete and the next subsystem may ...">spdk_subsystem_fini_next()</a>. If NULL, the subsystem is skipped during teardown. </p>
+
+</div>
+</div>
+<a id="a1da854a284ea06130573142069942c29" name="a1da854a284ea06130573142069942c29"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1da854a284ea06130573142069942c29">&#9670;&#160;</a></span>init</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void(* spdk_subsystem::init) (void)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Optional. </p>
+<p>Initialize the subsystem. When complete, the subsystem must call <a class="el" href="init_8h.html#a489708b6d67f999b598744c2865474a3" title="Called by a subsystem&#39;s init callback to signal completion.">spdk_subsystem_init_next()</a> with 0 on success or a negative errno on failure. If NULL, the subsystem is considered initialized with no work to do. </p>
+
+</div>
+</div>
+<a id="a03298370ac9f7c1bb2eef9fb2c922f81" name="a03298370ac9f7c1bb2eef9fb2c922f81"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03298370ac9f7c1bb2eef9fb2c922f81">&#9670;&#160;</a></span>write_config_json</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void(* spdk_subsystem::write_config_json) (struct spdk_json_write_ctx *w)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Optional. </p>
+<p>Write the subsystem's current JSON-RPC configuration to <code>w</code>. If NULL, a JSON null is written in place of the subsystem's configuration.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">w</td><td>JSON write context. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li><a class="el" href="nvmf__transport_8h.html">nvmf_transport.h</a></li>
+<li><a class="el" href="init_8h.html">init.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

@@ -7,7 +7,7 @@ var searchData=
   ['fd_5ftype_4',['fd_type',['../structspdk__event__handler__opts.html#ac0e86e9bf61e2f4a9db34b255d7ff5ab',1,'spdk_event_handler_opts']]],
   ['fguid_5',['fguid',['../structspdk__nvme__ctrlr__data.html#a2efd342c8893a89c25fb2cf3b4e4776e',1,'spdk_nvme_ctrlr_data']]],
   ['filename_6',['filename',['../structspdk__trace__parser__opts.html#a5da4eafe3f0b20fc1ff113ad5da35cb4',1,'spdk_trace_parser_opts']]],
-  ['fini_7',['fini',['../structspdk__accel__driver.html#a3e56a6fd4644f2002ce03500e3f2138d',1,'spdk_accel_driver']]],
+  ['fini_7',['fini',['../structspdk__accel__driver.html#a3e56a6fd4644f2002ce03500e3f2138d',1,'spdk_accel_driver::fini'],['../structspdk__subsystem.html#aee08272bb1e40074d620f3eb27c22189',1,'spdk_subsystem::fini']]],
   ['fini_5fstart_8',['fini_start',['../structspdk__bdev__module.html#ac23941435e8ed54a66a16d4fe8b7fe52',1,'spdk_bdev_module']]],
   ['finish_5fsequence_9',['finish_sequence',['../structspdk__nvme__accel__fn__table.html#acf901173bda0ccd0fc2fbc65ba374ef4',1,'spdk_nvme_accel_fn_table']]],
   ['flags_10',['flags',['../structspdk__nvme__tcp__common__pdu__hdr.html#a38c69153a69c1db4c010daaa36646333',1,'spdk_nvme_tcp_common_pdu_hdr::flags'],['../structspdk__vfu__pci__region.html#a400872926032b1f7eb3178fe3f3a5e85',1,'spdk_vfu_pci_region::flags']]],

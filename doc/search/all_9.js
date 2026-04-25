@@ -22,7 +22,7 @@ var searchData=
   ['filename_19',['filename',['../structspdk__trace__parser__opts.html#a5da4eafe3f0b20fc1ff113ad5da35cb4',1,'spdk_trace_parser_opts']]],
   ['files_20',['Map Files',['../libraries.html#map',1,'']]],
   ['files_20after_20initialization_21',['Unlink hugepage files after initialization',['../app_overview.html#cmd_arg_huge_unlink',1,'']]],
-  ['fini_22',['fini',['../structspdk__accel__driver.html#a3e56a6fd4644f2002ce03500e3f2138d',1,'spdk_accel_driver']]],
+  ['fini_22',['fini',['../structspdk__accel__driver.html#a3e56a6fd4644f2002ce03500e3f2138d',1,'spdk_accel_driver::fini'],['../structspdk__subsystem.html#aee08272bb1e40074d620f3eb27c22189',1,'spdk_subsystem::fini']]],
   ['fini_5fstart_23',['fini_start',['../structspdk__bdev__module.html#ac23941435e8ed54a66a16d4fe8b7fe52',1,'spdk_bdev_module']]],
   ['finish_5fsequence_24',['finish_sequence',['../structspdk__nvme__accel__fn__table.html#acf901173bda0ccd0fc2fbc65ba374ef4',1,'spdk_nvme_accel_fn_table']]],
   ['fio_20plugin_25',['Running Benchmarks with Fio Plugin',['../nvme.html#nvme_fioplugin',1,'']]],

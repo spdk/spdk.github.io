@@ -145,12 +145,22 @@ Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__rpc__opts.html">spdk_rpc_opts</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure with optional parameters for the JSON-RPC server initialization.  <a href="structspdk__rpc__opts.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__subsystem.html">spdk_subsystem</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__subsystem__depend.html">spdk_subsystem_depend</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:ad6d27c63164846e87e44de2f39792024" id="r_ad6d27c63164846e87e44de2f39792024"><td class="memItemLeft" align="right" valign="top"><a id="ad6d27c63164846e87e44de2f39792024" name="ad6d27c63164846e87e44de2f39792024"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_DEFAULT_RPC_ADDR</b>&#160;&#160;&#160;&quot;/var/tmp/spdk.sock&quot;</td></tr>
 <tr class="separator:ad6d27c63164846e87e44de2f39792024"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb7b0e405c158595d85f7ac4eec39113" id="r_adb7b0e405c158595d85f7ac4eec39113"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adb7b0e405c158595d85f7ac4eec39113">SPDK_SUBSYSTEM_REGISTER</a>(_name)</td></tr>
+<tr class="memdesc:adb7b0e405c158595d85f7ac4eec39113"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a new subsystem.  <br /></td></tr>
+<tr class="separator:adb7b0e405c158595d85f7ac4eec39113"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb32a61a13fd5e035c23e8023fb26295" id="r_acb32a61a13fd5e035c23e8023fb26295"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acb32a61a13fd5e035c23e8023fb26295">SPDK_SUBSYSTEM_DEPEND</a>(_name,  _depends_on)</td></tr>
+<tr class="memdesc:acb32a61a13fd5e035c23e8023fb26295"><td class="mdescLeft">&#160;</td><td class="mdescRight">Declare that a subsystem depends on another subsystem.  <br /></td></tr>
+<tr class="separator:acb32a61a13fd5e035c23e8023fb26295"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -193,10 +203,131 @@ Functions</h2></td></tr>
 <tr class="memitem:a069c527c0dc5ddb12c8bf2adc5aa2f92" id="r_a069c527c0dc5ddb12c8bf2adc5aa2f92"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a069c527c0dc5ddb12c8bf2adc5aa2f92">spdk_rpc_server_resume</a> (const char *listen_addr)</td></tr>
 <tr class="memdesc:a069c527c0dc5ddb12c8bf2adc5aa2f92"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resume polling RPC server with given address.  <br /></td></tr>
 <tr class="separator:a069c527c0dc5ddb12c8bf2adc5aa2f92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75d91de0b2b73d253a6ed7735b6ad996" id="r_a75d91de0b2b73d253a6ed7735b6ad996"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a75d91de0b2b73d253a6ed7735b6ad996">spdk_add_subsystem</a> (struct <a class="el" href="structspdk__subsystem.html">spdk_subsystem</a> *subsystem)</td></tr>
+<tr class="memdesc:a75d91de0b2b73d253a6ed7735b6ad996"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a subsystem.  <br /></td></tr>
+<tr class="separator:a75d91de0b2b73d253a6ed7735b6ad996"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7425d657268d5fddb6acb57850a0486" id="r_ac7425d657268d5fddb6acb57850a0486"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac7425d657268d5fddb6acb57850a0486">spdk_add_subsystem_depend</a> (struct <a class="el" href="structspdk__subsystem__depend.html">spdk_subsystem_depend</a> *depend)</td></tr>
+<tr class="memdesc:ac7425d657268d5fddb6acb57850a0486"><td class="mdescLeft">&#160;</td><td class="mdescRight">Declare a dependency between two subsystems.  <br /></td></tr>
+<tr class="separator:ac7425d657268d5fddb6acb57850a0486"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a489708b6d67f999b598744c2865474a3" id="r_a489708b6d67f999b598744c2865474a3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a489708b6d67f999b598744c2865474a3">spdk_subsystem_init_next</a> (int rc)</td></tr>
+<tr class="memdesc:a489708b6d67f999b598744c2865474a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called by a subsystem's init callback to signal completion.  <br /></td></tr>
+<tr class="separator:a489708b6d67f999b598744c2865474a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1afdfe512a6f0c9ade3eabc434f16cd0" id="r_a1afdfe512a6f0c9ade3eabc434f16cd0"><td class="memItemLeft" align="right" valign="top"><a id="a1afdfe512a6f0c9ade3eabc434f16cd0" name="a1afdfe512a6f0c9ade3eabc434f16cd0"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_subsystem_fini_next</b> (void)</td></tr>
+<tr class="memdesc:a1afdfe512a6f0c9ade3eabc434f16cd0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called by a subsystem's fini callback to signal that teardown is complete and the next subsystem may begin its teardown. <br /></td></tr>
+<tr class="separator:a1afdfe512a6f0c9ade3eabc434f16cd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>SPDK Initialization Helper. </p>
-</div><h2 class="groupheader">Function Documentation</h2>
+</div><h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="acb32a61a13fd5e035c23e8023fb26295" name="acb32a61a13fd5e035c23e8023fb26295"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb32a61a13fd5e035c23e8023fb26295">&#9670;&#160;</a></span>SPDK_SUBSYSTEM_DEPEND</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SPDK_SUBSYSTEM_DEPEND</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname">_name, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname">_depends_on</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">       <span class="keyword">static</span> <span class="keyword">struct </span><a class="code hl_struct" href="structspdk__subsystem__depend.html">spdk_subsystem_depend</a> __subsystem_ ## _name ## _depend_on ## _depends_on = { \</div>
+<div class="line">       .name = #_name,                                                                         \</div>
+<div class="line">       .depends_on = #_depends_on,                                                             \</div>
+<div class="line">       };                                                                                      \</div>
+<div class="line">       __attribute__((constructor)) <span class="keyword">static</span> <span class="keywordtype">void</span> _name ## _depend_on ## _depends_on(<span class="keywordtype">void</span>)       \</div>
+<div class="line">       {                                                                                       \</div>
+<div class="line">               spdk_add_subsystem_depend(&amp;__subsystem_ ## _name ## _depend_on ## _depends_on); \</div>
+<div class="line">       }</div>
+<div class="ttc" id="astructspdk__subsystem__depend_html"><div class="ttname"><a href="structspdk__subsystem__depend.html">spdk_subsystem_depend</a></div><div class="ttdef"><b>Definition</b> init.h:178</div></div>
+</div><!-- fragment -->
+<p>Declare that a subsystem depends on another subsystem. </p>
+
+</div>
+</div>
+<a id="adb7b0e405c158595d85f7ac4eec39113" name="adb7b0e405c158595d85f7ac4eec39113"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb7b0e405c158595d85f7ac4eec39113">&#9670;&#160;</a></span>SPDK_SUBSYSTEM_REGISTER</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SPDK_SUBSYSTEM_REGISTER</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname">_name</span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">       __attribute__((constructor)) <span class="keyword">static</span> <span class="keywordtype">void</span> _name ## _register(<span class="keywordtype">void</span>)       \</div>
+<div class="line">       {                                                                       \</div>
+<div class="line">               spdk_add_subsystem(&amp;_name);                                     \</div>
+<div class="line">       }</div>
+</div><!-- fragment -->
+<p>Register a new subsystem. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="a75d91de0b2b73d253a6ed7735b6ad996" name="a75d91de0b2b73d253a6ed7735b6ad996"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a75d91de0b2b73d253a6ed7735b6ad996">&#9670;&#160;</a></span>spdk_add_subsystem()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_add_subsystem </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structspdk__subsystem.html">spdk_subsystem</a> *</td>          <td class="paramname"><span class="paramname"><em>subsystem</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Register a subsystem. </p>
+<p>Typically called via <a class="el" href="#adb7b0e405c158595d85f7ac4eec39113" title="Register a new subsystem.">SPDK_SUBSYSTEM_REGISTER()</a> rather than directly.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">subsystem</td><td>Subsystem to register. Must have static lifetime. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ac7425d657268d5fddb6acb57850a0486" name="ac7425d657268d5fddb6acb57850a0486"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac7425d657268d5fddb6acb57850a0486">&#9670;&#160;</a></span>spdk_add_subsystem_depend()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_add_subsystem_depend </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structspdk__subsystem__depend.html">spdk_subsystem_depend</a> *</td>          <td class="paramname"><span class="paramname"><em>depend</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Declare a dependency between two subsystems. </p>
+<p>Typically called via <a class="el" href="#acb32a61a13fd5e035c23e8023fb26295" title="Declare that a subsystem depends on another subsystem.">SPDK_SUBSYSTEM_DEPEND()</a> rather than directly.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">depend</td><td>Dependency descriptor. Must have static lifetime. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="ada2202d341585d983143604ff93fa411" name="ada2202d341585d983143604ff93fa411"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ada2202d341585d983143604ff93fa411">&#9670;&#160;</a></span>spdk_rpc_finish()</h2>
 
@@ -412,6 +543,32 @@ Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">cb_fn</td><td>Function called when the process is complete. </td></tr>
     <tr><td class="paramname">cb_arg</td><td>User context passed to cb_fn. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a489708b6d67f999b598744c2865474a3" name="a489708b6d67f999b598744c2865474a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a489708b6d67f999b598744c2865474a3">&#9670;&#160;</a></span>spdk_subsystem_init_next()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_subsystem_init_next </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>rc</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Called by a subsystem's init callback to signal completion. </p>
+<p>A non-zero <code>rc</code> aborts initialization of remaining subsystems and propagates the error to the <a class="el" href="#aa0d0a3b14e1b3dbbfdc5868167099ef1" title="Begin the initialization process for all SPDK subsystems.">spdk_subsystem_init()</a> caller.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rc</td><td>0 on success, negative errno on failure. </td></tr>
   </table>
   </dd>
 </dl>

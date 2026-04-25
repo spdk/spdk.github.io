@@ -1,5 +1,11 @@
 var NAVTREEINDEX15 =
 {
+"structspdk__nvme__primary__ctrl__capabilities.html#a8b523874842beb9c88efbd2962a0950f":[14,0,285,9],
+"structspdk__nvme__primary__ctrl__capabilities.html#a931c061c11e9c31b6f33f09d5bc251dc":[14,0,285,4],
+"structspdk__nvme__primary__ctrl__capabilities.html#a999d8c62755219847e4925ee2c22db84":[14,0,285,6],
+"structspdk__nvme__primary__ctrl__capabilities.html#a9d7bd410ed4ccef3060a9cd36530896e":[14,0,285,0],
+"structspdk__nvme__primary__ctrl__capabilities.html#a9d87b4832999b7aed3ef612d1c80669a":[14,0,285,14],
+"structspdk__nvme__primary__ctrl__capabilities.html#aaaf9d5315feacf97866f81c55c4b7889":[14,0,285,12],
 "structspdk__nvme__primary__ctrl__capabilities.html#ae5a4236ed5b2fca23db1f591a24e5bcb":[14,0,285,1],
 "structspdk__nvme__primary__ctrl__capabilities.html#aeab109efd1eae5f155c06105e8d097ed":[14,0,285,13],
 "structspdk__nvme__primary__ctrl__capabilities.html#af479618cd4737243b1ef31942c690282":[14,0,285,7],
@@ -243,11 +249,5 @@ var NAVTREEINDEX15 =
 "structspdk__nvmf__qpair.html":[14,0,383],
 "structspdk__nvmf__rdma__accept__private__data.html":[14,0,384],
 "structspdk__nvmf__rdma__reject__private__data.html":[14,0,386],
-"structspdk__nvmf__rdma__request__private__data.html":[14,0,387],
-"structspdk__nvmf__rdma__transport__specific__address__subtype.html":[14,0,388],
-"structspdk__nvmf__rdma__transport__specific__address__subtype.html#a09218738c5c6c2ef9464d61286cb6348":[14,0,388,0],
-"structspdk__nvmf__rdma__transport__specific__address__subtype.html#a108fd99032da3e1f4f3f4cecdd05fec5":[14,0,388,2],
-"structspdk__nvmf__rdma__transport__specific__address__subtype.html#a7332600a60a55d05f8573789ce6a2ccf":[14,0,388,3],
-"structspdk__nvmf__rdma__transport__specific__address__subtype.html#a84940f112e43ee8aecc61b6eaf938567":[14,0,388,1],
-"structspdk__nvmf__referral__opts.html":[14,0,389]
+"structspdk__nvmf__rdma__request__private__data.html":[14,0,387]
 };

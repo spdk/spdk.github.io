@@ -1,5 +1,11 @@
 var NAVTREEINDEX5 =
 {
+"jsonrpc.html#rpc_bdev_lvol_delete":[3,8,10,12],
+"jsonrpc.html#rpc_bdev_lvol_delete_lvstore":[3,8,10,1],
+"jsonrpc.html#rpc_bdev_lvol_get_lvols":[3,8,10,15],
+"jsonrpc.html#rpc_bdev_lvol_get_lvstores":[3,8,10,2],
+"jsonrpc.html#rpc_bdev_lvol_grow_lvstore":[3,8,10,4],
+"jsonrpc.html#rpc_bdev_lvol_inflate":[3,8,10,13],
 "jsonrpc.html#rpc_bdev_lvol_rename":[3,8,10,9],
 "jsonrpc.html#rpc_bdev_lvol_rename_lvstore":[3,8,10,3],
 "jsonrpc.html#rpc_bdev_lvol_resize":[3,8,10,10],
@@ -243,11 +249,5 @@ var NAVTREEINDEX5 =
 "jsonrpc_8h.html":[15,0,0,0,37],
 "jsonrpc_8h.html#a27688ab4587564524fefa84abc13ad3c":[15,0,0,0,37,13],
 "jsonrpc_8h.html#a27bade57c1aa87a5e962373c35ef82fc":[15,0,0,0,37,21],
-"jsonrpc_8h.html#a2ce0cf522ddb54ec40c34462b08b0251":[15,0,0,0,37,5],
-"jsonrpc_8h.html#a3a1e9cd8198bfac34362325ee2098dfd":[15,0,0,0,37,6],
-"jsonrpc_8h.html#a3b83324df0f2cdc7c269b16918d72d71":[15,0,0,0,37,20],
-"jsonrpc_8h.html#a42438592f780e35892904af6be663617":[15,0,0,0,37,10],
-"jsonrpc_8h.html#a42f6b43bea611799dccb7ac98bb11930":[15,0,0,0,37,16],
-"jsonrpc_8h.html#a4839d55c5da4ce5929a08a5d2f35e4bf":[15,0,0,0,37,27],
-"jsonrpc_8h.html#a506661cfdfda6f549c69a6f4a988a026":[15,0,0,0,37,22]
+"jsonrpc_8h.html#a2ce0cf522ddb54ec40c34462b08b0251":[15,0,0,0,37,5]
 };

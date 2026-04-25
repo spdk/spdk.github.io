@@ -1121,7 +1121,7 @@ trace_enable_tpoint_group</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">bdev, nvmf_rdma, nvmf_tcp, scsi, iscsi_conn, ftl, all   </td></tr>
+<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of a registered trace group, or "all" to enable every group   </td></tr>
 </table>
 <h3>Example</h3>
 <p>Example request:</p>
@@ -1147,7 +1147,7 @@ trace_disable_tpoint_group</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">bdev, nvmf_rdma, nvmf_tcp, all   </td></tr>
+<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of a registered trace group, or "all" to disable every group   </td></tr>
 </table>
 <h3>Example</h3>
 <p>Example request:</p>
@@ -1173,9 +1173,9 @@ trace_set_tpoint_mask</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">bdev, nvmf_rdma, nvmf_tcp, scsi, iscsi_conn, ftl    </td></tr>
+<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of a registered trace group (e.g. "bdev", "nvmf_rdma", "nvmf_tcp")    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">tpoint_mask   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">uint64   </td><td class="markdownTableBodyNone">mask to enable tracepoints inside a group   </td></tr>
+<td class="markdownTableBodyNone">tpoint_mask   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">uint64   </td><td class="markdownTableBodyNone">Bitmask of tracepoints to enable within the group (e.g. 0x3 enables the first two)   </td></tr>
 </table>
 <h3>Example</h3>
 <p>Example request:</p>
@@ -1202,9 +1202,9 @@ trace_clear_tpoint_mask</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">bdev, nvmf_rdma, nvmf_tcp, scsi, iscsi_conn, ftl    </td></tr>
+<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of a registered trace group (e.g. "bdev", "nvmf_rdma", "nvmf_tcp")    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">tpoint_mask   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">uint64   </td><td class="markdownTableBodyNone">mask to diesable tracepoints inside a group   </td></tr>
+<td class="markdownTableBodyNone">tpoint_mask   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">uint64   </td><td class="markdownTableBodyNone">Bitmask of tracepoints to disable within the group (e.g. 0x3 disables the first two)   </td></tr>
 </table>
 <h3>Example</h3>
 <p>Example request:</p>
@@ -10218,9 +10218,9 @@ ublk_create_target</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">cpumask   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Cpumask for ublk target    </td></tr>
+<td class="markdownTableBodyNone">cpumask   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">CPU mask for the ublk target's I/O threads    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">disable_user_copy   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Disable user copy feature   </td></tr>
+<td class="markdownTableBodyNone">disable_user_copy   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Disable the ublk user-copy feature. Default: false   </td></tr>
 </table>
 <h3>Response</h3>
 <table class="markdownTable">
@@ -10278,13 +10278,13 @@ ublk_start_disk</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">bdev_name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Bdev name to export    </td></tr>
+<td class="markdownTableBodyNone">bdev_name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of the bdev to export    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">ublk_id   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">Device id    </td></tr>
+<td class="markdownTableBodyNone">ublk_id   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">ublk device ID, used as the suffix in /dev/ublkb[id]    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">queue_depth   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">Device queue depth    </td></tr>
+<td class="markdownTableBodyNone">queue_depth   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">Per-queue depth. Default: 128    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">num_queues   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">Total number of device queues   </td></tr>
+<td class="markdownTableBodyNone">num_queues   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">Number of queues to create on the device. Default: 1   </td></tr>
 </table>
 <h3>Response</h3>
 <table class="markdownTable">
@@ -10318,9 +10318,9 @@ ublk_recover_disk</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">bdev_name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Bdev name to export    </td></tr>
+<td class="markdownTableBodyNone">bdev_name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of the bdev backing the recovering ublk device    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">ublk_id   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">Device id   </td></tr>
+<td class="markdownTableBodyNone">ublk_id   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">ID of the ublk device to recover   </td></tr>
 </table>
 <h3>Response</h3>
 <table class="markdownTable">
@@ -10354,7 +10354,7 @@ ublk_stop_disk</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">ublk_id   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">Device id to delete   </td></tr>
+<td class="markdownTableBodyNone">ublk_id   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">ID of the ublk device to stop   </td></tr>
 </table>
 <h3>Response</h3>
 <table class="markdownTable">
@@ -10387,7 +10387,7 @@ ublk_get_disks</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">ublk_id   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">ublk device id to display   </td></tr>
+<td class="markdownTableBodyNone">ublk_id   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">ID of a ublk device to query. Default: list all   </td></tr>
 </table>
 <h3>Response</h3>
 <table class="markdownTable">
@@ -11327,9 +11327,9 @@ fsdev_set_opts</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">fsdev_io_pool_size   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">Size of fsdev IO objects pool.    </td></tr>
+<td class="markdownTableBodyNone">fsdev_io_pool_size   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">Size of the fsdev IO objects pool    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">fsdev_io_cache_size   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">Size of fsdev IO objects cache per thread.   </td></tr>
+<td class="markdownTableBodyNone">fsdev_io_cache_size   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">Size of the per-thread fsdev IO objects cache   </td></tr>
 </table>
 <h3>Example</h3>
 <p>Example request:</p>
@@ -11359,17 +11359,17 @@ fsdev_aio_create</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of the AIO fsdev to create.    </td></tr>
+<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of the AIO fsdev    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">root_path   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Path on the system directory to be exposed as an SPDK filesystem    </td></tr>
+<td class="markdownTableBodyNone">root_path   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Host directory to expose as the SPDK filesystem root    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">enable_xattr   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">true to enable the extended attributes, false otherwise    </td></tr>
+<td class="markdownTableBodyNone">enable_xattr   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Enable extended attributes. Default: false    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">enable_writeback_cache   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">true to enable the writeback cache, false otherwise    </td></tr>
+<td class="markdownTableBodyNone">enable_writeback_cache   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Enable the writeback cache. Default: true    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">max_write   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">Max write size in bytes    </td></tr>
+<td class="markdownTableBodyNone">max_write   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">Maximum write size in bytes. Default: 131072    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">skip_rw   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Skip processing read and write requests and complete them successfully immediately. This is useful for benchmarking.   </td></tr>
+<td class="markdownTableBodyNone">skip_rw   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Skip read and write operations and complete them immediately (for benchmarking). Default: false   </td></tr>
 </table>
 <h3>Example</h3>
 <p>Example request:</p>
@@ -11400,7 +11400,7 @@ fsdev_aio_delete</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of the AIO fsdev to delete.   </td></tr>
+<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of the AIO fsdev to delete   </td></tr>
 </table>
 <h3>Example</h3>
 <p>Example request:</p>

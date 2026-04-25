@@ -163,7 +163,7 @@ $(function(){initNavTree('deprecation.html',''); initResizable(); });
 <h2>scripts</h2>
 <p>The <code>autorun_post.py</code> symlink in the repository root is deprecated. The script has been moved to <code>scripts/autorun_post.py</code>. The symlink will be removed in the v26.09 release.</p>
 <h3><code>nvmf_create_transport</code></h3>
-<p>buf-cache-size parameter is deprecated in favor of iobuf-small-cache-size and will be removed in 26.09 release. num-shared-buffers parameter is deprecated and will be removed in 26.09 release. Instead the user can use <code>iobuf_set_options</code> to specify the number of small and large pool entries and use <code>iobuf-small-cache-size</code> and <code>iobuf-large-cache-size</code> parameters of <code>nvmf_create_transport</code> RPC to configure desired buffers caches.</p>
+<p>buf-cache-size parameter is deprecated in favor of iobuf-small-cache-size and will be removed in 26.09 release. num-shared-buffers parameter is deprecated and will be removed in 26.09 release. Instead the user can use <code>iobuf_set_options</code> to specify the number of small and large pool entries and use <code>iobuf-small-cache-size</code> and <code>iobuf-large-cache-size</code> parameters of <code>nvmf_create_transport</code> RPC to configure desired buffers caches. io-unit-size is NOP, it is deprecated and will be removed in v26.09 release.</p>
 <h2>app/spdk_nvme_perf</h2>
 <h3>perf_g_option</h3>
 <p>The <code>-G</code> command line option is deprecated and will be removed in the v26.05 release. Use <code>--log-level debug -T nvme</code> instead. </p>

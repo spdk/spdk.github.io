@@ -1,5 +1,11 @@
 var NAVTREEINDEX13 =
 {
+"structspdk__fsdev__io_1_1____fsdev__io__internal__fields.html#a3fe7972b38ee8354d5816d84559ffd4c":[14,0,112,0,8],
+"structspdk__fsdev__io_1_1____fsdev__io__internal__fields.html#a431dd6693e358d26a12f654f63e6706e":[14,0,112,0,7],
+"structspdk__fsdev__io_1_1____fsdev__io__internal__fields.html#a5a414d773309b375b6364a1265ae2a3b":[14,0,112,0,1],
+"structspdk__fsdev__io_1_1____fsdev__io__internal__fields.html#a5fe84ca0302aaaa422904772b9b9e74d":[14,0,112,0,11],
+"structspdk__fsdev__io_1_1____fsdev__io__internal__fields.html#a7202286c7f6602773b97323a0124023f":[14,0,112,0,2],
+"structspdk__fsdev__io_1_1____fsdev__io__internal__fields.html#a766769d06cd67f7f7c7f9402a66fcd38":[14,0,112,0,10],
 "structspdk__fsdev__io_1_1____fsdev__io__internal__fields.html#aabdf24595acf14e9f058bad008a5cca1":[14,0,112,0,3],
 "structspdk__fsdev__io_1_1____fsdev__io__internal__fields.html#ac41d8d778ed0593c57c5ea13d90d699d":[14,0,112,0,5],
 "structspdk__fsdev__io_1_1____fsdev__io__internal__fields.html#aefa32b2d3534c79c5fb22b6b27e3decb":[14,0,112,0,12],
@@ -243,11 +249,5 @@ var NAVTREEINDEX13 =
 "structspdk__nvme__ctrlr__data.html#a9f5dd6335c39603ffb5beff3c6d8a6eb":[14,0,199,24],
 "structspdk__nvme__ctrlr__data.html#a9fc4d89599736e5102c61d8422b3f703":[14,0,199,18],
 "structspdk__nvme__ctrlr__data.html#aa14b82124fa4cac31ca88faafec65416":[14,0,199,65],
-"structspdk__nvme__ctrlr__data.html#aa26fc19472a1150c591d3842b36ce927":[14,0,199,4],
-"structspdk__nvme__ctrlr__data.html#aa4a9189b9c5616ab345b02540277782c":[14,0,199,1],
-"structspdk__nvme__ctrlr__data.html#aa5382e7e50b9192f2d3acaaf44e00fdf":[14,0,199,34],
-"structspdk__nvme__ctrlr__data.html#aa5a66788efbe912b16019c7b62b00a16":[14,0,199,6],
-"structspdk__nvme__ctrlr__data.html#aad0681365b9524dc8a1dca2d48a6c046":[14,0,199,33],
-"structspdk__nvme__ctrlr__data.html#aafb1c02f48a1407a4700432fe9f9d1a3":[14,0,199,50],
-"structspdk__nvme__ctrlr__data.html#ab17bb2db481244eae5a23e9fd9949ae6":[14,0,199,14]
+"structspdk__nvme__ctrlr__data.html#aa26fc19472a1150c591d3842b36ce927":[14,0,199,4]
 };
