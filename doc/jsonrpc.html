@@ -260,7 +260,7 @@ spdk_kill_instance</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">sig_name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Signal to send (SIGINT, SIGTERM, SIGQUIT, SIGHUP, or SIGKILL)   </td></tr>
+<td class="markdownTableBodyNone">sig_name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Signal to send: SIGINT, SIGTERM, SIGQUIT, SIGHUP, SIGKILL, SIGUSR1   </td></tr>
 </table>
 <h3>Example</h3>
 <p>Example request:</p>
@@ -286,7 +286,7 @@ framework_monitor_context_switch</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">enabled   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Enable (<code>true</code>) or disable (<code>false</code>) monitoring (omit this parameter to query the current state)   </td></tr>
+<td class="markdownTableBodyNone">enabled   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Enable or disable context switch monitoring; omit to query the current state   </td></tr>
 </table>
 <h3>Response</h3>
 <table class="markdownTable">
@@ -361,9 +361,9 @@ rpc_get_methods</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">current   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Get an array of RPC methods only callable in the current state.    </td></tr>
+<td class="markdownTableBodyNone">current   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Return only RPC methods callable in the current state. Default: false    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">include_aliases   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">include RPC aliases   </td></tr>
+<td class="markdownTableBodyNone">include_aliases   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Include deprecated method aliases in the result. Default: false   </td></tr>
 </table>
 <h3>Response</h3>
 <p>The response is an array of supported RPC methods.</p>
@@ -756,9 +756,9 @@ framework_get_config</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">SPDK subsystem name    </td></tr>
+<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of the SPDK subsystem to query    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">with_batches   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">If true, include batch arrays in output. If false (default), flatten batch arrays into individual entries.   </td></tr>
+<td class="markdownTableBodyNone">with_batches   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Keep batch arrays in output. Default: false (flatten into individual entries)   </td></tr>
 </table>
 <h3>Response</h3>
 <p>The response is current configuration of the specified SPDK subsystem. Null is returned if it is not retrievable by the framework_get_config method and empty array is returned if it is empty.</p>
@@ -870,15 +870,15 @@ framework_set_scheduler</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of a scheduler    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">period   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint64   </td><td class="markdownTableBodyNone">Scheduler period    </td></tr>
+<td class="markdownTableBodyNone">period   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint64   </td><td class="markdownTableBodyNone">Scheduler period in microseconds. Default: 1000000 (1 second) on first set    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">load_limit   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint8   </td><td class="markdownTableBodyNone">Thread load limit in % (dynamic only)    </td></tr>
+<td class="markdownTableBodyNone">load_limit   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint8   </td><td class="markdownTableBodyNone">Thread load percentage above which threads may move (dynamic only). Default: 20    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">core_limit   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint8   </td><td class="markdownTableBodyNone">Load limit on the core to be considered full (dynamic only)    </td></tr>
+<td class="markdownTableBodyNone">core_limit   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint8   </td><td class="markdownTableBodyNone">Core busy percentage at which the core is considered full (dynamic only). Default: 80    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">core_busy   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint8   </td><td class="markdownTableBodyNone">Indicates at what load on core scheduler should move threads to a different core (dynamic only)    </td></tr>
+<td class="markdownTableBodyNone">core_busy   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint8   </td><td class="markdownTableBodyNone">Core busy percentage at which the scheduler starts moving threads to other cores (dynamic only). Default: 95    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">mappings   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Comma-separated list of thread:core mappings. Reserved for static scheduler   </td></tr>
+<td class="markdownTableBodyNone">mappings   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Comma-separated list of thread:core mappings (static only)   </td></tr>
 </table>
 <h3>Response</h3>
 <p>Completion status of the operation is returned as a boolean.</p>
@@ -984,9 +984,9 @@ scheduler_set_options</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">scheduling_core   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">Main core of scheduler. Idle threads move to the scheduling core. Can be set only once    </td></tr>
+<td class="markdownTableBodyNone">scheduling_core   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">Core that the scheduler runs on; idle threads are moved here. Default: current scheduling core    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">isolated_core_mask   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Select CPU cores to isolate from scheduling changes. Can be set only once   </td></tr>
+<td class="markdownTableBodyNone">isolated_core_mask   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">CPU mask of cores excluded from scheduling decisions; must not include scheduling_core   </td></tr>
 </table>
 <h3>Example</h3>
 <p>Example request:</p>
@@ -1090,9 +1090,9 @@ thread_set_cpumask</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">id   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">uint64   </td><td class="markdownTableBodyNone">Thread ID    </td></tr>
+<td class="markdownTableBodyNone">id   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">uint64   </td><td class="markdownTableBodyNone">ID of the SPDK thread to move    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">cpumask   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Cpumask for this thread   </td></tr>
+<td class="markdownTableBodyNone">cpumask   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">CPU mask of cores the thread is allowed to run on   </td></tr>
 </table>
 <h3>Response</h3>
 <p>Completion status of the operation is returned as a boolean.</p>
@@ -1375,7 +1375,7 @@ log_set_print_level</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">level   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">ERROR, WARNING, NOTICE, INFO, DEBUG   </td></tr>
+<td class="markdownTableBodyNone">level   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Log print level: ERROR, WARNING, NOTICE, INFO, DEBUG   </td></tr>
 </table>
 <h3>Example</h3>
 <p>Example request:</p>
@@ -1419,7 +1419,7 @@ log_set_level</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">level   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">ERROR, WARNING, NOTICE, INFO, DEBUG   </td></tr>
+<td class="markdownTableBodyNone">level   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Log level: ERROR, WARNING, NOTICE, INFO, DEBUG   </td></tr>
 </table>
 <h3>Example</h3>
 <p>Example request:</p>
@@ -1463,7 +1463,7 @@ log_set_flag</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">flag   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">A log flag, or 'all'   </td></tr>
+<td class="markdownTableBodyNone">flag   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Log flag name (e.g. "nvme") or "all" to set all flags   </td></tr>
 </table>
 <h3>Example</h3>
 <p>Example request:</p>
@@ -1489,7 +1489,7 @@ log_clear_flag</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">flag   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">A log flag, or 'all'   </td></tr>
+<td class="markdownTableBodyNone">flag   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Log flag name (e.g. "nvme") or "all" to clear all flags   </td></tr>
 </table>
 <h3>Example</h3>
 <p>Example request:</p>
@@ -1538,7 +1538,7 @@ log_enable_timestamps</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">enabled   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">on or off   </td></tr>
+<td class="markdownTableBodyNone">enabled   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Enable (true) or disable (false) timestamps in log output   </td></tr>
 </table>
 <h3>Example</h3>
 <p>Example request:</p>
@@ -1729,9 +1729,9 @@ accel_assign_opc</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">opname   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">name of operation    </td></tr>
+<td class="markdownTableBodyNone">opname   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of the accel operation; see accel_get_opc_assignments for the list    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">module   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">name of module   </td></tr>
+<td class="markdownTableBodyNone">module   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of the accel module to assign the operation to   </td></tr>
 </table>
 <h3>Example</h3>
 <p>Example request:</p>
@@ -1758,15 +1758,15 @@ accel_crypto_key_create</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">cipher   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">crypto cipher to use    </td></tr>
+<td class="markdownTableBodyNone">cipher   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Crypto cipher: AES_CBC, AES_XTS    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">key   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Key in <b>hex</b> form    </td></tr>
+<td class="markdownTableBodyNone">key   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Key in hex form    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">key2   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Optional 2nd part of the key or a tweak in <b>hex</b> form    </td></tr>
+<td class="markdownTableBodyNone">key2   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Second part of the key (or tweak) in hex form, required for AES_XTS    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">tweak_mode   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Tweak mode to use: SIMPLE_LBA, JOIN_NEG_LBA_WITH_LBA, INCR_512_FULL_LBA, INCR_512_UPPER_LBA. Default is SIMPLE_LBA    </td></tr>
+<td class="markdownTableBodyNone">tweak_mode   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Tweak mode: SIMPLE_LBA, JOIN_NEG_LBA_WITH_LBA, INCR_512_FULL_LBA, INCR_512_UPPER_LBA. Default: SIMPLE_LBA    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">The key name   </td></tr>
+<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of the key   </td></tr>
 </table>
 <h3>Example</h3>
 <p>Example request:</p>
@@ -1796,7 +1796,7 @@ accel_crypto_key_destroy</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">key_name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">The key name   </td></tr>
+<td class="markdownTableBodyNone">key_name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of the key to destroy   </td></tr>
 </table>
 <h3>Example</h3>
 <p>Example request:</p>
@@ -1822,7 +1822,7 @@ accel_crypto_keys_get</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">key_name   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">If specified, return info about a specific key   </td></tr>
+<td class="markdownTableBodyNone">key_name   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of a specific key to query. Default: list all   </td></tr>
 </table>
 <h3>Example</h3>
 <p>Example request:</p>
@@ -1860,7 +1860,7 @@ accel_set_driver</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of the platform driver   </td></tr>
+<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of the platform driver, or empty string to disable   </td></tr>
 </table>
 <h3>Example</h3>
 <p>Example request:</p>
@@ -1959,15 +1959,15 @@ accel_error_inject_error</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">opcode   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">enum   </td><td class="markdownTableBodyNone">Operation to inject errors.    </td></tr>
+<td class="markdownTableBodyNone">opcode   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">enum   </td><td class="markdownTableBodyNone">Accel operation to inject errors into    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">type   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">enum   </td><td class="markdownTableBodyNone">Type of errors to inject ("corrupt": corrupt the data, "failure": fail the operation, "disable": disable error injection).    </td></tr>
+<td class="markdownTableBodyNone">type   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">enum   </td><td class="markdownTableBodyNone">Injection type: corrupt (corrupt data), failure (fail operation), disable (disable injection)    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">count   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint64   </td><td class="markdownTableBodyNone">Numbers of errors to inject on each IO channel (<code>UINT64_MAX</code> by default).    </td></tr>
+<td class="markdownTableBodyNone">count   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint64   </td><td class="markdownTableBodyNone">Number of errors to inject on each IO channel; 0 disables injection. Default: UINT64_MAX (no limit)    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">interval   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint64   </td><td class="markdownTableBodyNone">Interval between injections.    </td></tr>
+<td class="markdownTableBodyNone">interval   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint64   </td><td class="markdownTableBodyNone">Number of operations between successive injections    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">errcode   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">int32   </td><td class="markdownTableBodyNone">Error code to inject (only relevant for type=failure).   </td></tr>
+<td class="markdownTableBodyNone">errcode   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">int32   </td><td class="markdownTableBodyNone">Error code to return; only relevant for type=failure   </td></tr>
 </table>
 <h3>Example</h3>
 <p>Example request:</p>
@@ -1994,7 +1994,7 @@ compressdev_scan_accel_module</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">pmd   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">pmd selection   </td></tr>
+<td class="markdownTableBodyNone">pmd   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">PMD selection: 0=auto, 1=QAT only, 2=mlx5_pci only, 3=uadk only   </td></tr>
 </table>
 <h3>Example</h3>
 <p>Example request:</p>
@@ -2020,7 +2020,7 @@ dsa_scan_accel_module</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">config_kernel_mode   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">If set, will use kernel idxd driver.   </td></tr>
+<td class="markdownTableBodyNone">config_kernel_mode   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Use the kernel idxd driver instead of user-mode. Default: false   </td></tr>
 </table>
 <h3>Example</h3>
 <p>Example request:</p>
@@ -2136,7 +2136,7 @@ dpdk_cryptodev_set_driver</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">driver_name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">The driver, can be one of crypto_aesni_mb, crypto_qat or mlx5_pci   </td></tr>
+<td class="markdownTableBodyNone">driver_name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">DPDK crypto driver: crypto_aesni_mb, crypto_qat, crypto_uadk, mlx5_pci   </td></tr>
 </table>
 <h3>Example</h3>
 <p>Example request:</p>
@@ -2180,7 +2180,7 @@ mlx5_scan_accel_module</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">qp_size   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint16   </td><td class="markdownTableBodyNone">qpair size    </td></tr>
+<td class="markdownTableBodyNone">qp_size   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint16   </td><td class="markdownTableBodyNone">Queue pair size    </td></tr>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">num_requests   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">Size of the shared requests pool    </td></tr>
 <tr class="markdownTableRowOdd">
@@ -2215,7 +2215,7 @@ accel_mlx5_dump_stats</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">level   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Verbose level, one of "total", "channel" or "device"   </td></tr>
+<td class="markdownTableBodyNone">level   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Verbosity level: total, channel, device. Default: channel   </td></tr>
 </table>
 <h3>Example</h3>
 <p>Example request:</p>
@@ -10530,7 +10530,7 @@ sock_impl_get_options</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">impl_name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of socket implementation, e.g. posix   </td></tr>
+<td class="markdownTableBodyNone">impl_name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Socket implementation name (e.g. "posix", "ssl", "uring")   </td></tr>
 </table>
 <h3>Response</h3>
 <p>Response is an object with current socket layer options for requested implementation.</p>
@@ -10569,27 +10569,27 @@ sock_impl_set_options</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">impl_name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of socket implementation, e.g. posix    </td></tr>
+<td class="markdownTableBodyNone">impl_name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Socket implementation name (e.g. "posix", "ssl", "uring")    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">recv_buf_size   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">Size of socket receive buffer in bytes    </td></tr>
+<td class="markdownTableBodyNone">recv_buf_size   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">Receive buffer size in bytes    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">send_buf_size   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">Size of socket send buffer in bytes    </td></tr>
+<td class="markdownTableBodyNone">send_buf_size   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">Send buffer size in bytes    </td></tr>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">enable_recv_pipe   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Enable or disable receive pipe    </td></tr>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">enable_quickack   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Enable or disable quick ACK    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">enable_placement_id   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">Enable or disable placement_id. 0:disable,1:incoming_napi,2:incoming_cpu    </td></tr>
+<td class="markdownTableBodyNone">enable_placement_id   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">Placement ID source: 0=disable, 1=incoming_napi, 2=incoming_cpu    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">enable_zerocopy_send_server   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Enable or disable zero copy on send for server sockets    </td></tr>
+<td class="markdownTableBodyNone">enable_zerocopy_send_server   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Enable zero-copy on send for server sockets    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">enable_zerocopy_send_client   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Enable or disable zero copy on send for client sockets    </td></tr>
+<td class="markdownTableBodyNone">enable_zerocopy_send_client   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Enable zero-copy on send for client sockets    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">zerocopy_threshold   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">Set zerocopy_threshold in bytes. A consecutive sequence of requests' iovecs that fall below this threshold may be sent without zerocopy flag set    </td></tr>
+<td class="markdownTableBodyNone">zerocopy_threshold   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">Send size threshold in bytes below which the zerocopy flag is omitted    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">tls_version   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">TLS protocol version, e.g. 13 for v1.3 (only applies when impl_name == ssl)    </td></tr>
+<td class="markdownTableBodyNone">tls_version   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">TLS protocol version (e.g. 13 for TLS 1.3) (ssl only)    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">enable_ktls   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Enable or disable Kernel TLS (only applies when impl_name == ssl)   </td></tr>
+<td class="markdownTableBodyNone">enable_ktls   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Enable Kernel TLS (ssl only). Default: false   </td></tr>
 </table>
 <h3>Response</h3>
 <table class="markdownTable">
@@ -10632,7 +10632,7 @@ sock_set_default_impl</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">impl_name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of socket implementation, e.g. posix   </td></tr>
+<td class="markdownTableBodyNone">impl_name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Socket implementation name (e.g. "posix", "ssl", "uring")   </td></tr>
 </table>
 <h3>Response</h3>
 <table class="markdownTable">
