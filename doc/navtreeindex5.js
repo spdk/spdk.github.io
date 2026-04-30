@@ -1,5 +1,7 @@
 var NAVTREEINDEX5 =
 {
+"jsonrpc.html#rpc_bdev_lvol_create_lvstore":[3,8,10,0],
+"jsonrpc.html#rpc_bdev_lvol_decouple_parent":[3,8,10,14],
 "jsonrpc.html#rpc_bdev_lvol_delete":[3,8,10,12],
 "jsonrpc.html#rpc_bdev_lvol_delete_lvstore":[3,8,10,1],
 "jsonrpc.html#rpc_bdev_lvol_get_lvols":[3,8,10,15],
@@ -62,8 +64,8 @@ var NAVTREEINDEX5 =
 "jsonrpc.html#rpc_bdev_opal_get_info":[3,8,14,3],
 "jsonrpc.html#rpc_bdev_opal_new_user":[3,8,14,5],
 "jsonrpc.html#rpc_bdev_opal_set_lock_state":[3,8,14,6],
-"jsonrpc.html#rpc_bdev_passthru_create":[3,8,5,74],
-"jsonrpc.html#rpc_bdev_passthru_delete":[3,8,5,75],
+"jsonrpc.html#rpc_bdev_passthru_create":[3,8,5,75],
+"jsonrpc.html#rpc_bdev_passthru_delete":[3,8,5,76],
 "jsonrpc.html#rpc_bdev_raid_add_base_bdev":[3,8,11,4],
 "jsonrpc.html#rpc_bdev_raid_create":[3,8,11,2],
 "jsonrpc.html#rpc_bdev_raid_delete":[3,8,11,3],
@@ -85,13 +87,13 @@ var NAVTREEINDEX5 =
 "jsonrpc.html#rpc_bdev_uring_create":[3,8,13,0],
 "jsonrpc.html#rpc_bdev_uring_delete":[3,8,13,2],
 "jsonrpc.html#rpc_bdev_uring_rescan":[3,8,13,1],
-"jsonrpc.html#rpc_bdev_virtio_attach_controller":[3,8,5,78],
-"jsonrpc.html#rpc_bdev_virtio_blk_set_hotplug":[3,8,5,81],
-"jsonrpc.html#rpc_bdev_virtio_detach_controller":[3,8,5,80],
-"jsonrpc.html#rpc_bdev_virtio_scsi_get_devices":[3,8,5,79],
+"jsonrpc.html#rpc_bdev_virtio_attach_controller":[3,8,5,79],
+"jsonrpc.html#rpc_bdev_virtio_blk_set_hotplug":[3,8,5,82],
+"jsonrpc.html#rpc_bdev_virtio_detach_controller":[3,8,5,81],
+"jsonrpc.html#rpc_bdev_virtio_scsi_get_devices":[3,8,5,80],
 "jsonrpc.html#rpc_bdev_wait_for_examine":[3,8,5,3],
-"jsonrpc.html#rpc_bdev_xnvme_create":[3,8,5,76],
-"jsonrpc.html#rpc_bdev_xnvme_delete":[3,8,5,77],
+"jsonrpc.html#rpc_bdev_xnvme_create":[3,8,5,77],
+"jsonrpc.html#rpc_bdev_xnvme_delete":[3,8,5,78],
 "jsonrpc.html#rpc_bdev_zone_block_create":[3,8,5,48],
 "jsonrpc.html#rpc_bdev_zone_block_delete":[3,8,5,49],
 "jsonrpc.html#rpc_compressdev_scan_accel_module":[3,8,4,10],
@@ -247,7 +249,5 @@ var NAVTREEINDEX5 =
 "jsonrpc.html#rpc_vmd_remove_device":[3,8,20,2],
 "jsonrpc.html#rpc_vmd_rescan":[3,8,20,3],
 "jsonrpc_8h.html":[15,0,0,0,37],
-"jsonrpc_8h.html#a27688ab4587564524fefa84abc13ad3c":[15,0,0,0,37,13],
-"jsonrpc_8h.html#a27bade57c1aa87a5e962373c35ef82fc":[15,0,0,0,37,21],
-"jsonrpc_8h.html#a2ce0cf522ddb54ec40c34462b08b0251":[15,0,0,0,37,5]
+"jsonrpc_8h.html#a27688ab4587564524fefa84abc13ad3c":[15,0,0,0,37,13]
 };
