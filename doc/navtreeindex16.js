@@ -1,5 +1,6 @@
 var NAVTREEINDEX16 =
 {
+"structspdk__nvmf__rdma__accept__private__data.html":[14,0,384],
 "structspdk__nvmf__rdma__reject__private__data.html":[14,0,386],
 "structspdk__nvmf__rdma__request__private__data.html":[14,0,387],
 "structspdk__nvmf__rdma__transport__specific__address__subtype.html":[14,0,388],
@@ -248,6 +249,5 @@ var NAVTREEINDEX16 =
 "structspdk__vfu__endpoint__ops.html":[14,0,480],
 "structspdk__vfu__endpoint__ops.html#a00f7d1fb286931725b14f5f410bbcd33":[14,0,480,8],
 "structspdk__vfu__endpoint__ops.html#a3d0a126f68ccaaaff332d355013450f7":[14,0,480,3],
-"structspdk__vfu__endpoint__ops.html#a69ef95e6406e57fac1fe4ca32a95aa20":[14,0,480,2],
-"structspdk__vfu__endpoint__ops.html#a72fd2cc7fbb787f9dc785083900de668":[14,0,480,6]
+"structspdk__vfu__endpoint__ops.html#a69ef95e6406e57fac1fe4ca32a95aa20":[14,0,480,2]
 };

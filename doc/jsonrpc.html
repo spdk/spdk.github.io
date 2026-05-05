@@ -869,7 +869,7 @@ framework_set_scheduler</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of a scheduler    </td></tr>
+<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Scheduler name: <code>static</code> (fixed core pinning) or <code>dynamic</code> (load-based thread migration across cores)    </td></tr>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">period   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint64   </td><td class="markdownTableBodyNone">Scheduler period in microseconds. Default: 1000000 (1 second) on first set    </td></tr>
 <tr class="markdownTableRowOdd">
@@ -1376,7 +1376,7 @@ log_set_print_level</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">level   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Log print level: ERROR, WARNING, NOTICE, INFO, DEBUG   </td></tr>
+<td class="markdownTableBodyNone">level   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">enum   </td><td class="markdownTableBodyNone">Log print level   </td></tr>
 </table>
 <h3>Example</h3>
 <p>Example request:</p>
@@ -1420,7 +1420,7 @@ log_set_level</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">level   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Log level: ERROR, WARNING, NOTICE, INFO, DEBUG   </td></tr>
+<td class="markdownTableBodyNone">level   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">enum   </td><td class="markdownTableBodyNone">Log level   </td></tr>
 </table>
 <h3>Example</h3>
 <p>Example request:</p>
@@ -1759,13 +1759,13 @@ accel_crypto_key_create</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">cipher   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Crypto cipher: AES_CBC, AES_XTS    </td></tr>
+<td class="markdownTableBodyNone">cipher   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">enum   </td><td class="markdownTableBodyNone">Crypto cipher: AES_CBC, AES_XTS    </td></tr>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">key   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Key in hex form    </td></tr>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">key2   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Second part of the key (or tweak) in hex form, required for AES_XTS    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">tweak_mode   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Tweak mode: SIMPLE_LBA, JOIN_NEG_LBA_WITH_LBA, INCR_512_FULL_LBA, INCR_512_UPPER_LBA. Default: SIMPLE_LBA    </td></tr>
+<td class="markdownTableBodyNone">tweak_mode   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">enum   </td><td class="markdownTableBodyNone">Tweak mode, default: SIMPLE_LBA    </td></tr>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of the key   </td></tr>
 </table>
@@ -2216,7 +2216,7 @@ accel_mlx5_dump_stats</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">level   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Verbosity level: total, channel, device. Default: channel   </td></tr>
+<td class="markdownTableBodyNone">level   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">enum   </td><td class="markdownTableBodyNone">Verbosity level, default: channel   </td></tr>
 </table>
 <h3>Example</h3>
 <p>Example request:</p>
@@ -5586,17 +5586,17 @@ bdev_virtio_attach_controller</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Virtio SCSI base bdev name or Virtio Blk bdev name    </td></tr>
+<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Prefix used to name the resulting bdev(s)    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">trtype   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Virtio target trtype: pci or user    </td></tr>
+<td class="markdownTableBodyNone">trtype   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Virtio transport type: pci, user, vfio-user    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">traddr   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">target address: BDF or UNIX socket file path    </td></tr>
+<td class="markdownTableBodyNone">traddr   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Transport-specific address (PCI BDF for pci; UNIX socket path for user and vfio-user)    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">dev_type   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Virtio device type: blk or scsi    </td></tr>
+<td class="markdownTableBodyNone">dev_type   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Virtio device type: blk, scsi    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">vq_count   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">Number of queues this controller will utilize (default: 1)    </td></tr>
+<td class="markdownTableBodyNone">vq_count   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">Number of virtqueues (user transport only). Default: 1    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">vq_size   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">Size of each queue. Must be power of 2. (default: 512)   </td></tr>
+<td class="markdownTableBodyNone">vq_size   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">Entries per virtqueue, must be a power of 2 (user transport only). Default: 512   </td></tr>
 </table>
 <h3>Response</h3>
 <p>Array of names of newly created bdevs.</p>
@@ -5662,7 +5662,7 @@ bdev_virtio_detach_controller</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Virtio name   </td></tr>
+<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of the virtio bdev (e.g. "VirtioUser0")   </td></tr>
 </table>
 <h3>Example</h3>
 <p>Example request:</p>
@@ -5689,9 +5689,9 @@ bdev_virtio_blk_set_hotplug</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">enable   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Enable or disable the virtio blk hotplug monitor    </td></tr>
+<td class="markdownTableBodyNone">enable   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Enable the virtio-blk hotplug monitor    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">period_us   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint64   </td><td class="markdownTableBodyNone">The period time of the monitor   </td></tr>
+<td class="markdownTableBodyNone">period_us   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint64   </td><td class="markdownTableBodyNone">Hotplug polling period in microseconds   </td></tr>
 </table>
 <h3>Response</h3>
 <p>True the rpc is successful otherwise false</p>
@@ -8137,7 +8137,7 @@ vfu_tgt_set_base_path</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">path   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Base path   </td></tr>
+<td class="markdownTableBodyNone">path   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Base path for the vfio-user UNIX sockets   </td></tr>
 </table>
 <h3>Example</h3>
 <p>Example request:</p>
@@ -8163,7 +8163,7 @@ vfu_virtio_delete_endpoint</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Endpoint name   </td></tr>
+<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of the endpoint   </td></tr>
 </table>
 <h3>Example</h3>
 <p>Example request:</p>
@@ -8189,17 +8189,17 @@ vfu_virtio_create_blk_endpoint</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Endpoint name    </td></tr>
+<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of the endpoint    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">bdev_name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Block device name    </td></tr>
+<td class="markdownTableBodyNone">bdev_name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of the backing block device    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">cpumask   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">CPU masks    </td></tr>
+<td class="markdownTableBodyNone">cpumask   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">CPU mask for the endpoint's I/O threads    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">num_queues   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint16   </td><td class="markdownTableBodyNone">Number of queues    </td></tr>
+<td class="markdownTableBodyNone">num_queues   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint16   </td><td class="markdownTableBodyNone">Number of virtqueues. Default: 64    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">qsize   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint16   </td><td class="markdownTableBodyNone">Queue size    </td></tr>
+<td class="markdownTableBodyNone">qsize   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint16   </td><td class="markdownTableBodyNone">Number of entries per virtqueue. Default: 128    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">packed_ring   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Enable packed ring   </td></tr>
+<td class="markdownTableBodyNone">packed_ring   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Enable packed virtqueue layout. Default: false   </td></tr>
 </table>
 <h3>Example</h3>
 <p>Example request:</p>
@@ -8229,11 +8229,11 @@ vfu_virtio_scsi_add_target</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Endpoint name    </td></tr>
+<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of the endpoint    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">scsi_target_num   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">uint8   </td><td class="markdownTableBodyNone">SCSI target number    </td></tr>
+<td class="markdownTableBodyNone">scsi_target_num   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">uint8   </td><td class="markdownTableBodyNone">SCSI target number: 0-7    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">bdev_name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Block device name   </td></tr>
+<td class="markdownTableBodyNone">bdev_name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of the backing block device   </td></tr>
 </table>
 <h3>Example</h3>
 <p>Example request:</p>
@@ -8261,9 +8261,9 @@ vfu_virtio_scsi_remove_target</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Endpoint name    </td></tr>
+<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of the endpoint    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">scsi_target_num   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">uint8   </td><td class="markdownTableBodyNone">SCSI target number   </td></tr>
+<td class="markdownTableBodyNone">scsi_target_num   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">uint8   </td><td class="markdownTableBodyNone">SCSI target number: 0-7   </td></tr>
 </table>
 <h3>Example</h3>
 <p>Example request:</p>
@@ -8290,15 +8290,15 @@ vfu_virtio_create_scsi_endpoint</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Endpoint name    </td></tr>
+<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of the endpoint    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">cpumask   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">CPU masks    </td></tr>
+<td class="markdownTableBodyNone">cpumask   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">CPU mask for the endpoint's I/O threads    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">num_io_queues   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint16   </td><td class="markdownTableBodyNone">Number of IO queues    </td></tr>
+<td class="markdownTableBodyNone">num_io_queues   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint16   </td><td class="markdownTableBodyNone">Number of I/O virtqueues (control + event virtqueues added automatically). Default: 62    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">qsize   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint16   </td><td class="markdownTableBodyNone">Queue size    </td></tr>
+<td class="markdownTableBodyNone">qsize   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint16   </td><td class="markdownTableBodyNone">Number of entries per virtqueue. Default: 128    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">packed_ring   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Enable packed ring   </td></tr>
+<td class="markdownTableBodyNone">packed_ring   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Enable packed virtqueue layout. Default: false   </td></tr>
 </table>
 <h3>Example</h3>
 <p>Example request:</p>
@@ -8327,19 +8327,19 @@ vfu_virtio_create_fs_endpoint</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Endpoint name    </td></tr>
+<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of the endpoint    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">fsdev_name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of an underlying fsdev    </td></tr>
+<td class="markdownTableBodyNone">fsdev_name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of the backing fsdev    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">tag   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Virtio FS tag according to the virtio specification    </td></tr>
+<td class="markdownTableBodyNone">tag   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">virtiofs mount tag (per virtio specification)    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">cpumask   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">CPU masks    </td></tr>
+<td class="markdownTableBodyNone">cpumask   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">CPU mask for the endpoint's I/O threads    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">num_queues   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint16   </td><td class="markdownTableBodyNone">Number of IO queues    </td></tr>
+<td class="markdownTableBodyNone">num_queues   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint16   </td><td class="markdownTableBodyNone">Number of virtqueues. Default: 64    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">qsize   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint16   </td><td class="markdownTableBodyNone">Queue size    </td></tr>
+<td class="markdownTableBodyNone">qsize   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint16   </td><td class="markdownTableBodyNone">Number of entries per virtqueue. Default: 128    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">packed_ring   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Enable packed ring   </td></tr>
+<td class="markdownTableBodyNone">packed_ring   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Enable packed virtqueue layout. Default: false   </td></tr>
 </table>
 <h3>Example</h3>
 <p>Example request:</p>
@@ -8375,11 +8375,11 @@ vhost_controller_set_coalescing</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">ctrlr   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Controller name    </td></tr>
+<td class="markdownTableBodyNone">ctrlr   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of the vhost controller    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">delay_base_us   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">Base (minimum) coalescing time in microseconds    </td></tr>
+<td class="markdownTableBodyNone">delay_base_us   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">Base coalescing delay in microseconds    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">iops_threshold   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">Coalescing activation level greater than 0 in IO per second   </td></tr>
+<td class="markdownTableBodyNone">iops_threshold   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">IOPS threshold above which coalescing kicks in (must be &gt; 0)   </td></tr>
 </table>
 <h3>Example</h3>
 <p>Example request:</p>
@@ -8407,11 +8407,11 @@ vhost_create_scsi_controller</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">ctrlr   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Controller name    </td></tr>
+<td class="markdownTableBodyNone">ctrlr   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of the vhost controller    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">cpumask   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone"><a class="el" href="app_overview.html#cpu_mask">CPU mask</a> for this controller    </td></tr>
+<td class="markdownTableBodyNone">cpumask   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">CPU mask for the controller's threads    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">delay   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">If true, delay the controller startup.   </td></tr>
+<td class="markdownTableBodyNone">delay   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Delay controller startup. Default: false   </td></tr>
 </table>
 <h3>Example</h3>
 <p>Example request:</p>
@@ -8439,7 +8439,7 @@ vhost_start_scsi_controller</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">ctrlr   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Controller name   </td></tr>
+<td class="markdownTableBodyNone">ctrlr   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of the vhost controller   </td></tr>
 </table>
 <h3>Example</h3>
 <p>Example request:</p>
@@ -8465,11 +8465,11 @@ vhost_scsi_controller_add_target</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">ctrlr   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Controller name    </td></tr>
+<td class="markdownTableBodyNone">ctrlr   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of the vhost controller    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">scsi_target_num   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">int32   </td><td class="markdownTableBodyNone">SCSI target ID between 0 and 7 or -1 to use first free ID.    </td></tr>
+<td class="markdownTableBodyNone">scsi_target_num   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">int32   </td><td class="markdownTableBodyNone">SCSI target number (0-7), or -1 to pick the first free slot    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">bdev_name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of bdev to expose as a LUN 0   </td></tr>
+<td class="markdownTableBodyNone">bdev_name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of the bdev to expose as LUN 0 of the target   </td></tr>
 </table>
 <h3>Response</h3>
 <p>SCSI target ID.</p>
@@ -8500,9 +8500,9 @@ vhost_scsi_controller_remove_target</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">ctrlr   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Controller name    </td></tr>
+<td class="markdownTableBodyNone">ctrlr   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of the vhost controller    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">scsi_target_num   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">SCSI target ID between 0 and 7   </td></tr>
+<td class="markdownTableBodyNone">scsi_target_num   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">SCSI target number (0-7)   </td></tr>
 </table>
 <h3>Example</h3>
 <p>Example request:</p>
@@ -8529,7 +8529,7 @@ virtio_blk_create_transport</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Transport name   </td></tr>
+<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of the virtio-blk transport to create   </td></tr>
 </table>
 <h3>Example</h3>
 <p>Example request:</p>
@@ -8555,7 +8555,7 @@ virtio_blk_get_transports</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Transport name.   </td></tr>
+<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of a specific transport to query. Default: list all   </td></tr>
 </table>
 <h3>Example</h3>
 <p>Example request:</p>
@@ -8583,15 +8583,15 @@ vhost_create_blk_controller</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">ctrlr   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Controller name    </td></tr>
+<td class="markdownTableBodyNone">ctrlr   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of the vhost controller    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">dev_name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of bdev to expose block device    </td></tr>
+<td class="markdownTableBodyNone">dev_name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of the bdev to expose as the block device    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">readonly   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">If true, this target will be read only (default: false)    </td></tr>
+<td class="markdownTableBodyNone">readonly   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Expose the block device as read-only. Default: false    </td></tr>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">packed_ring   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Set controller as packed ring supported    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">cpumask   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone"><a class="el" href="app_overview.html#cpu_mask">CPU mask</a> for this controller    </td></tr>
+<td class="markdownTableBodyNone">cpumask   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">CPU mask for the controller's threads    </td></tr>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">transport   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">virtio blk transport name (default: vhost_user_blk)   </td></tr>
 </table>
@@ -8621,7 +8621,7 @@ vhost_get_controllers</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Vhost controller name   </td></tr>
+<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of a specific vhost controller to query. Default: list all   </td></tr>
 </table>
 <h3>Response</h3>
 <p>Response is an array of objects describing requested controller(s). Common fields are:</p>
@@ -8743,7 +8743,7 @@ vhost_delete_controller</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">ctrlr   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Controller name   </td></tr>
+<td class="markdownTableBodyNone">ctrlr   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of the vhost controller   </td></tr>
 </table>
 <h3>Example</h3>
 <p>Example request:</p>

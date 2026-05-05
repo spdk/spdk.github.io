@@ -1,5 +1,6 @@
 var NAVTREEINDEX6 =
 {
+"jsonrpc_8h.html#a27688ab4587564524fefa84abc13ad3c":[15,0,0,0,37,13],
 "jsonrpc_8h.html#a27bade57c1aa87a5e962373c35ef82fc":[15,0,0,0,37,21],
 "jsonrpc_8h.html#a2ce0cf522ddb54ec40c34462b08b0251":[15,0,0,0,37,5],
 "jsonrpc_8h.html#a3a1e9cd8198bfac34362325ee2098dfd":[15,0,0,0,37,6],
@@ -82,16 +83,16 @@ var NAVTREEINDEX6 =
 "log_8h.html#ae9946dc6bcd854cdb6ea5ae7c77ff704":[15,0,0,0,39,2],
 "log_8h.html#af600090b2a4aa95b4e9e4dae27bf6c7e":[15,0,0,0,39,22],
 "log_8h.html#afc930c0e1a4696a4c489c781b1a55b02":[15,0,0,0,39,8],
-"logical_volumes.html":[5,2],
-"logical_volumes.html#lvol":[5,2,0,1],
-"logical_volumes.html#lvol_bdev":[5,2,0,2],
-"logical_volumes.html#lvol_decoupling":[5,2,0,6],
-"logical_volumes.html#lvol_inflation":[5,2,0,5],
-"logical_volumes.html#lvol_rpc":[5,2,1],
-"logical_volumes.html#lvol_snapshots":[5,2,0,4],
-"logical_volumes.html#lvol_terminology":[5,2,0],
-"logical_volumes.html#lvol_thin_provisioning":[5,2,0,3],
-"logical_volumes.html#lvs":[5,2,0,0],
+"logical_volumes.html":[5,3],
+"logical_volumes.html#lvol":[5,3,0,1],
+"logical_volumes.html#lvol_bdev":[5,3,0,2],
+"logical_volumes.html#lvol_decoupling":[5,3,0,6],
+"logical_volumes.html#lvol_inflation":[5,3,0,5],
+"logical_volumes.html#lvol_rpc":[5,3,1],
+"logical_volumes.html#lvol_snapshots":[5,3,0,4],
+"logical_volumes.html#lvol_terminology":[5,3,0],
+"logical_volumes.html#lvol_thin_provisioning":[5,3,0,3],
+"logical_volumes.html#lvs":[5,3,0,0],
 "lvol_8h.html":[15,0,0,0,40],
 "lvol_8h.html#a003e23eb57e1318f2f60c5727cab54e2":[15,0,0,0,40,28],
 "lvol_8h.html#a1093dae877481711227c7b2f3aa9d879":[15,0,0,0,40,17],
@@ -248,6 +249,5 @@ var NAVTREEINDEX6 =
 "nvme_8h.html#a4b63c225c3cce6da60fdbfb6f54b11e2":[15,0,0,0,44,134],
 "nvme_8h.html#a4b7578aeee6b6a092a4a4013a2f32ce5":[15,0,0,0,44,68],
 "nvme_8h.html#a4bf7a40872bfe623a5dfa31922263532":[15,0,0,0,44,145],
-"nvme_8h.html#a4c11b5ae0a1f6d70f3ab99a13765ea75":[15,0,0,0,44,72],
-"nvme_8h.html#a4c2054305f5c7453045eab833b1d4281":[15,0,0,0,44,71]
+"nvme_8h.html#a4c11b5ae0a1f6d70f3ab99a13765ea75":[15,0,0,0,44,72]
 };

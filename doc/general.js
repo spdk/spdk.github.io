@@ -10,6 +10,7 @@ var general =
         [ "Custom shutdown callback", "event.html#event_component_shutdown", null ]
       ] ]
     ] ],
+    [ "Interrupt Mode", "interrupt_mode.html", null ],
     [ "Scheduler", "scheduler.html", null ],
     [ "Logical Volumes", "logical_volumes.html", [
       [ "Terminology", "logical_volumes.html#lvol_terminology", [
