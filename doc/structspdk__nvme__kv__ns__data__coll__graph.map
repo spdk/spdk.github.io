@@ -1,0 +1,17 @@
+<map id="spdk_nvme_kv_ns_data" name="spdk_nvme_kv_ns_data">
+<area shape="rect" id="Node000001" title=" " alt="" coords="491,136,668,164"/>
+<area shape="rect" id="Node000002" href="$structspdk__nvme__nmic.html" title=" " alt="" coords="243,5,379,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="376,36,397,43,433,57,468,74,519,105,560,133,557,138,516,109,466,79,431,62,395,48,374,41"/>
+<area shape="rect" id="Node000003" href="$structspdk__nvme__rescap.html" title=" " alt="" coords="238,57,384,85"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="385,87,468,110,538,133,536,138,466,115,384,92"/>
+<area shape="rect" id="Node000004" href="$structspdk__nvme__fpi.html" title=" " alt="" coords="251,109,371,137"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="386,128,491,138,490,144,386,133"/>
+<area shape="rect" id="Node000005" href="$structspdk__nvme__kv__kvfc.html" title="KV format capabilities." alt="" coords="234,161,388,189"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="403,171,467,167,505,162,505,167,467,172,404,177"/>
+<area shape="rect" id="Node000006" href="$structspdk__nvme__nsattr.html" title=" " alt="" coords="240,213,382,241"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="396,211,466,194,547,162,549,167,468,199,397,216"/>
+<area shape="rect" id="Node000007" href="$structspdk__nvme__kv__format.html" title="KV Format data structure (16 bytes, per KV spec Figure 42)" alt="" coords="226,265,396,293"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="388,258,428,245,466,228,519,195,560,162,564,166,522,200,468,233,430,250,390,263"/>
+<area shape="rect" id="Node000008" href="$structspdk__nvme__kv__afo.html" title="KV additional format options." alt="" coords="5,265,153,293"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="168,277,225,277,225,282,168,282"/>
+</map>

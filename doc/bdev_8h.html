@@ -733,6 +733,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_set_opts</b>
 <tr class="memitem:a664e5ac4a004f361d3e0784564ca0ae9" id="r_a664e5ac4a004f361d3e0784564ca0ae9"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a664e5ac4a004f361d3e0784564ca0ae9">spdk_bdev_get_nvme_nsid</a> (struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *bdev)</td></tr>
 <tr class="memdesc:a664e5ac4a004f361d3e0784564ca0ae9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get NVMe namespace ID for a given bdev (only for NVMe bdevs).  <br /></td></tr>
 <tr class="separator:a664e5ac4a004f361d3e0784564ca0ae9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20a77dc5a27d13b6606344f7cfcce81f" id="r_a20a77dc5a27d13b6606344f7cfcce81f"><td class="memItemLeft" align="right" valign="top">enum spdk_nvme_csi&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a20a77dc5a27d13b6606344f7cfcce81f">spdk_bdev_get_nvme_csi</a> (const struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *bdev)</td></tr>
+<tr class="memdesc:a20a77dc5a27d13b6606344f7cfcce81f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the NVMe I/O Command Set Identifier for the bdev.  <br /></td></tr>
+<tr class="separator:a20a77dc5a27d13b6606344f7cfcce81f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Block device abstraction layer. </p>
@@ -2287,6 +2290,33 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_set_opts</b>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>NUMA node ID for the bdev, SPDK_ENV_NODE_ID_ANY if the ID ID is unknown. </dd></dl>
+
+</div>
+</div>
+<a id="a20a77dc5a27d13b6606344f7cfcce81f" name="a20a77dc5a27d13b6606344f7cfcce81f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20a77dc5a27d13b6606344f7cfcce81f">&#9670;&#160;</a></span>spdk_bdev_get_nvme_csi()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum spdk_nvme_csi spdk_bdev_get_nvme_csi </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="structspdk__bdev.html">spdk_bdev</a> *</td>          <td class="paramname"><span class="paramname"><em>bdev</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the NVMe I/O Command Set Identifier for the bdev. </p>
+<p>Returns SPDK_NVME_CSI_NVM if the bdev does not have a namespace ID or does not set a CSI.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bdev</td><td>Block device to query.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>NVMe CSI value. </dd></dl>
 
 </div>
 </div>

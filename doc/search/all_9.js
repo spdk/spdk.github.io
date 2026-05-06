@@ -47,7 +47,7 @@ var searchData=
   ['force_5frecover_44',['force_recover',['../structspdk__bs__opts.html#a1851835c41a4b162a050c82d22a88a7f',1,'spdk_bs_opts']]],
   ['format_45',['format',['../structspdk__nvme__ns__data.html#a7e8c86f4719c2d4ffe638399f42edf03',1,'spdk_nvme_ns_data']]],
   ['format_46',['Version format',['../releases.html#version_format',1,'']]],
-  ['fpi_47',['fpi',['../structspdk__nvme__ns__data.html#a475b50c5f39856490824a2b221f59780',1,'spdk_nvme_ns_data::fpi'],['../structspdk__nvme__ns__iocs__independent__data.html#a2db28d189d809913ff5ff073e983f58c',1,'spdk_nvme_ns_iocs_independent_data::fpi']]],
+  ['fpi_47',['fpi',['../structspdk__nvme__ns__data.html#a475b50c5f39856490824a2b221f59780',1,'spdk_nvme_ns_data::fpi'],['../structspdk__nvme__kv__ns__data.html#a97452453a52a38919b00739534b1718c',1,'spdk_nvme_kv_ns_data::fpi'],['../structspdk__nvme__ns__iocs__independent__data.html#a2db28d189d809913ff5ff073e983f58c',1,'spdk_nvme_ns_iocs_independent_data::fpi']]],
   ['fpis_48',['fpis',['../structspdk__nvme__fpi.html#a6e15b7b8caf8bf596eb1dad0f6f90606',1,'spdk_nvme_fpi']]],
   ['fr_49',['fr',['../structspdk__nvme__ctrlr__data.html#a37704a665cf4f0a397f01ff3e97995a0',1,'spdk_nvme_ctrlr_data']]],
   ['framework_50',['Framework',['../accel_fw.html',1,'Acceleration Framework'],['../jsonrpc.html#jsonrpc_components_app',1,'App Framework'],['../event.html#event_component_app',1,'Application Framework'],['../vmd.html#vmd_app_frame',1,'Application framework'],['../vmd.html#vmd_app',1,'Applications w/o application framework'],['../event.html',1,'Event Framework'],['../tracepoints.html',1,'Tracing Framework']]],

@@ -82,6 +82,9 @@ var nvme__spec_8h =
     [ "spdk_nvme_nvm_ns_data", "structspdk__nvme__nvm__ns__data.html", "structspdk__nvme__nvm__ns__data" ],
     [ "spdk_nvme_nvm_ctrlr_data", "structspdk__nvme__nvm__ctrlr__data.html", null ],
     [ "spdk_nvme_zns_ns_data", "structspdk__nvme__zns__ns__data.html", "structspdk__nvme__zns__ns__data" ],
+    [ "spdk_nvme_kv_afo", "structspdk__nvme__kv__afo.html", "structspdk__nvme__kv__afo" ],
+    [ "spdk_nvme_kv_kvfc", "structspdk__nvme__kv__kvfc.html", "structspdk__nvme__kv__kvfc" ],
+    [ "spdk_nvme_kv_format", "structspdk__nvme__kv__format.html", "structspdk__nvme__kv__format" ],
     [ "spdk_nvme_kv_ns_data", "structspdk__nvme__kv__ns__data.html", "structspdk__nvme__kv__ns__data" ],
     [ "spdk_nvme_ns_iocs_independent_data", "structspdk__nvme__ns__iocs__independent__data.html", "structspdk__nvme__ns__iocs__independent__data" ],
     [ "spdk_nvme_iocs_vector", "structspdk__nvme__iocs__vector.html", null ],
@@ -142,6 +145,7 @@ var nvme__spec_8h =
     [ "SPDK_NVME_IO_FLAGS_PRCHK_REFTAG", "nvme__spec_8h.html#a093f4f54c893a46cc3a776fa667d09a2", null ],
     [ "SPDK_NVME_IO_FLAGS_VALID_MASK", "nvme__spec_8h.html#a0dc3156c004bc63cfa323254dacd5f06", null ],
     [ "SPDK_NVME_IO_FLAGS_ZONE_APPEND_PIREMAP", "nvme__spec_8h.html#a3cd413ddb31a2a9b2bc253f3dadf6765", null ],
+    [ "SPDK_NVME_KV_SPEC_VER", "nvme__spec_8h.html#ab8f1219825e4c5fb708fc34fc3fe8169", null ],
     [ "SPDK_NVME_MAX_CHANGED_NAMESPACES", "nvme__spec_8h.html#a5974e1d01942a43f9b95d77a31c2123b", null ],
     [ "SPDK_NVME_NSSR_VALUE", "nvme__spec_8h.html#ad3ef13320c82eaf4abdef6aa56e8b5ba", null ],
     [ "SPDK_NVME_VERSION", "nvme__spec_8h.html#a9760bf73611488342b5903ba702fd7b6", null ],
@@ -451,7 +455,7 @@ var nvme__spec_8h =
     [ "spdk_nvme_kv_store_option", "nvme__spec_8h.html#a6f664c4522d7711ee7bae80ff6381367", [
       [ "SPDK_NVME_KV_STORE_OPT_DONT_STORE_IF_KEY_NOT_EXISTS", "nvme__spec_8h.html#a6f664c4522d7711ee7bae80ff6381367a7bb54eebc0c1bea7b734a901b16db7fa", null ],
       [ "SPDK_NVME_KV_STORE_OPT_DONT_STORE_IF_KEY_EXISTS", "nvme__spec_8h.html#a6f664c4522d7711ee7bae80ff6381367a8a1b7caecf87a917a0b9173fb8235d01", null ],
-      [ "SPDK_NVME_KV_STORE_OPT_COMPRESS", "nvme__spec_8h.html#a6f664c4522d7711ee7bae80ff6381367aa36c1aafa8c662de42e33baf2194a4b3", null ]
+      [ "SPDK_NVME_KV_STORE_OPT_DONT_COMPRESS", "nvme__spec_8h.html#a6f664c4522d7711ee7bae80ff6381367abc1befdbbaddb4ef6c6855d9d8b0589b", null ]
     ] ],
     [ "spdk_nvme_log_page", "nvme__spec_8h.html#a3d5e453e4d95b0f5b9bb4de04ace78c4", [
       [ "SPDK_NVME_LOG_SUPPORTED_LOG_PAGES", "nvme__spec_8h.html#a3d5e453e4d95b0f5b9bb4de04ace78c4a6d21eaf5a38ce3511b0ce1a4ce21947e", null ],

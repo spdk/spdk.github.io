@@ -336,6 +336,9 @@ union <a class="el" href="unionspdk__bdev__nvme__ctratt.html">spdk_bdev_nvme_ctr
 uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>nsid</b></td></tr>
 <tr class="memdesc:ace7a1aa186a2495bc75e644c0f1f2169"><td class="mdescLeft">&#160;</td><td class="mdescRight">NVMe namespace ID. <br /></td></tr>
 <tr class="separator:ace7a1aa186a2495bc75e644c0f1f2169"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0254b1a71709a2b3aced29a6d2c7ae06" id="r_a0254b1a71709a2b3aced29a6d2c7ae06"><td class="memItemLeft" align="right" valign="top">enum spdk_nvme_csi&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0254b1a71709a2b3aced29a6d2c7ae06">csi</a></td></tr>
+<tr class="memdesc:a0254b1a71709a2b3aced29a6d2c7ae06"><td class="mdescLeft">&#160;</td><td class="mdescRight">NVMe I/O Command Set Identifier.  <br /></td></tr>
+<tr class="separator:a0254b1a71709a2b3aced29a6d2c7ae06"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a00db663b395d596c633624ed7554a440" id="r_a00db663b395d596c633624ed7554a440"><td class="memItemLeft" align="right" valign="top"><a id="a00db663b395d596c633624ed7554a440" name="a00db663b395d596c633624ed7554a440"></a>
 uint16_t&#160;</td><td class="memItemRight" valign="bottom"><b>reset_io_drain_timeout</b></td></tr>
 <tr class="separator:a00db663b395d596c633624ed7554a440"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -367,6 +370,23 @@ struct <a class="el" href="structspdk__bdev_1_1____bdev__internal__fields.html">
 <tr class="separator:a027888b234afc8af8282da025bec83fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Field Documentation</h2>
+<a id="a0254b1a71709a2b3aced29a6d2c7ae06" name="a0254b1a71709a2b3aced29a6d2c7ae06"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0254b1a71709a2b3aced29a6d2c7ae06">&#9670;&#160;</a></span>csi</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum spdk_nvme_csi spdk_bdev::csi</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>NVMe I/O Command Set Identifier. </p>
+<p>Only meaningful when nsid != 0. Defaults to SPDK_NVME_CSI_NVM. </p>
+
+</div>
+</div>
 <a id="a677d201121658aa2df21b4de5d21eec4" name="a677d201121658aa2df21b4de5d21eec4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a677d201121658aa2df21b4de5d21eec4">&#9670;&#160;</a></span>dif_pi_format</h2>
 

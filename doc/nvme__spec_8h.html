@@ -341,6 +341,15 @@ Data Structures</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__zns__ns__data.html">spdk_nvme_zns_ns_data</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__kv__afo.html">spdk_nvme_kv_afo</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">KV additional format options.  <a href="structspdk__nvme__kv__afo.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__kv__kvfc.html">spdk_nvme_kv_kvfc</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">KV format capabilities.  <a href="structspdk__nvme__kv__kvfc.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__kv__format.html">spdk_nvme_kv_format</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">KV Format data structure (16 bytes, per KV spec Figure 42)  <a href="structspdk__nvme__kv__format.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__kv__ns__data.html">spdk_nvme_kv_ns_data</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__ns__iocs__independent__data.html">spdk_nvme_ns_iocs_independent_data</a></td></tr>
@@ -531,6 +540,10 @@ Macros</h2></td></tr>
 <tr class="memitem:a29b64360a774480298f7ed501ba62ea0" id="r_a29b64360a774480298f7ed501ba62ea0"><td class="memItemLeft" align="right" valign="top"><a id="a29b64360a774480298f7ed501ba62ea0" name="a29b64360a774480298f7ed501ba62ea0"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_NVME_NQN_FIELD_SIZE</b>&#160;&#160;&#160;256</td></tr>
 <tr class="separator:a29b64360a774480298f7ed501ba62ea0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8f1219825e4c5fb708fc34fc3fe8169" id="r_ab8f1219825e4c5fb708fc34fc3fe8169"><td class="memItemLeft" align="right" valign="top"><a id="ab8f1219825e4c5fb708fc34fc3fe8169" name="ab8f1219825e4c5fb708fc34fc3fe8169"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_NVME_KV_SPEC_VER</b>&#160;&#160;&#160;<a class="el" href="#a9760bf73611488342b5903ba702fd7b6">SPDK_NVME_VERSION</a>(1, 3, 0)</td></tr>
+<tr class="memdesc:ab8f1219825e4c5fb708fc34fc3fe8169"><td class="mdescLeft">&#160;</td><td class="mdescRight">KV Command Set specification version 1.3. <br /></td></tr>
+<tr class="separator:ab8f1219825e4c5fb708fc34fc3fe8169"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af5aeace321594f3985745fec4b62b348" id="r_af5aeace321594f3985745fec4b62b348"><td class="memItemLeft" align="right" valign="top"><a id="af5aeace321594f3985745fec4b62b348" name="af5aeace321594f3985745fec4b62b348"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_NVME_REGISTRATION_PREEMPTED_MASK</b>&#160;&#160;&#160;(1U &lt;&lt; 1)</td></tr>
 <tr class="separator:af5aeace321594f3985745fec4b62b348"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -956,7 +969,7 @@ Enumerations</h2></td></tr>
 <tr class="separator:a92db7f007a2167386778330bf7bf985a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6f664c4522d7711ee7bae80ff6381367" id="r_a6f664c4522d7711ee7bae80ff6381367"><td class="memItemLeft" align="right" valign="top"><a id="a6f664c4522d7711ee7bae80ff6381367" name="a6f664c4522d7711ee7bae80ff6381367"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6f664c4522d7711ee7bae80ff6381367">spdk_nvme_kv_store_option</a> { <b>SPDK_NVME_KV_STORE_OPT_DONT_STORE_IF_KEY_NOT_EXISTS</b> = 1 &lt;&lt; 0
 , <b>SPDK_NVME_KV_STORE_OPT_DONT_STORE_IF_KEY_EXISTS</b> = 1 &lt;&lt; 1
-, <b>SPDK_NVME_KV_STORE_OPT_COMPRESS</b> = 1 &lt;&lt; 2
+, <b>SPDK_NVME_KV_STORE_OPT_DONT_COMPRESS</b> = 1 &lt;&lt; 2
  }</td></tr>
 <tr class="memdesc:a6f664c4522d7711ee7bae80ff6381367"><td class="mdescLeft">&#160;</td><td class="mdescRight">Key-Value Store command request options. <br /></td></tr>
 <tr class="separator:a6f664c4522d7711ee7bae80ff6381367"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1712,6 +1725,15 @@ static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_
 <tr class="memitem:a8cdea3a039aabe59ef8f847582ea6ead" id="r_a8cdea3a039aabe59ef8f847582ea6ead"><td class="memItemLeft" align="right" valign="top"><a id="a8cdea3a039aabe59ef8f847582ea6ead" name="a8cdea3a039aabe59ef8f847582ea6ead"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(struct <a class="el" href="structspdk__nvme__zns__ns__data.html">spdk_nvme_zns_ns_data</a>)==4096, &quot;Incorrect size&quot;)</td></tr>
 <tr class="separator:a8cdea3a039aabe59ef8f847582ea6ead"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee71940e6d2650dcc46127e884236a84" id="r_aee71940e6d2650dcc46127e884236a84"><td class="memItemLeft" align="right" valign="top"><a id="aee71940e6d2650dcc46127e884236a84" name="aee71940e6d2650dcc46127e884236a84"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(struct <a class="el" href="structspdk__nvme__kv__afo.html">spdk_nvme_kv_afo</a>)==1, &quot;Incorrect size&quot;)</td></tr>
+<tr class="separator:aee71940e6d2650dcc46127e884236a84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c970f2992ca9fbe8b7ac30cb8a0bef8" id="r_a8c970f2992ca9fbe8b7ac30cb8a0bef8"><td class="memItemLeft" align="right" valign="top"><a id="a8c970f2992ca9fbe8b7ac30cb8a0bef8" name="a8c970f2992ca9fbe8b7ac30cb8a0bef8"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(struct <a class="el" href="structspdk__nvme__kv__kvfc.html">spdk_nvme_kv_kvfc</a>)==1, &quot;Incorrect size&quot;)</td></tr>
+<tr class="separator:a8c970f2992ca9fbe8b7ac30cb8a0bef8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13ee74da171b58097003c31e5c0b99a5" id="r_a13ee74da171b58097003c31e5c0b99a5"><td class="memItemLeft" align="right" valign="top"><a id="a13ee74da171b58097003c31e5c0b99a5" name="a13ee74da171b58097003c31e5c0b99a5"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(struct <a class="el" href="structspdk__nvme__kv__format.html">spdk_nvme_kv_format</a>)==16, &quot;Incorrect size&quot;)</td></tr>
+<tr class="separator:a13ee74da171b58097003c31e5c0b99a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a99b3c68aaccca909b6b254925b7aad80" id="r_a99b3c68aaccca909b6b254925b7aad80"><td class="memItemLeft" align="right" valign="top"><a id="a99b3c68aaccca909b6b254925b7aad80" name="a99b3c68aaccca909b6b254925b7aad80"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(struct <a class="el" href="structspdk__nvme__kv__ns__data.html">spdk_nvme_kv_ns_data</a>)==4096, &quot;Incorrect size&quot;)</td></tr>
 <tr class="separator:a99b3c68aaccca909b6b254925b7aad80"><td class="memSeparator" colspan="2">&#160;</td></tr>

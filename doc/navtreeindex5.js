@@ -1,5 +1,6 @@
 var NAVTREEINDEX5 =
 {
+"jsonrpc.html#rpc_bdev_lvol_clone_bdev":[3,8,10,8],
 "jsonrpc.html#rpc_bdev_lvol_create":[3,8,10,5],
 "jsonrpc.html#rpc_bdev_lvol_create_lvstore":[3,8,10,0],
 "jsonrpc.html#rpc_bdev_lvol_decouple_parent":[3,8,10,14],
@@ -248,6 +249,5 @@ var NAVTREEINDEX5 =
 "jsonrpc.html#rpc_virtio_blk_get_transports":[3,8,9,6],
 "jsonrpc.html#rpc_vmd_enable":[3,8,20,1],
 "jsonrpc.html#rpc_vmd_remove_device":[3,8,20,2],
-"jsonrpc.html#rpc_vmd_rescan":[3,8,20,3],
-"jsonrpc_8h.html":[15,0,0,0,37]
+"jsonrpc.html#rpc_vmd_rescan":[3,8,20,3]
 };

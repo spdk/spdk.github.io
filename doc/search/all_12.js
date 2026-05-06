@@ -72,6 +72,5 @@ var searchData=
   ['over_20fabrics_20targets_69',['Specifying Remote NVMe over Fabrics Targets',['../nvme.html#nvme_fabrics_trid',1,'']]],
   ['overview_70',['Overview',['../distributions.html#distros_overview',1,'Overview'],['../jsonrpc.html#jsonrpc_overview',1,'Overview'],['../overview.html#dir_overview',1,'Overview'],['../peer_2_peer.html#p2p_overview',1,'Overview'],['../shfmt.html#shfmt_overview',1,'Overview'],['../logical_volumes.html#lvol_rpc',1,'RPC overview'],['../overview.html',1,'SPDK Structural Overview']]],
   ['overview_20of_20spdk_20applications_71',['An Overview of SPDK Applications',['../app_overview.html',1,'user_guides']]],
-  ['ovs_72',['ovs',['../structspdk__nvme__kv__ns__data.html#a9cf311190339b63780eff2f0456124a3',1,'spdk_nvme_kv_ns_data']]],
-  ['ozcs_73',['ozcs',['../structspdk__nvme__zns__ns__data.html#a8cfd3b6c383dd11b4f36a5a0f8ab4fb9',1,'spdk_nvme_zns_ns_data']]]
+  ['ozcs_72',['ozcs',['../structspdk__nvme__zns__ns__data.html#a8cfd3b6c383dd11b4f36a5a0f8ab4fb9',1,'spdk_nvme_zns_ns_data']]]
 ];

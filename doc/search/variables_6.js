@@ -17,7 +17,7 @@ var searchData=
   ['fnvms_14',['fnvms',['../structspdk__nvme__cdata__oacs.html#a583e491afe340ed77ec19ceec22c7a18',1,'spdk_nvme_cdata_oacs']]],
   ['force_5frecover_15',['force_recover',['../structspdk__bs__opts.html#a1851835c41a4b162a050c82d22a88a7f',1,'spdk_bs_opts']]],
   ['format_16',['format',['../structspdk__nvme__ns__data.html#a7e8c86f4719c2d4ffe638399f42edf03',1,'spdk_nvme_ns_data']]],
-  ['fpi_17',['fpi',['../structspdk__nvme__ns__data.html#a475b50c5f39856490824a2b221f59780',1,'spdk_nvme_ns_data::fpi'],['../structspdk__nvme__ns__iocs__independent__data.html#a2db28d189d809913ff5ff073e983f58c',1,'spdk_nvme_ns_iocs_independent_data::fpi']]],
+  ['fpi_17',['fpi',['../structspdk__nvme__ns__data.html#a475b50c5f39856490824a2b221f59780',1,'spdk_nvme_ns_data::fpi'],['../structspdk__nvme__kv__ns__data.html#a97452453a52a38919b00739534b1718c',1,'spdk_nvme_kv_ns_data::fpi'],['../structspdk__nvme__ns__iocs__independent__data.html#a2db28d189d809913ff5ff073e983f58c',1,'spdk_nvme_ns_iocs_independent_data::fpi']]],
   ['fpis_18',['fpis',['../structspdk__nvme__fpi.html#a6e15b7b8caf8bf596eb1dad0f6f90606',1,'spdk_nvme_fpi']]],
   ['fr_19',['fr',['../structspdk__nvme__ctrlr__data.html#a37704a665cf4f0a397f01ff3e97995a0',1,'spdk_nvme_ctrlr_data']]],
   ['free_20',['free',['../structspdk__ocssd__chunk__information__entry.html#a8754f5436078bb51613dfa9531af3333',1,'spdk_ocssd_chunk_information_entry']]],

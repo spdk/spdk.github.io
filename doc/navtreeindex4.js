@@ -1,5 +1,6 @@
 var NAVTREEINDEX4 =
 {
+"functions_vars_t.html":[14,2,2,20],
 "functions_vars_u.html":[14,2,2,21],
 "functions_vars_v.html":[14,2,2,22],
 "functions_vars_w.html":[14,2,2,23],
@@ -248,6 +249,5 @@ var NAVTREEINDEX4 =
 "jsonrpc.html#rpc_bdev_iscsi_delete":[3,8,5,68],
 "jsonrpc.html#rpc_bdev_iscsi_set_options":[3,8,5,66],
 "jsonrpc.html#rpc_bdev_lvol_check_shallow_copy":[3,8,10,19],
-"jsonrpc.html#rpc_bdev_lvol_clone":[3,8,10,7],
-"jsonrpc.html#rpc_bdev_lvol_clone_bdev":[3,8,10,8]
+"jsonrpc.html#rpc_bdev_lvol_clone":[3,8,10,7]
 };

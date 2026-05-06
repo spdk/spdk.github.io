@@ -124,6 +124,7 @@ var bdev_8h =
     [ "spdk_bdev_get_name", "bdev_8h.html#aac0cdb8ad1ebf94503b22f86d480a177", null ],
     [ "spdk_bdev_get_num_blocks", "bdev_8h.html#a86568eca8f0b4d0dc9bc59c5138fc7a5", null ],
     [ "spdk_bdev_get_numa_id", "bdev_8h.html#a5c5baa475d104a4a79add690c61b160a", null ],
+    [ "spdk_bdev_get_nvme_csi", "bdev_8h.html#a20a77dc5a27d13b6606344f7cfcce81f", null ],
     [ "spdk_bdev_get_nvme_ctratt", "bdev_8h.html#af833943e22885817e6954426b6a11b5f", null ],
     [ "spdk_bdev_get_nvme_nsid", "bdev_8h.html#a664e5ac4a004f361d3e0784564ca0ae9", null ],
     [ "spdk_bdev_get_optimal_io_boundary", "bdev_8h.html#aa79625889e23318204d235da36a4fa02", null ],

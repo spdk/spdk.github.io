@@ -1,0 +1,5 @@
+<map id="spdk_nvme_kv_format" name="spdk_nvme_kv_format">
+<area shape="rect" id="Node000001" title="KV Format data structure (16 bytes, per KV spec Figure 42)" alt="" coords="5,98,176,126"/>
+<area shape="rect" id="Node000002" href="$structspdk__nvme__kv__afo.html" title="KV additional format options." alt="" coords="17,5,164,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="93,48,93,98,88,98,88,48"/>
+</map>

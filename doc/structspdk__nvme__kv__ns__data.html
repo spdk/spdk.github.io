@@ -133,32 +133,93 @@ $(function(){initNavTree('structspdk__nvme__kv__ns__data.html',''); initResizabl
   <div class="headertitle"><div class="title">spdk_nvme_kv_ns_data Struct Reference</div></div>
 </div><!--header-->
 <div class="contents">
+<div class="dynheader">
+Collaboration diagram for spdk_nvme_kv_ns_data:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="structspdk__nvme__kv__ns__data__coll__graph.svg" width="100%" height="524"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:aa6c93ac5fed94565af7fced5bc87d5b5" id="r_aa6c93ac5fed94565af7fced5bc87d5b5"><td class="memItemLeft" align="right" valign="top"><a id="aa6c93ac5fed94565af7fced5bc87d5b5" name="aa6c93ac5fed94565af7fced5bc87d5b5"></a>
-uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>mks</b></td></tr>
-<tr class="memdesc:aa6c93ac5fed94565af7fced5bc87d5b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">maximum key size <br /></td></tr>
-<tr class="separator:aa6c93ac5fed94565af7fced5bc87d5b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab51f71b7cd570e4dd5c042f5b8948c7f" id="r_ab51f71b7cd570e4dd5c042f5b8948c7f"><td class="memItemLeft" align="right" valign="top"><a id="ab51f71b7cd570e4dd5c042f5b8948c7f" name="ab51f71b7cd570e4dd5c042f5b8948c7f"></a>
-uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>mvs</b></td></tr>
-<tr class="memdesc:ab51f71b7cd570e4dd5c042f5b8948c7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">maximum value size <br /></td></tr>
-<tr class="separator:ab51f71b7cd570e4dd5c042f5b8948c7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9cf311190339b63780eff2f0456124a3" id="r_a9cf311190339b63780eff2f0456124a3"><td class="memItemLeft" align="right" valign="top"><a id="a9cf311190339b63780eff2f0456124a3" name="a9cf311190339b63780eff2f0456124a3"></a>
-uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>ovs</b></td></tr>
-<tr class="memdesc:a9cf311190339b63780eff2f0456124a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">optimal value size <br /></td></tr>
-<tr class="separator:a9cf311190339b63780eff2f0456124a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae1027da2aa4f564c577549925518650a" id="r_ae1027da2aa4f564c577549925518650a"><td class="memItemLeft" align="right" valign="top"><a id="ae1027da2aa4f564c577549925518650a" name="ae1027da2aa4f564c577549925518650a"></a>
-uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>ka</b></td></tr>
-<tr class="memdesc:ae1027da2aa4f564c577549925518650a"><td class="mdescLeft">&#160;</td><td class="mdescRight">key alignment <br /></td></tr>
-<tr class="separator:ae1027da2aa4f564c577549925518650a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a29fee7ea6dd315c69b34ca5b22a3b6de" id="r_a29fee7ea6dd315c69b34ca5b22a3b6de"><td class="memItemLeft" align="right" valign="top"><a id="a29fee7ea6dd315c69b34ca5b22a3b6de" name="a29fee7ea6dd315c69b34ca5b22a3b6de"></a>
-uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>va</b></td></tr>
-<tr class="memdesc:a29fee7ea6dd315c69b34ca5b22a3b6de"><td class="mdescLeft">&#160;</td><td class="mdescRight">value alignment <br /></td></tr>
-<tr class="separator:a29fee7ea6dd315c69b34ca5b22a3b6de"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa71e36c7f6e918346c5f5125c1e1a5c7" id="r_aa71e36c7f6e918346c5f5125c1e1a5c7"><td class="memItemLeft" align="right" valign="top"><a id="aa71e36c7f6e918346c5f5125c1e1a5c7" name="aa71e36c7f6e918346c5f5125c1e1a5c7"></a>
-uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>reserved</b> [4085]</td></tr>
-<tr class="separator:aa71e36c7f6e918346c5f5125c1e1a5c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71eec69e23677a1278a336a396e5f60f" id="r_a71eec69e23677a1278a336a396e5f60f"><td class="memItemLeft" align="right" valign="top"><a id="a71eec69e23677a1278a336a396e5f60f" name="a71eec69e23677a1278a336a396e5f60f"></a>
+uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>nsze</b></td></tr>
+<tr class="memdesc:a71eec69e23677a1278a336a396e5f60f"><td class="mdescLeft">&#160;</td><td class="mdescRight">namespace size in bytes <br /></td></tr>
+<tr class="separator:a71eec69e23677a1278a336a396e5f60f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9269ab7a9b372b62cb1f26dab8096f9c" id="r_a9269ab7a9b372b62cb1f26dab8096f9c"><td class="memItemLeft" align="right" valign="top"><a id="a9269ab7a9b372b62cb1f26dab8096f9c" name="a9269ab7a9b372b62cb1f26dab8096f9c"></a>
+uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>reserved8</b> [8]</td></tr>
+<tr class="separator:a9269ab7a9b372b62cb1f26dab8096f9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abeb909c07765456f39f92e7f8c04dbb8" id="r_abeb909c07765456f39f92e7f8c04dbb8"><td class="memItemLeft" align="right" valign="top"><a id="abeb909c07765456f39f92e7f8c04dbb8" name="abeb909c07765456f39f92e7f8c04dbb8"></a>
+uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>nuse</b></td></tr>
+<tr class="memdesc:abeb909c07765456f39f92e7f8c04dbb8"><td class="mdescLeft">&#160;</td><td class="mdescRight">namespace utilization in bytes <br /></td></tr>
+<tr class="separator:abeb909c07765456f39f92e7f8c04dbb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a357bd3e6c2535ef9ecd2ba0adbedbad5" id="r_a357bd3e6c2535ef9ecd2ba0adbedbad5"><td class="memItemLeft" align="right" valign="top"><a id="a357bd3e6c2535ef9ecd2ba0adbedbad5" name="a357bd3e6c2535ef9ecd2ba0adbedbad5"></a>
+uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>nsfeat</b></td></tr>
+<tr class="memdesc:a357bd3e6c2535ef9ecd2ba0adbedbad5"><td class="mdescLeft">&#160;</td><td class="mdescRight">namespace features <br /></td></tr>
+<tr class="separator:a357bd3e6c2535ef9ecd2ba0adbedbad5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5262c3f45bc88c0e146a62ad6a5d9a6" id="r_ad5262c3f45bc88c0e146a62ad6a5d9a6"><td class="memItemLeft" align="right" valign="top"><a id="ad5262c3f45bc88c0e146a62ad6a5d9a6" name="ad5262c3f45bc88c0e146a62ad6a5d9a6"></a>
+uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>nkvf</b></td></tr>
+<tr class="memdesc:ad5262c3f45bc88c0e146a62ad6a5d9a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">number of KV formats (0's based) <br /></td></tr>
+<tr class="separator:ad5262c3f45bc88c0e146a62ad6a5d9a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b96159bd3ba83244e78bb3c1f68c7c1" id="r_a6b96159bd3ba83244e78bb3c1f68c7c1"><td class="memItemLeft" align="right" valign="top"><a id="a6b96159bd3ba83244e78bb3c1f68c7c1" name="a6b96159bd3ba83244e78bb3c1f68c7c1"></a>
+struct <a class="el" href="structspdk__nvme__nmic.html">spdk_nvme_nmic</a>&#160;</td><td class="memItemRight" valign="bottom"><b>nmic</b></td></tr>
+<tr class="memdesc:a6b96159bd3ba83244e78bb3c1f68c7c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">namespace multi-path I/O and namespace sharing capabilities <br /></td></tr>
+<tr class="separator:a6b96159bd3ba83244e78bb3c1f68c7c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8b07ddfe27846ba3665ff370b6414e5" id="r_ae8b07ddfe27846ba3665ff370b6414e5"><td class="memItemLeft" align="right" valign="top"><a id="ae8b07ddfe27846ba3665ff370b6414e5" name="ae8b07ddfe27846ba3665ff370b6414e5"></a>
+struct <a class="el" href="structspdk__nvme__rescap.html">spdk_nvme_rescap</a>&#160;</td><td class="memItemRight" valign="bottom"><b>rescap</b></td></tr>
+<tr class="memdesc:ae8b07ddfe27846ba3665ff370b6414e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">reservation capabilities <br /></td></tr>
+<tr class="separator:ae8b07ddfe27846ba3665ff370b6414e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97452453a52a38919b00739534b1718c" id="r_a97452453a52a38919b00739534b1718c"><td class="memItemLeft" align="right" valign="top"><a id="a97452453a52a38919b00739534b1718c" name="a97452453a52a38919b00739534b1718c"></a>
+struct <a class="el" href="structspdk__nvme__fpi.html">spdk_nvme_fpi</a>&#160;</td><td class="memItemRight" valign="bottom"><b>fpi</b></td></tr>
+<tr class="memdesc:a97452453a52a38919b00739534b1718c"><td class="mdescLeft">&#160;</td><td class="mdescRight">format progress indicator <br /></td></tr>
+<tr class="separator:a97452453a52a38919b00739534b1718c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64ab2ce9e511807e057a8f35cc3d1752" id="r_a64ab2ce9e511807e057a8f35cc3d1752"><td class="memItemLeft" align="right" valign="top"><a id="a64ab2ce9e511807e057a8f35cc3d1752" name="a64ab2ce9e511807e057a8f35cc3d1752"></a>
+struct <a class="el" href="structspdk__nvme__kv__kvfc.html">spdk_nvme_kv_kvfc</a>&#160;</td><td class="memItemRight" valign="bottom"><b>kvfc</b></td></tr>
+<tr class="memdesc:a64ab2ce9e511807e057a8f35cc3d1752"><td class="mdescLeft">&#160;</td><td class="mdescRight">KV format capabilities. <br /></td></tr>
+<tr class="separator:a64ab2ce9e511807e057a8f35cc3d1752"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab00f3028b7f00250aabb49c7bbede0d1" id="r_ab00f3028b7f00250aabb49c7bbede0d1"><td class="memItemLeft" align="right" valign="top"><a id="ab00f3028b7f00250aabb49c7bbede0d1" name="ab00f3028b7f00250aabb49c7bbede0d1"></a>
+uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>reserved30</b> [2]</td></tr>
+<tr class="separator:ab00f3028b7f00250aabb49c7bbede0d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8ed275914fe51f660f4bbac247247a4" id="r_ad8ed275914fe51f660f4bbac247247a4"><td class="memItemLeft" align="right" valign="top"><a id="ad8ed275914fe51f660f4bbac247247a4" name="ad8ed275914fe51f660f4bbac247247a4"></a>
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>novg</b></td></tr>
+<tr class="memdesc:ad8ed275914fe51f660f4bbac247247a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">namespace optimal value granularity in bytes <br /></td></tr>
+<tr class="separator:ad8ed275914fe51f660f4bbac247247a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50b4b9e49e1114a6d7ee36083dbd8f95" id="r_a50b4b9e49e1114a6d7ee36083dbd8f95"><td class="memItemLeft" align="right" valign="top"><a id="a50b4b9e49e1114a6d7ee36083dbd8f95" name="a50b4b9e49e1114a6d7ee36083dbd8f95"></a>
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>anagrpid</b></td></tr>
+<tr class="memdesc:a50b4b9e49e1114a6d7ee36083dbd8f95"><td class="mdescLeft">&#160;</td><td class="mdescRight">ANA group identifier. <br /></td></tr>
+<tr class="separator:a50b4b9e49e1114a6d7ee36083dbd8f95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae870f8c864f5245c3b73807120fcc7dd" id="r_ae870f8c864f5245c3b73807120fcc7dd"><td class="memItemLeft" align="right" valign="top"><a id="ae870f8c864f5245c3b73807120fcc7dd" name="ae870f8c864f5245c3b73807120fcc7dd"></a>
+uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>reserved40</b> [3]</td></tr>
+<tr class="separator:ae870f8c864f5245c3b73807120fcc7dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2930ab8be1cda22cdce4744b260d783" id="r_af2930ab8be1cda22cdce4744b260d783"><td class="memItemLeft" align="right" valign="top"><a id="af2930ab8be1cda22cdce4744b260d783" name="af2930ab8be1cda22cdce4744b260d783"></a>
+struct <a class="el" href="structspdk__nvme__nsattr.html">spdk_nvme_nsattr</a>&#160;</td><td class="memItemRight" valign="bottom"><b>nsattr</b></td></tr>
+<tr class="memdesc:af2930ab8be1cda22cdce4744b260d783"><td class="mdescLeft">&#160;</td><td class="mdescRight">namespace attributes <br /></td></tr>
+<tr class="separator:af2930ab8be1cda22cdce4744b260d783"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c39c001ef6778870d221d128f630b6c" id="r_a1c39c001ef6778870d221d128f630b6c"><td class="memItemLeft" align="right" valign="top"><a id="a1c39c001ef6778870d221d128f630b6c" name="a1c39c001ef6778870d221d128f630b6c"></a>
+uint16_t&#160;</td><td class="memItemRight" valign="bottom"><b>nvmsetid</b></td></tr>
+<tr class="memdesc:a1c39c001ef6778870d221d128f630b6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">NVM set identifier. <br /></td></tr>
+<tr class="separator:a1c39c001ef6778870d221d128f630b6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e08927ba805ac991a6f8c78ffd33a05" id="r_a4e08927ba805ac991a6f8c78ffd33a05"><td class="memItemLeft" align="right" valign="top"><a id="a4e08927ba805ac991a6f8c78ffd33a05" name="a4e08927ba805ac991a6f8c78ffd33a05"></a>
+uint16_t&#160;</td><td class="memItemRight" valign="bottom"><b>endgid</b></td></tr>
+<tr class="memdesc:a4e08927ba805ac991a6f8c78ffd33a05"><td class="mdescLeft">&#160;</td><td class="mdescRight">endurance group identifier <br /></td></tr>
+<tr class="separator:a4e08927ba805ac991a6f8c78ffd33a05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a439d4fcce5ffd49a3222d842a665f7d8" id="r_a439d4fcce5ffd49a3222d842a665f7d8"><td class="memItemLeft" align="right" valign="top"><a id="a439d4fcce5ffd49a3222d842a665f7d8" name="a439d4fcce5ffd49a3222d842a665f7d8"></a>
+uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>nguid</b> [16]</td></tr>
+<tr class="memdesc:a439d4fcce5ffd49a3222d842a665f7d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">namespace globally unique identifier <br /></td></tr>
+<tr class="separator:a439d4fcce5ffd49a3222d842a665f7d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fc271a84757865a01ec83513a67ae77" id="r_a2fc271a84757865a01ec83513a67ae77"><td class="memItemLeft" align="right" valign="top"><a id="a2fc271a84757865a01ec83513a67ae77" name="a2fc271a84757865a01ec83513a67ae77"></a>
+uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>eui64</b></td></tr>
+<tr class="memdesc:a2fc271a84757865a01ec83513a67ae77"><td class="mdescLeft">&#160;</td><td class="mdescRight">IEEE extended unique identifier. <br /></td></tr>
+<tr class="separator:a2fc271a84757865a01ec83513a67ae77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af966a7b28774e94586c120f2a46d1f63" id="r_af966a7b28774e94586c120f2a46d1f63"><td class="memItemLeft" align="right" valign="top"><a id="af966a7b28774e94586c120f2a46d1f63" name="af966a7b28774e94586c120f2a46d1f63"></a>
+struct <a class="el" href="structspdk__nvme__kv__format.html">spdk_nvme_kv_format</a>&#160;</td><td class="memItemRight" valign="bottom"><b>kvf</b> [16]</td></tr>
+<tr class="memdesc:af966a7b28774e94586c120f2a46d1f63"><td class="mdescLeft">&#160;</td><td class="mdescRight">KV format support (up to 16 formats) <br /></td></tr>
+<tr class="separator:af966a7b28774e94586c120f2a46d1f63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc1d00cfafd587478430ec59be552d9c" id="r_abc1d00cfafd587478430ec59be552d9c"><td class="memItemLeft" align="right" valign="top"><a id="abc1d00cfafd587478430ec59be552d9c" name="abc1d00cfafd587478430ec59be552d9c"></a>
+uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>reserved328</b> [3512]</td></tr>
+<tr class="separator:abc1d00cfafd587478430ec59be552d9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8aa775d473081737d2c81a450bbcc4c7" id="r_a8aa775d473081737d2c81a450bbcc4c7"><td class="memItemLeft" align="right" valign="top"><a id="a8aa775d473081737d2c81a450bbcc4c7" name="a8aa775d473081737d2c81a450bbcc4c7"></a>
+uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>vendor_specific</b> [256]</td></tr>
+<tr class="separator:a8aa775d473081737d2c81a450bbcc4c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li><a class="el" href="nvme__spec_8h.html">nvme_spec.h</a></li>
