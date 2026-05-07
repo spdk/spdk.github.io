@@ -260,7 +260,7 @@ spdk_kill_instance</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">sig_name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Signal to send: SIGINT, SIGTERM, SIGQUIT, SIGHUP, SIGKILL, SIGUSR1   </td></tr>
+<td class="markdownTableBodyNone">sig_name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">enum   </td><td class="markdownTableBodyNone">Signal to send   </td></tr>
 </table>
 <h3>Example</h3>
 <p>Example request:</p>
@@ -2137,7 +2137,7 @@ dpdk_cryptodev_set_driver</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">driver_name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">DPDK crypto driver: crypto_aesni_mb, crypto_qat, crypto_uadk, mlx5_pci   </td></tr>
+<td class="markdownTableBodyNone">driver_name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">enum   </td><td class="markdownTableBodyNone">DPDK crypto PMD name   </td></tr>
 </table>
 <h3>Example</h3>
 <p>Example request:</p>
@@ -5588,11 +5588,11 @@ bdev_virtio_attach_controller</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Prefix used to name the resulting bdev(s)    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">trtype   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Virtio transport type: pci, user, vfio-user    </td></tr>
+<td class="markdownTableBodyNone">trtype   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">enum   </td><td class="markdownTableBodyNone">Virtio transport type: pci, user, vfio-user    </td></tr>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">traddr   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Transport-specific address (PCI BDF for pci; UNIX socket path for user and vfio-user)    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">dev_type   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Virtio device type: blk, scsi    </td></tr>
+<td class="markdownTableBodyNone">dev_type   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">enum   </td><td class="markdownTableBodyNone">Virtio device type: blk, scsi    </td></tr>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">vq_count   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">Number of virtqueues (user transport only). Default: 1    </td></tr>
 <tr class="markdownTableRowEven">
@@ -9452,7 +9452,7 @@ bdev_raid_get_bdevs</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">category   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">all or online or configuring or offline   </td></tr>
+<td class="markdownTableBodyNone">category   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">enum   </td><td class="markdownTableBodyNone">all or online or configuring or offline   </td></tr>
 </table>
 <h3>Example</h3>
 <p>Example request:</p>

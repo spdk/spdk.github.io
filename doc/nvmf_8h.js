@@ -13,17 +13,18 @@ var nvmf_8h =
     [ "spdk_nvmf_registrant_info", "structspdk__nvmf__registrant__info.html", null ],
     [ "spdk_nvmf_reservation_info", "structspdk__nvmf__reservation__info.html", null ],
     [ "spdk_nvmf_ns_reservation_ops", "structspdk__nvmf__ns__reservation__ops.html", null ],
+    [ "SPDK_NVMF_TGT_DISCOVERY_MATCH_ANY", "nvmf_8h.html#aa0bc4c788edd310c573752c9dc6acf63", null ],
     [ "spdk_nvmf_subsystem_state_change_done", "nvmf_8h.html#aec7dc3c1e2f740c1cbffa028ad5c5bff", null ],
     [ "spdk_nvmf_tgt_add_transport_done_fn", "nvmf_8h.html#a53086e85e4a7103ab2b714483b4f2aec", null ],
     [ "spdk_nvmf_tgt_pause_polling_cb_fn", "nvmf_8h.html#a50bd8ee037dbbe33729db2eb626267cf", null ],
     [ "spdk_nvmf_tgt_resume_polling_cb_fn", "nvmf_8h.html#a654c4a14a9de2ba863abfc1538a3b158", null ],
     [ "spdk_nvmf_tgt_subsystem_listen_done_fn", "nvmf_8h.html#aad52ac090dcb26b03da0e689ea71df89", null ],
     [ "spdk_nvmf_tgt_discovery_filter", "nvmf_8h.html#adad870498ded3fa2168a2f3f663881f3", [
-      [ "SPDK_NVMF_TGT_DISCOVERY_MATCH_ANY", "nvmf_8h.html#adad870498ded3fa2168a2f3f663881f3ababebed136f083311d77a55d9182aa85", null ],
-      [ "SPDK_NVMF_TGT_DISCOVERY_MATCH_TRANSPORT_TYPE", "nvmf_8h.html#adad870498ded3fa2168a2f3f663881f3ace922fc963e9598bb4e7569b145a3629", null ],
-      [ "SPDK_NVMF_TGT_DISCOVERY_MATCH_TRANSPORT_ADDRESS", "nvmf_8h.html#adad870498ded3fa2168a2f3f663881f3a7805f8d4d557f754e3725eb7b7c60605", null ],
-      [ "SPDK_NVMF_TGT_DISCOVERY_MATCH_TRANSPORT_SVCID", "nvmf_8h.html#adad870498ded3fa2168a2f3f663881f3a2980fd83e5e8eb239cc1c8dd6d4dc12d", null ],
-      [ "SPDK_NVMF_TGT_DISCOVERY_MATCH_CUSTOM", "nvmf_8h.html#adad870498ded3fa2168a2f3f663881f3a35ffdd527ec55cf7242de6bf90f8e4c6", null ]
+      [ "SPDK_NVMF_TGT_DISCOVERY_FILTER_ANY", "nvmf_8h.html#adad870498ded3fa2168a2f3f663881f3abc5434c1659471ac43ec78dfd40822df", null ],
+      [ "SPDK_NVMF_TGT_DISCOVERY_FILTER_TYPE", "nvmf_8h.html#adad870498ded3fa2168a2f3f663881f3a12217f686c7f36617c78765943109058", null ],
+      [ "SPDK_NVMF_TGT_DISCOVERY_FILTER_ADDRESS", "nvmf_8h.html#adad870498ded3fa2168a2f3f663881f3a4cdfa9451f59deeca68b00dec6a14304", null ],
+      [ "SPDK_NVMF_TGT_DISCOVERY_FILTER_SVCID", "nvmf_8h.html#adad870498ded3fa2168a2f3f663881f3a9308cdb3345017291c8baab25f36d7eb", null ],
+      [ "SPDK_NVMF_TGT_DISCOVERY_FILTER_CUSTOM", "nvmf_8h.html#adad870498ded3fa2168a2f3f663881f3af581c94658eeb2126eb79beefa4a126a", null ]
     ] ],
     [ "spdk_nvmf_get_first_tgt", "nvmf_8h.html#a9fa7d5eab3564dff746939fa5bdb6a54", null ],
     [ "spdk_nvmf_get_next_tgt", "nvmf_8h.html#ad1bd844f45b587531b7da7b9412cbe05", null ],

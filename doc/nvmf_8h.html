@@ -179,6 +179,20 @@ Macros</h2></td></tr>
 <tr class="memitem:a3f78e79bc3f8adf4f29bee917f9a4490" id="r_a3f78e79bc3f8adf4f29bee917f9a4490"><td class="memItemLeft" align="right" valign="top"><a id="a3f78e79bc3f8adf4f29bee917f9a4490" name="a3f78e79bc3f8adf4f29bee917f9a4490"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_TLS_PSK_MAX_LEN</b>&#160;&#160;&#160;200</td></tr>
 <tr class="separator:a3f78e79bc3f8adf4f29bee917f9a4490"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0bc4c788edd310c573752c9dc6acf63" id="r_aa0bc4c788edd310c573752c9dc6acf63"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa0bc4c788edd310c573752c9dc6acf63">SPDK_NVMF_TGT_DISCOVERY_MATCH_ANY</a>&#160;&#160;&#160;<a class="el" href="#adad870498ded3fa2168a2f3f663881f3abc5434c1659471ac43ec78dfd40822df">SPDK_NVMF_TGT_DISCOVERY_FILTER_ANY</a></td></tr>
+<tr class="separator:aa0bc4c788edd310c573752c9dc6acf63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61986e88efc0a6edf4ef801f4836bbf2" id="r_a61986e88efc0a6edf4ef801f4836bbf2"><td class="memItemLeft" align="right" valign="top"><a id="a61986e88efc0a6edf4ef801f4836bbf2" name="a61986e88efc0a6edf4ef801f4836bbf2"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_NVMF_TGT_DISCOVERY_MATCH_TRANSPORT_TYPE</b>&#160;&#160;&#160;SPDK_BIT(<a class="el" href="#adad870498ded3fa2168a2f3f663881f3a12217f686c7f36617c78765943109058">SPDK_NVMF_TGT_DISCOVERY_FILTER_TYPE</a>)</td></tr>
+<tr class="separator:a61986e88efc0a6edf4ef801f4836bbf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4417c6ec87f1de3b13a132155ee2176" id="r_ae4417c6ec87f1de3b13a132155ee2176"><td class="memItemLeft" align="right" valign="top"><a id="ae4417c6ec87f1de3b13a132155ee2176" name="ae4417c6ec87f1de3b13a132155ee2176"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_NVMF_TGT_DISCOVERY_MATCH_TRANSPORT_ADDRESS</b>&#160;&#160;&#160;SPDK_BIT(<a class="el" href="#adad870498ded3fa2168a2f3f663881f3a4cdfa9451f59deeca68b00dec6a14304">SPDK_NVMF_TGT_DISCOVERY_FILTER_ADDRESS</a>)</td></tr>
+<tr class="separator:ae4417c6ec87f1de3b13a132155ee2176"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af71de7118ce293aff9511938272e6587" id="r_af71de7118ce293aff9511938272e6587"><td class="memItemLeft" align="right" valign="top"><a id="af71de7118ce293aff9511938272e6587" name="af71de7118ce293aff9511938272e6587"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_NVMF_TGT_DISCOVERY_MATCH_TRANSPORT_SVCID</b>&#160;&#160;&#160;SPDK_BIT(<a class="el" href="#adad870498ded3fa2168a2f3f663881f3a9308cdb3345017291c8baab25f36d7eb">SPDK_NVMF_TGT_DISCOVERY_FILTER_SVCID</a>)</td></tr>
+<tr class="separator:af71de7118ce293aff9511938272e6587"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ae490ff8a64d7ecc9e496eaf4d05b0f" id="r_a5ae490ff8a64d7ecc9e496eaf4d05b0f"><td class="memItemLeft" align="right" valign="top"><a id="a5ae490ff8a64d7ecc9e496eaf4d05b0f" name="a5ae490ff8a64d7ecc9e496eaf4d05b0f"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_NVMF_TGT_DISCOVERY_MATCH_CUSTOM</b>&#160;&#160;&#160;SPDK_BIT(<a class="el" href="#adad870498ded3fa2168a2f3f663881f3af581c94658eeb2126eb79beefa4a126a">SPDK_NVMF_TGT_DISCOVERY_FILTER_CUSTOM</a>)</td></tr>
+<tr class="separator:a5ae490ff8a64d7ecc9e496eaf4d05b0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aad363e22da22e132efbce02f253f37b5" id="r_aad363e22da22e132efbce02f253f37b5"><td class="memItemLeft" align="right" valign="top"><a id="aad363e22da22e132efbce02f253f37b5" name="aad363e22da22e132efbce02f253f37b5"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_NVMF_MAX_NUM_REGISTRANTS</b>&#160;&#160;&#160;16</td></tr>
 <tr class="separator:aad363e22da22e132efbce02f253f37b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -225,12 +239,12 @@ typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_t
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
 <tr class="memitem:adad870498ded3fa2168a2f3f663881f3" id="r_adad870498ded3fa2168a2f3f663881f3"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adad870498ded3fa2168a2f3f663881f3">spdk_nvmf_tgt_discovery_filter</a> { <br />
-&#160;&#160;<a class="el" href="#adad870498ded3fa2168a2f3f663881f3ababebed136f083311d77a55d9182aa85">SPDK_NVMF_TGT_DISCOVERY_MATCH_ANY</a> = 0
-, <a class="el" href="#adad870498ded3fa2168a2f3f663881f3ace922fc963e9598bb4e7569b145a3629">SPDK_NVMF_TGT_DISCOVERY_MATCH_TRANSPORT_TYPE</a> = 1u &lt;&lt; 0u
-, <a class="el" href="#adad870498ded3fa2168a2f3f663881f3a7805f8d4d557f754e3725eb7b7c60605">SPDK_NVMF_TGT_DISCOVERY_MATCH_TRANSPORT_ADDRESS</a> = 1u &lt;&lt; 1u
-, <a class="el" href="#adad870498ded3fa2168a2f3f663881f3a2980fd83e5e8eb239cc1c8dd6d4dc12d">SPDK_NVMF_TGT_DISCOVERY_MATCH_TRANSPORT_SVCID</a> = 1u &lt;&lt; 2u
+&#160;&#160;<a class="el" href="#adad870498ded3fa2168a2f3f663881f3abc5434c1659471ac43ec78dfd40822df">SPDK_NVMF_TGT_DISCOVERY_FILTER_ANY</a>
+, <a class="el" href="#adad870498ded3fa2168a2f3f663881f3a12217f686c7f36617c78765943109058">SPDK_NVMF_TGT_DISCOVERY_FILTER_TYPE</a>
+, <a class="el" href="#adad870498ded3fa2168a2f3f663881f3a4cdfa9451f59deeca68b00dec6a14304">SPDK_NVMF_TGT_DISCOVERY_FILTER_ADDRESS</a>
+, <a class="el" href="#adad870498ded3fa2168a2f3f663881f3a9308cdb3345017291c8baab25f36d7eb">SPDK_NVMF_TGT_DISCOVERY_FILTER_SVCID</a>
 , <br />
-&#160;&#160;<a class="el" href="#adad870498ded3fa2168a2f3f663881f3a35ffdd527ec55cf7242de6bf90f8e4c6">SPDK_NVMF_TGT_DISCOVERY_MATCH_CUSTOM</a> = 1u &lt;&lt; 3u
+&#160;&#160;<a class="el" href="#adad870498ded3fa2168a2f3f663881f3af581c94658eeb2126eb79beefa4a126a">SPDK_NVMF_TGT_DISCOVERY_FILTER_CUSTOM</a>
 <br />
  }</td></tr>
 <tr class="memdesc:adad870498ded3fa2168a2f3f663881f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specify filter rules which are applied during discovery log generation.  <a href="#adad870498ded3fa2168a2f3f663881f3">More...</a><br /></td></tr>
@@ -595,7 +609,23 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_referral_add
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>NVMe over Fabrics target public API. </p>
-</div><h2 class="groupheader">Typedef Documentation</h2>
+</div><h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="aa0bc4c788edd310c573752c9dc6acf63" name="aa0bc4c788edd310c573752c9dc6acf63"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa0bc4c788edd310c573752c9dc6acf63">&#9670;&#160;</a></span>SPDK_NVMF_TGT_DISCOVERY_MATCH_ANY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SPDK_NVMF_TGT_DISCOVERY_MATCH_ANY&#160;&#160;&#160;<a class="el" href="#adad870498ded3fa2168a2f3f663881f3abc5434c1659471ac43ec78dfd40822df">SPDK_NVMF_TGT_DISCOVERY_FILTER_ANY</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000002">Deprecated</a></b></dt><dd>Use SPDK_NVMF_TGT_DISCOVERY_FILTER_* instead. </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Typedef Documentation</h2>
 <a id="aec7dc3c1e2f740c1cbffa028ad5c5bff" name="aec7dc3c1e2f740c1cbffa028ad5c5bff"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aec7dc3c1e2f740c1cbffa028ad5c5bff">&#9670;&#160;</a></span>spdk_nvmf_subsystem_state_change_done</h2>
 
@@ -728,15 +758,15 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_referral_add
 
 <p>Specify filter rules which are applied during discovery log generation. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="adad870498ded3fa2168a2f3f663881f3ababebed136f083311d77a55d9182aa85" name="adad870498ded3fa2168a2f3f663881f3ababebed136f083311d77a55d9182aa85"></a>SPDK_NVMF_TGT_DISCOVERY_MATCH_ANY&#160;</td><td class="fielddoc"><p>Log all listeners in discovery log page. </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="adad870498ded3fa2168a2f3f663881f3abc5434c1659471ac43ec78dfd40822df" name="adad870498ded3fa2168a2f3f663881f3abc5434c1659471ac43ec78dfd40822df"></a>SPDK_NVMF_TGT_DISCOVERY_FILTER_ANY&#160;</td><td class="fielddoc"><p>Log all listeners in discovery log page. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="adad870498ded3fa2168a2f3f663881f3ace922fc963e9598bb4e7569b145a3629" name="adad870498ded3fa2168a2f3f663881f3ace922fc963e9598bb4e7569b145a3629"></a>SPDK_NVMF_TGT_DISCOVERY_MATCH_TRANSPORT_TYPE&#160;</td><td class="fielddoc"><p>Only log listeners with the same transport type on which the DISCOVERY command was received. </p>
+<tr><td class="fieldname"><a id="adad870498ded3fa2168a2f3f663881f3a12217f686c7f36617c78765943109058" name="adad870498ded3fa2168a2f3f663881f3a12217f686c7f36617c78765943109058"></a>SPDK_NVMF_TGT_DISCOVERY_FILTER_TYPE&#160;</td><td class="fielddoc"><p>Only log listeners with the same transport type on which the DISCOVERY command was received. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="adad870498ded3fa2168a2f3f663881f3a7805f8d4d557f754e3725eb7b7c60605" name="adad870498ded3fa2168a2f3f663881f3a7805f8d4d557f754e3725eb7b7c60605"></a>SPDK_NVMF_TGT_DISCOVERY_MATCH_TRANSPORT_ADDRESS&#160;</td><td class="fielddoc"><p>Only log listeners with the same transport address on which the DISCOVERY command was received. </p>
+<tr><td class="fieldname"><a id="adad870498ded3fa2168a2f3f663881f3a4cdfa9451f59deeca68b00dec6a14304" name="adad870498ded3fa2168a2f3f663881f3a4cdfa9451f59deeca68b00dec6a14304"></a>SPDK_NVMF_TGT_DISCOVERY_FILTER_ADDRESS&#160;</td><td class="fielddoc"><p>Only log listeners with the same transport address on which the DISCOVERY command was received. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="adad870498ded3fa2168a2f3f663881f3a2980fd83e5e8eb239cc1c8dd6d4dc12d" name="adad870498ded3fa2168a2f3f663881f3a2980fd83e5e8eb239cc1c8dd6d4dc12d"></a>SPDK_NVMF_TGT_DISCOVERY_MATCH_TRANSPORT_SVCID&#160;</td><td class="fielddoc"><p>Only log listeners with the same transport svcid on which the DISCOVERY command was received. </p>
+<tr><td class="fieldname"><a id="adad870498ded3fa2168a2f3f663881f3a9308cdb3345017291c8baab25f36d7eb" name="adad870498ded3fa2168a2f3f663881f3a9308cdb3345017291c8baab25f36d7eb"></a>SPDK_NVMF_TGT_DISCOVERY_FILTER_SVCID&#160;</td><td class="fielddoc"><p>Only log listeners with the same transport svcid on which the DISCOVERY command was received. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="adad870498ded3fa2168a2f3f663881f3a35ffdd527ec55cf7242de6bf90f8e4c6" name="adad870498ded3fa2168a2f3f663881f3a35ffdd527ec55cf7242de6bf90f8e4c6"></a>SPDK_NVMF_TGT_DISCOVERY_MATCH_CUSTOM&#160;</td><td class="fielddoc"><p>Check with custom discovery filter. </p>
+<tr><td class="fieldname"><a id="adad870498ded3fa2168a2f3f663881f3af581c94658eeb2126eb79beefa4a126a" name="adad870498ded3fa2168a2f3f663881f3af581c94658eeb2126eb79beefa4a126a"></a>SPDK_NVMF_TGT_DISCOVERY_FILTER_CUSTOM&#160;</td><td class="fielddoc"><p>Check with custom discovery filter. </p>
 </td></tr>
 </table>
 
@@ -1715,7 +1745,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_referral_add
 </div><div class="memdoc">
 
 <p>Set a custom discovery filter. </p>
-<p>For this to take effect, the target must be created with the SPDK_NVMF_TGT_DISCOVERY_MATCH_CUSTOM flag set in the discovery_filter field.</p>
+<p>For this to take effect, the target must be created with the SPDK_NVMF_TGT_DISCOVERY_FILTER_CUSTOM flag set in the discovery_filter field.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">filter</td><td>The custom discovery filter to set. </td></tr>
