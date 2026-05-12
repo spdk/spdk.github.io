@@ -6,7 +6,7 @@ var searchData=
   ['idxd_20driver_3',['IDXD Driver',['../idxd.html',1,'driver_modules']]],
   ['information_4',['General Information',['../general.html',1,'']]],
   ['internals_5',['NAND Flash SSD Internals',['../ssd_internals.html',1,'concepts']]],
-  ['interrupt_20mode_6',['Interrupt Mode',['../interrupt_mode.html',1,'general']]],
+  ['interrupt_20mode_6',['Interrupt Mode',['../interrupt_mode.html',1,'Interrupt Mode'],['../nvmf_interrupt_mode.html',1,'NVMe-oF Interrupt Mode']]],
   ['introduction_7',['Introduction',['../intro.html',1,'']]],
   ['is_20spdk_8',['What is SPDK',['../about.html',1,'intro']]],
   ['iscsi_20target_9',['iSCSI Target',['../iscsi.html',1,'user_guides']]]

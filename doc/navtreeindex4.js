@@ -7,7 +7,7 @@ var NAVTREEINDEX4 =
 "functions_vars_z.html":[14,2,2,24],
 "functions_w.html":[14,2,0,23],
 "functions_z.html":[14,2,0,24],
-"gdb_macros.html":[4,5],
+"gdb_macros.html":[4,6],
 "general.html":[5],
 "getting_started.html":[1,1],
 "getting_started.html#getting_started_building":[1,1,2],

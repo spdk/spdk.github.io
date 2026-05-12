@@ -410,7 +410,13 @@ $(function(){initNavTree('interrupt_mode.html',''); initResizable(); });
 <li><b>Zero-copy of fds between modes</b>: the same timerfd/eventfd stays allocated regardless of mode — only its armed/disarmed state changes.</li>
 <li><b>Thread safety through wrappers</b>: the <code>_interrupt_wrapper</code> and <code>interrupt_fd_group_wrapper</code> functions ensure callbacks always execute in the correct <code>spdk_thread</code> context, even though <code>epoll_wait</code> runs at the reactor level.</li>
 <li><b>Active pollers are "degraded" in interrupt mode</b>: an active poller with an eventfd that's always readable effectively still polls — it fires on every <code>epoll_wait</code> return. Truly efficient interrupt mode requires subsystems to provide real fds (like NVMe completion eventfds) via <code>spdk_poller_register_interrupt</code>.</li>
-<li><b>Interrupt mode must be enabled at startup</b>: dynamic switching at runtime depends on the fd_group infrastructure being initialized. Calling <code>spdk_reactor_set_interrupt_mode()</code> without prior <code><a class="el" href="thread_8h.html#a0cac0f188b5f46ff8bcdd5d4ffa37e84" title="Set SPDK run as event driven mode.">spdk_interrupt_mode_enable()</a></code> has no effect — fd_groups are not nested and pollers do not wake reactors correctly. </li>
+<li><b>Interrupt mode must be enabled at startup</b>: dynamic switching at runtime depends on the fd_group infrastructure being initialized. Calling <code>spdk_reactor_set_interrupt_mode()</code> without prior <code><a class="el" href="thread_8h.html#a0cac0f188b5f46ff8bcdd5d4ffa37e84" title="Set SPDK run as event driven mode.">spdk_interrupt_mode_enable()</a></code> has no effect — fd_groups are not nested and pollers do not wake reactors correctly.</li>
+</ul>
+<hr  />
+<h1>Subsystem-Specific Documentation</h1>
+<p>For subsystem-specific interrupt mode integration details:</p>
+<ul>
+<li><b>NVMe-oF Target</b>: See <a class="el" href="nvmf_interrupt_mode.html">NVMe-oF Interrupt Mode</a> for usage with the <code>nvmf_tgt</code> application and developer guide for embedding the <code>lib/nvmf</code> library. </li>
 </ul>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->

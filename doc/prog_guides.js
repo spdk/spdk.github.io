@@ -22,6 +22,7 @@ var prog_guides =
     [ "Block Device Layer Programming Guide", "bdev_pg.html", null ],
     [ "Writing a Custom Block Device Module", "bdev_module.html", null ],
     [ "NVMe over Fabrics Target Programming Guide", "nvmf_tgt_pg.html", null ],
+    [ "NVMe-oF Interrupt Mode", "nvmf_interrupt_mode.html", null ],
     [ "Flash Translation Layer", "ftl.html", [
       [ "Terminology", "ftl.html#ftl_terminology", [
         [ "Logical to physical address map", "ftl.html#ftl_l2p", null ],

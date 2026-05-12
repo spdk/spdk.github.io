@@ -1,5 +1,10 @@
 var NAVTREEINDEX17 =
 {
+"structspdk__trace__object.html":[14,0,465],
+"structspdk__trace__owner.html":[14,0,466],
+"structspdk__trace__owner__type.html":[14,0,467],
+"structspdk__trace__parser__entry.html":[14,0,468],
+"structspdk__trace__parser__entry.html#a035f3f7a80d290f7303667880d125f98":[14,0,468,4],
 "structspdk__trace__parser__entry.html#a53973ef677f05f6d067c046dc790da78":[14,0,468,1],
 "structspdk__trace__parser__entry.html#a55b2e0aea7cca402a502ad4d043e7293":[14,0,468,5],
 "structspdk__trace__parser__entry.html#a56d2aead58de167139f7c6e6e3b8dcb0":[14,0,468,0],
@@ -244,10 +249,5 @@ var NAVTREEINDEX17 =
 "unionspdk__bdev__nvme__ctratt.html":[14,0,83],
 "unionspdk__ioat__hw__desc.html":[14,0,130],
 "unionspdk__nvme__aqa__register.html":[14,0,169],
-"unionspdk__nvme__aqa__register.html#a3f5ae033d3569600cfe59e2fc4add132":[14,0,169,0],
-"unionspdk__nvme__aqa__register.html#ac8e473c82656d9f2a536618f9e2f55cb":[14,0,169,1],
-"unionspdk__nvme__async__event__completion.html":[14,0,170],
-"unionspdk__nvme__bpinfo__register.html":[14,0,171],
-"unionspdk__nvme__bpinfo__register.html#a0a0f2d47ec4131b202ce50e301a22a43":[14,0,171,2],
-"unionspdk__nvme__bpinfo__register.html#a30aaf50ed21f4eabcb3f0107dcb23ddd":[14,0,171,0]
+"unionspdk__nvme__aqa__register.html#a3f5ae033d3569600cfe59e2fc4add132":[14,0,169,0]
 };

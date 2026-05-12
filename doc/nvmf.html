@@ -242,7 +242,10 @@ Using RPCs</h2>
 Assigning CPU Cores to the NVMe over Fabrics Target</h2>
 <p>SPDK uses the <a href="http://dpdk.org/doc/guides/prog_guide/env_abstraction_layer.html">DPDK Environment Abstraction Layer</a> to gain access to hardware resources such as huge memory pages and CPU core(s). DPDK EAL provides functions to assign threads to specific cores. To ensure the SPDK NVMe-oF target has the best performance, configure the NICs and NVMe devices to be located on the same NUMA node.</p>
 <p>The <code>-m</code> core mask option specifies a bit mask of the CPU cores that SPDK is allowed to execute work items on. For example, to allow SPDK to use cores 24, 25, 26 and 27: </p><div class="fragment"><div class="line">build/bin/nvmf_tgt -m 0xF000000</div>
-</div><!-- fragment --><h1><a class="anchor" id="nvmf_host"></a>
+</div><!-- fragment --><h2><a class="anchor" id="nvmf_config_interrupt"></a>
+Interrupt Mode</h2>
+<p>The NVMe-oF target supports interrupt mode for the vfio-user, TCP, and RDMA transports. Interrupt mode allows reactors to sleep when idle and wake on network or device events, reducing CPU usage when the target is not under load. For details on enabling and using interrupt mode, see <a class="el" href="nvmf_interrupt_mode.html">NVMe-oF Interrupt Mode</a>.</p>
+<h1><a class="anchor" id="nvmf_host"></a>
 Configuring the Linux NVMe over Fabrics Host</h1>
 <p>Both the Linux kernel and SPDK implement an NVMe over Fabrics host. The Linux kernel NVMe-oF RDMA host support is provided by the <code>nvme-rdma</code> driver (to support RDMA transport) and <code>nvme-tcp</code> (to support TCP transport). And the following shows two different commands for loading the driver.</p>
 <div class="fragment"><div class="line">modprobe nvme-rdma</div>

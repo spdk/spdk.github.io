@@ -65,7 +65,8 @@ var user_guides =
       [ "FC transport support", "nvmf.html#nvmf_fc_transport", null ],
       [ "Configuring the SPDK NVMe over Fabrics Target", "nvmf.html#nvmf_config", [
         [ "Using RPCs", "nvmf.html#nvmf_config_rpc", null ],
-        [ "Assigning CPU Cores to the NVMe over Fabrics Target", "nvmf.html#nvmf_config_lcore", null ]
+        [ "Assigning CPU Cores to the NVMe over Fabrics Target", "nvmf.html#nvmf_config_lcore", null ],
+        [ "Interrupt Mode", "nvmf.html#nvmf_config_interrupt", null ]
       ] ],
       [ "Configuring the Linux NVMe over Fabrics Host", "nvmf.html#nvmf_host", null ],
       [ "Enabling NVMe-oF target tracepoints for offline analysis and debug", "nvmf.html#nvmf_trace", null ]

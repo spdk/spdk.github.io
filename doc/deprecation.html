@@ -154,6 +154,8 @@ $(function(){initNavTree('deprecation.html',''); initResizable(); });
 <h3><a class="el" href="nvme__spec_8h.html" title="NVMe specification definitions.">nvme_spec.h</a></h3>
 <p><code><a class="el" href="unionspdk__nvme__cdata__ctratt.html">spdk_nvme_cdata_ctratt</a></code></p>
 <p>Updated bit definitions to NVMe 2.3. Old bit names will be removed in the v26.09 release.</p>
+<h3><code>nvme_cpl_without_opc</code></h3>
+<p><code>spdk_nvme_cpl_get_status_string</code>, <code>spdk_nvme_print_completion</code>, and <code>spdk_nvme_qpair_print_completion</code> are deprecated and will be removed in v26.09. Use <code>spdk_nvme_cpl_get_status_string_ext</code>, <code>spdk_nvme_print_completion_ext</code>, and <code>spdk_nvme_qpair_print_completion_ext</code> instead. The new APIs accept the command opcode to correctly distinguish fabric command-specific status codes from NVMe command-specific status codes.</p>
 <h2>nvmf</h2>
 <p><code>spdk_nvmf_subsystem_create</code>, <code>spdk_nvmf_subsystem_set_sn</code>, <code>spdk_nvmf_subsystem_set_mn</code>, <code>spdk_nvmf_subsystem_set_ana_reporting</code> are deprecated and will be removed in v26.09. Use <code>spdk_nvmf_subsystem_create_ext</code> with subsystem options instead.</p>
 <p><code>spdk_nvmf_subsystem_get_sn</code>, <code>spdk_nvmf_subsystem_get_mn</code>, <code>spdk_nvmf_subsystem_get_max_nsid</code>, <code>spdk_nvmf_subsystem_get_max_namespaces</code>, <code>spdk_nvmf_subsystem_get_ana_reporting</code>, <code>spdk_nvmf_subsystem_get_type</code> are deprecated and will be removed in v26.09. Use <code>spdk_nvmf_subsystem_get_opts</code> instead.</p>

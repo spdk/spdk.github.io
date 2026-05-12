@@ -1,5 +1,10 @@
 var NAVTREEINDEX18 =
 {
+"unionspdk__nvme__aqa__register.html#ac8e473c82656d9f2a536618f9e2f55cb":[14,0,169,1],
+"unionspdk__nvme__async__event__completion.html":[14,0,170],
+"unionspdk__nvme__bpinfo__register.html":[14,0,171],
+"unionspdk__nvme__bpinfo__register.html#a0a0f2d47ec4131b202ce50e301a22a43":[14,0,171,2],
+"unionspdk__nvme__bpinfo__register.html#a30aaf50ed21f4eabcb3f0107dcb23ddd":[14,0,171,0],
 "unionspdk__nvme__bpinfo__register.html#a6b1a5e69cd0881e1e81fd4f086e3bf96":[14,0,171,1],
 "unionspdk__nvme__bprsel__register.html":[14,0,172],
 "unionspdk__nvme__bprsel__register.html#a426cc6f4f6478519c297df3ad92bd4b1":[14,0,172,2],
@@ -244,10 +249,5 @@ var NAVTREEINDEX18 =
 "vhost_8h.html#a8b37106ad173f20d05da87f89714700b":[15,0,0,0,66,1],
 "vhost_8h.html#a8b8c054fdc8ed4ad573b2d0bcf2d4797":[15,0,0,0,66,22],
 "vhost_8h.html#a8be392083ae01ad34cc05b1b5ce2b5e0":[15,0,0,0,66,12],
-"vhost_8h.html#a92afea7023f0f61a2038047e2328dd85":[15,0,0,0,66,20],
-"vhost_8h.html#aa6eba1ce0ac89c3287b755567795869b":[15,0,0,0,66,11],
-"vhost_8h.html#aad817236a58d94b5993275ae16a567ec":[15,0,0,0,66,3],
-"vhost_8h.html#ac2c4b62eaf6503e5f5e520394f9f9fe1":[15,0,0,0,66,0],
-"vhost_8h.html#ad2c49e6e73478eb1974dd38ecfb2eb3d":[15,0,0,0,66,4],
-"vhost_8h.html#adf01bd5ae7b0d761aa8e0e271de1ee9e":[15,0,0,0,66,26]
+"vhost_8h.html#a92afea7023f0f61a2038047e2328dd85":[15,0,0,0,66,20]
 };

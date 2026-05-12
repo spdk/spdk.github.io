@@ -1,5 +1,10 @@
 var NAVTREEINDEX16 =
 {
+"structspdk__nvmf__fc__lsdesc__cr__assoc__cmd.html":[14,0,368],
+"structspdk__nvmf__fc__lsdesc__cr__conn__cmd.html":[14,0,369],
+"structspdk__nvmf__fc__lsdesc__disconn__cmd.html":[14,0,370],
+"structspdk__nvmf__fc__lsdesc__rjt.html":[14,0,371],
+"structspdk__nvmf__fc__lsdesc__rqst.html":[14,0,372],
 "structspdk__nvmf__fc__vm__header.html":[14,0,373],
 "structspdk__nvmf__fc__wwn.html":[14,0,374],
 "structspdk__nvmf__fc__xfer__rdy__iu.html":[14,0,375],
@@ -244,10 +249,5 @@ var NAVTREEINDEX16 =
 "structspdk__trace__history.html#ab6aed08b66a3c7f1bf46a1fb4b5d6419":[14,0,464,1],
 "structspdk__trace__history.html#abbe4657a63c03054c695b8fb2a35797f":[14,0,464,4],
 "structspdk__trace__history.html#abf23bb37a270ab385bb4597cb507b066":[14,0,464,3],
-"structspdk__trace__history.html#afc00e204c28b550c0dd2f8140a08e566":[14,0,464,0],
-"structspdk__trace__object.html":[14,0,465],
-"structspdk__trace__owner.html":[14,0,466],
-"structspdk__trace__owner__type.html":[14,0,467],
-"structspdk__trace__parser__entry.html":[14,0,468],
-"structspdk__trace__parser__entry.html#a035f3f7a80d290f7303667880d125f98":[14,0,468,4]
+"structspdk__trace__history.html#afc00e204c28b550c0dd2f8140a08e566":[14,0,464,0]
 };

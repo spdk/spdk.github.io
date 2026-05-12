@@ -924,6 +924,9 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_trty
 <tr class="memitem:a0a1b9a1afd033147823421f063c90758" id="r_a0a1b9a1afd033147823421f063c90758"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0a1b9a1afd033147823421f063c90758">spdk_nvme_cpl_get_status_string</a> (const struct <a class="el" href="structspdk__nvme__status.html">spdk_nvme_status</a> *status)</td></tr>
 <tr class="memdesc:a0a1b9a1afd033147823421f063c90758"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given NVMe status, return ASCII string for that error.  <br /></td></tr>
 <tr class="separator:a0a1b9a1afd033147823421f063c90758"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77b853024d8618bb0950a80054dee143" id="r_a77b853024d8618bb0950a80054dee143"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a77b853024d8618bb0950a80054dee143">spdk_nvme_cpl_get_status_string_ext</a> (const struct <a class="el" href="structspdk__nvme__status.html">spdk_nvme_status</a> *status, uint8_t opc)</td></tr>
+<tr class="memdesc:a77b853024d8618bb0950a80054dee143"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given NVMe status and command opcode, return ASCII string for that error.  <br /></td></tr>
+<tr class="separator:a77b853024d8618bb0950a80054dee143"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a27a4b7b4d0194f97fa0f3454fdd6c018" id="r_a27a4b7b4d0194f97fa0f3454fdd6c018"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a27a4b7b4d0194f97fa0f3454fdd6c018">spdk_nvme_cpl_get_status_type_string</a> (const struct <a class="el" href="structspdk__nvme__status.html">spdk_nvme_status</a> *status)</td></tr>
 <tr class="memdesc:a27a4b7b4d0194f97fa0f3454fdd6c018"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given NVMe status, return ASCII string for the type of that error.  <br /></td></tr>
 <tr class="separator:a27a4b7b4d0194f97fa0f3454fdd6c018"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -933,6 +936,9 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_trty
 <tr class="memitem:ad4b2335194f9c4c24a5e2c15a9432f4a" id="r_ad4b2335194f9c4c24a5e2c15a9432f4a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad4b2335194f9c4c24a5e2c15a9432f4a">spdk_nvme_qpair_print_completion</a> (struct spdk_nvme_qpair *qpair, struct <a class="el" href="structspdk__nvme__cpl.html">spdk_nvme_cpl</a> *cpl)</td></tr>
 <tr class="memdesc:ad4b2335194f9c4c24a5e2c15a9432f4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prints (SPDK_NOTICELOG) the contents of an NVMe completion queue entry.  <br /></td></tr>
 <tr class="separator:ad4b2335194f9c4c24a5e2c15a9432f4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1fb9449be3f6ef9f2b54b2504f3bae1f" id="r_a1fb9449be3f6ef9f2b54b2504f3bae1f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1fb9449be3f6ef9f2b54b2504f3bae1f">spdk_nvme_qpair_print_completion_ext</a> (const struct spdk_nvme_qpair *qpair, const struct <a class="el" href="structspdk__nvme__cpl.html">spdk_nvme_cpl</a> *cpl, uint8_t opc)</td></tr>
+<tr class="memdesc:a1fb9449be3f6ef9f2b54b2504f3bae1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prints (SPDK_NOTICELOG) the contents of an NVMe completion queue entry.  <br /></td></tr>
+<tr class="separator:a1fb9449be3f6ef9f2b54b2504f3bae1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:add6ae73013499c8fc3c197f47231b8d2" id="r_add6ae73013499c8fc3c197f47231b8d2"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#add6ae73013499c8fc3c197f47231b8d2">spdk_nvme_qpair_get_id</a> (struct spdk_nvme_qpair *qpair)</td></tr>
 <tr class="memdesc:add6ae73013499c8fc3c197f47231b8d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the NVMe qpair ID for the specified qpair.  <br /></td></tr>
 <tr class="separator:add6ae73013499c8fc3c197f47231b8d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -945,6 +951,9 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_trty
 <tr class="memitem:aebe027f765f35a6cf532c236a90df5b7" id="r_aebe027f765f35a6cf532c236a90df5b7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aebe027f765f35a6cf532c236a90df5b7">spdk_nvme_print_completion</a> (uint16_t qid, struct <a class="el" href="structspdk__nvme__cpl.html">spdk_nvme_cpl</a> *cpl)</td></tr>
 <tr class="memdesc:aebe027f765f35a6cf532c236a90df5b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prints (SPDK_NOTICELOG) the contents of an NVMe completion queue entry.  <br /></td></tr>
 <tr class="separator:aebe027f765f35a6cf532c236a90df5b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8cb0419752c805acf51a1f913df7a388" id="r_a8cb0419752c805acf51a1f913df7a388"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8cb0419752c805acf51a1f913df7a388">spdk_nvme_print_completion_ext</a> (uint16_t qid, const struct <a class="el" href="structspdk__nvme__cpl.html">spdk_nvme_cpl</a> *cpl, uint8_t opc)</td></tr>
+<tr class="memdesc:a8cb0419752c805acf51a1f913df7a388"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prints (SPDK_NOTICELOG) the contents of an NVMe completion queue entry.  <br /></td></tr>
+<tr class="separator:a8cb0419752c805acf51a1f913df7a388"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9eceb4ea12a8238364b6e9aed0e578cd" id="r_a9eceb4ea12a8238364b6e9aed0e578cd"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9eceb4ea12a8238364b6e9aed0e578cd">spdk_nvme_dhchap_get_digest_name</a> (int id)</td></tr>
 <tr class="memdesc:a9eceb4ea12a8238364b6e9aed0e578cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the name of a digest.  <br /></td></tr>
 <tr class="separator:a9eceb4ea12a8238364b6e9aed0e578cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1555,6 +1564,38 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_trty
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">status</td><td>Status from NVMe completion queue element. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns status as an ASCII string. </dd></dl>
+
+</div>
+</div>
+<a id="a77b853024d8618bb0950a80054dee143" name="a77b853024d8618bb0950a80054dee143"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a77b853024d8618bb0950a80054dee143">&#9670;&#160;</a></span>spdk_nvme_cpl_get_status_string_ext()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char * spdk_nvme_cpl_get_status_string_ext </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="structspdk__nvme__status.html">spdk_nvme_status</a> *</td>          <td class="paramname"><span class="paramname"><em>status</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>opc</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Given NVMe status and command opcode, return ASCII string for that error. </p>
+<p>Uses the command opcode to select the correct status code table. In particular, fabric commands (opcode 0x7f) have their own command-specific status codes that differ from NVMe I/O and admin command-specific status codes.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">status</td><td>Status from NVMe completion queue element. </td></tr>
+    <tr><td class="paramname">opc</td><td>Opcode of the command that produced this completion. </td></tr>
   </table>
   </dd>
 </dl>
@@ -8859,6 +8900,43 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_trty
 
 </div>
 </div>
+<a id="a8cb0419752c805acf51a1f913df7a388" name="a8cb0419752c805acf51a1f913df7a388"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8cb0419752c805acf51a1f913df7a388">&#9670;&#160;</a></span>spdk_nvme_print_completion_ext()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_nvme_print_completion_ext </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t</td>          <td class="paramname"><span class="paramname"><em>qid</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const struct <a class="el" href="structspdk__nvme__cpl.html">spdk_nvme_cpl</a> *</td>          <td class="paramname"><span class="paramname"><em>cpl</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>opc</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Prints (SPDK_NOTICELOG) the contents of an NVMe completion queue entry. </p>
+<p>Uses the command opcode to select the correct status code table. In particular, fabric commands (opcode 0x7f) have their own command-specific status codes that differ from NVMe I/O and admin command-specific status codes.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">qid</td><td>Queue identifier. </td></tr>
+    <tr><td class="paramname">cpl</td><td>Pointer to the completion queue element to be formatted. </td></tr>
+    <tr><td class="paramname">opc</td><td>Opcode of the command that produced this completion. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a225bbc386ec518ae21bd5536f21db45d" name="a225bbc386ec518ae21bd5536f21db45d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a225bbc386ec518ae21bd5536f21db45d">&#9670;&#160;</a></span>spdk_nvme_probe()</h2>
 
@@ -9456,6 +9534,43 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_trty
   <table class="params">
     <tr><td class="paramname">qpair</td><td>Pointer to the NVMe queue pair - presently unused. </td></tr>
     <tr><td class="paramname">cpl</td><td>Pointer to the completion queue element to be formatted. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a1fb9449be3f6ef9f2b54b2504f3bae1f" name="a1fb9449be3f6ef9f2b54b2504f3bae1f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1fb9449be3f6ef9f2b54b2504f3bae1f">&#9670;&#160;</a></span>spdk_nvme_qpair_print_completion_ext()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_nvme_qpair_print_completion_ext </td>
+          <td>(</td>
+          <td class="paramtype">const struct spdk_nvme_qpair *</td>          <td class="paramname"><span class="paramname"><em>qpair</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const struct <a class="el" href="structspdk__nvme__cpl.html">spdk_nvme_cpl</a> *</td>          <td class="paramname"><span class="paramname"><em>cpl</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>opc</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Prints (SPDK_NOTICELOG) the contents of an NVMe completion queue entry. </p>
+<p>Uses the command opcode to select the correct status code table. In particular, fabric commands (opcode 0x7f) have their own command-specific status codes that differ from NVMe I/O and admin command-specific status codes.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">qpair</td><td>Pointer to the NVMe queue pair. </td></tr>
+    <tr><td class="paramname">cpl</td><td>Pointer to the completion queue element to be formatted. </td></tr>
+    <tr><td class="paramname">opc</td><td>Opcode of the command that produced this completion. </td></tr>
   </table>
   </dd>
 </dl>
