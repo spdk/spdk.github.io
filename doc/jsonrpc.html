@@ -2402,17 +2402,15 @@ bdev_wait_for_examine</h2>
 bdev_get_iostat</h2>
 <p>Get I/O statistics of block devices (bdevs).</p>
 <h3>Parameters</h3>
-<p>The user may specify no parameters in order to list all block devices, or a block device may be specified by name.</p>
+<p>The user may specify no parameters in order to list all block devices, or one or more block devices may be specified via the <code>names</code> array.</p>
 <table class="markdownTable">
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Block device name    </td></tr>
-<tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">names   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">array   </td><td class="markdownTableBodyNone">Array of block device names to obtain statistics from    </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">per_channel   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Display per channel data for specified block device.    </td></tr>
 <tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">per_channel   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Display per channel data for specified block device.    </td></tr>
+<tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">reset_mode   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">enum   </td><td class="markdownTableBodyNone">Mode to reset I/O statistics after obtaining it: all, maxmin, error, none (default: none)   </td></tr>
 </table>
 <h3>Response</h3>
