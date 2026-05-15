@@ -1,5 +1,6 @@
 var NAVTREEINDEX6 =
 {
+"jsonrpc.html#rpc_vmd_rescan":[3,8,20,3],
 "jsonrpc_8h.html":[15,0,0,0,37],
 "jsonrpc_8h.html#a27688ab4587564524fefa84abc13ad3c":[15,0,0,0,37,13],
 "jsonrpc_8h.html#a27bade57c1aa87a5e962373c35ef82fc":[15,0,0,0,37,21],
@@ -130,13 +131,13 @@ var NAVTREEINDEX6 =
 "memory.html":[2,1],
 "misc.html":[6],
 "mmio_8h.html":[15,0,0,0,41],
-"module_2bdev_2nvme_8h.html":[15,0,0,0,0,0,1],
-"module_2bdev_2nvme_8h.html#a1d06d518232c3c8c24449dda23dd66e5":[15,0,0,0,0,0,1,6],
-"module_2bdev_2nvme_8h.html#a495fef50f6e44f60f9789cec93b55982":[15,0,0,0,0,0,1,4],
-"module_2bdev_2nvme_8h.html#a8785bb4880bfed734f409d4788e61897":[15,0,0,0,0,0,1,3],
-"module_2bdev_2nvme_8h.html#aa94646ad0ab2add9a208c4d1cb12cc78":[15,0,0,0,0,0,1,5],
-"module_2bdev_2nvme_8h.html#afa505c687a146bb84fe77178052dc9e0":[15,0,0,0,0,0,1,7],
-"module_2bdev_2nvme_8h.html#afea4be31a3e8fb89d97ffb453e9c4764":[15,0,0,0,0,0,1,2],
+"module_2bdev_2nvme_8h.html":[15,0,0,0,0,0,2],
+"module_2bdev_2nvme_8h.html#a1d06d518232c3c8c24449dda23dd66e5":[15,0,0,0,0,0,2,6],
+"module_2bdev_2nvme_8h.html#a495fef50f6e44f60f9789cec93b55982":[15,0,0,0,0,0,2,4],
+"module_2bdev_2nvme_8h.html#a8785bb4880bfed734f409d4788e61897":[15,0,0,0,0,0,2,3],
+"module_2bdev_2nvme_8h.html#aa94646ad0ab2add9a208c4d1cb12cc78":[15,0,0,0,0,0,2,5],
+"module_2bdev_2nvme_8h.html#afa505c687a146bb84fe77178052dc9e0":[15,0,0,0,0,0,2,7],
+"module_2bdev_2nvme_8h.html#afea4be31a3e8fb89d97ffb453e9c4764":[15,0,0,0,0,0,2,2],
 "nbd_8h.html":[15,0,0,0,42],
 "nbd_8h.html#a029f02e6d83c1c754d19d0e77ba1987c":[15,0,0,0,42,1],
 "nbd_8h.html#a07e225fef1fa5f8ec41efeecbff1ff31":[15,0,0,0,42,6],
@@ -248,6 +249,5 @@ var NAVTREEINDEX6 =
 "nvme_8h.html#a4ab95bea86f498c08510f6f0bcd2eb09":[15,0,0,0,44,26],
 "nvme_8h.html#a4b63c225c3cce6da60fdbfb6f54b11e2":[15,0,0,0,44,133],
 "nvme_8h.html#a4b7578aeee6b6a092a4a4013a2f32ce5":[15,0,0,0,44,67],
-"nvme_8h.html#a4bf7a40872bfe623a5dfa31922263532":[15,0,0,0,44,144],
-"nvme_8h.html#a4c11b5ae0a1f6d70f3ab99a13765ea75":[15,0,0,0,44,71]
+"nvme_8h.html#a4bf7a40872bfe623a5dfa31922263532":[15,0,0,0,44,144]
 };

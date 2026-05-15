@@ -40,6 +40,7 @@ var NAVTREEINDEX3 =
 "env__dpdk_8h.html#a95ba98e53dd9693b4a1242915305ff61":[15,0,0,0,20,3],
 "env__dpdk_8h.html#ae30c265cb90b9920025ee8699b9e9192":[15,0,0,0,20,2],
 "env__dpdk_8h.html#aff24042058543bcee5a8a7ba0cd6b226":[15,0,0,0,20,4],
+"error_8h.html":[15,0,0,0,0,0,1],
 "event.html":[5,0],
 "event.html#event_component_app":[5,0,1,3],
 "event.html#event_component_events":[5,0,1,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX3 =
 "functions_vars_o.html":[14,2,2,15],
 "functions_vars_p.html":[14,2,2,16],
 "functions_vars_q.html":[14,2,2,17],
-"functions_vars_r.html":[14,2,2,18],
-"functions_vars_s.html":[14,2,2,19]
+"functions_vars_r.html":[14,2,2,18]
 };

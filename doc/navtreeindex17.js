@@ -1,5 +1,6 @@
 var NAVTREEINDEX17 =
 {
+"structspdk__trace__history.html#afc00e204c28b550c0dd2f8140a08e566":[14,0,464,0],
 "structspdk__trace__object.html":[14,0,465],
 "structspdk__trace__owner.html":[14,0,466],
 "structspdk__trace__owner__type.html":[14,0,467],
@@ -248,6 +249,5 @@ var NAVTREEINDEX17 =
 "unionspdk__bdev__nvme__cdw13.html":[14,0,82],
 "unionspdk__bdev__nvme__ctratt.html":[14,0,83],
 "unionspdk__ioat__hw__desc.html":[14,0,130],
-"unionspdk__nvme__aqa__register.html":[14,0,169],
-"unionspdk__nvme__aqa__register.html#a3f5ae033d3569600cfe59e2fc4add132":[14,0,169,0]
+"unionspdk__nvme__aqa__register.html":[14,0,169]
 };
