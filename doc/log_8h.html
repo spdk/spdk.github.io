@@ -403,7 +403,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_log_enable_times
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">        <span class="keyword">static</span> <span class="keyword">struct </span>spdk_deprecation *_deprecated_##tag; \</div>
+<b>Value:</b><div class="fragment"><div class="line">        <span class="keyword">struct </span>spdk_deprecation *_deprecated_##tag; \</div>
 <div class="line">        <span class="keyword">static</span> <span class="keywordtype">void</span> __attribute__((constructor)) _spdk_deprecation_register_##tag(<span class="keywordtype">void</span>) \</div>
 <div class="line">        { \</div>
 <div class="line">                <span class="keywordtype">int</span> rc; \</div>

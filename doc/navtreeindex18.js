@@ -1,5 +1,7 @@
 var NAVTREEINDEX18 =
 {
+"unionspdk__ioat__hw__desc.html":[14,0,130],
+"unionspdk__nvme__aqa__register.html":[14,0,169],
 "unionspdk__nvme__aqa__register.html#a3f5ae033d3569600cfe59e2fc4add132":[14,0,169,0],
 "unionspdk__nvme__aqa__register.html#ac8e473c82656d9f2a536618f9e2f55cb":[14,0,169,1],
 "unionspdk__nvme__async__event__completion.html":[14,0,170],
@@ -247,7 +249,5 @@ var NAVTREEINDEX18 =
 "vhost_8h.html#a3d7d19d916cd5ef1b89c43501dec52a8":[15,0,0,0,66,9],
 "vhost_8h.html#a4e41f1b4db2605981b3194b83d90c35a":[15,0,0,0,66,5],
 "vhost_8h.html#a85abd2551972d1aeff61cb3edf1ce69c":[15,0,0,0,66,10],
-"vhost_8h.html#a8b37106ad173f20d05da87f89714700b":[15,0,0,0,66,1],
-"vhost_8h.html#a8b8c054fdc8ed4ad573b2d0bcf2d4797":[15,0,0,0,66,22],
-"vhost_8h.html#a8be392083ae01ad34cc05b1b5ce2b5e0":[15,0,0,0,66,12]
+"vhost_8h.html#a8b37106ad173f20d05da87f89714700b":[15,0,0,0,66,1]
 };

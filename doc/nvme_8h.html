@@ -243,6 +243,9 @@ typedef bool(*&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_p
 <tr class="memitem:a1d066bb761dc3481f081d0d6924766ee" id="r_a1d066bb761dc3481f081d0d6924766ee"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1d066bb761dc3481f081d0d6924766ee">spdk_nvme_aer_cb</a>) (void *aer_cb_arg, const struct <a class="el" href="structspdk__nvme__cpl.html">spdk_nvme_cpl</a> *cpl)</td></tr>
 <tr class="memdesc:a1d066bb761dc3481f081d0d6924766ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Signature for callback function invoked when an asynchronous event request command is completed.  <br /></td></tr>
 <tr class="separator:a1d066bb761dc3481f081d0d6924766ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12cc4825ecc4537623460799402fdd93" id="r_a12cc4825ecc4537623460799402fdd93"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a12cc4825ecc4537623460799402fdd93">spdk_nvme_ns_attr_changed_cb</a>) (void *cb_arg, const uint32_t *changed_ns_list, uint32_t count)</td></tr>
+<tr class="memdesc:a12cc4825ecc4537623460799402fdd93"><td class="mdescLeft">&#160;</td><td class="mdescRight">Signature for callback function invoked when an NS_ATTR_CHANGED async event is processed.  <br /></td></tr>
+<tr class="separator:a12cc4825ecc4537623460799402fdd93"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a53fe1c01a447be8fcd29821a668227a0" id="r_a53fe1c01a447be8fcd29821a668227a0"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a53fe1c01a447be8fcd29821a668227a0">spdk_nvme_timeout_cb</a>) (void *cb_arg, struct spdk_nvme_ctrlr *ctrlr, struct spdk_nvme_qpair *qpair, uint16_t cid)</td></tr>
 <tr class="memdesc:a53fe1c01a447be8fcd29821a668227a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Signature for the callback function invoked when a timeout is detected on a request.  <br /></td></tr>
 <tr class="separator:a53fe1c01a447be8fcd29821a668227a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -522,6 +525,9 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_trty
 <tr class="memitem:a1505fc1ef6e8ccb00134c1fa15e0368b" id="r_a1505fc1ef6e8ccb00134c1fa15e0368b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1505fc1ef6e8ccb00134c1fa15e0368b">spdk_nvme_ctrlr_register_aer_callback</a> (struct spdk_nvme_ctrlr *ctrlr, <a class="el" href="#a1d066bb761dc3481f081d0d6924766ee">spdk_nvme_aer_cb</a> aer_cb_fn, void *aer_cb_arg)</td></tr>
 <tr class="memdesc:a1505fc1ef6e8ccb00134c1fa15e0368b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register callback function invoked when an AER command is completed for the given NVMe controller.  <br /></td></tr>
 <tr class="separator:a1505fc1ef6e8ccb00134c1fa15e0368b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a7a2f8078e7c05a188a9499a9a7d761" id="r_a8a7a2f8078e7c05a188a9499a9a7d761"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8a7a2f8078e7c05a188a9499a9a7d761">spdk_nvme_ctrlr_register_ns_attr_changed_callback</a> (struct spdk_nvme_ctrlr *ctrlr, <a class="el" href="#a12cc4825ecc4537623460799402fdd93">spdk_nvme_ns_attr_changed_cb</a> cb_fn, void *cb_arg)</td></tr>
+<tr class="memdesc:a8a7a2f8078e7c05a188a9499a9a7d761"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a callback for NS_ATTR_CHANGED asynchronous events.  <br /></td></tr>
+<tr class="separator:a8a7a2f8078e7c05a188a9499a9a7d761"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7708f291658bf471e399354d1247fabf" id="r_a7708f291658bf471e399354d1247fabf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7708f291658bf471e399354d1247fabf">spdk_nvme_ctrlr_disable_read_changed_ns_list_log_page</a> (struct spdk_nvme_ctrlr *ctrlr)</td></tr>
 <tr class="memdesc:a7708f291658bf471e399354d1247fabf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disable reading the CHANGED_NS_LIST log page for the specified controller.  <br /></td></tr>
 <tr class="separator:a7708f291658bf471e399354d1247fabf"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1191,6 +1197,30 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_trty
     <tr><td class="paramname">rc</td><td>Status of operation. 0 means success, and that the cpl argument is valid. Failure indicated by negative errno value. </td></tr>
     <tr><td class="paramname">cpl</td><td>NVMe completion status of the operation. NULL if rc != 0. If multiple completions with error status occurred during the operation, the cpl value for the first error will be used here. </td></tr>
     <tr><td class="paramname">log_page</td><td>Pointer to the full discovery log page. The application is responsible for freeing this buffer using free(). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a12cc4825ecc4537623460799402fdd93" name="a12cc4825ecc4537623460799402fdd93"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a12cc4825ecc4537623460799402fdd93">&#9670;&#160;</a></span>spdk_nvme_ns_attr_changed_cb</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(* spdk_nvme_ns_attr_changed_cb) (void *cb_arg, const uint32_t *changed_ns_list, uint32_t count)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Signature for callback function invoked when an NS_ATTR_CHANGED async event is processed. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cb_arg</td><td>Argument specified by <a class="el" href="#a8a7a2f8078e7c05a188a9499a9a7d761" title="Register a callback for NS_ATTR_CHANGED asynchronous events.">spdk_nvme_ctrlr_register_ns_attr_changed_callback()</a>. </td></tr>
+    <tr><td class="paramname">changed_ns_list</td><td>Array of changed namespace IDs, or NULL. When NULL, all namespaces should be treated as potentially changed. The pointer is only valid during the callback invocation; the caller must copy the data if it needs to be retained. </td></tr>
+    <tr><td class="paramname">count</td><td>Number of entries in changed_ns_list. Zero when changed_ns_list is NULL. </td></tr>
   </table>
   </dd>
 </dl>
@@ -4579,6 +4609,43 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_trty
     <tr><td class="paramname">ctrlr</td><td>Opaque handle to NVMe controller. </td></tr>
     <tr><td class="paramname">aer_cb_fn</td><td>Callback function invoked when an asynchronous event request command is completed. </td></tr>
     <tr><td class="paramname">aer_cb_arg</td><td>Argument passed to callback function. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a8a7a2f8078e7c05a188a9499a9a7d761" name="a8a7a2f8078e7c05a188a9499a9a7d761"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a7a2f8078e7c05a188a9499a9a7d761">&#9670;&#160;</a></span>spdk_nvme_ctrlr_register_ns_attr_changed_callback()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_nvme_ctrlr_register_ns_attr_changed_callback </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_nvme_ctrlr *</td>          <td class="paramname"><span class="paramname"><em>ctrlr</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="#a12cc4825ecc4537623460799402fdd93">spdk_nvme_ns_attr_changed_cb</a></td>          <td class="paramname"><span class="paramname"><em>cb_fn</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *</td>          <td class="paramname"><span class="paramname"><em>cb_arg</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Register a callback for NS_ATTR_CHANGED asynchronous events. </p>
+<p>When registered, this callback replaces the generic AER callback for NS_ATTR_CHANGED events, allowing the consumer to handle namespace changes with the list of changed namespace IDs.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ctrlr</td><td>Opaque handle to NVMe controller. </td></tr>
+    <tr><td class="paramname">cb_fn</td><td>Callback function, or NULL to unregister. </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>Argument passed to callback function. </td></tr>
   </table>
   </dd>
 </dl>

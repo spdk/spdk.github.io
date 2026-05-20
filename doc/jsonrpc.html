@@ -7049,7 +7049,7 @@ nvmf_create_transport</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">data_wr_pool_size   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">RDMA data WR pool size (RDMA only)    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">disable_command_passthru   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Disallow command passthru.    </td></tr>
+<td class="markdownTableBodyNone">disable_command_passthru   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Disallow forwarding unrecognized I/O opcodes and the Identify Namespace admin command to the underlying bdev. Subsystems in passthrough mode and admin commands set via admin_cmd_passthru are not affected.    </td></tr>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">kas   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint16   </td><td class="markdownTableBodyNone">The granularity of the KATO (Keep Alive Timeout) in 100 millisecond units    </td></tr>
 <tr class="markdownTableRowEven">
@@ -7961,7 +7961,9 @@ nvmf_set_config</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">dhchap_digests   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">array   </td><td class="markdownTableBodyNone">List of allowed DH-HMAC-CHAP digests.    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">dhchap_dhgroups   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">array   </td><td class="markdownTableBodyNone">List of allowed DH-HMAC-CHAP DH groups.   </td></tr>
+<td class="markdownTableBodyNone">dhchap_dhgroups   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">array   </td><td class="markdownTableBodyNone">List of allowed DH-HMAC-CHAP DH groups.    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">dup_host_policy   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">enum   </td><td class="markdownTableBodyNone">Duplicate host policy   </td></tr>
 </table>
 <h4><a class="anchor" id="spdk_nvmf_admin_passthru_conf"></a>
 admin_cmd_passthru</h4>
