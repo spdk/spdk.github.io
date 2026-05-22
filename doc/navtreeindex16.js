@@ -1,5 +1,11 @@
 var NAVTREEINDEX16 =
 {
+"structspdk__nvmf__fc__ls__cr__assoc__rqst.html":[14,0,359],
+"structspdk__nvmf__fc__ls__cr__conn__acc.html":[14,0,360],
+"structspdk__nvmf__fc__ls__cr__conn__rqst.html":[14,0,361],
+"structspdk__nvmf__fc__ls__disconnect__acc.html":[14,0,362],
+"structspdk__nvmf__fc__ls__disconnect__rqst.html":[14,0,363],
+"structspdk__nvmf__fc__ls__rjt.html":[14,0,364],
 "structspdk__nvmf__fc__ls__rqst__w0.html":[14,0,365],
 "structspdk__nvmf__fc__lsdesc__assoc__id.html":[14,0,366],
 "structspdk__nvmf__fc__lsdesc__conn__id.html":[14,0,367],
@@ -243,11 +249,5 @@ var NAVTREEINDEX16 =
 "structspdk__subsystem.html#aee08272bb1e40074d620f3eb27c22189":[14,0,457,0],
 "structspdk__subsystem__depend.html":[14,0,458],
 "structspdk__thread__stats.html":[14,0,459],
-"structspdk__trace__argument.html":[14,0,460],
-"structspdk__trace__entry.html":[14,0,461],
-"structspdk__trace__entry__buffer.html":[14,0,462],
-"structspdk__trace__file.html":[14,0,463],
-"structspdk__trace__history.html":[14,0,464],
-"structspdk__trace__history.html#a57438d2b62e8bef76601a2b881345463":[14,0,464,2],
-"structspdk__trace__history.html#ab6aed08b66a3c7f1bf46a1fb4b5d6419":[14,0,464,1]
+"structspdk__trace__argument.html":[14,0,460]
 };

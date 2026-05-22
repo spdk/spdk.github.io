@@ -134,8 +134,10 @@ $(function(){initNavTree('deprecated.html',''); initResizable(); });
 <div class="textblock"><dl class="reflist">
 <dt>Global <a class="el" href="module_2bdev_2nvme_8h.html#afea4be31a3e8fb89d97ffb453e9c4764">BDEV_NVME_MP_POLICY_ACTIVE_PASSIVE</a>  </dt>
 <dd><a class="anchor" id="_deprecated000001"></a>Use SPDK_BDEV_NVME_MULTIPATH_POLICY_* and SPDK_BDEV_NVME_MULTIPATH_SELECTOR_* instead.  </dd>
+<dt>Global <a class="el" href="module_2bdev_2nvme_8h.html#a1d06d518232c3c8c24449dda23dd66e5">spdk_bdev_nvme_set_multipath_policy</a>  (const char *name, enum spdk_bdev_nvme_multipath_policy policy, enum spdk_bdev_nvme_multipath_selector selector, uint32_t rr_min_io, spdk_bdev_nvme_set_multipath_policy_cb cb_fn, void *cb_arg)</dt>
+<dd><a class="anchor" id="_deprecated000002"></a>Use <a class="el" href="module_2bdev_2nvme_8h.html#a8785bb4880bfed734f409d4788e61897" title="Connect to the NVMe controller and populate namespaces as bdevs.">spdk_bdev_nvme_create()</a> with multipath options instead. </dd>
 <dt>Global <a class="el" href="nvmf_8h.html#aa0bc4c788edd310c573752c9dc6acf63">SPDK_NVMF_TGT_DISCOVERY_MATCH_ANY</a>  </dt>
-<dd><a class="anchor" id="_deprecated000002"></a>Use SPDK_NVMF_TGT_DISCOVERY_FILTER_* instead. </dd>
+<dd><a class="anchor" id="_deprecated000003"></a>Use SPDK_NVMF_TGT_DISCOVERY_FILTER_* instead. </dd>
 </dl>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->

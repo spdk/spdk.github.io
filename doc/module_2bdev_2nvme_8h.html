@@ -213,6 +213,24 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_nvme_get_de
 <tr class="memitem:afa505c687a146bb84fe77178052dc9e0" id="r_afa505c687a146bb84fe77178052dc9e0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afa505c687a146bb84fe77178052dc9e0">spdk_bdev_nvme_set_opts</a> (const struct <a class="el" href="structspdk__bdev__nvme__opts.html">spdk_bdev_nvme_opts</a> *opts)</td></tr>
 <tr class="memdesc:afa505c687a146bb84fe77178052dc9e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the bdev nvme options.  <br /></td></tr>
 <tr class="separator:afa505c687a146bb84fe77178052dc9e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a435db6b019b2815c5118406a47d20c98" id="r_a435db6b019b2815c5118406a47d20c98"><td class="memItemLeft" align="right" valign="top">struct spdk_bdev_nvme_ctrlr *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a435db6b019b2815c5118406a47d20c98">spdk_bdev_nvme_first_bdev_ctrlr</a> (void)</td></tr>
+<tr class="memdesc:a435db6b019b2815c5118406a47d20c98"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the first bdev_nvme controller group.  <br /></td></tr>
+<tr class="separator:a435db6b019b2815c5118406a47d20c98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24f9af9dc889a75cbb9adbee92cec623" id="r_a24f9af9dc889a75cbb9adbee92cec623"><td class="memItemLeft" align="right" valign="top">struct spdk_bdev_nvme_ctrlr *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a24f9af9dc889a75cbb9adbee92cec623">spdk_bdev_nvme_next_bdev_ctrlr</a> (struct spdk_bdev_nvme_ctrlr *prev)</td></tr>
+<tr class="memdesc:a24f9af9dc889a75cbb9adbee92cec623"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the next bdev_nvme controller group.  <br /></td></tr>
+<tr class="separator:a24f9af9dc889a75cbb9adbee92cec623"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a261ff0612f96a71c2d896dfdbc0068eb" id="r_a261ff0612f96a71c2d896dfdbc0068eb"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a261ff0612f96a71c2d896dfdbc0068eb">spdk_bdev_nvme_ctrlr_get_name</a> (struct spdk_bdev_nvme_ctrlr *nbdev_ctrlr)</td></tr>
+<tr class="memdesc:a261ff0612f96a71c2d896dfdbc0068eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the name of a bdev_nvme controller group.  <br /></td></tr>
+<tr class="separator:a261ff0612f96a71c2d896dfdbc0068eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1882c6fcfb7a2bc8382d94d5dd1f7024" id="r_a1882c6fcfb7a2bc8382d94d5dd1f7024"><td class="memItemLeft" align="right" valign="top">struct spdk_nvme_ctrlr *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1882c6fcfb7a2bc8382d94d5dd1f7024">spdk_bdev_nvme_ctrlr_first_ctrlr</a> (struct spdk_bdev_nvme_ctrlr *nbdev_ctrlr)</td></tr>
+<tr class="memdesc:a1882c6fcfb7a2bc8382d94d5dd1f7024"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the first NVMe controller within a bdev_nvme controller group.  <br /></td></tr>
+<tr class="separator:a1882c6fcfb7a2bc8382d94d5dd1f7024"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9748a02c932294c588fa02a4861717cf" id="r_a9748a02c932294c588fa02a4861717cf"><td class="memItemLeft" align="right" valign="top">struct spdk_nvme_ctrlr *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9748a02c932294c588fa02a4861717cf">spdk_bdev_nvme_ctrlr_next_ctrlr</a> (struct spdk_bdev_nvme_ctrlr *nbdev_ctrlr, struct spdk_nvme_ctrlr *prev)</td></tr>
+<tr class="memdesc:a9748a02c932294c588fa02a4861717cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the next NVMe controller within a bdev_nvme controller group.  <br /></td></tr>
+<tr class="separator:a9748a02c932294c588fa02a4861717cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa902bee4f0e596d5db0bf9959dfa3859" id="r_aa902bee4f0e596d5db0bf9959dfa3859"><td class="memItemLeft" align="right" valign="top">const struct <a class="el" href="structspdk__bdev__nvme__ctrlr__opts.html">spdk_bdev_nvme_ctrlr_opts</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa902bee4f0e596d5db0bf9959dfa3859">spdk_bdev_nvme_ctrlr_get_opts</a> (struct spdk_bdev_nvme_ctrlr *nbdev_ctrlr, struct spdk_nvme_ctrlr *ctrlr)</td></tr>
+<tr class="memdesc:aa902bee4f0e596d5db0bf9959dfa3859"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the controller opts.  <br /></td></tr>
+<tr class="separator:aa902bee4f0e596d5db0bf9959dfa3859"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Nvme block device abstraction layer. </p>
@@ -300,6 +318,129 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_nvme_get_de
 
 </div>
 </div>
+<a id="a1882c6fcfb7a2bc8382d94d5dd1f7024" name="a1882c6fcfb7a2bc8382d94d5dd1f7024"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1882c6fcfb7a2bc8382d94d5dd1f7024">&#9670;&#160;</a></span>spdk_bdev_nvme_ctrlr_first_ctrlr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct spdk_nvme_ctrlr * spdk_bdev_nvme_ctrlr_first_ctrlr </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_bdev_nvme_ctrlr *</td>          <td class="paramname"><span class="paramname"><em>nbdev_ctrlr</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the first NVMe controller within a bdev_nvme controller group. </p>
+<p>Must be called from the app thread.</p>
+<dl class="section warning"><dt>Warning</dt><dd>The returned pointer is valid only while the controller is attached. Do not hold references across operations that may disconnect controllers.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nbdev_ctrlr</td><td>Controller group handle. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Pointer to the first spdk_nvme_ctrlr, or NULL if none. </dd></dl>
+
+</div>
+</div>
+<a id="a261ff0612f96a71c2d896dfdbc0068eb" name="a261ff0612f96a71c2d896dfdbc0068eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a261ff0612f96a71c2d896dfdbc0068eb">&#9670;&#160;</a></span>spdk_bdev_nvme_ctrlr_get_name()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char * spdk_bdev_nvme_ctrlr_get_name </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_bdev_nvme_ctrlr *</td>          <td class="paramname"><span class="paramname"><em>nbdev_ctrlr</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the name of a bdev_nvme controller group. </p>
+<p>Must be called from the app thread.</p>
+<dl class="section warning"><dt>Warning</dt><dd>The returned string is valid only while the controller group exists.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nbdev_ctrlr</td><td>Controller group handle. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Name string. </dd></dl>
+
+</div>
+</div>
+<a id="aa902bee4f0e596d5db0bf9959dfa3859" name="aa902bee4f0e596d5db0bf9959dfa3859"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa902bee4f0e596d5db0bf9959dfa3859">&#9670;&#160;</a></span>spdk_bdev_nvme_ctrlr_get_opts()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const struct <a class="el" href="structspdk__bdev__nvme__ctrlr__opts.html">spdk_bdev_nvme_ctrlr_opts</a> * spdk_bdev_nvme_ctrlr_get_opts </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_bdev_nvme_ctrlr *</td>          <td class="paramname"><span class="paramname"><em>nbdev_ctrlr</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct spdk_nvme_ctrlr *</td>          <td class="paramname"><span class="paramname"><em>ctrlr</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the controller opts. </p>
+<p>Returns creation time controller configuration.</p>
+<p>Must be called from the app thread.</p>
+<dl class="section warning"><dt>Warning</dt><dd>The returned pointer is valid only while the controller group exists.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nbdev_ctrlr</td><td>Controller group handle. </td></tr>
+    <tr><td class="paramname">ctrlr</td><td>Controller handle (optional); if not provided opts are retrived from the first. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Pointer to the options, or NULL if the controller group is invalid. </dd></dl>
+
+</div>
+</div>
+<a id="a9748a02c932294c588fa02a4861717cf" name="a9748a02c932294c588fa02a4861717cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9748a02c932294c588fa02a4861717cf">&#9670;&#160;</a></span>spdk_bdev_nvme_ctrlr_next_ctrlr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct spdk_nvme_ctrlr * spdk_bdev_nvme_ctrlr_next_ctrlr </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_bdev_nvme_ctrlr *</td>          <td class="paramname"><span class="paramname"><em>nbdev_ctrlr</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct spdk_nvme_ctrlr *</td>          <td class="paramname"><span class="paramname"><em>prev</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the next NVMe controller within a bdev_nvme controller group. </p>
+<p>Must be called from the app thread.</p>
+<dl class="section warning"><dt>Warning</dt><dd>The returned pointer is valid only while the controller is attached. Do not hold references across operations that may disconnect controllers.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nbdev_ctrlr</td><td>Controller group handle. </td></tr>
+    <tr><td class="paramname">prev</td><td>Previous spdk_nvme_ctrlr returned by first_ctrlr or next_ctrlr. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Pointer to the next spdk_nvme_ctrlr, or NULL if no more. </dd></dl>
+
+</div>
+</div>
 <a id="a495fef50f6e44f60f9789cec93b55982" name="a495fef50f6e44f60f9789cec93b55982"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a495fef50f6e44f60f9789cec93b55982">&#9670;&#160;</a></span>spdk_bdev_nvme_delete()</h2>
 
@@ -344,6 +485,28 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_nvme_get_de
 
 </div>
 </div>
+<a id="a435db6b019b2815c5118406a47d20c98" name="a435db6b019b2815c5118406a47d20c98"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a435db6b019b2815c5118406a47d20c98">&#9670;&#160;</a></span>spdk_bdev_nvme_first_bdev_ctrlr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct spdk_bdev_nvme_ctrlr * spdk_bdev_nvme_first_bdev_ctrlr </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the first bdev_nvme controller group. </p>
+<p>Must be called from the app thread.</p>
+<dl class="section warning"><dt>Warning</dt><dd>The returned handle is valid only while the controller group exists. Do not hold references across operations that may add or remove controller groups.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Pointer to the first controller group, or NULL if none. </dd></dl>
+
+</div>
+</div>
 <a id="aa94646ad0ab2add9a208c4d1cb12cc78" name="aa94646ad0ab2add9a208c4d1cb12cc78"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa94646ad0ab2add9a208c4d1cb12cc78">&#9670;&#160;</a></span>spdk_bdev_nvme_get_opts()</h2>
 
@@ -371,6 +534,34 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_nvme_get_de
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a24f9af9dc889a75cbb9adbee92cec623" name="a24f9af9dc889a75cbb9adbee92cec623"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24f9af9dc889a75cbb9adbee92cec623">&#9670;&#160;</a></span>spdk_bdev_nvme_next_bdev_ctrlr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct spdk_bdev_nvme_ctrlr * spdk_bdev_nvme_next_bdev_ctrlr </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_bdev_nvme_ctrlr *</td>          <td class="paramname"><span class="paramname"><em>prev</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the next bdev_nvme controller group. </p>
+<p>Must be called from the app thread.</p>
+<dl class="section warning"><dt>Warning</dt><dd>The returned handle is valid only while the controller group exists. Do not hold references across operations that may add or remove controller groups.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">prev</td><td>Previous controller group returned by first or next. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Pointer to the next controller group, or NULL if no more. </dd></dl>
 
 </div>
 </div>
@@ -414,6 +605,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_nvme_get_de
 </div><div class="memdoc">
 
 <p>Set multipath policy of the NVMe bdev. </p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000002">Deprecated</a></b></dt><dd>Use <a class="el" href="#a8785bb4880bfed734f409d4788e61897" title="Connect to the NVMe controller and populate namespaces as bdevs.">spdk_bdev_nvme_create()</a> with multipath options instead.</dd></dl>
 <p>Subsequent calls for the same bdev must wait until the current execution finishes.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">

@@ -1,5 +1,11 @@
 var NAVTREEINDEX17 =
 {
+"structspdk__trace__entry.html":[14,0,461],
+"structspdk__trace__entry__buffer.html":[14,0,462],
+"structspdk__trace__file.html":[14,0,463],
+"structspdk__trace__history.html":[14,0,464],
+"structspdk__trace__history.html#a57438d2b62e8bef76601a2b881345463":[14,0,464,2],
+"structspdk__trace__history.html#ab6aed08b66a3c7f1bf46a1fb4b5d6419":[14,0,464,1],
 "structspdk__trace__history.html#abbe4657a63c03054c695b8fb2a35797f":[14,0,464,4],
 "structspdk__trace__history.html#abf23bb37a270ab385bb4597cb507b066":[14,0,464,3],
 "structspdk__trace__history.html#afc00e204c28b550c0dd2f8140a08e566":[14,0,464,0],
@@ -243,11 +249,5 @@ var NAVTREEINDEX17 =
 "unionidxd__offsets__register.html":[14,0,21],
 "unionidxd__swerr__register.html":[14,0,24],
 "unionidxd__wqcap__register.html":[14,0,25],
-"unionidxd__wqcfg.html":[14,0,26],
-"unionnvmf__c2h__msg.html":[14,0,47],
-"unionnvmf__h2c__msg.html":[14,0,48],
-"unionspdk__bdev_1_1____bdev__internal__fields_1_1____bdev__internal__claim.html":[14,0,61,0,0],
-"unionspdk__bdev__nvme__cdw12.html":[14,0,81],
-"unionspdk__bdev__nvme__cdw13.html":[14,0,82],
-"unionspdk__bdev__nvme__ctratt.html":[14,0,83]
+"unionidxd__wqcfg.html":[14,0,26]
 };
