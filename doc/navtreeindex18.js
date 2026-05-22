@@ -1,5 +1,9 @@
 var NAVTREEINDEX18 =
 {
+"unionidxd__offsets__register.html":[14,0,21],
+"unionidxd__swerr__register.html":[14,0,24],
+"unionidxd__wqcap__register.html":[14,0,25],
+"unionidxd__wqcfg.html":[14,0,26],
 "unionnvmf__c2h__msg.html":[14,0,47],
 "unionnvmf__h2c__msg.html":[14,0,48],
 "unionspdk__bdev_1_1____bdev__internal__fields_1_1____bdev__internal__claim.html":[14,0,61,0,0],
@@ -245,9 +249,5 @@ var NAVTREEINDEX18 =
 "vhost.html#vhost_vdev_create":[3,6,4,1],
 "vhost_8h.html":[15,0,0,0,66],
 "vhost_8h.html#a01b54a11439216fb05196474e3ee20d1":[15,0,0,0,66,16],
-"vhost_8h.html#a04d81053d41a72f5df978f7c05dfebd7":[15,0,0,0,66,25],
-"vhost_8h.html#a0631424062751f68ec295722786370a8":[15,0,0,0,66,14],
-"vhost_8h.html#a11404ad0fe29024fcdb4e89c5b7412f9":[15,0,0,0,66,7],
-"vhost_8h.html#a15921078a895d090283fbbeaaddee76c":[15,0,0,0,66,23],
-"vhost_8h.html#a1ac53e96fabfe23c89968dd9e2595741":[15,0,0,0,66,8]
+"vhost_8h.html#a04d81053d41a72f5df978f7c05dfebd7":[15,0,0,0,66,25]
 };

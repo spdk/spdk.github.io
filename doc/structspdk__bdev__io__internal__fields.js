@@ -21,6 +21,7 @@ var structspdk__bdev__io__internal__fields =
     [ "has_bounce_buf", "structspdk__bdev__io__internal__fields.html#a9bf97a401576ebf508021d7a94fb0196", null ],
     [ "has_buf", "structspdk__bdev__io__internal__fields.html#a07fde1840b98b356543b107ff2c1bbc1", null ],
     [ "has_memory_domain", "structspdk__bdev__io__internal__fields.html#ac3b28fbc9c3d5f1589da4aebaa110dc0", null ],
+    [ "has_metadata", "structspdk__bdev__io__internal__fields.html#a59c9bfd4129780acce5ebac3a4666260", null ],
     [ "in_submit_request", "structspdk__bdev__io__internal__fields.html#a48818bc0e70a183b0362e1f9d241621b", null ],
     [ "iobuf", "structspdk__bdev__io__internal__fields.html#a14b0a56e2b8060a4c038385a6bbaea50", null ],
     [ "len", "structspdk__bdev__io__internal__fields.html#aeff5be7bf72d3be6bee2878bec988a6d", null ],

@@ -199,9 +199,9 @@ union {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
 &#160;&#160;&#160;&#160;&#160;&#160;uint8_t&#160;&#160;&#160;<b>child_io</b>: 1&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
 <tr class="memdesc:a2ff930de07dc5cfbbc06326df881b1b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the I/O is a sub-I/O of a split parent I/O. <br /></td></tr>
 <tr class="separator:a2ff930de07dc5cfbbc06326df881b1b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3d0e7a01400d2057b669ccf3ff0fcd2d" id="r_a3d0e7a01400d2057b669ccf3ff0fcd2d"><td class="memItemLeft" >
-&#160;&#160;&#160;&#160;&#160;&#160;uint8_t&#160;&#160;&#160;<b>reserved</b>: 1&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
-<tr class="separator:a3d0e7a01400d2057b669ccf3ff0fcd2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a974ef580d7464968a55e34fc21e4a876" id="r_a974ef580d7464968a55e34fc21e4a876"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;uint8_t&#160;&#160;&#160;<a class="el" href="#a59c9bfd4129780acce5ebac3a4666260">has_metadata</a>: 1&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="memdesc:a974ef580d7464968a55e34fc21e4a876"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether DIF insert/strip has already been added to the accel sequence for this I/O.  <a href="#a59c9bfd4129780acce5ebac3a4666260">More...</a><br /></td></tr>
+<tr class="separator:a974ef580d7464968a55e34fc21e4a876"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae27aa6a2b174594dfd11f0c45b399450" id="r_ae27aa6a2b174594dfd11f0c45b399450"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;</td><td class="memItemRight" valign="bottom">&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
 <tr class="separator:ae27aa6a2b174594dfd11f0c45b399450"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae03b8fad041a19c7315b8a6b9474d9f5" id="r_ae03b8fad041a19c7315b8a6b9474d9f5"><td class="memItemLeft" >
@@ -217,6 +217,9 @@ int8_t&#160;</td><td class="memItemRight" valign="bottom"><b>status</b></td></tr
 uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>retry_state</b></td></tr>
 <tr class="memdesc:ac44070b20caa1f839087203d53ab2d5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retry state (resubmit, re-pull, re-push, etc.) <br /></td></tr>
 <tr class="separator:ac44070b20caa1f839087203d53ab2d5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a357abc03e991927b3e3a5dadd385a4" id="r_a8a357abc03e991927b3e3a5dadd385a4"><td class="memItemLeft" align="right" valign="top"><a id="a8a357abc03e991927b3e3a5dadd385a4" name="a8a357abc03e991927b3e3a5dadd385a4"></a>
+uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>reserved</b> [5]</td></tr>
+<tr class="separator:a8a357abc03e991927b3e3a5dadd385a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aac2261a1e54462036e4e6bd471199865" id="r_aac2261a1e54462036e4e6bd471199865"><td class="memItemLeft" align="right" valign="top"><a id="aac2261a1e54462036e4e6bd471199865" name="aac2261a1e54462036e4e6bd471199865"></a>
 struct spdk_bdev_desc *&#160;</td><td class="memItemRight" valign="bottom"><b>desc</b></td></tr>
 <tr class="memdesc:aac2261a1e54462036e4e6bd471199865"><td class="mdescLeft">&#160;</td><td class="mdescRight">The bdev descriptor that was used when submitting this I/O. <br /></td></tr>
@@ -394,6 +397,23 @@ void(*&#160;</td><td class="memItemRight" valign="bottom"><b>data_transfer_cpl</
 </div>
 </div>
 <h2 class="groupheader">Field Documentation</h2>
+<a id="a59c9bfd4129780acce5ebac3a4666260" name="a59c9bfd4129780acce5ebac3a4666260"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a59c9bfd4129780acce5ebac3a4666260">&#9670;&#160;</a></span>has_metadata</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t spdk_bdev_io_internal_fields::has_metadata</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Whether DIF insert/strip has already been added to the accel sequence for this I/O. </p>
+<p>Used to prevent double-processing on split child I/Os. </p>
+
+</div>
+</div>
 <a id="a2aa1be46b681de53a34562b114aa0bda" name="a2aa1be46b681de53a34562b114aa0bda"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2aa1be46b681de53a34562b114aa0bda">&#9670;&#160;</a></span>sc</h2>
 

@@ -132,8 +132,9 @@ $(function(){initNavTree('changelog.html',''); initResizable(); });
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p><a class="anchor" id="md_changelog"></a> </p>
-<h1><a class="anchor" id="changelog-v26-05"></a>
-v26.05: (Upcoming Release)</h1>
+<h1><a class="anchor" id="changelog-v26-09"></a>
+v26.09: (Upcoming Release)</h1>
+<h1>v26.05</h1>
 <h2>nvmf</h2>
 <p>Deprecated API spdk_nvmf_ctrlr_connect() was removed.</p>
 <p>The behavior of <code>spdk_nvmf_subsystem_disconnect_host</code> has been changed. Previously, the function could return a status before all queues were actually disconnected. In the current version, the function will invoke the callback only after all disconnect operations have completed or the provided timeout has been exceeded. If the function is called with the timeout set to 0, the default timeout value equal to <code>NVMF_CTRLR_RESET_SHN_TIMEOUT_IN_MS</code> is used. The <code>nvmf_subsystem_remove_host</code> json-rpc methods also reflects to above behavior and allow to configure the timeout now.</p>

@@ -33,7 +33,7 @@ var searchData=
   ['related_5findex_30',['related_index',['../structspdk__trace__parser__entry.html#a55b2e0aea7cca402a502ad4d043e7293',1,'spdk_trace_parser_entry']]],
   ['related_5fobjects_31',['related_objects',['../structspdk__trace__tpoint.html#a330220d50ec7bf4066a417b29cf6f26f',1,'spdk_trace_tpoint']]],
   ['related_5ftype_32',['related_type',['../structspdk__trace__parser__entry.html#a7e7ee46ec4c44c52caebb5ede88395c8',1,'spdk_trace_parser_entry']]],
-  ['release_33',['Release',['../releases.html#week_before',1,'1 week before release'],['../releases.html#month_before',1,'1+ month before release'],['../releases.html#changes_during_release',1,'Changes throughout the release'],['../releases.html#day_of_release',1,'Day of the release'],['../changelog.html#changelog-v26-05',1,'v26.05: (Upcoming Release)'],['../releases.html#week_of_release',1,'Week of the release']]],
+  ['release_33',['Release',['../releases.html#week_before',1,'1 week before release'],['../releases.html#month_before',1,'1+ month before release'],['../releases.html#changes_during_release',1,'Changes throughout the release'],['../releases.html#day_of_release',1,'Day of the release'],['../changelog.html#changelog-v26-09',1,'v26.09: (Upcoming Release)'],['../releases.html#week_of_release',1,'Week of the release']]],
   ['releases_34',['Releases',['../releases.html#patch_releases',1,'Patch releases'],['../releases.html',1,'SPDK Releases']]],
   ['relocation_35',['Garbage collection and relocation',['../ftl.html#ftl_reloc',1,'']]],
   ['remaining_5fnum_5fblocks_36',['remaining_num_blocks',['../structspdk__bdev__io__internal__fields.html#ac843d45a7037608572461bfd3428584f',1,'spdk_bdev_io_internal_fields']]],
