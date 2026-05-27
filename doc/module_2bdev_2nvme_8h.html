@@ -396,7 +396,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_nvme_get_de
 <p>Get the controller opts. </p>
 <p>Returns creation time controller configuration.</p>
 <p>Must be called from the app thread.</p>
-<dl class="section warning"><dt>Warning</dt><dd>The returned pointer is valid only while the controller group exists.</dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>The returned pointer is valid only while the controller is attached. Do not hold references across operations that may disconnect controllers.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">nbdev_ctrlr</td><td>Controller group handle. </td></tr>
