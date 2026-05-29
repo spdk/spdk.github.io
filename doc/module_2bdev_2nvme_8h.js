@@ -2,7 +2,6 @@ var module_2bdev_2nvme_8h =
 [
     [ "spdk_bdev_nvme_ctrlr_opts", "structspdk__bdev__nvme__ctrlr__opts.html", "structspdk__bdev__nvme__ctrlr__opts" ],
     [ "spdk_bdev_nvme_opts", "structspdk__bdev__nvme__opts.html", "structspdk__bdev__nvme__opts" ],
-    [ "BDEV_NVME_MP_POLICY_ACTIVE_PASSIVE", "module_2bdev_2nvme_8h.html#afea4be31a3e8fb89d97ffb453e9c4764", null ],
     [ "spdk_bdev_nvme_create", "module_2bdev_2nvme_8h.html#a8785bb4880bfed734f409d4788e61897", null ],
     [ "spdk_bdev_nvme_ctrlr_first_ctrlr", "module_2bdev_2nvme_8h.html#a1882c6fcfb7a2bc8382d94d5dd1f7024", null ],
     [ "spdk_bdev_nvme_ctrlr_get_name", "module_2bdev_2nvme_8h.html#a261ff0612f96a71c2d896dfdbc0068eb", null ],

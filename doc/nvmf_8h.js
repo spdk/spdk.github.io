@@ -13,7 +13,6 @@ var nvmf_8h =
     [ "spdk_nvmf_registrant_info", "structspdk__nvmf__registrant__info.html", null ],
     [ "spdk_nvmf_reservation_info", "structspdk__nvmf__reservation__info.html", null ],
     [ "spdk_nvmf_ns_reservation_ops", "structspdk__nvmf__ns__reservation__ops.html", null ],
-    [ "SPDK_NVMF_TGT_DISCOVERY_MATCH_ANY", "nvmf_8h.html#aa0bc4c788edd310c573752c9dc6acf63", null ],
     [ "spdk_nvmf_subsystem_state_change_done", "nvmf_8h.html#aec7dc3c1e2f740c1cbffa028ad5c5bff", null ],
     [ "spdk_nvmf_tgt_add_transport_done_fn", "nvmf_8h.html#a53086e85e4a7103ab2b714483b4f2aec", null ],
     [ "spdk_nvmf_tgt_pause_polling_cb_fn", "nvmf_8h.html#a50bd8ee037dbbe33729db2eb626267cf", null ],

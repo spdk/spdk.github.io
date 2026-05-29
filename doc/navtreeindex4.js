@@ -27,8 +27,7 @@ var NAVTREEINDEX4 =
 "globals_eval.html":[15,1,4],
 "globals_func.html":[15,1,1,0],
 "globals_func.html":[15,1,1],
-"globals_i.html":[15,1,0,1],
-"globals_s.html":[15,1,0,2],
+"globals_s.html":[15,1,0,1],
 "globals_type.html":[15,1,2],
 "gpt__spec_8h.html":[15,0,0,0,26],
 "group__bdev__io__submit__functions.html":[13,0],
@@ -249,5 +248,6 @@ var NAVTREEINDEX4 =
 "jsonrpc.html#rpc_bdev_get_histogram":[3,8,5,7],
 "jsonrpc.html#rpc_bdev_get_histogram_borders":[3,8,5,8],
 "jsonrpc.html#rpc_bdev_get_iostat":[3,8,5,4],
-"jsonrpc.html#rpc_bdev_iscsi_create":[3,8,5,67]
+"jsonrpc.html#rpc_bdev_iscsi_create":[3,8,5,67],
+"jsonrpc.html#rpc_bdev_iscsi_delete":[3,8,5,68]
 };

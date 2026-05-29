@@ -130,7 +130,6 @@ $(function(){initNavTree('module_2bdev_2nvme_8h.html',''); initResizable(); });
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Data Structures</a> &#124;
-<a href="#define-members">Macros</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
 <a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
@@ -147,20 +146,6 @@ Data Structures</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__bdev__nvme__opts.html">spdk_bdev_nvme_opts</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:afea4be31a3e8fb89d97ffb453e9c4764" id="r_afea4be31a3e8fb89d97ffb453e9c4764"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afea4be31a3e8fb89d97ffb453e9c4764">BDEV_NVME_MP_POLICY_ACTIVE_PASSIVE</a>&#160;&#160;&#160;SPDK_BDEV_NVME_MULTIPATH_POLICY_ACTIVE_PASSIVE</td></tr>
-<tr class="separator:afea4be31a3e8fb89d97ffb453e9c4764"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1a0e1a524e83d51f0cf7cf0db97d787e" id="r_a1a0e1a524e83d51f0cf7cf0db97d787e"><td class="memItemLeft" align="right" valign="top"><a id="a1a0e1a524e83d51f0cf7cf0db97d787e" name="a1a0e1a524e83d51f0cf7cf0db97d787e"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>BDEV_NVME_MP_POLICY_ACTIVE_ACTIVE</b>&#160;&#160;&#160;SPDK_BDEV_NVME_MULTIPATH_POLICY_ACTIVE_ACTIVE</td></tr>
-<tr class="separator:a1a0e1a524e83d51f0cf7cf0db97d787e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a268bdbcfb915cd0187b90c3f0e68ef9e" id="r_a268bdbcfb915cd0187b90c3f0e68ef9e"><td class="memItemLeft" align="right" valign="top"><a id="a268bdbcfb915cd0187b90c3f0e68ef9e" name="a268bdbcfb915cd0187b90c3f0e68ef9e"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>BDEV_NVME_MP_SELECTOR_ROUND_ROBIN</b>&#160;&#160;&#160;SPDK_BDEV_NVME_MULTIPATH_SELECTOR_ROUND_ROBIN</td></tr>
-<tr class="separator:a268bdbcfb915cd0187b90c3f0e68ef9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9e0b5477d9ebe54fbe3658145a3eedb6" id="r_a9e0b5477d9ebe54fbe3658145a3eedb6"><td class="memItemLeft" align="right" valign="top"><a id="a9e0b5477d9ebe54fbe3658145a3eedb6" name="a9e0b5477d9ebe54fbe3658145a3eedb6"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>BDEV_NVME_MP_SELECTOR_QUEUE_DEPTH</b>&#160;&#160;&#160;SPDK_BDEV_NVME_MULTIPATH_SELECTOR_QUEUE_DEPTH</td></tr>
-<tr class="separator:a9e0b5477d9ebe54fbe3658145a3eedb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -234,23 +219,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_nvme_get_de
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Nvme block device abstraction layer. </p>
-</div><h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="afea4be31a3e8fb89d97ffb453e9c4764" name="afea4be31a3e8fb89d97ffb453e9c4764"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afea4be31a3e8fb89d97ffb453e9c4764">&#9670;&#160;</a></span>BDEV_NVME_MP_POLICY_ACTIVE_PASSIVE</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define BDEV_NVME_MP_POLICY_ACTIVE_PASSIVE&#160;&#160;&#160;SPDK_BDEV_NVME_MULTIPATH_POLICY_ACTIVE_PASSIVE</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000001">Deprecated</a></b></dt><dd>Use SPDK_BDEV_NVME_MULTIPATH_POLICY_* and SPDK_BDEV_NVME_MULTIPATH_SELECTOR_* instead. </dd></dl>
-
-</div>
-</div>
-<h2 class="groupheader">Function Documentation</h2>
+</div><h2 class="groupheader">Function Documentation</h2>
 <a id="a8785bb4880bfed734f409d4788e61897" name="a8785bb4880bfed734f409d4788e61897"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8785bb4880bfed734f409d4788e61897">&#9670;&#160;</a></span>spdk_bdev_nvme_create()</h2>
 
@@ -605,7 +574,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_nvme_get_de
 </div><div class="memdoc">
 
 <p>Set multipath policy of the NVMe bdev. </p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000002">Deprecated</a></b></dt><dd>Use <a class="el" href="#a8785bb4880bfed734f409d4788e61897" title="Connect to the NVMe controller and populate namespaces as bdevs.">spdk_bdev_nvme_create()</a> with multipath options instead.</dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000001">Deprecated</a></b></dt><dd>Use <a class="el" href="#a8785bb4880bfed734f409d4788e61897" title="Connect to the NVMe controller and populate namespaces as bdevs.">spdk_bdev_nvme_create()</a> with multipath options instead.</dd></dl>
 <p>Subsequent calls for the same bdev must wait until the current execution finishes.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
