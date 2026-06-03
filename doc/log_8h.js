@@ -23,6 +23,7 @@ var log_8h =
     [ "spdk_log_clear_flag", "log_8h.html#a253e880aa9fd469afd825d77fe9a3211", null ],
     [ "spdk_log_close", "log_8h.html#a41cdc17423a58c475fa785fd491f00e9", null ],
     [ "spdk_log_deprecated", "log_8h.html#a7dabb4fb99a730367b2b3a49ca6bc2e3", null ],
+    [ "spdk_log_deprecation_find_by_tag", "log_8h.html#ac8afa9f3bc8a42cf90a90081b237875b", null ],
     [ "spdk_log_deprecation_register", "log_8h.html#a1c4c05a5d3c40478ff8cfc06a3acd035", null ],
     [ "spdk_log_dump", "log_8h.html#ad360332e6a9699cdfecdac00f768c0b1", null ],
     [ "spdk_log_enable_timestamps", "log_8h.html#add982626769fe03db599037b3357f730", null ],

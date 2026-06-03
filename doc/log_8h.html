@@ -293,6 +293,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_log_enable_times
 <tr class="memitem:a7dabb4fb99a730367b2b3a49ca6bc2e3" id="r_a7dabb4fb99a730367b2b3a49ca6bc2e3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7dabb4fb99a730367b2b3a49ca6bc2e3">spdk_log_deprecated</a> (struct spdk_deprecation *deprecation, const char *file, uint32_t line, const char *func)</td></tr>
 <tr class="memdesc:a7dabb4fb99a730367b2b3a49ca6bc2e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicate that a deprecated feature was used.  <br /></td></tr>
 <tr class="separator:a7dabb4fb99a730367b2b3a49ca6bc2e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8afa9f3bc8a42cf90a90081b237875b" id="r_ac8afa9f3bc8a42cf90a90081b237875b"><td class="memItemLeft" align="right" valign="top">struct spdk_deprecation *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac8afa9f3bc8a42cf90a90081b237875b">spdk_log_deprecation_find_by_tag</a> (const char *tag)</td></tr>
+<tr class="memdesc:ac8afa9f3bc8a42cf90a90081b237875b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find a registered deprecation by its tag string.  <br /></td></tr>
+<tr class="separator:ac8afa9f3bc8a42cf90a90081b237875b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a00b13eb13638a39aa9e67e51c0b25e0e" id="r_a00b13eb13638a39aa9e67e51c0b25e0e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a00b13eb13638a39aa9e67e51c0b25e0e">spdk_log_for_each_deprecation</a> (void *ctx, <a class="el" href="#ac1578d0b093538b785898654350f8f63">spdk_log_for_each_deprecation_fn</a> fn)</td></tr>
 <tr class="memdesc:a00b13eb13638a39aa9e67e51c0b25e0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Iterate over all deprecations, calling a callback on each of them.  <br /></td></tr>
 <tr class="separator:a00b13eb13638a39aa9e67e51c0b25e0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -403,7 +406,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_log_enable_times
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">        <span class="keyword">struct </span>spdk_deprecation *_deprecated_##tag; \</div>
+<b>Value:</b><div class="fragment"><div class="line">        <span class="keyword">static</span> <span class="keyword">struct </span>spdk_deprecation *_deprecated_##tag; \</div>
 <div class="line">        <span class="keyword">static</span> <span class="keywordtype">void</span> __attribute__((constructor)) _spdk_deprecation_register_##tag(<span class="keywordtype">void</span>) \</div>
 <div class="line">        { \</div>
 <div class="line">                <span class="keywordtype">int</span> rc; \</div>
@@ -855,6 +858,32 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_log_enable_times
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="ac8afa9f3bc8a42cf90a90081b237875b" name="ac8afa9f3bc8a42cf90a90081b237875b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac8afa9f3bc8a42cf90a90081b237875b">&#9670;&#160;</a></span>spdk_log_deprecation_find_by_tag()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct spdk_deprecation * spdk_log_deprecation_find_by_tag </td>
+          <td>(</td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>tag</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Find a registered deprecation by its tag string. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tag</td><td>The deprecation tag string to look up. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Pointer to the deprecation, or NULL if not registered. </dd></dl>
 
 </div>
 </div>

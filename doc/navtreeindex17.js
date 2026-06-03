@@ -1,5 +1,6 @@
 var NAVTREEINDEX17 =
 {
+"structspdk__thread__stats.html":[14,0,459],
 "structspdk__trace__argument.html":[14,0,460],
 "structspdk__trace__entry.html":[14,0,461],
 "structspdk__trace__entry__buffer.html":[14,0,462],
@@ -248,6 +249,5 @@ var NAVTREEINDEX17 =
 "unionidxd__groupcap__register.html":[14,0,16],
 "unionidxd__intcause__register.html":[14,0,20],
 "unionidxd__offsets__register.html":[14,0,21],
-"unionidxd__swerr__register.html":[14,0,24],
-"unionidxd__wqcap__register.html":[14,0,25]
+"unionidxd__swerr__register.html":[14,0,24]
 };
