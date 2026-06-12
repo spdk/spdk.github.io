@@ -447,7 +447,8 @@ struct spdk_key *&#160;</td><td class="memItemRight" valign="bottom"><b>dhchap_c
 </div><div class="memdoc">
 
 <p>Enable interrupts for completion notification. </p>
-<p>This is only supported within a primary SPDK process, and if enabled SPDK will not support secondary processes. </p>
+<p>This is only supported within a primary SPDK process, and if enabled SPDK will not support secondary processes.</p>
+<p>Only transports that implement interrupt support can use this option. For such transports, <a class="el" href="nvme_8h.html#a501933bf8b332e8a26aa1c9c1b4b44cc" title="Get file descriptor for an I/O queue pair.">spdk_nvme_qpair_get_fd()</a> may return a file descriptor that signals completion events for a qpair. </p>
 
 </div>
 </div>

@@ -1,11 +1,13 @@
 <map id="spdk_nvme_ns_data" name="spdk_nvme_ns_data">
-<area shape="rect" id="Node000001" title=" " alt="" coords="240,98,394,126"/>
-<area shape="rect" id="Node000002" href="$structspdk__nvme__nmic.html" title=" " alt="" coords="5,5,141,33"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="123,36,282,95,281,100,121,41"/>
-<area shape="rect" id="Node000003" href="$structspdk__nvme__rescap.html" title=" " alt="" coords="165,5,312,33"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="261,43,308,96,304,99,257,46"/>
-<area shape="rect" id="Node000004" href="$structspdk__nvme__fpi.html" title=" " alt="" coords="336,5,456,33"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="377,46,330,99,326,96,373,43"/>
-<area shape="rect" id="Node000005" href="$structspdk__nvme__nsattr.html" title=" " alt="" coords="480,5,621,33"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="504,41,352,100,350,95,502,36"/>
+<area shape="rect" id="Node000001" title="Both spdk_nvme_ns_data_head and spdk_nvme_ns_data must be in sync." alt="" coords="287,109,441,137"/>
+<area shape="rect" id="Node000002" href="$structspdk__nvme__nmic.html" title=" " alt="" coords="31,5,166,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="166,35,192,43,228,54,264,67,340,106,337,111,262,72,227,59,191,48,165,40"/>
+<area shape="rect" id="Node000003" href="$structspdk__nvme__rescap.html" title=" " alt="" coords="25,57,172,85"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="188,84,263,98,301,106,300,111,262,103,187,89"/>
+<area shape="rect" id="Node000004" href="$structspdk__nvme__fpi.html" title=" " alt="" coords="38,109,159,137"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="174,121,286,121,286,126,174,126"/>
+<area shape="rect" id="Node000005" href="$structspdk__nvme__nsattr.html" title=" " alt="" coords="28,161,169,189"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="184,158,262,143,299,135,300,140,263,148,185,163"/>
+<area shape="rect" id="Node000006" href="$structspdk__nvme__ns__data__lbaf.html" title=" " alt="" coords="5,213,192,241"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="164,206,191,198,227,188,262,175,338,135,340,140,264,180,228,193,192,203,165,211"/>
 </map>

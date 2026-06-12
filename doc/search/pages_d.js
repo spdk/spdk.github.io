@@ -5,7 +5,7 @@ var searchData=
   ['memory_20access_20dma_20from_20user_20space_2',['Direct Memory Access (DMA) From User Space',['../memory.html',1,'concepts']]],
   ['message_20passing_20and_20concurrency_3',['Message Passing and Concurrency',['../concurrency.html',1,'concepts']]],
   ['miscellaneous_4',['Miscellaneous',['../misc.html',1,'']]],
-  ['mode_5',['Mode',['../interrupt_mode.html',1,'Interrupt Mode'],['../nvmf_interrupt_mode.html',1,'NVMe-oF Interrupt Mode']]],
+  ['mode_5',['Mode',['../interrupt_mode.html',1,'Interrupt Mode'],['../nvme_interrupt_mode.html',1,'NVMe Interrupt Mode'],['../nvmf_interrupt_mode.html',1,'NVMe-oF Interrupt Mode']]],
   ['module_6',['Writing a Custom Block Device Module',['../bdev_module.html',1,'prog_guides']]],
   ['modules_7',['Driver Modules',['../driver_modules.html',1,'']]],
   ['multipath_8',['NVMe Multipath',['../nvme_multipath.html',1,'user_guides']]],

@@ -161,13 +161,11 @@ $(function(){initNavTree('deprecation.html',''); initResizable(); });
 <p>Updated bit definitions to NVMe 2.3. Old bit names will be removed in the v26.09 release.</p>
 <h3><code>nvme_cpl_without_opc</code></h3>
 <p><code>spdk_nvme_cpl_get_status_string</code>, <code>spdk_nvme_print_completion</code>, and <code>spdk_nvme_qpair_print_completion</code> are deprecated and will be removed in v26.09. Use <code>spdk_nvme_cpl_get_status_string_ext</code>, <code>spdk_nvme_print_completion_ext</code>, and <code>spdk_nvme_qpair_print_completion_ext</code> instead. The new APIs accept the command opcode to correctly distinguish fabric command-specific status codes from NVMe command-specific status codes.</p>
+<h3><code>nvme_ns_get_format_index</code></h3>
+<p><code>spdk_nvme_ns_get_format_index</code> is deprecated and will be removed in v27.01. Use <code>spdk_nvme_ns_get_active_format_index</code> instead.</p>
 <h2>nvmf</h2>
 <p><code>spdk_nvmf_subsystem_create</code>, <code>spdk_nvmf_subsystem_set_sn</code>, <code>spdk_nvmf_subsystem_set_mn</code>, <code>spdk_nvmf_subsystem_set_ana_reporting</code> are deprecated and will be removed in v26.09. Use <code>spdk_nvmf_subsystem_create_ext</code> with subsystem options instead.</p>
 <p><code>spdk_nvmf_subsystem_get_sn</code>, <code>spdk_nvmf_subsystem_get_mn</code>, <code>spdk_nvmf_subsystem_get_max_nsid</code>, <code>spdk_nvmf_subsystem_get_max_namespaces</code>, <code>spdk_nvmf_subsystem_get_ana_reporting</code>, <code>spdk_nvmf_subsystem_get_type</code> are deprecated and will be removed in v26.09. Use <code>spdk_nvmf_subsystem_get_opts</code> instead.</p>
-<h3><code>nvmf_create_subsystem_max_discard_size_kib</code></h3>
-<p>The <code>max_discard_size_kib</code> parameter of <code>nvmf_create_subsystem</code> RPC is deprecated and will be removed in v26.09. Use <code>dmrsl</code> instead.</p>
-<h3><code>nvmf_create_subsystem_max_write_zeroes_size_kib</code></h3>
-<p>The <code>max_write_zeroes_size_kib</code> parameter of <code>nvmf_create_subsystem</code> RPC is deprecated and will be removed in v26.09. Use <code>wzsl</code> instead.</p>
 <h3><code>nvmf_namespace_hide_metadata</code></h3>
 <p>The <code>hide_metadata</code> parameter of <code>nvmf_subsystem_add_ns</code> RPC is deprecated and will be removed in v26.09. Metadata visibility on a namespace is determined by the transport's <code>dif_insert_or_strip</code> option: when any transport on the target has <code>dif_insert_or_strip</code> enabled, namespaces are opened with metadata hidden so the bdev layer can own DIF generate/verify.</p>
 <h3><code>nvmf_tgt_mixed_dif_insert_or_strip</code></h3>

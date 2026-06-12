@@ -70,7 +70,7 @@ var searchData=
   ['internal_67',['ublk Internal',['../ublk.html#ublk_internal',1,'']]],
   ['internal_20memory_20usage_68',['NVMe Driver Internal Memory Usage',['../nvme.html#nvme_memory_usage',1,'']]],
   ['internals_69',['NAND Flash SSD Internals',['../ssd_internals.html',1,'concepts']]],
-  ['interrupt_20mode_70',['Interrupt Mode',['../interrupt_mode.html',1,'Interrupt Mode'],['../nvmf.html#nvmf_config_interrupt',1,'Interrupt Mode'],['../nvmf_interrupt_mode.html',1,'NVMe-oF Interrupt Mode']]],
+  ['interrupt_20mode_70',['Interrupt Mode',['../interrupt_mode.html',1,'Interrupt Mode'],['../nvmf.html#nvmf_config_interrupt',1,'Interrupt Mode'],['../nvme_interrupt_mode.html',1,'NVMe Interrupt Mode'],['../nvmf_interrupt_mode.html',1,'NVMe-oF Interrupt Mode']]],
   ['interrupts_71',['Interrupts',['../userspace.html#userspace_interrupts',1,'']]],
   ['introduction_72',['Introduction',['../intro.html',1,'Introduction'],['../bdev.html#bdev_ug_introduction',1,'Introduction'],['../blob.html#blob_pg_intro',1,'Introduction'],['../nvme.html#nvme_intro',1,'Introduction'],['../tracepoints.html#tracepoints_intro',1,'Introduction'],['../ublk.html#ublk_intro',1,'Introduction'],['../vagrant.html#vagrant_intro',1,'Introduction'],['../vhost.html#vhost_intro',1,'Introduction'],['../vhost_processing.html#vhost_processing_intro',1,'Introduction'],['../virtio.html#virtio_intro',1,'Introduction'],['../vmd.html#vmd_intro',1,'Introduction']]],
   ['invalid_20params_73',['Invalid params',['../jsonrpc.html#jsonrpc_invalid_params',1,'']]],

@@ -333,7 +333,13 @@ Data Structures</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__nsattr.html">spdk_nvme_nsattr</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__ns__data__lbaf.html">spdk_nvme_ns_data_lbaf</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__ns__data__head.html">spdk_nvme_ns_data_head</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Header subset of <a class="el" href="structspdk__nvme__ns__data.html" title="Both spdk_nvme_ns_data_head and spdk_nvme_ns_data must be in sync.">spdk_nvme_ns_data</a> covering everything before lbaf[] and vendor_specific[].  <a href="structspdk__nvme__ns__data__head.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__ns__data.html">spdk_nvme_ns_data</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Both <a class="el" href="structspdk__nvme__ns__data__head.html" title="Header subset of spdk_nvme_ns_data covering everything before lbaf[] and vendor_specific[].">spdk_nvme_ns_data_head</a> and <a class="el" href="structspdk__nvme__ns__data.html" title="Both spdk_nvme_ns_data_head and spdk_nvme_ns_data must be in sync.">spdk_nvme_ns_data</a> must be in sync.  <a href="structspdk__nvme__ns__data.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__nvm__ns__data.html">spdk_nvme_nvm_ns_data</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -544,6 +550,9 @@ Macros</h2></td></tr>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_NVME_KV_SPEC_VER</b>&#160;&#160;&#160;<a class="el" href="#a9760bf73611488342b5903ba702fd7b6">SPDK_NVME_VERSION</a>(1, 3, 0)</td></tr>
 <tr class="memdesc:ab8f1219825e4c5fb708fc34fc3fe8169"><td class="mdescLeft">&#160;</td><td class="mdescRight">KV Command Set specification version 1.3. <br /></td></tr>
 <tr class="separator:ab8f1219825e4c5fb708fc34fc3fe8169"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af35df4b674e40b4ade66fda39d0aaa77" id="r_af35df4b674e40b4ade66fda39d0aaa77"><td class="memItemLeft" align="right" valign="top"><a id="af35df4b674e40b4ade66fda39d0aaa77" name="af35df4b674e40b4ade66fda39d0aaa77"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_NVME_NS_MAX_LBA_FORMATS</b>&#160;&#160;&#160;64</td></tr>
+<tr class="separator:af35df4b674e40b4ade66fda39d0aaa77"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af5aeace321594f3985745fec4b62b348" id="r_af5aeace321594f3985745fec4b62b348"><td class="memItemLeft" align="right" valign="top"><a id="af5aeace321594f3985745fec4b62b348" name="af5aeace321594f3985745fec4b62b348"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_NVME_REGISTRATION_PREEMPTED_MASK</b>&#160;&#160;&#160;(1U &lt;&lt; 1)</td></tr>
 <tr class="separator:af5aeace321594f3985745fec4b62b348"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1713,6 +1722,12 @@ static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_
 <tr class="memitem:ad45859cacd3d5fb6b2c0d10011f9f95e" id="r_ad45859cacd3d5fb6b2c0d10011f9f95e"><td class="memItemLeft" align="right" valign="top"><a id="ad45859cacd3d5fb6b2c0d10011f9f95e" name="ad45859cacd3d5fb6b2c0d10011f9f95e"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(struct <a class="el" href="structspdk__nvme__nsattr.html">spdk_nvme_nsattr</a>)==1, &quot;Incorrect size&quot;)</td></tr>
 <tr class="separator:ad45859cacd3d5fb6b2c0d10011f9f95e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb081cc76ffc3c0579c3ac1630c0fb55" id="r_aeb081cc76ffc3c0579c3ac1630c0fb55"><td class="memItemLeft" align="right" valign="top"><a id="aeb081cc76ffc3c0579c3ac1630c0fb55" name="aeb081cc76ffc3c0579c3ac1630c0fb55"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(struct <a class="el" href="structspdk__nvme__ns__data__lbaf.html">spdk_nvme_ns_data_lbaf</a>)==4, &quot;Incorrect size&quot;)</td></tr>
+<tr class="separator:aeb081cc76ffc3c0579c3ac1630c0fb55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac27241f606103357b31569417daac336" id="r_ac27241f606103357b31569417daac336"><td class="memItemLeft" align="right" valign="top"><a id="ac27241f606103357b31569417daac336" name="ac27241f606103357b31569417daac336"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(struct <a class="el" href="structspdk__nvme__ns__data__head.html">spdk_nvme_ns_data_head</a>)==128, &quot;Incorrect size&quot;)</td></tr>
+<tr class="separator:ac27241f606103357b31569417daac336"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a37c4073a8cd606892be4c21da7c2f598" id="r_a37c4073a8cd606892be4c21da7c2f598"><td class="memItemLeft" align="right" valign="top"><a id="a37c4073a8cd606892be4c21da7c2f598" name="a37c4073a8cd606892be4c21da7c2f598"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(struct <a class="el" href="structspdk__nvme__ns__data.html">spdk_nvme_ns_data</a>)==4096, &quot;Incorrect size&quot;)</td></tr>
 <tr class="separator:a37c4073a8cd606892be4c21da7c2f598"><td class="memSeparator" colspan="2">&#160;</td></tr>

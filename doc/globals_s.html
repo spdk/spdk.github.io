@@ -1395,6 +1395,7 @@ $(function(){initNavTree('globals_s.html',''); initResizable(); });
 <li>SPDK_NVME_NS_EXTENDED_LBA_SUPPORTED&#160;:&#160;<a class="el" href="nvme_8h.html#a018f3b986b4345ee0c6931be9718c163a91203896ead47bbe22e9f7db8a63c14f">nvme.h</a></li>
 <li>spdk_nvme_ns_flags&#160;:&#160;<a class="el" href="nvme_8h.html#a018f3b986b4345ee0c6931be9718c163">nvme.h</a></li>
 <li>SPDK_NVME_NS_FLUSH_SUPPORTED&#160;:&#160;<a class="el" href="nvme_8h.html#a018f3b986b4345ee0c6931be9718c163ad403aafc70c00560a1db768029933400">nvme.h</a></li>
+<li>spdk_nvme_ns_get_active_format_index()&#160;:&#160;<a class="el" href="nvme_8h.html#a422e1497035962d37df7b266c90e7313">nvme.h</a></li>
 <li>spdk_nvme_ns_get_ana_group_id()&#160;:&#160;<a class="el" href="nvme_8h.html#aae2886938b54c456dfb12861305bed24">nvme.h</a></li>
 <li>spdk_nvme_ns_get_ana_state()&#160;:&#160;<a class="el" href="nvme_8h.html#a204d7f2669bc34a9d45ec28d3a661b21">nvme.h</a></li>
 <li>spdk_nvme_ns_get_csi()&#160;:&#160;<a class="el" href="nvme_8h.html#a8740d083341479c3c22861f16582795c">nvme.h</a></li>
@@ -1403,6 +1404,7 @@ $(function(){initNavTree('globals_s.html',''); initResizable(); });
 <li>spdk_nvme_ns_get_dealloc_logical_block_read_value()&#160;:&#160;<a class="el" href="nvme_8h.html#a42040dca95489218417539d2c08d815e">nvme.h</a></li>
 <li>spdk_nvme_ns_get_extended_sector_size()&#160;:&#160;<a class="el" href="nvme_8h.html#a8f3f5c5a738dc7ad7e3b2913bff4324c">nvme.h</a></li>
 <li>spdk_nvme_ns_get_flags()&#160;:&#160;<a class="el" href="nvme_8h.html#a5eff1c1b6fbfb348a1f158b3cf70626f">nvme.h</a></li>
+<li>spdk_nvme_ns_get_format()&#160;:&#160;<a class="el" href="nvme_8h.html#a93f8293957e935b01e349e46a9db54ab">nvme.h</a></li>
 <li>spdk_nvme_ns_get_format_index()&#160;:&#160;<a class="el" href="nvme_8h.html#a95da4dc7b98bfeed010a4a7a899e0ac7">nvme.h</a></li>
 <li>spdk_nvme_ns_get_id()&#160;:&#160;<a class="el" href="nvme_8h.html#a54052303ef2870d6d1856f79ef6ff88a">nvme.h</a></li>
 <li>spdk_nvme_ns_get_max_io_xfer_size()&#160;:&#160;<a class="el" href="nvme_8h.html#ac2aac85501f13bff557d3a224d8ec156">nvme.h</a></li>
@@ -1415,6 +1417,7 @@ $(function(){initNavTree('globals_s.html',''); initResizable(); });
 <li>spdk_nvme_ns_get_sector_size()&#160;:&#160;<a class="el" href="nvme_8h.html#a0d24c0b2b0b2a22b0c0af2ca2e157e04">nvme.h</a></li>
 <li>spdk_nvme_ns_get_size()&#160;:&#160;<a class="el" href="nvme_8h.html#a9e8fb1bbe066260faf305581e16dde86">nvme.h</a></li>
 <li>spdk_nvme_ns_get_uuid()&#160;:&#160;<a class="el" href="nvme_8h.html#a0d58e3529eae6ce649db85943c3e7eaa">nvme.h</a></li>
+<li>spdk_nvme_ns_get_vendor_specific()&#160;:&#160;<a class="el" href="nvme_8h.html#a33868f37490d15d2d64d2b93f03b44e5">nvme.h</a></li>
 <li>spdk_nvme_ns_is_active()&#160;:&#160;<a class="el" href="nvme_8h.html#af755eb3e5a5f767a5bdc544d85667898">nvme.h</a></li>
 <li>spdk_nvme_ns_management_type&#160;:&#160;<a class="el" href="nvme__spec_8h.html#ae4e10443176e941bea118b389679c345">nvme_spec.h</a></li>
 <li>SPDK_NVME_NS_RESERVATION_SUPPORTED&#160;:&#160;<a class="el" href="nvme_8h.html#a018f3b986b4345ee0c6931be9718c163a60edfdee88fbe811250e2f8ff63597d0">nvme.h</a></li>
@@ -1492,8 +1495,8 @@ $(function(){initNavTree('globals_s.html',''); initResizable(); });
 <li>spdk_nvme_sanitize_status_type&#160;:&#160;<a class="el" href="nvme__spec_8h.html#ae89c61a84a87f12156f7046d7e9f78f1">nvme_spec.h</a></li>
 <li>spdk_nvme_scan_attached()&#160;:&#160;<a class="el" href="nvme_8h.html#adb0e98dcf4b18b4cc91b27a03b2b7c89">nvme.h</a></li>
 <li>SPDK_NVME_SGLS_NOT_SUPPORTED&#160;:&#160;<a class="el" href="nvme__spec_8h.html#af3e4102cda177c51a05a6bb02fa62b87a5978d5c7ce04a60c9d86b157037cb2f0">nvme_spec.h</a></li>
-<li>spdk_nvme_sgls_supported&#160;:&#160;<a class="el" href="nvme__spec_8h.html#af3e4102cda177c51a05a6bb02fa62b87">nvme_spec.h</a></li>
 <li>SPDK_NVME_SGLS_SUPPORTED&#160;:&#160;<a class="el" href="nvme__spec_8h.html#af3e4102cda177c51a05a6bb02fa62b87ade9828594ce1d9d11427a38182149d9d">nvme_spec.h</a></li>
+<li>spdk_nvme_sgls_supported&#160;:&#160;<a class="el" href="nvme__spec_8h.html#af3e4102cda177c51a05a6bb02fa62b87">nvme_spec.h</a></li>
 <li>SPDK_NVME_SGLS_SUPPORTED_DWORD_ALIGNED&#160;:&#160;<a class="el" href="nvme__spec_8h.html#af3e4102cda177c51a05a6bb02fa62b87a702868f6b85dd329c4baf00642e99fca">nvme_spec.h</a></li>
 <li>spdk_nvme_status_code_type&#160;:&#160;<a class="el" href="nvme__spec_8h.html#a99fb26e5d5c31f6d3d61397951e44b52">nvme_spec.h</a></li>
 <li>spdk_nvme_tcp_pdu_type&#160;:&#160;<a class="el" href="nvmf__spec_8h.html#ab42a038d2f0a46d2a5d2290cb91fdbfc">nvmf_spec.h</a></li>

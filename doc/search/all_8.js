@@ -22,7 +22,7 @@ var searchData=
   ['enabling_20nvme_20of_20target_20tracepoints_20for_20offline_20analysis_20and_20debug_19',['Enabling NVMe-oF target tracepoints for offline analysis and debug',['../nvmf.html#nvmf_trace',1,'']]],
   ['enabling_20tracepoints_20',['Enabling Tracepoints',['../tracepoints.html#enable_tracepoints',1,'']]],
   ['end_20of_20life_21',['Until End of Life',['../releases.html#EOL',1,'']]],
-  ['endgid_22',['endgid',['../structspdk__nvme__ns__data.html#a459bece07c735fc8a0fbc37bcf0df778',1,'spdk_nvme_ns_data::endgid'],['../structspdk__nvme__kv__ns__data.html#a4e08927ba805ac991a6f8c78ffd33a05',1,'spdk_nvme_kv_ns_data::endgid'],['../structspdk__nvme__ns__iocs__independent__data.html#a080b9133143e1b381b97ad6098f50b78',1,'spdk_nvme_ns_iocs_independent_data::endgid']]],
+  ['endgid_22',['endgid',['../structspdk__nvme__ns__data__head.html#a67b6a365b17e6c0f4a921a74ef96201b',1,'spdk_nvme_ns_data_head::endgid'],['../structspdk__nvme__ns__data.html#a459bece07c735fc8a0fbc37bcf0df778',1,'spdk_nvme_ns_data::endgid'],['../structspdk__nvme__kv__ns__data.html#a4e08927ba805ac991a6f8c78ffd33a05',1,'spdk_nvme_kv_ns_data::endgid'],['../structspdk__nvme__ns__iocs__independent__data.html#a080b9133143e1b381b97ad6098f50b78',1,'spdk_nvme_ns_iocs_independent_data::endgid']]],
   ['endgidmax_23',['endgidmax',['../structspdk__nvme__ctrlr__data.html#a9fc4d89599736e5102c61d8422b3f703',1,'spdk_nvme_ctrlr_data']]],
   ['endian_2eh_24',['endian.h',['../endian_8h.html',1,'']]],
   ['entry_25',['entry',['../structspdk__trace__parser__entry.html#a53973ef677f05f6d067c046dc790da78',1,'spdk_trace_parser_entry']]],
@@ -47,7 +47,7 @@ var searchData=
   ['esnap_5fctx_44',['esnap_ctx',['../structspdk__bs__opts.html#af76efe0633613142bbecc02cb93b1d57',1,'spdk_bs_opts::esnap_ctx'],['../structspdk__blob__open__opts.html#addd88335ed431fbad66e078fd9b40c75',1,'spdk_blob_open_opts::esnap_ctx']]],
   ['esnap_5fid_45',['esnap_id',['../structspdk__blob__opts.html#a26b126d8114a40f822777256cfeef57b',1,'spdk_blob_opts']]],
   ['esnap_5fid_5flen_46',['esnap_id_len',['../structspdk__blob__opts.html#a8d9ec650c522bfcf63261e9c3e60a104',1,'spdk_blob_opts']]],
-  ['eui64_47',['eui64',['../structspdk__nvme__ns__data.html#a9b13e499da82c9fa1a7e4aca8520ae35',1,'spdk_nvme_ns_data::eui64'],['../structspdk__nvme__kv__ns__data.html#a2fc271a84757865a01ec83513a67ae77',1,'spdk_nvme_kv_ns_data::eui64'],['../structspdk__nvmf__ns__opts.html#a88c0f389614abb708b49cb4767ccf307',1,'spdk_nvmf_ns_opts::eui64']]],
+  ['eui64_47',['eui64',['../structspdk__nvme__ns__data__head.html#a24bb59fb90efaee8d9d64edd6986c444',1,'spdk_nvme_ns_data_head::eui64'],['../structspdk__nvme__ns__data.html#a9b13e499da82c9fa1a7e4aca8520ae35',1,'spdk_nvme_ns_data::eui64'],['../structspdk__nvme__kv__ns__data.html#a2fc271a84757865a01ec83513a67ae77',1,'spdk_nvme_kv_ns_data::eui64'],['../structspdk__nvmf__ns__opts.html#a88c0f389614abb708b49cb4767ccf307',1,'spdk_nvmf_ns_opts::eui64']]],
   ['event_20framework_48',['Event Framework',['../event.html',1,'general']]],
   ['event_20framework_20components_49',['SPDK Event Framework Components',['../event.html#event_components',1,'']]],
   ['event_20framework_20design_20considerations_50',['Event Framework Design Considerations',['../event.html#event_design',1,'']]],
@@ -68,7 +68,7 @@ var searchData=
   ['executed_65',['executed',['../structspdk__accel__opcode__stats.html#a80178555117743997ee244b84eeca483',1,'spdk_accel_opcode_stats']]],
   ['exhid_66',['exhid',['../unionspdk__nvme__feat__host__identifier.html#abe582ebd57c5130773da6ec66e49007c',1,'spdk_nvme_feat_host_identifier']]],
   ['expected_67',['expected',['../structspdk__dif__error.html#a9edcaaf246845c6e789e4e1bbf69918a',1,'spdk_dif_error']]],
-  ['extended_68',['extended',['../structspdk__nvme__ns__data.html#a2758ffbbd3aa7376da3f35f3f1cd1a7f',1,'spdk_nvme_ns_data']]],
+  ['extended_68',['extended',['../structspdk__nvme__ns__data__head.html#a411e037fd6f4c852e55f5f7781a9ca41',1,'spdk_nvme_ns_data_head::extended'],['../structspdk__nvme__ns__data.html#a2758ffbbd3aa7376da3f35f3f1cd1a7f',1,'spdk_nvme_ns_data::extended']]],
   ['extended_5fhost_5fid_69',['extended_host_id',['../structspdk__nvme__ctrlr__opts.html#afa9c5708ea859200abb5406b59faaede',1,'spdk_nvme_ctrlr_opts']]],
   ['external_20snapshots_20and_20esnap_20clones_70',['External Snapshots and Esnap Clones',['../blob.html#blob_pg_esnap_and_esnap_clone',1,'']]]
 ];

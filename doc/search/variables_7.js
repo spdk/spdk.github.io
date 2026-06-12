@@ -25,6 +25,6 @@ var searchData=
   ['greatest_5ffree_5fsize_22',['greatest_free_size',['../structspdk__env__dpdk__mem__stats.html#adfd2362f623f27957ed96f2b1bf5db80',1,'spdk_env_dpdk_mem_stats']]],
   ['grp_5flen_23',['grp_len',['../structspdk__ocssd__dev__lba__fmt.html#a8b5ed3a8b5a46f41a1f6e6d389b8bbce',1,'spdk_ocssd_dev_lba_fmt']]],
   ['guard_5finterval_24',['guard_interval',['../structspdk__dif__ctx.html#a593aef5de5694c4abd05554ed4ac92a7',1,'spdk_dif_ctx']]],
-  ['guard_5fvalue_25',['guard_value',['../structspdk__nvme__ns__data.html#a058bfec34018c099918420fbc79fab27',1,'spdk_nvme_ns_data']]],
-  ['guid_5fnever_5freused_26',['guid_never_reused',['../structspdk__nvme__ns__data.html#a1d90d25be4a3d74fcc8097cdd437da25',1,'spdk_nvme_ns_data']]]
+  ['guard_5fvalue_25',['guard_value',['../structspdk__nvme__ns__data__head.html#a49f961a79a95962561ee91f40f6f3e9f',1,'spdk_nvme_ns_data_head::guard_value'],['../structspdk__nvme__ns__data.html#a058bfec34018c099918420fbc79fab27',1,'spdk_nvme_ns_data::guard_value']]],
+  ['guid_5fnever_5freused_26',['guid_never_reused',['../structspdk__nvme__ns__data__head.html#a3a975703bb7972d1a143d99542c1f894',1,'spdk_nvme_ns_data_head::guid_never_reused'],['../structspdk__nvme__ns__data.html#a1d90d25be4a3d74fcc8097cdd437da25',1,'spdk_nvme_ns_data::guid_never_reused']]]
 ];

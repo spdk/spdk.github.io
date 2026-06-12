@@ -798,6 +798,15 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_trty
 <tr class="memitem:a95da4dc7b98bfeed010a4a7a899e0ac7" id="r_a95da4dc7b98bfeed010a4a7a899e0ac7"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a95da4dc7b98bfeed010a4a7a899e0ac7">spdk_nvme_ns_get_format_index</a> (const struct <a class="el" href="structspdk__nvme__ns__data.html">spdk_nvme_ns_data</a> *nsdata)</td></tr>
 <tr class="memdesc:a95da4dc7b98bfeed010a4a7a899e0ac7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the format index of the given namespace.  <br /></td></tr>
 <tr class="separator:a95da4dc7b98bfeed010a4a7a899e0ac7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a422e1497035962d37df7b266c90e7313" id="r_a422e1497035962d37df7b266c90e7313"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a422e1497035962d37df7b266c90e7313">spdk_nvme_ns_get_active_format_index</a> (const struct spdk_nvme_ns *ns)</td></tr>
+<tr class="memdesc:a422e1497035962d37df7b266c90e7313"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the active format index of the given namespace.  <br /></td></tr>
+<tr class="separator:a422e1497035962d37df7b266c90e7313"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33868f37490d15d2d64d2b93f03b44e5" id="r_a33868f37490d15d2d64d2b93f03b44e5"><td class="memItemLeft" align="right" valign="top">const void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a33868f37490d15d2d64d2b93f03b44e5">spdk_nvme_ns_get_vendor_specific</a> (struct spdk_nvme_ns *ns)</td></tr>
+<tr class="memdesc:a33868f37490d15d2d64d2b93f03b44e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the vendor-specific portion of the Identify Namespace data for a namespace.  <br /></td></tr>
+<tr class="separator:a33868f37490d15d2d64d2b93f03b44e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93f8293957e935b01e349e46a9db54ab" id="r_a93f8293957e935b01e349e46a9db54ab"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a93f8293957e935b01e349e46a9db54ab">spdk_nvme_ns_get_format</a> (struct spdk_nvme_ns *ns, uint8_t format_index, struct <a class="el" href="structspdk__nvme__ns__data__lbaf.html">spdk_nvme_ns_data_lbaf</a> *lbaf)</td></tr>
+<tr class="memdesc:a93f8293957e935b01e349e46a9db54ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy a single LBA format entry from a namespace.  <br /></td></tr>
+<tr class="separator:a93f8293957e935b01e349e46a9db54ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aad367fec5a8963f5d930dfae485de6b3" id="r_aad367fec5a8963f5d930dfae485de6b3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aad367fec5a8963f5d930dfae485de6b3">spdk_nvme_ns_supports_extended_lba</a> (struct spdk_nvme_ns *ns)</td></tr>
 <tr class="memdesc:aad367fec5a8963f5d930dfae485de6b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether if the namespace can support extended LBA when end-to-end data protection enabled.  <br /></td></tr>
 <tr class="separator:aad367fec5a8963f5d930dfae485de6b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -7748,6 +7757,33 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_trty
 
 </div>
 </div>
+<a id="a422e1497035962d37df7b266c90e7313" name="a422e1497035962d37df7b266c90e7313"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a422e1497035962d37df7b266c90e7313">&#9670;&#160;</a></span>spdk_nvme_ns_get_active_format_index()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t spdk_nvme_ns_get_active_format_index </td>
+          <td>(</td>
+          <td class="paramtype">const struct spdk_nvme_ns *</td>          <td class="paramname"><span class="paramname"><em>ns</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the active format index of the given namespace. </p>
+<p>This function is thread safe and can be called at any point while the controller is attached to the SPDK NVMe driver.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ns</td><td>Namespace.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the format index of the given namespace. </dd></dl>
+
+</div>
+</div>
 <a id="aae2886938b54c456dfb12861305bed24" name="aae2886938b54c456dfb12861305bed24"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aae2886938b54c456dfb12861305bed24">&#9670;&#160;</a></span>spdk_nvme_ns_get_ana_group_id()</h2>
 
@@ -7967,6 +8003,43 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_trty
 
 </div>
 </div>
+<a id="a93f8293957e935b01e349e46a9db54ab" name="a93f8293957e935b01e349e46a9db54ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a93f8293957e935b01e349e46a9db54ab">&#9670;&#160;</a></span>spdk_nvme_ns_get_format()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_nvme_ns_get_format </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_nvme_ns *</td>          <td class="paramname"><span class="paramname"><em>ns</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>format_index</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structspdk__nvme__ns__data__lbaf.html">spdk_nvme_ns_data_lbaf</a> *</td>          <td class="paramname"><span class="paramname"><em>lbaf</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Copy a single LBA format entry from a namespace. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ns</td><td>Namespace. </td></tr>
+    <tr><td class="paramname">format_index</td><td>Index into the lbaf array. Must satisfy format_index &lt;= nlbaf. </td></tr>
+    <tr><td class="paramname">lbaf</td><td>Output buffer that receives the copy. Must be non-NULL.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, negative errno on failure. </dd></dl>
+
+</div>
+</div>
 <a id="a95da4dc7b98bfeed010a4a7a899e0ac7" name="a95da4dc7b98bfeed010a4a7a899e0ac7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a95da4dc7b98bfeed010a4a7a899e0ac7">&#9670;&#160;</a></span>spdk_nvme_ns_get_format_index()</h2>
 
@@ -7983,6 +8056,7 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_trty
 </div><div class="memdoc">
 
 <p>Get the format index of the given namespace. </p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000002">Deprecated</a></b></dt><dd>Use spdk_nvme_ns_get_active_format_index instead.</dd></dl>
 <p>This function is thread safe and can be called at any point while the controller is attached to the SPDK NVMe driver.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -8287,6 +8361,33 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_trty
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>a pointer to namespace UUID, or NULL if ns does not have a UUID. </dd></dl>
+
+</div>
+</div>
+<a id="a33868f37490d15d2d64d2b93f03b44e5" name="a33868f37490d15d2d64d2b93f03b44e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a33868f37490d15d2d64d2b93f03b44e5">&#9670;&#160;</a></span>spdk_nvme_ns_get_vendor_specific()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const void * spdk_nvme_ns_get_vendor_specific </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_nvme_ns *</td>          <td class="paramname"><span class="paramname"><em>ns</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the vendor-specific portion of the Identify Namespace data for a namespace. </p>
+<p>Returns a pointer to the vendor_specific payload. The pointer is owned by the namespace and remains valid for the lifetime of the namespace handle.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ns</td><td>Namespace.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Pointer to the vendor-specific bytes, or NULL if not available. </dd></dl>
 
 </div>
 </div>

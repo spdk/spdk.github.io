@@ -270,6 +270,8 @@ var annotated_dup =
     [ "spdk_nvme_nmic", "structspdk__nvme__nmic.html", "structspdk__nvme__nmic" ],
     [ "spdk_nvme_ns_cmd_ext_io_opts", "structspdk__nvme__ns__cmd__ext__io__opts.html", "structspdk__nvme__ns__cmd__ext__io__opts" ],
     [ "spdk_nvme_ns_data", "structspdk__nvme__ns__data.html", "structspdk__nvme__ns__data" ],
+    [ "spdk_nvme_ns_data_head", "structspdk__nvme__ns__data__head.html", "structspdk__nvme__ns__data__head" ],
+    [ "spdk_nvme_ns_data_lbaf", "structspdk__nvme__ns__data__lbaf.html", "structspdk__nvme__ns__data__lbaf" ],
     [ "spdk_nvme_ns_id_desc", "structspdk__nvme__ns__id__desc.html", "structspdk__nvme__ns__id__desc" ],
     [ "spdk_nvme_ns_identify_directive_param", "structspdk__nvme__ns__identify__directive__param.html", "structspdk__nvme__ns__identify__directive__param" ],
     [ "spdk_nvme_ns_iocs_independent_data", "structspdk__nvme__ns__iocs__independent__data.html", "structspdk__nvme__ns__iocs__independent__data" ],

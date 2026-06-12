@@ -78,6 +78,8 @@ var nvme__spec_8h =
     [ "spdk_nvme_fpi", "structspdk__nvme__fpi.html", "structspdk__nvme__fpi" ],
     [ "spdk_nvme_nmic", "structspdk__nvme__nmic.html", "structspdk__nvme__nmic" ],
     [ "spdk_nvme_nsattr", "structspdk__nvme__nsattr.html", "structspdk__nvme__nsattr" ],
+    [ "spdk_nvme_ns_data_lbaf", "structspdk__nvme__ns__data__lbaf.html", "structspdk__nvme__ns__data__lbaf" ],
+    [ "spdk_nvme_ns_data_head", "structspdk__nvme__ns__data__head.html", "structspdk__nvme__ns__data__head" ],
     [ "spdk_nvme_ns_data", "structspdk__nvme__ns__data.html", "structspdk__nvme__ns__data" ],
     [ "spdk_nvme_nvm_ns_data", "structspdk__nvme__nvm__ns__data.html", "structspdk__nvme__nvm__ns__data" ],
     [ "spdk_nvme_nvm_ctrlr_data", "structspdk__nvme__nvm__ctrlr__data.html", null ],
