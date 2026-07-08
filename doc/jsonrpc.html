@@ -7957,12 +7957,14 @@ nvmf_set_config</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">poll_groups_mask   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Set cpumask for NVMf poll groups    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">discovery_filter   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Set discovery filter, possible values are: <code>match_any</code> (default) or comma separated values: <code>transport</code>, <code>address</code>, <code>svcid</code>    </td></tr>
+<td class="markdownTableBodyNone">discovery_filter   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Deprecated, use discovery_filters instead    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">dhchap_digests   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">bitmask   </td><td class="markdownTableBodyNone">List of allowed DH-HMAC-CHAP digests.    </td></tr>
+<td class="markdownTableBodyNone">discovery_filters   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">bitmask   </td><td class="markdownTableBodyNone">Comma-separated list of discovery filters    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">dhchap_dhgroups   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">bitmask   </td><td class="markdownTableBodyNone">List of allowed DH-HMAC-CHAP DH groups.    </td></tr>
+<td class="markdownTableBodyNone">dhchap_digests   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">bitmask   </td><td class="markdownTableBodyNone">List of allowed DH-HMAC-CHAP digests.    </td></tr>
 <tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">dhchap_dhgroups   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">bitmask   </td><td class="markdownTableBodyNone">List of allowed DH-HMAC-CHAP DH groups.    </td></tr>
+<tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">dup_host_policy   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">enum   </td><td class="markdownTableBodyNone">Duplicate host policy   </td></tr>
 </table>
 <h4><a class="anchor" id="spdk_nvmf_admin_passthru_conf"></a>
