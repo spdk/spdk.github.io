@@ -8781,17 +8781,17 @@ bdev_lvol_create_lvstore</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">bdev_name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Bdev on which to construct logical volume store    </td></tr>
+<td class="markdownTableBodyNone">bdev_name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Bdev on which to construct the logical volume store    </td></tr>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">lvs_name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of the logical volume store to create    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">cluster_sz   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">Cluster size of the logical volume store in bytes (Default: 4MiB)    </td></tr>
+<td class="markdownTableBodyNone">cluster_sz   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">Cluster size of the logical volume store in bytes    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">clear_method   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">enum   </td><td class="markdownTableBodyNone">Change clear method for data region.    </td></tr>
+<td class="markdownTableBodyNone">clear_method   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">enum   </td><td class="markdownTableBodyNone">Clear method for the data region    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">num_md_pages_per_cluster_ratio   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">Reserved metadata pages per cluster (Default: 100)    </td></tr>
+<td class="markdownTableBodyNone">num_md_pages_per_cluster_ratio   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">Reserved metadata pages per cluster, as a percentage    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">md_page_size   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">Metadata page size of the logical volume store in bytes (Default: max(4KB, bdev phys blocklen)   </td></tr>
+<td class="markdownTableBodyNone">md_page_size   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">Metadata page size in bytes   </td></tr>
 </table>
 <h3>Response</h3>
 <p>UUID of the created logical volume store is returned.</p>
@@ -8952,17 +8952,17 @@ bdev_lvol_create</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">lvol_name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of logical volume to create    </td></tr>
+<td class="markdownTableBodyNone">lvol_name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of the logical volume to create    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">size_in_mib   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">uint64   </td><td class="markdownTableBodyNone">Desired size of logical volume in MiB    </td></tr>
+<td class="markdownTableBodyNone">size_in_mib   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">uint64   </td><td class="markdownTableBodyNone">Desired size of the logical volume in MiB    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">thin_provision   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">True to enable thin provisioning    </td></tr>
+<td class="markdownTableBodyNone">thin_provision   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Enable thin provisioning    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">uuid   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">UUID of logical volume store to create logical volume on    </td></tr>
+<td class="markdownTableBodyNone">uuid   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">UUID of the logical volume store    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">lvs_name   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of logical volume store to create logical volume on    </td></tr>
+<td class="markdownTableBodyNone">lvs_name   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of the logical volume store    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">clear_method   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">enum   </td><td class="markdownTableBodyNone">Change default data clusters clear method.   </td></tr>
+<td class="markdownTableBodyNone">clear_method   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">enum   </td><td class="markdownTableBodyNone">Per-cluster clear method   </td></tr>
 </table>
 <h3>Response</h3>
 <p>UUID of the created logical volume is returned.</p>
@@ -9059,7 +9059,7 @@ bdev_lvol_clone_bdev</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">bdev   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name or UUID for bdev that acts as the external snapshot    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">lvs_name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">logical volume store name    </td></tr>
+<td class="markdownTableBodyNone">lvs_name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of the logical volume store    </td></tr>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">clone_name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name for the logical volume to create   </td></tr>
 </table>
@@ -9227,7 +9227,7 @@ bdev_lvol_decouple_parent</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">UUID or alias of the logical volume to decouple the parent of it   </td></tr>
+<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">UUID or alias of the logical volume to decouple from its parent   </td></tr>
 </table>
 <h3>Example</h3>
 <p>Example request:</p>
