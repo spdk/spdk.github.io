@@ -1966,7 +1966,7 @@ accel_error_inject_error</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">count   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint64   </td><td class="markdownTableBodyNone">Number of errors to inject on each IO channel; 0 disables injection. Default: UINT64_MAX (no limit)    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">interval   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint64   </td><td class="markdownTableBodyNone">Number of operations between successive injections    </td></tr>
+<td class="markdownTableBodyNone">interval   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint64   </td><td class="markdownTableBodyNone">Inject every Nth operation    </td></tr>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">errcode   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">int32   </td><td class="markdownTableBodyNone">Error code to return; only relevant for type=failure   </td></tr>
 </table>
@@ -7499,7 +7499,7 @@ nvmf_subsystem_add_host</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">tgt_name   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Parent NVMe-oF target name.    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">psk   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Path to a file containing PSK for TLS connection    </td></tr>
+<td class="markdownTableBodyNone">psk   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of the pre-shared key to be used for TLS (Enables SSL socket implementation for TCP)    </td></tr>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">dhchap_key   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">DH-HMAC-CHAP key name (required if controller key is specified)    </td></tr>
 <tr class="markdownTableRowEven">
