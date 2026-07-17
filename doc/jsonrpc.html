@@ -3732,7 +3732,9 @@ bdev_nvme_attach_controller</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">allow_unrecognized_csi   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Allow attaching namespaces with unrecognized command set identifiers. These will only support NVMe passthrough.    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">multipath_opts   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">object   </td><td class="markdownTableBodyNone">Multipath options.   </td></tr>
+<td class="markdownTableBodyNone">multipath_opts   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">object   </td><td class="markdownTableBodyNone">Multipath options.    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">disable_sq_flow_control   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Disable SQ flow control (set bit 2 of cattr in Fabrics Connect command). Default: false.   </td></tr>
 </table>
 <h3>Response</h3>
 <p>Array of names of newly created bdevs.</p>
@@ -5727,49 +5729,49 @@ iscsi_set_options</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">auth_file   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Path to CHAP shared secret file (default: "")    </td></tr>
+<td class="markdownTableBodyNone">auth_file   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Path to CHAP shared secret file    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">node_base   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Prefix of the name of iSCSI target node (default: "iqn.2016-06.io.spdk")    </td></tr>
+<td class="markdownTableBodyNone">node_base   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Prefix of the name of iSCSI target node    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">nop_timeout   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">int32   </td><td class="markdownTableBodyNone">Timeout in seconds to nop-in request to the initiator (default: 60)    </td></tr>
+<td class="markdownTableBodyNone">nop_timeout   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">int32   </td><td class="markdownTableBodyNone">NOP-In request timeout to the initiator in seconds    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">nop_in_interval   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">int32   </td><td class="markdownTableBodyNone">Time interval in secs between nop-in requests by the target (default: 30)    </td></tr>
+<td class="markdownTableBodyNone">nop_in_interval   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">int32   </td><td class="markdownTableBodyNone">Interval between NOP-In requests from the target in seconds    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">disable_chap   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">CHAP for discovery session should be disabled (default: <code>false</code>)    </td></tr>
+<td class="markdownTableBodyNone">disable_chap   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Disable CHAP for discovery session    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">require_chap   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">CHAP for discovery session should be required (default: <code>false</code>)    </td></tr>
+<td class="markdownTableBodyNone">require_chap   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Require CHAP for discovery session    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">mutual_chap   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">CHAP for discovery session should be unidirectional (<code>false</code>) or bidirectional (<code>true</code>) (default: <code>false</code>)    </td></tr>
+<td class="markdownTableBodyNone">mutual_chap   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Enable bidirectional CHAP for discovery session    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">chap_group   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">int32   </td><td class="markdownTableBodyNone">CHAP group ID for discovery session (default: 0)    </td></tr>
+<td class="markdownTableBodyNone">chap_group   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">int32   </td><td class="markdownTableBodyNone">CHAP authentication group ID for discovery session (non-zero values must reference a precreated group)    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">max_sessions   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">Maximum number of sessions in the host (default: 128)    </td></tr>
+<td class="markdownTableBodyNone">max_sessions   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">Maximum number of sessions in the host    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">max_queue_depth   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">Maximum number of outstanding I/Os per queue (default: 64)    </td></tr>
+<td class="markdownTableBodyNone">max_queue_depth   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">Maximum number of outstanding I/Os per queue    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">max_connections_per_session   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">Session specific parameter, MaxConnections (default: 2)    </td></tr>
+<td class="markdownTableBodyNone">max_connections_per_session   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">Negotiated MaxConnections value per session    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">default_time2wait   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">Session specific parameter, DefaultTime2Wait (default: 2)    </td></tr>
+<td class="markdownTableBodyNone">default_time2wait   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">Negotiated DefaultTime2Wait value in seconds    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">default_time2retain   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">Session specific parameter, DefaultTime2Retain (default: 20)    </td></tr>
+<td class="markdownTableBodyNone">default_time2retain   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">Negotiated DefaultTime2Retain value in seconds    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">first_burst_length   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">Session specific parameter, FirstBurstLength (default: 8192)    </td></tr>
+<td class="markdownTableBodyNone">first_burst_length   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">Negotiated FirstBurstLength value in bytes    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">immediate_data   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Session specific parameter, ImmediateData (default: <code>true</code>)    </td></tr>
+<td class="markdownTableBodyNone">immediate_data   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Negotiated ImmediateData value    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">error_recovery_level   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">Session specific parameter, ErrorRecoveryLevel (default: 0)    </td></tr>
+<td class="markdownTableBodyNone">error_recovery_level   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">Negotiated ErrorRecoveryLevel value    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">allow_duplicated_isid   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Allow duplicated initiator session ID (default: <code>false</code>)    </td></tr>
+<td class="markdownTableBodyNone">allow_duplicated_isid   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Allow duplicated initiator session ID    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">max_large_datain_per_connection   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">Max number of outstanding split read I/Os per connection (default: 64)    </td></tr>
+<td class="markdownTableBodyNone">max_large_datain_per_connection   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">Maximum number of outstanding split read I/Os per connection    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">max_r2t_per_connection   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">Max number of outstanding R2Ts per connection (default: 4)    </td></tr>
+<td class="markdownTableBodyNone">max_r2t_per_connection   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">Maximum number of outstanding R2Ts per connection    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">pdu_pool_size   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">Number of PDUs in the pool (default: approximately 2 * max_sessions * (max_queue_depth + max_connections_per_session))    </td></tr>
+<td class="markdownTableBodyNone">pdu_pool_size   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">Number of PDUs in the pool    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">immediate_data_pool_size   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">Number of immediate data buffers in the pool (default: 128 * max_sessions)    </td></tr>
+<td class="markdownTableBodyNone">immediate_data_pool_size   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">Number of immediate data buffers in the pool    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">data_out_pool_size   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">Number of data out buffers in the pool (default: 16 * max_sessions)   </td></tr>
+<td class="markdownTableBodyNone">data_out_pool_size   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">Number of data out buffers in the pool   </td></tr>
 </table>
 <h3>Example</h3>
 <p>Example request:</p>
@@ -5867,13 +5869,13 @@ iscsi_set_discovery_auth</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">disable_chap   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">CHAP for discovery session should be disabled (default: <code>false</code>)    </td></tr>
+<td class="markdownTableBodyNone">disable_chap   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Disable CHAP for discovery session    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">require_chap   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">CHAP for discovery session should be required (default: <code>false</code>)    </td></tr>
+<td class="markdownTableBodyNone">require_chap   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Require CHAP for discovery session    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">mutual_chap   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">CHAP for discovery session should be unidirectional (<code>false</code>) or bidirectional (<code>true</code>) (default: <code>false</code>)    </td></tr>
+<td class="markdownTableBodyNone">mutual_chap   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Enable bidirectional CHAP for discovery session    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">chap_group   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">int32   </td><td class="markdownTableBodyNone">CHAP group ID for discovery session (default: 0)   </td></tr>
+<td class="markdownTableBodyNone">chap_group   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">int32   </td><td class="markdownTableBodyNone">CHAP authentication group ID for discovery session (non-zero values must reference a precreated group)   </td></tr>
 </table>
 <h3>Example</h3>
 <p>Example request:</p>
@@ -5903,7 +5905,7 @@ iscsi_create_auth_group</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">tag   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">int32   </td><td class="markdownTableBodyNone">Authentication group tag (unique, integer &gt; 0)    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">secrets   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">array   </td><td class="markdownTableBodyNone">Array of <a class="el" href="#rpc_iscsi_create_auth_group_secret">secret</a> objects   </td></tr>
+<td class="markdownTableBodyNone">secrets   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">array   </td><td class="markdownTableBodyNone">List of CHAP secrets for this authentication group   </td></tr>
 </table>
 <h4><a class="anchor" id="rpc_iscsi_create_auth_group_secret"></a>
 secret</h4>
@@ -6028,13 +6030,13 @@ iscsi_auth_group_add_secret</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">tag   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">int32   </td><td class="markdownTableBodyNone">Authentication group tag (unique, integer &gt; 0)    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">user   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Unidirectional CHAP name    </td></tr>
+<td class="markdownTableBodyNone">user   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">User name for one-way (unidirectional) CHAP authentication    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">secret   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Unidirectional CHAP secret    </td></tr>
+<td class="markdownTableBodyNone">secret   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Secret for one-way (unidirectional) CHAP authentication    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">muser   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Bidirectional CHAP name    </td></tr>
+<td class="markdownTableBodyNone">muser   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">User name for mutual (bidirectional) CHAP authentication    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">msecret   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Bidirectional CHAP secret   </td></tr>
+<td class="markdownTableBodyNone">msecret   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Secret for mutual (bidirectional) CHAP authentication   </td></tr>
 </table>
 <h3>Example</h3>
 <p>Example request:</p>
@@ -6066,7 +6068,7 @@ iscsi_auth_group_remove_secret</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">tag   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">int32   </td><td class="markdownTableBodyNone">Authentication group tag (unique, integer &gt; 0)    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">user   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Unidirectional CHAP name   </td></tr>
+<td class="markdownTableBodyNone">user   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">User name for one-way (unidirectional) CHAP authentication   </td></tr>
 </table>
 <h3>Example</h3>
 <p>Example request:</p>
@@ -6136,9 +6138,9 @@ iscsi_create_initiator_group</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">tag   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">int32   </td><td class="markdownTableBodyNone">Initiator group tag (unique, integer &gt; 0)    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">initiators   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">array   </td><td class="markdownTableBodyNone">Not empty array of initiator hostnames or IP addresses    </td></tr>
+<td class="markdownTableBodyNone">initiators   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">array   </td><td class="markdownTableBodyNone">List of initiator hostnames or IP addresses    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">netmasks   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">array   </td><td class="markdownTableBodyNone">Not empty array of initiator netmasks   </td></tr>
+<td class="markdownTableBodyNone">netmasks   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">array   </td><td class="markdownTableBodyNone">List of initiator netmasks   </td></tr>
 </table>
 <h3>Example</h3>
 <p>Example request:</p>
@@ -6197,11 +6199,11 @@ iscsi_initiator_group_add_initiators</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">tag   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">int32   </td><td class="markdownTableBodyNone">Existing initiator group tag.    </td></tr>
+<td class="markdownTableBodyNone">tag   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">int32   </td><td class="markdownTableBodyNone">Initiator group tag (unique, integer &gt; 0)    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">initiators   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">array   </td><td class="markdownTableBodyNone">Array of initiator hostnames or IP addresses    </td></tr>
+<td class="markdownTableBodyNone">initiators   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">array   </td><td class="markdownTableBodyNone">List of initiator hostnames or IP addresses    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">netmasks   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">array   </td><td class="markdownTableBodyNone">Array of initiator netmasks   </td></tr>
+<td class="markdownTableBodyNone">netmasks   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">array   </td><td class="markdownTableBodyNone">List of initiator netmasks   </td></tr>
 </table>
 <h3>Example</h3>
 <p>Example request:</p>
@@ -6233,11 +6235,11 @@ iscsi_initiator_group_remove_initiators</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">tag   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">int32   </td><td class="markdownTableBodyNone">Existing initiator group tag.    </td></tr>
+<td class="markdownTableBodyNone">tag   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">int32   </td><td class="markdownTableBodyNone">Initiator group tag (unique, integer &gt; 0)    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">initiators   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">array   </td><td class="markdownTableBodyNone">Array of initiator hostnames or IP addresses    </td></tr>
+<td class="markdownTableBodyNone">initiators   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">array   </td><td class="markdownTableBodyNone">List of initiator hostnames or IP addresses    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">netmasks   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">array   </td><td class="markdownTableBodyNone">Array of initiator netmasks   </td></tr>
+<td class="markdownTableBodyNone">netmasks   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">array   </td><td class="markdownTableBodyNone">List of initiator netmasks   </td></tr>
 </table>
 <h3>Example</h3>
 <p>Example request:</p>
@@ -6344,23 +6346,23 @@ iscsi_create_target_node</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">alias_name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Target node alias name (ASCII)    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">pg_ig_maps   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">array   </td><td class="markdownTableBodyNone">Array of (Portal_Group_Tag:Initiator_Group_Tag) mappings    </td></tr>
+<td class="markdownTableBodyNone">pg_ig_maps   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">array   </td><td class="markdownTableBodyNone">List of portal-group-tag to initiator-group-tag mappings    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">luns   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">array   </td><td class="markdownTableBodyNone">Array of Bdev names to LUN ID mappings    </td></tr>
+<td class="markdownTableBodyNone">luns   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">array   </td><td class="markdownTableBodyNone">List of bdev-name to LUN-ID mappings    </td></tr>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">queue_depth   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">int32   </td><td class="markdownTableBodyNone">Target queue depth    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">disable_chap   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">CHAP authentication should be disabled for this target    </td></tr>
+<td class="markdownTableBodyNone">disable_chap   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Disable CHAP authentication for this target node    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">require_chap   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">CHAP authentication should be required for this target    </td></tr>
+<td class="markdownTableBodyNone">require_chap   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Require CHAP authentication for this target node    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">mutual_chap   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">CHAP authentication should be bidirectional (<code>true</code>) or unidirectional (<code>false</code>)    </td></tr>
+<td class="markdownTableBodyNone">mutual_chap   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Enable bidirectional CHAP authentication for this target node    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">chap_group   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">int32   </td><td class="markdownTableBodyNone">Authentication group ID for this target node    </td></tr>
+<td class="markdownTableBodyNone">chap_group   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">int32   </td><td class="markdownTableBodyNone">Authentication group ID for this target node (non-zero values must reference a precreated group)    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">header_digest   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Header Digest should be required for this target node    </td></tr>
+<td class="markdownTableBodyNone">header_digest   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Require Header Digest for this target node    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">data_digest   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Data Digest should be required for this target node   </td></tr>
+<td class="markdownTableBodyNone">data_digest   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Require Data Digest for this target node   </td></tr>
 </table>
 <h3>Example</h3>
 <p>Example request:</p>
@@ -6411,13 +6413,13 @@ iscsi_target_node_set_auth</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Target node name (ASCII)    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">disable_chap   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">CHAP authentication should be disabled for this target    </td></tr>
+<td class="markdownTableBodyNone">disable_chap   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Disable CHAP authentication for this target node    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">require_chap   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">CHAP authentication should be required for this target    </td></tr>
+<td class="markdownTableBodyNone">require_chap   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Require CHAP authentication for this target node    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">mutual_chap   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">CHAP authentication should be bidirectional (<code>true</code>) or unidirectional (<code>false</code>)    </td></tr>
+<td class="markdownTableBodyNone">mutual_chap   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Enable bidirectional CHAP authentication for this target node    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">chap_group   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">int32   </td><td class="markdownTableBodyNone">Authentication group ID for this target node   </td></tr>
+<td class="markdownTableBodyNone">chap_group   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">int32   </td><td class="markdownTableBodyNone">Authentication group ID for this target node (non-zero values must reference a precreated group)   </td></tr>
 </table>
 <h3>Example</h3>
 <p>Example request:</p>
@@ -6448,7 +6450,7 @@ iscsi_target_node_add_pg_ig_maps</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Target node name (ASCII)    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">pg_ig_maps   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">array   </td><td class="markdownTableBodyNone">Not empty array of initiator to portal group mappings objects   </td></tr>
+<td class="markdownTableBodyNone">pg_ig_maps   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">array   </td><td class="markdownTableBodyNone">List of portal-group-tag to initiator-group-tag mappings   </td></tr>
 </table>
 <h4>Portal to Initiator group mappings object</h4>
 <table class="markdownTable">
@@ -6499,7 +6501,7 @@ iscsi_target_node_remove_pg_ig_maps</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Target node name (ASCII)    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">pg_ig_maps   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">array   </td><td class="markdownTableBodyNone">Not empty array of Portal to Initiator group mappings objects   </td></tr>
+<td class="markdownTableBodyNone">pg_ig_maps   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">array   </td><td class="markdownTableBodyNone">List of portal-group-tag to initiator-group-tag mappings   </td></tr>
 </table>
 <h4>Portal to Initiator group mappings object</h4>
 <table class="markdownTable">
@@ -6603,13 +6605,13 @@ iscsi_create_portal_group</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">tag   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">int32   </td><td class="markdownTableBodyNone">Portal group tag    </td></tr>
+<td class="markdownTableBodyNone">tag   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">int32   </td><td class="markdownTableBodyNone">Portal group tag (unique, integer &gt; 0)    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">portals   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">array   </td><td class="markdownTableBodyNone">Not empty array of portals    </td></tr>
+<td class="markdownTableBodyNone">portals   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">array   </td><td class="markdownTableBodyNone">List of portals in host:port format    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">private   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">When true, portals in this group are not returned by a discovery session. Used for login redirection. (default: <code>false</code>)    </td></tr>
+<td class="markdownTableBodyNone">private   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Private portal group (portals are not returned by a discovery session; used for login redirection)    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">wait   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">When true, do not listen on portals until it is started explicitly. (default: <code>false</code>)   </td></tr>
+<td class="markdownTableBodyNone">wait   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Do not listen on portals until started explicitly   </td></tr>
 </table>
 <h4>Portal object</h4>
 <table class="markdownTable">
@@ -6650,7 +6652,7 @@ iscsi_start_portal_group</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">tag   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">int32   </td><td class="markdownTableBodyNone">Existing portal group tag   </td></tr>
+<td class="markdownTableBodyNone">tag   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">int32   </td><td class="markdownTableBodyNone">Portal group tag (unique, integer &gt; 0)   </td></tr>
 </table>
 <h3>Example</h3>
 <p>Example request:</p>
@@ -6676,7 +6678,7 @@ iscsi_delete_portal_group</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">tag   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">int32   </td><td class="markdownTableBodyNone">Existing portal group tag   </td></tr>
+<td class="markdownTableBodyNone">tag   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">int32   </td><td class="markdownTableBodyNone">Portal group tag (unique, integer &gt; 0)   </td></tr>
 </table>
 <h3>Example</h3>
 <p>Example request:</p>
@@ -6705,13 +6707,13 @@ iscsi_portal_group_set_auth</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">tag   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">int32   </td><td class="markdownTableBodyNone">Portal group tag (unique, integer &gt; 0)    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">disable_chap   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">CHAP for discovery session should be disabled (default: <code>false</code>)    </td></tr>
+<td class="markdownTableBodyNone">disable_chap   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Disable CHAP authentication for this portal group    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">require_chap   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">CHAP for discovery session should be required (default: <code>false</code>)    </td></tr>
+<td class="markdownTableBodyNone">require_chap   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Require CHAP authentication for this portal group    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">mutual_chap   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">CHAP for discovery session should be unidirectional (<code>false</code>) or bidirectional (<code>true</code>) (default: <code>false</code>)    </td></tr>
+<td class="markdownTableBodyNone">mutual_chap   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Enable bidirectional CHAP authentication for this portal group    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">chap_group   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">int32   </td><td class="markdownTableBodyNone">CHAP group ID for discovery session (default: 0)   </td></tr>
+<td class="markdownTableBodyNone">chap_group   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">int32   </td><td class="markdownTableBodyNone">CHAP authentication group ID for this portal group (non-zero values must reference a precreated group)   </td></tr>
 </table>
 <h3>Example</h3>
 <p>Example request:</p>
@@ -6827,9 +6829,9 @@ iscsi_target_node_add_lun</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Target node name (ASCII)    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">bdev_name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">bdev name to be added as a LUN    </td></tr>
+<td class="markdownTableBodyNone">bdev_name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">bdev name to be added as a LUN (must not contain spaces or colons)    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">lun_id   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">int32   </td><td class="markdownTableBodyNone">LUN ID (default: first free ID)   </td></tr>
+<td class="markdownTableBodyNone">lun_id   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">int32   </td><td class="markdownTableBodyNone">LUN ID. -1 or omitted assigns the lowest free ID   </td></tr>
 </table>
 <h3>Example</h3>
 <p>Example request:</p>
@@ -6860,11 +6862,11 @@ iscsi_target_node_set_redirect</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Target node name (ASCII)    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">pg_tag   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">int32   </td><td class="markdownTableBodyNone">Existing portal group tag    </td></tr>
+<td class="markdownTableBodyNone">pg_tag   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">int32   </td><td class="markdownTableBodyNone">Portal group tag (unique, integer &gt; 0)    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">redirect_host   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Numeric IP address to which the target node is redirected    </td></tr>
+<td class="markdownTableBodyNone">redirect_host   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Numeric IP address of the redirect portal    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">redirect_port   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Numeric TCP port to which the target node is redirected   </td></tr>
+<td class="markdownTableBodyNone">redirect_port   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Numeric TCP port of the redirect portal   </td></tr>
 </table>
 <h3>Example</h3>
 <p>Example request:</p>
@@ -6895,7 +6897,7 @@ iscsi_target_node_request_logout</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Target node name (ASCII)    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">pg_tag   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">int32   </td><td class="markdownTableBodyNone">Existing portal group tag   </td></tr>
+<td class="markdownTableBodyNone">pg_tag   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">int32   </td><td class="markdownTableBodyNone">Portal group tag (unique, integer &gt; 0)   </td></tr>
 </table>
 <h3>Example</h3>
 <p>Example request:</p>
@@ -6922,9 +6924,9 @@ iscsi_enable_histogram</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Iscsi target node name    </td></tr>
+<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">iSCSI target node name    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">enable   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Enable or disable histogram on specified target node   </td></tr>
+<td class="markdownTableBodyNone">enable   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Enable or disable histogram for the specified iSCSI target node   </td></tr>
 </table>
 <h3>Example</h3>
 <p>Example request:</p>
@@ -6951,7 +6953,7 @@ iscsi_get_histogram</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Iscsi target node name   </td></tr>
+<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">iSCSI target node name   </td></tr>
 </table>
 <h3>Response</h3>
 <table class="markdownTable">
