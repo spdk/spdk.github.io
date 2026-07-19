@@ -1,0 +1,30 @@
+---
+layout: post
+title:  "SPDK NVMe Driver Tutorial - Part 1"
+img: p3600-u2-iso.png
+author: Ben Walker
+categories: tutorial
+---
+
+SPDK contains a user space, polled mode, [NVMe](http://nvmexpress.org) driver designed to provide direct access to NVMe devices with as little overhead as possible. This tutorial is designed to walk through the basics of getting your first program up and running, to the point where you can send I/O. I'm assuming for this article that you know what NVMe is and that you are generally comfortable using a bash shell on Linux, writing code in C, and using git. I may gloss over some details related to those things in the interest of keeping this concise. If anything is unclear, shoot the team a message on our [mailing list](https://lists.01.org/mailman/listinfo/spdk) or join our [Gitter Chat](https://gitter.im/spdk/spdk).
+
+The first thing you'll need to do is clone the repository from our [GitHub page](http://github.com/spdk/spdk) and build it. The README on our GitHub page describes that process. Many of us do our development on Fedora Linux, but Ubuntu, CentOs, and FreeBSD are also tested daily. The code should run on most modern distributions of Linux, but it's probably safest to pick one of the distributions that is being actively used if you aren't an expert.
+
+You'll also need to get the appropriate hardware, which is an NVMe device. ![Intel P3600 SSD](/img/blog/p3600-aic.png) **Important: Do not install your operating system onto the NVMe device.** We're going to unbind this device from the kernel later on and if your operating system resides on this device your system will crash. I have 4 Intel P3700 devices in my development box, and using something in Intel's P3*** line probably the safest bet in terms of devices to get started with if you aren't already an expert on NVMe. The driver is strictly NVMe specification compliant (any version), so it should work with any vendor's device of course. We welcome any and all patches to make the driver work universally and we hope to expand our device pool over time to ensure compatibility.
+
+Once the driver is compiled, make sure to run the set up scripts as root.
+
+    sudo ./scripts/configure_hugepages.sh
+    sudo ./scripts/setup.sh
+
+The first script allocates some hugepages on your system. The driver, or more accurately DPDK, uses hugepages as a mechanism for allocating pinned, physically contiguous memory. Pinned memory means the memory will not be paged out. It's important to not allow the memory to be paged out because the NVMe device will be asynchronously performing DMA operations on the memory we provide it. Physically contiguous is less important, but some data structures used internally by the driver must be in physically contiguous memory. These structures are usually less than 4k in size, so this is not a difficult requirement to meet. All user data passed to the SPDK driver to be sent to the device must be allocated from hugepages as well. The easiest way to allocate memory is to use DPDK's memory allocation functions like `rte_malloc()`. See the DPDK [malloc module documentation](http://dpdk.org/doc/api/rte__malloc_8h.html).
+
+The second script unbinds the device from the kernel and instead binds it to a placeholder driver like uio_pci_generic or vfio-pci so that the kernel knows not to touch it. This is how the SPDK NVMe driver takes control of the device. If your system has an I/OAT device, you'll see that get unbound from the kernel as well. You can give the devices back to the kernel at any time with the following command:
+
+    sudo ./scripts/setup.sh reset
+
+At this point, you should be able to run some of the examples. Let's try to run the identify example, which prints out a whole bunch of information about your device.
+
+    sudo ./examples/nvme/identify/identify
+
+In the next tutorial, we'll start writing our own program that will do a simple read and a write from a single thread.
