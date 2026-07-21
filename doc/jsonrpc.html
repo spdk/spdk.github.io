@@ -1759,13 +1759,13 @@ accel_crypto_key_create</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">cipher   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">enum   </td><td class="markdownTableBodyNone">Crypto cipher: AES_CBC, AES_XTS    </td></tr>
+<td class="markdownTableBodyNone">cipher   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">enum   </td><td class="markdownTableBodyNone">Crypto cipher    </td></tr>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">key   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Key in hex form    </td></tr>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">key2   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Second part of the key (or tweak) in hex form, required for AES_XTS    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">tweak_mode   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">enum   </td><td class="markdownTableBodyNone">Tweak mode, default: SIMPLE_LBA    </td></tr>
+<td class="markdownTableBodyNone">tweak_mode   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">enum   </td><td class="markdownTableBodyNone">Tweak mode    </td></tr>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of the key   </td></tr>
 </table>
@@ -1962,7 +1962,7 @@ accel_error_inject_error</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">opcode   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">enum   </td><td class="markdownTableBodyNone">Accel operation to inject errors into    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">type   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">enum   </td><td class="markdownTableBodyNone">Injection type: corrupt (corrupt data), failure (fail operation), disable (disable injection)    </td></tr>
+<td class="markdownTableBodyNone">type   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">enum   </td><td class="markdownTableBodyNone">Injection type    </td></tr>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">count   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint64   </td><td class="markdownTableBodyNone">Number of errors to inject on each IO channel; 0 disables injection. Default: UINT64_MAX (no limit)    </td></tr>
 <tr class="markdownTableRowEven">
@@ -2137,7 +2137,7 @@ dpdk_cryptodev_set_driver</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">driver_name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">enum   </td><td class="markdownTableBodyNone">DPDK crypto PMD name   </td></tr>
+<td class="markdownTableBodyNone">driver_name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">enum   </td><td class="markdownTableBodyNone">DPDK crypto driver   </td></tr>
 </table>
 <h3>Example</h3>
 <p>Example request:</p>
@@ -2216,7 +2216,7 @@ accel_mlx5_dump_stats</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">level   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">enum   </td><td class="markdownTableBodyNone">Verbosity level, default: channel   </td></tr>
+<td class="markdownTableBodyNone">level   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">enum   </td><td class="markdownTableBodyNone">Verbosity level   </td></tr>
 </table>
 <h3>Example</h3>
 <p>Example request:</p>
@@ -3734,7 +3734,7 @@ bdev_nvme_attach_controller</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">multipath_opts   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">object   </td><td class="markdownTableBodyNone">Multipath options.    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">disable_sq_flow_control   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Disable SQ flow control (set bit 2 of cattr in Fabrics Connect command). Default: false.   </td></tr>
+<td class="markdownTableBodyNone">disable_sq_flow_control   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Disable SQ flow control (set bit 2 of cattr in Fabrics Connect command).   </td></tr>
 </table>
 <h3>Response</h3>
 <p>Array of names of newly created bdevs.</p>
@@ -5592,11 +5592,11 @@ bdev_virtio_attach_controller</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Prefix used to name the resulting bdev(s)    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">trtype   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">enum   </td><td class="markdownTableBodyNone">Virtio transport type: pci, user, vfio-user    </td></tr>
+<td class="markdownTableBodyNone">trtype   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">enum   </td><td class="markdownTableBodyNone">Virtio transport type    </td></tr>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">traddr   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Transport-specific address (PCI BDF for pci; UNIX socket path for user and vfio-user)    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">dev_type   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">enum   </td><td class="markdownTableBodyNone">Virtio device type: blk, scsi    </td></tr>
+<td class="markdownTableBodyNone">dev_type   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">enum   </td><td class="markdownTableBodyNone">Virtio device type    </td></tr>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">vq_count   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">Number of virtqueues (user transport only). Default: 1    </td></tr>
 <tr class="markdownTableRowEven">
@@ -6999,7 +6999,7 @@ nvmf_create_transport</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">trtype   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Transport type (ex. RDMA)    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">tgt_name   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Parent NVMe-oF target name.    </td></tr>
+<td class="markdownTableBodyNone">tgt_name   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Parent NVMe-oF target name    </td></tr>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">max_queue_depth   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint16   </td><td class="markdownTableBodyNone">Max number of outstanding I/O per queue    </td></tr>
 <tr class="markdownTableRowEven">
@@ -7009,45 +7009,45 @@ nvmf_create_transport</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">max_io_size   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">Max I/O size (bytes)    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">io_unit_size   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">I/O unit size (bytes)    </td></tr>
+<td class="markdownTableBodyNone">io_unit_size   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">I/O unit size (bytes). Deprecated, use iobuf_set_options instead.    </td></tr>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">max_aq_depth   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">Max number of admin cmds per AQ    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">num_shared_buffers   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">The number of pooled data buffers available to the transport    </td></tr>
+<td class="markdownTableBodyNone">num_shared_buffers   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">Number of pooled data buffers available to the transport. Deprecated, use iobuf_set_options instead    </td></tr>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">buf_cache_size   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">The number of shared buffers to reserve for each poll group    </td></tr>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">iobuf_small_cache_size   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">The number of shared buffers from a small iobuf pool to reserve for each poll group    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">iobuf_large_cache_size   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">The number of shared buffers from a large iobuf pool to reserve for each poll group    </td></tr>
+<td class="markdownTableBodyNone">iobuf_large_cache_size   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">Number of shared buffers from the large iobuf pool to reserve for each poll group    </td></tr>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">zcopy   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Use zero-copy operations if the underlying bdev supports them    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">num_cqe   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">int32   </td><td class="markdownTableBodyNone">The number of CQ entries. Only used when no_srq=true (RDMA only)    </td></tr>
+<td class="markdownTableBodyNone">num_cqe   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">int32   </td><td class="markdownTableBodyNone">Number of CQ entries, only used when no_srq=true (RDMA only)    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">max_srq_depth   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">The number of elements in a per-thread shared receive queue (RDMA only)    </td></tr>
+<td class="markdownTableBodyNone">max_srq_depth   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">Number of elements in the per-thread shared receive queue (RDMA only)    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">no_srq   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Disable shared receive queue even for devices that support it. (RDMA only)    </td></tr>
+<td class="markdownTableBodyNone">no_srq   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Disable shared receive queue even for devices that support it (RDMA only)    </td></tr>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">c2h_success   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Disable C2H success optimization (TCP only)    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">dif_insert_or_strip   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Enable DIF insert for write I/O and DIF strip for read I/O DIF    </td></tr>
+<td class="markdownTableBodyNone">dif_insert_or_strip   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Enable DIF insert for write I/O and DIF strip for read I/O (TCP only)    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">sock_priority   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">The socket priority of the connection owned by this transport (TCP only)    </td></tr>
+<td class="markdownTableBodyNone">sock_priority   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">Socket priority of connections owned by this transport (TCP only)    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">acceptor_backlog   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">int32   </td><td class="markdownTableBodyNone">The number of pending connections allowed in backlog before failing new connection attempts (RDMA only)    </td></tr>
+<td class="markdownTableBodyNone">acceptor_backlog   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">int32   </td><td class="markdownTableBodyNone">Number of pending connections allowed in the backlog before failing new connection attempts (RDMA only)    </td></tr>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">abort_timeout_sec   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">Abort execution timeout value, in seconds    </td></tr>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">no_wr_batching   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Disable work requests batching (RDMA only)    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">control_msg_num   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint16   </td><td class="markdownTableBodyNone">The number of control messages per poll group (TCP only)    </td></tr>
+<td class="markdownTableBodyNone">control_msg_num   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint16   </td><td class="markdownTableBodyNone">Number of control messages per poll group (TCP only)    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">disable_mappable_bar0   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">disable client mmap() of BAR0 (VFIO-USER only)    </td></tr>
+<td class="markdownTableBodyNone">disable_mappable_bar0   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Disable client mmap() of BAR0 (VFIO-USER only)    </td></tr>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">disable_adaptive_irq   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Disable adaptive interrupt feature (VFIO-USER only)    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">disable_shadow_doorbells   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">disable shadow doorbell support (VFIO-USER only)    </td></tr>
+<td class="markdownTableBodyNone">disable_shadow_doorbells   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Disable shadow doorbell support (VFIO-USER only)    </td></tr>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">acceptor_poll_rate   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">Polling interval of the acceptor for incoming connections (microseconds)    </td></tr>
 <tr class="markdownTableRowEven">
@@ -7055,15 +7055,15 @@ nvmf_create_transport</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">data_wr_pool_size   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">RDMA data WR pool size (RDMA only)    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">disable_command_passthru   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Disallow forwarding unrecognized I/O opcodes and the Identify Namespace admin command to the underlying bdev. Subsystems in passthrough mode and admin commands set via admin_cmd_passthru are not affected.    </td></tr>
+<td class="markdownTableBodyNone">disable_command_passthru   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Disallow forwarding unrecognized I/O opcodes and the Identify Namespace admin command to the underlying bdev. Passthrough subsystems and admin_cmd_passthru are unaffected    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">kas   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint16   </td><td class="markdownTableBodyNone">The granularity of the KATO (Keep Alive Timeout) in 100 millisecond units    </td></tr>
+<td class="markdownTableBodyNone">kas   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint16   </td><td class="markdownTableBodyNone">KATO (Keep Alive Timeout) granularity in units of 100 milliseconds    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">min_kato   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">The minimum Keep Alive Timeout value in milliseconds    </td></tr>
+<td class="markdownTableBodyNone">min_kato   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">Minimum Keep Alive Timeout value in milliseconds    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">masked_oncs   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">bitmask   </td><td class="markdownTableBodyNone">List of ONCS features to mask (disable)    </td></tr>
+<td class="markdownTableBodyNone">masked_oncs   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">bitmask   </td><td class="markdownTableBodyNone">Comma-separated list of ONCS features to mask (disable). Available options: all, nvmcmps, nvmdsmsv, nvmwzsv, reservs, nvmcpys    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">masked_fuses   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">bitmask   </td><td class="markdownTableBodyNone">List of FUSES features to mask (disable)   </td></tr>
+<td class="markdownTableBodyNone">masked_fuses   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">bitmask   </td><td class="markdownTableBodyNone">Comma-separated list of FUSES features to mask (disable). Available options: all, fcws   </td></tr>
 </table>
 <h3>Example</h3>
 <p>Example request:</p>
@@ -7089,9 +7089,9 @@ nvmf_get_subsystems</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">nqn   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Subsystem NQN (optional)    </td></tr>
+<td class="markdownTableBodyNone">nqn   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Subsystem NQN    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">tgt_name   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Parent NVMe-oF target name.   </td></tr>
+<td class="markdownTableBodyNone">tgt_name   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Parent NVMe-oF target name   </td></tr>
 </table>
 <h3>Example</h3>
 <p>Example request:</p>
@@ -7153,31 +7153,31 @@ nvmf_create_subsystem</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">nqn   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Subsystem NQN.    </td></tr>
+<td class="markdownTableBodyNone">nqn   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Subsystem NQN    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">tgt_name   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Parent NVMe-oF target name.    </td></tr>
+<td class="markdownTableBodyNone">tgt_name   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Parent NVMe-oF target name    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">serial_number   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Serial number of virtual controller.    </td></tr>
+<td class="markdownTableBodyNone">serial_number   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Serial number of the virtual NVMe controller    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">model_number   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Model number of virtual controller.    </td></tr>
+<td class="markdownTableBodyNone">model_number   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Model number of the virtual NVMe controller    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">max_namespaces   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">Maximum number of namespaces that can be attached to the subsystem. Default: 32 (also used if user specifies 0)    </td></tr>
+<td class="markdownTableBodyNone">max_namespaces   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">Maximum number of namespaces that can be attached to the subsystem    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">allow_any_host   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Allow any host (<code>true</code>) or enforce allowed host list (<code>false</code>). Default: <code>false</code>    </td></tr>
+<td class="markdownTableBodyNone">allow_any_host   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Allow any host to connect (default: enforce allowed host NQN list)    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">ana_reporting   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Enable ANA reporting feature. Default: <code>false</code>    </td></tr>
+<td class="markdownTableBodyNone">ana_reporting   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Enable ANA reporting feature    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">min_cntlid   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint16   </td><td class="markdownTableBodyNone">Minimum controller ID. Default: 1    </td></tr>
+<td class="markdownTableBodyNone">min_cntlid   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint16   </td><td class="markdownTableBodyNone">Minimum controller ID    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">max_cntlid   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint16   </td><td class="markdownTableBodyNone">Maximum controller ID. Default: 0xffef    </td></tr>
+<td class="markdownTableBodyNone">max_cntlid   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint16   </td><td class="markdownTableBodyNone">Maximum controller ID    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">dmrsl   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">Dataset Management Range Size Limit in logical block units. Default: 2097152 (1 GiB).    </td></tr>
+<td class="markdownTableBodyNone">dmrsl   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">Dataset Management Range Size Limit in logical block units    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">wzsl   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint8   </td><td class="markdownTableBodyNone">Write Zeroes Size Limit as a power of two (2^wzsl) in units of minimum memory page size. Default: 12 (16 MiB).    </td></tr>
+<td class="markdownTableBodyNone">wzsl   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint8   </td><td class="markdownTableBodyNone">Write Zeroes Size Limit as a power of two (2^wzsl) in units of minimum memory page size    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">passthrough   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Use NVMe passthrough for I/O commands and namespace-directed admin commands. Default: <code>false</code>    </td></tr>
+<td class="markdownTableBodyNone">passthrough   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Use NVMe passthrough for all I/O commands and namespace-directed admin commands    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">enable_nssr   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Enable NSSR (NVMe subsystem reset). Default: <code>false</code>   </td></tr>
+<td class="markdownTableBodyNone">enable_nssr   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Enable NSSR (NVMe subsystem reset)   </td></tr>
 </table>
 <h3>Example</h3>
 <p>Example request:</p>
@@ -7206,9 +7206,9 @@ nvmf_delete_subsystem</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">nqn   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Subsystem NQN to delete.    </td></tr>
+<td class="markdownTableBodyNone">nqn   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Subsystem NQN    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">tgt_name   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Parent NVMe-oF target name.   </td></tr>
+<td class="markdownTableBodyNone">tgt_name   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Parent NVMe-oF target name   </td></tr>
 </table>
 <h3>Example</h3>
 <p>Example request:</p>
@@ -7235,17 +7235,17 @@ nvmf_subsystem_add_listener</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">nqn   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Subsystem NQN    </td></tr>
+<td class="markdownTableBodyNone">nqn   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Subsystem NQN ('discovery' can be used as shortcut for discovery NQN)    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">tgt_name   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Parent NVMe-oF target name.    </td></tr>
+<td class="markdownTableBodyNone">tgt_name   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Parent NVMe-oF target name    </td></tr>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">listen_address   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">object   </td><td class="markdownTableBodyNone"><a class="el" href="#rpc_nvmf_listen_address">listen_address</a> object    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">secure_channel   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Whether all connections immediately attempt to establish a secure channel    </td></tr>
+<td class="markdownTableBodyNone">secure_channel   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Require all connections to immediately establish a secure channel    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">ana_state   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">enum   </td><td class="markdownTableBodyNone">ANA state to set: optimized, non_optimized, or inaccessible    </td></tr>
+<td class="markdownTableBodyNone">ana_state   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">enum   </td><td class="markdownTableBodyNone">ANA state to set    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">sock_impl   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">The socket implementation to use for the listener    </td></tr>
+<td class="markdownTableBodyNone">sock_impl   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Socket implementation to use for the listener    </td></tr>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">numa_id   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">int32   </td><td class="markdownTableBodyNone">Required NUMA node ID for all namespaces, if -1 then any namespace can be used. Default is -1. Relevant only for VFIOUSER transport.   </td></tr>
 </table>
@@ -7256,13 +7256,13 @@ listen_address</h4>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">trtype   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Transport type ("RDMA")    </td></tr>
+<td class="markdownTableBodyNone">trtype   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">NVMe-oF transport type: e.g., rdma    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">adrfam   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Address family ("IPv4", "IPv6", "IB", or "FC")    </td></tr>
+<td class="markdownTableBodyNone">adrfam   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">NVMe-oF transport adrfam: e.g., ipv4, ipv6, ib, fc, intra_host    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">traddr   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Transport address    </td></tr>
+<td class="markdownTableBodyNone">traddr   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">NVMe-oF transport address: e.g., an ip address    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">trsvcid   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Transport service ID (required for RDMA or TCP)   </td></tr>
+<td class="markdownTableBodyNone">trsvcid   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">NVMe-oF transport service id: e.g., a port number (required for TCP and RDMA transport types)   </td></tr>
 </table>
 <h3>Example</h3>
 <p>Example request:</p>
@@ -7294,9 +7294,9 @@ nvmf_subsystem_remove_listener</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">nqn   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Subsystem NQN    </td></tr>
+<td class="markdownTableBodyNone">nqn   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Subsystem NQN ('discovery' can be used as shortcut for discovery NQN)    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">tgt_name   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Parent NVMe-oF target name.    </td></tr>
+<td class="markdownTableBodyNone">tgt_name   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Parent NVMe-oF target name    </td></tr>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">listen_address   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">object   </td><td class="markdownTableBodyNone"><a class="el" href="#rpc_nvmf_listen_address">listen_address</a> object   </td></tr>
 </table>
@@ -7332,11 +7332,11 @@ nvmf_subsystem_listener_set_ana_state</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">nqn   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Subsystem NQN    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">tgt_name   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Parent NVMe-oF target name.    </td></tr>
+<td class="markdownTableBodyNone">tgt_name   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Parent NVMe-oF target name    </td></tr>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">listen_address   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">object   </td><td class="markdownTableBodyNone"><a class="el" href="#rpc_nvmf_listen_address">listen_address</a> object    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">ana_state   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">enum   </td><td class="markdownTableBodyNone">ANA state to set ("optimized", "non_optimized", or "inaccessible")    </td></tr>
+<td class="markdownTableBodyNone">ana_state   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">enum   </td><td class="markdownTableBodyNone">ANA state to set    </td></tr>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">anagrpid   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">ANA group ID   </td></tr>
 </table>
@@ -7375,7 +7375,7 @@ nvmf_subsystem_add_ns</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">namespace   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">object   </td><td class="markdownTableBodyNone"><a class="el" href="#rpc_nvmf_namespace">namespace</a> object    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">tgt_name   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Parent NVMe-oF target name.   </td></tr>
+<td class="markdownTableBodyNone">tgt_name   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Parent NVMe-oF target name   </td></tr>
 </table>
 <h4><a class="anchor" id="rpc_nvmf_namespace"></a>
 namespace</h4>
@@ -7383,23 +7383,23 @@ namespace</h4>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">nsid   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">Namespace ID between 1 and 4294967294, inclusive. Default: Automatically assign NSID.    </td></tr>
+<td class="markdownTableBodyNone">nsid   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">Namespace ID between 1 and 4294967294    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">bdev_name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of bdev to expose as a namespace.    </td></tr>
+<td class="markdownTableBodyNone">bdev_name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of the bdev to expose as a namespace    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">nguid   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">16-byte namespace globally unique identifier in hexadecimal (e.g. "ABCDEF0123456789ABCDEF0123456789")    </td></tr>
+<td class="markdownTableBodyNone">nguid   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">16-byte namespace globally unique identifier in hexadecimal    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">eui64   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">8-byte namespace EUI-64 in hexadecimal (e.g. "ABCDEF0123456789")    </td></tr>
+<td class="markdownTableBodyNone">eui64   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">8-byte namespace EUI-64 in hexadecimal    </td></tr>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">uuid   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uuid   </td><td class="markdownTableBodyNone">RFC 4122 UUID (e.g. "ceccf520-691e-4b46-9546-34af789907c5")    </td></tr>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">ptpl_file   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">File path to save/restore persistent reservation information    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">anagrpid   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">ANA group ID. Default: Namespace ID.    </td></tr>
+<td class="markdownTableBodyNone">anagrpid   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">ANA group ID    </td></tr>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">no_auto_visible   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Do not auto make namespace visible to controllers    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">hide_metadata   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Enable hide_metadata option to the bdev. Default: false   </td></tr>
+<td class="markdownTableBodyNone">hide_metadata   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">[Deprecated] Enable hide_metadata option to the bdev   </td></tr>
 </table>
 <h3>Example</h3>
 <p>Example request:</p>
@@ -7434,7 +7434,7 @@ nvmf_subsystem_remove_ns</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">nsid   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">Namespace ID    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">tgt_name   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Parent NVMe-oF target name.   </td></tr>
+<td class="markdownTableBodyNone">tgt_name   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Parent NVMe-oF target name   </td></tr>
 </table>
 <h3>Example</h3>
 <p>Example request:</p>
@@ -7467,7 +7467,7 @@ nvmf_subsystem_set_ns_ana_group</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">anagrpid   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">ANA group ID    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">tgt_name   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Parent NVMe-oF target name.   </td></tr>
+<td class="markdownTableBodyNone">tgt_name   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Parent NVMe-oF target name   </td></tr>
 </table>
 <h3>Example</h3>
 <p>Example request:</p>
@@ -7497,15 +7497,15 @@ nvmf_subsystem_add_host</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">nqn   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Subsystem NQN    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">host   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Host NQN to add to the list of allowed host NQNs    </td></tr>
+<td class="markdownTableBodyNone">host   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Host NQN to add to the allowed host list    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">tgt_name   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Parent NVMe-oF target name.    </td></tr>
+<td class="markdownTableBodyNone">tgt_name   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Parent NVMe-oF target name    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">psk   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of the pre-shared key to be used for TLS (Enables SSL socket implementation for TCP)    </td></tr>
+<td class="markdownTableBodyNone">psk   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Pre-shared key name for TLS authentication (TCP only)    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">dhchap_key   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">DH-HMAC-CHAP key name (required if controller key is specified)    </td></tr>
+<td class="markdownTableBodyNone">dhchap_key   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">DH-HMAC-CHAP key name, required if a controller key is specified    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">dhchap_ctrlr_key   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">DH-HMAC-CHAP controller key name.   </td></tr>
+<td class="markdownTableBodyNone">dhchap_ctrlr_key   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">DH-HMAC-CHAP controller key name   </td></tr>
 </table>
 <h3>Example</h3>
 <p>Example request:</p>
@@ -7535,9 +7535,9 @@ nvmf_subsystem_remove_host</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">nqn   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Subsystem NQN    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">host   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Host NQN to remove from the list of allowed host NQNs    </td></tr>
+<td class="markdownTableBodyNone">host   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Host NQN to remove from the allowed host list    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">tgt_name   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Parent NVMe-oF target name.    </td></tr>
+<td class="markdownTableBodyNone">tgt_name   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Parent NVMe-oF target name    </td></tr>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">timeout_ms   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint64   </td><td class="markdownTableBodyNone">Timeout in ms to wait for I/Os to complete (optional). Default value is derived from the controller CAP.TO.   </td></tr>
 </table>
@@ -7568,9 +7568,9 @@ nvmf_subsystem_allow_any_host</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">nqn   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Subsystem NQN    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">allow_any_host   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Allow any host (<code>true</code>) or enforce allowed host list (<code>false</code>).    </td></tr>
+<td class="markdownTableBodyNone">allow_any_host   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Allow any host to connect (<code>true</code>) or enforce allowed host NQN list (<code>false</code>)    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">tgt_name   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Parent NVMe-oF target name.   </td></tr>
+<td class="markdownTableBodyNone">tgt_name   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Parent NVMe-oF target name   </td></tr>
 </table>
 <h3>Example</h3>
 <p>Example request:</p>
@@ -7603,7 +7603,7 @@ nvmf_subsystem_set_keys</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">tgt_name   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">NVMe-oF target name    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">dhchap_key   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">DH-HMAC-CHAP key name (required if controller key is specified)    </td></tr>
+<td class="markdownTableBodyNone">dhchap_key   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">DH-HMAC-CHAP key name, required if a controller key is specified    </td></tr>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">dhchap_ctrlr_key   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">DH-HMAC-CHAP controller key name   </td></tr>
 </table>
@@ -7635,7 +7635,7 @@ nvmf_subsystem_get_controllers</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">nqn   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Subsystem NQN    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">tgt_name   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Parent NVMe-oF target name.   </td></tr>
+<td class="markdownTableBodyNone">tgt_name   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Parent NVMe-oF target name   </td></tr>
 </table>
 <h3>Example</h3>
 <p>Example request:</p>
@@ -7670,7 +7670,7 @@ nvmf_subsystem_get_qpairs</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">nqn   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Subsystem NQN    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">tgt_name   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Parent NVMe-oF target name.   </td></tr>
+<td class="markdownTableBodyNone">tgt_name   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Parent NVMe-oF target name   </td></tr>
 </table>
 <h3>Example</h3>
 <p>Example request:</p>
@@ -7720,7 +7720,7 @@ nvmf_subsystem_get_listeners</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">nqn   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Subsystem NQN    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">tgt_name   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Parent NVMe-oF target name.   </td></tr>
+<td class="markdownTableBodyNone">tgt_name   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Parent NVMe-oF target name   </td></tr>
 </table>
 <h3>Example</h3>
 <p>Example request:</p>
@@ -7763,7 +7763,7 @@ nvmf_ns_add_host</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">host   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Host NQN    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">tgt_name   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">The name of the parent NVMe-oF target (optional)   </td></tr>
+<td class="markdownTableBodyNone">tgt_name   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Parent NVMe-oF target name   </td></tr>
 </table>
 <h3>Example</h3>
 <p>Example request:</p>
@@ -7798,7 +7798,7 @@ nvmf_ns_remove_host</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">host   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Host NQN    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">tgt_name   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">The name of the parent NVMe-oF target (optional)   </td></tr>
+<td class="markdownTableBodyNone">tgt_name   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Parent NVMe-oF target name   </td></tr>
 </table>
 <h3>Example</h3>
 <p>Example request:</p>
@@ -7852,7 +7852,7 @@ nvmf_discovery_add_referral</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">tgt_name   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Parent NVMe-oF target name.    </td></tr>
+<td class="markdownTableBodyNone">tgt_name   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Parent NVMe-oF target name    </td></tr>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">address   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">object   </td><td class="markdownTableBodyNone"><a class="el" href="#rpc_nvmf_listen_address">listen_address</a> object    </td></tr>
 <tr class="markdownTableRowOdd">
@@ -7889,7 +7889,7 @@ nvmf_discovery_remove_referral</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">tgt_name   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Parent NVMe-oF target name.    </td></tr>
+<td class="markdownTableBodyNone">tgt_name   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Parent NVMe-oF target name    </td></tr>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">address   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">object   </td><td class="markdownTableBodyNone"><a class="el" href="#rpc_nvmf_listen_address">listen_address</a> object    </td></tr>
 <tr class="markdownTableRowOdd">
@@ -7923,7 +7923,7 @@ nvmf_discovery_get_referrals</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">tgt_name   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Parent NVMe-oF target name.   </td></tr>
+<td class="markdownTableBodyNone">tgt_name   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Parent NVMe-oF target name   </td></tr>
 </table>
 <h3>Example</h3>
 <p>Example request:</p>
@@ -7957,15 +7957,15 @@ nvmf_set_config</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">admin_cmd_passthru   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">object   </td><td class="markdownTableBodyNone">Admin command passthru configuration    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">poll_groups_mask   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Set cpumask for NVMf poll groups    </td></tr>
+<td class="markdownTableBodyNone">poll_groups_mask   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">CPU mask for NVMe-oF poll groups    </td></tr>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">discovery_filter   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Deprecated, use discovery_filters instead    </td></tr>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">discovery_filters   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">bitmask   </td><td class="markdownTableBodyNone">Comma-separated list of discovery filters    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">dhchap_digests   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">bitmask   </td><td class="markdownTableBodyNone">List of allowed DH-HMAC-CHAP digests.    </td></tr>
+<td class="markdownTableBodyNone">dhchap_digests   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">bitmask   </td><td class="markdownTableBodyNone">Comma-separated list of allowed DH-HMAC-CHAP digests    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">dhchap_dhgroups   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">bitmask   </td><td class="markdownTableBodyNone">List of allowed DH-HMAC-CHAP DH groups.    </td></tr>
+<td class="markdownTableBodyNone">dhchap_dhgroups   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">bitmask   </td><td class="markdownTableBodyNone">Comma-separated list of allowed DH-HMAC-CHAP DH groups    </td></tr>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">dup_host_policy   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">enum   </td><td class="markdownTableBodyNone">Duplicate host policy   </td></tr>
 </table>
@@ -8017,9 +8017,9 @@ nvmf_get_transports</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">tgt_name   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Parent NVMe-oF target name.    </td></tr>
+<td class="markdownTableBodyNone">tgt_name   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Parent NVMe-oF target name    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">trtype   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Transport type.   </td></tr>
+<td class="markdownTableBodyNone">trtype   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Transport type   </td></tr>
 </table>
 <h3>Example</h3>
 <p>Example request:</p>
@@ -8052,7 +8052,7 @@ nvmf_get_stats</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">tgt_name   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Parent NVMe-oF target name.   </td></tr>
+<td class="markdownTableBodyNone">tgt_name   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Parent NVMe-oF target name   </td></tr>
 </table>
 <h3>Response</h3>
 <p>The response is an object containing NVMf subsystem statistics. In the response, <code>admin_qpairs</code> and <code>io_qpairs</code> are reflecting cumulative queue pair counts while <code>current_admin_qpairs</code> and <code>current_io_qpairs</code> are showing the current number.</p>
@@ -8125,11 +8125,11 @@ nvmf_set_crdt</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">crdt1   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint16   </td><td class="markdownTableBodyNone">Command Retry Delay Time 1    </td></tr>
+<td class="markdownTableBodyNone">crdt1   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint16   </td><td class="markdownTableBodyNone">Command Retry Delay Time 1 in units of 100 milliseconds    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">crdt2   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint16   </td><td class="markdownTableBodyNone">Command Retry Delay Time 2    </td></tr>
+<td class="markdownTableBodyNone">crdt2   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint16   </td><td class="markdownTableBodyNone">Command Retry Delay Time 2 in units of 100 milliseconds    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">crdt3   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint16   </td><td class="markdownTableBodyNone">Command Retry Delay Time 3   </td></tr>
+<td class="markdownTableBodyNone">crdt3   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint16   </td><td class="markdownTableBodyNone">Command Retry Delay Time 3 in units of 100 milliseconds   </td></tr>
 </table>
 <h1><a class="anchor" id="jsonrpc_components_vfu_tgt"></a>
 Vfio-user Target</h1>
@@ -11296,7 +11296,7 @@ nvmf_publish_mdns_prr</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">tgt_name   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Parent NVMe-oF target name.   </td></tr>
+<td class="markdownTableBodyNone">tgt_name   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Parent NVMe-oF target name   </td></tr>
 </table>
 <h3>Example</h3>
 <p>Example request:</p>
@@ -11319,7 +11319,7 @@ nvmf_stop_mdns_prr</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">tgt_name   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Parent NVMe-oF target name.   </td></tr>
+<td class="markdownTableBodyNone">tgt_name   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Parent NVMe-oF target name   </td></tr>
 </table>
 <h3>Example</h3>
 <p>Example request:</p>
