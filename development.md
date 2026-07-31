@@ -150,6 +150,9 @@ Now open .git/config in a text editor and add these lines: (this will make pushi
 [remote "review"]
   url = https://review.spdk.io/spdk/spdk
   push = HEAD:refs/for/master
+[remote "wip"]
+  url = https://review.spdk.io/spdk/spdk
+  push = HEAD:refs/for/master%wip
 ~~~
 
 You may also enable the git pre-commit and pre-push hooks to automatically check formatting and run the unit tests:
