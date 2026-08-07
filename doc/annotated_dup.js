@@ -86,6 +86,7 @@ var annotated_dup =
     [ "spdk_bdev_nvme_ctratt", "unionspdk__bdev__nvme__ctratt.html", null ],
     [ "spdk_bdev_nvme_ctrlr_opts", "structspdk__bdev__nvme__ctrlr__opts.html", "structspdk__bdev__nvme__ctrlr__opts" ],
     [ "spdk_bdev_nvme_opts", "structspdk__bdev__nvme__opts.html", "structspdk__bdev__nvme__opts" ],
+    [ "spdk_bdev_nvme_path_id", "structspdk__bdev__nvme__path__id.html", null ],
     [ "spdk_bdev_open_async_opts", "structspdk__bdev__open__async__opts.html", null ],
     [ "spdk_bdev_open_opts", "structspdk__bdev__open__opts.html", null ],
     [ "spdk_bdev_opts", "structspdk__bdev__opts.html", "structspdk__bdev__opts" ],
