@@ -175,9 +175,6 @@ union {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
 <tr class="memitem:a814f9904a1c323a44fffa5099a2033fa" id="r_a814f9904a1c323a44fffa5099a2033fa"><td class="memItemLeft" >
 &#160;&#160;&#160;&#160;&#160;&#160;uint8_t&#160;&#160;&#160;<b>data_from_pool</b>: 1&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
 <tr class="separator:a814f9904a1c323a44fffa5099a2033fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a47436171cac1ea79f63469bd5d1947a5" id="r_a47436171cac1ea79f63469bd5d1947a5"><td class="memItemLeft" >
-&#160;&#160;&#160;&#160;&#160;&#160;uint8_t&#160;&#160;&#160;<b>dif_enabled</b>: 1&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
-<tr class="separator:a47436171cac1ea79f63469bd5d1947a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afd160022a422e6b788dc00401765fd03" id="r_afd160022a422e6b788dc00401765fd03"><td class="memItemLeft" >
 &#160;&#160;&#160;&#160;&#160;&#160;uint8_t&#160;&#160;&#160;<b>first_fused</b>: 1&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
 <tr class="separator:afd160022a422e6b788dc00401765fd03"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -188,7 +185,7 @@ union {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
 &#160;&#160;&#160;&#160;&#160;&#160;uint8_t&#160;&#160;&#160;<b>reservation_waiting</b>: 1&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
 <tr class="separator:a5d7b28e58451b414d571942f8311be9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a90fc50a79b7620aea910110a10ec2d8f" id="r_a90fc50a79b7620aea910110a10ec2d8f"><td class="memItemLeft" >
-&#160;&#160;&#160;&#160;&#160;&#160;uint8_t&#160;&#160;&#160;<b>rsvd</b>: 3&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+&#160;&#160;&#160;&#160;&#160;&#160;uint8_t&#160;&#160;&#160;<b>rsvd</b>: 4&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
 <tr class="separator:a90fc50a79b7620aea910110a10ec2d8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0c8235753d9bd4343a059131ab8ebede" id="r_a0c8235753d9bd4343a059131ab8ebede"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;</td><td class="memItemRight" valign="bottom">&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
 <tr class="separator:a0c8235753d9bd4343a059131ab8ebede"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -218,12 +215,6 @@ struct spdk_accel_sequence *&#160;</td><td class="memItemRight" valign="bottom">
 <tr class="memitem:abd8a5aa92bdc3a3b98f2eb21f21e03b3" id="r_abd8a5aa92bdc3a3b98f2eb21f21e03b3"><td class="memItemLeft" align="right" valign="top"><a id="abd8a5aa92bdc3a3b98f2eb21f21e03b3" name="abd8a5aa92bdc3a3b98f2eb21f21e03b3"></a>
 struct iovec&#160;</td><td class="memItemRight" valign="bottom"><b>iov</b> [NVMF_REQ_MAX_BUFFERS]</td></tr>
 <tr class="separator:abd8a5aa92bdc3a3b98f2eb21f21e03b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aae70cc15ac6a9e57557b8174a42118fa" id="r_aae70cc15ac6a9e57557b8174a42118fa"><td class="memItemLeft" align="right" valign="top"><a id="aae70cc15ac6a9e57557b8174a42118fa" name="aae70cc15ac6a9e57557b8174a42118fa"></a>
-struct <a class="el" href="structspdk__nvmf__stripped__data.html">spdk_nvmf_stripped_data</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>stripped_data</b></td></tr>
-<tr class="separator:aae70cc15ac6a9e57557b8174a42118fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae30b6b5bc1ef629f68f6bc5596895f02" id="r_ae30b6b5bc1ef629f68f6bc5596895f02"><td class="memItemLeft" align="right" valign="top"><a id="ae30b6b5bc1ef629f68f6bc5596895f02" name="ae30b6b5bc1ef629f68f6bc5596895f02"></a>
-struct <a class="el" href="structspdk__nvmf__dif__info.html">spdk_nvmf_dif_info</a>&#160;</td><td class="memItemRight" valign="bottom"><b>dif</b></td></tr>
-<tr class="separator:ae30b6b5bc1ef629f68f6bc5596895f02"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a84e4ee7737756949d0d93a970bddc4ea" id="r_a84e4ee7737756949d0d93a970bddc4ea"><td class="memItemLeft" align="right" valign="top"><a id="a84e4ee7737756949d0d93a970bddc4ea" name="a84e4ee7737756949d0d93a970bddc4ea"></a>
 struct <a class="el" href="structspdk__bdev__io__wait__entry.html">spdk_bdev_io_wait_entry</a>&#160;</td><td class="memItemRight" valign="bottom"><b>bdev_io_wait</b></td></tr>
 <tr class="separator:a84e4ee7737756949d0d93a970bddc4ea"><td class="memSeparator" colspan="2">&#160;</td></tr>

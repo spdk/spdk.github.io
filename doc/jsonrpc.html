@@ -5905,8 +5905,9 @@ iscsi_create_auth_group</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">tag   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">int32   </td><td class="markdownTableBodyNone">Authentication group tag (unique, integer &gt; 0)    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">secrets   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">array   </td><td class="markdownTableBodyNone">List of CHAP secrets for this authentication group   </td></tr>
+<td class="markdownTableBodyNone">secrets   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">array   </td><td class="markdownTableBodyNone">Comma-separated list of CHAP secrets   </td></tr>
 </table>
+<p>| | | (user:user_name secret:chap_secret muser:mutual_user_name msecret:mutual_chap_secret) enclosed in quotes. | | | Format: 'user:u1 secret:s1 muser:mu1 msecret:ms1,user:u2 secret:s2 muser:mu2 msecret:ms2'</p>
 <h4><a class="anchor" id="rpc_iscsi_create_auth_group_secret"></a>
 secret</h4>
 <table class="markdownTable">
@@ -6138,10 +6139,9 @@ iscsi_create_initiator_group</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">tag   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">int32   </td><td class="markdownTableBodyNone">Initiator group tag (unique, integer &gt; 0)    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">initiators   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">array   </td><td class="markdownTableBodyNone">List of initiator hostnames or IP addresses    </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">netmasks   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">array   </td><td class="markdownTableBodyNone">List of initiator netmasks   </td></tr>
+<td class="markdownTableBodyNone">initiators   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">array   </td><td class="markdownTableBodyNone">Whitespace-separated list of initiator hostnames or IP addresses,   </td></tr>
 </table>
+<p>| | | enclosed in quotes. Example: 'ANY' or 'iqn.2016-06.io.spdk:host1 iqn.2016-06.io.spdk:host2' netmasks | Required | array | Whitespace-separated list of initiator netmasks enclosed in quotes. | | | Example: '255.255.0.0 255.248.0.0' etc</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -6201,10 +6201,9 @@ iscsi_initiator_group_add_initiators</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">tag   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">int32   </td><td class="markdownTableBodyNone">Initiator group tag (unique, integer &gt; 0)    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">initiators   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">array   </td><td class="markdownTableBodyNone">List of initiator hostnames or IP addresses    </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">netmasks   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">array   </td><td class="markdownTableBodyNone">List of initiator netmasks   </td></tr>
+<td class="markdownTableBodyNone">initiators   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">array   </td><td class="markdownTableBodyNone">Whitespace-separated list of initiator hostnames or IP addresses,   </td></tr>
 </table>
+<p>| | | enclosed in quotes. This parameter can be omitted. Example: 'ANY' or | | | 'iqn.2016-06.io.spdk:host1 iqn.2016-06.io.spdk:host2' netmasks | Optional | array | Whitespace-separated list of initiator netmasks enclosed in quotes. | | | This parameter can be omitted. Example: '255.255.0.0 255.248.0.0' etc</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -6237,10 +6236,9 @@ iscsi_initiator_group_remove_initiators</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">tag   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">int32   </td><td class="markdownTableBodyNone">Initiator group tag (unique, integer &gt; 0)    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">initiators   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">array   </td><td class="markdownTableBodyNone">List of initiator hostnames or IP addresses    </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">netmasks   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">array   </td><td class="markdownTableBodyNone">List of initiator netmasks   </td></tr>
+<td class="markdownTableBodyNone">initiators   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">array   </td><td class="markdownTableBodyNone">Whitespace-separated list of initiator hostnames or IP addresses,   </td></tr>
 </table>
+<p>| | | enclosed in quotes. This parameter can be omitted. Example: 'ANY' or | | | 'iqn.2016-06.io.spdk:host1 iqn.2016-06.io.spdk:host2' netmasks | Optional | array | Whitespace-separated list of initiator netmasks enclosed in quotes. | | | This parameter can be omitted. Example: '255.255.0.0 255.248.0.0' etc</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -6346,24 +6344,9 @@ iscsi_create_target_node</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">alias_name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Target node alias name (ASCII)    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">pg_ig_maps   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">array   </td><td class="markdownTableBodyNone">List of portal-group-tag to initiator-group-tag mappings    </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">luns   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">array   </td><td class="markdownTableBodyNone">List of bdev-name to LUN-ID mappings    </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">queue_depth   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">int32   </td><td class="markdownTableBodyNone">Target queue depth    </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">disable_chap   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Disable CHAP authentication for this target node    </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">require_chap   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Require CHAP authentication for this target node    </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">mutual_chap   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Enable bidirectional CHAP authentication for this target node    </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">chap_group   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">int32   </td><td class="markdownTableBodyNone">Authentication group ID for this target node (non-zero values must reference a precreated group)    </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">header_digest   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Require Header Digest for this target node    </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">data_digest   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Require Data Digest for this target node   </td></tr>
+<td class="markdownTableBodyNone">pg_ig_maps   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">array   </td><td class="markdownTableBodyNone">List of (Portal_Group_Tag:Initiator_Group_Tag) mappings   </td></tr>
 </table>
+<p>| | | Whitespace separated, quoted, mapping defined with colon | | | separated list of "tags" (int &gt; 0) | | | Example: '1:1 2:2 2:1' | | | *** The Portal/Initiator Groups must be precreated *** luns | Required | array | Whitespace-separated list of (bdev name:LUN ID) pairs enclosed | | | in quotes. Format: 'bdev_name0:id0 bdev_name1:id1' etc | | | Example: 'Malloc0:0 Malloc1:1 Malloc5:2' | | | *** The bdevs must pre-exist *** | | | *** LUN0 (id = 0) is required *** | | | *** bdevs names cannot contain space or colon characters *** queue_depth | Required | int32 | Target queue depth disable_chap | Optional | boolean | Disable CHAP authentication for this target node require_chap | Optional | boolean | Require CHAP authentication for this target node mutual_chap | Optional | boolean | Enable bidirectional CHAP authentication for this target node chap_group | Optional | int32 | Authentication group ID for this target node (non-zero values must reference a precreated group) header_digest | Optional | boolean | Require Header Digest for this target node data_digest | Optional | boolean | Require Data Digest for this target node</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -6450,8 +6433,9 @@ iscsi_target_node_add_pg_ig_maps</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Target node name (ASCII)    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">pg_ig_maps   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">array   </td><td class="markdownTableBodyNone">List of portal-group-tag to initiator-group-tag mappings   </td></tr>
+<td class="markdownTableBodyNone">pg_ig_maps   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">array   </td><td class="markdownTableBodyNone">List of (Portal_Group_Tag:Initiator_Group_Tag) mappings   </td></tr>
 </table>
+<p>| | | Whitespace separated, quoted, mapping defined with colon | | | separated list of "tags" (int &gt; 0) | | | Example: '1:1 2:2 2:1' | | | *** The Portal/Initiator Groups must be precreated ***</p>
 <h4>Portal to Initiator group mappings object</h4>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -6501,8 +6485,9 @@ iscsi_target_node_remove_pg_ig_maps</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Target node name (ASCII)    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">pg_ig_maps   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">array   </td><td class="markdownTableBodyNone">List of portal-group-tag to initiator-group-tag mappings   </td></tr>
+<td class="markdownTableBodyNone">pg_ig_maps   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">array   </td><td class="markdownTableBodyNone">List of (Portal_Group_Tag:Initiator_Group_Tag) mappings   </td></tr>
 </table>
+<p>| | | Whitespace separated, quoted, mapping defined with colon | | | separated list of "tags" (int &gt; 0) | | | Example: '1:1 2:2 2:1' | | | *** The Portal/Initiator Groups must be precreated ***</p>
 <h4>Portal to Initiator group mappings object</h4>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -6607,12 +6592,9 @@ iscsi_create_portal_group</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">tag   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">int32   </td><td class="markdownTableBodyNone">Portal group tag (unique, integer &gt; 0)    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">portals   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">array   </td><td class="markdownTableBodyNone">List of portals in host:port format    </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">private   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Private portal group (portals are not returned by a discovery session; used for login redirection)    </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">wait   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Do not listen on portals until started explicitly   </td></tr>
+<td class="markdownTableBodyNone">portals   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">array   </td><td class="markdownTableBodyNone">List of portals in host:port format, separated by whitespace   </td></tr>
 </table>
+<p>| | | Example: '192.168.100.100:3260 192.168.100.100:3261 192.168.100.100:3262' private | Optional | boolean | Public (false) or private (true) portal group. | | | Private portal groups do not have their portals returned by a discovery session. A public | | | portal group may optionally specify a redirect portal for non-discovery logins. This redirect | | | portal must be from a private portal group. wait | Optional | boolean | Do not listen on portals until started explicitly. | | | One major iSCSI initiator may not retry login once it failed. Hence for such initiator, listening | | | on portals should be allowed after all associated target nodes are created.</p>
 <h4>Portal object</h4>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -7015,56 +6997,9 @@ nvmf_create_transport</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">num_shared_buffers   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">Number of pooled data buffers available to the transport. Deprecated, use iobuf_set_options instead    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">buf_cache_size   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">The number of shared buffers to reserve for each poll group    </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">iobuf_small_cache_size   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">The number of shared buffers from a small iobuf pool to reserve for each poll group    </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">iobuf_large_cache_size   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">Number of shared buffers from the large iobuf pool to reserve for each poll group    </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">zcopy   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Use zero-copy operations if the underlying bdev supports them    </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">num_cqe   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">int32   </td><td class="markdownTableBodyNone">Number of CQ entries, only used when no_srq=true (RDMA only)    </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">max_srq_depth   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">Number of elements in the per-thread shared receive queue (RDMA only)    </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">no_srq   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Disable shared receive queue even for devices that support it (RDMA only)    </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">c2h_success   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Disable C2H success optimization (TCP only)    </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">dif_insert_or_strip   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Enable DIF insert for write I/O and DIF strip for read I/O (TCP only)    </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">sock_priority   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">Socket priority of connections owned by this transport (TCP only)    </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">acceptor_backlog   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">int32   </td><td class="markdownTableBodyNone">Number of pending connections allowed in the backlog before failing new connection attempts (RDMA only)    </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">abort_timeout_sec   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">Abort execution timeout value, in seconds    </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">no_wr_batching   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Disable work requests batching (RDMA only)    </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">control_msg_num   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint16   </td><td class="markdownTableBodyNone">Number of control messages per poll group (TCP only)    </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">disable_mappable_bar0   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Disable client mmap() of BAR0 (VFIO-USER only)    </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">disable_adaptive_irq   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Disable adaptive interrupt feature (VFIO-USER only)    </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">disable_shadow_doorbells   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Disable shadow doorbell support (VFIO-USER only)    </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">acceptor_poll_rate   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">Polling interval of the acceptor for incoming connections (microseconds)    </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">ack_timeout   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">ACK timeout in milliseconds    </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">data_wr_pool_size   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">RDMA data WR pool size (RDMA only)    </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">disable_command_passthru   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Disallow forwarding unrecognized I/O opcodes and the Identify Namespace admin command to the underlying bdev. Passthrough subsystems and admin_cmd_passthru are unaffected    </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">kas   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint16   </td><td class="markdownTableBodyNone">KATO (Keep Alive Timeout) granularity in units of 100 milliseconds    </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">min_kato   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">Minimum Keep Alive Timeout value in milliseconds    </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">masked_oncs   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">bitmask   </td><td class="markdownTableBodyNone">Comma-separated list of ONCS features to mask (disable). Available options: all, nvmcmps, nvmdsmsv, nvmwzsv, reservs, nvmcpys    </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">masked_fuses   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">bitmask   </td><td class="markdownTableBodyNone">Comma-separated list of FUSES features to mask (disable). Available options: all, fcws   </td></tr>
+<td class="markdownTableBodyNone">buf_cache_size   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">The number of shared buffers to reserve for each poll group.   </td></tr>
 </table>
+<p>| | | Deprecated, use iobuf-small-cache-size instead iobuf_small_cache_size | Optional | uint32 | The number of shared buffers from a small iobuf pool to reserve for each poll group iobuf_large_cache_size | Optional | uint32 | Number of shared buffers from the large iobuf pool to reserve for each poll group zcopy | Optional | boolean | Use zero-copy operations if the underlying bdev supports them num_cqe | Optional | int32 | Number of CQ entries, only used when no_srq=true (RDMA only) max_srq_depth | Optional | uint32 | Number of elements in the per-thread shared receive queue (RDMA only) no_srq | Optional | boolean | Disable shared receive queue even for devices that support it (RDMA only) c2h_success | Optional | boolean | Disable C2H success optimization (TCP only) dif_insert_or_strip | Optional | boolean | Enable DIF insert for write I/O and DIF strip for read I/O (TCP only) sock_priority | Optional | uint32 | Socket priority of connections owned by this transport (TCP only) acceptor_backlog | Optional | int32 | Number of pending connections allowed in the backlog before failing new connection attempts (RDMA only) abort_timeout_sec | Optional | uint32 | Abort execution timeout value, in seconds no_wr_batching | Optional | boolean | Disable work requests batching (RDMA only) control_msg_num | Optional | uint16 | Number of control messages per poll group (TCP only) disable_mappable_bar0 | Optional | boolean | Disable client mmap() of BAR0 (VFIO-USER only) disable_adaptive_irq | Optional | boolean | Disable adaptive interrupt feature (VFIO-USER only) disable_shadow_doorbells | Optional | boolean | Disable shadow doorbell support (VFIO-USER only) acceptor_poll_rate | Optional | uint32 | Polling interval of the acceptor for incoming connections (microseconds) ack_timeout | Optional | uint32 | ACK timeout in milliseconds data_wr_pool_size | Optional | uint32 | RDMA data WR pool size (RDMA only) disable_command_passthru | Optional | boolean | Disallow forwarding unrecognized I/O opcodes and the Identify Namespace admin command to the underlying bdev. Passthrough subsystems and admin_cmd_passthru are unaffected kas | Optional | uint16 | KATO (Keep Alive Timeout) granularity in units of 100 milliseconds min_kato | Optional | uint32 | Minimum Keep Alive Timeout value in milliseconds masked_oncs | Optional | bitmask | Comma-separated list of ONCS features to mask (disable). Available options: all, nvmcmps, nvmdsmsv, nvmwzsv, reservs, nvmcpys masked_fuses | Optional | bitmask | Comma-separated list of FUSES features to mask (disable). Available options: all, fcws</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>

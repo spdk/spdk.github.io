@@ -27,7 +27,6 @@ var sock_8h =
     [ "spdk_sock_group_get_ctx", "sock_8h.html#af89eb396eb872372f46a048b00c22ae8", null ],
     [ "spdk_sock_group_get_interruptfd", "sock_8h.html#a74bf719c4ef609c6e35384691433e4be", null ],
     [ "spdk_sock_group_poll", "sock_8h.html#aca9341be3f9ec5bd7e571f328e749328", null ],
-    [ "spdk_sock_group_poll_count", "sock_8h.html#a73c5abe4d97ecc3521c37b345f7fbfd4", null ],
     [ "spdk_sock_group_provide_buf", "sock_8h.html#a41bf8ae4fc3ac1bbc5e2b097a864db79", null ],
     [ "spdk_sock_group_remove_sock", "sock_8h.html#ad52142b9c60b305a1eaaf869a321c790", null ],
     [ "spdk_sock_impl_get_opts", "sock_8h.html#ab6cbdc2532b80f5c9404af222ee03d23", null ],

@@ -147,10 +147,6 @@ Data Structures</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">union &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unionnvmf__c2h__msg.html">nvmf_c2h_msg</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvmf__dif__info.html">spdk_nvmf_dif_info</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvmf__stripped__data.html">spdk_nvmf_stripped_data</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvmf__request.html">spdk_nvmf_request</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvmf__qpair.html">spdk_nvmf_qpair</a></td></tr>
@@ -247,9 +243,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a7018b7c460c9e8d4bc99b14075291390" id="r_a7018b7c460c9e8d4bc99b14075291390"><td class="memItemLeft" align="right" valign="top"><a id="a7018b7c460c9e8d4bc99b14075291390" name="a7018b7c460c9e8d4bc99b14075291390"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(union <a class="el" href="unionnvmf__c2h__msg.html">nvmf_c2h_msg</a>)==16, &quot;Incorrect size&quot;)</td></tr>
 <tr class="separator:a7018b7c460c9e8d4bc99b14075291390"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af741320d38a22084f690fd5457813eab" id="r_af741320d38a22084f690fd5457813eab"><td class="memItemLeft" align="right" valign="top"><a id="af741320d38a22084f690fd5457813eab" name="af741320d38a22084f690fd5457813eab"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(struct <a class="el" href="structspdk__nvmf__request.html">spdk_nvmf_request</a>)==832, &quot;Incorrect size&quot;)</td></tr>
-<tr class="separator:af741320d38a22084f690fd5457813eab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7709514266673bf3a9ddfa930c27a16d" id="r_a7709514266673bf3a9ddfa930c27a16d"><td class="memItemLeft" align="right" valign="top"><a id="a7709514266673bf3a9ddfa930c27a16d" name="a7709514266673bf3a9ddfa930c27a16d"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(struct <a class="el" href="structspdk__nvmf__request.html">spdk_nvmf_request</a>)==752, &quot;Incorrect size&quot;)</td></tr>
+<tr class="separator:a7709514266673bf3a9ddfa930c27a16d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8dc52b013bb9c00bb1cf0670e909604b" id="r_a8dc52b013bb9c00bb1cf0670e909604b"><td class="memItemLeft" align="right" valign="top"><a id="a8dc52b013bb9c00bb1cf0670e909604b" name="a8dc52b013bb9c00bb1cf0670e909604b"></a>
 static int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_qpair_get_numa_id</b> (struct <a class="el" href="structspdk__nvmf__qpair.html">spdk_nvmf_qpair</a> *qpair)</td></tr>
 <tr class="separator:a8dc52b013bb9c00bb1cf0670e909604b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -274,8 +270,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_request_fre
 <tr class="memitem:aedfcbfc3021b5f74c94cbbd6619bcd59" id="r_aedfcbfc3021b5f74c94cbbd6619bcd59"><td class="memItemLeft" align="right" valign="top"><a id="aedfcbfc3021b5f74c94cbbd6619bcd59" name="aedfcbfc3021b5f74c94cbbd6619bcd59"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_request_get_buffers</b> (struct <a class="el" href="structspdk__nvmf__request.html">spdk_nvmf_request</a> *req, struct <a class="el" href="structspdk__nvmf__transport__poll__group.html">spdk_nvmf_transport_poll_group</a> *group, struct <a class="el" href="structspdk__nvmf__transport.html">spdk_nvmf_transport</a> *transport, uint32_t length)</td></tr>
 <tr class="separator:aedfcbfc3021b5f74c94cbbd6619bcd59"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afad38775c3acad5fd71d1487bc3e56df" id="r_afad38775c3acad5fd71d1487bc3e56df"><td class="memItemLeft" align="right" valign="top"><a id="afad38775c3acad5fd71d1487bc3e56df" name="afad38775c3acad5fd71d1487bc3e56df"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_request_get_dif_ctx</b> (struct <a class="el" href="structspdk__nvmf__request.html">spdk_nvmf_request</a> *req, struct <a class="el" href="structspdk__dif__ctx.html">spdk_dif_ctx</a> *dif_ctx)</td></tr>
+<tr class="memitem:afad38775c3acad5fd71d1487bc3e56df" id="r_afad38775c3acad5fd71d1487bc3e56df"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afad38775c3acad5fd71d1487bc3e56df">spdk_nvmf_request_get_dif_ctx</a> (struct <a class="el" href="structspdk__nvmf__request.html">spdk_nvmf_request</a> *req, struct <a class="el" href="structspdk__dif__ctx.html">spdk_dif_ctx</a> *dif_ctx)</td></tr>
 <tr class="separator:afad38775c3acad5fd71d1487bc3e56df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a65dd062126788a0f2ad96548c63667df" id="r_a65dd062126788a0f2ad96548c63667df"><td class="memItemLeft" align="right" valign="top"><a id="a65dd062126788a0f2ad96548c63667df" name="a65dd062126788a0f2ad96548c63667df"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_request_exec</b> (struct <a class="el" href="structspdk__nvmf__request.html">spdk_nvmf_request</a> *req)</td></tr>
@@ -564,6 +559,28 @@ static enum <a class="el" href="nvme__spec_8h.html#adbe38e042bb939183ed8fd5c1685
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="afad38775c3acad5fd71d1487bc3e56df" name="afad38775c3acad5fd71d1487bc3e56df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afad38775c3acad5fd71d1487bc3e56df">&#9670;&#160;</a></span>spdk_nvmf_request_get_dif_ctx()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool spdk_nvmf_request_get_dif_ctx </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structspdk__nvmf__request.html">spdk_nvmf_request</a> *</td>          <td class="paramname"><span class="paramname"><em>req</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structspdk__dif__ctx.html">spdk_dif_ctx</a> *</td>          <td class="paramname"><span class="paramname"><em>dif_ctx</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000003">Deprecated</a></b></dt><dd>This function is no longer used by built-in transports. DIF handling has moved to the bdev layer via hide_metadata. </dd></dl>
 
 </div>
 </div>
