@@ -8,7 +8,7 @@ var searchData=
   ['lba_5',['lba',['../structspdk__ocssd__chunk__notification__entry.html#a2d96d597c27edd7e457218d85c01915d',1,'spdk_ocssd_chunk_notification_entry']]],
   ['lbads_6',['lbads',['../structspdk__nvme__ns__data__lbaf.html#ae9aca46350d9bce3dc3af9c88135c40b',1,'spdk_nvme_ns_data_lbaf']]],
   ['lbaf_7',['lbaf',['../structspdk__ocssd__geometry__data.html#a4eba476411cda99524796a82761f0823',1,'spdk_ocssd_geometry_data::lbaf'],['../structspdk__nvme__ns__data.html#a97206c621efb19d18b247ba617bdb37f',1,'spdk_nvme_ns_data::lbaf']]],
-  ['lbafe_8',['lbafe',['../structspdk__nvme__zns__ns__data.html#ab836ec6482ef02d746541b8e1520f739',1,'spdk_nvme_zns_ns_data']]],
+  ['lbafe_8',['lbafe',['../structspdk__nvme__zns__ns__data.html#a6f8c4614683632c7c6763e93f1db9877',1,'spdk_nvme_zns_ns_data']]],
   ['lbcc_9',['lbcc',['../structspdk__nvme__cmds__and__effect__entry.html#aeeae023e93acfbd4f995e4bfb2fd46d5',1,'spdk_nvme_cmds_and_effect_entry']]],
   ['lbk_5flen_10',['lbk_len',['../structspdk__ocssd__dev__lba__fmt.html#a73ecc33cdb5bbcf9140577c2eeb8451b',1,'spdk_ocssd_dev_lba_fmt']]],
   ['lblk_11',['lblk',['../structspdk__ocssd__chunk__notification__entry.html#aadf9079a7a4aa1acd37f7535b5249c60',1,'spdk_ocssd_chunk_notification_entry']]],
@@ -25,6 +25,6 @@ var searchData=
   ['log_22',['log',['../structspdk__app__opts.html#a6b0f85cf7dda3cc9048965c54bd09102',1,'spdk_app_opts']]],
   ['log_5fpage_5fcount_23',['log_page_count',['../structspdk__nvme__reservation__notification__log.html#ad8bc8c37065d9cf1c8e2b171d53ba807',1,'spdk_nvme_reservation_notification_log']]],
   ['low_5fpriority_5fweight_24',['low_priority_weight',['../structspdk__nvme__ctrlr__opts.html#a5098ae82e7bfecd254dd31cf629ccf05',1,'spdk_nvme_ctrlr_opts']]],
-  ['lpa_25',['lpa',['../structspdk__nvme__ctrlr__data.html#a7564e9c6aa1d99fb6990c462a20e7c4a',1,'spdk_nvme_ctrlr_data']]],
+  ['lpa_25',['lpa',['../structspdk__nvme__ctrlr__data.html#a8c3ea15ae77c11f9653e2b2f4ef00cf5',1,'spdk_nvme_ctrlr_data']]],
   ['lpw_26',['lpw',['../unionspdk__nvme__feat__arbitration.html#a0eb3434752c3b8ea38f37556fa9fd116',1,'spdk_nvme_feat_arbitration']]]
 ];

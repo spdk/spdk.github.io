@@ -251,9 +251,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a1b2405fb75a31157942621df179c7426" id="r_a1b2405fb75a31157942621df179c7426"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1b2405fb75a31157942621df179c7426">spdk_nvmf_listen_opts_init</a> (struct <a class="el" href="structspdk__nvmf__listen__opts.html">spdk_nvmf_listen_opts</a> *opts, size_t opts_size)</td></tr>
 <tr class="memdesc:a1b2405fb75a31157942621df179c7426"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize listen options.  <br /></td></tr>
 <tr class="separator:a1b2405fb75a31157942621df179c7426"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a468ce55bab3512a75718ecef36f7d8b0" id="r_a468ce55bab3512a75718ecef36f7d8b0"><td class="memItemLeft" align="right" valign="top"><a id="a468ce55bab3512a75718ecef36f7d8b0" name="a468ce55bab3512a75718ecef36f7d8b0"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(struct <a class="el" href="structspdk__nvmf__subsystem__opts.html">spdk_nvmf_subsystem_opts</a>)==88, &quot;Incorrect size&quot;)</td></tr>
-<tr class="separator:a468ce55bab3512a75718ecef36f7d8b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0b659f98573f1064fcbf104913c249b" id="r_af0b659f98573f1064fcbf104913c249b"><td class="memItemLeft" align="right" valign="top"><a id="af0b659f98573f1064fcbf104913c249b" name="af0b659f98573f1064fcbf104913c249b"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(struct <a class="el" href="structspdk__nvmf__subsystem__opts.html">spdk_nvmf_subsystem_opts</a>)==345, &quot;Incorrect size&quot;)</td></tr>
+<tr class="separator:af0b659f98573f1064fcbf104913c249b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a517b8c29a5a9ea01e2b90f74b48228a4" id="r_a517b8c29a5a9ea01e2b90f74b48228a4"><td class="memItemLeft" align="right" valign="top"><a id="a517b8c29a5a9ea01e2b90f74b48228a4" name="a517b8c29a5a9ea01e2b90f74b48228a4"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_subsystem_opts_init</b> (enum <a class="el" href="nvmf__spec_8h.html#a808272f050cc373f3a90871c1528afd4">spdk_nvmf_subtype</a> type, struct <a class="el" href="structspdk__nvmf__subsystem__opts.html">spdk_nvmf_subsystem_opts</a> *opts, size_t opts_size)</td></tr>
 <tr class="separator:a517b8c29a5a9ea01e2b90f74b48228a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -347,9 +347,6 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_referral_add
 <tr class="memitem:a261e8613de83e1a557e95a6e06bd0a19" id="r_a261e8613de83e1a557e95a6e06bd0a19"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a261e8613de83e1a557e95a6e06bd0a19">spdk_nvmf_qpair_get_listen_trid</a> (struct <a class="el" href="structspdk__nvmf__qpair.html">spdk_nvmf_qpair</a> *qpair, struct <a class="el" href="structspdk__nvme__transport__id.html">spdk_nvme_transport_id</a> *trid)</td></tr>
 <tr class="memdesc:a261e8613de83e1a557e95a6e06bd0a19"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the associated listener transport ID for this queue pair.  <br /></td></tr>
 <tr class="separator:a261e8613de83e1a557e95a6e06bd0a19"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8a593cd20d82a159e7bc6cdfe233242e" id="r_a8a593cd20d82a159e7bc6cdfe233242e"><td class="memItemLeft" align="right" valign="top">struct spdk_nvmf_subsystem *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8a593cd20d82a159e7bc6cdfe233242e">spdk_nvmf_subsystem_create</a> (struct spdk_nvmf_tgt *tgt, const char *nqn, enum <a class="el" href="nvmf__spec_8h.html#a808272f050cc373f3a90871c1528afd4">spdk_nvmf_subtype</a> type, uint32_t num_ns)</td></tr>
-<tr class="memdesc:a8a593cd20d82a159e7bc6cdfe233242e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an NVMe-oF subsystem.  <br /></td></tr>
-<tr class="separator:a8a593cd20d82a159e7bc6cdfe233242e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8b3b572e7ba523dad549bf7d1aa9d45a" id="r_a8b3b572e7ba523dad549bf7d1aa9d45a"><td class="memItemLeft" align="right" valign="top">struct spdk_nvmf_subsystem *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8b3b572e7ba523dad549bf7d1aa9d45a">spdk_nvmf_subsystem_create_ext</a> (struct spdk_nvmf_tgt *tgt, const char *nqn, enum <a class="el" href="nvmf__spec_8h.html#a808272f050cc373f3a90871c1528afd4">spdk_nvmf_subtype</a> type, const struct <a class="el" href="structspdk__nvmf__subsystem__opts.html">spdk_nvmf_subsystem_opts</a> *opts)</td></tr>
 <tr class="memdesc:a8b3b572e7ba523dad549bf7d1aa9d45a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an NVMe-oF subsystem.  <br /></td></tr>
 <tr class="separator:a8b3b572e7ba523dad549bf7d1aa9d45a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -455,12 +452,6 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_referral_add
 <tr class="memitem:a8f4f76f43797274eaf8b08a0894526f6" id="r_a8f4f76f43797274eaf8b08a0894526f6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8f4f76f43797274eaf8b08a0894526f6">spdk_nvmf_subsystem_any_listener_allowed</a> (struct spdk_nvmf_subsystem *subsystem)</td></tr>
 <tr class="memdesc:a8f4f76f43797274eaf8b08a0894526f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether a subsystem allows any listen address or only addresses in the allowed list.  <br /></td></tr>
 <tr class="separator:a8f4f76f43797274eaf8b08a0894526f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a488442d5a27c5e3c4a88184bd8a5301b" id="r_a488442d5a27c5e3c4a88184bd8a5301b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a488442d5a27c5e3c4a88184bd8a5301b">spdk_nvmf_subsystem_set_ana_reporting</a> (struct spdk_nvmf_subsystem *subsystem, bool ana_reporting)</td></tr>
-<tr class="memdesc:a488442d5a27c5e3c4a88184bd8a5301b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set whether a subsystem supports Asymmetric Namespace Access (ANA) reporting.  <br /></td></tr>
-<tr class="separator:a488442d5a27c5e3c4a88184bd8a5301b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af2865d5c13e5c7ca972e1577796d8dcf" id="r_af2865d5c13e5c7ca972e1577796d8dcf"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af2865d5c13e5c7ca972e1577796d8dcf">spdk_nvmf_subsystem_get_ana_reporting</a> (struct spdk_nvmf_subsystem *subsystem)</td></tr>
-<tr class="memdesc:af2865d5c13e5c7ca972e1577796d8dcf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get whether a subsystem supports Asymmetric Namespace Access (ANA) reporting.  <br /></td></tr>
-<tr class="separator:af2865d5c13e5c7ca972e1577796d8dcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9124f6370456043e55419fdf64879c3e" id="r_a9124f6370456043e55419fdf64879c3e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9124f6370456043e55419fdf64879c3e">spdk_nvmf_subsystem_set_ana_state</a> (struct spdk_nvmf_subsystem *subsystem, const struct <a class="el" href="structspdk__nvme__transport__id.html">spdk_nvme_transport_id</a> *trid, enum spdk_nvme_ana_state ana_state, uint32_t anagrpid, <a class="el" href="#aad52ac090dcb26b03da0e689ea71df89">spdk_nvmf_tgt_subsystem_listen_done_fn</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:a9124f6370456043e55419fdf64879c3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set Asymmetric Namespace Access (ANA) state for the specified ANA group id.  <br /></td></tr>
 <tr class="separator:a9124f6370456043e55419fdf64879c3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -494,9 +485,6 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_referral_add
 <tr class="memitem:a3d64a8d0706413597df7a7861a5a9d54" id="r_a3d64a8d0706413597df7a7861a5a9d54"><td class="memItemLeft" align="right" valign="top">struct spdk_nvmf_ns *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3d64a8d0706413597df7a7861a5a9d54">spdk_nvmf_subsystem_get_ns</a> (struct spdk_nvmf_subsystem *subsystem, uint32_t nsid)</td></tr>
 <tr class="memdesc:a3d64a8d0706413597df7a7861a5a9d54"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a namespace in a subsystem by NSID.  <br /></td></tr>
 <tr class="separator:a3d64a8d0706413597df7a7861a5a9d54"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a414b91bad7200ab931f14a06585ccc74" id="r_a414b91bad7200ab931f14a06585ccc74"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a414b91bad7200ab931f14a06585ccc74">spdk_nvmf_subsystem_get_max_namespaces</a> (const struct spdk_nvmf_subsystem *subsystem)</td></tr>
-<tr class="memdesc:a414b91bad7200ab931f14a06585ccc74"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the maximum number of namespaces allowed in a subsystem.  <br /></td></tr>
-<tr class="separator:a414b91bad7200ab931f14a06585ccc74"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5b02975c7384755db60436a49e64faec" id="r_a5b02975c7384755db60436a49e64faec"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5b02975c7384755db60436a49e64faec">spdk_nvmf_subsystem_get_min_cntlid</a> (const struct spdk_nvmf_subsystem *subsystem)</td></tr>
 <tr class="memdesc:a5b02975c7384755db60436a49e64faec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the minimum controller ID allowed in a subsystem.  <br /></td></tr>
 <tr class="separator:a5b02975c7384755db60436a49e64faec"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -512,27 +500,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_referral_add
 <tr class="memitem:af133c734616e019eecb372ce7b096ff5" id="r_af133c734616e019eecb372ce7b096ff5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af133c734616e019eecb372ce7b096ff5">spdk_nvmf_ns_get_opts</a> (const struct spdk_nvmf_ns *ns, struct <a class="el" href="structspdk__nvmf__ns__opts.html">spdk_nvmf_ns_opts</a> *opts, size_t opts_size)</td></tr>
 <tr class="memdesc:af133c734616e019eecb372ce7b096ff5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the options specified for a namespace.  <br /></td></tr>
 <tr class="separator:af133c734616e019eecb372ce7b096ff5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad9cfadf7b2f1086f0448a6ccedf6b458" id="r_ad9cfadf7b2f1086f0448a6ccedf6b458"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad9cfadf7b2f1086f0448a6ccedf6b458">spdk_nvmf_subsystem_get_sn</a> (const struct spdk_nvmf_subsystem *subsystem)</td></tr>
-<tr class="memdesc:ad9cfadf7b2f1086f0448a6ccedf6b458"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the serial number of the specified subsystem.  <br /></td></tr>
-<tr class="separator:ad9cfadf7b2f1086f0448a6ccedf6b458"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abb053c9573460d29898b184957ce05fd" id="r_abb053c9573460d29898b184957ce05fd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abb053c9573460d29898b184957ce05fd">spdk_nvmf_subsystem_set_sn</a> (struct spdk_nvmf_subsystem *subsystem, const char *sn)</td></tr>
-<tr class="memdesc:abb053c9573460d29898b184957ce05fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the serial number for the specified subsystem.  <br /></td></tr>
-<tr class="separator:abb053c9573460d29898b184957ce05fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa9fb4f5b1806fcb56ba39d135de8e4d4" id="r_aa9fb4f5b1806fcb56ba39d135de8e4d4"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa9fb4f5b1806fcb56ba39d135de8e4d4">spdk_nvmf_subsystem_get_mn</a> (const struct spdk_nvmf_subsystem *subsystem)</td></tr>
-<tr class="memdesc:aa9fb4f5b1806fcb56ba39d135de8e4d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the model number of the specified subsystem.  <br /></td></tr>
-<tr class="separator:aa9fb4f5b1806fcb56ba39d135de8e4d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a270a2bbd77c6b97116c7e61b4f1a56ce" id="r_a270a2bbd77c6b97116c7e61b4f1a56ce"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a270a2bbd77c6b97116c7e61b4f1a56ce">spdk_nvmf_subsystem_set_mn</a> (struct spdk_nvmf_subsystem *subsystem, const char *mn)</td></tr>
-<tr class="memdesc:a270a2bbd77c6b97116c7e61b4f1a56ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the model number for the specified subsystem.  <br /></td></tr>
-<tr class="separator:a270a2bbd77c6b97116c7e61b4f1a56ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a39e0404fee2bdf6385c6d09b7e38b62b" id="r_a39e0404fee2bdf6385c6d09b7e38b62b"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a39e0404fee2bdf6385c6d09b7e38b62b">spdk_nvmf_subsystem_get_nqn</a> (const struct spdk_nvmf_subsystem *subsystem)</td></tr>
 <tr class="memdesc:a39e0404fee2bdf6385c6d09b7e38b62b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the NQN of the specified subsystem.  <br /></td></tr>
 <tr class="separator:a39e0404fee2bdf6385c6d09b7e38b62b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0f3fbe4ab1d90cda9a1f3fcbf2cb857d" id="r_a0f3fbe4ab1d90cda9a1f3fcbf2cb857d"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="nvmf__spec_8h.html#a808272f050cc373f3a90871c1528afd4">spdk_nvmf_subtype</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0f3fbe4ab1d90cda9a1f3fcbf2cb857d">spdk_nvmf_subsystem_get_type</a> (struct spdk_nvmf_subsystem *subsystem)</td></tr>
-<tr class="memdesc:a0f3fbe4ab1d90cda9a1f3fcbf2cb857d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the type of the specified subsystem.  <br /></td></tr>
-<tr class="separator:a0f3fbe4ab1d90cda9a1f3fcbf2cb857d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acfae99734ec18b90dbb6ef39d1b73860" id="r_acfae99734ec18b90dbb6ef39d1b73860"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acfae99734ec18b90dbb6ef39d1b73860">spdk_nvmf_subsystem_get_max_nsid</a> (struct spdk_nvmf_subsystem *subsystem)</td></tr>
-<tr class="memdesc:acfae99734ec18b90dbb6ef39d1b73860"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get maximum namespace id of the specified subsystem.  <br /></td></tr>
-<tr class="separator:acfae99734ec18b90dbb6ef39d1b73860"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0241868432ed4cd5687f5add03e52860" id="r_a0241868432ed4cd5687f5add03e52860"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0241868432ed4cd5687f5add03e52860">spdk_nvmf_subsystem_is_discovery</a> (struct spdk_nvmf_subsystem *subsystem)</td></tr>
 <tr class="memdesc:a0241868432ed4cd5687f5add03e52860"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether a given subsystem is a discovery subsystem.  <br /></td></tr>
 <tr class="separator:a0241868432ed4cd5687f5add03e52860"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2030,50 +2000,6 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_referral_add
 
 </div>
 </div>
-<a id="a8a593cd20d82a159e7bc6cdfe233242e" name="a8a593cd20d82a159e7bc6cdfe233242e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8a593cd20d82a159e7bc6cdfe233242e">&#9670;&#160;</a></span>spdk_nvmf_subsystem_create()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">struct spdk_nvmf_subsystem * spdk_nvmf_subsystem_create </td>
-          <td>(</td>
-          <td class="paramtype">struct spdk_nvmf_tgt *</td>          <td class="paramname"><span class="paramname"><em>tgt</em>, </span></td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>nqn</em>, </span></td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">enum <a class="el" href="nvmf__spec_8h.html#a808272f050cc373f3a90871c1528afd4">spdk_nvmf_subtype</a></td>          <td class="paramname"><span class="paramname"><em>type</em>, </span></td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>num_ns</em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Create an NVMe-oF subsystem. </p>
-<p>Subsystems are in one of three states: Inactive, Active, Paused. This state affects which operations may be performed on the subsystem. Upon creation, the subsystem will be in the Inactive state and may be activated by calling <a class="el" href="#a0584bea11782561b13355b89de25b6c0" title="Transition an NVMe-oF subsystem from Inactive to Active state.">spdk_nvmf_subsystem_start()</a>. No I/O will be processed in the Inactive or Paused states, but changes to the state of the subsystem may be made.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">tgt</td><td>The NVMe-oF target that will own this subsystem. </td></tr>
-    <tr><td class="paramname">nqn</td><td>The NVMe qualified name of this subsystem. </td></tr>
-    <tr><td class="paramname">type</td><td>Whether this subsystem is an I/O subsystem or a Discovery subsystem. </td></tr>
-    <tr><td class="paramname">num_ns</td><td>The maximum number of namespaces this subsystem may contain.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>a pointer to a NVMe-oF subsystem on success, or NULL on failure. </dd></dl>
-
-</div>
-</div>
 <a id="a8b3b572e7ba523dad549bf7d1aa9d45a" name="a8b3b572e7ba523dad549bf7d1aa9d45a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8b3b572e7ba523dad549bf7d1aa9d45a">&#9670;&#160;</a></span>spdk_nvmf_subsystem_create_ext()</h2>
 
@@ -2238,32 +2164,6 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_referral_add
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if any host is allowed to connect to this subsystem, or false if connecting hosts must be in the list configured with <a class="el" href="#a4082cbddea58f9fc309504a6e8254113" title="Allow the given host NQN to connect to the given subsystem.">spdk_nvmf_subsystem_add_host()</a>. </dd></dl>
-
-</div>
-</div>
-<a id="af2865d5c13e5c7ca972e1577796d8dcf" name="af2865d5c13e5c7ca972e1577796d8dcf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af2865d5c13e5c7ca972e1577796d8dcf">&#9670;&#160;</a></span>spdk_nvmf_subsystem_get_ana_reporting()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool spdk_nvmf_subsystem_get_ana_reporting </td>
-          <td>(</td>
-          <td class="paramtype">struct spdk_nvmf_subsystem *</td>          <td class="paramname"><span class="paramname"><em>subsystem</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Get whether a subsystem supports Asymmetric Namespace Access (ANA) reporting. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">subsystem</td><td>Subsystem to check</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>true if subsystem supports ANA reporting, false otherwise. </dd></dl>
 
 </div>
 </div>
@@ -2441,58 +2341,6 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_referral_add
 
 </div>
 </div>
-<a id="a414b91bad7200ab931f14a06585ccc74" name="a414b91bad7200ab931f14a06585ccc74"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a414b91bad7200ab931f14a06585ccc74">&#9670;&#160;</a></span>spdk_nvmf_subsystem_get_max_namespaces()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint32_t spdk_nvmf_subsystem_get_max_namespaces </td>
-          <td>(</td>
-          <td class="paramtype">const struct spdk_nvmf_subsystem *</td>          <td class="paramname"><span class="paramname"><em>subsystem</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Get the maximum number of namespaces allowed in a subsystem. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">subsystem</td><td>Subsystem to query.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Maximum number of namespaces allowed in the subsystem, or 0 for unlimited. </dd></dl>
-
-</div>
-</div>
-<a id="acfae99734ec18b90dbb6ef39d1b73860" name="acfae99734ec18b90dbb6ef39d1b73860"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acfae99734ec18b90dbb6ef39d1b73860">&#9670;&#160;</a></span>spdk_nvmf_subsystem_get_max_nsid()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint32_t spdk_nvmf_subsystem_get_max_nsid </td>
-          <td>(</td>
-          <td class="paramtype">struct spdk_nvmf_subsystem *</td>          <td class="paramname"><span class="paramname"><em>subsystem</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Get maximum namespace id of the specified subsystem. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">subsystem</td><td>Subsystem to query.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>maximum namespace id </dd></dl>
-
-</div>
-</div>
 <a id="a5b02975c7384755db60436a49e64faec" name="a5b02975c7384755db60436a49e64faec"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5b02975c7384755db60436a49e64faec">&#9670;&#160;</a></span>spdk_nvmf_subsystem_get_min_cntlid()</h2>
 
@@ -2516,32 +2364,6 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_referral_add
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Minimum controller ID allowed in the subsystem. </dd></dl>
-
-</div>
-</div>
-<a id="aa9fb4f5b1806fcb56ba39d135de8e4d4" name="aa9fb4f5b1806fcb56ba39d135de8e4d4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa9fb4f5b1806fcb56ba39d135de8e4d4">&#9670;&#160;</a></span>spdk_nvmf_subsystem_get_mn()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const char * spdk_nvmf_subsystem_get_mn </td>
-          <td>(</td>
-          <td class="paramtype">const struct spdk_nvmf_subsystem *</td>          <td class="paramname"><span class="paramname"><em>subsystem</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Get the model number of the specified subsystem. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">subsystem</td><td>Subsystem to query.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>model number of the specified subsystem. </dd></dl>
 
 </div>
 </div>
@@ -2745,58 +2567,6 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_referral_add
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the NVMe-oF subsystem options. </dd></dl>
-
-</div>
-</div>
-<a id="ad9cfadf7b2f1086f0448a6ccedf6b458" name="ad9cfadf7b2f1086f0448a6ccedf6b458"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad9cfadf7b2f1086f0448a6ccedf6b458">&#9670;&#160;</a></span>spdk_nvmf_subsystem_get_sn()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const char * spdk_nvmf_subsystem_get_sn </td>
-          <td>(</td>
-          <td class="paramtype">const struct spdk_nvmf_subsystem *</td>          <td class="paramname"><span class="paramname"><em>subsystem</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Get the serial number of the specified subsystem. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">subsystem</td><td>Subsystem to query.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>serial number of the specified subsystem. </dd></dl>
-
-</div>
-</div>
-<a id="a0f3fbe4ab1d90cda9a1f3fcbf2cb857d" name="a0f3fbe4ab1d90cda9a1f3fcbf2cb857d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0f3fbe4ab1d90cda9a1f3fcbf2cb857d">&#9670;&#160;</a></span>spdk_nvmf_subsystem_get_type()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="nvmf__spec_8h.html#a808272f050cc373f3a90871c1528afd4">spdk_nvmf_subtype</a> spdk_nvmf_subsystem_get_type </td>
-          <td>(</td>
-          <td class="paramtype">struct spdk_nvmf_subsystem *</td>          <td class="paramname"><span class="paramname"><em>subsystem</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Get the type of the specified subsystem. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">subsystem</td><td>Subsystem to query.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>the type of the specified subsystem. </dd></dl>
 
 </div>
 </div>
@@ -3154,38 +2924,6 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_referral_add
 
 </div>
 </div>
-<a id="a488442d5a27c5e3c4a88184bd8a5301b" name="a488442d5a27c5e3c4a88184bd8a5301b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a488442d5a27c5e3c4a88184bd8a5301b">&#9670;&#160;</a></span>spdk_nvmf_subsystem_set_ana_reporting()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int spdk_nvmf_subsystem_set_ana_reporting </td>
-          <td>(</td>
-          <td class="paramtype">struct spdk_nvmf_subsystem *</td>          <td class="paramname"><span class="paramname"><em>subsystem</em>, </span></td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>ana_reporting</em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Set whether a subsystem supports Asymmetric Namespace Access (ANA) reporting. </p>
-<p>May only be performed on subsystems in the INACTIVE state.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">subsystem</td><td>Subsystem to modify. </td></tr>
-    <tr><td class="paramname">ana_reporting</td><td>true to support or false not to support ANA reporting.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>0 on success, or negated errno value on failure. </dd></dl>
-
-</div>
-</div>
 <a id="a9124f6370456043e55419fdf64879c3e" name="a9124f6370456043e55419fdf64879c3e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9124f6370456043e55419fdf64879c3e">&#9670;&#160;</a></span>spdk_nvmf_subsystem_set_ana_state()</h2>
 
@@ -3308,37 +3046,6 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_referral_add
 
 </div>
 </div>
-<a id="a270a2bbd77c6b97116c7e61b4f1a56ce" name="a270a2bbd77c6b97116c7e61b4f1a56ce"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a270a2bbd77c6b97116c7e61b4f1a56ce">&#9670;&#160;</a></span>spdk_nvmf_subsystem_set_mn()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int spdk_nvmf_subsystem_set_mn </td>
-          <td>(</td>
-          <td class="paramtype">struct spdk_nvmf_subsystem *</td>          <td class="paramname"><span class="paramname"><em>subsystem</em>, </span></td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>mn</em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Set the model number for the specified subsystem. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">subsystem</td><td>Subsystem to set for. </td></tr>
-    <tr><td class="paramname">mn</td><td>model number to set.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>0 on success, -1 on failure. </dd></dl>
-
-</div>
-</div>
 <a id="a1e9bf71b64ecfd7130c7824ea84180f9" name="a1e9bf71b64ecfd7130c7824ea84180f9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1e9bf71b64ecfd7130c7824ea84180f9">&#9670;&#160;</a></span>spdk_nvmf_subsystem_set_ns_ana_group()</h2>
 
@@ -3374,37 +3081,6 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_referral_add
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 on success, negated errno on failure. </dd></dl>
-
-</div>
-</div>
-<a id="abb053c9573460d29898b184957ce05fd" name="abb053c9573460d29898b184957ce05fd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abb053c9573460d29898b184957ce05fd">&#9670;&#160;</a></span>spdk_nvmf_subsystem_set_sn()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int spdk_nvmf_subsystem_set_sn </td>
-          <td>(</td>
-          <td class="paramtype">struct spdk_nvmf_subsystem *</td>          <td class="paramname"><span class="paramname"><em>subsystem</em>, </span></td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>sn</em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Set the serial number for the specified subsystem. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">subsystem</td><td>Subsystem to set for. </td></tr>
-    <tr><td class="paramname">sn</td><td>serial number to set.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>0 on success, -1 on failure. </dd></dl>
 
 </div>
 </div>

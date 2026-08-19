@@ -110,12 +110,12 @@ var searchData=
   ['applications_20with_20pkg_20config_107',['Linking SPDK applications with pkg-config',['../pkgconfig.html',1,'user_guides']]],
   ['apptag_108',['apptag',['../structspdk__nvme__ns__cmd__ext__io__opts.html#a5ffea1f3e030584312d1e97ede4e2115',1,'spdk_nvme_ns_cmd_ext_io_opts']]],
   ['apptag_5fmask_109',['apptag_mask',['../structspdk__nvme__ns__cmd__ext__io__opts.html#a8737a902d42444e5d4b9117d23230ad3',1,'spdk_nvme_ns_cmd_ext_io_opts']]],
-  ['apsta_110',['apsta',['../structspdk__nvme__ctrlr__data.html#aa26fc19472a1150c591d3842b36ce927',1,'spdk_nvme_ctrlr_data']]],
+  ['apsta_110',['apsta',['../structspdk__nvme__ctrlr__data.html#af92f49f0d8f208454dad04f5600d1572',1,'spdk_nvme_ctrlr_data']]],
   ['apste_111',['apste',['../unionspdk__nvme__feat__autonomous__power__state__transition.html#a022cc1ba5b7ff365a6b69989c663333a',1,'spdk_nvme_feat_autonomous_power_state_transition']]],
   ['aqa_112',['aqa',['../structspdk__nvme__registers.html#a5bf760e2a616ecb3f8d8fd0a64d24e61',1,'spdk_nvme_registers']]],
   ['arb_5fmechanism_113',['arb_mechanism',['../structspdk__nvme__ctrlr__opts.html#a183d97c9bda86a9ca47442bcbc69c444',1,'spdk_nvme_ctrlr_opts']]],
   ['arbitration_5fburst_114',['arbitration_burst',['../structspdk__nvme__ctrlr__opts.html#a76dd1c766edd9572dfddf9584f0e4e48',1,'spdk_nvme_ctrlr_opts']]],
-  ['args_115',['args',['../structspdk__trace__parser__entry.html#a1409833ff772ec5e8f39fd7d1e9139e3',1,'spdk_trace_parser_entry']]],
+  ['args_115',['args',['../structspdk__trace__parser__entry.html#a036c77f41310b6135312a14aeec19813',1,'spdk_trace_parser_entry']]],
   ['as_20non_20privileged_20user_116',['Running SPDK as non-privileged user',['../system_configuration.html#system_configuration_nonroot',1,'']]],
   ['asc_117',['asc',['../structspdk__bdev__io__internal__fields.html#a9298f0823356843b9f2bac28b0cc19cf',1,'spdk_bdev_io_internal_fields']]],
   ['ascq_118',['ascq',['../structspdk__bdev__io__internal__fields.html#a43c97cc7cea3117970dd9a125e510ac9',1,'spdk_bdev_io_internal_fields']]],
@@ -133,7 +133,7 @@ var searchData=
   ['attach_5fcb_130',['attach_cb',['../structspdk__pci__device__provider.html#a7b4305d8d5f9bb98eb09f41d48a0bbf7',1,'spdk_pci_device_provider']]],
   ['attach_5fdevice_131',['attach_device',['../structspdk__vfu__endpoint__ops.html#a797b54b7685b855adfd9dd72dfeaaecb',1,'spdk_vfu_endpoint_ops']]],
   ['audience_132',['Audience',['../bdev.html#bdev_ug_targetaudience',1,'Target Audience'],['../blob.html#blob_pg_audience',1,'Target Audience']]],
-  ['avscc_133',['avscc',['../structspdk__nvme__ctrlr__data.html#a031b69b59c1375cc44d5e31efdd90c2d',1,'spdk_nvme_ctrlr_data']]],
+  ['avscc_133',['avscc',['../structspdk__nvme__ctrlr__data.html#a7b78f2cbcce27cab6b9b7156e95d4506',1,'spdk_nvme_ctrlr_data']]],
   ['awun_134',['awun',['../structspdk__nvme__ctrlr__data.html#aa5a66788efbe912b16019c7b62b00a16',1,'spdk_nvme_ctrlr_data']]],
   ['awupf_135',['awupf',['../structspdk__nvme__ctrlr__data.html#a77160c6bcaa3ab4a312b42991603860e',1,'spdk_nvme_ctrlr_data']]]
 ];
