@@ -134,6 +134,8 @@ $(function(){initNavTree('changelog.html',''); initResizable(); });
 <div class="textblock"><p><a class="anchor" id="md_changelog"></a> </p>
 <h1><a class="anchor" id="changelog-v26-09"></a>
 v26.09: (Upcoming Release)</h1>
+<h2>accel</h2>
+<p>Exposed the accel_mlx5 module API publicly. Added <code>spdk_accel_mlx5_get_default_attr()</code> and <code>spdk_accel_mlx5_enable()</code> functions along with the <code>struct <a class="el" href="structspdk__accel__mlx5__attr.html" title="Configuration attributes for the accel_mlx5 module.">spdk_accel_mlx5_attr</a></code> configuration structure to the public header <code>include/spdk/module/accel/mlx5.h</code>. This allows applications to configure and enable the MLX5 accelerator module with specific parameters such as queue size, number of requests, allowed devices, crypto split blocks, and driver mode for UMR operations.</p>
 <h2>schema</h2>
 <p>The JSON-RPC schema has been migrated from JSON (<code>schema/schema.json</code>) to YAML (<code>schema/schema.yaml</code>).</p>
 <h2>nvme</h2>

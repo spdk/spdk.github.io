@@ -7,11 +7,12 @@ var searchData=
   ['qos_4',['qos',['../structspdk__bdev_1_1____bdev__internal__fields.html#ad8ffb00efc69dca7d686f17220027742',1,'spdk_bdev::__bdev_internal_fields']]],
   ['qos_20vpp_20userspace_20tcp_20ip_5',['v18.04: Logical Volume Snapshot/Clone, iSCSI Initiator, Bdev QoS, VPP Userspace TCP/IP',['../changelog.html#changelog-v18-04',1,'']]],
   ['qos_5fmod_5fin_5fprogress_6',['qos_mod_in_progress',['../structspdk__bdev_1_1____bdev__internal__fields.html#add102c5c15292b5d497ed7442a0b30b4',1,'spdk_bdev::__bdev_internal_fields']]],
-  ['qpair_20groups_7',['v20.04: SPDK Top, IDXD, NVMe qpair groups',['../changelog.html#changelog-v20-04',1,'']]],
-  ['qprio_8',['qprio',['../structspdk__nvme__io__qpair__opts.html#a9a9ae75991da44a7fbf06a3c82161a6d',1,'spdk_nvme_io_qpair_opts']]],
-  ['querying_20tracepoint_20status_9',['Querying Tracepoint Status',['../tracepoints.html#query_tpoint_status',1,'']]],
-  ['queue_10',['queue',['../structspdk__iobuf__pool__cache.html#a29a5be92ed35c00b8dba5fdfe5ee4061',1,'spdk_iobuf_pool_cache']]],
-  ['queue_20block_20layer_20blk_20mq_11',['Multi-Queue Block Layer (blk-mq)',['../vhost.html#vhost_multiqueue',1,'']]],
-  ['queued_5fresets_12',['queued_resets',['../structspdk__bdev_1_1____bdev__internal__fields.html#aabd96e247f41de6bde643bfcb381daa7',1,'spdk_bdev::__bdev_internal_fields']]],
-  ['quiesce_5fdevice_13',['quiesce_device',['../structspdk__vfu__endpoint__ops.html#affb0058441fbe6b1782cf71400006c6c',1,'spdk_vfu_endpoint_ops']]]
+  ['qp_5fsize_7',['qp_size',['../structspdk__accel__mlx5__attr.html#a0624222f1c57b38f4bf81897c4f3688b',1,'spdk_accel_mlx5_attr']]],
+  ['qpair_20groups_8',['v20.04: SPDK Top, IDXD, NVMe qpair groups',['../changelog.html#changelog-v20-04',1,'']]],
+  ['qprio_9',['qprio',['../structspdk__nvme__io__qpair__opts.html#a9a9ae75991da44a7fbf06a3c82161a6d',1,'spdk_nvme_io_qpair_opts']]],
+  ['querying_20tracepoint_20status_10',['Querying Tracepoint Status',['../tracepoints.html#query_tpoint_status',1,'']]],
+  ['queue_11',['queue',['../structspdk__iobuf__pool__cache.html#a29a5be92ed35c00b8dba5fdfe5ee4061',1,'spdk_iobuf_pool_cache']]],
+  ['queue_20block_20layer_20blk_20mq_12',['Multi-Queue Block Layer (blk-mq)',['../vhost.html#vhost_multiqueue',1,'']]],
+  ['queued_5fresets_13',['queued_resets',['../structspdk__bdev_1_1____bdev__internal__fields.html#aabd96e247f41de6bde643bfcb381daa7',1,'spdk_bdev::__bdev_internal_fields']]],
+  ['quiesce_5fdevice_14',['quiesce_device',['../structspdk__vfu__endpoint__ops.html#affb0058441fbe6b1782cf71400006c6c',1,'spdk_vfu_endpoint_ops']]]
 ];

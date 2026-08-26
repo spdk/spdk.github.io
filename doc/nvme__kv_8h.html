@@ -472,8 +472,8 @@ Functions</h2></td></tr>
     <tr><td class="paramname">qpair</td><td>I/O queue pair to submit the request. </td></tr>
     <tr><td class="paramname">key</td><td>Pointer to the key buffer. </td></tr>
     <tr><td class="paramname">key_len</td><td>Length of the key in bytes (SPDK_NVME_KV_KEY_MIN_LEN to SPDK_NVME_KV_KEY_MAX_LEN). </td></tr>
-    <tr><td class="paramname">value</td><td>Pointer to the value buffer to store the retrieved value. </td></tr>
-    <tr><td class="paramname">value_len</td><td>Length of the value buffer in bytes. </td></tr>
+    <tr><td class="paramname">value</td><td>Pointer to the value buffer to store the retrieved value. May be NULL if value_len is 0. </td></tr>
+    <tr><td class="paramname">value_len</td><td>Length of the value buffer in bytes. 0 transfers no data and only reports the value size in CDW0 of the completion. </td></tr>
     <tr><td class="paramname">cb_fn</td><td>Callback function to invoke when the I/O is completed. </td></tr>
     <tr><td class="paramname">cb_arg</td><td>Argument to pass to the callback function. </td></tr>
     <tr><td class="paramname">options</td><td>Retrieve options, see spdk_nvme_kv_retrieve_option in <a class="el" href="nvme__spec_8h.html" title="NVMe specification definitions.">nvme_spec.h</a>.</td></tr>
@@ -546,8 +546,8 @@ Functions</h2></td></tr>
     <tr><td class="paramname">qpair</td><td>I/O queue pair to submit the request. </td></tr>
     <tr><td class="paramname">key</td><td>Pointer to the key buffer. </td></tr>
     <tr><td class="paramname">key_len</td><td>Length of the key in bytes (SPDK_NVME_KV_KEY_MIN_LEN to SPDK_NVME_KV_KEY_MAX_LEN). </td></tr>
-    <tr><td class="paramname">value</td><td>Pointer to the value buffer. </td></tr>
-    <tr><td class="paramname">value_len</td><td>Length of the value in bytes. </td></tr>
+    <tr><td class="paramname">value</td><td>Pointer to the value buffer. May be NULL if value_len is 0. </td></tr>
+    <tr><td class="paramname">value_len</td><td>Length of the value in bytes. 0 stores an empty value. </td></tr>
     <tr><td class="paramname">cb_fn</td><td>Callback function to invoke when the I/O is completed. </td></tr>
     <tr><td class="paramname">cb_arg</td><td>Argument to pass to the callback function. </td></tr>
     <tr><td class="paramname">options</td><td>Store options, see spdk_nvme_kv_store_option in <a class="el" href="nvme__spec_8h.html" title="NVMe specification definitions.">nvme_spec.h</a>.</td></tr>
