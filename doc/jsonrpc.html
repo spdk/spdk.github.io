@@ -891,7 +891,7 @@ framework_set_scheduler</h2>
 <div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;params&quot;: {</div>
 <div class="line">    &quot;name&quot;: &quot;static&quot;,</div>
-<div class="line">    &quot;period&quot;: &quot;1000000&quot;</div>
+<div class="line">    &quot;period&quot;: 1000000</div>
 <div class="line">  }</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Example response:</p>
@@ -924,7 +924,7 @@ framework_get_scheduler</h2>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
 <div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
-<div class="line">  &quot;method&quot;: &quot;framework_set_scheduler&quot;,</div>
+<div class="line">  &quot;method&quot;: &quot;framework_get_scheduler&quot;,</div>
 <div class="line">  &quot;id&quot;: 1</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Example response:</p>
@@ -1104,7 +1104,7 @@ thread_set_cpumask</h2>
 <div class="line">  &quot;method&quot;: &quot;thread_set_cpumask&quot;,</div>
 <div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;params&quot;: {</div>
-<div class="line">    &quot;id&quot;: &quot;1&quot;,</div>
+<div class="line">    &quot;id&quot;: 1,</div>
 <div class="line">    &quot;cpumask&quot;: &quot;1&quot;</div>
 <div class="line">  }</div>
 <div class="line">}</div>
@@ -1186,7 +1186,7 @@ trace_set_tpoint_mask</h2>
 <div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;params&quot;: {</div>
 <div class="line">    &quot;name&quot;: &quot;bdev&quot;,</div>
-<div class="line">    &quot;tpoint_mask&quot;: &quot;0x1&quot;</div>
+<div class="line">    &quot;tpoint_mask&quot;: 1</div>
 <div class="line">  }</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Example response:</p>
@@ -1215,7 +1215,7 @@ trace_clear_tpoint_mask</h2>
 <div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;params&quot;: {</div>
 <div class="line">    &quot;name&quot;: &quot;bdev&quot;,</div>
-<div class="line">    &quot;tpoint_mask&quot;: &quot;0x1&quot;</div>
+<div class="line">    &quot;tpoint_mask&quot;: 1</div>
 <div class="line">  }</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Example response:</p>
@@ -1709,18 +1709,16 @@ accel_get_opc_assignments</h2>
 <div class="fragment"><div class="line">{</div>
 <div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
 <div class="line">  &quot;id&quot;: 1,</div>
-<div class="line">  &quot;result&quot;: [</div>
-<div class="line">    {</div>
-<div class="line">      &quot;copy&quot;: &quot;software&quot;,</div>
-<div class="line">      &quot;fill&quot;: &quot;software&quot;,</div>
-<div class="line">      &quot;dualcast&quot;: &quot;software&quot;,</div>
-<div class="line">      &quot;compare&quot;: &quot;software&quot;,</div>
-<div class="line">      &quot;crc32c&quot;: &quot;software&quot;,</div>
-<div class="line">      &quot;copy_crc32c&quot;: &quot;software&quot;,</div>
-<div class="line">      &quot;compress&quot;: &quot;software&quot;,</div>
-<div class="line">      &quot;decompress&quot;: &quot;software&quot;</div>
-<div class="line">    }</div>
-<div class="line">  ]</div>
+<div class="line">  &quot;result&quot;: {</div>
+<div class="line">    &quot;copy&quot;: &quot;software&quot;,</div>
+<div class="line">    &quot;fill&quot;: &quot;software&quot;,</div>
+<div class="line">    &quot;dualcast&quot;: &quot;software&quot;,</div>
+<div class="line">    &quot;compare&quot;: &quot;software&quot;,</div>
+<div class="line">    &quot;crc32c&quot;: &quot;software&quot;,</div>
+<div class="line">    &quot;copy_crc32c&quot;: &quot;software&quot;,</div>
+<div class="line">    &quot;compress&quot;: &quot;software&quot;,</div>
+<div class="line">    &quot;decompress&quot;: &quot;software&quot;</div>
+<div class="line">  }</div>
 <div class="line">}</div>
 </div><!-- fragment --><h2><a class="anchor" id="rpc_accel_assign_opc"></a>
 accel_assign_opc</h2>
@@ -1806,7 +1804,7 @@ accel_crypto_key_destroy</h2>
 <div class="line">  &quot;method&quot;: &quot;accel_crypto_key_destroy&quot;,</div>
 <div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;params&quot;: {</div>
-<div class="line">    &quot;name&quot;: &quot;super_key&quot;</div>
+<div class="line">    &quot;key_name&quot;: &quot;super_key&quot;</div>
 <div class="line">  }</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Example response:</p>
@@ -4773,7 +4771,7 @@ bdev_rbd_resize</h2>
 <div class="fragment"><div class="line">{</div>
 <div class="line">  &quot;params&quot;: {</div>
 <div class="line">    &quot;name&quot;: &quot;Rbd0&quot;,</div>
-<div class="line">    &quot;new_size&quot;: &quot;4096&quot;</div>
+<div class="line">    &quot;new_size&quot;: 4096</div>
 <div class="line">  },</div>
 <div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
 <div class="line">  &quot;method&quot;: &quot;bdev_rbd_resize&quot;,</div>
@@ -4815,10 +4813,10 @@ bdev_delay_create</h2>
 <div class="line">  &quot;params&quot;: {</div>
 <div class="line">    &quot;base_bdev_name&quot;: &quot;Null0&quot;,</div>
 <div class="line">    &quot;name&quot;: &quot;Delay0&quot;,</div>
-<div class="line">    &quot;avg_read_latency&quot;: &quot;15&quot;,</div>
-<div class="line">    &quot;p99_read_latency&quot;: &quot;50&quot;,</div>
-<div class="line">    &quot;avg_write_latency&quot;: &quot;40&quot;,</div>
-<div class="line">    &quot;p99_write_latency&quot;: &quot;110&quot;</div>
+<div class="line">    &quot;avg_read_latency&quot;: 15,</div>
+<div class="line">    &quot;p99_read_latency&quot;: 50,</div>
+<div class="line">    &quot;avg_write_latency&quot;: 40,</div>
+<div class="line">    &quot;p99_write_latency&quot;: 110</div>
 <div class="line">  },</div>
 <div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
 <div class="line">  &quot;method&quot;: &quot;bdev_delay_create&quot;,</div>
@@ -4878,7 +4876,7 @@ bdev_delay_update_latency</h2>
 <div class="line">  &quot;params&quot;: {</div>
 <div class="line">    &quot;delay_bdev_name&quot;: &quot;Delay0&quot;,</div>
 <div class="line">    &quot;latency_type&quot;: &quot;avg_read&quot;,</div>
-<div class="line">    &quot;latency_us&quot;: &quot;100&quot;</div>
+<div class="line">    &quot;latency_us&quot;: 100</div>
 <div class="line">  },</div>
 <div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
 <div class="line">  &quot;method&quot;: &quot;bdev_delay_update_latency&quot;,</div>
@@ -4886,7 +4884,7 @@ bdev_delay_update_latency</h2>
 <div class="line">}</div>
 </div><!-- fragment --><p>Example response:</p>
 <div class="fragment"><div class="line">{</div>
-<div class="line">  &quot;result&quot;: &quot;true&quot;</div>
+<div class="line">  &quot;result&quot;: true</div>
 <div class="line">}</div>
 </div><!-- fragment --><h2><a class="anchor" id="rpc_bdev_error_create"></a>
 bdev_error_create</h2>
@@ -5203,8 +5201,8 @@ bdev_ftl_unmap</h2>
 <div class="fragment"><div class="line">{</div>
 <div class="line">  &quot;params&quot;: {</div>
 <div class="line">    &quot;name&quot;: &quot;ftl0&quot;,</div>
-<div class="line">    &quot;lba&quot;: &quot;0&quot;,</div>
-<div class="line">    &quot;num_blocks&quot;: &quot;1024&quot;</div>
+<div class="line">    &quot;lba&quot;: 0,</div>
+<div class="line">    &quot;num_blocks&quot;: 1024</div>
 <div class="line">  },</div>
 <div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
 <div class="line">  &quot;method&quot;: &quot;bdev_ftl_unmap&quot;,</div>
@@ -5445,7 +5443,7 @@ bdev_ftl_set_property</h2>
 <div class="fragment"><div class="line">{</div>
 <div class="line">  &quot;params&quot;: {</div>
 <div class="line">    &quot;name&quot;: &quot;ftl0&quot;,</div>
-<div class="line">    &quot;property&quot;: &quot;nv_cache.flush&quot;,</div>
+<div class="line">    &quot;ftl_property&quot;: &quot;nv_cache.flush&quot;,</div>
 <div class="line">    &quot;value&quot;: &quot;true&quot;</div>
 <div class="line">  },</div>
 <div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
@@ -5703,8 +5701,8 @@ bdev_virtio_blk_set_hotplug</h2>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
 <div class="line">  &quot;params&quot;: {</div>
-<div class="line">    &quot;enable&quot;: &quot;true&quot;,</div>
-<div class="line">    &quot;period-us&quot;: &quot;1000000&quot;</div>
+<div class="line">    &quot;enable&quot;: true,</div>
+<div class="line">    &quot;period_us&quot;: 1000000</div>
 <div class="line">  },</div>
 <div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
 <div class="line">  &quot;method&quot;: &quot;bdev_virtio_blk_set_hotplug&quot;,</div>
@@ -5816,25 +5814,28 @@ iscsi_get_options</h2>
 <div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
 <div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;result&quot;: {</div>
-<div class="line">    &quot;allow_duplicated_isid&quot;: true,</div>
-<div class="line">    &quot;default_time2retain&quot;: 60,</div>
-<div class="line">    &quot;first_burst_length&quot;: 8192,</div>
-<div class="line">    &quot;immediate_data&quot;: true,</div>
+<div class="line">    &quot;auth_file&quot;: &quot;/usr/local/etc/spdk/auth.conf&quot;,</div>
 <div class="line">    &quot;node_base&quot;: &quot;iqn.2016-06.io.spdk&quot;,</div>
-<div class="line">    &quot;mutual_chap&quot;: false,</div>
-<div class="line">    &quot;nop_in_interval&quot;: 30,</div>
-<div class="line">    &quot;chap_group&quot;: 0,</div>
+<div class="line">    &quot;max_sessions&quot;: 128,</div>
 <div class="line">    &quot;max_connections_per_session&quot;: 2,</div>
 <div class="line">    &quot;max_queue_depth&quot;: 64,</div>
-<div class="line">    &quot;nop_timeout&quot;: 30,</div>
-<div class="line">    &quot;max_sessions&quot;: 128,</div>
-<div class="line">    &quot;error_recovery_level&quot;: 0,</div>
-<div class="line">    &quot;auth_file&quot;: &quot;/usr/local/etc/spdk/auth.conf&quot;,</div>
-<div class="line">    &quot;disable_chap&quot;: true,</div>
 <div class="line">    &quot;default_time2wait&quot;: 2,</div>
+<div class="line">    &quot;default_time2retain&quot;: 20,</div>
+<div class="line">    &quot;first_burst_length&quot;: 8192,</div>
+<div class="line">    &quot;immediate_data&quot;: true,</div>
+<div class="line">    &quot;allow_duplicated_isid&quot;: false,</div>
+<div class="line">    &quot;error_recovery_level&quot;: 0,</div>
+<div class="line">    &quot;nop_timeout&quot;: 60,</div>
+<div class="line">    &quot;nop_in_interval&quot;: 30,</div>
+<div class="line">    &quot;disable_chap&quot;: false,</div>
 <div class="line">    &quot;require_chap&quot;: false,</div>
+<div class="line">    &quot;mutual_chap&quot;: false,</div>
+<div class="line">    &quot;chap_group&quot;: 0,</div>
 <div class="line">    &quot;max_large_datain_per_connection&quot;: 64,</div>
-<div class="line">    &quot;max_r2t_per_connection&quot;: 4</div>
+<div class="line">    &quot;max_r2t_per_connection&quot;: 4,</div>
+<div class="line">    &quot;pdu_pool_size&quot;: 36864,</div>
+<div class="line">    &quot;immediate_data_pool_size&quot;: 16384,</div>
+<div class="line">    &quot;data_out_pool_size&quot;: 2048</div>
 <div class="line">  }</div>
 <div class="line">}</div>
 </div><!-- fragment --><h2><a class="anchor" id="rpc_scsi_get_devices"></a>
@@ -7619,7 +7620,7 @@ nvmf_subsystem_set_keys</h2>
 <div class="line">    &quot;nqn&quot;: &quot;nqn.2024-06.io.spdk:cnode1&quot;,</div>
 <div class="line">    &quot;host&quot;: &quot;nqn.2024-06.io.spdk:host1&quot;,</div>
 <div class="line">    &quot;dhchap_key&quot;: &quot;key0&quot;,</div>
-<div class="line">    &quot;dchap_ctrlr_key&quot;: &quot;key1&quot;</div>
+<div class="line">    &quot;dhchap_ctrlr_key&quot;: &quot;key1&quot;</div>
 <div class="line">  }</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Example response:</p>
@@ -8002,7 +8003,9 @@ admin_cmd_passthru</h4>
 <div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;method&quot;: &quot;nvmf_set_config&quot;,</div>
 <div class="line">  &quot;params&quot;: {</div>
-<div class="line">    &quot;acceptor_poll_rate&quot;: 10000</div>
+<div class="line">    &quot;admin_cmd_passthru&quot;: {</div>
+<div class="line">      &quot;identify_ctrlr&quot;: true</div>
+<div class="line">    }</div>
 <div class="line">  }</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Example response:</p>
@@ -8809,7 +8812,7 @@ bdev_lvol_create_lvstore</h2>
 <div class="line">    &quot;lvs_name&quot;: &quot;LVS0&quot;,</div>
 <div class="line">    &quot;bdev_name&quot;: &quot;Malloc0&quot;,</div>
 <div class="line">    &quot;clear_method&quot;: &quot;write_zeroes&quot;,</div>
-<div class="line">    &quot;md_page_size&quot;: &quot;4096&quot;</div>
+<div class="line">    &quot;md_page_size&quot;: 4096</div>
 <div class="line">  }</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Example response:</p>
@@ -10005,7 +10008,7 @@ bdev_opal_new_user</h2>
 <div class="line">  &quot;params&quot;: {</div>
 <div class="line">    &quot;bdev_name&quot;: &quot;nvme0n1r1&quot;,</div>
 <div class="line">    &quot;admin_password&quot;: &quot;*****&quot;,</div>
-<div class="line">    &quot;user_id&quot;: &quot;1&quot;,</div>
+<div class="line">    &quot;user_id&quot;: 1,</div>
 <div class="line">    &quot;user_password&quot;: &quot;********&quot;</div>
 <div class="line">  }</div>
 <div class="line">}</div>
@@ -10039,7 +10042,7 @@ bdev_opal_set_lock_state</h2>
 <div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;params&quot;: {</div>
 <div class="line">    &quot;bdev_name&quot;: &quot;nvme0n1r1&quot;,</div>
-<div class="line">    &quot;user_id&quot;: &quot;1&quot;,</div>
+<div class="line">    &quot;user_id&quot;: 1,</div>
 <div class="line">    &quot;user_password&quot;: &quot;********&quot;,</div>
 <div class="line">    &quot;lock_state&quot;: &quot;rwlock&quot;</div>
 <div class="line">  }</div>
@@ -10337,7 +10340,7 @@ ublk_start_disk</h2>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
 <div class="line">  &quot;params&quot;: {</div>
-<div class="line">    &quot;ublk_id&quot;: &quot;1&quot;,</div>
+<div class="line">    &quot;ublk_id&quot;: 1,</div>
 <div class="line">    &quot;bdev_name&quot;: &quot;Malloc1&quot;</div>
 <div class="line">  },</div>
 <div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
@@ -10373,7 +10376,7 @@ ublk_recover_disk</h2>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
 <div class="line">  &quot;params&quot;: {</div>
-<div class="line">    &quot;ublk_id&quot;: &quot;1&quot;,</div>
+<div class="line">    &quot;ublk_id&quot;: 1,</div>
 <div class="line">    &quot;bdev_name&quot;: &quot;Malloc1&quot;</div>
 <div class="line">  },</div>
 <div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
@@ -10407,7 +10410,7 @@ ublk_stop_disk</h2>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
 <div class="line">  &quot;params&quot;: {</div>
-<div class="line">    &quot;ublk_id&quot;: &quot;1&quot;</div>
+<div class="line">    &quot;ublk_id&quot;: 1</div>
 <div class="line">  },</div>
 <div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
 <div class="line">  &quot;method&quot;: &quot;ublk_stop_disk&quot;,</div>
@@ -10524,7 +10527,7 @@ nbd_stop_disk</h2>
 <div class="fragment"><div class="line">{</div>
 <div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
 <div class="line">  &quot;id&quot;: 1,</div>
-<div class="line">  &quot;result&quot;: &quot;true&quot;</div>
+<div class="line">  &quot;result&quot;: true</div>
 <div class="line">}</div>
 </div><!-- fragment --><h2><a class="anchor" id="rpc_nbd_get_disks"></a>
 nbd_get_disks</h2>
@@ -11375,7 +11378,7 @@ fsdev_set_opts</h2>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
 <div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
-<div class="line">  &quot;method&quot;: &quot;fsdev_get_opts&quot;,</div>
+<div class="line">  &quot;method&quot;: &quot;fsdev_set_opts&quot;,</div>
 <div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;params&quot;: {</div>
 <div class="line">    &quot;fsdev_io_pool_size&quot;: 65535,</div>
@@ -11386,10 +11389,7 @@ fsdev_set_opts</h2>
 <div class="fragment"><div class="line">{</div>
 <div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
 <div class="line">  &quot;id&quot;: 1,</div>
-<div class="line">  &quot;result&quot;: {</div>
-<div class="line">    &quot;fsdev_io_pool_size&quot;: 65535,</div>
-<div class="line">    &quot;fsdev_io_cache_size&quot;: 256</div>
-<div class="line">  }</div>
+<div class="line">  &quot;result&quot;: true</div>
 <div class="line">}</div>
 </div><!-- fragment --><h2><a class="anchor" id="rpc_fsdev_aio_create"></a>
 fsdev_aio_create</h2>
