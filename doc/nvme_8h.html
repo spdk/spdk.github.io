@@ -274,6 +274,12 @@ typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_p
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
+<tr class="memitem:a53b2edd948dbeaa1d628db24cc00257a" id="r_a53b2edd948dbeaa1d628db24cc00257a"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a53b2edd948dbeaa1d628db24cc00257a">spdk_nvme_ns_data_alloc_mode</a> { <a class="el" href="#a53b2edd948dbeaa1d628db24cc00257aac8cf09687c1fdbe48f753579b3d5fc9f">SPDK_NVME_NS_DATA_ALLOC_MODE_DEFAULT</a> = 0
+, <a class="el" href="#a53b2edd948dbeaa1d628db24cc00257aa36cc5cc9fc92f480ef4652a028f3ff72">SPDK_NVME_NS_DATA_ALLOC_MODE_FULL</a>
+, <a class="el" href="#a53b2edd948dbeaa1d628db24cc00257aa93c3fcc8e79ac5dc61cd107bac69faa6">SPDK_NVME_NS_DATA_ALLOC_MODE_HEAD</a>
+ }</td></tr>
+<tr class="memdesc:a53b2edd948dbeaa1d628db24cc00257a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocation mode for the per-namespace Identify Namespace buffer.  <a href="#a53b2edd948dbeaa1d628db24cc00257a">More...</a><br /></td></tr>
+<tr class="separator:a53b2edd948dbeaa1d628db24cc00257a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab41e2d311eb6663957cd2f18bc8fb890" id="r_ab41e2d311eb6663957cd2f18bc8fb890"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab41e2d311eb6663957cd2f18bc8fb890">spdk_nvme_qp_failure_reason</a> { <br />
 &#160;&#160;<b>SPDK_NVME_QPAIR_FAILURE_NONE</b> = 0
 , <b>SPDK_NVME_QPAIR_FAILURE_LOCAL</b>
@@ -759,6 +765,9 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_trty
 <tr class="memitem:a0c182e140bc4fe8e01e82d54d9b68a05" id="r_a0c182e140bc4fe8e01e82d54d9b68a05"><td class="memItemLeft" align="right" valign="top">const struct <a class="el" href="structspdk__nvme__ns__data.html">spdk_nvme_ns_data</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0c182e140bc4fe8e01e82d54d9b68a05">spdk_nvme_ns_get_data</a> (struct spdk_nvme_ns *ns)</td></tr>
 <tr class="memdesc:a0c182e140bc4fe8e01e82d54d9b68a05"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the identify namespace data as defined by the NVMe specification.  <br /></td></tr>
 <tr class="separator:a0c182e140bc4fe8e01e82d54d9b68a05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add155df3840d7a0eadd0f3786dd65e05" id="r_add155df3840d7a0eadd0f3786dd65e05"><td class="memItemLeft" align="right" valign="top">const struct <a class="el" href="structspdk__nvme__ns__data__head.html">spdk_nvme_ns_data_head</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#add155df3840d7a0eadd0f3786dd65e05">spdk_nvme_ns_get_data_head</a> (struct spdk_nvme_ns *ns)</td></tr>
+<tr class="memdesc:add155df3840d7a0eadd0f3786dd65e05"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the header subset of the identify namespace data.  <br /></td></tr>
+<tr class="separator:add155df3840d7a0eadd0f3786dd65e05"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6bed6ef82de45dc360c4867ff1cc9520" id="r_a6bed6ef82de45dc360c4867ff1cc9520"><td class="memItemLeft" align="right" valign="top">const struct <a class="el" href="structspdk__nvme__nvm__ns__data.html">spdk_nvme_nvm_ns_data</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6bed6ef82de45dc360c4867ff1cc9520">spdk_nvme_nvm_ns_get_data</a> (struct spdk_nvme_ns *ns)</td></tr>
 <tr class="memdesc:a6bed6ef82de45dc360c4867ff1cc9520"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the I/O command set specific identify namespace data for NVM command set as defined by the NVMe specification.  <br /></td></tr>
 <tr class="separator:a6bed6ef82de45dc360c4867ff1cc9520"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1405,6 +1414,33 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_trty
 <tr><td class="fieldname"><a id="add21ceb016f09949ac6cef50e0566818a1ec6624b47b99ba3e6de62be73fd7602" name="add21ceb016f09949ac6cef50e0566818a1ec6624b47b99ba3e6de62be73fd7602"></a>SPDK_NVME_CTRLR_MPTR_SGL_SUPPORTED&#160;</td><td class="fielddoc"><p>MPTR containing SGL descriptor is supported. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="add21ceb016f09949ac6cef50e0566818a2058810d4167fbdbe29315867584dd84" name="add21ceb016f09949ac6cef50e0566818a2058810d4167fbdbe29315867584dd84"></a>SPDK_NVME_CTRLR_ACCEL_SEQUENCE_SUPPORTED&#160;</td><td class="fielddoc"><p>Support for sending I/O requests with accel sequence. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="a53b2edd948dbeaa1d628db24cc00257a" name="a53b2edd948dbeaa1d628db24cc00257a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53b2edd948dbeaa1d628db24cc00257a">&#9670;&#160;</a></span>spdk_nvme_ns_data_alloc_mode</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#a53b2edd948dbeaa1d628db24cc00257a">spdk_nvme_ns_data_alloc_mode</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Allocation mode for the per-namespace Identify Namespace buffer. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a53b2edd948dbeaa1d628db24cc00257aac8cf09687c1fdbe48f753579b3d5fc9f" name="a53b2edd948dbeaa1d628db24cc00257aac8cf09687c1fdbe48f753579b3d5fc9f"></a>SPDK_NVME_NS_DATA_ALLOC_MODE_DEFAULT&#160;</td><td class="fielddoc"><p>Default. </p>
+<p>Currently behaves like SPDK_NVME_NS_DATA_ALLOC_MODE_FULL. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a53b2edd948dbeaa1d628db24cc00257aa36cc5cc9fc92f480ef4652a028f3ff72" name="a53b2edd948dbeaa1d628db24cc00257aa36cc5cc9fc92f480ef4652a028f3ff72"></a>SPDK_NVME_NS_DATA_ALLOC_MODE_FULL&#160;</td><td class="fielddoc"><p>Allocate the full 4 KB Identify Namespace buffer including vendor_specific[]. </p>
+<p>Required by consumers of <a class="el" href="#a33868f37490d15d2d64d2b93f03b44e5" title="Get the vendor-specific portion of the Identify Namespace data for a namespace.">spdk_nvme_ns_get_vendor_specific()</a>. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a53b2edd948dbeaa1d628db24cc00257aa93c3fcc8e79ac5dc61cd107bac69faa6" name="a53b2edd948dbeaa1d628db24cc00257aa93c3fcc8e79ac5dc61cd107bac69faa6"></a>SPDK_NVME_NS_DATA_ALLOC_MODE_HEAD&#160;</td><td class="fielddoc"><p>Allocate only the header subset (struct <a class="el" href="structspdk__nvme__ns__data__head.html" title="Header subset of spdk_nvme_ns_data covering everything before lbaf[] and vendor_specific[].">spdk_nvme_ns_data_head</a>) plus the lbaf[SPDK_NVME_NS_MAX_LBA_FORMATS] array. </p>
+<p>Saves ~3.6 KB per namespace at the cost of vendor_specific[] visibility. </p>
 </td></tr>
 </table>
 
@@ -7875,13 +7911,43 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_trty
 
 <p>Get the identify namespace data as defined by the NVMe specification. </p>
 <p>This function is thread safe and can be called at any point while the controller is attached to the SPDK NVMe driver.</p>
+<p>Users that consume vendor_specific data must set <a class="el" href="structspdk__nvme__ctrlr__opts.html#a88992528e1b88cb4d13fa5e92da7c78a" title="Values from enum spdk_nvme_ns_data_alloc_mode.">spdk_nvme_ctrlr_opts.ns_data_alloc_mode</a> to SPDK_NVME_NS_DATA_ALLOC_MODE_FULL.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">ns</td><td>Namespace.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>a pointer to the namespace data. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>a pointer to the namespace data, or NULL when ns_data_alloc_mode is SPDK_NVME_NS_DATA_ALLOC_MODE_HEAD. </dd></dl>
+
+</div>
+</div>
+<a id="add155df3840d7a0eadd0f3786dd65e05" name="add155df3840d7a0eadd0f3786dd65e05"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add155df3840d7a0eadd0f3786dd65e05">&#9670;&#160;</a></span>spdk_nvme_ns_get_data_head()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const struct <a class="el" href="structspdk__nvme__ns__data__head.html">spdk_nvme_ns_data_head</a> * spdk_nvme_ns_get_data_head </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_nvme_ns *</td>          <td class="paramname"><span class="paramname"><em>ns</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the header subset of the identify namespace data. </p>
+<p>This function is thread safe and can be called at any point while the controller is attached to the SPDK NVMe driver and returns a valid pointer regardless of <a class="el" href="structspdk__nvme__ctrlr__opts.html#a88992528e1b88cb4d13fa5e92da7c78a" title="Values from enum spdk_nvme_ns_data_alloc_mode.">spdk_nvme_ctrlr_opts.ns_data_alloc_mode</a>.</p>
+<p>Users that consume lbaf data should use spdk_nvme_ns_get_format.</p>
+<p>Users that do not consume vendor_specific data should prefer this getter and set <a class="el" href="structspdk__nvme__ctrlr__opts.html#a88992528e1b88cb4d13fa5e92da7c78a" title="Values from enum spdk_nvme_ns_data_alloc_mode.">spdk_nvme_ctrlr_opts.ns_data_alloc_mode</a> to SPDK_NVME_NS_DATA_ALLOC_MODE_HEAD to save memory.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ns</td><td>Namespace.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a pointer to the header subset of namespace data. </dd></dl>
 
 </div>
 </div>
@@ -8130,6 +8196,7 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_trty
 </div><div class="memdoc">
 
 <p>Get the NGUID for the given namespace. </p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000003">Deprecated</a></b></dt><dd>Read <code>nguid</code> directly from <code>spdk_nvme_ns_get_data_head(ns)</code>; per the NVMe spec an all-zero NGUID means "not present".</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">ns</td><td>Namespace to query.</td></tr>
