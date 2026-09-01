@@ -1,5 +1,6 @@
 var NAVTREEINDEX11 =
 {
+"scsi_8h.html#a2b0b6fb0de39e57cbfca41ee8e33618f":[15,0,0,0,56,4],
 "scsi_8h.html#a3eac9f8077c24339110a10bc2f5fc765":[15,0,0,0,56,41],
 "scsi_8h.html#a40945295e5d0c3ffede09f50a7fa861d":[15,0,0,0,56,9],
 "scsi_8h.html#a431edc9c0e0218cbe284b9164d64321b":[15,0,0,0,56,42],
@@ -248,6 +249,5 @@ var NAVTREEINDEX11 =
 "structspdk__bdev.html#a7a2df74b931a4da6e67cca15b5f3dabb":[14,0,62,32],
 "structspdk__bdev.html#a83ca16e5fee5d658b6ac90433372a076":[14,0,62,21],
 "structspdk__bdev.html#a8eee59eb31ccc211bfe99a8109b30dbb":[14,0,62,12],
-"structspdk__bdev.html#a9766b9a39169827156c768f78b940977":[14,0,62,18],
-"structspdk__bdev.html#aa9d4bcd1970e78c738be40f098c65dec":[14,0,62,29]
+"structspdk__bdev.html#a9766b9a39169827156c768f78b940977":[14,0,62,18]
 };

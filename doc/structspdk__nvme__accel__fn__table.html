@@ -167,11 +167,32 @@ int(*&#160;</td><td class="memItemRight" valign="bottom"><b>append_crc32c</b> )(
 int(*&#160;</td><td class="memItemRight" valign="bottom"><b>append_copy</b> )(void *ctx, void **seq, struct iovec *dst_iovs, uint32_t dst_iovcnt, struct spdk_memory_domain *dst_domain, void *dst_domain_ctx, struct iovec *src_iovs, uint32_t src_iovcnt, struct spdk_memory_domain *src_domain, void *src_domain_ctx, <a class="el" href="nvme_8h.html#a23b4ebb6bfd9f12c07b1ae91a2c98ad8">spdk_nvme_accel_step_cb</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:adde1841d6971016f23ae88bc7e9eace9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Append a copy operation to a sequence. <br /></td></tr>
 <tr class="separator:adde1841d6971016f23ae88bc7e9eace9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3991a642f36fb801fe32297ed1776ec1" id="r_a3991a642f36fb801fe32297ed1776ec1"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3991a642f36fb801fe32297ed1776ec1">poll</a> )(void *ctx)</td></tr>
+<tr class="memdesc:a3991a642f36fb801fe32297ed1776ec1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Optional.  <br /></td></tr>
+<tr class="separator:a3991a642f36fb801fe32297ed1776ec1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Function table for the NVMe accelerator device. </p>
 <p>This table provides a set of APIs to allow user to leverage accelerator functions. </p>
 </div><h2 class="groupheader">Field Documentation</h2>
+<a id="a3991a642f36fb801fe32297ed1776ec1" name="a3991a642f36fb801fe32297ed1776ec1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3991a642f36fb801fe32297ed1776ec1">&#9670;&#160;</a></span>poll</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void(* spdk_nvme_accel_fn_table::poll) (void *ctx)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Optional. </p>
+<p>Drive forward progress of the underlying accelerator engine (e.g. poll the <code>spdk_thread</code> backing it) so previously submitted sequences can complete.</p>
+<p>Only consulted on the process-global fn_table set via <a class="el" href="nvme_8h.html#a8c28e00943c5cc08fafd0fe9ad3f42ca" title="Set the process-global accel fn_table for the NVMe transport.">spdk_nvme_transport_set_accel_fn_table()</a>; ignored on the fn_table passed to <a class="el" href="nvme_8h.html#ac311beee998eeccd7e0044a050698e9e" title="Create a new poll group.">spdk_nvme_poll_group_create()</a>. Poll group QPairs are always driven by the application calling <a class="el" href="nvme_8h.html#ac89c07198e8be3384ee6a0adc8439621" title="Poll for completions on all qpairs in this poll group.">spdk_nvme_poll_group_process_completions()</a>, but a QPair using the process-global fallback has no other caller to pump the accel engine while the transport is blocked waiting for its accel requests to complete (e.g. inside <a class="el" href="nvme_8h.html#a85ec189f50d0f78d73a54413370401f5" title="Free an I/O queue pair that was allocated by spdk_nvme_ctrlr_alloc_io_qpair().">spdk_nvme_ctrlr_free_io_qpair()</a>). </p>
+
+</div>
+</div>
 <a id="a249f5c8d94337ebecefd008bf2e0edc1" name="a249f5c8d94337ebecefd008bf2e0edc1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a249f5c8d94337ebecefd008bf2e0edc1">&#9670;&#160;</a></span>table_size</h2>
 

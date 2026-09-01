@@ -1017,6 +1017,9 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_trty
 <tr class="memitem:a327cc2f4818d3111bdc8485a9b844d4f" id="r_a327cc2f4818d3111bdc8485a9b844d4f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a327cc2f4818d3111bdc8485a9b844d4f">spdk_nvme_transport_set_opts</a> (const struct <a class="el" href="structspdk__nvme__transport__opts.html">spdk_nvme_transport_opts</a> *opts, size_t opts_size)</td></tr>
 <tr class="memdesc:a327cc2f4818d3111bdc8485a9b844d4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the NVMe transport options.  <br /></td></tr>
 <tr class="separator:a327cc2f4818d3111bdc8485a9b844d4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c28e00943c5cc08fafd0fe9ad3f42ca" id="r_a8c28e00943c5cc08fafd0fe9ad3f42ca"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8c28e00943c5cc08fafd0fe9ad3f42ca">spdk_nvme_transport_set_accel_fn_table</a> (const struct <a class="el" href="structspdk__nvme__accel__fn__table.html">spdk_nvme_accel_fn_table</a> *table, void *ctx)</td></tr>
+<tr class="memdesc:a8c28e00943c5cc08fafd0fe9ad3f42ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the process-global accel fn_table for the NVMe transport.  <br /></td></tr>
+<tr class="separator:a8c28e00943c5cc08fafd0fe9ad3f42ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>NVMe driver public API. </p>
@@ -10204,6 +10207,40 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_trty
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a8c28e00943c5cc08fafd0fe9ad3f42ca" name="a8c28e00943c5cc08fafd0fe9ad3f42ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c28e00943c5cc08fafd0fe9ad3f42ca">&#9670;&#160;</a></span>spdk_nvme_transport_set_accel_fn_table()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_nvme_transport_set_accel_fn_table </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="structspdk__nvme__accel__fn__table.html">spdk_nvme_accel_fn_table</a> *</td>          <td class="paramname"><span class="paramname"><em>table</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *</td>          <td class="paramname"><span class="paramname"><em>ctx</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the process-global accel fn_table for the NVMe transport. </p>
+<p>This registers an accelerator function table that is used as a fallback when a QPair is not bound to a poll group. QPairs bound to a poll group continue to use the poll group's accel fn_table (if any).</p>
+<p>Applications should also implement the optional <code>poll</code> callback (see struct <a class="el" href="structspdk__nvme__accel__fn__table.html" title="Function table for the NVMe accelerator device.">spdk_nvme_accel_fn_table</a>), since QPairs that fall back to this table have no poll group to otherwise drive progress on outstanding accel requests during teardown.</p>
+<p>The table is copied into internal storage. It must be set before any QPairs are connected (same contract as spdk_nvme_transport_set_opts).</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">table</td><td>Pointer to the accel fn_table to copy in. If NULL, the previously registered table is cleared. </td></tr>
+    <tr><td class="paramname">ctx</td><td>Opaque context pointer passed as the first argument to each callback in the table.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, or negated errno on failure. </dd></dl>
 
 </div>
 </div>

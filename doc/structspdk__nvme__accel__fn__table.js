@@ -4,6 +4,7 @@ var structspdk__nvme__accel__fn__table =
     [ "append_copy", "structspdk__nvme__accel__fn__table.html#adde1841d6971016f23ae88bc7e9eace9", null ],
     [ "append_crc32c", "structspdk__nvme__accel__fn__table.html#afb7a00b4f43e9ec2bc8a249763f628ea", null ],
     [ "finish_sequence", "structspdk__nvme__accel__fn__table.html#acf901173bda0ccd0fc2fbc65ba374ef4", null ],
+    [ "poll", "structspdk__nvme__accel__fn__table.html#a3991a642f36fb801fe32297ed1776ec1", null ],
     [ "reverse_sequence", "structspdk__nvme__accel__fn__table.html#a77cd12193a3b81bc9ccee36bc8c7fb16", null ],
     [ "table_size", "structspdk__nvme__accel__fn__table.html#a249f5c8d94337ebecefd008bf2e0edc1", null ]
 ];

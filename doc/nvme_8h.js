@@ -291,6 +291,7 @@ var nvme_8h =
     [ "spdk_nvme_transport_id_populate_trstring", "nvme_8h.html#a5d0eb5d0f2e974c4d85fa251796486a3", null ],
     [ "spdk_nvme_transport_id_trtype_str", "nvme_8h.html#a872cadcfbc746daa2ad9e7b6493d4b56", null ],
     [ "spdk_nvme_transport_register", "nvme_8h.html#a6e4165e918b05158286f5984a136acbf", null ],
+    [ "spdk_nvme_transport_set_accel_fn_table", "nvme_8h.html#a8c28e00943c5cc08fafd0fe9ad3f42ca", null ],
     [ "spdk_nvme_transport_set_opts", "nvme_8h.html#a327cc2f4818d3111bdc8485a9b844d4f", null ],
     [ "spdk_nvme_trid_populate_transport", "nvme_8h.html#ab5ab0982e7e0191fd16f041a268966b5", null ]
 ];
