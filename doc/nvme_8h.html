@@ -543,6 +543,9 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_trty
 <tr class="memitem:a87a228bf5b96e89305e52721d81920d7" id="r_a87a228bf5b96e89305e52721d81920d7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a87a228bf5b96e89305e52721d81920d7">spdk_nvme_ctrlr_get_discovery_log_page</a> (struct spdk_nvme_ctrlr *ctrlr, <a class="el" href="#a4e4bc7c0002363701bc9363ab2291e6e">spdk_nvme_discovery_cb</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:a87a228bf5b96e89305e52721d81920d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a full discovery log page from the specified controller.  <br /></td></tr>
 <tr class="separator:a87a228bf5b96e89305e52721d81920d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad43b69e17ec527bb8f3b8b23fe0a3471" id="r_ad43b69e17ec527bb8f3b8b23fe0a3471"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad43b69e17ec527bb8f3b8b23fe0a3471">spdk_nvme_ctrlr_get_discovery_log_page_ext</a> (struct spdk_nvme_ctrlr *ctrlr, union <a class="el" href="unionspdk__nvmf__discovery__log__lsp.html">spdk_nvmf_discovery_log_lsp</a> lsp, <a class="el" href="#a4e4bc7c0002363701bc9363ab2291e6e">spdk_nvme_discovery_cb</a> cb_fn, void *cb_arg)</td></tr>
+<tr class="memdesc:ad43b69e17ec527bb8f3b8b23fe0a3471"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a full Discovery Log Page from the specified controller with additional Get Log Page options.  <br /></td></tr>
+<tr class="separator:ad43b69e17ec527bb8f3b8b23fe0a3471"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afc065dde0818b6b0ef9a44af2267c57b" id="r_afc065dde0818b6b0ef9a44af2267c57b"><td class="memItemLeft" align="right" valign="top"><a id="afc065dde0818b6b0ef9a44af2267c57b" name="afc065dde0818b6b0ef9a44af2267c57b"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(struct <a class="el" href="structspdk__nvme__io__qpair__opts.html">spdk_nvme_io_qpair_opts</a>)==80, &quot;Incorrect size&quot;)</td></tr>
 <tr class="separator:afc065dde0818b6b0ef9a44af2267c57b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -3501,9 +3504,53 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_trty
 <p>Get a full discovery log page from the specified controller. </p>
 <p>This function will first read the discovery log header to determine the total number of valid entries in the discovery log, then it will allocate a buffer to hold the entire log and issue multiple GET_LOG_PAGE commands to get all of the entries.</p>
 <p>The application is responsible for calling <a class="el" href="#a10282695461985f58f54de022911745e">spdk_nvme_ctrlr_process_admin_completions</a> to trigger processing of completions submitted by this function.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="#ad43b69e17ec527bb8f3b8b23fe0a3471" title="Get a full Discovery Log Page from the specified controller with additional Get Log Page options.">spdk_nvme_ctrlr_get_discovery_log_page_ext</a> for a variant that accepts Log Specific Parameter (LSP) options such as extended discovery log entries.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">ctrlr</td><td>Pointer to the discovery controller. </td></tr>
+    <tr><td class="paramname">cb_fn</td><td>Function to call when the operation is complete. </td></tr>
+    <tr><td class="paramname">cb_arg</td><td>Argument to pass to cb_fn. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad43b69e17ec527bb8f3b8b23fe0a3471" name="ad43b69e17ec527bb8f3b8b23fe0a3471"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad43b69e17ec527bb8f3b8b23fe0a3471">&#9670;&#160;</a></span>spdk_nvme_ctrlr_get_discovery_log_page_ext()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_nvme_ctrlr_get_discovery_log_page_ext </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_nvme_ctrlr *</td>          <td class="paramname"><span class="paramname"><em>ctrlr</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">union <a class="el" href="unionspdk__nvmf__discovery__log__lsp.html">spdk_nvmf_discovery_log_lsp</a></td>          <td class="paramname"><span class="paramname"><em>lsp</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="#a4e4bc7c0002363701bc9363ab2291e6e">spdk_nvme_discovery_cb</a></td>          <td class="paramname"><span class="paramname"><em>cb_fn</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *</td>          <td class="paramname"><span class="paramname"><em>cb_arg</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get a full Discovery Log Page from the specified controller with additional Get Log Page options. </p>
+<p>This is the same two-phase, genctr-safe operation as <a class="el" href="#a87a228bf5b96e89305e52721d81920d7">spdk_nvme_ctrlr_get_discovery_log_page</a>, but issues GET LOG PAGE commands with the Log Specific Parameter (LSP) field set according to <code>lsp</code>. Currently only the <b>extdlpe</b> bit is supported; when set the controller returns variable-length extended entries and advertises the total page size via tdlpl, which this function uses for buffer sizing. When <code>lsp</code> is zero the behavior is identical to <a class="el" href="#a87a228bf5b96e89305e52721d81920d7">spdk_nvme_ctrlr_get_discovery_log_page</a>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ctrlr</td><td>Pointer to the discovery controller. </td></tr>
+    <tr><td class="paramname">lsp</td><td>Log Specific Parameter bits to pass in the command. </td></tr>
     <tr><td class="paramname">cb_fn</td><td>Function to call when the operation is complete. </td></tr>
     <tr><td class="paramname">cb_arg</td><td>Argument to pass to cb_fn. </td></tr>
   </table>
