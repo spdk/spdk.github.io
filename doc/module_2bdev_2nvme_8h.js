@@ -12,6 +12,5 @@ var module_2bdev_2nvme_8h =
     [ "spdk_bdev_nvme_first_bdev_ctrlr", "module_2bdev_2nvme_8h.html#a435db6b019b2815c5118406a47d20c98", null ],
     [ "spdk_bdev_nvme_get_opts", "module_2bdev_2nvme_8h.html#aa94646ad0ab2add9a208c4d1cb12cc78", null ],
     [ "spdk_bdev_nvme_next_bdev_ctrlr", "module_2bdev_2nvme_8h.html#a24f9af9dc889a75cbb9adbee92cec623", null ],
-    [ "spdk_bdev_nvme_set_multipath_policy", "module_2bdev_2nvme_8h.html#a1d06d518232c3c8c24449dda23dd66e5", null ],
     [ "spdk_bdev_nvme_set_opts", "module_2bdev_2nvme_8h.html#afa505c687a146bb84fe77178052dc9e0", null ]
 ];

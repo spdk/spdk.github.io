@@ -1,7 +1,5 @@
 var NAVTREEINDEX18 =
 {
-"trace_8h.html#a09f16704c4acc63bdbe1d45a7246788f":[15,0,0,0,62,38],
-"trace_8h.html#a0ec4843a02b23b8e0a8f4fe8c91fca3b":[15,0,0,0,62,43],
 "trace_8h.html#a2057ffa0d5eaf0680a8d970646c157af":[15,0,0,0,62,32],
 "trace_8h.html#a272510f870f932fd0e081481f6e51e58":[15,0,0,0,62,35],
 "trace_8h.html#a2f3c2c36cb52730ac3a98e9d33fd9093":[15,0,0,0,62,45],
@@ -249,5 +247,7 @@ var NAVTREEINDEX18 =
 "user_guides.html":[3],
 "userspace.html":[2,0],
 "userspace.html#userspace_control":[2,0,0],
-"userspace.html#userspace_interrupts":[2,0,1]
+"userspace.html#userspace_interrupts":[2,0,1],
+"userspace.html#userspace_threading":[2,0,2],
+"util_8h.html":[15,0,0,0,64]
 };

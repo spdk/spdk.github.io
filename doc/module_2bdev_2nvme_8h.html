@@ -155,9 +155,6 @@ Typedefs</h2></td></tr>
 <tr class="memitem:ae96f55586c080be28219e032bc805f25" id="r_ae96f55586c080be28219e032bc805f25"><td class="memItemLeft" align="right" valign="top"><a id="ae96f55586c080be28219e032bc805f25" name="ae96f55586c080be28219e032bc805f25"></a>
 typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_nvme_create_cb</b>) (void *ctx, size_t bdev_count, int rc)</td></tr>
 <tr class="separator:ae96f55586c080be28219e032bc805f25"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a14af7e0a40178009473ac65e5a3fbb8c" id="r_a14af7e0a40178009473ac65e5a3fbb8c"><td class="memItemLeft" align="right" valign="top"><a id="a14af7e0a40178009473ac65e5a3fbb8c" name="a14af7e0a40178009473ac65e5a3fbb8c"></a>
-typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_nvme_set_multipath_policy_cb</b>) (void *cb_arg, int rc)</td></tr>
-<tr class="separator:a14af7e0a40178009473ac65e5a3fbb8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac9ae3ada76cbb8d96d4df087eccb771c" id="r_ac9ae3ada76cbb8d96d4df087eccb771c"><td class="memItemLeft" align="right" valign="top"><a id="ac9ae3ada76cbb8d96d4df087eccb771c" name="ac9ae3ada76cbb8d96d4df087eccb771c"></a>
 typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_nvme_delete_cb</b>) (void *ctx, int rc)</td></tr>
 <tr class="separator:ac9ae3ada76cbb8d96d4df087eccb771c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -189,9 +186,6 @@ Functions</h2></td></tr>
 <tr class="memitem:ad80eb5186a1d34b21101aa949122e679" id="r_ad80eb5186a1d34b21101aa949122e679"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad80eb5186a1d34b21101aa949122e679">spdk_bdev_nvme_delete</a> (const char *name, const struct <a class="el" href="structspdk__bdev__nvme__path__id.html">spdk_bdev_nvme_path_id</a> *path_id, spdk_bdev_nvme_delete_cb delete_cb, void *cb_ctx)</td></tr>
 <tr class="memdesc:ad80eb5186a1d34b21101aa949122e679"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete the specified NVMe controller, or one of its paths.  <br /></td></tr>
 <tr class="separator:ad80eb5186a1d34b21101aa949122e679"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1d06d518232c3c8c24449dda23dd66e5" id="r_a1d06d518232c3c8c24449dda23dd66e5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1d06d518232c3c8c24449dda23dd66e5">spdk_bdev_nvme_set_multipath_policy</a> (const char *name, enum spdk_bdev_nvme_multipath_policy policy, enum spdk_bdev_nvme_multipath_selector selector, uint32_t rr_min_io, spdk_bdev_nvme_set_multipath_policy_cb cb_fn, void *cb_arg)</td></tr>
-<tr class="memdesc:a1d06d518232c3c8c24449dda23dd66e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set multipath policy of the NVMe bdev.  <br /></td></tr>
-<tr class="separator:a1d06d518232c3c8c24449dda23dd66e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1380985e2270e3d671fb4f458e4a9e2d" id="r_a1380985e2270e3d671fb4f458e4a9e2d"><td class="memItemLeft" align="right" valign="top"><a id="a1380985e2270e3d671fb4f458e4a9e2d" name="a1380985e2270e3d671fb4f458e4a9e2d"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_nvme_get_default_ctrlr_opts</b> (struct <a class="el" href="structspdk__bdev__nvme__ctrlr__opts.html">spdk_bdev_nvme_ctrlr_opts</a> *opts)</td></tr>
 <tr class="separator:a1380985e2270e3d671fb4f458e4a9e2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -534,62 +528,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_nvme_get_de
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Pointer to the next controller group, or NULL if no more. </dd></dl>
-
-</div>
-</div>
-<a id="a1d06d518232c3c8c24449dda23dd66e5" name="a1d06d518232c3c8c24449dda23dd66e5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1d06d518232c3c8c24449dda23dd66e5">&#9670;&#160;</a></span>spdk_bdev_nvme_set_multipath_policy()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void spdk_bdev_nvme_set_multipath_policy </td>
-          <td>(</td>
-          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>name</em>, </span></td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">enum spdk_bdev_nvme_multipath_policy</td>          <td class="paramname"><span class="paramname"><em>policy</em>, </span></td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">enum spdk_bdev_nvme_multipath_selector</td>          <td class="paramname"><span class="paramname"><em>selector</em>, </span></td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>rr_min_io</em>, </span></td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">spdk_bdev_nvme_set_multipath_policy_cb</td>          <td class="paramname"><span class="paramname"><em>cb_fn</em>, </span></td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void *</td>          <td class="paramname"><span class="paramname"><em>cb_arg</em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Set multipath policy of the NVMe bdev. </p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000001">Deprecated</a></b></dt><dd>Use <a class="el" href="#a8785bb4880bfed734f409d4788e61897" title="Connect to the NVMe controller and populate namespaces as bdevs.">spdk_bdev_nvme_create()</a> with multipath options instead.</dd></dl>
-<p>Subsequent calls for the same bdev must wait until the current execution finishes.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">name</td><td>NVMe bdev name. </td></tr>
-    <tr><td class="paramname">policy</td><td>Multipath policy (active-passive or active-active). </td></tr>
-    <tr><td class="paramname">selector</td><td>Multipath selector (round_robin, queue_depth). </td></tr>
-    <tr><td class="paramname">rr_min_io</td><td>Number of IO to route to a path before switching to another for round-robin. </td></tr>
-    <tr><td class="paramname">cb_fn</td><td>Function to be called back after completion. </td></tr>
-    <tr><td class="paramname">cb_arg</td><td>Argument passed to the callback function. </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>

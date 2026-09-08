@@ -468,7 +468,6 @@ rpc_get_methods</h2>
 <div class="line">    &quot;bdev_nvme_send_cmd&quot;,</div>
 <div class="line">    &quot;bdev_nvme_set_hotplug&quot;,</div>
 <div class="line">    &quot;bdev_nvme_set_keys&quot;,</div>
-<div class="line">    &quot;bdev_nvme_set_multipath_policy&quot;,</div>
 <div class="line">    &quot;bdev_nvme_set_options&quot;,</div>
 <div class="line">    &quot;bdev_nvme_set_preferred_path&quot;,</div>
 <div class="line">    &quot;bdev_nvme_start_discovery&quot;,</div>
@@ -675,7 +674,6 @@ rpc_get_methods</h2>
 <div class="line">    &quot;vmd_enable&quot;,</div>
 <div class="line">    &quot;vmd_remove_device&quot;,</div>
 <div class="line">    &quot;vmd_rescan&quot;</div>
-<div class="line">    </div>
 <div class="line">  ]</div>
 <div class="line">}</div>
 </div><!-- fragment --><h2><a class="anchor" id="rpc_framework_get_subsystems"></a>
@@ -3534,7 +3532,7 @@ bdev_aio_delete</h2>
 </div><!-- fragment --><h2><a class="anchor" id="rpc_bdev_nvme_set_options"></a>
 bdev_nvme_set_options</h2>
 <p>Set global parameters for all bdev NVMe. This RPC may only be called before SPDK subsystems have been initialized or any bdev NVMe has been created.</p>
-<p>Parameters, ctrlr_loss_timeout_sec, reconnect_delay_sec, and fast_io_fail_timeout_sec, are for I/O error resiliency. They can be overridden if they are given by the RPC bdev_nvme_attach_controller.</p>
+<p>Parameters, ctrlr_loss_timeout_sec, reconnect_delay_sec, and fast_io_fail_timeout_sec, are for I/O error resiliency. They can be overridden if they are given by the RPC bdev_nvme_attach_controller. The <code>multipath_opts</code> parameter sets the default creation-time multipath policy, selector, and minimum I/O count. These defaults can also be overridden by <code>bdev_nvme_attach_controller</code>.</p>
 <h3>Parameters</h3>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -3630,7 +3628,12 @@ bdev_nvme_set_options</h2>
 <div class="line">      &quot;ffdhe6144&quot;,</div>
 <div class="line">      &quot;ffdhe8192&quot;</div>
 <div class="line">    ],</div>
-<div class="line">    &quot;rdma_umr_per_io&quot;: false</div>
+<div class="line">    &quot;rdma_umr_per_io&quot;: false,</div>
+<div class="line">    &quot;multipath_opts&quot;: {</div>
+<div class="line">      &quot;policy&quot;: &quot;active_active&quot;,</div>
+<div class="line">      &quot;selector&quot;: &quot;round_robin&quot;,</div>
+<div class="line">      &quot;min_io&quot;: 10</div>
+<div class="line">    }</div>
 <div class="line">  },</div>
 <div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
 <div class="line">  &quot;method&quot;: &quot;bdev_nvme_set_options&quot;,</div>
@@ -3675,6 +3678,7 @@ bdev_nvme_set_hotplug</h2>
 bdev_nvme_attach_controller</h2>
 <p>Construct <a class="el" href="bdev.html#bdev_config_nvme">NVMe bdev</a>. This RPC can also be used to add additional paths to an existing controller to enable multipathing. This is done by specifying the <code>name</code> parameter as an existing controller. When adding an additional path, the hostnqn, hostsvcid, hostaddr, prchk_reftag, and prchk_guard_arguments must not be specified and are assumed to have the same value as the existing path.</p>
 <p>The parameters, <code>ctrlr_loss_timeout_sec</code>, <code>reconnect_delay_sec</code>, and <code>fast_io_fail_timeout_sec</code>, are mutually dependent. If <code>reconnect_delay_sec</code> is non-zero, <code>ctrlr_loss_timeout_sec</code> has to be -1 or not less than <code>reconnect_delay_sec</code>. If <code>reconnect_delay_sec</code> is zero, <code>ctrlr_loss_timeout_sec</code> has to be zero. If <code>fast_io_fail_timeout_sec</code> is not zero, it has to be not less than <code>reconnect_delay_sec</code> and less than <code>ctrlr_loss_timeout_sec</code> if <code>ctrlr_loss_timeout_sec</code> is not -1.</p>
+<p>The <code>multipath_opts</code> parameter configures the policy when the controller is created. Every path attached to the same multipath controller must use identical multipath options.</p>
 <h3>Parameters</h3>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -4104,39 +4108,6 @@ bdev_nvme_set_preferred_path</h2>
 <div class="line">  &quot;params&quot;: {</div>
 <div class="line">    &quot;name&quot;: &quot;Nvme0n1&quot;,</div>
 <div class="line">    &quot;cntlid&quot;: 0</div>
-<div class="line">  }</div>
-<div class="line">}</div>
-</div><!-- fragment --><p>Example response:</p>
-<div class="fragment"><div class="line">{</div>
-<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
-<div class="line">  &quot;id&quot;: 1,</div>
-<div class="line">  &quot;result&quot;: true</div>
-<div class="line">}</div>
-</div><!-- fragment --><h2><a class="anchor" id="rpc_bdev_nvme_set_multipath_policy"></a>
-bdev_nvme_set_multipath_policy</h2>
-<p>Set multipath policy of the NVMe bdev in multipath mode or set multipath selector for active-active multipath policy.</p>
-<h3>Parameters</h3>
-<table class="markdownTable">
-<tr class="markdownTableHead">
-<th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of the NVMe bdev    </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">policy   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">enum   </td><td class="markdownTableBodyNone">Multipath policy: active_active or active_passive    </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">selector   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">enum   </td><td class="markdownTableBodyNone">Multipath selector: round_robin or queue_depth, used in active-active mode. Default is round_robin    </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">rr_min_io   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">Number of I/Os routed to current io path before switching to another for round-robin selector. The min value is 1.   </td></tr>
-</table>
-<h3>Example</h3>
-<p>Example request:</p>
-<div class="fragment"><div class="line">{</div>
-<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
-<div class="line">  &quot;method&quot;: &quot;bdev_nvme_set_multipath_policy&quot;,</div>
-<div class="line">  &quot;id&quot;: 1,</div>
-<div class="line">  &quot;params&quot;: {</div>
-<div class="line">    &quot;name&quot;: &quot;Nvme0n1&quot;,</div>
-<div class="line">    &quot;policy&quot;: &quot;active_passive&quot;</div>
 <div class="line">  }</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Example response:</p>

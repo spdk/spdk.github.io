@@ -168,17 +168,17 @@ $(function(){initNavTree('nvme_multipath.html',''); initResizable(); });
 <p>The NVMe driver supports I/O timeout for submitted I/Os. The NVMe bdev module provides three actions when an I/O timeout is notified from the NVMe driver, ABORT, RESET, or NONE. Users can choose one of the actions as a global option, <code>action_on_timeout</code>. Users can set different timeout values for I/O commands and admin commands by global options, <code>timeout_us</code> and <code>timeout_admin_us</code>.</p>
 <p>For ABORT, the NVMe bdev module tries aborting the timed out I/O, and if failed, it starts the NVMe-oF controller reset. For RESET, the NVMe bdev module starts the NVMe-oF controller reset.</p>
 <h1>Usage</h1>
-<p>The following is an example to attach two NVMe-oF controllers and aggregate these into a single NVMe bdev controller <code>Nvme0</code>.</p>
-<div class="fragment"><div class="line">./scripts/rpc.py bdev_nvme_attach_controller -b Nvme0 -t rdma -a 192.168.100.8 -s 4420 -f ipv4 -n nqn.2016-06.io.spdk:cnode1 -l -1 -o 20</div>
-<div class="line">./scripts/rpc.py bdev_nvme_attach_controller -b Nvme0 -t rdma -a 192.168.100.9 -s 4420 -f ipv4 -n nqn.2016-06.io.spdk:cnode1 -l -1 -o 20 -x multipath</div>
+<p>The following is an example to attach two NVMe-oF controllers and aggregate these into a single NVMe bdev controller <code>Nvme0</code>. The active-active policy, round-robin selector, and minimum I/O count are creation-time options and must be identical for every path.</p>
+<div class="fragment"><div class="line">./scripts/rpc.py bdev_nvme_attach_controller -b Nvme0 -t rdma -a 192.168.100.8 -s 4420 -f ipv4 -n nqn.2016-06.io.spdk:cnode1 -l -1 -o 20 -x multipath --policy active_active --selector round_robin --min-io 10</div>
+<div class="line">./scripts/rpc.py bdev_nvme_attach_controller -b Nvme0 -t rdma -a 192.168.100.9 -s 4420 -f ipv4 -n nqn.2016-06.io.spdk:cnode1 -l -1 -o 20 -x multipath --policy active_active --selector round_robin --min-io 10</div>
 </div><!-- fragment --><p>In this example, if these two NVMe-oF controllers have a shared namespace whose namespace ID is 1, a single NVMe bdev <code>Nvme0n1</code> is created. For the NVMe bdev module, the default value of <code>bdev_retry_count</code> is 3 and I/O retry is enabled by default. <code>ctrlr_loss_timeout_sec</code> is set to -1 and <code>reconnect_delay_sec</code> is set to 20. Hence, NVMe-oF controller reconnect will be retried once per 20 seconds until it succeeds.</p>
 <p>To confirm if multipath is configured correctly, two RPCs, <code>bdev_get_bdevs</code> and <code>bdev_nvme_get_controllers</code> are available.</p>
 <div class="fragment"><div class="line">./scripts/rpc.py bdev_get_bdevs -b Nvme0n1</div>
 <div class="line">./scripts/rpc.py bdev_nvme_get_controllers -n Nvme0</div>
 </div><!-- fragment --><p>To monitor the current multipath state, a RPC <code>bdev_nvme_get_io_paths</code> are available.</p>
 <div class="fragment"><div class="line">./scripts/rpc.py bdev_nvme_get_io_paths -n Nvme0n1</div>
-</div><!-- fragment --><p>To configure the path selection policy, a RPC <code>bdev_nvme_set_multipath_policy</code> is available. The following is an example for a single NVMe bdev <code>Nvme0n1</code> to set the path selection policy to active-active, set the path selector to round-robin, and set the number of I/Os routed to the current I/O path before switching to another I/O path to 10.</p>
-<div class="fragment"><div class="line">./scripts/rpc.py bdev_nvme_set_multipath_policy -b Nvme0n1 -p active_active -s round_robin -r 10</div>
+</div><!-- fragment --><p>Multipath options can instead be configured as global creation-time defaults before attaching controllers. An attach request can override these defaults, but all paths for one controller must use the same values.</p>
+<div class="fragment"><div class="line">./scripts/rpc.py bdev_nvme_set_options --policy active_active --selector round_robin --min-io 10</div>
 </div><!-- fragment --><h1>Limitations</h1>
 <p>SPDK NVMe multipath is transport protocol independent. Heterogeneous multipath configuration (e.g., TCP and RDMA) is supported. However, in this type of configuration, memory domain is not available yet because memory domain is supported only by the RDMA transport now.</p>
 <p>The RPCs, <code>bdev_get_iostat</code> and <code>bdev_nvme_get_transport_statistics</code> display I/O statistics but both are not aware of multipath. </p>

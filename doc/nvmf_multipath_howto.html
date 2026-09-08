@@ -152,6 +152,7 @@ $(function(){initNavTree('nvmf_multipath_howto.html',''); initResizable(); });
 </div><!-- fragment --><h1>On initiator: start and configure bdevperf</h1>
 <p>Launch the bdevperf process in the background: </p><div class="fragment"><div class="line">cd spdk/</div>
 <div class="line">./build/examples/bdevperf -m 0x4 -z -r /tmp/bdevperf.sock -q 128 -o 4096 -w verify -t 90 &amp;&gt; bdevperf.log &amp;</div>
+<div class="line">BDEVPERF_PID=$!</div>
 </div><!-- fragment --><p>Configure bdevperf and add two paths: </p><div class="fragment"><div class="line">./scripts/rpc.py -s /tmp/bdevperf.sock bdev_nvme_set_options -r -1</div>
 <div class="line">./scripts/rpc.py -s /tmp/bdevperf.sock bdev_nvme_attach_controller -b Nvme0 -t tcp -a 172.17.1.13 -s 4420 -f ipv4 -n nqn.2022-02.io.spdk:cnode0 -l -1 -o 10</div>
 <div class="line">./scripts/rpc.py -s /tmp/bdevperf.sock bdev_nvme_attach_controller -b Nvme0 -t tcp -a 172.18.1.13 -s 5520 -f ipv4 -n nqn.2022-02.io.spdk:cnode0 -x multipath -l -1 -o 10</div>
@@ -163,7 +164,15 @@ $(function(){initNavTree('nvmf_multipath_howto.html',''); initResizable(); });
 <p>This can be done on the target server by setting the first path's ANA to <code>non_optimized</code>: </p><div class="fragment"><div class="line">./scripts/rpc.py nvmf_subsystem_listener_set_ana_state nqn.2022-02.io.spdk:cnode0 -t tcp -a 172.17.1.13 -s 4420 -n non_optimized</div>
 </div><!-- fragment --><p>Use <code>ss -t</code> to verify that the traffic has switched to the second path.</p>
 <h1>Use round-robin (active_active) path load balancing</h1>
-<p>First, ensure the ANA for both paths is configured as <code>optimized</code> on the target. Then, change the multipath policy on the initiator to <code>active_active</code> (multipath policy is per bdev, so <code>bdev_nvme_set_multipath_policy</code> must be called after <code>bdev_nvme_attach_controller</code>): </p><div class="fragment"><div class="line">./scripts/rpc.py -s /tmp/bdevperf.sock bdev_nvme_set_multipath_policy -b Nvme0n1 -p active_active</div>
+<p>First, ensure the ANA for both paths is configured as <code>optimized</code> on the target. Multipath policy is selected when a controller is created and cannot be changed at runtime. Stop the active-passive initiator, start a new one, and attach both paths with identical active-active options: </p><div class="fragment"><div class="line">kill &quot;$BDEVPERF_PID&quot;</div>
+<div class="line">wait &quot;$BDEVPERF_PID&quot;</div>
+<div class="line">./build/examples/bdevperf -m 0x4 -z -r /tmp/bdevperf.sock -q 128 -o 4096 -w verify -t 90 &amp;&gt; bdevperf.log &amp;</div>
+<div class="line">./scripts/rpc.py -s /tmp/bdevperf.sock bdev_nvme_set_options -r -1</div>
+<div class="line">./scripts/rpc.py -s /tmp/bdevperf.sock bdev_nvme_attach_controller -b Nvme0 -t tcp -a 172.17.1.13 -s 4420 -f ipv4 -n nqn.2022-02.io.spdk:cnode0 \</div>
+<div class="line">  -x multipath -l -1 -o 10 --policy active_active</div>
+<div class="line">./scripts/rpc.py -s /tmp/bdevperf.sock bdev_nvme_attach_controller -b Nvme0 -t tcp -a 172.18.1.13 -s 5520 -f ipv4 -n nqn.2022-02.io.spdk:cnode0 \</div>
+<div class="line">  -x multipath -l -1 -o 10 --policy active_active</div>
+<div class="line">PYTHONPATH=$PYTHONPATH:/root/src/spdk/python ./examples/bdev/bdevperf/bdevperf.py -t 1 -s /tmp/bdevperf.sock perform_tests</div>
 </div><!-- fragment --><p>Observe with <code>ss -t</code> that both connections are receiving traffic (queues build up). </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->

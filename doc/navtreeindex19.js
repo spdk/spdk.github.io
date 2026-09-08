@@ -1,7 +1,5 @@
 var NAVTREEINDEX19 =
 {
-"userspace.html#userspace_threading":[2,0,2],
-"util_8h.html":[15,0,0,0,64],
 "util_8h.html#a0bbb80ad35ccd2da128fa69acedd2d90":[15,0,0,0,64,21],
 "util_8h.html#a1082d39cc6e9b1fb657f3b31ba430454":[15,0,0,0,64,17],
 "util_8h.html#a123918f967aa539af3a48a83dcf588c9":[15,0,0,0,64,9],

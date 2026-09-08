@@ -8137,7 +8137,7 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_trty
 </div><div class="memdoc">
 
 <p>Get the format index of the given namespace. </p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000002">Deprecated</a></b></dt><dd>Use spdk_nvme_ns_get_active_format_index instead.</dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000001">Deprecated</a></b></dt><dd>Use spdk_nvme_ns_get_active_format_index instead.</dd></dl>
 <p>This function is thread safe and can be called at any point while the controller is attached to the SPDK NVMe driver.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -8246,7 +8246,7 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_trty
 </div><div class="memdoc">
 
 <p>Get the NGUID for the given namespace. </p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000003">Deprecated</a></b></dt><dd>Read <code>nguid</code> directly from <code>spdk_nvme_ns_get_data_head(ns)</code>; per the NVMe spec an all-zero NGUID means "not present".</dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000002">Deprecated</a></b></dt><dd>Read <code>nguid</code> directly from <code>spdk_nvme_ns_get_data_head(ns)</code>; per the NVMe spec an all-zero NGUID means "not present".</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">ns</td><td>Namespace to query.</td></tr>
