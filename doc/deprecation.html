@@ -154,6 +154,8 @@ $(function(){initNavTree('deprecation.html',''); initResizable(); });
 <p>See GitHub issue <a href="https://github.com/spdk/spdk/issues/2801">2801</a> for additional details on the bug.</p>
 <p>New SPDK partition types should use GUID <code>6527994e-2c5a-4eec-9613-8f5944074e8b</code> which will create a bdev of the correct size.</p>
 <h2>nvme</h2>
+<h3><code><a class="el" href="structspdk__nvme__error__information__entry.html#aeb86c281ad13ccad6fbf242f77515b10">spdk_nvme_error_information_entry.error_location</a></code></h3>
+<p>The <code>error_location</code> field in <code>struct <a class="el" href="structspdk__nvme__error__information__entry.html" title="Error information log page (SPDK_NVME_LOG_ERROR)">spdk_nvme_error_information_entry</a></code> is deprecated and will be removed in v27.01. Use the <code>pel</code> field instead; <code>pel.raw</code> provides equivalent raw-value access.</p>
 <h3><code>nvme_ns_get_format_index</code></h3>
 <p><code>spdk_nvme_ns_get_format_index</code> is deprecated and will be removed in v27.01. Use <code>spdk_nvme_ns_get_active_format_index</code> instead.</p>
 <h3><code>spdk_nvme_ns_get_nguid</code></h3>

@@ -266,8 +266,8 @@ spdk_kill_instance</h2>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
 <div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
-<div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;method&quot;: &quot;spdk_kill_instance&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;params&quot;: {</div>
 <div class="line">    &quot;sig_name&quot;: &quot;SIGINT&quot;</div>
 <div class="line">  }</div>
@@ -299,8 +299,8 @@ framework_monitor_context_switch</h2>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
 <div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
-<div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;method&quot;: &quot;framework_monitor_context_switch&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;params&quot;: {</div>
 <div class="line">    &quot;enabled&quot;: false</div>
 <div class="line">  }</div>
@@ -324,8 +324,8 @@ framework_start_init</h2>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
 <div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
-<div class="line">  &quot;id&quot;: 1,</div>
-<div class="line">  &quot;method&quot;: &quot;framework_start_init&quot;</div>
+<div class="line">  &quot;method&quot;: &quot;framework_start_init&quot;,</div>
+<div class="line">  &quot;id&quot;: 1</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Example response:</p>
 <div class="fragment"><div class="line">{</div>
@@ -344,8 +344,8 @@ framework_wait_init</h2>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
 <div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
-<div class="line">  &quot;id&quot;: 1,</div>
-<div class="line">  &quot;method&quot;: &quot;framework_wait_init&quot;</div>
+<div class="line">  &quot;method&quot;: &quot;framework_wait_init&quot;,</div>
+<div class="line">  &quot;id&quot;: 1</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Example response:</p>
 <div class="fragment"><div class="line">{</div>
@@ -371,8 +371,12 @@ rpc_get_methods</h2>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
 <div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;method&quot;: &quot;rpc_get_methods&quot;,</div>
 <div class="line">  &quot;id&quot;: 1,</div>
-<div class="line">  &quot;method&quot;: &quot;rpc_get_methods&quot;</div>
+<div class="line">  &quot;params&quot;: {</div>
+<div class="line">    &quot;current&quot;: false,</div>
+<div class="line">    &quot;include_aliases&quot;: false</div>
+<div class="line">  }</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Example response:</p>
 <div class="fragment"><div class="line">{</div>
@@ -687,8 +691,8 @@ framework_get_subsystems</h2>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
 <div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
-<div class="line">  &quot;id&quot;: 1,</div>
-<div class="line">  &quot;method&quot;: &quot;framework_get_subsystems&quot;</div>
+<div class="line">  &quot;method&quot;: &quot;framework_get_subsystems&quot;,</div>
+<div class="line">  &quot;id&quot;: 1</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Example response:</p>
 <div class="fragment"><div class="line">{</div>
@@ -765,10 +769,11 @@ framework_get_config</h2>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
 <div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
-<div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;method&quot;: &quot;framework_get_config&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;params&quot;: {</div>
-<div class="line">    &quot;name&quot;: &quot;bdev&quot;</div>
+<div class="line">    &quot;name&quot;: &quot;bdev&quot;,</div>
+<div class="line">    &quot;with_batches&quot;: false</div>
 <div class="line">  }</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Example response:</p>
@@ -991,11 +996,11 @@ scheduler_set_options</h2>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
 <div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
-<div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;method&quot;: &quot;scheduler_set_options&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;params&quot;: {</div>
-<div class="line">    &quot;scheduling_core&quot;: 1,</div>
-<div class="line">    &quot;isolated_core_mask&quot;: &quot;0x4&quot;</div>
+<div class="line">    &quot;isolated_core_mask&quot;: &quot;0x4&quot;,</div>
+<div class="line">    &quot;scheduling_core&quot;: 1</div>
 <div class="line">  }</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Example response:</p>
@@ -1016,8 +1021,8 @@ framework_enable_cpumask_locks</h2>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
 <div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
-<div class="line">  &quot;id&quot;: 1,</div>
-<div class="line">  &quot;method&quot;: &quot;framework_enable_cpumask_locks&quot;</div>
+<div class="line">  &quot;method&quot;: &quot;framework_enable_cpumask_locks&quot;,</div>
+<div class="line">  &quot;id&quot;: 1</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Example response:</p>
 <div class="fragment"><div class="line">{</div>
@@ -1037,8 +1042,8 @@ framework_disable_cpumask_locks</h2>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
 <div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
-<div class="line">  &quot;id&quot;: 1,</div>
-<div class="line">  &quot;method&quot;: &quot;framework_disable_cpumask_locks&quot;</div>
+<div class="line">  &quot;method&quot;: &quot;framework_disable_cpumask_locks&quot;,</div>
+<div class="line">  &quot;id&quot;: 1</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Example response:</p>
 <div class="fragment"><div class="line">{</div>
@@ -1969,7 +1974,9 @@ accel_error_inject_error</h2>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
 <div class="line">  &quot;method&quot;: &quot;accel_error_inject_error&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;params&quot;: {</div>
 <div class="line">    &quot;opcode&quot;: &quot;crc32c&quot;,</div>
 <div class="line">    &quot;type&quot;: &quot;corrupt&quot;,</div>
@@ -1996,12 +2003,12 @@ compressdev_scan_accel_module</h2>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
-<div class="line">  &quot;params&quot;: {</div>
-<div class="line">    &quot;pmd&quot;: 1</div>
-<div class="line">  },</div>
 <div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
 <div class="line">  &quot;method&quot;: &quot;compressdev_scan_accel_module&quot;,</div>
-<div class="line">  &quot;id&quot;: 1</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;params&quot;: {</div>
+<div class="line">    &quot;pmd&quot;: 1</div>
+<div class="line">  }</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Example response:</p>
 <div class="fragment"><div class="line">{</div>
@@ -2022,9 +2029,6 @@ dsa_scan_accel_module</h2>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
-<div class="line">  &quot;params&quot;: {</div>
-<div class="line">    &quot;config_kernel_mode&quot;: false</div>
-<div class="line">  },</div>
 <div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
 <div class="line">  &quot;method&quot;: &quot;dsa_scan_accel_module&quot;,</div>
 <div class="line">  &quot;id&quot;: 1</div>
@@ -2142,7 +2146,7 @@ dpdk_cryptodev_set_driver</h2>
 <div class="line">  &quot;method&quot;: &quot;dpdk_cryptodev_set_driver&quot;,</div>
 <div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;params&quot;: {</div>
-<div class="line">    &quot;crypto_pmd&quot;: &quot;crypto_aesni_mb&quot;</div>
+<div class="line">    &quot;driver_name&quot;: &quot;crypto_aesni_mb&quot;</div>
 <div class="line">  }</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Example response:</p>
@@ -2282,8 +2286,8 @@ bdev_set_options</h2>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
 <div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
-<div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;method&quot;: &quot;bdev_set_options&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;params&quot;: {</div>
 <div class="line">    &quot;bdev_io_pool_size&quot;: 65536,</div>
 <div class="line">    &quot;bdev_io_cache_size&quot;: 256</div>
@@ -2314,8 +2318,8 @@ bdev_get_bdevs</h2>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
 <div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
-<div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;method&quot;: &quot;bdev_get_bdevs&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;params&quot;: {</div>
 <div class="line">    &quot;name&quot;: &quot;Malloc0&quot;</div>
 <div class="line">  }</div>
@@ -2362,8 +2366,8 @@ bdev_examine</h2>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
 <div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
-<div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;method&quot;: &quot;bdev_examine&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;params&quot;: {</div>
 <div class="line">    &quot;name&quot;: &quot;Nvme0n1&quot;</div>
 <div class="line">  }</div>
@@ -2415,11 +2419,14 @@ bdev_get_iostat</h2>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
 <div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
-<div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;method&quot;: &quot;bdev_get_iostat&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;params&quot;: {</div>
-<div class="line">    &quot;names&quot;: [&quot;Nvme0n1&quot;, &quot;Nvme0n2&quot;],</div>
-<div class="line">    &quot;per_channel&quot;: false</div>
+<div class="line">    &quot;per_channel&quot;: false,</div>
+<div class="line">    &quot;names&quot;: [</div>
+<div class="line">      &quot;Nvme0n1&quot;,</div>
+<div class="line">      &quot;Nvme0n2&quot;</div>
+<div class="line">    ]</div>
 <div class="line">  }</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Example response:</p>
@@ -2481,8 +2488,8 @@ bdev_reset_iostat</h2>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
 <div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
-<div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;method&quot;: &quot;bdev_reset_iostat&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;params&quot;: {</div>
 <div class="line">    &quot;name&quot;: &quot;Nvme0n1&quot;</div>
 <div class="line">  }</div>
@@ -2517,8 +2524,8 @@ bdev_enable_histogram</h2>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
 <div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
-<div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;method&quot;: &quot;bdev_enable_histogram&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;params&quot;: {</div>
 <div class="line">    &quot;name&quot;: &quot;Nvme0n1&quot;,</div>
 <div class="line">    &quot;enable&quot;: true,</div>
@@ -2564,8 +2571,8 @@ bdev_get_histogram</h2>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
 <div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
-<div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;method&quot;: &quot;bdev_get_histogram&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;params&quot;: {</div>
 <div class="line">    &quot;name&quot;: &quot;Nvme0n1&quot;</div>
 <div class="line">  }</div>
@@ -2606,8 +2613,8 @@ bdev_get_histogram_borders</h2>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
 <div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
-<div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;method&quot;: &quot;bdev_get_histogram_borders&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;params&quot;: {</div>
 <div class="line">    &quot;name&quot;: &quot;Nvme0n1&quot;,</div>
 <div class="line">    &quot;borders&quot;: [</div>
@@ -2656,8 +2663,8 @@ bdev_set_qos_limit</h2>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
 <div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
-<div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;method&quot;: &quot;bdev_set_qos_limit&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;params&quot;: {</div>
 <div class="line">    &quot;name&quot;: &quot;Malloc0&quot;,</div>
 <div class="line">    &quot;rw_ios_per_sec&quot;: 20000,</div>
@@ -2729,16 +2736,16 @@ bdev_crypto_create</h2>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;method&quot;: &quot;bdev_crypto_create&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;params&quot;: {</div>
 <div class="line">    &quot;base_bdev_name&quot;: &quot;Nvme0n1&quot;,</div>
 <div class="line">    &quot;name&quot;: &quot;my_crypto_bdev&quot;,</div>
 <div class="line">    &quot;crypto_pmd&quot;: &quot;crypto_aesni_mb&quot;,</div>
 <div class="line">    &quot;key&quot;: &quot;12345678901234561234567890123456&quot;,</div>
 <div class="line">    &quot;cipher&quot;: &quot;AES_CBC&quot;</div>
-<div class="line">  },</div>
-<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
-<div class="line">  &quot;method&quot;: &quot;bdev_crypto_create&quot;,</div>
-<div class="line">  &quot;id&quot;: 1</div>
+<div class="line">  }</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Example response:</p>
 <div class="fragment"><div class="line">{</div>
@@ -2759,12 +2766,12 @@ bdev_crypto_delete</h2>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
-<div class="line">  &quot;params&quot;: {</div>
-<div class="line">    &quot;name&quot;: &quot;my_crypto_bdev&quot;</div>
-<div class="line">  },</div>
 <div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
 <div class="line">  &quot;method&quot;: &quot;bdev_crypto_delete&quot;,</div>
-<div class="line">  &quot;id&quot;: 1</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;params&quot;: {</div>
+<div class="line">    &quot;name&quot;: &quot;my_crypto_bdev&quot;</div>
+<div class="line">  }</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Example response:</p>
 <div class="fragment"><div class="line">{</div>
@@ -2795,16 +2802,16 @@ bdev_ocf_create</h2>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;method&quot;: &quot;bdev_ocf_create&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;params&quot;: {</div>
 <div class="line">    &quot;name&quot;: &quot;ocf0&quot;,</div>
 <div class="line">    &quot;mode&quot;: &quot;wt&quot;,</div>
 <div class="line">    &quot;cache_line_size&quot;: 64,</div>
 <div class="line">    &quot;cache_bdev_name&quot;: &quot;Nvme0n1&quot;,</div>
 <div class="line">    &quot;core_bdev_name&quot;: &quot;aio0&quot;</div>
-<div class="line">  },</div>
-<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
-<div class="line">  &quot;method&quot;: &quot;bdev_ocf_create&quot;,</div>
-<div class="line">  &quot;id&quot;: 1</div>
+<div class="line">  }</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Example response:</p>
 <div class="fragment"><div class="line">{</div>
@@ -2825,12 +2832,12 @@ bdev_ocf_delete</h2>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
-<div class="line">  &quot;params&quot;: {</div>
-<div class="line">    &quot;name&quot;: &quot;ocf0&quot;</div>
-<div class="line">  },</div>
 <div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
 <div class="line">  &quot;method&quot;: &quot;bdev_ocf_delete&quot;,</div>
-<div class="line">  &quot;id&quot;: 1</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;params&quot;: {</div>
+<div class="line">    &quot;name&quot;: &quot;ocf0&quot;</div>
+<div class="line">  }</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Example response:</p>
 <div class="fragment"><div class="line">{</div>
@@ -2853,12 +2860,12 @@ bdev_ocf_get_stats</h2>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
-<div class="line">  &quot;params&quot;: {</div>
-<div class="line">    &quot;name&quot;: &quot;ocf0&quot;</div>
-<div class="line">  },</div>
 <div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
 <div class="line">  &quot;method&quot;: &quot;bdev_ocf_get_stats&quot;,</div>
-<div class="line">  &quot;id&quot;: 1</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;params&quot;: {</div>
+<div class="line">    &quot;name&quot;: &quot;ocf0&quot;</div>
+<div class="line">  }</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Example response:</p>
 <div class="fragment"><div class="line">{</div>
@@ -3058,12 +3065,12 @@ bdev_ocf_reset_stats</h2>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
-<div class="line">  &quot;params&quot;: {</div>
-<div class="line">    &quot;name&quot;: &quot;ocf0&quot;</div>
-<div class="line">  },</div>
 <div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
 <div class="line">  &quot;method&quot;: &quot;bdev_ocf_reset_stats&quot;,</div>
-<div class="line">  &quot;id&quot;: 1</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;params&quot;: {</div>
+<div class="line">    &quot;name&quot;: &quot;ocf0&quot;</div>
+<div class="line">  }</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Example response:</p>
 <div class="fragment"><div class="line">{</div>
@@ -3126,13 +3133,13 @@ bdev_ocf_set_cache_mode</h2>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;method&quot;: &quot;bdev_ocf_set_cache_mode&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;params&quot;: {</div>
 <div class="line">    &quot;name&quot;: &quot;ocf0&quot;,</div>
 <div class="line">    &quot;mode&quot;: &quot;pt&quot;</div>
-<div class="line">  },</div>
-<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
-<div class="line">  &quot;method&quot;: &quot;bdev_ocf_set_cache_mode&quot;,</div>
-<div class="line">  &quot;id&quot;: 1</div>
+<div class="line">  }</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Example response:</p>
 <div class="fragment"><div class="line">{</div>
@@ -3159,15 +3166,15 @@ bdev_ocf_set_seqcutoff</h2>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;method&quot;: &quot;bdev_ocf_set_seqcutoff&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;params&quot;: {</div>
 <div class="line">    &quot;name&quot;: &quot;ocf0&quot;,</div>
 <div class="line">    &quot;policy&quot;: &quot;full&quot;,</div>
 <div class="line">    &quot;threshold&quot;: 4,</div>
 <div class="line">    &quot;promotion_count&quot;: 2</div>
-<div class="line">  },</div>
-<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
-<div class="line">  &quot;method&quot;: &quot;bdev_ocf_set_seqcutoff&quot;,</div>
-<div class="line">  &quot;id&quot;: 1</div>
+<div class="line">  }</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Example response:</p>
 <div class="fragment"><div class="line">{</div>
@@ -3189,12 +3196,12 @@ bdev_ocf_flush_start</h2>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
-<div class="line">  &quot;params&quot;: {</div>
-<div class="line">    &quot;name&quot;: &quot;ocf0&quot;</div>
-<div class="line">  },</div>
 <div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
 <div class="line">  &quot;method&quot;: &quot;bdev_ocf_flush_start&quot;,</div>
-<div class="line">  &quot;id&quot;: 1</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;params&quot;: {</div>
+<div class="line">    &quot;name&quot;: &quot;ocf0&quot;</div>
+<div class="line">  }</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Example response:</p>
 <div class="fragment"><div class="line">{</div>
@@ -3218,12 +3225,12 @@ bdev_ocf_flush_status</h2>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
-<div class="line">  &quot;params&quot;: {</div>
-<div class="line">    &quot;name&quot;: &quot;ocf0&quot;</div>
-<div class="line">  },</div>
 <div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
 <div class="line">  &quot;method&quot;: &quot;bdev_ocf_flush_status&quot;,</div>
-<div class="line">  &quot;id&quot;: 1</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;params&quot;: {</div>
+<div class="line">    &quot;name&quot;: &quot;ocf0&quot;</div>
+<div class="line">  }</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Example response:</p>
 <div class="fragment"><div class="line">{</div>
@@ -3272,16 +3279,18 @@ bdev_malloc_create</h2>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
-<div class="line">  &quot;params&quot;: {</div>
-<div class="line">    &quot;block_size&quot;: 4096,</div>
-<div class="line">    &quot;num_blocks&quot;: 16384,</div>
-<div class="line">    &quot;name&quot;: &quot;Malloc0&quot;,</div>
-<div class="line">    &quot;uuid&quot;: &quot;2b6601ba-eada-44fb-9a83-a20eb9eb9e90&quot;,</div>
-<div class="line">    &quot;optimal_io_boundary&quot;: 16</div>
-<div class="line">  },</div>
 <div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
 <div class="line">  &quot;method&quot;: &quot;bdev_malloc_create&quot;,</div>
-<div class="line">  &quot;id&quot;: 1</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;params&quot;: {</div>
+<div class="line">    &quot;num_blocks&quot;: 16384,</div>
+<div class="line">    &quot;block_size&quot;: 4096,</div>
+<div class="line">    &quot;name&quot;: &quot;Malloc0&quot;,</div>
+<div class="line">    &quot;uuid&quot;: &quot;2b6601ba-eada-44fb-9a83-a20eb9eb9e90&quot;,</div>
+<div class="line">    &quot;optimal_io_boundary&quot;: 16,</div>
+<div class="line">    &quot;md_interleave&quot;: false,</div>
+<div class="line">    &quot;dif_is_head_of_md&quot;: false</div>
+<div class="line">  }</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Example response:</p>
 <div class="fragment"><div class="line">{</div>
@@ -3302,12 +3311,12 @@ bdev_malloc_delete</h2>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
-<div class="line">  &quot;params&quot;: {</div>
-<div class="line">    &quot;name&quot;: &quot;Malloc0&quot;</div>
-<div class="line">  },</div>
 <div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
 <div class="line">  &quot;method&quot;: &quot;bdev_malloc_delete&quot;,</div>
-<div class="line">  &quot;id&quot;: 1</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;params&quot;: {</div>
+<div class="line">    &quot;name&quot;: &quot;Malloc0&quot;</div>
+<div class="line">  }</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Example response:</p>
 <div class="fragment"><div class="line">{</div>
@@ -3356,23 +3365,23 @@ bdev_null_create</h2>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;method&quot;: &quot;bdev_null_create&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;params&quot;: {</div>
-<div class="line">    &quot;block_size&quot;: 4104,</div>
 <div class="line">    &quot;num_blocks&quot;: 16384,</div>
+<div class="line">    &quot;block_size&quot;: 4096,</div>
 <div class="line">    &quot;name&quot;: &quot;Null0&quot;,</div>
 <div class="line">    &quot;uuid&quot;: &quot;2b6601ba-eada-44fb-9a83-a20eb9eb9e90&quot;,</div>
 <div class="line">    &quot;md_size&quot;: 8,</div>
 <div class="line">    &quot;dif_type&quot;: 1,</div>
 <div class="line">    &quot;dif_is_head_of_md&quot;: true,</div>
-<div class="line">    &quot;preferred_write_granularity&quot;: 64,</div>
 <div class="line">    &quot;preferred_write_alignment&quot;: 64,</div>
+<div class="line">    &quot;preferred_write_granularity&quot;: 64,</div>
 <div class="line">    &quot;optimal_write_size&quot;: 4,</div>
-<div class="line">    &quot;preferred_unmap_granularity&quot;: 16,</div>
-<div class="line">    &quot;preferred_unmap_alignment&quot;: 16</div>
-<div class="line">  },</div>
-<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
-<div class="line">  &quot;method&quot;: &quot;bdev_null_create&quot;,</div>
-<div class="line">  &quot;id&quot;: 1</div>
+<div class="line">    &quot;preferred_unmap_alignment&quot;: 16,</div>
+<div class="line">    &quot;preferred_unmap_granularity&quot;: 16</div>
+<div class="line">  }</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Example response:</p>
 <div class="fragment"><div class="line">{</div>
@@ -3393,12 +3402,12 @@ bdev_null_delete</h2>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
-<div class="line">  &quot;params&quot;: {</div>
-<div class="line">    &quot;name&quot;: &quot;Null0&quot;</div>
-<div class="line">  },</div>
 <div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
 <div class="line">  &quot;method&quot;: &quot;bdev_null_delete&quot;,</div>
-<div class="line">  &quot;id&quot;: 1</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;params&quot;: {</div>
+<div class="line">    &quot;name&quot;: &quot;Null0&quot;</div>
+<div class="line">  }</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Example response:</p>
 <div class="fragment"><div class="line">{</div>
@@ -3421,13 +3430,13 @@ bdev_null_resize</h2>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;method&quot;: &quot;bdev_null_resize&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;params&quot;: {</div>
 <div class="line">    &quot;name&quot;: &quot;Null0&quot;,</div>
 <div class="line">    &quot;new_size&quot;: 4096</div>
-<div class="line">  },</div>
-<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
-<div class="line">  &quot;method&quot;: &quot;bdev_null_resize&quot;,</div>
-<div class="line">  &quot;id&quot;: 1</div>
+<div class="line">  }</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Example response:</p>
 <div class="fragment"><div class="line">{</div>
@@ -3462,14 +3471,17 @@ bdev_aio_create</h2>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
-<div class="line">  &quot;params&quot;: {</div>
-<div class="line">    &quot;block_size&quot;: 4096,</div>
-<div class="line">    &quot;name&quot;: &quot;Aio0&quot;,</div>
-<div class="line">    &quot;filename&quot;: &quot;/tmp/aio_bdev_file&quot;</div>
-<div class="line">  },</div>
 <div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
 <div class="line">  &quot;method&quot;: &quot;bdev_aio_create&quot;,</div>
-<div class="line">  &quot;id&quot;: 1</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;params&quot;: {</div>
+<div class="line">    &quot;filename&quot;: &quot;/tmp/aio_bdev_file&quot;,</div>
+<div class="line">    &quot;name&quot;: &quot;Aio0&quot;,</div>
+<div class="line">    &quot;block_size&quot;: 4096,</div>
+<div class="line">    &quot;readonly&quot;: false,</div>
+<div class="line">    &quot;fallocate&quot;: false,</div>
+<div class="line">    &quot;nowait&quot;: false</div>
+<div class="line">  }</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Example response:</p>
 <div class="fragment"><div class="line">{</div>
@@ -3490,12 +3502,12 @@ bdev_aio_rescan</h2>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
-<div class="line">  &quot;params&quot;: {</div>
-<div class="line">    &quot;name&quot;: &quot;Aio0&quot;</div>
-<div class="line">  },</div>
 <div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
 <div class="line">  &quot;method&quot;: &quot;bdev_aio_rescan&quot;,</div>
-<div class="line">  &quot;id&quot;: 1</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;params&quot;: {</div>
+<div class="line">    &quot;name&quot;: &quot;Aio0&quot;</div>
+<div class="line">  }</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Example response:</p>
 <div class="fragment"><div class="line">{</div>
@@ -3516,12 +3528,12 @@ bdev_aio_delete</h2>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
-<div class="line">  &quot;params&quot;: {</div>
-<div class="line">    &quot;name&quot;: &quot;Aio0&quot;</div>
-<div class="line">  },</div>
 <div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
 <div class="line">  &quot;method&quot;: &quot;bdev_aio_delete&quot;,</div>
-<div class="line">  &quot;id&quot;: 1</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;params&quot;: {</div>
+<div class="line">    &quot;name&quot;: &quot;Aio0&quot;</div>
+<div class="line">  }</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Example response:</p>
 <div class="fragment"><div class="line">{</div>
@@ -3607,19 +3619,27 @@ bdev_nvme_set_options</h2>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;method&quot;: &quot;bdev_nvme_set_options&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;params&quot;: {</div>
-<div class="line">    &quot;transport_retry_count&quot;: 5,</div>
+<div class="line">    &quot;action_on_timeout&quot;: &quot;reset&quot;,</div>
+<div class="line">    &quot;timeout_us&quot;: 10000000,</div>
+<div class="line">    &quot;timeout_admin_us&quot;: 20000000,</div>
+<div class="line">    &quot;keep_alive_timeout_ms&quot;: 600000,</div>
 <div class="line">    &quot;arbitration_burst&quot;: 3,</div>
 <div class="line">    &quot;low_priority_weight&quot;: 8,</div>
 <div class="line">    &quot;medium_priority_weight&quot;: 8,</div>
 <div class="line">    &quot;high_priority_weight&quot;: 8,</div>
 <div class="line">    &quot;nvme_adminq_poll_period_us&quot;: 2000,</div>
-<div class="line">    &quot;timeout_us&quot;: 10000000,</div>
-<div class="line">    &quot;timeout_admin_us&quot;: 20000000,</div>
-<div class="line">    &quot;keep_alive_timeout_ms&quot;: 600000,</div>
-<div class="line">    &quot;action_on_timeout&quot;: &quot;reset&quot;,</div>
 <div class="line">    &quot;io_queue_requests&quot;: 2048,</div>
 <div class="line">    &quot;delay_cmd_submit&quot;: true,</div>
+<div class="line">    &quot;transport_retry_count&quot;: 5,</div>
+<div class="line">    &quot;disable_auto_failback&quot;: false,</div>
+<div class="line">    &quot;generate_uuids&quot;: false,</div>
+<div class="line">    &quot;nvme_error_stat&quot;: false,</div>
+<div class="line">    &quot;io_path_stat&quot;: false,</div>
+<div class="line">    &quot;allow_accel_sequence&quot;: false,</div>
 <div class="line">    &quot;dhchap_digests&quot;: [</div>
 <div class="line">      &quot;sha384&quot;,</div>
 <div class="line">      &quot;sha512&quot;</div>
@@ -3629,15 +3649,13 @@ bdev_nvme_set_options</h2>
 <div class="line">      &quot;ffdhe8192&quot;</div>
 <div class="line">    ],</div>
 <div class="line">    &quot;rdma_umr_per_io&quot;: false,</div>
+<div class="line">    &quot;enable_flush&quot;: false,</div>
 <div class="line">    &quot;multipath_opts&quot;: {</div>
 <div class="line">      &quot;policy&quot;: &quot;active_active&quot;,</div>
 <div class="line">      &quot;selector&quot;: &quot;round_robin&quot;,</div>
 <div class="line">      &quot;min_io&quot;: 10</div>
 <div class="line">    }</div>
-<div class="line">  },</div>
-<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
-<div class="line">  &quot;method&quot;: &quot;bdev_nvme_set_options&quot;,</div>
-<div class="line">  &quot;id&quot;: 1</div>
+<div class="line">  }</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Example response:</p>
 <div class="fragment"><div class="line">{</div>
@@ -3660,13 +3678,13 @@ bdev_nvme_set_hotplug</h2>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;method&quot;: &quot;bdev_nvme_set_hotplug&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;params&quot;: {</div>
 <div class="line">    &quot;enable&quot;: true,</div>
 <div class="line">    &quot;period_us&quot;: 2000</div>
-<div class="line">  },</div>
-<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
-<div class="line">  &quot;method&quot;: &quot;bdev_nvme_set_hotplug&quot;,</div>
-<div class="line">  &quot;id&quot;: 1</div>
+<div class="line">  }</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Example response:</p>
 <div class="fragment"><div class="line">{</div>
@@ -3743,14 +3761,20 @@ bdev_nvme_attach_controller</h2>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
-<div class="line">  &quot;params&quot;: {</div>
-<div class="line">    &quot;trtype&quot;: &quot;pcie&quot;,</div>
-<div class="line">    &quot;name&quot;: &quot;Nvme0&quot;,</div>
-<div class="line">    &quot;traddr&quot;: &quot;0000:0a:00.0&quot;</div>
-<div class="line">  },</div>
 <div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
 <div class="line">  &quot;method&quot;: &quot;bdev_nvme_attach_controller&quot;,</div>
-<div class="line">  &quot;id&quot;: 1</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;params&quot;: {</div>
+<div class="line">    &quot;name&quot;: &quot;Nvme0&quot;,</div>
+<div class="line">    &quot;trtype&quot;: &quot;pcie&quot;,</div>
+<div class="line">    &quot;traddr&quot;: &quot;0000:0a:00.0&quot;,</div>
+<div class="line">    &quot;prchk_reftag&quot;: false,</div>
+<div class="line">    &quot;prchk_guard&quot;: false,</div>
+<div class="line">    &quot;hdgst&quot;: false,</div>
+<div class="line">    &quot;ddgst&quot;: false,</div>
+<div class="line">    &quot;allow_unrecognized_csi&quot;: false,</div>
+<div class="line">    &quot;disable_sq_flow_control&quot;: false</div>
+<div class="line">  }</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Example response:</p>
 <div class="fragment"><div class="line">{</div>
@@ -3777,8 +3801,8 @@ bdev_nvme_get_controllers</h2>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
 <div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
-<div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;method&quot;: &quot;bdev_nvme_get_controllers&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;params&quot;: {</div>
 <div class="line">    &quot;name&quot;: &quot;Nvme0&quot;</div>
 <div class="line">  }</div>
@@ -3826,12 +3850,12 @@ bdev_nvme_detach_controller</h2>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
-<div class="line">  &quot;params&quot;: {</div>
-<div class="line">    &quot;name&quot;: &quot;Nvme0&quot;</div>
-<div class="line">  },</div>
 <div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
 <div class="line">  &quot;method&quot;: &quot;bdev_nvme_detach_controller&quot;,</div>
-<div class="line">  &quot;id&quot;: 1</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;params&quot;: {</div>
+<div class="line">    &quot;name&quot;: &quot;Nvme0&quot;</div>
+<div class="line">  }</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Example response:</p>
 <div class="fragment"><div class="line">{</div>
@@ -3857,8 +3881,8 @@ bdev_nvme_reset_controller</h2>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
 <div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
-<div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;method&quot;: &quot;bdev_nvme_reset_controller&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;params&quot;: {</div>
 <div class="line">    &quot;name&quot;: &quot;Nvme0&quot;</div>
 <div class="line">  }</div>
@@ -3887,8 +3911,8 @@ bdev_nvme_enable_controller</h2>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
 <div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
-<div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;method&quot;: &quot;bdev_nvme_enable_controller&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;params&quot;: {</div>
 <div class="line">    &quot;name&quot;: &quot;Nvme0&quot;</div>
 <div class="line">  }</div>
@@ -3917,8 +3941,8 @@ bdev_nvme_disable_controller</h2>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
 <div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
-<div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;method&quot;: &quot;bdev_nvme_disable_controller&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;params&quot;: {</div>
 <div class="line">    &quot;name&quot;: &quot;Nvme0&quot;</div>
 <div class="line">  }</div>
@@ -3972,9 +3996,10 @@ bdev_nvme_start_discovery</h2>
 <div class="line">    &quot;name&quot;: &quot;nvme_auto&quot;,</div>
 <div class="line">    &quot;trtype&quot;: &quot;tcp&quot;,</div>
 <div class="line">    &quot;traddr&quot;: &quot;127.0.0.1&quot;,</div>
-<div class="line">    &quot;hostnqn&quot;: &quot;nqn.2021-12.io.spdk:host1&quot;,</div>
 <div class="line">    &quot;adrfam&quot;: &quot;ipv4&quot;,</div>
-<div class="line">    &quot;trsvcid&quot;: &quot;4420&quot;</div>
+<div class="line">    &quot;trsvcid&quot;: &quot;4420&quot;,</div>
+<div class="line">    &quot;hostnqn&quot;: &quot;nqn.2021-12.io.spdk:host1&quot;,</div>
+<div class="line">    &quot;wait_for_attach&quot;: false</div>
 <div class="line">  }</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Example response:</p>
@@ -4241,12 +4266,12 @@ bdev_nvme_cuse_unregister</h2>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
-<div class="line">  &quot;params&quot;: {</div>
-<div class="line">    &quot;name&quot;: &quot;Nvme0&quot;</div>
-<div class="line">  },</div>
 <div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
 <div class="line">  &quot;method&quot;: &quot;bdev_nvme_cuse_unregister&quot;,</div>
-<div class="line">  &quot;id&quot;: 1</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;params&quot;: {</div>
+<div class="line">    &quot;name&quot;: &quot;Nvme0&quot;</div>
+<div class="line">  }</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Example response:</p>
 <div class="fragment"><div class="line">{</div>
@@ -4272,7 +4297,9 @@ bdev_nvme_set_keys</h2>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
 <div class="line">  &quot;method&quot;: &quot;bdev_nvme_set_keys&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;params&quot;: {</div>
 <div class="line">    &quot;name&quot;: &quot;nvme0&quot;,</div>
 <div class="line">    &quot;dhchap_key&quot;: &quot;key0&quot;,</div>
@@ -4365,8 +4392,8 @@ bdev_nvme_apply_firmware</h2>
 <div class="line">  &quot;method&quot;: &quot;bdev_nvme_apply_firmware&quot;,</div>
 <div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;params&quot;: {</div>
-<div class="line">    &quot;filename&quot;: &quot;firmware_file&quot;,</div>
-<div class="line">    &quot;bdev_name&quot;: &quot;NVMe0n1&quot;</div>
+<div class="line">    &quot;bdev_name&quot;: &quot;NVMe0n1&quot;,</div>
+<div class="line">    &quot;filename&quot;: &quot;firmware_file&quot;</div>
 <div class="line">  }</div>
 <div class="line">}</div>
 </div><!-- fragment --><h2><a class="anchor" id="rpc_bdev_nvme_get_transport_statistics"></a>
@@ -4380,8 +4407,8 @@ bdev_nvme_get_transport_statistics</h2>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
 <div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
-<div class="line">  &quot;id&quot;: 1,</div>
-<div class="line">  &quot;method&quot;: &quot;bdev_nvme_get_transport_statistics&quot;</div>
+<div class="line">  &quot;method&quot;: &quot;bdev_nvme_get_transport_statistics&quot;,</div>
+<div class="line">  &quot;id&quot;: 1</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Example response:</p>
 <div class="fragment"><div class="line">{</div>
@@ -4549,15 +4576,15 @@ bdev_rbd_register_cluster</h2>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;method&quot;: &quot;bdev_rbd_register_cluster&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;params&quot;: {</div>
 <div class="line">    &quot;name&quot;: &quot;rbd_cluster&quot;,</div>
 <div class="line">    &quot;user_id&quot;: &quot;cinder&quot;,</div>
 <div class="line">    &quot;config_file&quot;: &quot;/root/ceph_conf/ceph.conf&quot;,</div>
 <div class="line">    &quot;key_file&quot;: &quot;/root/ceph_conf/ceph.client.cinder.keyring&quot;</div>
-<div class="line">  },</div>
-<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
-<div class="line">  &quot;method&quot;: &quot;bdev_rbd_register_cluster&quot;,</div>
-<div class="line">  &quot;id&quot;: 1</div>
+<div class="line">  }</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Example response:</p>
 <div class="fragment"><div class="line">{</div>
@@ -4580,12 +4607,12 @@ bdev_rbd_unregister_cluster</h2>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
-<div class="line">  &quot;params&quot;: {</div>
-<div class="line">    &quot;name&quot;: &quot;rbd_cluster&quot;</div>
-<div class="line">  },</div>
 <div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
 <div class="line">  &quot;method&quot;: &quot;bdev_rbd_unregister_cluster&quot;,</div>
-<div class="line">  &quot;id&quot;: 1</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;params&quot;: {</div>
+<div class="line">    &quot;name&quot;: &quot;rbd_cluster&quot;</div>
+<div class="line">  }</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Example response:</p>
 <div class="fragment"><div class="line">{</div>
@@ -4608,12 +4635,12 @@ bdev_rbd_get_clusters_info</h2>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
-<div class="line">  &quot;params&quot;: {</div>
-<div class="line">    &quot;name&quot;: &quot;rbd_cluster&quot;</div>
-<div class="line">  },</div>
 <div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
 <div class="line">  &quot;method&quot;: &quot;bdev_rbd_get_clusters_info&quot;,</div>
-<div class="line">  &quot;id&quot;: 1</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;params&quot;: {</div>
+<div class="line">    &quot;name&quot;: &quot;rbd_cluster&quot;</div>
+<div class="line">  }</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Example response:</p>
 <div class="fragment"><div class="line">{</div>
@@ -4655,19 +4682,20 @@ bdev_rbd_create</h2>
 <h3>Example</h3>
 <p>Example request with <code>key</code> from <code>/etc/ceph/ceph.client.admin.keyring</code>:</p>
 <div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;method&quot;: &quot;bdev_rbd_create&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;params&quot;: {</div>
-<div class="line">    &quot;pool_name&quot;: &quot;rbd&quot;,</div>
-<div class="line">    &quot;rbd_name&quot;: &quot;foo&quot;,</div>
 <div class="line">    &quot;config&quot;: {</div>
 <div class="line">      &quot;mon_host&quot;: &quot;192.168.7.1:6789,192.168.7.2:6789&quot;,</div>
 <div class="line">      &quot;key&quot;: &quot;AQDwf8db7zR1GRAA5k7NKXjS5S5V4mntwUDnGQ==&quot;</div>
 <div class="line">    },</div>
+<div class="line">    &quot;pool_name&quot;: &quot;rbd&quot;,</div>
+<div class="line">    &quot;rbd_name&quot;: &quot;foo&quot;,</div>
 <div class="line">    &quot;block_size&quot;: 4096,</div>
-<div class="line">    &quot;uuid&quot;: &quot;76210ea4-7920-40a0-a07b-8992a7443c76&quot;</div>
-<div class="line">  },</div>
-<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
-<div class="line">  &quot;method&quot;: &quot;bdev_rbd_create&quot;,</div>
-<div class="line">  &quot;id&quot;: 1</div>
+<div class="line">    &quot;uuid&quot;: &quot;76210ea4-7920-40a0-a07b-8992a7443c76&quot;,</div>
+<div class="line">    &quot;read_only&quot;: false</div>
+<div class="line">  }</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Example response:</p>
 <div class="fragment"><div class="line">{</div>
@@ -4677,15 +4705,16 @@ bdev_rbd_create</h2>
 <div class="line">}</div>
 </div><!-- fragment --><p>Example request with <code>cluster_name</code>:</p>
 <div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;method&quot;: &quot;bdev_rbd_create&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;params&quot;: {</div>
 <div class="line">    &quot;pool_name&quot;: &quot;rbd&quot;,</div>
 <div class="line">    &quot;rbd_name&quot;: &quot;foo&quot;,</div>
 <div class="line">    &quot;block_size&quot;: 4096,</div>
-<div class="line">    &quot;cluster_name&quot;: &quot;rbd_cluster&quot;</div>
-<div class="line">  },</div>
-<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
-<div class="line">  &quot;method&quot;: &quot;bdev_rbd_create&quot;,</div>
-<div class="line">  &quot;id&quot;: 1</div>
+<div class="line">    &quot;cluster_name&quot;: &quot;rbd_cluster&quot;,</div>
+<div class="line">    &quot;read_only&quot;: false</div>
+<div class="line">  }</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Example response:</p>
 <div class="fragment"><div class="line">{</div>
@@ -4709,12 +4738,12 @@ bdev_rbd_delete</h2>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
-<div class="line">  &quot;params&quot;: {</div>
-<div class="line">    &quot;name&quot;: &quot;Rbd0&quot;</div>
-<div class="line">  },</div>
 <div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
 <div class="line">  &quot;method&quot;: &quot;bdev_rbd_delete&quot;,</div>
-<div class="line">  &quot;id&quot;: 1</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;params&quot;: {</div>
+<div class="line">    &quot;name&quot;: &quot;Rbd0&quot;</div>
+<div class="line">  }</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Example response:</p>
 <div class="fragment"><div class="line">{</div>
@@ -4740,13 +4769,13 @@ bdev_rbd_resize</h2>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;method&quot;: &quot;bdev_rbd_resize&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;params&quot;: {</div>
 <div class="line">    &quot;name&quot;: &quot;Rbd0&quot;,</div>
 <div class="line">    &quot;new_size&quot;: 4096</div>
-<div class="line">  },</div>
-<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
-<div class="line">  &quot;method&quot;: &quot;bdev_rbd_resize&quot;,</div>
-<div class="line">  &quot;id&quot;: 1</div>
+<div class="line">  }</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Example response:</p>
 <div class="fragment"><div class="line">{</div>
@@ -4781,6 +4810,9 @@ bdev_delay_create</h2>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;method&quot;: &quot;bdev_delay_create&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;params&quot;: {</div>
 <div class="line">    &quot;base_bdev_name&quot;: &quot;Null0&quot;,</div>
 <div class="line">    &quot;name&quot;: &quot;Delay0&quot;,</div>
@@ -4788,10 +4820,7 @@ bdev_delay_create</h2>
 <div class="line">    &quot;p99_read_latency&quot;: 50,</div>
 <div class="line">    &quot;avg_write_latency&quot;: 40,</div>
 <div class="line">    &quot;p99_write_latency&quot;: 110</div>
-<div class="line">  },</div>
-<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
-<div class="line">  &quot;method&quot;: &quot;bdev_delay_create&quot;,</div>
-<div class="line">  &quot;id&quot;: 1</div>
+<div class="line">  }</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Example response:</p>
 <div class="fragment"><div class="line">{</div>
@@ -4812,12 +4841,12 @@ bdev_delay_delete</h2>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
-<div class="line">  &quot;params&quot;: {</div>
-<div class="line">    &quot;name&quot;: &quot;Delay0&quot;</div>
-<div class="line">  },</div>
 <div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
 <div class="line">  &quot;method&quot;: &quot;bdev_delay_delete&quot;,</div>
-<div class="line">  &quot;id&quot;: 1</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;params&quot;: {</div>
+<div class="line">    &quot;name&quot;: &quot;Delay0&quot;</div>
+<div class="line">  }</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Example response:</p>
 <div class="fragment"><div class="line">{</div>
@@ -4844,14 +4873,14 @@ bdev_delay_update_latency</h2>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;method&quot;: &quot;bdev_delay_update_latency&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;params&quot;: {</div>
 <div class="line">    &quot;delay_bdev_name&quot;: &quot;Delay0&quot;,</div>
 <div class="line">    &quot;latency_type&quot;: &quot;avg_read&quot;,</div>
 <div class="line">    &quot;latency_us&quot;: 100</div>
-<div class="line">  },</div>
-<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
-<div class="line">  &quot;method&quot;: &quot;bdev_delay_update_latency&quot;,</div>
-<div class="line">  &quot;id&quot;: 1</div>
+<div class="line">  }</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Example response:</p>
 <div class="fragment"><div class="line">{</div>
@@ -4872,12 +4901,12 @@ bdev_error_create</h2>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
-<div class="line">  &quot;params&quot;: {</div>
-<div class="line">    &quot;base_name&quot;: &quot;Malloc0&quot;</div>
-<div class="line">  },</div>
 <div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
 <div class="line">  &quot;method&quot;: &quot;bdev_error_create&quot;,</div>
-<div class="line">  &quot;id&quot;: 1</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;params&quot;: {</div>
+<div class="line">    &quot;base_name&quot;: &quot;Malloc0&quot;</div>
+<div class="line">  }</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Example response:</p>
 <div class="fragment"><div class="line">{</div>
@@ -4900,12 +4929,12 @@ bdev_error_delete</h2>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
-<div class="line">  &quot;params&quot;: {</div>
-<div class="line">    &quot;name&quot;: &quot;EE_Malloc0&quot;</div>
-<div class="line">  },</div>
 <div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
 <div class="line">  &quot;method&quot;: &quot;bdev_error_delete&quot;,</div>
-<div class="line">  &quot;id&quot;: 1</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;params&quot;: {</div>
+<div class="line">    &quot;name&quot;: &quot;EE_Malloc0&quot;</div>
+<div class="line">  }</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Example response:</p>
 <div class="fragment"><div class="line">{</div>
@@ -4997,12 +5026,12 @@ bdev_iscsi_set_options</h2>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
-<div class="line">  &quot;params&quot;: {</div>
-<div class="line">    &quot;timeout_sec&quot;: 30</div>
-<div class="line">  },</div>
 <div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
 <div class="line">  &quot;method&quot;: &quot;bdev_iscsi_set_options&quot;,</div>
-<div class="line">  &quot;id&quot;: 1</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;params&quot;: {</div>
+<div class="line">    &quot;timeout_sec&quot;: 30</div>
+<div class="line">  }</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Example response:</p>
 <div class="fragment"><div class="line">{</div>
@@ -5030,14 +5059,14 @@ bdev_iscsi_create</h2>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
-<div class="line">  &quot;params&quot;: {</div>
-<div class="line">    &quot;url&quot;: &quot;iscsi://127.0.0.1/iqn.2016-06.io.spdk:disk1/0&quot;,</div>
-<div class="line">    &quot;initiator_iqn&quot;: &quot;iqn.2016-06.io.spdk:init&quot;,</div>
-<div class="line">    &quot;name&quot;: &quot;iSCSI0&quot;</div>
-<div class="line">  },</div>
 <div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
 <div class="line">  &quot;method&quot;: &quot;bdev_iscsi_create&quot;,</div>
-<div class="line">  &quot;id&quot;: 1</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;params&quot;: {</div>
+<div class="line">    &quot;name&quot;: &quot;iSCSI0&quot;,</div>
+<div class="line">    &quot;url&quot;: &quot;iscsi://127.0.0.1/iqn.2016-06.io.spdk:disk1/0&quot;,</div>
+<div class="line">    &quot;initiator_iqn&quot;: &quot;iqn.2016-06.io.spdk:init&quot;</div>
+<div class="line">  }</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Example response:</p>
 <div class="fragment"><div class="line">{</div>
@@ -5059,12 +5088,12 @@ bdev_iscsi_delete</h2>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
-<div class="line">  &quot;params&quot;: {</div>
-<div class="line">    &quot;name&quot;: &quot;iSCSI0&quot;</div>
-<div class="line">  },</div>
 <div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
 <div class="line">  &quot;method&quot;: &quot;bdev_iscsi_delete&quot;,</div>
-<div class="line">  &quot;id&quot;: 1</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;params&quot;: {</div>
+<div class="line">    &quot;name&quot;: &quot;iSCSI0&quot;</div>
+<div class="line">  }</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Example response:</p>
 <div class="fragment"><div class="line">{</div>
@@ -5102,17 +5131,18 @@ bdev_ftl_create</h2>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;method&quot;: &quot;bdev_ftl_create&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;params&quot;: {</div>
 <div class="line">    &quot;name&quot;: &quot;ftl0&quot;,</div>
 <div class="line">    &quot;base_bdev&quot;: &quot;nvme0n1&quot;,</div>
-<div class="line">    &quot;cache&quot;: &quot;nvme1n1&quot;,</div>
 <div class="line">    &quot;uuid&quot;: &quot;4a7481ce-786f-41a0-9b86-8f7465c8f4d3&quot;,</div>
+<div class="line">    &quot;cache&quot;: &quot;nvme1n1&quot;,</div>
+<div class="line">    &quot;overprovisioning&quot;: 10,</div>
 <div class="line">    &quot;core_mask&quot;: &quot;[0]&quot;,</div>
-<div class="line">    &quot;overprovisioning&quot;: 10</div>
-<div class="line">  },</div>
-<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
-<div class="line">  &quot;method&quot;: &quot;bdev_ftl_create&quot;,</div>
-<div class="line">  &quot;id&quot;: 1</div>
+<div class="line">    &quot;fast_shutdown&quot;: false</div>
+<div class="line">  }</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Example response:</p>
 <div class="fragment"><div class="line">{</div>
@@ -5139,12 +5169,13 @@ bdev_ftl_delete</h2>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
-<div class="line">  &quot;params&quot;: {</div>
-<div class="line">    &quot;name&quot;: &quot;ftl0&quot;</div>
-<div class="line">  },</div>
 <div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
 <div class="line">  &quot;method&quot;: &quot;bdev_ftl_delete&quot;,</div>
-<div class="line">  &quot;id&quot;: 1</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;params&quot;: {</div>
+<div class="line">    &quot;name&quot;: &quot;ftl0&quot;,</div>
+<div class="line">    &quot;fast_shutdown&quot;: false</div>
+<div class="line">  }</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Example response:</p>
 <div class="fragment"><div class="line">{</div>
@@ -5170,14 +5201,14 @@ bdev_ftl_unmap</h2>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;method&quot;: &quot;bdev_ftl_unmap&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;params&quot;: {</div>
 <div class="line">    &quot;name&quot;: &quot;ftl0&quot;,</div>
 <div class="line">    &quot;lba&quot;: 0,</div>
 <div class="line">    &quot;num_blocks&quot;: 1024</div>
-<div class="line">  },</div>
-<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
-<div class="line">  &quot;method&quot;: &quot;bdev_ftl_unmap&quot;,</div>
-<div class="line">  &quot;id&quot;: 1</div>
+<div class="line">  }</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Example response:</p>
 <div class="fragment"><div class="line">{</div>
@@ -5220,12 +5251,12 @@ bdev_ftl_get_stats</h2>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
-<div class="line">  &quot;params&quot;: {</div>
-<div class="line">    &quot;name&quot;: &quot;ftl0&quot;</div>
-<div class="line">  },</div>
 <div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
 <div class="line">  &quot;method&quot;: &quot;bdev_ftl_get_stats&quot;,</div>
-<div class="line">  &quot;id&quot;: 1</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;params&quot;: {</div>
+<div class="line">    &quot;name&quot;: &quot;ftl0&quot;</div>
+<div class="line">  }</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Example response:</p>
 <div class="fragment"><div class="line">{</div>
@@ -5364,12 +5395,12 @@ bdev_ftl_get_properties</h2>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
-<div class="line">  &quot;params&quot;: {</div>
-<div class="line">    &quot;name&quot;: &quot;ftl0&quot;</div>
-<div class="line">  },</div>
 <div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
 <div class="line">  &quot;method&quot;: &quot;bdev_ftl_get_properties&quot;,</div>
-<div class="line">  &quot;id&quot;: 1</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;params&quot;: {</div>
+<div class="line">    &quot;name&quot;: &quot;ftl0&quot;</div>
+<div class="line">  }</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Example response:</p>
 <div class="fragment"><div class="line">{</div>
@@ -5412,14 +5443,14 @@ bdev_ftl_set_property</h2>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;method&quot;: &quot;bdev_ftl_set_property&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;params&quot;: {</div>
 <div class="line">    &quot;name&quot;: &quot;ftl0&quot;,</div>
 <div class="line">    &quot;ftl_property&quot;: &quot;nv_cache.flush&quot;,</div>
 <div class="line">    &quot;value&quot;: &quot;true&quot;</div>
-<div class="line">  },</div>
-<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
-<div class="line">  &quot;method&quot;: &quot;bdev_ftl_set_property&quot;,</div>
-<div class="line">  &quot;id&quot;: 1</div>
+<div class="line">  }</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Example response:</p>
 <div class="fragment"><div class="line">{</div>
@@ -5446,13 +5477,13 @@ bdev_passthru_create</h2>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;method&quot;: &quot;bdev_passthru_create&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;params&quot;: {</div>
 <div class="line">    &quot;base_bdev_name&quot;: &quot;Malloc0&quot;,</div>
 <div class="line">    &quot;name&quot;: &quot;Passsthru0&quot;</div>
-<div class="line">  },</div>
-<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
-<div class="line">  &quot;method&quot;: &quot;bdev_passthru_create&quot;,</div>
-<div class="line">  &quot;id&quot;: 1</div>
+<div class="line">  }</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Example response:</p>
 <div class="fragment"><div class="line">{</div>
@@ -5473,12 +5504,12 @@ bdev_passthru_delete</h2>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
-<div class="line">  &quot;params&quot;: {</div>
-<div class="line">    &quot;name&quot;: &quot;Passsthru0&quot;</div>
-<div class="line">  },</div>
 <div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
 <div class="line">  &quot;method&quot;: &quot;bdev_passthru_delete&quot;,</div>
-<div class="line">  &quot;id&quot;: 1</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;params&quot;: {</div>
+<div class="line">    &quot;name&quot;: &quot;Passsthru0&quot;</div>
+<div class="line">  }</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Example response:</p>
 <div class="fragment"><div class="line">{</div>
@@ -5511,8 +5542,8 @@ bdev_xnvme_create</h2>
 <div class="line">  &quot;method&quot;: &quot;bdev_xnvme_create&quot;,</div>
 <div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;params&quot;: {</div>
-<div class="line">    &quot;name&quot;: &quot;bdev_ng0n1&quot;,</div>
 <div class="line">    &quot;filename&quot;: &quot;/dev/ng0n1&quot;,</div>
+<div class="line">    &quot;name&quot;: &quot;bdev_ng0n1&quot;,</div>
 <div class="line">    &quot;io_mechanism&quot;: &quot;io_uring_cmd&quot;,</div>
 <div class="line">    &quot;conserve_cpu&quot;: false</div>
 <div class="line">  }</div>
@@ -5536,12 +5567,12 @@ bdev_xnvme_delete</h2>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
-<div class="line">  &quot;params&quot;: {</div>
-<div class="line">    &quot;name&quot;: &quot;bdev_ng0n1&quot;</div>
-<div class="line">  },</div>
 <div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
 <div class="line">  &quot;method&quot;: &quot;bdev_xnvme_delete&quot;,</div>
-<div class="line">  &quot;id&quot;: 1</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;params&quot;: {</div>
+<div class="line">    &quot;name&quot;: &quot;bdev_ng0n1&quot;</div>
+<div class="line">  }</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Example response:</p>
 <div class="fragment"><div class="line">{</div>
@@ -5576,17 +5607,17 @@ bdev_virtio_attach_controller</h2>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;method&quot;: &quot;bdev_virtio_attach_controller&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;params&quot;: {</div>
 <div class="line">    &quot;name&quot;: &quot;VirtioScsi0&quot;,</div>
 <div class="line">    &quot;trtype&quot;: &quot;user&quot;,</div>
-<div class="line">    &quot;vq_size&quot;: 128,</div>
-<div class="line">    &quot;dev_type&quot;: &quot;scsi&quot;,</div>
 <div class="line">    &quot;traddr&quot;: &quot;/tmp/VhostScsi0&quot;,</div>
-<div class="line">    &quot;vq_count&quot;: 4</div>
-<div class="line">  },</div>
-<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
-<div class="line">  &quot;method&quot;: &quot;bdev_virtio_attach_controller&quot;,</div>
-<div class="line">  &quot;id&quot;: 1</div>
+<div class="line">    &quot;dev_type&quot;: &quot;scsi&quot;,</div>
+<div class="line">    &quot;vq_count&quot;: 4,</div>
+<div class="line">    &quot;vq_size&quot;: 128</div>
+<div class="line">  }</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Example response:</p>
 <div class="fragment"><div class="line">{</div>
@@ -5640,12 +5671,12 @@ bdev_virtio_detach_controller</h2>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
-<div class="line">  &quot;params&quot;: {</div>
-<div class="line">    &quot;name&quot;: &quot;VirtioUser0&quot;</div>
-<div class="line">  },</div>
 <div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
 <div class="line">  &quot;method&quot;: &quot;bdev_virtio_detach_controller&quot;,</div>
-<div class="line">  &quot;id&quot;: 1</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;params&quot;: {</div>
+<div class="line">    &quot;name&quot;: &quot;VirtioUser0&quot;</div>
+<div class="line">  }</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Example response:</p>
 <div class="fragment"><div class="line">{</div>
@@ -5671,13 +5702,13 @@ bdev_virtio_blk_set_hotplug</h2>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;method&quot;: &quot;bdev_virtio_blk_set_hotplug&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;params&quot;: {</div>
 <div class="line">    &quot;enable&quot;: true,</div>
 <div class="line">    &quot;period_us&quot;: 1000000</div>
-<div class="line">  },</div>
-<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
-<div class="line">  &quot;method&quot;: &quot;bdev_virtio_blk_set_hotplug&quot;,</div>
-<div class="line">  &quot;id&quot;: 1</div>
+<div class="line">  }</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Example response:</p>
 <div class="fragment"><div class="line">{</div>
@@ -5745,22 +5776,24 @@ iscsi_set_options</h2>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;method&quot;: &quot;iscsi_set_options&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;params&quot;: {</div>
-<div class="line">    &quot;allow_duplicated_isid&quot;: true,</div>
+<div class="line">    &quot;auth_file&quot;: &quot;/usr/local/etc/spdk/auth.conf&quot;,</div>
+<div class="line">    &quot;node_base&quot;: &quot;iqn.2016-06.io.spdk&quot;,</div>
+<div class="line">    &quot;nop_timeout&quot;: 30,</div>
+<div class="line">    &quot;nop_in_interval&quot;: 30,</div>
+<div class="line">    &quot;disable_chap&quot;: true,</div>
+<div class="line">    &quot;require_chap&quot;: false,</div>
+<div class="line">    &quot;mutual_chap&quot;: false,</div>
+<div class="line">    &quot;max_sessions&quot;: 128,</div>
+<div class="line">    &quot;default_time2wait&quot;: 2,</div>
 <div class="line">    &quot;default_time2retain&quot;: 60,</div>
 <div class="line">    &quot;first_burst_length&quot;: 8192,</div>
 <div class="line">    &quot;immediate_data&quot;: true,</div>
-<div class="line">    &quot;node_base&quot;: &quot;iqn.2016-06.io.spdk&quot;,</div>
-<div class="line">    &quot;max_sessions&quot;: 128,</div>
-<div class="line">    &quot;nop_timeout&quot;: 30,</div>
-<div class="line">    &quot;nop_in_interval&quot;: 30,</div>
-<div class="line">    &quot;auth_file&quot;: &quot;/usr/local/etc/spdk/auth.conf&quot;,</div>
-<div class="line">    &quot;disable_chap&quot;: true,</div>
-<div class="line">    &quot;default_time2wait&quot;: 2</div>
-<div class="line">  },</div>
-<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
-<div class="line">  &quot;method&quot;: &quot;iscsi_set_options&quot;,</div>
-<div class="line">  &quot;id&quot;: 1</div>
+<div class="line">    &quot;allow_duplicated_isid&quot;: true</div>
+<div class="line">  }</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Example response:</p>
 <div class="fragment"><div class="line">{</div>
@@ -5852,14 +5885,15 @@ iscsi_set_discovery_auth</h2>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
-<div class="line">  &quot;params&quot;: {</div>
-<div class="line">    &quot;chap_group&quot;: 1,</div>
-<div class="line">    &quot;require_chap&quot;: true,</div>
-<div class="line">    &quot;mutual_chap&quot;: true</div>
-<div class="line">  },</div>
 <div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
 <div class="line">  &quot;method&quot;: &quot;iscsi_set_discovery_auth&quot;,</div>
-<div class="line">  &quot;id&quot;: 1</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;params&quot;: {</div>
+<div class="line">    &quot;disable_chap&quot;: false,</div>
+<div class="line">    &quot;require_chap&quot;: true,</div>
+<div class="line">    &quot;mutual_chap&quot;: true,</div>
+<div class="line">    &quot;chap_group&quot;: 1</div>
+<div class="line">  }</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Example response:</p>
 <div class="fragment"><div class="line">{</div>
@@ -5896,20 +5930,20 @@ secret</h4>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
-<div class="line">  &quot;params&quot;: {</div>
-<div class="line">    &quot;secrets&quot;: [</div>
-<div class="line">      {</div>
-<div class="line">        &quot;muser&quot;: &quot;mu1&quot;,</div>
-<div class="line">        &quot;secret&quot;: &quot;s1&quot;,</div>
-<div class="line">        &quot;user&quot;: &quot;u1&quot;,</div>
-<div class="line">        &quot;msecret&quot;: &quot;ms1&quot;</div>
-<div class="line">      }</div>
-<div class="line">    ],</div>
-<div class="line">    &quot;tag&quot;: 2</div>
-<div class="line">  },</div>
 <div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
 <div class="line">  &quot;method&quot;: &quot;iscsi_create_auth_group&quot;,</div>
-<div class="line">  &quot;id&quot;: 1</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;params&quot;: {</div>
+<div class="line">    &quot;tag&quot;: 2,</div>
+<div class="line">    &quot;secrets&quot;: [</div>
+<div class="line">      {</div>
+<div class="line">        &quot;user&quot;: &quot;u1&quot;,</div>
+<div class="line">        &quot;secret&quot;: &quot;s1&quot;,</div>
+<div class="line">        &quot;muser&quot;: &quot;mu1&quot;,</div>
+<div class="line">        &quot;msecret&quot;: &quot;ms1&quot;</div>
+<div class="line">      }</div>
+<div class="line">    ]</div>
+<div class="line">  }</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Example response:</p>
 <div class="fragment"><div class="line">{</div>
@@ -5930,12 +5964,12 @@ iscsi_delete_auth_group</h2>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
-<div class="line">  &quot;params&quot;: {</div>
-<div class="line">    &quot;tag&quot;: 2</div>
-<div class="line">  },</div>
 <div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
 <div class="line">  &quot;method&quot;: &quot;iscsi_delete_auth_group&quot;,</div>
-<div class="line">  &quot;id&quot;: 1</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;params&quot;: {</div>
+<div class="line">    &quot;tag&quot;: 2</div>
+<div class="line">  }</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Example response:</p>
 <div class="fragment"><div class="line">{</div>
@@ -6013,16 +6047,16 @@ iscsi_auth_group_add_secret</h2>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
-<div class="line">  &quot;params&quot;: {</div>
-<div class="line">    &quot;muser&quot;: &quot;mu3&quot;,</div>
-<div class="line">    &quot;secret&quot;: &quot;s3&quot;,</div>
-<div class="line">    &quot;tag&quot;: 2,</div>
-<div class="line">    &quot;user&quot;: &quot;u3&quot;,</div>
-<div class="line">    &quot;msecret&quot;: &quot;ms3&quot;</div>
-<div class="line">  },</div>
 <div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
 <div class="line">  &quot;method&quot;: &quot;iscsi_auth_group_add_secret&quot;,</div>
-<div class="line">  &quot;id&quot;: 1</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;params&quot;: {</div>
+<div class="line">    &quot;tag&quot;: 2,</div>
+<div class="line">    &quot;user&quot;: &quot;u3&quot;,</div>
+<div class="line">    &quot;secret&quot;: &quot;s3&quot;,</div>
+<div class="line">    &quot;muser&quot;: &quot;mu3&quot;,</div>
+<div class="line">    &quot;msecret&quot;: &quot;ms3&quot;</div>
+<div class="line">  }</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Example response:</p>
 <div class="fragment"><div class="line">{</div>
@@ -6045,13 +6079,13 @@ iscsi_auth_group_remove_secret</h2>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;method&quot;: &quot;iscsi_auth_group_remove_secret&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;params&quot;: {</div>
 <div class="line">    &quot;tag&quot;: 2,</div>
 <div class="line">    &quot;user&quot;: &quot;u3&quot;</div>
-<div class="line">  },</div>
-<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
-<div class="line">  &quot;method&quot;: &quot;iscsi_auth_group_remove_secret&quot;,</div>
-<div class="line">  &quot;id&quot;: 1</div>
+<div class="line">  }</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Example response:</p>
 <div class="fragment"><div class="line">{</div>
@@ -6117,19 +6151,19 @@ iscsi_create_initiator_group</h2>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;method&quot;: &quot;iscsi_create_initiator_group&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;params&quot;: {</div>
+<div class="line">    &quot;tag&quot;: 1,</div>
 <div class="line">    &quot;initiators&quot;: [</div>
 <div class="line">      &quot;iqn.2016-06.io.spdk:host1&quot;,</div>
 <div class="line">      &quot;iqn.2016-06.io.spdk:host2&quot;</div>
 <div class="line">    ],</div>
-<div class="line">    &quot;tag&quot;: 1,</div>
 <div class="line">    &quot;netmasks&quot;: [</div>
 <div class="line">      &quot;192.168.1.0/24&quot;</div>
 <div class="line">    ]</div>
-<div class="line">  },</div>
-<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
-<div class="line">  &quot;method&quot;: &quot;iscsi_create_initiator_group&quot;,</div>
-<div class="line">  &quot;id&quot;: 1</div>
+<div class="line">  }</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Example response:</p>
 <div class="fragment"><div class="line">{</div>
@@ -6150,12 +6184,12 @@ iscsi_delete_initiator_group</h2>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
-<div class="line">  &quot;params&quot;: {</div>
-<div class="line">    &quot;tag&quot;: 1</div>
-<div class="line">  },</div>
 <div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
 <div class="line">  &quot;method&quot;: &quot;iscsi_delete_initiator_group&quot;,</div>
-<div class="line">  &quot;id&quot;: 1</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;params&quot;: {</div>
+<div class="line">    &quot;tag&quot;: 1</div>
+<div class="line">  }</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Example response:</p>
 <div class="fragment"><div class="line">{</div>
@@ -6180,18 +6214,18 @@ iscsi_initiator_group_add_initiators</h2>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;method&quot;: &quot;iscsi_initiator_group_add_initiators&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;params&quot;: {</div>
+<div class="line">    &quot;tag&quot;: 1,</div>
 <div class="line">    &quot;initiators&quot;: [</div>
 <div class="line">      &quot;iqn.2016-06.io.spdk:host3&quot;</div>
 <div class="line">    ],</div>
-<div class="line">    &quot;tag&quot;: 1,</div>
 <div class="line">    &quot;netmasks&quot;: [</div>
 <div class="line">      &quot;255.255.255.1&quot;</div>
 <div class="line">    ]</div>
-<div class="line">  },</div>
-<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
-<div class="line">  &quot;method&quot;: &quot;iscsi_initiator_group_add_initiators&quot;,</div>
-<div class="line">  &quot;id&quot;: 1</div>
+<div class="line">  }</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Example response:</p>
 <div class="fragment"><div class="line">{</div>
@@ -6216,18 +6250,18 @@ iscsi_initiator_group_remove_initiators</h2>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;method&quot;: &quot;iscsi_initiator_group_remove_initiators&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;params&quot;: {</div>
+<div class="line">    &quot;tag&quot;: 1,</div>
 <div class="line">    &quot;initiators&quot;: [</div>
 <div class="line">      &quot;iqn.2016-06.io.spdk:host3&quot;</div>
 <div class="line">    ],</div>
-<div class="line">    &quot;tag&quot;: 1,</div>
 <div class="line">    &quot;netmasks&quot;: [</div>
 <div class="line">      &quot;255.255.255.1&quot;</div>
 <div class="line">    ]</div>
-<div class="line">  },</div>
-<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
-<div class="line">  &quot;method&quot;: &quot;iscsi_initiator_group_remove_initiators&quot;,</div>
-<div class="line">  &quot;id&quot;: 1</div>
+<div class="line">  }</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Example response:</p>
 <div class="fragment"><div class="line">{</div>
@@ -6339,34 +6373,35 @@ iscsi_create_target_node</h2>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;method&quot;: &quot;iscsi_create_target_node&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;params&quot;: {</div>
 <div class="line">    &quot;luns&quot;: [</div>
 <div class="line">      {</div>
-<div class="line">        &quot;lun_id&quot;: 0,</div>
-<div class="line">        &quot;bdev_name&quot;: &quot;Nvme0n1&quot;</div>
+<div class="line">        &quot;bdev_name&quot;: &quot;Nvme0n1&quot;,</div>
+<div class="line">        &quot;lun_id&quot;: 0</div>
 <div class="line">      }</div>
 <div class="line">    ],</div>
-<div class="line">    &quot;mutual_chap&quot;: true,</div>
-<div class="line">    &quot;name&quot;: &quot;target2&quot;,</div>
-<div class="line">    &quot;alias_name&quot;: &quot;iscsi-target2-alias&quot;,</div>
 <div class="line">    &quot;pg_ig_maps&quot;: [</div>
 <div class="line">      {</div>
-<div class="line">        &quot;ig_tag&quot;: 1,</div>
-<div class="line">        &quot;pg_tag&quot;: 1</div>
+<div class="line">        &quot;pg_tag&quot;: 1,</div>
+<div class="line">        &quot;ig_tag&quot;: 1</div>
 <div class="line">      },</div>
 <div class="line">      {</div>
-<div class="line">        &quot;ig_tag&quot;: 2,</div>
-<div class="line">        &quot;pg_tag&quot;: 2</div>
+<div class="line">        &quot;pg_tag&quot;: 2,</div>
+<div class="line">        &quot;ig_tag&quot;: 2</div>
 <div class="line">      }</div>
 <div class="line">    ],</div>
-<div class="line">    &quot;data_digest&quot;: true,</div>
+<div class="line">    &quot;name&quot;: &quot;target2&quot;,</div>
+<div class="line">    &quot;alias_name&quot;: &quot;iscsi-target2-alias&quot;,</div>
+<div class="line">    &quot;queue_depth&quot;: 24,</div>
 <div class="line">    &quot;disable_chap&quot;: true,</div>
+<div class="line">    &quot;require_chap&quot;: false,</div>
+<div class="line">    &quot;mutual_chap&quot;: true,</div>
 <div class="line">    &quot;header_digest&quot;: true,</div>
-<div class="line">    &quot;queue_depth&quot;: 24</div>
-<div class="line">  },</div>
-<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
-<div class="line">  &quot;method&quot;: &quot;iscsi_create_target_node&quot;,</div>
-<div class="line">  &quot;id&quot;: 1</div>
+<div class="line">    &quot;data_digest&quot;: true</div>
+<div class="line">  }</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Example response:</p>
 <div class="fragment"><div class="line">{</div>
@@ -6396,15 +6431,16 @@ iscsi_target_node_set_auth</h2>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
-<div class="line">  &quot;params&quot;: {</div>
-<div class="line">    &quot;chap_group&quot;: 1,</div>
-<div class="line">    &quot;require_chap&quot;: true,</div>
-<div class="line">    &quot;name&quot;: &quot;iqn.2016-06.io.spdk:target1&quot;,</div>
-<div class="line">    &quot;mutual_chap&quot;: true</div>
-<div class="line">  },</div>
 <div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
 <div class="line">  &quot;method&quot;: &quot;iscsi_target_node_set_auth&quot;,</div>
-<div class="line">  &quot;id&quot;: 1</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;params&quot;: {</div>
+<div class="line">    &quot;name&quot;: &quot;iqn.2016-06.io.spdk:target1&quot;,</div>
+<div class="line">    &quot;chap_group&quot;: 1,</div>
+<div class="line">    &quot;disable_chap&quot;: false,</div>
+<div class="line">    &quot;require_chap&quot;: true,</div>
+<div class="line">    &quot;mutual_chap&quot;: true</div>
+<div class="line">  }</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Example response:</p>
 <div class="fragment"><div class="line">{</div>
@@ -6436,26 +6472,26 @@ iscsi_target_node_add_pg_ig_maps</h2>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;method&quot;: &quot;iscsi_target_node_add_pg_ig_maps&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;params&quot;: {</div>
 <div class="line">    &quot;pg_ig_maps&quot;: [</div>
 <div class="line">      {</div>
-<div class="line">        &quot;ig_tag&quot;: 1,</div>
-<div class="line">        &quot;pg_tag&quot;: 1</div>
+<div class="line">        &quot;pg_tag&quot;: 1,</div>
+<div class="line">        &quot;ig_tag&quot;: 1</div>
 <div class="line">      },</div>
 <div class="line">      {</div>
-<div class="line">        &quot;ig_tag&quot;: 2,</div>
-<div class="line">        &quot;pg_tag&quot;: 2</div>
+<div class="line">        &quot;pg_tag&quot;: 2,</div>
+<div class="line">        &quot;ig_tag&quot;: 2</div>
 <div class="line">      },</div>
 <div class="line">      {</div>
-<div class="line">        &quot;ig_tag&quot;: 3,</div>
-<div class="line">        &quot;pg_tag&quot;: 3</div>
+<div class="line">        &quot;pg_tag&quot;: 3,</div>
+<div class="line">        &quot;ig_tag&quot;: 3</div>
 <div class="line">      }</div>
 <div class="line">    ],</div>
 <div class="line">    &quot;name&quot;: &quot;iqn.2016-06.io.spdk:target3&quot;</div>
-<div class="line">  },</div>
-<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
-<div class="line">  &quot;method&quot;: &quot;iscsi_target_node_add_pg_ig_maps&quot;,</div>
-<div class="line">  &quot;id&quot;: 1</div>
+<div class="line">  }</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Example response:</p>
 <div class="fragment"><div class="line">{</div>
@@ -6487,26 +6523,26 @@ iscsi_target_node_remove_pg_ig_maps</h2>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;method&quot;: &quot;iscsi_target_node_remove_pg_ig_maps&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;params&quot;: {</div>
 <div class="line">    &quot;pg_ig_maps&quot;: [</div>
 <div class="line">      {</div>
-<div class="line">        &quot;ig_tag&quot;: 1,</div>
-<div class="line">        &quot;pg_tag&quot;: 1</div>
+<div class="line">        &quot;pg_tag&quot;: 1,</div>
+<div class="line">        &quot;ig_tag&quot;: 1</div>
 <div class="line">      },</div>
 <div class="line">      {</div>
-<div class="line">        &quot;ig_tag&quot;: 2,</div>
-<div class="line">        &quot;pg_tag&quot;: 2</div>
+<div class="line">        &quot;pg_tag&quot;: 2,</div>
+<div class="line">        &quot;ig_tag&quot;: 2</div>
 <div class="line">      },</div>
 <div class="line">      {</div>
-<div class="line">        &quot;ig_tag&quot;: 3,</div>
-<div class="line">        &quot;pg_tag&quot;: 3</div>
+<div class="line">        &quot;pg_tag&quot;: 3,</div>
+<div class="line">        &quot;ig_tag&quot;: 3</div>
 <div class="line">      }</div>
 <div class="line">    ],</div>
 <div class="line">    &quot;name&quot;: &quot;iqn.2016-06.io.spdk:target3&quot;</div>
-<div class="line">  },</div>
-<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
-<div class="line">  &quot;method&quot;: &quot;iscsi_target_node_remove_pg_ig_maps&quot;,</div>
-<div class="line">  &quot;id&quot;: 1</div>
+<div class="line">  }</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Example response:</p>
 <div class="fragment"><div class="line">{</div>
@@ -6527,12 +6563,12 @@ iscsi_delete_target_node</h2>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
-<div class="line">  &quot;params&quot;: {</div>
-<div class="line">    &quot;name&quot;: &quot;iqn.2016-06.io.spdk:target1&quot;</div>
-<div class="line">  },</div>
 <div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
 <div class="line">  &quot;method&quot;: &quot;iscsi_delete_target_node&quot;,</div>
-<div class="line">  &quot;id&quot;: 1</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;params&quot;: {</div>
+<div class="line">    &quot;name&quot;: &quot;iqn.2016-06.io.spdk:target1&quot;</div>
+<div class="line">  }</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Example response:</p>
 <div class="fragment"><div class="line">{</div>
@@ -6597,6 +6633,9 @@ iscsi_create_portal_group</h2>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;method&quot;: &quot;iscsi_create_portal_group&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;params&quot;: {</div>
 <div class="line">    &quot;portals&quot;: [</div>
 <div class="line">      {</div>
@@ -6604,11 +6643,10 @@ iscsi_create_portal_group</h2>
 <div class="line">        &quot;port&quot;: &quot;3260&quot;</div>
 <div class="line">      }</div>
 <div class="line">    ],</div>
-<div class="line">    &quot;tag&quot;: 1</div>
-<div class="line">  },</div>
-<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
-<div class="line">  &quot;method&quot;: &quot;iscsi_create_portal_group&quot;,</div>
-<div class="line">  &quot;id&quot;: 1</div>
+<div class="line">    &quot;tag&quot;: 1,</div>
+<div class="line">    &quot;private&quot;: false,</div>
+<div class="line">    &quot;wait&quot;: false</div>
+<div class="line">  }</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Example response:</p>
 <div class="fragment"><div class="line">{</div>
@@ -6629,12 +6667,12 @@ iscsi_start_portal_group</h2>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
-<div class="line">  &quot;params&quot;: {</div>
-<div class="line">    &quot;tag&quot;: 1</div>
-<div class="line">  },</div>
 <div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
 <div class="line">  &quot;method&quot;: &quot;iscsi_start_portal_group&quot;,</div>
-<div class="line">  &quot;id&quot;: 1</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;params&quot;: {</div>
+<div class="line">    &quot;tag&quot;: 1</div>
+<div class="line">  }</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Example response:</p>
 <div class="fragment"><div class="line">{</div>
@@ -6655,12 +6693,12 @@ iscsi_delete_portal_group</h2>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
-<div class="line">  &quot;params&quot;: {</div>
-<div class="line">    &quot;tag&quot;: 1</div>
-<div class="line">  },</div>
 <div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
 <div class="line">  &quot;method&quot;: &quot;iscsi_delete_portal_group&quot;,</div>
-<div class="line">  &quot;id&quot;: 1</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;params&quot;: {</div>
+<div class="line">    &quot;tag&quot;: 1</div>
+<div class="line">  }</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Example response:</p>
 <div class="fragment"><div class="line">{</div>
@@ -6690,15 +6728,16 @@ iscsi_portal_group_set_auth</h2>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;method&quot;: &quot;iscsi_portal_group_set_auth&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;params&quot;: {</div>
 <div class="line">    &quot;tag&quot;: 1,</div>
 <div class="line">    &quot;chap_group&quot;: 1,</div>
+<div class="line">    &quot;disable_chap&quot;: false,</div>
 <div class="line">    &quot;require_chap&quot;: true,</div>
 <div class="line">    &quot;mutual_chap&quot;: true</div>
-<div class="line">  },</div>
-<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
-<div class="line">  &quot;method&quot;: &quot;iscsi_portal_group_set_auth&quot;,</div>
-<div class="line">  &quot;id&quot;: 1</div>
+<div class="line">  }</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Example response:</p>
 <div class="fragment"><div class="line">{</div>
@@ -6808,14 +6847,14 @@ iscsi_target_node_add_lun</h2>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
-<div class="line">  &quot;params&quot;: {</div>
-<div class="line">    &quot;lun_id&quot;: 2,</div>
-<div class="line">    &quot;name&quot;: &quot;iqn.2016-06.io.spdk:target1&quot;,</div>
-<div class="line">    &quot;bdev_name&quot;: &quot;Malloc0&quot;</div>
-<div class="line">  },</div>
 <div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
 <div class="line">  &quot;method&quot;: &quot;iscsi_target_node_add_lun&quot;,</div>
-<div class="line">  &quot;id&quot;: 1</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;params&quot;: {</div>
+<div class="line">    &quot;name&quot;: &quot;iqn.2016-06.io.spdk:target1&quot;,</div>
+<div class="line">    &quot;bdev_name&quot;: &quot;Malloc0&quot;,</div>
+<div class="line">    &quot;lun_id&quot;: 2</div>
+<div class="line">  }</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Example response:</p>
 <div class="fragment"><div class="line">{</div>
@@ -6843,15 +6882,15 @@ iscsi_target_node_set_redirect</h2>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;method&quot;: &quot;iscsi_target_node_set_redirect&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;params&quot;: {</div>
 <div class="line">    &quot;name&quot;: &quot;iqn.2016-06.io.spdk:target1&quot;,</div>
 <div class="line">    &quot;pg_tag&quot;: 1,</div>
 <div class="line">    &quot;redirect_host&quot;: &quot;10.0.0.3&quot;,</div>
 <div class="line">    &quot;redirect_port&quot;: &quot;3260&quot;</div>
-<div class="line">  },</div>
-<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
-<div class="line">  &quot;method&quot;: &quot;iscsi_target_node_set_redirect&quot;,</div>
-<div class="line">  &quot;id&quot;: 1</div>
+<div class="line">  }</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Example response:</p>
 <div class="fragment"><div class="line">{</div>
@@ -6874,13 +6913,13 @@ iscsi_target_node_request_logout</h2>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;method&quot;: &quot;iscsi_target_node_request_logout&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;params&quot;: {</div>
 <div class="line">    &quot;name&quot;: &quot;iqn.2016-06.io.spdk:target1&quot;,</div>
 <div class="line">    &quot;pg_tag&quot;: 1</div>
-<div class="line">  },</div>
-<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
-<div class="line">  &quot;method&quot;: &quot;iscsi_target_node_request_logout&quot;,</div>
-<div class="line">  &quot;id&quot;: 1</div>
+<div class="line">  }</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Example response:</p>
 <div class="fragment"><div class="line">{</div>
@@ -6904,8 +6943,8 @@ iscsi_enable_histogram</h2>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
 <div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
-<div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;method&quot;: &quot;iscsi_enable_histogram&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;params&quot;: {</div>
 <div class="line">    &quot;name&quot;: &quot;iqn.2016-06.io.spdk:target1&quot;,</div>
 <div class="line">    &quot;enable&quot;: true</div>
@@ -6943,8 +6982,8 @@ iscsi_get_histogram</h2>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
 <div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
-<div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;method&quot;: &quot;iscsi_get_histogram&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;params&quot;: {</div>
 <div class="line">    &quot;name&quot;: &quot;iqn.2016-06.io.spdk:target1&quot;</div>
 <div class="line">  }</div>
@@ -7044,8 +7083,17 @@ nvmf_create_transport</h2>
 <div class="line">  &quot;method&quot;: &quot;nvmf_create_transport&quot;,</div>
 <div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;params&quot;: {</div>
+<div class="line">    &quot;no_srq&quot;: false,</div>
+<div class="line">    &quot;c2h_success&quot;: true,</div>
 <div class="line">    &quot;trtype&quot;: &quot;RDMA&quot;,</div>
-<div class="line">    &quot;max_queue_depth&quot;: 32</div>
+<div class="line">    &quot;max_queue_depth&quot;: 32,</div>
+<div class="line">    &quot;zcopy&quot;: false,</div>
+<div class="line">    &quot;dif_insert_or_strip&quot;: false,</div>
+<div class="line">    &quot;no_wr_batching&quot;: false,</div>
+<div class="line">    &quot;disable_mappable_bar0&quot;: false,</div>
+<div class="line">    &quot;disable_adaptive_irq&quot;: false,</div>
+<div class="line">    &quot;disable_shadow_doorbells&quot;: false,</div>
+<div class="line">    &quot;disable_command_passthru&quot;: false</div>
 <div class="line">  }</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Example response:</p>
@@ -7069,8 +7117,8 @@ nvmf_get_subsystems</h2>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
 <div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
-<div class="line">  &quot;id&quot;: 1,</div>
-<div class="line">  &quot;method&quot;: &quot;nvmf_get_subsystems&quot;</div>
+<div class="line">  &quot;method&quot;: &quot;nvmf_get_subsystems&quot;,</div>
+<div class="line">  &quot;id&quot;: 1</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Example response:</p>
 <div class="fragment"><div class="line">{</div>
@@ -7157,13 +7205,16 @@ nvmf_create_subsystem</h2>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
 <div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
-<div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;method&quot;: &quot;nvmf_create_subsystem&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;params&quot;: {</div>
 <div class="line">    &quot;nqn&quot;: &quot;nqn.2016-06.io.spdk:cnode1&quot;,</div>
-<div class="line">    &quot;allow_any_host&quot;: false,</div>
 <div class="line">    &quot;serial_number&quot;: &quot;abcdef&quot;,</div>
-<div class="line">    &quot;model_number&quot;: &quot;ghijklmnop&quot;</div>
+<div class="line">    &quot;model_number&quot;: &quot;ghijklmnop&quot;,</div>
+<div class="line">    &quot;allow_any_host&quot;: false,</div>
+<div class="line">    &quot;ana_reporting&quot;: false,</div>
+<div class="line">    &quot;passthrough&quot;: false,</div>
+<div class="line">    &quot;enable_nssr&quot;: false</div>
 <div class="line">  }</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Example response:</p>
@@ -7188,8 +7239,8 @@ nvmf_delete_subsystem</h2>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
 <div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
-<div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;method&quot;: &quot;nvmf_delete_subsystem&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;params&quot;: {</div>
 <div class="line">    &quot;nqn&quot;: &quot;nqn.2016-06.io.spdk:cnode1&quot;</div>
 <div class="line">  }</div>
@@ -7242,14 +7293,15 @@ listen_address</h4>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
 <div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
-<div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;method&quot;: &quot;nvmf_subsystem_add_listener&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;params&quot;: {</div>
 <div class="line">    &quot;nqn&quot;: &quot;nqn.2016-06.io.spdk:cnode1&quot;,</div>
+<div class="line">    &quot;secure_channel&quot;: false,</div>
 <div class="line">    &quot;listen_address&quot;: {</div>
 <div class="line">      &quot;trtype&quot;: &quot;RDMA&quot;,</div>
-<div class="line">      &quot;adrfam&quot;: &quot;IPv4&quot;,</div>
 <div class="line">      &quot;traddr&quot;: &quot;192.168.0.123&quot;,</div>
+<div class="line">      &quot;adrfam&quot;: &quot;IPv4&quot;,</div>
 <div class="line">      &quot;trsvcid&quot;: &quot;4420&quot;</div>
 <div class="line">    }</div>
 <div class="line">  }</div>
@@ -7278,14 +7330,14 @@ nvmf_subsystem_remove_listener</h2>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
 <div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
-<div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;method&quot;: &quot;nvmf_subsystem_remove_listener&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;params&quot;: {</div>
 <div class="line">    &quot;nqn&quot;: &quot;nqn.2016-06.io.spdk:cnode1&quot;,</div>
 <div class="line">    &quot;listen_address&quot;: {</div>
 <div class="line">      &quot;trtype&quot;: &quot;RDMA&quot;,</div>
-<div class="line">      &quot;adrfam&quot;: &quot;IPv4&quot;,</div>
 <div class="line">      &quot;traddr&quot;: &quot;192.168.0.123&quot;,</div>
+<div class="line">      &quot;adrfam&quot;: &quot;IPv4&quot;,</div>
 <div class="line">      &quot;trsvcid&quot;: &quot;4420&quot;</div>
 <div class="line">    }</div>
 <div class="line">  }</div>
@@ -7318,17 +7370,17 @@ nvmf_subsystem_listener_set_ana_state</h2>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
 <div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
-<div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;method&quot;: &quot;nvmf_subsystem_listener_set_ana_state&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;params&quot;: {</div>
 <div class="line">    &quot;nqn&quot;: &quot;nqn.2016-06.io.spdk:cnode1&quot;,</div>
+<div class="line">    &quot;ana_state&quot;: &quot;inaccessible&quot;,</div>
 <div class="line">    &quot;listen_address&quot;: {</div>
 <div class="line">      &quot;trtype&quot;: &quot;RDMA&quot;,</div>
-<div class="line">      &quot;adrfam&quot;: &quot;IPv4&quot;,</div>
 <div class="line">      &quot;traddr&quot;: &quot;192.168.0.123&quot;,</div>
+<div class="line">      &quot;adrfam&quot;: &quot;IPv4&quot;,</div>
 <div class="line">      &quot;trsvcid&quot;: &quot;4420&quot;</div>
-<div class="line">    },</div>
-<div class="line">    &quot;ana_state&quot;: &quot;inaccessible&quot;</div>
+<div class="line">    }</div>
 <div class="line">  }</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Example response:</p>
@@ -7379,14 +7431,16 @@ namespace</h4>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
 <div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
-<div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;method&quot;: &quot;nvmf_subsystem_add_ns&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;params&quot;: {</div>
 <div class="line">    &quot;nqn&quot;: &quot;nqn.2016-06.io.spdk:cnode1&quot;,</div>
 <div class="line">    &quot;namespace&quot;: {</div>
-<div class="line">      &quot;nsid&quot;: 3,</div>
 <div class="line">      &quot;bdev_name&quot;: &quot;Nvme0n1&quot;,</div>
-<div class="line">      &quot;ptpl_file&quot;: &quot;/opt/Nvme0n1PR.json&quot;</div>
+<div class="line">      &quot;ptpl_file&quot;: &quot;/opt/Nvme0n1PR.json&quot;,</div>
+<div class="line">      &quot;nsid&quot;: 3,</div>
+<div class="line">      &quot;no_auto_visible&quot;: false,</div>
+<div class="line">      &quot;hide_metadata&quot;: false</div>
 <div class="line">    }</div>
 <div class="line">  }</div>
 <div class="line">}</div>
@@ -7414,8 +7468,8 @@ nvmf_subsystem_remove_ns</h2>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
 <div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
-<div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;method&quot;: &quot;nvmf_subsystem_remove_ns&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;params&quot;: {</div>
 <div class="line">    &quot;nqn&quot;: &quot;nqn.2016-06.io.spdk:cnode1&quot;,</div>
 <div class="line">    &quot;nsid&quot;: 1</div>
@@ -7447,8 +7501,8 @@ nvmf_subsystem_set_ns_ana_group</h2>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
 <div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
-<div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;method&quot;: &quot;nvmf_subsystem_set_ns_ana_group&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;params&quot;: {</div>
 <div class="line">    &quot;nqn&quot;: &quot;nqn.2016-06.io.spdk:cnode1&quot;,</div>
 <div class="line">    &quot;nsid&quot;: 1,</div>
@@ -7485,8 +7539,8 @@ nvmf_subsystem_add_host</h2>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
 <div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
-<div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;method&quot;: &quot;nvmf_subsystem_add_host&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;params&quot;: {</div>
 <div class="line">    &quot;nqn&quot;: &quot;nqn.2016-06.io.spdk:cnode1&quot;,</div>
 <div class="line">    &quot;host&quot;: &quot;nqn.2016-06.io.spdk:host1&quot;,</div>
@@ -7519,8 +7573,8 @@ nvmf_subsystem_remove_host</h2>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
 <div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
-<div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;method&quot;: &quot;nvmf_subsystem_remove_host&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;params&quot;: {</div>
 <div class="line">    &quot;nqn&quot;: &quot;nqn.2016-06.io.spdk:cnode1&quot;,</div>
 <div class="line">    &quot;host&quot;: &quot;nqn.2016-06.io.spdk:host1&quot;</div>
@@ -7550,8 +7604,8 @@ nvmf_subsystem_allow_any_host</h2>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
 <div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
-<div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;method&quot;: &quot;nvmf_subsystem_allow_any_host&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;params&quot;: {</div>
 <div class="line">    &quot;nqn&quot;: &quot;nqn.2016-06.io.spdk:cnode1&quot;,</div>
 <div class="line">    &quot;allow_any_host&quot;: true</div>
@@ -7585,8 +7639,8 @@ nvmf_subsystem_set_keys</h2>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
 <div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
-<div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;method&quot;: &quot;nvmf_subsystem_set_keys&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;params&quot;: {</div>
 <div class="line">    &quot;nqn&quot;: &quot;nqn.2024-06.io.spdk:cnode1&quot;,</div>
 <div class="line">    &quot;host&quot;: &quot;nqn.2024-06.io.spdk:host1&quot;,</div>
@@ -7615,8 +7669,8 @@ nvmf_subsystem_get_controllers</h2>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
 <div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
-<div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;method&quot;: &quot;nvmf_subsystem_get_controllers&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;params&quot;: {</div>
 <div class="line">    &quot;nqn&quot;: &quot;nqn.2016-06.io.spdk:cnode1&quot;</div>
 <div class="line">  }</div>
@@ -7650,8 +7704,8 @@ nvmf_subsystem_get_qpairs</h2>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
 <div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
-<div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;method&quot;: &quot;nvmf_subsystem_get_qpairs&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;params&quot;: {</div>
 <div class="line">    &quot;nqn&quot;: &quot;nqn.2016-06.io.spdk:cnode1&quot;</div>
 <div class="line">  }</div>
@@ -7700,8 +7754,8 @@ nvmf_subsystem_get_listeners</h2>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
 <div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
-<div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;method&quot;: &quot;nvmf_subsystem_get_listeners&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;params&quot;: {</div>
 <div class="line">    &quot;nqn&quot;: &quot;nqn.2016-06.io.spdk:cnode1&quot;</div>
 <div class="line">  }</div>
@@ -7743,8 +7797,8 @@ nvmf_ns_add_host</h2>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
 <div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
-<div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;method&quot;: &quot;nvmf_ns_add_host&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;params&quot;: {</div>
 <div class="line">    &quot;nqn&quot;: &quot;nqn.2016-06.io.spdk:cnode1&quot;,</div>
 <div class="line">    &quot;nsid&quot;: 1,</div>
@@ -7778,8 +7832,8 @@ nvmf_ns_remove_host</h2>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
 <div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
-<div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;method&quot;: &quot;nvmf_ns_remove_host&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;params&quot;: {</div>
 <div class="line">    &quot;nqn&quot;: &quot;nqn.2016-06.io.spdk:cnode1&quot;,</div>
 <div class="line">    &quot;nsid&quot;: 1,</div>
@@ -7806,8 +7860,8 @@ nvmf_set_max_subsystems</h2>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
 <div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
-<div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;method&quot;: &quot;nvmf_set_max_subsystems&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;params&quot;: {</div>
 <div class="line">    &quot;max_subsystems&quot;: 1024</div>
 <div class="line">  }</div>
@@ -7838,13 +7892,14 @@ nvmf_discovery_add_referral</h2>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
 <div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
-<div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;method&quot;: &quot;nvmf_discovery_add_referral&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;params&quot;: {</div>
+<div class="line">    &quot;secure_channel&quot;: false,</div>
 <div class="line">    &quot;address&quot;: {</div>
 <div class="line">      &quot;trtype&quot;: &quot;RDMA&quot;,</div>
-<div class="line">      &quot;adrfam&quot;: &quot;IPv4&quot;,</div>
 <div class="line">      &quot;traddr&quot;: &quot;192.168.0.123&quot;,</div>
+<div class="line">      &quot;adrfam&quot;: &quot;IPv4&quot;,</div>
 <div class="line">      &quot;trsvcid&quot;: &quot;4420&quot;</div>
 <div class="line">    }</div>
 <div class="line">  }</div>
@@ -7873,13 +7928,13 @@ nvmf_discovery_remove_referral</h2>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
 <div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
-<div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;method&quot;: &quot;nvmf_discovery_remove_referral&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;params&quot;: {</div>
 <div class="line">    &quot;address&quot;: {</div>
 <div class="line">      &quot;trtype&quot;: &quot;RDMA&quot;,</div>
-<div class="line">      &quot;adrfam&quot;: &quot;IPv4&quot;,</div>
 <div class="line">      &quot;traddr&quot;: &quot;192.168.0.123&quot;,</div>
+<div class="line">      &quot;adrfam&quot;: &quot;IPv4&quot;,</div>
 <div class="line">      &quot;trsvcid&quot;: &quot;4420&quot;</div>
 <div class="line">    }</div>
 <div class="line">  }</div>
@@ -7903,8 +7958,8 @@ nvmf_discovery_get_referrals</h2>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
 <div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
-<div class="line">  &quot;id&quot;: 1,</div>
-<div class="line">  &quot;method&quot;: &quot;nvmf_discovery_get_referrals&quot;</div>
+<div class="line">  &quot;method&quot;: &quot;nvmf_discovery_get_referrals&quot;,</div>
+<div class="line">  &quot;id&quot;: 1</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Example response:</p>
 <div class="fragment"><div class="line">{</div>
@@ -7971,8 +8026,8 @@ admin_cmd_passthru</h4>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
 <div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
-<div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;method&quot;: &quot;nvmf_set_config&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;params&quot;: {</div>
 <div class="line">    &quot;admin_cmd_passthru&quot;: {</div>
 <div class="line">      &quot;identify_ctrlr&quot;: true</div>
@@ -8001,8 +8056,8 @@ nvmf_get_transports</h2>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
 <div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
-<div class="line">  &quot;id&quot;: 1,</div>
-<div class="line">  &quot;method&quot;: &quot;nvmf_get_transports&quot;</div>
+<div class="line">  &quot;method&quot;: &quot;nvmf_get_transports&quot;,</div>
+<div class="line">  &quot;id&quot;: 1</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Example response:</p>
 <div class="fragment"><div class="line">{</div>
@@ -8107,7 +8162,25 @@ nvmf_set_crdt</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">crdt3   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint16   </td><td class="markdownTableBodyNone">Command Retry Delay Time 3 in units of 100 milliseconds   </td></tr>
 </table>
-<h1><a class="anchor" id="jsonrpc_components_vfu_tgt"></a>
+<h3>Example</h3>
+<p>Example request:</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;method&quot;: &quot;nvmf_set_crdt&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;params&quot;: {</div>
+<div class="line">    &quot;crdt1&quot;: 0,</div>
+<div class="line">    &quot;crdt2&quot;: 0,</div>
+<div class="line">    &quot;crdt3&quot;: 0</div>
+<div class="line">  }</div>
+<div class="line">}</div>
+</div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;result&quot;: true</div>
+<div class="line">}</div>
+</div><!-- fragment --><h1><a class="anchor" id="jsonrpc_components_vfu_tgt"></a>
 Vfio-user Target</h1>
 <h2><a class="anchor" id="rpc_vfu_tgt_set_base_path"></a>
 vfu_tgt_set_base_path</h2>
@@ -8122,12 +8195,12 @@ vfu_tgt_set_base_path</h2>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
-<div class="line">  &quot;params&quot;: {</div>
-<div class="line">    &quot;path&quot;: &quot;/var/run/vfu_tgt&quot;</div>
-<div class="line">  },</div>
 <div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
 <div class="line">  &quot;method&quot;: &quot;vfu_tgt_set_base_path&quot;,</div>
-<div class="line">  &quot;id&quot;: 1</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;params&quot;: {</div>
+<div class="line">    &quot;path&quot;: &quot;/var/run/vfu_tgt&quot;</div>
+<div class="line">  }</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Example response:</p>
 <div class="fragment"><div class="line">{</div>
@@ -8148,12 +8221,12 @@ vfu_virtio_delete_endpoint</h2>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
-<div class="line">  &quot;params&quot;: {</div>
-<div class="line">    &quot;name&quot;: &quot;vfu.0&quot;</div>
-<div class="line">  },</div>
 <div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
 <div class="line">  &quot;method&quot;: &quot;vfu_virtio_delete_endpoint&quot;,</div>
-<div class="line">  &quot;id&quot;: 1</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;params&quot;: {</div>
+<div class="line">    &quot;name&quot;: &quot;vfu.0&quot;</div>
+<div class="line">  }</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Example response:</p>
 <div class="fragment"><div class="line">{</div>
@@ -8184,16 +8257,17 @@ vfu_virtio_create_blk_endpoint</h2>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;method&quot;: &quot;vfu_virtio_create_blk_endpoint&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;params&quot;: {</div>
 <div class="line">    &quot;name&quot;: &quot;vfu.0&quot;,</div>
 <div class="line">    &quot;bdev_name&quot;: &quot;Malloc0&quot;,</div>
 <div class="line">    &quot;cpumask&quot;: &quot;0x2&quot;,</div>
 <div class="line">    &quot;num_queues&quot;: 4,</div>
-<div class="line">    &quot;qsize&quot;: 256</div>
-<div class="line">  },</div>
-<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
-<div class="line">  &quot;method&quot;: &quot;vfu_virtio_create_blk_endpoint&quot;,</div>
-<div class="line">  &quot;id&quot;: 1</div>
+<div class="line">    &quot;qsize&quot;: 256,</div>
+<div class="line">    &quot;packed_ring&quot;: false</div>
+<div class="line">  }</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Example response:</p>
 <div class="fragment"><div class="line">{</div>
@@ -8218,14 +8292,14 @@ vfu_virtio_scsi_add_target</h2>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;method&quot;: &quot;vfu_virtio_scsi_add_target&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;params&quot;: {</div>
 <div class="line">    &quot;name&quot;: &quot;vfu.0&quot;,</div>
 <div class="line">    &quot;scsi_target_num&quot;: 0,</div>
 <div class="line">    &quot;bdev_name&quot;: &quot;Malloc0&quot;</div>
-<div class="line">  },</div>
-<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
-<div class="line">  &quot;method&quot;: &quot;vfu_virtio_scsi_add_target&quot;,</div>
-<div class="line">  &quot;id&quot;: 1</div>
+<div class="line">  }</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Example response:</p>
 <div class="fragment"><div class="line">{</div>
@@ -8248,13 +8322,13 @@ vfu_virtio_scsi_remove_target</h2>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;method&quot;: &quot;vfu_virtio_scsi_remove_target&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;params&quot;: {</div>
 <div class="line">    &quot;name&quot;: &quot;vfu.0&quot;,</div>
 <div class="line">    &quot;scsi_target_num&quot;: 0</div>
-<div class="line">  },</div>
-<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
-<div class="line">  &quot;method&quot;: &quot;vfu_virtio_scsi_remove_target&quot;,</div>
-<div class="line">  &quot;id&quot;: 1</div>
+<div class="line">  }</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Example response:</p>
 <div class="fragment"><div class="line">{</div>
@@ -8283,15 +8357,16 @@ vfu_virtio_create_scsi_endpoint</h2>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;method&quot;: &quot;vfu_virtio_create_scsi_endpoint&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;params&quot;: {</div>
 <div class="line">    &quot;name&quot;: &quot;vfu.0&quot;,</div>
 <div class="line">    &quot;cpumask&quot;: &quot;0x2&quot;,</div>
 <div class="line">    &quot;num_io_queues&quot;: 4,</div>
-<div class="line">    &quot;qsize&quot;: 256</div>
-<div class="line">  },</div>
-<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
-<div class="line">  &quot;method&quot;: &quot;vfu_virtio_create_scsi_endpoint&quot;,</div>
-<div class="line">  &quot;id&quot;: 1</div>
+<div class="line">    &quot;qsize&quot;: 256,</div>
+<div class="line">    &quot;packed_ring&quot;: false</div>
+<div class="line">  }</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Example response:</p>
 <div class="fragment"><div class="line">{</div>
@@ -8324,17 +8399,18 @@ vfu_virtio_create_fs_endpoint</h2>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;method&quot;: &quot;vfu_virtio_create_fs_endpoint&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;params&quot;: {</div>
 <div class="line">    &quot;name&quot;: &quot;vfu.0&quot;,</div>
 <div class="line">    &quot;fsdev_name&quot;: &quot;aio0&quot;,</div>
 <div class="line">    &quot;tag&quot;: &quot;virtiofs0&quot;,</div>
 <div class="line">    &quot;cpumask&quot;: &quot;0x2&quot;,</div>
 <div class="line">    &quot;num_queues&quot;: 4,</div>
-<div class="line">    &quot;qsize&quot;: 256</div>
-<div class="line">  },</div>
-<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
-<div class="line">  &quot;method&quot;: &quot;vfu_virtio_create_fs_endpoint&quot;,</div>
-<div class="line">  &quot;id&quot;: 1</div>
+<div class="line">    &quot;qsize&quot;: 256,</div>
+<div class="line">    &quot;packed_ring&quot;: false</div>
+<div class="line">  }</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Example response:</p>
 <div class="fragment"><div class="line">{</div>
@@ -8364,14 +8440,14 @@ vhost_controller_set_coalescing</h2>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
-<div class="line">  &quot;params&quot;: {</div>
-<div class="line">    &quot;iops_threshold&quot;: 100000,</div>
-<div class="line">    &quot;ctrlr&quot;: &quot;VhostScsi0&quot;,</div>
-<div class="line">    &quot;delay_base_us&quot;: 80</div>
-<div class="line">  },</div>
 <div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
 <div class="line">  &quot;method&quot;: &quot;vhost_controller_set_coalescing&quot;,</div>
-<div class="line">  &quot;id&quot;: 1</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;params&quot;: {</div>
+<div class="line">    &quot;ctrlr&quot;: &quot;VhostScsi0&quot;,</div>
+<div class="line">    &quot;delay_base_us&quot;: 80,</div>
+<div class="line">    &quot;iops_threshold&quot;: 100000</div>
+<div class="line">  }</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Example response:</p>
 <div class="fragment"><div class="line">{</div>
@@ -8396,14 +8472,14 @@ vhost_create_scsi_controller</h2>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
-<div class="line">  &quot;params&quot;: {</div>
-<div class="line">    &quot;cpumask&quot;: &quot;0x2&quot;,</div>
-<div class="line">    &quot;ctrlr&quot;: &quot;VhostScsi0&quot;,</div>
-<div class="line">    &quot;delay&quot;: true</div>
-<div class="line">  },</div>
 <div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
 <div class="line">  &quot;method&quot;: &quot;vhost_create_scsi_controller&quot;,</div>
-<div class="line">  &quot;id&quot;: 1</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;params&quot;: {</div>
+<div class="line">    &quot;ctrlr&quot;: &quot;VhostScsi0&quot;,</div>
+<div class="line">    &quot;cpumask&quot;: &quot;0x2&quot;,</div>
+<div class="line">    &quot;delay&quot;: true</div>
+<div class="line">  }</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Example response:</p>
 <div class="fragment"><div class="line">{</div>
@@ -8424,12 +8500,12 @@ vhost_start_scsi_controller</h2>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
-<div class="line">  &quot;params&quot;: {</div>
-<div class="line">    &quot;ctrlr&quot;: &quot;VhostScsi0&quot;</div>
-<div class="line">  },</div>
 <div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
 <div class="line">  &quot;method&quot;: &quot;vhost_start_scsi_controller&quot;,</div>
-<div class="line">  &quot;id&quot;: 1</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;params&quot;: {</div>
+<div class="line">    &quot;ctrlr&quot;: &quot;VhostScsi0&quot;</div>
+<div class="line">  }</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Example response:</p>
 <div class="fragment"><div class="line">{</div>
@@ -8456,14 +8532,14 @@ vhost_scsi_controller_add_target</h2>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
-<div class="line">  &quot;params&quot;: {</div>
-<div class="line">    &quot;scsi_target_num&quot;: 1,</div>
-<div class="line">    &quot;bdev_name&quot;: &quot;Malloc0&quot;,</div>
-<div class="line">    &quot;ctrlr&quot;: &quot;VhostScsi0&quot;</div>
-<div class="line">  },</div>
 <div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
 <div class="line">  &quot;method&quot;: &quot;vhost_scsi_controller_add_target&quot;,</div>
-<div class="line">  &quot;id&quot;: 1</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;params&quot;: {</div>
+<div class="line">    &quot;ctrlr&quot;: &quot;VhostScsi0&quot;,</div>
+<div class="line">    &quot;scsi_target_num&quot;: 1,</div>
+<div class="line">    &quot;bdev_name&quot;: &quot;Malloc0&quot;</div>
+<div class="line">  }</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Example response:</p>
 <div class="fragment"><div class="line">{</div>
@@ -8487,13 +8563,13 @@ vhost_scsi_controller_remove_target</h2>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
-<div class="line">  &quot;params&quot;: {</div>
-<div class="line">    &quot;scsi_target_num&quot;: 1,</div>
-<div class="line">    &quot;ctrlr&quot;: &quot;VhostScsi0&quot;</div>
-<div class="line">  },</div>
 <div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
 <div class="line">  &quot;method&quot;: &quot;vhost_scsi_controller_remove_target&quot;,</div>
-<div class="line">  &quot;id&quot;: 1</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;params&quot;: {</div>
+<div class="line">    &quot;ctrlr&quot;: &quot;VhostScsi0&quot;,</div>
+<div class="line">    &quot;scsi_target_num&quot;: 1</div>
+<div class="line">  }</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Example response:</p>
 <div class="fragment"><div class="line">{</div>
@@ -8514,12 +8590,12 @@ virtio_blk_create_transport</h2>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
-<div class="line">  &quot;params&quot;: {</div>
-<div class="line">    &quot;name&quot;: &quot;vhost_user_blk&quot;</div>
-<div class="line">  },</div>
 <div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
 <div class="line">  &quot;method&quot;: &quot;virtio_blk_create_transport&quot;,</div>
-<div class="line">  &quot;id&quot;: 1</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;params&quot;: {</div>
+<div class="line">    &quot;name&quot;: &quot;vhost_user_blk&quot;</div>
+<div class="line">  }</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Example response:</p>
 <div class="fragment"><div class="line">{</div>
@@ -8578,13 +8654,15 @@ vhost_create_blk_controller</h2>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
-<div class="line">  &quot;params&quot;: {</div>
-<div class="line">    &quot;dev_name&quot;: &quot;Malloc0&quot;,</div>
-<div class="line">    &quot;ctrlr&quot;: &quot;VhostBlk0&quot;</div>
-<div class="line">  },</div>
 <div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
 <div class="line">  &quot;method&quot;: &quot;vhost_create_blk_controller&quot;,</div>
-<div class="line">  &quot;id&quot;: 1</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;params&quot;: {</div>
+<div class="line">    &quot;ctrlr&quot;: &quot;VhostBlk0&quot;,</div>
+<div class="line">    &quot;dev_name&quot;: &quot;Malloc0&quot;,</div>
+<div class="line">    &quot;readonly&quot;: false,</div>
+<div class="line">    &quot;packed_ring&quot;: false</div>
+<div class="line">  }</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Example response:</p>
 <div class="fragment"><div class="line">{</div>
@@ -8728,12 +8806,12 @@ vhost_delete_controller</h2>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
-<div class="line">  &quot;params&quot;: {</div>
-<div class="line">    &quot;ctrlr&quot;: &quot;VhostNvme0&quot;</div>
-<div class="line">  },</div>
 <div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
 <div class="line">  &quot;method&quot;: &quot;vhost_delete_controller&quot;,</div>
-<div class="line">  &quot;id&quot;: 1</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;params&quot;: {</div>
+<div class="line">    &quot;ctrlr&quot;: &quot;VhostNvme0&quot;</div>
+<div class="line">  }</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Example response:</p>
 <div class="fragment"><div class="line">{</div>
@@ -8777,11 +8855,11 @@ bdev_lvol_create_lvstore</h2>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
 <div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
-<div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;method&quot;: &quot;bdev_lvol_create_lvstore&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;params&quot;: {</div>
-<div class="line">    &quot;lvs_name&quot;: &quot;LVS0&quot;,</div>
 <div class="line">    &quot;bdev_name&quot;: &quot;Malloc0&quot;,</div>
+<div class="line">    &quot;lvs_name&quot;: &quot;LVS0&quot;,</div>
 <div class="line">    &quot;clear_method&quot;: &quot;write_zeroes&quot;,</div>
 <div class="line">    &quot;md_page_size&quot;: 4096</div>
 <div class="line">  }</div>
@@ -8953,9 +9031,9 @@ bdev_lvol_create</h2>
 <div class="line">  &quot;params&quot;: {</div>
 <div class="line">    &quot;lvol_name&quot;: &quot;LVOL0&quot;,</div>
 <div class="line">    &quot;size_in_mib&quot;: 1,</div>
-<div class="line">    &quot;lvs_name&quot;: &quot;LVS0&quot;,</div>
+<div class="line">    &quot;thin_provision&quot;: true,</div>
 <div class="line">    &quot;clear_method&quot;: &quot;unmap&quot;,</div>
-<div class="line">    &quot;thin_provision&quot;: true</div>
+<div class="line">    &quot;lvs_name&quot;: &quot;LVS0&quot;</div>
 <div class="line">  }</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Example response:</p>
@@ -9531,6 +9609,7 @@ bdev_raid_create</h2>
 <div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;params&quot;: {</div>
 <div class="line">    &quot;name&quot;: &quot;Raid0&quot;,</div>
+<div class="line">    &quot;strip_size_kb&quot;: 4,</div>
 <div class="line">    &quot;raid_level&quot;: &quot;0&quot;,</div>
 <div class="line">    &quot;base_bdevs&quot;: [</div>
 <div class="line">      &quot;Malloc0&quot;,</div>
@@ -9538,7 +9617,7 @@ bdev_raid_create</h2>
 <div class="line">      &quot;Malloc2&quot;,</div>
 <div class="line">      &quot;Malloc3&quot;</div>
 <div class="line">    ],</div>
-<div class="line">    &quot;strip_size_kb&quot;: 4</div>
+<div class="line">    &quot;superblock&quot;: false</div>
 <div class="line">  }</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Example response:</p>
@@ -9720,8 +9799,8 @@ bdev_uring_create</h2>
 <div class="line">  &quot;method&quot;: &quot;bdev_uring_create&quot;,</div>
 <div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;params&quot;: {</div>
-<div class="line">    &quot;name&quot;: &quot;bdev_u0&quot;,</div>
 <div class="line">    &quot;filename&quot;: &quot;/dev/nvme0n1&quot;,</div>
+<div class="line">    &quot;name&quot;: &quot;bdev_u0&quot;,</div>
 <div class="line">    &quot;block_size&quot;: 512</div>
 <div class="line">  }</div>
 <div class="line">}</div>
@@ -10014,7 +10093,7 @@ bdev_opal_set_lock_state</h2>
 <div class="line">  &quot;params&quot;: {</div>
 <div class="line">    &quot;bdev_name&quot;: &quot;nvme0n1r1&quot;,</div>
 <div class="line">    &quot;user_id&quot;: 1,</div>
-<div class="line">    &quot;user_password&quot;: &quot;********&quot;,</div>
+<div class="line">    &quot;password&quot;: &quot;********&quot;,</div>
 <div class="line">    &quot;lock_state&quot;: &quot;rwlock&quot;</div>
 <div class="line">  }</div>
 <div class="line">}</div>
@@ -10077,9 +10156,9 @@ notify_get_notifications</h2>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
-<div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
 <div class="line">  &quot;method&quot;: &quot;notify_get_notifications&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;params&quot;: {</div>
 <div class="line">    &quot;id&quot;: 1,</div>
 <div class="line">    &quot;max&quot;: 10</div>
@@ -10246,12 +10325,13 @@ ublk_create_target</h2>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
-<div class="line">  &quot;params&quot;: {</div>
-<div class="line">    &quot;cpumask&quot;: &quot;0x2&quot;</div>
-<div class="line">  },</div>
 <div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
 <div class="line">  &quot;method&quot;: &quot;ublk_create_target&quot;,</div>
-<div class="line">  &quot;id&quot;: 1</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;params&quot;: {</div>
+<div class="line">    &quot;cpumask&quot;: &quot;0x2&quot;,</div>
+<div class="line">    &quot;disable_user_copy&quot;: false</div>
+<div class="line">  }</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Example response:</p>
 <div class="fragment"><div class="line">{</div>
@@ -10310,13 +10390,13 @@ ublk_start_disk</h2>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
-<div class="line">  &quot;params&quot;: {</div>
-<div class="line">    &quot;ublk_id&quot;: 1,</div>
-<div class="line">    &quot;bdev_name&quot;: &quot;Malloc1&quot;</div>
-<div class="line">  },</div>
 <div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
 <div class="line">  &quot;method&quot;: &quot;ublk_start_disk&quot;,</div>
-<div class="line">  &quot;id&quot;: 1</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;params&quot;: {</div>
+<div class="line">    &quot;bdev_name&quot;: &quot;Malloc1&quot;,</div>
+<div class="line">    &quot;ublk_id&quot;: 1</div>
+<div class="line">  }</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Example response:</p>
 <div class="fragment"><div class="line">{</div>
@@ -10346,13 +10426,13 @@ ublk_recover_disk</h2>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
-<div class="line">  &quot;params&quot;: {</div>
-<div class="line">    &quot;ublk_id&quot;: 1,</div>
-<div class="line">    &quot;bdev_name&quot;: &quot;Malloc1&quot;</div>
-<div class="line">  },</div>
 <div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
 <div class="line">  &quot;method&quot;: &quot;ublk_recover_disk&quot;,</div>
-<div class="line">  &quot;id&quot;: 1</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;params&quot;: {</div>
+<div class="line">    &quot;bdev_name&quot;: &quot;Malloc1&quot;,</div>
+<div class="line">    &quot;ublk_id&quot;: 1</div>
+<div class="line">  }</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Example response:</p>
 <div class="fragment"><div class="line">{</div>
@@ -10380,12 +10460,12 @@ ublk_stop_disk</h2>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
-<div class="line">  &quot;params&quot;: {</div>
-<div class="line">    &quot;ublk_id&quot;: 1</div>
-<div class="line">  },</div>
 <div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
 <div class="line">  &quot;method&quot;: &quot;ublk_stop_disk&quot;,</div>
-<div class="line">  &quot;id&quot;: 1</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;params&quot;: {</div>
+<div class="line">    &quot;ublk_id&quot;: 1</div>
+<div class="line">  }</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Example response:</p>
 <div class="fragment"><div class="line">{</div>
@@ -10460,13 +10540,13 @@ nbd_start_disk</h2>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
-<div class="line">  &quot;params&quot;: {</div>
-<div class="line">    &quot;nbd_device&quot;: &quot;/dev/nbd1&quot;,</div>
-<div class="line">    &quot;bdev_name&quot;: &quot;Malloc1&quot;</div>
-<div class="line">  },</div>
 <div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
 <div class="line">  &quot;method&quot;: &quot;nbd_start_disk&quot;,</div>
-<div class="line">  &quot;id&quot;: 1</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;params&quot;: {</div>
+<div class="line">    &quot;bdev_name&quot;: &quot;Malloc1&quot;,</div>
+<div class="line">    &quot;nbd_device&quot;: &quot;/dev/nbd1&quot;</div>
+<div class="line">  }</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Example response:</p>
 <div class="fragment"><div class="line">{</div>
@@ -10487,12 +10567,12 @@ nbd_stop_disk</h2>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
-<div class="line">  &quot;params&quot;: {</div>
-<div class="line">    &quot;nbd_device&quot;: &quot;/dev/nbd1&quot;</div>
-<div class="line">  },</div>
 <div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
 <div class="line">  &quot;method&quot;: &quot;nbd_stop_disk&quot;,</div>
-<div class="line">  &quot;id&quot;: 1</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;params&quot;: {</div>
+<div class="line">    &quot;nbd_device&quot;: &quot;/dev/nbd1&quot;</div>
+<div class="line">  }</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Example response:</p>
 <div class="fragment"><div class="line">{</div>
@@ -10796,10 +10876,10 @@ vmd_remove_device</h2>
 <div class="fragment"><div class="line">{</div>
 <div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
 <div class="line">  &quot;method&quot;: &quot;vmd_remove_device&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;params&quot;: {</div>
 <div class="line">    &quot;addr&quot;: &quot;5d0505:01:00.0&quot;</div>
-<div class="line">  },</div>
-<div class="line">  &quot;id&quot;: 1</div>
+<div class="line">  }</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Example response:</p>
 <div class="fragment"><div class="line">{</div>
@@ -10840,8 +10920,8 @@ spdk_get_version</h2>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
 <div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
-<div class="line">  &quot;id&quot;: 1,</div>
-<div class="line">  &quot;method&quot;: &quot;spdk_get_version&quot;</div>
+<div class="line">  &quot;method&quot;: &quot;spdk_get_version&quot;,</div>
+<div class="line">  &quot;id&quot;: 1</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Example response:</p>
 <div class="fragment"><div class="line">{</div>
@@ -10869,8 +10949,8 @@ framework_get_pci_devices</h2>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
 <div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
-<div class="line">  &quot;id&quot;: 1,</div>
-<div class="line">  &quot;method&quot;: &quot;framework_get_pci_devices&quot;</div>
+<div class="line">  &quot;method&quot;: &quot;framework_get_pci_devices&quot;,</div>
+<div class="line">  &quot;id&quot;: 1</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Example response:</p>
 <div class="fragment"><div class="line">{</div>
@@ -10921,8 +11001,9 @@ bdev_nvme_add_error_injection</h2>
 <div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;params&quot;: {</div>
 <div class="line">    &quot;name&quot;: &quot;HotInNvme0&quot;,</div>
-<div class="line">    &quot;opc&quot;: 2,</div>
 <div class="line">    &quot;cmd_type&quot;: &quot;io&quot;,</div>
+<div class="line">    &quot;opc&quot;: 2,</div>
+<div class="line">    &quot;do_not_submit&quot;: false,</div>
 <div class="line">    &quot;err_count&quot;: 1111111,</div>
 <div class="line">    &quot;sct&quot;: 11,</div>
 <div class="line">    &quot;sc&quot;: 33</div>
@@ -10958,8 +11039,8 @@ bdev_nvme_remove_error_injection</h2>
 <div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;params&quot;: {</div>
 <div class="line">    &quot;name&quot;: &quot;HotInNvme0&quot;,</div>
-<div class="line">    &quot;opc&quot;: 2,</div>
-<div class="line">    &quot;cmd_type&quot;: &quot;io&quot;</div>
+<div class="line">    &quot;cmd_type&quot;: &quot;io&quot;,</div>
+<div class="line">    &quot;opc&quot;: 2</div>
 <div class="line">  }</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Example response:</p>
@@ -10996,17 +11077,17 @@ bdev_daos_create</h2>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;method&quot;: &quot;bdev_daos_create&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;params&quot;: {</div>
-<div class="line">    &quot;block_size&quot;: 4096,</div>
 <div class="line">    &quot;num_blocks&quot;: 16384,</div>
+<div class="line">    &quot;block_size&quot;: 4096,</div>
 <div class="line">    &quot;name&quot;: &quot;daosdev0&quot;,</div>
 <div class="line">    &quot;pool&quot;: &quot;test-pool&quot;,</div>
 <div class="line">    &quot;cont&quot;: &quot;test-cont&quot;,</div>
 <div class="line">    &quot;oclass&quot;: &quot;EC_4P2G2&quot;</div>
-<div class="line">  },</div>
-<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
-<div class="line">  &quot;method&quot;: &quot;bdev_daos_create&quot;,</div>
-<div class="line">  &quot;id&quot;: 1</div>
+<div class="line">  }</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Example response:</p>
 <div class="fragment"><div class="line">{</div>
@@ -11027,12 +11108,12 @@ bdev_daos_delete</h2>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
-<div class="line">  &quot;params&quot;: {</div>
-<div class="line">    &quot;name&quot;: &quot;daosdev0&quot;</div>
-<div class="line">  },</div>
 <div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
 <div class="line">  &quot;method&quot;: &quot;bdev_daos_delete&quot;,</div>
-<div class="line">  &quot;id&quot;: 1</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;params&quot;: {</div>
+<div class="line">    &quot;name&quot;: &quot;daosdev0&quot;</div>
+<div class="line">  }</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Example response:</p>
 <div class="fragment"><div class="line">{</div>
@@ -11055,13 +11136,13 @@ bdev_daos_resize</h2>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;method&quot;: &quot;bdev_daos_resize&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;params&quot;: {</div>
 <div class="line">    &quot;name&quot;: &quot;daosdev0&quot;,</div>
 <div class="line">    &quot;new_size&quot;: 8192</div>
-<div class="line">  },</div>
-<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
-<div class="line">  &quot;method&quot;: &quot;bdev_daos_resize&quot;,</div>
-<div class="line">  &quot;id&quot;: 1</div>
+<div class="line">  }</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Example response:</p>
 <div class="fragment"><div class="line">{</div>
@@ -11091,11 +11172,12 @@ iobuf_set_options</h2>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
 <div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
-<div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;method&quot;: &quot;iobuf_set_options&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;params&quot;: {</div>
 <div class="line">    &quot;small_pool_count&quot;: 16383,</div>
-<div class="line">    &quot;large_pool_count&quot;: 2047</div>
+<div class="line">    &quot;large_pool_count&quot;: 2047,</div>
+<div class="line">    &quot;enable_numa&quot;: false</div>
 <div class="line">  }</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Example response:</p>
@@ -11387,7 +11469,7 @@ fsdev_aio_create</h2>
 <div class="fragment"><div class="line">{</div>
 <div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
 <div class="line">  &quot;method&quot;: &quot;fsdev_aio_create&quot;,</div>
-<div class="line">  &quot;id&quot;: 8,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
 <div class="line">  &quot;params&quot;: {</div>
 <div class="line">    &quot;name&quot;: &quot;aio0&quot;,</div>
 <div class="line">    &quot;root_path&quot;: &quot;/tmp/vfio-test&quot;,</div>

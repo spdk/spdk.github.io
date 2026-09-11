@@ -141,7 +141,7 @@ $(function(){initNavTree('structspdk__nvme__error__information__entry.html','');
 <div class="dynheader">
 Collaboration diagram for spdk_nvme_error_information_entry:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="structspdk__nvme__error__information__entry__coll__graph.svg" width="228" height="148"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="structspdk__nvme__error__information__entry__coll__graph.svg" width="350" height="166"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
@@ -158,9 +158,16 @@ uint16_t&#160;</td><td class="memItemRight" valign="bottom"><b>cid</b></td></tr>
 <tr class="memitem:aad6a1a6e16c3a8eea7cf0a84d340a903" id="r_aad6a1a6e16c3a8eea7cf0a84d340a903"><td class="memItemLeft" align="right" valign="top"><a id="aad6a1a6e16c3a8eea7cf0a84d340a903" name="aad6a1a6e16c3a8eea7cf0a84d340a903"></a>
 struct <a class="el" href="structspdk__nvme__status.html">spdk_nvme_status</a>&#160;</td><td class="memItemRight" valign="bottom"><b>status</b></td></tr>
 <tr class="separator:aad6a1a6e16c3a8eea7cf0a84d340a903"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeb86c281ad13ccad6fbf242f77515b10" id="r_aeb86c281ad13ccad6fbf242f77515b10"><td class="memItemLeft" align="right" valign="top"><a id="aeb86c281ad13ccad6fbf242f77515b10" name="aeb86c281ad13ccad6fbf242f77515b10"></a>
-uint16_t&#160;</td><td class="memItemRight" valign="bottom"><b>error_location</b></td></tr>
-<tr class="separator:aeb86c281ad13ccad6fbf242f77515b10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83280570c2d78628edea2fb6dd02c8ef" id="r_a83280570c2d78628edea2fb6dd02c8ef"><td class="memItemLeft" ><a id="a83280570c2d78628edea2fb6dd02c8ef" name="a83280570c2d78628edea2fb6dd02c8ef"></a>
+union {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac23c59376cc4f6eb9202ec9fc6c9104e" id="r_ac23c59376cc4f6eb9202ec9fc6c9104e"><td class="memItemLeft" >&#160;&#160;&#160;uint16_t&#160;&#160;&#160;<a class="el" href="#aeb86c281ad13ccad6fbf242f77515b10">error_location</a>&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:ac23c59376cc4f6eb9202ec9fc6c9104e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f65518b4b562867f1fdfce942f78274" id="r_a4f65518b4b562867f1fdfce942f78274"><td class="memItemLeft" >
+&#160;&#160;&#160;union <a class="el" href="unionspdk__nvme__parameter__error__location.html">spdk_nvme_parameter_error_location</a>&#160;&#160;&#160;<b>pel</b>&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:a4f65518b4b562867f1fdfce942f78274"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83280570c2d78628edea2fb6dd02c8ef" id="r_a83280570c2d78628edea2fb6dd02c8ef"><td class="memItemLeft" valign="top">};&#160;</td><td class="memItemRight" valign="bottom">&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:a83280570c2d78628edea2fb6dd02c8ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a34c3a0fecb79e2f01e6d8822fcf967f0" id="r_a34c3a0fecb79e2f01e6d8822fcf967f0"><td class="memItemLeft" align="right" valign="top"><a id="a34c3a0fecb79e2f01e6d8822fcf967f0" name="a34c3a0fecb79e2f01e6d8822fcf967f0"></a>
 uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>lba</b></td></tr>
 <tr class="separator:a34c3a0fecb79e2f01e6d8822fcf967f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -188,7 +195,23 @@ uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>reserved42</b> [22
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Error information log page (<a class="el" href="nvme__spec_8h.html#a3d5e453e4d95b0f5b9bb4de04ace78c4ad05013a36512c9cd6ad0249263a3f583">SPDK_NVME_LOG_ERROR</a>) </p>
-</div><hr/>The documentation for this struct was generated from the following file:<ul>
+</div><h2 class="groupheader">Field Documentation</h2>
+<a id="aeb86c281ad13ccad6fbf242f77515b10" name="aeb86c281ad13ccad6fbf242f77515b10"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb86c281ad13ccad6fbf242f77515b10">&#9670;&#160;</a></span>error_location</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t spdk_nvme_error_information_entry::error_location</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000003">Deprecated</a></b></dt><dd>Use <code>pel</code> instead. This field will be removed in v27.01. </dd></dl>
+
+</div>
+</div>
+<hr/>The documentation for this struct was generated from the following file:<ul>
 <li><a class="el" href="nvme__spec_8h.html">nvme_spec.h</a></li>
 </ul>
 </div><!-- contents -->

@@ -100,7 +100,8 @@ var nvme__spec_8h =
     [ "spdk_nvme_reservation_notification_log", "structspdk__nvme__reservation__notification__log.html", "structspdk__nvme__reservation__notification__log" ],
     [ "spdk_nvme_supported_log_pages", "structspdk__nvme__supported__log__pages.html", null ],
     [ "spdk_nvme_feature_ids_effects_log_page", "structspdk__nvme__feature__ids__effects__log__page.html", null ],
-    [ "spdk_nvme_error_information_entry", "structspdk__nvme__error__information__entry.html", null ],
+    [ "spdk_nvme_parameter_error_location", "unionspdk__nvme__parameter__error__location.html", null ],
+    [ "spdk_nvme_error_information_entry", "structspdk__nvme__error__information__entry.html", "structspdk__nvme__error__information__entry" ],
     [ "spdk_nvme_health_information_page", "structspdk__nvme__health__information__page.html", null ],
     [ "spdk_nvme_cmds_and_effect_entry", "structspdk__nvme__cmds__and__effect__entry.html", "structspdk__nvme__cmds__and__effect__entry" ],
     [ "spdk_nvme_cmds_and_effect_log_page", "structspdk__nvme__cmds__and__effect__log__page.html", "structspdk__nvme__cmds__and__effect__log__page" ],
@@ -150,6 +151,7 @@ var nvme__spec_8h =
     [ "SPDK_NVME_KV_SPEC_VER", "nvme__spec_8h.html#ab8f1219825e4c5fb708fc34fc3fe8169", null ],
     [ "SPDK_NVME_MAX_CHANGED_NAMESPACES", "nvme__spec_8h.html#a5974e1d01942a43f9b95d77a31c2123b", null ],
     [ "SPDK_NVME_NSSR_VALUE", "nvme__spec_8h.html#ad3ef13320c82eaf4abdef6aa56e8b5ba", null ],
+    [ "SPDK_NVME_PARAMETER_ERROR_LOCATION_NOT_CMD_SPECIFIC", "nvme__spec_8h.html#ae14b33d0d2ab77f8d7ad6aa377c2be0b", null ],
     [ "SPDK_NVME_VERSION", "nvme__spec_8h.html#a9760bf73611488342b5903ba702fd7b6", null ],
     [ "spdk_nvme_admin_opcode", "nvme__spec_8h.html#a3d96f5eb214b3cb58675276f19855bf5", [
       [ "SPDK_NVME_OPC_DELETE_IO_SQ", "nvme__spec_8h.html#a3d96f5eb214b3cb58675276f19855bf5a2a967d16f7e77fbd616354fdeac45c1d", null ],

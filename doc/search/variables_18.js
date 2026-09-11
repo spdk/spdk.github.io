@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['za_0',['za',['../structspdk__nvme__zns__zone__desc.html#a68a4d1ab36419b84653a7c08cf260901',1,'spdk_nvme_zns_zone_desc']]],
+  ['za_0',['za',['../structspdk__nvme__zns__zone__desc.html#ac2f2a1704970e1bd922ca293babf5f50',1,'spdk_nvme_zns_zone_desc']]],
   ['zasl_1',['zasl',['../structspdk__nvme__zns__ctrlr__data.html#a81d94268a2a27eef18924ab29d4b56d4',1,'spdk_nvme_zns_ctrlr_data']]],
   ['zcap_2',['zcap',['../structspdk__nvme__zns__zone__desc.html#a1bd360e8c54b4cf58538e88cedf3c0f7',1,'spdk_nvme_zns_zone_desc']]],
   ['zcopy_3',['zcopy',['../structspdk__sock__opts.html#a3cdb293f2ccf10506e7926317e463d91',1,'spdk_sock_opts']]],

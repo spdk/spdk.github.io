@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta name="generator" content="Doxygen 1.10.0" />
-	<title>SPDK: spdk_nvmf_fc_wwn Struct Reference</title>
+	<title>SPDK: spdk_nvme_parameter_error_location Union Reference</title>
 	<script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.8/umd/popper.min.js" integrity="sha512-TPh2Oxlg1zp+kz3nFA0C5vVC6leG/6mm1z9+mA81MI5eaUVqasPLO8Cuk4gMF4gUfP5etR73rgU/8PNMsSesoQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
@@ -102,7 +102,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(function(){initNavTree('structspdk__nvmf__fc__wwn.html',''); initResizable(); });
+$(function(){initNavTree('unionspdk__nvme__parameter__error__location.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -130,26 +130,32 @@ $(function(){initNavTree('structspdk__nvmf__fc__wwn.html',''); initResizable(); 
 <div class="header">
   <div class="summary">
 <a href="#pub-attribs">Data Fields</a>  </div>
-  <div class="headertitle"><div class="title">spdk_nvmf_fc_wwn Struct Reference</div></div>
+  <div class="headertitle"><div class="title">spdk_nvme_parameter_error_location Union Reference</div></div>
 </div><!--header-->
 <div class="contents">
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:aaae62eb5e005cb07b663c302be07e130" id="r_aaae62eb5e005cb07b663c302be07e130"><td class="memItemLeft" ><a id="aaae62eb5e005cb07b663c302be07e130" name="aaae62eb5e005cb07b663c302be07e130"></a>
-union {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="memitem:a199efc1288de8762a6c561a0c3a32d3e" id="r_a199efc1288de8762a6c561a0c3a32d3e"><td class="memItemLeft" align="right" valign="top"><a id="a199efc1288de8762a6c561a0c3a32d3e" name="a199efc1288de8762a6c561a0c3a32d3e"></a>
+uint16_t&#160;</td><td class="memItemRight" valign="bottom"><b>raw</b></td></tr>
+<tr class="separator:a199efc1288de8762a6c561a0c3a32d3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41ac5d9ee1c6cc5819ab083a58c22773" id="r_a41ac5d9ee1c6cc5819ab083a58c22773"><td class="memItemLeft" ><a id="a41ac5d9ee1c6cc5819ab083a58c22773" name="a41ac5d9ee1c6cc5819ab083a58c22773"></a>
+struct {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3d4c3dbb60f45c83af93e0484fcfc38d" id="r_a3d4c3dbb60f45c83af93e0484fcfc38d"><td class="memItemLeft" >
-&#160;&#160;&#160;uint64_t&#160;&#160;&#160;<b>wwn</b>&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
-<tr class="separator:a3d4c3dbb60f45c83af93e0484fcfc38d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a021eb10ae89ef45979eff2bec21ffbd9" id="r_a021eb10ae89ef45979eff2bec21ffbd9"><td class="memItemLeft" >
-&#160;&#160;&#160;uint8_t&#160;&#160;&#160;<b>octets</b> [sizeof(uint64_t)]&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
-<tr class="separator:a021eb10ae89ef45979eff2bec21ffbd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaae62eb5e005cb07b663c302be07e130" id="r_aaae62eb5e005cb07b663c302be07e130"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><b>u</b>&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
-<tr class="separator:aaae62eb5e005cb07b663c302be07e130"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2b1e200106f57b75fa90b43e4441c2d" id="r_ae2b1e200106f57b75fa90b43e4441c2d"><td class="memItemLeft" >
+&#160;&#160;&#160;uint16_t&#160;&#160;&#160;<b>bytloc</b>: 8&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:ae2b1e200106f57b75fa90b43e4441c2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe0297600865cb1474f7c12120ac967f" id="r_abe0297600865cb1474f7c12120ac967f"><td class="memItemLeft" >
+&#160;&#160;&#160;uint16_t&#160;&#160;&#160;<b>bitloc</b>: 3&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:abe0297600865cb1474f7c12120ac967f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03decae728995db9cd930136a0535814" id="r_a03decae728995db9cd930136a0535814"><td class="memItemLeft" >
+&#160;&#160;&#160;uint16_t&#160;&#160;&#160;<b>reserved</b>: 5&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:a03decae728995db9cd930136a0535814"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41ac5d9ee1c6cc5819ab083a58c22773" id="r_a41ac5d9ee1c6cc5819ab083a58c22773"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><b>bits</b>&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:a41ac5d9ee1c6cc5819ab083a58c22773"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<hr/>The documentation for this struct was generated from the following file:<ul>
-<li><b>nvmf_fc_spec.h</b></li>
+<hr/>The documentation for this union was generated from the following file:<ul>
+<li><a class="el" href="nvme__spec_8h.html">nvme_spec.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

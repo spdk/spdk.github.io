@@ -385,6 +385,8 @@ Data Structures</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__feature__ids__effects__log__page.html">spdk_nvme_feature_ids_effects_log_page</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">union &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unionspdk__nvme__parameter__error__location.html">spdk_nvme_parameter_error_location</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__error__information__entry.html">spdk_nvme_error_information_entry</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Error information log page (<a class="el" href="#a3d5e453e4d95b0f5b9bb4de04ace78c4ad05013a36512c9cd6ad0249263a3f583">SPDK_NVME_LOG_ERROR</a>)  <a href="structspdk__nvme__error__information__entry.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -565,6 +567,10 @@ Macros</h2></td></tr>
 <tr class="memitem:a76da2650c4bc51a12b65436a2f3027bd" id="r_a76da2650c4bc51a12b65436a2f3027bd"><td class="memItemLeft" align="right" valign="top"><a id="a76da2650c4bc51a12b65436a2f3027bd" name="a76da2650c4bc51a12b65436a2f3027bd"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_log_page_is_vendor_specific</b>(lid)&#160;&#160;&#160;((lid) &gt;= SPDK_NVME_LOG_VENDOR_SPECIFIC_START)</td></tr>
 <tr class="separator:a76da2650c4bc51a12b65436a2f3027bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae14b33d0d2ab77f8d7ad6aa377c2be0b" id="r_ae14b33d0d2ab77f8d7ad6aa377c2be0b"><td class="memItemLeft" align="right" valign="top"><a id="ae14b33d0d2ab77f8d7ad6aa377c2be0b" name="ae14b33d0d2ab77f8d7ad6aa377c2be0b"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_NVME_PARAMETER_ERROR_LOCATION_NOT_CMD_SPECIFIC</b>&#160;&#160;&#160;0xFFFFu</td></tr>
+<tr class="memdesc:ae14b33d0d2ab77f8d7ad6aa377c2be0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parameter error location is not specific to a particular command. <br /></td></tr>
+<tr class="separator:ae14b33d0d2ab77f8d7ad6aa377c2be0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a62b2e9dfaeda9fac684e7b456971c710" id="r_a62b2e9dfaeda9fac684e7b456971c710"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a62b2e9dfaeda9fac684e7b456971c710">spdk_nvme_cpl_is_error</a>(cpl)</td></tr>
 <tr class="separator:a62b2e9dfaeda9fac684e7b456971c710"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4436d1b2f1f18bae6ad197033aa68c96" id="r_a4436d1b2f1f18bae6ad197033aa68c96"><td class="memItemLeft" align="right" valign="top"><a id="a4436d1b2f1f18bae6ad197033aa68c96" name="a4436d1b2f1f18bae6ad197033aa68c96"></a>
@@ -1791,6 +1797,9 @@ static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_
 <tr class="memitem:a75d212ddde0c11b1124f0d76440fc777" id="r_a75d212ddde0c11b1124f0d76440fc777"><td class="memItemLeft" align="right" valign="top"><a id="a75d212ddde0c11b1124f0d76440fc777" name="a75d212ddde0c11b1124f0d76440fc777"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(struct <a class="el" href="structspdk__nvme__feature__ids__effects__log__page.html">spdk_nvme_feature_ids_effects_log_page</a>)==1024, &quot;Incorrect size&quot;)</td></tr>
 <tr class="separator:a75d212ddde0c11b1124f0d76440fc777"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0bb941e94d767fe115ef02f6186d4469" id="r_a0bb941e94d767fe115ef02f6186d4469"><td class="memItemLeft" align="right" valign="top"><a id="a0bb941e94d767fe115ef02f6186d4469" name="a0bb941e94d767fe115ef02f6186d4469"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(union <a class="el" href="unionspdk__nvme__parameter__error__location.html">spdk_nvme_parameter_error_location</a>)==2, &quot;Incorrect size&quot;)</td></tr>
+<tr class="separator:a0bb941e94d767fe115ef02f6186d4469"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af30bbb384ce0ef2931484014453368bb" id="r_af30bbb384ce0ef2931484014453368bb"><td class="memItemLeft" align="right" valign="top"><a id="af30bbb384ce0ef2931484014453368bb" name="af30bbb384ce0ef2931484014453368bb"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(struct <a class="el" href="structspdk__nvme__error__information__entry.html">spdk_nvme_error_information_entry</a>)==64, &quot;Incorrect size&quot;)</td></tr>
 <tr class="separator:af30bbb384ce0ef2931484014453368bb"><td class="memSeparator" colspan="2">&#160;</td></tr>

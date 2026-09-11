@@ -132,12 +132,14 @@ $(function(){initNavTree('deprecated.html',''); initResizable(); });
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><dl class="reflist">
+<dt>Global <a class="el" href="structspdk__nvme__error__information__entry.html#aeb86c281ad13ccad6fbf242f77515b10">spdk_nvme_error_information_entry::error_location</a>  </dt>
+<dd><a class="anchor" id="_deprecated000003"></a>Use <code>pel</code> instead. This field will be removed in v27.01.  </dd>
 <dt>Global <a class="el" href="nvme_8h.html#a95da4dc7b98bfeed010a4a7a899e0ac7">spdk_nvme_ns_get_format_index</a>  (const struct <a class="el" href="structspdk__nvme__ns__data.html" title="Both spdk_nvme_ns_data_head and spdk_nvme_ns_data must be in sync.">spdk_nvme_ns_data</a> *nsdata)</dt>
 <dd><a class="anchor" id="_deprecated000001"></a>Use spdk_nvme_ns_get_active_format_index instead. </dd>
 <dt>Global <a class="el" href="nvme_8h.html#a34bd3312aa5c842f42a5e60c438dc89f">spdk_nvme_ns_get_nguid</a>  (const struct spdk_nvme_ns *ns)</dt>
 <dd><a class="anchor" id="_deprecated000002"></a>Read <code>nguid</code> directly from <code>spdk_nvme_ns_get_data_head(ns)</code>; per the NVMe spec an all-zero NGUID means "not present". </dd>
 <dt>Global <a class="el" href="nvmf__transport_8h.html#afad38775c3acad5fd71d1487bc3e56df">spdk_nvmf_request_get_dif_ctx</a>  (struct <a class="el" href="structspdk__nvmf__request.html">spdk_nvmf_request</a> *req, struct <a class="el" href="structspdk__dif__ctx.html" title="DIF context information.">spdk_dif_ctx</a> *dif_ctx)</dt>
-<dd><a class="anchor" id="_deprecated000003"></a>This function is no longer used by built-in transports. DIF handling has moved to the bdev layer via hide_metadata. </dd>
+<dd><a class="anchor" id="_deprecated000004"></a>This function is no longer used by built-in transports. DIF handling has moved to the bdev layer via hide_metadata. </dd>
 </dl>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
