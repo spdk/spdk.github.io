@@ -44,7 +44,8 @@ var nvme_8h =
     [ "spdk_nvme_ns_data_alloc_mode", "nvme_8h.html#a53b2edd948dbeaa1d628db24cc00257a", [
       [ "SPDK_NVME_NS_DATA_ALLOC_MODE_DEFAULT", "nvme_8h.html#a53b2edd948dbeaa1d628db24cc00257aac8cf09687c1fdbe48f753579b3d5fc9f", null ],
       [ "SPDK_NVME_NS_DATA_ALLOC_MODE_FULL", "nvme_8h.html#a53b2edd948dbeaa1d628db24cc00257aa36cc5cc9fc92f480ef4652a028f3ff72", null ],
-      [ "SPDK_NVME_NS_DATA_ALLOC_MODE_HEAD", "nvme_8h.html#a53b2edd948dbeaa1d628db24cc00257aa93c3fcc8e79ac5dc61cd107bac69faa6", null ]
+      [ "SPDK_NVME_NS_DATA_ALLOC_MODE_HEAD", "nvme_8h.html#a53b2edd948dbeaa1d628db24cc00257aa93c3fcc8e79ac5dc61cd107bac69faa6", null ],
+      [ "SPDK_NVME_NS_DATA_ALLOC_MODE_HEAD_LBAF_4", "nvme_8h.html#a53b2edd948dbeaa1d628db24cc00257aac67e150f6d066f6011ce56c5ae8b60c0", null ]
     ] ],
     [ "spdk_nvme_ns_flags", "nvme_8h.html#a018f3b986b4345ee0c6931be9718c163", [
       [ "SPDK_NVME_NS_DEALLOCATE_SUPPORTED", "nvme_8h.html#a018f3b986b4345ee0c6931be9718c163a80dcd48a57fa9e14efba4757300ad729", null ],

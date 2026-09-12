@@ -277,6 +277,7 @@ Enumerations</h2></td></tr>
 <tr class="memitem:a53b2edd948dbeaa1d628db24cc00257a" id="r_a53b2edd948dbeaa1d628db24cc00257a"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a53b2edd948dbeaa1d628db24cc00257a">spdk_nvme_ns_data_alloc_mode</a> { <a class="el" href="#a53b2edd948dbeaa1d628db24cc00257aac8cf09687c1fdbe48f753579b3d5fc9f">SPDK_NVME_NS_DATA_ALLOC_MODE_DEFAULT</a> = 0
 , <a class="el" href="#a53b2edd948dbeaa1d628db24cc00257aa36cc5cc9fc92f480ef4652a028f3ff72">SPDK_NVME_NS_DATA_ALLOC_MODE_FULL</a>
 , <a class="el" href="#a53b2edd948dbeaa1d628db24cc00257aa93c3fcc8e79ac5dc61cd107bac69faa6">SPDK_NVME_NS_DATA_ALLOC_MODE_HEAD</a>
+, <a class="el" href="#a53b2edd948dbeaa1d628db24cc00257aac67e150f6d066f6011ce56c5ae8b60c0">SPDK_NVME_NS_DATA_ALLOC_MODE_HEAD_LBAF_4</a>
  }</td></tr>
 <tr class="memdesc:a53b2edd948dbeaa1d628db24cc00257a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocation mode for the per-namespace Identify Namespace buffer.  <a href="#a53b2edd948dbeaa1d628db24cc00257a">More...</a><br /></td></tr>
 <tr class="separator:a53b2edd948dbeaa1d628db24cc00257a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1447,6 +1448,9 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_trty
 </td></tr>
 <tr><td class="fieldname"><a id="a53b2edd948dbeaa1d628db24cc00257aa93c3fcc8e79ac5dc61cd107bac69faa6" name="a53b2edd948dbeaa1d628db24cc00257aa93c3fcc8e79ac5dc61cd107bac69faa6"></a>SPDK_NVME_NS_DATA_ALLOC_MODE_HEAD&#160;</td><td class="fielddoc"><p>Allocate only the header subset (struct <a class="el" href="structspdk__nvme__ns__data__head.html" title="Header subset of spdk_nvme_ns_data covering everything before lbaf[] and vendor_specific[].">spdk_nvme_ns_data_head</a>) plus the lbaf[SPDK_NVME_NS_MAX_LBA_FORMATS] array. </p>
 <p>Saves ~3.6 KB per namespace at the cost of vendor_specific[] visibility. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a53b2edd948dbeaa1d628db24cc00257aac67e150f6d066f6011ce56c5ae8b60c0" name="a53b2edd948dbeaa1d628db24cc00257aac67e150f6d066f6011ce56c5ae8b60c0"></a>SPDK_NVME_NS_DATA_ALLOC_MODE_HEAD_LBAF_4&#160;</td><td class="fielddoc"><p>Like HEAD, but only the first 4 LBA formats (saves 240 B). </p>
+<p>Formats beyond 0..3 are truncated with a warning; an active format index &gt;= 4 marks the namespace inactive. </p>
 </td></tr>
 </table>
 
@@ -7968,7 +7972,7 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_trty
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>a pointer to the namespace data, or NULL when ns_data_alloc_mode is SPDK_NVME_NS_DATA_ALLOC_MODE_HEAD. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>a pointer to the namespace data, or NULL in non-FULL mode. </dd></dl>
 
 </div>
 </div>
@@ -8109,10 +8113,14 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_trty
 </div><div class="memdoc">
 
 <p>Copy a single LBA format entry from a namespace. </p>
+<p>Indexing constraints depend on ns_data_alloc_mode:</p><ul>
+<li>FULL / HEAD: index must be &lt;= min(nlbaf, 63)</li>
+<li>HEAD_LBAF_4: index must be &lt;= min(nlbaf, 3)</li>
+</ul>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">ns</td><td>Namespace. </td></tr>
-    <tr><td class="paramname">format_index</td><td>Index into the lbaf array. Must satisfy format_index &lt;= nlbaf. </td></tr>
+    <tr><td class="paramname">format_index</td><td>Index into the lbaf array. See indexing constraints above. </td></tr>
     <tr><td class="paramname">lbaf</td><td>Output buffer that receives the copy. Must be non-NULL.</td></tr>
   </table>
   </dd>
