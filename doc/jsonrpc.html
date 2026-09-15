@@ -262,6 +262,8 @@ spdk_kill_instance</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">sig_name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">enum   </td><td class="markdownTableBodyNone">Signal to send   </td></tr>
 </table>
+<h3>Response</h3>
+<p>true on success</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -289,6 +291,7 @@ framework_monitor_context_switch</h2>
 <td class="markdownTableBodyNone">enabled   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Enable or disable context switch monitoring; omit to query the current state   </td></tr>
 </table>
 <h3>Response</h3>
+<p>Context switch monitoring state</p>
 <table class="markdownTable">
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
@@ -909,19 +912,20 @@ framework_get_scheduler</h2>
 <h3>Parameters</h3>
 <p>This method has no parameters.</p>
 <h3>Response</h3>
+<p>Current scheduler configuration</p>
 <table class="markdownTable">
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">scheduler_name   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">Current scheduler name    </td></tr>
+<td class="markdownTableBodyNone">scheduler_name   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Current scheduler name    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">scheduler_period   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">Currently set scheduler period in microseconds    </td></tr>
+<td class="markdownTableBodyNone">scheduler_period   </td><td class="markdownTableBodyNone">uint64   </td><td class="markdownTableBodyNone">Currently set scheduler period in microseconds    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">governor_name   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">Governor name    </td></tr>
+<td class="markdownTableBodyNone">isolated_core_mask   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Current isolated core mask of scheduler    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">scheduling_core   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">Current scheduling core    </td></tr>
+<td class="markdownTableBodyNone">scheduling_core   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">Current scheduling core    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">isolated_core_mask   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">Current isolated core mask of scheduler   </td></tr>
+<td class="markdownTableBodyNone">governor_name   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Governor name   </td></tr>
 </table>
 <h3>Example</h3>
 <p>Example request:</p>
@@ -992,6 +996,8 @@ scheduler_set_options</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">isolated_core_mask   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">CPU mask of cores excluded from scheduling decisions; must not include scheduling_core   </td></tr>
 </table>
+<h3>Response</h3>
+<p>true on success</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -1127,6 +1133,8 @@ trace_enable_tpoint_group</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of a registered trace group, or "all" to enable every group   </td></tr>
 </table>
+<h3>Response</h3>
+<p>true on success</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -1153,6 +1161,8 @@ trace_disable_tpoint_group</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of a registered trace group, or "all" to disable every group   </td></tr>
 </table>
+<h3>Response</h3>
+<p>true on success</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -1181,6 +1191,8 @@ trace_set_tpoint_mask</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">tpoint_mask   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">uint64   </td><td class="markdownTableBodyNone">Bitmask of tracepoints to enable within the group (e.g. 0x3 enables the first two)   </td></tr>
 </table>
+<h3>Response</h3>
+<p>true on success</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -1210,6 +1222,8 @@ trace_clear_tpoint_mask</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">tpoint_mask   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">uint64   </td><td class="markdownTableBodyNone">Bitmask of tracepoints to disable within the group (e.g. 0x3 disables the first two)   </td></tr>
 </table>
+<h3>Response</h3>
+<p>true on success</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -1305,6 +1319,8 @@ trace_clear</h2>
 <p>Clear trace history. All entries recorded before this call will be hidden from subsequent reads by external trace tools such as spdk_trace. This does not disable tracing; new entries continue to be recorded.</p>
 <h3>Parameters</h3>
 <p>This method has no parameters.</p>
+<h3>Response</h3>
+<p>true on success</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -1381,6 +1397,8 @@ log_set_print_level</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">level   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">enum   </td><td class="markdownTableBodyNone">Log print level   </td></tr>
 </table>
+<h3>Response</h3>
+<p>true on success</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -1402,6 +1420,8 @@ log_get_print_level</h2>
 <p>Get the current level at which output will additionally be sent to the current console.</p>
 <h3>Parameters</h3>
 <p>This method has no parameters.</p>
+<h3>Response</h3>
+<p>Current log print level</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -1425,6 +1445,8 @@ log_set_level</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">level   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">enum   </td><td class="markdownTableBodyNone">Log level   </td></tr>
 </table>
+<h3>Response</h3>
+<p>true on success</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -1446,6 +1468,8 @@ log_get_level</h2>
 <p>Get the current logging level output by the <code>log</code> module.</p>
 <h3>Parameters</h3>
 <p>This method has no parameters.</p>
+<h3>Response</h3>
+<p>Current log level</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -1469,6 +1493,8 @@ log_set_flag</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">flag   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Log flag name (e.g. "nvme") or "all" to set all flags   </td></tr>
 </table>
+<h3>Response</h3>
+<p>true on success</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -1495,6 +1521,8 @@ log_clear_flag</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">flag   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Log flag name (e.g. "nvme") or "all" to clear all flags   </td></tr>
 </table>
+<h3>Response</h3>
+<p>true on success</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -1544,6 +1572,8 @@ log_enable_timestamps</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">enabled   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Enable (true) or disable (false) timestamps in log output   </td></tr>
 </table>
+<h3>Response</h3>
+<p>true on success</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -1639,7 +1669,13 @@ env_dpdk_get_mem_stats</h2>
 <h3>Parameters</h3>
 <p>This method has no parameters.</p>
 <h3>Response</h3>
-<p>The response is a pathname to a text file containing the memory stats.</p>
+<p>The response is an object containing the pathname to a text file with the memory stats.</p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">filename   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Pathname to a text file containing the memory stats   </td></tr>
+</table>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -1735,6 +1771,8 @@ accel_assign_opc</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">module   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of the accel module to assign the operation to   </td></tr>
 </table>
+<h3>Response</h3>
+<p>true on success</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -1770,6 +1808,8 @@ accel_crypto_key_create</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of the key   </td></tr>
 </table>
+<h3>Response</h3>
+<p>true on success</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -1800,6 +1840,8 @@ accel_crypto_key_destroy</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">key_name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of the key to destroy   </td></tr>
 </table>
+<h3>Response</h3>
+<p>true on success</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -1864,6 +1906,8 @@ accel_set_driver</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of the platform driver, or empty string to disable   </td></tr>
 </table>
+<h3>Response</h3>
+<p>true on success</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -1898,6 +1942,8 @@ accel_set_options</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">buf_count   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">Maximum number of accel buffers per IO channel   </td></tr>
 </table>
+<h3>Response</h3>
+<p>true on success</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -1971,6 +2017,8 @@ accel_error_inject_error</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">errcode   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">int32   </td><td class="markdownTableBodyNone">Error code to return; only relevant for type=failure   </td></tr>
 </table>
+<h3>Response</h3>
+<p>true on success</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -2000,6 +2048,8 @@ compressdev_scan_accel_module</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">pmd   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">PMD selection: 0=auto, 1=QAT only, 2=mlx5_pci only, 3=uadk only   </td></tr>
 </table>
+<h3>Response</h3>
+<p>true on success</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -2026,6 +2076,8 @@ dsa_scan_accel_module</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">config_kernel_mode   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Use the kernel idxd driver instead of user-mode. Default: false   </td></tr>
 </table>
+<h3>Response</h3>
+<p>true on success</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -2044,6 +2096,8 @@ iaa_scan_accel_module</h2>
 <p>Enable IAA accel module offload. This feature is considered as experimental.</p>
 <h3>Parameters</h3>
 <p>This method has no parameters.</p>
+<h3>Response</h3>
+<p>true on success</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -2062,6 +2116,8 @@ ioat_scan_accel_module</h2>
 <p>Enable ioat accel module offload.</p>
 <h3>Parameters</h3>
 <p>This method has no parameters.</p>
+<h3>Response</h3>
+<p>true on success</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -2080,6 +2136,8 @@ ae4dma_scan_accel_module</h2>
 <p>Enable ae4dma accel module offload.</p>
 <h3>Parameters</h3>
 <p>This method has no parameters.</p>
+<h3>Response</h3>
+<p>true on success</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -2098,6 +2156,8 @@ cuda_scan_accel_module</h2>
 <p>Enable cuda accel module offload.</p>
 <h3>Parameters</h3>
 <p>This method has no parameters.</p>
+<h3>Response</h3>
+<p>true on success</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -2116,6 +2176,8 @@ dpdk_cryptodev_scan_accel_module</h2>
 <p>Enable dpdk_cryptodev accel offload</p>
 <h3>Parameters</h3>
 <p>This method has no parameters.</p>
+<h3>Response</h3>
+<p>true on success</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -2139,6 +2201,8 @@ dpdk_cryptodev_set_driver</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">driver_name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">enum   </td><td class="markdownTableBodyNone">DPDK crypto driver   </td></tr>
 </table>
+<h3>Response</h3>
+<p>true on success</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -2160,6 +2224,8 @@ dpdk_cryptodev_get_driver</h2>
 <p>Get the DPDK cryptodev driver</p>
 <h3>Parameters</h3>
 <p>This method has no parameters.</p>
+<h3>Response</h3>
+<p>Name of the current DPDK crypto driver</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -2191,6 +2257,8 @@ mlx5_scan_accel_module</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">enable_driver   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Enable mlx5 platform driver. Note: the driver supports reduced scope of operations, enable with care   </td></tr>
 </table>
+<h3>Response</h3>
+<p>true on success</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -2282,6 +2350,8 @@ bdev_set_options</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">iobuf_large_cache_size   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">Size of the large iobuf per thread cache   </td></tr>
 </table>
+<h3>Response</h3>
+<p>true on success</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -2361,7 +2431,7 @@ bdev_examine</h2>
 <td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Block device name   </td></tr>
 </table>
 <h3>Response</h3>
-<p>The response is an array of objects containing I/O statistics of the requested block devices.</p>
+<p>true on success</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -2484,6 +2554,8 @@ bdev_reset_iostat</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">mode   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">enum   </td><td class="markdownTableBodyNone">Mode to reset I/O statistics: all, maxmin, error, none (default: all)   </td></tr>
 </table>
+<h3>Response</h3>
+<p>true on success</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -2520,6 +2592,8 @@ bdev_enable_histogram</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">max_nsec   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint64   </td><td class="markdownTableBodyNone">Max value in nanoseconds to track. Default: 120000000000 (120 seconds)   </td></tr>
 </table>
+<h3>Response</h3>
+<p>true on success</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -2552,19 +2626,20 @@ bdev_get_histogram</h2>
 <td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Block device name   </td></tr>
 </table>
 <h3>Response</h3>
+<p>Histogram data for the specified bdev</p>
 <table class="markdownTable">
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">histogram   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">Base64 encoded histogram    </td></tr>
+<td class="markdownTableBodyNone">histogram   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Base64 encoded histogram    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">granularity   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">Granularity of the histogram buckets    </td></tr>
+<td class="markdownTableBodyNone">granularity   </td><td class="markdownTableBodyNone">int64   </td><td class="markdownTableBodyNone">Granularity of the histogram buckets    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">min_range   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">Minimal range tracked in histogram    </td></tr>
+<td class="markdownTableBodyNone">min_range   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">Minimal range tracked in histogram    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">max_range   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">Maximal range tracked in histogram    </td></tr>
+<td class="markdownTableBodyNone">max_range   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">Maximal range tracked in histogram    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">tsc_rate   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">Ticks per second   </td></tr>
+<td class="markdownTableBodyNone">tsc_rate   </td><td class="markdownTableBodyNone">int64   </td><td class="markdownTableBodyNone">Ticks per second   </td></tr>
 </table>
 <h3>Example</h3>
 <p>Note that histogram field is trimmed, actual encoded histogram length is ~80kb.</p>
@@ -2602,6 +2677,7 @@ bdev_get_histogram_borders</h2>
 <td class="markdownTableBodyNone">borders   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">array   </td><td class="markdownTableBodyNone">Array of buckets in microseconds to dump histogram into   </td></tr>
 </table>
 <h3>Response</h3>
+<p>Histogram border counts</p>
 <table class="markdownTable">
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
@@ -2659,6 +2735,8 @@ bdev_set_qos_limit</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">w_mbytes_per_sec   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint64   </td><td class="markdownTableBodyNone">Number of Write megabytes per second to allow. 0 means unlimited.   </td></tr>
 </table>
+<h3>Response</h3>
+<p>true on success</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -2691,6 +2769,8 @@ bdev_set_qd_sampling_period</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">period   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">uint64   </td><td class="markdownTableBodyNone">period (in microseconds).If set to 0, polling will be disabled.   </td></tr>
 </table>
+<h3>Response</h3>
+<p>true on success</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -2763,6 +2843,8 @@ bdev_crypto_delete</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of the crypto bdev   </td></tr>
 </table>
+<h3>Response</h3>
+<p>true on success</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -2829,6 +2911,8 @@ bdev_ocf_delete</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Bdev name   </td></tr>
 </table>
+<h3>Response</h3>
+<p>true on success</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -3193,6 +3277,8 @@ bdev_ocf_flush_start</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Bdev name   </td></tr>
 </table>
+<h3>Response</h3>
+<p>true on success</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -3308,6 +3394,8 @@ bdev_malloc_delete</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Bdev name   </td></tr>
 </table>
+<h3>Response</h3>
+<p>true on success</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -3399,6 +3487,8 @@ bdev_null_delete</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Bdev name   </td></tr>
 </table>
+<h3>Response</h3>
+<p>true on success</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -3427,6 +3517,8 @@ bdev_null_resize</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">new_size   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">uint64   </td><td class="markdownTableBodyNone">Bdev new capacity in MiB   </td></tr>
 </table>
+<h3>Response</h3>
+<p>true on success</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -3499,6 +3591,8 @@ bdev_aio_rescan</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Bdev name   </td></tr>
 </table>
+<h3>Response</h3>
+<p>true on success</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -3525,6 +3619,8 @@ bdev_aio_delete</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Bdev name   </td></tr>
 </table>
+<h3>Response</h3>
+<p>true on success</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -3616,6 +3712,8 @@ bdev_nvme_set_options</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">multipath_opts   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">object   </td><td class="markdownTableBodyNone">Default multipath options.   </td></tr>
 </table>
+<h3>Response</h3>
+<p>true on success</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -3675,6 +3773,8 @@ bdev_nvme_set_hotplug</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">period_us   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint64   </td><td class="markdownTableBodyNone">How often to poll for hot-insert and hot-remove events. Values: 0 - reset/use default or 1 to 10000000.   </td></tr>
 </table>
+<h3>Response</h3>
+<p>true on success</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -3847,6 +3947,8 @@ bdev_nvme_detach_controller</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">hostsvcid   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">NVMe-oF host svcid: port number   </td></tr>
 </table>
+<h3>Response</h3>
+<p>true on success</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -3877,6 +3979,8 @@ bdev_nvme_reset_controller</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">cntlid   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint16   </td><td class="markdownTableBodyNone">NVMe controller ID (used as NVMe controller name for multipath)   </td></tr>
 </table>
+<h3>Response</h3>
+<p>true on success</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -3907,6 +4011,8 @@ bdev_nvme_enable_controller</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">cntlid   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint16   </td><td class="markdownTableBodyNone">NVMe controller ID (used as NVMe controller name for multipath)   </td></tr>
 </table>
+<h3>Response</h3>
+<p>true on success</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -3937,6 +4043,8 @@ bdev_nvme_disable_controller</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">cntlid   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint16   </td><td class="markdownTableBodyNone">NVMe controller ID (used as NVMe controller name for multipath)   </td></tr>
 </table>
+<h3>Response</h3>
+<p>true on success</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -3986,6 +4094,8 @@ bdev_nvme_start_discovery</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">fast_io_fail_timeout_sec   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">Time to wait until ctrlr is reconnected before failing I/O to ctrlr. 0 means no such timeout.   </td></tr>
 </table>
+<h3>Response</h3>
+<p>true on success</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -4018,6 +4128,8 @@ bdev_nvme_stop_discovery</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of service to stop   </td></tr>
 </table>
+<h3>Response</h3>
+<p>true on success</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -4124,6 +4236,8 @@ bdev_nvme_set_preferred_path</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">cntlid   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">uint16   </td><td class="markdownTableBodyNone">NVMe-oF controller ID   </td></tr>
 </table>
+<h3>Response</h3>
+<p>true on success</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -4237,6 +4351,8 @@ bdev_nvme_cuse_register</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of the NVMe controller   </td></tr>
 </table>
+<h3>Response</h3>
+<p>true on success</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -4263,6 +4379,8 @@ bdev_nvme_cuse_unregister</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of the NVMe controller   </td></tr>
 </table>
+<h3>Response</h3>
+<p>true on success</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -4294,6 +4412,8 @@ bdev_nvme_set_keys</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">dhchap_ctrlr_key   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">DH-HMAC-CHAP controller key name   </td></tr>
 </table>
+<h3>Response</h3>
+<p>true on success</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -4328,6 +4448,8 @@ bdev_zone_block_create</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">optimal_open_zones   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">uint64   </td><td class="markdownTableBodyNone">Number of zones required to reach optimal write speed   </td></tr>
 </table>
+<h3>Response</h3>
+<p>Name of the newly created zone bdev</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -4357,6 +4479,8 @@ bdev_zone_block_delete</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of the Zone device   </td></tr>
 </table>
+<h3>Response</h3>
+<p>true on success</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -4838,6 +4962,8 @@ bdev_delay_delete</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Bdev name   </td></tr>
 </table>
+<h3>Response</h3>
+<p>true on success</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -4869,7 +4995,7 @@ bdev_delay_update_latency</h2>
 <td class="markdownTableBodyNone">latency_us   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">uint64   </td><td class="markdownTableBodyNone">The new latency value in microseconds   </td></tr>
 </table>
 <h3>Response</h3>
-<p>Name of newly created bdev.</p>
+<p>true on success</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -4898,6 +5024,8 @@ bdev_error_create</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">uuid   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uuid   </td><td class="markdownTableBodyNone">UUID for this bdev   </td></tr>
 </table>
+<h3>Response</h3>
+<p>true on success</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -4968,6 +5096,8 @@ bdev_error_inject_error</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">corrupt_value   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint8   </td><td class="markdownTableBodyNone">the value for xor (1-255, 0 is invalid)   </td></tr>
 </table>
+<h3>Response</h3>
+<p>true on success</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -4997,6 +5127,8 @@ bdev_error_resume_pending</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of the error injection bdev   </td></tr>
 </table>
+<h3>Response</h3>
+<p>true on success</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -5023,6 +5155,8 @@ bdev_iscsi_set_options</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">timeout_sec   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint64   </td><td class="markdownTableBodyNone">Timeout for command, in seconds, if 0, don't track timeout   </td></tr>
 </table>
+<h3>Response</h3>
+<p>true on success</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -5085,6 +5219,8 @@ bdev_iscsi_delete</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Bdev name   </td></tr>
 </table>
+<h3>Response</h3>
+<p>true on success</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -5127,7 +5263,15 @@ bdev_ftl_create</h2>
 <td class="markdownTableBodyNone">l2p_dram_limit   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint64   </td><td class="markdownTableBodyNone">DRAM limit for most recent L2P addresses (default 2048 MiB)   </td></tr>
 </table>
 <h3>Response</h3>
-<p>Name of newly created bdev.</p>
+<p>Object containing the name and UUID of the newly created bdev.</p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of newly created bdev    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">uuid   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">UUID of newly created bdev   </td></tr>
+</table>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -5166,6 +5310,8 @@ bdev_ftl_delete</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">fast_shutdown   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">When set FTL will minimize persisted data during deletion and rely on shared memory during next load   </td></tr>
 </table>
+<h3>Response</h3>
+<p>true on success</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -5198,6 +5344,8 @@ bdev_ftl_unmap</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">num_blocks   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">uint64   </td><td class="markdownTableBodyNone">number of blocks, aligned to 1024   </td></tr>
 </table>
+<h3>Response</h3>
+<p>true on success</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -5440,6 +5588,8 @@ bdev_ftl_set_property</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">value   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">New value of the property to be set   </td></tr>
 </table>
+<h3>Response</h3>
+<p>true on success</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -5501,6 +5651,8 @@ bdev_passthru_delete</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Bdev name   </td></tr>
 </table>
+<h3>Response</h3>
+<p>true on success</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -5564,6 +5716,8 @@ bdev_xnvme_delete</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">name of xnvme bdev to delete   </td></tr>
 </table>
+<h3>Response</h3>
+<p>true on success</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -5668,6 +5822,8 @@ bdev_virtio_detach_controller</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of the virtio bdev (e.g. "VirtioUser0")   </td></tr>
 </table>
+<h3>Response</h3>
+<p>true on success</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -5773,6 +5929,8 @@ iscsi_set_options</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">data_out_pool_size   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">Number of data out buffers in the pool   </td></tr>
 </table>
+<h3>Response</h3>
+<p>true on success</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -5882,6 +6040,8 @@ iscsi_set_discovery_auth</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">chap_group   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">int32   </td><td class="markdownTableBodyNone">CHAP authentication group ID for discovery session (non-zero values must reference a precreated group)   </td></tr>
 </table>
+<h3>Response</h3>
+<p>true on success</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -5927,6 +6087,8 @@ secret</h4>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">msecret   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Bidirectional CHAP secret   </td></tr>
 </table>
+<h3>Response</h3>
+<p>true on success</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -5961,6 +6123,8 @@ iscsi_delete_auth_group</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">tag   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">int32   </td><td class="markdownTableBodyNone">Authentication group tag (unique, integer &gt; 0)   </td></tr>
 </table>
+<h3>Response</h3>
+<p>true on success</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -5988,7 +6152,7 @@ iscsi_get_auth_groups</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">tag   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">Authentication group tag    </td></tr>
+<td class="markdownTableBodyNone">tag   </td><td class="markdownTableBodyNone">int32   </td><td class="markdownTableBodyNone">Authentication group tag    </td></tr>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">secrets   </td><td class="markdownTableBodyNone">array   </td><td class="markdownTableBodyNone">Array of <a class="el" href="#rpc_iscsi_create_auth_group_secret">secret</a> objects   </td></tr>
 </table>
@@ -6044,6 +6208,8 @@ iscsi_auth_group_add_secret</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">msecret   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Secret for mutual (bidirectional) CHAP authentication   </td></tr>
 </table>
+<h3>Response</h3>
+<p>true on success</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -6076,6 +6242,8 @@ iscsi_auth_group_remove_secret</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">user   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">User name for one-way (unidirectional) CHAP authentication   </td></tr>
 </table>
+<h3>Response</h3>
+<p>true on success</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -6104,7 +6272,7 @@ iscsi_get_initiator_groups</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">tag   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">Initiator group tag    </td></tr>
+<td class="markdownTableBodyNone">tag   </td><td class="markdownTableBodyNone">int32   </td><td class="markdownTableBodyNone">Initiator group tag    </td></tr>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">initiators   </td><td class="markdownTableBodyNone">array   </td><td class="markdownTableBodyNone">Array of initiator hostnames or IP addresses    </td></tr>
 <tr class="markdownTableRowOdd">
@@ -6148,6 +6316,8 @@ iscsi_create_initiator_group</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">netmasks   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">array   </td><td class="markdownTableBodyNone">Whitespace-separated list of initiator netmasks enclosed in quotes. Example: '255.255.0.0 255.248.0.0' etc   </td></tr>
 </table>
+<h3>Response</h3>
+<p>true on success</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -6181,6 +6351,8 @@ iscsi_delete_initiator_group</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">tag   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">int32   </td><td class="markdownTableBodyNone">Initiator group tag (unique, integer &gt; 0)   </td></tr>
 </table>
+<h3>Response</h3>
+<p>true on success</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -6211,6 +6383,8 @@ iscsi_initiator_group_add_initiators</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">netmasks   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">array   </td><td class="markdownTableBodyNone">Whitespace-separated list of initiator netmasks enclosed in quotes. This parameter can be omitted. Example: '255.255.0.0 255.248.0.0' etc   </td></tr>
 </table>
+<h3>Response</h3>
+<p>true on success</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -6247,6 +6421,8 @@ iscsi_initiator_group_remove_initiators</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">netmasks   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">array   </td><td class="markdownTableBodyNone">Whitespace-separated list of initiator netmasks enclosed in quotes. This parameter can be omitted. Example: '255.255.0.0 255.248.0.0' etc   </td></tr>
 </table>
+<h3>Response</h3>
+<p>true on success</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -6288,15 +6464,15 @@ iscsi_get_target_nodes</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">luns   </td><td class="markdownTableBodyNone">array   </td><td class="markdownTableBodyNone">Array of Bdev names to LUN ID mappings    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">queue_depth   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">Target queue depth    </td></tr>
+<td class="markdownTableBodyNone">queue_depth   </td><td class="markdownTableBodyNone">int32   </td><td class="markdownTableBodyNone">Target queue depth    </td></tr>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">disable_chap   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">CHAP authentication should be disabled for this target    </td></tr>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">require_chap   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">CHAP authentication should be required for this target    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">mutual_chap   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">CHAP authentication should be bidirectional (<code>true</code>) or unidirectional (<code>false</code>)    </td></tr>
+<td class="markdownTableBodyNone">mutual_chap   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">CHAP authentication should be bidirectional (true) or unidirectional (false)    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">chap_group   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">Authentication group ID for this target node    </td></tr>
+<td class="markdownTableBodyNone">chap_group   </td><td class="markdownTableBodyNone">int32   </td><td class="markdownTableBodyNone">Authentication group ID for this target node    </td></tr>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">header_digest   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Header Digest should be required for this target node    </td></tr>
 <tr class="markdownTableRowOdd">
@@ -6370,6 +6546,8 @@ iscsi_create_target_node</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">data_digest   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Require Data Digest for this target node   </td></tr>
 </table>
+<h3>Response</h3>
+<p>true on success</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -6428,6 +6606,8 @@ iscsi_target_node_set_auth</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">chap_group   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">int32   </td><td class="markdownTableBodyNone">Authentication group ID for this target node (non-zero values must reference a precreated group)   </td></tr>
 </table>
+<h3>Response</h3>
+<p>true on success</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -6469,6 +6649,8 @@ iscsi_target_node_add_pg_ig_maps</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">pg_tag   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">int32   </td><td class="markdownTableBodyNone">Existing portal group tag   </td></tr>
 </table>
+<h3>Response</h3>
+<p>true on success</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -6520,6 +6702,8 @@ iscsi_target_node_remove_pg_ig_maps</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">pg_tag   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">int32   </td><td class="markdownTableBodyNone">Existing portal group tag   </td></tr>
 </table>
+<h3>Response</h3>
+<p>true on success</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -6560,6 +6744,8 @@ iscsi_delete_target_node</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Target node name (ASCII)   </td></tr>
 </table>
+<h3>Response</h3>
+<p>true on success</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -6630,6 +6816,8 @@ iscsi_create_portal_group</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">port   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Port number   </td></tr>
 </table>
+<h3>Response</h3>
+<p>true on success</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -6664,6 +6852,8 @@ iscsi_start_portal_group</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">tag   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">int32   </td><td class="markdownTableBodyNone">Portal group tag (unique, integer &gt; 0)   </td></tr>
 </table>
+<h3>Response</h3>
+<p>true on success</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -6690,6 +6880,8 @@ iscsi_delete_portal_group</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">tag   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">int32   </td><td class="markdownTableBodyNone">Portal group tag (unique, integer &gt; 0)   </td></tr>
 </table>
+<h3>Response</h3>
+<p>true on success</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -6725,6 +6917,8 @@ iscsi_portal_group_set_auth</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">chap_group   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">int32   </td><td class="markdownTableBodyNone">CHAP authentication group ID for this portal group (non-zero values must reference a precreated group)   </td></tr>
 </table>
+<h3>Response</h3>
+<p>true on success</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -6756,19 +6950,23 @@ iscsi_get_connections</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">id   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">Index (used for TTT - Target Transfer Tag)    </td></tr>
+<td class="markdownTableBodyNone">id   </td><td class="markdownTableBodyNone">int32   </td><td class="markdownTableBodyNone">Index (used for TTT - Target Transfer Tag)    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">cid   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">CID (Connection ID)    </td></tr>
+<td class="markdownTableBodyNone">cid   </td><td class="markdownTableBodyNone">int32   </td><td class="markdownTableBodyNone">CID (Connection ID)    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">tsih   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">TSIH (Target Session Identifying Handle)    </td></tr>
+<td class="markdownTableBodyNone">tsih   </td><td class="markdownTableBodyNone">int32   </td><td class="markdownTableBodyNone">TSIH (Target Session Identifying Handle)    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">lcore_id   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">Core number on which the iSCSI connection runs    </td></tr>
+<td class="markdownTableBodyNone">state   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Connection state    </td></tr>
 <tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">login_phase   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Connection login phase    </td></tr>
+<tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">initiator_addr   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Initiator address    </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">target_addr   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Target address    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">target_node_name   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Target node name (ASCII) without prefix   </td></tr>
+<td class="markdownTableBodyNone">target_addr   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Target address    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">target_node_name   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Target node name (ASCII) without prefix    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">thread_name   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Thread name on which the iSCSI connection runs   </td></tr>
 </table>
 <h3>Example</h3>
 <p>Example request:</p>
@@ -6804,13 +7002,13 @@ iscsi_get_stats</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">invalid   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">The number of invalid connections    </td></tr>
+<td class="markdownTableBodyNone">invalid   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">The number of invalid connections    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">running   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">The number of running connections    </td></tr>
+<td class="markdownTableBodyNone">running   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">The number of running connections    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">exiting   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">The number of exiting connections    </td></tr>
+<td class="markdownTableBodyNone">exiting   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">The number of exiting connections    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">exited   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">The number of exited connections   </td></tr>
+<td class="markdownTableBodyNone">exited   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">The number of exited connections   </td></tr>
 </table>
 <h3>Example</h3>
 <p>Example request:</p>
@@ -6844,6 +7042,8 @@ iscsi_target_node_add_lun</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">lun_id   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">int32   </td><td class="markdownTableBodyNone">LUN ID. -1 or omitted assigns the lowest free ID   </td></tr>
 </table>
+<h3>Response</h3>
+<p>true on success</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -6879,6 +7079,8 @@ iscsi_target_node_set_redirect</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">redirect_port   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Numeric TCP port of the redirect portal   </td></tr>
 </table>
+<h3>Response</h3>
+<p>true on success</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -6910,6 +7112,8 @@ iscsi_target_node_request_logout</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">pg_tag   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">int32   </td><td class="markdownTableBodyNone">Portal group tag (unique, integer &gt; 0)   </td></tr>
 </table>
+<h3>Response</h3>
+<p>true on success</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -6939,6 +7143,8 @@ iscsi_enable_histogram</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">enable   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Enable or disable histogram for the specified iSCSI target node   </td></tr>
 </table>
+<h3>Response</h3>
+<p>true on success</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -6967,15 +7173,20 @@ iscsi_get_histogram</h2>
 <td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">iSCSI target node name   </td></tr>
 </table>
 <h3>Response</h3>
+<p>Histogram data for the specified iSCSI target node</p>
 <table class="markdownTable">
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">histogram   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">Base64 encoded histogram    </td></tr>
+<td class="markdownTableBodyNone">histogram   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Base64 encoded histogram    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">granularity   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">Granularity of the histogram buckets    </td></tr>
+<td class="markdownTableBodyNone">granularity   </td><td class="markdownTableBodyNone">int64   </td><td class="markdownTableBodyNone">Granularity of the histogram buckets    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">tsc_rate   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">Ticks per second   </td></tr>
+<td class="markdownTableBodyNone">min_range   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">Minimal range tracked in histogram    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">max_range   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">Maximal range tracked in histogram    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">tsc_rate   </td><td class="markdownTableBodyNone">int64   </td><td class="markdownTableBodyNone">Ticks per second   </td></tr>
 </table>
 <h3>Example</h3>
 <p>Note that histogram field is trimmed, actual encoded histogram length is ~80kb.</p>
@@ -7076,6 +7287,8 @@ nvmf_create_transport</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">masked_fuses   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">bitmask   </td><td class="markdownTableBodyNone">Comma-separated list of FUSES features to mask (disable). Available options: all, fcws   </td></tr>
 </table>
+<h3>Response</h3>
+<p>true on success</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -7201,6 +7414,8 @@ nvmf_create_subsystem</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">enable_nssr   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Enable NSSR (NVMe subsystem reset)   </td></tr>
 </table>
+<h3>Response</h3>
+<p>true on success</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -7235,6 +7450,8 @@ nvmf_delete_subsystem</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">tgt_name   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Parent NVMe-oF target name   </td></tr>
 </table>
+<h3>Response</h3>
+<p>true on success</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -7289,6 +7506,8 @@ listen_address</h4>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">trsvcid   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">NVMe-oF transport service id: e.g., a port number (required for TCP and RDMA transport types)   </td></tr>
 </table>
+<h3>Response</h3>
+<p>true on success</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -7326,6 +7545,8 @@ nvmf_subsystem_remove_listener</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">listen_address   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">object   </td><td class="markdownTableBodyNone"><a class="el" href="#rpc_nvmf_listen_address">listen_address</a> object   </td></tr>
 </table>
+<h3>Response</h3>
+<p>true on success</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -7366,6 +7587,8 @@ nvmf_subsystem_listener_set_ana_state</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">anagrpid   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">ANA group ID   </td></tr>
 </table>
+<h3>Response</h3>
+<p>true on success</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -7427,6 +7650,8 @@ namespace</h4>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">hide_metadata   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">[Deprecated] Enable hide_metadata option to the bdev   </td></tr>
 </table>
+<h3>Response</h3>
+<p>Namespace ID of the added namespace</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -7464,6 +7689,8 @@ nvmf_subsystem_remove_ns</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">tgt_name   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Parent NVMe-oF target name   </td></tr>
 </table>
+<h3>Response</h3>
+<p>true on success</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -7497,6 +7724,8 @@ nvmf_subsystem_set_ns_ana_group</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">tgt_name   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Parent NVMe-oF target name   </td></tr>
 </table>
+<h3>Response</h3>
+<p>true on success</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -7535,6 +7764,8 @@ nvmf_subsystem_add_host</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">dhchap_ctrlr_key   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">DH-HMAC-CHAP controller key name   </td></tr>
 </table>
+<h3>Response</h3>
+<p>true on success</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -7569,6 +7800,8 @@ nvmf_subsystem_remove_host</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">timeout_ms   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint64   </td><td class="markdownTableBodyNone">Timeout in ms to wait for I/Os to complete (optional). Default value is derived from the controller CAP.TO.   </td></tr>
 </table>
+<h3>Response</h3>
+<p>true on success</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -7600,6 +7833,8 @@ nvmf_subsystem_allow_any_host</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">tgt_name   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Parent NVMe-oF target name   </td></tr>
 </table>
+<h3>Response</h3>
+<p>true on success</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -7635,6 +7870,8 @@ nvmf_subsystem_set_keys</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">dhchap_ctrlr_key   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">DH-HMAC-CHAP controller key name   </td></tr>
 </table>
+<h3>Response</h3>
+<p>true on success</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -7793,6 +8030,8 @@ nvmf_ns_add_host</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">tgt_name   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Parent NVMe-oF target name   </td></tr>
 </table>
+<h3>Response</h3>
+<p>true on success</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -7828,6 +8067,8 @@ nvmf_ns_remove_host</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">tgt_name   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Parent NVMe-oF target name   </td></tr>
 </table>
+<h3>Response</h3>
+<p>true on success</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -7856,6 +8097,8 @@ nvmf_set_max_subsystems</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">max_subsystems   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">Maximum number of NVMe-oF subsystems   </td></tr>
 </table>
+<h3>Response</h3>
+<p>true on success</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -7888,6 +8131,8 @@ nvmf_discovery_add_referral</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">subnqn   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Subsystem NQN   </td></tr>
 </table>
+<h3>Response</h3>
+<p>true on success</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -7924,6 +8169,8 @@ nvmf_discovery_remove_referral</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">subnqn   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Subsystem NQN   </td></tr>
 </table>
+<h3>Response</h3>
+<p>true on success</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -8022,6 +8269,8 @@ admin_cmd_passthru</h4>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">vendor_specific   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">If true, enables passthru command handlers for underlying NVMe drive for vendor specific cmds (OPCs: 0xC0-0xFF)   </td></tr>
 </table>
+<h3>Response</h3>
+<p>true on success</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -8192,6 +8441,8 @@ vfu_tgt_set_base_path</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">path   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Base path for the vfio-user UNIX sockets   </td></tr>
 </table>
+<h3>Response</h3>
+<p>true on success</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -8218,6 +8469,8 @@ vfu_virtio_delete_endpoint</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of the endpoint   </td></tr>
 </table>
+<h3>Response</h3>
+<p>true on success</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -8254,6 +8507,8 @@ vfu_virtio_create_blk_endpoint</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">packed_ring   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Enable packed virtqueue layout. Default: false   </td></tr>
 </table>
+<h3>Response</h3>
+<p>true on success</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -8289,6 +8544,8 @@ vfu_virtio_scsi_add_target</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">bdev_name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of the backing block device   </td></tr>
 </table>
+<h3>Response</h3>
+<p>true on success</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -8319,6 +8576,8 @@ vfu_virtio_scsi_remove_target</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">scsi_target_num   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">uint8   </td><td class="markdownTableBodyNone">SCSI target number: 0-7   </td></tr>
 </table>
+<h3>Response</h3>
+<p>true on success</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -8354,6 +8613,8 @@ vfu_virtio_create_scsi_endpoint</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">packed_ring   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Enable packed virtqueue layout. Default: false   </td></tr>
 </table>
+<h3>Response</h3>
+<p>true on success</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -8396,6 +8657,8 @@ vfu_virtio_create_fs_endpoint</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">packed_ring   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Enable packed virtqueue layout. Default: false   </td></tr>
 </table>
+<h3>Response</h3>
+<p>true on success</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -8437,6 +8700,8 @@ vhost_controller_set_coalescing</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">iops_threshold   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">IOPS threshold above which coalescing kicks in (must be &gt; 0)   </td></tr>
 </table>
+<h3>Response</h3>
+<p>true on success</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -8469,6 +8734,8 @@ vhost_create_scsi_controller</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">delay   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Delay controller startup. Default: false   </td></tr>
 </table>
+<h3>Response</h3>
+<p>true on success</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -8497,6 +8764,8 @@ vhost_start_scsi_controller</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">ctrlr   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of the vhost controller   </td></tr>
 </table>
+<h3>Response</h3>
+<p>true on success</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -8560,6 +8829,8 @@ vhost_scsi_controller_remove_target</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">scsi_target_num   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">SCSI target number (0-7)   </td></tr>
 </table>
+<h3>Response</h3>
+<p>true on success</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -8587,6 +8858,8 @@ virtio_blk_create_transport</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of the virtio-blk transport to create   </td></tr>
 </table>
+<h3>Response</h3>
+<p>true on success</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -8651,6 +8924,8 @@ vhost_create_blk_controller</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">transport   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">virtio blk transport name (default: vhost_user_blk)   </td></tr>
 </table>
+<h3>Response</h3>
+<p>true on success</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -8803,6 +9078,8 @@ vhost_delete_controller</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">ctrlr   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of the vhost controller   </td></tr>
 </table>
+<h3>Response</h3>
+<p>true on success</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -8883,6 +9160,8 @@ bdev_lvol_delete_lvstore</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">lvs_name   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of the logical volume store to destroy   </td></tr>
 </table>
+<h3>Response</h3>
+<p>true on success</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -8951,6 +9230,8 @@ bdev_lvol_rename_lvstore</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">new_name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">New logical volume store name   </td></tr>
 </table>
+<h3>Response</h3>
+<p>true on success</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -8983,6 +9264,8 @@ bdev_lvol_grow_lvstore</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">lvs_name   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of the logical volume store to grow   </td></tr>
 </table>
+<h3>Response</h3>
+<p>true on success</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -9151,6 +9434,8 @@ bdev_lvol_rename</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">new_name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">New logical volume name   </td></tr>
 </table>
+<h3>Response</h3>
+<p>true on success</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -9180,6 +9465,8 @@ bdev_lvol_resize</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">size_in_mib   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">uint64   </td><td class="markdownTableBodyNone">Desired size of the logical volume in MiB   </td></tr>
 </table>
+<h3>Response</h3>
+<p>true on success</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -9207,6 +9494,8 @@ bdev_lvol_set_read_only</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">UUID or alias of the logical volume to set as read only   </td></tr>
 </table>
+<h3>Response</h3>
+<p>true on success</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -9233,6 +9522,8 @@ bdev_lvol_delete</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">UUID or alias of the logical volume to destroy   </td></tr>
 </table>
+<h3>Response</h3>
+<p>true on success</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -9259,6 +9550,8 @@ bdev_lvol_inflate</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">UUID or alias of the logical volume to inflate   </td></tr>
 </table>
+<h3>Response</h3>
+<p>true on success</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -9285,6 +9578,8 @@ bdev_lvol_decouple_parent</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">UUID or alias of the logical volume to decouple from its parent   </td></tr>
 </table>
+<h3>Response</h3>
+<p>true on success</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -9353,6 +9648,8 @@ bdev_lvol_set_parent</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">parent_name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">UUID or alias of the snapshot to become parent of lvol   </td></tr>
 </table>
+<h3>Response</h3>
+<p>true on success</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -9382,6 +9679,8 @@ bdev_lvol_set_parent_bdev</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">parent_name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">UUID or name of the external snapshot to become parent of lvol   </td></tr>
 </table>
+<h3>Response</h3>
+<p>true on success</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -9485,6 +9784,8 @@ bdev_raid_set_options</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">process_max_bandwidth_mb_sec   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">Background process (e.g. rebuild) maximum bandwidth in MiB/Sec   </td></tr>
 </table>
+<h3>Response</h3>
+<p>true on success</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -9601,6 +9902,8 @@ bdev_raid_create</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">superblock   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">If set, information about raid bdev will be stored in superblock on each base bdev (default: <code>false</code>)   </td></tr>
 </table>
+<h3>Response</h3>
+<p>true on success</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -9638,6 +9941,8 @@ bdev_raid_delete</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">clear_sb   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">If set, clear the superblock from all base bdevs   </td></tr>
 </table>
+<h3>Response</h3>
+<p>true on success</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -9667,6 +9972,8 @@ bdev_raid_add_base_bdev</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">base_bdev   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Base bdev name   </td></tr>
 </table>
+<h3>Response</h3>
+<p>true on success</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -9694,6 +10001,8 @@ bdev_raid_remove_base_bdev</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Base bdev name in RAID   </td></tr>
 </table>
+<h3>Response</h3>
+<p>true on success</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -9758,6 +10067,8 @@ bdev_split_delete</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">base_bdev   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">base bdev name   </td></tr>
 </table>
+<h3>Response</h3>
+<p>true on success</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -9792,6 +10103,8 @@ bdev_uring_create</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">uuid   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uuid   </td><td class="markdownTableBodyNone">UUID of new bdev   </td></tr>
 </table>
+<h3>Response</h3>
+<p>Name of the newly created uring bdev</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -9820,6 +10133,8 @@ bdev_uring_rescan</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">name of uring bdev to rescan   </td></tr>
 </table>
+<h3>Response</h3>
+<p>true on success</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -9846,6 +10161,8 @@ bdev_uring_delete</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">name of uring bdev to delete   </td></tr>
 </table>
+<h3>Response</h3>
+<p>true on success</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -9876,6 +10193,8 @@ bdev_nvme_opal_init</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">password   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">admin password of OPAL   </td></tr>
 </table>
+<h3>Response</h3>
+<p>true on success</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -9905,6 +10224,8 @@ bdev_nvme_opal_revert</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">password   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">admin password of OPAL   </td></tr>
 </table>
+<h3>Response</h3>
+<p>true on success</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -10016,6 +10337,8 @@ bdev_opal_delete</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">password   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">admin password   </td></tr>
 </table>
+<h3>Response</h3>
+<p>true on success</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -10049,6 +10372,8 @@ bdev_opal_new_user</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">user_password   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">user password   </td></tr>
 </table>
+<h3>Response</h3>
+<p>true on success</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -10084,6 +10409,8 @@ bdev_opal_set_lock_state</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">lock_state   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">lock state   </td></tr>
 </table>
+<h3>Response</h3>
+<p>true on success</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -10142,16 +10469,16 @@ notify_get_notifications</h2>
 <td class="markdownTableBodyNone">max   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint64   </td><td class="markdownTableBodyNone">Maximum number of events to return. Default: no limit   </td></tr>
 </table>
 <h3>Response</h3>
-<p>Response is an array of event objects.</p>
+<p>Array of event objects.</p>
 <table class="markdownTable">
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">id   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">Event ID.    </td></tr>
+<td class="markdownTableBodyNone">type   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Type of the event    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">type   </td><td class="markdownTableBodyNone">number   </td><td class="markdownTableBodyNone">Type of the event.    </td></tr>
+<td class="markdownTableBodyNone">ctx   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Event context    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">ctx   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Event context.   </td></tr>
+<td class="markdownTableBodyNone">id   </td><td class="markdownTableBodyNone">uint64   </td><td class="markdownTableBodyNone">Event ID   </td></tr>
 </table>
 <h3>Example</h3>
 <p>Example request:</p>
@@ -10195,6 +10522,8 @@ keyring_file_add_key</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">path   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Path to the file containing the key   </td></tr>
 </table>
+<h3>Response</h3>
+<p>true on success</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -10222,6 +10551,8 @@ keyring_file_remove_key</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of the key   </td></tr>
 </table>
+<h3>Response</h3>
+<p>true on success</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -10283,6 +10614,8 @@ keyring_linux_set_options</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">enable   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Enable the Linux keyring module. Default: false   </td></tr>
 </table>
+<h3>Response</h3>
+<p>true on success</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -10316,12 +10649,7 @@ ublk_create_target</h2>
 <td class="markdownTableBodyNone">disable_user_copy   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Disable the ublk user-copy feature. Default: false   </td></tr>
 </table>
 <h3>Response</h3>
-<table class="markdownTable">
-<tr class="markdownTableHead">
-<th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">result   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">True if ublk target initialization is successful; False if failed.   </td></tr>
-</table>
+<p>True if ublk target initialization is successful; False if failed.</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -10345,12 +10673,7 @@ ublk_destroy_target</h2>
 <h3>Parameters</h3>
 <p>This method has no parameters.</p>
 <h3>Response</h3>
-<table class="markdownTable">
-<tr class="markdownTableHead">
-<th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">result   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">True if ublk target destruction is successful; False if failed.   </td></tr>
-</table>
+<p>True if ublk target destruction is successful; False if failed.</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -10381,12 +10704,7 @@ ublk_start_disk</h2>
 <td class="markdownTableBodyNone">num_queues   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">Number of queues to create on the device. Default: 1   </td></tr>
 </table>
 <h3>Response</h3>
-<table class="markdownTable">
-<tr class="markdownTableHead">
-<th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">result   </td><td class="markdownTableBodyNone">int   </td><td class="markdownTableBodyNone">UBLK device ID   </td></tr>
-</table>
+<p>UBLK device ID</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -10417,12 +10735,7 @@ ublk_recover_disk</h2>
 <td class="markdownTableBodyNone">ublk_id   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">ID of the ublk device to recover   </td></tr>
 </table>
 <h3>Response</h3>
-<table class="markdownTable">
-<tr class="markdownTableHead">
-<th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">result   </td><td class="markdownTableBodyNone">int   </td><td class="markdownTableBodyNone">UBLK device ID   </td></tr>
-</table>
+<p>UBLK device ID</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -10451,12 +10764,7 @@ ublk_stop_disk</h2>
 <td class="markdownTableBodyNone">ublk_id   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">ID of the ublk device to stop   </td></tr>
 </table>
 <h3>Response</h3>
-<table class="markdownTable">
-<tr class="markdownTableHead">
-<th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">result   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">True if UBLK device is deleted successfully; False if failed.   </td></tr>
-</table>
+<p>True if UBLK device is deleted successfully; False if failed.</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -10484,19 +10792,20 @@ ublk_get_disks</h2>
 <td class="markdownTableBodyNone">ublk_id   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">ID of a ublk device to query. Default: list all   </td></tr>
 </table>
 <h3>Response</h3>
+<p>Array of objects describing ublk device.</p>
 <table class="markdownTable">
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">ublk_device   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">path to the ublk device node    </td></tr>
+<td class="markdownTableBodyNone">ublk_device   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Path to the ublk device node    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">id   </td><td class="markdownTableBodyNone">int   </td><td class="markdownTableBodyNone">device id    </td></tr>
+<td class="markdownTableBodyNone">id   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">Device id    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">queue_depth   </td><td class="markdownTableBodyNone">int   </td><td class="markdownTableBodyNone">queue depth supported for each queue    </td></tr>
+<td class="markdownTableBodyNone">queue_depth   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">Queue depth supported for each queue    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">num_queues   </td><td class="markdownTableBodyNone">int   </td><td class="markdownTableBodyNone">number of queues supported by the ublk device    </td></tr>
+<td class="markdownTableBodyNone">num_queues   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">Number of queues supported by the ublk device    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">bdev_name   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">name of the bdev backing the ublk device   </td></tr>
+<td class="markdownTableBodyNone">bdev_name   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of the bdev backing the ublk device   </td></tr>
 </table>
 <h3>Example</h3>
 <p>Example request:</p>
@@ -10564,6 +10873,8 @@ nbd_stop_disk</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">nbd_device   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Path to the NBD device, e.g. "/dev/nbd0"   </td></tr>
 </table>
+<h3>Response</h3>
+<p>true on success</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -10686,12 +10997,7 @@ sock_impl_set_options</h2>
 <td class="markdownTableBodyNone">enable_ktls   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Enable Kernel TLS (ssl only). Default: false   </td></tr>
 </table>
 <h3>Response</h3>
-<table class="markdownTable">
-<tr class="markdownTableHead">
-<th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">result   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">True if socket layer options were set successfully.   </td></tr>
-</table>
+<p>True if socket layer options were set successfully.</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -10729,12 +11035,7 @@ sock_set_default_impl</h2>
 <td class="markdownTableBodyNone">impl_name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Socket implementation name (e.g. "posix", "ssl", "uring")   </td></tr>
 </table>
 <h3>Response</h3>
-<table class="markdownTable">
-<tr class="markdownTableHead">
-<th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">result   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">True if the default socket layer configuration was set successfully.   </td></tr>
-</table>
+<p>True if the default socket layer configuration was set successfully.</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -10757,6 +11058,7 @@ sock_get_default_impl</h2>
 <h3>Parameters</h3>
 <p>This method has no parameters.</p>
 <h3>Response</h3>
+<p>Default socket implementation</p>
 <table class="markdownTable">
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
@@ -10808,6 +11110,7 @@ bdev_nvme_send_cmd</h2>
 <td class="markdownTableBodyNone">timeout_ms   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">Command execution timeout value, in milliseconds   </td></tr>
 </table>
 <h3>Response</h3>
+<p>NVMe command response</p>
 <table class="markdownTable">
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
@@ -10871,6 +11174,8 @@ vmd_remove_device</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">addr   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">PCI address of the device to remove   </td></tr>
 </table>
+<h3>Response</h3>
+<p>true on success</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -10893,7 +11198,13 @@ vmd_rescan</h2>
 <h3>Parameters</h3>
 <p>This method has no parameters.</p>
 <h3>Response</h3>
-<p>The response is the number of new devices found.</p>
+<p>Object containing the number of new devices found.</p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">count   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">Number of new devices found   </td></tr>
+</table>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -11105,6 +11416,8 @@ bdev_daos_delete</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Bdev name   </td></tr>
 </table>
+<h3>Response</h3>
+<p>true on success</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -11133,6 +11446,8 @@ bdev_daos_resize</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">new_size   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">uint64   </td><td class="markdownTableBodyNone">Bdev new capacity in MiB   </td></tr>
 </table>
+<h3>Response</h3>
+<p>true on success</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -11168,6 +11483,8 @@ iobuf_set_options</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">enable_numa   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Enable per-NUMA node buffer pools, each sized by small_pool_count and large_pool_count. Default: false   </td></tr>
 </table>
+<h3>Response</h3>
+<p>true on success</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -11261,6 +11578,8 @@ bdev_nvme_start_mdns_discovery</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">hostnqn   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">NVMe-oF hostnqn   </td></tr>
 </table>
+<h3>Response</h3>
+<p>true on success</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -11289,6 +11608,8 @@ bdev_nvme_stop_mdns_discovery</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of mDNS discovery instance to stop   </td></tr>
 </table>
+<h3>Response</h3>
+<p>true on success</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -11356,6 +11677,8 @@ nvmf_publish_mdns_prr</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">tgt_name   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Parent NVMe-oF target name   </td></tr>
 </table>
+<h3>Response</h3>
+<p>true on success</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -11379,6 +11702,8 @@ nvmf_stop_mdns_prr</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">tgt_name   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Parent NVMe-oF target name   </td></tr>
 </table>
+<h3>Response</h3>
+<p>true on success</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -11464,6 +11789,8 @@ fsdev_aio_create</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">skip_rw   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Skip read and write operations and complete them immediately (for benchmarking). Default: false   </td></tr>
 </table>
+<h3>Response</h3>
+<p>Name of the newly created AIO fsdev</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
@@ -11495,6 +11822,8 @@ fsdev_aio_delete</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of the AIO fsdev to delete   </td></tr>
 </table>
+<h3>Response</h3>
+<p>true on success</p>
 <h3>Example</h3>
 <p>Example request:</p>
 <div class="fragment"><div class="line">{</div>
