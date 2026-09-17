@@ -1,6 +1,5 @@
 var NAVTREEINDEX19 =
 {
-"userspace.html#userspace_control":[2,0,0],
 "userspace.html#userspace_interrupts":[2,0,1],
 "userspace.html#userspace_threading":[2,0,2],
 "util_8h.html":[15,0,0,0,64],

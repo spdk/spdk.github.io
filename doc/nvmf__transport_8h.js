@@ -20,7 +20,6 @@ var nvmf__transport_8h =
     [ "spdk_nvmf_ctrlr_restore_migr_data", "nvmf__transport_8h.html#a3fbe83688b786970a84adb1ef45b5f5b", null ],
     [ "spdk_nvmf_ctrlr_save_migr_data", "nvmf__transport_8h.html#a1010bdb10323d264654356742abeeaee", null ],
     [ "spdk_nvmf_poll_group_remove", "nvmf__transport_8h.html#a9ea012aeb9897f188acdf41481c0217f", null ],
-    [ "spdk_nvmf_request_get_dif_ctx", "nvmf__transport_8h.html#afad38775c3acad5fd71d1487bc3e56df", null ],
     [ "spdk_nvmf_tgt_new_qpair", "nvmf__transport_8h.html#ae540481943a9be15eacf93e111714db9", null ],
     [ "spdk_nvmf_transport_register", "nvmf__transport_8h.html#ab53a8667860940846986a85db26a7236", null ]
 ];

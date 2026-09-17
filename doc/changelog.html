@@ -138,6 +138,7 @@ v26.09: (Upcoming Release)</h1>
 <p>Exposed the accel_mlx5 module API publicly. Added <code>spdk_accel_mlx5_get_default_attr()</code> and <code>spdk_accel_mlx5_enable()</code> functions along with the <code>struct <a class="el" href="structspdk__accel__mlx5__attr.html" title="Configuration attributes for the accel_mlx5 module.">spdk_accel_mlx5_attr</a></code> configuration structure to the public header <code>include/spdk/module/accel/mlx5.h</code>. This allows applications to configure and enable the MLX5 accelerator module with specific parameters such as queue size, number of requests, allowed devices, crypto split blocks, and driver mode for UMR operations.</p>
 <h2>bdev_nvme</h2>
 <p>Removed <code>spdk_bdev_nvme_set_multipath_policy()</code> and the matching <code>bdev_nvme_set_multipath_policy</code> RPC. Use <code><a class="el" href="module_2bdev_2nvme_8h.html#a8785bb4880bfed734f409d4788e61897" title="Connect to the NVMe controller and populate namespaces as bdevs.">spdk_bdev_nvme_create()</a></code> / <code>bdev_nvme_attach_controller</code> with multipath options instead.</p>
+<p>Removed the deprecated <code>BDEV_NVME_MP_POLICY_*</code> and <code>BDEV_NVME_MP_SELECTOR_*</code> aliases. Use <code>SPDK_BDEV_NVME_MULTIPATH_POLICY_*</code> and <code>SPDK_BDEV_NVME_MULTIPATH_SELECTOR_*</code> instead.</p>
 <p>NVMe namespaces are now rescanned after a successful controller reconnect. This allows namespace attribute changes made while the controller was disconnected to be reflected in the corresponding bdev after reconnection. Inactive namespaces are retained during this rescan and are not depopulated, to avoid unexpected changes in upper layers.</p>
 <h2>schema</h2>
 <p>The JSON-RPC schema has been migrated from JSON (<code>schema/schema.json</code>) to YAML (<code>schema/schema.yaml</code>).</p>
@@ -162,6 +163,11 @@ v26.09: (Upcoming Release)</h1>
 <h2>nvmf</h2>
 <p>Removed the deprecated <code>max_discard_size_kib</code> and <code>max_write_zeroes_size_kib</code> parameters from the <code>nvmf_create_subsystem</code> RPC. Use <code>dmrsl</code> and <code>wzsl</code> instead.</p>
 <p>Removed the deprecated NVMf subsystem creation, option setter, and individual option getter APIs. Use <code><a class="el" href="nvmf_8h.html#a8b3b572e7ba523dad549bf7d1aa9d45a" title="Create an NVMe-oF subsystem.">spdk_nvmf_subsystem_create_ext()</a></code> and <code><a class="el" href="nvmf_8h.html#a901526fe28710bcc2b5af94e1bc5f874" title="Get the options specified for a NVMe-oF subsystem.">spdk_nvmf_subsystem_get_opts()</a></code> instead.</p>
+<p>Removed the deprecated <code>SPDK_NVMF_TGT_DISCOVERY_MATCH_*</code> aliases. Use <code>SPDK_NVMF_TGT_DISCOVERY_FILTER_*</code> instead.</p>
+<p>Removed <code>spdk_nvmf_request_get_dif_ctx()</code> and the deprecated DIF fields and structures in <code><a class="el" href="nvmf__transport_8h.html" title="NVMe-oF Target transport plugin API.">nvmf_transport.h</a></code>. DIF handling now uses the bdev layer through the namespace metadata policy.</p>
+<p>Removed the deprecated <code>hide_metadata</code> parameter of <code>nvmf_subsystem_add_ns</code>. Configure metadata visibility with the transport's <code>dif_insert_or_strip</code> option instead.</p>
+<h2>sock</h2>
+<p>Removed the deprecated <code>spdk_sock_group_poll_count()</code> API. Use <code><a class="el" href="sock_8h.html#aca9341be3f9ec5bd7e571f328e749328" title="Poll incoming events for each registered socket.">spdk_sock_group_poll()</a></code> instead.</p>
 <h1>v26.05</h1>
 <h2>accel</h2>
 <p>Added <code><a class="el" href="accel_8h.html#a5aa3233c0b22d373f1c956cd0849f45c" title="Append a compare operation to a sequence.">spdk_accel_append_compare()</a></code> API to append a compare operation to an acceleration sequence. Block device drivers can use it to chain data integrity checks with the rest of their accel pipeline.</p>

@@ -270,8 +270,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_request_fre
 <tr class="memitem:aedfcbfc3021b5f74c94cbbd6619bcd59" id="r_aedfcbfc3021b5f74c94cbbd6619bcd59"><td class="memItemLeft" align="right" valign="top"><a id="aedfcbfc3021b5f74c94cbbd6619bcd59" name="aedfcbfc3021b5f74c94cbbd6619bcd59"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_request_get_buffers</b> (struct <a class="el" href="structspdk__nvmf__request.html">spdk_nvmf_request</a> *req, struct <a class="el" href="structspdk__nvmf__transport__poll__group.html">spdk_nvmf_transport_poll_group</a> *group, struct <a class="el" href="structspdk__nvmf__transport.html">spdk_nvmf_transport</a> *transport, uint32_t length)</td></tr>
 <tr class="separator:aedfcbfc3021b5f74c94cbbd6619bcd59"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afad38775c3acad5fd71d1487bc3e56df" id="r_afad38775c3acad5fd71d1487bc3e56df"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afad38775c3acad5fd71d1487bc3e56df">spdk_nvmf_request_get_dif_ctx</a> (struct <a class="el" href="structspdk__nvmf__request.html">spdk_nvmf_request</a> *req, struct <a class="el" href="structspdk__dif__ctx.html">spdk_dif_ctx</a> *dif_ctx)</td></tr>
-<tr class="separator:afad38775c3acad5fd71d1487bc3e56df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a65dd062126788a0f2ad96548c63667df" id="r_a65dd062126788a0f2ad96548c63667df"><td class="memItemLeft" align="right" valign="top"><a id="a65dd062126788a0f2ad96548c63667df" name="a65dd062126788a0f2ad96548c63667df"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_request_exec</b> (struct <a class="el" href="structspdk__nvmf__request.html">spdk_nvmf_request</a> *req)</td></tr>
 <tr class="separator:a65dd062126788a0f2ad96548c63667df"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -559,28 +557,6 @@ static enum <a class="el" href="nvme__spec_8h.html#adbe38e042bb939183ed8fd5c1685
   </table>
   </dd>
 </dl>
-
-</div>
-</div>
-<a id="afad38775c3acad5fd71d1487bc3e56df" name="afad38775c3acad5fd71d1487bc3e56df"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afad38775c3acad5fd71d1487bc3e56df">&#9670;&#160;</a></span>spdk_nvmf_request_get_dif_ctx()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool spdk_nvmf_request_get_dif_ctx </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structspdk__nvmf__request.html">spdk_nvmf_request</a> *</td>          <td class="paramname"><span class="paramname"><em>req</em>, </span></td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">struct <a class="el" href="structspdk__dif__ctx.html">spdk_dif_ctx</a> *</td>          <td class="paramname"><span class="paramname"><em>dif_ctx</em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000004">Deprecated</a></b></dt><dd>This function is no longer used by built-in transports. DIF handling has moved to the bdev layer via hide_metadata. </dd></dl>
 
 </div>
 </div>
