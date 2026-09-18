@@ -31,7 +31,7 @@ var searchData=
   ['regctl_28',['regctl',['../structspdk__nvme__reservation__status__data.html#a348be070c5ee99541496188e9913bc8b',1,'spdk_nvme_reservation_status_data']]],
   ['register_20event_20types_29',['Register event types',['../notify.html#notify_register',1,'']]],
   ['related_5findex_30',['related_index',['../structspdk__trace__parser__entry.html#a55b2e0aea7cca402a502ad4d043e7293',1,'spdk_trace_parser_entry']]],
-  ['related_5fobjects_31',['related_objects',['../structspdk__trace__tpoint.html#a21cd92c6d6459ee025d3078b191e76fd',1,'spdk_trace_tpoint']]],
+  ['related_5fobjects_31',['related_objects',['../structspdk__trace__tpoint.html#a26f1d7b3c35c73b90cdc7b95e5ca8e2c',1,'spdk_trace_tpoint']]],
   ['related_5ftype_32',['related_type',['../structspdk__trace__parser__entry.html#a7e7ee46ec4c44c52caebb5ede88395c8',1,'spdk_trace_parser_entry']]],
   ['release_33',['Release',['../releases.html#week_before',1,'1 week before release'],['../releases.html#month_before',1,'1+ month before release'],['../releases.html#changes_during_release',1,'Changes throughout the release'],['../releases.html#day_of_release',1,'Day of the release'],['../changelog.html#changelog-v26-09',1,'v26.09: (Upcoming Release)'],['../releases.html#week_of_release',1,'Week of the release']]],
   ['releases_34',['Releases',['../releases.html#patch_releases',1,'Patch releases'],['../releases.html',1,'SPDK Releases']]],
@@ -94,5 +94,6 @@ var searchData=
   ['running_20spdk_20as_20non_20privileged_20user_91',['Running SPDK as non-privileged user',['../system_configuration.html#system_configuration_nonroot',1,'']]],
   ['running_20the_20example_20applications_92',['Running the Example Applications',['../getting_started.html#getting_started_examples',1,'']]],
   ['running_20the_20unit_20tests_93',['Running the Unit Tests',['../getting_started.html#getting_started_unittests',1,'']]],
-  ['rzr_94',['rzr',['../structspdk__nvme__zns__zone__desc.html#ab606ccfe298d4c20d97a5382f794d255',1,'spdk_nvme_zns_zone_desc']]]
+  ['rx_5fcb_94',['rx_cb',['../structspdk__sock__group__opts.html#a92a3307fd176a7973a05e7f2577f221f',1,'spdk_sock_group_opts']]],
+  ['rzr_95',['rzr',['../structspdk__nvme__zns__zone__desc.html#ab606ccfe298d4c20d97a5382f794d255',1,'spdk_nvme_zns_zone_desc']]]
 ];

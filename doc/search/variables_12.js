@@ -19,7 +19,7 @@ var searchData=
   ['refreshed_16',['refreshed',['../structspdk__ocssd__chunk__notification__entry.html#a018188382405987a8f86d387b26690fd',1,'spdk_ocssd_chunk_notification_entry']]],
   ['regctl_17',['regctl',['../structspdk__nvme__reservation__status__data.html#a348be070c5ee99541496188e9913bc8b',1,'spdk_nvme_reservation_status_data']]],
   ['related_5findex_18',['related_index',['../structspdk__trace__parser__entry.html#a55b2e0aea7cca402a502ad4d043e7293',1,'spdk_trace_parser_entry']]],
-  ['related_5fobjects_19',['related_objects',['../structspdk__trace__tpoint.html#a21cd92c6d6459ee025d3078b191e76fd',1,'spdk_trace_tpoint']]],
+  ['related_5fobjects_19',['related_objects',['../structspdk__trace__tpoint.html#a26f1d7b3c35c73b90cdc7b95e5ca8e2c',1,'spdk_trace_tpoint']]],
   ['related_5ftype_20',['related_type',['../structspdk__trace__parser__entry.html#a7e7ee46ec4c44c52caebb5ede88395c8',1,'spdk_trace_parser_entry']]],
   ['remaining_5fnum_5fblocks_21',['remaining_num_blocks',['../structspdk__bdev__io__internal__fields.html#ac843d45a7037608572461bfd3428584f',1,'spdk_bdev_io_internal_fields']]],
   ['remove_5fkey_22',['remove_key',['../structspdk__keyring__module.html#a8acf9605ef5eb8530344773811372b7f',1,'spdk_keyring_module']]],
@@ -55,5 +55,6 @@ var searchData=
   ['rtd3e_52',['rtd3e',['../structspdk__nvme__ctrlr__data.html#a4a9eba40118c1c94141534c7938a0f3a',1,'spdk_nvme_ctrlr_data']]],
   ['rtd3r_53',['rtd3r',['../structspdk__nvme__ctrlr__data.html#ada8eb3b02e984f1ba4572378d1b1623f',1,'spdk_nvme_ctrlr_data']]],
   ['rtype_54',['rtype',['../structspdk__nvme__reservation__status__data.html#a7a6eb178600646d375c2b8401eab63ad',1,'spdk_nvme_reservation_status_data']]],
-  ['rzr_55',['rzr',['../structspdk__nvme__zns__zone__desc.html#ab606ccfe298d4c20d97a5382f794d255',1,'spdk_nvme_zns_zone_desc']]]
+  ['rx_5fcb_55',['rx_cb',['../structspdk__sock__group__opts.html#a92a3307fd176a7973a05e7f2577f221f',1,'spdk_sock_group_opts']]],
+  ['rzr_56',['rzr',['../structspdk__nvme__zns__zone__desc.html#ab606ccfe298d4c20d97a5382f794d255',1,'spdk_nvme_zns_zone_desc']]]
 ];

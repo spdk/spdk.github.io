@@ -187,10 +187,14 @@ uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>reserved50</b> [2]
 uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>connect_timeout</b></td></tr>
 <tr class="memdesc:aa3c4a55228552087d5c9bc383a26b692"><td class="mdescLeft">&#160;</td><td class="mdescRight">Time in msec to wait until connection is done (0 = no timeout). <br /></td></tr>
 <tr class="separator:aa3c4a55228552087d5c9bc383a26b692"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aafeb0651f7b8476869eec7c9425ccb9e" id="r_aafeb0651f7b8476869eec7c9425ccb9e"><td class="memItemLeft" align="right" valign="top"><a id="aafeb0651f7b8476869eec7c9425ccb9e" name="aafeb0651f7b8476869eec7c9425ccb9e"></a>
+const char *&#160;</td><td class="memItemRight" valign="bottom"><b>impl_name</b></td></tr>
+<tr class="memdesc:aafeb0651f7b8476869eec7c9425ccb9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The sock implementation to use, such as "posix", or NULL for default. <br /></td></tr>
+<tr class="separator:aafeb0651f7b8476869eec7c9425ccb9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Spdk socket initialization options. </p>
-<p>A pointer to this structure will be used by <a class="el" href="sock_8h.html#ad140a9619b6db6a997f318c262c95142" title="Create a socket using the specific sock implementation, bind the socket to the specified address and ...">spdk_sock_listen_ext()</a> or <a class="el" href="sock_8h.html#ac8330bac94c3724bff9809f9f01841ea" title="Create a socket using the specific sock implementation, connect the socket to the specified address a...">spdk_sock_connect_ext()</a> to allow the user to request non-default options on the socket. </p>
+<p>A pointer to this structure will be used by <a class="el" href="sock_8h.html#a95476fa0d5cabfb1e01f675a9fe9bb78" title="Create a socket using the specific sock implementation, bind the socket to the specified address and ...">spdk_sock_listen()</a> or <a class="el" href="sock_8h.html#a06b0b33291b3b471e123438c8962c193" title="Create a socket using the specific sock implementation, initiate the socket connection to the specifi...">spdk_sock_connect()</a> to allow the user to request non-default options on the socket. </p>
 </div><h2 class="groupheader">Field Documentation</h2>
 <a id="a328c0cf2f7ffeeaab0a77567597507bd" name="a328c0cf2f7ffeeaab0a77567597507bd"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a328c0cf2f7ffeeaab0a77567597507bd">&#9670;&#160;</a></span>impl_opts</h2>
@@ -205,7 +209,7 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>connect_timeout</
 </div><div class="memdoc">
 
 <p>Socket implementation options. </p>
-<p>If non-NULL, these will override those set by <a class="el" href="sock_8h.html#a81541bb1b8ae42b952c82988c482e99d" title="Set socket implementation options.">spdk_sock_impl_set_opts()</a>. The library copies this structure internally, so the user can free it immediately after a <a class="el" href="sock_8h.html#aad8c1898b63f93643346d453357baf86" title="Create a socket using the specific sock implementation, connect the socket to the specified address a...">spdk_sock_connect()</a>/spdk_sock_listen() call. </p>
+<p>If non-NULL, these will override those set by <a class="el" href="sock_8h.html#a81541bb1b8ae42b952c82988c482e99d" title="Set socket implementation options.">spdk_sock_impl_set_opts()</a>. The library copies this structure internally, so the user can free it immediately after a <a class="el" href="sock_8h.html#a06b0b33291b3b471e123438c8962c193" title="Create a socket using the specific sock implementation, initiate the socket connection to the specifi...">spdk_sock_connect()</a>/spdk_sock_listen() call. </p>
 
 </div>
 </div>

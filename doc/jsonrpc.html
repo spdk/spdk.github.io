@@ -428,6 +428,8 @@ rpc_get_methods</h2>
 <div class="line">    &quot;bdev_iscsi_create&quot;,</div>
 <div class="line">    &quot;bdev_iscsi_delete&quot;,</div>
 <div class="line">    &quot;bdev_iscsi_set_options&quot;,</div>
+<div class="line">    &quot;bdev_kvmalloc_create&quot;,</div>
+<div class="line">    &quot;bdev_kvmalloc_delete&quot;,</div>
 <div class="line">    &quot;bdev_lvol_check_shallow_copy&quot;,</div>
 <div class="line">    &quot;bdev_lvol_clone&quot;,</div>
 <div class="line">    &quot;bdev_lvol_clone_bdev&quot;,</div>
@@ -3326,6 +3328,75 @@ bdev_ocf_flush_status</h2>
 <div class="line">    &quot;in_progress&quot;: false,</div>
 <div class="line">    &quot;status&quot;: 0</div>
 <div class="line">  }</div>
+<div class="line">}</div>
+</div><!-- fragment --><h2><a class="anchor" id="rpc_bdev_kvmalloc_create"></a>
+bdev_kvmalloc_create</h2>
+<p>Construct a Key-Value bdev backed by malloc memory. The bdev reports support for the NVMe KV command set and serves Store, Retrieve, Delete, Exist, and List from an in-memory RB tree. It is intended for testing and development purposes.</p>
+<h3>Parameters</h3>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Bdev name to use    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">uuid   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uuid   </td><td class="markdownTableBodyNone">UUID of new bdev    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">max_key_size   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">Maximum key size in bytes (default 16)    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">max_value_size   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">Maximum value size in bytes (default 131072)    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">optimal_value_granularity   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">Optimal value granularity in bytes (default 4096)    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">numa_id   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">int32   </td><td class="markdownTableBodyNone">NUMA node ID where memory is allocated, if -1 then any NUMA node ID can be used. Default is -1.   </td></tr>
+</table>
+<h3>Response</h3>
+<p>Name of newly created bdev.</p>
+<h3>Example</h3>
+<p>Example request:</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;method&quot;: &quot;bdev_kvmalloc_create&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;params&quot;: {</div>
+<div class="line">    &quot;name&quot;: &quot;KVMalloc0&quot;,</div>
+<div class="line">    &quot;max_key_size&quot;: 16,</div>
+<div class="line">    &quot;max_value_size&quot;: 131072,</div>
+<div class="line">    &quot;optimal_value_granularity&quot;: 4096</div>
+<div class="line">  }</div>
+<div class="line">}</div>
+</div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;result&quot;: &quot;KVMalloc0&quot;</div>
+<div class="line">}</div>
+</div><!-- fragment --><h2><a class="anchor" id="rpc_bdev_kvmalloc_delete"></a>
+bdev_kvmalloc_delete</h2>
+<p>Delete a Key-Value malloc bdev.</p>
+<h3>Parameters</h3>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Bdev name   </td></tr>
+</table>
+<h3>Response</h3>
+<p>true on success</p>
+<h3>Example</h3>
+<p>Example request:</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;method&quot;: &quot;bdev_kvmalloc_delete&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;params&quot;: {</div>
+<div class="line">    &quot;name&quot;: &quot;KVMalloc0&quot;</div>
+<div class="line">  }</div>
+<div class="line">}</div>
+</div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;result&quot;: true</div>
 <div class="line">}</div>
 </div><!-- fragment --><h2><a class="anchor" id="rpc_bdev_malloc_create"></a>
 bdev_malloc_create</h2>
@@ -7234,10 +7305,6 @@ nvmf_create_transport</h2>
 <td class="markdownTableBodyNone">io_unit_size   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">I/O unit size (bytes). Deprecated, use iobuf_set_options instead.    </td></tr>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">max_aq_depth   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">Max number of admin cmds per AQ    </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">num_shared_buffers   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">Number of pooled data buffers available to the transport. Deprecated, use iobuf_set_options instead    </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">buf_cache_size   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">The number of shared buffers to reserve for each poll group. Deprecated, use iobuf-small-cache-size instead    </td></tr>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">iobuf_small_cache_size   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">The number of shared buffers from a small iobuf pool to reserve for each poll group    </td></tr>
 <tr class="markdownTableRowEven">

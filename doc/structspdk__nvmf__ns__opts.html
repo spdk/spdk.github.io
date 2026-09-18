@@ -176,9 +176,8 @@ uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>reserved61</b> [3]
 <tr class="memitem:aa251c87024c1e68f8f09e5afa3812ab3" id="r_aa251c87024c1e68f8f09e5afa3812ab3"><td class="memItemLeft" align="right" valign="top"><a id="aa251c87024c1e68f8f09e5afa3812ab3" name="aa251c87024c1e68f8f09e5afa3812ab3"></a>
 const struct <a class="el" href="structspdk__json__val.html">spdk_json_val</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>transport_specific</b></td></tr>
 <tr class="separator:aa251c87024c1e68f8f09e5afa3812ab3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1e8f9a197cdbc4446a2eaaf247ed65da" id="r_a1e8f9a197cdbc4446a2eaaf247ed65da"><td class="memItemLeft" align="right" valign="top"><a id="a1e8f9a197cdbc4446a2eaaf247ed65da" name="a1e8f9a197cdbc4446a2eaaf247ed65da"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>hide_metadata</b></td></tr>
-<tr class="memdesc:a1e8f9a197cdbc4446a2eaaf247ed65da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable hide_metadata option to the bdev. <br /></td></tr>
+<tr class="memitem:a1e8f9a197cdbc4446a2eaaf247ed65da" id="r_a1e8f9a197cdbc4446a2eaaf247ed65da"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1e8f9a197cdbc4446a2eaaf247ed65da">hide_metadata</a></td></tr>
+<tr class="memdesc:a1e8f9a197cdbc4446a2eaaf247ed65da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable hide_metadata option to the bdev.  <br /></td></tr>
 <tr class="separator:a1e8f9a197cdbc4446a2eaaf247ed65da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -215,6 +214,23 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>hide_metadata</b></td
 
 <p>IEEE Extended Unique Identifier. </p>
 <p>Fill with 0s if not specified. </p>
+
+</div>
+</div>
+<a id="a1e8f9a197cdbc4446a2eaaf247ed65da" name="a1e8f9a197cdbc4446a2eaaf247ed65da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e8f9a197cdbc4446a2eaaf247ed65da">&#9670;&#160;</a></span>hide_metadata</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool spdk_nvmf_ns_opts::hide_metadata</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Enable hide_metadata option to the bdev. </p>
+<p>For bdevs with metadata, a DIF-enabled transport forces this option on. A DIF-disabled transport rejects namespaces requesting this option. </p>
 
 </div>
 </div>

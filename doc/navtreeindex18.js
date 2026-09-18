@@ -1,5 +1,8 @@
 var NAVTREEINDEX18 =
 {
+"topics.html":[13],
+"trace_8h.html":[15,0,0,0,62],
+"trace_8h.html#a00bc7e8ba17d526c39dd5582b1e66395":[15,0,0,0,62,23],
 "trace_8h.html#a09f16704c4acc63bdbe1d45a7246788f":[15,0,0,0,62,38],
 "trace_8h.html#a0ec4843a02b23b8e0a8f4fe8c91fca3b":[15,0,0,0,62,43],
 "trace_8h.html#a2057ffa0d5eaf0680a8d970646c157af":[15,0,0,0,62,32],
@@ -246,8 +249,5 @@ var NAVTREEINDEX18 =
 "unionspdk__nvmf__transport__specific__address__subtype.html":[14,0,409],
 "unionspdk__nvmf__transport__specific__address__subtype.html#aabae1c961d6f86f0d6b1e61cdaa7a9ce":[14,0,409,0],
 "unionspdk__nvmf__transport__specific__address__subtype.html#aabbc28a7fc2edeca1244ff249a51edb7":[14,0,409,1],
-"usdt.html":[3,10],
-"user_guides.html":[3],
-"userspace.html":[2,0],
-"userspace.html#userspace_control":[2,0,0]
+"usdt.html":[3,10]
 };

@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta name="generator" content="Doxygen 1.10.0" />
-	<title>SPDK: vfio_user_header Struct Reference</title>
+	<title>SPDK: spdk_sock_group_opts Struct Reference</title>
 	<script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.8/umd/popper.min.js" integrity="sha512-TPh2Oxlg1zp+kz3nFA0C5vVC6leG/6mm1z9+mA81MI5eaUVqasPLO8Cuk4gMF4gUfP5etR73rgU/8PNMsSesoQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
@@ -102,7 +102,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(function(){initNavTree('structvfio__user__header.html',''); initResizable(); });
+$(function(){initNavTree('structspdk__sock__group__opts.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -130,44 +130,60 @@ $(function(){initNavTree('structvfio__user__header.html',''); initResizable(); }
 <div class="header">
   <div class="summary">
 <a href="#pub-attribs">Data Fields</a>  </div>
-  <div class="headertitle"><div class="title">vfio_user_header Struct Reference</div></div>
+  <div class="headertitle"><div class="title">spdk_sock_group_opts Struct Reference</div></div>
 </div><!--header-->
 <div class="contents">
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:a058ab14577aa8d041d2fd480088342b5" id="r_a058ab14577aa8d041d2fd480088342b5"><td class="memItemLeft" align="right" valign="top"><a id="a058ab14577aa8d041d2fd480088342b5" name="a058ab14577aa8d041d2fd480088342b5"></a>
-uint16_t&#160;</td><td class="memItemRight" valign="bottom"><b>msg_id</b></td></tr>
-<tr class="separator:a058ab14577aa8d041d2fd480088342b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a192a548b281b126819c771b7a5c85766" id="r_a192a548b281b126819c771b7a5c85766"><td class="memItemLeft" align="right" valign="top"><a id="a192a548b281b126819c771b7a5c85766" name="a192a548b281b126819c771b7a5c85766"></a>
-uint16_t&#160;</td><td class="memItemRight" valign="bottom"><b>cmd</b></td></tr>
-<tr class="separator:a192a548b281b126819c771b7a5c85766"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4069787d02f5851e7c7652198505a102" id="r_a4069787d02f5851e7c7652198505a102"><td class="memItemLeft" align="right" valign="top"><a id="a4069787d02f5851e7c7652198505a102" name="a4069787d02f5851e7c7652198505a102"></a>
-uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>msg_size</b></td></tr>
-<tr class="separator:a4069787d02f5851e7c7652198505a102"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af1da76c852536bec7e2367bb8f9f9f78" id="r_af1da76c852536bec7e2367bb8f9f9f78"><td class="memItemLeft" ><a id="af1da76c852536bec7e2367bb8f9f9f78" name="af1da76c852536bec7e2367bb8f9f9f78"></a>
-struct {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a15cdef43141b53c19021e3f5da75a405" id="r_a15cdef43141b53c19021e3f5da75a405"><td class="memItemLeft" >
-&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<b>type</b>: 4&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
-<tr class="separator:a15cdef43141b53c19021e3f5da75a405"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a553730cca8cafd333048a2180170f636" id="r_a553730cca8cafd333048a2180170f636"><td class="memItemLeft" >
-&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<b>no_reply</b>: 1&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
-<tr class="separator:a553730cca8cafd333048a2180170f636"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac8cad542f0620b886eecdc7af28c6905" id="r_ac8cad542f0620b886eecdc7af28c6905"><td class="memItemLeft" >
-&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<b>error</b>: 1&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
-<tr class="separator:ac8cad542f0620b886eecdc7af28c6905"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a43f5d067800cc62477f72e0c48e70433" id="r_a43f5d067800cc62477f72e0c48e70433"><td class="memItemLeft" >
-&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<b>resvd</b>: 26&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
-<tr class="separator:a43f5d067800cc62477f72e0c48e70433"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af1da76c852536bec7e2367bb8f9f9f78" id="r_af1da76c852536bec7e2367bb8f9f9f78"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><b>flags</b>&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
-<tr class="separator:af1da76c852536bec7e2367bb8f9f9f78"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac26f57c2a4710128eb10398b4ab71405" id="r_ac26f57c2a4710128eb10398b4ab71405"><td class="memItemLeft" align="right" valign="top"><a id="ac26f57c2a4710128eb10398b4ab71405" name="ac26f57c2a4710128eb10398b4ab71405"></a>
-uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>error_no</b></td></tr>
-<tr class="separator:ac26f57c2a4710128eb10398b4ab71405"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0826b1800a820af24c2e5fade4febd37" id="r_a0826b1800a820af24c2e5fade4febd37"><td class="memItemLeft" align="right" valign="top"><a id="a0826b1800a820af24c2e5fade4febd37" name="a0826b1800a820af24c2e5fade4febd37"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><b>size</b></td></tr>
+<tr class="memdesc:a0826b1800a820af24c2e5fade4febd37"><td class="mdescLeft">&#160;</td><td class="mdescRight">Size of this structure. <br /></td></tr>
+<tr class="separator:a0826b1800a820af24c2e5fade4febd37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d6328e06f2306644050f389e6ef159f" id="r_a6d6328e06f2306644050f389e6ef159f"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6d6328e06f2306644050f389e6ef159f">ctx</a></td></tr>
+<tr class="memdesc:a6d6328e06f2306644050f389e6ef159f"><td class="mdescLeft">&#160;</td><td class="mdescRight">User context.  <br /></td></tr>
+<tr class="separator:a6d6328e06f2306644050f389e6ef159f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92a3307fd176a7973a05e7f2577f221f" id="r_a92a3307fd176a7973a05e7f2577f221f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sock_8h.html#ae297ae75e566b35635d20b959daa7741">spdk_sock_cb</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a92a3307fd176a7973a05e7f2577f221f">rx_cb</a></td></tr>
+<tr class="memdesc:a92a3307fd176a7973a05e7f2577f221f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback function for when sockets have new data to receive.  <br /></td></tr>
+<tr class="separator:a92a3307fd176a7973a05e7f2577f221f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Field Documentation</h2>
+<a id="a6d6328e06f2306644050f389e6ef159f" name="a6d6328e06f2306644050f389e6ef159f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d6328e06f2306644050f389e6ef159f">&#9670;&#160;</a></span>ctx</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* spdk_sock_group_opts::ctx</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>User context. </p>
+<p>Can be NULL </p>
+
+</div>
+</div>
+<a id="a92a3307fd176a7973a05e7f2577f221f" name="a92a3307fd176a7973a05e7f2577f221f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a92a3307fd176a7973a05e7f2577f221f">&#9670;&#160;</a></span>rx_cb</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="sock_8h.html#ae297ae75e566b35635d20b959daa7741">spdk_sock_cb</a> spdk_sock_group_opts::rx_cb</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Callback function for when sockets have new data to receive. </p>
+<p>Required. </p>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li><b>vfio_user_spec.h</b></li>
+<li><a class="el" href="sock_8h.html">sock.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

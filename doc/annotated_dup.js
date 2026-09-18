@@ -458,6 +458,7 @@ var annotated_dup =
     [ "spdk_scsi_vpd_ext_inquiry", "structspdk__scsi__vpd__ext__inquiry.html", null ],
     [ "spdk_scsi_vpd_page", "structspdk__scsi__vpd__page.html", null ],
     [ "spdk_single_ioviter", "structspdk__single__ioviter.html", null ],
+    [ "spdk_sock_group_opts", "structspdk__sock__group__opts.html", "structspdk__sock__group__opts" ],
     [ "spdk_sock_impl_opts", "structspdk__sock__impl__opts.html", "structspdk__sock__impl__opts" ],
     [ "spdk_sock_initialize_opts", "structspdk__sock__initialize__opts.html", "structspdk__sock__initialize__opts" ],
     [ "spdk_sock_opts", "structspdk__sock__opts.html", "structspdk__sock__opts" ],

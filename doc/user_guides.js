@@ -215,6 +215,8 @@ var user_guides =
         [ "bdev_ocf_set_seqcutoff", "jsonrpc.html#rpc_bdev_ocf_set_seqcutoff", null ],
         [ "bdev_ocf_flush_start", "jsonrpc.html#rpc_bdev_ocf_flush_start", null ],
         [ "bdev_ocf_flush_status", "jsonrpc.html#rpc_bdev_ocf_flush_status", null ],
+        [ "bdev_kvmalloc_create", "jsonrpc.html#rpc_bdev_kvmalloc_create", null ],
+        [ "bdev_kvmalloc_delete", "jsonrpc.html#rpc_bdev_kvmalloc_delete", null ],
         [ "bdev_malloc_create", "jsonrpc.html#rpc_bdev_malloc_create", null ],
         [ "bdev_malloc_delete", "jsonrpc.html#rpc_bdev_malloc_delete", null ],
         [ "bdev_null_create", "jsonrpc.html#rpc_bdev_null_create", null ],
