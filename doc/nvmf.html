@@ -151,7 +151,9 @@ Prerequisites</h2>
 <div class="fragment"><div class="line">./configure --with-rdma &lt;other config parameters&gt;</div>
 <div class="line">make</div>
 </div><!-- fragment --><p>Once built, the binary will be in <code>build/bin</code>.</p>
-<h2><a class="anchor" id="nvmf_prereqs_verbs"></a>
+<p>By default, the NVMe-oF target supports up to 16 Scatter/Gather List (SGL) entries per command, which is the value advertised as MSDBD to initiators. HCAs that support more entries can be exploited by raising this compile time limit, at the cost of a larger <code>struct <a class="el" href="structspdk__nvmf__request.html">spdk_nvmf_request</a></code>:</p>
+<div class="fragment"><div class="line">./configure --with-rdma --max-nvmf-sgl-entries=52 &lt;other config parameters&gt;</div>
+</div><!-- fragment --><h2><a class="anchor" id="nvmf_prereqs_verbs"></a>
 Prerequisites for InfiniBand/RDMA Verbs</h2>
 <p>Before starting our NVMe-oF target with the RDMA transport we must load the InfiniBand and RDMA modules that allow userspace processes to use InfiniBand/RDMA verbs directly.</p>
 <div class="fragment"><div class="line">modprobe ib_cm</div>
@@ -204,10 +206,10 @@ Configuring the SPDK NVMe over Fabrics Target</h1>
 <p>An NVMe over Fabrics target can be configured using JSON RPCs. The basic RPCs needed to configure the NVMe-oF subsystem are detailed below. More information about working with NVMe over Fabrics specific RPCs can be found on the <a class="el" href="jsonrpc.html#jsonrpc_components_nvmf_tgt">NVMe-oF Target</a> RPC page.</p>
 <h2><a class="anchor" id="nvmf_config_rpc"></a>
 Using RPCs</h2>
-<p>Start the nvmf_tgt application with elevated privileges. Once the target is started, the nvmf_create_transport rpc can be used to initialize a given transport. Below is an example where the target is started and configured with two different transports. The RDMA transport is configured with an I/O unit size of 8192 bytes, max I/O size 131072 and an in capsule data size of 8192 bytes. The TCP transport is configured with an I/O unit size of 16384 bytes, 8 max qpairs per controller, and an in capsule data size of 8192 bytes.</p>
+<p>Start the nvmf_tgt application with elevated privileges. Once the target is started, the nvmf_create_transport rpc can be used to initialize a given transport. Below is an example where the target is started and configured with two different transports. The RDMA transport is configured with a max I/O size of 131072 bytes and an in capsule data size of 8192 bytes. The TCP transport is configured with 8 max qpairs per controller and an in capsule data size of 8192 bytes.</p>
 <div class="fragment"><div class="line">build/bin/nvmf_tgt</div>
-<div class="line">scripts/rpc.py nvmf_create_transport -t RDMA -u 8192 -i 131072 -c 8192</div>
-<div class="line">scripts/rpc.py nvmf_create_transport -t TCP -u 16384 -m 8 -c 8192</div>
+<div class="line">scripts/rpc.py nvmf_create_transport -t RDMA -i 131072 -c 8192</div>
+<div class="line">scripts/rpc.py nvmf_create_transport -t TCP -m 8 -c 8192</div>
 </div><!-- fragment --><p>Below is an example of creating a malloc bdev and assigning it to a subsystem. Adjust the bdevs, NQN, serial number, and IP address with RDMA transport to your own circumstances. If you replace "rdma" with "TCP", then the subsystem will add a listener with TCP transport.</p>
 <div class="fragment"><div class="line">scripts/rpc.py bdev_malloc_create -b Malloc0 512 512</div>
 <div class="line">scripts/rpc.py nvmf_create_subsystem nqn.2016-06.io.spdk:cnode1 -a -s SPDK00000000000001 -d SPDK_Controller1</div>

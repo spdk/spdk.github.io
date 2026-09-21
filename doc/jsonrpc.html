@@ -7302,56 +7302,54 @@ nvmf_create_transport</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">max_io_size   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">Max I/O size (bytes)    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">io_unit_size   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">I/O unit size (bytes). Deprecated, use iobuf_set_options instead.    </td></tr>
-<tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">max_aq_depth   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">Max number of admin cmds per AQ    </td></tr>
-<tr class="markdownTableRowOdd">
+<tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">iobuf_small_cache_size   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">The number of shared buffers from a small iobuf pool to reserve for each poll group    </td></tr>
-<tr class="markdownTableRowEven">
+<tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">iobuf_large_cache_size   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">Number of shared buffers from the large iobuf pool to reserve for each poll group    </td></tr>
-<tr class="markdownTableRowOdd">
+<tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">zcopy   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Use zero-copy operations if the underlying bdev supports them    </td></tr>
-<tr class="markdownTableRowEven">
+<tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">num_cqe   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">int32   </td><td class="markdownTableBodyNone">Number of CQ entries, only used when no_srq=true (RDMA only)    </td></tr>
-<tr class="markdownTableRowOdd">
+<tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">max_srq_depth   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">Number of elements in the per-thread shared receive queue (RDMA only)    </td></tr>
-<tr class="markdownTableRowEven">
+<tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">no_srq   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Disable shared receive queue even for devices that support it (RDMA only)    </td></tr>
-<tr class="markdownTableRowOdd">
+<tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">c2h_success   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Disable C2H success optimization (TCP only)    </td></tr>
-<tr class="markdownTableRowEven">
+<tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">dif_insert_or_strip   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Enable DIF insert for write I/O and DIF strip for read I/O (TCP only)    </td></tr>
-<tr class="markdownTableRowOdd">
+<tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">sock_priority   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">Socket priority of connections owned by this transport (TCP only)    </td></tr>
-<tr class="markdownTableRowEven">
+<tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">acceptor_backlog   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">int32   </td><td class="markdownTableBodyNone">Number of pending connections allowed in the backlog before failing new connection attempts (RDMA only)    </td></tr>
-<tr class="markdownTableRowOdd">
+<tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">abort_timeout_sec   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">Abort execution timeout value, in seconds    </td></tr>
-<tr class="markdownTableRowEven">
+<tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">no_wr_batching   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Disable work requests batching (RDMA only)    </td></tr>
-<tr class="markdownTableRowOdd">
+<tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">control_msg_num   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint16   </td><td class="markdownTableBodyNone">Number of control messages per poll group (TCP only)    </td></tr>
-<tr class="markdownTableRowEven">
+<tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">disable_mappable_bar0   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Disable client mmap() of BAR0 (VFIO-USER only)    </td></tr>
-<tr class="markdownTableRowOdd">
+<tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">disable_adaptive_irq   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Disable adaptive interrupt feature (VFIO-USER only)    </td></tr>
-<tr class="markdownTableRowEven">
+<tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">disable_shadow_doorbells   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Disable shadow doorbell support (VFIO-USER only)    </td></tr>
-<tr class="markdownTableRowOdd">
+<tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">acceptor_poll_rate   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">Polling interval of the acceptor for incoming connections (microseconds)    </td></tr>
-<tr class="markdownTableRowEven">
+<tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">ack_timeout   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">ACK timeout in milliseconds    </td></tr>
-<tr class="markdownTableRowOdd">
+<tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">data_wr_pool_size   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">RDMA data WR pool size (RDMA only)    </td></tr>
-<tr class="markdownTableRowEven">
+<tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">disable_command_passthru   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Disallow forwarding unrecognized I/O opcodes and the Identify Namespace admin command to the underlying bdev. Passthrough subsystems and admin_cmd_passthru are unaffected    </td></tr>
-<tr class="markdownTableRowOdd">
+<tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">kas   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint16   </td><td class="markdownTableBodyNone">KATO (Keep Alive Timeout) granularity in units of 100 milliseconds    </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">min_kato   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">Minimum Keep Alive Timeout value in milliseconds    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">masked_oncs   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">bitmask   </td><td class="markdownTableBodyNone">Comma-separated list of ONCS features to mask (disable). Available options: all, nvmcmps, nvmdsmsv, nvmwzsv, reservs, nvmcpys    </td></tr>
+<td class="markdownTableBodyNone">min_kato   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">Minimum Keep Alive Timeout value in milliseconds    </td></tr>
 <tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">masked_oncs   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">bitmask   </td><td class="markdownTableBodyNone">Comma-separated list of ONCS features to mask (disable). Available options: all, nvmcmps, nvmdsmsv, nvmwzsv, reservs, nvmcpys    </td></tr>
+<tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">masked_fuses   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">bitmask   </td><td class="markdownTableBodyNone">Comma-separated list of FUSES features to mask (disable). Available options: all, fcws   </td></tr>
 </table>
 <h3>Response</h3>
@@ -8383,7 +8381,6 @@ nvmf_get_transports</h2>
 <div class="line">      &quot;max_io_qpairs_per_ctrlr&quot;: 64,</div>
 <div class="line">      &quot;in_capsule_data_size&quot;: 4096,</div>
 <div class="line">      &quot;max_io_size&quot;: 131072,</div>
-<div class="line">      &quot;io_unit_size&quot;: 131072,</div>
 <div class="line">      &quot;abort_timeout_sec&quot;: 1</div>
 <div class="line">    }</div>
 <div class="line">  ]</div>

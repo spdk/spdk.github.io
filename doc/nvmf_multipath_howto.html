@@ -147,7 +147,7 @@ $(function(){initNavTree('nvmf_multipath_howto.html',''); initResizable(); });
 <p>Start the target in the background and configure it:</p>
 <div class="fragment"><div class="line">cd spdk/</div>
 <div class="line">./build/bin/nvmf_tgt -m 0x3 &amp;</div>
-<div class="line">./scripts/rpc.py nvmf_create_transport -t tcp -o -u 8192</div>
+<div class="line">./scripts/rpc.py nvmf_create_transport -t tcp -o</div>
 </div><!-- fragment --><p>Create a subsystem, with <code>-r</code> to enable ANA reporting feature:</p>
 <div class="fragment"><div class="line">./scripts/rpc.py nvmf_create_subsystem nqn.2022-02.io.spdk:cnode0 -a -s SPDK00000000000001 -r</div>
 </div><!-- fragment --><p>Create and add a malloc block device:</p>
