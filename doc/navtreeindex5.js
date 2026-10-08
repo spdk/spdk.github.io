@@ -211,6 +211,8 @@ var NAVTREEINDEX5 =
 "jsonrpc.html#rpc_rpc_get_methods":[3,8,3,4],
 "jsonrpc.html#rpc_scheduler_set_options":[3,8,3,11],
 "jsonrpc.html#rpc_scsi_get_devices":[3,8,6,2],
+"jsonrpc.html#rpc_sock_error_inject_error":[3,8,19,5],
+"jsonrpc.html#rpc_sock_error_register":[3,8,19,4],
 "jsonrpc.html#rpc_sock_get_default_impl":[3,8,19,3],
 "jsonrpc.html#rpc_sock_impl_get_options":[3,8,19,0],
 "jsonrpc.html#rpc_sock_impl_set_options":[3,8,19,1],
@@ -247,7 +249,5 @@ var NAVTREEINDEX5 =
 "jsonrpc.html#rpc_vhost_delete_controller":[3,8,9,9],
 "jsonrpc.html#rpc_vhost_get_controllers":[3,8,9,8],
 "jsonrpc.html#rpc_vhost_scsi_controller_add_target":[3,8,9,3],
-"jsonrpc.html#rpc_vhost_scsi_controller_remove_target":[3,8,9,4],
-"jsonrpc.html#rpc_vhost_start_scsi_controller":[3,8,9,2],
-"jsonrpc.html#rpc_virtio_blk_create_transport":[3,8,9,5]
+"jsonrpc.html#rpc_vhost_scsi_controller_remove_target":[3,8,9,4]
 };

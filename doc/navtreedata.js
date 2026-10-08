@@ -73,25 +73,25 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "about.html",
-"bdev_8h.html#aae05ee98ddd0903932505782191805da",
-"blob_8h.html#a98d90e701cf3377115ff0bb67db1342a",
-"env_8h.html#ab641446baa33ce26187f3baba9e0f914",
+"bdev_8h.html#aacf15571883da5a441297b5090e6aaf5",
+"blob_8h.html#a9787f698d1f47cca21b3543c0892ab3e",
+"env_8h.html#ab5e6dd00cc25d82c4ed33c4a3084b8a6",
 "functions_vars_p.html",
 "jsonrpc.html#rpc_bdev_iscsi_set_options",
-"jsonrpc.html#rpc_virtio_blk_get_transports",
-"nvme_8h.html#a43085dc276cd41dfc85810a3e078f8d3",
-"nvme__ocssd__spec_8h.html#ae66ff1776aa8a6560e7c762726777deaa8e7b52037df17cbd3544bbe53e0dd8a6",
-"nvme__spec_8h.html#aa70e5bbfae3ba9ec66a65c78e1966a1dad8abe4e7384649d31c37c1a313888744",
-"nvmf_8h.html#a28824d5f18a5ddf04007906f012199be",
-"scsi_8h.html#a1bc2bbc007c4a85a7966b230918b8204",
-"structspdk__bdev.html#ab10f57ea24409424fd71a3b53d6fe31e",
-"structspdk__event__handler__opts.html",
-"structspdk__nvme__ctrlr__data.html#a2cff3cb892daf25fc48a4b35ec2a75da",
-"structspdk__nvme__ns__data__head.html",
-"structspdk__nvme__zns__ns__data.html#a49c57b332bf45793fff2b3e795a0c03d",
-"structspdk__scheduler__core__info.html",
-"topics.html",
-"user_guides.html"
+"jsonrpc.html#rpc_vhost_start_scsi_controller",
+"nvme_8h.html#a42040dca95489218417539d2c08d815e",
+"nvme__ocssd__spec_8h.html#ae66ff1776aa8a6560e7c762726777deaa52972575b3058bfd5a4ccd9eb172da26",
+"nvme__spec_8h.html#aa70e5bbfae3ba9ec66a65c78e1966a1dacdb20d151e6b84a0cd4ed336a04a3fbb",
+"nvmf_8h.html#a26b9bf282c51cbd3c8f15377f08dcb6b",
+"scsi_8h.html#a107b7154c2a5e64148285c3069d439f4",
+"structspdk__bdev.html#aa9d4bcd1970e78c738be40f098c65dec",
+"structspdk__env__opts.html",
+"structspdk__nvme__ctrlr__data.html#a25cabf290433b1b9b13a1a604ca12f58",
+"structspdk__nvme__ns__data.html#af880611a5ec1c42bf246557e3b1a11fe",
+"structspdk__nvme__zns__ns__data.html#a2f0f366212fb35e65e3d766eb7c339fb",
+"structspdk__scheduler.html#aaf38184e6082cd0840571a8e38665911",
+"thread_8h.html#afe409bf16664f461daa516b6a6d1682c",
+"unionspdk__nvmf__transport__specific__address__subtype.html#aabbc28a7fc2edeca1244ff249a51edb7"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

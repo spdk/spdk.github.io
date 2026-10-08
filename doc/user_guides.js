@@ -437,7 +437,9 @@ var user_guides =
         [ "sock_impl_get_options", "jsonrpc.html#rpc_sock_impl_get_options", null ],
         [ "sock_impl_set_options", "jsonrpc.html#rpc_sock_impl_set_options", null ],
         [ "sock_set_default_impl", "jsonrpc.html#rpc_sock_set_default_impl", null ],
-        [ "sock_get_default_impl", "jsonrpc.html#rpc_sock_get_default_impl", null ]
+        [ "sock_get_default_impl", "jsonrpc.html#rpc_sock_get_default_impl", null ],
+        [ "sock_error_register", "jsonrpc.html#rpc_sock_error_register", null ],
+        [ "sock_error_inject_error", "jsonrpc.html#rpc_sock_error_inject_error", null ]
       ] ],
       [ "Miscellaneous RPC commands", "jsonrpc.html#jsonrpc_components_misc", [
         [ "bdev_nvme_send_cmd", "jsonrpc.html#rpc_bdev_nvme_send_cmd", null ],

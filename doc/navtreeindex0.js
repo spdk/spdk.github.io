@@ -143,6 +143,7 @@ var NAVTREEINDEX0 =
 "bdev.html#bdev_ug_targetaudience":[3,7,0],
 "bdev.html#bdev_ug_uring":[3,7,18],
 "bdev.html#bdev_ug_xnvme":[3,7,19],
+"bdev_2error_8h.html":[15,0,0,0,0,0,1],
 "bdev_8h.html":[15,0,0,0,5],
 "bdev_8h.html#a0253fe337c6697d014adffde6f8cd000":[15,0,0,0,5,19],
 "bdev_8h.html#a0340fa7d5703d4a08cf376caf4bcf63b":[15,0,0,0,5,37],
@@ -248,6 +249,5 @@ var NAVTREEINDEX0 =
 "bdev_8h.html#aa571a45129879c956cec9de008b21048":[15,0,0,0,5,101],
 "bdev_8h.html#aa6a8987bb3a1bc368881f6b81d249bd3":[15,0,0,0,5,15],
 "bdev_8h.html#aa79625889e23318204d235da36a4fa02":[15,0,0,0,5,83],
-"bdev_8h.html#aac0cdb8ad1ebf94503b22f86d480a177":[15,0,0,0,5,77],
-"bdev_8h.html#aacf15571883da5a441297b5090e6aaf5":[15,0,0,0,5,102]
+"bdev_8h.html#aac0cdb8ad1ebf94503b22f86d480a177":[15,0,0,0,5,77]
 };

@@ -640,6 +640,8 @@ rpc_get_methods</h2>
 <div class="line">    &quot;rpc_get_methods&quot;,</div>
 <div class="line">    &quot;scheduler_set_options&quot;,</div>
 <div class="line">    &quot;scsi_get_devices&quot;,</div>
+<div class="line">    &quot;sock_error_inject_error&quot;,</div>
+<div class="line">    &quot;sock_error_register&quot;,</div>
 <div class="line">    &quot;sock_get_default_impl&quot;,</div>
 <div class="line">    &quot;sock_impl_get_options&quot;,</div>
 <div class="line">    &quot;sock_impl_set_options&quot;,</div>
@@ -11140,6 +11142,63 @@ sock_get_default_impl</h2>
 <div class="line">  &quot;result&quot;: {</div>
 <div class="line">    &quot;impl_name&quot;: &quot;posix&quot;</div>
 <div class="line">  }</div>
+<div class="line">}</div>
+</div><!-- fragment --><h2><a class="anchor" id="rpc_sock_error_register"></a>
+sock_error_register</h2>
+<p>Register the <code>sock_error</code> sock implementation, which wraps the <code>posix</code> implementation and allows injecting errors into socket operations via <code>sock_error_inject_error</code>.</p>
+<h3>Parameters</h3>
+<p>This method has no parameters.</p>
+<h3>Example</h3>
+<p>Example request:</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;method&quot;: &quot;sock_error_register&quot;,</div>
+<div class="line">  &quot;id&quot;: 1</div>
+<div class="line">}</div>
+</div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;result&quot;: true</div>
+<div class="line">}</div>
+</div><!-- fragment --><h2><a class="anchor" id="rpc_sock_error_inject_error"></a>
+sock_error_inject_error</h2>
+<p>Inject an error into a given socket operation. In order for the errors to actually be injected, the <code>sock_error</code> sock implementation should first be registered via <code>sock_error_register</code> and selected via <code>sock_set_default_impl</code>.</p>
+<h3>Parameters</h3>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">operation   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">enum   </td><td class="markdownTableBodyNone">Socket operation to inject errors on    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">type   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">enum   </td><td class="markdownTableBodyNone">Type of error to inject    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">count   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint64   </td><td class="markdownTableBodyNone">Total number of errors to inject; 0 disables injection    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">interval   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint64   </td><td class="markdownTableBodyNone">Inject every Nth operation    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">errcode   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">int32   </td><td class="markdownTableBodyNone">Error code to return; only relevant for type=failure    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">match_len   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint64   </td><td class="markdownTableBodyNone">Only inject when an operation requests a given length. Valid only for byte-moving operations   </td></tr>
+</table>
+<h3>Example</h3>
+<p>Example request:</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;method&quot;: &quot;sock_error_inject_error&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;params&quot;: {</div>
+<div class="line">    &quot;operation&quot;: &quot;recv&quot;,</div>
+<div class="line">    &quot;type&quot;: &quot;failure&quot;,</div>
+<div class="line">    &quot;count&quot;: 1,</div>
+<div class="line">    &quot;errcode&quot;: 104</div>
+<div class="line">  }</div>
+<div class="line">}</div>
+</div><!-- fragment --><p>Example response:</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;jsonrpc&quot;: &quot;2.0&quot;,</div>
+<div class="line">  &quot;id&quot;: 1,</div>
+<div class="line">  &quot;result&quot;: true</div>
 <div class="line">}</div>
 </div><!-- fragment --><h1><a class="anchor" id="jsonrpc_components_misc"></a>
 Miscellaneous RPC commands</h1>
