@@ -134,6 +134,8 @@ $(function(){initNavTree('changelog.html',''); initResizable(); });
 <div class="textblock"><p><a class="anchor" id="md_changelog"></a> </p>
 <h1><a class="anchor" id="changelog-v27-01"></a>
 v27.01: (Upcoming Release)</h1>
+<h2>bdev_nvme</h2>
+<p>Added <code><a class="el" href="module_2bdev_2nvme_8h.html#ac6dc49374ff7939810421039a7584ce2" title="Asynchronously retrieve aggregated I/O statistics for an NVMe bdev&#39;s paths.">spdk_bdev_nvme_get_path_stat()</a></code> as a public C-callable equivalent of the <code>bdev_nvme_get_path_iostat</code> JSON-RPC. The caller provides an already-open <code>spdk_bdev_desc</code> and receives an array of public <code><a class="el" href="structspdk__bdev__nvme__path__stat.html" title="Per-path I/O statistics for an NVMe bdev.">spdk_bdev_nvme_path_stat</a></code> objects (<code>trid</code> and <code>stat</code>) in <code>spdk_bdev_nvme_get_path_stat_cb</code>. The array is owned by SPDK and is valid only during the callback. The API requires <code>spdk_bdev_nvme_opts.io_path_stat</code> to be enabled.</p>
 <h2>nvme</h2>
 <p><code>NVME_RDMA_MAX_SGL_DESCRIPTORS</code>, the compile-time upper bound for the NVMe/RDMA initiator's SGL descriptor arrays, now follows <code>SPDK_CONFIG_NVMF_MAX_SGL_ENTRIES</code> (build-time configurable via <code>--max-nvmf-sgl-entries</code>, default 16). The effective per-controller value is still limited at runtime by <code>nvme_rdma_ctrlr_get_max_sges()</code> to the target's advertised MSDBD and the HCA's <code>max_sge</code>, so behavior is unchanged unless the build option is raised.</p>
 <h2>nvmf</h2>

@@ -1,0 +1,7 @@
+<map id="spdk_bdev_nvme_path_stat" name="spdk_bdev_nvme_path_stat">
+<area shape="rect" id="Node000001" title="Per&#45;path I/O statistics for an NVMe bdev." alt="" coords="86,98,290,126"/>
+<area shape="rect" id="Node000002" href="$structspdk__nvme__transport__id.html" title="NVMe transport identifier." alt="" coords="5,5,187,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="122,42,177,96,173,100,118,46"/>
+<area shape="rect" id="Node000003" href="$structspdk__bdev__io__stat.html" title=" " alt="" coords="210,5,353,33"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="259,46,203,100,199,96,255,42"/>
+</map>
