@@ -141,6 +141,7 @@ v27.01: (Upcoming Release)</h1>
 <h2>nvmf</h2>
 <p>Removed the deprecated <code>discovery_filter</code> parameter from the <code>nvmf_set_config</code> RPC. Use <code>discovery_filters</code> instead.</p>
 <p>Added <code>max_sgl_entries</code> parameter to the <code>nvmf_create_transport</code> RPC. It selects the maximum number of SGL entries per request, which is the MSDBD advertised to the initiators, and it cannot exceed the build time maximum.</p>
+<p>Write Zeroes commands with the DEAC (Deallocate) bit set no longer fail with <code>INVALID_FIELD</code>. The deallocation request is treated as a hint and the specified logical blocks are written with zeroes.</p>
 <h1>v26.09</h1>
 <h2>accel</h2>
 <p>Exposed the accel_mlx5 module API publicly. Added <code>spdk_accel_mlx5_get_default_attr()</code> and <code>spdk_accel_mlx5_enable()</code> functions along with the <code>struct <a class="el" href="structspdk__accel__mlx5__attr.html" title="Configuration attributes for the accel_mlx5 module.">spdk_accel_mlx5_attr</a></code> configuration structure to the public header <code>include/spdk/module/accel/mlx5.h</code>. This allows applications to configure and enable the MLX5 accelerator module with specific parameters such as queue size, number of requests, allowed devices, crypto split blocks, and driver mode for UMR operations.</p>
