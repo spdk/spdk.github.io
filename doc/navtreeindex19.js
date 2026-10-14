@@ -1,5 +1,16 @@
 var NAVTREEINDEX19 =
 {
+"unionspdk__nvme__pmrsts__register.html#a2ac9243fdbda9750578b4dcd8fa32225":[14,0,290,2],
+"unionspdk__nvme__pmrsts__register.html#a99d2a5e763dc4b9adc9a86a0522c6d0c":[14,0,290,3],
+"unionspdk__nvme__pmrsts__register.html#ab1b391d3ca678eb781886cb5a8a162a3":[14,0,290,0],
+"unionspdk__nvme__pmrswtp__register.html":[14,0,291],
+"unionspdk__nvme__pmrswtp__register.html#a5a4f1939ae597cc6a92442cdc2b37829":[14,0,291,1],
+"unionspdk__nvme__pmrswtp__register.html#a9ec8b82de66f7dfc6db443db0f48d813":[14,0,291,0],
+"unionspdk__nvme__vs__register.html":[14,0,333],
+"unionspdk__nvme__vs__register.html#a605cba0b2c6abdee150cb3a6babc4bb8":[14,0,333,0],
+"unionspdk__nvme__vs__register.html#a606617023ad17e6cd547b7ba0c17af06":[14,0,333,2],
+"unionspdk__nvme__vs__register.html#af3cf51c1c70771d507686f9a5979ab39":[14,0,333,1],
+"unionspdk__nvmf__discovery__log__lsp.html":[14,0,350],
 "unionspdk__nvmf__rdma__private__data.html":[14,0,394],
 "unionspdk__nvmf__transport__specific__address__subtype.html":[14,0,410],
 "unionspdk__nvmf__transport__specific__address__subtype.html#aabae1c961d6f86f0d6b1e61cdaa7a9ce":[14,0,410,0],

@@ -191,11 +191,34 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>connect_timeout</
 const char *&#160;</td><td class="memItemRight" valign="bottom"><b>impl_name</b></td></tr>
 <tr class="memdesc:aafeb0651f7b8476869eec7c9425ccb9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The sock implementation to use, such as "posix", or NULL for default. <br /></td></tr>
 <tr class="separator:aafeb0651f7b8476869eec7c9425ccb9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0ec4f8b53ddefad8b06c6ddf82d13f4" id="r_ac0ec4f8b53ddefad8b06c6ddf82d13f4"><td class="memItemLeft" align="right" valign="top">struct spdk_sock_group *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac0ec4f8b53ddefad8b06c6ddf82d13f4">group</a></td></tr>
+<tr class="memdesc:ac0ec4f8b53ddefad8b06c6ddf82d13f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">The socket group this socket belongs to.  <br /></td></tr>
+<tr class="separator:ac0ec4f8b53ddefad8b06c6ddf82d13f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3d1988732ae981230e78497c32d9bfd" id="r_ab3d1988732ae981230e78497c32d9bfd"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab3d1988732ae981230e78497c32d9bfd">user_ctx</a></td></tr>
+<tr class="memdesc:ab3d1988732ae981230e78497c32d9bfd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Per-socket context passed as the first argument to the group's rx_cb when this socket has data to receive.  <br /></td></tr>
+<tr class="separator:ab3d1988732ae981230e78497c32d9bfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Spdk socket initialization options. </p>
 <p>A pointer to this structure will be used by <a class="el" href="sock_8h.html#a95476fa0d5cabfb1e01f675a9fe9bb78" title="Create a socket using the specific sock implementation, bind the socket to the specified address and ...">spdk_sock_listen()</a> or <a class="el" href="sock_8h.html#a06b0b33291b3b471e123438c8962c193" title="Create a socket using the specific sock implementation, initiate the socket connection to the specifi...">spdk_sock_connect()</a> to allow the user to request non-default options on the socket. </p>
 </div><h2 class="groupheader">Field Documentation</h2>
+<a id="ac0ec4f8b53ddefad8b06c6ddf82d13f4" name="ac0ec4f8b53ddefad8b06c6ddf82d13f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0ec4f8b53ddefad8b06c6ddf82d13f4">&#9670;&#160;</a></span>group</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct spdk_sock_group* spdk_sock_opts::group</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The socket group this socket belongs to. </p>
+<p>This is required. </p>
+
+</div>
+</div>
 <a id="a328c0cf2f7ffeeaab0a77567597507bd" name="a328c0cf2f7ffeeaab0a77567597507bd"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a328c0cf2f7ffeeaab0a77567597507bd">&#9670;&#160;</a></span>impl_opts</h2>
 
@@ -261,6 +284,23 @@ const char *&#160;</td><td class="memItemRight" valign="bottom"><b>impl_name</b>
 
 <p>Source port. </p>
 <p>If zero, a random ephemeral port will be used. Only valid for connect(). </p>
+
+</div>
+</div>
+<a id="ab3d1988732ae981230e78497c32d9bfd" name="ab3d1988732ae981230e78497c32d9bfd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3d1988732ae981230e78497c32d9bfd">&#9670;&#160;</a></span>user_ctx</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* spdk_sock_opts::user_ctx</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Per-socket context passed as the first argument to the group's rx_cb when this socket has data to receive. </p>
+<p>Can be NULL. May be changed later with <a class="el" href="sock_8h.html#a428ab925d5f6ba0d2d0411a485415e5a" title="Change the user context callback argument passed to spdk_sock_cb for this socket.">spdk_sock_set_user_ctx()</a>. </p>
 
 </div>
 </div>

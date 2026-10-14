@@ -34,7 +34,7 @@ var searchData=
   ['user_20space_31',['User Space',['../userspace.html#userspace_control',1,'Controlling Hardware From User Space'],['../memory.html',1,'Direct Memory Access (DMA) From User Space']]],
   ['user_20space_20drivers_32',['User Space Drivers',['../userspace.html',1,'concepts']]],
   ['user_20target_33',['Vfio-user Target',['../jsonrpc.html#jsonrpc_components_vfu_tgt',1,'']]],
-  ['user_5fctx_34',['user_ctx',['../structspdk__blob__ext__io__opts.html#abc1eb95b847f8989020de0c67ad14f25',1,'spdk_blob_ext_io_opts::user_ctx'],['../structspdk__memory__domain__ctx.html#aa1f0f4f3f824623ddcb028df383f4d10',1,'spdk_memory_domain_ctx::user_ctx']]],
+  ['user_5fctx_34',['user_ctx',['../structspdk__blob__ext__io__opts.html#abc1eb95b847f8989020de0c67ad14f25',1,'spdk_blob_ext_io_opts::user_ctx'],['../structspdk__memory__domain__ctx.html#aa1f0f4f3f824623ddcb028df383f4d10',1,'spdk_memory_domain_ctx::user_ctx'],['../structspdk__sock__opts.html#ab3d1988732ae981230e78497c32d9bfd',1,'spdk_sock_opts::user_ctx']]],
   ['user_5fctx_5fsize_35',['user_ctx_size',['../structspdk__memory__domain__ctx.html#a882860ba10185f189fabcbacb41bef4d',1,'spdk_memory_domain_ctx']]],
   ['userspace_20block_20device_20ublk_36',['Linux Userspace Block Device (UBLK)',['../jsonrpc.html#jsonrpc_components_ublk',1,'']]],
   ['userspace_20dtrace_20usdt_37',['Userspace DTrace (USDT)',['../usdt.html',1,'user_guides']]],

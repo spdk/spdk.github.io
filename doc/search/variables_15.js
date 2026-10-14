@@ -9,7 +9,7 @@ var searchData=
   ['unvmcap_6',['unvmcap',['../structspdk__nvme__ctrlr__data.html#aef21c15160a4556da6b2c2dbfee5749f',1,'spdk_nvme_ctrlr_data']]],
   ['use_5fcmb_5fsqs_7',['use_cmb_sqs',['../structspdk__nvme__ctrlr__opts.html#a69f7c6f3a946ed379a7b8b63faa70a48',1,'spdk_nvme_ctrlr_opts']]],
   ['use_5fextent_5ftable_8',['use_extent_table',['../structspdk__blob__opts.html#a33c151fb11b4808154a1d93f4bbec5fc',1,'spdk_blob_opts']]],
-  ['user_5fctx_9',['user_ctx',['../structspdk__blob__ext__io__opts.html#abc1eb95b847f8989020de0c67ad14f25',1,'spdk_blob_ext_io_opts::user_ctx'],['../structspdk__memory__domain__ctx.html#aa1f0f4f3f824623ddcb028df383f4d10',1,'spdk_memory_domain_ctx::user_ctx']]],
+  ['user_5fctx_9',['user_ctx',['../structspdk__blob__ext__io__opts.html#abc1eb95b847f8989020de0c67ad14f25',1,'spdk_blob_ext_io_opts::user_ctx'],['../structspdk__memory__domain__ctx.html#aa1f0f4f3f824623ddcb028df383f4d10',1,'spdk_memory_domain_ctx::user_ctx'],['../structspdk__sock__opts.html#ab3d1988732ae981230e78497c32d9bfd',1,'spdk_sock_opts::user_ctx']]],
   ['user_5fctx_5fsize_10',['user_ctx_size',['../structspdk__memory__domain__ctx.html#a882860ba10185f189fabcbacb41bef4d',1,'spdk_memory_domain_ctx']]],
   ['usr_5fcb_5farg_11',['usr_cb_arg',['../structspdk__fsdev__io_1_1____fsdev__io__internal__fields.html#a5fe84ca0302aaaa422904772b9b9e74d',1,'spdk_fsdev_io::__fsdev_io_internal_fields']]],
   ['usr_5fcb_5ffn_12',['usr_cb_fn',['../structspdk__fsdev__io_1_1____fsdev__io__internal__fields.html#aefa32b2d3534c79c5fb22b6b27e3decb',1,'spdk_fsdev_io::__fsdev_io_internal_fields']]],

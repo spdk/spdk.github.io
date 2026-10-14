@@ -464,6 +464,7 @@ var annotated_dup =
     [ "spdk_sock_initialize_opts", "structspdk__sock__initialize__opts.html", "structspdk__sock__initialize__opts" ],
     [ "spdk_sock_opts", "structspdk__sock__opts.html", "structspdk__sock__opts" ],
     [ "spdk_sock_request", "structspdk__sock__request.html", "structspdk__sock__request" ],
+    [ "spdk_sock_request_opts", "structspdk__sock__request__opts.html", "structspdk__sock__request__opts" ],
     [ "spdk_spinlock", "structspdk__spinlock.html", null ],
     [ "spdk_subsystem", "structspdk__subsystem.html", "structspdk__subsystem" ],
     [ "spdk_subsystem_depend", "structspdk__subsystem__depend.html", null ],

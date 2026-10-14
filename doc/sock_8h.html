@@ -148,6 +148,8 @@ Data Structures</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__sock__request_1_1____sock__request__internal.html">spdk_sock_request::__sock_request_internal</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__sock__request__opts.html">spdk_sock_request_opts</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__sock__impl__opts.html">spdk_sock_impl_opts</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">SPDK socket implementation options.  <a href="structspdk__sock__impl__opts.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -198,9 +200,12 @@ Functions</h2></td></tr>
 <tr class="memitem:a4d1813d16c3bde629859f2baf804d338" id="r_a4d1813d16c3bde629859f2baf804d338"><td class="memItemLeft" align="right" valign="top"><a id="a4d1813d16c3bde629859f2baf804d338" name="a4d1813d16c3bde629859f2baf804d338"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(struct <a class="el" href="structspdk__sock__request.html">spdk_sock_request</a>)==64, &quot;Incorrect size.&quot;)</td></tr>
 <tr class="separator:a4d1813d16c3bde629859f2baf804d338"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a362598170ccc744d9663f98ee4450c59" id="r_a362598170ccc744d9663f98ee4450c59"><td class="memItemLeft" align="right" valign="top"><a id="a362598170ccc744d9663f98ee4450c59" name="a362598170ccc744d9663f98ee4450c59"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(struct <a class="el" href="structspdk__sock__opts.html">spdk_sock_opts</a>)==64, &quot;Incorrect size&quot;)</td></tr>
-<tr class="separator:a362598170ccc744d9663f98ee4450c59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aced735dc22508829b601ce668baeaf9f" id="r_aced735dc22508829b601ce668baeaf9f"><td class="memItemLeft" align="right" valign="top"><a id="aced735dc22508829b601ce668baeaf9f" name="aced735dc22508829b601ce668baeaf9f"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(struct <a class="el" href="structspdk__sock__request__opts.html">spdk_sock_request_opts</a>)==24, &quot;Incorrect size.&quot;)</td></tr>
+<tr class="separator:aced735dc22508829b601ce668baeaf9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe48ef30b6923c669922c857b4b6efc1" id="r_abe48ef30b6923c669922c857b4b6efc1"><td class="memItemLeft" align="right" valign="top"><a id="abe48ef30b6923c669922c857b4b6efc1" name="abe48ef30b6923c669922c857b4b6efc1"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(struct <a class="el" href="structspdk__sock__opts.html">spdk_sock_opts</a>)==80, &quot;Incorrect size&quot;)</td></tr>
+<tr class="separator:abe48ef30b6923c669922c857b4b6efc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abec0937f8ecf2c51e99bed4fddc7f6e0" id="r_abec0937f8ecf2c51e99bed4fddc7f6e0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abec0937f8ecf2c51e99bed4fddc7f6e0">spdk_sock_get_default_initialize_opts</a> (struct <a class="el" href="structspdk__sock__initialize__opts.html">spdk_sock_initialize_opts</a> *opts, size_t opts_size)</td></tr>
 <tr class="memdesc:abec0937f8ecf2c51e99bed4fddc7f6e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the default value of socket initialization opts.  <br /></td></tr>
 <tr class="separator:abec0937f8ecf2c51e99bed4fddc7f6e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -249,9 +254,21 @@ Functions</h2></td></tr>
 <tr class="memitem:a7aa61e0b299d1f0dff273dcd48156d67" id="r_a7aa61e0b299d1f0dff273dcd48156d67"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7aa61e0b299d1f0dff273dcd48156d67">spdk_sock_writev_async</a> (struct spdk_sock *sock, struct <a class="el" href="structspdk__sock__request.html">spdk_sock_request</a> *req)</td></tr>
 <tr class="memdesc:a7aa61e0b299d1f0dff273dcd48156d67"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write data to the given socket asynchronously, calling the provided callback when the data has been written.  <br /></td></tr>
 <tr class="separator:a7aa61e0b299d1f0dff273dcd48156d67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e836278c4e4dcd9a20c41a32fbc01fd" id="r_a9e836278c4e4dcd9a20c41a32fbc01fd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9e836278c4e4dcd9a20c41a32fbc01fd">spdk_sock_writev_async_ext</a> (struct spdk_sock *sock, struct <a class="el" href="structspdk__sock__request.html">spdk_sock_request</a> *req, const struct <a class="el" href="structspdk__sock__request__opts.html">spdk_sock_request_opts</a> *opts)</td></tr>
+<tr class="memdesc:a9e836278c4e4dcd9a20c41a32fbc01fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write data to the given socket asynchronously with optional request metadata.  <br /></td></tr>
+<tr class="separator:a9e836278c4e4dcd9a20c41a32fbc01fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aec412e1537891ed4a02c24615df619b0" id="r_aec412e1537891ed4a02c24615df619b0"><td class="memItemLeft" align="right" valign="top">ssize_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aec412e1537891ed4a02c24615df619b0">spdk_sock_readv</a> (struct spdk_sock *sock, struct iovec *iov, int iovcnt)</td></tr>
 <tr class="memdesc:aec412e1537891ed4a02c24615df619b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read message from the given socket to the I/O vector array.  <br /></td></tr>
 <tr class="separator:aec412e1537891ed4a02c24615df619b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e88bdadeee6c1b3f42e7865488d9e3f" id="r_a5e88bdadeee6c1b3f42e7865488d9e3f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5e88bdadeee6c1b3f42e7865488d9e3f">spdk_sock_recv_next</a> (struct spdk_sock *sock, void **buf, struct spdk_sock_buf_token **token)</td></tr>
+<tr class="memdesc:a5e88bdadeee6c1b3f42e7865488d9e3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receive the next portion of the stream from the socket.  <br /></td></tr>
+<tr class="separator:a5e88bdadeee6c1b3f42e7865488d9e3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ac149b202ec4157a9581107c4424c23" id="r_a7ac149b202ec4157a9581107c4424c23"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7ac149b202ec4157a9581107c4424c23">spdk_sock_impl_supports_recv_next</a> (const char *impl_name)</td></tr>
+<tr class="memdesc:a7ac149b202ec4157a9581107c4424c23"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether a socket implementation supports <a class="el" href="#a5e88bdadeee6c1b3f42e7865488d9e3f" title="Receive the next portion of the stream from the socket.">spdk_sock_recv_next()</a>.  <br /></td></tr>
+<tr class="separator:a7ac149b202ec4157a9581107c4424c23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9b22c93d0904dcfeeb1c326093c0035" id="r_af9b22c93d0904dcfeeb1c326093c0035"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af9b22c93d0904dcfeeb1c326093c0035">spdk_sock_group_release_buf</a> (struct spdk_sock_group *group, void *buf, struct spdk_sock_buf_token *token)</td></tr>
+<tr class="memdesc:af9b22c93d0904dcfeeb1c326093c0035"><td class="mdescLeft">&#160;</td><td class="mdescRight">Release a buffer obtained via <a class="el" href="#a5e88bdadeee6c1b3f42e7865488d9e3f" title="Receive the next portion of the stream from the socket.">spdk_sock_recv_next()</a> back to the receive pool of the group that owns it, identified by the group rather than the socket it was received on.  <br /></td></tr>
+<tr class="separator:af9b22c93d0904dcfeeb1c326093c0035"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4e8d8e1b8155267b4b0289710e3b792f" id="r_a4e8d8e1b8155267b4b0289710e3b792f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4e8d8e1b8155267b4b0289710e3b792f">spdk_sock_set_recvlowat</a> (struct spdk_sock *sock, int nbytes)</td></tr>
 <tr class="memdesc:a4e8d8e1b8155267b4b0289710e3b792f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the value used to specify the low water mark (in bytes) for this socket.  <br /></td></tr>
 <tr class="separator:a4e8d8e1b8155267b4b0289710e3b792f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -276,9 +293,9 @@ Functions</h2></td></tr>
 <tr class="memitem:af89eb396eb872372f46a048b00c22ae8" id="r_af89eb396eb872372f46a048b00c22ae8"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af89eb396eb872372f46a048b00c22ae8">spdk_sock_group_get_ctx</a> (struct spdk_sock_group *sock_group)</td></tr>
 <tr class="memdesc:af89eb396eb872372f46a048b00c22ae8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the ctx of the sock group.  <br /></td></tr>
 <tr class="separator:af89eb396eb872372f46a048b00c22ae8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a85fc17007f83d2bcf88eaa5fc5074542" id="r_a85fc17007f83d2bcf88eaa5fc5074542"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a85fc17007f83d2bcf88eaa5fc5074542">spdk_sock_group_add_sock</a> (struct spdk_sock_group *group, struct spdk_sock *sock, void *cb_arg)</td></tr>
-<tr class="memdesc:a85fc17007f83d2bcf88eaa5fc5074542"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a socket to the group.  <br /></td></tr>
-<tr class="separator:a85fc17007f83d2bcf88eaa5fc5074542"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7e434bbb73eeda110583e4b342fefe1" id="r_ac7e434bbb73eeda110583e4b342fefe1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac7e434bbb73eeda110583e4b342fefe1">spdk_sock_group_add_sock</a> (struct spdk_sock_group *group, struct spdk_sock *sock)</td></tr>
+<tr class="memdesc:ac7e434bbb73eeda110583e4b342fefe1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a socket to the group.  <br /></td></tr>
+<tr class="separator:ac7e434bbb73eeda110583e4b342fefe1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad52142b9c60b305a1eaaf869a321c790" id="r_ad52142b9c60b305a1eaaf869a321c790"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad52142b9c60b305a1eaaf869a321c790">spdk_sock_group_remove_sock</a> (struct spdk_sock_group *group, struct spdk_sock *sock)</td></tr>
 <tr class="memdesc:ad52142b9c60b305a1eaaf869a321c790"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove a socket from the group.  <br /></td></tr>
 <tr class="separator:ad52142b9c60b305a1eaaf869a321c790"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -309,6 +326,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a74bf719c4ef609c6e35384691433e4be" id="r_a74bf719c4ef609c6e35384691433e4be"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a74bf719c4ef609c6e35384691433e4be">spdk_sock_group_get_interruptfd</a> (struct spdk_sock_group *group)</td></tr>
 <tr class="memdesc:a74bf719c4ef609c6e35384691433e4be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain an fd that becomes ready when one of the sockets in this group is ready.  <br /></td></tr>
 <tr class="separator:a74bf719c4ef609c6e35384691433e4be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98c7385dce98db5b2ff4906d4ad657f2" id="r_a98c7385dce98db5b2ff4906d4ad657f2"><td class="memItemLeft" align="right" valign="top">struct spdk_memory_domain *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a98c7385dce98db5b2ff4906d4ad657f2">spdk_sock_get_memory_domain</a> (struct spdk_sock *sock)</td></tr>
+<tr class="memdesc:a98c7385dce98db5b2ff4906d4ad657f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get memory domain associated with the socket, or NULL if the socket module doesn't support memory domains.  <br /></td></tr>
+<tr class="separator:a98c7385dce98db5b2ff4906d4ad657f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>TCP socket abstraction layer. </p>
@@ -377,6 +397,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Accept a new connection from a client on the specified socket and return a socket structure which holds the connection. </p>
+<p>The new socket will belong to the same spdk_sock_group that the listen socket belongs to. The group can be changed using spdk_sock_group_remove_sock and spdk_sock_group_add_sock.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">sock</td><td>Listening socket.</td></tr>
@@ -403,6 +424,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Close a socket. </p>
+<p>This will automatically remove the socket from its group.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">sock</td><td>Socket to close.</td></tr>
@@ -619,6 +641,33 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a98c7385dce98db5b2ff4906d4ad657f2" name="a98c7385dce98db5b2ff4906d4ad657f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a98c7385dce98db5b2ff4906d4ad657f2">&#9670;&#160;</a></span>spdk_sock_get_memory_domain()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct spdk_memory_domain * spdk_sock_get_memory_domain </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_sock *</td>          <td class="paramname"><span class="paramname"><em>sock</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get memory domain associated with the socket, or NULL if the socket module doesn't support memory domains. </p>
+<p>A socket exposes at most one memory domain because the domain is tied to the socket implementation and connection. Callers that need to choose among multiple device domain types should perform that selection at the higher layer that owns those devices.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sock</td><td>Socket.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Memory domain or NULL. </dd></dl>
+
+</div>
+</div>
 <a id="a78d0be1a4d5808178cee1119b8b4bf4a" name="a78d0be1a4d5808178cee1119b8b4bf4a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a78d0be1a4d5808178cee1119b8b4bf4a">&#9670;&#160;</a></span>spdk_sock_get_numa_id()</h2>
 
@@ -745,8 +794,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a85fc17007f83d2bcf88eaa5fc5074542" name="a85fc17007f83d2bcf88eaa5fc5074542"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a85fc17007f83d2bcf88eaa5fc5074542">&#9670;&#160;</a></span>spdk_sock_group_add_sock()</h2>
+<a id="ac7e434bbb73eeda110583e4b342fefe1" name="ac7e434bbb73eeda110583e4b342fefe1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac7e434bbb73eeda110583e4b342fefe1">&#9670;&#160;</a></span>spdk_sock_group_add_sock()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -759,26 +808,20 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">struct spdk_sock *</td>          <td class="paramname"><span class="paramname"><em>sock</em>, </span></td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void *</td>          <td class="paramname"><span class="paramname"><em>cb_arg</em></span>&#160;)</td>
+          <td class="paramtype">struct spdk_sock *</td>          <td class="paramname"><span class="paramname"><em>sock</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Add a socket to the group. </p>
-<p>The cb_arg parameter is deprecated and will be removed in v27.01. In v26.09, adding a socket overwrites any context previously set with <a class="el" href="#a428ab925d5f6ba0d2d0411a485415e5a" title="Change the user context callback argument passed to spdk_sock_cb for this socket.">spdk_sock_set_user_ctx()</a>, so cb_arg must still contain the intended callback context.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">group</td><td>Socket group. </td></tr>
-    <tr><td class="paramname">sock</td><td>Socket to add. </td></tr>
-    <tr><td class="paramname">cb_arg</td><td>Argument passed to the callback function.</td></tr>
+    <tr><td class="paramname">sock</td><td>Socket to add.</td></tr>
   </table>
   </dd>
 </dl>
+<p>If this socket was previously removed from another group, see <a class="el" href="#ad52142b9c60b305a1eaaf869a321c790" title="Remove a socket from the group.">spdk_sock_group_remove_sock()</a> for module-specific behavior while the socket is not in any group.</p>
 <dl class="section return"><dt>Returns</dt><dd>0 on success, negative errno value on failure. </dd></dl>
 
 </div>
@@ -799,7 +842,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Close all registered sockets of the group and then remove the group. </p>
-<p>If any sockets were added to the group by <a class="el" href="#a85fc17007f83d2bcf88eaa5fc5074542">spdk_sock_group_add_sock</a> these must be removed first by using <a class="el" href="#ad52142b9c60b305a1eaaf869a321c790">spdk_sock_group_remove_sock</a>.</p>
+<p>If any sockets were added to the group by <a class="el" href="#ac7e434bbb73eeda110583e4b342fefe1">spdk_sock_group_add_sock</a> these must be removed first by using <a class="el" href="#ad52142b9c60b305a1eaaf869a321c790">spdk_sock_group_remove_sock</a>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">group</td><td>Group to close.</td></tr>
@@ -915,6 +958,44 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="af9b22c93d0904dcfeeb1c326093c0035" name="af9b22c93d0904dcfeeb1c326093c0035"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9b22c93d0904dcfeeb1c326093c0035">&#9670;&#160;</a></span>spdk_sock_group_release_buf()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_sock_group_release_buf </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_sock_group *</td>          <td class="paramname"><span class="paramname"><em>group</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *</td>          <td class="paramname"><span class="paramname"><em>buf</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct spdk_sock_buf_token *</td>          <td class="paramname"><span class="paramname"><em>token</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Release a buffer obtained via <a class="el" href="#a5e88bdadeee6c1b3f42e7865488d9e3f" title="Receive the next portion of the stream from the socket.">spdk_sock_recv_next()</a> back to the receive pool of the group that owns it, identified by the group rather than the socket it was received on. </p>
+<p>The buffer pool is owned by the group, not the socket, so buffers can be released after their socket has been closed (e.g. during qpair teardown). The group must remain open until all of its buffers have been released.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">group</td><td>Socket group that owns the buffer pool. </td></tr>
+    <tr><td class="paramname">buf</td><td>Pointer to the buffer. </td></tr>
+    <tr><td class="paramname">token</td><td>Token for the buffer.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, negative errno on failure. </dd></dl>
+
+</div>
+</div>
 <a id="ad52142b9c60b305a1eaaf869a321c790" name="ad52142b9c60b305a1eaaf869a321c790"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad52142b9c60b305a1eaaf869a321c790">&#9670;&#160;</a></span>spdk_sock_group_remove_sock()</h2>
 
@@ -935,6 +1016,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Remove a socket from the group. </p>
+<p>While a socket is not in a group, no rx_cb will fire for that socket. For kernel-based modules, incoming data remains buffered by the kernel and becomes visible when the socket is re-added. For user-space modules, incoming data for that socket may be dropped.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">group</td><td>Socket group. </td></tr>
@@ -1017,6 +1099,32 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 on success, negative errno value on failure. </dd></dl>
+
+</div>
+</div>
+<a id="a7ac149b202ec4157a9581107c4424c23" name="a7ac149b202ec4157a9581107c4424c23"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ac149b202ec4157a9581107c4424c23">&#9670;&#160;</a></span>spdk_sock_impl_supports_recv_next()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool spdk_sock_impl_supports_recv_next </td>
+          <td>(</td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>impl_name</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Check whether a socket implementation supports <a class="el" href="#a5e88bdadeee6c1b3f42e7865488d9e3f" title="Receive the next portion of the stream from the socket.">spdk_sock_recv_next()</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">impl_name</td><td>The socket implementation to check, or NULL for the current default.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the implementation supports <a class="el" href="#a5e88bdadeee6c1b3f42e7865488d9e3f" title="Receive the next portion of the stream from the socket.">spdk_sock_recv_next()</a>. </dd></dl>
 
 </div>
 </div>
@@ -1242,6 +1350,46 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a5e88bdadeee6c1b3f42e7865488d9e3f" name="a5e88bdadeee6c1b3f42e7865488d9e3f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e88bdadeee6c1b3f42e7865488d9e3f">&#9670;&#160;</a></span>spdk_sock_recv_next()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int spdk_sock_recv_next </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_sock *</td>          <td class="paramname"><span class="paramname"><em>sock</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void **</td>          <td class="paramname"><span class="paramname"><em>buf</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct spdk_sock_buf_token **</td>          <td class="paramname"><span class="paramname"><em>token</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Receive the next portion of the stream from the socket. </p>
+<p>Callers must first check support using <a class="el" href="#a7ac149b202ec4157a9581107c4424c23" title="Check whether a socket implementation supports spdk_sock_recv_next().">spdk_sock_impl_supports_recv_next()</a>, or select a socket implementation known to support this operation.</p>
+<p>The buffer pointed to by <code>buf</code> must later be returned by calling <code><a class="el" href="#af9b22c93d0904dcfeeb1c326093c0035" title="Release a buffer obtained via spdk_sock_recv_next() back to the receive pool of the group that owns i...">spdk_sock_group_release_buf()</a></code>.</p>
+<p>Note that the amount of data in buf is determined entirely by the sock layer. You cannot request to receive only a limited amount here. You simply get whatever the next portion of the stream is, as determined by the sock module.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sock</td><td>Socket to receive from. </td></tr>
+    <tr><td class="paramname">buf</td><td>Populated with the next portion of the stream </td></tr>
+    <tr><td class="paramname">token</td><td>Populated with the token for the buffer</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>On success, the length of the buffer placed into buf. Zero means no buffer is available now. -EAGAIN and -ENOBUFS are retriable failures; other negative errno values indicate socket errors. A peer that closed the connection is reported as -ENOTCONN, because zero already means the stream has no data right now. <a class="el" href="#abab9e8eaebfc2857e05848580fba864e" title="Receive a message from the given socket.">spdk_sock_recv()</a> and <a class="el" href="#aec412e1537891ed4a02c24615df619b0" title="Read message from the given socket to the I/O vector array.">spdk_sock_readv()</a> report the same condition as a zero length read. </dd></dl>
+
+</div>
+</div>
 <a id="aec93142cc59937fe35f5e2ddf025ad13" name="aec93142cc59937fe35f5e2ddf025ad13"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aec93142cc59937fe35f5e2ddf025ad13">&#9670;&#160;</a></span>spdk_sock_set_default_impl()</h2>
 
@@ -1382,7 +1530,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Change the user context callback argument passed to spdk_sock_cb for this socket. </p>
-<p>In v26.09, <a class="el" href="#a85fc17007f83d2bcf88eaa5fc5074542" title="Add a socket to the group.">spdk_sock_group_add_sock()</a> overwrites this context with its cb_arg argument. Pass the intended context when adding a socket, even if it was already set here. This function can update the context after the socket has been added to a group.</p>
+<p>This is intended for attaching per-connection state to a newly accepted socket. It can also update the context after the socket has been added to a group.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">sock</td><td>The socket to change the callback argument for. </td></tr>
@@ -1480,6 +1628,42 @@ Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">sock</td><td>Socket to write to. </td></tr>
     <tr><td class="paramname">req</td><td>The write request to submit. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a9e836278c4e4dcd9a20c41a32fbc01fd" name="a9e836278c4e4dcd9a20c41a32fbc01fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e836278c4e4dcd9a20c41a32fbc01fd">&#9670;&#160;</a></span>spdk_sock_writev_async_ext()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_sock_writev_async_ext </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_sock *</td>          <td class="paramname"><span class="paramname"><em>sock</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structspdk__sock__request.html">spdk_sock_request</a> *</td>          <td class="paramname"><span class="paramname"><em>req</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const struct <a class="el" href="structspdk__sock__request__opts.html">spdk_sock_request_opts</a> *</td>          <td class="paramname"><span class="paramname"><em>opts</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Write data to the given socket asynchronously with optional request metadata. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sock</td><td>Socket to write to. </td></tr>
+    <tr><td class="paramname">req</td><td>The write request to submit. </td></tr>
+    <tr><td class="paramname">opts</td><td>Optional request metadata. The socket layer consumes this structure before returning and does not retain the pointer. opts-&gt;memory_domain may be set only if <a class="el" href="#a98c7385dce98db5b2ff4906d4ad657f2" title="Get memory domain associated with the socket, or NULL if the socket module doesn&#39;t support memory dom...">spdk_sock_get_memory_domain()</a> returns a memory domain for this socket, and that domain must be able to translate the payload. Otherwise the payload must be in host memory. </td></tr>
   </table>
   </dd>
 </dl>

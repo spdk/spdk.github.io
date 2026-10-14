@@ -2,6 +2,7 @@ var structspdk__sock__opts =
 [
     [ "ack_timeout", "structspdk__sock__opts.html#a2594f3e53452b59d1f699c7a546c32ff", null ],
     [ "connect_timeout", "structspdk__sock__opts.html#aa3c4a55228552087d5c9bc383a26b692", null ],
+    [ "group", "structspdk__sock__opts.html#ac0ec4f8b53ddefad8b06c6ddf82d13f4", null ],
     [ "impl_name", "structspdk__sock__opts.html#aafeb0651f7b8476869eec7c9425ccb9e", null ],
     [ "impl_opts", "structspdk__sock__opts.html#a328c0cf2f7ffeeaab0a77567597507bd", null ],
     [ "impl_opts_size", "structspdk__sock__opts.html#afce30ae74efc5b3b5aaa998e8fc4090d", null ],
@@ -9,5 +10,6 @@ var structspdk__sock__opts =
     [ "priority", "structspdk__sock__opts.html#a0e826e7a46eadaeb53f38c4926cd3bbf", null ],
     [ "src_addr", "structspdk__sock__opts.html#a9604bee45305b8775f31ac36ef9bb942", null ],
     [ "src_port", "structspdk__sock__opts.html#a58bd4739aeb7f9918a1f605d11ce6699", null ],
+    [ "user_ctx", "structspdk__sock__opts.html#ab3d1988732ae981230e78497c32d9bfd", null ],
     [ "zcopy", "structspdk__sock__opts.html#a3cdb293f2ccf10506e7926317e463d91", null ]
 ];
