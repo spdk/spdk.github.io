@@ -295,9 +295,12 @@ uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>reserved2</b> [4]<
 <tr class="memitem:a677d201121658aa2df21b4de5d21eec4" id="r_a677d201121658aa2df21b4de5d21eec4"><td class="memItemLeft" align="right" valign="top">enum spdk_dif_pi_format&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a677d201121658aa2df21b4de5d21eec4">dif_pi_format</a></td></tr>
 <tr class="memdesc:a677d201121658aa2df21b4de5d21eec4"><td class="mdescLeft">&#160;</td><td class="mdescRight">DIF protection information format for this bdev.  <br /></td></tr>
 <tr class="separator:a677d201121658aa2df21b4de5d21eec4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae4afee0480a74c930c06cc96439cb7a8" id="r_ae4afee0480a74c930c06cc96439cb7a8"><td class="memItemLeft" align="right" valign="top"><a id="ae4afee0480a74c930c06cc96439cb7a8" name="ae4afee0480a74c930c06cc96439cb7a8"></a>
-uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>reserved3</b> [4]</td></tr>
-<tr class="separator:ae4afee0480a74c930c06cc96439cb7a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf2b3989265a9d4066e83a3994b99a03" id="r_adf2b3989265a9d4066e83a3994b99a03"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adf2b3989265a9d4066e83a3994b99a03">dif_storage_tag_size</a></td></tr>
+<tr class="memdesc:adf2b3989265a9d4066e83a3994b99a03"><td class="mdescLeft">&#160;</td><td class="mdescRight">DIF Storage Tag Size in bits for this bdev.  <br /></td></tr>
+<tr class="separator:adf2b3989265a9d4066e83a3994b99a03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae925623e58ada3972f0fa25364bc9d96" id="r_ae925623e58ada3972f0fa25364bc9d96"><td class="memItemLeft" align="right" valign="top"><a id="ae925623e58ada3972f0fa25364bc9d96" name="ae925623e58ada3972f0fa25364bc9d96"></a>
+uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>reserved3</b> [3]</td></tr>
+<tr class="separator:ae925623e58ada3972f0fa25364bc9d96"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1872fa3d723b5bef069c0681ec3bcfd6" id="r_a1872fa3d723b5bef069c0681ec3bcfd6"><td class="memItemLeft" align="right" valign="top"><a id="a1872fa3d723b5bef069c0681ec3bcfd6" name="a1872fa3d723b5bef069c0681ec3bcfd6"></a>
 uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>dif_check_flags</b></td></tr>
 <tr class="memdesc:a1872fa3d723b5bef069c0681ec3bcfd6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specify whether each DIF check type is enabled. <br /></td></tr>
@@ -400,6 +403,23 @@ struct <a class="el" href="structspdk__bdev_1_1____bdev__internal__fields.html">
 </div><div class="memdoc">
 
 <p>DIF protection information format for this bdev. </p>
+<p>Note that this field is valid only if there is metadata and dif_type is not SPDK_DIF_DISABLE. </p>
+
+</div>
+</div>
+<a id="adf2b3989265a9d4066e83a3994b99a03" name="adf2b3989265a9d4066e83a3994b99a03"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf2b3989265a9d4066e83a3994b99a03">&#9670;&#160;</a></span>dif_storage_tag_size</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t spdk_bdev::dif_storage_tag_size</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>DIF Storage Tag Size in bits for this bdev. </p>
 <p>Note that this field is valid only if there is metadata and dif_type is not SPDK_DIF_DISABLE. </p>
 
 </div>

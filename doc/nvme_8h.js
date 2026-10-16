@@ -233,6 +233,7 @@ var nvme_8h =
     [ "spdk_nvme_ns_get_num_sectors", "nvme_8h.html#a7c522609f730db26f66e7f5b6b3501e0", null ],
     [ "spdk_nvme_ns_get_optimal_io_boundary", "nvme_8h.html#af58edc3021f8adcbecce5d3ebc5b6789", null ],
     [ "spdk_nvme_ns_get_pi_format", "nvme_8h.html#a08fe63f863522c39b9cd493573afdb05", null ],
+    [ "spdk_nvme_ns_get_pi_storage_tag_size", "nvme_8h.html#a121cf5141fbd0346e2950997a0a927c9", null ],
     [ "spdk_nvme_ns_get_pi_type", "nvme_8h.html#a85806a7605a104a705e7f9d3d087e4cb", null ],
     [ "spdk_nvme_ns_get_sector_size", "nvme_8h.html#a0d24c0b2b0b2a22b0c0af2ca2e157e04", null ],
     [ "spdk_nvme_ns_get_size", "nvme_8h.html#a9e8fb1bbe066260faf305581e16dde86", null ],

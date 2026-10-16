@@ -805,6 +805,9 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_trty
 <tr class="memitem:a08fe63f863522c39b9cd493573afdb05" id="r_a08fe63f863522c39b9cd493573afdb05"><td class="memItemLeft" align="right" valign="top">enum spdk_nvme_pi_format&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a08fe63f863522c39b9cd493573afdb05">spdk_nvme_ns_get_pi_format</a> (struct spdk_nvme_ns *ns)</td></tr>
 <tr class="memdesc:a08fe63f863522c39b9cd493573afdb05"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the end-to-end data protection information format of the given namespace.  <br /></td></tr>
 <tr class="separator:a08fe63f863522c39b9cd493573afdb05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a121cf5141fbd0346e2950997a0a927c9" id="r_a121cf5141fbd0346e2950997a0a927c9"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a121cf5141fbd0346e2950997a0a927c9">spdk_nvme_ns_get_pi_storage_tag_size</a> (struct spdk_nvme_ns *ns)</td></tr>
+<tr class="memdesc:a121cf5141fbd0346e2950997a0a927c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the protection information storage tag size, in bits, of the given namespace.  <br /></td></tr>
+<tr class="separator:a121cf5141fbd0346e2950997a0a927c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab48657f8cb6561b35e1c1b0bc18376d2" id="r_ab48657f8cb6561b35e1c1b0bc18376d2"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab48657f8cb6561b35e1c1b0bc18376d2">spdk_nvme_ns_get_md_size</a> (struct spdk_nvme_ns *ns)</td></tr>
 <tr class="memdesc:ab48657f8cb6561b35e1c1b0bc18376d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the metadata size, in bytes, of the given namespace.  <br /></td></tr>
 <tr class="separator:ab48657f8cb6561b35e1c1b0bc18376d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -8343,6 +8346,34 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_trty
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the end-to-end data protection information format. </dd></dl>
+
+</div>
+</div>
+<a id="a121cf5141fbd0346e2950997a0a927c9" name="a121cf5141fbd0346e2950997a0a927c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a121cf5141fbd0346e2950997a0a927c9">&#9670;&#160;</a></span>spdk_nvme_ns_get_pi_storage_tag_size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t spdk_nvme_ns_get_pi_storage_tag_size </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_nvme_ns *</td>          <td class="paramname"><span class="paramname"><em>ns</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the protection information storage tag size, in bits, of the given namespace. </p>
+<p>This function is thread safe and can be called at any point while the controller is attached to the SPDK NVMe driver.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ns</td><td>Namespace to query.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the storage tag size reported for the active LBA format, in bits. Returns zero if protection information is disabled, Extended LBA Formats are not supported, or NVM-specific Identify data is unavailable.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>With protection information enabled, 32-bit Guard PI requires a storage tag size of at least 16 bits. A zero returned because Identify data is unavailable does not describe the namespace's actual storage tag size. </dd></dl>
 
 </div>
 </div>

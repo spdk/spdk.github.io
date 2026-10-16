@@ -1,5 +1,7 @@
 var NAVTREEINDEX4 =
 {
+"functions_vars_n.html":[14,2,2,14],
+"functions_vars_o.html":[14,2,2,15],
 "functions_vars_p.html":[14,2,2,16],
 "functions_vars_q.html":[14,2,2,17],
 "functions_vars_r.html":[14,2,2,18],
@@ -25,8 +27,8 @@ var NAVTREEINDEX4 =
 "globals_enum.html":[15,1,3],
 "globals_eval.html":[15,1,4],
 "globals_eval.html":[15,1,4,0],
-"globals_func.html":[15,1,1],
 "globals_func.html":[15,1,1,0],
+"globals_func.html":[15,1,1],
 "globals_s.html":[15,1,0,1],
 "globals_type.html":[15,1,2],
 "gpt__spec_8h.html":[15,0,0,0,26],
@@ -247,7 +249,5 @@ var NAVTREEINDEX4 =
 "jsonrpc.html#rpc_bdev_get_bdevs":[3,8,5,1],
 "jsonrpc.html#rpc_bdev_get_histogram":[3,8,5,7],
 "jsonrpc.html#rpc_bdev_get_histogram_borders":[3,8,5,8],
-"jsonrpc.html#rpc_bdev_get_iostat":[3,8,5,4],
-"jsonrpc.html#rpc_bdev_iscsi_create":[3,8,5,68],
-"jsonrpc.html#rpc_bdev_iscsi_delete":[3,8,5,69]
+"jsonrpc.html#rpc_bdev_get_iostat":[3,8,5,4]
 };

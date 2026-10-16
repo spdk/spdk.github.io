@@ -11,6 +11,7 @@ var structspdk__bdev =
     [ "ctxt", "structspdk__bdev.html#a0329aa7395f9784d4dc8c596efc4ac8c", null ],
     [ "dif_check_flags", "structspdk__bdev.html#a1872fa3d723b5bef069c0681ec3bcfd6", null ],
     [ "dif_pi_format", "structspdk__bdev.html#a677d201121658aa2df21b4de5d21eec4", null ],
+    [ "dif_storage_tag_size", "structspdk__bdev.html#adf2b3989265a9d4066e83a3994b99a03", null ],
     [ "dif_type", "structspdk__bdev.html#abcf4e6c5be82c271a681db4b9b2fd427", null ],
     [ "fn_table", "structspdk__bdev.html#a8eee59eb31ccc211bfe99a8109b30dbb", null ],
     [ "id", "structspdk__bdev.html#a092721a1c76f792c0261b8b4c161a299", null ],
