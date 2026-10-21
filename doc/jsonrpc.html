@@ -7481,7 +7481,9 @@ nvmf_create_subsystem</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">passthrough   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Use NVMe passthrough for all I/O commands and namespace-directed admin commands    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">enable_nssr   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Enable NSSR (NVMe subsystem reset)   </td></tr>
+<td class="markdownTableBodyNone">enable_nssr   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Enable NSSR (NVMe subsystem reset)    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">admin   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Limit subsystem to expose only admin controllers (no I/O queues)   </td></tr>
 </table>
 <h3>Response</h3>
 <p>true on success</p>
@@ -7498,7 +7500,8 @@ nvmf_create_subsystem</h2>
 <div class="line">    &quot;allow_any_host&quot;: false,</div>
 <div class="line">    &quot;ana_reporting&quot;: false,</div>
 <div class="line">    &quot;passthrough&quot;: false,</div>
-<div class="line">    &quot;enable_nssr&quot;: false</div>
+<div class="line">    &quot;enable_nssr&quot;: false,</div>
+<div class="line">    &quot;admin&quot;: false</div>
 <div class="line">  }</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Example response:</p>
