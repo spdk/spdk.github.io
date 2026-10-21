@@ -184,8 +184,11 @@ union {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
 <tr class="memitem:a691f5f889fd8ff103412f71d12cb1a5a" id="r_a691f5f889fd8ff103412f71d12cb1a5a"><td class="memItemLeft" >
 &#160;&#160;&#160;&#160;&#160;&#160;uint8_t&#160;&#160;&#160;<b>reservation_waiting</b>: 1&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
 <tr class="separator:a691f5f889fd8ff103412f71d12cb1a5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0e019c94a92eb60c6617a216fca942e" id="r_ac0e019c94a92eb60c6617a216fca942e"><td class="memItemLeft" >
+&#160;&#160;&#160;&#160;&#160;&#160;uint8_t&#160;&#160;&#160;<b>iov_ext_used</b>: 1&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:ac0e019c94a92eb60c6617a216fca942e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae814f5b35c3e9c5210e37280a4fd82ae" id="r_ae814f5b35c3e9c5210e37280a4fd82ae"><td class="memItemLeft" >
-&#160;&#160;&#160;&#160;&#160;&#160;uint8_t&#160;&#160;&#160;<b>rsvd</b>: 4&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+&#160;&#160;&#160;&#160;&#160;&#160;uint8_t&#160;&#160;&#160;<b>rsvd</b>: 3&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
 <tr class="separator:ae814f5b35c3e9c5210e37280a4fd82ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abba552b2f00e378494c815fa7ca2f3f8" id="r_abba552b2f00e378494c815fa7ca2f3f8"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;</td><td class="memItemRight" valign="bottom">&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
 <tr class="separator:abba552b2f00e378494c815fa7ca2f3f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -215,6 +218,12 @@ struct spdk_accel_sequence *&#160;</td><td class="memItemRight" valign="bottom">
 <tr class="memitem:abd8a5aa92bdc3a3b98f2eb21f21e03b3" id="r_abd8a5aa92bdc3a3b98f2eb21f21e03b3"><td class="memItemLeft" align="right" valign="top"><a id="abd8a5aa92bdc3a3b98f2eb21f21e03b3" name="abd8a5aa92bdc3a3b98f2eb21f21e03b3"></a>
 struct iovec&#160;</td><td class="memItemRight" valign="bottom"><b>iov</b> [NVMF_REQ_MAX_BUFFERS]</td></tr>
 <tr class="separator:abd8a5aa92bdc3a3b98f2eb21f21e03b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1c9aa99df9fd059f9f739acb96ef110" id="r_ac1c9aa99df9fd059f9f739acb96ef110"><td class="memItemLeft" align="right" valign="top"><a id="ac1c9aa99df9fd059f9f739acb96ef110" name="ac1c9aa99df9fd059f9f739acb96ef110"></a>
+struct iovec *&#160;</td><td class="memItemRight" valign="bottom"><b>iov_ext</b></td></tr>
+<tr class="separator:ac1c9aa99df9fd059f9f739acb96ef110"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada99e8b7e856a6af91d92a4550e44743" id="r_ada99e8b7e856a6af91d92a4550e44743"><td class="memItemLeft" align="right" valign="top"><a id="ada99e8b7e856a6af91d92a4550e44743" name="ada99e8b7e856a6af91d92a4550e44743"></a>
+uint16_t&#160;</td><td class="memItemRight" valign="bottom"><b>iov_ext_capacity</b></td></tr>
+<tr class="separator:ada99e8b7e856a6af91d92a4550e44743"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a84e4ee7737756949d0d93a970bddc4ea" id="r_a84e4ee7737756949d0d93a970bddc4ea"><td class="memItemLeft" align="right" valign="top"><a id="a84e4ee7737756949d0d93a970bddc4ea" name="a84e4ee7737756949d0d93a970bddc4ea"></a>
 struct <a class="el" href="structspdk__bdev__io__wait__entry.html">spdk_bdev_io_wait_entry</a>&#160;</td><td class="memItemRight" valign="bottom"><b>bdev_io_wait</b></td></tr>
 <tr class="separator:a84e4ee7737756949d0d93a970bddc4ea"><td class="memSeparator" colspan="2">&#160;</td></tr>

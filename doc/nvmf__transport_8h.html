@@ -246,9 +246,18 @@ Functions</h2></td></tr>
 <tr class="memitem:a7018b7c460c9e8d4bc99b14075291390" id="r_a7018b7c460c9e8d4bc99b14075291390"><td class="memItemLeft" align="right" valign="top"><a id="a7018b7c460c9e8d4bc99b14075291390" name="a7018b7c460c9e8d4bc99b14075291390"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(union <a class="el" href="unionnvmf__c2h__msg.html">nvmf_c2h_msg</a>)==16, &quot;Incorrect size&quot;)</td></tr>
 <tr class="separator:a7018b7c460c9e8d4bc99b14075291390"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a965c500cc0534a177d2449a2fbd4c53c" id="r_a965c500cc0534a177d2449a2fbd4c53c"><td class="memItemLeft" align="right" valign="top"><a id="a965c500cc0534a177d2449a2fbd4c53c" name="a965c500cc0534a177d2449a2fbd4c53c"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(struct <a class="el" href="structspdk__nvmf__request.html">spdk_nvmf_request</a>)==752+(SPDK_NVMF_MAX_SGL_ENTRIES - 16) *2 *sizeof(struct iovec), &quot;Incorrect size&quot;)</td></tr>
-<tr class="separator:a965c500cc0534a177d2449a2fbd4c53c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad020ab5f21487e33e35065b2f56f801f" id="r_ad020ab5f21487e33e35065b2f56f801f"><td class="memItemLeft" align="right" valign="top"><a id="ad020ab5f21487e33e35065b2f56f801f" name="ad020ab5f21487e33e35065b2f56f801f"></a>
+static struct iovec *&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_request_get_iov</b> (struct <a class="el" href="structspdk__nvmf__request.html">spdk_nvmf_request</a> *req)</td></tr>
+<tr class="separator:ad020ab5f21487e33e35065b2f56f801f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8b9b1abf06d547b5f4a1c2737bfd7d2" id="r_aa8b9b1abf06d547b5f4a1c2737bfd7d2"><td class="memItemLeft" align="right" valign="top"><a id="aa8b9b1abf06d547b5f4a1c2737bfd7d2" name="aa8b9b1abf06d547b5f4a1c2737bfd7d2"></a>
+static uint16_t&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_request_get_iov_capacity</b> (const struct <a class="el" href="structspdk__nvmf__request.html">spdk_nvmf_request</a> *req)</td></tr>
+<tr class="separator:aa8b9b1abf06d547b5f4a1c2737bfd7d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace9728e547c8859af01d31dbe7848bc1" id="r_ace9728e547c8859af01d31dbe7848bc1"><td class="memItemLeft" align="right" valign="top"><a id="ace9728e547c8859af01d31dbe7848bc1" name="ace9728e547c8859af01d31dbe7848bc1"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_request_set_iov</b> (struct <a class="el" href="structspdk__nvmf__request.html">spdk_nvmf_request</a> *req, struct iovec *iov, uint16_t capacity)</td></tr>
+<tr class="separator:ace9728e547c8859af01d31dbe7848bc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c03448910059535328a111e110fafb5" id="r_a7c03448910059535328a111e110fafb5"><td class="memItemLeft" align="right" valign="top"><a id="a7c03448910059535328a111e110fafb5" name="a7c03448910059535328a111e110fafb5"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>SPDK_STATIC_ASSERT</b> (sizeof(struct <a class="el" href="structspdk__nvmf__request.html">spdk_nvmf_request</a>)==768+(SPDK_NVMF_MAX_SGL_ENTRIES - 16) *2 *sizeof(struct iovec), &quot;Incorrect size&quot;)</td></tr>
+<tr class="separator:a7c03448910059535328a111e110fafb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8dc52b013bb9c00bb1cf0670e909604b" id="r_a8dc52b013bb9c00bb1cf0670e909604b"><td class="memItemLeft" align="right" valign="top"><a id="a8dc52b013bb9c00bb1cf0670e909604b" name="a8dc52b013bb9c00bb1cf0670e909604b"></a>
 static int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_qpair_get_numa_id</b> (struct <a class="el" href="structspdk__nvmf__qpair.html">spdk_nvmf_qpair</a> *qpair)</td></tr>
 <tr class="separator:a8dc52b013bb9c00bb1cf0670e909604b"><td class="memSeparator" colspan="2">&#160;</td></tr>
