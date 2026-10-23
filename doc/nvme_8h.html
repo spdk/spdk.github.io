@@ -3380,6 +3380,7 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_trty
 
 <p>Get file descriptor for the admin queue pair of a controller. </p>
 <p>Applications that enable interrupts for completion notification will register and unregister interrupt event source on its queue pair file descriptor. This function returns file descriptor of the admin queue pair. This function also allows the transport layer to fill out event handler opts required by the application during interrupt registration phase.</p>
+<p>The returned fd stays valid for the lifetime of the controller, including across controller resets and reconnects. On fabrics transports, it signals events of the admin queue only while the admin queue is connected, so the application must still process the admin queue periodically, e.g. to send keep-alive commands.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir"></td><td class="paramname">ctrlr</td><td>Controller for which fd has to be fetched. </td></tr>
