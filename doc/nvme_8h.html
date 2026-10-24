@@ -625,6 +625,9 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_trty
 <tr class="memitem:aa50ff17b33e8029bd7e3f560f6e7ba00" id="r_aa50ff17b33e8029bd7e3f560f6e7ba00"><td class="memItemLeft" align="right" valign="top">struct spdk_nvme_ns *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa50ff17b33e8029bd7e3f560f6e7ba00">spdk_nvme_ctrlr_get_ns</a> (struct spdk_nvme_ctrlr *ctrlr, uint32_t ns_id)</td></tr>
 <tr class="memdesc:aa50ff17b33e8029bd7e3f560f6e7ba00"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a handle to a namespace for the given controller.  <br /></td></tr>
 <tr class="separator:aa50ff17b33e8029bd7e3f560f6e7ba00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7dbfaa8041fa885ccdc45e191c1d6d22" id="r_a7dbfaa8041fa885ccdc45e191c1d6d22"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7dbfaa8041fa885ccdc45e191c1d6d22">spdk_nvme_ctrlr_release_inactive_ns</a> (struct spdk_nvme_ctrlr *ctrlr, uint32_t nsid)</td></tr>
+<tr class="memdesc:a7dbfaa8041fa885ccdc45e191c1d6d22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Release the driver's memory for an inactive namespace.  <br /></td></tr>
+<tr class="separator:a7dbfaa8041fa885ccdc45e191c1d6d22"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a88c881cccf7873bbe4605320ffb0a81c" id="r_a88c881cccf7873bbe4605320ffb0a81c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a88c881cccf7873bbe4605320ffb0a81c">spdk_nvme_ctrlr_cmd_get_log_page</a> (struct spdk_nvme_ctrlr *ctrlr, uint8_t log_page, uint32_t nsid, void *payload, uint32_t payload_size, uint64_t offset, <a class="el" href="#a1786f9616afc773b20f752dc98ecd465">spdk_nvme_cmd_cb</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:a88c881cccf7873bbe4605320ffb0a81c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a specific log page from the NVMe controller.  <br /></td></tr>
 <tr class="separator:a88c881cccf7873bbe4605320ffb0a81c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -3790,7 +3793,7 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_trty
 </div><div class="memdoc">
 
 <p>Get a handle to a namespace for the given controller. </p>
-<p>Namespaces are numbered from 1 to the total number of namespaces. There will never be any gaps in the numbering. The number of namespaces is obtained by calling <a class="el" href="#a02b18deae44682a51177e8a4193af602" title="Get the maximum NSID value that will ever be used for the given controller.">spdk_nvme_ctrlr_get_num_ns()</a>.</p>
+<p>NSIDs span the contiguous range from 1 to the value returned by <a class="el" href="#a02b18deae44682a51177e8a4193af602" title="Get the maximum NSID value that will ever be used for the given controller.">spdk_nvme_ctrlr_get_num_ns()</a>. Active namespaces are not necessarily contiguous within that range. Iterate over them with <a class="el" href="#a59e69f39c7cb8a9e1c3e00af7804c8bd" title="Get the nsid of the first active namespace.">spdk_nvme_ctrlr_get_first_active_ns()</a> and <a class="el" href="#abcd528b0df0a564c218dc2745c3af159" title="Get next active namespace given the previous nsid.">spdk_nvme_ctrlr_get_next_active_ns()</a>.</p>
 <p>This function is thread safe and can be called at any point while the controller is attached to the SPDK NVMe driver.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -3799,7 +3802,7 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_trty
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>a pointer to the namespace. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>a pointer to the namespace, or NULL if <code>ns_id</code> is out of range or the driver has no namespace for that id. </dd></dl>
 
 </div>
 </div>
@@ -4763,6 +4766,39 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_trty
     <tr><td class="paramname">timeout_admin_us</td><td>Timeout value in microseconds for admin commands. </td></tr>
     <tr><td class="paramname">cb_fn</td><td>A function pointer that points to the callback function. </td></tr>
     <tr><td class="paramname">cb_arg</td><td>Argument to the callback function. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a7dbfaa8041fa885ccdc45e191c1d6d22" name="a7dbfaa8041fa885ccdc45e191c1d6d22"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7dbfaa8041fa885ccdc45e191c1d6d22">&#9670;&#160;</a></span>spdk_nvme_ctrlr_release_inactive_ns()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spdk_nvme_ctrlr_release_inactive_ns </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_nvme_ctrlr *</td>          <td class="paramname"><span class="paramname"><em>ctrlr</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>nsid</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Release the driver's memory for an inactive namespace. </p>
+<p>Call this when finished with namespace <code>nsid</code>, for example after <a class="el" href="#abbcdb6e7c22b0ef87ed927bf97952c19" title="Check whether the nsid is an active nv for the given NVMe controller.">spdk_nvme_ctrlr_is_active_ns()</a> reported it is inactive. Pointers to that namespace, including those held by other users of the controller, may then be invalid, as after a controller reset. The caller must ensure no one still uses them.</p>
+<p>The namespace is freed during this call only when the driver no longer needs it.</p>
+<p>This function is thread safe.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ctrlr</td><td>Opaque handle to NVMe controller. </td></tr>
+    <tr><td class="paramname">nsid</td><td>Namespace ID to release. </td></tr>
   </table>
   </dd>
 </dl>

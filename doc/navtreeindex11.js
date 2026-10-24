@@ -1,5 +1,6 @@
 var NAVTREEINDEX11 =
 {
+"scheduler.html":[5,2],
 "scsi_8h.html":[15,0,0,0,56],
 "scsi_8h.html#a094e26541ad1b7409394bfbd4d73af15":[15,0,0,0,56,16],
 "scsi_8h.html#a09579688597a2ab594671a00b20fd2cd":[15,0,0,0,56,11],
@@ -248,6 +249,5 @@ var NAVTREEINDEX11 =
 "structspdk__bdev.html#a1a5a293bd18675fa3757ed86093cd6cd":[14,0,62,16],
 "structspdk__bdev.html#a1d7dcd12f4c3600eac4dbb202bdb4397":[14,0,62,42],
 "structspdk__bdev.html#a2ca5531b4a1198ce407fc9dcfd698969":[14,0,62,2],
-"structspdk__bdev.html#a4cc64d77c0bcf1333bb1d7e85bc414b6":[14,0,62,25],
-"structspdk__bdev.html#a5cc1248944325a12c4cadaa3856f573a":[14,0,62,40]
+"structspdk__bdev.html#a4cc64d77c0bcf1333bb1d7e85bc414b6":[14,0,62,25]
 };

@@ -157,6 +157,7 @@ var nvme_8h =
     [ "spdk_nvme_ctrlr_register_aer_callback", "nvme_8h.html#a1505fc1ef6e8ccb00134c1fa15e0368b", null ],
     [ "spdk_nvme_ctrlr_register_ns_attr_changed_callback", "nvme_8h.html#a8a7a2f8078e7c05a188a9499a9a7d761", null ],
     [ "spdk_nvme_ctrlr_register_timeout_callback", "nvme_8h.html#ae2957853179526e6176cf7623b19552b", null ],
+    [ "spdk_nvme_ctrlr_release_inactive_ns", "nvme_8h.html#a7dbfaa8041fa885ccdc45e191c1d6d22", null ],
     [ "spdk_nvme_ctrlr_reserve_cmb", "nvme_8h.html#a7a3ac9bb888c2b660191f94d208caaf1", null ],
     [ "spdk_nvme_ctrlr_reset", "nvme_8h.html#ae13ccd2ea831842a5008eb95a32545c3", null ],
     [ "spdk_nvme_ctrlr_reset_subsystem", "nvme_8h.html#a0547769c5a00f5b502ea4f71f2fff947", null ],

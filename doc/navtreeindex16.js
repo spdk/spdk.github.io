@@ -1,5 +1,6 @@
 var NAVTREEINDEX16 =
 {
+"structspdk__nvme__transport__opts.html":[14,0,333],
 "structspdk__nvme__transport__opts.html#a5f8d05202b603da8e8ee82008ac1bf8e":[14,0,333,0],
 "structspdk__nvme__transport__opts.html#a844b0c4f75430fcdb8c769d91e2954e8":[14,0,333,5],
 "structspdk__nvme__transport__opts.html#aa462c4ecdc0534781c8ce834462b11c7":[14,0,333,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX16 =
 "structspdk__opal__packet.html":[14,0,431],
 "structspdk__pci__addr.html":[14,0,432],
 "structspdk__pci__device.html":[14,0,433],
-"structspdk__pci__device_1_1__spdk__pci__device__internal.html":[14,0,433,0],
-"structspdk__pci__device__provider.html":[14,0,434]
+"structspdk__pci__device_1_1__spdk__pci__device__internal.html":[14,0,433,0]
 };
