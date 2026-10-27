@@ -40,7 +40,7 @@ toc:
     url: "../ci/"
   - title: Roadmap
     url: "https://github.com/orgs/spdk/projects/5"
-  - title: CVE Process and Threat Modeling
+  - title: CVE and Threat Modeling
     url: "../cve_threat/"
   - title: Debugging Tips
     url: "../debug_tip/"

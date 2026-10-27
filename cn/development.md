@@ -24,7 +24,7 @@ lang: cn
 
 # 相关文档
 
-* [常见漏洞与曝光(CVE)流程和威胁建模](../cve_threat/)
+* [常见漏洞与曝光(CVE)和威胁建模](../cve_threat/)
 * [程序调试建议](../debug_tip/)
 
 <a id="license"></a>
