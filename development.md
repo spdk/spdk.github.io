@@ -455,6 +455,7 @@ done on the SPDK repo's master branch for each of the updated submodules to capt
 The SPDK core maintainers primary responsibility is to provide technical oversight for the SPDK Project.
 The current list of SPDK core maintainers includes:
 
+* Boris Glimcher
 * Jim Harris
 * Jacek Kalwas
 * Mateusz Kozłowski

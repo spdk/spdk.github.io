@@ -342,6 +342,7 @@ SPDK通过git子模块来集成一些依赖的模块，比如DPDK和其他模块
 
 SPDK核心维护人员的主要职责是为SPDK项目提供技术监督。目前，SPDK核心维护者有：
 
+* Boris Glimcher
 * Jim Harris
 * Jacek Kalwas
 * Mateusz Kozłowski
