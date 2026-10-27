@@ -4580,7 +4580,9 @@ bdev_nvme_apply_firmware</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">filename   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">filename of the firmware to download    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">bdev_name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of the NVMe block device   </td></tr>
+<td class="markdownTableBodyNone">bdev_name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of the NVMe block device    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">commit_action   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">enum   </td><td class="markdownTableBodyNone">Firmware commit action. replace_and_enable: activate at next reset. activate_immediate: activate immediately. Default: replace_and_enable   </td></tr>
 </table>
 <h3>Example</h3>
 <p>Example request:</p>
