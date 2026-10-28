@@ -47,5 +47,6 @@ var searchData=
   ['guid_20partition_20table_44',['GPT (GUID Partition Table)',['../bdev.html#bdev_config_gpt',1,'']]],
   ['guid_5fnever_5freused_45',['guid_never_reused',['../structspdk__nvme__ns__data__head.html#a3a975703bb7972d1a143d99542c1f894',1,'spdk_nvme_ns_data_head::guid_never_reused'],['../structspdk__nvme__ns__data.html#a1d90d25be4a3d74fcc8097cdd437da25',1,'spdk_nvme_ns_data::guid_never_reused']]],
   ['guide_46',['Guide',['../blob.html',1,'Blobstore Programmer&apos;s Guide'],['../bdev_pg.html',1,'Block Device Layer Programming Guide'],['../bdev.html',1,'Block Device User Guide'],['../gdb_macros.html',1,'GDB Macros User Guide'],['../iscsi.html#iscsi_getting_started',1,'iSCSI Target Getting Started Guide'],['../nvmf_tgt_pg.html',1,'NVMe over Fabrics Target Programming Guide'],['../nvmf.html#nvmf_getting_started',1,'NVMe-oF Target Getting Started Guide'],['../porting.html',1,'SPDK Porting Guide'],['../system_configuration.html',1,'System Configuration User Guide']]],
-  ['guides_47',['Guides',['../prog_guides.html',1,'Programmer Guides'],['../user_guides.html',1,'User Guides']]]
+  ['guidelines_47',['NUMA Guidelines',['../numa_guidelines.html',1,'user_guides']]],
+  ['guides_48',['Guides',['../prog_guides.html',1,'Programmer Guides'],['../user_guides.html',1,'User Guides']]]
 ];

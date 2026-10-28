@@ -479,5 +479,6 @@ var user_guides =
       [ "ublk Internal", "ublk.html#ublk_internal", null ],
       [ "SPDK Implementation", "ublk.html#ublk_impl", null ],
       [ "Operation", "ublk.html#ublk_op", null ]
-    ] ]
+    ] ],
+    [ "NUMA Guidelines", "numa_guidelines.html", null ]
 ];

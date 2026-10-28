@@ -171,6 +171,7 @@ var NAVTREEINDEX6 =
 "notify.html#notify_register":[4,8,0],
 "notify.html#notify_send":[4,8,3],
 "notify.html#rpc_calls":[4,8,4],
+"numa_guidelines.html":[3,15],
 "nvme.html":[7,0],
 "nvme.html#nvme_cuse":[7,0,8],
 "nvme.html#nvme_design":[7,0,4],
@@ -248,6 +249,5 @@ var NAVTREEINDEX6 =
 "nvme_8h.html#a30f8edb4791c426ccec2b815ca0ed791":[15,0,0,0,44,138],
 "nvme_8h.html#a327cc2f4818d3111bdc8485a9b844d4f":[15,0,0,0,44,258],
 "nvme_8h.html#a33868f37490d15d2d64d2b93f03b44e5":[15,0,0,0,44,201],
-"nvme_8h.html#a34bd3312aa5c842f42a5e60c438dc89f":[15,0,0,0,44,192],
-"nvme_8h.html#a362d1767253da0af90c6572696ed2cd9":[15,0,0,0,44,81]
+"nvme_8h.html#a34bd3312aa5c842f42a5e60c438dc89f":[15,0,0,0,44,192]
 };
