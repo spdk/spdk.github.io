@@ -56,6 +56,7 @@ var bdev__module_8h =
     [ "spdk_bdev_for_each_bdev_io", "bdev__module_8h.html#a5326cf21d1612a39bb3ba660790a8ec6", null ],
     [ "spdk_bdev_get_aliases", "bdev__module_8h.html#ad5e058fb37ff82f51d0a4f9c55489d13", null ],
     [ "spdk_bdev_get_current_qd", "bdev__module_8h.html#a35d1bb3f7b96e2e0d90e42f11f8f402d", null ],
+    [ "spdk_bdev_io_account_stat", "bdev__module_8h.html#ad99ba42e7f3c91fdfe3a0cf435252778", null ],
     [ "spdk_bdev_io_complete", "bdev__module_8h.html#a3247574caabc2b31796861a10b2c9cab", null ],
     [ "spdk_bdev_io_complete_aio_status", "bdev__module_8h.html#afa76c6d38a121270bbe464117d1044ac", null ],
     [ "spdk_bdev_io_complete_base_io_status", "bdev__module_8h.html#a20a04f6676f1275ac30e68b514fdd588", null ],

@@ -122,6 +122,7 @@ var env_8h =
     [ "spdk_pci_hook_device", "env_8h.html#a4ed436524e4df7525045e488206aa648", null ],
     [ "spdk_pci_idxd_get_driver", "env_8h.html#ad5fddabf9665fb2899f40ab8cfff58b4", null ],
     [ "spdk_pci_ioat_get_driver", "env_8h.html#af1c219cebbe5175b61f709472088744c", null ],
+    [ "spdk_pci_ntb_amd_get_driver", "env_8h.html#ac867b668e3133cb56bcd10fb6965db37", null ],
     [ "spdk_pci_nvme_get_driver", "env_8h.html#ae5e9e28cf3e81682ba0db341a125921c", null ],
     [ "spdk_pci_register_device_provider", "env_8h.html#af30e499f580512a07adde59837ea6b5e", null ],
     [ "spdk_pci_register_error_handler", "env_8h.html#aca05711bef2f8f8fa648e5715667f623", null ],

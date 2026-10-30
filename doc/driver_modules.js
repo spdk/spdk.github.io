@@ -36,6 +36,16 @@ var driver_modules =
       [ "Key Functions", "idxd.html#idxd_key_functions", null ],
       [ "Kernel vs User", "idxd.html#idxd_configs", null ]
     ] ],
+    [ "AMD NTB Driver", "ntb_amd.html", [
+      [ "Overview", "ntb_amd.html#ntb_amd_overview", null ],
+      [ "Public Interface", "ntb_amd.html#ntb_amd_interface", null ],
+      [ "Topology model", "ntb_amd.html#ntb_amd_topology", [
+        [ "Hardware resources", "ntb_amd.html#ntb_amd_resources", null ]
+      ] ],
+      [ "Key Functions", "ntb_amd.html#ntb_amd_key_functions", null ],
+      [ "Two-host bring-up", "ntb_amd.html#ntb_amd_bringup", null ],
+      [ "NTB perf example", "ntb_amd.html#ntb_amd_perf", null ]
+    ] ],
     [ "Virtio driver", "virtio.html", [
       [ "Introduction", "virtio.html#virtio_intro", null ],
       [ "2MB hugepages", "virtio.html#virtio_2mb", null ]

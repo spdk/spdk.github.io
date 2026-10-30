@@ -2805,7 +2805,7 @@ bdev_crypto_create</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of the crypto vbdev to create    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">crypto_pmd   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of the crypto device driver. Obsolete, see accel_crypto_key_create    </td></tr>
+<td class="markdownTableBodyNone">crypto_pmd   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of the crypto device driver. Obsolete, see dpdk_cryptodev_set_driver    </td></tr>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">key   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Key in hex form. Obsolete, see accel_crypto_key_create    </td></tr>
 <tr class="markdownTableRowOdd">
@@ -3402,7 +3402,7 @@ bdev_kvmalloc_delete</h2>
 <div class="line">}</div>
 </div><!-- fragment --><h2><a class="anchor" id="rpc_bdev_malloc_create"></a>
 bdev_malloc_create</h2>
-<p>Construct <a class="el" href="bdev.html#bdev_config_malloc">Malloc bdev</a></p>
+<p>Construct <a class="el" href="bdev.html#bdev_config_malloc">a Malloc bdev</a></p>
 <p>The <code>dif_type</code> parameter can have 0, 1, 2, or 3, and controls the check of the guard tag and the reference tag. If the <code>dif_type</code> is 1, 2, or 3, the malloc bdev compares the guard tag to the CRC-16 computed over the block data. If the <code>dif_type</code> is 1 or 2, the malloc bdev compares the reference tag to the computed reference tag. The computed reference tag for the first block of the I/O is the <code>init_ref_tag</code> of the DIF context, and the computed reference tag is incremented for each subsequent block. If the <code>dif_type</code> is 3, the malloc bdev does not check the reference tag. The application tag is not checked by the malloc bdev because the current block device API does not expose it to the upper layer yet.</p>
 <h3>Parameters</h3>
 <table class="markdownTable">
@@ -3459,7 +3459,7 @@ bdev_malloc_create</h2>
 <div class="line">}</div>
 </div><!-- fragment --><h2><a class="anchor" id="rpc_bdev_malloc_delete"></a>
 bdev_malloc_delete</h2>
-<p>Delete <a class="el" href="bdev.html#bdev_config_malloc">Malloc bdev</a></p>
+<p>Delete <a class="el" href="bdev.html#bdev_config_malloc">a Malloc bdev</a></p>
 <h3>Parameters</h3>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -3487,7 +3487,7 @@ bdev_malloc_delete</h2>
 <div class="line">}</div>
 </div><!-- fragment --><h2><a class="anchor" id="rpc_bdev_null_create"></a>
 bdev_null_create</h2>
-<p>Construct <a class="el" href="bdev.html#bdev_config_null">Null</a></p>
+<p>Construct <a class="el" href="bdev.html#bdev_config_null">a Null bdev</a></p>
 <h3>Parameters</h3>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -3552,7 +3552,7 @@ bdev_null_create</h2>
 <div class="line">}</div>
 </div><!-- fragment --><h2><a class="anchor" id="rpc_bdev_null_delete"></a>
 bdev_null_delete</h2>
-<p>Delete <a class="el" href="bdev.html#bdev_config_null">Null</a>.</p>
+<p>Delete <a class="el" href="bdev.html#bdev_config_null">a Null bdev</a>.</p>
 <h3>Parameters</h3>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -3580,7 +3580,7 @@ bdev_null_delete</h2>
 <div class="line">}</div>
 </div><!-- fragment --><h2><a class="anchor" id="rpc_bdev_null_resize"></a>
 bdev_null_resize</h2>
-<p>Resize <a class="el" href="bdev.html#bdev_config_null">Null</a>.</p>
+<p>Resize <a class="el" href="bdev.html#bdev_config_null">a Null bdev</a>.</p>
 <h3>Parameters</h3>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -3611,7 +3611,7 @@ bdev_null_resize</h2>
 <div class="line">}</div>
 </div><!-- fragment --><h2><a class="anchor" id="rpc_bdev_aio_create"></a>
 bdev_aio_create</h2>
-<p>Construct <a class="el" href="bdev.html#bdev_config_aio">Linux AIO bdev</a>.</p>
+<p>Construct <a class="el" href="bdev.html#bdev_config_aio">an AIO bdev</a>.</p>
 <h3>Parameters</h3>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -3656,7 +3656,7 @@ bdev_aio_create</h2>
 <div class="line">}</div>
 </div><!-- fragment --><h2><a class="anchor" id="rpc_bdev_aio_rescan"></a>
 bdev_aio_rescan</h2>
-<p>Rescan the size of <a class="el" href="bdev.html#bdev_config_aio">Linux AIO bdev</a>.</p>
+<p>Rescan the size of <a class="el" href="bdev.html#bdev_config_aio">an AIO bdev</a>.</p>
 <h3>Parameters</h3>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -3684,7 +3684,7 @@ bdev_aio_rescan</h2>
 <div class="line">}</div>
 </div><!-- fragment --><h2><a class="anchor" id="rpc_bdev_aio_delete"></a>
 bdev_aio_delete</h2>
-<p>Delete <a class="el" href="bdev.html#bdev_config_aio">Linux AIO bdev</a>.</p>
+<p>Delete <a class="el" href="bdev.html#bdev_config_aio">an AIO bdev</a>.</p>
 <h3>Parameters</h3>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -3867,7 +3867,7 @@ bdev_nvme_set_hotplug</h2>
 <div class="line">}</div>
 </div><!-- fragment --><h2><a class="anchor" id="rpc_bdev_nvme_attach_controller"></a>
 bdev_nvme_attach_controller</h2>
-<p>Construct <a class="el" href="bdev.html#bdev_config_nvme">NVMe bdev</a>. This RPC can also be used to add additional paths to an existing controller to enable multipathing. This is done by specifying the <code>name</code> parameter as an existing controller. When adding an additional path, the hostnqn, hostsvcid, hostaddr, prchk_reftag, and prchk_guard_arguments must not be specified and are assumed to have the same value as the existing path.</p>
+<p>Construct <a class="el" href="bdev.html#bdev_config_nvme">an NVMe bdev</a>. This RPC can also be used to add additional paths to an existing controller to enable multipathing. This is done by specifying the <code>name</code> parameter as an existing controller. When adding an additional path, the hostnqn, hostsvcid, hostaddr, prchk_reftag, and prchk_guard_arguments must not be specified and are assumed to have the same value as the existing path.</p>
 <p>The parameters, <code>ctrlr_loss_timeout_sec</code>, <code>reconnect_delay_sec</code>, and <code>fast_io_fail_timeout_sec</code>, are mutually dependent. If <code>reconnect_delay_sec</code> is non-zero, <code>ctrlr_loss_timeout_sec</code> has to be -1 or not less than <code>reconnect_delay_sec</code>. If <code>reconnect_delay_sec</code> is zero, <code>ctrlr_loss_timeout_sec</code> has to be zero. If <code>fast_io_fail_timeout_sec</code> is not zero, it has to be not less than <code>reconnect_delay_sec</code> and less than <code>ctrlr_loss_timeout_sec</code> if <code>ctrlr_loss_timeout_sec</code> is not -1.</p>
 <p>The <code>multipath_opts</code> parameter configures the policy when the controller is created. Every path attached to the same multipath controller must use identical multipath options.</p>
 <h3>Parameters</h3>
@@ -4749,7 +4749,7 @@ bdev_nvme_get_controller_health_info</h2>
 <div class="line">}</div>
 </div><!-- fragment --><h2><a class="anchor" id="rpc_bdev_rbd_register_cluster"></a>
 bdev_rbd_register_cluster</h2>
-<p>This method is available only if SPDK was build with Ceph RBD support.</p>
+<p>Add a Rados cluster with Ceph RBD backend. This method is available only if SPDK was build with Ceph RBD support.</p>
 <h3>Parameters</h3>
 <p>This RPC registers a Rados Cluster object handle which is only known to rbd module, it uses user_id + config_param or user_id + config_file + key_file or user_id + config_param + config_file + key_file to identify a Rados cluster object.</p>
 <p>When accessing the Ceph cluster as some user other than "admin" (the default), the "user_id" has to be set.</p>
@@ -4793,7 +4793,7 @@ bdev_rbd_register_cluster</h2>
 <div class="line">}</div>
 </div><!-- fragment --><h2><a class="anchor" id="rpc_bdev_rbd_unregister_cluster"></a>
 bdev_rbd_unregister_cluster</h2>
-<p>This method is available only if SPDK was build with Ceph RBD support. If there is still rbd bdev using this cluster, the unregisteration operation will fail.</p>
+<p>Unregister a Rados cluster object. This method is available only if SPDK was build with Ceph RBD support. If there is still rbd bdev using this cluster, the unregisteration operation will fail.</p>
 <h3>Parameters</h3>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -4821,7 +4821,7 @@ bdev_rbd_unregister_cluster</h2>
 <div class="line">}</div>
 </div><!-- fragment --><h2><a class="anchor" id="rpc_bdev_rbd_get_clusters_info"></a>
 bdev_rbd_get_clusters_info</h2>
-<p>This method is available only if SPDK was build with Ceph RBD support.</p>
+<p>Display registered Rados cluster names and related info. This method is available only if SPDK was build with Ceph RBD support.</p>
 <h3>Parameters</h3>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -4848,7 +4848,7 @@ bdev_rbd_get_clusters_info</h2>
 <div class="line">}</div>
 </div><!-- fragment --><h2><a class="anchor" id="rpc_bdev_rbd_create"></a>
 bdev_rbd_create</h2>
-<p>Create <a class="el" href="bdev.html#bdev_config_rbd">Ceph RBD</a> bdev</p>
+<p>Create <a class="el" href="bdev.html#bdev_config_rbd">an RBD bdev</a></p>
 <p>This method is available only if SPDK was build with Ceph RBD support.</p>
 <h3>Parameters</h3>
 <p>If no config is specified, Ceph configuration files must exist with all relevant settings for accessing the pool. If a config map is passed, the configuration files are ignored and instead all key/value pairs are passed to rados_conf_set to configure cluster access. In practice, "mon_host" (= list of monitor address+port) and "key" (= the secret key stored in Ceph keyrings) are enough.</p>
@@ -4923,7 +4923,7 @@ bdev_rbd_create</h2>
 <div class="line">}</div>
 </div><!-- fragment --><h2><a class="anchor" id="rpc_bdev_rbd_delete"></a>
 bdev_rbd_delete</h2>
-<p>Delete <a class="el" href="bdev.html#bdev_config_rbd">Ceph RBD</a> bdev</p>
+<p>Delete <a class="el" href="bdev.html#bdev_config_rbd">an RBD bdev</a></p>
 <p>This method is available only if SPDK was build with Ceph RBD support.</p>
 <h3>Parameters</h3>
 <table class="markdownTable">
@@ -4952,7 +4952,7 @@ bdev_rbd_delete</h2>
 <div class="line">}</div>
 </div><!-- fragment --><h2><a class="anchor" id="rpc_bdev_rbd_resize"></a>
 bdev_rbd_resize</h2>
-<p>Resize <a class="el" href="bdev.html#bdev_config_rbd">Ceph RBD</a> bdev</p>
+<p>Resize <a class="el" href="bdev.html#bdev_config_rbd">an RBD bdev</a></p>
 <p>This method is available only if SPDK was build with Ceph RBD support.</p>
 <h3>Parameters</h3>
 <table class="markdownTable">
@@ -5222,7 +5222,7 @@ bdev_error_resume_pending</h2>
 <div class="line">}</div>
 </div><!-- fragment --><h2><a class="anchor" id="rpc_bdev_iscsi_set_options"></a>
 bdev_iscsi_set_options</h2>
-<p>This RPC can be called at any time, but the new value will only take effect for new iSCSI bdevs.</p>
+<p>Set options for iSCSI bdevs. This RPC can be called at any time, but the new value will only take effect for new iSCSI bdevs.</p>
 <h3>Parameters</h3>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -5811,7 +5811,7 @@ bdev_xnvme_delete</h2>
 <div class="line">}</div>
 </div><!-- fragment --><h2><a class="anchor" id="rpc_bdev_virtio_attach_controller"></a>
 bdev_virtio_attach_controller</h2>
-<p>Create new initiator <a class="el" href="bdev.html#bdev_config_virtio_scsi">Virtio SCSI</a> or <a class="el" href="bdev.html#bdev_config_virtio_blk">Virtio Block</a> and expose all found bdevs.</p>
+<p>Create new initiator <a class="el" href="bdev.html#bdev_config_virtio_scsi">Virtio SCSI</a> or <a class="el" href="bdev.html#bdev_config_virtio_blk">Virtio Block</a> bdev and expose all found bdevs.</p>
 <h3>Parameters</h3>
 <p>In case of Virtio SCSI the <code>name</code> parameter will be base name for new created bdevs. For Virtio Blk <code>name</code> will be the name of created bdev.</p>
 <p><code>vq_count</code> and <code>vq_size</code> parameters are valid only if <code>trtype</code> is <code>user</code>.</p>
@@ -6229,7 +6229,7 @@ iscsi_get_auth_groups</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">tag   </td><td class="markdownTableBodyNone">int32   </td><td class="markdownTableBodyNone">Authentication group tag    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">secrets   </td><td class="markdownTableBodyNone">array   </td><td class="markdownTableBodyNone">Array of <a class="el" href="#rpc_iscsi_create_auth_group_secret">secret</a> objects   </td></tr>
+<td class="markdownTableBodyNone">secrets   </td><td class="markdownTableBodyNone">array   </td><td class="markdownTableBodyNone">Array of <a class="el" href="#rpc_iscsi_create_auth_group_secret">authentication secret</a> objects   </td></tr>
 </table>
 <h3>Example</h3>
 <p>Example request:</p>
@@ -7139,7 +7139,7 @@ iscsi_target_node_add_lun</h2>
 <div class="line">}</div>
 </div><!-- fragment --><h2><a class="anchor" id="rpc_iscsi_target_node_set_redirect"></a>
 iscsi_target_node_set_redirect</h2>
-<p>Update redirect portal of the primary portal group for the target node,</p>
+<p>Update redirect portal of the public portal group for the target node. Omit redirect host and port to clear previously set redirect settings.</p>
 <h3>Parameters</h3>
 <p>If both redirect_host and redirect_port are omitted, clear the redirect portal.</p>
 <table class="markdownTable">
@@ -7388,6 +7388,7 @@ nvmf_create_transport</h2>
 <div class="line">}</div>
 </div><!-- fragment --><h2><a class="anchor" id="rpc_nvmf_get_subsystems"></a>
 nvmf_get_subsystems</h2>
+<p>Get information about NVMe-oF subsystems.</p>
 <h3>Parameters</h3>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -7555,7 +7556,7 @@ nvmf_subsystem_add_listener</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">tgt_name   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Parent NVMe-oF target name    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">listen_address   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">object   </td><td class="markdownTableBodyNone"><a class="el" href="#rpc_nvmf_listen_address">listen_address</a> object    </td></tr>
+<td class="markdownTableBodyNone">listen_address   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">object   </td><td class="markdownTableBodyNone"><a class="el" href="#rpc_nvmf_listen_address">Listen address</a> object    </td></tr>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">secure_channel   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Require all connections to immediately establish a secure channel    </td></tr>
 <tr class="markdownTableRowOdd">
@@ -7617,7 +7618,7 @@ nvmf_subsystem_remove_listener</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">tgt_name   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Parent NVMe-oF target name    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">listen_address   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">object   </td><td class="markdownTableBodyNone"><a class="el" href="#rpc_nvmf_listen_address">listen_address</a> object   </td></tr>
+<td class="markdownTableBodyNone">listen_address   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">object   </td><td class="markdownTableBodyNone"><a class="el" href="#rpc_nvmf_listen_address">Listen address</a> object   </td></tr>
 </table>
 <h3>Response</h3>
 <p>true on success</p>
@@ -7655,7 +7656,7 @@ nvmf_subsystem_listener_set_ana_state</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">tgt_name   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Parent NVMe-oF target name    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">listen_address   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">object   </td><td class="markdownTableBodyNone"><a class="el" href="#rpc_nvmf_listen_address">listen_address</a> object    </td></tr>
+<td class="markdownTableBodyNone">listen_address   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">object   </td><td class="markdownTableBodyNone"><a class="el" href="#rpc_nvmf_listen_address">Listen address</a> object    </td></tr>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">ana_state   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">enum   </td><td class="markdownTableBodyNone">ANA state to set    </td></tr>
 <tr class="markdownTableRowOdd">
@@ -7696,7 +7697,7 @@ nvmf_subsystem_add_ns</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">nqn   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Subsystem NQN    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">namespace   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">object   </td><td class="markdownTableBodyNone"><a class="el" href="#rpc_nvmf_namespace">namespace</a> object    </td></tr>
+<td class="markdownTableBodyNone">namespace   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">object   </td><td class="markdownTableBodyNone"><a class="el" href="#rpc_nvmf_namespace">Namespace</a> object    </td></tr>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">tgt_name   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Parent NVMe-oF target name   </td></tr>
 </table>
@@ -7964,6 +7965,7 @@ nvmf_subsystem_set_keys</h2>
 <div class="line">}</div>
 </div><!-- fragment --><h2><a class="anchor" id="rpc_nvmf_subsystem_get_controllers"></a>
 nvmf_subsystem_get_controllers</h2>
+<p>Get information about NVMe-oF subsystem controllers.</p>
 <h3>Parameters</h3>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -7999,6 +8001,7 @@ nvmf_subsystem_get_controllers</h2>
 <div class="line">}</div>
 </div><!-- fragment --><h2><a class="anchor" id="rpc_nvmf_subsystem_get_qpairs"></a>
 nvmf_subsystem_get_qpairs</h2>
+<p>Get information about NVMe-oF subsystem queue pairs.</p>
 <h3>Parameters</h3>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -8049,6 +8052,7 @@ nvmf_subsystem_get_qpairs</h2>
 <div class="line">}</div>
 </div><!-- fragment --><h2><a class="anchor" id="rpc_nvmf_subsystem_get_listeners"></a>
 nvmf_subsystem_get_listeners</h2>
+<p>Get information about NVMe-oF subsystem listeners.</p>
 <h3>Parameters</h3>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -8196,7 +8200,7 @@ nvmf_discovery_add_referral</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">tgt_name   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Parent NVMe-oF target name    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">address   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">object   </td><td class="markdownTableBodyNone"><a class="el" href="#rpc_nvmf_listen_address">listen_address</a> object    </td></tr>
+<td class="markdownTableBodyNone">address   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">object   </td><td class="markdownTableBodyNone"><a class="el" href="#rpc_nvmf_listen_address">Listen address</a> object    </td></tr>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">secure_channel   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">The connection to that discovery subsystem requires a secure channel    </td></tr>
 <tr class="markdownTableRowEven">
@@ -8236,7 +8240,7 @@ nvmf_discovery_remove_referral</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">tgt_name   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Parent NVMe-oF target name    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">address   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">object   </td><td class="markdownTableBodyNone"><a class="el" href="#rpc_nvmf_listen_address">listen_address</a> object    </td></tr>
+<td class="markdownTableBodyNone">address   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">object   </td><td class="markdownTableBodyNone"><a class="el" href="#rpc_nvmf_listen_address">Listen address</a> object    </td></tr>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">subnqn   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Subsystem NQN   </td></tr>
 </table>
@@ -8265,6 +8269,7 @@ nvmf_discovery_remove_referral</h2>
 <div class="line">}</div>
 </div><!-- fragment --><h2><a class="anchor" id="rpc_nvmf_discovery_get_referrals"></a>
 nvmf_discovery_get_referrals</h2>
+<p>Get information about NVMe-oF discovery service referrals.</p>
 <h3>Parameters</h3>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -8360,6 +8365,7 @@ admin_cmd_passthru</h4>
 <div class="line">}</div>
 </div><!-- fragment --><h2><a class="anchor" id="rpc_nvmf_get_transports"></a>
 nvmf_get_transports</h2>
+<p>Get information about NVMe-oF transports.</p>
 <h3>Parameters</h3>
 <p>The user may specify no parameters in order to list all transports, or a transport may be specified by type.</p>
 <table class="markdownTable">
@@ -8886,7 +8892,7 @@ vhost_scsi_controller_add_target</h2>
 <div class="line">}</div>
 </div><!-- fragment --><h2><a class="anchor" id="rpc_vhost_scsi_controller_remove_target"></a>
 vhost_scsi_controller_remove_target</h2>
-<p>Remove SCSI target ID <code>scsi_target_num</code> from vhost target <code>scsi_target_num</code>.</p>
+<p>Remove SCSI target ID <code>scsi_target_num</code> from vhost target <code>ctrlr</code>.</p>
 <p>This method will fail if initiator is connected, but doesn't support hot-remove (the <code>VIRTIO_SCSI_F_HOTPLUG</code> is not negotiated).</p>
 <h3>Parameters</h3>
 <table class="markdownTable">
@@ -8946,6 +8952,7 @@ virtio_blk_create_transport</h2>
 <div class="line">}</div>
 </div><!-- fragment --><h2><a class="anchor" id="rpc_virtio_blk_get_transports"></a>
 virtio_blk_get_transports</h2>
+<p>Get information about virtio-blk transports.</p>
 <h3>Parameters</h3>
 <p>The user may specify no parameters in order to list all transports, or a transport name may be specified.</p>
 <table class="markdownTable">
@@ -9064,7 +9071,7 @@ Vhost SCSI</h4>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">scsi_dev_num   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">SCSI target ID initiator will see when scanning this controller    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">luns   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">array   </td><td class="markdownTableBodyNone">array of objects describing <a class="el" href="#rpc_vhost_get_controllers_scsi_luns">Vhost SCSI LUN</a>   </td></tr>
+<td class="markdownTableBodyNone">luns   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">array   </td><td class="markdownTableBodyNone">array of objects describing <a class="el" href="#rpc_vhost_get_controllers_scsi_luns">Vhost SCSI LUNs</a>   </td></tr>
 </table>
 <h4><a class="anchor" id="rpc_vhost_get_controllers_scsi_luns"></a>
 Vhost SCSI LUN</h4>
@@ -10091,7 +10098,7 @@ bdev_raid_remove_base_bdev</h2>
 SPLIT</h1>
 <h2><a class="anchor" id="rpc_bdev_split_create"></a>
 bdev_split_create</h2>
-<p>This is used to split an underlying block device and create several smaller equal-sized vbdevs.</p>
+<p>This is used to split an underlying block device and create several smaller equal-sized vbdevs.</p>
 <h3>Parameters</h3>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -11487,7 +11494,7 @@ bdev_nvme_remove_error_injection</h2>
 <div class="line">}</div>
 </div><!-- fragment --><h2><a class="anchor" id="rpc_bdev_daos_create"></a>
 bdev_daos_create</h2>
-<p>Construct <a class="el" href="bdev.html#bdev_config_daos">DAOS bdev</a></p>
+<p>Construct <a class="el" href="bdev.html#bdev_config_daos">a DAOS bdev</a></p>
 <h3>Parameters</h3>
 <p>To find more about various object classes please visit <a href="https://github.com/daos-stack/daos/blob/master/src/object/README.md">DAOS documentation</a>. Please note, that DAOS bdev module uses the same CLI flag notation as <code>dmg</code> and <code>daos</code> commands, for instance, <code>SX</code> or <code>EC_4P2G2</code> rather than in DAOS header file <code>OC_SX</code> or <code>OC_EC_4P2G2</code>.</p>
 <table class="markdownTable">
@@ -11533,7 +11540,7 @@ bdev_daos_create</h2>
 <div class="line">}</div>
 </div><!-- fragment --><h2><a class="anchor" id="rpc_bdev_daos_delete"></a>
 bdev_daos_delete</h2>
-<p>Delete <a class="el" href="bdev.html#bdev_config_daos">DAOS bdev</a></p>
+<p>Delete <a class="el" href="bdev.html#bdev_config_daos">a DAOS bdev</a></p>
 <h3>Parameters</h3>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -11561,7 +11568,7 @@ bdev_daos_delete</h2>
 <div class="line">}</div>
 </div><!-- fragment --><h2><a class="anchor" id="rpc_bdev_daos_resize"></a>
 bdev_daos_resize</h2>
-<p>Resize <a class="el" href="bdev.html#bdev_config_daos">DAOS bdev</a>.</p>
+<p>Resize <a class="el" href="bdev.html#bdev_config_daos">a DAOS bdev</a>.</p>
 <h3>Parameters</h3>
 <table class="markdownTable">
 <tr class="markdownTableHead">

@@ -7,7 +7,7 @@ var searchData=
   ['kernel_20idxd_20driver_4',['How to use kernel idxd driver',['../accel_fw.html#accel_idxd_kernel',1,'']]],
   ['kernel_20vs_20user_5',['Kernel vs User',['../idxd.html#idxd_configs',1,'']]],
   ['key_6',['key',['../structspdk__accel__crypto__key.html#af28371302175cbcfae86ffa9fdf9b70e',1,'spdk_accel_crypto_key::key'],['../structspdk__bdev_1_1____bdev__internal__fields_1_1____bdev__internal__claim_1_1____bdev__internal__claim__v2.html#a2b0875171cbaa591c529a072e8e31865',1,'spdk_bdev::__bdev_internal_fields::__bdev_internal_claim::__bdev_internal_claim_v2::key']]],
-  ['key_20functions_7',['Key Functions',['../idxd.html#idxd_key_functions',1,'Key Functions'],['../ioat.html#ioat_key_functions',1,'Key Functions'],['../vmd.html#vmd_key_functions',1,'Key Functions']]],
+  ['key_20functions_7',['Key Functions',['../idxd.html#idxd_key_functions',1,'Key Functions'],['../ioat.html#ioat_key_functions',1,'Key Functions'],['../ntb_amd.html#ntb_amd_key_functions',1,'Key Functions'],['../vmd.html#vmd_key_functions',1,'Key Functions']]],
   ['key2_8',['key2',['../structspdk__accel__crypto__key.html#a5cb430285008edf86de712110f672a45',1,'spdk_accel_crypto_key']]],
   ['key2_5fsize_9',['key2_size',['../structspdk__accel__crypto__key.html#affba315845451014fd15be510fba4ce9',1,'spdk_accel_crypto_key']]],
   ['key_5fname_10',['key_name',['../structspdk__accel__crypto__key__create__param.html#a250d2edeb39219a9e092b38b1141e2c0',1,'spdk_accel_crypto_key_create_param']]],

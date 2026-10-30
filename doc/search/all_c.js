@@ -66,7 +66,7 @@ var searchData=
   ['initiator_20bdev_20qos_20vpp_20userspace_20tcp_20ip_63',['v18.04: Logical Volume Snapshot/Clone, iSCSI Initiator, Bdev QoS, VPP Userspace TCP/IP',['../changelog.html#changelog-v18-04',1,'']]],
   ['installation_64',['Installation',['../shfmt.html#shfmt_installation',1,'']]],
   ['installing_20prerequisites_65',['Installing Prerequisites',['../getting_started.html#getting_started_prerequisites',1,'']]],
-  ['interface_66',['Interface',['../idxd.html#idxd_interface',1,'Public Interface'],['../ioat.html#ioat_interface',1,'Public Interface'],['../nvme.html#nvme_interface',1,'Public Interface'],['../vmd.html#vmd_interface',1,'Public Interface']]],
+  ['interface_66',['Interface',['../idxd.html#idxd_interface',1,'Public Interface'],['../ioat.html#ioat_interface',1,'Public Interface'],['../ntb_amd.html#ntb_amd_interface',1,'Public Interface'],['../nvme.html#nvme_interface',1,'Public Interface'],['../vmd.html#vmd_interface',1,'Public Interface']]],
   ['internal_67',['internal',['../structspdk__bdev__io.html#aee95823803c9e44111b128f39ab731c5',1,'spdk_bdev_io']]],
   ['internal_68',['ublk Internal',['../ublk.html#ublk_internal',1,'']]],
   ['internal_20memory_20usage_69',['NVMe Driver Internal Memory Usage',['../nvme.html#nvme_memory_usage',1,'']]],

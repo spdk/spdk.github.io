@@ -94,7 +94,7 @@ var searchData=
   ['ftl_5fstats_5fentry_91',['ftl_stats_entry',['../structftl__stats__entry.html',1,'']]],
   ['ftl_5fstats_5ferror_92',['ftl_stats_error',['../structftl__stats__error.html',1,'']]],
   ['ftl_5fstats_5fgroup_93',['ftl_stats_group',['../structftl__stats__group.html',1,'']]],
-  ['functions_94',['Functions',['../accel_fw.html#accel_functions',1,'Acceleration Framework Functions'],['../group__bdev__io__submit__functions.html',1,'bdev I/O Submit Functions'],['../idxd.html#idxd_key_functions',1,'Key Functions'],['../ioat.html#ioat_key_functions',1,'Key Functions'],['../vmd.html#vmd_key_functions',1,'Key Functions']]],
+  ['functions_94',['Functions',['../accel_fw.html#accel_functions',1,'Acceleration Framework Functions'],['../group__bdev__io__submit__functions.html',1,'bdev I/O Submit Functions'],['../idxd.html#idxd_key_functions',1,'Key Functions'],['../ioat.html#ioat_key_functions',1,'Key Functions'],['../ntb_amd.html#ntb_amd_key_functions',1,'Key Functions'],['../vmd.html#vmd_key_functions',1,'Key Functions']]],
   ['fused_20operations_95',['Fused operations',['../nvme.html#nvme_fuses',1,'']]],
   ['fused_20support_96',['v20.01: Optimized thin provisioning, FTL bdev, VMD hot plug, FUSED support',['../changelog.html#changelog-v20-01',1,'']]],
   ['fused_5fiovcnt_97',['fused_iovcnt',['../structspdk__bdev__io__block__params.html#a38cd6a3b353a5ab27cfbf285e0c55d2d',1,'spdk_bdev_io_block_params']]],

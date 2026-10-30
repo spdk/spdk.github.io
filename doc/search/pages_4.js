@@ -12,7 +12,7 @@ var searchData=
   ['distributions_9',['distributions',['../distributions.html',1,'ci_tools']]],
   ['dma_20from_20user_20space_10',['Direct Memory Access (DMA) From User Space',['../memory.html',1,'concepts']]],
   ['dmas_11',['Peer-2-Peer DMAs',['../peer_2_peer.html',1,'misc']]],
-  ['driver_12',['Driver',['../ioat.html',1,'I/OAT Driver'],['../idxd.html',1,'IDXD Driver'],['../nvme.html',1,'NVMe Driver']]],
+  ['driver_12',['Driver',['../ntb_amd.html',1,'AMD NTB Driver'],['../ioat.html',1,'I/OAT Driver'],['../idxd.html',1,'IDXD Driver'],['../nvme.html',1,'NVMe Driver']]],
   ['driver_13',['driver',['../virtio.html',1,'Virtio driver'],['../vmd.html',1,'VMD driver']]],
   ['driver_20modules_14',['Driver Modules',['../driver_modules.html',1,'']]],
   ['drivers_15',['User Space Drivers',['../userspace.html',1,'concepts']]],

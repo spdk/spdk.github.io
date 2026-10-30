@@ -60,7 +60,7 @@ var searchData=
   ['examine_5fconfig_57',['examine_config',['../structspdk__bdev__module.html#a0a0f5d5d762258471ba6e41119b9f921',1,'spdk_bdev_module']]],
   ['examine_5fdisk_58',['examine_disk',['../structspdk__bdev__module.html#a18e49a0bccf1b515e51afbde09f8ac35',1,'spdk_bdev_module']]],
   ['examine_5fin_5fprogress_59',['examine_in_progress',['../structspdk__bdev_1_1____bdev__internal__fields.html#af31c1f546b2115b5887bc0c3db3418b5',1,'spdk_bdev::__bdev_internal_fields']]],
-  ['example_60',['Running An Example',['../vagrant.html#vagrant_example',1,'']]],
+  ['example_60',['Example',['../ntb_amd.html#ntb_amd_perf',1,'NTB perf example'],['../vagrant.html#vagrant_example',1,'Running An Example']]],
   ['example_20applications_61',['Running the Example Applications',['../getting_started.html#getting_started_examples',1,'']]],
   ['example_20output_62',['Example output',['../vhost.html#vhost_example',1,'']]],
   ['example_20p2p_20application_63',['cmb_copy: An example P2P Application',['../peer_2_peer.html#p2p_cmb_copy',1,'']]],
