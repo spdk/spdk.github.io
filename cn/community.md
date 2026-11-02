@@ -30,7 +30,7 @@ SPDK社区会议对所有人开放，并鼓励所有人参与。社区会议的�
 ![SPDK](../../img/spdk_free.jpg "SPDK")
 
 ## 下一次欧洲会议时间
-<div id="euro-mtg"></div>
+<div id="community-mtg"></div>
 
 # 贡献代码
 
