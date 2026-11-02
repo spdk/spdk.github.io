@@ -1,58 +1,25 @@
-var meetingDate = new Date(Date.UTC(2018, 3, 3, 15, 0, 0, 0));
+// Weekly community meeting, Tuesdays at 15:00 UTC. That is the same
+// date in the US and in Europe, so the holidays below are UTC dates.
+var firstMeeting = Date.UTC(2018, 3, 3, 15);
+var week = 7 * 24 * 60 * 60 * 1000;
+var hour = 60 * 60 * 1000;
 
-// Holiday list. Should be of form [date, recurring=true/false]
-var USHolidays = [[ new Date(2018, 11, 24), true ], //Christmas Eve
-        [ new Date(2018, 11, 25), true ], //Christmas
-        [ new Date(2018, 11, 26), true ], //Day after Christmas
-        [ new Date(2018, 11, 31), true], //New Years Eve
-        [ new Date(2018, 0, 1), true ], //New Years
-        [ new Date(2019, 3, 16), true ], //SPDK Summit
-        [ new Date(2019, 3, 17), true ], //SPDK Summit
-        [ new Date(2019, 6, 4), true ], //4th of July
-        [ new Date(2019, 4, 27), false ], //Memorial Day
-        [ new Date(2019, 8, 2), false ], //Labor Day
-        [ new Date(2019, 10, 28), false ], //Thanksgiving
-        [ new Date(2019, 10, 29), false ], //Thanksgiving Recovery Day :)
-        [ new Date(2026, 1, 6), false ]] //Epiphany
+// No meeting on these days, as "MM-DD" every year or "YYYY-MM-DD" once.
+var holidays = [
+        "12-24", // Christmas Eve
+        "12-25", // Christmas Day
+        "12-26", // Boxing Day
+        "12-31", // New Years Eve
+        "01-01", // New Years Day
+        "01-06", // Epiphany
+        "07-04", // Fourth of July
+        "2026-12-08", // SPDK Developer Meetup
+];
 
-var EuroHolidays = []
+function isHoliday(date) {
+        var day = date.toISOString().slice(0, 10);
 
-// Time zones for holiday checking.
-var USTimeZone = 'America/Phoenix'
-var EuroTimeZone = 'Europe/Warsaw'
-
-function compareHoliday(date, holidayList, zone) {
-        var overnightStart = 16;
-        var localeOptions = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', timeZone: zone, hour: 'numeric', minute: 'numeric' };
-        var localDate = new Date(date.toLocaleDateString(undefined, localeOptions))
-
-        for (var i = 0; i < holidayList.length; i++) {
-                let holiday = holidayList[i][0];
-                let recurring = holidayList[i][1];
-
-                if (recurring == false) {
-                        if (localDate.getFullYear() != holiday.getFullYear()) {
-                                continue;
-                        }
-                }
-
-                if (localDate.getMonth() != holiday.getMonth()) {
-                        continue;
-                }
-
-                if (localDate.getDate() == holiday.getDate()) {
-                        return true;
-                }
-
-                // Any meeting after business hours on the day before a holiday is typically cancelled.
-                if (localDate.getDate() == holiday.getDate() - 1 && localDate.getHours() > overnightStart) {
-                        return true;
-                }
-
-                continue;
-        }
-
-        return false;
+        return holidays.includes(day) || holidays.includes(day.slice(5));
 }
 
 function formatDate(date) {
@@ -60,15 +27,13 @@ function formatDate(date) {
         return date.toLocaleDateString(undefined, options);
 }
 
-var currentDate = new Date();
-currentDate.setHours(currentDate.getHours() - 1);
+// Show a meeting until an hour after it starts. Step in UTC, so daylight
+// saving time in the reader's time zone does not move the meetings.
+var cutoff = Date.now() - hour;
+var meetingDate = new Date(firstMeeting);
 
-while (meetingDate < currentDate || compareHoliday(meetingDate, USHolidays, USTimeZone) || compareHoliday(meetingDate, EuroHolidays, EuroTimeZone)) {
-        meetingDate.setDate(meetingDate.getDate() + 7);
+while (meetingDate.getTime() < cutoff || isHoliday(meetingDate)) {
+        meetingDate = new Date(meetingDate.getTime() + week);
 }
-
-// Regenerate the dates here - this makes sure we account for daylight savings adjustments between the starting
-// date at the beginning of this file and the calculated address based on the current date/time.
-meetingDate = new Date(Date.UTC(meetingDate.getUTCFullYear(), meetingDate.getUTCMonth(), meetingDate.getUTCDate(), 15, 0, 0, 0));
 
 document.getElementById("community-mtg").textContent = formatDate(meetingDate);
