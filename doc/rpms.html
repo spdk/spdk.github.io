@@ -165,12 +165,12 @@ Building SPDK RPMs</h1>
 </div><!-- fragment --><ul>
 <li>spdk - provides all the binaries, common tooling, etc.</li>
 <li>spdk-devel - provides development files</li>
-<li>spdk-libs - provides target lib, .pc files (&ndash;with-shared)</li>
-<li>spdk-dpdk-libs - provides dpdk lib files (&ndash;with-shared|&ndash;with-dpdk)</li>
+<li>spdk-libs - provides target lib, .pc files (<code>--with-shared</code>)</li>
+<li>spdk-dpdk-libs - provides dpdk lib files (<code>--with-shared</code>|<code>--with-dpdk</code>)</li>
 </ul>
 <h1><a class="anchor" id="dpdk_devel"></a>
 Special case for dpdk-devel</h1>
-<p>When rpm.sh finds a bare &ndash;with-dpdk argument on the cmdline it will try to adjust the behavior of the rpmbuild to make sure only SPDK RPMs are built. Since this argument requests SPDK to be built against installed DPDK (e.g. dpdk-devel package) the spdk-dpdk-libs RPM won't be included. Moreover, the .spec will be armed with a build requirement to make sure dpdk-devel is present on the building system. The minimum required version of dpdk-devel is set to 19.11. </p>
+<p>When rpm.sh finds a bare <code>--with-dpdk</code> argument on the cmdline it will try to adjust the behavior of the rpmbuild to make sure only SPDK RPMs are built. Since this argument requests SPDK to be built against installed DPDK (e.g. dpdk-devel package) the spdk-dpdk-libs RPM won't be included. Moreover, the .spec will be armed with a build requirement to make sure dpdk-devel is present on the building system. The minimum required version of dpdk-devel is set to 19.11. </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
