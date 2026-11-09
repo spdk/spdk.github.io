@@ -204,6 +204,18 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_nvme_get_de
 <tr class="memitem:ac6dc49374ff7939810421039a7584ce2" id="r_ac6dc49374ff7939810421039a7584ce2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac6dc49374ff7939810421039a7584ce2">spdk_bdev_nvme_get_path_stat</a> (struct spdk_bdev_desc *desc, <a class="el" href="#a5f79c9bfac19ded846b0ddba0f0069da">spdk_bdev_nvme_get_path_stat_cb</a> cb_fn, void *cb_arg)</td></tr>
 <tr class="memdesc:ac6dc49374ff7939810421039a7584ce2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Asynchronously retrieve aggregated I/O statistics for an NVMe bdev's paths.  <br /></td></tr>
 <tr class="separator:ac6dc49374ff7939810421039a7584ce2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2948ab2368b297c8f45a6945ec36bf7f" id="r_a2948ab2368b297c8f45a6945ec36bf7f"><td class="memItemLeft" align="right" valign="top">struct spdk_bdev_nvme_path *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2948ab2368b297c8f45a6945ec36bf7f">spdk_bdev_nvme_path_first</a> (struct spdk_bdev_desc *desc)</td></tr>
+<tr class="memdesc:a2948ab2368b297c8f45a6945ec36bf7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the first path for an NVMe bdev.  <br /></td></tr>
+<tr class="separator:a2948ab2368b297c8f45a6945ec36bf7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80009b1c4a30248301f7badb912a60a8" id="r_a80009b1c4a30248301f7badb912a60a8"><td class="memItemLeft" align="right" valign="top">struct spdk_bdev_nvme_path *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a80009b1c4a30248301f7badb912a60a8">spdk_bdev_nvme_path_next</a> (struct spdk_bdev_desc *desc, struct spdk_bdev_nvme_path *prev)</td></tr>
+<tr class="memdesc:a80009b1c4a30248301f7badb912a60a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the path after a given path.  <br /></td></tr>
+<tr class="separator:a80009b1c4a30248301f7badb912a60a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9c60393648ffcfbc1b30d2cab3b6100" id="r_aa9c60393648ffcfbc1b30d2cab3b6100"><td class="memItemLeft" align="right" valign="top">struct spdk_nvme_ctrlr *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa9c60393648ffcfbc1b30d2cab3b6100">spdk_bdev_nvme_path_get_ctrlr</a> (const struct spdk_bdev_nvme_path *path)</td></tr>
+<tr class="memdesc:aa9c60393648ffcfbc1b30d2cab3b6100"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the NVMe controller associated with a path.  <br /></td></tr>
+<tr class="separator:aa9c60393648ffcfbc1b30d2cab3b6100"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a379ff355844a47b4af8d7d359b081f06" id="r_a379ff355844a47b4af8d7d359b081f06"><td class="memItemLeft" align="right" valign="top">enum spdk_nvme_ana_state&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a379ff355844a47b4af8d7d359b081f06">spdk_bdev_nvme_path_get_ana_state</a> (const struct spdk_bdev_nvme_path *path)</td></tr>
+<tr class="memdesc:a379ff355844a47b4af8d7d359b081f06"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current ANA state of a path.  <br /></td></tr>
+<tr class="separator:a379ff355844a47b4af8d7d359b081f06"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a435db6b019b2815c5118406a47d20c98" id="r_a435db6b019b2815c5118406a47d20c98"><td class="memItemLeft" align="right" valign="top">struct spdk_bdev_nvme_ctrlr *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a435db6b019b2815c5118406a47d20c98">spdk_bdev_nvme_first_bdev_ctrlr</a> (void)</td></tr>
 <tr class="memdesc:a435db6b019b2815c5118406a47d20c98"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the first bdev_nvme controller group.  <br /></td></tr>
 <tr class="separator:a435db6b019b2815c5118406a47d20c98"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -602,6 +614,119 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_bdev_nvme_get_de
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Pointer to the next controller group, or NULL if no more. </dd></dl>
+
+</div>
+</div>
+<a id="a2948ab2368b297c8f45a6945ec36bf7f" name="a2948ab2368b297c8f45a6945ec36bf7f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2948ab2368b297c8f45a6945ec36bf7f">&#9670;&#160;</a></span>spdk_bdev_nvme_path_first()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct spdk_bdev_nvme_path * spdk_bdev_nvme_path_first </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_bdev_desc *</td>          <td class="paramname"><span class="paramname"><em>desc</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the first path for an NVMe bdev. </p>
+<p>Must be called from the app thread. The returned handle is valid only while the path remains attached to the bdev.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">desc</td><td>Open descriptor for the NVMe bdev. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The first path, or NULL if the bdev has no paths. </dd></dl>
+
+</div>
+</div>
+<a id="a379ff355844a47b4af8d7d359b081f06" name="a379ff355844a47b4af8d7d359b081f06"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a379ff355844a47b4af8d7d359b081f06">&#9670;&#160;</a></span>spdk_bdev_nvme_path_get_ana_state()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum spdk_nvme_ana_state spdk_bdev_nvme_path_get_ana_state </td>
+          <td>(</td>
+          <td class="paramtype">const struct spdk_bdev_nvme_path *</td>          <td class="paramname"><span class="paramname"><em>path</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the current ANA state of a path. </p>
+<p>Must be called from the app thread.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">path</td><td>Path handle returned by <a class="el" href="#a2948ab2368b297c8f45a6945ec36bf7f" title="Get the first path for an NVMe bdev.">spdk_bdev_nvme_path_first()</a> or <a class="el" href="#a80009b1c4a30248301f7badb912a60a8" title="Get the path after a given path.">spdk_bdev_nvme_path_next()</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The current ANA state of the path. </dd></dl>
+
+</div>
+</div>
+<a id="aa9c60393648ffcfbc1b30d2cab3b6100" name="aa9c60393648ffcfbc1b30d2cab3b6100"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa9c60393648ffcfbc1b30d2cab3b6100">&#9670;&#160;</a></span>spdk_bdev_nvme_path_get_ctrlr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct spdk_nvme_ctrlr * spdk_bdev_nvme_path_get_ctrlr </td>
+          <td>(</td>
+          <td class="paramtype">const struct spdk_bdev_nvme_path *</td>          <td class="paramname"><span class="paramname"><em>path</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the NVMe controller associated with a path. </p>
+<p>Must be called from the app thread. The returned pointer is valid only while the path's controller remains attached.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">path</td><td>Path handle returned by <a class="el" href="#a2948ab2368b297c8f45a6945ec36bf7f" title="Get the first path for an NVMe bdev.">spdk_bdev_nvme_path_first()</a> or <a class="el" href="#a80009b1c4a30248301f7badb912a60a8" title="Get the path after a given path.">spdk_bdev_nvme_path_next()</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The controller associated with the path. </dd></dl>
+
+</div>
+</div>
+<a id="a80009b1c4a30248301f7badb912a60a8" name="a80009b1c4a30248301f7badb912a60a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a80009b1c4a30248301f7badb912a60a8">&#9670;&#160;</a></span>spdk_bdev_nvme_path_next()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct spdk_bdev_nvme_path * spdk_bdev_nvme_path_next </td>
+          <td>(</td>
+          <td class="paramtype">struct spdk_bdev_desc *</td>          <td class="paramname"><span class="paramname"><em>desc</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct spdk_bdev_nvme_path *</td>          <td class="paramname"><span class="paramname"><em>prev</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the path after a given path. </p>
+<p>Must be called from the app thread. The returned handle is valid only while the path remains attached to the bdev.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">desc</td><td>Open descriptor for the NVMe bdev. </td></tr>
+    <tr><td class="paramname">prev</td><td>Previous path returned by <a class="el" href="#a2948ab2368b297c8f45a6945ec36bf7f" title="Get the first path for an NVMe bdev.">spdk_bdev_nvme_path_first()</a> or <a class="el" href="#a80009b1c4a30248301f7badb912a60a8" title="Get the path after a given path.">spdk_bdev_nvme_path_next()</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The next path, or NULL if there are no more paths. </dd></dl>
 
 </div>
 </div>

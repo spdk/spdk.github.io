@@ -3627,8 +3627,10 @@ bdev_aio_create</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">fallocate   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Enable UNMAP and WRITE ZEROES support. Intended only for testing purposes due to synchronous syscall.    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">uuid   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uuid   </td><td class="markdownTableBodyNone">UUID of new bdev    </td></tr>
+<td class="markdownTableBodyNone">blkdiscard   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Enable UNMAP support using the BLKDISCARD ioctl. Can be combined with fallocate, which then only services WRITE ZEROES. The specified device must be a block device, otherwise creation will fail. Mutually exclusive with readonly. Intended only for testing purposes due to synchronous syscall.    </td></tr>
 <tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">uuid   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uuid   </td><td class="markdownTableBodyNone">UUID of new bdev    </td></tr>
+<tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">nowait   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Enable the RWF_NOWAIT flag for block devices. If the flag is not defined, or if the specified device is not a block device, creation will fail. Note that this feature is not advertised by the kernel to userspace. Use with caution, and only if the device is known to work correctly with your kernel.   </td></tr>
 </table>
 <h3>Response</h3>
@@ -3645,6 +3647,7 @@ bdev_aio_create</h2>
 <div class="line">    &quot;block_size&quot;: 4096,</div>
 <div class="line">    &quot;readonly&quot;: false,</div>
 <div class="line">    &quot;fallocate&quot;: false,</div>
+<div class="line">    &quot;blkdiscard&quot;: false,</div>
 <div class="line">    &quot;nowait&quot;: false</div>
 <div class="line">  }</div>
 <div class="line">}</div>

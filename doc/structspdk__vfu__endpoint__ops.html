@@ -172,15 +172,32 @@ int(*&#160;</td><td class="memItemRight" valign="bottom"><b>post_memory_add</b> 
 int(*&#160;</td><td class="memItemRight" valign="bottom"><b>pre_memory_remove</b> )(struct spdk_vfu_endpoint *endpoint, void *map_start, void *map_end)</td></tr>
 <tr class="memdesc:a00f7d1fb286931725b14f5f410bbcd33"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pre-notification to backend module before removing the memory region. <br /></td></tr>
 <tr class="separator:a00f7d1fb286931725b14f5f410bbcd33"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa03b83e4619fc137e847e3e327428a87" id="r_aa03b83e4619fc137e847e3e327428a87"><td class="memItemLeft" align="right" valign="top"><a id="aa03b83e4619fc137e847e3e327428a87" name="aa03b83e4619fc137e847e3e327428a87"></a>
-int(*&#160;</td><td class="memItemRight" valign="bottom"><b>reset_device</b> )(struct spdk_vfu_endpoint *endpoint)</td></tr>
-<tr class="memdesc:aa03b83e4619fc137e847e3e327428a87"><td class="mdescLeft">&#160;</td><td class="mdescRight">PCI device reset callback. <br /></td></tr>
+<tr class="memitem:aa03b83e4619fc137e847e3e327428a87" id="r_aa03b83e4619fc137e847e3e327428a87"><td class="memItemLeft" align="right" valign="top">int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa03b83e4619fc137e847e3e327428a87">reset_device</a> )(struct spdk_vfu_endpoint *endpoint)</td></tr>
+<tr class="memdesc:aa03b83e4619fc137e847e3e327428a87"><td class="mdescLeft">&#160;</td><td class="mdescRight">PCI device reset callback.  <br /></td></tr>
 <tr class="separator:aa03b83e4619fc137e847e3e327428a87"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:affb0058441fbe6b1782cf71400006c6c" id="r_affb0058441fbe6b1782cf71400006c6c"><td class="memItemLeft" align="right" valign="top"><a id="affb0058441fbe6b1782cf71400006c6c" name="affb0058441fbe6b1782cf71400006c6c"></a>
 int(*&#160;</td><td class="memItemRight" valign="bottom"><b>quiesce_device</b> )(struct spdk_vfu_endpoint *endpoint)</td></tr>
 <tr class="memdesc:affb0058441fbe6b1782cf71400006c6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">PCI device quiesce callback, after this callback, the backend device module should stopping processing any IOs. <br /></td></tr>
 <tr class="separator:affb0058441fbe6b1782cf71400006c6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Field Documentation</h2>
+<a id="aa03b83e4619fc137e847e3e327428a87" name="aa03b83e4619fc137e847e3e327428a87"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa03b83e4619fc137e847e3e327428a87">&#9670;&#160;</a></span>reset_device</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int(* spdk_vfu_endpoint_ops::reset_device) (struct spdk_vfu_endpoint *endpoint)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>PCI device reset callback. </p>
+<p>Required for devices advertising Function Level Reset (FLR) capability. </p>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li><b>vfu_target.h</b></li>
 </ul>
