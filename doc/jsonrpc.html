@@ -2348,7 +2348,7 @@ bdev_set_options</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">bdev_io_cache_size   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">Maximum number of <a class="el" href="structspdk__bdev__io.html">spdk_bdev_io</a> structures cached per thread    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">bdev_auto_examine   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">If set to false, the bdev layer will not examine every disks automatically    </td></tr>
+<td class="markdownTableBodyNone">bdev_auto_examine   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">If set to false, the bdev layer will not examine every disk automatically    </td></tr>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">iobuf_small_cache_size   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">Size of the small iobuf per thread cache    </td></tr>
 <tr class="markdownTableRowOdd">
@@ -2771,7 +2771,7 @@ bdev_set_qd_sampling_period</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Block device name    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">period   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">uint64   </td><td class="markdownTableBodyNone">period (in microseconds).If set to 0, polling will be disabled.   </td></tr>
+<td class="markdownTableBodyNone">period   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">uint64   </td><td class="markdownTableBodyNone">Period in microseconds. If set to 0, polling will be disabled.   </td></tr>
 </table>
 <h3>Response</h3>
 <p>true on success</p>
@@ -2803,15 +2803,15 @@ bdev_crypto_create</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">base_bdev_name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of the base bdev    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of the crypto vbdev to create    </td></tr>
+<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of the crypto vbdev    </td></tr>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">crypto_pmd   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of the crypto device driver. Obsolete, see dpdk_cryptodev_set_driver    </td></tr>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">key   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Key in hex form. Obsolete, see accel_crypto_key_create    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">cipher   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Cipher to use, AES_CBC or AES_XTS (QAT and MLX5). Obsolete, see accel_crypto_key_create    </td></tr>
+<td class="markdownTableBodyNone">cipher   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Cipher to use: AES_CBC or AES_XTS (QAT and MLX5). Obsolete, see accel_crypto_key_create    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">key2   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">2nd key in hex form only required for cipher AET_XTS. Obsolete, see accel_crypto_key_create    </td></tr>
+<td class="markdownTableBodyNone">key2   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">2nd key in hex form, required for AES_XTS cipher. Obsolete, see accel_crypto_key_create    </td></tr>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">key_name   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of the key created with accel_crypto_key_create   </td></tr>
 </table>
@@ -2873,7 +2873,7 @@ bdev_ocf_create</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Bdev name to use    </td></tr>
+<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of resulting OCF bdev    </td></tr>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">mode   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">OCF cache mode: wb, wt, pt, wa, wi, wo    </td></tr>
 <tr class="markdownTableRowOdd">
@@ -2913,7 +2913,7 @@ bdev_ocf_delete</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Bdev name   </td></tr>
+<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of the OCF bdev   </td></tr>
 </table>
 <h3>Response</h3>
 <p>true on success</p>
@@ -2941,7 +2941,7 @@ bdev_ocf_get_stats</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Block device name   </td></tr>
+<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of the OCF bdev   </td></tr>
 </table>
 <h3>Response</h3>
 <p>Statistics as json object.</p>
@@ -3146,7 +3146,7 @@ bdev_ocf_reset_stats</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Block device name   </td></tr>
+<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of the OCF bdev   </td></tr>
 </table>
 <h3>Response</h3>
 <p>Completion status of reset statistics operation returned as a boolean.</p>
@@ -3212,7 +3212,7 @@ bdev_ocf_set_cache_mode</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Bdev name    </td></tr>
+<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of the OCF bdev    </td></tr>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">mode   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">OCF cache mode: wb, wt, pt, wa, wi, wo   </td></tr>
 </table>
@@ -3243,7 +3243,7 @@ bdev_ocf_set_seqcutoff</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Bdev name    </td></tr>
+<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of OCF cache bdev    </td></tr>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">policy   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Sequential cutoff policy: always, full, never    </td></tr>
 <tr class="markdownTableRowOdd">
@@ -3279,7 +3279,7 @@ bdev_ocf_flush_start</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Bdev name   </td></tr>
+<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of the OCF bdev   </td></tr>
 </table>
 <h3>Response</h3>
 <p>true on success</p>
@@ -3308,7 +3308,7 @@ bdev_ocf_flush_status</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Bdev name   </td></tr>
+<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of the OCF bdev   </td></tr>
 </table>
 <h3>Response</h3>
 <p>Status of OCF cache device flush.</p>
@@ -3409,27 +3409,27 @@ bdev_malloc_create</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Bdev name to use    </td></tr>
+<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of the malloc bdev    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">block_size   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">Data block size in bytes -must be multiple of 512    </td></tr>
+<td class="markdownTableBodyNone">block_size   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">Data block size in bytes, must be multiple of 512    </td></tr>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">num_blocks   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">uint64   </td><td class="markdownTableBodyNone">Number of blocks    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">uuid   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uuid   </td><td class="markdownTableBodyNone">UUID of new bdev    </td></tr>
+<td class="markdownTableBodyNone">uuid   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uuid   </td><td class="markdownTableBodyNone">UUID of the bdev    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">optimal_io_boundary   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">Split on optimal IO boundary, in number of blocks, default 0    </td></tr>
+<td class="markdownTableBodyNone">optimal_io_boundary   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">Split on optimal IO boundary in blocks. Default: 0 (disabled)    </td></tr>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">md_size   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">Metadata size for this bdev (0, 8, 16, 32, 64, or 128). Default is 0.    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">md_interleave   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Metadata location, interleaved if true, and separated if false. Default is false.    </td></tr>
+<td class="markdownTableBodyNone">md_interleave   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Metadata location, interleaved if <code>true</code>, separated if <code>false</code>. Default: <code>false</code>    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">dif_type   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">int32   </td><td class="markdownTableBodyNone">Protection information type. Parameter &ndash;md-size needs to be set along &ndash;dif-type. Default=0 - no protection.    </td></tr>
+<td class="markdownTableBodyNone">dif_type   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">int32   </td><td class="markdownTableBodyNone">Protection information type. &ndash;md-size must be set when &ndash;dif-type is non-zero. Default: 0 (no protection)    </td></tr>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">dif_is_head_of_md   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Protection information is in the first 8 bytes of metadata. Default=false.    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">physical_block_size   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">Physical block size of device; must be a power of 2 and at least 512    </td></tr>
+<td class="markdownTableBodyNone">physical_block_size   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">Physical block size in bytes, must be a power of 2 and at least 512    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">dif_pi_format   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">protection information format    </td></tr>
+<td class="markdownTableBodyNone">dif_pi_format   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">Protection information format. 0=16b Guard PI, 1=32b Guard PI, 2=64b Guard PI. Default: 0    </td></tr>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">numa_id   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">int32   </td><td class="markdownTableBodyNone">NUMA node ID where memory is allocated, if -1 then any NUMA node ID can be used. Default is -1.   </td></tr>
 </table>
@@ -3465,7 +3465,7 @@ bdev_malloc_delete</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Bdev name   </td></tr>
+<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of the malloc bdev   </td></tr>
 </table>
 <h3>Response</h3>
 <p>true on success</p>
@@ -3493,13 +3493,13 @@ bdev_null_create</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Bdev name to use    </td></tr>
+<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of the null bdev    </td></tr>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">block_size   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">Block size in bytes    </td></tr>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">num_blocks   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">uint64   </td><td class="markdownTableBodyNone">Number of blocks    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">uuid   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uuid   </td><td class="markdownTableBodyNone">UUID of new bdev    </td></tr>
+<td class="markdownTableBodyNone">uuid   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uuid   </td><td class="markdownTableBodyNone">UUID of the bdev    </td></tr>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">physical_block_size   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">Physical block size for this bdev.    </td></tr>
 <tr class="markdownTableRowEven">
@@ -3507,7 +3507,7 @@ bdev_null_create</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">dif_type   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">int32   </td><td class="markdownTableBodyNone">Protection information type. Parameter &ndash;md-size needs to be set along &ndash;dif-type. Default=0 - no protection.    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">dif_pi_format   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">protection information format    </td></tr>
+<td class="markdownTableBodyNone">dif_pi_format   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">Protection information format: 0=16b Guard PI, 1=32b Guard PI, 2=64b Guard PI. Default: 0    </td></tr>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">dif_is_head_of_md   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Protection information is in the first 8 bytes of metadata. Default=false.    </td></tr>
 <tr class="markdownTableRowEven">
@@ -3558,7 +3558,7 @@ bdev_null_delete</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Bdev name   </td></tr>
+<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of the null bdev   </td></tr>
 </table>
 <h3>Response</h3>
 <p>true on success</p>
@@ -3586,9 +3586,9 @@ bdev_null_resize</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Bdev name    </td></tr>
+<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of the null bdev    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">new_size   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">uint64   </td><td class="markdownTableBodyNone">Bdev new capacity in MiB   </td></tr>
+<td class="markdownTableBodyNone">new_size   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">uint64   </td><td class="markdownTableBodyNone">New bdev size in MiB   </td></tr>
 </table>
 <h3>Response</h3>
 <p>true on success</p>
@@ -3617,19 +3617,19 @@ bdev_aio_create</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Bdev name to use    </td></tr>
+<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of the aio bdev    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">filename   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Path to device or file    </td></tr>
+<td class="markdownTableBodyNone">filename   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Path to device or file (ex: /dev/sda)    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">block_size   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">Block size in bytes    </td></tr>
+<td class="markdownTableBodyNone">block_size   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">Block size in bytes. Default: 0 (auto-detect from device)    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">readonly   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">set aio bdev as read-only    </td></tr>
+<td class="markdownTableBodyNone">readonly   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Set the aio bdev as read-only    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">fallocate   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Enable UNMAP and WRITE ZEROES support. Intended only for testing purposes due to synchronous syscall.    </td></tr>
+<td class="markdownTableBodyNone">fallocate   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Enable UNMAP and WRITE ZEROES support via fallocate. For testing only due to synchronous syscall    </td></tr>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">blkdiscard   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Enable UNMAP support using the BLKDISCARD ioctl. Can be combined with fallocate, which then only services WRITE ZEROES. The specified device must be a block device, otherwise creation will fail. Mutually exclusive with readonly. Intended only for testing purposes due to synchronous syscall.    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">uuid   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uuid   </td><td class="markdownTableBodyNone">UUID of new bdev    </td></tr>
+<td class="markdownTableBodyNone">uuid   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uuid   </td><td class="markdownTableBodyNone">UUID of the bdev    </td></tr>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">nowait   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Enable the RWF_NOWAIT flag for block devices. If the flag is not defined, or if the specified device is not a block device, creation will fail. Note that this feature is not advertised by the kernel to userspace. Use with caution, and only if the device is known to work correctly with your kernel.   </td></tr>
 </table>
@@ -3665,7 +3665,7 @@ bdev_aio_rescan</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Bdev name   </td></tr>
+<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of the aio bdev   </td></tr>
 </table>
 <h3>Response</h3>
 <p>true on success</p>
@@ -3693,7 +3693,7 @@ bdev_aio_delete</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Bdev name   </td></tr>
+<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of the aio bdev   </td></tr>
 </table>
 <h3>Response</h3>
 <p>true on success</p>
@@ -4516,9 +4516,9 @@ bdev_zone_block_create</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of the Zone device    </td></tr>
+<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of the zone bdev    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">base_bdev   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of the Base bdev    </td></tr>
+<td class="markdownTableBodyNone">base_bdev   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of the non-zoned base bdev    </td></tr>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">zone_capacity   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">uint64   </td><td class="markdownTableBodyNone">Zone capacity in blocks    </td></tr>
 <tr class="markdownTableRowEven">
@@ -4553,7 +4553,7 @@ bdev_zone_block_delete</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of the Zone device   </td></tr>
+<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of the zone bdev   </td></tr>
 </table>
 <h3>Response</h3>
 <p>true on success</p>
@@ -4861,7 +4861,7 @@ bdev_rbd_create</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Bdev name    </td></tr>
+<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of the RBD bdev    </td></tr>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">user_id   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Ceph ID (i.e. admin, not client.admin)    </td></tr>
 <tr class="markdownTableRowOdd">
@@ -4873,11 +4873,11 @@ bdev_rbd_create</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">config   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Explicit librados configuration    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">cluster_name   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Rados cluster object name created in this module.    </td></tr>
+<td class="markdownTableBodyNone">cluster_name   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Rados cluster object name    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">uuid   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uuid   </td><td class="markdownTableBodyNone">UUID of new bdev    </td></tr>
+<td class="markdownTableBodyNone">uuid   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uuid   </td><td class="markdownTableBodyNone">UUID of the bdev    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">read_only   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">set rbd bdev as read-only   </td></tr>
+<td class="markdownTableBodyNone">read_only   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Set bdev as read-only   </td></tr>
 </table>
 <h3>Response</h3>
 <p>Name of newly created bdev.</p>
@@ -4933,7 +4933,7 @@ bdev_rbd_delete</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Bdev name   </td></tr>
+<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of the RBD bdev   </td></tr>
 </table>
 <h3>Response</h3>
 <p><code>true</code> if bdev with provided name was deleted or <code>false</code> otherwise.</p>
@@ -4962,7 +4962,7 @@ bdev_rbd_resize</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Bdev name    </td></tr>
+<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of the RBD bdev    </td></tr>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">new_size   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">uint64   </td><td class="markdownTableBodyNone">New bdev size for resize operation in MiB   </td></tr>
 </table>
@@ -4993,19 +4993,19 @@ bdev_delay_create</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Bdev name    </td></tr>
+<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of the delay bdev    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">base_bdev_name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Base bdev name    </td></tr>
+<td class="markdownTableBodyNone">base_bdev_name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of the base bdev    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">avg_read_latency   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">uint64   </td><td class="markdownTableBodyNone">average read latency (us)    </td></tr>
+<td class="markdownTableBodyNone">avg_read_latency   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">uint64   </td><td class="markdownTableBodyNone">Average read latency in microseconds    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">p99_read_latency   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">uint64   </td><td class="markdownTableBodyNone">p99 read latency (us)    </td></tr>
+<td class="markdownTableBodyNone">p99_read_latency   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">uint64   </td><td class="markdownTableBodyNone">p99 read latency in microseconds    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">avg_write_latency   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">uint64   </td><td class="markdownTableBodyNone">average write latency (us)    </td></tr>
+<td class="markdownTableBodyNone">avg_write_latency   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">uint64   </td><td class="markdownTableBodyNone">Average write latency in microseconds    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">p99_write_latency   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">uint64   </td><td class="markdownTableBodyNone">p99 write latency (us)    </td></tr>
+<td class="markdownTableBodyNone">p99_write_latency   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">uint64   </td><td class="markdownTableBodyNone">p99 write latency in microseconds    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">uuid   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uuid   </td><td class="markdownTableBodyNone">UUID of new bdev   </td></tr>
+<td class="markdownTableBodyNone">uuid   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uuid   </td><td class="markdownTableBodyNone">UUID of the bdev   </td></tr>
 </table>
 <h3>Response</h3>
 <p>Name of newly created bdev.</p>
@@ -5038,7 +5038,7 @@ bdev_delay_delete</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Bdev name   </td></tr>
+<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of the delay bdev   </td></tr>
 </table>
 <h3>Response</h3>
 <p>true on success</p>
@@ -5070,7 +5070,7 @@ bdev_delay_update_latency</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">latency_type   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">enum   </td><td class="markdownTableBodyNone">Latency bucket to update    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">latency_us   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">uint64   </td><td class="markdownTableBodyNone">The new latency value in microseconds   </td></tr>
+<td class="markdownTableBodyNone">latency_us   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">uint64   </td><td class="markdownTableBodyNone">New latency value in microseconds   </td></tr>
 </table>
 <h3>Response</h3>
 <p>true on success</p>
@@ -5158,15 +5158,15 @@ bdev_error_inject_error</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of the error injection bdev    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">io_type   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">enum   </td><td class="markdownTableBodyNone">io type 'clear' 'read' 'write' 'unmap' 'flush' 'all'    </td></tr>
+<td class="markdownTableBodyNone">io_type   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">enum   </td><td class="markdownTableBodyNone">IO type: clear, read, write, unmap, flush, all    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">error_type   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">enum   </td><td class="markdownTableBodyNone">error type 'failure' 'nvme_failure' 'pending' 'corrupt_data' 'nomem'    </td></tr>
+<td class="markdownTableBodyNone">error_type   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">enum   </td><td class="markdownTableBodyNone">Error type: failure, nvme_failure, pending, corrupt_data, nomem    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">nvme_sct   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">the NVMe SCT error for 'nvme_failure' type (default:0)    </td></tr>
+<td class="markdownTableBodyNone">nvme_sct   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">The NVMe SCT error for 'nvme_failure' type. Default is 0.    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">nvme_sc   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">the NVMe SC error for 'nvme_failure' type (default:0)    </td></tr>
+<td class="markdownTableBodyNone">nvme_sc   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">The NVMe SC error for 'nvme_failure' type. Default is 0.    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">num   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">the number of commands you want to fail.(default:1)    </td></tr>
+<td class="markdownTableBodyNone">num   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">Number of commands to fail. Default: 1    </td></tr>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">queue_depth   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint64   </td><td class="markdownTableBodyNone">the queue depth at which to trigger the error    </td></tr>
 <tr class="markdownTableRowEven">
@@ -5231,7 +5231,7 @@ bdev_iscsi_set_options</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">timeout_sec   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint64   </td><td class="markdownTableBodyNone">Timeout for command, in seconds, if 0, don't track timeout   </td></tr>
+<td class="markdownTableBodyNone">timeout_sec   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint64   </td><td class="markdownTableBodyNone">Timeout for command in seconds. 0 means do not track timeout   </td></tr>
 </table>
 <h3>Response</h3>
 <p>true on success</p>
@@ -5260,11 +5260,11 @@ bdev_iscsi_create</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Bdev name    </td></tr>
+<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of the iSCSI bdev    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">initiator_iqn   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">IQN name used during connection    </td></tr>
+<td class="markdownTableBodyNone">initiator_iqn   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Initiator IQN for the connection    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">url   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">iSCSI resource URI   </td></tr>
+<td class="markdownTableBodyNone">url   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">iSCSI URL of the target LUN   </td></tr>
 </table>
 <h3>Response</h3>
 <p>Name of newly created bdev.</p>
@@ -5295,7 +5295,7 @@ bdev_iscsi_delete</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Bdev name   </td></tr>
+<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of the iSCSI bdev   </td></tr>
 </table>
 <h3>Response</h3>
 <p>true on success</p>
@@ -5324,7 +5324,7 @@ bdev_ftl_create</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Bdev name    </td></tr>
+<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of the FTL bdev    </td></tr>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">base_bdev   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of the base device    </td></tr>
 <tr class="markdownTableRowOdd">
@@ -5334,7 +5334,7 @@ bdev_ftl_create</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">core_mask   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">CPU core(s) possible for placement of the ftl core thread, application main thread by default    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">overprovisioning   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint64   </td><td class="markdownTableBodyNone">Percentage of base device used for relocation, 20% by default    </td></tr>
+<td class="markdownTableBodyNone">overprovisioning   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint64   </td><td class="markdownTableBodyNone">Percentage of base device used for relocation. Default: 20    </td></tr>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">fast_shutdown   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">When set FTL will minimize persisted data on target application shutdown and rely on shared memory during next load    </td></tr>
 <tr class="markdownTableRowEven">
@@ -5384,7 +5384,7 @@ bdev_ftl_delete</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Bdev name    </td></tr>
+<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of the FTL bdev    </td></tr>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">fast_shutdown   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">When set FTL will minimize persisted data during deletion and rely on shared memory during next load   </td></tr>
 </table>
@@ -5416,7 +5416,7 @@ bdev_ftl_unmap</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Bdev name    </td></tr>
+<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of the FTL bdev    </td></tr>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">lba   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">uint64   </td><td class="markdownTableBodyNone">start lba, aligned to 1024    </td></tr>
 <tr class="markdownTableRowOdd">
@@ -5451,7 +5451,7 @@ bdev_ftl_get_stats</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Bdev name   </td></tr>
+<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of the FTL bdev   </td></tr>
 </table>
 <h3>Response</h3>
 <p>The response is an object containing IO statistics for an FTL instance, split into multiple subobjects:</p>
@@ -5614,7 +5614,7 @@ bdev_ftl_get_properties</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Bdev name   </td></tr>
+<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of the FTL bdev   </td></tr>
 </table>
 <h3>Response</h3>
 <p>The response contains FTL bdev properties. Some of them can be modified, other reported as read only.</p>
@@ -5660,9 +5660,9 @@ bdev_ftl_set_property</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Bdev name    </td></tr>
+<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of the FTL bdev    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">ftl_property   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of the property to modify    </td></tr>
+<td class="markdownTableBodyNone">ftl_property   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of the property to be set    </td></tr>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">value   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">New value of the property to be set   </td></tr>
 </table>
@@ -5694,11 +5694,11 @@ bdev_passthru_create</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Bdev name    </td></tr>
+<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of the pass through bdev    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">base_bdev_name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Base bdev name    </td></tr>
+<td class="markdownTableBodyNone">base_bdev_name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of the base bdev    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">uuid   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uuid   </td><td class="markdownTableBodyNone">UUID of new bdev   </td></tr>
+<td class="markdownTableBodyNone">uuid   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uuid   </td><td class="markdownTableBodyNone">UUID of the bdev   </td></tr>
 </table>
 <h3>Response</h3>
 <p>Name of newly created bdev.</p>
@@ -5727,7 +5727,7 @@ bdev_passthru_delete</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Bdev name   </td></tr>
+<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Pass through bdev name   </td></tr>
 </table>
 <h3>Response</h3>
 <p>true on success</p>
@@ -5757,11 +5757,11 @@ bdev_xnvme_create</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">name of xNVMe bdev to create    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">filename   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">path to device or file (ex: /dev/nvme0n1)    </td></tr>
+<td class="markdownTableBodyNone">filename   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Path to device or file (ex: /dev/nvme0n1)    </td></tr>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">io_mechanism   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">IO mechanism to use (ex: libaio, io_uring, io_uring_cmd, etc.)    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">conserve_cpu   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Whether or not to conserve CPU when polling (default: false)   </td></tr>
+<td class="markdownTableBodyNone">conserve_cpu   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Whether or not to conserve CPU when polling. Default: <code>false</code>   </td></tr>
 </table>
 <h3>Response</h3>
 <p>Name of newly created bdev.</p>
@@ -5792,7 +5792,7 @@ bdev_xnvme_delete</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">name of xnvme bdev to delete   </td></tr>
+<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of the xNVMe bdev   </td></tr>
 </table>
 <h3>Response</h3>
 <p>true on success</p>
@@ -9978,7 +9978,7 @@ bdev_raid_create</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">uuid   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uuid   </td><td class="markdownTableBodyNone">UUID for this RAID bdev    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">superblock   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">If set, information about raid bdev will be stored in superblock on each base bdev (default: <code>false</code>)   </td></tr>
+<td class="markdownTableBodyNone">superblock   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">boolean   </td><td class="markdownTableBodyNone">Store raid bdev information in superblock on each base bdev. Default: <code>false</code>   </td></tr>
 </table>
 <h3>Response</h3>
 <p>true on success</p>
@@ -10046,7 +10046,7 @@ bdev_raid_add_base_bdev</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">raid_bdev   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Raid bdev name    </td></tr>
+<td class="markdownTableBodyNone">raid_bdev   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">RAID bdev name    </td></tr>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">base_bdev   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Base bdev name   </td></tr>
 </table>
@@ -10109,9 +10109,9 @@ bdev_split_create</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">base_bdev   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">base bdev name    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">split_count   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">number of splits    </td></tr>
+<td class="markdownTableBodyNone">split_count   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">Number of splits to create from the base bdev    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">split_size_mb   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint64   </td><td class="markdownTableBodyNone">size in MB to restrict the size   </td></tr>
+<td class="markdownTableBodyNone">split_size_mb   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint64   </td><td class="markdownTableBodyNone">Size in MiB for each split bdev. Default: 0 (base bdev size / split_count)   </td></tr>
 </table>
 <h3>Example</h3>
 <p>Example request:</p>
@@ -10173,13 +10173,13 @@ bdev_uring_create</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">filename   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">path to device or file (ex: /dev/nvme0n1)    </td></tr>
+<td class="markdownTableBodyNone">filename   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Path to device or file (ex: /dev/nvme0n1)    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">name of bdev    </td></tr>
+<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of the uring bdev    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">block_size   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">block size of device (If omitted, get the block size from the file)    </td></tr>
+<td class="markdownTableBodyNone">block_size   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">Block size in bytes. Default: 0 (auto-detect from device)    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">uuid   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uuid   </td><td class="markdownTableBodyNone">UUID of new bdev   </td></tr>
+<td class="markdownTableBodyNone">uuid   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uuid   </td><td class="markdownTableBodyNone">UUID of the bdev   </td></tr>
 </table>
 <h3>Response</h3>
 <p>Name of the newly created uring bdev</p>
@@ -10209,7 +10209,7 @@ bdev_uring_rescan</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">name of uring bdev to rescan   </td></tr>
+<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of the uring bdev   </td></tr>
 </table>
 <h3>Response</h3>
 <p>true on success</p>
@@ -10237,7 +10237,7 @@ bdev_uring_delete</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">name of uring bdev to delete   </td></tr>
+<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of the uring bdev   </td></tr>
 </table>
 <h3>Response</h3>
 <p>true on success</p>
@@ -10267,7 +10267,7 @@ bdev_nvme_opal_init</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">nvme_ctrlr_name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">name of nvme ctrlr    </td></tr>
+<td class="markdownTableBodyNone">nvme_ctrlr_name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of NVMe controller    </td></tr>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">password   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">admin password of OPAL   </td></tr>
 </table>
@@ -10329,17 +10329,17 @@ bdev_opal_create</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">nvme_ctrlr_name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">name of nvme ctrlr that supports OPAL    </td></tr>
+<td class="markdownTableBodyNone">nvme_ctrlr_name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of NVMe controller that supports OPAL    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">nsid   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">namespace ID    </td></tr>
+<td class="markdownTableBodyNone">nsid   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">Namespace ID    </td></tr>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">locking_range_id   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">uint16   </td><td class="markdownTableBodyNone">OPAL locking range ID    </td></tr>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">range_start   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">uint64   </td><td class="markdownTableBodyNone">locking range start LBA    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">range_length   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">uint64   </td><td class="markdownTableBodyNone">locking range length    </td></tr>
+<td class="markdownTableBodyNone">range_length   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">uint64   </td><td class="markdownTableBodyNone">Locking range length in blocks    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">password   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">admin password of OPAL   </td></tr>
+<td class="markdownTableBodyNone">password   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Admin password of OPAL   </td></tr>
 </table>
 <h3>Response</h3>
 <p>The response is the name of created OPAL virtual bdev.</p>
@@ -10372,9 +10372,9 @@ bdev_opal_get_info</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">bdev_name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">name of OPAL vbdev    </td></tr>
+<td class="markdownTableBodyNone">bdev_name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of OPAL vbdev    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">password   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">admin password   </td></tr>
+<td class="markdownTableBodyNone">password   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Admin password   </td></tr>
 </table>
 <h3>Response</h3>
 <p>The response is the locking info of OPAL virtual bdev.</p>
@@ -10411,9 +10411,9 @@ bdev_opal_delete</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">bdev_name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">name of OPAL vbdev    </td></tr>
+<td class="markdownTableBodyNone">bdev_name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of OPAL vbdev    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">password   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">admin password   </td></tr>
+<td class="markdownTableBodyNone">password   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Admin password   </td></tr>
 </table>
 <h3>Response</h3>
 <p>true on success</p>
@@ -10442,13 +10442,13 @@ bdev_opal_new_user</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">bdev_name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">name of OPAL vbdev    </td></tr>
+<td class="markdownTableBodyNone">bdev_name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of OPAL vbdev    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">admin_password   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">admin password    </td></tr>
+<td class="markdownTableBodyNone">admin_password   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Admin password    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">user_id   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">uint16   </td><td class="markdownTableBodyNone">user ID    </td></tr>
+<td class="markdownTableBodyNone">user_id   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">uint16   </td><td class="markdownTableBodyNone">User ID    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">user_password   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">user password   </td></tr>
+<td class="markdownTableBodyNone">user_password   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">User password   </td></tr>
 </table>
 <h3>Response</h3>
 <p>true on success</p>
@@ -10479,13 +10479,13 @@ bdev_opal_set_lock_state</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">bdev_name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">name of OPAL vbdev    </td></tr>
+<td class="markdownTableBodyNone">bdev_name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of OPAL vbdev    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">user_id   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">uint16   </td><td class="markdownTableBodyNone">user ID    </td></tr>
+<td class="markdownTableBodyNone">user_id   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">uint16   </td><td class="markdownTableBodyNone">User ID    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">password   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">user password    </td></tr>
+<td class="markdownTableBodyNone">password   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">User password    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">lock_state   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">lock state   </td></tr>
+<td class="markdownTableBodyNone">lock_state   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Lock state: readwrite, readonly, rwlock   </td></tr>
 </table>
 <h3>Response</h3>
 <p>true on success</p>
@@ -11504,19 +11504,19 @@ bdev_daos_create</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Bdev name to use    </td></tr>
+<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of the DAOS bdev    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">pool   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">DAOS pool label or its uuid    </td></tr>
+<td class="markdownTableBodyNone">pool   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">DAOS pool label or UUID    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">cont   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">DAOS cont label or its uuid    </td></tr>
+<td class="markdownTableBodyNone">cont   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">DAOS container label or UUID    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">block_size   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">Block size in bytes -must be multiple of 512    </td></tr>
+<td class="markdownTableBodyNone">block_size   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone">Block size in bytes, must be multiple of 512    </td></tr>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">num_blocks   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">uint64   </td><td class="markdownTableBodyNone">Number of blocks    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">uuid   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uuid   </td><td class="markdownTableBodyNone">UUID of new bdev    </td></tr>
+<td class="markdownTableBodyNone">uuid   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uuid   </td><td class="markdownTableBodyNone">UUID of the bdev    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">oclass   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">DAOS object class (default SX)   </td></tr>
+<td class="markdownTableBodyNone">oclass   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">DAOS object class. Default: SX   </td></tr>
 </table>
 <h3>Response</h3>
 <p>Name of newly created bdev.</p>
@@ -11549,7 +11549,7 @@ bdev_daos_delete</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Bdev name   </td></tr>
+<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of the DAOS bdev   </td></tr>
 </table>
 <h3>Response</h3>
 <p>true on success</p>
@@ -11577,9 +11577,9 @@ bdev_daos_resize</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Optional   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Bdev name    </td></tr>
+<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">Name of the DAOS bdev    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">new_size   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">uint64   </td><td class="markdownTableBodyNone">Bdev new capacity in MiB   </td></tr>
+<td class="markdownTableBodyNone">new_size   </td><td class="markdownTableBodyNone">Required   </td><td class="markdownTableBodyNone">uint64   </td><td class="markdownTableBodyNone">New bdev size in MiB   </td></tr>
 </table>
 <h3>Response</h3>
 <p>true on success</p>
