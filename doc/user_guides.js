@@ -61,7 +61,9 @@ var user_guides =
         [ "Prerequisites for RDMA NICs", "nvmf.html#nvmf_prereqs_rdma_nics", null ],
         [ "RDMA Limitations", "nvmf.html#nvmf_rdma_limitations", null ]
       ] ],
-      [ "TCP transport support", "nvmf.html#nvmf_tcp_transport", null ],
+      [ "TCP transport support", "nvmf.html#nvmf_tcp_transport", [
+        [ "XLIO", "nvmf.html#nvmf_tcp_xlio", null ]
+      ] ],
       [ "FC transport support", "nvmf.html#nvmf_fc_transport", null ],
       [ "Configuring the SPDK NVMe over Fabrics Target", "nvmf.html#nvmf_config", [
         [ "Using RPCs", "nvmf.html#nvmf_config_rpc", null ],

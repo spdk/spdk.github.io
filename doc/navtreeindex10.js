@@ -23,6 +23,7 @@ var NAVTREEINDEX10 =
 "nvmf.html#nvmf_rdma_limitations":[3,5,1,3],
 "nvmf.html#nvmf_rdma_transport":[3,5,1],
 "nvmf.html#nvmf_tcp_transport":[3,5,2],
+"nvmf.html#nvmf_tcp_xlio":[3,5,2,0],
 "nvmf.html#nvmf_trace":[3,5,6],
 "nvmf_8h.html":[15,0,0,0,53],
 "nvmf_8h.html#a0241868432ed4cd5687f5add03e52860":[15,0,0,0,53,79],
@@ -248,6 +249,5 @@ var NAVTREEINDEX10 =
 "peer_2_peer.html#p2p_cmb_copy":[6,0,4],
 "peer_2_peer.html#p2p_issues":[6,0,5],
 "peer_2_peer.html#p2p_nvme_api":[6,0,2],
-"peer_2_peer.html#p2p_overview":[6,0,1],
-"peer_2_peer.html#p2p_support":[6,0,3]
+"peer_2_peer.html#p2p_overview":[6,0,1]
 };

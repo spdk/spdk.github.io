@@ -187,7 +187,21 @@ RDMA Limitations</h2>
 <h1><a class="anchor" id="nvmf_tcp_transport"></a>
 TCP transport support</h1>
 <p>The transport is built into the nvmf_tgt by default, and it does not need any special libraries.</p>
-<h1><a class="anchor" id="nvmf_fc_transport"></a>
+<h2><a class="anchor" id="nvmf_tcp_xlio"></a>
+XLIO</h2>
+<p>The TCP transport can also run on <a href="https://github.com/mellanox/libxlio">XLIO</a>, a userspace TCP stack for NVIDIA NICs, through the <code>xlio</code> sock module. XLIO drives the NIC through the RDMA libraries, so it requires <code>--with-rdma</code>. Build and install libxlio following its README, then:</p>
+<div class="fragment"><div class="line">./configure --with-rdma --with-xlio=/path/to/libxlio/install &lt;other config parameters&gt;</div>
+<div class="line">make</div>
+</div><!-- fragment --><p>The path can be omitted if libxlio is installed in the regular system paths.</p>
+<p>By default SPDK doesn't link against libxlio. It loads it at startup with <code>dlopen()</code> from the path in the <code>SPDK_XLIO_PATH</code> environment variable, and the <code>xlio</code> module stays disabled if that variable isn't set. An empty value loads <code>libxlio.so</code> from the regular library search path.</p>
+<div class="fragment"><div class="line">SPDK_XLIO_PATH=/path/to/libxlio/install/lib/libxlio.so build/bin/nvmf_tgt --wait-for-rpc</div>
+<div class="line">scripts/rpc.py sock_set_default_impl -i xlio</div>
+<div class="line">scripts/rpc.py framework_start_init</div>
+</div><!-- fragment --><p><code>--with-static-xlio</code> links libxlio into the application instead. Every XLIO call becomes a direct call rather than an indirect one through libxlio's function table, which is considerably faster, particularly with <code>--enable-lto</code> or PGO. <code>SPDK_XLIO_PATH</code> isn't used in this mode.</p>
+<p>libxlio doesn't build a static library by default, so configure it with <code>--enable-static</code>. A static link also pulls in libxlio's own dependencies, including libdpcp, which are searched for in the <code>lib</code> directory of the <code>--with-xlio</code> path and then the regular system paths. Either install libdpcp to the same prefix as libxlio, or add its location to <code>LDFLAGS</code>:</p>
+<div class="fragment"><div class="line">LDFLAGS=-L/path/to/libdpcp/install/lib ./configure --with-rdma \</div>
+<div class="line">        --with-xlio=/path/to/libxlio/install --with-static-xlio &lt;other config parameters&gt;</div>
+</div><!-- fragment --><h1><a class="anchor" id="nvmf_fc_transport"></a>
 FC transport support</h1>
 <p>To build nvmf_tgt with the FC transport, there is an additional FC LLD (Low Level Driver) code dependency. Please contact your FC vendor for instructions to obtain FC driver module.</p>
 <h2>Broadcom FC LLD code</h2>

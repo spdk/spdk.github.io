@@ -1,5 +1,6 @@
 var NAVTREEINDEX17 =
 {
+"structspdk__ocssd__geometry__data.html#a277515978925f74508441bce44027a4c":[14,0,416,0],
 "structspdk__ocssd__geometry__data.html#a3d5ae53da075ef580a641bec35889c3d":[14,0,416,21],
 "structspdk__ocssd__geometry__data.html#a4126ac6e1846920ef940648bba63dd98":[14,0,416,14],
 "structspdk__ocssd__geometry__data.html#a48998a2ff49cafa400bed7cc639db747":[14,0,416,16],
@@ -248,6 +249,5 @@ var NAVTREEINDEX17 =
 "thread_8h.html#a6665332ac6d7781f7944f5f471ce1a21":[15,0,0,0,63,37],
 "thread_8h.html#a6695466847e7a751b768ab4b8bcd53d0":[15,0,0,0,63,76],
 "thread_8h.html#a67c3bf0e066520e8eeeaec589d021b6c":[15,0,0,0,63,97],
-"thread_8h.html#a6b33abb26c349950555f71a34cf507c6":[15,0,0,0,63,85],
-"thread_8h.html#a717571a5011db0cdd730498146f25f9a":[15,0,0,0,63,66]
+"thread_8h.html#a6b33abb26c349950555f71a34cf507c6":[15,0,0,0,63,85]
 };
