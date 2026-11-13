@@ -107,6 +107,5 @@ var searchData=
   ['pu_104',['pu',['../structspdk__ocssd__chunk__notification__entry.html#a4f8a236375b150ce7b9a139f9cac7da5',1,'spdk_ocssd_chunk_notification_entry']]],
   ['pu_5flen_105',['pu_len',['../structspdk__ocssd__dev__lba__fmt.html#ae20247c5bd5f2576b67957980bf58333',1,'spdk_ocssd_dev_lba_fmt']]],
   ['public_20interface_106',['Public Interface',['../idxd.html#idxd_interface',1,'Public Interface'],['../ioat.html#ioat_interface',1,'Public Interface'],['../ntb_amd.html#ntb_amd_interface',1,'Public Interface'],['../nvme.html#nvme_interface',1,'Public Interface'],['../vmd.html#vmd_interface',1,'Public Interface']]],
-  ['put_5frkey_107',['put_rkey',['../structspdk__nvme__rdma__hooks.html#abf04de4700ca8baf3570b77f92fa68df',1,'spdk_nvme_rdma_hooks']]],
-  ['py_108',['rpc.py',['../jsonrpc.html#rpc_py',1,'']]]
+  ['py_107',['rpc.py',['../jsonrpc.html#rpc_py',1,'']]]
 ];

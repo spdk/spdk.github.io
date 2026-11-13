@@ -61,6 +61,5 @@ var searchData=
   ['ptpls_58',['ptpls',['../structspdk__nvme__rescap.html#a0235f04c962308d725118078bf74ac70',1,'spdk_nvme_rescap::ptpls'],['../structspdk__nvme__reservation__status__data.html#a0def9acff9ca8af6b789224d83821086',1,'spdk_nvme_reservation_status_data::ptpls']]],
   ['ptr_59',['ptr',['../structspdk__bdev__io__internal__fields.html#a34a68a43953b41f7a7baf994c5a34f2e',1,'spdk_bdev_io_internal_fields']]],
   ['pu_60',['pu',['../structspdk__ocssd__chunk__notification__entry.html#a4f8a236375b150ce7b9a139f9cac7da5',1,'spdk_ocssd_chunk_notification_entry']]],
-  ['pu_5flen_61',['pu_len',['../structspdk__ocssd__dev__lba__fmt.html#ae20247c5bd5f2576b67957980bf58333',1,'spdk_ocssd_dev_lba_fmt']]],
-  ['put_5frkey_62',['put_rkey',['../structspdk__nvme__rdma__hooks.html#abf04de4700ca8baf3570b77f92fa68df',1,'spdk_nvme_rdma_hooks']]]
+  ['pu_5flen_61',['pu_len',['../structspdk__ocssd__dev__lba__fmt.html#ae20247c5bd5f2576b67957980bf58333',1,'spdk_ocssd_dev_lba_fmt']]]
 ];

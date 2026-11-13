@@ -557,9 +557,6 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_referral_add
 <tr class="memitem:aba3584185c147f5b10cf8c2e2b3fa181" id="r_aba3584185c147f5b10cf8c2e2b3fa181"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aba3584185c147f5b10cf8c2e2b3fa181">spdk_nvmf_poll_group_dump_stat</a> (struct <a class="el" href="structspdk__nvmf__poll__group.html">spdk_nvmf_poll_group</a> *group, struct spdk_json_write_ctx *w)</td></tr>
 <tr class="memdesc:aba3584185c147f5b10cf8c2e2b3fa181"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dump poll group statistics into JSON.  <br /></td></tr>
 <tr class="separator:aba3584185c147f5b10cf8c2e2b3fa181"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9ae1cb4c373e0dd8146b81b5ba57ff0b" id="r_a9ae1cb4c373e0dd8146b81b5ba57ff0b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9ae1cb4c373e0dd8146b81b5ba57ff0b">spdk_nvmf_rdma_init_hooks</a> (struct <a class="el" href="structspdk__nvme__rdma__hooks.html">spdk_nvme_rdma_hooks</a> *hooks)</td></tr>
-<tr class="memdesc:a9ae1cb4c373e0dd8146b81b5ba57ff0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the global hooks for the RDMA transport, if necessary.  <br /></td></tr>
-<tr class="separator:a9ae1cb4c373e0dd8146b81b5ba57ff0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae365f2d881a64ca5adcfe9a179a84597" id="r_ae365f2d881a64ca5adcfe9a179a84597"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae365f2d881a64ca5adcfe9a179a84597">spdk_nvmf_set_custom_ns_reservation_ops</a> (const struct <a class="el" href="structspdk__nvmf__ns__reservation__ops.html">spdk_nvmf_ns_reservation_ops</a> *ops)</td></tr>
 <tr class="memdesc:ae365f2d881a64ca5adcfe9a179a84597"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set custom handlers for namespace reservation operations.  <br /></td></tr>
 <tr class="separator:ae365f2d881a64ca5adcfe9a179a84597"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1410,33 +1407,6 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvmf_referral_add
 <dl class="section return"><dt>Returns</dt><dd>0 for success. </dd>
 <dd>
 -EINVAL if the qpair is not connected. </dd></dl>
-
-</div>
-</div>
-<a id="a9ae1cb4c373e0dd8146b81b5ba57ff0b" name="a9ae1cb4c373e0dd8146b81b5ba57ff0b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9ae1cb4c373e0dd8146b81b5ba57ff0b">&#9670;&#160;</a></span>spdk_nvmf_rdma_init_hooks()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void spdk_nvmf_rdma_init_hooks </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structspdk__nvme__rdma__hooks.html">spdk_nvme_rdma_hooks</a> *</td>          <td class="paramname"><span class="paramname"><em>hooks</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Set the global hooks for the RDMA transport, if necessary. </p>
-<p>This call is optional and must be performed prior to probing for any devices. By default, the RDMA transport will use the ibverbs library to create protection domains and register memory. This is a mechanism to subvert that and use an existing registration.</p>
-<p>This function may only be called one time per process.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">hooks</td><td>for initializing global hooks </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>

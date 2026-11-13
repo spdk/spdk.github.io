@@ -48,7 +48,6 @@ var nvmf_8h =
     [ "spdk_nvmf_qpair_get_listen_trid", "nvmf_8h.html#a261e8613de83e1a557e95a6e06bd0a19", null ],
     [ "spdk_nvmf_qpair_get_local_trid", "nvmf_8h.html#ad269e6b66abf6b758569453f4b6fd41a", null ],
     [ "spdk_nvmf_qpair_get_peer_trid", "nvmf_8h.html#a145a3a2e51799674837dcb1ebf9a13c3", null ],
-    [ "spdk_nvmf_rdma_init_hooks", "nvmf_8h.html#a9ae1cb4c373e0dd8146b81b5ba57ff0b", null ],
     [ "spdk_nvmf_referral_get_allow_any_host", "nvmf_8h.html#aac22668cef8a0377e5d02d0cdf6a2596", null ],
     [ "spdk_nvmf_referral_get_first_host", "nvmf_8h.html#a865384b97050d905af931dbce44c79ae", null ],
     [ "spdk_nvmf_referral_get_next_host", "nvmf_8h.html#a821ea620a120380d8f549135f027ed9c", null ],

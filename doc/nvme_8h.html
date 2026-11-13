@@ -173,9 +173,6 @@ Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__io__qpair__opts.html">spdk_nvme_io_qpair_opts</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">NVMe I/O queue pair initialization options.  <a href="structspdk__nvme__io__qpair__opts.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__rdma__hooks.html">spdk_nvme_rdma_hooks</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">RDMA Transport Hooks.  <a href="structspdk__nvme__rdma__hooks.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__transport__ops.html">spdk_nvme_transport_ops</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspdk__nvme__transport__opts.html">spdk_nvme_transport_opts</a></td></tr>
@@ -994,9 +991,6 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_trty
 <tr class="memitem:a20a1143ad8f4a3f001471476762027e4" id="r_a20a1143ad8f4a3f001471476762027e4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a20a1143ad8f4a3f001471476762027e4">spdk_nvme_dhchap_get_dhgroup_id</a> (const char *name)</td></tr>
 <tr class="memdesc:a20a1143ad8f4a3f001471476762027e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the id of a Diffie-Hellman group.  <br /></td></tr>
 <tr class="separator:a20a1143ad8f4a3f001471476762027e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a82cdb425c9fad7b94ad0b8f5c27bb8b2" id="r_a82cdb425c9fad7b94ad0b8f5c27bb8b2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a82cdb425c9fad7b94ad0b8f5c27bb8b2">spdk_nvme_rdma_init_hooks</a> (struct <a class="el" href="structspdk__nvme__rdma__hooks.html">spdk_nvme_rdma_hooks</a> *hooks)</td></tr>
-<tr class="memdesc:a82cdb425c9fad7b94ad0b8f5c27bb8b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the global hooks for the RDMA transport, if necessary.  <br /></td></tr>
-<tr class="separator:a82cdb425c9fad7b94ad0b8f5c27bb8b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa645963334716b9b7276a7269eb2e379" id="r_aa645963334716b9b7276a7269eb2e379"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa645963334716b9b7276a7269eb2e379">spdk_nvme_cuse_get_ctrlr_name</a> (struct spdk_nvme_ctrlr *ctrlr, char *name, size_t *size)</td></tr>
 <tr class="memdesc:aa645963334716b9b7276a7269eb2e379"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get name of cuse device associated with NVMe controller.  <br /></td></tr>
 <tr class="separator:aa645963334716b9b7276a7269eb2e379"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -4759,6 +4753,8 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_trty
 
 <p>Register for timeout callback on a controller. </p>
 <p>The application can choose to register for timeout callback or not register for timeout callback.</p>
+<p>To change the timeout values, call this function again with the same cb_fn and cb_arg. Once registered, the callback and its argument cannot be changed or unregistered. A timeout value of 0 makes commands time out immediately.</p>
+<p>This function is thread safe and can be called at any point while the controller is attached to the SPDK NVMe driver.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">ctrlr</td><td>NVMe controller on which to monitor for timeout. </td></tr>
@@ -9941,33 +9937,6 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>spdk_nvme_trty
   <table class="params">
     <tr><td class="paramname">qpair</td><td>The qpair to set. </td></tr>
     <tr><td class="paramname">dnr</td><td>Set the DNR bit to 1 if true or 0 if false for aborted commands. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a82cdb425c9fad7b94ad0b8f5c27bb8b2" name="a82cdb425c9fad7b94ad0b8f5c27bb8b2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a82cdb425c9fad7b94ad0b8f5c27bb8b2">&#9670;&#160;</a></span>spdk_nvme_rdma_init_hooks()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void spdk_nvme_rdma_init_hooks </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structspdk__nvme__rdma__hooks.html">spdk_nvme_rdma_hooks</a> *</td>          <td class="paramname"><span class="paramname"><em>hooks</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Set the global hooks for the RDMA transport, if necessary. </p>
-<p>This call is optional and must be performed prior to probing for any devices. By default, the RDMA transport will use the ibverbs library to create protection domains and register memory. This is a mechanism to subvert that and use an existing registration.</p>
-<p>This function may only be called one time per process.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">hooks</td><td>for initializing global hooks </td></tr>
   </table>
   </dd>
 </dl>

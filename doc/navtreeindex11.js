@@ -1,7 +1,5 @@
 var NAVTREEINDEX11 =
 {
-"peer_2_peer.html#p2p_support":[6,0,3],
-"peer_2_peer.html#p2p_toc":[6,0,0],
 "performance_reports.html":[10],
 "pipe_8h.html":[15,0,0,0,57],
 "pipe_8h.html#a16872658194ea406d3646ae55025fb42":[15,0,0,0,57,8],
@@ -249,5 +247,7 @@ var NAVTREEINDEX11 =
 "structspdk__accel__opcode__stats.html#a5f327817cd2cade359432b4b0b00e5f2":[14,0,56,2],
 "structspdk__accel__opcode__stats.html#a80178555117743997ee244b84eeca483":[14,0,56,0],
 "structspdk__accel__opcode__stats.html#aed1ee43a4c09ab8338230d79bb3f6dfb":[14,0,56,1],
-"structspdk__accel__operation__exec__ctx.html":[14,0,57]
+"structspdk__accel__operation__exec__ctx.html":[14,0,57],
+"structspdk__accel__operation__exec__ctx.html#a0792c5b76f3e6a13636eeb118c882f29":[14,0,57,0],
+"structspdk__accel__operation__exec__ctx.html#a53001f2f9cbd287f110d714e3817925d":[14,0,57,1]
 };
