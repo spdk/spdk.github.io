@@ -3715,7 +3715,7 @@ bdev_aio_delete</h2>
 <div class="line">}</div>
 </div><!-- fragment --><h2><a class="anchor" id="rpc_bdev_nvme_set_options"></a>
 bdev_nvme_set_options</h2>
-<p>Set global parameters for all bdev NVMe. This RPC may only be called before SPDK subsystems have been initialized or any bdev NVMe has been created.</p>
+<p>Set global parameters for all bdev NVMe. While bdev NVMe controllers are attached, only <code>timeout_us</code> and <code>timeout_admin_us</code> can be changed.</p>
 <p>Parameters, ctrlr_loss_timeout_sec, reconnect_delay_sec, and fast_io_fail_timeout_sec, are for I/O error resiliency. They can be overridden if they are given by the RPC bdev_nvme_attach_controller. The <code>multipath_opts</code> parameter sets the default creation-time multipath policy, selector, and minimum I/O count. These defaults can also be overridden by <code>bdev_nvme_attach_controller</code>.</p>
 <h3>Parameters</h3>
 <table class="markdownTable">
@@ -3724,7 +3724,7 @@ bdev_nvme_set_options</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">action_on_timeout   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">enum   </td><td class="markdownTableBodyNone">Action to take on command time out: none, reset or abort    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">timeout_us   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint64   </td><td class="markdownTableBodyNone">Timeout for each command, in microseconds. If 0, don't track timeouts    </td></tr>
+<td class="markdownTableBodyNone">timeout_us   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint64   </td><td class="markdownTableBodyNone">Timeout for each command, in microseconds. If 0, don't track timeouts. Can be changed while controllers are attached, but not to or from 0    </td></tr>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">timeout_admin_us   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">uint64   </td><td class="markdownTableBodyNone">Timeout for each admin command, in microseconds. If 0, treat same as io timeouts ('timeout_us')    </td></tr>
 <tr class="markdownTableRowEven">
